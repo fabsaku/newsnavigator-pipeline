@@ -1,0 +1,63 @@
+# Newsnavigator källista v0.1
+# Varje källa: id, namn, url, amnen, sprak (sv/en), typ (media/primar/forskning), betalvagg (true/false)
+# Status: OVERIFIERAD tills verify_feeds.py har körts med öppet internet.
+# Betalväggskällor används bara för rubrik + länk, aldrig för text.
+
+sources:
+  # Sverige, nyheter
+  - {id: svt, namn: SVT Nyheter, url: "https://www.svt.se/nyheter/rss.xml", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false}
+  - {id: sr-ekot, namn: Sveriges Radio Ekot, url: "https://api.sr.se/api/rss/program/83", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false}
+  - {id: dn, namn: Dagens Nyheter, url: "https://www.dn.se/rss/", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: true}
+
+  # Sverige, ekonomi
+  - {id: di, namn: Dagens industri, url: "https://www.di.se/rss", amnen: [marknader, sverige], sprak: sv, typ: media, betalvagg: true}
+  - {id: breakit, namn: Breakit, url: "https://www.breakit.se/feed/artiklar", amnen: [startups, teknik], sprak: sv, typ: media, betalvagg: true}
+  - {id: riksbanken, namn: Riksbanken, url: "https://www.riksbank.se/sv/rss/pressmeddelanden/", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false}
+  - {id: scb, namn: SCB, url: "https://www.scb.se/feed/rss/", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false}
+  - {id: fi, namn: Finansinspektionen, url: "https://www.fi.se/sv/rss/nyheter/", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false}
+
+  # Global ekonomi och marknader
+  - {id: ft, namn: Financial Times, url: "https://www.ft.com/rss/home", amnen: [marknader, varlden], sprak: en, typ: media, betalvagg: true}
+  - {id: economist, namn: The Economist, url: "https://www.economist.com/finance-and-economics/rss.xml", amnen: [marknader, varlden], sprak: en, typ: media, betalvagg: true}
+  - {id: cnbc, namn: CNBC, url: "https://www.cnbc.com/id/100003114/device/rss/rss.html", amnen: [marknader], sprak: en, typ: media, betalvagg: false}
+  - {id: ecb, namn: Europeiska centralbanken, url: "https://www.ecb.europa.eu/rss/press.html", amnen: [marknader, europa], sprak: en, typ: primar, betalvagg: false}
+  - {id: fed, namn: Federal Reserve, url: "https://www.federalreserve.gov/feeds/press_all.xml", amnen: [marknader], sprak: en, typ: primar, betalvagg: false}
+  - {id: imf, namn: IMF, url: "https://www.imf.org/en/News/RSS", amnen: [marknader, varlden], sprak: en, typ: primar, betalvagg: false}
+
+  # Världen och geopolitik
+  - {id: bbc, namn: BBC World, url: "https://feeds.bbci.co.uk/news/world/rss.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false}
+  - {id: guardian, namn: The Guardian World, url: "https://www.theguardian.com/world/rss", amnen: [varlden], sprak: en, typ: media, betalvagg: false}
+  - {id: aljazeera, namn: Al Jazeera, url: "https://www.aljazeera.com/xml/rss/all.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false}
+  - {id: politico-eu, namn: Politico Europe, url: "https://www.politico.eu/feed/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false}
+  - {id: euractiv, namn: Euractiv, url: "https://www.euractiv.com/feed/", amnen: [europa], sprak: en, typ: media, betalvagg: false}
+  - {id: regeringen, namn: Regeringskansliet, url: "https://www.regeringen.se/Filter/RssFeed?filterType=Taxonomy&filterByType=FilterablePageBase&preFilteredCategories=1324", amnen: [sverige, geopolitik], sprak: sv, typ: primar, betalvagg: false}
+
+  # AI
+  - {id: arxiv-ai, namn: arXiv cs.AI, url: "https://export.arxiv.org/rss/cs.AI", amnen: [ai], sprak: en, typ: forskning, betalvagg: false}
+  - {id: hf-blog, namn: Hugging Face, url: "https://huggingface.co/blog/feed.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false}
+  - {id: openai, namn: OpenAI, url: "https://openai.com/news/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false}
+  - {id: deepmind, namn: Google DeepMind, url: "https://deepmind.google/blog/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false}
+  - {id: mit-tr, namn: MIT Technology Review, url: "https://www.technologyreview.com/feed/", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false}
+
+  # Teknik och robotik
+  - {id: verge, namn: The Verge, url: "https://www.theverge.com/rss/index.xml", amnen: [teknik], sprak: en, typ: media, betalvagg: false}
+  - {id: ars, namn: Ars Technica, url: "https://feeds.arstechnica.com/arstechnica/index", amnen: [teknik], sprak: en, typ: media, betalvagg: false}
+  - {id: techcrunch, namn: TechCrunch, url: "https://techcrunch.com/feed/", amnen: [teknik, startups], sprak: en, typ: media, betalvagg: false}
+  - {id: nyteknik, namn: Ny Teknik, url: "https://www.nyteknik.se/rss", amnen: [teknik, sverige], sprak: sv, typ: media, betalvagg: true}
+  - {id: ieee-robotics, namn: IEEE Spectrum Robotics, url: "https://spectrum.ieee.org/feeds/topic/robotics.rss", amnen: [robotik], sprak: en, typ: media, betalvagg: false}
+  - {id: robot-report, namn: The Robot Report, url: "https://www.therobotreport.com/feed/", amnen: [robotik], sprak: en, typ: media, betalvagg: false}
+
+  # Vetenskap och rymd
+  - {id: nature, namn: Nature News, url: "https://www.nature.com/nature.rss", amnen: [vetenskap], sprak: en, typ: forskning, betalvagg: true}
+  - {id: quanta, namn: Quanta Magazine, url: "https://www.quantamagazine.org/feed/", amnen: [vetenskap], sprak: en, typ: media, betalvagg: false}
+  - {id: nasa, namn: NASA, url: "https://www.nasa.gov/news-release/feed/", amnen: [rymd], sprak: en, typ: primar, betalvagg: false}
+  - {id: esa, namn: ESA, url: "https://www.esa.int/rssfeed/Our_Activities", amnen: [rymd, europa], sprak: en, typ: primar, betalvagg: false}
+
+  # Energi och klimat
+  - {id: iea, namn: IEA, url: "https://www.iea.org/api/rss/news", amnen: [energi], sprak: en, typ: primar, betalvagg: false}
+  - {id: carbonbrief, namn: Carbon Brief, url: "https://www.carbonbrief.org/feed/", amnen: [energi, klimat], sprak: en, typ: media, betalvagg: false}
+  - {id: svk, namn: Svenska kraftnät, url: "https://www.svk.se/press-och-nyheter/nyheter/rss/", amnen: [energi, sverige], sprak: sv, typ: primar, betalvagg: false}
+
+  # Försvar
+  - {id: breaking-defense, namn: Breaking Defense, url: "https://breakingdefense.com/feed/", amnen: [forsvar, geopolitik], sprak: en, typ: media, betalvagg: false}
+  - {id: nato, namn: NATO, url: "https://www.nato.int/cps/rss/en/natohq/rssFeed.xsl/rssFeed.xml", amnen: [forsvar, geopolitik], sprak: en, typ: primar, betalvagg: false}

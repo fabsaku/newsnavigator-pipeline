@@ -1,0 +1,5 @@
+sources:
+  - {id: test-a, namn: Testkälla A, url: "file:tests/a.xml", amnen: [marknader], sprak: en, typ: media, betalvagg: false}
+  - {id: test-b, namn: Testkälla B, url: "file:tests/b.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: true}
+  - {id: test-cb, namn: Testcentralbank, url: "file:tests/c.xml", amnen: [marknader], sprak: en, typ: primar, betalvagg: false}
+  - {id: test-trasig, namn: Trasig källa, url: "file:tests/finns-inte.xml", amnen: [ai], sprak: en, typ: media, betalvagg: false}
