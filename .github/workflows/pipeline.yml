@@ -30,10 +30,22 @@ jobs:
         run: python pipeline.py
       - name: Bygg Navigatorn
         run: python newsletter.py
+      - name: Bygg publika sajten (bara granskat)
+        run: python publish.py
       - name: Spara resultat
         run: |
           git config user.name "newsnavigator-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data site
+          git add data site public
           git commit -m "Flöde $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
           git pull --rebase origin main && git push
+      - name: Uppdatera sajten om det publika har ändrats
+        run: |
+          git fetch origin sajt || true
+          NEW=$(git rev-parse HEAD:public)
+          OLD=$(git rev-parse origin/sajt^{tree} 2>/dev/null || echo none)
+          if [ "$NEW" != "$OLD" ]; then
+            git push -f origin "$(git commit-tree $NEW -m "Sajt $(date -u +%Y-%m-%dT%H:%M)")":refs/heads/sajt
+          else
+            echo "Sajten oförändrad"
+          fi

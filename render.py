@@ -196,8 +196,13 @@ def render(payload, path, include_unreviewed=True):
     ok = sum(1 for r in payload["kallrapport"] if r["ok"])
     regions = {r for e in events for r in (e.get("perspektiv") or {}).get("regioner", [])}
     when = payload["skapad"][:16].replace("T", " ")
-    body = "".join(_event(e, i == 0) for i, e in enumerate(events)) or \
-        f'<p class="sum" style="padding:40px 0">{_both("Inga godkända notiser än.", "No approved stories yet.")}</p>'
+    empty = (f'<p class="sum" style="padding:40px 0">{_both("Inga godkända notiser än.", "No approved stories yet.")}</p>'
+             if include_unreviewed else
+             f'<section style="padding:48px 0 64px;max-width:640px"><h2 style="font-family:\'Source Serif 4\',Georgia,serif;font-size:40px;line-height:1.1;margin:0 0 16px">'
+             f'{_both("Newsnavigator öppnar snart.", "Newsnavigator opens soon.")}</h2>'
+             f'<p class="sum">{_both("Nyheter från över 90 källor i sju regioner, samlade på ett ställe och granskade innan de publiceras. Du ser hur olika länder, och blå och röda medier i USA, berättar om samma händelse. Varje notis länkar till originalet.", "News from more than 90 sources in seven regions, gathered in one place and reviewed before publication. See how different countries, and blue and red media in the US, cover the same event. Every story links to the original.")}</p>'
+             f'<p class="sum">{_both("Varje morgon kommer Navigatorn, vårt morgonbrev.", "Every morning: Navigatorn, our morning brief.")}</p></section>')
+    body = "".join(_event(e, i == 0) for i, e in enumerate(events)) or empty
     mode = _both("Förhandsvisning: ogranskade utkast", "Preview: unreviewed drafts") if include_unreviewed else \
         _both("Granskat och publicerat", "Reviewed and published")
     doc = f"""<!doctype html>
@@ -215,7 +220,7 @@ def render(payload, path, include_unreviewed=True):
 <div class="w">
 <div class="intro"><p>{_both("Vi levererar nyheterna. Vad du gör av dem är upp till dig.", "We deliver the news. What you make of it is up to you.")}</p>
 <span class="mono">{mode}</span></div>
-<div class="chips" role="group" aria-label="Ämnen">{"".join(chips)}</div>
+{'<div class="chips" role="group" aria-label="Ämnen">' + "".join(chips) + '</div>' if events else ""}
 <main>{body}</main>
 <footer><p>{_both("Notiserna sammanfattas med hjälp av AI och granskas av redaktionen innan publicering. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI and reviewed by the editors before publication. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>
 <span class="mono">© 2026 Newsnavigator</span></footer>
