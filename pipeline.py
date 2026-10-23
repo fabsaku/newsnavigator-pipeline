@@ -26,7 +26,7 @@ import yaml
 from prompts import SYSTEM_PROMPT, user_prompt
 
 ROOT = Path(__file__).parent
-NEWSLETTER_ADMIN = re.compile(r"confirm|verify|welcome|subscription|unsubscribe|bekräfta|välkommen", re.I)
+NEWSLETTER_ADMIN = re.compile(r"confirm|verify|welcome|subscription|subscribed|subscribing|unsubscribe|bekräfta|välkommen", re.I)
 CACHE_PATH = ROOT / "data" / "cache.json"
 CACHE_DAYS = 3        # utkast och översättningar som inte setts på tre dagar rensas
 WORKERS = 8           # samtidiga AI-anrop
@@ -123,6 +123,8 @@ def fetch(sources, max_age_hours):
                 continue
             if s.get("bara_rubrik") and NEWSLETTER_ADMIN.search(e.get("title", "")):
                 continue    # bekräftelse- och välkomstmejl är inga nyheter
+            if s.get("avsandare") and s["avsandare"] not in (e.get("author", "") + e.get("author_detail", {}).get("email", "")):
+                continue    # flera nyhetsbrev i samma flöde: ta bara det från rätt avsändare
             # lanka: fast länk för källor vars flöde inte pekar på en publik sida (t.ex. nyhetsbrev via e-post)
             link = s.get("lanka") or e.get("link", "")
             ident = e.get("id") or e.get("link", "") or e.get("title", "")

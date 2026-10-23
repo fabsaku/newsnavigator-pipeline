@@ -1,6 +1,6 @@
 # Newsnavigator källista v0.2
 # Fält: id, namn, url, alternativ (reservadresser som prövas om url inte fungerar),
-#       lanka (fast länk till läsare), bara_rubrik (använd aldrig ingressen),
+#       lanka (fast länk till läsare), bara_rubrik (använd aldrig ingressen), avsandare (filtrera flöde med flera nyhetsbrev),
 #       amnen, sprak, typ (media/primar/forskning/kuraterat), betalvagg,
 #       kuraterat = nyhetsbrev och topplistor som samlar andras nyheter. Räknas inte som oberoende källa.
 #       land, region (sverige/norden/europa/usa/asien/mellanostern/afrika/global),
@@ -112,7 +112,9 @@ sources:
   - {id: import-ai, namn: Import AI, url: "https://importai.substack.com/feed", amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   # Superhuman (Zain Kahn): nyhetsbrevet tas emot via Kill the Newsletter. Bara ämnesraden används,
   # länken går till Superhumans publika arkiv (flödesadressen är privat och visas aldrig för läsare).
-  - {id: superhuman, namn: Superhuman, url: "https://kill-the-newsletter.com/feeds/gbmwcl3qkhjs7ddputic8hmeoa8p5i86wdre8whf.xml", lanka: "https://www.superhuman.ai/", bara_rubrik: true, amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: superhuman, namn: Superhuman, url: "https://kill-the-newsletter.com/feeds/gbmwcl3qkhjs7ddputic8hmeoa8p5i86wdre8whf.xml", lanka: "https://www.superhuman.ai/", bara_rubrik: true, avsandare: joinsuperhuman.ai, amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  # The Code kommer från samma företag och hamnar i samma flöde. Avsändaren skiljer dem åt.
+  - {id: the-code, namn: The Code, url: "https://kill-the-newsletter.com/feeds/gbmwcl3qkhjs7ddputic8hmeoa8p5i86wdre8whf.xml", lanka: "https://www.codenewsletter.ai/", bara_rubrik: true, avsandare: codenewsletter.ai, amnen: [ai, teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
 # Saknar RSS (bevakas på annat sätt senare): IEA, Xinhua.
 # Kräver licens (läggs till när avtal finns): Reuters, AP, AFP, TT.
