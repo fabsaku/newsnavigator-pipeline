@@ -1,4 +1,4 @@
-# Källstatus 2026-10-23 17:29 UTC
+# Källstatus 2026-10-23 18:05 UTC
 
 53/62 OK
 
@@ -6,9 +6,9 @@
 | --- | --- | --- | --- | --- | --- |
 | SVT Nyheter | sverige | OK | 100 | 2026-10-23 |  |
 | Sveriges Radio Ekot | sverige | OK | 20 | 2026-10-23 |  |
-| Dagens Nyheter | sverige | OK | 121 | 2026-10-23 |  |
+| Dagens Nyheter | sverige | OK | 122 | 2026-10-23 |  |
 | Dagens industri | sverige | OK | 20 | 2026-10-23 |  |
-| Breakit | sverige | OK | 16 | 2026-10-23 |  |
+| Breakit | sverige | OK | 17 | 2026-10-23 |  |
 | Ny Teknik | sverige | FEL | 0 |  | HTTP Error 404: Not Found |
 | Yle News | norden | OK | 20 | 2026-10-23 |  |
 | NRK | norden | OK | 100 | 2026-10-23 |  |
@@ -31,7 +31,7 @@
 | Europeiska centralbanken | europa | OK | 15 | 2026-10-23 |  |
 | ESA | europa | OK | 9 | 2026-10-23 |  |
 | NATO | europa | FEL | 0 |  | HTTP Error 404: Not Found |
-| The New York Times | usa | OK | 48 | 2026-10-23 |  |
+| The New York Times | usa | OK | 47 | 2026-10-23 |  |
 | The Washington Post | usa | FEL | 0 |  | HTTP Error 502: Bad Gateway |
 | The Wall Street Journal | usa | OK | 73 | 2026-10-23 |  |
 | Fox News | usa | OK | 25 | 2026-10-23 |  |

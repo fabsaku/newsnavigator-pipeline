@@ -1,244 +1,48 @@
 {
-  "skapad": "2026-10-23T17:30:19.864377+00:00",
-  "modell": null,
+  "skapad": "2026-10-23T18:09:59.868458+00:00",
+  "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
-      "id": "8b351fd2a7",
+      "id": "5e16878687",
       "amnen": [
         "asien",
         "europa",
+        "geopolitik",
         "marknader",
-        "sverige",
         "varlden"
       ],
-      "poang": 24.97,
-      "antal_kallor": 9,
+      "poang": 27.92,
+      "antal_kallor": 11,
       "har_primarkalla": false,
-      "senast": "2026-10-23T17:17:41+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T17:30:51+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
           "mellanostern",
-          "sverige",
           "usa"
         ],
         "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Gunmen kill 7 at Jordan church, king vows retaliation",
-              "url": "https://www.scmp.com/news/world/middle-east/article/3371984/gunmen-kill-7-jordan-church-king-vows-retaliation",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Seven killed, 28 injured after gunmen open fire inside a church in Jordan",
-              "url": "https://www.thehindu.com/news/international/gunmen-open-fire-inside-a-church-in-jordan-causing-deaths-and-injuries/article71616413.ece",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
-              "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
-              "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Several killed, dozens wounded in Jordan church shooting",
-              "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
-              "statskontrollerad": false
-            }
-          ],
           "mellanostern": [
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "At least seven killed after gunmen open fire at church in Jordan",
-              "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss",
+              "rubrik": "Jerusalem Daily: Israel to ‘lock down’ occupied West Bank",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/jerusalem-daily-netanyahu-orders-a-full-lockdown-of-the-occupied-west-ba?traffic_source=rss",
               "statskontrollerad": false
             }
           ],
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Flera döda efter skjutning i kyrka i Jordanien",
-              "url": "https://www.sverigesradio.se/artikel/9327418",
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Gunmen Kill Seven in Church Attack in Jordan",
-              "url": "https://www.wsj.com/world/middle-east/gunmen-kill-seven-in-church-attack-in-jordan-c4ff80b6?mod=rss_worldnews",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Gunmen Open Fire at Church in Jordan, Killing at Least Seven",
-              "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null
-      },
-      "reserv_rubrik": "Gunmen kill 7 at Jordan church, king vows retaliation",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Gunmen kill 7 at Jordan church, king vows retaliation",
-          "url": "https://www.scmp.com/news/world/middle-east/article/3371984/gunmen-kill-7-jordan-church-king-vows-retaliation",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
-          "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
-          "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Several killed, dozens wounded in Jordan church shooting",
-          "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Seven killed, 28 injured after gunmen open fire inside a church in Jordan",
-          "url": "https://www.thehindu.com/news/international/gunmen-open-fire-inside-a-church-in-jordan-causing-deaths-and-injuries/article71616413.ece",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "At least seven killed after gunmen open fire at church in Jordan",
-          "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Flera döda efter skjutning i kyrka i Jordanien",
-          "url": "https://www.sverigesradio.se/artikel/9327418",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Gunmen Kill Seven in Church Attack in Jordan",
-          "url": "https://www.wsj.com/world/middle-east/gunmen-kill-seven-in-church-attack-in-jordan-c4ff80b6?mod=rss_worldnews",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Gunmen Open Fire at Church in Jordan, Killing at Least Seven",
-          "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "f48633e52b",
-      "amnen": [
-        "asien",
-        "europa",
-        "geopolitik",
-        "varlden"
-      ],
-      "poang": 20.8,
-      "antal_kallor": 8,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T15:56:28+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
           "europa": [
             {
               "kalla": "France 24",
               "land": "FR",
-              "rubrik": "West Bank: Extensive military operation 'on the way', Netanyahu says",
-              "url": "https://www.france24.com/en/video/20261023-west-bank-extensive-military-operation-on-the-way-netanyahu-says",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Netanyahu orders ‘very extensive’ operation in West Bank after two Israeli soldiers killed",
-              "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+              "rubrik": "How Israeli settlers wearing keffiyehs are attacking West Bank olive groves",
+              "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves",
               "statskontrollerad": false
             },
             {
@@ -249,11 +53,25 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
+              "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
+              "statskontrollerad": false
+            },
+            {
               "kalla": "Le Monde (English)",
               "land": "FR",
               "rubrik": "Netanyahu orders West Bank closure as attack wounds Israelis before election",
               "url": "https://www.lemonde.fr/en/international/article/2026/10/23/netanyahu-orders-west-bank-closure-as-attack-wounds-israelis-before-election_6762244_4.html",
               "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Netanyahu orders blockade of West Bank",
+              "url": "https://rt-english.com/news/647590-netanyahu-west-bank-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
             }
           ],
           "asien": [
@@ -286,33 +104,40 @@
               "rubrik": "Two suspected gunmen dead, two IDF soldiers killed in West Bank shooting",
               "url": "https://www.foxnews.com/world/two-suspected-gunmen-dead-two-idf-soldiers-killed-west-bank-shooting",
               "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Netanyahu Calls for West Bank Lockdown After Deadly Attack",
+              "url": "https://www.wsj.com/world/middle-east/netanyahu-calls-for-west-bank-lockdown-after-deadly-attack-98d5e3e3?mod=rss_worldnews",
+              "statskontrollerad": false
             }
           ]
         },
         "blind_flack": "saknas_i_sverige"
       },
-      "reserv_rubrik": "West Bank: Extensive military operation 'on the way', Netanyahu says",
+      "reserv_rubrik": "Jerusalem Daily: Israel to ‘lock down’ occupied West Bank",
       "kallor": [
         {
+          "namn": "Al Jazeera",
+          "rubrik": "Jerusalem Daily: Israel to ‘lock down’ occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/jerusalem-daily-netanyahu-orders-a-full-lockdown-of-the-occupied-west-ba?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
           "namn": "France 24",
-          "rubrik": "West Bank: Extensive military operation 'on the way', Netanyahu says",
-          "url": "https://www.france24.com/en/video/20261023-west-bank-extensive-military-operation-on-the-way-netanyahu-says",
+          "rubrik": "How Israeli settlers wearing keffiyehs are attacking West Bank olive groves",
+          "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves",
           "betalvagg": false,
           "typ": "media",
           "land": "FR",
           "region": "europa",
           "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Netanyahu orders ‘very extensive’ operation in West Bank after two Israeli soldiers killed",
-          "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -371,6 +196,28 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Financial Times",
+          "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
+          "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Netanyahu Calls for West Bank Lockdown After Deadly Attack",
+          "url": "https://www.wsj.com/world/middle-east/netanyahu-calls-for-west-bank-lockdown-after-deadly-attack-98d5e3e3?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Le Monde (English)",
           "rubrik": "Netanyahu orders West Bank closure as attack wounds Israelis before election",
           "url": "https://www.lemonde.fr/en/international/article/2026/10/23/netanyahu-orders-west-bank-closure-as-attack-wounds-israelis-before-election_6762244_4.html",
@@ -380,81 +227,86 @@
           "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Netanyahu orders blockade of West Bank",
+          "url": "https://rt-english.com/news/647590-netanyahu-west-bank-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false
     },
     {
-      "id": "f13970debf",
+      "id": "f968f1cc33",
       "amnen": [
         "asien",
-        "europa",
-        "geopolitik",
-        "robotik",
+        "marknader",
+        "sverige",
         "varlden"
       ],
-      "poang": 20.61,
-      "antal_kallor": 8,
+      "poang": 20.99,
+      "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-10-23T14:25:00+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T18:03:16+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
+          "mellanostern",
+          "sverige",
           "usa"
         ],
         "per_region": {
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Romania blames Russia for ship attack in the Black Sea",
-              "url": "https://www.dw.com/en/romania-blames-russia-for-ship-attack-in-the-black-sea/a-79743425?maca=en-rss-en-all-1573-rdf",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Euractiv",
-              "land": "BE",
-              "rubrik": "Romania blames Russia for new deadly attack on ship",
-              "url": "https://www.rapporteur.com/news/romania-blames-russia-for-new-deadly-attack-on-ship/",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Politico Europe",
-              "land": "BE",
-              "rubrik": "Drone hits another ship in Black Sea near Romania, killing at least 1 sailor",
-              "url": "https://www.politico.eu/article/drone-hits-another-ship-in-black-sea-near-romania-killing-at-least-one-sailor/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-              "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
-              "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
-              "url": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "statskontrollerad": true
-            }
-          ],
           "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Gunmen kill 7 at Jordan church, king vows retaliation",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3371984/gunmen-kill-7-jordan-church-king-vows-retaliation",
+              "statskontrollerad": false
+            },
             {
               "kalla": "The Hindu",
               "land": "IN",
-              "rubrik": "Romania blames Russia for new deadly attack on ship",
-              "url": "https://www.thehindu.com/news/international/romania-blames-russia-for-new-deadly-attack-on-ship/article71616091.ece",
+              "rubrik": "Seven killed, 28 injured after gunmen open fire inside a church in Jordan",
+              "url": "https://www.thehindu.com/news/international/gunmen-open-fire-inside-a-church-in-jordan-causing-deaths-and-injuries/article71616413.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+              "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "At least seven killed after gunmen open fire at church in Jordan",
+              "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "Flera döda efter skjutning i kyrka i Jordanien",
+              "url": "https://www.sverigesradio.se/artikel/9327418",
               "statskontrollerad": false
             }
           ],
@@ -462,31 +314,49 @@
             {
               "kalla": "The New York Times",
               "land": "US",
-              "rubrik": "Powerful Earthquake in Tibet Kills at Least 16",
-              "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html",
+              "rubrik": "Gunmen Open Fire at Church in Jordan, Killing at Least Seven",
+              "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Gunmen Kill Seven in Church Attack in Jordan",
+              "url": "https://www.wsj.com/world/middle-east/gunmen-kill-seven-in-church-attack-in-jordan-c4ff80b6?mod=rss_worldnews",
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige"
+        "blind_flack": null
       },
-      "reserv_rubrik": "Romania blames Russia for ship attack in the Black Sea",
+      "reserv_rubrik": "Gunmen kill 7 at Jordan church, king vows retaliation",
       "kallor": [
         {
-          "namn": "Deutsche Welle",
-          "rubrik": "Romania blames Russia for ship attack in the Black Sea",
-          "url": "https://www.dw.com/en/romania-blames-russia-for-ship-attack-in-the-black-sea/a-79743425?maca=en-rss-en-all-1573-rdf",
+          "namn": "South China Morning Post",
+          "rubrik": "Gunmen kill 7 at Jordan church, king vows retaliation",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3371984/gunmen-kill-7-jordan-church-king-vows-retaliation",
           "betalvagg": false,
           "typ": "media",
-          "land": "DE",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
           "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
           "namn": "The Hindu",
-          "rubrik": "Romania blames Russia for new deadly attack on ship",
-          "url": "https://www.thehindu.com/news/international/romania-blames-russia-for-new-deadly-attack-on-ship/article71616091.ece",
+          "rubrik": "Seven killed, 28 injured after gunmen open fire inside a church in Jordan",
+          "url": "https://www.thehindu.com/news/international/gunmen-open-fire-inside-a-church-in-jordan-causing-deaths-and-injuries/article71616413.ece",
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -495,53 +365,31 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Euractiv",
-          "rubrik": "Romania blames Russia for new deadly attack on ship",
-          "url": "https://www.rapporteur.com/news/romania-blames-russia-for-new-deadly-attack-on-ship/",
+          "namn": "Al Jazeera",
+          "rubrik": "At least seven killed after gunmen open fire at church in Jordan",
+          "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss",
           "betalvagg": false,
           "typ": "media",
-          "land": "BE",
-          "region": "europa",
-          "agare": "privat",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
           "statskontrollerad": false
         },
         {
-          "namn": "Politico Europe",
-          "rubrik": "Drone hits another ship in Black Sea near Romania, killing at least 1 sailor",
-          "url": "https://www.politico.eu/article/drone-hits-another-ship-in-black-sea-near-romania-killing-at-least-one-sailor/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "Flera döda efter skjutning i kyrka i Jordanien",
+          "url": "https://www.sverigesradio.se/artikel/9327418",
           "betalvagg": false,
           "typ": "media",
-          "land": "BE",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-          "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
+          "land": "SE",
+          "region": "sverige",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
           "namn": "The New York Times",
-          "rubrik": "Powerful Earthquake in Tibet Kills at Least 16",
-          "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html",
+          "rubrik": "Gunmen Open Fire at Church in Jordan, Killing at Least Seven",
+          "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -550,15 +398,185 @@
           "statskontrollerad": false
         },
         {
-          "namn": "RT",
-          "rubrik": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
-          "url": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "namn": "The Wall Street Journal",
+          "rubrik": "Gunmen Kill Seven in Church Attack in Jordan",
+          "url": "https://www.wsj.com/world/middle-east/gunmen-kill-seven-in-church-attack-in-jordan-c4ff80b6?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "6fb60bbef8",
+      "amnen": [
+        "asien",
+        "europa",
+        "marknader",
+        "sverige",
+        "varlden"
+      ],
+      "poang": 20.75,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:08:04+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "sverige",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
+              "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Suspect arrested after 1 killed and 4 wounded in a shooting in Paris suburb",
+              "url": "https://www.france24.com/en/suspect-arrested-after-1-killed-and-4-wounded-in-a-shooting-in-paris-suburb",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "France: 1 killed, 4 wounded after shooting near Paris",
+              "url": "https://www.dw.com/en/france-1-killed-4-wounded-after-shooting-near-paris/a-79742256?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Suspect arrested after one killed, several wounded in Paris suburb shooting",
+              "url": "https://www.thehindu.com/news/international/suspect-arrested-after-one-killed-several-wounded-in-paris-suburb-shooting/article71616087.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Skjutning utanför Paris – en död",
+              "url": "https://www.svt.se/nyheter/utrikes/skjutning-utanfor-paris-en-dod",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "One Killed Near Paris After Gunman Fires at Random, Officials Say",
+              "url": "https://www.nytimes.com/2026/10/23/world/europe/france-shooting.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Gunman Kills One Near Paris in Suspected Attack on Immigrant Communities",
+              "url": "https://www.wsj.com/world/europe/gunman-kills-one-near-paris-in-suspected-attack-on-immigrant-communities-ed1ee830?mod=rss_worldnews",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
+          "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris?traffic_source=rss",
           "betalvagg": false,
           "typ": "media",
-          "land": "RU",
-          "region": "europa",
+          "land": "QA",
+          "region": "mellanostern",
           "agare": "statlig",
-          "statskontrollerad": true
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Suspect arrested after 1 killed and 4 wounded in a shooting in Paris suburb",
+          "url": "https://www.france24.com/en/suspect-arrested-after-1-killed-and-4-wounded-in-a-shooting-in-paris-suburb",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Suspect arrested after one killed, several wounded in Paris suburb shooting",
+          "url": "https://www.thehindu.com/news/international/suspect-arrested-after-one-killed-several-wounded-in-paris-suburb-shooting/article71616087.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "France: 1 killed, 4 wounded after shooting near Paris",
+          "url": "https://www.dw.com/en/france-1-killed-4-wounded-after-shooting-near-paris/a-79742256?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Skjutning utanför Paris – en död",
+          "url": "https://www.svt.se/nyheter/utrikes/skjutning-utanfor-paris-en-dod",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "One Killed Near Paris After Gunman Fires at Random, Officials Say",
+          "url": "https://www.nytimes.com/2026/10/23/world/europe/france-shooting.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Gunman Kills One Near Paris in Suspected Attack on Immigrant Communities",
+          "url": "https://www.wsj.com/world/europe/gunman-kills-one-near-paris-in-suspected-attack-on-immigrant-communities-ed1ee830?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
@@ -572,11 +590,14 @@
         "sverige",
         "varlden"
       ],
-      "poang": 19.94,
+      "poang": 19.96,
       "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-10-23T16:59:51+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T17:47:43+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -587,17 +608,17 @@
         "per_region": {
           "europa": [
             {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
-              "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The Guardian",
               "land": "GB",
               "rubrik": "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – Europe live",
               "url": "https://www.theguardian.com/world/live/2026/oct/23/starlink-ukraine-musk-trump-russia-black-sea-strikes-france-milan-europe-protests-latest-news-updates",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+              "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
               "statskontrollerad": false
             },
             {
@@ -645,19 +666,8 @@
         },
         "blind_flack": null
       },
-      "reserv_rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+      "reserv_rubrik": "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – Europe live",
       "kallor": [
-        {
-          "namn": "BBC World",
-          "rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
         {
           "namn": "The Guardian",
           "rubrik": "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – Europe live",
@@ -667,6 +677,17 @@
           "land": "GB",
           "region": "europa",
           "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
           "statskontrollerad": false
         },
         {
@@ -742,8 +763,11 @@
       "poang": 18.95,
       "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-10-23T17:04:14+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T17:41:25+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -892,50 +916,58 @@
       "granskad": false
     },
     {
-      "id": "67fa049484",
+      "id": "46dae06daf",
       "amnen": [
         "asien",
         "europa",
-        "marknader",
-        "sverige",
+        "geopolitik",
+        "robotik",
         "varlden"
       ],
-      "poang": 18.83,
-      "antal_kallor": 6,
+      "poang": 14.91,
+      "antal_kallor": 5,
       "har_primarkalla": false,
-      "senast": "2026-10-23T16:08:04+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T17:26:13+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
-          "mellanostern",
-          "sverige",
-          "usa"
+          "mellanostern"
         ],
         "per_region": {
           "mellanostern": [
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
-              "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris?traffic_source=rss",
+              "rubrik": "Romania blames Russia after drone sinks ship in the Black Sea",
+              "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea?traffic_source=rss",
               "statskontrollerad": false
             }
           ],
           "europa": [
             {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Suspect arrested after 1 killed and 4 wounded in a shooting in Paris suburb",
-              "url": "https://www.france24.com/en/suspect-arrested-after-1-killed-and-4-wounded-in-a-shooting-in-paris-suburb",
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Romania blames Russia for ship attack in the Black Sea",
+              "url": "https://www.dw.com/en/romania-blames-russia-for-ship-attack-in-the-black-sea/a-79743425?maca=en-rss-en-all-1573-rdf",
               "statskontrollerad": false
             },
             {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "France: 1 killed, 4 wounded after shooting near Paris",
-              "url": "https://www.dw.com/en/france-1-killed-4-wounded-after-shooting-near-paris/a-79742256?maca=en-rss-en-all-1573-rdf",
+              "kalla": "Euractiv",
+              "land": "BE",
+              "rubrik": "Romania blames Russia for new deadly attack on ship",
+              "url": "https://www.rapporteur.com/news/romania-blames-russia-for-new-deadly-attack-on-ship/",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "Drone hits another ship in Black Sea near Romania, killing at least 1 sailor",
+              "url": "https://www.politico.eu/article/drone-hits-another-ship-in-black-sea-near-romania-killing-at-least-one-sailor/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
               "statskontrollerad": false
             }
           ],
@@ -943,38 +975,20 @@
             {
               "kalla": "The Hindu",
               "land": "IN",
-              "rubrik": "Suspect arrested after one killed, several wounded in Paris suburb shooting",
-              "url": "https://www.thehindu.com/news/international/suspect-arrested-after-one-killed-several-wounded-in-paris-suburb-shooting/article71616087.ece",
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Skjutning utanför Paris – en död",
-              "url": "https://www.svt.se/nyheter/utrikes/skjutning-utanfor-paris-en-dod",
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Gunman Kills One Near Paris in Suspected Attack on Immigrant Communities",
-              "url": "https://www.wsj.com/world/europe/gunman-kills-one-near-paris-in-suspected-attack-on-immigrant-communities-ed1ee830?mod=rss_worldnews",
+              "rubrik": "Romania blames Russia for new deadly attack on ship",
+              "url": "https://www.thehindu.com/news/international/romania-blames-russia-for-new-deadly-attack-on-ship/article71616091.ece",
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null
+        "blind_flack": "saknas_i_sverige"
       },
-      "reserv_rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
+      "reserv_rubrik": "Romania blames Russia after drone sinks ship in the Black Sea",
       "kallor": [
         {
           "namn": "Al Jazeera",
-          "rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
-          "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris?traffic_source=rss",
+          "rubrik": "Romania blames Russia after drone sinks ship in the Black Sea",
+          "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea?traffic_source=rss",
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -983,31 +997,9 @@
           "statskontrollerad": false
         },
         {
-          "namn": "France 24",
-          "rubrik": "Suspect arrested after 1 killed and 4 wounded in a shooting in Paris suburb",
-          "url": "https://www.france24.com/en/suspect-arrested-after-1-killed-and-4-wounded-in-a-shooting-in-paris-suburb",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Suspect arrested after one killed, several wounded in Paris suburb shooting",
-          "url": "https://www.thehindu.com/news/international/suspect-arrested-after-one-killed-several-wounded-in-paris-suburb-shooting/article71616087.ece",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Deutsche Welle",
-          "rubrik": "France: 1 killed, 4 wounded after shooting near Paris",
-          "url": "https://www.dw.com/en/france-1-killed-4-wounded-after-shooting-near-paris/a-79742256?maca=en-rss-en-all-1573-rdf",
+          "rubrik": "Romania blames Russia for ship attack in the Black Sea",
+          "url": "https://www.dw.com/en/romania-blames-russia-for-ship-attack-in-the-black-sea/a-79743425?maca=en-rss-en-all-1573-rdf",
           "betalvagg": false,
           "typ": "media",
           "land": "DE",
@@ -1016,129 +1008,9 @@
           "statskontrollerad": false
         },
         {
-          "namn": "SVT Nyheter",
-          "rubrik": "Skjutning utanför Paris – en död",
-          "url": "https://www.svt.se/nyheter/utrikes/skjutning-utanfor-paris-en-dod",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Gunman Kills One Near Paris in Suspected Attack on Immigrant Communities",
-          "url": "https://www.wsj.com/world/europe/gunman-kills-one-near-paris-in-suspected-attack-on-immigrant-communities-ed1ee830?mod=rss_worldnews",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "7223bc17ff",
-      "amnen": [
-        "asien",
-        "geopolitik",
-        "marknader",
-        "norden",
-        "varlden"
-      ],
-      "poang": 16.43,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T12:54:44+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "norden",
-          "usa"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Russia-Ukraine talks planned for November in UAE: Kremlin",
-              "url": "https://www.aljazeera.com/news/2026/10/23/russia-ukraine-talks-planned-for-november-in-uae-kremlin?traffic_source=rss",
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Russia and Ukraine trade fresh strikes despite renewed push for U.S.-brokered peace talks",
-              "url": "https://www.cnbc.com/2026/10/23/russia-ukraine-strikes-peace-talks.html",
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Talks between Russia, Ukraine and U.S. ‘planned’ to resume in November in Abu Dhabi",
-              "url": "https://www.thehindu.com/news/international/talks-between-russia-ukraine-and-us-planned-to-resume-in-november-in-abu-dhabi/article71615588.ece",
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "Yle News",
-              "land": "FI",
-              "rubrik": "Best chance for peace in Ukraine yet, but for grim reasons, says Russia expert",
-              "url": "https://yle.fi/a/74-20252835?origin=rss",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Why Russia wants peace between Iran and the Gulf",
-              "url": "https://rt-english.com/news/647534-russia-peace-iran-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null
-      },
-      "reserv_rubrik": "Russia-Ukraine talks planned for November in UAE: Kremlin",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Russia-Ukraine talks planned for November in UAE: Kremlin",
-          "url": "https://www.aljazeera.com/news/2026/10/23/russia-ukraine-talks-planned-for-november-in-uae-kremlin?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Russia and Ukraine trade fresh strikes despite renewed push for U.S.-brokered peace talks",
-          "url": "https://www.cnbc.com/2026/10/23/russia-ukraine-strikes-peace-talks.html",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Hindu",
-          "rubrik": "Talks between Russia, Ukraine and U.S. ‘planned’ to resume in November in Abu Dhabi",
-          "url": "https://www.thehindu.com/news/international/talks-between-russia-ukraine-and-us-planned-to-resume-in-november-in-abu-dhabi/article71615588.ece",
+          "rubrik": "Romania blames Russia for new deadly attack on ship",
+          "url": "https://www.thehindu.com/news/international/romania-blames-russia-for-new-deadly-attack-on-ship/article71616091.ece",
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -1147,133 +1019,97 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Yle News",
-          "rubrik": "Best chance for peace in Ukraine yet, but for grim reasons, says Russia expert",
-          "url": "https://yle.fi/a/74-20252835?origin=rss",
+          "namn": "Euractiv",
+          "rubrik": "Romania blames Russia for new deadly attack on ship",
+          "url": "https://www.rapporteur.com/news/romania-blames-russia-for-new-deadly-attack-on-ship/",
           "betalvagg": false,
           "typ": "media",
-          "land": "FI",
-          "region": "norden",
-          "agare": "public-service",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "RT",
-          "rubrik": "Why Russia wants peace between Iran and the Gulf",
-          "url": "https://rt-english.com/news/647534-russia-peace-iran-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "namn": "Politico Europe",
+          "rubrik": "Drone hits another ship in Black Sea near Romania, killing at least 1 sailor",
+          "url": "https://www.politico.eu/article/drone-hits-another-ship-in-black-sea-near-romania-killing-at-least-one-sailor/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
           "betalvagg": false,
           "typ": "media",
-          "land": "RU",
+          "land": "BE",
           "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
     },
     {
-      "id": "970389997b",
+      "id": "ec6c3191e2",
       "amnen": [
-        "europa",
-        "marknader",
+        "asien",
+        "geopolitik",
+        "usa",
         "varlden"
       ],
-      "poang": 14.98,
-      "antal_kallor": 5,
+      "poang": 12.93,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-10-23T17:21:00+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T17:32:47+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
+          "asien",
           "europa",
-          "mellanostern",
           "usa"
         ],
         "per_region": {
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "How Israeli settlers wearing keffiyehs are attacking West Bank olive groves",
-              "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
-              "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Netanyahu orders blockade of West Bank",
-              "url": "https://rt-english.com/news/647590-netanyahu-west-bank-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "statskontrollerad": true
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Israeli roadblocks disrupt schools and medical care in West Bank village",
-              "url": "https://www.aljazeera.com/news/2026/10/23/israeli-roadblocks-disrupt-schools-and-medical-care-in-west-bank-village?traffic_source=rss",
-              "statskontrollerad": false
-            }
-          ],
           "usa": [
             {
-              "kalla": "The Wall Street Journal",
+              "kalla": "The Hill",
               "land": "US",
-              "rubrik": "Netanyahu Calls for West Bank Lockdown After Deadly Attack",
-              "url": "https://www.wsj.com/world/middle-east/netanyahu-calls-for-west-bank-lockdown-after-deadly-attack-98d5e3e3?mod=rss_worldnews",
+              "rubrik": "Meghan Markle says she’s ‘deeply distressed’ in response to child pornography allegations against her father",
+              "url": "https://thehill.com/blogs/in-the-know/6168715-meghan-markle-father-investigation-response/",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Meghan Says She Is ‘Distressed’ by Claim Her Father Kept Child Abuse Images",
+              "url": "https://www.nytimes.com/2026/10/23/world/europe/meghan-markle-father-thomas-child-sexual-abuse.html",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
+              "url": "https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Meghan Markle ‘distressed’ as Philippines probes father over child sexual abuse images",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371976/meghan-markle-distressed-philippines-probes-father-over-child-sexual-abuse-images",
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": "saknas_i_sverige"
       },
-      "reserv_rubrik": "How Israeli settlers wearing keffiyehs are attacking West Bank olive groves",
+      "reserv_rubrik": "Meghan Markle says she’s ‘deeply distressed’ in response to child pornography allegations against her father",
       "kallor": [
         {
-          "namn": "France 24",
-          "rubrik": "How Israeli settlers wearing keffiyehs are attacking West Bank olive groves",
-          "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves",
+          "namn": "The Hill",
+          "rubrik": "Meghan Markle says she’s ‘deeply distressed’ in response to child pornography allegations against her father",
+          "url": "https://thehill.com/blogs/in-the-know/6168715-meghan-markle-father-investigation-response/",
           "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Israeli roadblocks disrupt schools and medical care in West Bank village",
-          "url": "https://www.aljazeera.com/news/2026/10/23/israeli-roadblocks-disrupt-schools-and-medical-care-in-west-bank-village?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
-          "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Netanyahu Calls for West Bank Lockdown After Deadly Attack",
-          "url": "https://www.wsj.com/world/middle-east/netanyahu-calls-for-west-bank-lockdown-after-deadly-attack-98d5e3e3?mod=rss_worldnews",
-          "betalvagg": true,
           "typ": "media",
           "land": "US",
           "region": "usa",
@@ -1281,15 +1117,37 @@
           "statskontrollerad": false
         },
         {
-          "namn": "RT",
-          "rubrik": "Netanyahu orders blockade of West Bank",
-          "url": "https://rt-english.com/news/647590-netanyahu-west-bank-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "namn": "The Guardian",
+          "rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father",
           "betalvagg": false,
           "typ": "media",
-          "land": "RU",
+          "land": "GB",
           "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Meghan Markle ‘distressed’ as Philippines probes father over child sexual abuse images",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371976/meghan-markle-distressed-philippines-probes-father-over-child-sexual-abuse-images",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Meghan Says She Is ‘Distressed’ by Claim Her Father Kept Child Abuse Images",
+          "url": "https://www.nytimes.com/2026/10/23/world/europe/meghan-markle-father-thomas-child-sexual-abuse.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
@@ -1302,11 +1160,14 @@
         "europa",
         "varlden"
       ],
-      "poang": 12.96,
+      "poang": 12.88,
       "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-10-23T17:09:51+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -1401,17 +1262,199 @@
       "granskad": false
     },
     {
+      "id": "22949ff758",
+      "amnen": [
+        "marknader",
+        "varlden"
+      ],
+      "poang": 10.98,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T17:57:54+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Trump administration sues to block possible Democratic win in Alaska",
+              "url": "https://www.aljazeera.com/news/2026/10/23/trump-administration-sues-to-block-possible-democratic-win-in-alaska?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Justice department sues to block Alaska Senate race certification if Trump-backed Republican loses – live",
+              "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
+              "url": "https://www.cnbc.com/2026/10/23/alaska-senate-election-doj-lawsuit-sullivan.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Trump administration sues to block possible Democratic win in Alaska",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Trump administration sues to block possible Democratic win in Alaska",
+          "url": "https://www.aljazeera.com/news/2026/10/23/trump-administration-sues-to-block-possible-democratic-win-in-alaska?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Justice department sues to block Alaska Senate race certification if Trump-backed Republican loses – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
+          "url": "https://www.cnbc.com/2026/10/23/alaska-senate-election-doj-lawsuit-sullivan.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "7a6fd03b02",
+      "amnen": [
+        "asien",
+        "europa",
+        "varlden"
+      ],
+      "poang": 10.96,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T17:49:04+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Many feared trapped after multistorey building collapses in Kenya",
+              "url": "https://www.aljazeera.com/news/2026/10/23/many-feared-trapped-after-multistorey-building-collapses-in-kenya?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Casualties feared as multi-storey building collapses in Nairobi",
+              "url": "https://www.thehindu.com/news/international/possible-deaths-in-building-collapse-in-nairobi-kenya/article71616572.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Many feared trapped under collapsed building in Nairobi",
+              "url": "https://www.dw.com/en/many-feared-trapped-under-collapsed-building-in-nairobi/a-79744598?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Many feared trapped after multistorey building collapses in Kenya",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Many feared trapped after multistorey building collapses in Kenya",
+          "url": "https://www.aljazeera.com/news/2026/10/23/many-feared-trapped-after-multistorey-building-collapses-in-kenya?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Casualties feared as multi-storey building collapses in Nairobi",
+          "url": "https://www.thehindu.com/news/international/possible-deaths-in-building-collapse-in-nairobi-kenya/article71616572.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Many feared trapped under collapsed building in Nairobi",
+          "url": "https://www.dw.com/en/many-feared-trapped-under-collapsed-building-in-nairobi/a-79744598?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
       "id": "bce3ae6c4f",
       "amnen": [
         "asien",
         "europa",
         "varlden"
       ],
-      "poang": 10.91,
+      "poang": 10.83,
       "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-10-23T08:45:58+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -1509,11 +1552,14 @@
         "europa",
         "varlden"
       ],
-      "poang": 10.89,
+      "poang": 10.81,
       "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-10-23T08:38:13+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -1611,11 +1657,14 @@
         "geopolitik",
         "varlden"
       ],
-      "poang": 10.85,
+      "poang": 10.77,
       "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-10-23T16:17:02+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa"
@@ -1704,19 +1753,20 @@
       "granskad": false
     },
     {
-      "id": "ef29ae667d",
+      "id": "601389167a",
       "amnen": [
-        "asien",
         "varlden"
       ],
       "poang": 10.72,
-      "antal_kallor": 3,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-10-23T15:16:14+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T07:53:58+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
-          "asien",
           "europa",
           "usa"
         ],
@@ -1725,38 +1775,43 @@
             {
               "kalla": "The Guardian",
               "land": "GB",
-              "rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
-              "url": "https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father",
+              "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
+              "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
               "statskontrollerad": false
-            }
-          ],
-          "asien": [
+            },
             {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Meghan Markle ‘distressed’ as Philippines probes father over child sexual abuse images",
-              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371976/meghan-markle-distressed-philippines-probes-father-over-child-sexual-abuse-images",
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
+              "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
               "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
+              "url": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
             }
           ],
           "usa": [
             {
               "kalla": "The New York Times",
               "land": "US",
-              "rubrik": "Meghan Says She Is ‘Distressed’ by Claim Her Father Kept Child Abuse Images",
-              "url": "https://www.nytimes.com/2026/10/23/world/europe/meghan-markle-father-thomas-child-sexual-abuse.html",
+              "rubrik": "Powerful Earthquake in Tibet Kills at Least 16",
+              "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html",
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": "saknas_i_sverige"
       },
-      "reserv_rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
+      "reserv_rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
       "kallor": [
         {
           "namn": "The Guardian",
-          "rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
-          "url": "https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father",
+          "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
+          "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
@@ -1765,26 +1820,37 @@
           "statskontrollerad": false
         },
         {
-          "namn": "South China Morning Post",
-          "rubrik": "Meghan Markle ‘distressed’ as Philippines probes father over child sexual abuse images",
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371976/meghan-markle-distressed-philippines-probes-father-over-child-sexual-abuse-images",
+          "namn": "BBC World",
+          "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
           "betalvagg": false,
           "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
           "statskontrollerad": false
         },
         {
           "namn": "The New York Times",
-          "rubrik": "Meghan Says She Is ‘Distressed’ by Claim Her Father Kept Child Abuse Images",
-          "url": "https://www.nytimes.com/2026/10/23/world/europe/meghan-markle-father-thomas-child-sexual-abuse.html",
+          "rubrik": "Powerful Earthquake in Tibet Kills at Least 16",
+          "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html",
           "betalvagg": true,
           "typ": "media",
           "land": "US",
           "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
+          "url": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false
@@ -1796,11 +1862,14 @@
         "geopolitik",
         "varlden"
       ],
-      "poang": 10.66,
+      "poang": 10.59,
       "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-10-23T06:49:24+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -1898,11 +1967,14 @@
         "europa",
         "varlden"
       ],
-      "poang": 10.55,
+      "poang": 10.48,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T13:55:40+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -1979,21 +2051,23 @@
       "granskad": false
     },
     {
-      "id": "977dd24665",
+      "id": "a530b318a4",
       "amnen": [
         "asien",
-        "europa",
+        "marknader",
         "varlden"
       ],
-      "poang": 10.43,
+      "poang": 9.91,
       "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-10-23T12:55:16+00:00",
-      "utkast": null,
+      "senast": "2026-10-23T17:26:21+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
-          "europa",
           "mellanostern"
         ],
         "per_region": {
@@ -2001,38 +2075,36 @@
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "Greece joins push to ban social media for minors",
-              "url": "https://www.aljazeera.com/news/2026/10/23/greece-joins-push-to-ban-social-media-for-minors?traffic_source=rss",
+              "rubrik": "US consumer sentiment hits a near-record low before midterm elections",
+              "url": "https://www.aljazeera.com/economy/2026/10/23/us-consumer-sentiment-hits-a-near-record-low-before-midterm-elections?traffic_source=rss",
               "statskontrollerad": false
             }
           ],
           "asien": [
             {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Greece passes social media ban for children under 15",
-              "url": "https://www.thehindu.com/news/international/greece-passes-social-media-ban-for-children-under-15/article71614919.ece",
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Yen on track to gain from US midterm elections and France unrest",
+              "url": "https://asia.nikkei.com/business/markets/currencies/yen-on-track-to-gain-from-us-midterm-elections-and-france-unrest",
               "statskontrollerad": false
-            }
-          ],
-          "europa": [
+            },
             {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Greece joins countries putting age-limits on social media, banning access for kids under 15",
-              "url": "https://www.dw.com/en/greece-joins-countries-putting-age-limits-on-social-media-banning-access-for-kids-under-15/a-79739606?maca=en-rss-en-all-1573-rdf",
-              "statskontrollerad": false
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "US midterm elections on track for record spending",
+              "url": "https://newsus.cgtn.com/news/2026-10-23/US-midterm-elections-on-track-for-record-spending-1RsT9VmPYDS/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "statskontrollerad": true
             }
           ]
         },
         "blind_flack": "saknas_i_sverige"
       },
-      "reserv_rubrik": "Greece joins push to ban social media for minors",
+      "reserv_rubrik": "US consumer sentiment hits a near-record low before midterm elections",
       "kallor": [
         {
           "namn": "Al Jazeera",
-          "rubrik": "Greece joins push to ban social media for minors",
-          "url": "https://www.aljazeera.com/news/2026/10/23/greece-joins-push-to-ban-social-media-for-minors?traffic_source=rss",
+          "rubrik": "US consumer sentiment hits a near-record low before midterm elections",
+          "url": "https://www.aljazeera.com/economy/2026/10/23/us-consumer-sentiment-hits-a-near-record-low-before-midterm-elections?traffic_source=rss",
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -2041,112 +2113,26 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Hindu",
-          "rubrik": "Greece passes social media ban for children under 15",
-          "url": "https://www.thehindu.com/news/international/greece-passes-social-media-ban-for-children-under-15/article71614919.ece",
-          "betalvagg": false,
+          "namn": "Nikkei Asia",
+          "rubrik": "Yen on track to gain from US midterm elections and France unrest",
+          "url": "https://asia.nikkei.com/business/markets/currencies/yen-on-track-to-gain-from-us-midterm-elections-and-france-unrest",
+          "betalvagg": true,
           "typ": "media",
-          "land": "IN",
+          "land": "JP",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Deutsche Welle",
-          "rubrik": "Greece joins countries putting age-limits on social media, banning access for kids under 15",
-          "url": "https://www.dw.com/en/greece-joins-countries-putting-age-limits-on-social-media-banning-access-for-kids-under-15/a-79739606?maca=en-rss-en-all-1573-rdf",
+          "namn": "CGTN",
+          "rubrik": "US midterm elections on track for record spending",
+          "url": "https://newsus.cgtn.com/news/2026-10-23/US-midterm-elections-on-track-for-record-spending-1RsT9VmPYDS/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
           "betalvagg": false,
           "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "4fc020bf14",
-      "amnen": [
-        "ai",
-        "geopolitik",
-        "marknader",
-        "usa",
-        "varlden"
-      ],
-      "poang": 9.99,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T17:23:08+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
-              "url": "https://www.cnbc.com/2026/10/23/alaska-senate-election-doj-lawsuit-sullivan.html",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Justice Department sues to block Alaska results if Sullivan loses",
-              "url": "https://thehill.com/homenews/campaign/6168331-justice-department-sues-to-block-alaska-results-if-sullivan-loses/",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Trump’s justice department sues to block Senate race certification in Alaska if Republican loses – live",
-              "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige"
-      },
-      "reserv_rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
-      "kallor": [
-        {
-          "namn": "CNBC",
-          "rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
-          "url": "https://www.cnbc.com/2026/10/23/alaska-senate-election-doj-lawsuit-sullivan.html",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Trump’s justice department sues to block Senate race certification in Alaska if Republican loses – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Justice Department sues to block Alaska results if Sullivan loses",
-          "url": "https://thehill.com/homenews/campaign/6168331-justice-department-sues-to-block-alaska-results-if-sullivan-loses/",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false
@@ -2159,11 +2145,14 @@
         "usa",
         "varlden"
       ],
-      "poang": 9.95,
+      "poang": 9.88,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T17:07:52+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -2237,16 +2226,106 @@
       "granskad": false
     },
     {
+      "id": "fa7fc366dc",
+      "amnen": [
+        "asien",
+        "europa",
+        "varlden"
+      ],
+      "poang": 9.87,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T17:06:04+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "UK children just as likely to have suffered harm on social media despite crackdown",
+              "url": "https://www.theguardian.com/society/2026/oct/23/uk-children-just-as-likely-to-have-suffered-harm-on-social-media-despite-crackdown-ofcom-online-safety-act",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Greece joins countries putting age-limits on social media, banning access for kids under 15",
+              "url": "https://www.dw.com/en/greece-joins-countries-putting-age-limits-on-social-media-banning-access-for-kids-under-15/a-79739606?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Greece passes social media ban for children under 15",
+              "url": "https://www.thehindu.com/news/international/greece-passes-social-media-ban-for-children-under-15/article71614919.ece",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "UK children just as likely to have suffered harm on social media despite crackdown",
+      "kallor": [
+        {
+          "namn": "The Guardian",
+          "rubrik": "UK children just as likely to have suffered harm on social media despite crackdown",
+          "url": "https://www.theguardian.com/society/2026/oct/23/uk-children-just-as-likely-to-have-suffered-harm-on-social-media-despite-crackdown-ofcom-online-safety-act",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Greece passes social media ban for children under 15",
+          "url": "https://www.thehindu.com/news/international/greece-passes-social-media-ban-for-children-under-15/article71614919.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Greece joins countries putting age-limits on social media, banning access for kids under 15",
+          "url": "https://www.dw.com/en/greece-joins-countries-putting-age-limits-on-social-media-banning-access-for-kids-under-15/a-79739606?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
       "id": "cf5dae9a77",
       "amnen": [
         "asien",
         "varlden"
       ],
-      "poang": 9.94,
+      "poang": 9.86,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T09:00:00+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -2328,11 +2407,14 @@
         "marknader",
         "varlden"
       ],
-      "poang": 9.54,
+      "poang": 9.47,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T13:50:46+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -2406,100 +2488,19 @@
       "granskad": false
     },
     {
-      "id": "344223ef56",
-      "amnen": [
-        "europa",
-        "geopolitik",
-        "varlden"
-      ],
-      "poang": 9.47,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T13:17:46+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
-              "url": "https://www.aljazeera.com/news/2026/10/23/trump-ordered-to-testify-in-10bn-bbc-lawsuit-discovery-what-happens-now?traffic_source=rss",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Trump ordered to answer questions under oath in BBC lawsuit",
-              "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Trump ordered to sit for deposition in defamation lawsuit against the BBC",
-              "url": "https://www.lemonde.fr/en/international/article/2026/10/23/judge-orders-trump-to-sit-for-a-deposition-in-his-defamation-lawsuit-against-the-bbc_6762010_4.html",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige"
-      },
-      "reserv_rubrik": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
-          "url": "https://www.aljazeera.com/news/2026/10/23/trump-ordered-to-testify-in-10bn-bbc-lawsuit-discovery-what-happens-now?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Trump ordered to answer questions under oath in BBC lawsuit",
-          "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Trump ordered to sit for deposition in defamation lawsuit against the BBC",
-          "url": "https://www.lemonde.fr/en/international/article/2026/10/23/judge-orders-trump-to-sit-for-a-deposition-in-his-defamation-lawsuit-against-the-bbc_6762010_4.html",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
       "id": "258f6905b4",
       "amnen": [
         "asien",
         "varlden"
       ],
-      "poang": 9.27,
+      "poang": 9.19,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T11:38:12+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -2573,6 +2574,89 @@
       "granskad": false
     },
     {
+      "id": "3b991477e9",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "poang": 8.95,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T17:44:00+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "Man i 25-årsåldern död efter skjutning i södra Stockholm",
+              "url": "https://www.sverigesradio.se/artikel/9327663",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "En man död efter skjutning i södra Stockholm",
+              "url": "https://www.svt.se/nyheter/lokalt/stockholm/larm-om-skottlossning-i-sodra-stockholm-kzidi4",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Man skjuten till döds vid bil i södra Stockholm",
+              "url": "https://www.dn.se/sverige/en-skjuten-vid-bil-i-sodra-stockholm/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige"
+      },
+      "reserv_rubrik": "Man i 25-årsåldern död efter skjutning i södra Stockholm",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "Man i 25-årsåldern död efter skjutning i södra Stockholm",
+          "url": "https://www.sverigesradio.se/artikel/9327663",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "En man död efter skjutning i södra Stockholm",
+          "url": "https://www.svt.se/nyheter/lokalt/stockholm/larm-om-skottlossning-i-sodra-stockholm-kzidi4",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Man skjuten till döds vid bil i södra Stockholm",
+          "url": "https://www.dn.se/sverige/en-skjuten-vid-bil-i-sodra-stockholm/",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
       "id": "e447613819",
       "amnen": [
         "asien",
@@ -2581,11 +2665,14 @@
         "teknik",
         "varlden"
       ],
-      "poang": 8.38,
+      "poang": 8.3,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T04:31:29+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -2663,11 +2750,14 @@
       "amnen": [
         "varlden"
       ],
-      "poang": 7.95,
+      "poang": 7.87,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T17:07:07+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -2723,80 +2813,18 @@
       "granskad": false
     },
     {
-      "id": "b3cca12490",
-      "amnen": [
-        "europa",
-        "varlden"
-      ],
-      "poang": 7.94,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T17:01:05+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Many feared trapped after Kenya building collapse",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/many-feared-trapped-after-kenya-building-collapse?traffic_source=rss",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Many feared trapped under collapsed building in Nairobi",
-              "url": "https://www.dw.com/en/many-feared-trapped-under-collapsed-building-in-nairobi/a-79744598?maca=en-rss-en-all-1573-rdf",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null
-      },
-      "reserv_rubrik": "Many feared trapped after Kenya building collapse",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Many feared trapped after Kenya building collapse",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/many-feared-trapped-after-kenya-building-collapse?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Many feared trapped under collapsed building in Nairobi",
-          "url": "https://www.dw.com/en/many-feared-trapped-under-collapsed-building-in-nairobi/a-79744598?maca=en-rss-en-all-1573-rdf",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
       "id": "75e26271e1",
       "amnen": [
         "varlden"
       ],
-      "poang": 7.89,
+      "poang": 7.82,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T16:39:34+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -2857,11 +2885,14 @@
         "norden",
         "varlden"
       ],
-      "poang": 7.89,
+      "poang": 7.82,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T16:38:45+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "norden",
@@ -2923,11 +2954,14 @@
         "europa",
         "varlden"
       ],
-      "poang": 7.88,
+      "poang": 7.8,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T16:31:44+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -2988,11 +3022,14 @@
         "marknader",
         "varlden"
       ],
-      "poang": 7.8,
+      "poang": 7.73,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T15:56:31+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -3053,11 +3090,14 @@
         "europa",
         "varlden"
       ],
-      "poang": 7.68,
+      "poang": 7.6,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T14:56:05+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -3119,11 +3159,14 @@
         "europa",
         "teknik"
       ],
-      "poang": 7.66,
+      "poang": 7.58,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T14:47:41+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -3183,11 +3226,14 @@
       "amnen": [
         "varlden"
       ],
-      "poang": 7.6,
+      "poang": 7.52,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T14:18:41+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -3251,11 +3297,14 @@
         "marknader",
         "varlden"
       ],
-      "poang": 7.5,
+      "poang": 7.43,
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-22T21:31:29+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -3329,71 +3378,6 @@
       "granskad": false
     },
     {
-      "id": "eec5bb323b",
-      "amnen": [
-        "europa",
-        "varlden"
-      ],
-      "poang": 7.47,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T13:17:18+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Russia drops cluster bombs on Ukraine as Kyiv consolidates front line",
-              "url": "https://www.aljazeera.com/news/2026/10/23/russia-drops-cluster-bombs-on-ukraine-as-kyiv-consolidates-front-line?traffic_source=rss",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Ukraine: Life near the front line in Sloviansk",
-              "url": "https://www.dw.com/en/ukraine-life-near-the-front-line-in-sloviansk/a-79722636?maca=en-rss-en-all-1573-rdf",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null
-      },
-      "reserv_rubrik": "Russia drops cluster bombs on Ukraine as Kyiv consolidates front line",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Russia drops cluster bombs on Ukraine as Kyiv consolidates front line",
-          "url": "https://www.aljazeera.com/news/2026/10/23/russia-drops-cluster-bombs-on-ukraine-as-kyiv-consolidates-front-line?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Ukraine: Life near the front line in Sloviansk",
-          "url": "https://www.dw.com/en/ukraine-life-near-the-front-line-in-sloviansk/a-79722636?maca=en-rss-en-all-1573-rdf",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
       "id": "9697134824",
       "amnen": [
         "asien",
@@ -3402,11 +3386,14 @@
         "marknader",
         "varlden"
       ],
-      "poang": 7.4,
+      "poang": 7.32,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T12:42:00+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -3468,11 +3455,14 @@
         "europa",
         "varlden"
       ],
-      "poang": 7.4,
+      "poang": 7.32,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T12:41:39+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "europa",
@@ -3528,16 +3518,148 @@
       "granskad": false
     },
     {
+      "id": "09ff844752",
+      "amnen": [
+        "europa",
+        "varlden"
+      ],
+      "poang": 6.99,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T18:03:00+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+              "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Several killed, dozens wounded in Jordan church shooting",
+              "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+      "kallor": [
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+          "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Several killed, dozens wounded in Jordan church shooting",
+          "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "7076e53df8",
+      "amnen": [
+        "varlden"
+      ],
+      "poang": 6.91,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T17:22:11+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
+      "perspektiv": {
+        "regioner": [
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Israel launches collective punishment campaign in Hebron after two soldiers killed",
+              "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead",
+              "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Israel launches collective punishment campaign in Hebron after two soldiers killed",
+      "kallor": [
+        {
+          "namn": "The Guardian",
+          "rubrik": "Israel launches collective punishment campaign in Hebron after two soldiers killed",
+          "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead",
+          "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
       "id": "88b73a541e",
       "amnen": [
         "marknader",
         "teknik"
       ],
-      "poang": 6.97,
+      "poang": 6.89,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T17:15:08+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "usa"
@@ -3590,68 +3712,6 @@
       "granskad": false
     },
     {
-      "id": "fbb15f4d03",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "poang": 6.88,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T16:31:20+00:00",
-      "utkast": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "En person skjuten i södra Stockholm",
-              "url": "https://www.svt.se/nyheter/lokalt/stockholm/larm-om-skottlossning-i-sodra-stockholm-kzidi4",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "En skjuten vid bil i södra Stockholm",
-              "url": "https://www.dn.se/sverige/en-skjuten-vid-bil-i-sodra-stockholm/",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige"
-      },
-      "reserv_rubrik": "En person skjuten i södra Stockholm",
-      "kallor": [
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "En person skjuten i södra Stockholm",
-          "url": "https://www.svt.se/nyheter/lokalt/stockholm/larm-om-skottlossning-i-sodra-stockholm-kzidi4",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "En skjuten vid bil i södra Stockholm",
-          "url": "https://www.dn.se/sverige/en-skjuten-vid-bil-i-sodra-stockholm/",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false
-    },
-    {
       "id": "41d1b35420",
       "amnen": [
         "asien",
@@ -3659,11 +3719,14 @@
         "rymd",
         "varlden"
       ],
-      "poang": 6.67,
+      "poang": 6.59,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T06:50:51+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "asien",
@@ -3724,11 +3787,14 @@
         "sverige",
         "varlden"
       ],
-      "poang": 6.6,
+      "poang": 6.52,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T14:19:00+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: 'ThinkingBlock' object has no attribute 'text'"
+      },
       "perspektiv": {
         "regioner": [
           "sverige"
@@ -3785,7 +3851,7 @@
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 47,
+      "artiklar": 45,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -3797,7 +3863,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 107,
+      "artiklar": 108,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -3809,13 +3875,13 @@
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 15,
       "url": "https://www.breakit.se/feed/artiklar"
     },
     {
       "id": "nyteknik",
       "ok": false,
-      "fel": "HTTP Error 404: Not Found"
+      "fel": "sidan är html, inte ett flöde"
     },
     {
       "id": "yle",
@@ -3838,7 +3904,7 @@
     {
       "id": "scb",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 1,
       "url": "https://www.scb.se/Feed/statistiknyheter/"
     },
     {
@@ -3910,7 +3976,7 @@
     {
       "id": "elpais",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 23,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
     },
     {
@@ -3956,7 +4022,7 @@
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 29,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -3985,8 +4051,9 @@
     },
     {
       "id": "fed",
-      "ok": false,
-      "fel": "HTTP Error 404: Not Found"
+      "ok": true,
+      "artiklar": 0,
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml"
     },
     {
       "id": "nasa",
@@ -4015,7 +4082,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 54,
+      "artiklar": 50,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -4047,19 +4114,19 @@
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 23,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 23,
+      "artiklar": 24,
       "url": "https://www.rt.com/rss/news/"
     },
     {
       "id": "imf",
       "ok": false,
-      "fel": "HTTP Error 429: Too Many Requests"
+      "fel": "HTTP Error 404: Not Found"
     },
     {
       "id": "arxiv-ai",
@@ -4076,7 +4143,7 @@
     {
       "id": "openai",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 3,
       "url": "https://openai.com/news/rss.xml"
     },
     {
@@ -4124,7 +4191,7 @@
     {
       "id": "nature",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 9,
       "url": "https://www.nature.com/nature.rss"
     },
     {
