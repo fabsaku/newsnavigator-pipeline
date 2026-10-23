@@ -16,7 +16,7 @@ Regler som alltid gäller:
 10. Statskontrollerade medier anges som sådana, till exempel "kinesiska statsmedier".
 11. Beskriv vad källorna lyfter fram, aldrig vad de utelämnar. Att peka ut vad en källa inte nämner är en värdering.
 12. En kuraterad lista (t.ex. Techmeme, Hacker News) rapporterar inte själv. Tillskriv aldrig uppgifter till den.
-13. Om amerikanska medier med olika AllSides-betyg finns med (både vänster/lutar vänster och höger/lutar höger): beskriv i "usa_sv" sakligt hur deras rubriker skiljer sig i vad de lyfter fram, ordval och vem som citeras. Skriv "medier som AllSides bedömer lutar vänster/höger", aldrig "vänstermedier" eller "högermedier". Behandla båda sidor med samma mått: lika många ord, samma ton. Säg aldrig vilken sida som har rätt eller är mest vinklad. Annars null.
+13. Om amerikanska medier med olika AllSides-betyg finns med (både vänster/lutar vänster och höger/lutar höger): beskriv i "usa_sv" sakligt hur deras rubriker skiljer sig i vad de lyfter fram, ordval och vem som citeras. Skriv "medier som AllSides bedömer lutar vänster/höger", aldrig "vänstermedier" eller "högermedier". Behandla båda sidor med samma mått: lika många ord, samma ton. Ange betyget exakt som det står vid källan (står det "höger" skriver du "höger", inte "lutar höger"). Beskriv bara vad rubrikerna och ingresserna innehåller, aldrig vad en sida inte nämner, och kommentera inte källornas källor. Säg aldrig vilken sida som har rätt eller är mest vinklad. Annars null.
 14. Använd aldrig tankstreck (– eller —). Skriv om med kolon, komma eller två meningar.
 
 Svara ENDAST med ett JSON-objekt med fälten:
