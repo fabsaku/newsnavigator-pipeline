@@ -1,6 +1,6 @@
-# Källstatus 2026-10-23 19:20 UTC
+# Källstatus 2026-10-23 19:25 UTC
 
-60/76 OK
+62/77 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
@@ -78,5 +78,6 @@
 | CyberScoop | usa | OK | 10 | 2026-10-23 |  |
 | The Information | usa | OK | 20 | 2026-10-23 |  |
 | Techmeme | usa | OK | 15 | 2026-10-23 |  |
-| Hacker News | usa | FEL | 0 |  | HTTP Error 502: Bad Gateway |
+| Hacker News | usa | OK | 7 | 2026-10-23 |  |
 | Import AI | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
+| Superhuman | usa | OK | 5 | 2026-10-23 |  |
