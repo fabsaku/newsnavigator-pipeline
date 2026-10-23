@@ -33,3 +33,6 @@ Rubriken säger vad som har hänt. Den överdriver inte och undanhåller inte sv
 
 ## 10. Ansvarig utgivare
 Fabian Sandberg Kuylenstierna är ansvarig utgivare och har sista ordet om vad som publiceras.
+
+## 11. USA: blått och rött, med lånade betyg
+Vi visar hur amerikanska medier med olika publik berättar om samma händelse. Vilken publik ett medium vänder sig till avgör vi inte själva: vi använder AllSides betyg (vänster, lutar vänster, mitten, lutar höger, höger) och anger det vid varje källa. Båda sidor beskrivs med samma mått och samma ton. Vi säger aldrig vilken sida som har rätt. Betygen kontrolleras minst en gång per kvartal, och ett enda betygsinstitut har sina begränsningar, vilket vi är öppna med.

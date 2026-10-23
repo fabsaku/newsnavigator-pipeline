@@ -115,8 +115,16 @@ def fetch(sources, max_age_hours):
         if feed is None:
             report.append({"id": s["id"], "ok": False, "fel": err})
             continue
-        n = 0
-        for e in feed.entries:
+        entries = list(feed.entries)
+        for extra in s.get("extra", []):
+            more, _, _ = fetch_one({**s, "url": extra, "alternativ": []})
+            if more is not None:
+                entries += more.entries
+        seen_links, n = set(), 0
+        for e in entries:
+            if e.get("link") and e.get("link") in seen_links:
+                continue
+            seen_links.add(e.get("link"))
             ts = e.get("published_parsed") or e.get("updated_parsed")
             epoch = time.mktime(ts) if ts else None
             if max_age_hours and epoch and now - epoch > max_age_hours * 3600:
@@ -139,6 +147,7 @@ def fetch(sources, max_age_hours):
                 "region": s.get("region", "global"),
                 "owner": s.get("agare", ""),
                 "state_controlled": s.get("statskontrollerad", False),
+                "usa_lean": s.get("usa_lutning"),
                 "topics": list(s.get("amnen", [])),
                 "title": clean(e.get("title", ""), 200),
                 # Betalväggskällor och nyhetsbrev: bara rubrik och länk används
@@ -263,7 +272,30 @@ def perspective(c):
         blind = "saknas_i_sverige"      # stort i världen, inget i svenska källor
     elif n_sources >= 2 and names <= HOME:
         blind = "bara_i_sverige"        # bara svenska och nordiska källor
-    return {"regioner": sorted(names), "per_region": regions, "blind_flack": blind}
+    return {"regioner": sorted(names), "per_region": regions, "blind_flack": blind, **usa_spectrum(c)}
+
+
+# AllSides skala grupperad i tre: vänster (blå publik), mitten, höger (röd publik)
+LEAN_SIDE = {"vanster": "bla", "lutar_vanster": "bla", "mitten": "mitten", "lutar_hoger": "rod", "hoger": "rod"}
+
+
+def usa_spectrum(c):
+    """Så berättar USA: amerikanska rubriker grupperade efter mediernas publik enligt AllSides.
+
+    Visas bara när minst två sidor finns med. Blind fläck när minst tre amerikanska medier
+    från en sida rapporterar och ingen från den andra.
+    """
+    sides = {}
+    for i in c["items"]:
+        side = LEAN_SIDE.get(i.get("usa_lean") or "")
+        if side:
+            sides.setdefault(side, []).append({"kalla": i["source_name"], "rubrik": i["title"], "url": i["url"],
+                                               "lutning": i["usa_lean"]})
+    blind = None
+    for a, b in (("bla", "rod"), ("rod", "bla")):
+        if len({x["kalla"] for x in sides.get(a, [])}) >= 3 and not sides.get(b):
+            blind = f"mest_{a}"
+    return {"usa": sides if len(sides) >= 2 else None, "usa_blind": blind}
 
 
 def independent(c):

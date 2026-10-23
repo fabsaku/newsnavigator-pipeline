@@ -36,7 +36,7 @@ SECTIONS = [
 
 TXT = {
     "sv": {"brev": "Morgonbrevet från Newsnavigator", "korthet": "I korthet", "minuter": "min läsning",
-           "varlden": "Så ser världen på det", "skiljer": "Källorna skiljer sig åt:", "kallor": "Källor",
+           "varlden": "Så ser världen på det", "usa": "USA: blått och rött", "skiljer": "Källorna skiljer sig åt:", "kallor": "Källor",
            "betalvagg": "betalvägg", "stat": "statskontrollerat", "utkast": "UTKAST",
            "rad": "Redaktörens rad", "princip": "Vi levererar nyheterna. Vad du gör av dem är upp till dig.",
            "ai": "Notiserna är skrivna med hjälp av AI utifrån källornas rubriker och ingresser och granskade av redaktionen innan utskick. Läs hela artiklarna hos källorna.",
@@ -45,7 +45,7 @@ TXT = {
            "manader": ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
                        "september", "oktober", "november", "december"]},
     "en": {"brev": "The morning brief from Newsnavigator", "korthet": "In brief", "minuter": "min read",
-           "varlden": "How the world sees it", "skiljer": "Sources differ:", "kallor": "Sources",
+           "varlden": "How the world sees it", "usa": "US: blue and red", "skiljer": "Sources differ:", "kallor": "Sources",
            "betalvagg": "paywall", "stat": "state-controlled", "utkast": "DRAFT",
            "rad": "Editor's note", "princip": "We deliver the news. What you make of it is up to you.",
            "ai": "These briefs are written with the help of AI from the sources' headlines and standfirsts, and reviewed by the editors before sending. Read the full articles at the source.",
@@ -187,6 +187,11 @@ def _story(ev, lang, first):
         rows.append(f'<p style="margin:0 0 10px 0;padding-left:12px;border-left:2px solid {FG};font-family:{SANS};'
                     f'font-size:15px;line-height:1.5;color:{FG}"><b>{t["varlden"]}</b> '
                     f'<span style="font-family:{MONO};font-size:11px;color:{MUTED}">{len(regs)} {t["regioner"]}</span><br>{_e(persp)}</p>')
+    usa = d.get("usa_en" if lang == "en" else "usa_sv") or d.get("usa_sv")
+    if usa and (ev.get("perspektiv") or {}).get("usa"):
+        rows.append(f'<p style="margin:0 0 10px 0;padding-left:12px;border-left:2px solid {FG};font-family:{SANS};'
+                    f'font-size:15px;line-height:1.5;color:{FG}"><b>{t["usa"]}</b> '
+                    f'<span style="font-family:{MONO};font-size:11px;color:{MUTED}">AllSides</span><br>{_e(usa)}</p>')
     if dis:
         rows.append(f'<p style="margin:0 0 10px 0;font-family:{SANS};font-size:15px;line-height:1.5;color:{FG}">'
                     f'<b>{t["skiljer"]}</b> {_e(dis)}</p>')
@@ -269,6 +274,9 @@ def build_text(lang, chosen, groups, col, now):
             persp = d.get(f"perspektiv_{lang}") or d.get("perspektiv_sv")
             if persp and len((e.get("perspektiv") or {}).get("regioner", [])) >= 2:
                 out.append(f"{t['varlden']}: {persp}")
+            usa = d.get(f"usa_{lang}") or d.get("usa_sv")
+            if usa and (e.get("perspektiv") or {}).get("usa"):
+                out.append(f"{t['usa']}: {usa}")
             for s in e["kallor"][:MAX_KALLOR]:
                 out.append(f"  {s['namn']}{' (' + t['betalvagg'] + ')' if s.get('betalvagg') else ''}: {s['url']}")
             out.append("")

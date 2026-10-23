@@ -49,6 +49,9 @@ details[open]{padding-bottom:16px}
 .regions{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
 .region h4{margin:0 0 6px;font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
 .region ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.usa{margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
+.usa h4.t{margin:0 0 10px;font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
+.usa .note{font-size:12px;color:var(--mut);margin:10px 0 0}
 .region li{font-size:14px;line-height:1.4}.region li .who{display:block;color:var(--mut);font-size:12px}
 .dis{border-left:2px solid var(--fg);padding-left:12px;font-size:15px;line-height:1.5;color:var(--body);max-width:820px}
 .src{font-size:14px;color:var(--mut);line-height:1.6;max-width:820px}.src a{color:var(--fg)}
@@ -94,6 +97,28 @@ def _mascot():
     return re.sub(r"<svg ", '<svg role="img" aria-label="Newsgator" ', svg, count=1)
 
 
+SIDES = [("bla", "Blå publik", "Blue audience"), ("mitten", "Mitten", "Centre"), ("rod", "Röd publik", "Red audience")]
+LEANS = {"vanster": ("vänster", "left"), "lutar_vanster": ("lutar vänster", "lean left"), "mitten": ("mitten", "centre"),
+         "lutar_hoger": ("lutar höger", "lean right"), "hoger": ("höger", "right")}
+
+
+def _usa(p, d):
+    sides = p.get("usa")
+    if not sides:
+        return ""
+    cols = []
+    for key, sv, en in SIDES:
+        items = sides.get(key) or []
+        lis = "".join(
+            f'<li><a href="{_e(x["url"])}" rel="noopener">{_e(x["rubrik"])}</a>'
+            f'<span class="who">{_e(x["kalla"])} · AllSides: {_both(*LEANS[x["lutning"]])}</span></li>' for x in items)
+        cols.append(f'<div class="region"><h4>{_both(sv, en)}</h4><ul>{lis or "<li class=who>" + _both("Inga rubriker", "No headlines") + "</li>"}</ul></div>')
+    txt = f'<p class="persp">{_both(d["usa_sv"], d.get("usa_en"))}</p>' if d.get("usa_sv") else ""
+    return (f'<div class="usa"><h4 class="t">{_both("USA: blått och rött", "US: blue and red")}</h4>{txt}'
+            f'<div class="regions">{"".join(cols)}</div>'
+            f'<p class="note">{_both("Indelningen bygger på AllSides betyg av medierna, inte på vår bedömning.", "Grouping based on AllSides ratings of the outlets, not our own judgement.")}</p></div>')
+
+
 def _event(ev, lead):
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
@@ -112,6 +137,10 @@ def _event(ev, lead):
         badges.append(f'<span class="badge">{_both("Tunt underlag", "Thin sourcing")}</span>')
     if ev.get("har_primarkalla"):
         badges.append(f'<span class="badge">{_both("Primärkälla", "Primary source")}</span>')
+    if p.get("usa_blind") == "mest_bla":
+        badges.append(f'<span class="badge strong">{_both("Mest i medier med blå publik", "Mostly in blue-audience media")}</span>')
+    elif p.get("usa_blind") == "mest_rod":
+        badges.append(f'<span class="badge strong">{_both("Mest i medier med röd publik", "Mostly in red-audience media")}</span>')
     blind = p.get("blind_flack")
     if blind == "saknas_i_sverige" and ev.get("_over_sprak"):
         badges.append(f'<span class="badge strong">{_both("Saknas i svenska medier", "Not in Swedish media")}</span>')
@@ -124,7 +153,8 @@ def _event(ev, lead):
         summary = f'<p class="sum">{_both(d["sammanfattning_sv"], d.get("sammanfattning_en"))}</p>'
 
     world = ""
-    if len(regs) >= 2:
+    usa = _usa(p, d)
+    if len(regs) >= 2 or usa:
         cols = []
         for r in regs:
             items = "".join(
@@ -136,7 +166,7 @@ def _event(ev, lead):
         persp = f'<p class="persp">{_both(d["perspektiv_sv"], d.get("perspektiv_en"))}</p>' if d.get("perspektiv_sv") else ""
         world = (f'<details><summary>{_both("Så ser världen på det", "How the world sees it")} '
                  f'&nbsp;<span class="mono">{len(regs)} {_both("regioner", "regions")}</span></summary>'
-                 f'{persp}<div class="regions">{"".join(cols)}</div></details>')
+                 f'{persp}<div class="regions">{"".join(cols) if len(regs) >= 2 else ""}</div>{usa}</details>')
 
     dis = f'<div class="dis"><b>{_both("Källorna skiljer sig åt:", "Sources differ:")}</b> {_both(d["oenighet"], d.get("oenighet_en"))}</div>' \
         if d.get("oenighet") else ""

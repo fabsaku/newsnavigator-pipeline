@@ -1,5 +1,6 @@
 # Newsnavigator källista v0.2
 # Fält: id, namn, url, alternativ (reservadresser som prövas om url inte fungerar),
+#       extra (fler flöden från samma källa), usa_lutning (AllSides betyg, bara amerikanska medier),
 #       lanka (fast länk till läsare), bara_rubrik (använd aldrig ingressen), avsandare (filtrera flöde med flera nyhetsbrev),
 #       amnen, sprak, typ (media/primar/forskning/kuraterat), betalvagg,
 #       kuraterat = nyhetsbrev och topplistor som samlar andras nyheter. Räknas inte som oberoende källa.
@@ -43,13 +44,13 @@ sources:
   - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm?rss", alternativ: ["https://www.nato.int/cps/rss/en/natohq/rssFeed.xml", "https://www.nato.int/rss/news.xml", "https://www.nato.int/cps/rss/en/natohq/rssFeed.xsl/rssFeed.xml"], amnen: [forsvar, geopolitik], sprak: en, typ: primar, betalvagg: false, land: INT, region: europa, agare: organisation, statskontrollerad: false}
 
   # ---------- USA, över det politiska spektrumet ----------
-  - {id: nyt, namn: The New York Times, url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: wapo, namn: The Washington Post, url: "https://feeds.washingtonpost.com/rss/world", amnen: [varlden], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: wsj, namn: The Wall Street Journal, url: "https://feeds.content.dowjones.io/public/rss/RSSWorldNews", amnen: [varlden, marknader], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: fox, namn: Fox News, url: "https://moxie.foxnews.com/google-publisher/world.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: npr, namn: NPR, url: "https://feeds.npr.org/1004/rss.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: public-service, statskontrollerad: false}
-  - {id: thehill, namn: The Hill, url: "https://thehill.com/news/feed/", amnen: [usa, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: cnbc, namn: CNBC, url: "https://www.cnbc.com/id/100003114/device/rss/rss.html", amnen: [marknader], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: nyt, namn: The New York Times, url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"]}
+  - {id: wapo, namn: The Washington Post, url: "https://feeds.washingtonpost.com/rss/world", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://feeds.washingtonpost.com/rss/politics"]}
+  - {id: wsj, namn: The Wall Street Journal, url: "https://feeds.content.dowjones.io/public/rss/RSSWorldNews", amnen: [varlden, marknader], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten, extra: ["https://feeds.content.dowjones.io/public/rss/socialpoliticsfeed"]}
+  - {id: fox, namn: Fox News, url: "https://moxie.foxnews.com/google-publisher/world.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger, extra: ["https://moxie.foxnews.com/google-publisher/politics.xml"]}
+  - {id: npr, namn: NPR, url: "https://feeds.npr.org/1004/rss.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: public-service, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://feeds.npr.org/1014/rss.xml"]}
+  - {id: thehill, namn: The Hill, url: "https://thehill.com/news/feed/", amnen: [usa, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
+  - {id: cnbc, namn: CNBC, url: "https://www.cnbc.com/id/100003114/device/rss/rss.html", amnen: [marknader], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
   - {id: fed, namn: Federal Reserve, url: "https://www.federalreserve.gov/feeds/press_all.xml", amnen: [marknader], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: nasa, namn: NASA, url: "https://www.nasa.gov/news-release/feed/", amnen: [rymd], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
 
@@ -115,6 +116,30 @@ sources:
   - {id: superhuman, namn: Superhuman, url: "https://kill-the-newsletter.com/feeds/gbmwcl3qkhjs7ddputic8hmeoa8p5i86wdre8whf.xml", lanka: "https://www.superhuman.ai/", bara_rubrik: true, avsandare: joinsuperhuman.ai, amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   # The Code kommer från samma företag och hamnar i samma flöde. Avsändaren skiljer dem åt.
   - {id: the-code, namn: The Code, url: "https://kill-the-newsletter.com/feeds/gbmwcl3qkhjs7ddputic8hmeoa8p5i86wdre8whf.xml", lanka: "https://www.codenewsletter.ai/", bara_rubrik: true, avsandare: codenewsletter.ai, amnen: [ai, teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+
+  # ---------- USA: blått och rött ----------
+  # usa_lutning enligt AllSides (allsides.com), kontrollerat 2026-10-23: vanster, lutar_vanster, mitten, lutar_hoger, hoger.
+  # Betyget är AllSides bedömning, inte vår. Det används bara för att visa hur rubrikerna skiljer sig åt.
+  - {id: cnn, namn: CNN, url: "http://rss.cnn.com/rss/cnn_latest.rss", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
+  - {id: politico, namn: Politico, url: "https://rss.politico.com/politics-news.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
+  - {id: axios, namn: Axios, url: "https://api.axios.com/feed/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
+  - {id: huffpost, namn: HuffPost, url: "https://www.huffpost.com/section/front-page/feed", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
+  - {id: vox, namn: Vox, url: "https://www.vox.com/rss/index.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
+  - {id: wash-examiner, namn: Washington Examiner, url: "https://www.washingtonexaminer.com/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
+  - {id: wash-times, namn: The Washington Times, url: "https://www.washingtontimes.com/rss/headlines/news/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
+  - {id: reason, namn: Reason, url: "https://reason.com/latest/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
+  - {id: nypost, namn: New York Post, url: "https://nypost.com/news/feed/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger}
+  - {id: daily-caller, namn: The Daily Caller, url: "https://dailycaller.com/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger}
+
+  # ---------- Tech utanför Silicon Valley och djupare tech ----------
+  - {id: rest-of-world, namn: Rest of World, url: "https://restofworld.org/feed/latest/", amnen: [teknik, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: global, agare: organisation, statskontrollerad: false}
+  - {id: sifted, namn: Sifted, url: "https://sifted.eu/feed", amnen: [startups, teknik, europa], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
+  - {id: technode, namn: TechNode, url: "https://technode.com/feed/", amnen: [teknik, asien], sprak: en, typ: media, betalvagg: false, land: CN, region: asien, agare: privat, statskontrollerad: false}
+  - {id: 404media, namn: 404 Media, url: "https://www.404media.co/rss/", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: platformer, namn: Platformer, url: "https://www.platformer.news/rss/", amnen: [teknik], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: toms-hardware, namn: Tom's Hardware, url: "https://www.tomshardware.com/feeds/all", amnen: [halvledare, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: ieee-spectrum, namn: IEEE Spectrum, url: "https://spectrum.ieee.org/feeds/feed.rss", amnen: [teknik, vetenskap], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: simon-willison, namn: Simon Willison, url: "https://simonwillison.net/atom/everything/", amnen: [ai], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
 # Saknar RSS (bevakas på annat sätt senare): IEA, Xinhua.
 # Kräver licens (läggs till när avtal finns): Reuters, AP, AFP, TT.
