@@ -1,6 +1,7 @@
 # Newsnavigator källista v0.2
 # Fält: id, namn, url, alternativ (reservadresser som prövas om url inte fungerar),
-#       amnen, sprak, typ (media/primar/forskning), betalvagg,
+#       amnen, sprak, typ (media/primar/forskning/kuraterat), betalvagg,
+#       kuraterat = nyhetsbrev och topplistor som samlar andras nyheter. Räknas inte som oberoende källa.
 #       land, region (sverige/norden/europa/usa/asien/mellanostern/afrika/global),
 #       agare (privat/public-service/statlig/organisation), statskontrollerad (true = staten styr innehållet)
 # Betalväggskällor används bara för rubrik och länk, aldrig för text.
@@ -88,6 +89,27 @@ sources:
   - {id: quanta, namn: Quanta Magazine, url: "https://www.quantamagazine.org/feed/", amnen: [vetenskap], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: carbonbrief, namn: Carbon Brief, url: "https://www.carbonbrief.org/feed/", amnen: [energi, klimat], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: breaking-defense, namn: Breaking Defense, url: "https://breakingdefense.com/feed/", amnen: [forsvar, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+
+  # ---------- AI-bolagens egna besked (primärkällor) ----------
+  - {id: anthropic, namn: Anthropic, url: "https://www.anthropic.com/news/rss.xml", alternativ: ["https://www.anthropic.com/rss.xml"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: google-ai, namn: Google AI, url: "https://blog.google/technology/ai/rss/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: microsoft-ai, namn: Microsoft AI, url: "https://blogs.microsoft.com/ai/feed/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: meta-ai, namn: Meta AI, url: "https://ai.meta.com/blog/rss/", alternativ: ["https://about.fb.com/news/category/technology/ai/feed/"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: nvidia, namn: NVIDIA, url: "https://blogs.nvidia.com/feed/", amnen: [ai, halvledare], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: mistral, namn: Mistral AI, url: "https://mistral.ai/news/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}
+
+  # ---------- AI- och techmedier ----------
+  - {id: the-decoder, namn: The Decoder, url: "https://the-decoder.com/feed/", amnen: [ai], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: privat, statskontrollerad: false}
+  - {id: venturebeat-ai, namn: VentureBeat AI, url: "https://venturebeat.com/category/ai/feed/", amnen: [ai, startups], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: wired-ai, namn: Wired AI, url: "https://www.wired.com/feed/tag/ai/latest/rss", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: cyberscoop, namn: CyberScoop, url: "https://cyberscoop.com/feed/", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: the-information, namn: The Information, url: "https://www.theinformation.com/feed", amnen: [teknik, ai, startups], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
+
+  # ---------- Kuraterat: vad techvärlden pratar om (räknas inte som oberoende källa) ----------
+  - {id: techmeme, namn: Techmeme, url: "https://www.techmeme.com/feed.xml", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: hacker-news, namn: Hacker News, url: "https://hnrss.org/frontpage?points=250", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: import-ai, namn: Import AI, url: "https://importai.substack.com/feed", amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  # Superhuman (Zain Kahn) läggs till via Kill the Newsletter när flödeslänken finns.
 
 # Saknar RSS (bevakas på annat sätt senare): IEA, Xinhua.
 # Kräver licens (läggs till när avtal finns): Reuters, AP, AFP, TT.

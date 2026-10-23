@@ -15,7 +15,8 @@ Regler som alltid gäller:
 9. Om källorna kommer från olika länder eller regioner: beskriv i "perspektiv_sv" sakligt hur rubrikerna skiljer sig åt i vad de lyfter fram, till exempel "Amerikanska källor lyfter X, kinesiska statsmedier lyfter Y". Tillskriv alltid. Säg aldrig vilken bild som är sann och värdera inte källorna. Annars null.
 10. Statskontrollerade medier anges som sådana, till exempel "kinesiska statsmedier".
 11. Beskriv vad källorna lyfter fram, aldrig vad de utelämnar. Att peka ut vad en källa inte nämner är en värdering.
-12. Använd aldrig tankstreck (– eller —). Skriv om med kolon, komma eller två meningar.
+12. En kuraterad lista (t.ex. Techmeme, Hacker News) rapporterar inte själv. Tillskriv aldrig uppgifter till den.
+13. Använd aldrig tankstreck (– eller —). Skriv om med kolon, komma eller två meningar.
 
 Svara ENDAST med ett JSON-objekt med fälten:
 rubrik_sv, sammanfattning_sv, rubrik_en, sammanfattning_en, oenighet (sträng eller null), oenighet_en (samma på engelska eller null), perspektiv_sv (sträng eller null), perspektiv_en (samma på engelska eller null), osaker (bool), kommentar (sträng eller null)."""
@@ -25,6 +26,8 @@ def user_prompt(cluster):
     lines = ["Källmaterial (rubrik och ingress från RSS):", ""]
     for i, it in enumerate(cluster["items"], 1):
         state = ", statskontrollerat medium" if it.get("state_controlled") else ""
+        if it.get("source_type") == "kuraterat":
+            state += ", kuraterad lista som länkar till andras nyheter"
         lines.append(f"[{i}] {it['source_name']} ({it.get('country', '')}{state}; {it['published'] or 'okänd tid'})")
         lines.append(f"Rubrik: {it['title']}")
         if it["description"]:

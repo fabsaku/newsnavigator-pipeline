@@ -242,8 +242,8 @@ def perspective(c):
         regions.setdefault(i["region"], []).append({
             "kalla": i["source_name"], "land": i["country"], "rubrik": i["title"], "url": i["url"],
             "statskontrollerad": i["state_controlled"]})
-    n_sources = len({i["source_id"] for i in c["items"]})
-    names = set(regions)
+    n_sources = len(independent(c))
+    names = {i["region"] for i in c["items"] if i["source_type"] != "kuraterat"}
     blind = None
     if n_sources >= 3 and len(names) >= 2 and not (names & HOME):
         blind = "saknas_i_sverige"      # stort i världen, inget i svenska källor
@@ -252,13 +252,20 @@ def perspective(c):
     return {"regioner": sorted(names), "per_region": regions, "blind_flack": blind}
 
 
+def independent(c):
+    """Källor som rapporterar själva. Kuraterade listor och nyhetsbrev räknas inte."""
+    return {i["source_id"] for i in c["items"] if i["source_type"] != "kuraterat"}
+
+
 def score(c):
-    sources = {i["source_id"] for i in c["items"]}
+    sources = independent(c)
+    curated = len({i["source_id"] for i in c["items"]}) - len(sources)
     regions = {i["region"] for i in c["items"]}
     primary = any(i["source_type"] in ("primar", "forskning") for i in c["items"])
     newest = max((i["epoch"] or 0) for i in c["items"])
     age_h = max(0, (time.time() - newest) / 3600) if newest else 48
-    return round(len(sources) * 2 + (len(regions) - 1) * 1.0 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
+    # Kuraterade källor ger en liten bonus: det är ett tecken på att techvärlden pratar om saken.
+    return round(len(sources) * 2 + min(curated, 2) * 0.5 + (len(regions) - 1) * 1.0 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
 
 
 def reply_text(msg):
@@ -372,7 +379,7 @@ def main():
     approved_path = ROOT / "data" / "godkanda.json"
     approved = set(json.loads(approved_path.read_text())) if approved_path.exists() else set()
 
-    order = {"primar": 0, "forskning": 1, "media": 2}
+    order = {"primar": 0, "forskning": 1, "media": 2, "kuraterat": 4}
     chosen = clusters[: args.limit]
     for c in chosen:
         # Primärkällor först, sedan fria källor, betalväggar och statskontrollerade medier sist
@@ -405,7 +412,7 @@ def main():
             "id": c["id"],
             "amnen": c["topics"],
             "poang": c["score"],
-            "antal_kallor": len({i["source_id"] for i in c["items"]}),
+            "antal_kallor": len(independent(c)) or len({i["source_id"] for i in c["items"]}),
             "har_primarkalla": any(i["source_type"] in ("primar", "forskning") for i in c["items"]),
             "senast": max((i["published"] or "") for i in c["items"]) or None,
             "utkast": draft,
