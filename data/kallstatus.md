@@ -1,4 +1,4 @@
-# Källstatus 2026-10-23 19:57 UTC
+# Källstatus 2026-10-23 20:55 UTC
 
 78/96 OK
 
@@ -6,10 +6,10 @@
 | --- | --- | --- | --- | --- | --- |
 | SVT Nyheter | sverige | OK | 100 | 2026-10-23 |  |
 | Sveriges Radio Ekot | sverige | OK | 20 | 2026-10-23 |  |
-| Dagens Nyheter | sverige | OK | 123 | 2026-10-23 |  |
+| Dagens Nyheter | sverige | OK | 122 | 2026-10-23 |  |
 | Dagens industri | sverige | OK | 20 | 2026-10-23 |  |
 | Breakit | sverige | OK | 17 | 2026-10-23 |  |
-| Ny Teknik | sverige | FEL | 0 |  | sidan är html, inte ett flöde |
+| Ny Teknik | sverige | FEL | 0 |  | HTTP Error 404: Not Found |
 | Yle News | norden | OK | 20 | 2026-10-23 |  |
 | NRK | norden | OK | 100 | 2026-10-23 |  |
 | Riksbanken | sverige | TYST | 10 | 2026-10-08 | inget nytt på 14 dagar |
@@ -19,12 +19,12 @@
 | Svenska kraftnät | sverige | OK | 25 | 2026-10-23 |  |
 | Financial Times | europa | OK | 11 | 2026-10-23 |  |
 | The Economist | europa | OK | 300 | 2026-10-22 |  |
-| BBC World | europa | OK | 29 | 2026-10-23 |  |
+| BBC World | europa | OK | 30 | 2026-10-23 |  |
 | The Guardian | europa | OK | 45 | 2026-10-23 |  |
 | Le Monde (English) | europa | OK | 14 | 2026-10-23 |  |
 | France 24 | europa | OK | 24 | 2026-10-23 |  |
 | Der Spiegel International | europa | OK | 20 | 2026-10-16 |  |
-| Deutsche Welle | europa | OK | 133 | 2026-10-23 |  |
+| Deutsche Welle | europa | OK | 134 | 2026-10-23 |  |
 | El País (English) | europa | OK | 60 | 2026-10-23 |  |
 | Politico Europe | europa | OK | 10 | 2026-10-23 |  |
 | Euractiv | europa | OK | 100 | 2026-10-23 |  |
