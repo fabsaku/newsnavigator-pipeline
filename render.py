@@ -5,7 +5,10 @@ from pathlib import Path
 LABELS = {"ai": "AI", "robotik": "Robotik", "marknader": "Marknader", "varlden": "Världen", "sverige": "Sverige",
           "europa": "Europa", "geopolitik": "Geopolitik", "teknik": "Teknik", "vetenskap": "Vetenskap",
           "rymd": "Rymd", "energi": "Energi", "klimat": "Klimat", "forsvar": "Försvar", "startups": "Startups",
-          "halvledare": "Halvledare"}
+          "halvledare": "Halvledare", "norden": "Norden", "usa": "USA", "asien": "Asien",
+          "mellanostern": "Mellanöstern", "afrika": "Afrika"}
+REGIONS = {"sverige": "Sverige", "norden": "Norden", "europa": "Europa", "usa": "USA", "asien": "Asien",
+           "mellanostern": "Mellanöstern", "afrika": "Afrika", "global": "Global"}
 
 CSS = """
 :root{--bg:#0A0A0A;--fg:#F2F2F2;--mut:#A3A3A3;--line:#2A2A2A;--card:#161616}
@@ -20,6 +23,8 @@ h1{font-family:'Source Serif 4',Georgia,serif;font-size:40px;margin:0 0 4px}
 .src{font-size:14px;color:var(--mut)}.src a{color:var(--fg)}
 .note{background:var(--card);padding:16px;font-size:14px;color:var(--mut);margin:16px 0}
 .dis{border-left:2px solid var(--fg);padding-left:12px;font-size:15px;color:#D6D6D6}
+.world{background:var(--card);padding:12px 16px}.world summary{cursor:pointer;font-weight:600;min-height:32px}
+.world ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}.world li{font-size:15px}
 """
 
 
@@ -43,13 +48,32 @@ def render(payload, path, include_unreviewed=True):
             flags.append("Osäker")
         topics = " · ".join(LABELS.get(t, t) for t in ev["amnen"][:3])
         srcs = ", ".join(
-            f'<a href="{_e(s["url"])}" rel="noopener">{_e(s["namn"])}</a>' + (" (betalvägg)" if s["betalvagg"] else "")
+            f'<a href="{_e(s["url"])}" rel="noopener">{_e(s["namn"])}</a>'
+            + (f' ({_e(s.get("land", ""))})' if s.get("land") else "")
+            + (' <span class="flag">Statskontrollerat</span>' if s.get("statskontrollerad") else "")
+            + (" (betalvägg)" if s["betalvagg"] else "")
             for s in ev["kallor"])
+        p = ev.get("perspektiv") or {}
+        if p.get("blind_flack") == "saknas_i_sverige":
+            flags.append("Saknas i svenska medier")
+        elif p.get("blind_flack") == "bara_i_sverige":
+            flags.append("Bara i svenska medier")
+        world = ""
+        if len(p.get("regioner", [])) >= 2:
+            parts = []
+            for reg in p["regioner"]:
+                for x in p["per_region"][reg]:
+                    tag = " · statskontrollerat" if x["statskontrollerad"] else ""
+                    parts.append(f'<li><span class="mono">{_e(REGIONS.get(reg, reg))}, {_e(x["kalla"])}{tag}</span><br>'
+                                 f'<a href="{_e(x["url"])}" rel="noopener">{_e(x["rubrik"])}</a></li>')
+            world = f'<details class="world"><summary>Så ser världen på det ({len(p["regioner"])} regioner)</summary><ul>{"".join(parts)}</ul></details>'
         rows.append(f"""<article class="ev">
 <div class="mono">{_e(topics)} · {ev['antal_kallor']} källor{' · primärkälla' if ev['har_primarkalla'] else ''}</div>
 <h2>{_e(title)}</h2>
 {f'<p>{_e(d["sammanfattning_sv"])}</p>' if d.get("sammanfattning_sv") else ''}
 {f'<div class="dis">Källorna skiljer sig åt: {_e(d["oenighet"])}</div>' if d.get("oenighet") else ''}
+{f'<div class="dis">Perspektiv: {_e(d["perspektiv_sv"])}</div>' if d.get("perspektiv_sv") else ''}
+{world}
 <div class="src">Källor: {srcs}</div>
 <div class="mono">{''.join(f'<span class="flag">{f}</span>' for f in flags)}ID {ev['id']}</div>
 </article>""")

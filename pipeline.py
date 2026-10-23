@@ -53,20 +53,32 @@ def clean(text, limit=320):
     return text if len(text) <= limit else text[:limit].rsplit(" ", 1)[0] + " …"
 
 
+AGENT = "NewsnavigatorBot/0.2 (+https://newsnavigator.se/bot)"
+
+
+def fetch_one(s):
+    """Prövar källans url och sedan dess reservadresser. Returnerar (feed, använd url, fel)."""
+    err = "inga adresser"
+    for url in [s["url"], *s.get("alternativ", [])]:
+        target = str((ROOT / url[5:]).resolve()) if url.startswith("file:") else url
+        try:
+            feed = feedparser.parse(target, agent=AGENT)
+        except Exception as e:  # nätverk eller parsning
+            err = str(e)
+            continue
+        if feed.entries:
+            return feed, url, None
+        err = str(feed.get("bozo_exception", "inga artiklar"))
+    return None, None, err
+
+
 def fetch(sources, max_age_hours):
     items, report = [], []
     now = time.time()
     for s in sources:
-        url = s["url"]
-        if url.startswith("file:"):
-            url = str((ROOT / url[5:]).resolve())
-        try:
-            feed = feedparser.parse(url, agent="NewsnavigatorBot/0.1 (+https://newsnavigator.se/bot)")
-        except Exception as e:  # nätverk eller parsning
-            report.append({"id": s["id"], "ok": False, "fel": str(e)})
-            continue
-        if feed.bozo and not feed.entries:
-            report.append({"id": s["id"], "ok": False, "fel": str(feed.get("bozo_exception", "okänt fel"))})
+        feed, used, err = fetch_one(s)
+        if feed is None:
+            report.append({"id": s["id"], "ok": False, "fel": err})
             continue
         n = 0
         for e in feed.entries:
@@ -82,6 +94,10 @@ def fetch(sources, max_age_hours):
                 "source_type": s["typ"],
                 "paywall": s.get("betalvagg", False),
                 "lang": s["sprak"],
+                "country": s.get("land", ""),
+                "region": s.get("region", "global"),
+                "owner": s.get("agare", ""),
+                "state_controlled": s.get("statskontrollerad", False),
                 "topics": list(s.get("amnen", [])),
                 "title": clean(e.get("title", ""), 200),
                 # Betalväggskällor: bara rubrik och länk används
@@ -91,7 +107,7 @@ def fetch(sources, max_age_hours):
                 "epoch": epoch,
             })
             n += 1
-        report.append({"id": s["id"], "ok": True, "artiklar": n})
+        report.append({"id": s["id"], "ok": True, "artiklar": n, "url": used})
     return items, report
 
 
@@ -100,7 +116,7 @@ def tokens(text):
     return {w for w in words if len(w) > 2 and w not in STOPWORDS}
 
 
-def cluster(items, threshold=0.4, min_shared=3):
+def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65):
     """Grupperar artiklar om samma händelse.
 
     Likhet = andel gemensamma ord av den kortaste rubriken (overlap-koefficient),
@@ -116,6 +132,10 @@ def cluster(items, threshold=0.4, min_shared=3):
             if shared < min_shared:
                 continue
             sim = shared / (min(len(tk), len(c["title_tokens"])) or 1)
+            # Forskningsrubriker är fulla av fackord som "model" och "agents": kräv högre likhet
+            research = it["source_type"] == "forskning" or any(i["source_type"] == "forskning" for i in c["items"])
+            if research and sim < research_threshold:
+                continue
             if sim > best_sim:
                 best, best_sim = c, sim
         if best and best_sim >= threshold and it["source_id"] not in {i["source_id"] for i in best["items"]}:
@@ -138,12 +158,33 @@ def tag(c):
     return sorted(topics)
 
 
+HOME = {"sverige", "norden"}
+
+
+def perspective(c):
+    """Så ser världen på det: rubriker per region, och blinda fläckar."""
+    regions = {}
+    for i in c["items"]:
+        regions.setdefault(i["region"], []).append({
+            "kalla": i["source_name"], "land": i["country"], "rubrik": i["title"], "url": i["url"],
+            "statskontrollerad": i["state_controlled"]})
+    n_sources = len({i["source_id"] for i in c["items"]})
+    names = set(regions)
+    blind = None
+    if n_sources >= 3 and len(names) >= 2 and not (names & HOME):
+        blind = "saknas_i_sverige"      # stort i världen, inget i svenska källor
+    elif n_sources >= 2 and names <= HOME:
+        blind = "bara_i_sverige"        # bara svenska och nordiska källor
+    return {"regioner": sorted(names), "per_region": regions, "blind_flack": blind}
+
+
 def score(c):
     sources = {i["source_id"] for i in c["items"]}
+    regions = {i["region"] for i in c["items"]}
     primary = any(i["source_type"] in ("primar", "forskning") for i in c["items"])
     newest = max((i["epoch"] or 0) for i in c["items"])
     age_h = max(0, (time.time() - newest) / 3600) if newest else 48
-    return round(len(sources) * 2 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
+    return round(len(sources) * 2 + (len(regions) - 1) * 1.0 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
 
 
 def summarize(c, client, model):
@@ -184,8 +225,8 @@ def main():
 
     order = {"primar": 0, "forskning": 1, "media": 2}
     for c in clusters[: args.limit]:
-        # Primärkällor först, sedan fria källor, betalväggar sist
-        c["items"].sort(key=lambda i: (order.get(i["source_type"], 3), i["paywall"]))
+        # Primärkällor först, sedan fria källor, betalväggar och statskontrollerade medier sist
+        c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
         lead = c["items"][0]
         event_id = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
         draft = None
@@ -201,9 +242,12 @@ def main():
             "har_primarkalla": any(i["source_type"] in ("primar", "forskning") for i in c["items"]),
             "senast": max((i["published"] or "") for i in c["items"]) or None,
             "utkast": draft,
+            "perspektiv": perspective(c),
             "reserv_rubrik": lead["title"],
             "kallor": [{"namn": i["source_name"], "rubrik": i["title"], "url": i["url"],
-                        "betalvagg": i["paywall"], "typ": i["source_type"]} for i in c["items"]],
+                        "betalvagg": i["paywall"], "typ": i["source_type"], "land": i["country"],
+                        "region": i["region"], "agare": i["owner"],
+                        "statskontrollerad": i["state_controlled"]} for i in c["items"]],
             "granskad": event_id in approved,
         })
 

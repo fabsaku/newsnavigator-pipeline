@@ -12,15 +12,18 @@ Regler som alltid gäller:
 6. Rubriken säger vad som har hänt, utan överdrift och utan att undanhålla svaret.
 7. Sammanfattningen är högst två meningar och högst 45 ord per språk.
 8. Om materialet är för tunt för en säker sammanfattning: sätt "osaker" till true och förklara varför i "kommentar".
+9. Om källorna kommer från olika länder eller regioner: beskriv i "perspektiv_sv" sakligt hur rubrikerna skiljer sig åt i vad de lyfter fram, till exempel "Amerikanska källor lyfter X, kinesiska statsmedier lyfter Y". Tillskriv alltid. Säg aldrig vilken bild som är sann och värdera inte källorna. Annars null.
+10. Statskontrollerade medier anges som sådana, till exempel "kinesiska statsmedier".
 
 Svara ENDAST med ett JSON-objekt med fälten:
-rubrik_sv, sammanfattning_sv, rubrik_en, sammanfattning_en, oenighet (sträng eller null), osaker (bool), kommentar (sträng eller null)."""
+rubrik_sv, sammanfattning_sv, rubrik_en, sammanfattning_en, oenighet (sträng eller null), perspektiv_sv (sträng eller null), osaker (bool), kommentar (sträng eller null)."""
 
 
 def user_prompt(cluster):
     lines = ["Källmaterial (rubrik och ingress från RSS):", ""]
     for i, it in enumerate(cluster["items"], 1):
-        lines.append(f"[{i}] {it['source_name']} ({it['published'] or 'okänd tid'})")
+        state = ", statskontrollerat medium" if it.get("state_controlled") else ""
+        lines.append(f"[{i}] {it['source_name']} ({it.get('country', '')}{state}; {it['published'] or 'okänd tid'})")
         lines.append(f"Rubrik: {it['title']}")
         if it["description"]:
             lines.append(f"Ingress: {it['description']}")

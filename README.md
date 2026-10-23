@@ -1,6 +1,6 @@
-# Newsnavigator pipeline v0.1
+# Newsnavigator pipeline v0.2
 
-Hämtar nyheter från ett 40-tal källor, grupperar artiklar om samma händelse, skriver neutrala AI-utkast och låter redaktionen granska innan något publiceras.
+Hämtar nyheter från drygt 60 källor i sju regioner, grupperar artiklar om samma händelse, skriver neutrala AI-utkast och låter redaktionen granska innan något publiceras.
 
 **Vi levererar nyheterna. Vad läsaren gör av dem är upp till läsaren.** Reglerna står i [PRINCIPER.md](PRINCIPER.md) och styr både redaktionen och AI:n.
 
