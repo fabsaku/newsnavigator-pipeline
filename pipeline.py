@@ -29,6 +29,8 @@ STOPWORDS = set("""
 och i att det som en på är av för med till den har de inte om ett han hon men var
 the a an of to in and for on is are with by as at from that this it its be was were
 new says said after over into vs how why what will can more
+week images video photos live updates latest news today veckan bilder bild direkt senaste nytt idag
+utanför near amid
 """.split())
 
 KEYWORDS = {
@@ -86,6 +88,14 @@ def fetch_one(s):
             continue
         if feed.entries:
             return feed, url, None
+        if not url.startswith("file:"):
+            # Reserv: låt feedparser hämta själv (hanterar komprimering och omdirigeringar annorlunda)
+            try:
+                native = feedparser.parse(url, agent=AGENT)
+                if native.entries:
+                    return native, url, None
+            except Exception:
+                pass
         head = text[:200].lower()
         err = "sidan är html, inte ett flöde" if "<html" in head or "<!doctype html" in head else \
             str(feed.get("bozo_exception", "inga artiklar"))
