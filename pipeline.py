@@ -257,6 +257,11 @@ def score(c):
     return round(len(sources) * 2 + (len(regions) - 1) * 1.0 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
 
 
+def reply_text(msg):
+    """Plockar ut svarstexten. Modellen kan skicka resonemangsblock före texten, de hoppas över."""
+    return "".join(getattr(b, "text", "") for b in msg.content if getattr(b, "type", "text") == "text")
+
+
 def translate_titles(items, client, model, batch=60):
     """Översätter icke-engelska rubriker till engelska (title_en) så att grupperingen fungerar över språk.
 
@@ -273,7 +278,7 @@ def translate_titles(items, client, model, batch=60):
                 system="Translate each news headline to plain, neutral English. Keep names and numbers exactly. "
                        "Answer ONLY with a JSON array of strings in the same order, one per headline.",
                 messages=[{"role": "user", "content": listing}])
-            text = msg.content[0].text
+            text = reply_text(msg)
             out = json.loads(text[text.find("["): text.rfind("]") + 1])
             for i, t in zip(part, out):
                 i["title_en"] = str(t)
@@ -290,7 +295,7 @@ def summarize(c, client, model):
         model=model, max_tokens=600, system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt(c)}],
     )
-    text = msg.content[0].text.strip()
+    text = reply_text(msg).strip()
     text = text[text.find("{"): text.rfind("}") + 1]
     return json.loads(text)
 
