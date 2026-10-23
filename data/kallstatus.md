@@ -1,4 +1,4 @@
-# Källstatus 2026-10-23 18:25 UTC
+# Källstatus 2026-10-23 18:59 UTC
 
 53/62 OK
 
@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- | --- |
 | SVT Nyheter | sverige | OK | 100 | 2026-10-23 |  |
 | Sveriges Radio Ekot | sverige | OK | 20 | 2026-10-23 |  |
-| Dagens Nyheter | sverige | OK | 122 | 2026-10-23 |  |
+| Dagens Nyheter | sverige | OK | 123 | 2026-10-23 |  |
 | Dagens industri | sverige | OK | 20 | 2026-10-23 |  |
 | Breakit | sverige | OK | 17 | 2026-10-23 |  |
 | Ny Teknik | sverige | FEL | 0 |  | HTTP Error 404: Not Found |
@@ -17,7 +17,7 @@
 | Finansinspektionen | sverige | OK | 100 | 2026-10-23 |  |
 | Regeringskansliet | sverige | OK | 100 | 2026-10-23 |  |
 | Svenska kraftnät | sverige | OK | 25 | 2026-10-23 |  |
-| Financial Times | europa | OK | 12 | 2026-10-23 |  |
+| Financial Times | europa | OK | 11 | 2026-10-23 |  |
 | The Economist | europa | OK | 300 | 2026-10-22 |  |
 | BBC World | europa | OK | 29 | 2026-10-23 |  |
 | The Guardian | europa | OK | 45 | 2026-10-23 |  |
