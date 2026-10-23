@@ -1,6 +1,6 @@
-# Källstatus 2026-10-23 18:59 UTC
+# Källstatus 2026-10-23 19:20 UTC
 
-53/62 OK
+60/76 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
@@ -54,15 +54,29 @@
 | IMF | global | FEL | 0 |  | HTTP Error 404: Not Found |
 | arXiv cs.AI | global | OK | 370 | 2026-10-23 |  |
 | Hugging Face | usa | OK | 890 | 2026-10-23 |  |
-| OpenAI | usa | OK | 1317 | 2026-10-23 |  |
+| OpenAI | usa | OK | 1318 | 2026-10-23 |  |
 | Google DeepMind | europa | OK | 100 | 2026-10-22 |  |
 | MIT Technology Review | usa | OK | 10 | 2026-10-23 |  |
 | The Verge | usa | OK | 10 | 2026-10-23 |  |
 | Ars Technica | usa | OK | 20 | 2026-10-23 |  |
 | TechCrunch | usa | OK | 20 | 2026-10-23 |  |
 | IEEE Spectrum Robotics | usa | OK | 30 | 2026-10-23 |  |
-| The Robot Report | usa | OK | 15 | 2026-10-22 |  |
+| The Robot Report | usa | OK | 15 | 2026-10-23 |  |
 | Nature | europa | OK | 75 | 2026-10-23 |  |
 | Quanta Magazine | usa | OK | 5 | 2026-10-23 |  |
 | Carbon Brief | europa | OK | 12 | 2026-10-23 |  |
 | Breaking Defense | usa | OK | 15 | 2026-10-23 |  |
+| Anthropic | usa | FEL | 0 |  | HTTP Error 404: Not Found |
+| Google AI | usa | OK | 20 | 2026-10-21 |  |
+| Microsoft AI | usa | FEL | 0 |  | HTTP Error 410: Gone |
+| Meta AI | usa | FEL | 0 |  | HTTP Error 404: Not Found |
+| NVIDIA | usa | OK | 18 | 2026-10-23 |  |
+| Mistral AI | europa | FEL | 0 |  | HTTP Error 404: Not Found |
+| The Decoder | europa | OK | 10 | 2026-10-23 |  |
+| VentureBeat AI | usa | FEL | 0 |  | HTTP Error 429: Too Many Requests |
+| Wired AI | usa | OK | 10 | 2026-10-22 |  |
+| CyberScoop | usa | OK | 10 | 2026-10-23 |  |
+| The Information | usa | OK | 20 | 2026-10-23 |  |
+| Techmeme | usa | OK | 15 | 2026-10-23 |  |
+| Hacker News | usa | FEL | 0 |  | HTTP Error 502: Bad Gateway |
+| Import AI | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
