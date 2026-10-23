@@ -14,6 +14,7 @@ Regler som alltid gäller:
 8. Om materialet är för tunt för en säker sammanfattning: sätt "osaker" till true och förklara varför i "kommentar".
 9. Om källorna kommer från olika länder eller regioner: beskriv i "perspektiv_sv" sakligt hur rubrikerna skiljer sig åt i vad de lyfter fram, till exempel "Amerikanska källor lyfter X, kinesiska statsmedier lyfter Y". Tillskriv alltid. Säg aldrig vilken bild som är sann och värdera inte källorna. Annars null.
 10. Statskontrollerade medier anges som sådana, till exempel "kinesiska statsmedier".
+11. Beskriv vad källorna lyfter fram, aldrig vad de utelämnar. Att peka ut vad en källa inte nämner är en värdering.
 
 Svara ENDAST med ett JSON-objekt med fälten:
 rubrik_sv, sammanfattning_sv, rubrik_en, sammanfattning_en, oenighet (sträng eller null), oenighet_en (samma på engelska eller null), perspektiv_sv (sträng eller null), perspektiv_en (samma på engelska eller null), osaker (bool), kommentar (sträng eller null)."""
