@@ -1,5 +1,6 @@
 # Newsnavigator källista v0.2
 # Fält: id, namn, url, alternativ (reservadresser som prövas om url inte fungerar),
+#       lanka (fast länk till läsare), bara_rubrik (använd aldrig ingressen),
 #       amnen, sprak, typ (media/primar/forskning/kuraterat), betalvagg,
 #       kuraterat = nyhetsbrev och topplistor som samlar andras nyheter. Räknas inte som oberoende källa.
 #       land, region (sverige/norden/europa/usa/asien/mellanostern/afrika/global),
@@ -109,7 +110,9 @@ sources:
   - {id: techmeme, namn: Techmeme, url: "https://www.techmeme.com/feed.xml", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: hacker-news, namn: Hacker News, url: "https://hnrss.org/frontpage?points=250", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: import-ai, namn: Import AI, url: "https://importai.substack.com/feed", amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  # Superhuman (Zain Kahn) läggs till via Kill the Newsletter när flödeslänken finns.
+  # Superhuman (Zain Kahn): nyhetsbrevet tas emot via Kill the Newsletter. Bara ämnesraden används,
+  # länken går till Superhumans publika arkiv (flödesadressen är privat och visas aldrig för läsare).
+  - {id: superhuman, namn: Superhuman, url: "https://kill-the-newsletter.com/feeds/gbmwcl3qkhjs7ddputic8hmeoa8p5i86wdre8whf.xml", lanka: "https://www.superhuman.ai/", bara_rubrik: true, amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
 # Saknar RSS (bevakas på annat sätt senare): IEA, Xinhua.
 # Kräver licens (läggs till när avtal finns): Reuters, AP, AFP, TT.

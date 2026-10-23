@@ -26,6 +26,7 @@ import yaml
 from prompts import SYSTEM_PROMPT, user_prompt
 
 ROOT = Path(__file__).parent
+NEWSLETTER_ADMIN = re.compile(r"confirm|verify|welcome|subscription|unsubscribe|bekräfta|välkommen", re.I)
 CACHE_PATH = ROOT / "data" / "cache.json"
 CACHE_DAYS = 3        # utkast och översättningar som inte setts på tre dagar rensas
 WORKERS = 8           # samtidiga AI-anrop
@@ -120,9 +121,13 @@ def fetch(sources, max_age_hours):
             epoch = time.mktime(ts) if ts else None
             if max_age_hours and epoch and now - epoch > max_age_hours * 3600:
                 continue
-            link = e.get("link", "")
+            if s.get("bara_rubrik") and NEWSLETTER_ADMIN.search(e.get("title", "")):
+                continue    # bekräftelse- och välkomstmejl är inga nyheter
+            # lanka: fast länk för källor vars flöde inte pekar på en publik sida (t.ex. nyhetsbrev via e-post)
+            link = s.get("lanka") or e.get("link", "")
+            ident = e.get("id") or e.get("link", "") or e.get("title", "")
             items.append({
-                "id": hashlib.sha1(link.encode()).hexdigest()[:12],
+                "id": hashlib.sha1((f"{s['id']}|{ident}" if s.get("lanka") else link).encode()).hexdigest()[:12],
                 "source_id": s["id"],
                 "source_name": s["namn"],
                 "source_type": s["typ"],
@@ -134,8 +139,8 @@ def fetch(sources, max_age_hours):
                 "state_controlled": s.get("statskontrollerad", False),
                 "topics": list(s.get("amnen", [])),
                 "title": clean(e.get("title", ""), 200),
-                # Betalväggskällor: bara rubrik och länk används
-                "description": "" if s.get("betalvagg") else clean(e.get("summary", "")),
+                # Betalväggskällor och nyhetsbrev: bara rubrik och länk används
+                "description": "" if s.get("betalvagg") or s.get("bara_rubrik") else clean(e.get("summary", "")),
                 "url": link,
                 "published": datetime.fromtimestamp(epoch, timezone.utc).isoformat() if epoch else None,
                 "epoch": epoch,
