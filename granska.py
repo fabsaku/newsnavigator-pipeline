@@ -9,6 +9,7 @@ import json
 import sys
 from pathlib import Path
 
+from newsletter import archive
 from render import render
 
 ROOT = Path(__file__).parent
@@ -42,6 +43,7 @@ def main():
     elif cmd == "godkann":
         ok.update(sys.argv[2:])
         GODK.write_text(json.dumps(sorted(ok), indent=2))
+        archive(data["handelser"], ok)
         print(f"Godkända: {len(ok)}")
     elif cmd == "publicera":
         for ev in data["handelser"]:

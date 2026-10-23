@@ -28,6 +28,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python pipeline.py
+      - name: Bygg Navigatorn
+        run: python newsletter.py
       - name: Spara resultat
         run: |
           git config user.name "newsnavigator-bot"

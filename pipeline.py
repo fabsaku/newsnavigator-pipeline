@@ -379,7 +379,7 @@ def main():
         c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
         # Samma uppsättning artiklar ger samma id. Ny källa eller ändrad rubrik ger nytt utkast.
         c["id"] = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
-        c["fingeravtryck"] = hashlib.sha1(user_prompt(c).encode()).hexdigest()[:12]
+        c["fingeravtryck"] = hashlib.sha1((model + SYSTEM_PROMPT + user_prompt(c)).encode()).hexdigest()[:12]
 
     def draft_for(c):
         hit = cache["utkast"].get(c["id"])
@@ -428,7 +428,9 @@ def main():
                "handelser": events, "kallrapport": report}
     (out / "flode.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    from newsletter import archive
     from render import render
+    archive(events, approved)
     render(payload, ROOT / "site" / "index.html")
 
     ok = sum(1 for r in report if r["ok"])

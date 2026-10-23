@@ -43,3 +43,11 @@ Testa utan internet: `python pipeline.py --feeds tests/feeds-test.yaml --max-age
 
 ## Sajten
 `render.py` bygger flödet i Newsnavigators design: dark mode, Newsgator, svenska och engelska (SV/EN-knapp), ämnesfilter, "Så ser världen på det" per händelse, källor med land och märkning av statskontrollerade medier. `site/index.html` visar alla utkast, `site/publicerat.html` bara granskade.
+
+## Navigatorn (morgonbrevet)
+`newsletter.py` bygger brevet av notiser som godkänts senaste dygnet: `site/navigatorn-sv.html` och `-en.html`, plus textversioner. Inga AI-anrop.
+- Sektioner: Världen, Sverige och Norden, Marknader, Tech och AI, Vetenskap. Högst fem källor per notis, resten länkas till sajten.
+- Egen text: skriv `data/kolumn.md` (första raden rubrik, sedan stycken, `---` före engelsk version). Den hamnar under "Redaktörens rad".
+- Förhandsvisning med ogranskade utkast (märkta UTKAST): `python newsletter.py --utkast`.
+- Godkända notiser sparas i `data/arkiv.json` i 14 dagar, så brevet fungerar även när de fallit ur flödet.
+- Utskick: planen är Resend Broadcasts (gratis upp till 1 000 prenumeranter). `{{unsubscribe_url}}` byts mot leverantörens avregistreringslänk.
