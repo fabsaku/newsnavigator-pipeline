@@ -15,7 +15,7 @@ sources:
   - {id: breakit, namn: Breakit, url: "https://www.breakit.se/feed/artiklar", amnen: [startups, teknik], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: nyteknik, namn: Ny Teknik, url: "https://www.nyteknik.se/rss/nyheter", alternativ: ["https://www.nyteknik.se/feed", "https://www.nyteknik.se/rss/"], amnen: [teknik, sverige], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: yle, namn: Yle News, url: "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS", alternativ: ["https://yle.fi/rss/uutiset/news"], amnen: [norden, varlden], sprak: en, typ: media, betalvagg: false, land: FI, region: norden, agare: public-service, statskontrollerad: false}
-  - {id: nrk, namn: NRK, url: "https://www.nrk.no/toppsaker.rss", amnen: [norden, varlden], sprak: no, typ: media, betalvagg: false, land: NO, region: norden, agare: public-service, statskontrollerad: false}
+  - {id: nrk, namn: NRK, url: "https://www.nrk.no/toppsaker.rss", amnen: [norden, varlden], sprak: no, typ: media, betalvagg: false, land: "NO", region: norden, agare: public-service, statskontrollerad: false}
 
   # ---------- Svenska primärkällor ----------
   - {id: riksbanken, namn: Riksbanken, url: "https://www.riksbank.se/sv/rss/pressmeddelanden/", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}

@@ -16,7 +16,7 @@ Regler som alltid gäller:
 10. Statskontrollerade medier anges som sådana, till exempel "kinesiska statsmedier".
 
 Svara ENDAST med ett JSON-objekt med fälten:
-rubrik_sv, sammanfattning_sv, rubrik_en, sammanfattning_en, oenighet (sträng eller null), perspektiv_sv (sträng eller null), osaker (bool), kommentar (sträng eller null)."""
+rubrik_sv, sammanfattning_sv, rubrik_en, sammanfattning_en, oenighet (sträng eller null), oenighet_en (samma på engelska eller null), perspektiv_sv (sträng eller null), perspektiv_en (samma på engelska eller null), osaker (bool), kommentar (sträng eller null)."""
 
 
 def user_prompt(cluster):

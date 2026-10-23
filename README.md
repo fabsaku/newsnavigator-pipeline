@@ -40,3 +40,6 @@ Testa utan internet: `python pipeline.py --feeds tests/feeds-test.yaml --max-age
 - Kombinationer: AI föreslår kopplingar mellan händelser, du skriver ingressen.
 - Raden "Vad betyder det för Sverige och Europa?" som eget, granskat fält.
 - Koppla flödet till sajtens design i stället för förhandsvisningen.
+
+## Sajten
+`render.py` bygger flödet i Newsnavigators design: dark mode, Newsgator, svenska och engelska (SV/EN-knapp), ämnesfilter, "Så ser världen på det" per händelse, källor med land och märkning av statskontrollerade medier. `site/index.html` visar alla utkast, `site/publicerat.html` bara granskade.
