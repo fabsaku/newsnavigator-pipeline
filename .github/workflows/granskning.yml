@@ -1,0 +1,56 @@
+name: Granskning
+
+# Körs när redaktören bockar i eller ur en notis i granskningsärendet.
+on:
+  issues:
+    types: [edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: newsnavigator
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: contains(github.event.issue.labels.*.name, 'granskning') && github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Läs godkännanden
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python granskning_github.py las
+      - name: Bygg Navigatorn och sajten
+        run: |
+          python newsletter.py
+          python publish.py
+      - name: Uppdatera granskningsärendet
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python granskning_github.py uppdatera
+      - name: Spara resultat
+        run: |
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data site public
+          git commit -m "Granskning $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
+          git pull --rebase origin main && git push
+      - name: Uppdatera sajten om det publika har ändrats
+        run: |
+          git fetch origin sajt || true
+          NEW=$(git rev-parse HEAD:public)
+          OLD=$(git rev-parse origin/sajt^{tree} 2>/dev/null || echo none)
+          if [ "$NEW" != "$OLD" ]; then
+            git push -f origin "$(git commit-tree $NEW -m "Sajt $(date -u +%Y-%m-%dT%H:%M)")":refs/heads/sajt
+          else
+            echo "Sajten oförändrad"
+          fi

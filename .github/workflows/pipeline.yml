@@ -9,6 +9,11 @@ on:
 
 permissions:
   contents: write
+  issues: write
+
+concurrency:
+  group: newsnavigator
+  cancel-in-progress: false
 
 jobs:
   run:
@@ -24,6 +29,10 @@ jobs:
       - name: Kontrollera källor (nattkörningarna)
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0,2 * * *'
         run: python verify_feeds.py
+      - name: Läs godkännanden från granskningsärendet
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python granskning_github.py las || echo "Kunde inte läsa ärendet"
       - name: Kör pipelinen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -32,6 +41,10 @@ jobs:
         run: python newsletter.py
       - name: Bygg publika sajten (bara granskat)
         run: python publish.py
+      - name: Uppdatera granskningsärendet
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python granskning_github.py uppdatera || echo "Kunde inte uppdatera ärendet"
       - name: Spara resultat
         run: |
           git config user.name "newsnavigator-bot"
