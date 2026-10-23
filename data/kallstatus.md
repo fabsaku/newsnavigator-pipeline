@@ -1,4 +1,4 @@
-# Källstatus 2026-10-23 19:36 UTC
+# Källstatus 2026-10-23 19:57 UTC
 
 78/96 OK
 
@@ -9,7 +9,7 @@
 | Dagens Nyheter | sverige | OK | 123 | 2026-10-23 |  |
 | Dagens industri | sverige | OK | 20 | 2026-10-23 |  |
 | Breakit | sverige | OK | 17 | 2026-10-23 |  |
-| Ny Teknik | sverige | FEL | 0 |  | HTTP Error 404: Not Found |
+| Ny Teknik | sverige | FEL | 0 |  | sidan är html, inte ett flöde |
 | Yle News | norden | OK | 20 | 2026-10-23 |  |
 | NRK | norden | OK | 100 | 2026-10-23 |  |
 | Riksbanken | sverige | TYST | 10 | 2026-10-08 | inget nytt på 14 dagar |
@@ -78,7 +78,7 @@
 | CyberScoop | usa | OK | 10 | 2026-10-23 |  |
 | The Information | usa | OK | 20 | 2026-10-23 |  |
 | Techmeme | usa | OK | 15 | 2026-10-23 |  |
-| Hacker News | usa | OK | 7 | 2026-10-23 |  |
+| Hacker News | usa | OK | 6 | 2026-10-23 |  |
 | Import AI | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Superhuman | usa | OK | 5 | 2026-10-23 |  |
 | The Code | usa | OK | 5 | 2026-10-23 |  |
@@ -99,4 +99,4 @@
 | Platformer | usa | OK | 15 | 2026-10-23 |  |
 | Tom's Hardware | usa | OK | 50 | 2026-10-23 |  |
 | IEEE Spectrum | usa | OK | 30 | 2026-10-23 |  |
-| Simon Willison | usa | OK | 30 | 2026-10-22 |  |
+| Simon Willison | usa | OK | 30 | 2026-10-23 |  |
