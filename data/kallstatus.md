@@ -1,6 +1,6 @@
-# Källstatus 2026-10-23 17:27 UTC
+# Källstatus 2026-10-23 17:29 UTC
 
-51/62 OK
+53/62 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
@@ -55,14 +55,14 @@
 | arXiv cs.AI | global | OK | 370 | 2026-10-23 |  |
 | Hugging Face | usa | OK | 890 | 2026-10-23 |  |
 | OpenAI | usa | OK | 1317 | 2026-10-23 |  |
-| Google DeepMind | europa | FEL | 0 |  | <unknown>:2:0: not well-formed (invalid token) |
+| Google DeepMind | europa | OK | 100 | 2026-10-22 |  |
 | MIT Technology Review | usa | OK | 10 | 2026-10-23 |  |
 | The Verge | usa | OK | 10 | 2026-10-23 |  |
 | Ars Technica | usa | OK | 20 | 2026-10-23 |  |
 | TechCrunch | usa | OK | 20 | 2026-10-23 |  |
 | IEEE Spectrum Robotics | usa | OK | 30 | 2026-10-23 |  |
 | The Robot Report | usa | OK | 15 | 2026-10-22 |  |
-| Nature | europa | FEL | 0 |  | sidan är html, inte ett flöde |
+| Nature | europa | OK | 75 | 2026-10-23 |  |
 | Quanta Magazine | usa | OK | 5 | 2026-10-23 |  |
 | Carbon Brief | europa | OK | 12 | 2026-10-23 |  |
 | Breaking Defense | usa | OK | 15 | 2026-10-23 |  |
