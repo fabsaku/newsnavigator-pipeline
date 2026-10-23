@@ -54,7 +54,9 @@ def render(payload, path, include_unreviewed=True):
             + (" (betalvägg)" if s["betalvagg"] else "")
             for s in ev["kallor"])
         p = ev.get("perspektiv") or {}
-        if p.get("blind_flack") == "saknas_i_sverige":
+        # "Saknas i svenska medier" visas inte förrän grupperingen fungerar över språk (v0.3):
+        # i dag matchas svenska rubriker inte mot engelska, så etiketten skulle bli fel.
+        if p.get("blind_flack") == "saknas_i_sverige" and payload.get("over_sprak"):
             flags.append("Saknas i svenska medier")
         elif p.get("blind_flack") == "bara_i_sverige":
             flags.append("Bara i svenska medier")
