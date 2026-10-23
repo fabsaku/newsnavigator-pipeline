@@ -28,11 +28,11 @@ Med AI-utkast: `export ANTHROPIC_API_KEY=...` innan `pipeline.py`. Modell väljs
 
 Testa utan internet: `python pipeline.py --feeds tests/feeds-test.yaml --max-age-hours 0`
 
-## Kör automatiskt varje timme
+## Kör automatiskt
 
 1. Skapa ett privat repo på GitHub och lägg upp filerna.
 2. Under Settings, Secrets, lägg till `ANTHROPIC_API_KEY`.
-3. `.github/workflows/pipeline.yml` kör då källkontroll och pipeline varje timme och sparar resultatet i repot.
+3. `.github/workflows/pipeline.yml` kör pipelinen varje timme dagtid och två gånger på natten, och källkontrollen på nattkörningarna. Utkast och översättningar sparas i `data/cache.json`, så bara nya eller ändrade händelser skickas till AI:n.
 
 ## Nästa version
 

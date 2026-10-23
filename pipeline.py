@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Newsnavigator pipeline v0.3
+"""Newsnavigator pipeline v0.4
 
 Hämtar RSS-flöden, grupperar artiklar om samma händelse, taggar ämnen,
 rangordnar, skriver AI-utkast (om API-nyckel finns) och bygger
@@ -16,6 +16,7 @@ import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -25,6 +26,9 @@ import yaml
 from prompts import SYSTEM_PROMPT, user_prompt
 
 ROOT = Path(__file__).parent
+CACHE_PATH = ROOT / "data" / "cache.json"
+CACHE_DAYS = 3        # utkast och översättningar som inte setts på tre dagar rensas
+WORKERS = 8           # samtidiga AI-anrop
 STOPWORDS = set("""
 och i att det som en på är av för med till den har de inte om ett han hon men var
 the a an of to in and for on is are with by as at from that this it its be was were
@@ -266,30 +270,65 @@ def reply_text(msg):
     return text
 
 
-def translate_titles(items, client, model, batch=60):
+def translate_titles(items, client, model, cache, batch=60):
     """Översätter icke-engelska rubriker till engelska (title_en) så att grupperingen fungerar över språk.
 
-    Returnerar True om alla omgångar lyckades. Bara rubriker skickas, aldrig artikeltext.
+    Rubriker som redan översatts hämtas ur cachen. Returnerar True om alla omgångar lyckades.
+    Bara rubriker skickas, aldrig artikeltext.
     """
-    todo = [i for i in items if i["lang"] != "en" and i["title"]]
-    ok = True
-    for start in range(0, len(todo), batch):
-        part = todo[start:start + batch]
+    todo = []
+    for i in items:
+        if i["lang"] == "en" or not i["title"]:
+            continue
+        hit = cache["titlar"].get(i["title"])
+        if hit:
+            i["title_en"] = hit["en"]
+            hit["sedd"] = NOW
+        else:
+            todo.append(i)
+
+    def run(part):
         listing = "\n".join(f"{n}. {i['title']}" for n, i in enumerate(part))
-        try:
-            msg = client.messages.create(
-                model=model, max_tokens=16000,
-                system="Translate each news headline to plain, neutral English. Keep names and numbers exactly. "
-                       "Answer ONLY with a JSON array of strings in the same order, one per headline.",
-                messages=[{"role": "user", "content": listing}])
-            text = reply_text(msg)
-            out = json.loads(text[text.find("["): text.rfind("]") + 1])
-            for i, t in zip(part, out):
-                i["title_en"] = str(t)
-        except Exception as e:
-            print(f"  Översättning misslyckades: {e}", file=sys.stderr)
-            ok = False
-    return ok and bool(todo)
+        msg = client.messages.create(
+            model=model, max_tokens=16000,
+            system="Translate each news headline to plain, neutral English. Keep names and numbers exactly. "
+                   "Answer ONLY with a JSON array of strings in the same order, one per headline.",
+            messages=[{"role": "user", "content": listing}])
+        text = reply_text(msg)
+        return part, json.loads(text[text.find("["): text.rfind("]") + 1])
+
+    ok = True
+    parts = [todo[k:k + batch] for k in range(0, len(todo), batch)]
+    with ThreadPoolExecutor(WORKERS) as pool:
+        for fut in [pool.submit(run, p) for p in parts]:
+            try:
+                part, out = fut.result()
+                for i, t in zip(part, out):
+                    i["title_en"] = str(t)
+                    cache["titlar"][i["title"]] = {"en": str(t), "sedd": NOW}
+            except Exception as e:
+                print(f"  Översättning misslyckades: {e}", file=sys.stderr)
+                ok = False
+    print(f"Rubriker: {len(todo)} nya översatta, {sum(1 for i in items if i.get('title_en')) - len(todo)} ur cachen")
+    return ok
+
+
+def load_cache():
+    try:
+        c = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        c = {}
+    c.setdefault("utkast", {})
+    c.setdefault("titlar", {})
+    return c
+
+
+def save_cache(cache):
+    limit = time.time() - CACHE_DAYS * 86400
+    for key in ("utkast", "titlar"):
+        cache[key] = {k: v for k, v in cache[key].items() if v.get("sedd", 0) >= limit}
+    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def summarize(c, client, model):
@@ -302,6 +341,9 @@ def summarize(c, client, model):
     text = reply_text(msg).strip()
     text = text[text.find("{"): text.rfind("}") + 1]
     return json.loads(text)
+
+
+NOW = time.time()
 
 
 def main():
@@ -317,8 +359,9 @@ def main():
         import anthropic
         client = anthropic.Anthropic()
 
+    cache = load_cache()
     items, report = fetch(load_sources(args.feeds), args.max_age_hours)
-    cross_language = translate_titles(items, client, model) if client else False
+    cross_language = translate_titles(items, client, model, cache) if client else False
     clusters = cluster(items)
     events = []
     for c in clusters:
@@ -330,18 +373,36 @@ def main():
     approved = set(json.loads(approved_path.read_text())) if approved_path.exists() else set()
 
     order = {"primar": 0, "forskning": 1, "media": 2}
-    for c in clusters[: args.limit]:
+    chosen = clusters[: args.limit]
+    for c in chosen:
         # Primärkällor först, sedan fria källor, betalväggar och statskontrollerade medier sist
         c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
-        lead = c["items"][0]
-        event_id = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
-        draft = None
+        # Samma uppsättning artiklar ger samma id. Ny källa eller ändrad rubrik ger nytt utkast.
+        c["id"] = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
+        c["fingeravtryck"] = hashlib.sha1(user_prompt(c).encode()).hexdigest()[:12]
+
+    def draft_for(c):
+        hit = cache["utkast"].get(c["id"])
+        if hit and hit.get("fingeravtryck") == c["fingeravtryck"]:
+            return hit["utkast"], True
         try:
-            draft = summarize(c, client, model)
+            return summarize(c, client, model), False
         except Exception as e:
-            draft = {"osaker": True, "kommentar": f"AI-utkast misslyckades: {e}"}
+            return {"osaker": True, "kommentar": f"AI-utkast misslyckades: {e}", "_fel": True}, False
+
+    with ThreadPoolExecutor(WORKERS) as pool:
+        results = list(pool.map(draft_for, chosen))
+
+    reused = 0
+    for c, (draft, from_cache) in zip(chosen, results):
+        reused += from_cache
+        if draft is not None and not draft.get("_fel"):
+            cache["utkast"][c["id"]] = {"utkast": draft, "fingeravtryck": c["fingeravtryck"], "sedd": NOW}
+        elif draft is not None:
+            draft.pop("_fel", None)
+        lead = c["items"][0]
         events.append({
-            "id": event_id,
+            "id": c["id"],
             "amnen": c["topics"],
             "poang": c["score"],
             "antal_kallor": len({i["source_id"] for i in c["items"]}),
@@ -354,8 +415,11 @@ def main():
                         "betalvagg": i["paywall"], "typ": i["source_type"], "land": i["country"],
                         "region": i["region"], "agare": i["owner"],
                         "statskontrollerad": i["state_controlled"]} for i in c["items"]],
-            "granskad": event_id in approved,
+            "granskad": c["id"] in approved,
         })
+    if client:
+        print(f"Utkast: {len(chosen) - reused} nya, {reused} ur cachen")
+        save_cache(cache)
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)

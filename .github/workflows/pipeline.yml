@@ -2,7 +2,9 @@ name: Newsnavigator pipeline
 
 on:
   schedule:
-    - cron: "17 * * * *"   # varje timme
+    # Tider i UTC. Varje timme 06-23 svensk sommartid (05-22 vintertid), två körningar natten.
+    - cron: "17 4-21 * * *"
+    - cron: "17 0,2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,13 +13,16 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
       - run: pip install -r requirements.txt
-      - name: Kontrollera källor
+      - name: Kontrollera källor (nattkörningarna)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0,2 * * *'
         run: python verify_feeds.py
       - name: Kör pipelinen
         env:
