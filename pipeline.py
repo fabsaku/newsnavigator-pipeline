@@ -259,7 +259,11 @@ def score(c):
 
 def reply_text(msg):
     """Plockar ut svarstexten. Modellen kan skicka resonemangsblock före texten, de hoppas över."""
-    return "".join(getattr(b, "text", "") for b in msg.content if getattr(b, "type", "text") == "text")
+    text = "".join(getattr(b, "text", "") for b in msg.content if getattr(b, "type", "text") == "text")
+    if not text.strip():
+        kinds = ",".join(getattr(b, "type", "?") for b in msg.content)
+        raise ValueError(f"tomt svar (stop_reason={getattr(msg, 'stop_reason', '?')}, block={kinds})")
+    return text
 
 
 def translate_titles(items, client, model, batch=60):
@@ -274,7 +278,7 @@ def translate_titles(items, client, model, batch=60):
         listing = "\n".join(f"{n}. {i['title']}" for n, i in enumerate(part))
         try:
             msg = client.messages.create(
-                model=model, max_tokens=4000,
+                model=model, max_tokens=16000,
                 system="Translate each news headline to plain, neutral English. Keep names and numbers exactly. "
                        "Answer ONLY with a JSON array of strings in the same order, one per headline.",
                 messages=[{"role": "user", "content": listing}])
@@ -292,7 +296,7 @@ def summarize(c, client, model):
     if client is None:
         return None
     msg = client.messages.create(
-        model=model, max_tokens=600, system=SYSTEM_PROMPT,
+        model=model, max_tokens=4000, system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt(c)}],
     )
     text = reply_text(msg).strip()
