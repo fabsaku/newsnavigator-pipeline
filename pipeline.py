@@ -296,7 +296,7 @@ def summarize(c, client, model):
     if client is None:
         return None
     msg = client.messages.create(
-        model=model, max_tokens=4000, system=SYSTEM_PROMPT,
+        model=model, max_tokens=16000, system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt(c)}],
     )
     text = reply_text(msg).strip()
