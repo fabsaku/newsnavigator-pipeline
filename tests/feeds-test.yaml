@@ -4,3 +4,5 @@ sources:
   - {id: test-cb, namn: Testcentralbank, url: "file:tests/c.xml", amnen: [marknader], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: test-stat, namn: Teststatsmedium, url: "file:tests/d.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: CN, region: asien, agare: statlig, statskontrollerad: true}
   - {id: test-trasig, namn: Trasig källa, url: "file:tests/finns-inte.xml", amnen: [ai], sprak: en, typ: media, betalvagg: false, land: SE, region: sverige, agare: privat, statskontrollerad: false}
+  - {id: test-sv, namn: Svensk testkälla, url: "file:tests/e.xml", amnen: [sverige], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false}
+  - {id: test-kontroll, namn: Källa med trasigt tecken, url: "file:tests/f.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}

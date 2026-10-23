@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Newsnavigator pipeline v0.1
+"""Newsnavigator pipeline v0.3
 
 Hämtar RSS-flöden, grupperar artiklar om samma händelse, taggar ämnen,
 rangordnar, skriver AI-utkast (om API-nyckel finns) och bygger
@@ -53,22 +53,42 @@ def clean(text, limit=320):
     return text if len(text) <= limit else text[:limit].rsplit(" ", 1)[0] + " …"
 
 
-AGENT = "NewsnavigatorBot/0.2 (+https://newsnavigator.se/bot)"
+# Vi presenterar oss ärligt som bot. En utgivare som blockerar botar respekterar vi.
+AGENT = "Mozilla/5.0 (compatible; NewsnavigatorBot/0.3; +https://newsnavigator.se/bot)"
+ACCEPT = "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.9, */*;q=0.5"
+BAD_XML = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
+
+
+def _download(url):
+    import urllib.request
+    req = urllib.request.Request(url, headers={"User-Agent": AGENT, "Accept": ACCEPT})
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return r.read()
 
 
 def fetch_one(s):
-    """Prövar källans url och sedan dess reservadresser. Returnerar (feed, använd url, fel)."""
+    """Prövar källans url och sedan dess reservadresser. Returnerar (feed, använd url, fel).
+
+    Laddar ner flödet själv och rensar bort tecken som är ogiltiga i XML innan det tolkas,
+    eftersom några utgivare (t.ex. med trasiga kontrolltecken) annars ger noll artiklar.
+    """
     err = "inga adresser"
     for url in [s["url"], *s.get("alternativ", [])]:
-        target = str((ROOT / url[5:]).resolve()) if url.startswith("file:") else url
         try:
-            feed = feedparser.parse(target, agent=AGENT)
-        except Exception as e:  # nätverk eller parsning
-            err = str(e)
+            if url.startswith("file:"):
+                raw = (ROOT / url[5:]).read_bytes()
+            else:
+                raw = _download(url)
+            text = BAD_XML.sub("", raw.decode("utf-8", errors="replace")).lstrip("﻿ \r\n\t")
+            feed = feedparser.parse(text)
+        except Exception as e:  # nätverk, http-fel eller parsning
+            err = str(e)[:160]
             continue
         if feed.entries:
             return feed, url, None
-        err = str(feed.get("bozo_exception", "inga artiklar"))
+        head = text[:200].lower()
+        err = "sidan är html, inte ett flöde" if "<html" in head or "<!doctype html" in head else \
+            str(feed.get("bozo_exception", "inga artiklar"))
     return None, None, err
 
 
@@ -111,9 +131,48 @@ def fetch(sources, max_age_hours):
     return items, report
 
 
+# Översätter vanliga nyhetsord och namn till en gemensam form, så att svenska,
+# norska och engelska rubriker om samma händelse kan matchas även utan AI.
+ALIASES = {
+    # länder, platser, organisationer
+    "ukraina": "ukraine", "ukrainas": "ukraine", "ukrainian": "ukraine", "ryssland": "russia", "rysk": "russia",
+    "ryska": "russia", "russian": "russia", "kina": "china", "kinas": "china", "chinese": "china",
+    "frankrike": "france", "french": "france", "tyskland": "germany", "german": "germany",
+    "storbritannien": "britain", "british": "britain", "usas": "usa", "amerikanska": "usa", "american": "usa",
+    "israels": "israel", "israeli": "israel", "irans": "iran", "iranian": "iran", "moskva": "moscow",
+    "peking": "beijing", "bryssel": "brussels", "köpenhamn": "copenhagen", "västbanken": "west_bank",
+    "gazaremsan": "gaza", "svarta": "black", "havet": "sea", "fn": "un", "nations": "un", "eus": "eu",
+    "natos": "nato", "rumänien": "romania", "romanian": "romania", "jordanien": "jordan", "taiwans": "taiwan",
+    "förenade": "uae", "emiraten": "uae", "zelenskyj": "zelensky", "zelenskyy": "zelensky",
+    # händelser
+    "skjutning": "shoot", "skjuten": "shoot", "skjutna": "shoot", "skottlossning": "shoot", "shooting": "shoot",
+    "shot": "shoot", "död": "kill", "döda": "kill", "dödad": "kill", "dödade": "kill", "dödas": "kill",
+    "killed": "kill", "kills": "kill", "dead": "kill", "kyrka": "church", "begravning": "funeral",
+    "attacken": "attack", "attackerat": "attack", "attacked": "attack", "fartyg": "ship", "samtal": "talk",
+    "förhandlingar": "talk", "talks": "talk", "fredssamtal": "talk", "vapenvila": "ceasefire", "eldupphör": "ceasefire",
+    "sanktioner": "sanction", "sanctions": "sanction", "tullar": "tariff", "tariffs": "tariff", "val": "election",
+    "valet": "election", "protester": "protest", "protests": "protest", "demonstrationer": "protest",
+    "jordbävning": "earthquake", "översvämning": "flood", "översvämningar": "flood", "floods": "flood",
+    "tyfon": "typhoon", "tyfonen": "typhoon", "räntan": "rate", "styrräntan": "rate", "ränta": "rate",
+    "rates": "rate", "sänker": "cut", "cuts": "cut", "höjer": "raise", "militär": "military", "militära": "military",
+    "operation": "operation", "operationen": "operation", "regeringen": "government", "statsminister": "prime_minister",
+    "president": "president", "presidenten": "president",
+}
+
+
 def tokens(text):
-    words = re.findall(r"[a-zåäöéü0-9]+", text.lower())
-    return {w for w in words if len(w) > 2 and w not in STOPWORDS}
+    words = re.findall(r"[a-zåäöéüø0-9]+", text.lower())
+    out = set()
+    for w in words:
+        if len(w) <= 2 and w not in ("eu", "fn", "un", "us"):
+            continue
+        if w in STOPWORDS:
+            continue
+        mapped = ALIASES.get(w, w)
+        out.add(mapped)
+    if "west" in out and "bank" in out:
+        out.add("west_bank")
+    return out
 
 
 def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65):
@@ -125,7 +184,8 @@ def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65):
     """
     clusters = []
     for it in sorted(items, key=lambda x: x["epoch"] or 0, reverse=True):
-        tk = tokens(it["title"])
+        # title_en finns när AI har översatt rubriken, annars används originalet
+        tk = tokens(it.get("title_en") or it["title"])
         best, best_sim = None, 0.0
         for c in clusters:
             shared = len(tk & c["tokens"])
@@ -187,6 +247,32 @@ def score(c):
     return round(len(sources) * 2 + (len(regions) - 1) * 1.0 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
 
 
+def translate_titles(items, client, model, batch=60):
+    """Översätter icke-engelska rubriker till engelska (title_en) så att grupperingen fungerar över språk.
+
+    Returnerar True om alla omgångar lyckades. Bara rubriker skickas, aldrig artikeltext.
+    """
+    todo = [i for i in items if i["lang"] != "en" and i["title"]]
+    ok = True
+    for start in range(0, len(todo), batch):
+        part = todo[start:start + batch]
+        listing = "\n".join(f"{n}. {i['title']}" for n, i in enumerate(part))
+        try:
+            msg = client.messages.create(
+                model=model, max_tokens=4000,
+                system="Translate each news headline to plain, neutral English. Keep names and numbers exactly. "
+                       "Answer ONLY with a JSON array of strings in the same order, one per headline.",
+                messages=[{"role": "user", "content": listing}])
+            text = msg.content[0].text
+            out = json.loads(text[text.find("["): text.rfind("]") + 1])
+            for i, t in zip(part, out):
+                i["title_en"] = str(t)
+        except Exception as e:
+            print(f"  Översättning misslyckades: {e}", file=sys.stderr)
+            ok = False
+    return ok and bool(todo)
+
+
 def summarize(c, client, model):
     if client is None:
         return None
@@ -213,6 +299,7 @@ def main():
         client = anthropic.Anthropic()
 
     items, report = fetch(load_sources(args.feeds), args.max_age_hours)
+    cross_language = translate_titles(items, client, model) if client else False
     clusters = cluster(items)
     events = []
     for c in clusters:
@@ -254,6 +341,7 @@ def main():
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     payload = {"skapad": datetime.now(timezone.utc).isoformat(), "modell": model if client else None,
+               "over_sprak": cross_language,
                "handelser": events, "kallrapport": report}
     (out / "flode.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
