@@ -1,22 +1,795 @@
 {
-  "skapad": "2026-10-23T14:18:51.117792+00:00",
+  "skapad": "2026-10-23T16:40:27.625161+00:00",
   "modell": null,
   "handelser": [
     {
-      "id": "d192fa9c12",
+      "id": "32326cc62f",
       "amnen": [
+        "asien",
         "europa",
         "geopolitik",
         "marknader",
+        "varlden"
+      ],
+      "poang": 22.91,
+      "antal_kallor": 9,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T15:56:28+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "West Bank: Extensive military operation 'on the way', Netanyahu says",
+              "url": "https://www.france24.com/en/video/20261023-west-bank-extensive-military-operation-on-the-way-netanyahu-says",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Netanyahu orders ‘very extensive’ operation in West Bank after two Israeli soldiers killed",
+              "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Israel orders home demolitions after soldiers killed in West Bank",
+              "url": "https://www.dw.com/en/israel-orders-home-demolitions-after-soldiers-killed-in-west-bank/a-79739292?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
+              "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Netanyahu orders West Bank closure as attack wounds Israelis before election",
+              "url": "https://www.lemonde.fr/en/international/article/2026/10/23/netanyahu-orders-west-bank-closure-as-attack-wounds-israelis-before-election_6762244_4.html",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Netanyahu orders West Bank closure, warns of major military operation after attack kills Israeli soldiers",
+              "url": "https://www.thehindu.com/news/international/netanyahu-orders-west-bank-closure-as-attack-wounds-israelis-before-election/article71615850.ece",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Netanyahu orders West Bank closure after attack on Israelis ends in gun battle",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3371912/netanyahu-orders-west-bank-closure-after-deadly-checkpoint-shoot-out",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
+              "url": "https://www.npr.org/2026/10/23/nx-s1-6013333/netanyahu-closure-west-bank",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Two suspected gunmen dead, two IDF soldiers killed in West Bank shooting",
+              "url": "https://www.foxnews.com/world/two-suspected-gunmen-dead-two-idf-soldiers-killed-west-bank-shooting",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "West Bank: Extensive military operation 'on the way', Netanyahu says",
+      "kallor": [
+        {
+          "namn": "France 24",
+          "rubrik": "West Bank: Extensive military operation 'on the way', Netanyahu says",
+          "url": "https://www.france24.com/en/video/20261023-west-bank-extensive-military-operation-on-the-way-netanyahu-says",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Netanyahu orders ‘very extensive’ operation in West Bank after two Israeli soldiers killed",
+          "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Netanyahu orders West Bank closure, warns of major military operation after attack kills Israeli soldiers",
+          "url": "https://www.thehindu.com/news/international/netanyahu-orders-west-bank-closure-as-attack-wounds-israelis-before-election/article71615850.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NPR",
+          "rubrik": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
+          "url": "https://www.npr.org/2026/10/23/nx-s1-6013333/netanyahu-closure-west-bank",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Netanyahu orders West Bank closure after attack on Israelis ends in gun battle",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3371912/netanyahu-orders-west-bank-closure-after-deadly-checkpoint-shoot-out",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Israel orders home demolitions after soldiers killed in West Bank",
+          "url": "https://www.dw.com/en/israel-orders-home-demolitions-after-soldiers-killed-in-west-bank/a-79739292?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Two suspected gunmen dead, two IDF soldiers killed in West Bank shooting",
+          "url": "https://www.foxnews.com/world/two-suspected-gunmen-dead-two-idf-soldiers-killed-west-bank-shooting",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
+          "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Netanyahu orders West Bank closure as attack wounds Israelis before election",
+          "url": "https://www.lemonde.fr/en/international/article/2026/10/23/netanyahu-orders-west-bank-closure-as-attack-wounds-israelis-before-election_6762244_4.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "f13970debf",
+      "amnen": [
+        "asien",
+        "europa",
+        "geopolitik",
+        "robotik",
+        "varlden"
+      ],
+      "poang": 20.72,
+      "antal_kallor": 8,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T14:25:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Romania blames Russia for ship attack in the Black Sea",
+              "url": "https://www.dw.com/en/romania-blames-russia-for-ship-attack-in-the-black-sea/a-79743425?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Euractiv",
+              "land": "BE",
+              "rubrik": "Romania blames Russia for new deadly attack on ship",
+              "url": "https://www.rapporteur.com/news/romania-blames-russia-for-new-deadly-attack-on-ship/",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "Drone hits another ship in Black Sea near Romania, killing at least 1 sailor",
+              "url": "https://www.politico.eu/article/drone-hits-another-ship-in-black-sea-near-romania-killing-at-least-one-sailor/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
+              "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
+              "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
+              "url": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Romania blames Russia for new deadly attack on ship",
+              "url": "https://www.thehindu.com/news/international/romania-blames-russia-for-new-deadly-attack-on-ship/article71616091.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Powerful Earthquake in Tibet Kills at Least 16",
+              "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Romania blames Russia for ship attack in the Black Sea",
+      "kallor": [
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Romania blames Russia for ship attack in the Black Sea",
+          "url": "https://www.dw.com/en/romania-blames-russia-for-ship-attack-in-the-black-sea/a-79743425?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Romania blames Russia for new deadly attack on ship",
+          "url": "https://www.thehindu.com/news/international/romania-blames-russia-for-new-deadly-attack-on-ship/article71616091.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Euractiv",
+          "rubrik": "Romania blames Russia for new deadly attack on ship",
+          "url": "https://www.rapporteur.com/news/romania-blames-russia-for-new-deadly-attack-on-ship/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Politico Europe",
+          "rubrik": "Drone hits another ship in Black Sea near Romania, killing at least 1 sailor",
+          "url": "https://www.politico.eu/article/drone-hits-another-ship-in-black-sea-near-romania-killing-at-least-one-sailor/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
+          "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Powerful Earthquake in Tibet Kills at Least 16",
+          "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
+          "url": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "e1073c2a7d",
+      "amnen": [
+        "asien",
+        "europa",
+        "marknader",
+        "varlden"
+      ],
+      "poang": 19.99,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:36:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+              "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+              "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Several killed, dozens wounded in Jordan church shooting",
+              "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Seven killed, 28 injured after gunmen open fire inside a church in Jordan",
+              "url": "https://www.thehindu.com/news/international/gunmen-open-fire-inside-a-church-in-jordan-causing-deaths-and-injuries/article71616413.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "At least seven killed after gunmen open fire at church in Jordan",
+              "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Gunmen Kill Seven in Church Attack in Jordan",
+              "url": "https://www.wsj.com/world/middle-east/gunmen-kill-seven-in-church-attack-in-jordan-c4ff80b6?mod=rss_worldnews",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Gunmen Open Fire at Church in Jordan, Killing at Least Seven",
+              "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+      "kallor": [
+        {
+          "namn": "BBC World",
+          "rubrik": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+          "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Several killed, dozens wounded in Jordan church shooting",
+          "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Seven killed, 28 injured after gunmen open fire inside a church in Jordan",
+          "url": "https://www.thehindu.com/news/international/gunmen-open-fire-inside-a-church-in-jordan-causing-deaths-and-injuries/article71616413.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "At least seven killed after gunmen open fire at church in Jordan",
+          "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Gunmen Kill Seven in Church Attack in Jordan",
+          "url": "https://www.wsj.com/world/middle-east/gunmen-kill-seven-in-church-attack-in-jordan-c4ff80b6?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Gunmen Open Fire at Church in Jordan, Killing at Least Seven",
+          "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "11da1f3a16",
+      "amnen": [
+        "ai",
+        "asien",
+        "geopolitik",
+        "usa",
+        "varlden"
+      ],
+      "poang": 19.97,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:26:41+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Melania Trump brokers ceasefire in Russian-occupied Ukraine city, White House says",
+              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371983/melania-trump-brokers-ceasefire-russian-occupied-ukraine-city-white-house-says",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Russia, Ukraine agree to Oleshky ceasefire brokered by Melania Trump, White House says",
+              "url": "https://www.thehindu.com/news/international/russia-ukraine-agree-to-oleshky-ceasefire-brokered-by-melania-trump-white-house-says/article71616736.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – Europe live",
+              "url": "https://www.theguardian.com/world/live/2026/oct/23/starlink-ukraine-musk-trump-russia-black-sea-strikes-france-milan-europe-protests-latest-news-updates",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+              "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Melania Trump coordinated Russia-Ukraine ceasefire in frontline town – Kremlin",
+              "url": "https://rt-english.com/news/647580-melania-trump-russia-ukraine-alyoshki-ceasefire/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Melania Trump brokers localized Russia-Ukraine ceasefire, White House says",
+              "url": "https://thehill.com/policy/international/6167822-melania-trump-oleshky-ceasefire/",
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Melania Trump ‘secured ceasefire’ in Ukrainian city of Oleshky: White House",
+              "url": "https://www.aljazeera.com/news/2026/10/23/white-house-says-melania-trump-secured-a-ceasefire-in-ukraines-oleshky?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Melania Trump brokers ceasefire in Russian-occupied Ukraine city, White House says",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Melania Trump brokers ceasefire in Russian-occupied Ukraine city, White House says",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371983/melania-trump-brokers-ceasefire-russian-occupied-ukraine-city-white-house-says",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/oct/23/starlink-ukraine-musk-trump-russia-black-sea-strikes-france-milan-europe-protests-latest-news-updates",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Russia, Ukraine agree to Oleshky ceasefire brokered by Melania Trump, White House says",
+          "url": "https://www.thehindu.com/news/international/russia-ukraine-agree-to-oleshky-ceasefire-brokered-by-melania-trump-white-house-says/article71616736.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Melania Trump brokers localized Russia-Ukraine ceasefire, White House says",
+          "url": "https://thehill.com/policy/international/6167822-melania-trump-oleshky-ceasefire/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Melania Trump ‘secured ceasefire’ in Ukrainian city of Oleshky: White House",
+          "url": "https://www.aljazeera.com/news/2026/10/23/white-house-says-melania-trump-secured-a-ceasefire-in-ukraines-oleshky?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Melania Trump coordinated Russia-Ukraine ceasefire in frontline town – Kremlin",
+          "url": "https://rt-english.com/news/647580-melania-trump-russia-ukraine-alyoshki-ceasefire/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "11dce9c825",
+      "amnen": [
+        "asien",
+        "europa",
+        "geopolitik",
+        "marknader",
+        "norden",
         "robotik",
         "rymd",
         "varlden"
       ],
-      "poang": 10.84,
-      "antal_kallor": 4,
+      "poang": 19.96,
+      "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-10-23T13:00:10+00:00",
+      "senast": "2026-10-23T16:19:36+00:00",
       "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "norden",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Ukraine says Starlink still restricted after Trump says limits lifted",
+              "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "Starlink still restricted for Ukraine despite Trump saying Musk lifted speed limits",
+              "url": "https://www.politico.eu/article/starlink-still-restricted-for-ukraine-donald-trump-elon-musk-lifted-speed-limits/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Musk's Starshield system 'back' in Ukraine, says Trump",
+              "url": "https://www.dw.com/en/musk-s-starshield-system-back-in-ukraine-says-trump/a-79738723?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Ukraine says Starlink speeds still throttled",
+              "url": "https://www.ft.com/content/e67a3d0e-5893-45a5-b098-64a68a4ef032?syn-25a6b1a6=1",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Trump says Starshield restored in Ukraine, declines to say if he contacted Musk",
+              "url": "https://www.thehindu.com/news/international/trump-claims-starshield-is-back-in-ukraine/article71614563.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": false,
+              "rubrik": "WSJ: Trump skal ha ringt Musk og bedt ham oppheve Starlink-begrensning",
+              "url": "https://www.nrk.no/nyheter/wsj_-trump-skal-ha-ringt-musk-og-bedt-ham-oppheve-starlink-begrensning--1.18062240",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Ukraine Says Starlink Isn’t Working, Despite Trump’s Promise to Restore It",
+              "url": "https://www.wsj.com/world/ukraine-says-starlink-isnt-working-despite-trumps-promise-to-restore-it-c3609d3d?mod=rss_worldnews",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
       "reserv_rubrik": "Ukraine says Starlink still restricted after Trump says limits lifted",
       "kallor": [
         {
@@ -24,80 +797,297 @@
           "rubrik": "Ukraine says Starlink still restricted after Trump says limits lifted",
           "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
         },
         {
           "namn": "Politico Europe",
           "rubrik": "Starlink still restricted for Ukraine despite Trump saying Musk lifted speed limits",
           "url": "https://www.politico.eu/article/starlink-still-restricted-for-ukraine-donald-trump-elon-musk-lifted-speed-limits/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
         },
         {
-          "namn": "CNBC",
-          "rubrik": "Trump asked Musk to lift Starlink slowdown, WSJ reports",
-          "url": "https://www.cnbc.com/2026/10/22/trump-musk-starlink-ukraine.html",
+          "namn": "The Hindu",
+          "rubrik": "Trump says Starshield restored in Ukraine, declines to say if he contacted Musk",
+          "url": "https://www.thehindu.com/news/international/trump-claims-starshield-is-back-in-ukraine/article71614563.ece",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Musk's Starshield system 'back' in Ukraine, says Trump",
+          "url": "https://www.dw.com/en/musk-s-starshield-system-back-in-ukraine-says-trump/a-79738723?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NRK",
+          "rubrik": "WSJ: Trump skal ha ringt Musk og bedt ham oppheve Starlink-begrensning",
+          "url": "https://www.nrk.no/nyheter/wsj_-trump-skal-ha-ringt-musk-og-bedt-ham-oppheve-starlink-begrensning--1.18062240",
+          "betalvagg": false,
+          "typ": "media",
+          "land": false,
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
         },
         {
           "namn": "Financial Times",
           "rubrik": "Ukraine says Starlink speeds still throttled",
           "url": "https://www.ft.com/content/e67a3d0e-5893-45a5-b098-64a68a4ef032?syn-25a6b1a6=1",
           "betalvagg": true,
-          "typ": "media"
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Ukraine Says Starlink Isn’t Working, Despite Trump’s Promise to Restore It",
+          "url": "https://www.wsj.com/world/ukraine-says-starlink-isnt-working-despite-trumps-promise-to-restore-it-c3609d3d?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
     },
     {
-      "id": "eb37f9335e",
+      "id": "dcb069ab19",
       "amnen": [
+        "asien",
+        "europa",
         "marknader",
         "varlden"
       ],
-      "poang": 8.9,
-      "antal_kallor": 3,
+      "poang": 17.93,
+      "antal_kallor": 6,
       "har_primarkalla": false,
-      "senast": "2026-10-23T13:29:29+00:00",
+      "senast": "2026-10-23T16:08:04+00:00",
       "utkast": null,
-      "reserv_rubrik": "Netanyahu orders ‘very extensive’ operation in West Bank after two Israeli soldiers killed",
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
+              "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Suspect arrested after 1 killed and 4 wounded in a shooting in Paris suburb",
+              "url": "https://www.france24.com/en/suspect-arrested-after-1-killed-and-4-wounded-in-a-shooting-in-paris-suburb",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "France: 1 killed, 4 wounded after shooting near Paris",
+              "url": "https://www.dw.com/en/france-1-killed-4-wounded-after-shooting-near-paris/a-79742256?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Suspect arrested after one killed, several wounded in Paris suburb shooting",
+              "url": "https://www.thehindu.com/news/international/suspect-arrested-after-one-killed-several-wounded-in-paris-suburb-shooting/article71616087.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "One Killed Near Paris After Gunman Fires at Random, Officials Say",
+              "url": "https://www.nytimes.com/2026/10/23/world/europe/france-shooting.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Gunman Kills One Near Paris in Suspected Attack on Immigrant Communities",
+              "url": "https://www.wsj.com/world/europe/gunman-kills-one-near-paris-in-suspected-attack-on-immigrant-communities-ed1ee830?mod=rss_worldnews",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
       "kallor": [
         {
-          "namn": "The Guardian World",
-          "rubrik": "Netanyahu orders ‘very extensive’ operation in West Bank after two Israeli soldiers killed",
-          "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+          "namn": "Al Jazeera",
+          "rubrik": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
+          "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris?traffic_source=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
         },
         {
-          "namn": "BBC World",
-          "rubrik": "Two Israeli soldiers killed in attack by suspected Palestinian gunmen in West Bank",
-          "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+          "namn": "France 24",
+          "rubrik": "Suspect arrested after 1 killed and 4 wounded in a shooting in Paris suburb",
+          "url": "https://www.france24.com/en/suspect-arrested-after-1-killed-and-4-wounded-in-a-shooting-in-paris-suburb",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
         },
         {
-          "namn": "Financial Times",
-          "rubrik": "Netanyahu threatens ‘aggressive’ offensive after West Bank shooting",
-          "url": "https://www.ft.com/content/e03e092b-c465-478a-b01e-bf21406981cd?syn-25a6b1a6=1",
+          "namn": "The Hindu",
+          "rubrik": "Suspect arrested after one killed, several wounded in Paris suburb shooting",
+          "url": "https://www.thehindu.com/news/international/suspect-arrested-after-one-killed-several-wounded-in-paris-suburb-shooting/article71616087.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "France: 1 killed, 4 wounded after shooting near Paris",
+          "url": "https://www.dw.com/en/france-1-killed-4-wounded-after-shooting-near-paris/a-79742256?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "One Killed Near Paris After Gunman Fires at Random, Officials Say",
+          "url": "https://www.nytimes.com/2026/10/23/world/europe/france-shooting.html",
           "betalvagg": true,
-          "typ": "media"
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Gunman Kills One Near Paris in Suspected Attack on Immigrant Communities",
+          "url": "https://www.wsj.com/world/europe/gunman-kills-one-near-paris-in-suspected-attack-on-immigrant-communities-ed1ee830?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
     },
     {
-      "id": "03af58467c",
+      "id": "7223bc17ff",
       "amnen": [
+        "asien",
+        "geopolitik",
         "marknader",
+        "norden",
         "varlden"
       ],
-      "poang": 8.82,
-      "antal_kallor": 3,
+      "poang": 16.53,
+      "antal_kallor": 5,
       "har_primarkalla": false,
       "senast": "2026-10-23T12:54:44+00:00",
       "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "norden",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Russia-Ukraine talks planned for November in UAE: Kremlin",
+              "url": "https://www.aljazeera.com/news/2026/10/23/russia-ukraine-talks-planned-for-november-in-uae-kremlin?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Russia and Ukraine trade fresh strikes despite renewed push for U.S.-brokered peace talks",
+              "url": "https://www.cnbc.com/2026/10/23/russia-ukraine-strikes-peace-talks.html",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Talks between Russia, Ukraine and U.S. ‘planned’ to resume in November in Abu Dhabi",
+              "url": "https://www.thehindu.com/news/international/talks-between-russia-ukraine-and-us-planned-to-resume-in-november-in-abu-dhabi/article71615588.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "Yle News",
+              "land": "FI",
+              "rubrik": "Best chance for peace in Ukraine yet, but for grim reasons, says Russia expert",
+              "url": "https://yle.fi/a/74-20252835?origin=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Why Russia wants peace between Iran and the Gulf",
+              "url": "https://rt-english.com/news/647534-russia-peace-iran-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null
+      },
       "reserv_rubrik": "Russia-Ukraine talks planned for November in UAE: Kremlin",
       "kallor": [
         {
@@ -105,125 +1095,1045 @@
           "rubrik": "Russia-Ukraine talks planned for November in UAE: Kremlin",
           "url": "https://www.aljazeera.com/news/2026/10/23/russia-ukraine-talks-planned-for-november-in-uae-kremlin?traffic_source=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
         },
         {
           "namn": "CNBC",
           "rubrik": "Russia and Ukraine trade fresh strikes despite renewed push for U.S.-brokered peace talks",
           "url": "https://www.cnbc.com/2026/10/23/russia-ukraine-strikes-peace-talks.html",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         },
         {
-          "namn": "BBC World",
-          "rubrik": "Ukraine hit by strikes after Russia agrees to new peace talks",
-          "url": "https://www.bbc.co.uk/news/videos/c9146p1vx888o?at_medium=RSS&at_campaign=rss",
+          "namn": "The Hindu",
+          "rubrik": "Talks between Russia, Ukraine and U.S. ‘planned’ to resume in November in Abu Dhabi",
+          "url": "https://www.thehindu.com/news/international/talks-between-russia-ukraine-and-us-planned-to-resume-in-november-in-abu-dhabi/article71615588.ece",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Yle News",
+          "rubrik": "Best chance for peace in Ukraine yet, but for grim reasons, says Russia expert",
+          "url": "https://yle.fi/a/74-20252835?origin=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FI",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Why Russia wants peace between Iran and the Gulf",
+          "url": "https://rt-english.com/news/647534-russia-peace-iran-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false
     },
     {
-      "id": "18d4d06d8f",
+      "id": "23ffb9347e",
       "amnen": [
         "ai",
-        "startups",
-        "teknik"
-      ],
-      "poang": 7.21,
-      "antal_kallor": 2,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Self-Improving Agents with World Model Predictive Paths",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Self-Improving Agents with World Model Predictive Paths",
-          "url": "https://arxiv.org/abs/2610.28945",
-          "betalvagg": false,
-          "typ": "forskning"
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Rivian buys world model startup to accelerate self-driving ambitions",
-          "url": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "0527da3872",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 7.21,
-      "antal_kallor": 2,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Ensemble forecasting with IBM Granite time-series models",
-      "kallor": [
-        {
-          "namn": "Hugging Face",
-          "rubrik": "Ensemble forecasting with IBM Granite time-series models",
-          "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-          "betalvagg": false,
-          "typ": "primar"
-        },
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Rethinking Agentic Model Orchestration for Time Series Forecasting",
-          "url": "https://arxiv.org/abs/2610.29504",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "1538154671",
-      "amnen": [
+        "europa",
         "varlden"
       ],
-      "poang": 6.95,
-      "antal_kallor": 2,
+      "poang": 12.7,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-10-23T13:55:38+00:00",
+      "senast": "2026-10-23T14:18:41+00:00",
       "utkast": null,
-      "reserv_rubrik": "France to deploy 70,000 officers as it braces for weekend of protests – Europe live",
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "PSG v Lyon moved as Paris prepares for more protests",
+              "url": "https://www.bbc.co.uk/sport/football/articles/cw8rz3eyn26po?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Macron resumes control of France's public order response amid social protests and criticism",
+              "url": "https://www.lemonde.fr/en/politics/article/2026/10/23/macron-resumes-control-of-france-s-public-order-response-amid-social-protests-and-criticism_6762243_5.html",
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Dembele to miss Ballon d’Or event as PSG game moved amid protests in France",
+              "url": "https://www.aljazeera.com/sports/2026/10/23/dembele-to-miss-ballon-dor-event-as-psg-game-moved-amid-protests-in-france?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "France's Macron blames protests on 'ultra-left groups whose aim is to bring down the Republic'",
+              "url": "https://www.foxnews.com/world/frances-macron-blames-protests-ultra-left-groups-aim-bring-down-republic",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "PSG v Lyon moved as Paris prepares for more protests",
       "kallor": [
         {
-          "namn": "The Guardian World",
-          "rubrik": "France to deploy 70,000 officers as it braces for weekend of protests – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/oct/23/starlink-ukraine-musk-trump-russia-black-sea-strikes-france-milan-europe-protests-latest-news-updates",
+          "namn": "BBC World",
+          "rubrik": "PSG v Lyon moved as Paris prepares for more protests",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cw8rz3eyn26po?at_medium=RSS&at_campaign=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
         },
         {
           "namn": "Al Jazeera",
-          "rubrik": "France tightens security in anticipation of weekend protests",
-          "url": "https://www.aljazeera.com/news/2026/10/23/france-tightens-security-in-anticipation-of-weekend-protests?traffic_source=rss",
+          "rubrik": "Dembele to miss Ballon d’Or event as PSG game moved amid protests in France",
+          "url": "https://www.aljazeera.com/sports/2026/10/23/dembele-to-miss-ballon-dor-event-as-psg-game-moved-amid-protests-in-france?traffic_source=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "France's Macron blames protests on 'ultra-left groups whose aim is to bring down the Republic'",
+          "url": "https://www.foxnews.com/world/frances-macron-blames-protests-ultra-left-groups-aim-bring-down-republic",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Macron resumes control of France's public order response amid social protests and criticism",
+          "url": "https://www.lemonde.fr/en/politics/article/2026/10/23/macron-resumes-control-of-france-s-public-order-response-amid-social-protests-and-criticism_6762243_5.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
     },
     {
-      "id": "14ea442568",
+      "id": "c54d129b56",
       "amnen": [
+        "asien",
+        "varlden"
+      ],
+      "poang": 12.45,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T12:17:20+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/typhoon-champi-unleashes-huge-waves-along-taiwans-coast?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
+              "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Typhoon Champi grounds hundreds of Taiwan flights, threatens Shanghai and Japan",
+              "url": "https://www.scmp.com/news/china/politics/article/3371901/typhoon-champi-grounds-hundreds-flights-taiwan-threatens-eastern-mainland-china",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Taiwan shuts down ahead of weakening Typhoon Champi, hundreds of flights cancelled",
+              "url": "https://www.thehindu.com/news/international/taiwan-shuts-down-ahead-of-weakening-typhoon-champi-hundreds-of-flights-cancelled/article71614370.ece",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/typhoon-champi-unleashes-huge-waves-along-taiwans-coast?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
+          "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Typhoon Champi grounds hundreds of Taiwan flights, threatens Shanghai and Japan",
+          "url": "https://www.scmp.com/news/china/politics/article/3371901/typhoon-champi-grounds-hundreds-flights-taiwan-threatens-eastern-mainland-china",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Taiwan shuts down ahead of weakening Typhoon Champi, hundreds of flights cancelled",
+          "url": "https://www.thehindu.com/news/international/taiwan-shuts-down-ahead-of-weakening-typhoon-champi-hundreds-of-flights-cancelled/article71614370.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "4a72382737",
+      "amnen": [
+        "asien",
+        "europa",
+        "varlden"
+      ],
+      "poang": 11.0,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T08:38:13+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "First known human case of Shamonda: What do we know about an emerging virus that has surprised experts?",
+              "url": "https://english.elpais.com/health/2026-10-23/first-known-human-case-of-shamonda-what-do-we-know-about-an-emerging-virus-that-has-surprised-experts.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Euractiv",
+              "land": "BE",
+              "rubrik": "Europe on alert as France reports first human Shamonda virus case",
+              "url": "https://www.rapporteur.com/news/europe-on-alert-as-france-reports-first-human-shamonda-virus-case/",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Livestock virus claims first human victim in France",
+              "url": "https://rt-english.com/news/647529-shamonda-first-human-case/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "France reports first human Shamonda virus case, says no health risk",
+              "url": "https://www.thehindu.com/news/international/france-reports-first-human-shamonda-virus-case-says-no-health-risk/article71611244.ece",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "First known human case of Shamonda: What do we know about an emerging virus that has surprised experts?",
+      "kallor": [
+        {
+          "namn": "El País (English)",
+          "rubrik": "First known human case of Shamonda: What do we know about an emerging virus that has surprised experts?",
+          "url": "https://english.elpais.com/health/2026-10-23/first-known-human-case-of-shamonda-what-do-we-know-about-an-emerging-virus-that-has-surprised-experts.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "France reports first human Shamonda virus case, says no health risk",
+          "url": "https://www.thehindu.com/news/international/france-reports-first-human-shamonda-virus-case-says-no-health-risk/article71611244.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Euractiv",
+          "rubrik": "Europe on alert as France reports first human Shamonda virus case",
+          "url": "https://www.rapporteur.com/news/europe-on-alert-as-france-reports-first-human-shamonda-virus-case/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Livestock virus claims first human victim in France",
+          "url": "https://rt-english.com/news/647529-shamonda-first-human-case/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "4136c79a05",
+      "amnen": [
+        "europa",
         "geopolitik",
         "varlden"
       ],
-      "poang": 6.87,
-      "antal_kallor": 2,
+      "poang": 10.95,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:17:02+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Deadly shooting near Paris investigated as 'crime of terrorism', minister says",
+              "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "🔴 Deadly shooting west of Paris ‘clearly terrorist’ attack, French interior minister says",
+              "url": "https://www.france24.com/en/france/20261023-french-prosecutors-investigate-paris-shooting-as-suspected-terror-attack",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "French prosecutors open hate crime probe after deadly drive-by shooting",
+              "url": "https://www.politico.eu/article/french-prosecutors-open-hate-crime-probe-after-deadly-drive-by-shooting-trappes-paris/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Prosecutors investigate Paris suburb shooting as possible 'terrorist' attack",
+              "url": "https://www.lemonde.fr/en/france/article/2026/10/23/prosecutors-investigate-paris-suburb-shooting-as-possible-terrorist-attack_6762274_7.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Deadly shooting near Paris investigated as 'crime of terrorism', minister says",
+      "kallor": [
+        {
+          "namn": "BBC World",
+          "rubrik": "Deadly shooting near Paris investigated as 'crime of terrorism', minister says",
+          "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "🔴 Deadly shooting west of Paris ‘clearly terrorist’ attack, French interior minister says",
+          "url": "https://www.france24.com/en/france/20261023-french-prosecutors-investigate-paris-shooting-as-suspected-terror-attack",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Politico Europe",
+          "rubrik": "French prosecutors open hate crime probe after deadly drive-by shooting",
+          "url": "https://www.politico.eu/article/french-prosecutors-open-hate-crime-probe-after-deadly-drive-by-shooting-trappes-paris/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Prosecutors investigate Paris suburb shooting as possible 'terrorist' attack",
+          "url": "https://www.lemonde.fr/en/france/article/2026/10/23/prosecutors-investigate-paris-suburb-shooting-as-possible-terrorist-attack_6762274_7.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "ef29ae667d",
+      "amnen": [
+        "asien",
+        "varlden"
+      ],
+      "poang": 10.82,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T15:16:14+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
+              "url": "https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Meghan Markle ‘distressed’ as Philippines probes father over child sexual abuse images",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371976/meghan-markle-distressed-philippines-probes-father-over-child-sexual-abuse-images",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Meghan Says She Is ‘Distressed’ by Claim Her Father Kept Child Abuse Images",
+              "url": "https://www.nytimes.com/2026/10/23/world/europe/meghan-markle-father-thomas-child-sexual-abuse.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
+      "kallor": [
+        {
+          "namn": "The Guardian",
+          "rubrik": "Duchess of Sussex ‘deeply distressed’ over child sexual abuse image claims against father",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Meghan Markle ‘distressed’ as Philippines probes father over child sexual abuse images",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371976/meghan-markle-distressed-philippines-probes-father-over-child-sexual-abuse-images",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Meghan Says She Is ‘Distressed’ by Claim Her Father Kept Child Abuse Images",
+          "url": "https://www.nytimes.com/2026/10/23/world/europe/meghan-markle-father-thomas-child-sexual-abuse.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "77a9541f18",
+      "amnen": [
+        "asien",
+        "geopolitik",
+        "varlden"
+      ],
+      "poang": 10.77,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T06:49:24+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "WHO warns Africa faces ‘complex’ Ebola outbreak as virus reaches Nigeria",
+              "url": "https://www.scmp.com/news/world/africa/article/3371887/who-warns-africa-faces-complex-ebola-outbreak-virus-reaches-nigeria",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Africa faces ‘complex’ Ebola outbreak after spread to Nigeria, WHO warns",
+              "url": "https://www.japantimes.co.jp/news/2026/10/23/world/science-health/africa-complex-ebola-outbreak/",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Ebola outbreak rebounds in DR Congo: WHO",
+              "url": "https://newsaf.cgtn.com/news/2026-10-22/Ebola-outbreak-rebounds-in-DR-Congo-WHO-1Rs0iw4k5fG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "statskontrollerad": true
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
+              "url": "https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "WHO warns Africa faces ‘complex’ Ebola outbreak as virus reaches Nigeria",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "WHO warns Africa faces ‘complex’ Ebola outbreak as virus reaches Nigeria",
+          "url": "https://www.scmp.com/news/world/africa/article/3371887/who-warns-africa-faces-complex-ebola-outbreak-virus-reaches-nigeria",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Africa faces ‘complex’ Ebola outbreak after spread to Nigeria, WHO warns",
+          "url": "https://www.japantimes.co.jp/news/2026/10/23/world/science-health/africa-complex-ebola-outbreak/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
+          "url": "https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Ebola outbreak rebounds in DR Congo: WHO",
+          "url": "https://newsaf.cgtn.com/news/2026-10-22/Ebola-outbreak-rebounds-in-DR-Congo-WHO-1Rs0iw4k5fG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "977dd24665",
+      "amnen": [
+        "asien",
+        "europa",
+        "varlden"
+      ],
+      "poang": 10.53,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T12:55:16+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Greece joins push to ban social media for minors",
+              "url": "https://www.aljazeera.com/news/2026/10/23/greece-joins-push-to-ban-social-media-for-minors?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Greece passes social media ban for children under 15",
+              "url": "https://www.thehindu.com/news/international/greece-passes-social-media-ban-for-children-under-15/article71614919.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Greece joins countries putting age-limits on social media, banning access for kids under 15",
+              "url": "https://www.dw.com/en/greece-joins-countries-putting-age-limits-on-social-media-banning-access-for-kids-under-15/a-79739606?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Greece joins push to ban social media for minors",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Greece joins push to ban social media for minors",
+          "url": "https://www.aljazeera.com/news/2026/10/23/greece-joins-push-to-ban-social-media-for-minors?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Greece passes social media ban for children under 15",
+          "url": "https://www.thehindu.com/news/international/greece-passes-social-media-ban-for-children-under-15/article71614919.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Greece joins countries putting age-limits on social media, banning access for kids under 15",
+          "url": "https://www.dw.com/en/greece-joins-countries-putting-age-limits-on-social-media-banning-access-for-kids-under-15/a-79739606?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "cf5dae9a77",
+      "amnen": [
+        "asien",
+        "varlden"
+      ],
+      "poang": 10.04,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T09:00:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
+              "url": "https://www.npr.org/2026/10/23/nx-s1-6012784/aung-san-suu-kyi-son-phone-call-myanmar",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Myanmar's Suu Kyi sounded 'fairly healthy', son says after first call in years",
+              "url": "https://www.thehindu.com/news/international/myanmars-suu-kyi-sounded-fairly-healthy-son-says-after-first-call-in-years/article71613000.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
+              "url": "https://www.theguardian.com/world/2026/oct/22/aung-san-suu-kyi-son-speaks-former-myanmar-leader",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
+      "kallor": [
+        {
+          "namn": "NPR",
+          "rubrik": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
+          "url": "https://www.npr.org/2026/10/23/nx-s1-6012784/aung-san-suu-kyi-son-phone-call-myanmar",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Myanmar's Suu Kyi sounded 'fairly healthy', son says after first call in years",
+          "url": "https://www.thehindu.com/news/international/myanmars-suu-kyi-sounded-fairly-healthy-son-says-after-first-call-in-years/article71613000.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
+          "url": "https://www.theguardian.com/world/2026/oct/22/aung-san-suu-kyi-son-speaks-former-myanmar-leader",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "4fc020bf14",
+      "amnen": [
+        "ai",
+        "geopolitik",
+        "marknader",
+        "usa",
+        "varlden"
+      ],
+      "poang": 9.97,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:24:31+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
+              "url": "https://www.cnbc.com/2026/10/23/alaska-senate-election-doj-lawsuit-sullivan.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Justice Department sues to block Alaska results if Sullivan loses",
+              "url": "https://thehill.com/homenews/campaign/6168331-justice-department-sues-to-block-alaska-results-if-sullivan-loses/",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Trump’s justice department sues to block Senate race certification in Alaska if Republican loses – live",
+              "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
+      "kallor": [
+        {
+          "namn": "CNBC",
+          "rubrik": "DOJ sues to block Alaska from certifying Senate race winner if Republican narrowly loses",
+          "url": "https://www.cnbc.com/2026/10/23/alaska-senate-election-doj-lawsuit-sullivan.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Trump’s justice department sues to block Senate race certification in Alaska if Republican loses – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Justice Department sues to block Alaska results if Sullivan loses",
+          "url": "https://thehill.com/homenews/campaign/6168331-justice-department-sues-to-block-alaska-results-if-sullivan-loses/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "18bc48a11b",
+      "amnen": [
+        "marknader",
+        "varlden"
+      ],
+      "poang": 9.65,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T13:50:46+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Brent crude oil tops $116, a six-month high, as tensions swell in the Middle East",
+              "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Oil Prices Rise as Middle East Risks Persist",
+              "url": "https://www.wsj.com/world/middle-east/oil-prices-rise-as-middle-east-risks-persist-c1262364?mod=rss_worldnews",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Oil prices jump to five-month high as attacks threaten global supply",
+              "url": "https://www.theguardian.com/business/2026/oct/22/oil-prices-jump-five-month-high-threats-supply",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Brent crude oil tops $116, a six-month high, as tensions swell in the Middle East",
+      "kallor": [
+        {
+          "namn": "CNBC",
+          "rubrik": "Brent crude oil tops $116, a six-month high, as tensions swell in the Middle East",
+          "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Oil prices jump to five-month high as attacks threaten global supply",
+          "url": "https://www.theguardian.com/business/2026/oct/22/oil-prices-jump-five-month-high-threats-supply",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Oil Prices Rise as Middle East Risks Persist",
+          "url": "https://www.wsj.com/world/middle-east/oil-prices-rise-as-middle-east-risks-persist-c1262364?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "344223ef56",
+      "amnen": [
+        "europa",
+        "geopolitik",
+        "varlden"
+      ],
+      "poang": 9.58,
+      "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-10-23T13:17:46+00:00",
       "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
+              "url": "https://www.aljazeera.com/news/2026/10/23/trump-ordered-to-testify-in-10bn-bbc-lawsuit-discovery-what-happens-now?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Trump ordered to answer questions under oath in BBC lawsuit",
+              "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Trump ordered to sit for deposition in defamation lawsuit against the BBC",
+              "url": "https://www.lemonde.fr/en/international/article/2026/10/23/judge-orders-trump-to-sit-for-a-deposition-in-his-defamation-lawsuit-against-the-bbc_6762010_4.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
       "reserv_rubrik": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
       "kallor": [
         {
@@ -231,14 +2141,1416 @@
           "rubrik": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
           "url": "https://www.aljazeera.com/news/2026/10/23/trump-ordered-to-testify-in-10bn-bbc-lawsuit-discovery-what-happens-now?traffic_source=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
         },
         {
           "namn": "BBC World",
           "rubrik": "Trump ordered to answer questions under oath in BBC lawsuit",
           "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Trump ordered to sit for deposition in defamation lawsuit against the BBC",
+          "url": "https://www.lemonde.fr/en/international/article/2026/10/23/judge-orders-trump-to-sit-for-a-deposition-in-his-defamation-lawsuit-against-the-bbc_6762010_4.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "258f6905b4",
+      "amnen": [
+        "asien",
+        "varlden"
+      ],
+      "poang": 9.37,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T11:38:12+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
+              "url": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "As Brazil Prepares for Election Runoff, a Town Offers Clues to Bolsonaro’s Rise",
+              "url": "https://www.nytimes.com/2026/10/23/world/americas/brazil-election-voters-lula-bolsonaro-minas-gerais.html",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Lula, Bolsonaro to clash once more before Brazil vote",
+              "url": "https://www.thehindu.com/news/international/lula-and-flavio-bolsonaro-face-off-in-a-pivotal-final-debate/article71614399.ece",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
+      "kallor": [
+        {
+          "namn": "NPR",
+          "rubrik": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
+          "url": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Lula, Bolsonaro to clash once more before Brazil vote",
+          "url": "https://www.thehindu.com/news/international/lula-and-flavio-bolsonaro-face-off-in-a-pivotal-final-debate/article71614399.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "As Brazil Prepares for Election Runoff, a Town Offers Clues to Bolsonaro’s Rise",
+          "url": "https://www.nytimes.com/2026/10/23/world/americas/brazil-election-voters-lula-bolsonaro-minas-gerais.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "3c394811d5",
+      "amnen": [
+        "ai",
+        "europa",
+        "norden",
+        "rymd",
+        "varlden"
+      ],
+      "poang": 9.07,
+      "antal_kallor": 2,
+      "har_primarkalla": true,
+      "senast": "2026-10-23T13:15:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "norden"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "ESA",
+              "land": "EU",
+              "rubrik": "Week in images: 19-23 October 2026",
+              "url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_19-23_October_2026",
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "Yle News",
+              "land": "FI",
+              "rubrik": "Video: This week in Finland, 23 October 2026",
+              "url": "https://yle.fi/a/74-20252995?origin=rss",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Week in images: 19-23 October 2026",
+      "kallor": [
+        {
+          "namn": "ESA",
+          "rubrik": "Week in images: 19-23 October 2026",
+          "url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_19-23_October_2026",
+          "betalvagg": false,
+          "typ": "primar",
+          "land": "EU",
+          "region": "europa",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Yle News",
+          "rubrik": "Video: This week in Finland, 23 October 2026",
+          "url": "https://yle.fi/a/74-20252995?origin=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FI",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "e447613819",
+      "amnen": [
+        "asien",
+        "marknader",
+        "startups",
+        "teknik",
+        "varlden"
+      ],
+      "poang": 8.48,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T04:31:29+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Mark Zuckerberg makes deal with Meta to help him pay billionaire tax if it passes",
+              "url": "https://www.thehindu.com/sci-tech/technology/mark-zuckerberg-makes-deal-with-meta-to-help-him-pay-billionaire-tax-if-it-passes/article71614441.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control of Meta",
+              "url": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+              "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "Mark Zuckerberg makes deal with Meta to help him pay billionaire tax if it passes",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Mark Zuckerberg makes deal with Meta to help him pay billionaire tax if it passes",
+          "url": "https://www.thehindu.com/sci-tech/technology/mark-zuckerberg-makes-deal-with-meta-to-help-him-pay-billionaire-tax-if-it-passes/article71614441.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "TechCrunch",
+          "rubrik": "Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control of Meta",
+          "url": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+          "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "6aedc23655",
+      "amnen": [
+        "norden",
+        "varlden"
+      ],
+      "poang": 8.0,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:38:45+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "norden",
+          "usa"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "Yle News",
+              "land": "FI",
+              "rubrik": "Video: Millions fall in puppy love with Finland's slow-TV livestream",
+              "url": "https://yle.fi/a/74-20252890?origin=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Finland’s Puppy Livestream Provides Comfort in Troubled Times",
+              "url": "https://www.nytimes.com/2026/10/23/world/europe/finland-puppies-livestream-slow-tv.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Video: Millions fall in puppy love with Finland's slow-TV livestream",
+      "kallor": [
+        {
+          "namn": "Yle News",
+          "rubrik": "Video: Millions fall in puppy love with Finland's slow-TV livestream",
+          "url": "https://yle.fi/a/74-20252890?origin=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FI",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Finland’s Puppy Livestream Provides Comfort in Troubled Times",
+          "url": "https://www.nytimes.com/2026/10/23/world/europe/finland-puppies-livestream-slow-tv.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "0e4bbcbfe3",
+      "amnen": [
+        "marknader",
+        "varlden"
+      ],
+      "poang": 7.98,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:32:44+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Two ex-FBI officials charged with allegedly lying about Hunter Biden probe: DOJ",
+              "url": "https://www.cnbc.com/2026/10/23/fbi-hunter-biden-criminal-charges.html",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Two ex-FBI officials charged with lying about investigation into Hunter Biden’s laptop",
+              "url": "https://www.theguardian.com/us-news/2026/oct/23/ex-fbi-officials-charged-hunter-biden-laptop",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Two ex-FBI officials charged with allegedly lying about Hunter Biden probe: DOJ",
+      "kallor": [
+        {
+          "namn": "CNBC",
+          "rubrik": "Two ex-FBI officials charged with allegedly lying about Hunter Biden probe: DOJ",
+          "url": "https://www.cnbc.com/2026/10/23/fbi-hunter-biden-criminal-charges.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Two ex-FBI officials charged with lying about investigation into Hunter Biden’s laptop",
+          "url": "https://www.theguardian.com/us-news/2026/oct/23/ex-fbi-officials-charged-hunter-biden-laptop",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "59ed1ddac0",
+      "amnen": [
+        "marknader",
+        "varlden"
+      ],
+      "poang": 7.91,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T15:56:31+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "‘How can France stop Marine Le Pen’? Our Europe columnists answered your questions on protests and politics in France",
+              "url": "https://www.theguardian.com/world/live/2026/oct/21/france-riots-protests-reader-questions-rokhaya-dallio-alexander-hurst",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Don’t Assume Marine Le Pen Can Save France",
+              "url": "https://www.wsj.com/opinion/dont-assume-marine-le-pen-can-save-france-3730fd85?mod=rss_worldnews",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "‘How can France stop Marine Le Pen’? Our Europe columnists answered your questions on protests and politics in France",
+      "kallor": [
+        {
+          "namn": "The Guardian",
+          "rubrik": "‘How can France stop Marine Le Pen’? Our Europe columnists answered your questions on protests and politics in France",
+          "url": "https://www.theguardian.com/world/live/2026/oct/21/france-riots-protests-reader-questions-rokhaya-dallio-alexander-hurst",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Don’t Assume Marine Le Pen Can Save France",
+          "url": "https://www.wsj.com/opinion/dont-assume-marine-le-pen-can-save-france-3730fd85?mod=rss_worldnews",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "77975b5c79",
+      "amnen": [
+        "europa",
+        "varlden"
+      ],
+      "poang": 7.78,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T14:56:05+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "What to know as Brazil prepares for tense presidential run-off",
+              "url": "https://www.aljazeera.com/news/2026/10/23/what-to-know-as-brazil-prepares-for-tense-presidential-run-off?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Brazil's tense presidential run-off campaign feels like a psychological thriller",
+              "url": "https://www.france24.com/en/americas/20261023-brazil-s-tense-presidential-run-off-campaign-feels-like-a-psychological-thriller",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "What to know as Brazil prepares for tense presidential run-off",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "What to know as Brazil prepares for tense presidential run-off",
+          "url": "https://www.aljazeera.com/news/2026/10/23/what-to-know-as-brazil-prepares-for-tense-presidential-run-off?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Brazil's tense presidential run-off campaign feels like a psychological thriller",
+          "url": "https://www.france24.com/en/americas/20261023-brazil-s-tense-presidential-run-off-campaign-feels-like-a-psychological-thriller",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "47af7e81e2",
+      "amnen": [
+        "ai",
+        "europa",
+        "teknik"
+      ],
+      "poang": 7.77,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T14:47:41+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The Verge",
+              "land": "US",
+              "rubrik": "Meta delays new business terms after publisher pushback on AI scraping",
+              "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Euractiv",
+              "land": "BE",
+              "rubrik": "Meta delays AI business terms amid media sector outcry",
+              "url": "https://www.rapporteur.com/news/meta-delays-ai-business-terms-until-20-november/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Meta delays new business terms after publisher pushback on AI scraping",
+      "kallor": [
+        {
+          "namn": "The Verge",
+          "rubrik": "Meta delays new business terms after publisher pushback on AI scraping",
+          "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Euractiv",
+          "rubrik": "Meta delays AI business terms amid media sector outcry",
+          "url": "https://www.rapporteur.com/news/meta-delays-ai-business-terms-until-20-november/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "8103e567bc",
+      "amnen": [
+        "ai",
+        "asien",
+        "varlden"
+      ],
+      "poang": 7.7,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T14:18:29+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "France deploys 70,000 police for new protests as Macron delays Africa trip",
+              "url": "https://www.scmp.com/news/world/europe/article/3371973/france-deploys-70000-police-new-protests-macron-delays-africa-trip",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "France Plans to Bolster Police Presence, Expecting New Protests",
+              "url": "https://www.nytimes.com/2026/10/23/world/europe/france-police-protests.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "France deploys 70,000 police for new protests as Macron delays Africa trip",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "France deploys 70,000 police for new protests as Macron delays Africa trip",
+          "url": "https://www.scmp.com/news/world/europe/article/3371973/france-deploys-70000-police-new-protests-macron-delays-africa-trip",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "France Plans to Bolster Police Presence, Expecting New Protests",
+          "url": "https://www.nytimes.com/2026/10/23/world/europe/france-police-protests.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "c94bdcc5ce",
+      "amnen": [
+        "asien",
+        "europa",
+        "varlden"
+      ],
+      "poang": 7.68,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T14:09:07+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Casualties feared as multi-storey building collapses in Nairobi",
+              "url": "https://www.thehindu.com/news/international/possible-deaths-in-building-collapse-in-nairobi-kenya/article71616572.ece",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Many feared trapped under collapsed building in Nairobi",
+              "url": "https://www.dw.com/en/many-feared-trapped-under-collapsed-building-in-nairobi/a-79744598?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Casualties feared as multi-storey building collapses in Nairobi",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Casualties feared as multi-storey building collapses in Nairobi",
+          "url": "https://www.thehindu.com/news/international/possible-deaths-in-building-collapse-in-nairobi-kenya/article71616572.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Many feared trapped under collapsed building in Nairobi",
+          "url": "https://www.dw.com/en/many-feared-trapped-under-collapsed-building-in-nairobi/a-79744598?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "0da570ebc0",
+      "amnen": [
+        "asien",
+        "europa",
+        "varlden"
+      ],
+      "poang": 7.66,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T13:55:40+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "French authorities tighten restrictions and ban specific protests",
+              "url": "https://www.france24.com/en/french-authorities-tighten-restrictions-and-ban-specific-protests",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "French authorities deploy 70,000 officers for October 24th protests; Louvre and other museums closed",
+              "url": "https://www.thehindu.com/news/international/french-authorities-deploy-70000-officers-for-october-24th-protests-louvre-and-other-museums-closed/article71616370.ece",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "French authorities tighten restrictions and ban specific protests",
+      "kallor": [
+        {
+          "namn": "France 24",
+          "rubrik": "French authorities tighten restrictions and ban specific protests",
+          "url": "https://www.france24.com/en/french-authorities-tighten-restrictions-and-ban-specific-protests",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "French authorities deploy 70,000 officers for October 24th protests; Louvre and other museums closed",
+          "url": "https://www.thehindu.com/news/international/french-authorities-deploy-70000-officers-for-october-24th-protests-louvre-and-other-museums-closed/article71616370.ece",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "6fcdde7b15",
+      "amnen": [
+        "ai",
+        "asien",
+        "geopolitik",
+        "marknader",
+        "varlden"
+      ],
+      "poang": 7.61,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-10-22T21:31:29+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "What Is PHP? Why Are Government and Business Websites Going Offline?",
+              "url": "https://www.nytimes.com/2026/10/22/technology/what-is-php-vulnerability-risks.html",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "AI-detected PHP security flaws disrupt websites, spark warnings across Asia",
+              "url": "https://asia.nikkei.com/spotlight/cybersecurity/ai-detected-php-security-flaws-disrupt-websites-spark-warnings-across-asia",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "PHP flaws prompt shutdowns of government websites across Europe",
+              "url": "https://news.cgtn.com/news/2026-10-22/PHP-flaws-prompt-shutdowns-of-government-websites-across-Europe-1RrOh0exeMg/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige"
+      },
+      "reserv_rubrik": "What Is PHP? Why Are Government and Business Websites Going Offline?",
+      "kallor": [
+        {
+          "namn": "The New York Times",
+          "rubrik": "What Is PHP? Why Are Government and Business Websites Going Offline?",
+          "url": "https://www.nytimes.com/2026/10/22/technology/what-is-php-vulnerability-risks.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "AI-detected PHP security flaws disrupt websites, spark warnings across Asia",
+          "url": "https://asia.nikkei.com/spotlight/cybersecurity/ai-detected-php-security-flaws-disrupt-websites-spark-warnings-across-asia",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "PHP flaws prompt shutdowns of government websites across Europe",
+          "url": "https://news.cgtn.com/news/2026-10-22/PHP-flaws-prompt-shutdowns-of-government-websites-across-Europe-1RrOh0exeMg/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "eec5bb323b",
+      "amnen": [
+        "europa",
+        "varlden"
+      ],
+      "poang": 7.58,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T13:17:18+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Russia drops cluster bombs on Ukraine as Kyiv consolidates front line",
+              "url": "https://www.aljazeera.com/news/2026/10/23/russia-drops-cluster-bombs-on-ukraine-as-kyiv-consolidates-front-line?traffic_source=rss",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Ukraine: Life near the front line in Sloviansk",
+              "url": "https://www.dw.com/en/ukraine-life-near-the-front-line-in-sloviansk/a-79722636?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Russia drops cluster bombs on Ukraine as Kyiv consolidates front line",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Russia drops cluster bombs on Ukraine as Kyiv consolidates front line",
+          "url": "https://www.aljazeera.com/news/2026/10/23/russia-drops-cluster-bombs-on-ukraine-as-kyiv-consolidates-front-line?traffic_source=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Ukraine: Life near the front line in Sloviansk",
+          "url": "https://www.dw.com/en/ukraine-life-near-the-front-line-in-sloviansk/a-79722636?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "9697134824",
+      "amnen": [
+        "asien",
+        "energi",
+        "europa",
+        "marknader",
+        "varlden"
+      ],
+      "poang": 7.5,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T12:42:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Japan-Russia ties erode as journalist sits in Moscow jail",
+              "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Energy keeps Japan-Russia ties hanging on by a thread",
+              "url": "https://asia.nikkei.com/politics/international-relations/energy-keeps-japan-russia-ties-hanging-on-by-a-thread",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Japan-Russia ties erode as journalist sits in Moscow jail",
+      "kallor": [
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Japan-Russia ties erode as journalist sits in Moscow jail",
+          "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "Energy keeps Japan-Russia ties hanging on by a thread",
+          "url": "https://asia.nikkei.com/politics/international-relations/energy-keeps-japan-russia-ties-hanging-on-by-a-thread",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "050646ec2f",
+      "amnen": [
+        "ai",
+        "europa",
+        "varlden"
+      ],
+      "poang": 7.5,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T12:41:39+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+              "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+              "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+      "kallor": [
+        {
+          "namn": "NPR",
+          "rubrik": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+          "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+          "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "cbe850dd4c",
+      "amnen": [
+        "europa",
+        "varlden"
+      ],
+      "poang": 7.34,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T11:21:54+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "French authorities ban some student protests after weekend looting and clashes",
+              "url": "https://www.france24.com/en/french-authorities-ban-some-student-protests-after-weekend-looting-and-clashes",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "In the Wake of Riots, the French Authorities Ban Some Protests",
+              "url": "https://www.nytimes.com/2026/10/22/world/europe/france-protests-macron.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "French authorities ban some student protests after weekend looting and clashes",
+      "kallor": [
+        {
+          "namn": "France 24",
+          "rubrik": "French authorities ban some student protests after weekend looting and clashes",
+          "url": "https://www.france24.com/en/french-authorities-ban-some-student-protests-after-weekend-looting-and-clashes",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "In the Wake of Riots, the French Authorities Ban Some Protests",
+          "url": "https://www.nytimes.com/2026/10/22/world/europe/france-protests-macron.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "fbb15f4d03",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "poang": 6.98,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:31:20+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "En person skjuten i södra Stockholm",
+              "url": "https://www.svt.se/nyheter/lokalt/stockholm/larm-om-skottlossning-i-sodra-stockholm-kzidi4",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "En skjuten vid bil i södra Stockholm",
+              "url": "https://www.dn.se/sverige/en-skjuten-vid-bil-i-sodra-stockholm/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige"
+      },
+      "reserv_rubrik": "En person skjuten i södra Stockholm",
+      "kallor": [
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "En person skjuten i södra Stockholm",
+          "url": "https://www.svt.se/nyheter/lokalt/stockholm/larm-om-skottlossning-i-sodra-stockholm-kzidi4",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "En skjuten vid bil i södra Stockholm",
+          "url": "https://www.dn.se/sverige/en-skjuten-vid-bil-i-sodra-stockholm/",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "88b73a541e",
+      "amnen": [
+        "marknader",
+        "teknik"
+      ],
+      "poang": 6.97,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T16:24:56+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Doctors call Moderna, Merck cancer vaccine data a major advancement — despite Wall Street reaction",
+              "url": "https://www.cnbc.com/2026/10/23/moderna-merck-cancer-vaccine-data.html",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Ars Technica",
+              "land": "US",
+              "rubrik": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
+              "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Doctors call Moderna, Merck cancer vaccine data a major advancement — despite Wall Street reaction",
+      "kallor": [
+        {
+          "namn": "CNBC",
+          "rubrik": "Doctors call Moderna, Merck cancer vaccine data a major advancement — despite Wall Street reaction",
+          "url": "https://www.cnbc.com/2026/10/23/moderna-merck-cancer-vaccine-data.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Ars Technica",
+          "rubrik": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
+          "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "aa35950c78",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "poang": 6.71,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-23T14:19:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "Busch råd: ”Kanske ska släppa fram en mitten-högerregering”",
+              "url": "https://www.sverigesradio.se/artikel/9327356",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Ebba Busch: S bör överväga att släppa fram Kristersson",
+              "url": "https://www.dn.se/sverige/ebba-busch-s-bor-overvaga-att-slappa-fram-kristersson/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige"
+      },
+      "reserv_rubrik": "Busch råd: ”Kanske ska släppa fram en mitten-högerregering”",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "Busch råd: ”Kanske ska släppa fram en mitten-högerregering”",
+          "url": "https://www.sverigesradio.se/artikel/9327356",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Ebba Busch: S bör överväga att släppa fram Kristersson",
+          "url": "https://www.dn.se/sverige/ebba-busch-s-bor-overvaga-att-slappa-fram-kristersson/",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "2cf2c2e012",
+      "amnen": [
+        "ai"
+      ],
+      "poang": 6.5,
+      "antal_kallor": 1,
+      "har_primarkalla": true,
+      "senast": "2026-10-23T17:00:00+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "OpenAI",
+              "land": "US",
+              "rubrik": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+              "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "kallor": [
+        {
+          "namn": "OpenAI",
+          "rubrik": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+          "betalvagg": false,
+          "typ": "primar",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false
+    },
+    {
+      "id": "58b8d00383",
+      "amnen": [
+        "ai"
+      ],
+      "poang": 6.45,
+      "antal_kallor": 1,
+      "har_primarkalla": true,
+      "senast": "2026-10-23T16:15:50+00:00",
+      "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Hugging Face",
+              "land": "US",
+              "rubrik": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+              "url": "https://huggingface.co/blog/allenai/litpivot",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
+      "reserv_rubrik": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "kallor": [
+        {
+          "namn": "Hugging Face",
+          "rubrik": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "url": "https://huggingface.co/blog/allenai/litpivot",
+          "betalvagg": false,
+          "typ": "primar",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
@@ -249,11 +3561,35 @@
         "europa",
         "varlden"
       ],
-      "poang": 6.75,
+      "poang": 6.45,
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-10-23T12:17:45+00:00",
       "utkast": null,
+      "perspektiv": {
+        "regioner": [
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Denmark to ban mink farming in government U-turn",
+              "url": "https://www.bbc.co.uk/news/articles/c59vzjm118j1o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Euractiv",
+              "land": "BE",
+              "rubrik": "Denmark to phase out mink farming",
+              "url": "https://www.rapporteur.com/news/denmark-to-phase-out-mink-farming/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null
+      },
       "reserv_rubrik": "Denmark to ban mink farming in government U-turn",
       "kallor": [
         {
@@ -261,787 +3597,22 @@
           "rubrik": "Denmark to ban mink farming in government U-turn",
           "url": "https://www.bbc.co.uk/news/articles/c59vzjm118j1o?at_medium=RSS&at_campaign=rss",
           "betalvagg": false,
-          "typ": "media"
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
         },
         {
           "namn": "Euractiv",
           "rubrik": "Denmark to phase out mink farming",
           "url": "https://www.rapporteur.com/news/denmark-to-phase-out-mink-farming/",
           "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "889c6105b2",
-      "amnen": [
-        "varlden"
-      ],
-      "poang": 6.75,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T12:17:20+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/typhoon-champi-unleashes-huge-waves-along-taiwans-coast?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media"
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-          "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "7baf02dcd7",
-      "amnen": [
-        "europa",
-        "vetenskap"
-      ],
-      "poang": 6.71,
-      "antal_kallor": 2,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T00:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "First human infected with rare livestock pathogen: what we know about Shamonda virus",
-      "kallor": [
-        {
-          "namn": "Nature News",
-          "rubrik": "First human infected with rare livestock pathogen: what we know about Shamonda virus",
-          "url": "https://www.nature.com/articles/d41586-026-03416-1",
-          "betalvagg": true,
-          "typ": "forskning"
-        },
-        {
-          "namn": "Euractiv",
-          "rubrik": "Europe on alert as France reports first human Shamonda virus case",
-          "url": "https://www.rapporteur.com/news/europe-on-alert-as-france-reports-first-human-shamonda-virus-case/",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "a8e78efa64",
-      "amnen": [
-        "teknik",
-        "vetenskap"
-      ],
-      "poang": 6.71,
-      "antal_kallor": 2,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T00:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Moderna mRNA vaccine almost halves the risk of skin cancer returning",
-      "kallor": [
-        {
-          "namn": "Nature News",
-          "rubrik": "Moderna mRNA vaccine almost halves the risk of skin cancer returning",
-          "url": "https://www.nature.com/articles/d41586-026-03417-0",
-          "betalvagg": true,
-          "typ": "forskning"
-        },
-        {
-          "namn": "Ars Technica",
-          "rubrik": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
-          "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "e7cc900f77",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "poang": 6.67,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T11:39:39+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Skjutning utanför Paris – en död",
-      "kallor": [
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Skjutning utanför Paris – en död",
-          "url": "https://www.svt.se/nyheter/utrikes/skjutning-utanfor-paris-en-dod",
-          "betalvagg": false,
-          "typ": "media"
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Skjutning utanför Paris misstänks vara terrordåd",
-          "url": "https://www.dn.se/varlden/skjutning-utanfor-paris-misstanks-vara-terrordad/",
-          "betalvagg": true,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "853d132a5a",
-      "amnen": [
-        "ai",
-        "geopolitik",
-        "varlden"
-      ],
-      "poang": 6.5,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T10:20:31+00:00",
-      "utkast": null,
-      "reserv_rubrik": "South Korea invites North for military talks over border",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "South Korea invites North for military talks over border",
-          "url": "https://www.aljazeera.com/news/2026/10/23/south-korea-invites-north-for-military-talks-over-border?traffic_source=rss",
-          "betalvagg": false,
-          "typ": "media"
-        },
-        {
-          "namn": "The Guardian World",
-          "rubrik": "North Korea prepares to restart propaganda loudspeakers as ties sour with South",
-          "url": "https://www.theguardian.com/world/2026/oct/22/north-korea-to-restart-propaganda-loudspeakers-south-korea",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "d670512861",
-      "amnen": [
-        "europa",
-        "rymd"
-      ],
-      "poang": 6.37,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T13:15:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Week in images: 19-23 October 2026",
-      "kallor": [
-        {
-          "namn": "ESA",
-          "rubrik": "Week in images: 19-23 October 2026",
-          "url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_19-23_October_2026",
-          "betalvagg": false,
-          "typ": "primar"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "54e7f1d403",
-      "amnen": [
-        "geopolitik",
-        "sverige"
-      ],
-      "poang": 6.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T12:00:13+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Tilläggsdirektiv till Utredningen om en åldersgräns på sociala medier",
-      "kallor": [
-        {
-          "namn": "Regeringskansliet",
-          "rubrik": "Tilläggsdirektiv till Utredningen om en åldersgräns på sociala medier",
-          "url": "https://www.regeringen.se/rattsliga-dokument/kommittedirektiv/2026/10/dir.-2026123",
-          "betalvagg": false,
-          "typ": "primar"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "35aac18680",
-      "amnen": [
-        "varlden"
-      ],
-      "poang": 6.2,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T07:53:58+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-      "kallor": [
-        {
-          "namn": "The Guardian World",
-          "rubrik": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-          "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
-          "betalvagg": false,
-          "typ": "media"
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Powerful earthquake hits Tibet killing 16 people, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "f48d742060",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "poang": 5.9,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T05:31:37+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Stort sparpaket på Volvo Cars – 2 500 får gå",
-      "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Stort sparpaket på Volvo Cars – 2 500 får gå",
-          "url": "https://www.sverigesradio.se/artikel/9326939",
-          "betalvagg": false,
-          "typ": "media"
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Volvo Cars skär ned med 2 500 tjänster – flest i Sverige",
-          "url": "https://www.dn.se/ekonomi/volvo-cars-skar-ned-med-2-500-tjanster-flest-i-sverige/",
-          "betalvagg": true,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "d426e7fa95",
-      "amnen": [
-        "europa",
-        "marknader"
-      ],
-      "poang": 5.71,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T08:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "ECB Consumer Expectations Survey results – September 2026",
-      "kallor": [
-        {
-          "namn": "Europeiska centralbanken",
-          "rubrik": "ECB Consumer Expectations Survey results – September 2026",
-          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-          "betalvagg": false,
-          "typ": "primar"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "1819c0f27e",
-      "amnen": [
-        "europa",
-        "rymd"
-      ],
-      "poang": 5.71,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T08:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Earth from Space: The pink city",
-      "kallor": [
-        {
-          "namn": "ESA",
-          "rubrik": "Earth from Space: The pink city",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
-          "betalvagg": false,
-          "typ": "primar"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "4c012972eb",
-      "amnen": [
-        "marknader",
-        "rymd",
-        "startups",
-        "teknik"
-      ],
-      "poang": 5.31,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-23T00:46:09+00:00",
-      "utkast": null,
-      "reserv_rubrik": "SpaceX records $561 million investment gain from stake in Elon Musk's Boring Co.",
-      "kallor": [
-        {
-          "namn": "CNBC",
-          "rubrik": "SpaceX records $561 million investment gain from stake in Elon Musk's Boring Co.",
-          "url": "https://www.cnbc.com/2026/10/22/spacex-records-561-million-investment-gain-from-stake-in-boring-co.html",
-          "betalvagg": false,
-          "typ": "media"
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Elon Musk made a $1B investment in Skydance, report says",
-          "url": "https://techcrunch.com/2026/10/22/elon-musk-made-a-1-billion-investment-in-skydance-report-says/",
-          "betalvagg": false,
-          "typ": "media"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "58cdfcc9ae",
-      "amnen": [
-        "rymd"
-      ],
-      "poang": 5.22,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:05:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "APOD: 2026 October 23 – Andromeda in Southern Spring",
-      "kallor": [
-        {
-          "namn": "NASA",
-          "rubrik": "APOD: 2026 October 23 – Andromeda in Southern Spring",
-          "url": "https://science.nasa.gov/image-article/apod-2026-october-23-andromeda-in-southern-spring/",
-          "betalvagg": false,
-          "typ": "primar"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "346c20af44",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "A Small Model Asks Better: Fine-Tuning Query Clarification for Retrieval-Augmented Generation",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "A Small Model Asks Better: Fine-Tuning Query Clarification for Retrieval-Augmented Generation",
-          "url": "https://arxiv.org/abs/2610.28686",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "66c7f8fce9",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
-          "url": "https://arxiv.org/abs/2610.28698",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "0860ae931c",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
-          "url": "https://arxiv.org/abs/2610.28706",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "298b763b2d",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
-          "url": "https://arxiv.org/abs/2610.28763",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "39a4321edf",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Forging More Tasks into Better Harnesses: Agentic Harness Evolution via Successive Scale Racing",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Forging More Tasks into Better Harnesses: Agentic Harness Evolution via Successive Scale Racing",
-          "url": "https://arxiv.org/abs/2610.28815",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "1dcca84471",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI",
-          "url": "https://arxiv.org/abs/2610.28826",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "f3da0b22b0",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Sketch2Sim: an end-to-end modular framework for hand-drawn circuit analysis",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Sketch2Sim: an end-to-end modular framework for hand-drawn circuit analysis",
-          "url": "https://arxiv.org/abs/2610.28836",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "8b84705448",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Speedrunning Relational Foundation Model Pretraining",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Speedrunning Relational Foundation Model Pretraining",
-          "url": "https://arxiv.org/abs/2610.28855",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "12fb3c25ab",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "To Manipulate or Not: Opinion Dynamics in LLM Interactions",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "To Manipulate or Not: Opinion Dynamics in LLM Interactions",
-          "url": "https://arxiv.org/abs/2610.28875",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "f339ec2d9f",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Fig: Automated Multiagent Behavior Elicitor",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Fig: Automated Multiagent Behavior Elicitor",
-          "url": "https://arxiv.org/abs/2610.28891",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "4ca049350f",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
-          "url": "https://arxiv.org/abs/2610.28905",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "bfb5be5ffd",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
-          "url": "https://arxiv.org/abs/2610.28909",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "73ecda55fc",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Simply Logical -- The First Three Decades",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Simply Logical -- The First Three Decades",
-          "url": "https://arxiv.org/abs/2610.28912",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "9764cbd354",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "D-Skill: Distilling Teacher Knowledge through Agent Skills",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "D-Skill: Distilling Teacher Knowledge through Agent Skills",
-          "url": "https://arxiv.org/abs/2610.28914",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "d62c0c7fa8",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Back Up Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Back Up Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents",
-          "url": "https://arxiv.org/abs/2610.28934",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "3ba6a38709",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
-          "url": "https://arxiv.org/abs/2610.28982",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "1b72181107",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
-          "url": "https://arxiv.org/abs/2610.28987",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "ac339af3d6",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "AgentPolicyForge: From Executable Environments to Policy Benchmarks and Adaptive Guards",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "AgentPolicyForge: From Executable Environments to Policy Benchmarks and Adaptive Guards",
-          "url": "https://arxiv.org/abs/2610.28989",
-          "betalvagg": false,
-          "typ": "forskning"
-        }
-      ],
-      "granskad": false
-    },
-    {
-      "id": "eec74ed7f0",
-      "amnen": [
-        "ai"
-      ],
-      "poang": 5.21,
-      "antal_kallor": 1,
-      "har_primarkalla": true,
-      "senast": "2026-10-23T04:00:00+00:00",
-      "utkast": null,
-      "reserv_rubrik": "An Evidence-Driven Multi-Agent Compound AI System for Head and Neck Proton Radiotherapy Planning",
-      "kallor": [
-        {
-          "namn": "arXiv cs.AI",
-          "rubrik": "An Evidence-Driven Multi-Agent Compound AI System for Head and Neck Proton Radiotherapy Planning",
-          "url": "https://arxiv.org/abs/2610.29010",
-          "betalvagg": false,
-          "typ": "forskning"
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false
@@ -1051,142 +3622,32 @@
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 46
+      "artiklar": 47,
+      "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
       "id": "sr-ekot",
       "ok": true,
-      "artiklar": 20
+      "artiklar": 20,
+      "url": "https://api.sr.se/api/rss/program/83"
     },
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 103
+      "artiklar": 105,
+      "url": "https://www.dn.se/rss/"
     },
     {
       "id": "di",
       "ok": true,
-      "artiklar": 20
+      "artiklar": 20,
+      "url": "https://www.di.se/rss"
     },
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 17
-    },
-    {
-      "id": "riksbanken",
-      "ok": true,
-      "artiklar": 0
-    },
-    {
-      "id": "scb",
-      "ok": false,
-      "fel": "<unknown>:5:10: mismatched tag"
-    },
-    {
-      "id": "fi",
-      "ok": false,
-      "fel": "<unknown>:64:2: mismatched tag"
-    },
-    {
-      "id": "ft",
-      "ok": true,
-      "artiklar": 12
-    },
-    {
-      "id": "economist",
-      "ok": true,
-      "artiklar": 4
-    },
-    {
-      "id": "cnbc",
-      "ok": true,
-      "artiklar": 30
-    },
-    {
-      "id": "ecb",
-      "ok": true,
-      "artiklar": 1
-    },
-    {
-      "id": "fed",
-      "ok": true,
-      "artiklar": 0
-    },
-    {
-      "id": "imf",
-      "ok": false,
-      "fel": "<unknown>:2:0: not well-formed (invalid token)"
-    },
-    {
-      "id": "bbc",
-      "ok": true,
-      "artiklar": 27
-    },
-    {
-      "id": "guardian",
-      "ok": true,
-      "artiklar": 34
-    },
-    {
-      "id": "aljazeera",
-      "ok": true,
-      "artiklar": 25
-    },
-    {
-      "id": "politico-eu",
-      "ok": true,
-      "artiklar": 10
-    },
-    {
-      "id": "euractiv",
-      "ok": true,
-      "artiklar": 60
-    },
-    {
-      "id": "regeringen",
-      "ok": true,
-      "artiklar": 1
-    },
-    {
-      "id": "arxiv-ai",
-      "ok": true,
-      "artiklar": 370
-    },
-    {
-      "id": "hf-blog",
-      "ok": true,
-      "artiklar": 4
-    },
-    {
-      "id": "openai",
-      "ok": true,
-      "artiklar": 3
-    },
-    {
-      "id": "deepmind",
-      "ok": true,
-      "artiklar": 1
-    },
-    {
-      "id": "mit-tr",
-      "ok": true,
-      "artiklar": 8
-    },
-    {
-      "id": "verge",
-      "ok": true,
-      "artiklar": 10
-    },
-    {
-      "id": "ars",
-      "ok": true,
-      "artiklar": 20
-    },
-    {
-      "id": "techcrunch",
-      "ok": true,
-      "artiklar": 20
+      "artiklar": 14,
+      "url": "https://www.breakit.se/feed/artiklar"
     },
     {
       "id": "nyteknik",
@@ -1194,44 +3655,39 @@
       "fel": "<unknown>:119:27: not well-formed (invalid token)"
     },
     {
-      "id": "ieee-robotics",
+      "id": "yle",
       "ok": true,
-      "artiklar": 0
+      "artiklar": 14,
+      "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS"
     },
     {
-      "id": "robot-report",
+      "id": "nrk",
       "ok": true,
-      "artiklar": 1
+      "artiklar": 46,
+      "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
-      "id": "nature",
+      "id": "riksbanken",
       "ok": true,
-      "artiklar": 5
+      "artiklar": 0,
+      "url": "https://www.riksbank.se/sv/rss/pressmeddelanden/"
     },
     {
-      "id": "quanta",
-      "ok": true,
-      "artiklar": 0
-    },
-    {
-      "id": "nasa",
-      "ok": true,
-      "artiklar": 7
-    },
-    {
-      "id": "esa",
-      "ok": true,
-      "artiklar": 6
-    },
-    {
-      "id": "iea",
+      "id": "scb",
       "ok": false,
-      "fel": "<unknown>:74:158: not well-formed (invalid token)"
+      "fel": "<unknown>:16:98: not well-formed (invalid token)"
     },
     {
-      "id": "carbonbrief",
+      "id": "fi",
       "ok": true,
-      "artiklar": 1
+      "artiklar": 4,
+      "url": "https://www.fi.se/sv/publicerat/nyheter/rss/"
+    },
+    {
+      "id": "regeringen",
+      "ok": true,
+      "artiklar": 1,
+      "url": "https://www.regeringen.se/Filter/RssFeed?filterType=Taxonomy&filterByType=FilterablePageBase&preFilteredCategories=1324"
     },
     {
       "id": "svk",
@@ -1239,14 +3695,302 @@
       "fel": "<unknown>:10:149: mismatched tag"
     },
     {
-      "id": "breaking-defense",
+      "id": "ft",
       "ok": true,
-      "artiklar": 10
+      "artiklar": 12,
+      "url": "https://www.ft.com/rss/home"
+    },
+    {
+      "id": "economist",
+      "ok": true,
+      "artiklar": 4,
+      "url": "https://www.economist.com/finance-and-economics/rss.xml"
+    },
+    {
+      "id": "bbc",
+      "ok": true,
+      "artiklar": 28,
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+    {
+      "id": "guardian",
+      "ok": true,
+      "artiklar": 33,
+      "url": "https://www.theguardian.com/world/rss"
+    },
+    {
+      "id": "lemonde",
+      "ok": true,
+      "artiklar": 14,
+      "url": "https://www.lemonde.fr/en/rss/une.xml"
+    },
+    {
+      "id": "france24",
+      "ok": true,
+      "artiklar": 24,
+      "url": "https://www.france24.com/en/rss"
+    },
+    {
+      "id": "spiegel",
+      "ok": true,
+      "artiklar": 0,
+      "url": "https://www.spiegel.de/international/index.rss"
+    },
+    {
+      "id": "dw",
+      "ok": true,
+      "artiklar": 27,
+      "url": "https://rss.dw.com/rdf/rss-en-all"
+    },
+    {
+      "id": "elpais",
+      "ok": true,
+      "artiklar": 22,
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
+    },
+    {
+      "id": "politico-eu",
+      "ok": true,
+      "artiklar": 10,
+      "url": "https://www.politico.eu/feed/"
+    },
+    {
+      "id": "euractiv",
+      "ok": true,
+      "artiklar": 63,
+      "url": "https://www.euractiv.com/feed/"
+    },
+    {
+      "id": "ecb",
+      "ok": true,
+      "artiklar": 1,
+      "url": "https://www.ecb.europa.eu/rss/press.html"
+    },
+    {
+      "id": "esa",
+      "ok": true,
+      "artiklar": 6,
+      "url": "https://www.esa.int/rssfeed/Our_Activities"
     },
     {
       "id": "nato",
       "ok": false,
       "fel": "<unknown>:18:18: not well-formed (invalid token)"
+    },
+    {
+      "id": "nyt",
+      "ok": true,
+      "artiklar": 35,
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    },
+    {
+      "id": "wapo",
+      "ok": false,
+      "fel": "<unknown>:7:2: mismatched tag"
+    },
+    {
+      "id": "wsj",
+      "ok": true,
+      "artiklar": 27,
+      "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+    },
+    {
+      "id": "fox",
+      "ok": true,
+      "artiklar": 6,
+      "url": "https://moxie.foxnews.com/google-publisher/world.xml"
+    },
+    {
+      "id": "npr",
+      "ok": true,
+      "artiklar": 10,
+      "url": "https://feeds.npr.org/1004/rss.xml"
+    },
+    {
+      "id": "thehill",
+      "ok": true,
+      "artiklar": 15,
+      "url": "https://thehill.com/news/feed/"
+    },
+    {
+      "id": "cnbc",
+      "ok": true,
+      "artiklar": 30,
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    },
+    {
+      "id": "fed",
+      "ok": true,
+      "artiklar": 0,
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+    },
+    {
+      "id": "nasa",
+      "ok": true,
+      "artiklar": 5,
+      "url": "https://www.nasa.gov/news-release/feed/"
+    },
+    {
+      "id": "nikkei",
+      "ok": true,
+      "artiklar": 50,
+      "url": "https://asia.nikkei.com/rss/feed/nar"
+    },
+    {
+      "id": "japantimes",
+      "ok": true,
+      "artiklar": 30,
+      "url": "https://www.japantimes.co.jp/feed/"
+    },
+    {
+      "id": "scmp",
+      "ok": true,
+      "artiklar": 50,
+      "url": "https://www.scmp.com/rss/91/feed"
+    },
+    {
+      "id": "thehindu",
+      "ok": true,
+      "artiklar": 52,
+      "url": "https://www.thehindu.com/news/international/feeder/default.rss"
+    },
+    {
+      "id": "aljazeera",
+      "ok": true,
+      "artiklar": 25,
+      "url": "https://www.aljazeera.com/xml/rss/all.xml"
+    },
+    {
+      "id": "timesofisrael",
+      "ok": false,
+      "fel": "<unknown>:10:43: mismatched tag"
+    },
+    {
+      "id": "haaretz",
+      "ok": false,
+      "fel": "<unknown>:3:0: XML or text declaration not at start of entity"
+    },
+    {
+      "id": "arabnews",
+      "ok": false,
+      "fel": "<unknown>:2:1326: not well-formed (invalid token)"
+    },
+    {
+      "id": "mg",
+      "ok": false,
+      "fel": "<unknown>:2:61778: not well-formed (invalid token)"
+    },
+    {
+      "id": "xinhua",
+      "ok": true,
+      "artiklar": 0,
+      "url": "http://www.xinhuanet.com/english/rss/worldrss.xml"
+    },
+    {
+      "id": "cgtn",
+      "ok": true,
+      "artiklar": 25,
+      "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
+    },
+    {
+      "id": "rt",
+      "ok": true,
+      "artiklar": 22,
+      "url": "https://www.rt.com/rss/news/"
+    },
+    {
+      "id": "imf",
+      "ok": false,
+      "fel": "<unknown>:2:0: not well-formed (invalid token)"
+    },
+    {
+      "id": "iea",
+      "ok": false,
+      "fel": "<unknown>:74:158: not well-formed (invalid token)"
+    },
+    {
+      "id": "arxiv-ai",
+      "ok": true,
+      "artiklar": 370,
+      "url": "https://export.arxiv.org/rss/cs.AI"
+    },
+    {
+      "id": "hf-blog",
+      "ok": true,
+      "artiklar": 4,
+      "url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "id": "openai",
+      "ok": true,
+      "artiklar": 4,
+      "url": "https://openai.com/news/rss.xml"
+    },
+    {
+      "id": "deepmind",
+      "ok": true,
+      "artiklar": 1,
+      "url": "https://deepmind.google/blog/rss.xml"
+    },
+    {
+      "id": "mit-tr",
+      "ok": true,
+      "artiklar": 8,
+      "url": "https://www.technologyreview.com/feed/"
+    },
+    {
+      "id": "verge",
+      "ok": true,
+      "artiklar": 10,
+      "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "id": "ars",
+      "ok": true,
+      "artiklar": 20,
+      "url": "https://feeds.arstechnica.com/arstechnica/index"
+    },
+    {
+      "id": "techcrunch",
+      "ok": true,
+      "artiklar": 20,
+      "url": "https://techcrunch.com/feed/"
+    },
+    {
+      "id": "ieee-robotics",
+      "ok": true,
+      "artiklar": 1,
+      "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss"
+    },
+    {
+      "id": "robot-report",
+      "ok": true,
+      "artiklar": 1,
+      "url": "https://www.therobotreport.com/feed/"
+    },
+    {
+      "id": "nature",
+      "ok": true,
+      "artiklar": 8,
+      "url": "https://www.nature.com/nature.rss"
+    },
+    {
+      "id": "quanta",
+      "ok": true,
+      "artiklar": 1,
+      "url": "https://www.quantamagazine.org/feed/"
+    },
+    {
+      "id": "carbonbrief",
+      "ok": true,
+      "artiklar": 2,
+      "url": "https://www.carbonbrief.org/feed/"
+    },
+    {
+      "id": "breaking-defense",
+      "ok": true,
+      "artiklar": 12,
+      "url": "https://breakingdefense.com/feed/"
     }
   ]
 }
