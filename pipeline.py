@@ -189,7 +189,7 @@ def tokens(text):
     return out
 
 
-def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65):
+def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65, curated_threshold=0.6):
     """Grupperar artiklar om samma händelse.
 
     Likhet = andel gemensamma ord av den kortaste rubriken (overlap-koefficient),
@@ -210,6 +210,13 @@ def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65):
             research = it["source_type"] == "forskning" or any(i["source_type"] == "forskning" for i in c["items"])
             if research and sim < research_threshold:
                 continue
+            # Kuraterade listor (Techmeme m.fl.) har långa rubriker som delar ord med nästan allt.
+            # Jämför bara mot huvudrubriken och kräv tydlig likhet.
+            curated = it["source_type"] == "kuraterat" or any(i["source_type"] == "kuraterat" for i in c["items"])
+            if curated:
+                head = len(tk & c["title_tokens"])
+                if head < 4 or head / (min(len(tk), len(c["title_tokens"])) or 1) < curated_threshold:
+                    continue
             if sim > best_sim:
                 best, best_sim = c, sim
         if best and best_sim >= threshold and it["source_id"] not in {i["source_id"] for i in best["items"]}:
