@@ -83,7 +83,13 @@ def _item(ev, checked):
     title = _clean(d.get("rubrik_sv") or ev["reserv_rubrik"])
     regs = len(p.get("regioner", []))
     meta = f"{ev['antal_kallor']} källor, {regs} regioner"
-    out = [f"- [{'x' if checked else ' '}] **{title}** · {meta} · `{ev['id']}`"]
+    k = ev.get("kallkontroll")
+    flag = "" if not k or k["ok"] else "⚠️ "
+    out = [f"- [{'x' if checked else ' '}] {flag}**{title}** · {meta} · `{ev['id']}`"]
+    if k and not k["ok"]:
+        out.append(f"  **KÄLLKONTROLL, {len(k['problem'])} anmärkningar:** " + " · ".join(_clean(x) for x in k["problem"][:4]))
+    elif k:
+        out.append(f"  Källkontroll: alla {k['antal']} påståenden spårade till källorna.")
     if d.get("osaker"):
         out.append(f"  **OSÄKER:** {_clean(d.get('kommentar'))}")
     if d.get("sammanfattning_sv"):

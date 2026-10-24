@@ -61,3 +61,9 @@ Inget på sidorna beror på byggtiden, så filerna ändras bara när innehållet
 och Cloudflare Pages (projektet newsnavigator) publicerar den grenen utan byggsteg.
 Innan lansering har sidorna noindex; sätt `NN_LANSERAD=1` i workflowen för att öppna för sökmotorer (ger också sitemap).
 Förhandsvisning av dagens utkast som platt sajt: `python publish.py --forhandsvisning /tmp/sajt`.
+
+## Källkontroll
+`kallkontroll.py` låter AI:n läsa varje nytt utkast en andra gång och spåra varje påstående till källmaterialet (rubriker och ingresser). Resultatet sparas i cachen och följer med notisen: i granskningsärendet som en rad per notis (⚠️ och anmärkningarna när något saknar stöd), och på sajten som märkningen "Källkontrollerad" när allt gick att spåra.
+
+## Instagram
+`instagram.py bygg` gör karusellkort (1080x1350, JPEG) för varje godkänd notis i `public/ig/<id>/`, med caption i `caption.txt`. Korten ligger ute på sajten, så att Instagram kan hämta dem. `instagram.py posta` publicerar dagens bästa opostade notis via Instagrams API (workflowen `instagram.yml`, 07:45). Kräver ett Business- eller Creator-konto och hemligheterna `IG_USER_ID` och `IG_ACCESS_TOKEN` (long-lived token, 60 dagar, förnyas via `refresh_access_token`). Utan hemligheter skriver skriptet bara vad det skulle ha postat. Typsnitt och maskot ligger i `assets/` så att korten blir lika överallt. Förhandsvisning av dagens utkast: `python instagram.py forhandsvisning /tmp/ig`.

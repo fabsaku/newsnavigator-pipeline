@@ -36,3 +36,6 @@ Fabian Sandberg Kuylenstierna är ansvarig utgivare och har sista ordet om vad s
 
 ## 11. USA: blått och rött, med lånade betyg
 Vi visar hur amerikanska medier med olika publik berättar om samma händelse. Vilken publik ett medium vänder sig till avgör vi inte själva: vi använder AllSides betyg (vänster, lutar vänster, mitten, lutar höger, höger) och anger det vid varje källa. Båda sidor beskrivs med samma mått och samma ton. Vi säger aldrig vilken sida som har rätt. Betygen kontrolleras minst en gång per kvartal, och ett enda betygsinstitut har sina begränsningar, vilket vi är öppna med.
+
+## 12. Källkontroll före granskning
+Varje utkast läses en andra gång av en kontrollant som spårar påstående för påstående till källmaterialet. Ett påstående utan stöd, en felaktig tillskrivning eller ett värdeord märks och visas för redaktören innan något godkänns. Ansvaret för fakta ligger hos källan: vi återger vad den har rapporterat, och visar vem som rapporterat vad, sida vid sida.

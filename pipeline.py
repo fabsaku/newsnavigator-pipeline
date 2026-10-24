@@ -24,6 +24,7 @@ from pathlib import Path
 import feedparser
 import yaml
 
+import kallkontroll
 from prompts import SYSTEM_PROMPT, user_prompt
 
 ROOT = Path(__file__).parent
@@ -453,22 +454,35 @@ def main():
         c["fingeravtryck"] = hashlib.sha1((model + SYSTEM_PROMPT + user_prompt(c)).encode()).hexdigest()[:12]
 
     def draft_for(c):
+        """Returnerar (utkast, källkontroll, ur_cachen). Källkontrollen körs på varje nytt utkast."""
         hit = cache["utkast"].get(c["id"])
         if hit and hit.get("fingeravtryck") == c["fingeravtryck"]:
-            return hit["utkast"], True
+            kontroll = hit.get("kontroll")
+            if kontroll is None and client:
+                try:
+                    kontroll = kallkontroll.check(c, hit["utkast"], client, model, reply_text)
+                except Exception as e:
+                    print(f"  Källkontroll misslyckades: {e}", file=sys.stderr)
+            return hit["utkast"], kontroll, True
         try:
-            return summarize(c, client, model), False
+            draft = summarize(c, client, model)
         except Exception as e:
-            return {"osaker": True, "kommentar": f"AI-utkast misslyckades: {e}", "_fel": True}, False
+            return {"osaker": True, "kommentar": f"AI-utkast misslyckades: {e}", "_fel": True}, None, False
+        kontroll = None
+        try:
+            kontroll = kallkontroll.check(c, draft, client, model, reply_text)
+        except Exception as e:
+            print(f"  Källkontroll misslyckades: {e}", file=sys.stderr)
+        return draft, kontroll, False
 
     with ThreadPoolExecutor(WORKERS) as pool:
         results = list(pool.map(draft_for, chosen))
 
     reused = 0
-    for c, (draft, from_cache) in zip(chosen, results):
+    for c, (draft, kontroll, from_cache) in zip(chosen, results):
         reused += from_cache
         if draft is not None and not draft.get("_fel"):
-            cache["utkast"][c["id"]] = {"utkast": draft, "fingeravtryck": c["fingeravtryck"], "sedd": NOW}
+            cache["utkast"][c["id"]] = {"utkast": draft, "kontroll": kontroll, "fingeravtryck": c["fingeravtryck"], "sedd": NOW}
         elif draft is not None:
             draft.pop("_fel", None)
         lead = c["items"][0]
@@ -480,6 +494,7 @@ def main():
             "har_primarkalla": any(i["source_type"] in ("primar", "forskning") for i in c["items"]),
             "senast": max((i["published"] or "") for i in c["items"]) or None,
             "utkast": draft,
+            "kallkontroll": kontroll,
             "perspektiv": perspective(c),
             "reserv_rubrik": lead["title"],
             "kallor": [{"namn": i["source_name"], "rubrik": i["title"], "url": i["url"],
@@ -489,7 +504,9 @@ def main():
             "granskad": c["id"] in approved,
         })
     if client:
-        print(f"Utkast: {len(chosen) - reused} nya, {reused} ur cachen")
+        checked = [e["kallkontroll"] for e in events if e.get("kallkontroll")]
+        flagged = sum(1 for k in checked if not k["ok"])
+        print(f"Utkast: {len(chosen) - reused} nya, {reused} ur cachen · källkontroll: {len(checked)} kontrollerade, {flagged} med anmärkning")
         save_cache(cache)
 
     # Data bakom nyheten: öppna serier som kopplas till notiser (hämtas högst en gång per dygn)

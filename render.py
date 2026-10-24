@@ -179,6 +179,12 @@ def _event(ev, lead, href=None):
         badges.append(f'<span class="badge">{_both("Tunt underlag", "Thin sourcing")}</span>')
     if ev.get("har_primarkalla"):
         badges.append(f'<span class="badge">{_both("Primärkälla", "Primary source")}</span>')
+    k = ev.get("kallkontroll")
+    if k and k.get("ok"):
+        badges.append(f'<span class="badge">{_both("Källkontrollerad", "Source-checked")}</span>')
+    elif k and not ev.get("granskad"):
+        n_issues = len(k.get("problem", []))
+        badges.append(f'<span class="badge strong">{_both(f"Källkontroll: {n_issues} anmärkningar", f"Source check: {n_issues} issues")}</span>')
     if p.get("usa_blind") == "mest_bla":
         badges.append(f'<span class="badge strong">{_both("Mest i medier med blå publik", "Mostly in blue-audience media")}</span>')
     elif p.get("usa_blind") == "mest_rod":

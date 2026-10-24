@@ -33,6 +33,7 @@ jobs:
         run: |
           python newsletter.py
           python publish.py
+          python instagram.py bygg
       - name: Uppdatera granskningsärendet
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
