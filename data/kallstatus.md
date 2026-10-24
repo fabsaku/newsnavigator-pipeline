@@ -1,6 +1,6 @@
-# Källstatus 2026-10-24 21:07 UTC
+# Källstatus 2026-10-24 21:37 UTC
 
-76/96 OK
+77/96 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
@@ -19,7 +19,7 @@
 | Svenska kraftnät | sverige | OK | 25 | 2026-10-23 |  |
 | Financial Times | europa | OK | 10 | 2026-10-24 |  |
 | The Economist | europa | OK | 300 | 2026-10-22 |  |
-| BBC World | europa | OK | 30 | 2026-10-24 |  |
+| BBC World | europa | OK | 31 | 2026-10-24 |  |
 | The Guardian | europa | OK | 45 | 2026-10-24 |  |
 | Le Monde (English) | europa | OK | 14 | 2026-10-24 |  |
 | France 24 | europa | OK | 24 | 2026-10-24 |  |
@@ -87,7 +87,7 @@
 | Axios | usa | OK | 100 | 2026-10-24 |  |
 | HuffPost | usa | FEL | 0 |  | inga artiklar |
 | Vox | usa | OK | 10 | 2026-10-24 |  |
-| Washington Examiner | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
+| Washington Examiner | usa | OK | 10 | 2026-10-24 |  |
 | The Washington Times | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Reason | usa | OK | 48 | 2026-10-24 |  |
 | New York Post | usa | OK | 20 | 2026-10-24 |  |
