@@ -1,15 +1,15 @@
-# Källstatus 2026-10-24 07:05 UTC
+# Källstatus 2026-10-24 07:09 UTC
 
-77/96 OK
+76/96 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
 | SVT Nyheter | sverige | OK | 100 | 2026-10-24 |  |
 | Sveriges Radio Ekot | sverige | OK | 20 | 2026-10-24 |  |
-| Dagens Nyheter | sverige | OK | 123 | 2026-10-24 |  |
+| Dagens Nyheter | sverige | OK | 124 | 2026-10-24 |  |
 | Dagens industri | sverige | OK | 20 | 2026-10-24 |  |
 | Breakit | sverige | OK | 11 | 2026-10-24 |  |
-| Ny Teknik | sverige | FEL | 0 |  | HTTP Error 404: Not Found |
+| Ny Teknik | sverige | FEL | 0 |  | sidan är html, inte ett flöde |
 | Yle News | norden | OK | 20 | 2026-10-23 |  |
 | NRK | norden | OK | 100 | 2026-10-24 |  |
 | Riksbanken | sverige | TYST | 10 | 2026-10-08 | inget nytt på 14 dagar |
@@ -50,7 +50,7 @@
 | Arab News | mellanostern | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Mail & Guardian | afrika | FEL | 0 |  | HTTP Error 404: Not Found |
 | CGTN (statskontrollerat) | asien | OK | 50 | 2026-10-24 |  |
-| RT (statskontrollerat) | europa | OK | 100 | 2026-10-24 |  |
+| RT (statskontrollerat) | europa | FEL | 0 |  | <urlopen error [Errno -2] Name or service not known> |
 | IMF | global | FEL | 0 |  | HTTP Error 404: Not Found |
 | arXiv cs.AI | global | FEL | 0 |  | inga artiklar |
 | Hugging Face | usa | OK | 890 | 2026-10-23 |  |
