@@ -187,6 +187,16 @@ def _story(ev, lang, first):
         rows.append(f'<p style="margin:0 0 10px 0;padding-left:12px;border-left:2px solid {FG};font-family:{SANS};'
                     f'font-size:15px;line-height:1.5;color:{FG}"><b>{t["varlden"]}</b> '
                     f'<span style="font-family:{MONO};font-size:11px;color:{MUTED}">{len(regs)} {t["regioner"]}</span><br>{_e(persp)}</p>')
+    for x in ev.get("data") or []:
+        v = f'{x["senaste"]:.{x["decimaler"]}f}'
+        prev = f'{x["ar_sedan"]:.{x["decimaler"]}f}'
+        if lang == "sv":
+            v, prev = v.replace(".", ","), prev.replace(".", ",")
+        name = x["namn_en"] if lang == "en" else x["namn_sv"]
+        year = "a year earlier" if lang == "en" else "ett år tidigare"
+        rows.append(f'<p style="margin:0 0 10px 0;font-family:{MONO};font-size:13px;line-height:1.5;color:{FG}">'
+                    f'{_e(name)}: <b>{v} {x["enhet"]}</b> ({_e(x["datum"])}, {year} {prev} {x["enhet"]}) · '
+                    f'<a href="{_e(x["url"])}" style="color:{MUTED}">{_e(x["kalla"])}</a></p>')
     usa = d.get("usa_en" if lang == "en" else "usa_sv") or d.get("usa_sv")
     if usa and (ev.get("perspektiv") or {}).get("usa"):
         rows.append(f'<p style="margin:0 0 10px 0;padding-left:12px;border-left:2px solid {FG};font-family:{SANS};'

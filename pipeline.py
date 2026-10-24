@@ -474,6 +474,13 @@ def main():
         print(f"Utkast: {len(chosen) - reused} nya, {reused} ur cachen")
         save_cache(cache)
 
+    # Data bakom nyheten: öppna serier som kopplas till notiser (hämtas högst en gång per dygn)
+    try:
+        from data import attach, update
+        attach(events, update())
+    except Exception as e:
+        print(f"  Data bakom nyheten misslyckades: {e}", file=sys.stderr)
+
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     payload = {"skapad": datetime.now(timezone.utc).isoformat(), "modell": model if client else None,

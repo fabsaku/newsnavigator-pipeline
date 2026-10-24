@@ -52,6 +52,12 @@ details[open]{padding-bottom:16px}
 .usa{margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
 .usa h4.t{margin:0 0 10px;font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
 .usa .note{font-size:12px;color:var(--mut);margin:10px 0 0}
+.data{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:0 0 14px}
+.datum{border:1px solid var(--rule);padding:12px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.datum .k{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.datum .v{font:600 26px 'Source Serif 4',Georgia,serif;font-variant-numeric:tabular-nums}
+.datum svg{width:100%;height:36px;display:block}
+.datum .s{font-size:12px;color:var(--mut)}
 .region li{font-size:14px;line-height:1.4}.region li .who{display:block;color:var(--mut);font-size:12px}
 .dis{border-left:2px solid var(--fg);padding-left:12px;font-size:15px;line-height:1.5;color:var(--body);max-width:820px}
 .src{font-size:14px;color:var(--mut);line-height:1.6;max-width:820px}.src a{color:var(--fg)}
@@ -119,6 +125,41 @@ def _usa(p, d):
             f'<p class="note">{_both("Indelningen bygger på AllSides betyg av medierna, inte på vår bedömning.", "Grouping based on AllSides ratings of the outlets, not our own judgement.")}</p></div>')
 
 
+def _num(v, dec, lang):
+    s = f"{v:.{dec}f}"
+    return s.replace(".", ",") if lang == "sv" else s
+
+
+def _spark(vals):
+    if len(vals) < 2:
+        return ""
+    lo, hi = min(vals), max(vals)
+    span = (hi - lo) or 1
+    pts = " ".join(f"{i * 200 / (len(vals) - 1):.1f},{34 - (v - lo) / span * 30:.1f}" for i, v in enumerate(vals))
+    x, y = pts.split(" ")[-1].split(",")
+    return (f'<svg viewBox="0 0 200 36" preserveAspectRatio="none" aria-hidden="true">'
+            f'<polyline points="{pts}" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/>'
+            f'<circle cx="{x}" cy="{y}" r="2.5" fill="currentColor"/></svg>')
+
+
+def _data(ev):
+    items = ev.get("data") or []
+    if not items:
+        return ""
+    cards = []
+    for d in items:
+        unit, dec, when = d["enhet"], d["decimaler"], d["datum"]
+        now_sv, now_en = f'{_num(d["senaste"], dec, "sv")} {unit}', f'{_num(d["senaste"], dec, "en")} {unit}'
+        was_sv = f'{when} · ett år tidigare {_num(d["ar_sedan"], dec, "sv")} {unit}'
+        was_en = f'{when} · a year earlier {_num(d["ar_sedan"], dec, "en")} {unit}'
+        cards.append(
+            f'<div class="datum"><span class="k">{_both(d["namn_sv"], d["namn_en"])}</span>'
+            f'<span class="v">{_both(now_sv, now_en)}</span>{_spark(d["spark"])}'
+            f'<span class="s">{_both(was_sv, was_en)} · <a href="{_e(d["url"])}" rel="noopener">{_e(d["kalla"])}</a></span></div>')
+    return (f'<div class="mono" style="margin:4px 0 8px">{_both("Data bakom nyheten", "Data behind the news")}</div>'
+            f'<div class="data">{"".join(cards)}</div>')
+
+
 def _event(ev, lead):
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
@@ -153,6 +194,7 @@ def _event(ev, lead):
         summary = f'<p class="sum">{_both(d["sammanfattning_sv"], d.get("sammanfattning_en"))}</p>'
 
     world = ""
+    data = _data(ev)
     usa = _usa(p, d)
     if len(regs) >= 2 or usa:
         cols = []
@@ -177,7 +219,7 @@ def _event(ev, lead):
         + (f' <span class="mono">{_both("betalvägg", "paywall")}</span>' if s.get("betalvagg") else "")
         for s in ev["kallor"])
     return (f'<article class="ev{" lead" if lead else ""}" data-t="{_e(" ".join(topics))}" id="h-{ev["id"]}">'
-            f'{meta}<h2>{title}</h2>{summary}'
+            f'{meta}<h2>{title}</h2>{summary}{data}'
             f'{"<div class=badges>" + "".join(badges) + "</div>" if badges else ""}'
             f'{world}{dis}<div class="src">{_both("Källor", "Sources")}: {srcs}</div></article>')
 
