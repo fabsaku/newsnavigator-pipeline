@@ -87,7 +87,7 @@ class Urls:
         self.flat = flat
 
     def home(self):
-        return "index.html" if self.flat else "/"
+        return "./" if self.flat else "/"
 
     def story(self, sid):
         return f"n-{sid}.html" if self.flat else f"/n/{sid}/"
