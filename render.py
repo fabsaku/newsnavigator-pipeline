@@ -17,14 +17,14 @@ REGIONS = {"sverige": ("Sverige", "Sweden"), "norden": ("Norden", "Nordics"), "e
            "afrika": ("Afrika", "Africa"), "global": ("Global", "Global")}
 
 CSS = """
-:root{--bg:#0A0A0A;--fg:#F2F2F2;--body:#D8D8D8;--mut:#A3A3A3;--line:#2A2A2A;--card:#161616}
+:root{--bg:#0A0A0A;--fg:#F2F2F2;--body:#D8D8D8;--mut:#A3A3A3;--line:#2A2A2A;--rule:#2A2A2A;--card:#161616}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--fg);font-family:'Source Sans 3',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--fg)}a:hover{color:#fff}
 .w{max-width:1120px;margin:0 auto;padding:0 20px}
 .mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
 header{border-bottom:1px solid var(--fg)}
 .hd .mono{flex:1 1 260px;min-width:0;overflow-wrap:anywhere}
-.hd{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:12px 0}
+.hd{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:12px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-height:44px}
 .brand svg{height:56px;width:auto;display:block}
 .brand span{font-size:28px;font-weight:800;letter-spacing:-.03em}
@@ -38,6 +38,7 @@ header{border-bottom:1px solid var(--fg)}
 .ev{border-top:1px solid var(--line);padding:24px 0;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
 .ev.lead h2{font-size:44px;line-height:1.05}
 .ev h2{margin:0;font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:27px;line-height:1.15;letter-spacing:-.01em;max-width:28ch}
+.ev h2 a{text-decoration:none}.ev h2 a:hover{text-decoration:underline;text-underline-offset:4px}
 .ev .sum{margin:0;font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.55;color:var(--body);max-width:68ch}
 .badges{display:flex;flex-wrap:wrap;gap:6px}
 .badge{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;border:1px solid #555;color:var(--mut);padding:3px 7px}
@@ -66,7 +67,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;disp
 footer p{margin:0;max-width:60ch;font-size:14px;line-height:1.5;color:var(--mut)}
 body.en .sv,body:not(.en) .en{display:none}
 .hidden{display:none}
-@media (max-width:600px){.ev.lead h2{font-size:32px}.ev h2{font-size:23px}.brand svg{height:44px}.brand span{font-size:22px}}
+@media (max-width:600px){.hd .mono{order:3;flex-basis:100%;font-size:11px}.ev.lead h2{font-size:32px}.ev h2{font-size:23px}.brand svg{height:44px}.brand span{font-size:22px}}
 """
 
 JS = """
@@ -160,7 +161,7 @@ def _data(ev):
             f'<div class="data">{"".join(cards)}</div>')
 
 
-def _event(ev, lead):
+def _event(ev, lead, href=None):
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
     regs = p.get("regioner", [])
@@ -218,8 +219,9 @@ def _event(ev, lead):
         + ('<span class="state">STAT</span>' if s.get("statskontrollerad") else "")
         + (f' <span class="mono">{_both("betalvägg", "paywall")}</span>' if s.get("betalvagg") else "")
         for s in ev["kallor"])
+    heading = f'<a href="{_e(href)}">{title}</a>' if href else title
     return (f'<article class="ev{" lead" if lead else ""}" data-t="{_e(" ".join(topics))}" id="h-{ev["id"]}">'
-            f'{meta}<h2>{title}</h2>{summary}{data}'
+            f'{meta}<h2>{heading}</h2>{summary}{data}'
             f'{"<div class=badges>" + "".join(badges) + "</div>" if badges else ""}'
             f'{world}{dis}<div class="src">{_both("Källor", "Sources")}: {srcs}</div></article>')
 

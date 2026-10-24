@@ -11,7 +11,7 @@ Varje notis bygger på namngivna källor och länkar till dem. Ett påstående s
 Notiserna beskriver vad som har hänt, vem som säger vad och vad som är känt. De innehåller inga värdeord, inga egna slutsatser och inga spekulationer om framtiden. Påståenden tillskrivs den som gör dem: "enligt Riksbanken", "skriver Reuters".
 
 ## 3. Visa oenighet, välj inte sida
-När källor beskriver samma händelse olika visar vi det, under "Så rapporterar olika medier". Vi väljer inte vilken version som är rätt.
+När källor beskriver samma händelse olika visar vi det, under ”Källorna skiljer sig åt”. Vi väljer inte vilken version som är rätt.
 
 ## 4. Nyheter och åsikter hålls isär
 Allt som innehåller en bedömning märks som **Analys** eller **Spalt**, med skribentens namn. Flödet är alltid fritt från åsikter.

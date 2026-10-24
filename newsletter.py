@@ -34,6 +34,16 @@ SECTIONS = [
     ("vetenskap", "Vetenskap", "Science", {"vetenskap", "rymd", "energi", "klimat"}),
 ]
 
+# Vilken sektion en notis hamnar i: ämnessektionerna går före den geografiska.
+SECTION_PRIORITY = ["tech", "vetenskap", "marknader", "sverige", "varlden"]
+_SECTION_TAGS = {k: tags for k, _, _, tags in SECTIONS}
+
+
+def section_of(ev):
+    topics = set(ev.get("amnen", []))
+    return next((k for k in SECTION_PRIORITY if topics & _SECTION_TAGS[k]), "varlden")
+
+
 TXT = {
     "sv": {"brev": "Morgonbrevet från Newsnavigator", "korthet": "I korthet", "minuter": "min läsning",
            "varlden": "Så ser världen på det", "usa": "USA: blått och rött", "skiljer": "Källorna skiljer sig åt:", "kallor": "Källor",
@@ -116,9 +126,7 @@ def pick(include_drafts, hours=24, limit=12):
     chosen = chosen[:limit]
     groups = {key: [] for key, *_ in SECTIONS}
     for e in chosen:
-        topics = set(e.get("amnen", []))
-        key = next((k for k, _, _, tags in SECTIONS if topics & tags), "varlden")
-        groups[key].append(e)
+        groups[section_of(e)].append(e)
     return chosen, groups
 
 

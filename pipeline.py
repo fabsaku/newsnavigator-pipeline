@@ -16,6 +16,7 @@ import os
 import re
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
@@ -38,15 +39,32 @@ week images video photos live updates latest news today veckan bilder bild direk
 utanför near amid
 """.split())
 
+# Nyckelord som ger ämne. Hela ord, utom de som slutar med * (ordstam: "ränt*" träffar ränta, räntan, räntor).
 KEYWORDS = {
-    "ai": ["ai", "artificiell", "llm", "språkmodell", "openai", "anthropic", "deepmind", "chatgpt", "machine learning", "maskininlärning"],
-    "robotik": ["robot", "humanoid", "automation", "drönare", "drone"],
-    "marknader": ["ränta", "inflation", "börs", "aktie", "stocks", "rate", "inflation", "ecb", "riksbank", "fed", "kronan", "dollar"],
-    "halvledare": ["chip", "halvledare", "semiconductor", "nvidia", "tsmc", "asml"],
-    "energi": ["elpris", "elnät", "energy", "kärnkraft", "nuclear", "fusion", "vindkraft", "solkraft"],
-    "geopolitik": ["sanktion", "sanction", "nato", "tull", "tariff", "export", "krig", "war"],
-    "rymd": ["rymd", "space", "satellit", "satellite", "nasa", "esa", "rocket", "raket"],
+    "ai": ["ai", "artificiell*", "llm*", "språkmodell*", "openai", "anthropic", "deepmind", "chatgpt", "machine learning", "maskininlärning", "generativ*"],
+    "robotik": ["robot*", "humanoid*", "automation"],
+    "marknader": ["ränt*", "inflation*", "börs*", "aktie*", "stocks", "stock market", "interest rate*", "rate cut*", "rate hike*",
+                  "ecb", "riksbank*", "federal reserve", "fed", "kronan", "dollarn", "obligation*", "bond*", "kreditbetyg*", "credit rating*", "bnp", "gdp"],
+    "halvledare": ["chip*", "halvledar*", "semiconductor*", "nvidia", "tsmc", "asml"],
+    "energi": ["elpris*", "elnät*", "energy", "energi*", "kärnkraft*", "nuclear", "fusion", "vindkraft*", "solkraft*", "solar", "wind power"],
+    "geopolitik": ["sanktion*", "sanction*", "nato", "tull*", "tariff*", "krig*", "war", "vapenvila*", "ceasefire*", "diplomat*"],
+    "rymd": ["rymd*", "space", "satellit*", "satellite*", "nasa", "esa", "rocket*", "raket*"],
+    # Geografi: vad händelsen handlar om, inte var källan finns
+    "sverige": ["sverige", "svensk*", "sweden", "swedish", "riksdag*", "regeringen", "stockholm", "göteborg", "malmö", "kristersson", "riksbank*"],
+    "usa": ["trump", "white house", "vita huset", "congress", "kongressen", "senate", "senaten", "washington"],
+    "europa": ["eu", "bryssel", "brussels", "europeiska", "european union", "eu-*"],
 }
+# Källornas geografiska ämnen (var de bevakar) räknas bara om alla källor delar dem.
+GEO = {"sverige", "norden", "europa", "usa", "asien", "mellanostern", "afrika", "varlden"}
+_KW = {}
+
+
+def _kw(word):
+    if word not in _KW:
+        stem = word.endswith("*")
+        w = re.escape(word.rstrip("*"))
+        _KW[word] = re.compile(rf"\b{w}\w*" if stem else rf"\b{w}\b")
+    return _KW[word]
 
 
 def load_sources(path):
@@ -244,13 +262,13 @@ def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65, curated
 
 
 def tag(c):
-    topics = set()
+    """Ämnen för en händelse: källornas ämnen om minst hälften av källorna delar dem, plus nyckelord i texten."""
     text = " ".join(i["title"] + " " + i["description"] for i in c["items"]).lower()
-    for i in c["items"]:
-        topics.update(i["topics"])
+    counts = Counter(t for i in c["items"] for t in i["topics"])
+    n = len(c["items"])
+    topics = {t for t, k in counts.items() if (k == n if t in GEO else k * 2 >= n)}
     for topic, words in KEYWORDS.items():
-        # Hela ord, så att "ai" inte matchar "Arizona" eller "said"
-        if any(re.search(rf"\b{re.escape(w.strip())}", text) for w in words):
+        if any(_kw(w).search(text) for w in words):
             topics.add(topic)
     return sorted(topics)
 

@@ -1,7 +1,7 @@
 # Newsnavigator källista v0.2
 # Fält: id, namn, url, alternativ (reservadresser som prövas om url inte fungerar),
 #       extra (fler flöden från samma källa), usa_lutning (AllSides betyg, bara amerikanska medier),
-#       lanka (fast länk till läsare), bara_rubrik (använd aldrig ingressen), avsandare (filtrera flöde med flera nyhetsbrev),
+#       lanka (fast länk till läsare), hemsida (visas på källsidan när flödets adress inte är sajtens), bara_rubrik (använd aldrig ingressen), avsandare (filtrera flöde med flera nyhetsbrev),
 #       amnen, sprak, typ (media/primar/forskning/kuraterat), betalvagg,
 #       kuraterat = nyhetsbrev och topplistor som samlar andras nyheter. Räknas inte som oberoende källa.
 #       land, region (sverige/norden/europa/usa/asien/mellanostern/afrika/global),
@@ -12,7 +12,7 @@
 sources:
   # ---------- Sverige och Norden ----------
   - {id: svt, namn: SVT Nyheter, url: "https://www.svt.se/nyheter/rss.xml", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false}
-  - {id: sr-ekot, namn: Sveriges Radio Ekot, url: "https://api.sr.se/api/rss/program/83", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false}
+  - {id: sr-ekot, namn: Sveriges Radio Ekot, url: "https://api.sr.se/api/rss/program/83", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false, hemsida: "https://sverigesradio.se/ekot"}
   - {id: dn, namn: Dagens Nyheter, url: "https://www.dn.se/rss/", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: di, namn: Dagens industri, url: "https://www.di.se/rss", amnen: [marknader, sverige], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: breakit, namn: Breakit, url: "https://www.breakit.se/feed/artiklar", amnen: [startups, teknik], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
@@ -25,12 +25,12 @@ sources:
   - {id: scb, namn: SCB, url: "https://www.scb.se/Feed/statistiknyheter/", alternativ: ["http://www.scb.se/Feed/statistiknyheter/"], amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
   - {id: fi, namn: Finansinspektionen, url: "https://www.fi.se/sv/publicerat/nyheter/rss/", alternativ: ["https://www.fi.se/sv/rss/", "https://www.fi.se/en/rss/"], amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
   - {id: regeringen, namn: Regeringskansliet, url: "https://www.regeringen.se/Filter/RssFeed?filterType=Taxonomy&filterByType=FilterablePageBase&preFilteredCategories=1324", amnen: [sverige, geopolitik], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
-  - {id: svk, namn: Svenska kraftnät, url: "https://via.tt.se/rss/releases/latest?publisherId=3235391", amnen: [energi, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
+  - {id: svk, namn: Svenska kraftnät, url: "https://via.tt.se/rss/releases/latest?publisherId=3235391", amnen: [energi, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false, hemsida: "https://www.svk.se"}
 
   # ---------- Europa ----------
   - {id: ft, namn: Financial Times, url: "https://www.ft.com/rss/home", amnen: [marknader, varlden], sprak: en, typ: media, betalvagg: true, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: economist, namn: The Economist, url: "https://www.economist.com/finance-and-economics/rss.xml", amnen: [marknader, varlden], sprak: en, typ: media, betalvagg: true, land: GB, region: europa, agare: privat, statskontrollerad: false}
-  - {id: bbc, namn: BBC World, url: "https://feeds.bbci.co.uk/news/world/rss.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: public-service, statskontrollerad: false}
+  - {id: bbc, namn: BBC World, url: "https://feeds.bbci.co.uk/news/world/rss.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: public-service, statskontrollerad: false, hemsida: "https://www.bbc.com/news"}
   - {id: guardian, namn: The Guardian, url: "https://www.theguardian.com/world/rss", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: lemonde, namn: Le Monde (English), url: "https://www.lemonde.fr/en/rss/une.xml", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: true, land: FR, region: europa, agare: privat, statskontrollerad: false}
   - {id: france24, namn: France 24, url: "https://www.france24.com/en/rss", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: FR, region: europa, agare: public-service, statskontrollerad: false}
@@ -46,7 +46,7 @@ sources:
   # ---------- USA, över det politiska spektrumet ----------
   - {id: nyt, namn: The New York Times, url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"]}
   - {id: wapo, namn: The Washington Post, url: "https://feeds.washingtonpost.com/rss/world", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://feeds.washingtonpost.com/rss/politics"]}
-  - {id: wsj, namn: The Wall Street Journal, url: "https://feeds.content.dowjones.io/public/rss/RSSWorldNews", amnen: [varlden, marknader], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten, extra: ["https://feeds.content.dowjones.io/public/rss/socialpoliticsfeed"]}
+  - {id: wsj, namn: The Wall Street Journal, url: "https://feeds.content.dowjones.io/public/rss/RSSWorldNews", amnen: [varlden, marknader], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten, extra: ["https://feeds.content.dowjones.io/public/rss/socialpoliticsfeed"], hemsida: "https://www.wsj.com"}
   - {id: fox, namn: Fox News, url: "https://moxie.foxnews.com/google-publisher/world.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger, extra: ["https://moxie.foxnews.com/google-publisher/politics.xml"]}
   - {id: npr, namn: NPR, url: "https://feeds.npr.org/1004/rss.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: public-service, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://feeds.npr.org/1014/rss.xml"]}
   - {id: thehill, namn: The Hill, url: "https://thehill.com/news/feed/", amnen: [usa, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
@@ -109,7 +109,7 @@ sources:
 
   # ---------- Kuraterat: vad techvärlden pratar om (räknas inte som oberoende källa) ----------
   - {id: techmeme, namn: Techmeme, url: "https://www.techmeme.com/feed.xml", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: hacker-news, namn: Hacker News, url: "https://hnrss.org/frontpage?points=250", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: hacker-news, namn: Hacker News, url: "https://hnrss.org/frontpage?points=250", amnen: [teknik], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, hemsida: "https://news.ycombinator.com"}
   - {id: import-ai, namn: Import AI, url: "https://importai.substack.com/feed", amnen: [ai], sprak: en, typ: kuraterat, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   # Superhuman (Zain Kahn): nyhetsbrevet tas emot via Kill the Newsletter. Bara ämnesraden används,
   # länken går till Superhumans publika arkiv (flödesadressen är privat och visas aldrig för läsare).

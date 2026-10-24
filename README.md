@@ -53,5 +53,11 @@ Testa utan internet: `python pipeline.py --feeds tests/feeds-test.yaml --max-age
 - Utskick: planen är Resend Broadcasts (gratis upp till 1 000 prenumeranter). `{{unsubscribe_url}}` byts mot leverantörens avregistreringslänk.
 
 ## Den publika sajten
-`publish.py` bygger `public/` med bara granskade notiser från de senaste tre dygnen, plus senaste morgonbrevet. Innan lansering har sidorna noindex (sätt `NN_LANSERAD=1` för att öppna för sökmotorer).
-Workflowen lägger `public/` i grenen `sajt`, men bara när innehållet har ändrats. Cloudflare Pages bygger från den grenen: inget byggkommando, utdatakatalog `/`.
+`publish.py` bygger `public/` med `sajt.py`: förstasida, en sida per notis (`/n/<id>/`, delbar länk), sektioner
+(`/varlden/`, `/sverige/`, `/marknader/`, `/tech/`, `/vetenskap/`), `/navigatorn/`, `/om/` med principerna, `/kallor/`
+och RSS på svenska och engelska (`/feed.xml`, `/feed-en.xml`). Bara granskade notiser kommer med: förstasidan visar tre dygn,
+sektionerna sju, notissidorna lever lika länge som arkivet (14 dagar).
+Inget på sidorna beror på byggtiden, så filerna ändras bara när innehållet ändras. Workflowen lägger `public/` i grenen `sajt`,
+och Cloudflare Pages (projektet newsnavigator) publicerar den grenen utan byggsteg.
+Innan lansering har sidorna noindex; sätt `NN_LANSERAD=1` i workflowen för att öppna för sökmotorer (ger också sitemap).
+Förhandsvisning av dagens utkast som platt sajt: `python publish.py --forhandsvisning /tmp/sajt`.
