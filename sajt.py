@@ -103,7 +103,7 @@ class Urls:
 
     def disk(self, out, url):
         if self.flat:
-            return out / url
+            return out / ("index.html" if url == "./" else url)
         if url == "/":
             return out / "index.html"
         if url.endswith("/"):
