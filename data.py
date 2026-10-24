@@ -34,14 +34,14 @@ SERIES = {
     "inflation_se": {
         "namn": ("Inflation i Sverige (HIKP, årstakt)", "Inflation in Sweden (HICP, annual rate)"), "enhet": "%", "decimaler": 1,
         "kalla": "Eurostat", "url": "https://ec.europa.eu/eurostat/web/hicp",
-        "hamta": ("eurostat", "prc_hicp_manr/M.RCH_A.CP00.SE"),
+        "hamta": ("eurostat", "prc_hicp_minr/M.RCH_A.CP00.SE|prc_hicp_manr/M.RCH_A.CP00.SE"),
         "ord": ["inflation", "inflationen", "inflationstakten", "kpif", "kpi", "prices", "priser", "priserna", "konsumentpriser"],
         "krav": ["sverige", "sweden", "swedish", "svensk", "riksbank", "kronan"],
     },
     "inflation_ea": {
         "namn": ("Inflation i euroområdet (HIKP, årstakt)", "Euro area inflation (HICP, annual rate)"), "enhet": "%", "decimaler": 1,
         "kalla": "Eurostat", "url": "https://ec.europa.eu/eurostat/web/hicp",
-        "hamta": ("eurostat", "prc_hicp_manr/M.RCH_A.CP00.EA"),
+        "hamta": ("eurostat", "prc_hicp_minr/M.RCH_A.CP00.EA|prc_hicp_manr/M.RCH_A.CP00.EA"),
         "ord": ["inflation", "inflationen", "prices", "priserna"],
         "krav": ["ecb", "eurozone", "euro area", "euroområdet", "lagarde"],
     },
@@ -81,7 +81,22 @@ def _ecb(key, start):
     return _sdmx_csv(f"https://data-api.ecb.europa.eu/service/data/{key}?format=csvdata&startPeriod={start}")
 
 
-def _eurostat(key, start):
+def _eurostat(keys, start):
+    """Provar flera tabeller (Eurostat byter ibland basår och tabellnamn) och tar den färskaste."""
+    best, errors = [], []
+    for key in keys.split("|"):
+        try:
+            pts = _eurostat_one(key, start)
+            if pts and (not best or max(pts)[0] > max(best)[0]):
+                best = pts
+        except Exception as e:
+            errors.append(f"{key}: {e}")
+    if not best:
+        raise RuntimeError("; ".join(errors))
+    return best
+
+
+def _eurostat_one(key, start):
     return _sdmx_csv(f"https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/{key}"
                      f"?format=SDMX-CSV&startPeriod={start[:7]}")
 
