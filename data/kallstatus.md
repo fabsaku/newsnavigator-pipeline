@@ -1,6 +1,6 @@
-# Källstatus 2026-10-25 22:12 UTC
+# Källstatus 2026-10-25 22:37 UTC
 
-75/96 OK
+76/96 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
@@ -17,9 +17,9 @@
 | Finansinspektionen | sverige | OK | 100 | 2026-10-23 |  |
 | Regeringskansliet | sverige | OK | 100 | 2026-10-23 |  |
 | Svenska kraftnät | sverige | OK | 25 | 2026-10-23 |  |
-| Financial Times | europa | OK | 7 | 2026-10-25 |  |
+| Financial Times | europa | OK | 8 | 2026-10-25 |  |
 | The Economist | europa | OK | 300 | 2026-10-22 |  |
-| BBC World | europa | OK | 31 | 2026-10-25 |  |
+| BBC World | europa | OK | 32 | 2026-10-25 |  |
 | The Guardian | europa | OK | 45 | 2026-10-25 |  |
 | Le Monde (English) | europa | OK | 14 | 2026-10-25 |  |
 | France 24 | europa | OK | 24 | 2026-10-25 |  |
@@ -78,7 +78,7 @@
 | CyberScoop | usa | OK | 10 | 2026-10-23 |  |
 | The Information | usa | OK | 20 | 2026-10-25 |  |
 | Techmeme | usa | OK | 15 | 2026-10-25 |  |
-| Hacker News | usa | FEL | 0 |  | HTTP Error 502: Bad Gateway |
+| Hacker News | usa | OK | 8 | 2026-10-25 |  |
 | Import AI | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Superhuman | usa | OK | 6 | 2026-10-24 |  |
 | The Code | usa | OK | 6 | 2026-10-24 |  |
