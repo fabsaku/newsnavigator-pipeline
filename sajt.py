@@ -307,6 +307,26 @@ STEPS = [
 ]
 
 
+HEADERS = """/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+/newsgator.png
+  Cache-Control: public, max-age=604800
+/ig/*
+  Cache-Control: public, max-age=86400
+"""
+
+
+def not_found_page(u, banner):
+    """404-sida. Utan den serverar Cloudflare Pages förstasidan med status 200 för alla okända adresser."""
+    body = (f'<section style="padding:48px 0 48px;max-width:640px"><h1 class="pagetitle">{_both("Sidan finns inte.", "Page not found.")}</h1>'
+            f'<p class="prose">{_bb("Notiser ligger kvar i två veckor, sedan tas sidan bort men källorna finns kvar hos utgivarna. ", "Stories stay up for two weeks, then the page is removed but the sources remain with their publishers. ")}'
+            f'<a href="{_e(u.home())}">{_both("Till senaste notiserna", "To the latest stories")}</a>.</p></section>')
+    return _shell(u, title="Sidan finns inte · Newsnavigator", body=body, description="", path="/404.html", banner=banner, noindex=True)
+
+
 def about_page(u, sources, banner, noindex):
     princ = "".join(f"<li>{_bb(f'<b>{sv}</b>{tsv}', f'<b>{en}</b>{ten}')}</li>" for sv, en, tsv, ten in PRINCIPLES)
     steps = "".join(f'<div class="step"><span class="mono">{n} · {_both(sv, en)}</span><p>{_both(tsv, ten)}</p></div>' for n, sv, en, tsv, ten in STEPS)
@@ -433,6 +453,9 @@ def build(out, events, *, flat=False, banner="", noindex=True, has_issue=False, 
         related = [r for r in sect_events if r["id"] != ev["id"] and section_of(r) == section_of(ev)][:3]
         _write(u.disk(out, u.story(ev["id"])), story_page(u, ev, related, sources, banner, noindex))
     _write(u.disk(out, u.page("om")), about_page(u, sources, banner, noindex))
+    if not flat:
+        _write(out / "404.html", not_found_page(u, banner))
+        _write(out / "_headers", HEADERS)
     _write(u.disk(out, u.page("kallor")), sources_page(u, sources, banner, noindex))
     nl = newsletter_page(u, sources, banner, noindex, has_issue)
     if nl:
