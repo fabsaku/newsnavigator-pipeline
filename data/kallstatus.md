@@ -1,6 +1,6 @@
-# Källstatus 2026-10-25 22:37 UTC
+# Källstatus 2026-10-25 22:41 UTC
 
-76/96 OK
+75/96 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
@@ -78,7 +78,7 @@
 | CyberScoop | usa | OK | 10 | 2026-10-23 |  |
 | The Information | usa | OK | 20 | 2026-10-25 |  |
 | Techmeme | usa | OK | 15 | 2026-10-25 |  |
-| Hacker News | usa | OK | 8 | 2026-10-25 |  |
+| Hacker News | usa | FEL | 0 |  | <urlopen error [Errno 104] Connection reset by peer> |
 | Import AI | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Superhuman | usa | OK | 6 | 2026-10-24 |  |
 | The Code | usa | OK | 6 | 2026-10-24 |  |
