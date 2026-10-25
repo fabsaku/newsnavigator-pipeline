@@ -61,6 +61,15 @@ Inget på sidorna beror på byggtiden, så filerna ändras bara när innehållet
 och Cloudflare Pages (projektet newsnavigator) publicerar den grenen utan byggsteg.
 Innan lansering har sidorna noindex; sätt `NN_LANSERAD=1` i workflowen för att öppna för sökmotorer (ger också sitemap).
 Förhandsvisning av dagens utkast som platt sajt: `python publish.py --forhandsvisning /tmp/sajt`.
+`public/404.html` ger riktiga 404-svar (utan den serverar Pages förstasidan för okända adresser) och `public/_headers`
+sätter säkerhetsrubriker och cache för loggan och Instagram-bilderna.
+
+### Domän och e-post
+newsnavigator.se är köpt hos Loopia och pekar på Cloudflares namnservrar (jakub och wanda). Zonen ligger i Cloudflare Free:
+`newsnavigator.se` och `www` är CNAME till `newsnavigator.pages.dev` och kopplade som egna domäner i Pages-projektet, med automatisk HTTPS.
+E-post går via Cloudflare Email Routing (MX, SPF och DKIM sköts av Cloudflare): `we@newsnavigator.se` vidarebefordras till
+en verifierad destinationsadress. Catch-all är avstängd, så övriga adresser studsar. Utskick av Navigatorn kräver en egen
+avsändartjänst (Resend eller liknande) med egna SPF/DKIM-poster för en underdomän, så att de inte krockar med vidarebefordringen.
 
 ## Källkontroll
 `kallkontroll.py` låter AI:n läsa varje nytt utkast en andra gång och spåra varje påstående till källmaterialet (rubriker och ingresser). Resultatet sparas i cachen och följer med notisen: i granskningsärendet som en rad per notis (⚠️ och anmärkningarna när något saknar stöd), och på sajten som märkningen "Källkontrollerad" när allt gick att spåra.
