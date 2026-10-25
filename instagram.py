@@ -61,7 +61,7 @@ def _css():
 html,body{{width:1080px;height:1350px;background:#0A0A0A;color:#F2F2F2;font-family:'SS3',sans-serif;-webkit-font-smoothing:antialiased}}
 .card{{width:1080px;height:1350px;padding:64px 72px 60px;display:flex;flex-direction:column;overflow:hidden;position:relative}}
 .top{{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:2px solid #F2F2F2}}
-.brand{{display:flex;align-items:center;gap:18px}}.brand img{{height:76px;width:auto}}.brand span{{font-weight:800;font-size:40px;letter-spacing:-.03em}}
+.brand{{display:flex;align-items:center;gap:18px}}.brand img{{height:76px;width:auto}}.brand span{{font-weight:800;font-size:31px;letter-spacing:.09em;text-transform:uppercase}}
 .mono{{font-family:'IPM',monospace;font-size:21px;letter-spacing:.08em;text-transform:uppercase;color:#A3A3A3}}
 .label{{margin:40px 0 22px;display:flex;justify-content:space-between;gap:20px}}
 h1{{font-family:'SS4',serif;font-weight:600;line-height:1.06;letter-spacing:-.012em;text-wrap:balance}}

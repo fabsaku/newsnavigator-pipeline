@@ -9,7 +9,8 @@ Två lägen:
   flat  (förhandsvisning)  index.html, n-<id>.html, varlden.html, om.html ... i en mapp
 
 Inget på sidorna beror på klockslaget då de byggdes. Därför ändras filerna bara när
-innehållet ändras, och sajten byggs bara om när något nytt har godkänts.
+innehållet ändras, och sajten byggs bara om när något nytt har godkänts. Dagens datum
+i sidhuvudet sätts i läsarens webbläsare.
 """
 import html
 import os
@@ -23,13 +24,15 @@ from zoneinfo import ZoneInfo
 import yaml
 
 from newsletter import SECTIONS, section_of
-from render import CSS, JS, REGIONS, _both, _e, _event, _mascot
+from render import (CSS, FONTS_URL, JS, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
+                    story_featured, story_full, story_item, story_lead)
 
 ROOT = Path(__file__).parent
 SITE_URL = os.environ.get("NN_SITE_URL", "https://newsnavigator.se").rstrip("/")
 CONTACT = "we@newsnavigator.se"
 TZ = ZoneInfo("Europe/Stockholm")
 FRONT_DAYS, SECTION_DAYS = 3, 7
+LATEST, PER_SECTION = 5, 7  # Senaste-listan, och rubriker per sektionsblock utöver den utvalda
 
 MONTHS_SV = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
              "september", "oktober", "november", "december"]
@@ -37,46 +40,79 @@ MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "Au
              "September", "October", "November", "December"]
 TYPES = {"media": ("Medier", "Media"), "primar": ("Primärkälla", "Primary source"),
          "forskning": ("Forskning", "Research"), "kuraterat": ("Kuraterad lista", "Curated list")}
-LEANS = {"vanster": ("vänster", "left"), "lutar_vanster": ("lutar vänster", "lean left"), "mitten": ("mitten", "centre"),
-         "lutar_hoger": ("lutar höger", "lean right"), "hoger": ("höger", "right")}
-REGION_ORDER = ["sverige", "norden", "europa", "usa", "asien", "mellanostern", "afrika", "global"]
 
 SITE_CSS = CSS + """
-nav{border-bottom:1px solid var(--line);position:relative}
+nav{border-bottom:1px solid var(--rule);position:relative}
 nav::after{content:'';position:absolute;right:0;top:0;bottom:1px;width:36px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none}
 @media (min-width:900px){nav::after{display:none}}
-nav .w{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}nav .w::-webkit-scrollbar{display:none}
-nav a{flex:0 0 auto;display:flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;font:600 14px 'Source Sans 3',sans-serif;color:var(--mut);border-bottom:2px solid transparent;white-space:nowrap}
-nav a:hover{color:var(--fg)}nav a[aria-current=page]{color:var(--fg);border-bottom-color:var(--fg)}
+nav .w{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}nav .w::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;display:flex;align-items:center;min-height:46px;padding:0 11px;text-decoration:none;font:600 15px var(--sans);color:var(--mute);border-bottom:2px solid transparent;white-space:nowrap}
+nav a:hover{color:var(--ink)}nav a[aria-current=page]{color:var(--ink);border-bottom-color:var(--ink)}
 nav a:first-child{padding-left:0}
-.banner{background:var(--fg);color:var(--bg);font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;padding:8px 0}
-.sechead{display:flex;align-items:baseline;gap:14px;margin:36px 0 0;padding:0 0 8px;border-bottom:2px solid var(--fg);font:600 13px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
-.sechead a{text-decoration:none}.sechead .mono{margin-left:auto}
-.sechead+.ev{border-top:0}
-.pagetitle{font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:40px;line-height:1.1;letter-spacing:-.01em;margin:28px 0 6px}
-.lede{margin:0 0 8px;font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:19px;line-height:1.5;color:var(--body);max-width:62ch}
-.crumb{display:flex;flex-wrap:wrap;gap:6px 14px;padding:18px 0 0}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
-.ev.single{border-top:0;padding-top:8px}.ev.single h2{max-width:none}.ev.single .sum{font-size:21px}
-.aiNote{font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:12px;max-width:68ch;line-height:1.5}
-.more{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.more li{border-top:1px solid var(--line);padding-top:10px}.more a{text-decoration:none;font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:19px;line-height:1.25}
-.more a:hover{text-decoration:underline;text-underline-offset:4px}.more .mono{display:block;margin-top:4px}
-.prose{max-width:68ch}.prose p{font-size:17px;line-height:1.6;color:var(--body)}.prose h2{font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:26px;margin:36px 0 8px}
-.prose ol{padding-left:0;list-style:none;counter-reset:p;margin:0}
-.prose ol li{counter-increment:p;border-top:1px solid var(--line);padding:16px 0 16px 56px;position:relative;font-size:16px;line-height:1.55;color:var(--body)}
-.prose ol li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:18px;font:600 13px 'IBM Plex Mono',monospace;color:var(--mut)}
-.prose ol li b{display:block;color:var(--fg);font-size:18px;margin-bottom:4px;font-family:'Source Serif 4',Georgia,serif}
-.prose a{color:var(--fg)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:12px 0 0}
-.step{border:1px solid var(--line);padding:16px}.step .mono{display:block;margin-bottom:8px}.step p{margin:0;font-size:15px;line-height:1.5;color:var(--body)}
-.srcs{list-style:none;margin:0;padding:0}
-.srcs li{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1.4fr);gap:8px 16px;border-top:1px solid var(--line);padding:11px 0;font-size:15px;align-items:baseline}
+main.w{padding-top:28px}
+
+/* Förstasidan */
+.top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:0 40px;align-items:start}
+.top .story.lead{padding-right:40px;border-right:1px solid var(--rule)}
+.latest h2{font:600 15px var(--sans);color:var(--ink);padding-bottom:10px;border-bottom:1px solid var(--rule);margin-bottom:14px}
+.block{margin-top:44px;padding-top:14px;border-top:2px solid var(--ink)}
+.block>h2{font-size:26px;margin-bottom:18px}
+.block>h2 a{text-decoration:none}.block>h2 a:hover{text-decoration:underline}
+.block .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:0 40px;align-items:start}
+.block .grid .story.featured{padding-right:40px;border-right:1px solid var(--rule)}
+.block .one{max-width:760px}
+.block .list h3{font-size:19px}
+.block .more{margin-top:16px;font-size:14px}
+.block .more a{color:var(--mute);text-decoration:none}.block .more a:hover{color:var(--ink);text-decoration:underline}
+@media (max-width:860px){
+.top,.block .grid{grid-template-columns:minmax(0,1fr)}
+.top .story.lead,.block .grid .story.featured{padding-right:0;border-right:0;padding-bottom:28px;margin-bottom:24px;border-bottom:1px solid var(--rule)}
+}
+
+/* Sidor */
+.pagetitle{font-size:40px;line-height:1.08;letter-spacing:-.012em;margin:4px 0 10px}
+.lede{font:400 21px/1.45 var(--serif);color:var(--text);max-width:60ch;margin:0 0 10px}
+.crumb{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:var(--mute);margin:0 0 20px}
+.crumb a{color:var(--ink);text-decoration:none}.crumb a:hover{text-decoration:underline}
+.aiNote{font-size:14px;color:var(--mute);border-top:1px solid var(--rule);padding-top:14px;margin-top:32px;max-width:66ch;line-height:1.5}
+.aiNote a{color:var(--text)}
+.more-h{font-size:22px;margin:40px 0 12px;padding-top:14px;border-top:2px solid var(--ink)}
+.prose{max-width:66ch}
+.prose p{font:400 18px/1.55 var(--serif);color:var(--text);margin:0 0 18px}
+.prose h2{font-size:28px;margin:40px 0 14px;line-height:1.15}
+.prose a{color:var(--ink)}
+.prose b{color:var(--ink);font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 32px;margin:8px 0 0;max-width:1000px}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps{grid-template-columns:minmax(0,1fr)}}
+.step h3{font-size:22px;margin:0 0 6px}
+.step h3 .n{color:var(--mute);font-weight:400;margin-right:8px}
+.step p{font:400 16px/1.5 var(--sans);color:var(--text);margin:0}
+.princ{list-style:none;margin:0;padding:0;counter-reset:p;max-width:66ch}
+.princ li{counter-increment:p;border-top:1px solid var(--rule);padding:18px 0 18px 52px;position:relative;font:400 17px/1.5 var(--serif);color:var(--text)}
+.princ li::before{content:counter(p);position:absolute;left:0;top:18px;font:600 22px/1.2 var(--serif);color:var(--mute)}
+.princ li b{display:block;color:var(--ink);font-size:21px;margin-bottom:4px;font-weight:600}
+.srcs{list-style:none;margin:0;padding:0;max-width:960px}
+.srcs li{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1.3fr) minmax(0,1.4fr);gap:6px 20px;border-top:1px solid var(--rule);padding:11px 0;font-size:15px;align-items:baseline}
 .srcs li a{text-decoration:none;font-weight:600}.srcs li a:hover{text-decoration:underline}
-.srcs li .mono{text-transform:none;letter-spacing:0;font-size:13px}
-.srcs .flags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
-.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--mut);margin:10px 0 0}
-footer nav{border:0}footer .links{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px}footer .links a{color:var(--mut);text-decoration:none}footer .links a:hover{color:var(--fg)}
-@media (max-width:600px){.pagetitle{font-size:30px}.srcs li{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.srcs li .flags{grid-column:1/-1;justify-content:flex-start}}
+.srcs li .kind{color:var(--mute)}
+.srcs li .flags{color:var(--mute);text-align:right}
+.group-h{font-size:24px;margin:36px 0 6px;padding-top:12px;border-top:2px solid var(--ink);display:flex;align-items:baseline;gap:12px}
+.group-h .n{font:400 15px var(--sans);color:var(--mute)}
+.empty{font:400 19px/1.5 var(--serif);color:var(--text);max-width:60ch}
+
+/* Sidfot */
+footer{border-top:1px solid var(--ink);margin-top:64px;padding:28px 0 48px}
+.ft{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px 48px;font-size:14px;color:var(--mute);line-height:1.5}
+.ft p{max-width:60ch;margin:0 0 8px}
+.ft .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.ft .links a{color:var(--text);text-decoration:none}.ft .links a:hover{color:var(--ink);text-decoration:underline}
+.ft .copy{grid-column:1/-1;max-width:none;padding-top:12px;border-top:1px solid var(--rule)}
+@media (max-width:720px){
+.pagetitle{font-size:32px}
+.srcs li{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.srcs li .flags{grid-column:1/-1;text-align:left}
+.ft{grid-template-columns:minmax(0,1fr)}
+}
 """
 
 
@@ -123,8 +159,9 @@ def _bb(sv, en):
 
 def _date(ts, clock=False):
     d = datetime.fromtimestamp(ts, timezone.utc).astimezone(TZ)
-    t = f" {d:%H:%M}" if clock else ""
-    return f"{d.day} {MONTHS_SV[d.month - 1]} {d.year}{t}", f"{d.day} {MONTHS_EN[d.month - 1]} {d.year}{t}"
+    t = f" kl {d:%H.%M}" if clock else ""
+    te = f" at {d:%H:%M}" if clock else ""
+    return f"{d.day} {MONTHS_SV[d.month - 1]} {d.year}{t}", f"{d.day} {MONTHS_EN[d.month - 1]} {d.year}{te}"
 
 
 def _section_names(slug):
@@ -138,7 +175,7 @@ def _write(path, text):
 
 # ---------- Sidmall ----------
 
-def _shell(u, *, title, body, active=None, description="", path="/", meta="", og=None, banner="", noindex=True, extra=""):
+def _shell(u, *, title, body, active=None, description="", path="/", og=None, banner="", noindex=True, updated=None, nsources=0):
     nav = [(u.home(), "Senaste", "Latest", "hem")]
     nav += [(u.section(k), sv, en, k) for k, sv, en, _ in SECTIONS]
     nav += [(u.page("navigatorn"), "Navigatorn", "Navigatorn", "navigatorn"), (u.page("om"), "Om", "About", "om"),
@@ -151,6 +188,13 @@ def _shell(u, *, title, body, active=None, description="", path="/", meta="", og
                   f'<meta property="og:description" content="{_e(og.get("description", ""))}"><meta property="og:url" content="{_e(canonical)}">'
                   f'<meta property="og:image" content="{_e(u.absolute(u.file("newsgator.png")))}"><meta property="og:site_name" content="Newsnavigator">'
                   f'<meta name="twitter:card" content="summary">')
+    stamp = ""
+    if updated:
+        sv, en = _date(updated, clock=True)
+        stamp = f'<p>{_both(f"Senast uppdaterad {sv}.", f"Last updated {en}.")} '
+    else:
+        stamp = "<p>"
+    stamp += _both(f"{nsources} källor i sju regioner.", f"{nsources} sources in seven regions.") + "</p>"
     return f"""<!doctype html>
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{_e(title)}</title>
@@ -162,43 +206,42 @@ def _shell(u, *, title, body, active=None, description="", path="/", meta="", og
 <link rel="alternate" type="application/rss+xml" title="Newsnavigator (English)" href="{_e(u.file("feed-en.xml"))}">
 {ogtags}
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
-<style>{SITE_CSS}</style>{extra}</head>
+<link rel="stylesheet" href="{FONTS_URL}">
+<style>{SITE_CSS}</style></head>
 <body>
 {f'<div class="banner"><div class="w">{banner}</div></div>' if banner else ''}
-<header><div class="w hd">
+<header><div class="w mast">
+<span class="date" data-date></span>
 <a class="brand" href="{_e(u.home())}">{_mascot()}<span>Newsnavigator</span></a>
-<div class="mono">{meta}</div>
 <div class="lang" role="group" aria-label="Språk"><button type="button" data-l="sv" aria-pressed="true">SV</button><button type="button" data-l="en" aria-pressed="false">EN</button></div>
 </div></header>
 <nav aria-label="Sektioner"><div class="w">{links}</div></nav>
-<div class="w">
-<main>{body}</main>
-<footer>
-<p>{_both("Notiserna sammanfattas med hjälp av AI och granskas av redaktionen innan publicering. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI and reviewed by the editors before publication. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>
-<div class="links"><a href="{_e(u.page("om"))}">{_both("Om och principer", "About and principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Källor", "Sources")}</a><a href="{_e(u.page("navigatorn"))}">Navigatorn</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a><span class="mono">© 2026 Newsnavigator</span></div>
-</footer>
-</div>
+<main class="w">{body}</main>
+<footer><div class="w ft">
+<div><p>{_both("Notiserna sammanfattas med hjälp av AI och granskas av redaktionen innan publicering. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI and reviewed by the editors before publication. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>{stamp}</div>
+<div class="links"><a href="{_e(u.page("om"))}">{_both("Om Newsnavigator och principerna", "About Newsnavigator and the principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Alla källor", "All sources")}</a><a href="{_e(u.page("navigatorn"))}">{_both("Navigatorn, morgonbrevet", "Navigatorn, the morning brief")}</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a></div>
+<p class="copy">© 2026 Newsnavigator</p>
+</div></footer>
 <script>{JS}</script>
 </body></html>"""
 
 
 # ---------- Sidor ----------
 
-def _headmeta(sources, events):
-    n_reg = len({s["region"] for s in sources} - {"global"})
-    parts = [f'{len(sources)} {_both("källor", "sources")}', f'{n_reg} {_both("regioner", "regions")}']
-    if events:
-        latest = max(e.get("godkand_tid", 0) for e in events)
-        parts.append(f'{_both("Uppdaterad", "Updated")} {_both(*_date(latest, clock=True))}')
-    return " · ".join(parts)
+def _latest(events):
+    return max((e.get("godkand_tid", 0) for e in events), default=None) or None
 
 
 def _waiting(u):
-    return (f'<section style="padding:48px 0 48px;max-width:640px"><h1 class="pagetitle">{_both("Newsnavigator öppnar snart.", "Newsnavigator opens soon.")}</h1>'
+    return (f'<section style="padding:20px 0 40px;max-width:640px"><h1 class="pagetitle">{_both("Newsnavigator öppnar snart.", "Newsnavigator opens soon.")}</h1>'
             f'<p class="lede">{_both("Nyheter från över 90 källor i sju regioner, samlade på ett ställe och granskade innan de publiceras. Du ser hur olika länder, och blå och röda medier i USA, berättar om samma händelse. Varje notis länkar till originalet.", "News from more than 90 sources in seven regions, gathered in one place and reviewed before publication. See how different countries, and blue and red media in the US, cover the same event. Every story links to the original.")}</p>'
             f'<p class="lede">{_both("Varje morgon kommer Navigatorn, vårt morgonbrev.", "Every morning: Navigatorn, our morning brief.")} '
             f'<a href="{_e(u.page("om"))}">{_both("Läs om hur vi arbetar", "Read about how we work")}</a>.</p></section>')
+
+
+def _section_link(u, slug):
+    sv, en = _section_names(slug)
+    return (_both(sv, en), u.section(slug))
 
 
 def front(u, events, sources, banner, noindex):
@@ -206,27 +249,46 @@ def front(u, events, sources, banner, noindex):
         body = _waiting(u)
     else:
         lead, rest = events[0], events[1:]
-        body = _event(lead, True, href=u.story(lead["id"]))
+        latest, rest = rest[:LATEST], rest[LATEST:]
+        top = (f'<section class="top">{story_lead(lead, u.story(lead["id"]), kicker=_section_link(u, section_of(lead)))}'
+               f'<aside class="latest"><h2>{_both("Senaste", "Latest")}</h2><ul class="list">'
+               + "".join(story_item(e, u.story(e["id"]), kicker=_section_link(u, section_of(e))) for e in latest)
+               + "</ul></aside></section>")
+        blocks = []
         for slug, sv, en, _ in SECTIONS:
             items = [e for e in rest if section_of(e) == slug]
             if not items:
                 continue
-            body += (f'<h3 class="sechead"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span class="mono">{len(items)}</span></h3>'
-                     + "".join(_event(e, False, href=u.story(e["id"])) for e in items))
+            first, more = items[0], items[1:PER_SECTION + 1]
+            left = story_featured(first, u.story(first["id"]))
+            tail = len(items) - 1 - len(more)
+            link = (f'<p class="more"><a href="{_e(u.section(slug))}">{_both(f"Fler notiser i {sv}", f"More in {en}")} ({tail})</a></p>'
+                    if tail > 0 else "")
+            if more:
+                right = f'<ul class="list">{"".join(story_item(e, u.story(e["id"])) for e in more)}</ul>'
+                inner = f'<div class="grid">{left}<div>{right}{link}</div></div>'
+            else:
+                inner = f'<div class="one">{left}{link}</div>'
+            blocks.append(f'<section class="block"><h2><a href="{_e(u.section(slug))}">{_both(sv, en)}</a></h2>{inner}</section>')
+        body = top + "".join(blocks)
     return _shell(u, title="Newsnavigator", body=body, active="hem", path="/", banner=banner, noindex=noindex,
                   description="Nyheter från hela världen, samlade och granskade. Se hur olika länder och medier berättar om samma händelse.",
-                  meta=_headmeta(sources, events), og={"title": "Newsnavigator", "description": "Vi levererar nyheterna. Vad du gör av dem är upp till dig."})
+                  og={"title": "Newsnavigator", "description": "Vi levererar nyheterna. Vad du gör av dem är upp till dig."},
+                  updated=_latest(events), nsources=len(sources))
 
 
 def section_page(u, slug, events, sources, banner, noindex):
     sv, en = _section_names(slug)
     body = f'<h1 class="pagetitle">{_both(sv, en)}</h1>'
     if events:
-        body += "".join(_event(e, i == 0, href=u.story(e["id"])) for i, e in enumerate(events))
+        first, more = events[0], events[1:]
+        body += f'<div style="margin-top:22px">{story_lead(first, u.story(first["id"]))}</div>'
+        if more:
+            body += f'<ul class="list" style="margin-top:36px;max-width:760px">{"".join(story_item(e, u.story(e["id"])) for e in more)}</ul>'
     else:
-        body += f'<p class="lede">{_both("Inga granskade notiser i den här sektionen de senaste dagarna.", "No reviewed stories in this section in the past few days.")}</p>'
-    return _shell(u, title=f"{sv} · Newsnavigator", body=body, active=slug, path=u.section(slug), banner=banner, noindex=noindex,
-                  description=f"Granskade nyheter: {sv}.", meta=_headmeta(sources, events))
+        body += f'<p class="empty">{_both("Inga granskade notiser i den här sektionen de senaste dagarna.", "No reviewed stories in this section in the past few days.")}</p>'
+    return _shell(u, title=f"{sv}, Newsnavigator", body=body, active=slug, path=u.section(slug), banner=banner, noindex=noindex,
+                  description=f"Granskade nyheter: {sv}.", updated=_latest(events), nsources=len(sources))
 
 
 def story_page(u, ev, related, sources, banner, noindex):
@@ -235,18 +297,17 @@ def story_page(u, ev, related, sources, banner, noindex):
     sv, en = _section_names(slug)
     title_sv = d.get("rubrik_sv") or ev["reserv_rubrik"]
     desc_sv = d.get("sammanfattning_sv") or ""
-    art = _event(ev, True).replace('class="ev lead"', 'class="ev lead single"').replace("<details>", "<details open>")
     pub = _both(*_date(ev.get("godkand_tid", 0), clock=True)) if ev.get("godkand_tid") else ""
     more = ""
     if related:
-        more = (f'<h3 class="sechead">{_both("Fler notiser", "More stories")}</h3><ul class="more">'
-                + "".join(f'<li><a href="{_e(u.story(r["id"]))}">{_both((r.get("utkast") or {}).get("rubrik_sv") or r["reserv_rubrik"], (r.get("utkast") or {}).get("rubrik_en") or r["reserv_rubrik"])}</a>'
-                          f'<span class="mono">{r["antal_kallor"]} {_both("källor", "sources")}</span></li>' for r in related) + "</ul>")
-    body = (f'<p class="crumb mono"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span></p>'
-            f'{art}<p class="aiNote">{_both("Sammanfattad med hjälp av AI och granskad av redaktionen. Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till", "Summarised with the help of AI and reviewed by the editors. We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
-    return _shell(u, title=f"{title_sv} · Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
-                  description=desc_sv[:200], meta=_headmeta(sources, [ev]),
-                  og={"type": "article", "title": title_sv, "description": desc_sv})
+        more = (f'<h2 class="more-h">{_both("Fler notiser i", "More in")} {_both(sv, en)}</h2><ul class="list" style="max-width:760px">'
+                + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
+    body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span></p>'
+            f'{story_full(ev)}'
+            f'<p class="aiNote">{_both("Sammanfattad med hjälp av AI och granskad av redaktionen. Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till", "Summarised with the help of AI and reviewed by the editors. We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
+    return _shell(u, title=f"{title_sv}, Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
+                  description=desc_sv[:200], og={"type": "article", "title": title_sv, "description": desc_sv},
+                  updated=ev.get("godkand_tid") or None, nsources=len(sources))
 
 
 def newsletter_page(u, sources, banner, noindex, has_issue):
@@ -255,8 +316,8 @@ def newsletter_page(u, sources, banner, noindex, has_issue):
     body = (f'<h1 class="pagetitle">Navigatorn</h1>'
             f'<p class="lede">{_both("Morgonbrevet från Newsnavigator. Dagens viktigaste händelser i korthet, hur världen ser på dem, och redaktörens rad. Tre minuters läsning, varje morgon.", "The morning brief from Newsnavigator. The day’s most important events in brief, how the world sees them, and the editor’s note. A three-minute read, every morning.")}</p>'
             f'<div class="prose"><p>{_both("Första numret skickas när Newsnavigator öppnar. Vill du vara med från början, skriv till", "The first issue goes out when Newsnavigator opens. To be on the list from the start, write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>')
-    return _shell(u, title="Navigatorn · Newsnavigator", body=body, active="navigatorn", path=u.page("navigatorn"), banner=banner, noindex=noindex,
-                  description="Navigatorn, morgonbrevet från Newsnavigator.", meta=_headmeta(sources, []))
+    return _shell(u, title="Navigatorn, Newsnavigator", body=body, active="navigatorn", path=u.page("navigatorn"), banner=banner, noindex=noindex,
+                  description="Navigatorn, morgonbrevet från Newsnavigator.", nsources=len(sources))
 
 
 PRINCIPLES = [
@@ -293,16 +354,19 @@ PRINCIPLES = [
     ("USA: blått och rött, med lånade betyg", "US: blue and red, with borrowed ratings",
      "Vi visar hur amerikanska medier med olika publik berättar om samma händelse. Vilken publik ett medium vänder sig till avgör vi inte själva: vi använder AllSides betyg och anger det vid varje källa. Båda sidor beskrivs med samma mått och samma ton, och vi säger aldrig vilken sida som har rätt. Betygen kontrolleras minst en gång per kvartal. Ett enda betygsinstitut har sina begränsningar, vilket vi är öppna med.",
      "We show how American outlets with different audiences cover the same event. We do not decide ourselves which audience an outlet serves: we use AllSides’ ratings and state them beside every source. Both sides are described with the same measure and the same tone, and we never say which side is right. The ratings are checked at least once a quarter. A single ratings institute has its limitations, which we are open about."),
+    ("Källkontroll", "Source check",
+     "Varje utkast läses en andra gång av AI, som spårar varje påstående till källmaterialet. Ansvaret för fakta ligger hos källan; vårt jobb är att lyfta fram deras granskning och återge den rätt. Notiser där allt går att spåra märks ”Källkontrollerad”.",
+     "Every draft is read a second time by AI, which traces each claim to the source material. Responsibility for the facts rests with the source; our job is to highlight their reporting and render it correctly. Stories where everything can be traced are marked “Source-checked”."),
 ]
 
 STEPS = [
-    ("01", "Samla", "Gather", "Varje timme hämtar vi rubriker och ingresser från över 90 källor i sju regioner. Från betalväggskällor används bara rubrik och länk.",
+    ("Samla", "Gather", "Varje timme hämtar vi rubriker och ingresser från över 90 källor i sju regioner. Från betalväggskällor används bara rubrik och länk.",
      "Every hour we gather headlines and standfirsts from more than 90 sources in seven regions. From paywalled sources we use only the headline and link."),
-    ("02", "Gruppera", "Group", "Artiklar om samma händelse slås ihop, över språkgränserna. Så ser vi vilka som rapporterar, och vilka som inte gör det.",
+    ("Gruppera", "Group", "Artiklar om samma händelse slås ihop, över språkgränserna. Så ser vi vilka som rapporterar, och vilka som inte gör det.",
      "Articles about the same event are grouped together, across languages. That shows who is reporting, and who is not."),
-    ("03", "Skriva", "Draft", "AI skriver ett neutralt utkast på svenska och engelska, efter samma regler som redaktionen. Den får bara rubriker och ingresser, aldrig hela artiklar.",
+    ("Skriva", "Draft", "AI skriver ett neutralt utkast på svenska och engelska, efter samma regler som redaktionen. Den får bara rubriker och ingresser, aldrig hela artiklar.",
      "AI writes a neutral draft in Swedish and English, following the same rules as the editors. It sees only headlines and standfirsts, never full articles."),
-    ("04", "Granska", "Review", "Inget publiceras förrän en människa har läst utkastet mot källorna och godkänt det.",
+    ("Granska", "Review", "Inget publiceras förrän en människa har läst utkastet mot källorna och godkänt det.",
      "Nothing is published until a person has read the draft against the sources and approved it."),
 ]
 
@@ -319,17 +383,18 @@ HEADERS = """/*
 """
 
 
-def not_found_page(u, banner):
+def not_found_page(u, banner, nsources=0):
     """404-sida. Utan den serverar Cloudflare Pages förstasidan med status 200 för alla okända adresser."""
-    body = (f'<section style="padding:48px 0 48px;max-width:640px"><h1 class="pagetitle">{_both("Sidan finns inte.", "Page not found.")}</h1>'
-            f'<p class="prose">{_bb("Notiser ligger kvar i två veckor, sedan tas sidan bort men källorna finns kvar hos utgivarna. ", "Stories stay up for two weeks, then the page is removed but the sources remain with their publishers. ")}'
+    body = (f'<section style="padding:20px 0 40px;max-width:640px"><h1 class="pagetitle">{_both("Sidan finns inte.", "Page not found.")}</h1>'
+            f'<p class="lede">{_bb("Notiser ligger kvar i två veckor. Sedan tas sidan bort, men källorna finns kvar hos utgivarna. ", "Stories stay up for two weeks. Then the page is removed, but the sources remain with their publishers. ")}'
             f'<a href="{_e(u.home())}">{_both("Till senaste notiserna", "To the latest stories")}</a>.</p></section>')
-    return _shell(u, title="Sidan finns inte · Newsnavigator", body=body, description="", path="/404.html", banner=banner, noindex=True)
+    return _shell(u, title="Sidan finns inte, Newsnavigator", body=body, description="", path="/404.html", banner=banner, noindex=True, nsources=nsources)
 
 
 def about_page(u, sources, banner, noindex):
     princ = "".join(f"<li>{_bb(f'<b>{sv}</b>{tsv}', f'<b>{en}</b>{ten}')}</li>" for sv, en, tsv, ten in PRINCIPLES)
-    steps = "".join(f'<div class="step"><span class="mono">{n} · {_both(sv, en)}</span><p>{_both(tsv, ten)}</p></div>' for n, sv, en, tsv, ten in STEPS)
+    steps = "".join(f'<div class="step"><h3><span class="n">{i}.</span>{_both(sv, en)}</h3><p>{_both(tsv, ten)}</p></div>'
+                    for i, (sv, en, tsv, ten) in enumerate(STEPS, 1))
     n_reg = len({s["region"] for s in sources} - {"global"})
     body = f"""<h1 class="pagetitle">{_both("Om Newsnavigator", "About Newsnavigator")}</h1>
 <p class="lede">{_both("Vi levererar nyheterna. Vad du gör av dem är upp till dig.", "We deliver the news. What you make of it is up to you.")}</p>
@@ -339,17 +404,21 @@ def about_page(u, sources, banner, noindex):
 <p>{_both("Det som andra tar betalt för ska hos oss kännas gratis, mindre vinklat och djupare, utan att det går ut över de medier som gör jobbet. Vi väljer inte åt dig vad som är sant. Vi visar vem som säger vad.",
             "What others charge for should feel free, less slanted and deeper here, without hurting the outlets that do the work. We do not choose for you what is true. We show who says what.")}</p>
 <h2>{_both("Så fungerar det", "How it works")}</h2>
+</div>
 <div class="steps">{steps}</div>
+<div class="prose">
 <h2>{_both("Så läser du en notis", "How to read a story")}</h2>
-<p>{_bb("<b>Så ser världen på det</b> visar rubrikerna från olika regioner sida vid sida, med en saklig beskrivning av vad var och en lyfter fram. <b>USA: blått och rött</b> gör samma sak för amerikanska medier, sorterade efter AllSides betyg. <b>Källorna skiljer sig åt</b> visas när källorna lämnar olika uppgifter. <b>Data bakom nyheten</b> lägger till öppna siffror, till exempel räntor och inflation, direkt från Riksbanken och ECB, utan tolkning.",
-         "<b>How the world sees it</b> shows headlines from different regions side by side, with a plain description of what each emphasises. <b>US: blue and red</b> does the same for American outlets, sorted by AllSides’ ratings. <b>Sources differ</b> appears when the sources give different accounts. <b>Data behind the news</b> adds open figures such as interest rates and inflation, straight from the Riksbank and the ECB, without interpretation.")}</p>
+<p>{_bb("Remsan under varje rubrik visar vilka regioner som rapporterar om händelsen, från Sverige till globalt, med antalet källor. En släckt cell är en region där vi inte hittat någon rapportering. <b>Så ser världen på det</b> visar rubrikerna från olika regioner sida vid sida, med en saklig beskrivning av vad var och en lyfter fram. <b>USA: blått och rött</b> gör samma sak för amerikanska medier, sorterade efter AllSides betyg. <b>Källorna skiljer sig åt</b> visas när källorna lämnar olika uppgifter. <b>Data bakom nyheten</b> lägger till öppna siffror, till exempel räntor och inflation, direkt från Riksbanken och ECB, utan tolkning.",
+         "The strip under each headline shows which regions report on the event, from Sweden to global, with the number of sources. An unlit cell is a region where we found no coverage. <b>How the world sees it</b> shows headlines from different regions side by side, with a plain description of what each emphasises. <b>US: blue and red</b> does the same for American outlets, sorted by AllSides’ ratings. <b>Sources differ</b> appears when the sources give different accounts. <b>Data behind the news</b> adds open figures such as interest rates and inflation, straight from the Riksbank and the ECB, without interpretation.")}</p>
 <h2>{_both("Principerna", "The principles")}</h2>
-<ol>{princ}</ol>
+</div>
+<ol class="princ">{princ}</ol>
+<div class="prose">
 <h2>{_both("Kontakt", "Contact")}</h2>
 <p>{_both("Tips, rättelser och frågor:", "Tips, corrections and questions:")} <a href="mailto:{CONTACT}">{CONTACT}</a>. {_both("Ansvarig utgivare är Fabian Sandberg Kuylenstierna, Stockholm.", "The publisher is Fabian Sandberg Kuylenstierna, Stockholm.")}</p>
 </div>"""
     return _shell(u, title="Om Newsnavigator", body=body, active="om", path=u.page("om"), banner=banner, noindex=noindex,
-                  description="Vad Newsnavigator är, hur vi arbetar och våra elva redaktionella principer.", meta=_headmeta(sources, []))
+                  description="Vad Newsnavigator är, hur vi arbetar och våra tolv redaktionella principer.", nsources=len(sources))
 
 
 def _homepage(s):
@@ -372,17 +441,18 @@ def sources_page(u, sources, banner, noindex):
         for s in items:
             flags = []
             if s.get("betalvagg"):
-                flags.append(f'<span class="badge">{_both("betalvägg", "paywall")}</span>')
+                flags.append(_both("Betalvägg", "Paywall"))
             if s.get("statskontrollerad"):
-                flags.append('<span class="badge strong">STAT</span>')
+                flags.append(_both("Statskontrollerad", "State-controlled") + '<span class="stat">STAT</span>')
             if s.get("usa_lutning"):
-                flags.append(f'<span class="badge">AllSides: {_both(*LEANS[s["usa_lutning"]])}</span>')
+                flags.append(f'AllSides: {_both(*LEANS[s["usa_lutning"]])}')
             if s.get("agare") == "public-service":
-                flags.append(f'<span class="badge">public service</span>')
+                flags.append("Public service")
             kind = TYPES.get(s["typ"], (s["typ"], s["typ"]))
+            land = _both(*country(s["land"])) if s.get("land") and region not in ("sverige", "usa") else ""
             rows.append(f'<li><a href="{_e(_homepage(s))}" rel="noopener">{_e(s["namn"])}</a>'
-                        f'<span class="mono">{_e(s.get("land", ""))} · {_both(*kind)}</span><span class="flags">{"".join(flags)}</span></li>')
-        groups.append(f'<h3 class="sechead">{_both(*REGIONS.get(region, (region, region)))}<span class="mono">{len(items)}</span></h3><ul class="srcs">{"".join(rows)}</ul>')
+                        f'<span class="kind">{_both(*kind)}{", " + land if land else ""}</span><span class="flags">{", ".join(flags)}</span></li>')
+        groups.append(f'<h2 class="group-h">{_both(*REGIONS.get(region, (region, region)))}<span class="n">{len(items)} {_both("källor", "sources")}</span></h2><ul class="srcs">{"".join(rows)}</ul>')
     body = f"""<h1 class="pagetitle">{_both("Källor", "Sources")}</h1>
 <p class="lede">{_both(f"{len(sources)} källor i sju regioner. Alla är öppna om vilka de är, så att du kan bedöma dem själv.", f"{len(sources)} sources in seven regions. All of them are listed openly, so you can judge them yourself.")}</p>
 <div class="prose">
@@ -391,8 +461,8 @@ def sources_page(u, sources, banner, noindex):
 <p>{_both("Saknar du en källa, eller driver du en? Skriv till", "Missing a source, or do you run one? Write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
 </div>
 {"".join(groups)}"""
-    return _shell(u, title="Källor · Newsnavigator", body=body, active="kallor", path=u.page("kallor"), banner=banner, noindex=noindex,
-                  description=f"Alla {len(sources)} källor Newsnavigator bevakar, med region, typ och märkning.", meta=_headmeta(sources, []))
+    return _shell(u, title="Källor, Newsnavigator", body=body, active="kallor", path=u.page("kallor"), banner=banner, noindex=noindex,
+                  description=f"Alla {len(sources)} källor Newsnavigator bevakar, med region, typ och märkning.", nsources=len(sources))
 
 
 # ---------- RSS ----------
@@ -450,11 +520,11 @@ def build(out, events, *, flat=False, banner="", noindex=True, has_issue=False, 
         for old in out.glob("n-*.html"):
             old.unlink()
     for ev in events:
-        related = [r for r in sect_events if r["id"] != ev["id"] and section_of(r) == section_of(ev)][:3]
+        related = [r for r in sect_events if r["id"] != ev["id"] and section_of(r) == section_of(ev)][:4]
         _write(u.disk(out, u.story(ev["id"])), story_page(u, ev, related, sources, banner, noindex))
     _write(u.disk(out, u.page("om")), about_page(u, sources, banner, noindex))
     if not flat:
-        _write(out / "404.html", not_found_page(u, banner))
+        _write(out / "404.html", not_found_page(u, banner, len(sources)))
         _write(out / "_headers", HEADERS)
     _write(u.disk(out, u.page("kallor")), sources_page(u, sources, banner, noindex))
     nl = newsletter_page(u, sources, banner, noindex, has_issue)

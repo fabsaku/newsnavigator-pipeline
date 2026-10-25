@@ -263,15 +263,15 @@ def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65, curated
 
 
 def tag(c):
-    """Ämnen för en händelse: källornas ämnen om minst hälften av källorna delar dem, plus nyckelord i texten."""
+    """Ämnen för en händelse: nyckelord i texten, plus källornas bevakningsämnen när minst hälften av källorna
+    (och minst två) delar dem. Returnerar (alla ämnen, ämnen från texten). Textämnena styr vilken sektion
+    notisen hamnar i; källornas bevakning är en svagare signal (CNBC skriver om mycket annat än marknader)."""
     text = " ".join(i["title"] + " " + i["description"] for i in c["items"]).lower()
     counts = Counter(t for i in c["items"] for t in i["topics"])
     n = len(c["items"])
-    topics = {t for t, k in counts.items() if (k == n if t in GEO else k * 2 >= n)}
-    for topic, words in KEYWORDS.items():
-        if any(_kw(w).search(text) for w in words):
-            topics.add(topic)
-    return sorted(topics)
+    from_sources = {t for t, k in counts.items() if (k == n if t in GEO else (k * 2 >= n and k >= 2))}
+    from_text = {topic for topic, words in KEYWORDS.items() if any(_kw(w).search(text) for w in words)}
+    return sorted(from_sources | from_text), sorted(from_text)
 
 
 HOME = {"sverige", "norden"}
@@ -437,7 +437,7 @@ def main():
     clusters = cluster(items)
     events = []
     for c in clusters:
-        c["topics"] = tag(c)
+        c["topics"], c["text_topics"] = tag(c)
         c["score"] = score(c)
     clusters.sort(key=lambda c: c["score"], reverse=True)
 
@@ -489,6 +489,7 @@ def main():
         events.append({
             "id": c["id"],
             "amnen": c["topics"],
+            "amnen_text": c["text_topics"],
             "poang": c["score"],
             "antal_kallor": len(independent(c)) or len({i["source_id"] for i in c["items"]}),
             "har_primarkalla": any(i["source_type"] in ("primar", "forskning") for i in c["items"]),

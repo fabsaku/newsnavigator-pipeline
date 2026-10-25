@@ -40,8 +40,13 @@ _SECTION_TAGS = {k: tags for k, _, _, tags in SECTIONS}
 
 
 def section_of(ev):
-    topics = set(ev.get("amnen", []))
-    return next((k for k in SECTION_PRIORITY if topics & _SECTION_TAGS[k]), "varlden")
+    """Sektion: först efter ämnen i texten, sedan efter källornas bevakning, annars Världen."""
+    for key in ("amnen_text", "amnen"):
+        topics = set(ev.get(key) or [])
+        hit = next((k for k in SECTION_PRIORITY if topics & _SECTION_TAGS[k]), None)
+        if hit:
+            return hit
+    return "varlden"
 
 
 TXT = {
