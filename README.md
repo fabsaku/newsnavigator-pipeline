@@ -84,3 +84,7 @@ avsändartjänst (Resend eller liknande) med egna SPF/DKIM-poster för en underd
 
 ## Instagram
 `instagram.py bygg` gör karusellkort (1080x1350, JPEG) för varje godkänd notis i `public/ig/<id>/`, med caption i `caption.txt`. Korten ligger ute på sajten, så att Instagram kan hämta dem. `instagram.py posta` publicerar dagens bästa opostade notis via Instagrams API (workflowen `instagram.yml`, 07:45). Kräver ett Business- eller Creator-konto och hemligheterna `IG_USER_ID` och `IG_ACCESS_TOKEN` (long-lived token, 60 dagar, förnyas via `refresh_access_token`). Utan hemligheter skriver skriptet bara vad det skulle ha postat. Typsnitt och maskot ligger i `assets/` så att korten blir lika överallt. Förhandsvisning av dagens utkast: `python instagram.py forhandsvisning /tmp/ig`.
+Formatet: vit text på svart, högst tre kort. Omslag med rubrik, sammanfattning och täckningsremsan; sedan "Så ser världen på det"
+med en rubrik per region; sist ett kort där det finns något att visa, i tur och ordning data bakom nyheten, ett stapeldiagram
+(fältet `graf` på notisen: titel, staplar med etikett, värde och visat värde), USA blått och rött, eller "Källorna skiljer sig åt".
+Handplockade notiser i en JSON-fil, till exempel ur flödeshistoriken: `python instagram.py urval urval.json /tmp/ig`.
