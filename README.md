@@ -41,8 +41,16 @@ Testa utan internet: `python pipeline.py --feeds tests/feeds-test.yaml --max-age
 - Raden "Vad betyder det för Sverige och Europa?" som eget, granskat fält.
 - Koppla flödet till sajtens design i stället för förhandsvisningen.
 
-## Sajten
-`render.py` bygger flödet i Newsnavigators design: dark mode, Newsgator, svenska och engelska (SV/EN-knapp), ämnesfilter, "Så ser världen på det" per händelse, källor med land och märkning av statskontrollerade medier. `site/index.html` visar alla utkast, `site/publicerat.html` bara granskade.
+## Formen
+`render.py` är den gemensamma formen: stilmall och notiskomponenter (toppnotis, utvald, rad i rubriklista, hel notis) som
+både sajten och den interna förhandsvisningen (`site/index.html`, alla utkast med ämnesfilter) använder.
+Formen är en tidningssida i svartvitt, mörk först: Source Serif 4 för rubriker och löptext, Source Sans 3 för navigation
+och meta, ingen monospace och inga versaletiketter. Sidhuvudet har dagens datum (sätts i läsarens webbläsare, så att
+sidorna inte beror på byggtiden), ordmärket NEWSNAVIGATOR med Newsgator, och SV/EN.
+Det enda som får ta plats är täckningsremsan: åtta fasta celler, Sverige till Globalt, som tänds när en region rapporterar,
+med antalet källor. En släckt första cell är en blind fläck i svenska medier. Samma remsa visar blå publik, mitten och röd
+publik för amerikanska medier. Meta skrivs som meningar ("15 källor i sex regioner. Saknas i svenska medier.") och källorna
+som en mening med länkar till originalen och "och 12 till" till notissidan, där hela listan finns med landsnamn.
 
 ## Navigatorn (morgonbrevet)
 `newsletter.py` bygger brevet av notiser som godkänts senaste dygnet: `site/navigatorn-sv.html` och `-en.html`, plus textversioner. Inga AI-anrop.
