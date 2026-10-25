@@ -1,0 +1,18 @@
+# Newsnavigator: instruktioner för Claude Code
+
+Läs först: `README.md`, `PRINCIPER.md`, och för driftpanelen `docs/redaktionen.md` (bygg en fas per session).
+
+## Regler
+- Gränssnitt och texter på svenska (och engelska där sajten är tvåspråkig). Inga tankstreck (—) i texter. Han/hon, inte hen.
+- Formen kommer från `render.py`: svartvitt, Source Serif 4 och Source Sans 3, ingen monospace, inga versaletiketter.
+- Återge aldrig källornas text, bara rubrik och länk. Inget innehåll bakom betalväggar. Respektera källor som blockerar bottar.
+- Hemligheter (API-nycklar, tokens) skrivs aldrig i kod, filer eller chatt. Fabian lägger dem själv i GitHub och Cloudflare.
+- Skriv om aldrig pushad historik. Små commits.
+- Commits: `git -c user.name=Claude -c user.email=noreply@anthropic.com commit`, med trailer `Co-Authored-By` och `Claude-Session`.
+
+## Kör
+- Lokalt utan nät: `python pipeline.py --feeds tests/feeds-test.yaml --max-age-hours 0`
+- Förhandsvisning av sajten: `python publish.py --forhandsvisning /tmp/sajt`
+- Instagramkort: `python instagram.py forhandsvisning /tmp/ig`
+- Workflows startas med `gh api -X POST repos/fabsaku/newsnavigator-pipeline/actions/workflows/<fil>/dispatches -f ref=main` (GraphQL är blockerat).
+- Sandboxen når sällan RSS och API:er; verifiera via en GitHub Actions-körning.
