@@ -3082,7 +3082,7 @@
     "sammanfattning": null
    },
    "fingeravtryck": "f83fd424ff85",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "4c40f7342c": {
    "utkast": {
@@ -3619,7 +3619,7 @@
     "sammanfattning": "SVT:s ingress anger exakt 500 skadade, inte fler än 500 som utkastet påstår i oenighetsavsnittet; övriga påståenden har stöd i källmaterialet."
    },
    "fingeravtryck": "963105583e5e",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "0e7ae9f578": {
    "utkast": {
@@ -4235,8 +4235,67 @@
     "osaker": false,
     "kommentar": "Sammanfattningen bygger på BBC Verify och El País, som båda handlar om AI-annonser. Fox News artikel (ingress) handlar om den brasilianska valomgången och används därför inte i sammanfattningen. Materialet består av rubriker och ingresser, inte hela artiklar. Ingen av källorna är amerikansk med AllSides-betyg vänster respektive höger, så usa_sv och usa_en är null."
    },
+   "kontroll": {
+    "ok": false,
+    "antal": 7,
+    "problem": [
+     "egen slutsats: Källorna beskriver inte på samma sätt vad som har räknats"
+    ],
+    "pastaenden": [
+     {
+      "text": "BBC Verify har granskat dussintals AI-annonser i mellanårsvalskampanjerna i USA",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "El País uppger att över 200 politiska annonser gjorda med AI har identifierats",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "AI-användningen i politiska annonser regleras inte på federal nivå (enligt El País)",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC och El País lyfter AI-genererade valannonser i USA:s mellanårsval",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter i stället den brasilianska valomgångens snabba rösträkning och röstsäkerhet inför USA:s mellanårsval",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC Verify uppger dussintals granskade AI-annonser, medan El País uppger över 200 identifierade annonser",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källorna beskriver inte på samma sätt vad som har räknats",
+      "stod": [],
+      "problem": "egen slutsats"
+     }
+    ],
+    "sammanfattning": "Den sista meningen i oenighetsavsnittet (att källorna beskriver olika vad som räknats) är en egen slutsats som inte stöds av källmaterialet; övriga påståenden har stöd."
+   },
    "fingeravtryck": "e01e37dc91ce",
-   "sedd": 1792848037.0757103
+   "sedd": 1792904080.2093604
   },
   "56274e612a": {
    "utkast": {
@@ -5399,7 +5458,7 @@
     "sammanfattning": null
    },
    "fingeravtryck": "49897e92e6cb",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "ec1062a325": {
    "utkast": {
@@ -7455,7 +7514,7 @@
     "sammanfattning": null
    },
    "fingeravtryck": "ca0ae8b27a8a",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "616fcf69ac": {
    "utkast": {
@@ -7866,7 +7925,7 @@
     "sammanfattning": null
    },
    "fingeravtryck": "469dc5f64f8c",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "9afb4c04ba": {
    "utkast": {
@@ -10354,7 +10413,7 @@
     "sammanfattning": "Ekots rubrik säger bara att det handlar om presidentkandidaterna och innehåller inga namn, så påståendet att Ekot lyfter namnen i rubriken saknar stöd."
    },
    "fingeravtryck": "a34ed44b95dd",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "65b9cb6cff": {
    "utkast": {
@@ -10440,7 +10499,7 @@
     "sammanfattning": null
    },
    "fingeravtryck": "02f2d731d41b",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "689445d8c3": {
    "utkast": {
@@ -10497,7 +10556,7 @@
     "sammanfattning": "Åtalet mot de två f.d. FBI-tjänstemännen stöds av båda källorna, men beskrivningen av tullarna är fel: WSJ-rubriken säger att Trump-administrationen går för att ta bort 50-procentiga tullar på vissa kanadensiska produkter, medan utkastet framställer det som att tullarna gäller."
    },
    "fingeravtryck": "98e979b80751",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "627df0e828": {
    "utkast": {
@@ -10674,6 +10733,3859 @@
    },
    "fingeravtryck": "6a513015b34c",
    "sedd": 1792883706.778099
+  },
+  "05aa33c47e": {
+   "utkast": {
+    "rubrik_sv": "Ukraina säger att Starlink är tillbaka till normal hastighet, Musk anklagar landet för regelbrott",
+    "sammanfattning_sv": "Ukrainska myndigheter uppger att Starlink-hastigheten återställts efter en tids begränsningar. Elon Musk skriver på X att Ukraina bröt mot villkoren genom att använda tjänsten för offensiva drönarattacker.",
+    "rubrik_en": "Ukraine says Starlink speeds are back to normal, Musk accuses Kyiv of breaking its terms",
+    "sammanfattning_en": "Ukrainian authorities say Starlink speeds have been restored after a period of restrictions. Elon Musk wrote on X that Ukraine breached the terms by using the service for offensive drone strikes.",
+    "oenighet": "Ukrainska regeringen och president Zelenskyj uppger att anslutningen är stabil och hastigheten normal. Musk skriver att Ukraina bröt mot villkoren, medan SCMP skriver att Musk erkänt att han strypt hastigheten och The Hill skriver att Musk antytt att han låg bakom nedsättningen. BBC skrev tidigare att Zelenskyj sa att begränsningarna fortfarande påverkade de ukrainska styrkorna, och att amerikanska tjänstemän och Musk ger motstridiga bilder av vem som kontrollerar tillgången.",
+    "oenighet_en": "The Ukrainian government and President Zelenskyy say the connection is stable and speeds are normal. Musk writes that Ukraine violated the terms, while the SCMP reports that Musk admitted throttling the speeds and The Hill reports that Musk alluded to being behind the slowdown. The BBC earlier reported that Zelenskyy said the limits still affected Ukrainian forces, and that US officials and Musk give conflicting accounts of who controls access.",
+    "perspektiv_sv": "Rubrikerna skiljer sig åt i vad de lyfter fram. Brittiska The Guardian, tyska Deutsche Welle, norska NRK, amerikanska NPR och Axios samt The Wall Street Journal lyfter i rubrikerna att ukrainska myndigheter säger att tjänsten fungerar normalt igen. Japanska The Japan Times lyfter både de ukrainska uppgifterna och Musks påstående. Indiska The Hindu och amerikanska The Hill och CNBC lyfter Musks anklagelser mot Ukraina. Ryska RT, som är statskontrollerat medium, lyfter i rubriken att Musk stängt ett kryphål som gjorde det möjligt för den ukrainska militären att missbruka tjänsten. Hongkongbaserade SCMP lyfter i rubriken att Musk erkänt att han strypt hastigheten.",
+    "perspektiv_en": "The headlines differ in what they emphasise. The Guardian, Deutsche Welle, NRK, NPR, Axios and The Wall Street Journal, from Britain, Germany, Norway and the US, highlight in their headlines that Ukrainian authorities say the service is working normally again. The Japan Times, from Japan, highlights both the Ukrainian statements and Musk's claim. The Hindu from India, and The Hill and CNBC from the US, highlight Musk's accusations against Ukraine. RT, a Russian state-controlled outlet, highlights in its headline that Musk closed a loophole that allowed the Ukrainian military to misuse the service. Hong Kong-based SCMP highlights in its headline that Musk admitted throttling the speeds.",
+    "usa_sv": "Fox News (AllSides: höger) har i rubriken att Starlink återställts samtidigt som Musk anklagar Kyiv för regelbrott, och i ingressen att Musk säger att ett kryphål stängts. The New York Times (AllSides: lutar vänster) har i rubriken att Musk säger att Ukraina brutit mot reglerna, utan ingress i materialet. NPR (AllSides: lutar vänster) och Axios (AllSides: lutar vänster) lyfter att Ukrainas president respektive försvarsministerium uppger att hastigheten är tillbaka till det normala. Axios ingress beskriver att begränsningarna hindrade den ukrainska militären från att använda drönare för att fånga upp ryska attacker. The Hill, CNBC och The Wall Street Journal (AllSides: mitten) lyfter både Musks uttalanden och de ukrainska uppgifterna.",
+    "usa_en": "Fox News (AllSides: höger, rated right) headlines that Starlink has been restored while Musk accuses Kyiv of breaking the rules, and its summary says Musk claims a loophole has been closed. The New York Times (AllSides: lutar vänster, leans left) headlines that Musk says Ukraine violated the rules, with no summary in the material. NPR (AllSides: lutar vänster, leans left) and Axios (AllSides: lutar vänster, leans left) highlight that Ukraine's president and defence ministry, respectively, say speeds are back to normal. The Axios summary describes how the restrictions prevented the Ukrainian military from using drones to intercept Russian attacks. The Hill, CNBC and The Wall Street Journal (AllSides: mitten, center) highlight both Musk's statements and the Ukrainian statements.",
+    "osaker": false,
+    "kommentar": "Källorna anger olika tidsangivelser för begränsningen, ca tio dagar respektive ca två veckor. The Japan Times kopplar begränsningarna till en amerikansk affär om rysk diesel. Eftersom uppgiften bara finns i en källa och inte framgår av de övriga har den inte tagits med i sammanfattningen. BBC-artikeln är publicerad 23 oktober och är äldre än övriga källor. Musks påstående om att ett kryphål stängts återges som hans egen uppgift, eftersom den inte har bekräftats av oberoende källa i materialet."
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 31,
+    "problem": [
+     "saknar stöd: The Hill lyfter också de ukrainska uppgifterna om att hastigheten är återställd"
+    ],
+    "pastaenden": [
+     {
+      "text": "Ukraina säger att Starlink är tillbaka till normal hastighet (rubrik)",
+      "stod": [
+       8,
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Musk anklagar Ukraina för regelbrott (rubrik)",
+      "stod": [
+       1,
+       3,
+       4,
+       7,
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ukrainska myndigheter uppger att Starlink-hastigheten återställts efter en tids begränsningar",
+      "stod": [
+       10,
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Musk skriver på X att Ukraina bröt mot villkoren genom att använda tjänsten för offensiva drönarattacker",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian lyfter i rubriken att ukrainska myndigheter säger att tjänsten fungerar igen (stabil anslutning efter begränsningar)",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle lyfter i rubriken att ukrainska myndigheter säger att hastigheten är återställd till normal",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "NRK lyfter i rubriken att Ukraina har stabil anslutning till Starlink",
+      "stod": [
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR lyfter i rubriken att Ukraina säger att Starlink är tillbaka till normalt",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios lyfter i rubriken att försvarsministeriet säger att begränsningarna hävts",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Wall Street Journal lyfter i rubriken att Ukrainas militär åter använder Starlink enligt Kyiv",
+      "stod": [
+       17
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Japan Times lyfter i rubriken både ukrainska uppgifter om normal drift och Musks påstående att Kyiv brutit mot villkoren",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter i rubriken Musks anklagelser mot Ukraina",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill lyfter i rubriken och ingressen Musks anklagelser mot Ukraina",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC lyfter i rubriken Musks påstående att Ukraina brutit mot avtalet",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT lyfter i rubriken att Musk stängt ett kryphål som gjorde det möjligt för den ukrainska militären att missbruka tjänsten",
+      "stod": [
+       18
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter i rubriken att Musk erkänt att han strypt Starlink-hastigheten i Ukraina",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT är ett statskontrollerat medium",
+      "stod": [
+       18
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP är baserat i Hongkong",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter i rubriken att Starlink återställts samtidigt som Musk anklagar Kyiv för regelbrott",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News ingress säger att Musk menar att ett kryphål stängts",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times lyfter i rubriken att Musk säger att Ukraina brutit mot reglerna, utan ingress i materialet",
+      "stod": [
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR och Axios lyfter att Ukrainas president respektive försvarsministerium uppger att hastigheten är tillbaka till det normala",
+      "stod": [
+       10,
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios ingress beskriver att begränsningarna hindrade den ukrainska militären från att använda drönare för att fånga upp ryska attacker",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill lyfter också de ukrainska uppgifterna om att hastigheten är återställd",
+      "stod": [],
+      "problem": "saknar stöd"
+     },
+     {
+      "text": "CNBC och The Wall Street Journal lyfter både Musks uttalanden och de ukrainska uppgifterna",
+      "stod": [
+       7,
+       17
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ukrainska regeringen och Zelenskyj uppger att anslutningen är stabil och hastigheten normal",
+      "stod": [
+       6,
+       10,
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Musk skriver att Ukraina bröt mot villkoren",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP skriver att Musk erkänt att han strypt hastigheten",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill skriver att Musk antytt att han låg bakom nedsättningen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC skrev tidigare att Zelenskyj sa att begränsningarna fortfarande påverkade de ukrainska styrkorna",
+      "stod": [
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC skrev att amerikanska tjänstemän och Musk ger motstridiga bilder av vem som kontrollerar tillgången",
+      "stod": [
+       14
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "The Hill-påståendet att tidningen lyfter de ukrainska uppgifterna om återställd hastighet saknar stöd i källan. Rubriken och ingressen handlar bara om Musk. Övriga påståenden har stöd."
+   },
+   "fingeravtryck": "65e0b4c0324b",
+   "sedd": 1792904080.2093604
+  },
+  "16482a3ba9": {
+   "utkast": {
+    "rubrik_sv": "Nära 1 000 gripna vid nya sammandrabbningar i Frankrike",
+    "sammanfattning_sv": "Protester i flera franska städer har lett till sammandrabbningar, bland annat i Paris. Enligt inrikesminister Laurent Nuñez har nära 1 000 personer gripits, och 70 000 poliser var utplacerade i landet.",
+    "rubrik_en": "Nearly 1,000 arrested as clashes break out at protests across France",
+    "sammanfattning_en": "Protests in several French cities have led to clashes, including in Paris. According to Interior Minister Laurent Nuñez, nearly 1,000 people have been arrested, and 70,000 police officers were deployed nationwide.",
+    "oenighet": "Källorna skiljer sig åt om antalet deltagare. The Guardian talar om hundratusentals, Deutsche Welle om tiotusentals, och South China Morning Post anger att franska inrikesministeriet räknade 410 000 personer. Även bedömningen av läget skiljer sig: South China Morning Post beskriver protesterna som i huvudsak fredliga, medan Deutsche Welle skriver om spänningar mot slutet av protesterna. Le Monde beskriver protesterna som mer positiva än den 17 oktober, med fler poliser på gatorna.",
+    "oenighet_en": "The sources differ on the number of participants. The Guardian refers to hundreds of thousands, Deutsche Welle to tens of thousands, and South China Morning Post reports that the French Interior Ministry counted 410,000 people. The assessment of the situation also differs: South China Morning Post describes the protests as largely peaceful, while Deutsche Welle writes of tensions toward the end of the protests. Le Monde describes the protests as more positive than on October 17, with more police on the streets.",
+    "perspektiv_sv": "Amerikanska källor lyfter främst marknadseffekter (CNBC) och potentiella vapen hos demonstranter enligt tjänstemän (Fox News). Indiska The Hindu lyfter inrikesministerns beskrivning av våld från ultravänsterextremister. Qatariska Al Jazeera lyfter tusentals demonstranter i Paris och myndigheter som ingriper mot oordning. Hongkongbaserade South China Morning Post lyfter att protesterna i huvudsak var fredliga, medan tyska Deutsche Welle lyfter spänningar mot slutet av protesterna. Svenska Ekot lyfter tårgas, vattenkanoner och bilder från Paris.",
+    "perspektiv_en": "American sources mainly highlight market effects (CNBC) and potential weapons found on protesters according to officials (Fox News). The Indian outlet The Hindu highlights the Interior Minister's description of violence from ultra-left extremists. Qatari outlet Al Jazeera highlights thousands of protesters in Paris and authorities cracking down on disorder. Hong Kong-based South China Morning Post highlights that the protests were largely peaceful, while German Deutsche Welle highlights tensions toward the end of the protests. Swedish Ekot highlights tear gas, water cannons and images from Paris.",
+    "usa_sv": "Bland medier som AllSides bedömer lutar vänster (The New York Times) och höger (Fox News) skiljer sig rubrikerna åt. Fox News rubrik och ingress lyfter nära 1 000 gripna, 70 000 poliser och att tjänstemän uppger att potentiella vapen hittats hos demonstranter. The New York Times rubrik lyfter i stället att Paris har rustat sig mot oroligheter och hur besökare tas emot.",
+    "usa_en": "Among outlets that AllSides rates as leaning left (The New York Times) and right (Fox News), the headlines differ. The Fox News headline and lead highlight nearly 1,000 arrests, 70,000 officers, and officials saying potential weapons were found on protesters. The New York Times headline instead highlights that Paris has braced for unrest and how visitors are being received.",
+    "osaker": false,
+    "kommentar": "Tel Aviv-protesterna mot Netanyahu (France 24) ingår inte, eftersom de inte gäller Frankrike. Guardian nämner även protester och husrannsakningar i Italien, Spanien och Albanien, men dessa ingår inte i sammanfattningen. Av The New York Times och The Wall Street Journal finns endast rubriker i materialet, så jämförelsen av dem bygger enbart på rubrikerna."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 22,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: nära 1 000 gripna vid sammandrabbningar i Frankrike",
+      "stod": [
+       1,
+       2,
+       6,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Protester i flera franska städer har lett till sammandrabbningar",
+      "stod": [
+       2,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sammandrabbningarna skedde bland annat i Paris",
+      "stod": [
+       2,
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Inrikesminister Laurent Nuñez säger att nära 1 000 personer gripits",
+      "stod": [
+       1,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "70 000 poliser var utplacerade i landet",
+      "stod": [
+       2,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC lyfter marknadseffekter",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter potentiella vapen hos demonstranter enligt tjänstemän",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter inrikesministerns beskrivning av våld från ultravänsterextremister",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter tusentals demonstranter i Paris och myndigheter som ingriper mot oordning",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "South China Morning Post lyfter att protesterna i huvudsak var fredliga",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle lyfter spänningar mot slutet av protesterna",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ekot lyfter tårgas, vattenkanoner och bilder från Paris",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "AllSides bedömer NYT som vänsterlutande och Fox News som högerlutande",
+      "stod": [
+       13,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News rubrik och ingress lyfter nära 1 000 gripna, 70 000 poliser och att tjänstemän uppger att potentiella vapen hittats",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT:s rubrik lyfter att Paris rustat sig mot oroligheter och hur besökare tas emot",
+      "stod": [
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källorna skiljer sig åt om antalet deltagare",
+      "stod": [
+       3,
+       8,
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian talar om hundratusentals deltagare",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle talar om tiotusentals deltagare",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP anger att franska inrikesministeriet räknade 410 000 personer",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP beskriver protesterna som i huvudsak fredliga",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle skriver om spänningar mot slutet av protesterna",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "Le Monde beskriver protesterna som mer positiva än den 17 oktober, med fler poliser på gatorna",
+      "stod": [
+       14
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "775ea3cc194a",
+   "sedd": 1792904080.2093604
+  },
+  "2f1923ee40": {
+   "utkast": {
+    "rubrik_sv": "Kim Jong Un besöker Kina via nyöppnad bro",
+    "sammanfattning_sv": "Nordkoreas ledare Kim Jong Un har rest över en nyöppnad bro till den kinesiska gränsstaden Dandong, enligt flera källor. Det är hans första besök i Kina på över ett år, enligt South China Morning Post och New York Times.",
+    "rubrik_en": "Kim Jong Un visits China via newly opened bridge",
+    "sammanfattning_en": "North Korean leader Kim Jong Un has crossed a newly opened bridge into the Chinese border city of Dandong, according to several outlets. It is his first visit to China in over a year, according to the South China Morning Post and the New York Times.",
+    "oenighet": "Källorna anger olika vem som tog emot Kim i Dandong. SVT skriver, med hänvisning till Yonhap, att premiärminister Li Qiang mötte honom. Deutsche Welle skriver om en namnlös högt uppsatt kinesisk företrädare, och The Guardian om en högt uppsatt medlem av kommunistpartiet. The Hindu skriver att Yonhap citerar en namnlös regeringskälla om ankomsten.",
+    "oenighet_en": "The sources differ on who received Kim in Dandong. SVT writes, citing Yonhap, that Premier Li Qiang met him. Deutsche Welle refers to an unnamed senior Chinese official, and The Guardian to a senior Communist Party member. The Hindu writes that Yonhap cited an unidentified government source about his arrival.",
+    "perspektiv_sv": "Al Jazeera, The Guardian och Deutsche Welle lyfter i sina rubriker själva bron och resan över den. South China Morning Post lyfter i rubriken det oväntade besöket, och i ingressen att båda sidor betonar vänskap och samarbete inför Apec-toppmötet i Shenzhen. The Hindu lyfter i rubriken det oannonserade besöket. SVT lyfter i rubriken Kims besök i Kina och i ingressen mottagandet av Li Qiang. Dagens industri lyfter i rubriken att Kim överraskar och använder begreppet spökbron.",
+    "perspektiv_en": "Al Jazeera, The Guardian and Deutsche Welle highlight the bridge and the crossing itself in their headlines. The South China Morning Post highlights the unexpected visit in its headline, and in its introduction that both sides stress friendship and cooperation ahead of the Apec summit in Shenzhen. The Hindu highlights the unannounced visit in its headline. SVT highlights Kim's visit to China in its headline and the reception by Li Qiang in its introduction. Dagens industri highlights in its headline that Kim surprises and uses the term ghost bridge.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "New York Times finns endast med som rubrik, utan ingress, och är den enda amerikanska källan med AllSides-betyg. Därför görs ingen jämförelse av amerikanska medier. Samtliga uppgifter om Kims besök bygger på rubriker och ingresser från RSS, och ingen av källorna är ensam om kärnuppgifterna om bron och Dandong."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 20,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Kim Jong Un har rest över en nyöppnad bro till Dandong",
+      "stod": [
+       1,
+       2,
+       4,
+       5,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgiften om bron och Dandong bygger på flera källor",
+      "stod": [
+       1,
+       2,
+       4,
+       5,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Besöket är Kims första i Kina på över ett år",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT anger att besöket är Kims första i Kina på över ett år",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter i rubriken bron och resan över den",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian lyfter i rubriken bron och resan över den",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle lyfter i rubriken bron och resan över den",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter i rubriken det oväntade besöket",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP:s ingress säger att båda sidor betonar vänskap och samarbete",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP kopplar besöket till Apec-toppmötet i Shenzhen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter i rubriken det oannonserade besöket",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT lyfter i rubriken Kims besök i Kina",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT lyfter i ingressen mottagandet av premiärminister Li Qiang",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dagens industri lyfter i rubriken att Kim överraskar",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dagens industri använder begreppet spökbron i rubriken",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT skriver med hänvisning till Yonhap att Li Qiang mötte Kim",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle skriver om en namnlös högt uppsatt kinesisk företrädare som mötte Kim",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian skriver om en högt uppsatt medlem av kommunistpartiet som mötte Kim",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu skriver att Yonhap citerar en namnlös regeringskälla om Kims ankomst",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källorna anger olika vem som tog emot Kim i Dandong",
+      "stod": [
+       2,
+       4,
+       5,
+       6
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "4175ad3155eb",
+   "sedd": 1792904080.2093604
+  },
+  "f4bed46ab8": {
+   "utkast": {
+    "rubrik_sv": "Israel inleder militär operation på Västbanken efter att två soldater dödats",
+    "sammanfattning_sv": "Israel har inlett en operation på Västbanken efter att två soldater dödats i en attack vid en kontrollpunkt nära Hebron. Enligt israeliska armén får palestinier från söndag inte ta sig in i israeliska bosättningar för arbete.",
+    "rubrik_en": "Israel launches West Bank operation after two soldiers killed",
+    "sammanfattning_en": "Israel has launched an operation in the West Bank after two soldiers were killed in an attack at a checkpoint near Hebron. According to the Israeli army, from Sunday Palestinians may not enter Israeli communities for work.",
+    "oenighet": "Källorna beskriver insatsen olika. The Guardian kallar den en kampanj med kollektiv bestraffning, medan NPR och The New York Times beskriver den som en militär operation respektive ett hårdare ingripande. Enligt France 24 uppger en palestinsk tjänsteman att cirka 1 200 palestinier i Hebron tvingats lämna sina hem, uppgift som inte bekräftas av någon annan källa i materialet.",
+    "oenighet_en": "The sources describe the operation differently. The Guardian calls it a campaign of collective punishment, while NPR describes a major military operation and The New York Times describes a crackdown. According to France 24, a Palestinian official says around 1,200 Palestinians in Hebron were forced to leave their homes, a figure not confirmed by other sources in the material.",
+    "perspektiv_sv": "The Hindu (Indien) lyfter den israeliska arméns besked om stängda övergångar på valdagen och ett inreseförbud för arbete. South China Morning Post (Hongkong) lyfter att operationen ska pågå i flera dagar med visitationer och rivningar, och kopplar den till de israeliska valen. France 24 (Frankrike) lyfter den palestinska myndighetens krav på internationellt tryck och de uppgivna förflyttningarna i Hebron. The Guardian (Storbritannien) lyfter begreppet kollektiv bestraffning. Dagens Nyheter (Sverige) lyfter i rubriken att familjer körs bort.",
+    "perspektiv_en": "The Hindu (India) highlights the Israeli army's announcement of closed crossings on election day and a ban on entering Israeli communities for work. South China Morning Post (Hong Kong) highlights an operation expected to last several days, with searches and demolitions, linked to the Israeli elections. France 24 (France) highlights the Palestinian Authority's call for international pressure and the reported displacement in Hebron. The Guardian (UK) highlights the term collective punishment. Dagens Nyheter (Sweden) highlights in its headline that families are being driven away.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Dagens Nyheter-notisen bygger endast på rubriken, och flera ingresser är avklippta, bland annat France 24 där siffran om förflyttade i Hebron fortsätter. Sammanfattningen bygger därför på de övriga källornas ingresser. Båda amerikanska källorna har samma AllSides-betyg (lutar vänster), så usa-fälten är null."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 17,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Israel har inlett en operation på Västbanken efter att två soldater dödats",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Attacken skedde vid en kontrollpunkt nära Hebron",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Från söndag får palestinier inte ta sig in i israeliska bosättningar för arbete (enligt israeliska armén)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter arméns besked om stängda övergångar på valdagen",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter inreseförbud för arbete",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter att operationen ska pågå i flera dagar",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter visitationer och rivningar",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP kopplar operationen till de israeliska valen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24 lyfter den palestinska myndighetens krav på internationellt tryck",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24 lyfter de uppgivna förflyttningarna i Hebron",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian lyfter begreppet kollektiv bestraffning",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "DN lyfter i rubriken att familjer körs bort",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källorna beskriver insatsen olika",
+      "stod": [
+       4,
+       5,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR beskriver insatsen som en militär operation",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT beskriver insatsen som ett hårdare ingripande",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt France 24 uppger en palestinsk tjänsteman att cirka 1 200 palestinier i Hebron tvingats lämna sina hem",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgiften om 1 200 fördrivna bekräftas inte av någon annan källa i materialet",
+      "stod": [
+       2,
+       5
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "5b73de93f9a7",
+   "sedd": 1792904080.2093604
+  },
+  "eeeadd5372": {
+   "utkast": {
+    "rubrik_sv": "Houthirörelsen uppger nya attacker mot Saudiarabien och Aden",
+    "sammanfattning_sv": "Houthirörelsen uppger att den attackerat mål i Saudiarabien, bland annat flygplatser och oljeanläggningar, samt i Aden i Jemen. Enligt den saudiska ledda koalitionen har två missiler skjutits ner, medan Jemens regering säger att tre ballistiska missiler riktades mot kustbevakningens anläggningar i Aden.",
+    "rubrik_en": "Houthis say they attacked Saudi Arabia and Aden",
+    "sammanfattning_en": "The Houthis say they attacked targets in Saudi Arabia, including airports and oil facilities, and in Aden, Yemen. The Saudi-led coalition says it shot down two missiles, while Yemen's Saudi-backed government says three ballistic missiles were fired at coast guard sites in Aden.",
+    "oenighet": "Uppgifterna om dödsoffer skiljer sig åt. Enligt South China Morning Post uppger Houthirörelsens medier att saudiska flyganfall dödade 11 personer i Sanaa. Le Monde anger i sin rubrik att Houthirörelsen anklagar Saudiarabien för flyganfall som dödat 17. Om träffarna skiljer sig också beskrivningarna: Al Jazeera skriver att Houthimissiler uppges ha träffat mål i Jemen, medan koalitionen säger att två missiler skjutits ner.",
+    "oenighet_en": "The reported death tolls differ. According to South China Morning Post, Houthi media reported that Saudi strikes killed 11 people in Sanaa. Le Monde's headline says the Houthis accuse Saudi Arabia of strikes that killed 17. On the impact of the attacks, Al Jazeera writes that Houthi missiles reportedly struck targets in Yemen, while the coalition says two missiles were shot down.",
+    "perspektiv_sv": "Rubrikerna lyfter olika delar av händelserna. The Hindu (Indien) lyfter Houthirörelsens uppgift om attacker mot Saudiarabien och Aden efter dödliga anfall. Al Jazeera (Qatar) lyfter att Houthimissiler uppges ha träffat flera mål, bland annat flygplatsen i Aden och en kustbevakningsbas. France 24 (Frankrike) lyfter Houthirörelsens påstådda attacker mot oljeanläggningar och flygplatser i Saudiarabien samt den jemenitiska regeringens uppgift om kustbevakningen i Aden. South China Morning Post (Hongkong) lyfter saudiska flyganfall som uppges ha dödat 11 personer i Sanaa. Le Monde (Frankrike) lyfter Houthirörelsens nya attacker och anklagelsen om flyganfall som dödat 17. Nikkei Asia (Japan) lyfter den saudiska koalitionens uppgift att två Houthimissiler skjutits ner. Dagens industri (Sverige) rubricerar enbart att nya dödliga attacker skett i Jemen.",
+    "perspektiv_en": "The headlines highlight different aspects. The Hindu (India) highlights the Houthis' claim of attacks on Saudi Arabia and Aden after deadly strikes. Al Jazeera (Qatar) highlights that Houthi missiles reportedly struck several targets, including Aden's airport and a coastguard base. France 24 (France) highlights the Houthis' claimed attacks on oil facilities and airports in Saudi Arabia and the Saudi-backed Yemeni government's account of missiles fired at coast guard sites in Aden. South China Morning Post (Hong Kong) highlights Saudi strikes that Houthi media reported killed 11 people in Sanaa. Le Monde (France) highlights the new Houthi attacks and the accusation of strikes that killed 17. Nikkei Asia (Japan) highlights the Saudi-led coalition's statement that it downed two Houthi missiles. Dagens industri (Sweden) headlines only that new deadly attacks have occurred in Yemen.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Sammanfattningen bygger på rubriker och ingresser, och de flesta uppgifter om attackerna tillskrivs parterna. Dödssiffrorna (11 respektive 17) är inte bekräftade i materialet och återges därför inte i sammanfattningen. Ingresserna för South China Morning Post och France 24 är avbrutna, och tidpunkten för Nikkei Asia saknas i källmaterialet."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 17,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Houthirörelsen uppger att den attackerat mål i Saudiarabien",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Houthirörelsen uppger attacker mot flygplatser i Saudiarabien",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Houthirörelsen uppger attacker mot oljeanläggningar i Saudiarabien",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Houthirörelsen uppger attacker i Aden i Jemen",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Koalitionen säger att två missiler skjutits ner",
+      "stod": [
+       4,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Jemens regering säger att tre ballistiska missiler riktades mot kustbevakningens anläggningar i Aden",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter Houthirörelsens uppgift om attacker mot Saudiarabien och Aden efter dödliga anfall",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter att Houthimissiler uppges ha träffat flygplatsen i Aden och en kustbevakningsbas",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24 lyfter Houthirörelsens påstådda attacker mot oljeanläggningar och flygplatser i Saudiarabien samt regeringens uppgift om kustbevakningen i Aden",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter saudiska flyganfall som uppges ha dödat 11 personer i Sanaa",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Le Monde lyfter Houthirörelsens nya attacker och anklagelsen om flyganfall som dödat 17",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Nikkei Asia lyfter koalitionens uppgift att två Houthimissiler skjutits ner",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dagens industri rubricerar enbart att nya dödliga attacker skett i Jemen",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt SCMP uppger Houthirörelsens medier att saudiska flyganfall dödade 11 personer i Sanaa",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Le Monde anger i rubriken att Houthirörelsen anklagar Saudiarabien för flyganfall som dödat 17",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgifterna om dödsoffer skiljer sig åt",
+      "stod": [
+       4,
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera skriver att Houthimissiler uppges ha träffat mål i Jemen",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "05ea87221617",
+   "sedd": 1792904080.2093604
+  },
+  "1d2d0bed9f": {
+   "utkast": {
+    "rubrik_sv": "Man gripen efter brand i Hitlers Örnnäste i Bayern",
+    "sammanfattning_sv": "Brand har enligt flera källor svårt skadat bergsvillan Örnnästet, som byggdes åt Adolf Hitler. Polisen har gripit en man, enligt SCMP och BBC, och BBC uppger att han är 33 år.",
+    "rubrik_en": "Man detained after fire guts Hitler's Eagle's Nest retreat in Bavaria",
+    "sammanfattning_en": "Several outlets report that a fire has badly damaged the Eagle's Nest mountain retreat, which was built for Adolf Hitler. According to SCMP and BBC, police have detained a man, and BBC gives his age as 33.",
+    "oenighet": "Källorna skiljer sig åt om den gripne: SCMP uppger att utredare menar att han kan ha psykiska problem, BBC anger att han är 33 år och DW skriver bara att en misstänkt har gripits. Om huset går att rädda skiljer sig också: SVT uppger att skadorna sannolikt inte går att rädda, medan DN uppger att huset kan byggas upp igen.",
+    "oenighet_en": "The sources differ on the detained man: SCMP reports that investigators say he may have psychiatric problems, BBC gives his age as 33, and DW only states that a suspect has been arrested. They also differ on the building's future: SVT reports that the damage is likely not salvageable, while DN reports that it can be rebuilt.",
+    "perspektiv_sv": "Brittiska BBC och hongkongska SCMP lyfter främst att en man har gripits. Amerikanska NYT lyfter att huset, som beskrivs som ett gästhus från nazitiden, har skadats allvarligt av branden. Tyska DW lyfter gripandet och att branden sker nära den österrikiska gränsen. Ryska RT, som är statskontrollerat, lyfter enligt sin rubrik att branden har förstört retreatet enligt polisen.",
+    "perspektiv_en": "The British BBC and Hong Kong's SCMP mainly highlight that a man has been detained. The American NYT highlights that the house, described as a guesthouse from the Nazi era, was gutted by the fire. The German DW highlights the arrest and the fire's location near the Austrian border. The Russian RT, a state-controlled outlet, highlights in its headline that police say the retreat was destroyed.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Endast en amerikansk källa (NYT) med AllSides-betyg finns i materialet, därför ingen jämförelse i usa-fältet. Ingen av källorna anger vad som orsakade branden. Materialet bygger på rubriker och ingresser från RSS, så uppgifterna är inte kontrollerade mot fler källor."
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 14,
+    "problem": [
+     "fel tillskrivning: BBC lyfter främst att en man har gripits"
+    ],
+    "pastaenden": [
+     {
+      "text": "Man har gripits efter brand i Hitlers Örnnäste i Bayern",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Branden har enligt flera källor svårt skadat Örnnästet",
+      "stod": [
+       4,
+       5,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Örnnästet byggdes åt Adolf Hitler",
+      "stod": [
+       4,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Polisen har gripit en man",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC uppger att mannen är 33 år",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter främst att en man har gripits",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC lyfter främst att en man har gripits",
+      "stod": [
+       2
+      ],
+      "problem": "fel tillskrivning"
+     },
+     {
+      "text": "NYT lyfter att gästhuset från nazitiden har skadats allvarligt av branden",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW lyfter gripandet och att branden sker nära den österrikiska gränsen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT lyfter enligt sin rubrik att branden har förstört retreatet enligt polisen",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP uppger att utredare menar att den gripne kan ha psykiska problem",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW skriver bara att en misstänkt har gripits",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT uppger att skadorna sannolikt inte går att rädda",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "DN uppger att huset kan byggas upp igen",
+      "stod": [
+       6
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "BBC:s rubrik handlar om branden, inte om gripandet, så påståendet att BBC främst lyfter gripandet saknar stöd i rubriken; övriga påståenden stöds av källmaterialet."
+   },
+   "fingeravtryck": "5430d53b8ebe",
+   "sedd": 1792904080.2093604
+  },
+  "97185d396d": {
+   "utkast": {
+    "rubrik_sv": "Beväpnade män öppnade eld vid begravning i Jordanien: sju till nio döda",
+    "sammanfattning_sv": "Beväpnade män öppnade eld vid en begravning vid en grekisk-ortodox kyrka i Karak i Jordanien, enligt källorna. Enligt källorna dog sju till nio personer och 30 till 40 skadades, och myndigheterna kallar attacken en terrorhandling.",
+    "rubrik_en": "Gunmen open fire at funeral in Jordan: seven to nine dead",
+    "sammanfattning_en": "Armed men opened fire at a funeral at a Greek Orthodox church in Karak, Jordan, according to the sources. Sources report between seven and nine dead and 30 to 40 injured, and authorities call the attack a terrorist act.",
+    "oenighet": "Antalet döda skiljer sig åt: The Guardian anger nio, medan NPR, BBC, Deutsche Welle, Fox News, The New York Times och RT anger sju. Antalet skadade varierar: 40 (The Guardian och NPR), 34 (BBC), över 30 (RT) och dussintals (Deutsche Welle). Antalet gärningsmän anges till två av Deutsche Welle och till tre av The Guardian, NPR och RT.",
+    "oenighet_en": "The sources differ on the death toll: The Guardian reports nine, while NPR, BBC, Deutsche Welle, Fox News, The New York Times and RT report seven. The number of injured varies: 40 (The Guardian and NPR), 34 (BBC), over 30 (RT) and dozens (Deutsche Welle). The number of attackers is given as two by Deutsche Welle and as three by The Guardian, NPR and RT.",
+    "perspektiv_sv": "The Guardian och BBC lyfter antalet döda och skadade. The Guardian skriver att myndigheterna beskriver attacken som en terrorhandling, och BBC att en manhunt pågår. Deutsche Welle och Fox News lyfter kungens löfte om hård vedergällning. Fox News lyfter även att kungen kallar attacken terrorhandling. RT, ett statskontrollerat ryskt medium, lyfter att attacken kallas en terrorattack i rubriken och att videomaterial finns.",
+    "perspektiv_en": "The Guardian and BBC highlight the number of dead and injured. The Guardian writes that authorities describe the attack as a terrorist act, and BBC that a manhunt is under way. Deutsche Welle and Fox News highlight the king's promise of harsh retaliation. Fox News also highlights that the king calls the attack an act of terrorism. RT, a state-controlled Russian outlet, highlights the term terror attack in its headline and that video material is available.",
+    "usa_sv": "Medier som AllSides bedömer lutar vänster: NPR och The New York Times. Medier som AllSides bedömer höger: Fox News. NPR:s rubrik anger sju döda och 40 skadade, och ingressen nämner filmmaterial från jordansk statlig TV där tre beväpnade män syns. The New York Times rubrik anger minst sju döda och beskriver att beväpnade män öppnat eld mot en kyrka. Fox News rubrik anger sju döda vid en kristen kyrka och att kungen kallar attacken terrorhandling, och ingressen citerar kungens löfte om hård vedergällning.",
+    "usa_en": "Outlets AllSides rates as leaning left: NPR and The New York Times. Outlets AllSides rates as right: Fox News. NPR's headline gives seven dead and 40 wounded, and its summary mentions footage from Jordanian state television showing three gunmen. The New York Times headline gives at least seven dead and describes gunmen opening fire at a church. Fox News's headline gives seven dead at a Christian church and says the king calls the attack an act of terrorism, and its summary cites the king's vow of the harshest retaliation.",
+    "osaker": false,
+    "kommentar": "Källmaterialet består av rubriker och ingresser och är inte kontrollerat mot primärkälla. Antalet döda skiljer sig åt mellan källorna, och därför anges ett intervall i rubrik och sammanfattning."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 24,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Beväpnade män öppnade eld vid en begravning vid en grekisk-ortodox kyrka i Karak, Jordanien",
+      "stod": [
+       1,
+       2,
+       4,
+       5,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sju till nio personer dödades",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "30 till 40 personer skadades",
+      "stod": [
+       1,
+       2,
+       3,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Myndigheterna kallar attacken en terrorhandling",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian och BBC lyfter antalet döda och skadade",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian skriver att myndigheterna beskriver attacken som en terrorhandling",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC skriver att en manhunt pågår",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle och Fox News lyfter kungens löfte om hård vedergällning",
+      "stod": [
+       4,
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter att kungen kallar attacken terrorhandling",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT är ett statskontrollerat ryskt medium",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT lyfter i rubriken att attacken kallas en terrorattack",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT har videomaterial",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "AllSides bedömer NPR och The New York Times som vänsterlutande",
+      "stod": [
+       2,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "AllSides bedömer Fox News som högerlutande",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR:s rubrik anger sju döda och 40 skadade",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR:s ingress nämner filmmaterial från jordansk statlig TV där tre beväpnade män syns",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT:s rubrik anger minst sju döda och beskriver att beväpnade män öppnat eld mot en kyrka",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News rubrik anger sju döda vid en kristen kyrka och att kungen kallar attacken terrorhandling",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News ingress citerar kungens löfte om hård vedergällning",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian anger nio döda",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR, BBC, Deutsche Welle, Fox News, NYT och RT anger sju döda",
+      "stod": [
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Antal skadade: 40 hos The Guardian och NPR, 34 hos BBC, över 30 hos RT, dussintals hos Deutsche Welle",
+      "stod": [
+       1,
+       2,
+       3,
+       4,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Två gärningsmän anges av Deutsche Welle",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tre gärningsmän anges av The Guardian, NPR och RT",
+      "stod": [
+       1,
+       2,
+       7
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "78d0ef6f8786",
+   "sedd": 1792904080.2093604
+  },
+  "01041272f7": {
+   "utkast": {
+    "rubrik_sv": "Lula och Bolsonaro håller sista valmöten inför omvalet i Brasilien",
+    "sammanfattning_sv": "Anhängare till Lula och Bolsonaro samlades på lördagen till valmöten inför omvalet på söndag. Enligt The Guardian deltog fler än en miljon personer i Lulas manifestation i Rio, medan The Japan Times skriver om tiotusentals.",
+    "rubrik_en": "Lula and Bolsonaro hold final rallies before Brazil's Sunday run-off",
+    "sammanfattning_en": "Supporters of Lula and Bolsonaro gathered on Saturday for final rallies before the Sunday run-off in Brazil. The Guardian reports more than one million people joined Lula's protest in Rio, while The Japan Times describes tens of thousands.",
+    "oenighet": "Uppgifterna om antalet deltagare skiljer sig åt. The Guardian skriver om fler än en miljon personer i Rio, The Japan Times om tiotusentals och Al Jazeera om tusentals. Källorna anger ingen egen räkning av deltagarna.",
+    "oenighet_en": "The reported crowd sizes differ. The Guardian writes about more than one million people in Rio, The Japan Times about tens of thousands, and Al Jazeera about thousands. The sources do not give an independent count.",
+    "perspektiv_sv": "Brittiska The Guardian lyfter antalet deltagare i Lulas manifestation i Rio. Japanska The Japan Times och Al Jazeera beskriver valet som en fråga om den vänsterledda regeringen ska fortsätta eller om Brasilien rör sig mot höger, där Al Jazeera framhåller den vänsterledda ledaren. Indiska The Hindu lyfter den lugnare tonen i sista debatten och den regionala högerutvecklingen i Latinamerika, med hänvisning till USA:s president Donald Trump. Amerikanska The New York Times ställer frågan om Lula står nära nederlag.",
+    "perspektiv_en": "The British newspaper The Guardian highlights the number of participants at Lula's rally in Rio. The Japan Times and Al Jazeera frame the vote as a choice between keeping the left-wing government or shifting Brazil toward the right, with Al Jazeera emphasising the left-wing leader. The Indian newspaper The Hindu highlights the calmer tone of the final debate and the regional shift to the right in Latin America, referring to U.S. President Donald Trump. The American newspaper The New York Times asks whether Lula is close to defeat.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget består av rubriker och ingresser från RSS, inte av hela artiklar. Antalet deltagare är inte bekräftat av någon oberoende källa och anges som källornas uppgifter. Endast en amerikansk källa (The New York Times, AllSides: lutar vänster) finns med, därför är usa_sv och usa_en satta till null enligt regel 13."
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 17,
+    "problem": [
+     "fel tillskrivning: The Japan Times beskriver valet som en fråga om den vänsterledda regeringen ska fortsätta eller om Brasilien rör sig mot höger"
+    ],
+    "pastaenden": [
+     {
+      "text": "Lula och Bolsonaro håller sista valmöten inför omvalet i Brasilien",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Anhängare till Lula och Bolsonaro samlades på lördagen",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Omvalet äger rum på söndagen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fler än en miljon personer deltog i Lulas manifestation i Rio",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt The Guardian deltog fler än en miljon personer i Lulas manifestation i Rio",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Japan Times skriver om tiotusentals deltagare",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian lyfter antalet deltagare i Lulas manifestation i Rio",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Japan Times beskriver valet som en fråga om den vänsterledda regeringen ska fortsätta eller om Brasilien rör sig mot höger",
+      "stod": [],
+      "problem": "fel tillskrivning"
+     },
+     {
+      "text": "Al Jazeera beskriver valet som en fråga om den vänsterledda regeringen ska fortsätta eller om Brasilien rör sig mot höger",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera framhåller den vänsterledda ledaren",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter den lugnare tonen i sista debatten",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter den regionala högerutvecklingen i Latinamerika",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu hänvisar till USA:s president Donald Trump i samband med högerutvecklingen",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times ställer frågan om Lula står nära nederlag",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgifterna om antalet deltagare skiljer sig åt mellan källorna",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera anger tusentals deltagare",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källorna anger ingen egen räkning av deltagarna",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Påståendet att The Japan Times beskriver valet som en fråga om vänsterregeringen ska fortsätta eller om Brasilien rör sig mot höger saknar stöd: den tillskrivningen gäller Al Jazeera, inte The Japan Times, vars rubrik och ingress inte säger något sådant."
+   },
+   "fingeravtryck": "33c52dac8726",
+   "sedd": 1792904080.2093604
+  },
+  "e600ebe730": {
+   "utkast": {
+    "rubrik_sv": "Skottlossning nära Paris dödar en och skadar fem",
+    "sammanfattning_sv": "Enligt flera källor har en person dödats och fem skadats i skottlossning i förorterna Trappes och La Verrière. Franska myndigheter utreder attacken som en möjlig rasistisk terrorattack, en beskrivning Macron har använt, och den misstänkte gärningsmannen är gripen.",
+    "rubrik_en": "Shooting near Paris kills one and wounds five",
+    "sammanfattning_en": "According to several sources, one person has been killed and five wounded in a shooting in the Paris suburbs of Trappes and La Verrière. French authorities are investigating it as a possible racist terrorist attack, a description Macron has used, and the suspected gunman has been arrested.",
+    "oenighet": "Källorna skiljer sig åt i hur de beskriver motivet. France 24, BBC och The Hindu beskriver attacken som misstänkt eller utredd som rasistisk, och BBC uppger att Macron kallar den en rasistisk terrorattack. The New York Times uppger att gärningsmannen sköt slumpmässigt, medan The Wall Street Journal beskriver en misstänkt attack mot invandrargrupper.",
+    "oenighet_en": "The sources differ in how they describe the motive. France 24, BBC and The Hindu describe the attack as suspected or under investigation as racist, and BBC reports that Macron calls it a racist terrorist attack. The New York Times reports that the gunman fired at random, while The Wall Street Journal describes a suspected attack on immigrant communities.",
+    "perspektiv_sv": "Franska (France 24), brittiska (BBC) och indiska (The Hindu) källor lyfter i rubriker eller ingresser fram att attacken utreds eller kallas rasistisk, med Macron som källa till beskrivningen i flera fall. RT, ett ryskt statskontrollerat medium, lyfter i sin rubrik fram att Macron kallar attacken Frankrikes första rasistiska terrorattack och i ingressen att Macron påstår att ingen tidigare terrorattack riktats mot människor på grund av hudfärg eller religion. De amerikanska källorna (NYT, WSJ) lyfter i sina rubriker fram att skytten sköt slumpmässigt respektive en misstänkt attack mot invandrargrupper.",
+    "perspektiv_en": "French (France 24), British (BBC) and Indian (The Hindu) sources highlight in their headlines or ingresses that the attack is under investigation or called racist, with Macron cited as the source of that description in several cases. RT, a Russian state-controlled outlet, highlights in its headline that Macron calls the attack France's first racist terrorist attack, and in its ingress that Macron claims no earlier terrorist attack targeted people for their skin color or religion. The American sources (NYT, WSJ) highlight in their headlines that the gunman fired at random and a suspected attack on immigrant communities, respectively.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget består av RSS-rubriker och korta ingresser, och NYT saknar ingress. Uppgifterna om motivet skiljer sig mellan källorna och återges därför separat i oenighet. Antalet döda och skadade är detsamma i de källor som anger det."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 15,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "En person dödad och fem skadade i skottlossning nära Paris",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt flera källor har detta skett",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Skottlossningen skedde i förorterna Trappes och La Verrière",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Franska myndigheter utreder attacken som möjlig rasistisk terrorattack",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Macron har kallat attacken rasistisk terrorattack",
+      "stod": [
+       1,
+       3,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Den misstänkte gärningsmannen är gripen",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24, BBC och The Hindu lyfter i rubrik eller ingress att attacken utreds eller kallas rasistisk",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Macron är källan till beskrivningen i flera fall",
+      "stod": [
+       1,
+       3,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT:s rubrik säger att Macron kallar attacken Frankrikes första rasistiska terrorattack",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT:s ingress säger att Macron påstår att ingen tidigare terrorattack riktats mot människor på grund av hudfärg eller religion",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT:s rubrik säger att skytten sköt slumpmässigt",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ:s rubrik beskriver en misstänkt attack mot invandrargrupper",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC:s rubrik uppger att Macron kallar attacken en rasistisk terrorattack",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT uppger att gärningsmannen sköt slumpmässigt",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ beskriver en misstänkt attack mot invandrargrupper",
+      "stod": [
+       5
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "f70ad125547c",
+   "sedd": 1792904080.2093604
+  },
+  "49104ea4f2": {
+   "utkast": {
+    "rubrik_sv": "Trump röstar tidigt i Florida i mellanårsvalet",
+    "sammanfattning_sv": "Donald Trump röstade i mellanårsvalet på lördagen i West Palm Beach, Florida. Enligt Washington Examiner uppgav han att han röstat på alla republikaner i delstaten innan han talade vid ett rally i Georgia.",
+    "rubrik_en": "Trump votes early in Florida for the midterms",
+    "sammanfattning_en": "Donald Trump cast his midterm ballot early on Saturday in West Palm Beach, Florida. According to the Washington Examiner, he said he voted for all Republicans in the state before speaking at a rally in Georgia.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Den indiska tidningen The Hindu har i rubriken fokus på själva röstningen och nämner i ingressen ett uttalande av Trump om kriget i Iran. Den hongkongska South China Morning Post lyfter i rubriken Trumps tidigare kritik mot tidig röstning och skriver i ingressen att han nu uppmanar republikaner att rösta tidigt.",
+    "perspektiv_en": "The Indian newspaper The Hindu focuses its headline on the vote itself and mentions in its introduction a Trump remark about the war in Iran. The Hong Kong-based South China Morning Post highlights in its headline Trump's earlier criticism of early voting and writes in its introduction that he is now urging Republicans to vote early.",
+    "usa_sv": "Washington Examiner (AllSides: lutar höger) och The New York Times (AllSides: lutar vänster) skriver om samma händelse. Examiner lyfter i ingressen att Trump röstade i West Palm Beach och citerar hans uttalande om republikanerna i Florida, medan Melania Trump nämns som medföljande. NYT:s rubrik lyfter Trumps tidigare beskrivning av tidig röstning som 'ridiculous'. NYT:s ingress finns inte i materialet. Fox News (AllSides: höger) skriver i rubrik och ingress om en annan händelse: Barack Obamas kommande framträdande med Abdul El-Sayed i Michigan, där osäkra svarta väljare i Detroit säger att stödet inte har påverkat deras beslut.",
+    "usa_en": "Washington Examiner (AllSides: leans right) and The New York Times (AllSides: leans left) cover the same event. The Examiner's introduction states that Trump voted in West Palm Beach and quotes his remark about Republicans in Florida, and it mentions Melania Trump as accompanying him. The NYT headline highlights Trump's earlier description of early voting as 'ridiculous'. The NYT introduction is not included in the material. Fox News (AllSides: right) covers a different event in its headline and introduction: Barack Obama's upcoming appearance with Abdul El-Sayed in Michigan, where undecided Black voters in Detroit say the endorsement has not affected their decision.",
+    "osaker": false,
+    "kommentar": "Materialet räcker för en säker sammanfattning av händelsen om Trumps röst. Fox News artikel handlar om en annan händelse (Obama i Michigan) och ingår därför inte i sammanfattningen, endast i usa-fältet. The Hindus ingress innehåller ett uttalande av Trump om kriget i Iran som bara den källan återger, och det har inte tagits med i sammanfattningen. Från NYT finns endast rubriken i materialet. Examiner-ingressen är avkortad i RSS-flödet."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 16,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump röstade i mellanårsvalet på lördagen i West Palm Beach, Florida",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Washington Examiner sa Trump att han röstat på alla republikaner i Florida",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump talade därefter vid ett rally i Georgia",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindus rubrik fokuserar på själva röstningen",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindus ingress nämner ett uttalande av Trump om kriget i Iran",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter i rubriken Trumps tidigare kritik mot tidig röstning",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP skriver i ingressen att Trump uppmanar republikaner att rösta tidigt",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Washington Examiner är klassad av AllSides som lutande höger",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "New York Times är klassad av AllSides som lutande vänster",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Examiner lyfter i ingressen att Trump röstade i West Palm Beach och citerar hans uttalande om republikanerna i Florida",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Melania Trump nämns som medföljande vid röstningen",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT:s rubrik lyfter Trumps tidigare beskrivning av tidig röstning som 'ridiculous'",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT:s ingress finns inte i källmaterialet",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News är klassad av AllSides som höger",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News rubrik och ingress handlar om Obamas kommande framträdande med Abdul El-Sayed i Michigan",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Osäkra svarta väljare i Detroit säger att stödet inte har påverkat deras beslut",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "42f88ce9f663",
+   "sedd": 1792904080.2093604
+  },
+  "f44c3f83fa": {
+   "utkast": {
+    "rubrik_sv": "Audi ska bygga fabrik i Georgia, meddelar Trump",
+    "sammanfattning_sv": "Trump meddelade på ett valmöte i Georgia att Audi ska bygga en fabrik i delstaten. Enligt Deutsche Welle bekräftade Audi planerna, och bilproduktionen väntas starta i början av nästa decennium.",
+    "rubrik_en": "Audi to build factory in Georgia, Trump announces",
+    "sammanfattning_en": "Trump announced at a campaign rally in Georgia that Audi will build a factory in the state. According to DW, Audi confirmed the plans, and car production is expected to start early next decade.",
+    "oenighet": "Källorna anger olika investeringsbelopp: South China Morning Post skriver 4,2 miljarder US-dollar, Deutsche Welle skriver 4 miljarder. Enligt Deutsche Welle bekräftade Audi planerna, medan de andra källorna refererar till Trumps uttalande.",
+    "oenighet_en": "Sources give different investment figures: South China Morning Post reports US$4.2 billion, Deutsche Welle reports US$4 billion. According to Deutsche Welle, Audi confirmed the plans, while the other sources refer to Trump's announcement.",
+    "perspektiv_sv": "Källor från Hongkong, Tyskland, Japan och USA lyfter olika saker. South China Morning Post och The Japan Times inleder med Trumps försvar av tullarna på valmötet, och The Japan Times beskriver tillkännagivandet som en politisk vinst för Trump. Deutsche Welle och The New York Times rubricerar själva nyheten om fabriken, där Deutsche Welle framhåller att Audi bekräftade planerna och The New York Times tillskriver nyheten Trump.",
+    "perspektiv_en": "Sources from Hong Kong, Germany, Japan and the US highlight different things. South China Morning Post and The Japan Times lead with Trump defending tariffs at the rally, and The Japan Times describes the announcement as a political win for Trump. Deutsche Welle and The New York Times headline the factory news itself, with Deutsche Welle noting that Audi confirmed the plans and The New York Times attributing the news to Trump.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "The New York Times-källan består enbart av rubrik, så uppgifter om investeringens storlek och produktionsstart kommer från övriga källor. Investeringsbeloppet skiljer sig mellan källorna, och siffran 200 000 bilar per år är en uppgift som Trump framförde på valmötet."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 13,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: Audi ska bygga fabrik i Georgia, enligt Trump",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump meddelade på ett valmöte i Georgia att Audi bygger fabrik i delstaten",
+      "stod": [
+       1,
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Audi bekräftade planerna (enligt Deutsche Welle)",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Bilproduktionen väntas starta i början av nästa decennium",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP och The Japan Times inleder med Trumps försvar av tullarna på valmötet",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Japan Times beskriver tillkännagivandet som en politisk vinst för Trump",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle och NYT rubricerar själva nyheten om fabriken",
+      "stod": [
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle framhåller i ingressen att Audi bekräftade planerna",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT tillskriver nyheten Trump",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP anger investeringen till 4,2 miljarder US-dollar",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle anger investeringen till 4 miljarder (dollar)",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "De andra källorna refererar till Trumps uttalande",
+      "stod": [
+       1,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Perspektivet omfattar källor från Hongkong, Tyskland, Japan och USA",
+      "stod": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "0bb5fc4e997a",
+   "sedd": 1792904080.2093604
+  },
+  "46cce0ab9e": {
+   "utkast": {
+    "rubrik_sv": "New York-stiftet går med på att betala 800 miljoner dollar till över 1 300 personer som uppger sig ha utsatts för övergrepp",
+    "sammanfattning_sv": "Katolska ärkestiftet i New York ska betala 800 miljoner dollar till cirka 1 300 personer som uppger sig ha utsatts för sexuella övergrepp. Al Jazeera skriver att uppgörelsen är den näst största efter ett avtal på 880 miljoner dollar i Los Angeles 2024.",
+    "rubrik_en": "New York Archdiocese agrees to pay $800 million to over 1,300 people who say they were abused",
+    "sammanfattning_en": "The Catholic Archdiocese of New York is to pay $800 million to about 1,300 people who say they were sexually abused. Al Jazeera reports the settlement is the second-largest after an $880 million deal by the Archdiocese of Los Angeles in 2024.",
+    "oenighet": "Ekot skriver, med hänvisning till advokaten för en av de drabbade som talat med New York Times, att ärkestiftet är nära en förlikning. Al Jazeera och Deutsche Welle beskriver en överenskommelse som redan är träffad, och Le Monde English anger i sin rubrik att ärkestiftet ska betala. Antalet personer anges som 1 300 (Al Jazeera), cirka 1 300 (Deutsche Welle), över 1 300 (Ekot och Le Monde English).",
+    "oenighet_en": "Ekot writes, citing a lawyer for one of the victims who spoke to the New York Times, that the archdiocese is close to a settlement. Al Jazeera and Deutsche Welle describe an agreement as already reached, while Le Monde English's headline states the archdiocese is to pay. The number of people is given as 1,300 (Al Jazeera), around 1,300 (Deutsche Welle), and over 1,300 (Ekot and Le Monde English).",
+    "perspektiv_sv": "Al Jazeera lyfter jämförelsen med ärkestiftet i Los Angeles. Deutsche Welle lyfter att uppgörelsen är en av de största i USA avseende övergrepp inom kyrkan. Ekot lyfter advokatens uttalande om att förlikningen är nära. Le Monde English återger i rubriken endast beloppet och antalet personer.",
+    "perspektiv_en": "Al Jazeera highlights the comparison with the Archdiocese of Los Angeles. Deutsche Welle highlights that the settlement is one of the largest clergy abuse settlements in the US. Ekot highlights the lawyer's statement that a settlement is close. Le Monde English's headline mentions only the amount and number of people.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Ekots ingress är avklippt i källmaterialet, så uppgifter efter 'motsvarande runt' har inte kunnat verifieras. Status för uppgörelsen skiljer sig mellan källorna (nära förlikning respektive redan överenskommen), vilket redovisas under oenighet. Ingen amerikansk källa ingick i materialet."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 18,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubrik: New York-stiftet går med på att betala 800 miljoner dollar",
+      "stod": [
+       1,
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubrik: betalningen gäller över 1 300 personer",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubrik: personerna uppger sig ha utsatts för övergrepp",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sammanfattning: ärkestiftet ska betala 800 miljoner dollar",
+      "stod": [
+       1,
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sammanfattning: till cirka 1 300 personer",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sammanfattning: personerna uppger sig ha utsatts för sexuella övergrepp",
+      "stod": [
+       1,
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sammanfattning: Al Jazeera skriver att uppgörelsen är den näst största",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sammanfattning: den näst största efter ett avtal på 880 miljoner dollar i Los Angeles 2024",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Perspektiv: Al Jazeera lyfter jämförelsen med ärkestiftet i Los Angeles",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Perspektiv: Deutsche Welle lyfter att uppgörelsen är en av de största i USA avseende övergrepp inom kyrkan",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Perspektiv: Ekot lyfter advokatens uttalande att förlikningen är nära",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Perspektiv: Le Monde English återger i rubriken endast beloppet och antalet personer",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Oenighet: Ekot skriver, med hänvisning till advokaten, att ärkestiftet är nära en förlikning",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Oenighet: Al Jazeera och Deutsche Welle beskriver en redan träffad överenskommelse",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Oenighet: Le Monde English anger i rubriken att ärkestiftet ska betala",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Oenighet: Al Jazeera anger antalet till 1 300",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Oenighet: Deutsche Welle anger antalet till cirka 1 300",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Oenighet: Ekot och Le Monde English anger antalet till över 1 300",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "88b134d01b3c",
+   "sedd": 1792904080.2093604
+  },
+  "ed52b88741": {
+   "utkast": {
+    "rubrik_sv": "Obama kritiserar Trump i valrörelse för demokrater",
+    "sammanfattning_sv": "Förre USA-presidenten Barack Obama kritiserade Donald Trump vid ett valmöte i Ohio för att stödja demokratiska kandidater inför midtermvalet den 3 november. Enligt The Hindu kopplade han de stigande levnadskostnaderna till Trumpadministrationen, medan Al Jazeera återger att han framhöll USA:s och Israels krig mot Iran.",
+    "rubrik_en": "Obama criticizes Trump while campaigning for Democrats",
+    "sammanfattning_en": "Former US president Barack Obama criticized Donald Trump at a rally in Ohio supporting Democratic candidates ahead of the November 3 midterm elections. According to The Hindu, he linked rising living costs to the Trump administration, while Al Jazeera reports that he highlighted the US-Israel war on Iran.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Indiska The Hindu lyfter stigande levnadskostnader och bränslepriser och kopplar dem till Trumpadministrationen. Qatariska Al Jazeera lyfter Trumps beslut och kriget mot Iran. Hongkongska South China Morning Post citerar Obamas kritik mot Trump om kaos, grymhet, korruption och inkompetens. Franska Le Monde (engelska utgåvan) lyfter enbart Obamas kritik mot Trump i rubriken.",
+    "perspektiv_en": "India's The Hindu highlights rising living costs and fuel prices and links them to the Trump administration. Qatar's Al Jazeera highlights Trump's decisions and the war on Iran. Hong Kong's South China Morning Post reports Obama's criticism of Trump, citing claims of chaos, cruelty, corruption and incompetence. France's Le Monde (English edition) highlights only Obama's criticism of Trump in its headline.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": null
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 10,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Obama är förre USA-president",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Obama kritiserade Trump vid ett valmöte i Ohio",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Mötet var för att stödja demokratiska kandidater",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Midtermvalet är den 3 november",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: Obama kopplade stigande levnadskostnader till Trumpadministrationen",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: levnadskostnaderna är kopplade till stigande bränslepriser",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: Obama framhöll USA:s och Israels krig mot Iran",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: Obama lyfte Trumps beslut",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP: Obama citeras om kaos, grymhet, korruption och inkompetens",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Le Monde (engelska utgåvan): lyfter enbart Obamas kritik mot Trump i rubriken",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "61a324551759",
+   "sedd": 1792904080.2093604
+  },
+  "a2b48214df": {
+   "utkast": {
+    "rubrik_sv": "Sammandrabbningar i Albanien när protester mot regeringen når tolfte dagen",
+    "sammanfattning_sv": "Enligt Al Jazeera har protester mot regeringen i Albanien pågått i tolv dagar med våldsamma sammandrabbningar. The Hindu skriver att polisen använt tårgas i studentledda protester mot upplevd korruption.",
+    "rubrik_en": "Clashes between police and protesters in Albania enter twelfth day",
+    "sammanfattning_en": "According to Al Jazeera, protests against the government in Albania have continued for twelve days, with violent clashes. The Hindu reports that police used tear gas at student-led protests over perceived corruption.",
+    "oenighet": "Al Jazeera beskriver i rubriken att regeringen slår ner på protesterna. The Hindu lyfter i sin rubrik i stället studentledda demonstrationer som blivit våldsamma och polisens användning av tårgas.",
+    "oenighet_en": "In its headline, Al Jazeera describes the government as cracking down on the protests. The Hindu instead highlights student-led demonstrations that have turned violent and police use of tear gas.",
+    "perspektiv_sv": "Al Jazeera (QA) lyfter i rubriken regeringens hårdare linje mot protesterna. The Hindu (IN) lyfter i rubriken studentledda demonstrationer som blivit våldsamma och polisens tårgas.",
+    "perspektiv_en": "Al Jazeera (QA) highlights the government's tougher stance toward the protests in its headline. The Hindu (IN) highlights student-led demonstrations that have turned violent and police tear gas in its headline.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Utkastet bygger på två källor om protesterna i Albanien (1 och 2). Uppgiften om korruption kommer enbart från The Hindu. Källorna 3 och 4 handlar om protester i Frankrike och ingår inte i detta utkast. De behöver ett eget utkast."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Protester mot regeringen i Albanien har pågått i tolv dagar",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Protesterna har inneburit våldsamma sammandrabbningar (Al Jazeera)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu skriver att polisen använt tårgas",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Protesterna är studentledda",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Protesterna gäller upplevd korruption",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter i sin rubrik regeringens hårdare linje mot protesterna",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter i sin rubrik studentledda demonstrationer som blivit våldsamma och polisens tårgas",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera beskriver i sin rubrik att regeringen slår ner på protesterna",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter i sin rubrik studentledda demonstrationer som blivit våldsamma och polisens användning av tårgas",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "165f930f21d6",
+   "sedd": 1792904080.2093604
+  },
+  "bd8e42412d": {
+   "utkast": {
+    "rubrik_sv": "Trump lättar på vissa tullar på kanadensiska varor",
+    "sammanfattning_sv": "Enligt flera källor har Trump lättat på vissa tullar på kanadensiska varor. Vita huset säger att de borttagna tullarna ersätts med andra produkter, enligt CNBC.",
+    "rubrik_en": "Trump eases some tariffs on Canadian goods",
+    "sammanfattning_en": "According to several sources, Trump has eased some tariffs on Canadian goods. CNBC reports that the White House says the removed tariffs are being replaced with other products.",
+    "oenighet": "CNBC skriver att Vita huset säger att de borttagna tullarna ersätts med andra produkter. The Hindu och Deutsche Welle nämner inte detta. Deutsche Welle skriver att en republikansk kandidat i en viktig senatstävling uppger att hon lobbat för att tullarna skulle lyftas. De övriga källorna nämner inte detta.",
+    "oenighet_en": "CNBC reports that the White House says the removed tariffs are being replaced with other products. The Hindu and Deutsche Welle do not mention this. Deutsche Welle reports that a Republican candidate in a key Senate race says she lobbied for the tariffs to be lifted. The other sources do not mention this.",
+    "perspektiv_sv": "The Hindu (Indien) lyfter att ändringen kan gynna senator Susan Collins i Maine, en delstat som påverkats hårt av handelskriget. Deutsche Welle (Tyskland) lyfter att Trumps republikanska parti försöker behålla kontrollen över kongressen inför midtermvalet. CNBC (USA) lyfter Vita husets uttalande om att de borttagna tullarna ersätts med andra produkter. The Hill (USA) har i sin rubrik fokus på tidigare kampanjchefen Bill Stepien, som enligt tidningen förutspår svåra tider för republikanerna inför midtermvalet och lyfter anklagelser om korruption i regeringen.",
+    "perspektiv_en": "The Hindu (India) highlights that the change could help Senator Susan Collins in Maine, a state hit hard by the trade war. Deutsche Welle (Germany) highlights that Trump's Republican Party is trying to keep control of Congress ahead of the midterms. CNBC (US) highlights the White House statement that the removed tariffs are being replaced with other products. The Hill (US) focuses its headline on former campaign manager Bill Stepien, who according to the outlet predicts a difficult period for Republicans ahead of the midterms and cites allegations of government corruption.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget räcker för en säker sammanfattning av tullbeskedet. Uppgiften att Collins lobbat för ändringen kommer bara från Deutsche Welle. The Hill handlar i den aktuella artikeln främst om republikanernas läge inför valet och nämner inte tullarna i rubriken eller ingressen, så dess bidrag är begränsat till perspektivfältet. Vad som gäller för de borttagna tullarna framgår inte av källorna."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 14,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump har lättat på vissa tullar på kanadensiska varor",
+      "stod": [
+       2,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Flera källor rapporterar tullsänkningen (enligt sammanfattningen)",
+      "stod": [
+       2,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Vita huset säger att de borttagna tullarna ersätts med andra produkter (tillskrivet CNBC)",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter att ändringen kan gynna senator Susan Collins i Maine",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Maine är en delstat som påverkats hårt av handelskriget",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle lyfter att Trumps republikanska parti försöker behålla kontrollen över kongressen inför midtermvalet",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC lyfter Vita husets uttalande om att de borttagna tullarna ersätts med andra produkter",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill har i sin rubrik fokus på tidigare kampanjchefen Bill Stepien",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Stepien förutspår svåra tider för republikanerna inför midtermvalet",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill lyfter anklagelser om korruption i regeringen",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC skriver att Vita huset säger att de borttagna tullarna ersätts med andra produkter (oenighetsavsnittet)",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu och Deutsche Welle nämner inte Vita husets ersättningsuppgift",
+      "stod": [
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle skriver att en republikansk kandidat i en viktig senatstävling uppger att hon lobbat för att tullarna skulle lyftas",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "De övriga källorna nämner inte lobbyuppgiften",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "078232c9c4ff",
+   "sedd": 1792904080.2093604
+  },
+  "0a45bffb11": {
+   "utkast": {
+    "rubrik_sv": "Underrättelsememo varnar för att Iran ökat försöken att rikta in sig på amerikaner utomlands",
+    "sammanfattning_sv": "Enligt en underrättelsememo till utrikesminister Marco Rubio har Iran ökat sina försök att rikta in sig på amerikaner utomlands, skriver Fox News och Axios. Skriver The Hindu och The Japan Times att USA har minskat bemanningen vid sin beskickning i Saudiarabien.",
+    "rubrik_en": "US intelligence memo warns Iran has increased efforts to target Americans abroad",
+    "sammanfattning_en": "According to an intelligence memo sent to Secretary of State Marco Rubio, Iran has increased efforts to target Americans abroad, Fox News and Axios report. The Hindu and The Japan Times report that the U.S. has scaled back staffing at its Saudi Arabia mission.",
+    "oenighet": "The Hindu skriver att USA beordrade icke-nödvändig personal vid ambassaden i Saudiarabien och deras familjer att lämna landet. The Japan Times skriver att bemanningen vid beskickningen har minskats. Åtgärden beskrivs alltså med olika ordalag. The Hindu anger också att åtgärden följde på ökade attacker från Houthierna i Jemen.",
+    "oenighet_en": "The Hindu reports that Washington ordered non-essential embassy staff and their families to leave Saudi Arabia, while The Japan Times reports that staffing at the mission was scaled back. The measure is described in different terms. The Hindu also says it followed increasing attacks by Yemen's Houthis.",
+    "perspektiv_sv": "The Hindu och The Japan Times (Indien respektive Japan) lyfter både underrättelsevarningen och personalåtgärderna i Saudiarabien. The Hindu kopplar åtgärden till Houthiattacker i Jemen. Fox News och Axios (USA) lyfter memons formuleringar om hur omfattande de iranska försöken är och att planerna nått avancerade stadier. Fox News riktar rubriken mot amerikaner utomlands, medan Axios riktar den mot officiella företrädare och diplomater utomlands.",
+    "perspektiv_en": "The Hindu and The Japan Times (India and Japan) highlight both the intelligence warning and the staffing measures in Saudi Arabia. The Hindu links the measure to Houthi attacks in Yemen. Fox News and Axios (US) highlight the memo's wording on the scale of Iranian efforts and on plots reaching advanced stages. Fox News frames the targets as Americans abroad, while Axios frames them as officials and diplomats abroad.",
+    "usa_sv": "Medier som AllSides bedömer som höger (Fox News) och lutar vänster (Axios) rapporterar båda om memon till Marco Rubio. Fox News rubricerar med att Iran ”substantially increased” sina försök att rikta in sig på amerikaner utomlands och skriver i ingressen att planerna nått avancerade stadier. Axios rubricerar med en uppgift om memon som de fått tillgång till, använder ordet ”advanced” och riktar rubriken mot officiella företrädare utomlands. I ingressen anges memons datum, 23 oktober, och att amerikanska diplomater och tjänstemän är målen.",
+    "usa_en": "Fox News (rated right by AllSides) and Axios (leans left) both report on the memo to Marco Rubio. Fox News's headline says Iran has 'substantially increased' efforts to target Americans abroad, and its lead says the plots have reached advanced stages. Axios's headline is an exclusive about a memo, uses the word 'advanced', and frames the targets as officials abroad. Its lead gives the memo date, October 23, and says American diplomats and officials are the targets.",
+    "osaker": false,
+    "kommentar": "Axios ingress är avbruten i RSS-flödet (\"Why it matters\"-avsnittet syns inte) och har därför inte använts i sammanfattningen. The Japan Times anger att underrättelsevarningen kom från DNI Jay Clayton, vilket inte nämns i de andra källorna. Nyhetens grund är en memo som ingen av källorna har publicerat i sin helhet, så uppgifterna bygger på rapporteringen."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 16,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Underrättelsememo varnar för att Iran ökat försöken att rikta in sig på amerikaner utomlands (rubrik)",
+      "stod": [
+       2,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Memon är adresserad till utrikesminister Marco Rubio",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Iran har ökat sina försök att rikta in sig på amerikaner utomlands, enligt Fox News och Axios",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "USA har minskat bemanningen vid beskickningen i Saudiarabien, enligt The Japan Times",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "USA har minskat bemanningen vid beskickningen i Saudiarabien, enligt The Hindu (beordrade icke-nödvändig personal att lämna landet)",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu och The Japan Times lyfter både underrättelsevarningen och personalåtgärderna i Saudiarabien",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu kopplar åtgärden i Saudiarabien till Houthiattacker i Jemen",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News och Axios lyfter att Iran 'substantially increased' sina försök och att planerna nått avancerade stadier",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News riktar rubriken mot amerikaner utomlands",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios riktar rubriken mot officiella företrädare och diplomater utomlands",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "AllSides bedömer Fox News som höger och Axios som lutar vänster",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News rubricerar med att Iran 'substantially increased' sina försök",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios rubricerar med en uppgift om memon som de fått tillgång till och använder ordet 'advanced'",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Memon är daterad 23 oktober",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Amerikanska diplomater och tjänstemän är målen för de iranska planerna",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Åtgärden i Saudiarabien beskrivs med olika ordalag i de olika källorna",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "d715d9c07309",
+   "sedd": 1792904080.2093604
+  },
+  "d44bc25edc": {
+   "utkast": {
+    "rubrik_sv": "USA:s justitiedepartement stämmer Alaska och vill blockera certifiering av senatsvalet",
+    "sammanfattning_sv": "Enligt Axios har justitiedepartementet stämt Alaska för att blockera certifiering av valresultatet om republikanske senatorn Dan Sullivan förlorar. Justitiedepartementet anför att två kandidater heter Dan Sullivan och att väljare kan bli förvirrade, enligt BBC och Reason.",
+    "rubrik_en": "US Justice Department sues Alaska to block certification of Senate election",
+    "sammanfattning_en": "According to Axios, the Justice Department has sued Alaska to block certification of the election result if Republican incumbent Sen. Dan Sullivan loses. The department argues that two candidates are named Dan Sullivan and that voters could be confused, according to BBC and Reason.",
+    "oenighet": "Enligt CNBC säger Trump att han beordrat stämningen. Axios och CNBC kopplar stämningen till att Sullivan förlorar, medan BBC och Reason lyfter risken för väljarförvirring i rubrik eller ingress. Enligt CNBC menar justitiedepartementet att namnförväxlingen kan gynna demokraten Mary Peltola.",
+    "oenighet_en": "According to CNBC, Trump says he ordered the lawsuit. Axios and CNBC link the lawsuit to a scenario in which Sullivan loses, while BBC and Reason highlight the risk of voter confusion in their headline or ingress. According to CNBC, the Justice Department argues that the name overlap could help Democrat Mary Peltola.",
+    "perspektiv_sv": "BBC:s rubrik lyfter att justitiedepartementet stämt för att blockera certifiering av valet. De amerikanska källorna lyfter i rubrikerna olika delar: CNBC och Axios lyfter villkoret att Sullivan förlorar, CNBC dessutom Trumps roll, och Reason lyfter väljarnas möjliga förvirring.",
+    "perspektiv_en": "The BBC headline states that the Justice Department sued to block certification of the election. The US sources highlight different parts in their headlines: CNBC and Axios highlight the condition that Sullivan loses, CNBC also highlights Trump's role, and Reason highlights possible voter confusion.",
+    "usa_sv": "Medier som AllSides bedömer lutar vänster: Axios (lutar vänster) lyfter i rubriken att justitiedepartementet vill fördröja valresultatet om den republikanske sittande senatorn förlorar. I ingressen beskriver Axios loppet som präglat av kontrovers, med republikaner som anklagar demokrater, men texten är avskuren. Medier som AllSides bedömer lutar höger: Reason (lutar höger) lyfter i rubriken att Trump stämmer för att blockera resultatet på grund av möjlig väljarförvirring. I ingressen citerar Reason administrationens påstående om att väljare kan bli förvirrade. The New York Times (lutar vänster) har i materialet endast en rubrik utan ingress och ingår därför inte i jämförelsen.",
+    "usa_en": "Outlets AllSides rates as lean left: Axios (rated lean left) highlights in its headline that the Justice Department wants to delay election results if the Republican incumbent senator loses. Its ingress describes the race as marked by controversy, with Republicans accusing Democrats, but the text is cut off. Outlets AllSides rates as lean right: Reason (rated lean right) highlights in its headline that Trump is suing to block the results because of possible voter confusion. Its ingress cites the administration's claim that voters may be confused. The New York Times (rated lean left) has only a headline without an ingress in the material and is therefore not included in the comparison.",
+    "osaker": false,
+    "kommentar": "Materialet består av rubriker och ingresser från fem källor. Axios ingress är avskuren, och NYT har endast en rubrik. Uppgifterna om att Trump beordrat stämningen (CNBC) och om villkoret att Sullivan förlorar (CNBC, Axios) bygger på enstaka källor, så de bör kontrolleras mot stämningens text eller annan primärkälla innan publicering. Kärnfakta om att justitiedepartementet stämt Alaska och argumentet om två kandidater med samma namn återges av flera källor. Endast en källa (BBC) kommer från utanför USA."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 20,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "USA:s justitiedepartement stämmer Alaska",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Justitiedepartementet stämmer för att blockera eller fördröja certifiering av valresultatet",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Axios stämmer justitiedepartementet Alaska om Sullivan förlorar",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dan Sullivan är republikansk sittande senator",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Justitiedepartementet anför att två kandidater heter Dan Sullivan",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Justitiedepartementet anför att väljare kan bli förvirrade",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC:s rubrik lyfter att justitiedepartementet stämt för att blockera certifiering",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC och Axios lyfter i rubrik villkoret att Sullivan förlorar",
+      "stod": [
+       1,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC lyfter i rubrik Trumps roll",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Reason lyfter i rubrik väljarnas möjliga förvirring",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios ingress beskriver loppet som präglat av kontrovers, med republikaner som anklagar demokrater",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios rubrik lyfter att justitiedepartementet vill fördröja resultatet om den republikanske sittande senatorn förlorar",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Reason rubrik lyfter att Trump stämmer för att blockera resultatet på grund av möjlig väljarförvirring",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Reason ingress citerar administrationens påstående om att väljare kan bli förvirrade",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios är lutar vänster och Reason lutar höger enligt AllSides",
+      "stod": [
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT har endast en rubrik utan ingress i materialet",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt CNBC säger Trump att han beordrat stämningen",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios och CNBC kopplar stämningen till att Sullivan förlorar",
+      "stod": [
+       1,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC och Reason lyfter risken för väljarförvirring i rubrik eller ingress",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt CNBC menar justitiedepartementet att namnförväxlingen kan gynna demokraten Mary Peltola",
+      "stod": [
+       1
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "3b594d87e3ee",
+   "sedd": 1792904080.2093604
+  },
+  "0adb3f238f": {
+   "utkast": {
+    "rubrik_sv": "Nästan 1 000 gripna efter ännu en dag av protester i Frankrike",
+    "sammanfattning_sv": "Enligt BBC har nästan 1 000 personer gripits i Frankrike efter sammandrabbningar under ännu en protestdag. Al Jazeera skriver att polis även mötte demonstranter i Italien och Spanien, där protesterna gäller levnadskostnader och nedskärningar i offentlig service.",
+    "rubrik_en": "Almost 1,000 arrested after another day of protests in France",
+    "sammanfattning_en": "According to BBC, almost 1,000 people were arrested in France after clashes during another day of protests. Al Jazeera reports that police also clashed with demonstrators in Italy and Spain, over higher living costs and reduced public services.",
+    "oenighet": "Källorna skiljer sig åt i vilka länder de nämner: BBC skriver att det även ägt rum protester i andra europeiska länder, medan Al Jazeera specifikt nämner polisens sammandrabbningar i Italien och Spanien.",
+    "oenighet_en": "The sources differ in which countries they mention: BBC reports that protests also took place in other European countries, while Al Jazeera specifically reports police clashes in Italy and Spain.",
+    "perspektiv_sv": "Rubrikerna lyfter olika saker. BBC (Storbritannien) lyfter antalet gripna i Frankrike. Al Jazeera (Qatar) lyfter våldet i flera europeiska länder. Japan Times (Japan) ställer frågan om protesterna kan sprida sig över världen och lyfter oron att högerextrema krafter kan dra nytta av missnöjet.",
+    "perspektiv_en": "The headlines highlight different things. BBC (United Kingdom) highlights the number of arrests in France. Al Jazeera (Qatar) highlights violence across several European countries. The Japan Times (Japan) asks whether the protests could spread worldwide and raises concern that far-right forces could benefit from public discontent.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Uppgiften om nästan 1 000 gripna och om hundratusentals deltagare kommer endast från BBC. Övriga källor anger inga siffror. Japan Times rapporterar inte om händelserna i sig utan ställer frågor om deras spridning och konsekvenser, och uppgifterna om oro för högerextrema krafter är därför Japan Times egna bedömningar."
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 11,
+    "problem": [
+     "egen slutsats: Källorna är oeniga om vilka länder de nämner"
+    ],
+    "pastaenden": [
+     {
+      "text": "Rubriken: nästan 1 000 gripna efter ännu en dag av protester i Frankrike",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: nästan 1 000 personer gripna i Frankrike efter sammandrabbningar under ännu en protestdag",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: polis mötte demonstranter i Frankrike, Italien och Spanien",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Protesterna i Italien och Spanien gäller levnadskostnader och nedskärningar i offentlig service",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC lyfter antalet gripna i Frankrike i sin rubrik",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter våldet i flera europeiska länder i sin rubrik",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Japan Times ställer frågan om protesterna kan sprida sig över världen",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Japan Times lyfter oro för att högerextrema krafter kan dra nytta av missnöjet",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC skriver att protester även ägt rum i andra europeiska länder",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera nämner specifikt polisens sammandrabbningar i Italien och Spanien",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källorna är oeniga om vilka länder de nämner",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": "egen slutsats"
+     }
+    ],
+    "sammanfattning": "Påståendet om oenighet mellan källorna saknar stöd: BBC nämner inga andra länder än Frankrike utan skriver bara allmänt om andra europeiska länder, vilket inte motsägs av Al Jazeera, så det är ingen oenighet utan en egen tolkning."
+   },
+   "fingeravtryck": "b124e78cdcd8",
+   "sedd": 1792904080.2093604
+  },
+  "b6c117f98d": {
+   "utkast": {
+    "rubrik_sv": "Kenya rapporterar ett andra dödsfall i ebola, en 65-årig kvinna",
+    "sammanfattning_sv": "Enligt kenyanska myndigheter har en 65-årig kvinna dött av ebola, en nära släkting till den första patienten, en man som rest från Demokratiska republiken Kongo. Sju andra patienter vårdas enligt The Hindu på två isoleringsenheter, och inga nya smittfall har rapporterats.",
+    "rubrik_en": "Kenya reports second Ebola death, a 65-year-old woman",
+    "sammanfattning_en": "Kenya reports a 65-year-old woman died of Ebola, a close relative of the first patient, a man who travelled from the Democratic Republic of Congo. According to The Hindu, seven other patients are treated at two isolation facilities and no new infections were reported.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Rubrikerna skiljer sig åt i vad de lyfter fram. BBC World (Storbritannien) och The Hindu (Indien) nämner i rubriken att kvinnan är nära släkt med den första patienten. Deutsche Welle (Tyskland) lyfter i rubriken enbart att Kenya meddelar ett andra dödsfall. CGTN, kinesiska statsmedier, lyfter i rubriken att utbrottet nått nio fall.",
+    "perspektiv_en": "The headlines differ in what they highlight. BBC World (UK) and The Hindu (India) mention in their headlines that the woman was a close relative of the first patient. Deutsche Welle (Germany) headlines only that Kenya has announced a second death. CGTN, Chinese state media, headlines that the outbreak has reached nine cases.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": null
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 11,
+    "problem": [
+     "fel tillskrivning: BBC World nämner i rubriken att kvinnan är nära släkt med den första patienten"
+    ],
+    "pastaenden": [
+     {
+      "text": "Kenyanska myndigheter rapporterar att en 65-årig kvinna har dött av ebola",
+      "stod": [
+       3,
+       1,
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Kvinnan är en nära släkting till den första patienten",
+      "stod": [
+       1,
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Den första patienten var en man som rest från Demokratiska republiken Kongo",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Sju andra patienter vårdas enligt The Hindu",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Patienterna vårdas på två isoleringsenheter",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Inga nya smittfall har rapporterats",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubrikerna skiljer sig åt i vad de lyfter fram",
+      "stod": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC World nämner i rubriken att kvinnan är nära släkt med den första patienten",
+      "stod": [
+       1
+      ],
+      "problem": "fel tillskrivning"
+     },
+     {
+      "text": "The Hindu nämner i rubriken att kvinnan är nära släkt med den första patienten",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Deutsche Welle lyfter i rubriken enbart att Kenya meddelar ett andra dödsfall",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN lyfter i rubriken att utbrottet nått nio fall",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Påståendet att BBC World nämner i rubriken att kvinnan är nära släkt med första patienten saknar stöd: BBC:s rubrik säger bara att kvinnan blir den andra patienten att dö, och släktskapet nämns endast i ingressen."
+   },
+   "fingeravtryck": "be36cf891b63",
+   "sedd": 1792904080.2093604
+  },
+  "40afbb0692": {
+   "utkast": {
+    "rubrik_sv": "Obama kritiserar Trumps renoveringar av Vita huset i kampanjtal",
+    "sammanfattning_sv": "Barack Obama kritiserade enligt flera amerikanska medier president Trumps renoveringar av Vita huset under kampanjstopp i Cleveland, Ohio. Enligt New York Post tog han även upp tullar och stödde Abdul El-Sayed i Detroit.",
+    "rubrik_en": "Obama criticizes Trump's White House renovations in campaign speeches",
+    "sammanfattning_en": "Former President Barack Obama criticized President Trump's White House renovations at campaign stops in Cleveland, Ohio, according to several US outlets. The New York Post also reports that he raised tariffs and backed Abdul El-Sayed in Detroit.",
+    "oenighet": "New York Post lyfter fram tullar och Obamas stöd för Abdul El-Sayed i Detroit. The Hill och Fox News lyfter fram Obamas jämförelse av renoveringarna med en restaurangkedja som Saddam Hussein öppnat.",
+    "oenighet_en": "The New York Post highlights tariffs and Obama's support for Abdul El-Sayed in Detroit. The Hill and Fox News highlight Obama's comparison of the renovations to a restaurant chain opened by Saddam Hussein.",
+    "perspektiv_sv": null,
+    "perspektiv_en": null,
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Källorna beskriver två olika evenemang: New York Post ett rally i Detroit, medan The Hill och Fox News beskriver ett i Cleveland. Tullar nämns endast i New York Posts rubrik, och The Hill-ingressen är avklippt i källmaterialet. Inga AllSides-betyg från vänsterhållna medier ingår, varför usa-fältet är tomt."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 7,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Obama kritiserade Trumps renoveringar av Vita huset",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Kritiken framfördes under kampanjstopp i Cleveland, Ohio",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgifterna kommer från flera amerikanska medier",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Obama tog enligt New York Post upp tullar",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Obama stödde Abdul El-Sayed i Detroit (enligt New York Post)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "New York Post lyfter fram tullar och stödet för El-Sayed i Detroit",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill och Fox News lyfter fram jämförelsen med en restaurangkedja som Saddam Hussein öppnat",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "0a7c7e86de4b",
+   "sedd": 1792904080.2093604
+  },
+  "0c118bc21b": {
+   "utkast": {
+    "rubrik_sv": "Man gripen efter brand vid Hitlers Örnnäste i Bayern",
+    "sammanfattning_sv": "Brand bröt ut vid Örnnäste, Hitlers tidigare bergsresidens i Bayern, enligt flera källor. Enligt The Guardian greps en 33-årig tysk medborgare, och enligt BBC deltog cirka 200 räddningspersonal i släckningsarbetet.",
+    "rubrik_en": "Man arrested after fire at Hitler's Eagle's Nest retreat in Bavaria",
+    "sammanfattning_en": "A fire broke out at the Eagle's Nest, Hitler's former mountain retreat in Bavaria, according to several sources. The Guardian reports that police arrested a 33-year-old German citizen, and the BBC reports that about 200 emergency personnel fought the blaze.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Brittiska BBC och The Guardian lyfter i rubrik och ingress branden, insatsen och gripandet. Indiska The Hindu lyfter även att anläggningen byggdes 1937 och 1938 och att den kopplas till Tredje riket och förintelsen.",
+    "perspektiv_en": "The British outlets BBC and The Guardian emphasize in their headlines and leads the fire, the response and the arrest. The Indian outlet The Hindu also emphasizes that the building was constructed in 1937 and 1938 and links it to the Third Reich and the Holocaust.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Branden och gripandet bekräftas av flera källor. Uppgiften om den 33-åriga mannen kommer endast från The Guardian, och uppgiften om cirka 200 insatta personer kommer från BBC och The Guardian."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: en man är gripen efter brand vid Hitlers Örnnäste i Bayern",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Brand bröt ut vid Örnnäste i Bayern",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Örnnäste är Hitlers tidigare bergsresidens",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Branden har rapporterats av flera källor",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian: en 33-årig tysk medborgare greps",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: cirka 200 räddningspersonal sattes in för att släcka branden",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC och The Guardian lyfter branden, insatsen och gripandet i rubrik och ingress",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: anläggningen byggdes 1937 och 1938",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: anläggningen kopplas till Tredje riket och förintelsen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "528c4d06058c",
+   "sedd": 1792904080.2093604
+  },
+  "4db7653afa": {
+   "utkast": {
+    "rubrik_sv": "EU vill lätta på reglerna för bekämpningsmedel, forskare varnar",
+    "sammanfattning_sv": "Enligt Ekot och Deutsche Welle vill EU lätta på reglerna för bekämpningsmedel. Enligt Ekot varnar 600 forskare för att förslaget kan slå hårt mot pollinerande insekter och människors hälsa.",
+    "rubrik_en": "EU wants to loosen rules on pesticide use, experts warn",
+    "sammanfattning_en": "According to Ekot and Deutsche Welle, the EU wants to relax rules on pesticides. Ekot reports that 600 researchers warn the proposal could harm pollinating insects and human health.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Svenska Ekot lyfter att 600 forskare varnar för skador på pollinerande insekter och människors hälsa, och citerar en forskare som forskar om bin. Tyska Deutsche Welle lyfter EU:s uppgivna syfte att göra det lättare för jordbrukare att välja miljövänligare alternativ, och att hälso- och miljöexperter anser att riskerna är för stora.",
+    "perspektiv_en": "Swedish outlet Ekot highlights that 600 researchers warn of harm to pollinating insects and human health, and quotes a researcher who studies bees. German outlet Deutsche Welle highlights the EU's stated aim of making it easier for farmers to choose more environmentally friendly options, and states that health and environmental experts consider the risks too great.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget består av rubrik och ingress från två källor. Ekot-ingressen är avklippt i källmaterialet, så uppgifterna bygger på det som finns i ingressen."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "EU vill lätta på reglerna för bekämpningsmedel",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Ekot vill EU lätta på reglerna för bekämpningsmedel",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Deutsche Welle vill EU lätta på reglerna för bekämpningsmedel",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "600 forskare varnar",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Forskarnas varning gäller risk för pollinerande insekter",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Forskarnas varning gäller risk för människors hälsa",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ekot citerar en forskare som forskar om bin och bekämpningsmedel",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW lyfter EU:s uppgivna syfte att göra det lättare för jordbrukare att välja miljövänligare alternativ",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW skriver att hälso- och miljöexperter anser att riskerna är för stora",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "f97137790000",
+   "sedd": 1792904080.2093604
+  },
+  "376ec6d500": {
+   "utkast": {
+    "rubrik_sv": "Dödstalet i attack i Mali stiger till 54; nio döda i kyrkoattack i Jordanien",
+    "sammanfattning_sv": "Militären i Mali uppger att dödssiffran i en attack har stigit till 54 och att nio överlevande evakuerats till Menaka. Enligt Fox News dödades nio personer när beväpnade män stormade en kyrka i Karak, Jordanien.",
+    "rubrik_en": "Death toll in Mali attack rises to 54; nine killed in church attack in Jordan",
+    "sammanfattning_en": "The armed forces in Mali say the death toll in an attack has risen to 54 and that nine survivors were evacuated to Menaka. Fox News reports that nine people were killed when gunmen stormed a church in Karak, Jordan.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": null,
+    "perspektiv_en": null,
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": true,
+    "kommentar": "Materialet består av två separata händelser (attacken i Mali enligt The Hindu och kyrkoattacken i Karak enligt Fox News) som inte har något samband i källorna. Det bör därför bli två separata notiser. Mali-uppgifterna bygger på en enda källa och en rubrik med ingress, och det saknas uppgifter om gärningsmän och bakgrund. Fox News-uppgifterna bygger också på en källa, och rubriken anger att myndigheter pekar på en 'extremistisk' islamistisk ideologi, vilket inte har tillskrivits någon särskild myndighet i materialet. Ingen jämförelse mellan källor är möjlig eftersom de rapporterar om olika händelser, och det finns ingen andra amerikansk källa med motsatt AllSides-betyg."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 4,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Militären i Mali uppger att dödssiffran i attacken har stigit till 54",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Nio överlevande har evakuerats till Menaka",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Fox News dödades nio personer när beväpnade män stormade en kyrka",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Kyrkoattacken skedde i Karak, Jordanien",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "8d254b2bd6b5",
+   "sedd": 1792904080.2093604
+  },
+  "94246bd157": {
+   "utkast": {
+    "rubrik_sv": "Tusentals demonstrerar mot Netanyahu inför val i Israel",
+    "sammanfattning_sv": "Tusentals israeler demonstrerade mot premiärminister Benjamin Netanyahu inför valet på tisdag. Al Jazeera beskriver valet som avgörande.",
+    "rubrik_en": "Thousands rally against Netanyahu ahead of Israeli election",
+    "sammanfattning_en": "Thousands of Israelis rallied against Prime Minister Benjamin Netanyahu ahead of Tuesday's election. Al Jazeera describes the vote as pivotal.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Al Jazeera (Qatar) lyfter i rubriken en massdemonstration mot Netanyahu inför ett val som kallas \"avgörande\". Dagens Industri (Sverige) lyfter i rubriken att tusentals demonstrerar inför ett \"ödesval\" i Israel.",
+    "perspektiv_en": "Al Jazeera (Qatar) headlines a mass rally against Netanyahu ahead of a election it calls \"pivotal\". Dagens Industri (Sweden) headlines that thousands are demonstrating ahead of a \"fateful\" election in Israel.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget består av rubriker och en ingress från RSS, så detaljer om demonstrationen, dess storlek och bakgrunden till valet saknas. Dagens Industri har endast en rubrik i underlaget. Sammanfattningen omfattar därför bara det som uppges i båda källorna eller i Al Jazeeras ingress."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 6,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Tusentals israeler demonstrerade mot premiärminister Netanyahu",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Demonstrationen skedde inför ett val i Israel",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Valet hålls på tisdag",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera beskriver valet som avgörande",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter i rubriken en massdemonstration mot Netanyahu inför ett 'avgörande' val",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dagens Industri lyfter i rubriken att tusentals demonstrerar inför ett 'ödesval' i Israel",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "c8f207c37d34",
+   "sedd": 1792904080.2093604
+  },
+  "d8ad29d246": {
+   "utkast": {
+    "rubrik_sv": "Jordskalv utanför Vanuatu, magnituden uppges till 6,9 eller 7,1; tsunamivarning har lyfts",
+    "sammanfattning_sv": "Ett jordskalv inträffade utanför Vanuatu i södra Stilla havet. Enligt The Hindu och SVT Nyheter var magnituden preliminärt 6,9, medan CGTN anger 7,1; en tsunamivarning har lyfts.",
+    "rubrik_en": "Earthquake off Vanuatu, magnitude reported as 6.9 or 7.1; tsunami warning lifted",
+    "sammanfattning_en": "An earthquake struck off Vanuatu in the southern Pacific. The Hindu and SVT Nyheter put the preliminary magnitude at 6.9, while the state-controlled Chinese outlet CGTN gives 7.1, and a tsunami warning has been lifted.",
+    "oenighet": "The Hindu och SVT Nyheter anger magnituden 6,9, och The Hindu uppger att uppgiften är preliminär. CGTN anger 7,1 i sin rubrik. Källmaterialet förklarar inte skillnaden.",
+    "oenighet_en": "The Hindu and SVT Nyheter give the magnitude as 6.9, and The Hindu says the figure is preliminary. CGTN gives 7.1 in its headline. The source material does not explain the difference.",
+    "perspektiv_sv": "Indiska The Hindu lyfter tidpunkt, avstånd från Port-Orly och djup på 10 km, och att uppgiften är preliminär. Svenska SVT Nyheter lyfter tsunamivarningen som utlystes och sedan lyftes. CGTN, som är kinesiskt statskontrollerat medium, lyfter i sin rubrik magnituden 7,1.",
+    "perspektiv_en": "The Indian outlet The Hindu highlights the time, the distance from Port-Orly and the depth of 10 km, and that the figure is preliminary. The Swedish outlet SVT Nyheter highlights the tsunami warning that was issued and then lifted. CGTN, a Chinese state-controlled outlet, highlights the magnitude 7.1 in its headline.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Sammanfattningen bygger på tre källor, varav CGTN:s ingress bara upprepar rubriken och saknar övriga detaljer. Magnituden skiljer sig mellan källorna (6,9 respektive 7,1) och ingen myndighet nämns i materialet. Tidpunkten (13.30) saknar tidszon i källan. Tsunamivarningen nämns endast av SVT Nyheter. Utkastet kan publiceras med attributionen, men bör uppdateras om en officiell magnitud fastställs."
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 15,
+    "problem": [
+     "fel tillskrivning: SVT Nyheter anger magnituden som preliminär"
+    ],
+    "pastaenden": [
+     {
+      "text": "Jordskalv inträffade utanför Vanuatu i södra Stilla havet",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu anger magnituden till preliminärt 6,9",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT Nyheter anger magnituden till 6,9",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT Nyheter anger magnituden som preliminär",
+      "stod": [],
+      "problem": "fel tillskrivning"
+     },
+     {
+      "text": "CGTN anger magnituden till 7,1",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "En tsunamivarning har utlysts och sedan lyfts",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter tidpunkten, cirka 13.30, för skalvet",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter att skalvet var centrerat 197 km väster-nordväst om Port-Orly",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter att skalvets djup var 10 km",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter att uppgiften om magnituden är preliminär",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT Nyheter lyfter att tsunamivarningen utlystes och sedan lyftes",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN är ett kinesiskt statskontrollerat medium",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN lyfter magnituden 7,1 i sin rubrik",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu och SVT Nyheter anger 6,9 medan CGTN anger 7,1",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Källmaterialet förklarar inte skillnaden i magnitud",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Sammanfattningen tillskriver både The Hindu och SVT Nyheter att magnituden 6,9 är preliminär, men SVT:s rubrik och ingress säger inget om preliminär uppgift; det är bara The Hindu som säger det."
+   },
+   "fingeravtryck": "ad8abad06b32",
+   "sedd": 1792904080.2093604
+  },
+  "5182a8dcf2": {
+   "utkast": {
+    "rubrik_sv": "Indonesien minskar gasexporten via rörledning till Singapore med cirka 9 procent",
+    "sammanfattning_sv": "Indonesien minskar sina rörledningsgasexporter till Singapore med cirka 9 procent, uppger The Hindu. Singapores premiärminister Lawrence Wong säger att parter med signerade gaskontrakt förväntas fullgöra sina åtaganden.",
+    "rubrik_en": "Indonesia reduces pipeline gas exports to Singapore by about 9 percent",
+    "sammanfattning_en": "Indonesia has cut pipeline gas exports to Singapore by about 9 percent, reports The Hindu. Singapore's Prime Minister Lawrence Wong says parties with signed gas contracts are expected to meet their commitments.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Den indiska källan The Hindu lyfter i rubriken Indonesiens minskning av gasexporten med cirka 9 procent. Den hongkongska South China Morning Post lyfter i rubriken Singapores krav på gasleverantörer att hålla sina åtaganden.",
+    "perspektiv_en": "The Indian source The Hindu highlights in its headline Indonesia's cut in gas exports by about 9 percent. The Hong Kong-based South China Morning Post highlights in its headline Singapore's call on gas suppliers to honour their commitments.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Procentsiffran på cirka 9 procent står endast i rubriken från The Hindu. Ingressen anger volymerna 15 mmscfd från Natuna och 16 mmscfd från Sumatra, uppgifter från SKK Migas ordförande Djoko Siswanto till Reuters, men ingen total bas för beräkningen av procenten."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 7,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Indonesien minskar rörledningsgasexporten till Singapore",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Minskningen är cirka 9 procent",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgiften tillskrivs The Hindu",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Lawrence Wong är Singapores premiärminister",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Wong säger att parter med signerade gaskontrakt förväntas fullgöra sina åtaganden",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter i rubriken Indonesiens minskning av gasexporten med cirka 9 procent",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter i rubriken Singapores krav på gasleverantörer att hålla sina åtaganden",
+      "stod": [
+       1
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "07ff30519389",
+   "sedd": 1792904080.2093604
+  },
+  "c0b58bc803": {
+   "utkast": {
+    "rubrik_sv": "GMO Internet uppger obehörig åtkomst till servrar och begär statliga cyberförsvarsåtgärder",
+    "sammanfattning_sv": "Enligt The Japan Times uppger GMO Internet att det skett obehörig åtkomst till servrar för automatiserad FX-marginalhandel. Bolaget vill enligt The Japan Times och Nikkei Asia att staten vidtar aktiva cyberförsvarsåtgärder.",
+    "rubrik_en": "GMO Internet reports unauthorized server access and asks government for cyber defense measures",
+    "sammanfattning_en": "According to The Japan Times, GMO Internet reports unauthorized access to servers used for automated FX margin trading. According to The Japan Times and Nikkei Asia, the company wants the government to take active cyber defense measures.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": null,
+    "perspektiv_en": null,
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Nikkei Asia finns bara som rubrik utan ingress. Uppgiften om obehörig åtkomst bygger därför på The Japan Times ingress. Båda källorna är japanska, så något perspektiv mellan länder har inte angetts."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 5,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "GMO Internet uppger att det skett obehörig åtkomst till bolagets servrar",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Servrarna används för automatiserad FX-marginalhandel",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Uppgiften om obehörig åtkomst tillskrivs The Japan Times",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "GMO Internet vill att staten vidtar aktiva cyberförsvarsåtgärder",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Begäran om aktiva cyberförsvarsåtgärder tillskrivs The Japan Times och Nikkei Asia",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "dfd268967b1c",
+   "sedd": 1792904080.2093604
+  },
+  "fab7aa9a1f": {
+   "utkast": {
+    "rubrik_sv": "Gadi Eisenkot utmanar Netanyahu och vill få slut på hans styre",
+    "sammanfattning_sv": "Enligt The Hindu lovar Gadi Eisenkot, ledare för partiet Yashar, att få slut på Netanyahus styre, att göra slut på ändlösa krig och att avlägsna Hamas från makten på Gaza. Han motsätter sig enligt samma källa att en palestinsk stat bildas.",
+    "rubrik_en": "Gadi Eisenkot challenges Netanyahu and vows to end his rule",
+    "sammanfattning_en": "The Hindu reports that Gadi Eisenkot, leader of the Yashar party, vows to end Netanyahu's rule, end endless wars and remove Hamas from power in Gaza. According to the same report, he opposes the creation of a Palestinian state.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "The Hindu (Indien) lyfter fram Eisenkots politiska löften om Netanyahus styre, krigen, Hamas makt på Gaza och sitt motstånd mot en palestinsk stat. The New York Times (USA) lyfter i sin rubrik fram skillnaden mellan Eisenkot och Netanyahu och frågan om Eisenkot kan slå honom.",
+    "perspektiv_en": "The Hindu (India) highlights Eisenkot's pledges on ending Netanyahu's rule, the wars, Hamas's power in Gaza and his opposition to a Palestinian state. The New York Times (US) highlights in its headline the contrast between Eisenkot and Netanyahu and whether Eisenkot can beat him.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget från The New York Times består endast av rubriken, ingen ingress fanns tillgänglig. Sammanfattningen bygger därför enbart på The Hindu, och perspektivjämförelsen gäller rubrikerna."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Gadi Eisenkot är Netanyahus utmanare",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Eisenkot är ledare för partiet Yashar",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt The Hindu lovar Eisenkot att få slut på Netanyahus styre",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Eisenkot vill göra slut på ändlösa krig",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Eisenkot vill avlägsna Hamas från makten på Gaza",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt The Hindu motsätter sig Eisenkot att en palestinsk stat bildas",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter fram Eisenkots löften om Netanyahus styre, krigen, Hamas makt på Gaza och motstånd mot en palestinsk stat",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times rubrik lyfter fram skillnaden mellan Eisenkot och Netanyahu",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times rubrik lyfter fram frågan om Eisenkot kan slå Netanyahu",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "56d268140304",
+   "sedd": 1792904080.2093604
+  },
+  "47efbb931f": {
+   "utkast": {
+    "rubrik_sv": "Ukraina säger att Starlink-anslutningen är stabil igen efter begränsningar",
+    "sammanfattning_sv": "Ukrainas regering uppger enligt The Hindu att landet har en stabil anslutning till Starlink. BBC skriver att anslutningen nu är stabil efter begränsningar i nätverket, som enligt BBC påverkade de militära och drönarrelaterade operationerna under en vecka.",
+    "rubrik_en": "Ukraine says Starlink connection is stable again after limits",
+    "sammanfattning_en": "Ukraine's government says it has a stable connection to Starlink, according to The Hindu. BBC reports the connection is now stable after network limits that, it says, affected Ukraine's military and drone operations for a week.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "The Hindu (Indien) lyfter fram att Kyiv använder både det civila Starlink-systemet och den militära versionen Starshield i försvaret mot ryska missil- och drönarattacker. BBC (Storbritannien) lyfter fram att de långsammare Starlink-anslutningarna har påverkat Ukrainas militära och drönarrelaterade operationer under en vecka.",
+    "perspektiv_en": "The Hindu (India) highlights that Kyiv relies on both the civilian Starlink system and the military version Starshield to defend against Russian missile and drone attacks. BBC (UK) highlights that the slower Starlink connections affected Ukraine's military and drone operations for a week.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Källmaterialet består av rubrik och ingress. Källorna anger inte vad som orsakade begränsningarna i nätverket."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 6,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: Ukraina säger att Starlink-anslutningen är stabil igen efter begränsningar",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ukrainas regering uppger att landet har en stabil anslutning till Starlink (The Hindu)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC skriver att anslutningen nu är stabil efter begränsningar i nätverket",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "De begränsade Starlink-anslutningarna påverkade militära och drönarrelaterade operationer i en vecka (BBC)",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter fram att Kyiv använder både civila Starlink och militära Starshield i försvaret mot ryska missil- och drönarattacker",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC lyfter fram att de långsammare Starlink-anslutningarna påverkat Ukrainas militära och drönarrelaterade operationer under en vecka",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "11c3354e9a8e",
+   "sedd": 1792904080.2093604
+  },
+  "ed99c857f4": {
+   "utkast": {
+    "rubrik_sv": "Rubio uppmanar kubaner att samarbeta med CIA",
+    "sammanfattning_sv": "Enligt Fox News uppmanar utrikesminister Marco Rubio kubaner att samarbeta med CIA för politisk förändring, medan The Hindu skriver att han uppmanar att vara diskreta. Trump har enligt Fox News luftat tanken att skicka Rubio till Kuba för att förhandla fram en överenskommelse.",
+    "rubrik_en": "Rubio urges Cubans to work with CIA",
+    "sammanfattning_en": "According to Fox News, Secretary of State Marco Rubio urges Cubans to work with the CIA for political change, while The Hindu reports he urges discretion. Fox News reports Trump has floated sending Rubio to Cuba to negotiate a deal.",
+    "oenighet": null,
+    "oenighet_en": null,
+    "perspektiv_sv": "Den indiska tidningen The Hindu lyfter i ingressen att USA:s högsta företrädare i flera månader öppet antytt en militär intervention eller ett övertagande av Kuba, samt att trycket på landet ökat ekonomiskt, politiskt och juridiskt. Den amerikanska källan Fox News lyfter i rubrik och ingress Rubios uppmaning till samarbete med CIA och Trumps tanke på att skicka Rubio till Kuba för en överenskommelse.",
+    "perspektiv_en": "The Indian outlet The Hindu highlights in its lead that senior U.S. officials have for months openly hinted at a military intervention or takeover of Cuba, and that economic, political and legal pressure on the country has increased. The U.S. outlet Fox News highlights in its headline and lead Rubio's call for cooperation with the CIA and Trump's idea of sending Rubio to Cuba to strike a deal.",
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget är endast RSS-rubriker och ingresser, inte hela artiklar. Uppgiften om att Trump har luftat tanken på en resa för Rubio kommer enbart från Fox News. Ingen amerikansk källa med vänsterbetyg ingick, därför är usa-fälten tomma."
+   },
+   "kontroll": {
+    "ok": true,
+    "antal": 8,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubio uppmanar kubaner att samarbeta med CIA för politisk förändring (rubriken)",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Fox News uppmanar Rubio kubaner att samarbeta med CIA för politisk förändring",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu skriver att Rubio uppmanar kubaner att vara diskreta",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Enligt Fox News har Trump luftat tanken att skicka Rubio till Kuba för att förhandla fram en överenskommelse",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter i ingressen att USA:s högsta företrädare i flera månader öppet antytt en militär intervention eller ett övertagande av Kuba",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter att trycket på Kuba ökat ekonomiskt, politiskt och juridiskt",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter i rubrik och ingress Rubios uppmaning till samarbete med CIA",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter i rubrik och ingress Trumps tanke på att skicka Rubio till Kuba för en överenskommelse",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "fingeravtryck": "d254eb2b4838",
+   "sedd": 1792904080.2093604
+  },
+  "ac21afa259": {
+   "utkast": {
+    "rubrik_sv": "Israeliska styrkor river hus i Hebron och familjer tvingas lämna",
+    "sammanfattning_sv": "Enligt BBC och The Guardian har israeliska styrkor rivit bostäder i Hebron, vilket har fått palestinska familjer att lämna sina hem. Åtgärden följer på en attack mot en militär post där israeliska soldater dödades, enligt BBC.",
+    "rubrik_en": "Israeli forces demolish Hebron homes, displacing Palestinian families",
+    "sammanfattning_en": "According to BBC and The Guardian, Israeli forces have demolished homes in Hebron, forcing Palestinian families to leave. The action follows an attack on a military checkpoint in which two Israeli soldiers were killed, according to BBC.",
+    "oenighet": "BBC beskriver åtgärderna som ett hårdare tag (crackdown) och noterar att de sker några dagar före Israels val. The Guardian beskriver dem som kollektiv bestraffning och återger att premiärminister Benjamin Netanyahu har lovat att förstöra platsen som vedergällning. Båda källorna uppger att bostäder har rivits, men de ramar in åtgärden på olika sätt.",
+    "oenighet_en": "BBC describes the measures as a crackdown and notes they come days before Israel's election. The Guardian describes them as collective punishment and reports that Prime Minister Benjamin Netanyahu vowed to destroy the site in retaliation. Both sources report that homes were demolished, but they frame the action differently.",
+    "perspektiv_sv": null,
+    "perspektiv_en": null,
+    "usa_sv": null,
+    "usa_en": null,
+    "osaker": false,
+    "kommentar": "Underlaget bygger på RSS-rubriker och ingresser, inte på hela artiklarna. Uppgifter om antal berörda familjer och skadade finns därför inte med, utom att The Guardian uppger hundratals familjer."
+   },
+   "kontroll": {
+    "ok": false,
+    "antal": 10,
+    "problem": [
+     "fel tillskrivning: Attacken riktades mot en militär post (tillskrivet BBC)"
+    ],
+    "pastaenden": [
+     {
+      "text": "Israeliska styrkor har rivit bostäder i Hebron",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rivningarna har fått palestinska familjer att lämna sina hem",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC och The Guardian är källorna till uppgifterna i sammanfattningen",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Åtgärden följer på en attack där israeliska soldater dödades (enligt BBC)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Attacken riktades mot en militär post (tillskrivet BBC)",
+      "stod": [
+       2
+      ],
+      "problem": "fel tillskrivning"
+     },
+     {
+      "text": "BBC beskriver åtgärderna som ett hårdare tag (crackdown)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Åtgärderna sker några dagar före Israels val (BBC)",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian beskriver åtgärderna som kollektiv bestraffning",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian återger att premiärminister Netanyahu har lovat att förstöra platsen som vedergällning",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Båda källorna uppger att bostäder har rivits, men ramar in åtgärden olika",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Utkastet stämmer i sak, men detaljen att attacken riktades mot en \"militär post\" tillskrivs BBC, vars text inte nämner någon post; det är The Guardian som talar om en checkpoint."
+   },
+   "fingeravtryck": "ef96d3bf2387",
+   "sedd": 1792904080.2093604
   }
  },
  "titlar": {
@@ -10939,27 +14851,27 @@
   },
   "Häcken mot guldet – kan bli mästare på spahotell": {
    "en": "Häcken chasing the title, could be crowned champions at a spa hotel",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ukraina slog tillbaka ryssarna – i överraskningsoffensiv under marken": {
    "en": "Ukraine pushes back Russian forces in a surprise ground offensive",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Attack på Västbanken – Netanyahu beordrar offensiv": {
    "en": "Attack in the West Bank, Netanyahu orders offensive",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "DN Debatt. ”Utan nationella prov famlar svensk skola i blindo”": {
    "en": "DN Debate: 'Without national tests, Swedish schools are groping in the dark'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Gabriel Zetterström: Metallicas hån är också ett politiskt ställningstagande": {
    "en": "Gabriel Zetterström: Metallica's mockery is also a political stance",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Erik de la Reguera: Attentatet äger rum när Frankrike står vid randen av en avgrund": {
    "en": "Erik de la Reguera: The attack takes place as France stands on the brink of an abyss",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ledare: Ett kommunalråd i Sveriges näst största stad avgår efter hot – borde skapa ramaskri": {
    "en": "Editorial: A municipal council member in Sweden's second-largest city resigns after threats, which should cause an outcry",
@@ -10967,7 +14879,7 @@
   },
   "Elizabeth Holmes – drömmen, idén och miljardbluffen": {
    "en": "Elizabeth Holmes: the dream, the idea and the billion-dollar fraud",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Spänt läge vid gränsen – Nordkorea hotar med nytt ljudkrig": {
    "en": "Tensions at the border as North Korea threatens a new sound war",
@@ -11511,19 +15423,19 @@
   },
   "Historisk Mesternes mester-vinnar: – Ei lykke å dele det med nokon": {
    "en": "Historic win for Mesternes mester: \"A joy to share it with someone\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "No skal brunosten til Kina: – Eg trur kinesiske forbrukarar vil like det": {
    "en": "Norwegian brown cheese goes to China: \"I think Chinese consumers will like it\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Trafikkaos etter togstans": {
    "en": "Traffic chaos after train stoppage",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Stans i togtrafikken gjennom Oslo": {
    "en": "Stoppage in train traffic through Oslo",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Her må vaktsoldatene dele seng: – Kleine og pinlige situasjoner": {
    "en": "Here the guard soldiers have to share beds: \"Awkward and embarrassing situations\"",
@@ -11727,7 +15639,7 @@
   },
   "23 oktober: Missa inte dagens nyheter": {
    "en": "October 23: Don't miss today's news",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nvidias vd får medhåll av svenska chefer": {
    "en": "Nvidia's CEO gets support from Swedish executives",
@@ -11735,7 +15647,7 @@
   },
   "Ingmar Nevéus: Kan Trump ogiltigförklara valet om han inte gillar resultatet?": {
    "en": "Ingmar Nevéus: Can Trump invalidate the election if he doesn't like the result?",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Skjutning i Jordanien – öppnade eld mot kyrka under begravning": {
    "en": "Shooting in Jordan – opened fire on a church during a funeral",
@@ -11747,7 +15659,7 @@
   },
   "Sju barn allvarligt skadade i garagebrand utanför Borås": {
    "en": "Seven children seriously injured in garage fire outside Borås",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "För samtal om försäljning – med Uber och Doordash": {
    "en": "Talks about possible sale with Uber and Doordash",
@@ -11763,11 +15675,11 @@
   },
   "Minst 35 gjester ble syke: Oppkast og diaré etter besøk på stjernerestaurant": {
    "en": "At least 35 guests fell ill: vomiting and diarrhea after visit to starred restaurant",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Hitlers ”Örnnäste” i brand": {
    "en": "Hitler's 'Eagle's Nest' on fire",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Rysk diesel till USA – väntas passera nära Sverige": {
    "en": "Russian diesel to the USA expected to pass near Sweden",
@@ -11779,11 +15691,11 @@
   },
   "Maximalistisk och bjussig show när Teddybears intar Cirkus": {
    "en": "Maximalist, generous show as Teddybears perform at Cirkus",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Insändare. Noterat av DN:s läsare den 23 oktober": {
    "en": "Letters to the editor. Noted by DN readers on 23 October",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tsunamivarning efter skalv utanför Vanuatu": {
    "en": "Tsunami warning after earthquake off Vanuatu",
@@ -11791,59 +15703,59 @@
   },
   "Hundratals skadade i Taiwan efter tyfon": {
    "en": "Hundreds injured in Taiwan after typhoon",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Google fällde enorma mängder träd för finskt datacenter – utan tillstånd": {
    "en": "Google felled huge numbers of trees for Finnish data center without permission",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Poserar bland eld och förödelse – klippet upprör världen": {
    "en": "Posing amid fire and destruction: the clip upsets the world",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Trosa kommun: Så kan skräpet du slänger på marken förorena vattendrag": {
    "en": "Trosa municipality: How litter dropped on the ground can pollute watercourses",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Efter 400 år – snart kan fisken vandra fritt i hela Stångån söder om Sundsvall": {
    "en": "After 400 years, fish may soon be able to migrate freely throughout the Stångån river south of Sundsvall",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Här säkras dricksvattnet i händelse av kris eller krig": {
    "en": "Here drinking water is secured in case of crisis or war",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Modeforskaren: Andrahandsförsäljning kan leda till fler nyköp i stället för färre": {
    "en": "Fashion researcher: Resale may lead to more new purchases rather than fewer",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Skifte inom secondhand: Pengar stannar på försäljningsplattformarna": {
    "en": "Shift in secondhand: Money stays on the resale platforms",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Välbetalda och ostraffade – så ser köparna ut på Revolutlistan": {
    "en": "Well-paid and unpunished: this is what buyers look like on the Revolut list",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "SGU: Våtmarker kan öka vattentillgången": {
    "en": "SGU: Wetlands can increase water supply",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Janne Elvelid om Meta-kritiken: ”Tveklöst måste vi ta det på allvar”": {
    "en": "Janne Elvelid on Meta criticism: \"We must undoubtedly take it seriously\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Donald Trump: Ska prata med Elon Musk om Starlink": {
    "en": "Donald Trump: Will talk to Elon Musk about Starlink",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Två explosioner i Saudiarabien – varnas för fler": {
    "en": "Two explosions in Saudi Arabia, with warnings of more",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Volvo Cars vd: ”Minimalt utrymme för löneökningar”": {
    "en": "Volvo Cars CEO: \"Minimal room for wage increases\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Hitlers ”Örnnäste” i lågor": {
    "en": "Hitler's \"Eagle's Nest\" in flames",
@@ -11855,19 +15767,19 @@
   },
   "”På måndagar kan man se blåmärken på killarnas kroppar”": {
    "en": "\"On Mondays you can see bruises on the boys' bodies\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Grymt goda schnitzlar – fyra varianter": {
    "en": "Really good schnitzels: four varieties",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "”Bör vi undvika att ta ett glas när vår oroliga dotter är med?”": {
    "en": "\"Should we avoid having a drink when our anxious daughter is present?\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Traktorgympa och hundratals klockor håller 86-årige Holger ung": {
    "en": "Tractor gym and hundreds of clocks keep 86-year-old Holger young",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Amanda Sokolnicki: Sverige är ett land fullt av bortskämda ”nepo babies” – och politikerna fortsätter göda dem": {
    "en": "Amanda Sokolnicki: Sweden is a country full of spoiled \"nepo babies,\" and politicians keep pampering them",
@@ -11875,7 +15787,7 @@
   },
   "de clair bländar Fasching med sin kristallklara stämma": {
    "en": "de clair outshines Fasching with her crystal-clear voice",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Är Little Jinder en kolonialmakt?": {
    "en": "Is Little Jinder a colonial power?",
@@ -11883,19 +15795,19 @@
   },
   "”Hemliga” brevet: Kraven på Fifa i Infantino-härvan": {
    "en": "'Secret' memo: Demands on FIFA in the Infantino affair",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nordkoreas ledare Kim Jong-un besöker Kina": {
    "en": "North Korean leader Kim Jong-un visits China",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Mytomspunna derbyt i Västerbotten: ”Alla spelarna fightades”": {
    "en": "Much-discussed derby in Västerbotten: 'All the players fought'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tsunamivarning lyft efter skalv utanför Vanuatu": {
    "en": "Tsunami warning lifted after earthquake off Vanuatu",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Skjutning utanför Paris: ”Rasistiskt terrordåd”": {
    "en": "Shooting outside Paris: 'Racist terror attack'",
@@ -11907,31 +15819,31 @@
   },
   "”Dagen då fågeln ska dö” Novell av Lisa Bjärbo": {
    "en": "'The day the bird is to die': Novella by Lisa Bjärbo",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Säverman: Fram med hörapparaten, det är 80-årsfest igen": {
    "en": "Säverman: Bring out the hearing aid, it's an 80th birthday party again",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tidsomställningen ökar risken för viltolyckor": {
    "en": "Time change increases the risk of wildlife collisions",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Kamratpostens recensenter: Här är årets bästa böcker": {
    "en": "Kamratposten reviewers: Here are the year's best books",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Lisa Bjärbo: ”Svårt att komma undan sin skolklass och sociala spelet som pågår”": {
    "en": "Lisa Bjärbo: 'Hard to escape your school class and the social game that goes on'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Stort test: Vilken läsartyp är du?": {
    "en": "Big test: What type of reader are you?",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Han skriver svensk VM-historia – i grenen han en gång hatade: ”Har varit ett helvete”": {
    "en": "He is writing Swedish World Cup history in the discipline he once hated: 'It has been hell'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ta rygg på vd:n – köp tilltufsade aktien": {
    "en": "Follow the CEO and buy the battered stock",
@@ -11951,47 +15863,47 @@
   },
   "Strawberry-grundaren Charles Maddock om Lovable, strategin och USA-nobben": {
    "en": "Strawberry founder Charles Maddock on Lovable, strategy and the US snub",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Avslører heftige kranglar: «No smell det her»": {
    "en": "Reveals heated arguments: «No smell det her»",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Så kan sociala medier användas för att få en filmroll": {
    "en": "How social media can be used to get a film role",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tre oroshärdar som skaver på ekonomin": {
    "en": "Three areas of concern weighing on the economy",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Kristin Thorleifsdóttir berättar om konstanta smärtorna: ”Inget roligt liv att leva”": {
    "en": "Kristin Thorleifsdóttir describes constant pain: \"Not a fun life to live\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Räddningstjänsten: Skadade fick lastas i brandbilar": {
    "en": "Rescue service: Injured people had to be loaded into fire trucks",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Marginella förändringar för ID 3:s spanska syskon": {
    "en": "Marginal changes for the ID 3's Spanish siblings",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Så många klarade nya medborgarskapsprovet": {
    "en": "So many people passed the new citizenship test",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Insändare. Lyssna på väljarna och ta in V i regeringen": {
    "en": "Letter to the editor: Listen to voters and bring the Left Party into the government",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Kaeli Abdi är hundra procent funny bones": {
    "en": "Kaeli Abdi is a hundred percent comedic talent",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ett barn livshotande skadat efter garagebrand i Fristad": {
    "en": "A child suffered life-threatening injuries after a garage fire in Fristad",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Israel inleder offensiv på Västbanken": {
    "en": "Israel launches an offensive in the West Bank",
@@ -12011,7 +15923,7 @@
   },
   "Ukraina: Stabil tilkobling til Starlink – hastigheten øker": {
    "en": "Ukraine: Stable connection to Starlink, speed increases",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Då sjåføren døydde bak rattet, fortsette bilen å køyre i rundt 17 minutt": {
    "en": "After the driver died at the wheel, the car kept driving for about 17 minutes",
@@ -12023,79 +15935,79 @@
   },
   "Regerande mästaren Julia Scheib kraschade direkt i premiären": {
    "en": "Reigning champion Julia Scheib crashed right away in the premiere",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Efter branden i Fristad: Kommunen kraftsamlar inför höstlovet": {
    "en": "After the fire in Fristad: the municipality mobilizes ahead of the autumn break",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nina Baresso siktar på återkomst till SBL – som 51-åring": {
    "en": "Nina Baresso aims to return to SBL at age 51",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Se casinobluffen: Två män från Skellefteå döms för spelfusk": {
    "en": "Watch the casino scam: two men from Skellefteå convicted of gambling fraud",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Här gör Preston Fearon mål från egen planhalva – två gånger om": {
    "en": "Here Preston Fearon scores from his own half, twice",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "SVT:s expert ställdes en mot en mot Connor McDavid: ”Helt sjukt”": {
    "en": "SVT's expert went one-on-one against Connor McDavid: \"Totally insane\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Israel tvångsevakuerar tusentals människor i Hebron": {
    "en": "Israel forcibly evacuates thousands of people in Hebron",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Palestinska israeler kan bli avgörande röster i valet": {
    "en": "Palestinian Israelis could become decisive voters in the election",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Donald Trump viktig faktor i mycket jämna Brasilienvalet": {
    "en": "Donald Trump an important factor in the very close Brazil election",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Räddningstjänsten hyllar grannen som ryckte in: ”Hade absolut effekt”": {
    "en": "Rescue service praises neighbor who stepped in: \"It had an absolute effect\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tomas Ramberg: Risken för extraval är överskattad": {
    "en": "Tomas Ramberg: The risk of a snap election is overestimated",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Jakt på skytten efter mordet i Bagarmossen": {
    "en": "Manhunt for the shooter after the murder in Bagarmossen",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Vad har Usha Vance offrat för att vara USA:s ”second lady”?": {
    "en": "What has Usha Vance sacrificed to be the USA's \"second lady\"?",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Catia Hultquist: Varför läxar Negra Efendić upp Staffan Hildebrand som en sträng mamma?": {
    "en": "Catia Hultquist: Why does Negra Efendić scold Staffan Hildebrand like a strict mother?",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Conway the machine är som ett hiphopjam på en fritidsgård": {
    "en": "Conway the Machine is like a hip-hop jam at a youth center",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Svenska Vivekas smyckesbutik plundrades: ”Rädd även nu”": {
    "en": "Swedish jewelry store Viveka was looted: \"Still afraid even now\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Michael Winiarski: Bokförsäljaren på Broadway fick rätt": {
    "en": "Michael Winiarski: The Broadway bookseller was right",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "”Jag mötte kaos och ungdomar som skrek i panik”": {
    "en": "\"I encountered chaos and young people screaming in panic\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Zanele Muholis konst är både stolt och sårig": {
    "en": "Zanele Muholi's art is both proud and painful",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Stora protester i Frankrike – över 100 gripna": {
    "en": "Major protests in France: over 100 arrested",
@@ -12103,11 +16015,11 @@
   },
   "Internt maktspel i striden om Coop: ”Bäst när det är kris”": {
    "en": "Internal power struggle in the fight over Coop: \"Best when there is a crisis\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Gala ska få fastighetsbranschen att öppna plånboken": {
    "en": "Gala is set to get the property industry to open its wallets",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Dödliga saudiska flyganfall mot Jemen": {
    "en": "Deadly Saudi airstrikes on Yemen",
@@ -12115,31 +16027,31 @@
   },
   "Prognosen som ger kvinnor lägre pension": {
    "en": "The forecast that gives women lower pensions",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Pensionsjättar oense om när du ska dö – kan skilja tusenlappar": {
    "en": "Pension giants disagree on when you will die: it can differ by thousands of kronor",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Kim Jong-Un överraskar – tar spökbron till Kina": {
    "en": "Kim Jong Un surprises by taking the \"ghost bridge\" to China",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Redo? Nu är det dags att backa tillbaka till normaltid": {
    "en": "Ready? Now it's time to set the clocks back to standard time",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Think Pinks sopberg kvar – nota på 390 miljoner": {
    "en": "Think Pink's waste heap remains, with a bill of 390 million",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Militärexperten pekar ut det märkliga i Trumps fredsavtal": {
    "en": "Military expert points out the odd elements in Trump's peace agreement",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Börsjättarna sviker – småbolagen överraskar": {
    "en": "Stock market giants disappoint while small companies surprise",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Efter flera störningar – stabil Starlink-uppkoppling igen": {
    "en": "After several disruptions, Starlink connection is stable again",
@@ -12159,23 +16071,23 @@
   },
   "Israelisk insats på Västbanken – familjer körs bort": {
    "en": "Israeli operation in the West Bank: families driven away",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Én knivstukket – leter etter gjerningsperson": {
    "en": "One person stabbed, searching for the perpetrator",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Alvorlig voldshendelse i Oslo – leter etter gjerningsperson": {
    "en": "Serious violent incident in Oslo, searching for the perpetrator",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Freser mot eigen klubb etter Europa-mareritt: – Øydela heile kampopplevinga": {
    "en": "Fumes at own club after European nightmare: \"Ruined the whole match experience\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "NRK avslører: Telefonsvindlerne ringer fra norske nummer": {
    "en": "NRK reveals: phone scammers are calling from Norwegian numbers",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Avdekket hasjplantasje i nedlagt fengsel – ytterligere en person pågrepet": {
    "en": "Cannabis plantation uncovered in a decommissioned prison, another person arrested",
@@ -12183,31 +16095,31 @@
   },
   "Skellefteå tystade Umeå – rivstartade mot Björklöven": {
    "en": "Skellefteå beat Umeå with a fast start against Björklöven",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tog med jaktgevär in i vallokal i Krokom – åtalas": {
    "en": "Took hunting rifle into polling station in Krokom – to be prosecuted",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Smäll för Sirius – föll mot AIK efter kritiserat straffmål": {
    "en": "Setback for Sirius – lost to AIK after a criticized penalty goal",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Derbymardröm för Djurgården – självmål och rött kort: ”Skitdåligt”": {
    "en": "Derby nightmare for Djurgården – own goal and red card: 'Terrible'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "20-åriga Charlize har avlidit – drabbades av blodcancer": {
    "en": "20-year-old Charlize has died – suffered from blood cancer",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Kan ”mannen utan karisma” besegra Netanyahu?": {
    "en": "Can 'the man without charisma' defeat Netanyahu?",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Intensiv duell i sista presidentdebatten inför valet i Brasilien": {
    "en": "Intense duel in final presidential debate ahead of Brazil's election",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Över 100 gripna i Frankrike: ”Utfört utegångsförbud under kvällen”": {
    "en": "Over 100 arrested in France: 'Curfew carried out during the evening'",
@@ -12223,43 +16135,43 @@
   },
   "Isobel Hadley-Kamptz: Monstren kommer alltid tillbaka": {
    "en": "Isobel Hadley-Kamptz: The monsters always come back",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Personalbrist på miljardbygget – barn blir utan simundervisning": {
    "en": "Staff shortage at billion-kronor construction project – children lose swimming lessons",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Bostaden sprängdes i bombdåd – får 20 000 kronor i ersättning": {
    "en": "Home blown up in bombing – receives 20,000 kronor in compensation",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Skellefteå pajade festen – förnedrade Björklöven": {
    "en": "Skellefteå ruined the party – humiliated Björklöven",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Blytung smäll för Sirius – AIK hjälper rivalerna": {
    "en": "Heavy blow for Sirius – AIK helps the rivals",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "”Bajen” satte stopp för Häckens tidiga guldfest": {
    "en": "'Bajen' stopped Häcken's early title celebration",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Varningen om pumpan – då ska du inte äta den": {
    "en": "Warning about the pumpkin – then you should not eat it",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Johan Nilsson: Därför är screening av brösten en bra idé": {
    "en": "Johan Nilsson: That's why breast screening is a good idea",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Lena har haft bröstcancer två gånger: ”Var för sträng mot mig själv”": {
    "en": "Lena has had breast cancer twice: 'Was too harsh on myself'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Baklängesskutt till knaster och ekon i ”Game on”": {
    "en": "Backward jump with crackling and echoes in 'Game on'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Protester runt om i Europa – tårgas i flera franska städer": {
    "en": "Protests across Europe – tear gas in several French cities",
@@ -12267,51 +16179,51 @@
   },
   "Netanyahu får kritik efter utspel om kryptovalutor: ”Ett attentat”": {
    "en": "Netanyahu criticized after statement on cryptocurrencies: 'An attack'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Sylvester Stallone – en oälskad drömmare besvärjer sina demoner": {
    "en": "Sylvester Stallone – an unloved dreamer confronts his demons",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "De protesterar mot Trumps affärer med Putin: ”Är skrämmande”": {
    "en": "They protest Trump's dealings with Putin: 'Is frightening'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Hitlers ”örnnäste” förstört i brand – kan byggas upp igen": {
    "en": "Hitler's 'eagle's nest' destroyed in fire – can be rebuilt",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Dyrt att fira halloween i nöjesparkerna": {
    "en": "Expensive to celebrate Halloween at amusement parks",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Här är USA:s okända rikingar": {
    "en": "Here are the USA's unknown billionaires",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Charterjättarna prissäkrar mindre efter bränslerusningen": {
    "en": "Charter giants hedge less after fuel price surge",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Demonstrationsvåg sveper över Europa": {
    "en": "Wave of demonstrations sweeps across Europe",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Buffetts jätte gör comeback i AI-frossan": {
    "en": "Buffett's giant makes comeback in the AI frenzy",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nya siffror: Amerikanerna äger mer aktier än någonsin": {
    "en": "New figures: Americans own more stocks than ever",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ingves skattekänga: ”Specialdesignat för att gynna vissa”": {
    "en": "Ingves tax criticism: 'Specially designed to favor certain groups'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Sammandrabbningar i flera franska städer": {
    "en": "Clashes in several French cities",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Dödliga attacker i Jemen": {
    "en": "Deadly attacks in Yemen",
@@ -12323,7 +16235,7 @@
   },
   "Demonstranter har tatt seg inn i Colosseum": {
    "en": "Demonstrators have made their way into the Colosseum",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nådeløs Knutsen etter Glimt-smell: – Kunne spilt til Kveldsnytt uten å få ballen i mål": {
    "en": "Scathing Knutsen after Glimt loss: 'Could have played for Kveldsnytt without getting the ball in the net'",
@@ -12331,11 +16243,11 @@
   },
   "Alvorlig ulykke i Nordland: tre personer fraktes til sykehus i redningshelikopter": {
    "en": "Serious accident in Nordland: three people taken to hospital by rescue helicopter",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Haaland slår tilbake etter kritikk: – Snakka om at eg kom til å slite": {
    "en": "Haaland fires back at criticism: 'I said I was going to struggle'",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Stormvarsel i Sør-Norge – frykter ikke «Amy»-tilstander": {
    "en": "Storm warning in southern Norway – not afraid of 'Amy'-like conditions",
@@ -12343,43 +16255,43 @@
   },
   "Stormen Boelo drar in över Sverige – påverkar tågtrafiken": {
    "en": "Storm Boelo sweeps across Sweden, affecting rail traffic",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Brasilien går till val – det här är presidentkandidaterna": {
    "en": "Brazil heads to the polls: these are the presidential candidates",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "SMHI uppmanar till försiktighet när stormen Boelo blåser in": {
    "en": "SMHI urges caution as Storm Boelo moves in",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Demonstranter tog sig in vid Colosseum": {
    "en": "Protesters broke into the Colosseum",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tre döda och flera skadade i rysk drönarattack": {
    "en": "Three dead and several injured in Russian drone attack",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nära 1 000 gripna i Frankrike i samband med protesterna": {
    "en": "Nearly 1,000 arrested in France in connection with protests",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Fords gamla fabrik blev Kinas – nu kan valet ändra allt": {
    "en": "Ford's old factory became China's, and now the election could change everything",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "24 oktober: Missa inte dagens nyheter": {
    "en": "October 24: Don't miss today's news",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Hon kan bli Texas första demokratiska guvernör på 30 år": {
    "en": "She could become Texas's first Democratic governor in 30 years",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "DN Debatt. ”Kommer jag att hinna se mina barn ta studenten innan jag dör?”": {
    "en": "DN Debate: \"Will I live to see my children graduate before I die?\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Boelo på väg mot Sverige – tåg ställs in och färjor påverkas": {
    "en": "Boelo heading toward Sweden: trains canceled and ferries affected",
@@ -12387,43 +16299,43 @@
   },
   "Henrik Brandão Jönsson: Blod, svett och Iron Maiden – jag sprang för livet i São Paulo": {
    "en": "Henrik Brandão Jönsson: Blood, sweat and Iron Maiden. I ran for my life in São Paulo",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Tusentals demonstrerar inför ödesval i Israel": {
    "en": "Thousands demonstrate ahead of a crucial election in Israel",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Se upp för ISK-fällan – bästa råden i skilsmässotider": {
    "en": "Beware of the ISK trap: best advice during divorce",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Nya dödliga attacker i Jemen": {
    "en": "New deadly attacks in Yemen",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Satte vill verdensrekord i kjellerstua: – Føles ganske mørkt": {
    "en": "Satte wants a world record in his basement: \"It feels quite dark\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ferske bilder av fjellside på Svalbard: – Dramatiske endringer": {
    "en": "New images of a mountainside on Svalbard: \"Dramatic changes\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "– Tipper halvparten i klassen snuser": {
    "en": "\"I estimate half the class sniffs snus\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Stygg smell for Sæter: – Bekymra når det er så mye blod": {
    "en": "Nasty blow for Sæter: \"Worried when there is this much blood\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Miljardärskatten: Zuckerberg lovar att stanna i Kalifornien": {
    "en": "Billionaire tax: Zuckerberg promises to stay in California",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Boelo mot Sverige – trafik stoppas och elavbrott hotar": {
    "en": "Boelo vs. Sweden: traffic halted and power outages threatened",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Stormvarsel på Østlandet: – Kan bli omfattende flomskader og jordskred": {
    "en": "Storm warning in eastern Norway: extensive flood damage and landslides possible",
@@ -12431,23 +16343,67 @@
   },
   "Kyrka betalar 800 miljoner dollar till övergreppsoffer": {
    "en": "Church to pay $800 million to abuse victims",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Myrenberg: Lugnare jämfört med förra helgens protester": {
    "en": "Myrenberg: Situation calmer than last weekend's protests",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Ison & Fille sprider hopp i ett kallt Sverige": {
    "en": "Ison & Fille offer hope in a cold Sweden",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Europe förvaltar 80-talets pudelrock med värdighet": {
    "en": "Europe performs 1980s hair metal with dignity",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
   },
   "Fler än 400 000 demonstrerade i Frankrike – ”Vi låter oss inte skrämmas”": {
    "en": "More than 400,000 people demonstrated in France: \"We will not be intimidated\"",
-   "sedd": 1792883706.778099
+   "sedd": 1792904080.2093604
+  },
+  "Strövområde i Kil förändras – upp till 120 bostäder planeras": {
+   "en": "Recreation area in Kil to change, with up to 120 homes planned",
+   "sedd": 1792904080.2093604
+  },
+  "Södertälje först i länet med startklara polisdrönare på taket": {
+   "en": "Södertälje first in the county with police drones ready to launch from the roof",
+   "sedd": 1792904080.2093604
+  },
+  "Sylvia, 96, fikar med volontärer för att bryta ensamheten: ”Blir isolerad hemma”": {
+   "en": "Sylvia, 96, has coffee with volunteers to combat loneliness: \"I become isolated at home\"",
+   "sedd": 1792904080.2093604
+  },
+  "Klädkaoset på NUS inte löst – se bergen av smutstvätt": {
+   "en": "Clothing problems at NUS not resolved; see the large piles of dirty laundry",
+   "sedd": 1792904080.2093604
+  },
+  "Så rörde sig bussen före dödsolyckan i Växjö – minut för minut": {
+   "en": "How the bus moved before the fatal accident in Växjö, minute by minute",
+   "sedd": 1792904080.2093604
+  },
+  "Svårt för kommuner att planera när ny regering dröjer": {
+   "en": "Municipalities find it difficult to plan while the new government is delayed",
+   "sedd": 1792904080.2093604
+  },
+  "EU vill lätta på bekämpningsregler – 600 forskare slår larm": {
+   "en": "EU wants to ease pesticide rules; 600 researchers raise the alarm",
+   "sedd": 1792904080.2093604
+  },
+  "Musk: Ukraina bröt mot Starlinks regler": {
+   "en": "Musk: Ukraine broke Starlink's rules",
+   "sedd": 1792904080.2093604
+  },
+  "Så påverkas din hud av vitt snus – från rynkor till torrhet": {
+   "en": "How white snus affects your skin, from wrinkles to dryness",
+   "sedd": 1792904080.2093604
+  },
+  "Ledare: Hur i hela friden kunde Vänsterpartiet missa det här?": {
+   "en": "Editorial: How could the Left Party miss this?",
+   "sedd": 1792904080.2093604
+  },
+  "«Boelo» har truffet – bølgeblikktak og stålplater på avveie": {
+   "en": "\"Boelo\" has struck: corrugated roofing and steel sheets blown off course",
+   "sedd": 1792904080.2093604
   }
  }
 }

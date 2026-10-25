@@ -1,12 +1,12 @@
-# Källstatus 2026-10-24 21:37 UTC
+# Källstatus 2026-10-25 04:54 UTC
 
 77/96 OK
 
 | Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |
 | --- | --- | --- | --- | --- | --- |
-| SVT Nyheter | sverige | OK | 100 | 2026-10-24 |  |
-| Sveriges Radio Ekot | sverige | OK | 20 | 2026-10-24 |  |
-| Dagens Nyheter | sverige | OK | 121 | 2026-10-24 |  |
+| SVT Nyheter | sverige | OK | 100 | 2026-10-25 |  |
+| Sveriges Radio Ekot | sverige | OK | 20 | 2026-10-25 |  |
+| Dagens Nyheter | sverige | OK | 121 | 2026-10-25 |  |
 | Dagens industri | sverige | OK | 20 | 2026-10-24 |  |
 | Breakit | sverige | OK | 1 | 2026-10-24 |  |
 | Ny Teknik | sverige | FEL | 0 |  | HTTP Error 404: Not Found |
@@ -17,40 +17,40 @@
 | Finansinspektionen | sverige | OK | 100 | 2026-10-23 |  |
 | Regeringskansliet | sverige | OK | 100 | 2026-10-23 |  |
 | Svenska kraftnät | sverige | OK | 25 | 2026-10-23 |  |
-| Financial Times | europa | OK | 10 | 2026-10-24 |  |
+| Financial Times | europa | OK | 4 | 2026-10-25 |  |
 | The Economist | europa | OK | 300 | 2026-10-22 |  |
-| BBC World | europa | OK | 31 | 2026-10-24 |  |
-| The Guardian | europa | OK | 45 | 2026-10-24 |  |
-| Le Monde (English) | europa | OK | 14 | 2026-10-24 |  |
+| BBC World | europa | OK | 31 | 2026-10-25 |  |
+| The Guardian | europa | OK | 45 | 2026-10-25 |  |
+| Le Monde (English) | europa | OK | 14 | 2026-10-25 |  |
 | France 24 | europa | OK | 24 | 2026-10-24 |  |
 | Der Spiegel International | europa | OK | 20 | 2026-10-16 |  |
-| Deutsche Welle | europa | OK | 131 | 2026-10-24 |  |
-| El País (English) | europa | OK | 59 | 2026-10-24 |  |
+| Deutsche Welle | europa | OK | 130 | 2026-10-25 |  |
+| El País (English) | europa | OK | 59 | 2026-10-25 |  |
 | Politico Europe | europa | OK | 10 | 2026-10-24 |  |
 | Euractiv | europa | OK | 100 | 2026-10-24 |  |
 | Europeiska centralbanken | europa | OK | 15 | 2026-10-24 |  |
 | ESA | europa | OK | 9 | 2026-10-23 |  |
 | NATO | europa | FEL | 0 |  | HTTP Error 404: Not Found |
-| The New York Times | usa | OK | 52 | 2026-10-24 |  |
+| The New York Times | usa | OK | 51 | 2026-10-25 |  |
 | The Washington Post | usa | FEL | 0 |  | HTTP Error 502: Bad Gateway |
-| The Wall Street Journal | usa | OK | 74 | 2026-10-24 |  |
+| The Wall Street Journal | usa | OK | 72 | 2026-10-25 |  |
 | Fox News | usa | OK | 25 | 2026-10-24 |  |
 | NPR | usa | OK | 10 | 2026-10-24 |  |
-| The Hill | usa | OK | 15 | 2026-10-24 |  |
+| The Hill | usa | OK | 15 | 2026-10-25 |  |
 | CNBC | usa | OK | 30 | 2026-10-24 |  |
 | Federal Reserve | usa | OK | 20 | 2026-10-16 |  |
 | NASA | usa | OK | 10 | 2026-10-24 |  |
 | Nikkei Asia | asien | OK | 50 |  |  |
-| The Japan Times | asien | OK | 30 | 2026-10-24 |  |
-| South China Morning Post | asien | OK | 50 | 2026-10-24 |  |
-| The Hindu | asien | OK | 60 | 2026-10-24 |  |
-| Al Jazeera | mellanostern | OK | 25 | 2026-10-24 |  |
+| The Japan Times | asien | OK | 30 | 2026-10-25 |  |
+| South China Morning Post | asien | OK | 50 | 2026-10-25 |  |
+| The Hindu | asien | OK | 60 | 2026-10-25 |  |
+| Al Jazeera | mellanostern | OK | 25 | 2026-10-25 |  |
 | The Times of Israel | mellanostern | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Haaretz | mellanostern | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Arab News | mellanostern | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Mail & Guardian | afrika | FEL | 0 |  | HTTP Error 404: Not Found |
-| CGTN (statskontrollerat) | asien | OK | 50 | 2026-10-24 |  |
-| RT (statskontrollerat) | europa | OK | 100 | 2026-10-24 |  |
+| CGTN (statskontrollerat) | asien | OK | 50 | 2026-10-25 |  |
+| RT (statskontrollerat) | europa | OK | 100 | 2026-10-25 |  |
 | IMF | global | FEL | 0 |  | HTTP Error 404: Not Found |
 | arXiv cs.AI | global | FEL | 0 |  | inga artiklar |
 | Hugging Face | usa | OK | 890 | 2026-10-23 |  |
@@ -77,8 +77,8 @@
 | Wired AI | usa | OK | 10 | 2026-10-24 |  |
 | CyberScoop | usa | OK | 10 | 2026-10-23 |  |
 | The Information | usa | OK | 20 | 2026-10-24 |  |
-| Techmeme | usa | OK | 15 | 2026-10-24 |  |
-| Hacker News | usa | OK | 6 | 2026-10-24 |  |
+| Techmeme | usa | OK | 15 | 2026-10-25 |  |
+| Hacker News | usa | OK | 10 | 2026-10-24 |  |
 | Import AI | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Superhuman | usa | OK | 6 | 2026-10-24 |  |
 | The Code | usa | OK | 6 | 2026-10-24 |  |
@@ -87,11 +87,11 @@
 | Axios | usa | OK | 100 | 2026-10-24 |  |
 | HuffPost | usa | FEL | 0 |  | inga artiklar |
 | Vox | usa | OK | 10 | 2026-10-24 |  |
-| Washington Examiner | usa | OK | 10 | 2026-10-24 |  |
+| Washington Examiner | usa | OK | 10 | 2026-10-25 |  |
 | The Washington Times | usa | FEL | 0 |  | HTTP Error 403: Forbidden |
 | Reason | usa | OK | 48 | 2026-10-24 |  |
-| New York Post | usa | OK | 20 | 2026-10-24 |  |
-| The Daily Caller | usa | OK | 25 | 2026-10-24 |  |
+| New York Post | usa | OK | 20 | 2026-10-25 |  |
+| The Daily Caller | usa | OK | 25 | 2026-10-25 |  |
 | Rest of World | global | OK | 12 | 2026-10-22 |  |
 | Sifted | europa | OK | 24 | 2026-10-23 |  |
 | TechNode | asien | OK | 2000 | 2026-10-23 |  |
