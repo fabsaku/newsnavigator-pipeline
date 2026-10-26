@@ -38,6 +38,8 @@ the a an of to in and for on is are with by as at from that this it its be was w
 new says said after over into vs how why what will can more
 week images video photos live updates latest news today veckan bilder bild direkt senaste nytt idag
 utanför near amid
+about ahead you your should could would not then than has have had his her their they who which when where
+while all also been but just know
 """.split())
 
 # Nyckelord som ger ämne. Hela ord, utom de som slutar med * (ordstam: "ränt*" träffar ränta, räntan, räntor).
@@ -224,41 +226,61 @@ def tokens(text):
     return out
 
 
-def cluster(items, threshold=0.4, min_shared=3, research_threshold=0.65, curated_threshold=0.6):
-    """Grupperar artiklar om samma händelse.
+MAX_SECTIONS = 3     # fler sektioner i ett kluster betyder nästan alltid hopslagna händelser
+
+
+def pair_similarity(a, b, ta, tb, threshold=0.4, min_shared=3, research_threshold=0.65, curated_threshold=0.6):
+    """Likhet mellan två rubriker, 0 om paret inte klarar tröskeln.
 
     Likhet = andel gemensamma ord av den kortaste rubriken (overlap-koefficient),
     med krav på minst `min_shared` gemensamma ord, så att korta rubriker inte slås ihop av en slump.
-    En källa kan bara förekomma en gång per händelse.
+    """
+    shared = len(ta & tb)
+    if shared < min_shared:
+        return 0.0
+    sim = shared / (min(len(ta), len(tb)) or 1)
+    # Forskningsrubriker är fulla av fackord som "model" och "agents": kräv högre likhet
+    if "forskning" in (a["source_type"], b["source_type"]) and sim < research_threshold:
+        return 0.0
+    # Kuraterade listor (Techmeme m.fl.) har långa rubriker som delar ord med nästan allt
+    if "kuraterat" in (a["source_type"], b["source_type"]) and (shared < 4 or sim < curated_threshold):
+        return 0.0
+    return sim if sim >= threshold else 0.0
+
+
+def sections(c):
+    """Sektionerna (Världen, Sverige, Marknader, Tech, Vetenskap) som klustrets sektionsämnen pekar på."""
+    from newsletter import SECTIONS
+    topics = set(tag(c)[1])
+    return {key for key, _, _, tags in SECTIONS if topics & tags}
+
+
+def cluster(items, **pair_args):
+    """Grupperar artiklar om samma händelse.
+
+    Rubrikerna jämförs par för par. En artikel går med i en händelse bara om den klarar tröskeln mot
+    fler än hälften av rubrikerna där, så att den aldrig kommer in via en enda tredje artikel.
+    En källa kan bara förekomma en gång per händelse, och en händelse spänner över högst MAX_SECTIONS sektioner.
     """
     clusters = []
     for it in sorted(items, key=lambda x: x["epoch"] or 0, reverse=True):
         # title_en finns när AI har översatt rubriken, annars används originalet
         tk = tokens(it.get("title_en") or it["title"])
-        best, best_sim = None, 0.0
+        candidates = []
         for c in clusters:
-            shared = len(tk & c["tokens"])
-            if shared < min_shared:
+            if it["source_id"] in c["sources"]:
                 continue
-            sim = shared / (min(len(tk), len(c["title_tokens"])) or 1)
-            # Forskningsrubriker är fulla av fackord som "model" och "agents": kräv högre likhet
-            research = it["source_type"] == "forskning" or any(i["source_type"] == "forskning" for i in c["items"])
-            if research and sim < research_threshold:
-                continue
-            # Kuraterade listor (Techmeme m.fl.) har långa rubriker som delar ord med nästan allt.
-            # Jämför bara mot huvudrubriken och kräv tydlig likhet.
-            curated = it["source_type"] == "kuraterat" or any(i["source_type"] == "kuraterat" for i in c["items"])
-            if curated:
-                head = len(tk & c["title_tokens"])
-                if head < 4 or head / (min(len(tk), len(c["title_tokens"])) or 1) < curated_threshold:
-                    continue
-            if sim > best_sim:
-                best, best_sim = c, sim
-        if best and best_sim >= threshold and it["source_id"] not in {i["source_id"] for i in best["items"]}:
-            best["items"].append(it)
-            best["tokens"] |= tk
+            sims = [pair_similarity(it, m, tk, mt, **pair_args) for m, mt in zip(c["items"], c["item_tokens"])]
+            if sum(1 for s in sims if s) * 2 > len(sims):
+                candidates.append((sum(sims) / len(sims), c))
+        for _, c in sorted(candidates, key=lambda x: x[0], reverse=True):
+            if len(sections({"items": c["items"] + [it]})) <= MAX_SECTIONS:
+                c["items"].append(it)
+                c["item_tokens"].append(tk)
+                c["sources"].add(it["source_id"])
+                break
         else:
-            clusters.append({"items": [it], "tokens": set(tk), "title_tokens": set(tk)})
+            clusters.append({"items": [it], "item_tokens": [tk], "sources": {it["source_id"]}})
     return clusters
 
 
