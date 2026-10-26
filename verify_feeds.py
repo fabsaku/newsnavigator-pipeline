@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Kontrollerar varje källa i feeds.yaml (med reservadresser) och skriver data/kallstatus.md.
+"""Kontrollerar varje källa i feeds.yaml (med reservadresser) och skriver data/kallstatus.json.
 
 Kör där internet är öppet (GitHub Actions eller din dator).
 """
+import argparse
+import calendar
+import json
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -12,34 +15,56 @@ import yaml
 from pipeline import fetch_one
 
 ROOT = Path(__file__).parent
+TYST_DAGAR = 14
 
 
-def main():
-    sources = yaml.safe_load((ROOT / "feeds.yaml").read_text(encoding="utf-8"))["sources"]
-    rows = ["| Källa | Region | Status | Artiklar | Senaste | Adress som fungerade / fel |",
-            "| --- | --- | --- | --- | --- | --- |"]
-    ok = 0
+def _iso(epoch):
+    return datetime.fromtimestamp(epoch, timezone.utc).isoformat() if epoch is not None else None
+
+
+def kallstatus(sources, nu=None):
+    """Status per källa: ok, fel (flödet gick inte att läsa) eller tyst (inget nytt på TYST_DAGAR dagar)."""
+    nu = time.time() if nu is None else nu
+    rows = []
     for s in sources:
         f, used, err = fetch_one(s)
-        n = len(f.entries) if f else 0
+        entries = f.entries if f else []
         newest = None
-        for e in (f.entries if f else []):
+        for e in entries:
             ts = e.get("published_parsed") or e.get("updated_parsed")
-            if ts and (newest is None or ts > newest):
-                newest = ts
-        status = "OK" if n else "FEL"
-        note = (used if used != s["url"] else "") if n else (err or "")[:80]
-        if n and newest and time.time() - time.mktime(newest) > 14 * 86400:
-            status, note = "TYST", "inget nytt på 14 dagar"
-        ok += status == "OK"
-        when = time.strftime("%Y-%m-%d", newest) if newest else ""
-        name = s["namn"] + (" (statskontrollerat)" if s.get("statskontrollerad") else "")
-        rows.append(f"| {name} | {s.get('region', '')} | {status} | {n} | {when} | {note} |")
-    out = ROOT / "data" / "kallstatus.md"
-    out.parent.mkdir(exist_ok=True)
-    out.write_text(f"# Källstatus {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC\n\n{ok}/{len(sources)} OK\n\n"
-                   + "\n".join(rows) + "\n", encoding="utf-8")
-    print(f"{ok}/{len(sources)} källor OK, se {out}")
+            if ts:
+                newest = max(newest or 0, calendar.timegm(ts))
+        if not entries:
+            status = "fel"
+        elif newest is not None and nu - newest > TYST_DAGAR * 86400:
+            status = "tyst"
+        else:
+            status = "ok"
+        rows.append({
+            "id": s["id"],
+            "namn": s["namn"],
+            "region": s.get("region", ""),
+            "statskontrollerad": bool(s.get("statskontrollerad")),
+            "status": status,
+            "artiklar": len(entries),
+            "senaste": _iso(newest),
+            "url": used if entries else None,
+            "fel": None if entries else (err or "inga artiklar")[:160],
+        })
+    return {"skapad": _iso(nu), "ok": sum(1 for r in rows if r["status"] == "ok"), "totalt": len(rows), "kallor": rows}
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--feeds", default=str(ROOT / "feeds.yaml"))
+    ap.add_argument("--out", default=str(ROOT / "data"))
+    args = ap.parse_args(argv)
+    sources = yaml.safe_load(Path(args.feeds).read_text(encoding="utf-8"))["sources"]
+    status = kallstatus(sources)
+    out = Path(args.out) / "kallstatus.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"{status['ok']}/{status['totalt']} källor OK, se {out}")
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ Hämtar nyheter från drygt 60 källor i sju regioner, grupperar artiklar om sam
 
 ```bash
 pip install -r requirements.txt
-python verify_feeds.py            # vilka källor fungerar? se data/kallstatus.md
+python verify_feeds.py            # vilka källor fungerar? se data/kallstatus.json
 python pipeline.py                # bygger data/flode.json och site/index.html
 python granska.py lista           # läs utkasten
 python granska.py godkann ID ID   # godkänn

@@ -14,7 +14,7 @@ sköter sig självt och när den behövs.
 
 ## Principen: GitHub är databasen, Cloudflare är dörren
 
-Allt pipelinen vet ligger redan i repot som filer: `data/flode.json` (dagens händelser), `data/arkiv.json` (godkända), `data/godkanda.json` (bockarna), `data/instagram.json` (kön), `data/kallstatus.md` (källorna). Panelen behöver därför ingen server och ingen databas. Den är en statisk sida på Cloudflare Pages med små funktioner (Pages Functions) som läser och skriver repots filer via GitHub-API:t med en nyckel som bara finns på Cloudflares sida. Varje beslut i panelen blir en commit, och pipelinen reagerar på commits precis som den redan gör på ärendet. Två till tre minuter från bock till publicerad sajt.
+Allt pipelinen vet ligger redan i repot som filer: `data/flode.json` (dagens händelser), `data/arkiv.json` (godkända), `data/godkanda.json` (bockarna), `data/instagram.json` (kön), `data/kallstatus.json` (källorna). Panelen behöver därför ingen server och ingen databas. Den är en statisk sida på Cloudflare Pages med små funktioner (Pages Functions) som läser och skriver repots filer via GitHub-API:t med en nyckel som bara finns på Cloudflares sida. Varje beslut i panelen blir en commit, och pipelinen reagerar på commits precis som den redan gör på ärendet. Två till tre minuter från bock till publicerad sajt.
 
 Dörren är Cloudflare Access: en inloggning med engångskod till en e-postadress på en lista (just nu en adress). Gratis upp till femtio användare, så en andra redaktör kostar ingenting den dagen det behövs.
 
