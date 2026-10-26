@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Starttid
+        run: echo "NN_START=$(date +%s)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -38,6 +40,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python granskning_github.py uppdatera
+      - name: Driftstatus
+        run: python drift.py granskning ${{ job.status }}
       - name: Spara resultat
         run: |
           git config user.name "newsnavigator-bot"
@@ -55,3 +59,12 @@ jobs:
           else
             echo "Sajten oförändrad"
           fi
+      - name: Driftstatus när körningen fallerar
+        if: failure() || cancelled()
+        run: |
+          python3 drift.py granskning ${{ job.status }}
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/drift.json
+          git commit -m "Drift $(date -u +%Y-%m-%dT%H:%M): granskning ${{ job.status }}"
+          git pull --rebase --autostash origin main && git push

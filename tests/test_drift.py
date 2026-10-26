@@ -12,8 +12,8 @@ MILJO = {"GITHUB_RUN_ID": "123", "GITHUB_SERVER_URL": "https://github.com",
          "GITHUB_REPOSITORY": "fabsaku/newsnavigator-pipeline"}
 
 
-def registrera(fil, workflow="pipeline", status="success", start=1000.0, slut=1090.0, **kw):
-    return drift.registrera(workflow, status, start=start, slut=slut, fil=fil, miljo=MILJO, **kw)
+def registrera(fil, workflow="pipeline", status="success", start=1000.0, slut=1090.0, miljo=MILJO, **kw):
+    return drift.registrera(workflow, status, start=start, slut=slut, fil=fil, miljo=miljo, **kw)
 
 
 def test_forsta_korningen_skapar_filen(tmp_path):
@@ -47,10 +47,19 @@ def test_andra_workflows_behalls(tmp_path):
 def test_historiken_haller_de_tjugo_senaste(tmp_path):
     fil = tmp_path / "drift.json"
     for n in range(25):
-        registrera(fil, start=1000.0 + n, slut=1010.0 + n)
+        registrera(fil, start=1000.0 + n, slut=1010.0 + n, miljo={**MILJO, "GITHUB_RUN_ID": str(n)})
     historik = json.loads(fil.read_text(encoding="utf-8"))["historik"]
     assert len(historik) == 20
     assert historik[0]["sekunder"] == 10 and historik[0]["start"] > historik[-1]["start"]
+
+
+def test_samma_korning_star_en_gang(tmp_path):
+    """Felar ett steg efter commiten skrivs körningen igen, nu som fel; historiken ska bara ha den senaste."""
+    fil = tmp_path / "drift.json"
+    registrera(fil, "pipeline", "success")
+    registrera(fil, "pipeline", "failure")
+    historik = json.loads(fil.read_text(encoding="utf-8"))["historik"]
+    assert [k["status"] for k in historik] == ["fel"]
 
 
 def test_pipelinen_sammanfattar_flodet(tmp_path):

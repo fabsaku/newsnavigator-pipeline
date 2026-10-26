@@ -28,6 +28,12 @@ Med AI-utkast: `export ANTHROPIC_API_KEY=...` innan `pipeline.py`. Modell väljs
 
 Testa utan internet: `python pipeline.py --feeds tests/feeds-test.yaml --max-age-hours 0`
 
+Tester: `pip install pytest` och sedan `python -m pytest tests`. Klustringen testas mot riktiga rubriker i
+`tests/kluster-rubriker.json`, där varje rubrik är märkt med vilken händelse den handlar om.
+
+Driftstatus: alla tre workflows skriver `data/drift.json` (`drift.py`) i slutet av varje körning, även när körningen fallerar:
+senaste körningen per workflow, och de tjugo senaste körningarna med status, tider och länk till loggen.
+
 ## Kör automatiskt
 
 1. Skapa ett privat repo på GitHub och lägg upp filerna.

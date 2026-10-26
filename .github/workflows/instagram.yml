@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Starttid
+        run: echo "NN_START=$(date +%s)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -33,10 +35,21 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python instagram.py posta --antal ${{ github.event.inputs.antal || '1' }}
+      - name: Driftstatus
+        run: python drift.py instagram ${{ job.status }}
       - name: Spara status
         run: |
           git config user.name "newsnavigator-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/instagram.json
+          git add data/instagram.json data/drift.json
           git commit -m "Instagram $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
           git pull --rebase origin main && git push
+      - name: Driftstatus när körningen fallerar
+        if: failure() || cancelled()
+        run: |
+          python3 drift.py instagram ${{ job.status }}
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/drift.json
+          git commit -m "Drift $(date -u +%Y-%m-%dT%H:%M): instagram ${{ job.status }}"
+          git pull --rebase --autostash origin main && git push
