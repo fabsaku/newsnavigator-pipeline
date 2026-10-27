@@ -53,7 +53,7 @@ både sajten och den interna förhandsvisningen (`site/index.html`, alla utkast 
 Formen är en tidningssida i svartvitt, mörk först: Source Serif 4 för rubriker och löptext, Source Sans 3 för navigation
 och meta, ingen monospace och inga versaletiketter. Sidhuvudet har dagens datum (sätts i läsarens webbläsare, så att
 sidorna inte beror på byggtiden), ordmärket NEWSNAVIGATOR med Newsgator, och SV/EN.
-Det enda som får ta plats är täckningsremsan: åtta fasta celler, Sverige till Globalt, som tänds när en region rapporterar,
+Det enda som får ta plats är täckningsremsan: nio fasta celler, Sverige till Globalt, som tänds när en region rapporterar,
 med antalet källor. En släckt första cell är en blind fläck i svenska medier. Samma remsa visar blå publik, mitten och röd
 publik för amerikanska medier. Meta skrivs som meningar ("15 källor i sex regioner. Saknas i svenska medier.") och källorna
 som en mening med länkar till originalen och "och 12 till" till notissidan, där hela listan finns med landsnamn.

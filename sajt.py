@@ -194,7 +194,7 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
         stamp = f'<p>{_both(f"Senast uppdaterad {sv}.", f"Last updated {en}.")} '
     else:
         stamp = "<p>"
-    stamp += _both(f"{nsources} källor i sju regioner.", f"{nsources} sources in seven regions.") + "</p>"
+    stamp += _both(f"{nsources} källor i åtta regioner.", f"{nsources} sources in eight regions.") + "</p>"
     return f"""<!doctype html>
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{_e(title)}</title>
@@ -234,7 +234,7 @@ def _latest(events):
 
 def _waiting(u):
     return (f'<section style="padding:20px 0 40px;max-width:640px"><h1 class="pagetitle">{_both("Newsnavigator öppnar snart.", "Newsnavigator opens soon.")}</h1>'
-            f'<p class="lede">{_both("Nyheter från över 90 källor i sju regioner, samlade på ett ställe och granskade innan de publiceras. Du ser hur olika länder, och blå och röda medier i USA, berättar om samma händelse. Varje notis länkar till originalet.", "News from more than 90 sources in seven regions, gathered in one place and reviewed before publication. See how different countries, and blue and red media in the US, cover the same event. Every story links to the original.")}</p>'
+            f'<p class="lede">{_both("Nyheter från över 130 källor i åtta regioner, samlade på ett ställe och granskade innan de publiceras. Du ser hur olika länder, och blå och röda medier i USA, berättar om samma händelse. Varje notis länkar till originalet.", "News from more than 130 sources in eight regions, gathered in one place and reviewed before publication. See how different countries, and blue and red media in the US, cover the same event. Every story links to the original.")}</p>'
             f'<p class="lede">{_both("Varje morgon kommer Navigatorn, vårt morgonbrev.", "Every morning: Navigatorn, our morning brief.")} '
             f'<a href="{_e(u.page("om"))}">{_both("Läs om hur vi arbetar", "Read about how we work")}</a>.</p></section>')
 
@@ -360,8 +360,8 @@ PRINCIPLES = [
 ]
 
 STEPS = [
-    ("Samla", "Gather", "Varje timme hämtar vi rubriker och ingresser från över 90 källor i sju regioner. Från betalväggskällor används bara rubrik och länk.",
-     "Every hour we gather headlines and standfirsts from more than 90 sources in seven regions. From paywalled sources we use only the headline and link."),
+    ("Samla", "Gather", "Varje timme hämtar vi rubriker och ingresser från över 130 källor i åtta regioner. Från betalväggskällor används bara rubrik och länk.",
+     "Every hour we gather headlines and standfirsts from more than 130 sources in eight regions. From paywalled sources we use only the headline and link."),
     ("Gruppera", "Group", "Artiklar om samma händelse slås ihop, över språkgränserna. Så ser vi vilka som rapporterar, och vilka som inte gör det.",
      "Articles about the same event are grouped together, across languages. That shows who is reporting, and who is not."),
     ("Skriva", "Draft", "AI skriver ett neutralt utkast på svenska och engelska, efter samma regler som redaktionen. Den får bara rubriker och ingresser, aldrig hela artiklar.",
@@ -454,7 +454,7 @@ def sources_page(u, sources, banner, noindex):
                         f'<span class="kind">{_both(*kind)}{", " + land if land else ""}</span><span class="flags">{", ".join(flags)}</span></li>')
         groups.append(f'<h2 class="group-h">{_both(*REGIONS.get(region, (region, region)))}<span class="n">{len(items)} {_both("källor", "sources")}</span></h2><ul class="srcs">{"".join(rows)}</ul>')
     body = f"""<h1 class="pagetitle">{_both("Källor", "Sources")}</h1>
-<p class="lede">{_both(f"{len(sources)} källor i sju regioner. Alla är öppna om vilka de är, så att du kan bedöma dem själv.", f"{len(sources)} sources in seven regions. All of them are listed openly, so you can judge them yourself.")}</p>
+<p class="lede">{_both(f"{len(sources)} källor i åtta regioner. Alla är öppna om vilka de är, så att du kan bedöma dem själv.", f"{len(sources)} sources in eight regions. All of them are listed openly, so you can judge them yourself.")}</p>
 <div class="prose">
 <p>{_both("Från källor bakom betalvägg använder vi bara rubrik och länk. Statskontrollerade medier tas med för att visa hur olika stater berättar om samma händelse, och märks alltid STAT. Kuraterade listor och nyhetsbrev räknas inte som oberoende källor i rangordningen. Amerikanska medier anges med AllSides betyg på skalan vänster till höger, och betyget är deras, inte vårt.",
             "From paywalled sources we use only the headline and link. State-controlled media are included to show how different states tell the same event, and are always marked STAT. Curated lists and newsletters do not count as independent sources in the ranking. American outlets carry AllSides’ rating on the left-to-right scale, and the rating is theirs, not ours.")}</p>

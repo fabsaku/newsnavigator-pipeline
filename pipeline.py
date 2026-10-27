@@ -56,9 +56,11 @@ KEYWORDS = {
     "sverige": ["sverige", "svensk*", "sweden", "swedish", "riksdag*", "regeringen", "stockholm", "göteborg", "malmö", "kristersson", "riksbank*"],
     "usa": ["trump", "white house", "vita huset", "congress", "kongressen", "senate", "senaten", "washington"],
     "europa": ["eu", "bryssel", "brussels", "europeiska", "european union", "eu-*"],
+    "latinamerika": ["venezuela*", "brasilien*", "brazil*", "argentin*", "mexik*", "mexic*", "colombia*", "chile*", "peru*",
+                     "kuba*", "cuba*", "ecuador*", "bolivia*", "haiti*", "lula", "milei", "sheinbaum", "maduro", "latin america*", "latinamerika*"],
 }
 # Källornas geografiska ämnen (var de bevakar) räknas bara om alla källor delar dem.
-GEO = {"sverige", "norden", "europa", "usa", "asien", "mellanostern", "afrika", "varlden"}
+GEO = {"sverige", "norden", "europa", "usa", "latinamerika", "asien", "mellanostern", "afrika", "varlden"}
 # Källor som bara bevakar ett ämne: deras ämne styr sektionen när de är fler än hälften av källorna (eller ensamma)
 DEDICATED = {"spel", "noje"}
 # Platser bland de utvalda händelserna som hålls åt sektioner som sällan når upp i poäng
@@ -158,6 +160,8 @@ def fetch(sources, max_age_hours):
                 continue    # bekräftelse- och välkomstmejl är inga nyheter
             if s.get("avsandare") and s["avsandare"] not in (e.get("author", "") + e.get("author_detail", {}).get("email", "")):
                 continue    # flera nyhetsbrev i samma flöde: ta bara det från rätt avsändare
+            if s.get("rubrik_filter") and not re.search(s["rubrik_filter"], e.get("title", "")):
+                continue    # t.ex. GDACS: bara orange och röda varningar
             # lanka: fast länk för källor vars flöde inte pekar på en publik sida (t.ex. nyhetsbrev via e-post)
             link = s.get("lanka") or e.get("link", "")
             ident = e.get("id") or e.get("link", "") or e.get("title", "")

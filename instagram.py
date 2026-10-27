@@ -71,7 +71,7 @@ h1{{font-family:'SS4',serif;font-weight:600;line-height:1.04;letter-spacing:-.01
 .sum{{font-family:'SS4',serif;font-weight:400;font-size:37px;line-height:1.42;color:#d6d6d6;margin-top:34px}}
 .clamp{{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}}
 .grow{{flex:1}}
-.cov{{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;margin-top:46px}}
+.cov{{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:7px;margin-top:46px}}
 .cov.usa{{grid-template-columns:repeat(3,minmax(0,1fr));max-width:560px;margin-top:0}}
 .cov .c{{display:flex;flex-direction:column;gap:10px;min-width:0}}
 .cov .c b{{display:block;height:10px;background:#2e2e2e}}
@@ -138,7 +138,7 @@ def _page(inner, banner=""):
 
 
 def _words(n):
-    return {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta"}.get(n, str(n))
+    return {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta", 9: "nio"}.get(n, str(n))
 
 
 def _coverage(ev):
@@ -147,7 +147,7 @@ def _coverage(ev):
     cells = []
     for r in REGION_ORDER:
         n = counts.get(r, 0)
-        name = {"mellanostern": "Mellan­östern"}.get(r, REGIONS[r][0])
+        name = {"mellanostern": "Mellan\u00adöstern", "latinamerika": "Latin\u00adamerika", "usa": "USA", "asien": "Asien"}.get(r, REGIONS[r][0])
         if n:
             cells.append(f'<span class="c on"><b></b><i><strong>{n}</strong> {name}</i></span>')
         else:

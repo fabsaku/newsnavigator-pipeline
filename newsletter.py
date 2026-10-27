@@ -27,7 +27,7 @@ TZ = ZoneInfo("Europe/Stockholm")
 
 # Sektioner i brevet. En notis hamnar i den första sektion där något av dess ämnen finns.
 SECTIONS = [
-    ("varlden", "Världen", "World", {"varlden", "geopolitik", "europa", "usa", "asien", "mellanostern", "afrika", "forsvar"}),
+    ("varlden", "Världen", "World", {"varlden", "geopolitik", "europa", "usa", "latinamerika", "asien", "mellanostern", "afrika", "forsvar"}),
     ("sverige", "Sverige och Norden", "Sweden and the Nordics", {"sverige", "norden"}),
     ("marknader", "Marknader", "Markets", {"marknader"}),
     ("tech", "Tech och AI", "Tech and AI", {"ai", "teknik", "halvledare", "robotik", "startups"}),

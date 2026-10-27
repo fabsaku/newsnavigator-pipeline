@@ -15,13 +15,15 @@ TOPICS = {"ai": ("AI", "AI"), "robotik": ("Robotik", "Robotics"), "marknader": (
           "rymd": ("Rymd", "Space"), "energi": ("Energi", "Energy"), "klimat": ("Klimat", "Climate"),
           "forsvar": ("Försvar", "Defence"), "startups": ("Startups", "Startups"), "halvledare": ("Halvledare", "Chips"),
           "norden": ("Norden", "Nordics"), "usa": ("USA", "US"), "asien": ("Asien", "Asia"),
-          "mellanostern": ("Mellanöstern", "Middle East"), "afrika": ("Afrika", "Africa"),
+          "mellanostern": ("Mellanöstern", "Middle East"), "afrika": ("Afrika", "Africa"), "latinamerika": ("Latinamerika", "Latin America"),
           "spel": ("Spel", "Games"), "noje": ("Nöje", "Entertainment"), "kultur": ("Kultur", "Culture")}
 REGIONS = {"sverige": ("Sverige", "Sweden"), "norden": ("Norden", "Nordics"), "europa": ("Europa", "Europe"),
-           "usa": ("USA", "US"), "asien": ("Asien", "Asia"), "mellanostern": ("Mellanöstern", "Middle East"),
+           "usa": ("USA och Kanada", "US and Canada"), "latinamerika": ("Latinamerika", "Latin America"),
+           "asien": ("Asien och Oceanien", "Asia and Oceania"), "mellanostern": ("Mellanöstern", "Middle East"),
            "afrika": ("Afrika", "Africa"), "global": ("Globalt", "Global")}
-SHORT = {"mellanostern": ("Mellan\u00adöstern", "Middle East")}  # mjukt bindestreck i remsan
-REGION_ORDER = ["sverige", "norden", "europa", "usa", "asien", "mellanostern", "afrika", "global"]
+SHORT = {"mellanostern": ("Mellan\u00adöstern", "Middle East"), "latinamerika": ("Latin\u00adamerika", "Latin America"),
+         "usa": ("USA", "US"), "asien": ("Asien", "Asia")}  # mjukt bindestreck i remsan
+REGION_ORDER = ["sverige", "norden", "europa", "usa", "latinamerika", "afrika", "mellanostern", "asien", "global"]
 COUNTRIES = {"US": ("USA", "US"), "SE": ("Sverige", "Sweden"), "GB": ("Storbritannien", "UK"), "FR": ("Frankrike", "France"),
              "DE": ("Tyskland", "Germany"), "INT": ("internationell", "international"), "BE": ("Belgien", "Belgium"),
              "EU": ("EU", "EU"), "JP": ("Japan", "Japan"), "IL": ("Israel", "Israel"), "CN": ("Kina", "China"),
@@ -86,7 +88,7 @@ header{border-bottom:1px solid var(--ink)}
 .stat{display:inline-block;font:700 10px/1 var(--sans);letter-spacing:.06em;border:1px solid currentColor;padding:2px 3px 1px;margin-left:5px;vertical-align:1px}
 
 /* Täckningsremsan */
-.cov{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;margin:2px 0 0}
+.cov{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:5px;margin:2px 0 0}
 .cov.usa{grid-template-columns:repeat(3,minmax(0,1fr));max-width:330px}
 .cov .c{display:flex;flex-direction:column;gap:6px;min-width:0}
 .cov .c b{display:block;height:6px;background:var(--rule)}
@@ -200,7 +202,7 @@ def country(code):
 # ---------- Små delar ----------
 
 def _words_sv(n):
-    return {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta"}.get(n, str(n))
+    return {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta", 9: "nio"}.get(n, str(n))
 
 
 def _words_en(n):
