@@ -147,7 +147,7 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 **Fas 5: autopiloten (en session).** Grindarna som ren funktion med tester, vetofönstret, taket, tyst läge, ångra. Slås på med ett tak på två per dygn första veckan. Klart när: en vecka utan ingrepp har gett rätt notiser på sajten och inga i Behöver dig som borde ha stoppats.
 
-Efter fas 5 kan reelsgeneratorn (9:16-video av korten) och de tvåspråkiga korten byggas som egna sessioner; de rör inte panelen.
+Efter fas 5 kan reelsgeneratorn (9:16-video av korten) och de tvåspråkiga korten byggas som egna sessioner; de rör inte panelen. Instagram har två konton: @newsnavigator.se på svenska och @news.navigator på engelska. Planeringen i fas 4 behöver därför en rad per konto.
 
 ## Så briefar du Claude Code
 

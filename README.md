@@ -89,6 +89,10 @@ avsändartjänst (Resend eller liknande) med egna SPF/DKIM-poster för en underd
 `kallkontroll.py` låter AI:n läsa varje nytt utkast en andra gång och spåra varje påstående till källmaterialet (rubriker och ingresser). Resultatet sparas i cachen och följer med notisen: i granskningsärendet som en rad per notis (⚠️ och anmärkningarna när något saknar stöd), och på sajten som märkningen "Källkontrollerad" när allt gick att spåra.
 
 ## Instagram
+Två konton: **@newsnavigator.se** på svenska och **@news.navigator** på engelska. I dag gör `instagram.py` bara svenska kort
+och postar till ett konto (hemligheterna `IG_USER_ID` och `IG_ACCESS_TOKEN`). Det engelska kontot kräver engelska kort och
+captions, egna hemligheter och en egen postningsstatus per konto, så att samma notis kan gå på båda.
+
 `instagram.py bygg` gör karusellkort (1080x1350, JPEG) för varje godkänd notis i `public/ig/<id>/`, med caption i `caption.txt`. Korten ligger ute på sajten, så att Instagram kan hämta dem. `instagram.py posta` publicerar dagens bästa opostade notis via Instagrams API (workflowen `instagram.yml`, 07:45). Kräver ett Business- eller Creator-konto och hemligheterna `IG_USER_ID` och `IG_ACCESS_TOKEN` (long-lived token, 60 dagar, förnyas via `refresh_access_token`). Utan hemligheter skriver skriptet bara vad det skulle ha postat. Typsnitt och maskot ligger i `assets/` så att korten blir lika överallt. Förhandsvisning av dagens utkast: `python instagram.py forhandsvisning /tmp/ig`.
 Formatet: vit text på svart, högst tre kort. Omslag med rubrik, sammanfattning och täckningsremsan; sedan "Så ser världen på det"
 med en rubrik per region; sist ett kort där det finns något att visa, i tur och ordning data bakom nyheten, ett stapeldiagram
