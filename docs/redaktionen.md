@@ -114,7 +114,7 @@ redaktionen/
   wrangler.toml
 ```
 
-Hemligheter i Pages-projektet: `GITHUB_TOKEN` (fine-grained, bara detta repo: Contents läs/skriv, Actions läs/skriv, Issues läs/skriv), `GITHUB_REPO`. Inloggning sköts av Access före funktionerna, och funktionerna läser `Cf-Access-Authenticated-User-Email` och vägrar allt annat.
+Secrets i Pages-projektet: `GITHUB_TOKEN` (fine-grained, bara detta repo: Contents läs/skriv, Actions läs/skriv, Issues läs/skriv), `GITHUB_REPO`. Inloggning sköts av Access före funktionerna, och funktionerna läser `Cf-Access-Authenticated-User-Email` och vägrar allt annat.
 
 Datakontraktet, filer i `data/`:
 
@@ -139,7 +139,7 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 **Fas 1: inkorgen (en till två sessioner).** Pages-projektet `redaktionen` med Access, `flode.ts`, `godkann.ts`, `redigera.ts`, och sidan Inkorg med alla handlingar och tangenter. Ärendet i GitHub finns kvar som reserv. Klart när: ett godkännande i mobilen syns på sajten inom fem minuter, och en redigerad rubrik följer med till sajten, brevet och Instagram-kortet. Du gör: skapar GitHub-nyckeln, lägger den i Pages, sätter upp Access med din adress.
 
-**Fas 2: driften och Behöver dig (en session).** `drift.ts`, sidan Drift, reglerna för Behöver dig, `rapport.yml` och morgonrapporten. Klart när: ett medvetet fel i en körning dyker upp i panelen och i morgonrapporten inom en timme. Du gör: skapar Resend-kontot och lägger `RESEND_API_KEY` i repots hemligheter.
+**Fas 2: driften och Behöver dig (en session).** `drift.ts`, sidan Drift, reglerna för Behöver dig, `rapport.yml` och morgonrapporten. Klart när: ett medvetet fel i en körning dyker upp i panelen och i morgonrapporten inom en timme. Du gör: skapar Resend-kontot och lägger `RESEND_API_KEY` i repots secrets.
 
 **Fas 3: källorna (en session).** `kallor.ts`, sidan Källor med pausa/återstarta, tysta källor i Behöver dig. Klart när: en pausad källa försvinner ur nästa körning och återkommer när den startas.
 
@@ -151,7 +151,7 @@ Efter fas 5 kan reelsgeneratorn (9:16-video av korten) och de tvåspråkiga kort
 
 ## Så briefar du Claude Code
 
-En fas per session, och börja varje session med samma tre rader: läs `CLAUDE.md`, läs `docs/redaktionen.md` fas N, och lista vad som finns innan något byggs. Be om acceptanskriteriet som test innan koden. Allt på svenska i gränssnittet, inga tankstreck, samma form som sajten (`render.py` är källan till färger och typografi). Hemligheter skrivs aldrig i kod eller i chatten: du lägger dem själv i GitHub och Cloudflare. Commits små och i presens, som i repot.
+En fas per session, och börja varje session med samma tre rader: läs `CLAUDE.md`, läs `docs/redaktionen.md` fas N, och lista vad som finns innan något byggs. Be om acceptanskriteriet som test innan koden. Allt på svenska i gränssnittet, inga tankstreck, samma form som sajten (`render.py` är källan till färger och typografi). Secrets skrivs aldrig i kod eller i chatten: du lägger dem själv i GitHub och Cloudflare. Commits små och i presens, som i repot.
 
 ## Risker och svar
 

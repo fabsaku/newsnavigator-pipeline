@@ -6,7 +6,8 @@ Läs först: `README.md`, `PRINCIPER.md`, och för driftpanelen `docs/redaktione
 - Gränssnitt och texter på svenska (och engelska där sajten är tvåspråkig). Inga tankstreck (—) i texter. Han/hon, inte hen.
 - Formen kommer från `render.py`: svartvitt, Source Serif 4 och Source Sans 3, ingen monospace, inga versaletiketter.
 - Återge aldrig källornas text, bara rubrik och länk. Inget innehåll bakom betalväggar. Respektera källor som blockerar bottar.
-- Hemligheter (API-nycklar, tokens) skrivs aldrig i kod, filer eller chatt. Fabian lägger dem själv i GitHub och Cloudflare.
+- Secrets (API-nycklar, tokens) skrivs aldrig i kod, filer eller chatt. Fabian lägger dem själv i GitHub och Cloudflare.
+- Säg secrets, inte hemligheter, i kod, kommentarer, dokumentation och commits.
 - Skriv om aldrig pushad historik. Små commits.
 - Commits: `git -c user.name=Claude -c user.email=noreply@anthropic.com commit`, med trailer `Co-Authored-By` och `Claude-Session`.
 
