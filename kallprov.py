@@ -6,12 +6,12 @@
 Körs i GitHub Actions (workflowen kallprov.yml), eftersom sandboxen sällan når flödena. Skriver inget till repot.
 Flödet hämtas bara om robots.txt tillåter det.
 """
+import re
 import sys
 import time
 import urllib.error
 import urllib.request
 from urllib.parse import urlsplit
-from urllib.robotparser import RobotFileParser
 
 from pipeline import AGENT, fetch_one
 
@@ -21,12 +21,54 @@ AI_BOTAR = ["anthropic-ai", "ClaudeBot", "Claude-Web", "GPTBot", "ChatGPT-User",
             "PerplexityBot", "Applebot-Extended", "Bytespider", "meta-externalagent"]
 
 
+def _grupper(text):
+    """robots.txt som lista av (user-agents, regler), regler som (allow, sökväg)."""
+    grupper, agenter, regler = [], [], []
+    for rad in text.splitlines():
+        rad = rad.split("#", 1)[0].strip()
+        if ":" not in rad:
+            continue
+        falt, varde = (d.strip() for d in rad.split(":", 1))
+        falt = falt.lower()
+        if falt == "user-agent":
+            if regler:
+                grupper.append((agenter, regler))
+                agenter, regler = [], []
+            agenter.append(varde.lower())
+        elif falt in ("allow", "disallow") and agenter:
+            regler.append((falt == "allow", varde))
+    if agenter:
+        grupper.append((agenter, regler))
+    return grupper
+
+
+def _traffar(monster, sokvag):
+    regex = "".join(".*" if c == "*" else re.escape(c) for c in monster.rstrip("$"))
+    return re.match(regex + ("$" if monster.endswith("$") else ""), sokvag) is not None
+
+
+def _beslut(grupper, agent, sokvag):
+    """Enligt RFC 9309: den egna gruppen före *, och den längsta matchande regeln avgör (Allow vid lika)."""
+    namn = agent.lower()
+    regler = [r for ag, rr in grupper if namn in ag for r in rr]
+    grupp = agent
+    if not any(namn in ag for ag, _ in grupper):
+        regler = [r for ag, rr in grupper if "*" in ag for r in rr]
+        grupp = "*"
+    traffar = [(len(p), allow, p) for allow, p in regler if p and _traffar(p, sokvag)]
+    if not traffar:
+        return True, None
+    _, allow, monster = max(traffar, key=lambda t: (t[0], t[1]))
+    return allow, f"User-agent: {grupp} / {'Allow' if allow else 'Disallow'}: {monster}"
+
+
 def robots_besked(text, url, agent=BOT):
-    rp = RobotFileParser()
-    rp.parse(text.splitlines())
-    root = f"{urlsplit(url).scheme}://{urlsplit(url).netloc}/"
-    return {"tillaten": rp.can_fetch(agent, url),
-            "ai_blockerade": sorted((a for a in AI_BOTAR if not rp.can_fetch(a, root)), key=str.lower)}
+    parts = urlsplit(url)
+    sokvag = (parts.path or "/") + (f"?{parts.query}" if parts.query else "")
+    grupper = _grupper(text)
+    tillaten, regel = _beslut(grupper, agent, sokvag)
+    return {"tillaten": tillaten, "regel": regel,
+            "ai_blockerade": sorted((a for a in AI_BOTAR if not _beslut(grupper, a, "/")[0]), key=str.lower)}
 
 
 def hamta_robots(url):
@@ -51,6 +93,7 @@ def prova(url):
         return
     besked = robots_besked(text, url)
     print(f"   robots.txt: {'tillåter' if besked['tillaten'] else 'BLOCKERAR'} {BOT}"
+          + (f" (regel {besked['regel']})" if besked["regel"] else "")
           + (f"; blockerar AI-botar: {', '.join(besked['ai_blockerade'])}" if besked["ai_blockerade"] else ""))
     if not besked["tillaten"]:
         return
