@@ -68,7 +68,7 @@ som en mening med länkar till originalen och "och 12 till" till notissidan, dä
 
 ## Den publika sajten
 `publish.py` bygger `public/` med `sajt.py`: förstasida, en sida per notis (`/n/<id>/`, delbar länk), sektioner
-(`/varlden/`, `/sverige/`, `/marknader/`, `/tech/`, `/vetenskap/`), `/navigatorn/`, `/om/` med principerna, `/kallor/`
+(`/varlden/`, `/sverige/`, `/marknader/`, `/tech/`, `/vetenskap/`, `/noje/`), `/navigatorn/`, `/om/` med principerna, `/kallor/`
 och RSS på svenska och engelska (`/feed.xml`, `/feed-en.xml`). Bara granskade notiser kommer med: förstasidan visar tre dygn,
 sektionerna sju, notissidorna lever lika länge som arkivet (14 dagar).
 Inget på sidorna beror på byggtiden, så filerna ändras bara när innehållet ändras. Workflowen lägger `public/` i grenen `sajt`,

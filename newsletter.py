@@ -32,10 +32,11 @@ SECTIONS = [
     ("marknader", "Marknader", "Markets", {"marknader"}),
     ("tech", "Tech och AI", "Tech and AI", {"ai", "teknik", "halvledare", "robotik", "startups"}),
     ("vetenskap", "Vetenskap", "Science", {"vetenskap", "rymd", "energi", "klimat"}),
+    ("noje", "Nöje och spel", "Entertainment and games", {"noje", "spel", "kultur"}),
 ]
 
 # Vilken sektion en notis hamnar i: ämnessektionerna går före den geografiska.
-SECTION_PRIORITY = ["tech", "vetenskap", "marknader", "sverige", "varlden"]
+SECTION_PRIORITY = ["tech", "vetenskap", "marknader", "noje", "sverige", "varlden"]
 _SECTION_TAGS = {k: tags for k, _, _, tags in SECTIONS}
 
 

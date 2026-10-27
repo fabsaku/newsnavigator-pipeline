@@ -87,6 +87,13 @@ sources:
   - {id: ieee-robotics, namn: IEEE Spectrum Robotics, url: "https://spectrum.ieee.org/feeds/topic/robotics.rss", amnen: [robotik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: robot-report, namn: The Robot Report, url: "https://www.therobotreport.com/feed/", amnen: [robotik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
+  # ---------- Nöje och spel ----------
+  # Aftonbladet och Expressen stänger ute AI-botar i robots.txt: bara rubrik och länk, ingressen går aldrig till AI:n.
+  - {id: gameranx, namn: Gameranx, url: "https://gameranx.com/feed/", amnen: [spel], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: fz, namn: FZ, url: "https://www.fz.se/feeds/nyheter", amnen: [spel], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.fz.se"}
+  - {id: aftonbladet-noje, namn: Aftonbladet Nöjesbladet, url: "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/", amnen: [noje], sprak: sv, typ: media, betalvagg: false, bara_rubrik: true, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.aftonbladet.se/nojesbladet"}
+  - {id: expressen-noje, namn: Expressen Nöje, url: "https://www.expressen.se/rss/noje", amnen: [noje], sprak: sv, typ: media, betalvagg: false, bara_rubrik: true, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.expressen.se/noje/"}
+
   # ---------- Vetenskap, energi, försvar ----------
   - {id: nature, namn: Nature, url: "https://www.nature.com/nature.rss", amnen: [vetenskap], sprak: en, typ: forskning, betalvagg: true, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: quanta, namn: Quanta Magazine, url: "https://www.quantamagazine.org/feed/", amnen: [vetenskap], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}

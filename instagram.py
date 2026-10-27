@@ -36,7 +36,8 @@ GRAPH = os.environ.get("IG_GRAPH", "https://graph.instagram.com").rstrip("/")
 TZ = ZoneInfo("Europe/Stockholm")
 MONTHS = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"]
 HASHTAGS = {"varlden": "#omvärlden #utrikes", "sverige": "#sverige #inrikes", "marknader": "#ekonomi #marknader #börsen",
-            "tech": "#teknik #ai", "vetenskap": "#vetenskap #forskning"}
+            "tech": "#teknik #ai", "vetenskap": "#vetenskap #forskning",
+            "noje": "#nöje #spel #kultur"}
 
 
 # ---------- Typsnitt och logga som data-URI:er, så att rendering blir lika överallt ----------

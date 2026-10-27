@@ -15,7 +15,8 @@ TOPICS = {"ai": ("AI", "AI"), "robotik": ("Robotik", "Robotics"), "marknader": (
           "rymd": ("Rymd", "Space"), "energi": ("Energi", "Energy"), "klimat": ("Klimat", "Climate"),
           "forsvar": ("Försvar", "Defence"), "startups": ("Startups", "Startups"), "halvledare": ("Halvledare", "Chips"),
           "norden": ("Norden", "Nordics"), "usa": ("USA", "US"), "asien": ("Asien", "Asia"),
-          "mellanostern": ("Mellanöstern", "Middle East"), "afrika": ("Afrika", "Africa")}
+          "mellanostern": ("Mellanöstern", "Middle East"), "afrika": ("Afrika", "Africa"),
+          "spel": ("Spel", "Games"), "noje": ("Nöje", "Entertainment"), "kultur": ("Kultur", "Culture")}
 REGIONS = {"sverige": ("Sverige", "Sweden"), "norden": ("Norden", "Nordics"), "europa": ("Europa", "Europe"),
            "usa": ("USA", "US"), "asien": ("Asien", "Asia"), "mellanostern": ("Mellanöstern", "Middle East"),
            "afrika": ("Afrika", "Africa"), "global": ("Globalt", "Global")}

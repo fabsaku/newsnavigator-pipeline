@@ -59,6 +59,10 @@ KEYWORDS = {
 }
 # Källornas geografiska ämnen (var de bevakar) räknas bara om alla källor delar dem.
 GEO = {"sverige", "norden", "europa", "usa", "asien", "mellanostern", "afrika", "varlden"}
+# Källor som bara bevakar ett ämne: deras ämne styr sektionen när de är fler än hälften av källorna (eller ensamma)
+DEDICATED = {"spel", "noje"}
+# Platser bland de utvalda händelserna som hålls åt sektioner som sällan når upp i poäng
+RESERVED = {"noje": 4}
 _KW = {}
 
 
@@ -293,6 +297,7 @@ def tag(c):
     n = len(c["items"])
     from_sources = {t for t, k in counts.items() if (k == n if t in GEO else (k * 2 >= n and k >= 2))}
     shared_by_all = {t for t, k in counts.items() if k == n and n >= 2 and t not in GEO}
+    dedicated = {t for t, k in counts.items() if t in DEDICATED and (n == 1 or k * 2 > n)}
     # Nyckelord i rubrikerna räcker; i ingresserna krävs träff hos minst två källor, så att ett
     # enstaka "energy" eller "AI" i en ingress inte flyttar notisen till fel sektion.
     titles = " ".join(i["title"] for i in c["items"]).lower()
@@ -306,7 +311,7 @@ def tag(c):
         hits = sum(1 for d in descs if any(p.search(d) for p in pats))
         if hits >= 2 or (n == 1 and hits == 1):
             from_text.add(topic)
-    return sorted(from_sources | from_text), sorted(from_text | shared_by_all)
+    return sorted(from_sources | from_text | dedicated), sorted(from_text | shared_by_all | dedicated)
 
 
 HOME = {"sverige", "norden"}
@@ -366,6 +371,24 @@ def score(c):
     age_h = max(0, (time.time() - newest) / 3600) if newest else 48
     # Kuraterade källor ger en liten bonus: det är ett tecken på att techvärlden pratar om saken.
     return round(len(sources) * 2 + min(curated, 2) * 0.5 + (len(regions) - 1) * 1.0 + (1.5 if primary else 0) + max(0, 3 - age_h / 8), 2)
+
+
+def choose(clusters, limit, reserved=None):
+    """De `limit` högst rankade händelserna, men med RESERVED platser för vissa sektioner när de har händelser."""
+    from newsletter import section_of
+    reserved = RESERVED if reserved is None else reserved
+    ranked = sorted(clusters, key=lambda c: c["score"], reverse=True)
+    sec = {id(c): section_of({"amnen_sektion": c["section_topics"]}) for c in ranked}
+    chosen = ranked[:limit]
+    for section, places in reserved.items():
+        missing = places - sum(1 for c in chosen if sec[id(c)] == section)
+        for extra in [c for c in ranked[limit:] if sec[id(c)] == section][:max(missing, 0)]:
+            drop = next((c for c in reversed(chosen) if sec[id(c)] not in reserved), None)
+            if drop is None:
+                break
+            chosen.remove(drop)
+            chosen.append(extra)
+    return sorted(chosen, key=lambda c: c["score"], reverse=True)
 
 
 def reply_text(msg):
@@ -480,7 +503,7 @@ def main():
     approved = set(json.loads(approved_path.read_text())) if approved_path.exists() else set()
 
     order = {"primar": 0, "forskning": 1, "media": 2, "kuraterat": 4}
-    chosen = clusters[: args.limit]
+    chosen = choose(clusters, args.limit)
     for c in chosen:
         # Primärkällor först, sedan fria källor, betalväggar och statskontrollerade medier sist
         c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
