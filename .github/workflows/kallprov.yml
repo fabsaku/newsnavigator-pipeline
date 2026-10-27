@@ -1,0 +1,28 @@
+name: Källprov
+
+# Prövar nya källor (robots.txt och flödet) innan de läggs i feeds.yaml. Skriver inget till repot.
+on:
+  workflow_dispatch:
+    inputs:
+      adresser:
+        description: "Flödesadresser, åtskilda med mellanslag"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Pröva källorna
+        env:
+          ADRESSER: ${{ inputs.adresser }}
+        run: python kallprov.py $ADRESSER
