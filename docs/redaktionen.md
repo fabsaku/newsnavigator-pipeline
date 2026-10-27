@@ -135,19 +135,29 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 ## Faser
 
-**Fas 0: grunden (en session).** Klustringen stramas åt så att "26 källor" aldrig är tjugo olika nyheter: tröskeln per par av rubriker, aldrig sammanslagning via en tredje artikel, och regeln "högst 3 sektioner i ett kluster". `kallstatus.md` blir `kallstatus.json`. `drift.json` skrivs av alla tre workflows. Klart när: en körning ger inga kluster med rubriker om olika händelser, och `drift.json` finns efter varje körning.
+Målet: aggregatorn, sajten, Navigatorn och båda Instagramkontona går av sig själva. Panelen blir platsen där du stoppar, rättar och ångrar, inte där allt måste godkännas. Ordningen följer det: först det som gör att något alls publiceras utan dig, sedan säkerhetsnätet, sist panelens bekvämligheter.
 
-**Fas 1: inkorgen (en till två sessioner).** Pages-projektet `redaktionen` med Access, `flode.ts`, `godkann.ts`, `redigera.ts`, och sidan Inkorg med alla handlingar och tangenter. Ärendet i GitHub finns kvar som reserv. Klart när: ett godkännande i mobilen syns på sajten inom fem minuter, och en redigerad rubrik följer med till sajten, brevet och Instagram-kortet. Du gör: skapar GitHub-nyckeln, lägger den i Pages, sätter upp Access med din adress.
+Läget 27 oktober: ingen notis har godkänts, så sajten, Navigatorn och Instagram har inte publicerat något. GitHub startade 14 av 58 schemalagda körningar mellan 25 och 27 oktober, med upp till två timmars försening.
 
-**Fas 2: driften och Behöver dig (en session).** `drift.ts`, sidan Drift, reglerna för Behöver dig, `rapport.yml` och morgonrapporten. Klart när: ett medvetet fel i en körning dyker upp i panelen och i morgonrapporten inom en timme. Du gör: skapar Resend-kontot och lägger `RESEND_API_KEY` i repots secrets.
+**Fas 0: grunden. Klar 26 oktober.** Parvis klustring med majoritetsregel, högst tre sektioner per kluster, `kallstatus.json`, och `drift.json` från alla tre workflows.
 
-**Fas 3: källorna (en session).** `kallor.ts`, sidan Källor med pausa/återstarta, tysta källor i Behöver dig. Klart när: en pausad källa försvinner ur nästa körning och återkommer när den startas.
+**Fas 1: samma händelse en gång (en session).** Två saker som autopiloten kräver. Kluster vars rubriker direkt liknar varandra slås ihop, så att till exempel Machados återkomst inte blir tre notiser. En händelse som redan publicerats känns igen när den får nya källor: i dag ger en ny källa ett nytt id, och autopiloten skulle publicera samma nyhet igen. Notisen uppdateras i stället, med de nya källorna och "Uppdaterad kl". Klart när: ett test mot riktiga flöden ger ingen händelse två gånger, och en händelse som får en ny källa behåller sin notis och sin adress.
 
-**Fas 4: planeringen (en till två sessioner).** `plan.json`, förslaget från pipelinen, veckovyn, "Kör nu", och att Navigatorn och Instagram följer planen. Klart när: en flyttad karusell postas den dag du satt den.
+**Fas 2: en klocka som går (en session).** En Cloudflare Worker med cron startar workflows via workflow_dispatch, som GitHub kör direkt: pipelinen varje timme, rapporten 07.00, Navigatorn 07.30 och Instagram 07.45. GitHubs egna scheman blir reserv. Klart när: två dygn i `drift.json` utan en körning som saknas eller startat mer än fem minuter sent. Du gör: en fine-grained token med bara Actions läs/skriv för repot, som secret i Workern.
 
-**Fas 5: autopiloten (en session).** Grindarna som ren funktion med tester, vetofönstret, taket, tyst läge, ångra. Slås på med ett tak på två per dygn första veckan. Klart när: en vecka utan ingrepp har gett rätt notiser på sajten och inga i Behöver dig som borde ha stoppats.
+**Fas 3: autopiloten (en session).** Grindarna i avsnittet Autopiloten som ren funktion med tester, taket, tyst läge (`data/autopilot.json`) och ångra. Tills panelen finns är granskningsärendet vetofönstret: notiser som klarar grindarna står där med klockslag och publiceras om du inte bockar ur dem. Tak två per dygn första veckan, sedan åtta. Klart när: en vecka utan ingrepp har gett notiser på sajten och i Navigatorn, och inga som borde ha stoppats. Du beslutar först: princip 7 säger att inget publiceras innan en människa har granskat det, och varje notis märks "granskad av redaktionen". Automatiskt publicerade notiser behöver en sann märkning, till exempel "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning.", och princip 7 behöver skrivas om. Det är ditt beslut som ansvarig utgivare.
 
-Efter fas 5 kan reelsgeneratorn (9:16-video av korten) och de tvåspråkiga korten byggas som egna sessioner; de rör inte panelen. Instagram har två konton: @newsnavigator.se på svenska och @news.navigator på engelska. Planeringen i fas 4 behöver därför en rad per konto.
+**Fas 4: Instagram av sig självt, två konton (en session).** Svenska kort och captions till @newsnavigator.se, engelska till @news.navigator (de engelska utkasten finns redan), postningsstatus per konto, och en workflow som förnyar båda tokens varannan vecka. Postar bara publicerade notiser. Klart när: båda kontona har postat varje dag i en vecka utan ingrepp. Du gör: secrets för det engelska kontot (`IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN`), kontrollerar att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se, och skapar en token som får skriva repots secrets, så att förnyelsen kan spara de nya tokens.
+
+**Fas 5: säkerhetsnätet (en session).** Reglerna för Behöver dig, `rapport.yml` och morgonrapporten med Resend, plus ett mejl direkt när en körning fallerat två gånger i rad. Navigatorn kan börja skickas med samma Resend-konto i samma session. Klart när: ett medvetet fel i en körning ger ett mejl inom en timme, och morgonrapporten kommer varje morgon kl 07.00. Du gör: skapar Resend-kontot och lägger `RESEND_API_KEY` i repots secrets.
+
+**Fas 6: panelen och inkorgen (en till två sessioner).** Pages-projektet `redaktionen` med Access (guiden finns, skalet är uppe), `flode.ts`, `godkann.ts`, `redigera.ts` och sidan Inkorg. Inkorgen visar vad autopiloten publicerat och vad som väntar, med stoppa, redigera, godkänn och ångra. Klart när: en rättad rubrik i mobilen syns på sajten, i Navigatorn och på Instagram inom fem minuter. Du gör: GitHub-nyckeln i Pages och Access med din adress.
+
+**Fas 7: driften, källorna och planeringen i panelen (en session var).** Sidan Drift (`drift.ts`), sidan Källor med pausa och återstarta, och veckovyn med en rad per Instagramkonto (`data/plan.json`). Klart när: en pausad källa försvinner ur nästa körning och återkommer när den startas, och en flyttad karusell postas den dag du satt den.
+
+Efter fas 7 kan reelsgeneratorn (9:16-video av korten) byggas som en egen session; den rör inte panelen.
+
+Små saker utan egen fas: platserna i Nöje och spel delas mellan spel och nöje (i dag tar nöjet alla fyra), och ett beslut om källor som stänger ute AI-botar ska gå som bara rubrik.
 
 ## Så briefar du Claude Code
 
