@@ -133,11 +133,24 @@ Pipelinen ändras på fem ställen: läser `redigeringar.json` och lägger över
 
 Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwright-rök för panelen mot en kopia av `data/`. Lokalt: `npx wrangler pages dev redaktionen` med en `.dev.vars` som pekar på ett testrepo eller på en lokal mapp i läs-läge.
 
+## Läget
+
+28 oktober 21.10 UTC: klockan startade pipelinen på egen hand 21.02 UTC, 13 sekunder efter cron. Ingen notis har godkänts, så sajten, Navigatorn och Instagram har inte publicerat något. 120 av 138 källor går att läsa. 45 tester gröna.
+
+Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk tid ("Newsnavigator: nattlig byggsession"), en fas per natt, i ordningen nedan. Den hoppar över faser som väntar på något under Du gör. Den stoppas eller ändras i Claude-appen under schemalagda uppgifter.
+
+## Du gör
+
+Det här kan bara du göra. Det som står överst spärrar nästa fas.
+
+1. **Princip 7 (spärrar fas 3).** Skriv om princip 7 i `PRINCIPER.md` så att den tillåter automatisk publicering under tydliga villkor, och godkänn en märkning för automatiskt publicerade notiser. Förslag: "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns." Tills det är gjort byggs autopiloten med strömbrytaren av.
+2. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Kontrollera att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se.
+3. **Resend (fas 5).** Skapa ett Resend-konto, verifiera underdomänen för avsändaren, och lägg `RESEND_API_KEY` i repots secrets.
+4. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
+
 ## Faser
 
 Målet: aggregatorn, sajten, Navigatorn och båda Instagramkontona går av sig själva. Panelen blir platsen där du stoppar, rättar och ångrar, inte där allt måste godkännas. Ordningen följer det: först det som gör att något alls publiceras utan dig, sedan säkerhetsnätet, sist panelens bekvämligheter.
-
-Läget 27 oktober: ingen notis har godkänts, så sajten, Navigatorn och Instagram har inte publicerat något. GitHub startade 14 av 58 schemalagda körningar mellan 25 och 27 oktober, med upp till två timmars försening.
 
 **Fas 0: grunden. Klar 26 oktober.** Parvis klustring med majoritetsregel, högst tre sektioner per kluster, `kallstatus.json`, och `drift.json` från alla tre workflows.
 
