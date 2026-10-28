@@ -143,10 +143,9 @@ Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk ti
 
 Det här kan bara du göra. Det som står överst spärrar nästa fas.
 
-1. **Princip 7 (spärrar fas 3).** Skriv om princip 7 i `PRINCIPER.md` så att den tillåter automatisk publicering under tydliga villkor, och godkänn en märkning för automatiskt publicerade notiser. Förslag: "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns." Tills det är gjort byggs autopiloten med strömbrytaren av.
-2. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Kontrollera att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se.
-3. **Resend (fas 5).** Skapa ett Resend-konto, verifiera underdomänen för avsändaren, och lägg `RESEND_API_KEY` i repots secrets.
-4. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
+1. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Kontrollera att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se.
+2. **Resend (fas 5).** Skapa ett Resend-konto, verifiera underdomänen för avsändaren, och lägg `RESEND_API_KEY` i repots secrets.
+3. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
 
 ## Faser
 
@@ -158,7 +157,7 @@ Målet: aggregatorn, sajten, Navigatorn och båda Instagramkontona går av sig s
 
 **Fas 2: en klocka som går (en session). Workern igång 28 oktober: första starten på egen hand 21.02 UTC, 13 sekunder efter cron. Klart när `drift.json` visar två dygn utan missad eller försenad körning.** En Cloudflare Worker med cron startar workflows via workflow_dispatch, som GitHub kör direkt: pipelinen varje timme, rapporten 07.00, Navigatorn 07.30 och Instagram 07.45. GitHubs egna scheman blir reserv. Klart när: två dygn i `drift.json` utan en körning som saknas eller startat mer än fem minuter sent. Du gör: en fine-grained token med bara Actions läs/skriv för repot, som secret i Workern.
 
-**Fas 3: autopiloten (en session).** Grindarna i avsnittet Autopiloten som ren funktion med tester, taket, tyst läge (`data/autopilot.json`) och ångra. Tills panelen finns är granskningsärendet vetofönstret: notiser som klarar grindarna står där med klockslag och publiceras om du inte bockar ur dem. Tak två per dygn första veckan, sedan åtta. Klart när: en vecka utan ingrepp har gett notiser på sajten och i Navigatorn, och inga som borde ha stoppats. Du beslutar först: princip 7 säger att inget publiceras innan en människa har granskat det, och varje notis märks "granskad av redaktionen". Automatiskt publicerade notiser behöver en sann märkning, till exempel "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning.", och princip 7 behöver skrivas om. Det är ditt beslut som ansvarig utgivare.
+**Fas 3: autopiloten (en session).** Grindarna i avsnittet Autopiloten som ren funktion med tester, taket, tyst läge (`data/autopilot.json`) och ångra. Tills panelen finns är granskningsärendet vetofönstret: notiser som klarar grindarna står där med klockslag och publiceras om du inte bockar ur dem. Tak två per dygn första veckan, sedan åtta. Klart när: en vecka utan ingrepp har gett notiser på sajten och i Navigatorn, och inga som borde ha stoppats. Princip 7 omskriven 28 oktober: automatiskt publicerade notiser märks "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns." Märkningen per notis på sajten, i Navigatorn och på Instagramkorten byggs i den här fasen; i dag står "granskad av redaktionen" överallt.
 
 **Fas 4: Instagram av sig självt, två konton (en session).** Svenska kort och captions till @newsnavigator.se, engelska till @news.navigator (de engelska utkasten finns redan), postningsstatus per konto, och en workflow som förnyar båda tokens varannan vecka. Postar bara publicerade notiser. Klart när: båda kontona har postat varje dag i en vecka utan ingrepp. Du gör: secrets för det engelska kontot (`IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN`), kontrollerar att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se, och skapar en token som får skriva repots secrets, så att förnyelsen kan spara de nya tokens.
 
