@@ -457,6 +457,23 @@ def choose(clusters, limit, reserved=None):
     return sorted(chosen, key=lambda c: c["score"], reverse=True)
 
 
+def assign_id(c, used_ids):
+    """Samma uppsättning artiklar ger samma id, och en händelse som historiken känner igen behåller sitt,
+    så att en publicerad notis uppdateras i stället för att publiceras igen. Två händelser i samma
+    flöde får aldrig samma id: då får den senare ett nytt."""
+    cid = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
+    h = c.get("_hist")
+    if h is not None and h.get("id") and h["id"] not in used_ids:
+        cid = h["id"]
+    while cid in used_ids:
+        cid = hashlib.sha1(cid.encode()).hexdigest()[:10]
+    if h is not None:
+        h["id"] = cid
+    used_ids.add(cid)
+    c["id"] = cid
+    return cid
+
+
 def reply_text(msg):
     """Plockar ut svarstexten. Modellen kan skicka resonemangsblock före texten, de hoppas över."""
     text = "".join(getattr(b, "text", "") for b in msg.content if getattr(b, "type", "text") == "text")
@@ -595,17 +612,7 @@ def main():
     for c in chosen:
         # Primärkällor först, sedan fria källor, betalväggar och statskontrollerade medier sist
         c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
-        # Samma uppsättning artiklar ger samma id. Ny källa eller ändrad rubrik ger nytt utkast.
-        c["id"] = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
-        # Samma händelse behåller sitt id när den får nya källor (historiken känner igen den),
-        # så att en publicerad notis uppdateras i stället för att publiceras igen.
-        h = c.get("_hist")
-        if h is not None:
-            if h.get("id") and h["id"] not in used_ids:
-                c["id"] = h["id"]
-            else:
-                h["id"] = c["id"]
-        used_ids.add(c["id"])
+        assign_id(c, used_ids)
         c["fingeravtryck"] = hashlib.sha1((model + SYSTEM_PROMPT + user_prompt(c)).encode()).hexdigest()[:12]
 
     def draft_for(c):

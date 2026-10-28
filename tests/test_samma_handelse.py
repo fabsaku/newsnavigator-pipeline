@@ -50,3 +50,19 @@ def test_samma_handelse_behaller_id_med_ny_kalla():
     sen = {"items": TAG[:4] + [art("NPR", "Dozens are dead in a high-speed train crash in Spain", 101)]}
     vikt.update_history([sen], hist, now=3600 * 6)
     assert sen["_hist"]["id"] == "abc123"
+
+
+def test_tva_handelser_far_aldrig_samma_id():
+    """Historiken gav ett kluster id X medan ett annat klusters artikelhash också var X (flödet 28 oktober 21.34)."""
+    import pipeline
+    a = {"items": [art("A", "x", 1), art("B", "x", 2)], "_hist": {"id": "deadbeef00"}}
+    b = {"items": [art("C", "y", 3)]}
+    used = set()
+    pipeline.assign_id(a, used)
+    b_hash = pipeline.assign_id({"items": b["items"]}, set())
+    a["_hist"]["id"] = b_hash          # historiken pekar på samma id som b:s hash
+    used = set()
+    pipeline.assign_id(a, used)
+    pipeline.assign_id(b, used)
+    assert a["id"] == b_hash and b["id"] != b_hash and len(used) == 2
+    assert a["_hist"]["id"] == a["id"]
