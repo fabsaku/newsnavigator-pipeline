@@ -119,6 +119,7 @@ def update_history(clusters, hist, now=None):
         h["ord"] = sorted(set(h["ord"]) | _ord(c))[-40:]
         h["senast"] = now
         c["timmar"] = len(h["timmar"])
+        c["_hist"] = h
         c["forst_sedd"] = h["forst"]
     return hist
 
@@ -146,7 +147,7 @@ def konsekvens(c, client, model, reply_text, cache):
     if hit:
         hit["sedd"] = time.time()
         return hit["varde"]
-    msg = client.messages.create(model=model, max_tokens=300, system=KONSEKVENS_SYSTEM,
+    msg = client.messages.create(model=model, max_tokens=4000, system=KONSEKVENS_SYSTEM,
                                  messages=[{"role": "user", "content": konsekvens_prompt(c)}])
     text = reply_text(msg)
     d = json.loads(text[text.find("{"): text.rfind("}") + 1])

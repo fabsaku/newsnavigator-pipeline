@@ -206,6 +206,10 @@ ALIASES = {
     "natos": "nato", "rumänien": "romania", "romanian": "romania", "jordanien": "jordan", "taiwans": "taiwan",
     "förenade": "uae", "emiraten": "uae", "zelenskyj": "zelensky", "zelenskyy": "zelensky",
     # händelser
+    "accident": "crash", "collision": "crash", "collide": "crash", "collides": "crash", "collided": "crash",
+    "olycka": "crash", "olyckan": "crash", "krock": "crash", "krockat": "crash", "kolliderat": "crash", "kolliderar": "crash",
+    "spanish": "spain", "spaniens": "spain", "spanien": "spain", "trains": "train", "tåg": "train", "tågolyckan": "train",
+    "brazilian": "brazil", "brasilien": "brazil", "brasiliens": "brazil", "elections": "election", "valet": "election",
     "skjutning": "shoot", "skjuten": "shoot", "skjutna": "shoot", "skottlossning": "shoot", "shooting": "shoot",
     "shot": "shoot", "död": "kill", "döda": "kill", "dödad": "kill", "dödade": "kill", "dödas": "kill",
     "killed": "kill", "kills": "kill", "dead": "kill", "kyrka": "church", "begravning": "funeral",
@@ -291,6 +295,62 @@ def cluster(items, **pair_args):
                 break
         else:
             clusters.append({"items": [it], "item_tokens": [tk], "sources": {it["source_id"]}})
+    return clusters
+
+
+def _core(c):
+    """Kärnorden i ett kluster: ord som finns i minst hälften av rubrikerna (minst två)."""
+    n = len(c["item_tokens"])
+    counts = Counter(w for tk in c["item_tokens"] for w in tk)
+    need = max(2, (n + 1) // 2) if n > 1 else 1
+    return {w for w, k in counts.items() if k >= need}
+
+
+def _cross_rate(a, b, rate):
+    """Klarar tillräckligt många rubrikpar mellan de två klustren tröskeln?"""
+    hits = total = 0
+    for x, tx in zip(a["items"], a["item_tokens"]):
+        for y, ty in zip(b["items"], b["item_tokens"]):
+            total += 1
+            hits += pair_similarity(x, y, tx, ty) > 0
+    return total and hits / total >= rate
+
+
+def merge_clusters(clusters, min_core=3, core_overlap=0.6, pair_rate=0.25):
+    """Andra varvet: slår ihop kluster om samma händelse som det första varvet delade upp
+    (till exempel när en källa har flera artiklar, eller rubrikerna skiljer sig i ordval).
+    Två kluster slås ihop när kärnorden till stor del är desamma och sektionerna räcker till.
+    En källa förekommer fortfarande bara en gång: den nyaste artikeln behålls."""
+    merged = True
+    while merged:
+        merged = False
+        multi = [c for c in clusters if len(c["items"]) >= 2]
+        for a in multi:
+            ca = _core(a)
+            if len(ca) < min_core:
+                continue
+            for b in multi:
+                if b is a or b.get("_gone") or a.get("_gone"):
+                    continue
+                cb = _core(b)
+                shared = len(ca & cb)
+                same_core = shared >= min_core and shared / min(len(ca), len(cb)) >= core_overlap
+                if not same_core and not _cross_rate(a, b, pair_rate):
+                    continue
+                pool = sorted(a["items"] + b["items"], key=lambda x: x["epoch"] or 0, reverse=True)
+                keep, seen = [], set()
+                for it in pool:
+                    if it["source_id"] not in seen:
+                        seen.add(it["source_id"])
+                        keep.append(it)
+                if len(sections({"items": keep})) > MAX_SECTIONS:
+                    continue
+                toks = {id(it): tk for it, tk in zip(a["items"] + b["items"], a["item_tokens"] + b["item_tokens"])}
+                a["items"], a["item_tokens"], a["sources"] = keep, [toks[id(it)] for it in keep], seen
+                b["_gone"] = True
+                ca = _core(a)
+                merged = True
+        clusters = [c for c in clusters if not c.get("_gone")]
     return clusters
 
 
@@ -500,7 +560,7 @@ def main():
     totals = vikt_mod.region_totals(sources)
     items, report = fetch(sources, args.max_age_hours)
     cross_language = translate_titles(items, client, model, cache) if client else False
-    clusters = cluster(items)
+    clusters = merge_clusters(cluster(items))
     events = []
     for c in clusters:
         c["topics"], c["section_topics"] = tag(c)
@@ -531,11 +591,21 @@ def main():
 
     order = {"primar": 0, "forskning": 1, "media": 2, "kuraterat": 4}
     chosen = choose(clusters, args.limit)
+    used_ids = set()
     for c in chosen:
         # Primärkällor först, sedan fria källor, betalväggar och statskontrollerade medier sist
         c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
         # Samma uppsättning artiklar ger samma id. Ny källa eller ändrad rubrik ger nytt utkast.
         c["id"] = hashlib.sha1(" ".join(sorted(i["id"] for i in c["items"])).encode()).hexdigest()[:10]
+        # Samma händelse behåller sitt id när den får nya källor (historiken känner igen den),
+        # så att en publicerad notis uppdateras i stället för att publiceras igen.
+        h = c.get("_hist")
+        if h is not None:
+            if h.get("id") and h["id"] not in used_ids:
+                c["id"] = h["id"]
+            else:
+                h["id"] = c["id"]
+        used_ids.add(c["id"])
         c["fingeravtryck"] = hashlib.sha1((model + SYSTEM_PROMPT + user_prompt(c)).encode()).hexdigest()[:12]
 
     def draft_for(c):
