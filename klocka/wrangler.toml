@@ -1,6 +1,8 @@
 name = "newsnavigator-klocka"
 main = "worker.js"
 compatibility_date = "2026-10-01"
+workers_dev = true
+preview_urls = false
 
 [triggers]
 crons = ["2,17,32,47 * * * *"]
