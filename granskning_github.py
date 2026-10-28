@@ -82,9 +82,13 @@ def _item(ev, checked):
     p = ev.get("perspektiv") or {}
     title = _clean(d.get("rubrik_sv") or ev["reserv_rubrik"])
     regs = len(p.get("regioner", []))
-    meta = f"{ev['antal_kallor']} källor, {regs} regioner"
+    meta = f"{ev['antal_kallor']} källor, {regs} regioner, vikt {ev.get('poang', 0)}"
+    v = ev.get("vikt") or {}
+    kons = v.get("konsekvens")
+    if kons:
+        meta += f" (konsekvens {kons['medel']}, {v.get('timmar', 1)} h i flödet)"
     k = ev.get("kallkontroll")
-    flag = "" if not k or k["ok"] else "⚠️ "
+    flag = ("❗ Måste med · " if ev.get("maste") else "") + ("" if not k or k["ok"] else "⚠️ ")
     out = [f"- [{'x' if checked else ' '}] {flag}**{title}** · {meta} · `{ev['id']}`"]
     if k and not k["ok"]:
         out.append(f"  **KÄLLKONTROLL, {len(k['problem'])} anmärkningar:** " + " · ".join(_clean(x) for x in k["problem"][:4]))

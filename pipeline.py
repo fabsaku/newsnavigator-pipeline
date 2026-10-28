@@ -25,6 +25,7 @@ import feedparser
 import yaml
 
 import kallkontroll
+import vikt as vikt_mod
 from prompts import SYSTEM_PROMPT, user_prompt
 
 ROOT = Path(__file__).parent
@@ -32,6 +33,7 @@ NEWSLETTER_ADMIN = re.compile(r"confirm|verify|welcome|subscription|subscribed|s
 CACHE_PATH = ROOT / "data" / "cache.json"
 CACHE_DAYS = 3        # utkast och översättningar som inte setts på tre dagar rensas
 WORKERS = 8           # samtidiga AI-anrop
+KONSEKVENS_TOPP = 80  # så många händelser får en konsekvensbedömning per körning (cachas)
 STOPWORDS = set("""
 och i att det som en på är av för med till den har de inte om ett han hon men var
 the a an of to in and for on is are with by as at from that this it its be was were
@@ -459,8 +461,8 @@ def load_cache():
 
 def save_cache(cache):
     limit = time.time() - CACHE_DAYS * 86400
-    for key in ("utkast", "titlar"):
-        cache[key] = {k: v for k, v in cache[key].items() if v.get("sedd", 0) >= limit}
+    for key in ("utkast", "titlar", "konsekvens"):
+        cache[key] = {k: v for k, v in cache.get(key, {}).items() if v.get("sedd", 0) >= limit}
     CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -494,14 +496,35 @@ def main():
         client = anthropic.Anthropic()
 
     cache = load_cache()
-    items, report = fetch(load_sources(args.feeds), args.max_age_hours)
+    sources = load_sources(args.feeds)
+    totals = vikt_mod.region_totals(sources)
+    items, report = fetch(sources, args.max_age_hours)
     cross_language = translate_titles(items, client, model, cache) if client else False
     clusters = cluster(items)
     events = []
     for c in clusters:
         c["topics"], c["section_topics"] = tag(c)
-        c["score"] = score(c)
+    # Vikt (vikt.py): bredd i förhållande till regionernas källor, uthållighet över körningarna,
+    # konsekvens enligt AI (bara rubrikerna) och, efter utkasten, källkontrollens bekräftelse.
+    hist = vikt_mod.load_history()
+    vikt_mod.update_history([c for c in clusters if len(independent(c)) >= 2], hist)
+    for c in clusters:
+        c["score"], c["vikt"] = vikt_mod.vikt(c, totals)
     clusters.sort(key=lambda c: c["score"], reverse=True)
+    if client:
+        top = clusters[:KONSEKVENS_TOPP]
+
+        def kons_for(c):
+            try:
+                return vikt_mod.konsekvens(c, client, model, reply_text, cache)
+            except Exception as e:
+                print(f"  Konsekvens misslyckades: {e}", file=sys.stderr)
+                return None
+        with ThreadPoolExecutor(WORKERS) as pool:
+            for c, k in zip(top, pool.map(kons_for, top)):
+                c["konsekvens"] = k
+                c["score"], c["vikt"] = vikt_mod.vikt(c, totals, k)
+        clusters.sort(key=lambda c: c["score"], reverse=True)
 
     approved_path = ROOT / "data" / "godkanda.json"
     approved = set(json.loads(approved_path.read_text())) if approved_path.exists() else set()
@@ -543,6 +566,7 @@ def main():
     reused = 0
     for c, (draft, kontroll, from_cache) in zip(chosen, results):
         reused += from_cache
+        c["score"], c["vikt"] = vikt_mod.vikt(c, totals, c.get("konsekvens"), kontroll["ok"] if kontroll else None)
         if draft is not None and not draft.get("_fel"):
             cache["utkast"][c["id"]] = {"utkast": draft, "kontroll": kontroll, "fingeravtryck": c["fingeravtryck"], "sedd": NOW}
         elif draft is not None:
@@ -553,6 +577,8 @@ def main():
             "amnen": c["topics"],
             "amnen_sektion": c["section_topics"],
             "poang": c["score"],
+            "vikt": c["vikt"],
+            "maste": c["vikt"]["maste"],
             "antal_kallor": len(independent(c)) or len({i["source_id"] for i in c["items"]}),
             "har_primarkalla": any(i["source_type"] in ("primar", "forskning") for i in c["items"]),
             "senast": max((i["published"] or "") for i in c["items"]) or None,
@@ -566,6 +592,8 @@ def main():
                         "statskontrollerad": i["state_controlled"]} for i in c["items"]],
             "granskad": c["id"] in approved,
         })
+    events.sort(key=lambda e: e["poang"], reverse=True)
+    vikt_mod.save_history(hist)
     if client:
         checked = [e["kallkontroll"] for e in events if e.get("kallkontroll")]
         flagged = sum(1 for k in checked if not k["ok"])

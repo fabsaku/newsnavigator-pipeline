@@ -8,7 +8,7 @@ Hämtar nyheter från drygt 60 källor i sju regioner, grupperar artiklar om sam
 
 1. **Hämta** (`pipeline.py`): läser RSS från källorna i `feeds.yaml`. Från betalväggskällor används bara rubrik och länk.
 2. **Gruppera**: artiklar om samma händelse slås ihop, en källa per händelse.
-3. **Tagga och rangordna**: ämnen från källan och nyckelord. Fler oberoende källor och en primärkälla ger högre placering.
+3. **Tagga och rangordna**: ämnen från källan och nyckelord. Rangordningen är Vikt (`vikt.py`): bredd i förhållande till regionernas källor, hur många timmar händelsen hållit i sig, konsekvens enligt AI utifrån rubrikerna, och källkontrollens bekräftelse. Rätt före först.
 4. **Utkast**: om `ANTHROPIC_API_KEY` finns skriver AI:n rubrik och sammanfattning på svenska och engelska, och noterar om källorna är oeniga. AI:n får bara rubriker och ingresser, aldrig hela artiklar.
 5. **Granska** (`granska.py`): inget publiceras utan att du har godkänt det.
 6. **Publicera**: `site/publicerat.html` innehåller bara godkända notiser, med källor och AI-märkning.
