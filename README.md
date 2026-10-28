@@ -88,6 +88,16 @@ avsändartjänst (Resend eller liknande) med egna SPF/DKIM-poster för en underd
 ## Källkontroll
 `kallkontroll.py` låter AI:n läsa varje nytt utkast en andra gång och spåra varje påstående till källmaterialet (rubriker och ingresser). Resultatet sparas i cachen och följer med notisen: i granskningsärendet som en rad per notis (⚠️ och anmärkningarna när något saknar stöd), och på sajten som märkningen "Källkontrollerad" när allt gick att spåra.
 
+## Autopiloten
+`autopilot.py` avgör vad som får publiceras utan redaktören. Grindarna (`grindar`, ren funktion med tester): källkontrollen har spårat
+alla påståenden, minst tre oberoende källor (kuraterade listor och statskontrollerade medier räknas inte) i minst två regioner, svenska
+nyheter minst två svenska källor, utkastet inte märkt osäkert, högst 20 källor och 3 sektioner, inga spärrord (brottmål, självmord,
+sexualbrott, barn) och ingen blind fläck. Det som klarar grindarna läggs i en kö med klockslag och visas förbockat i granskningsärendet under
+"Publiceras automatiskt": bocka ur för att stoppa. Efter 45 minuter godkänns notisen av sig själv, högst `tak` per dygn (två första veckan,
+sedan åtta). Inställningar i `data/autopilot.json` (`pa`, `tyst`, `tak`, `vetofonster_minuter`); `tyst` pausar all automatisk publicering
+och Instagram. Status i `data/autopilot_status.json`. Automatiskt publicerade notiser märks "Publicerad utan manuell granskning" på sajten,
+i Navigatorn och på Instagramkorten. Ångra: workflowen `angra.yml` med notisens id, eller `python autopilot.py angra <id>`.
+
 ## Instagram
 Två konton: **@newsnavigator.se** på svenska och **@news.navigator** på engelska. I dag gör `instagram.py` bara svenska kort
 och postar till ett konto (secrets `IG_USER_ID` och `IG_ACCESS_TOKEN`). Det engelska kontot kräver engelska kort och

@@ -291,6 +291,16 @@ def section_page(u, slug, events, sources, banner, noindex):
                   description=f"Granskade nyheter: {sv}.", updated=_latest(events), nsources=len(sources))
 
 
+def _ai_note(ev):
+    if ev.get("automatisk"):
+        return _both("Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns. "
+                     "Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till",
+                     "Summarised with the help of AI and source-checked. Published without manual review; corrections are visible. "
+                     "We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")
+    return _both("Sammanfattad med hjälp av AI och granskad av redaktionen. Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till",
+                 "Summarised with the help of AI and reviewed by the editors. We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")
+
+
 def story_page(u, ev, related, sources, banner, noindex):
     d = ev.get("utkast") or {}
     slug = section_of(ev)
@@ -304,7 +314,7 @@ def story_page(u, ev, related, sources, banner, noindex):
                 + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
     body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span></p>'
             f'{story_full(ev)}'
-            f'<p class="aiNote">{_both("Sammanfattad med hjälp av AI och granskad av redaktionen. Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till", "Summarised with the help of AI and reviewed by the editors. We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
+            f'<p class="aiNote">{_ai_note(ev)} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
     return _shell(u, title=f"{title_sv}, Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
                   description=desc_sv[:200], og={"type": "article", "title": title_sv, "description": desc_sv},
                   updated=ev.get("godkand_tid") or None, nsources=len(sources))

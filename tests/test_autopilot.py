@@ -1,0 +1,243 @@
+"""Fas 3: autopiloten. Grindarna som ren funktion, vetofönstret, taket, tyst läge, ångra och märkningen."""
+import json
+import time
+
+import pytest
+
+import autopilot
+import granskning_github
+import instagram
+import newsletter
+import sajt
+
+
+def kalla(namn, region="europa", typ="media", stat=False, rubrik="Train crash in Spain kills dozens"):
+    return {"namn": namn, "rubrik": rubrik, "url": f"https://example.org/{namn}", "betalvagg": False, "typ": typ,
+            "land": "XX", "region": region, "agare": "privat", "statskontrollerad": stat}
+
+
+def handelse(**andringar):
+    ev = {
+        "id": "abc1234567", "amnen": ["varlden"], "amnen_sektion": ["varlden"], "poang": 9.0, "antal_kallor": 3,
+        "reserv_rubrik": "Train crash in Spain",
+        "utkast": {"rubrik_sv": "Tågolycka i Spanien", "sammanfattning_sv": "Minst 60 döda enligt myndigheterna.",
+                   "rubrik_en": "Train crash in Spain", "sammanfattning_en": "At least 60 dead, authorities say.",
+                   "osaker": False},
+        "kallkontroll": {"ok": True, "antal": 5, "problem": []},
+        "perspektiv": {"regioner": ["europa", "usa"], "per_region": {"europa": [], "usa": []}, "blind_flack": None, "usa_blind": None},
+        "kallor": [kalla("BBC"), kalla("France 24"), kalla("NPR", "usa")],
+    }
+    ev.update(andringar)
+    return ev
+
+
+# ---------- Grindarna ----------
+
+def test_bra_notis_klarar_grindarna():
+    assert autopilot.grindar(handelse()) == []
+
+
+def test_kallkontroll_med_anmarkning_stoppar():
+    ev = handelse(kallkontroll={"ok": False, "antal": 5, "problem": ["x"]})
+    assert any("källkontroll" in s for s in autopilot.grindar(ev))
+    assert autopilot.grindar(handelse(kallkontroll=None))
+
+
+def test_osakert_utkast_stoppar():
+    ev = handelse(utkast={**handelse()["utkast"], "osaker": True})
+    assert any("osäker" in s for s in autopilot.grindar(ev))
+
+
+def test_minst_tre_oberoende_kallor_och_tva_regioner():
+    assert autopilot.grindar(handelse(kallor=[kalla("BBC"), kalla("NPR", "usa")]))
+    # Kuraterade listor och statskontrollerade medier räknas inte
+    kuraterat = handelse(kallor=[kalla("BBC"), kalla("NPR", "usa"), kalla("Techmeme", "usa", typ="kuraterat")])
+    assert autopilot.grindar(kuraterat)
+    stat = handelse(kallor=[kalla("BBC"), kalla("NPR", "usa"), kalla("RT", "europa", stat=True)])
+    assert autopilot.grindar(stat)
+    en_region = handelse(kallor=[kalla("BBC"), kalla("France 24"), kalla("DW")],
+                         perspektiv={"regioner": ["europa"], "blind_flack": None, "usa_blind": None})
+    assert any("region" in s for s in autopilot.grindar(en_region))
+
+
+def test_svensk_nyhet_kraver_tva_svenska_kallor():
+    ev = handelse(amnen_sektion=["sverige"], kallor=[kalla("SVT", "sverige"), kalla("BBC"), kalla("NPR", "usa")])
+    assert any("svenska" in s for s in autopilot.grindar(ev))
+    ok = handelse(amnen_sektion=["sverige"], kallor=[kalla("SVT", "sverige"), kalla("Ekot", "sverige"), kalla("NRK", "norden")])
+    assert autopilot.grindar(ok) == []
+
+
+def test_hopslagna_kluster_stoppar():
+    manga = handelse(kallor=[kalla(f"k{n}", ["europa", "usa"][n % 2]) for n in range(21)])
+    assert any("hopslagna" in s for s in autopilot.grindar(manga))
+    sektioner = handelse(amnen_sektion=["ai", "marknader", "sverige", "rymd"])
+    assert any("hopslagna" in s for s in autopilot.grindar(sektioner))
+
+
+@pytest.mark.parametrize("text", ["Man misstänkt för mord i Uppsala", "Rapport om självmord bland unga",
+                                  "Teenager charged after knife attack", "Children hurt in school bus crash"])
+def test_sparrlistan_stoppar(text):
+    ev = handelse(utkast={**handelse()["utkast"], "rubrik_sv": text, "rubrik_en": text})
+    assert any("spärrord" in s for s in autopilot.grindar(ev))
+
+
+def test_sparrlistan_laser_aven_kallornas_rubriker():
+    ev = handelse(kallor=[kalla("BBC", rubrik="Suspect arrested after train crash"), kalla("France 24"), kalla("NPR", "usa")])
+    assert any("spärrord" in s for s in autopilot.grindar(ev))
+
+
+def test_blinda_flackar_gar_alltid_till_redaktoren():
+    ev = handelse(perspektiv={"regioner": ["europa", "usa"], "blind_flack": "saknas_i_sverige", "usa_blind": None})
+    assert any("blind" in s for s in autopilot.grindar(ev))
+    ev = handelse(perspektiv={"regioner": ["europa", "usa"], "blind_flack": None, "usa_blind": "mest_bla"})
+    assert any("blind" in s for s in autopilot.grindar(ev))
+
+
+# ---------- Inställningar och tak ----------
+
+def test_installningar_standard_ar_avstangd(tmp_path):
+    s = autopilot.load_settings(tmp_path / "finns-inte.json")
+    assert s["pa"] is False and s["tyst"] is False and s["vetofonster_minuter"] == 45
+
+
+def test_taket_ar_tva_forsta_veckan_sedan_atta():
+    s = {"tak": 2, "tak_efter_forsta_veckan": 8}
+    start = 1_000_000.0
+    assert autopilot.effektivt_tak(s, {"startad": start}, start + 3 * 86400) == 2
+    assert autopilot.effektivt_tak(s, {"startad": start}, start + 8 * 86400) == 8
+    assert autopilot.effektivt_tak(s, {}, start) == 2
+
+
+# ---------- Vetofönstret ----------
+
+def kor(events, approved=(), s=None, status=None, now=1_000_000.0):
+    s = {**autopilot.load_settings(None), "pa": True, **(s or {})}
+    status = status if status is not None else autopilot.tom_status()
+    nya = autopilot.kor(events, set(approved), s, status, now)
+    return nya, status
+
+
+def test_avstangd_autopilot_gor_ingenting():
+    nya, status = kor([handelse()], s={"pa": False})
+    assert nya == set() and status["ko"] == {}
+
+
+def test_notis_som_klarar_grindarna_laggs_i_kon_med_klockslag():
+    nya, status = kor([handelse()])
+    assert nya == set()
+    assert status["ko"]["abc1234567"]["klar"] == 1_000_000.0 + 45 * 60
+    assert status["ko"]["abc1234567"]["rubrik"] == "Tågolycka i Spanien"
+
+
+def test_notis_publiceras_nar_fonstret_gatt_ut():
+    _, status = kor([handelse()])
+    nya, status = kor([handelse()], status=status, now=1_000_000.0 + 46 * 60)
+    assert nya == {"abc1234567"}
+    assert "abc1234567" not in status["ko"] and "abc1234567" in status["publicerade"]
+
+
+def test_notis_som_stoppats_kommer_inte_tillbaka():
+    _, status = kor([handelse()])
+    status["stoppade"]["abc1234567"] = 1_000_000.0
+    status["ko"].pop("abc1234567")
+    nya, status = kor([handelse()], status=status, now=1_000_000.0 + 60 * 60)
+    assert nya == set() and "abc1234567" not in status["ko"]
+
+
+def test_notis_som_lamnat_flodet_lamnar_kon():
+    _, status = kor([handelse()])
+    _, status = kor([handelse(id="annan12345")], status=status, now=1_000_000.0 + 60 * 60)
+    assert "abc1234567" not in status["ko"]
+
+
+def test_manuellt_godkand_notis_lamnar_kon():
+    _, status = kor([handelse()])
+    nya, status = kor([handelse()], approved={"abc1234567"}, status=status, now=1_000_000.0 + 60 * 60)
+    assert nya == set() and "abc1234567" not in status["ko"] and "abc1234567" not in status["publicerade"]
+
+
+def test_taket_per_dygn():
+    evs = [handelse(id=f"id{n}00000000"[:10]) for n in range(4)]
+    _, status = kor(evs)
+    nya, status = kor(evs, status=status, now=1_000_000.0 + 60 * 60)
+    assert len(nya) == 2 and len(status["ko"]) == 2
+    nya2, status = kor(evs, status=status, now=1_000_000.0 + 2 * 60 * 60)
+    assert nya2 == set()
+    nya3, status = kor(evs, status=status, now=1_000_000.0 + 25 * 60 * 60)
+    assert len(nya3) == 2
+
+
+def test_tyst_lage_publicerar_inget_men_samlar():
+    _, status = kor([handelse()])
+    nya, status = kor([handelse()], s={"tyst": True}, status=status, now=1_000_000.0 + 60 * 60)
+    assert nya == set() and "abc1234567" in status["ko"]
+
+
+# ---------- Granskningsärendet som vetofönster ----------
+
+def test_bock_i_kon_ar_inte_godkannande_och_urbockad_stoppar():
+    status = autopilot.tom_status()
+    status["ko"] = {"aaaaaaaaaa": {"klar": 1.0}, "bbbbbbbbbb": {"klar": 1.0}}
+    ticks = {"aaaaaaaaaa": True, "bbbbbbbbbb": False, "cccccccccc": True, "dddddddddd": False}
+    ok, added, removed = granskning_github.tillampa_bockar(ticks, {"dddddddddd"}, status)
+    assert ok == {"cccccccccc"}
+    assert added == {"cccccccccc"} and removed == {"dddddddddd"}
+    assert "aaaaaaaaaa" in status["ko"] and "bbbbbbbbbb" not in status["ko"]
+    assert "bbbbbbbbbb" in status["stoppade"] and "dddddddddd" in status["stoppade"]
+
+
+def test_arendet_visar_kon_med_klockslag():
+    status = autopilot.tom_status()
+    status["ko"]["abc1234567"] = {"klar": 1_000_000.0, "rubrik": "Tågolycka i Spanien", "tillagd": 999_000.0}
+    rad = granskning_github._ko_rad(handelse(), status["ko"]["abc1234567"])
+    assert rad.startswith("- [x] ") and "`abc1234567`" in rad and "bockar ur" in rad
+
+
+# ---------- Ångra ----------
+
+def test_angra_tar_bort_ur_godkanda_och_arkiv(tmp_path, monkeypatch):
+    godk, arkiv, status_fil = tmp_path / "godkanda.json", tmp_path / "arkiv.json", tmp_path / "status.json"
+    godk.write_text(json.dumps(["abc1234567", "x"]))
+    arkiv.write_text(json.dumps({"abc1234567": {"id": "abc1234567"}, "x": {"id": "x"}}))
+    monkeypatch.setattr(autopilot, "GODK", godk)
+    monkeypatch.setattr(autopilot, "ARKIV", arkiv)
+    monkeypatch.setattr(autopilot, "STATUS", status_fil)
+    monkeypatch.setattr(autopilot, "IG_STATE", tmp_path / "instagram.json")
+    autopilot.angra("abc1234567", now=5.0)
+    assert json.loads(godk.read_text()) == ["x"]
+    assert list(json.loads(arkiv.read_text())) == ["x"]
+    assert json.loads(status_fil.read_text())["stoppade"]["abc1234567"] == 5.0
+
+
+# ---------- Märkningen ----------
+
+def test_arkivet_marker_automatiska(tmp_path, monkeypatch):
+    monkeypatch.setattr(newsletter, "ARKIV", tmp_path / "arkiv.json")
+    arkiv = newsletter.archive([handelse(), handelse(id="manuell123")], {"abc1234567", "manuell123"}, automatic={"abc1234567"})
+    assert arkiv["abc1234567"]["automatisk"] is True and arkiv["manuell123"]["automatisk"] is False
+
+
+AUTO_SV = "Publicerad utan manuell granskning"
+
+
+def test_sajten_marker_automatiska():
+    auto = {**handelse(), "granskad": True, "godkand_tid": 1_000_000.0, "automatisk": True}
+    manuell = {**auto, "automatisk": False}
+    u = sajt.Urls(flat=True)
+    assert AUTO_SV in sajt.story_page(u, auto, [], [], "", True)
+    assert AUTO_SV not in sajt.story_page(u, manuell, [], [], "", True)
+    assert "granskad av redaktionen" in sajt.story_page(u, manuell, [], [], "", True)
+
+
+def test_navigatorn_marker_automatiska():
+    auto = {**handelse(), "granskad": True, "godkand_tid": 1_000_000.0, "automatisk": True}
+    html = newsletter._story(auto, "sv", True)
+    assert AUTO_SV in html
+    assert AUTO_SV not in newsletter._story({**auto, "automatisk": False}, "sv", True)
+
+
+def test_instagram_marker_automatiska():
+    auto = {**handelse(), "granskad": True, "godkand_tid": 1_000_000.0, "automatisk": True}
+    assert AUTO_SV in instagram.caption(auto)
+    assert AUTO_SV in instagram.slide_cover(auto, "28 oktober", False)
+    assert AUTO_SV not in instagram.caption({**auto, "automatisk": False})

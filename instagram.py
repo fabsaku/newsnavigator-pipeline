@@ -189,6 +189,14 @@ def _headline_block(x, who):
             f'<span class="who">{_e(who)}{stat}</span>')
 
 
+AI_GRANSKAD = "Sammanfattad med hjälp av AI och granskad av redaktionen."
+AI_AUTOMATISK = "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns."
+
+
+def _ai_line(ev):
+    return AI_AUTOMATISK if ev.get("automatisk") else AI_GRANSKAD
+
+
 def slide_cover(ev, date, more, banner=""):
     d = ev.get("utkast") or {}
     sec_sv = next((sv for k, sv, _, _ in SECTIONS if k == section_of(ev)), "Världen")
@@ -198,7 +206,7 @@ def slide_cover(ev, date, more, banner=""):
     swipe = '<p class="swipe">Svep: så ser världen på det</p>' if more else ""
     return (_top(date) + f'<p class="kicker">{_e(sec_sv)}</p><h1 style="font-size:{size}px">{_e(title)}</h1>'
             + (f'<p class="sum clamp" style="-webkit-line-clamp:{lines}">{_e(d["sammanfattning_sv"])}</p>' if d.get("sammanfattning_sv") else "")
-            + f'{_coverage(ev)}{_meta(ev)}<p class="ai">Sammanfattad med hjälp av AI och granskad av redaktionen.</p>'
+            + f'{_coverage(ev)}{_meta(ev)}<p class="ai">{_ai_line(ev)}</p>'
             f'<div class="grow"></div>{swipe}<div style="height:18px"></div>')
 
 
@@ -306,7 +314,7 @@ def caption(ev):
     parts += [f"Hela notisen med alla länkar: {SITE_URL}/n/{ev['id']}/", ""]
     if d.get("rubrik_en"):
         parts += ["In English: " + d["rubrik_en"], ""]
-    parts += ["Sammanfattad med hjälp av AI och granskad av redaktionen. Vi levererar nyheterna. Vad du gör av dem är upp till dig.", "",
+    parts += [_ai_line(ev) + " Vi levererar nyheterna. Vad du gör av dem är upp till dig.", "",
               f"#nyheter #newsnavigator {HASHTAGS.get(sec, '')} #sammanhang #källor".strip()]
     text = "\n".join(parts)
     return text[:2190]
@@ -411,6 +419,10 @@ def publish_one(sid, item, user, token):
 
 
 def posta(antal=1, hours=36):
+    import autopilot
+    if autopilot.load_settings().get("tyst"):
+        print("Instagram: tyst läge, inget postas")
+        return
     user, token = os.environ.get("IG_USER_ID"), os.environ.get("IG_ACCESS_TOKEN")
     state = load_state()
     since = time.time() - hours * 3600

@@ -664,6 +664,19 @@ def main():
         })
     events.sort(key=lambda e: e["poang"], reverse=True)
     vikt_mod.save_history(hist)
+
+    # Autopiloten: notiser som klarar grindarna köas med klockslag och godkänns när fönstret gått ut
+    import autopilot
+    auto_status = autopilot.load_status()
+    nya = autopilot.kor(events, approved, autopilot.load_settings(), auto_status)
+    autopilot.save_status(auto_status)
+    if nya:
+        approved |= nya
+        approved_path.write_text(json.dumps(sorted(approved), indent=2), encoding="utf-8")
+        print(f"Autopiloten: {len(nya)} godkända, {len(auto_status['ko'])} väntar i kön")
+    for e in events:
+        e["granskad"] = e["id"] in approved
+        e["autopilot"] = autopilot.grindar(e)
     if client:
         checked = [e["kallkontroll"] for e in events if e.get("kallkontroll")]
         flagged = sum(1 for k in checked if not k["ok"])
@@ -686,7 +699,7 @@ def main():
 
     from newsletter import archive
     from render import render
-    archive(events, approved)
+    archive(events, approved, automatic=autopilot.automatiska(auto_status))
     render(payload, ROOT / "site" / "index.html")
 
     ok = sum(1 for r in report if r["ok"])

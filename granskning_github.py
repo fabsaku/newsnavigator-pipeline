@@ -6,15 +6,19 @@
 
 Kräver GITHUB_TOKEN och GITHUB_REPOSITORY (finns automatiskt i GitHub Actions).
 En bock = godkänd. En borttagen bock = godkännandet ångras.
+Autopilotens kö visas förbockad med klockslag: bocken är inget godkännande, men en urbockad notis stoppas.
 """
 import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+import autopilot
 
 ROOT = Path(__file__).parent
 FLODE = ROOT / "data" / "flode.json"
@@ -50,17 +54,33 @@ def save_approved(ok):
     GODK.write_text(json.dumps(sorted(ok), indent=2))
 
 
+def tillampa_bockar(ticks, ok, status):
+    """Bockarna i ärendet mot godkända och autopilotens status. Returnerar (godkända, nya, ångrade).
+    En notis i autopilotens kö: bock = väntar kvar, urbockad = stoppad. En ångrad notis spärras för autopiloten."""
+    ko = status.setdefault("ko", {})
+    stoppade = status.setdefault("stoppade", {})
+    now = time.time()
+    for i, on in ticks.items():
+        if i in ko and not on:
+            ko.pop(i)
+            stoppade[i] = now
+    added = {i for i, on in ticks.items() if on and i not in ko} - ok
+    removed = {i for i, on in ticks.items() if not on} & ok
+    for i in removed:
+        stoppade[i] = now
+    return (ok | added) - removed, added, removed
+
+
 def read_ticks():
     issue = find_issue()
     if not issue:
         print("Inget granskningsärende än.")
         return
     ticks = {m.group(2): m.group(1).lower() == "x" for m in LINE.finditer(issue["body"] or "")}
-    ok = approved()
-    added = {i for i, on in ticks.items() if on} - ok
-    removed = {i for i, on in ticks.items() if not on} & ok
-    ok = (ok | added) - removed
+    status = autopilot.load_status()
+    ok, added, removed = tillampa_bockar(ticks, approved(), status)
     save_approved(ok)
+    autopilot.save_status(status)
     # Arkivera nya godkännanden direkt, och ta bort ångrade ur arkivet
     from newsletter import archive, load_archive
     if FLODE.exists():
@@ -110,20 +130,33 @@ def _item(ev, checked):
     return "\n".join(out)
 
 
+def _ko_rad(ev, post):
+    from zoneinfo import ZoneInfo
+    klar = datetime.fromtimestamp(post["klar"], ZoneInfo("Europe/Stockholm")).strftime("%H.%M")
+    return f"- [x] ⏱ publiceras {klar} om du inte bockar ur · {_item(ev, False)[6:]}"
+
+
 def update_issue():
     data = json.loads(FLODE.read_text(encoding="utf-8"))
     ok = approved()
-    todo = [e for e in data["handelser"] if e["id"] not in ok][:MAX]
+    status = autopilot.load_status()
+    ko = {i: p for i, p in status["ko"].items() if i not in ok}
+    todo = [e for e in data["handelser"] if e["id"] not in ok and e["id"] not in ko][:MAX]
+    vantar = [e for e in data["handelser"] if e["id"] in ko]
     done = [e for e in data["handelser"] if e["id"] in ok]
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     body = [MARK,
             "Bocka i de notiser som får publiceras. Sajten och Navigatorn uppdateras inom ett par minuter. "
             "Ta bort en bock för att ångra. Läs källorna innan du godkänner, särskilt notiser märkta OSÄKER.",
-            "", f"Uppdaterad {now} UTC · {len(todo)} att granska · {len(done)} godkända i flödet", "",
-            "### Att granska", ""]
+            "", f"Uppdaterad {now} UTC · {len(todo)} att granska · {len(vantar)} publiceras automatiskt · {len(done)} godkända i flödet", ""]
+    if vantar:
+        body += ["### Publiceras automatiskt", "Klarar grindarna. Bocka ur för att stoppa; bocken är inget godkännande.", ""]
+        body += [_ko_rad(e, ko[e["id"]]) for e in vantar] + [""]
+    body += ["### Att granska", ""]
     body += [_item(e, False) for e in todo] or ["Inget nytt att granska."]
     if done:
-        body += ["", "### Godkända", ""] + [_item(e, True) for e in done]
+        auto = autopilot.automatiska(status)
+        body += ["", "### Godkända", ""] + [_item(e, True) + ("\n  Publicerad automatiskt." if e["id"] in auto else "") for e in done]
     text = "\n".join(body)[:65000]
     issue = find_issue()
     if issue:

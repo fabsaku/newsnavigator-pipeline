@@ -52,7 +52,8 @@ TXT = {
            "varlden": "Så ser världen på det", "usa": "USA: blått och rött", "skiljer": "Källorna skiljer sig åt:", "kallor": "Källor",
            "betalvagg": "betalvägg", "stat": "statskontrollerat", "utkast": "UTKAST",
            "rad": "Redaktörens rad", "princip": "Vi levererar nyheterna. Vad du gör av dem är upp till dig.",
-           "ai": "Notiserna är skrivna med hjälp av AI utifrån källornas rubriker och ingresser och granskade av redaktionen innan utskick. Läs hela artiklarna hos källorna.",
+           "ai": "Notiserna är skrivna med hjälp av AI utifrån källornas rubriker och ingresser och granskade av redaktionen innan utskick, eller källkontrollerade och publicerade utan manuell granskning där det står så. Läs hela artiklarna hos källorna.",
+           "automatisk": "Publicerad utan manuell granskning, källkontrollerad",
            "avsluta": "Avsluta prenumerationen", "webben": "Läs på webben", "regioner": "regioner",
            "dagar": ["måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag", "söndag"],
            "manader": ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
@@ -61,7 +62,8 @@ TXT = {
            "varlden": "How the world sees it", "usa": "US: blue and red", "skiljer": "Sources differ:", "kallor": "Sources",
            "betalvagg": "paywall", "stat": "state-controlled", "utkast": "DRAFT",
            "rad": "Editor's note", "princip": "We deliver the news. What you make of it is up to you.",
-           "ai": "These briefs are written with the help of AI from the sources' headlines and standfirsts, and reviewed by the editors before sending. Read the full articles at the source.",
+           "ai": "These briefs are written with the help of AI from the sources' headlines and standfirsts, and reviewed by the editors before sending, or source-checked and published without manual review where marked. Read the full articles at the source.",
+           "automatisk": "Published without manual review, source-checked",
            "avsluta": "Unsubscribe", "webben": "Read on the web", "regioner": "regions",
            "dagar": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
            "manader": ["January", "February", "March", "April", "May", "June", "July", "August",
@@ -98,12 +100,13 @@ def load_archive():
         return {}
 
 
-def archive(events, approved):
-    """Sparar godkända notiser så att brevet kan byggas även när de fallit ur flödet."""
+def archive(events, approved, automatic=()):
+    """Sparar godkända notiser så att brevet kan byggas även när de fallit ur flödet.
+    `automatic` är id som autopiloten godkänt; de märks så att sajten, brevet och korten kan säga det."""
     arkiv, now = load_archive(), time.time()
     for ev in events:
         if ev["id"] in approved and ev["id"] not in arkiv:
-            arkiv[ev["id"]] = {**ev, "granskad": True, "godkand_tid": now}
+            arkiv[ev["id"]] = {**ev, "granskad": True, "godkand_tid": now, "automatisk": ev["id"] in automatic}
     limit = now - ARKIV_DAGAR * 86400
     arkiv = {k: v for k, v in arkiv.items() if v.get("godkand_tid", 0) >= limit}
     ARKIV.parent.mkdir(parents=True, exist_ok=True)
@@ -189,9 +192,11 @@ def _story(ev, lang, first):
     draft = "" if ev.get("granskad") else (
         f'<span style="font-family:{MONO};font-size:11px;letter-spacing:.08em;border:1px solid {FG};'
         f'padding:1px 5px;margin-right:6px">{t["utkast"]}</span>')
+    auto = (f'<p style="margin:-4px 0 10px 0;font-family:{SANS};font-size:12px;color:{MUTED}">{t["automatisk"]}.</p>'
+            if ev.get("automatisk") else "")
     rows = [f'<tr><td style="padding:{"4px" if first else "22px"} 0 0 0;border-top:{"0" if first else "1px solid " + RULE}">'
             f'<h2 style="margin:0 0 8px 0;padding-top:{"0" if first else "18px"};font-family:{SERIF};font-weight:600;'
-            f'font-size:22px;line-height:1.25;color:{FG}">{draft}{_e(title)}</h2>']
+            f'font-size:22px;line-height:1.25;color:{FG}">{draft}{_e(title)}</h2>{auto}']
     if summary:
         rows.append(f'<p style="margin:0 0 10px 0;font-family:{SANS};font-size:16px;line-height:1.55;color:{FG}">{_e(summary)}</p>')
     if persp and len(regs) >= 2:
