@@ -135,17 +135,18 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 ## Läget
 
-28 oktober 23.07 UTC: första notisen publicerad automatiskt (Bolsonaros avresa, id 832675689d), märkt på sajten, i Navigatorn, på Instagramkortet och i ärendet. Autopiloten påslagen med tak två per dygn; kön syns i granskningsärendet. Klockan startade pipelinen på egen hand 21.02 UTC, 13 sekunder efter cron. Ingen notis har godkänts, så sajten, Navigatorn och Instagram har inte publicerat något. 120 av 138 källor går att läsa. 45 tester gröna.
+29 oktober 10.00 UTC. Klockan: alla hela timmar sedan 28 oktober 21.02 UTC har körts, ingen mer än fem minuter sen (fas 2 klar tidigast 30 oktober 21.02 UTC). Autopiloten: två notiser publicerade automatiskt (Bolsonaros avresa 28 oktober 23.07, Brasiliens valmyndighet 29 oktober 06.02), en i kön, inga stoppade. Instagram byggde kort för båda men postade inget: `IG_USER_ID` och `IG_ACCESS_TOKEN` är tomma i repots secrets. 117 av 138 källor går att läsa. 75 tester gröna.
 
-Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk tid ("Newsnavigator: nattlig byggsession"), en fas per natt, i ordningen nedan. Den hoppar över faser som väntar på något under Du gör. Den stoppas eller ändras i Claude-appen under schemalagda uppgifter.
+Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk tid ("Newsnavigator: nattlig byggsession"), en fas per natt, i ordningen nedan. Den hoppar över faser som väntar på något under Du gör. Natten till 29 oktober gjorde den inget: den startade utan repo. Sedan dess körs den i den session som har repot. Den stoppas eller ändras i Claude-appen under schemalagda uppgifter.
 
 ## Du gör
 
-Det här kan bara du göra. Det som står överst spärrar nästa fas.
+Det här kan bara du göra. Det som står överst spärrar mest.
 
-1. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Kontrollera att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se.
-2. **Resend (fas 5).** Skapa ett Resend-konto, verifiera underdomänen för avsändaren, och lägg `RESEND_API_KEY` i repots secrets.
-3. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
+1. **Instagram, svenska kontot.** Lägg `IG_USER_ID` och `IG_ACCESS_TOKEN` för @newsnavigator.se i repots secrets (GitHub: Settings, Secrets and variables, Actions). Utan dem postas inget, trots att korten byggs varje morgon.
+2. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` för @news.navigator på samma ställe.
+3. **Resend (fas 5).** Skapa ett Resend-konto, verifiera underdomänen för avsändaren, och lägg `RESEND_API_KEY` i repots secrets.
+4. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
 
 ## Faser
 
