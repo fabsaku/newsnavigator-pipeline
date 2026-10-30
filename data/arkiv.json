@@ -547,30 +547,31 @@
   "amnen_sektion": [
    "marknader"
   ],
-  "poang": 26.1,
+  "poang": 29.8,
   "vikt": {
-   "bredd": 0.767,
+   "bredd": 1.107,
    "regioner": {
-    "europa": 3,
+    "europa": 4,
     "latinamerika": 2,
+    "norden": 1,
     "asien": 2,
     "sverige": 1,
     "usa": 1,
     "mellanostern": 1
    },
-   "timmar": 13,
+   "timmar": 14,
    "konsekvens": {
     "berorda": 4,
     "allvar": 3,
     "varaktighet": 3,
     "medel": 3.33,
-    "skal": "ECB:s ordförande lämnar tidigare än planerat, vilket ger en ledarskapsförändring i centralbanken för euroområdet men inga omedelbara kriser."
+    "skal": "ECB-chefen Lagarde lämnar sitt uppdrag nio månader före schemat, vilket påverkar ledningen av eurozonens penningpolitik men inte den löpande politiken direkt."
    },
    "bekraftad": false,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 10,
+  "antal_kallor": 12,
   "har_primarkalla": true,
   "senast": "2026-10-30T04:30:01+00:00",
   "utkast": {
@@ -713,6 +714,7 @@
     "europa",
     "latinamerika",
     "mellanostern",
+    "norden",
     "sverige",
     "usa"
    ],
@@ -728,8 +730,8 @@
      {
       "kalla": "Euractiv",
       "land": "BE",
-      "rubrik": "Lagarde to step down as ECB president",
-      "url": "https://www.rapporteur.com/news/lagarde-to-step-down-as-ecb-president/",
+      "rubrik": "Lagarde says early ECB exit ensures her ‘freedom of expression’",
+      "url": "https://www.rapporteur.com/news/lagarde-says-early-ecb-exit-ensures-her-freedom-of-expression/",
       "statskontrollerad": false
      },
      {
@@ -737,6 +739,13 @@
       "land": "DE",
       "rubrik": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
       "url": "https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353?maca=en-rss-en-all-1573-rdf",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Le Monde (English)",
+      "land": "FR",
+      "rubrik": "Christine Lagarde announces departure from ECB, wants 'freedom to engage' on matters other than monetary policy",
+      "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/at-the-ecb-christine-lagarde-announces-departure-saying-she-wants-freedom-to-engage-on-matters-that-are-not-monetary-policy-matters_6767059_19.html",
       "statskontrollerad": false
      }
     ],
@@ -753,6 +762,15 @@
       "land": "UY",
       "rubrik": "Christine Lagarde to step down early as European Central Bank president in February",
       "url": "https://en.mercopress.com/2026/10/29/christine-lagarde-to-step-down-early-as-european-central-bank-president-in-february?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+      "statskontrollerad": false
+     }
+    ],
+    "norden": [
+     {
+      "kalla": "DR Nyheder",
+      "land": "DK",
+      "rubrik": "Europæisk centralbank fastholder renten",
+      "url": "https://www.dr.dk/nyheder/seneste/europaeisk-centralbank-fastholder-renten",
       "statskontrollerad": false
      }
     ],
@@ -829,6 +847,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Euractiv",
+    "rubrik": "Lagarde says early ECB exit ensures her ‘freedom of expression’",
+    "url": "https://www.rapporteur.com/news/lagarde-says-early-ecb-exit-ensures-her-freedom-of-expression/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "MercoPress",
     "rubrik": "Christine Lagarde to step down early as European Central Bank president in February",
     "url": "https://en.mercopress.com/2026/10/29/christine-lagarde-to-step-down-early-as-european-central-bank-president-in-february?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
@@ -840,6 +869,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "DR Nyheder",
+    "rubrik": "Europæisk centralbank fastholder renten",
+    "url": "https://www.dr.dk/nyheder/seneste/europaeisk-centralbank-fastholder-renten",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DK",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The Hindu",
     "rubrik": "European Central Bank President Christine Lagarde will resign February 7, nine months early",
     "url": "https://www.thehindu.com/news/international/european-central-bank-president-christine-lagarde-will-resign-february-7-nine-months-early/article71640231.ece",
@@ -847,17 +887,6 @@
     "typ": "media",
     "land": "IN",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Euractiv",
-    "rubrik": "Lagarde to step down as ECB president",
-    "url": "https://www.rapporteur.com/news/lagarde-to-step-down-as-ecb-president/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "BE",
-    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -881,6 +910,17 @@
     "land": "SE",
     "region": "sverige",
     "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Le Monde (English)",
+    "rubrik": "Christine Lagarde announces departure from ECB, wants 'freedom to engage' on matters other than monetary policy",
+    "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/at-the-ecb-christine-lagarde-announces-departure-saying-she-wants-freedom-to-engage-on-matters-that-are-not-monetary-policy-matters_6767059_19.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -919,7 +959,7 @@
   ],
   "granskad": true,
   "autopilot": [
-   "källkontrollen har 2 anmärkningar"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": [
    {
@@ -948,7 +988,7 @@
   ],
   "godkand_tid": 1793318782.5111327,
   "automatisk": true,
-  "uppdaterad_tid": 1793376412.1601143
+  "uppdaterad_tid": 1793379924.0955896
  },
  "6bae3cb6aa": {
   "id": "6bae3cb6aa",
@@ -958,26 +998,25 @@
   "amnen_sektion": [
    "sverige"
   ],
-  "poang": 39.0,
+  "poang": 36.7,
   "vikt": {
-   "bredd": 1.359,
+   "bredd": 1.257,
    "regioner": {
     "europa": 5,
     "asien": 3,
     "mellanostern": 2,
-    "latinamerika": 1,
     "afrika": 1,
     "sverige": 1,
     "norden": 1,
-    "usa": 1
+    "usa": 2
    },
-   "timmar": 13,
+   "timmar": 12,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
-    "varaktighet": 5,
-    "medel": 5.0,
-    "skal": "Tågolycka i Spanien med 69 döda och människor från 27 nationer, med politiska konsekvenser och utredningar som sträcker sig över lång tid."
+    "varaktighet": 4,
+    "medel": 4.67,
+    "skal": "Ett dödligt tågolycka i Spanien med offer från 27 nationer, säkerhetsbrister och politisk press på transportministern."
    },
    "bekraftad": true,
    "maste": true
@@ -985,7 +1024,7 @@
   "maste": true,
   "antal_kallor": 15,
   "har_primarkalla": false,
-  "senast": "2026-10-30T15:48:05+00:00",
+  "senast": "2026-10-30T16:35:50+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -1222,7 +1261,6 @@
     "afrika",
     "asien",
     "europa",
-    "latinamerika",
     "mellanostern",
     "norden",
     "sverige",
@@ -1305,15 +1343,6 @@
       "statskontrollerad": true
      }
     ],
-    "latinamerika": [
-     {
-      "kalla": "El Tiempo",
-      "land": "CO",
-      "rubrik": "El empleado de Adif que ordenó reanudar la marcha del tren implicado en el accidente de Toledo, España, que dejó 69 muertos, se niega a declarar",
-      "url": "https://www.eltiempo.com/mundo/europa/el-empleado-de-adif-que-ordeno-reanudar-la-marcha-del-tren-implicado-en-el-accidente-de-toledo-espana-que-dejo-69-muertos-se-niega-a-declarar-3597395",
-      "statskontrollerad": false
-     }
-    ],
     "afrika": [
      {
       "kalla": "Africanews",
@@ -1347,6 +1376,13 @@
       "land": "US",
       "rubrik": "Spain reckons with 2nd deadly train crash of the year ahead of national election",
       "url": "https://www.npr.org/2026/10/29/nx-s1-6021963/spain-train-crash-updates",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Traffic Control Errors Caused Spain’s Deadly Train Crash, Official Says",
+      "url": "https://www.nytimes.com/2026/10/30/world/europe/spain-crash-contoller-errors.html",
       "statskontrollerad": false
      }
     ]
@@ -1410,17 +1446,6 @@
     "land": "QA",
     "region": "mellanostern",
     "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "El Tiempo",
-    "rubrik": "El empleado de Adif que ordenó reanudar la marcha del tren implicado en el accidente de Toledo, España, que dejó 69 muertos, se niega a declarar",
-    "url": "https://www.eltiempo.com/mundo/europa/el-empleado-de-adif-que-ordeno-reanudar-la-marcha-del-tren-implicado-en-el-accidente-de-toledo-espana-que-dejo-69-muertos-se-niega-a-declarar-3597395",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CO",
-    "region": "latinamerika",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -1490,6 +1515,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The New York Times",
+    "rubrik": "Traffic Control Errors Caused Spain’s Deadly Train Crash, Official Says",
+    "url": "https://www.nytimes.com/2026/10/30/world/europe/spain-crash-contoller-errors.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The National",
     "rubrik": "Train driver killed in Spanish rail crash had warned of impending disaster",
     "url": "https://www.thenationalnews.com/news/europe/2026/10/30/train-driver-killed-in-spanish-rail-crash-warned-of-impending-disaster/",
@@ -1530,7 +1566,7 @@
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1793376412.1601143
+  "uppdaterad_tid": 1793379924.0955896
  },
  "ab4217a652": {
   "id": "ab4217a652",
@@ -1538,32 +1574,33 @@
    "varlden"
   ],
   "amnen_sektion": [],
-  "poang": 32.8,
+  "poang": 35.7,
   "vikt": {
-   "bredd": 0.809,
+   "bredd": 0.756,
    "regioner": {
     "global": 1,
-    "asien": 3,
-    "europa": 2,
-    "sverige": 2,
+    "latinamerika": 1,
+    "sverige": 1,
     "afrika": 1,
+    "asien": 2,
+    "europa": 1,
     "usa": 1
    },
-   "timmar": 46,
+   "timmar": 41,
    "konsekvens": {
     "berorda": 3,
     "allvar": 5,
-    "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "Rysk drönarattack mot tågstationen i Dnipro dödar minst 13 civila, vilket gör den allvarlig trots begränsad varaktig påverkan utanför orten. Rubrikerna gäller även andra händelser, som Etiopien och Tj"
+    "varaktighet": 5,
+    "medel": 4.33,
+    "skal": "Ryskt drönarangrepp mot en tågstation i Ukraina dödar minst 13 till 14 människor, vilket rör liv och krig med oåterkalleliga följder för de drabbade."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 10,
+  "antal_kallor": 8,
   "har_primarkalla": true,
-  "senast": "2026-10-30T14:06:20+00:00",
+  "senast": "2026-10-30T16:20:07+00:00",
   "utkast": {
    "rubrik_sv": "Houthirörelsen uppger sex attacker mot flygplatser och oljeanläggningar i Saudiarabien",
    "sammanfattning_sv": "Houthirörelsen uppger enligt talesperson Yahya Saree att den genomfört sex attacker mot flygplatser, oljeanläggningar och ett militärt högkvarter i Saudiarabien. Enligt Saree avfyrades ballistiska robotar mot raffinaderierna i Ras Tanura och Rabigh.",
@@ -1664,6 +1701,7 @@
     "asien",
     "europa",
     "global",
+    "latinamerika",
     "sverige",
     "usa"
    ],
@@ -1677,19 +1715,39 @@
       "statskontrollerad": false
      }
     ],
-    "asien": [
+    "latinamerika": [
      {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "Strikes on camp in Ethiopia kill at least 15, sources say",
-      "url": "https://www.straitstimes.com/world/strikes-on-camp-in-ethiopia-kill-at-least-15-sources-say",
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "La mujer que sobrevivió a dos choques de trenes en España: su historia se conoció tras la tragedia de Toledo, que dejó al menos 69 muertos",
+      "url": "https://www.eltiempo.com/mundo/europa/la-mujer-que-sobrevivio-a-dos-choques-de-trenes-en-espana-su-historia-se-conocio-tras-la-tragedia-de-toledo-que-dejo-al-menos-69-muertos-3597470",
       "statskontrollerad": false
-     },
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
+      "url": "https://www.sverigesradio.se/artikel/9331211",
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "Ukraine: Russian strike kills two teenage girls in Chernihiv",
+      "url": "http://www.africanews.com/2026/10/30/ukraine-russian-strike-kills-two-teenage-girls-in-chernihiv/",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
      {
       "kalla": "The Hindu",
       "land": "IN",
-      "rubrik": "Drone strikes kill 14, including children, in Ethiopia's Amhara: witnesses",
-      "url": "https://www.thehindu.com/news/international/drone-strikes-kill-14-including-children-in-ethiopias-amhara-witnesses/article71644622.ece",
+      "rubrik": "Ukraine says at least 13 killed in Russian attack on train station",
+      "url": "https://www.thehindu.com/news/international/ukraine-says-at-least-13-killed-in-russian-attack-on-train-station/article71641924.ece",
       "statskontrollerad": false
      },
      {
@@ -1702,42 +1760,10 @@
     ],
     "europa": [
      {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "At least 60 Christians killed in Ethiopia amid rising religious violence",
-      "url": "https://www.france24.com/en/video/20261030-at-least-60-christians-killed-in-ethiopia-amid-rising-religious-violence",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "BBC World",
       "land": "GB",
       "rubrik": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
       "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
-      "statskontrollerad": false
-     }
-    ],
-    "sverige": [
-     {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
-      "url": "https://www.sverigesradio.se/artikel/9331211",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens Nyheter",
-      "land": "SE",
-      "rubrik": "Rysk drönare slog ned på perrong – tiotal döda",
-      "url": "https://www.dn.se/varlden/rysk-dronare-slog-ned-pa-perrong-tiotal-doda/",
-      "statskontrollerad": false
-     }
-    ],
-    "afrika": [
-     {
-      "kalla": "Africanews",
-      "land": "CG",
-      "rubrik": "Ukraine: Russian strike kills two teenage girls in Chernihiv",
-      "url": "http://www.africanews.com/2026/10/30/ukraine-russian-strike-kills-two-teenage-girls-in-chernihiv/",
       "statskontrollerad": false
      }
     ],
@@ -1769,35 +1795,13 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Straits Times",
-    "rubrik": "Strikes on camp in Ethiopia kill at least 15, sources say",
-    "url": "https://www.straitstimes.com/world/strikes-on-camp-in-ethiopia-kill-at-least-15-sources-say",
+    "namn": "El Tiempo",
+    "rubrik": "La mujer que sobrevivió a dos choques de trenes en España: su historia se conoció tras la tragedia de Toledo, que dejó al menos 69 muertos",
+    "url": "https://www.eltiempo.com/mundo/europa/la-mujer-que-sobrevivio-a-dos-choques-de-trenes-en-espana-su-historia-se-conocio-tras-la-tragedia-de-toledo-que-dejo-al-menos-69-muertos-3597470",
     "betalvagg": false,
     "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "France 24",
-    "rubrik": "At least 60 Christians killed in Ethiopia amid rising religious violence",
-    "url": "https://www.france24.com/en/video/20261030-at-least-60-christians-killed-in-ethiopia-amid-rising-religious-violence",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Drone strikes kill 14, including children, in Ethiopia's Amhara: witnesses",
-    "url": "https://www.thehindu.com/news/international/drone-strikes-kill-14-including-children-in-ethiopias-amhara-witnesses/article71644622.ece",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
+    "land": "CO",
+    "region": "latinamerika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -1820,6 +1824,17 @@
     "typ": "media",
     "land": "CG",
     "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Ukraine says at least 13 killed in Russian attack on train station",
+    "url": "https://www.thehindu.com/news/international/ukraine-says-at-least-13-killed-in-russian-attack-on-train-station/article71641924.ece",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -1855,27 +1870,13 @@
     "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens Nyheter",
-    "rubrik": "Rysk drönare slog ned på perrong – tiotal döda",
-    "url": "https://www.dn.se/varlden/rysk-dronare-slog-ned-pa-perrong-tiotal-doda/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
    }
   ],
   "granskad": true,
-  "autopilot": [
-   "källkontrollen har 1 anmärkningar",
-   "spärrord: children"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1793347618.1959112,
   "automatisk": false,
-  "uppdaterad_tid": 1793372832.9819047
+  "uppdaterad_tid": 1793379924.0955896
  }
 }
