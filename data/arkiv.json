@@ -1721,32 +1721,34 @@
  },
  "ab4217a652": {
   "id": "ab4217a652",
-  "amnen": [
-   "varlden"
-  ],
+  "amnen": [],
   "amnen_sektion": [],
-  "poang": 31.5,
+  "poang": 33.9,
   "vikt": {
-   "bredd": 0.229,
+   "bredd": 0.801,
    "regioner": {
-    "sverige": 1,
-    "afrika": 1
+    "global": 1,
+    "asien": 3,
+    "europa": 2,
+    "sverige": 2,
+    "afrika": 1,
+    "usa": 1
    },
-   "timmar": 41,
+   "timmar": 24,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 3,
     "allvar": 5,
     "varaktighet": 5,
-    "medel": 4.67,
-    "skal": "Rubrikerna beskriver två olika händelser i kriget mellan Ukraina och Ryssland, ett dödligt anfall mot tonåringar i Tjernihiv och ukrainska drönarattacker djupt in i Ryssland; båda innebär liv på spel "
+    "medel": 4.33,
+    "skal": "Ryska drönarattacker mot Ukraina dödar och skadar många civila, bland annat vid tågstationen i Dnipro, vilket innebär dödsoffer i krig."
    },
    "bekraftad": true,
-   "maste": false
+   "maste": true
   },
-  "maste": false,
-  "antal_kallor": 2,
-  "har_primarkalla": false,
-  "senast": "2026-10-30T05:10:00+00:00",
+  "maste": true,
+  "antal_kallor": 10,
+  "har_primarkalla": true,
+  "senast": "2026-10-30T10:34:38+00:00",
   "utkast": {
    "rubrik_sv": "Houthirörelsen uppger sex attacker mot flygplatser och oljeanläggningar i Saudiarabien",
    "sammanfattning_sv": "Houthirörelsen uppger enligt talesperson Yahya Saree att den genomfört sex attacker mot flygplatser, oljeanläggningar och ett militärt högkvarter i Saudiarabien. Enligt Saree avfyrades ballistiska robotar mot raffinaderierna i Ras Tanura och Rabigh.",
@@ -1844,15 +1846,74 @@
   "perspektiv": {
    "regioner": [
     "afrika",
-    "sverige"
+    "asien",
+    "europa",
+    "global",
+    "sverige",
+    "usa"
    ],
    "per_region": {
+    "global": [
+     {
+      "kalla": "UN News",
+      "land": "INT",
+      "rubrik": "Russia drone strike on Ukrainian railway station kills 13",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168702",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Drone strikes kill 14, including children, in Ethiopia's Amhara: witnesses",
+      "url": "https://www.thehindu.com/news/international/drone-strikes-kill-14-including-children-in-ethiopias-amhara-witnesses/article71644622.ece",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "One dead in Russian missile attack on Kyiv, Ukrainian officials say",
+      "url": "https://www.straitstimes.com/world/europe/one-dead-in-russian-missile-attack-on-kyiv-ukrainian-officials-say",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Ukraine says at least 13 killed in Russian drone attack on Dnipro train station",
+      "url": "https://www.hindustantimes.com/world-news/ukraine-says-at-least-13-killed-in-russian-drone-attack-on-dnipro-train-station-101793271754944.html",
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "The Kyiv Independent",
+      "land": "UA",
+      "rubrik": "Russian attacks across Ukraine kill 27, injure 127 over past day as 'horrific attack' strikes Dnipro train station",
+      "url": "https://kyivindependent.com/russian-attacks-across-ukraine-kill-27-injure-128-over-past-day-as-horrific-attack-strikes-dnipro-train-station/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+      "statskontrollerad": false
+     }
+    ],
     "sverige": [
      {
       "kalla": "Sveriges Radio Ekot",
       "land": "SE",
       "rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
       "url": "https://www.sverigesradio.se/artikel/9331211",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Rysk drönare slog ned på perrong – tiotal döda",
+      "url": "https://www.dn.se/varlden/rysk-dronare-slog-ned-pa-perrong-tiotal-doda/",
       "statskontrollerad": false
      }
     ],
@@ -1864,14 +1925,56 @@
       "url": "http://www.africanews.com/2026/10/30/ukraine-russian-strike-kills-two-teenage-girls-in-chernihiv/",
       "statskontrollerad": false
      }
+    ],
+    "usa": [
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Russian Strike on Ukrainian Train Station Kills 14",
+      "url": "https://www.nytimes.com/2026/10/29/world/europe/ukraine-dnipro-train-russia.html",
+      "statskontrollerad": false
+     }
     ]
    },
    "blind_flack": null,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
+  "reserv_rubrik": "Russia drone strike on Ukrainian railway station kills 13",
   "kallor": [
+   {
+    "namn": "UN News",
+    "rubrik": "Russia drone strike on Ukrainian railway station kills 13",
+    "url": "https://news.un.org/feed/view/en/story/2026/10/1168702",
+    "betalvagg": false,
+    "typ": "primar",
+    "land": "INT",
+    "region": "global",
+    "agare": "organisation",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Drone strikes kill 14, including children, in Ethiopia's Amhara: witnesses",
+    "url": "https://www.thehindu.com/news/international/drone-strikes-kill-14-including-children-in-ethiopias-amhara-witnesses/article71644622.ece",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Kyiv Independent",
+    "rubrik": "Russian attacks across Ukraine kill 27, injure 127 over past day as 'horrific attack' strikes Dnipro train station",
+    "url": "https://kyivindependent.com/russian-attacks-across-ukraine-kill-27-injure-128-over-past-day-as-horrific-attack-strikes-dnipro-train-station/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "UA",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Sveriges Radio Ekot",
     "rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
@@ -1893,15 +1996,70 @@
     "region": "afrika",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "One dead in Russian missile attack on Kyiv, Ukrainian officials say",
+    "url": "https://www.straitstimes.com/world/europe/one-dead-in-russian-missile-attack-on-kyiv-ukrainian-officials-say",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "BBC World",
+    "rubrik": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+    "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "Ukraine says at least 13 killed in Russian drone attack on Dnipro train station",
+    "url": "https://www.hindustantimes.com/world-news/ukraine-says-at-least-13-killed-in-russian-drone-attack-on-dnipro-train-station-101793271754944.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Russian Strike on Ukrainian Train Station Kills 14",
+    "url": "https://www.nytimes.com/2026/10/29/world/europe/ukraine-dnipro-train-russia.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens Nyheter",
+    "rubrik": "Rysk drönare slog ned på perrong – tiotal döda",
+    "url": "https://www.dn.se/varlden/rysk-dronare-slog-ned-pa-perrong-tiotal-doda/",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "autopilot": [
-   "färre än tre oberoende källor (2)"
+   "spärrord: children"
   ],
   "data": null,
   "godkand_tid": 1793347618.1959112,
   "automatisk": false,
-  "uppdaterad_tid": 1793357768.6883147
+  "uppdaterad_tid": 1793358385.0894172
  }
 }
