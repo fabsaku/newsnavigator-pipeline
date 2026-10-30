@@ -676,32 +676,33 @@
   "amnen_sektion": [
    "marknader"
   ],
-  "poang": 29.5,
+  "poang": 33.5,
   "vikt": {
-   "bredd": 0.829,
+   "bredd": 1.089,
    "regioner": {
-    "europa": 6,
+    "europa": 5,
     "asien": 3,
     "latinamerika": 1,
+    "norden": 1,
     "sverige": 1,
     "usa": 1,
     "mellanostern": 1
    },
-   "timmar": 20,
+   "timmar": 22,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 4,
+    "allvar": 3,
     "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "ECB:s ordförande Christine Lagarde lämnar sin post nio månader före schema, vilket påverkar penningpolitiken i euroområdet men inte omedelbart förändrar den."
+    "medel": 3.33,
+    "skal": "ECB-presidenten Lagarde lämnar sin post nio månader före utsatt tid, vilket påverkar eurozonens penningpolitiska ledning men inte direkt de flesta människors vardag."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": true
   },
   "maste": true,
   "antal_kallor": 13,
   "har_primarkalla": true,
-  "senast": "2026-10-30T01:47:36+00:00",
+  "senast": "2026-10-30T01:47:32+00:00",
   "utkast": {
    "rubrik_sv": "Christine Lagarde avgår som ECB-chef i förtid, från 7 februari 2027",
    "sammanfattning_sv": "Europeiska centralbanken (ECB) meddelade torsdagen att Christine Lagarde lämnar posten som ordförande den 7 februari 2027, nästan nio månader före ordinarie mandatperiods slut i oktober. Enligt Europeiska rådets ordförande Antonio Costa har arbetet med att hitta en efterträdare inletts.",
@@ -842,6 +843,7 @@
     "europa",
     "latinamerika",
     "mellanostern",
+    "norden",
     "sverige",
     "usa"
    ],
@@ -862,17 +864,10 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
-      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "Euractiv",
       "land": "BE",
-      "rubrik": "Lagarde to step down as ECB president",
-      "url": "https://www.rapporteur.com/news/lagarde-to-step-down-as-ecb-president/",
+      "rubrik": "Lagarde says early ECB exit ensures her ‘freedom of expression’",
+      "url": "https://www.rapporteur.com/news/lagarde-says-early-ecb-exit-ensures-her-freedom-of-expression/",
       "statskontrollerad": false
      },
      {
@@ -885,17 +880,17 @@
      {
       "kalla": "Le Monde (English)",
       "land": "FR",
-      "rubrik": "At the ECB, Christine Lagarde announces departure, saying she wants 'freedom to engage on matters that are not monetary policy matters'",
+      "rubrik": "Christine Lagarde announces departure from ECB, wants 'freedom to engage' on matters other than monetary policy",
       "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/at-the-ecb-christine-lagarde-announces-departure-saying-she-wants-freedom-to-engage-on-matters-that-are-not-monetary-policy-matters_6767059_19.html",
       "statskontrollerad": false
      }
     ],
     "asien": [
      {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "ECB’s Lagarde steps down, saying she can’t remain neutral on world events",
-      "url": "https://www.japantimes.co.jp/business/2026/10/30/economy/ecb-lagarde-resignation/",
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "ECB's Lagarde resigns early so she can speak freely on topics beyond monetary policy",
+      "url": "https://www.straitstimes.com/world/europe/ecbs-lagarde-resigns-early-so-she-can-speak-freely-on-topics-beyond-monetary-policy",
       "statskontrollerad": false
      },
      {
@@ -919,6 +914,15 @@
       "land": "UY",
       "rubrik": "Christine Lagarde to step down early as European Central Bank president in February",
       "url": "https://en.mercopress.com/2026/10/29/christine-lagarde-to-step-down-early-as-european-central-bank-president-in-february?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+      "statskontrollerad": false
+     }
+    ],
+    "norden": [
+     {
+      "kalla": "DR Nyheder",
+      "land": "DK",
+      "rubrik": "Europæisk centralbank fastholder renten",
+      "url": "https://www.dr.dk/nyheder/seneste/europaeisk-centralbank-fastholder-renten",
       "statskontrollerad": false
      }
     ],
@@ -968,17 +972,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Japan Times",
-    "rubrik": "ECB’s Lagarde steps down, saying she can’t remain neutral on world events",
-    "url": "https://www.japantimes.co.jp/business/2026/10/30/economy/ecb-lagarde-resignation/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "JP",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "France 24",
     "rubrik": "ECB President Lagarde steps down in order to speak out",
     "url": "https://www.france24.com/en/tv-shows/business/20261029-ecb-president-lagarde-steps-down-in-order-to-speak-out",
@@ -990,13 +983,24 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Guardian",
-    "rubrik": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
-    "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+    "namn": "Euractiv",
+    "rubrik": "Lagarde says early ECB exit ensures her ‘freedom of expression’",
+    "url": "https://www.rapporteur.com/news/lagarde-says-early-ecb-exit-ensures-her-freedom-of-expression/",
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
+    "land": "BE",
     "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "ECB's Lagarde resigns early so she can speak freely on topics beyond monetary policy",
+    "url": "https://www.straitstimes.com/world/europe/ecbs-lagarde-resigns-early-so-she-can-speak-freely-on-topics-beyond-monetary-policy",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -1012,6 +1016,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "DR Nyheder",
+    "rubrik": "Europæisk centralbank fastholder renten",
+    "url": "https://www.dr.dk/nyheder/seneste/europaeisk-centralbank-fastholder-renten",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DK",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The Hindu",
     "rubrik": "European Central Bank President Christine Lagarde will resign February 7, nine months early",
     "url": "https://www.thehindu.com/news/international/european-central-bank-president-christine-lagarde-will-resign-february-7-nine-months-early/article71640231.ece",
@@ -1019,17 +1034,6 @@
     "typ": "media",
     "land": "IN",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Euractiv",
-    "rubrik": "Lagarde to step down as ECB president",
-    "url": "https://www.rapporteur.com/news/lagarde-to-step-down-as-ecb-president/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "BE",
-    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -1057,7 +1061,7 @@
    },
    {
     "namn": "Le Monde (English)",
-    "rubrik": "At the ECB, Christine Lagarde announces departure, saying she wants 'freedom to engage on matters that are not monetary policy matters'",
+    "rubrik": "Christine Lagarde announces departure from ECB, wants 'freedom to engage' on matters other than monetary policy",
     "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/at-the-ecb-christine-lagarde-announces-departure-saying-she-wants-freedom-to-engage-on-matters-that-are-not-monetary-policy-matters_6767059_19.html",
     "betalvagg": true,
     "typ": "media",
@@ -1101,9 +1105,7 @@
    }
   ],
   "granskad": true,
-  "autopilot": [
-   "källkontrollen har 1 anmärkningar"
-  ],
+  "autopilot": [],
   "data": [
    {
     "id": "ecb_ranta",
@@ -1131,321 +1133,289 @@
   ],
   "godkand_tid": 1793318782.5111327,
   "automatisk": true,
-  "uppdaterad_tid": 1793336847.8487394
+  "uppdaterad_tid": 1793344000.1921382
  },
- "0a6779166f": {
-  "id": "0a6779166f",
+ "6bae3cb6aa": {
+  "id": "6bae3cb6aa",
   "amnen": [
-   "geopolitik"
+   "varlden"
   ],
-  "amnen_sektion": [
-   "geopolitik"
-  ],
-  "poang": 38.4,
+  "amnen_sektion": [],
+  "poang": 30.9,
   "vikt": {
-   "bredd": 1.062,
+   "bredd": 0.286,
    "regioner": {
-    "global": 1,
-    "sverige": 2,
     "afrika": 1,
-    "asien": 3,
-    "europa": 5,
-    "latinamerika": 1,
-    "usa": 1
+    "mellanostern": 1
    },
-   "timmar": 37,
+   "timmar": 31,
    "konsekvens": {
-    "berorda": 3,
+    "berorda": 4,
     "allvar": 5,
     "varaktighet": 5,
-    "medel": 4.33,
-    "skal": "En rysk attack mot en tågstation i Dnipro dödar minst 13–14 människor, vilket är förlust av liv i ett pågående krig."
+    "medel": 4.67,
+    "skal": "Tågolyckan i Spanien har dödat 69 människor, vilket innebär oåterkalleliga förluster för många familjer och en nationell sorg."
    },
    "bekraftad": true,
-   "maste": true
+   "maste": false
   },
-  "maste": true,
-  "antal_kallor": 14,
-  "har_primarkalla": true,
-  "senast": "2026-10-30T05:10:00+00:00",
+  "maste": false,
+  "antal_kallor": 2,
+  "har_primarkalla": false,
+  "senast": "2026-10-29T10:32:33+00:00",
   "utkast": {
-   "rubrik_sv": "Minst 13 döda i rysk drönarattack mot tågstation i Dnipro",
-   "sammanfattning_sv": "En rysk drönare träffade en perrong vid järnvägsstationen i Dnipro, Ukraina, enligt lokala myndigheter. Minst 13 personer dog enligt flera källor, medan andra uppger 14, och fler skadades.",
-   "rubrik_en": "At least 13 killed in Russian drone attack on Dnipro train station",
-   "sammanfattning_en": "A Russian drone hit a platform at the railway station in Dnipro, Ukraine, according to Ukrainian officials. At least 13 people died according to several sources, while others report 14, and more were injured.",
-   "oenighet": "Dödstalet uppges till 13 av UN, The Hindu, Hindustan Times, Meduza och El País, och till 14 av Deutsche Welle, BBC och The New York Times. Uppgifterna om antalet skadade skiljer sig också: Hindustan Times uppger fem skadade, El País minst tio och BBC minst 14.",
-   "oenighet_en": "The death toll is given as 13 by UN, The Hindu, Hindustan Times, Meduza and El País, and as 14 by Deutsche Welle, BBC and The New York Times. The figures for injured also differ: Hindustan Times reports five injured, El País at least ten, and BBC at least 14.",
-   "perspektiv_sv": "Rubrikerna är i stort sett likartade. The Hindu och Deutsche Welle lyfter fram Ukrainas president Zelenskyjs reaktion och kallar attacken fruktansvärd, medan Meduza (Lettland) lyfter fram uppgiften från chefen för den regionala militärförvaltningen. Dagens Nyheter (Sverige) anger i rubriken endast att det är tiotal döda.",
-   "perspektiv_en": "The headlines are largely similar. The Hindu and Deutsche Welle highlight the reaction of Ukrainian President Zelenskyy, who called the attack horrific, while Meduza (Latvia) highlights information from the head of the regional military administration. Dagens Nyheter (Sweden) only states in its headline that there were a dozen dead.",
+   "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
+   "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
+   "rubrik_en": "Spain train crash leaves at least 69 dead near Toledo",
+   "sammanfattning_en": "At least 69 people have died after a high-speed train hit the back of a stationary train near Toledo, Spain, on Wednesday, according to several outlets. Spain has begun three days of mourning, and search and rescue work in the wreckage continues.",
+   "oenighet": "Dödstalet skiljer sig: The Hindu och Tehran Times anger 68, medan bland andra Le Monde, The Guardian och Sveriges Radio Ekot anger 69. Om orsaken skiljer sig bedömningarna. Järnvägsforskaren Oskar Fröidh säger till SVT att ett mänskligt misstag var avgörande för olyckan. Expertkonsulten Francisco Badea ifrågasätter i France 24 förklaringar som reducerar olyckan till isolerade mänskliga misstag. The New York Times skriver att Spanien frågar sig om järnvägssystemet är för gammalt och känsligt för mänskliga fel. El País rapporterar att järnvägsbranschen kräver att ingen pekas ut innan orsakerna är kända och pekar på bristande investeringar och personal.",
+   "oenighet_en": "The death toll differs: The Hindu and Tehran Times report 68, while others, including Le Monde, The Guardian and Sveriges Radio Ekot, report 69. The assessments of the cause also differ. Railway researcher Oskar Fröidh tells SVT that a human mistake was decisive for the crash. Expert Francisco Badea challenges explanations in France 24 that reduce the crash to isolated human mistakes. The New York Times writes that Spain is asking whether its railway system is too old and prone to human error. El País reports that the rail industry asks that no one be blamed until the causes are known and points to a lack of investment and staff.",
+   "perspektiv_sv": "Rubrikerna skiljer sig åt i vad de lyfter fram. Spanska källor (El País och El País América) lyfter inspelningar av kommunikationen med tågledningen, där föraren enligt El País América varnat för att tåget inte kunde röra sig, samt järnvägsbranschens kritik. Brittiska och franska källor (BBC, The Guardian, France 24) lyfter offer, sorg, sökarbete och expertbedömningar av orsakerna. Kinesiska statskontrollerade medier (CGTN) lyfter enligt en första preliminär rapport att tåget hade en uppskattad hastighet på 160 till 200 km/h vid kollisionen. Iranska statskontrollerade medier (Tehran Times) lyfter dödstalet och att olyckan enligt myndigheterna är en av Europas dödligaste av detta slag under detta århundrade.",
+   "perspektiv_en": "The headlines differ in what they highlight. Spanish sources (El País and El País América) highlight recordings of communication with the rail control center, where according to El País América the driver had warned that the train could not move, and criticism from the rail industry. British and French sources (BBC, The Guardian, France 24) highlight victims, grief, the search work and expert assessments of the causes. Chinese state-controlled media (CGTN) highlight, according to a first preliminary report, an estimated speed of 160 to 200 km/h at impact. Iranian state-controlled media (Tehran Times) highlight the death toll and state that, according to authorities, the crash is one of Europe's deadliest of this kind this century.",
    "usa_sv": null,
    "usa_en": null,
    "osaker": false,
-   "kommentar": "Dödstalet skiljer sig mellan källorna (13 respektive 14), och rubriken anger därför minst 13. Notisen omfattar bara attacken i Dnipro. Övriga händelser i materialet, bland annat attacken mot Kyiv, attacken mot Tjernihiv, vapenvilan vid Oleshky och uppgiften från Ekot om att Ukraina pausat attackerna mot ryska oljeraffinaderier, ingår inte och kan behöva egna notiser."
+   "kommentar": "Dödstalet varierar mellan 68 och 69 i källmaterialet, och sammanfattningen anger därför minst 69 med tillskrivning. Hastighetsuppgiften kommer bara från CGTN och bygger på en preliminär rapport, så den är inte bekräftad av övriga källor. Källorna om orsaken är en blandning av experter, branschröster och nyhetsrapportering, och de presenteras i oenighet utan att någon bedömning görs. Flera källor (NRK, Straits Times, Hindustan Times, Africanews, Hindustan Times) innehåller främst rubrik eller ingress utan närmare sakuppgifter. Endast en amerikansk källa (NYT, AllSides: lutar vänster) finns med, så usa-fältet lämnas tomt."
   },
   "kallkontroll": {
-   "ok": true,
-   "antal": 15,
-   "problem": [],
+   "ok": false,
+   "antal": 26,
+   "problem": [
+    "saknar stöd: El País lyfter inspelningar av kommunikationen med tågledningen",
+    "saknar stöd: France 24 lyfter offer och sorg",
+    "saknar stöd: BBC, The Guardian och France 24 lyfter expertbedömningar av orsakerna",
+    "fel tillskrivning: Enligt myndigheterna är olyckan en av Europas dödligaste av detta slag under detta århundrade"
+   ],
    "pastaenden": [
     {
-     "text": "Rysk drönare attackerade tågstation i Dnipro",
+     "text": "Minst 69 personer har dött i olyckan",
      "stod": [
       1,
-      5,
-      10,
-      11,
-      12
-     ],
-     "problem": null
-    },
-    {
-     "text": "Drönaren träffade en perrong vid stationen",
-     "stod": [
-      10,
-      11
-     ],
-     "problem": null
-    },
-    {
-     "text": "Uppgifterna kommer från lokala myndigheter",
-     "stod": [
-      5,
-      11,
-      12
-     ],
-     "problem": null
-    },
-    {
-     "text": "Minst 13 personer dog",
-     "stod": [
-      1,
-      5,
-      11,
-      12
-     ],
-     "problem": null
-    },
-    {
-     "text": "Vissa källor uppger 14 döda",
-     "stod": [
+      4,
+      6,
       9,
-      10,
+      15
+     ],
+     "problem": null
+    },
+    {
+     "text": "Ett höghastighetståg kolliderade med ett stillastående tåg nära Toledo",
+     "stod": [
+      16,
       13
      ],
      "problem": null
     },
     {
-     "text": "Fler personer skadades",
+     "text": "Olyckan inträffade på onsdagen",
+     "stod": [
+      3,
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "Dödstalet på minst 69 rapporteras av flera medier",
      "stod": [
       1,
-      8,
+      4,
+      6,
       9,
+      15
+     ],
+     "problem": null
+    },
+    {
+     "text": "Spanien har inlett tre dagars sorgeperiod",
+     "stod": [
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "Sök- och räddningsarbetet i vraken fortsätter",
+     "stod": [
+      1,
+      6,
       11
      ],
      "problem": null
     },
     {
-     "text": "Rubrikerna är i stort sett likartade",
+     "text": "Rubrikerna skiljer sig åt i vad de lyfter fram",
      "stod": [
-      1,
-      5,
-      8,
-      9,
+      2,
+      6,
+      7,
       10,
-      11,
-      12,
       13,
-      14
+      16,
+      17
      ],
      "problem": null
     },
     {
-     "text": "The Hindu och DW lyfter fram Zelenskyjs reaktion och kallar attacken 'horrific' (fruktansvärd)",
+     "text": "El País lyfter inspelningar av kommunikationen med tågledningen",
+     "stod": [],
+     "problem": "saknar stöd"
+    },
+    {
+     "text": "El País América lyfter inspelningar av kommunikationen med tågledningen",
      "stod": [
-      5,
+      13
+     ],
+     "problem": null
+    },
+    {
+     "text": "Föraren varnade enligt El País América tågledningen för att tåget inte kunde röra sig",
+     "stod": [
+      13
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País lyfter järnvägsbranschens kritik",
+     "stod": [
       10
      ],
      "problem": null
     },
     {
-     "text": "Meduza lyfter fram uppgiften från chefen för den regionala militärförvaltningen",
+     "text": "BBC lyfter offer och sorg",
      "stod": [
-      12
+      2
      ],
      "problem": null
     },
     {
-     "text": "DN anger i rubriken endast 'tiotal döda'",
+     "text": "The Guardian lyfter sökarbete",
      "stod": [
-      14
+      6
      ],
      "problem": null
     },
     {
-     "text": "13 döda anges av UN, The Hindu, Hindustan Times, Meduza och El País",
+     "text": "France 24 lyfter offer och sorg",
      "stod": [
-      1,
-      5,
-      8,
+      7
+     ],
+     "problem": "saknar stöd"
+    },
+    {
+     "text": "BBC, The Guardian och France 24 lyfter expertbedömningar av orsakerna",
+     "stod": [
+      7
+     ],
+     "problem": "saknar stöd"
+    },
+    {
+     "text": "CGTN lyfter enligt första preliminära rapporten att tåget hade en uppskattad hastighet på 160 till 200 km/h vid kollisionen",
+     "stod": [
+      16
+     ],
+     "problem": null
+    },
+    {
+     "text": "Tehran Times lyfter dödstalet",
+     "stod": [
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "Enligt myndigheterna är olyckan en av Europas dödligaste av detta slag under detta århundrade",
+     "stod": [
+      17
+     ],
+     "problem": "fel tillskrivning"
+    },
+    {
+     "text": "The Hindu och Tehran Times anger dödstalet 68",
+     "stod": [
       11,
-      12
+      17
      ],
      "problem": null
     },
     {
-     "text": "14 döda anges av Deutsche Welle, BBC och NYT",
+     "text": "Le Monde, The Guardian och Sveriges Radio Ekot anger dödstalet 69",
      "stod": [
-      9,
-      10,
-      13
+      15,
+      6,
+      9
      ],
      "problem": null
     },
     {
-     "text": "Hindustan Times uppger fem skadade",
+     "text": "Bedömningarna av orsaken skiljer sig åt",
      "stod": [
-      11
+      8,
+      7,
+      14,
+      10
      ],
      "problem": null
     },
     {
-     "text": "El País uppger minst tio skadade",
+     "text": "Järnvägsforskaren Oskar Fröidh säger till SVT att ett mänskligt misstag var avgörande för olyckan",
      "stod": [
       8
      ],
      "problem": null
     },
     {
-     "text": "BBC uppger minst 14 skadade",
+     "text": "Francisco Badea ifrågasätter i France 24 förklaringar som reducerar olyckan till isolerade mänskliga misstag",
      "stod": [
-      9
+      7
+     ],
+     "problem": null
+    },
+    {
+     "text": "The New York Times skriver att Spanien frågar sig om järnvägssystemet är för gammalt och känsligt för mänskliga fel",
+     "stod": [
+      14
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País rapporterar att järnvägsbranschen kräver att ingen pekas ut innan orsakerna är kända",
+     "stod": [
+      10
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País rapporterar att järnvägsbranschen pekar på bristande investeringar och personal",
+     "stod": [
+      10
      ],
      "problem": null
     }
    ],
-   "sammanfattning": null
+   "sammanfattning": "Tre påståenden saknar stöd (El País och inspelningarna, France 24:s lyfta offer och sorg, och expertbedömningar hos BBC, Guardian och France 24) och ett tillskrivs fel (Tehran Times/myndigheterna om att olyckan är en av Europas dödligaste)."
   },
   "perspektiv": {
    "regioner": [
     "afrika",
-    "asien",
-    "europa",
-    "global",
-    "latinamerika",
-    "sverige",
-    "usa"
+    "mellanostern"
    ],
    "per_region": {
-    "global": [
-     {
-      "kalla": "UN News",
-      "land": "INT",
-      "rubrik": "Russia drone strike on Ukrainian railway station kills 13",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168702",
-      "statskontrollerad": false
-     }
-    ],
-    "sverige": [
-     {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
-      "url": "https://www.sverigesradio.se/artikel/9331211",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens Nyheter",
-      "land": "SE",
-      "rubrik": "Rysk drönare slog ned på perrong – tiotal döda",
-      "url": "https://www.dn.se/varlden/rysk-dronare-slog-ned-pa-perrong-tiotal-doda/",
-      "statskontrollerad": false
-     }
-    ],
     "afrika": [
      {
       "kalla": "Africanews",
       "land": "CG",
-      "rubrik": "Ukraine: Russian strike kills two teenage girls in Chernihiv",
-      "url": "http://www.africanews.com/2026/10/30/ukraine-russian-strike-kills-two-teenage-girls-in-chernihiv/",
+      "rubrik": "Spain: cranes clear twisted train wreckage as rescuers work through the night",
+      "url": "http://www.africanews.com/2026/10/29/spain-cranes-clear-twisted-train-wreckage-as-rescuers-work-through-the-night/",
       "statskontrollerad": false
      }
     ],
-    "asien": [
+    "mellanostern": [
      {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "One dead in Russian missile attack on Kyiv, Ukrainian officials say",
-      "url": "https://www.straitstimes.com/world/europe/one-dead-in-russian-missile-attack-on-kyiv-ukrainian-officials-say",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Ukraine says at least 13 killed in Russian attack on train station",
-      "url": "https://www.thehindu.com/news/international/ukraine-says-at-least-13-killed-in-russian-attack-on-train-station/article71641924.ece",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Ukraine says at least 13 killed in Russian drone attack on Dnipro train station",
-      "url": "https://www.hindustantimes.com/world-news/ukraine-says-at-least-13-killed-in-russian-drone-attack-on-dnipro-train-station-101793271754944.html",
-      "statskontrollerad": false
-     }
-    ],
-    "europa": [
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "Aid mission set to enter Ukraine's Oleshky as localised ceasefire holds for third day",
-      "url": "https://www.france24.com/en/europe/20261029-aid-mission-set-to-enter-ukraine-s-oleshky-as-localised-ceasefire-holds-for-third-day",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Kyiv Independent",
-      "land": "UA",
-      "rubrik": "While Oleshky ceasefire holds for third day, Russian attacks kill 1, injure at least 22 across Ukraine",
-      "url": "https://kyivindependent.com/while-oleshky-ceasefire-holds-for-third-day-russian-attacks-kill-1-injure-at-least-22-across-ukraine/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Ukraine: 14 killed in Russian drone strike on crowded Dnipro train station",
-      "url": "https://www.dw.com/en/ukraine-14-killed-in-russian-drone-strike-on-crowded-dnipro-train-station/a-79795076?maca=en-rss-en-all-1573-rdf",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Meduza",
-      "land": "LV",
-      "rubrik": "Russian drone strikes train station in Ukraine’s Dnipro, killing at least 13",
-      "url": "https://meduza.io/en/news/2026/10/29/russian-drone-strikes-train-station-in-ukraine-s-dnipro-killing-at-least-13",
-      "statskontrollerad": false
-     }
-    ],
-    "latinamerika": [
-     {
-      "kalla": "El País América",
-      "land": "ES",
-      "rubrik": "Al menos 13 muertos en un ataque ruso contra una estación de tren de la ciudad ucrania de Dnipró",
-      "url": "https://elpais.com/internacional/2026-10-29/varios-muertos-en-un-ataque-ruso-contra-una-estacion-de-tren-de-la-ciudad-ucrania-de-dnipro.html",
-      "statskontrollerad": false
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Russian Strike on Ukrainian Train Station Kills 14",
-      "url": "https://www.nytimes.com/2026/10/29/world/europe/ukraine-dnipro-train-russia.html",
-      "statskontrollerad": false
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Spanish rescuers search train crash wreckage for survivors as deaths rise to 69",
+      "url": "https://www.thenationalnews.com/news/europe/2026/10/29/spanish-rescuers-search-train-wreckage-for-survivors-after-68-killed-in-collision/",
+      "statskontrollerad": true
      }
     ]
    },
@@ -1453,34 +1423,12 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Russia drone strike on Ukrainian railway station kills 13",
+  "reserv_rubrik": "Spain: cranes clear twisted train wreckage as rescuers work through the night",
   "kallor": [
    {
-    "namn": "UN News",
-    "rubrik": "Russia drone strike on Ukrainian railway station kills 13",
-    "url": "https://news.un.org/feed/view/en/story/2026/10/1168702",
-    "betalvagg": false,
-    "typ": "primar",
-    "land": "INT",
-    "region": "global",
-    "agare": "organisation",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Sveriges Radio Ekot",
-    "rubrik": "Ukrainska drönare slår till långt inne i Ryssland",
-    "url": "https://www.sverigesradio.se/artikel/9331211",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Africanews",
-    "rubrik": "Ukraine: Russian strike kills two teenage girls in Chernihiv",
-    "url": "http://www.africanews.com/2026/10/30/ukraine-russian-strike-kills-two-teenage-girls-in-chernihiv/",
+    "rubrik": "Spain: cranes clear twisted train wreckage as rescuers work through the night",
+    "url": "http://www.africanews.com/2026/10/29/spain-cranes-clear-twisted-train-wreckage-as-rescuers-work-through-the-night/",
     "betalvagg": false,
     "typ": "media",
     "land": "CG",
@@ -1489,131 +1437,25 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Straits Times",
-    "rubrik": "One dead in Russian missile attack on Kyiv, Ukrainian officials say",
-    "url": "https://www.straitstimes.com/world/europe/one-dead-in-russian-missile-attack-on-kyiv-ukrainian-officials-say",
+    "namn": "The National",
+    "rubrik": "Spanish rescuers search train crash wreckage for survivors as deaths rise to 69",
+    "url": "https://www.thenationalnews.com/news/europe/2026/10/29/spanish-rescuers-search-train-wreckage-for-survivors-after-68-killed-in-collision/",
     "betalvagg": false,
     "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Ukraine says at least 13 killed in Russian attack on train station",
-    "url": "https://www.thehindu.com/news/international/ukraine-says-at-least-13-killed-in-russian-attack-on-train-station/article71641924.ece",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "France 24",
-    "rubrik": "Aid mission set to enter Ukraine's Oleshky as localised ceasefire holds for third day",
-    "url": "https://www.france24.com/en/europe/20261029-aid-mission-set-to-enter-ukraine-s-oleshky-as-localised-ceasefire-holds-for-third-day",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Kyiv Independent",
-    "rubrik": "While Oleshky ceasefire holds for third day, Russian attacks kill 1, injure at least 22 across Ukraine",
-    "url": "https://kyivindependent.com/while-oleshky-ceasefire-holds-for-third-day-russian-attacks-kill-1-injure-at-least-22-across-ukraine/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "UA",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "El País América",
-    "rubrik": "Al menos 13 muertos en un ataque ruso contra una estación de tren de la ciudad ucrania de Dnipró",
-    "url": "https://elpais.com/internacional/2026-10-29/varios-muertos-en-un-ataque-ruso-contra-una-estacion-de-tren-de-la-ciudad-ucrania-de-dnipro.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ES",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "BBC World",
-    "rubrik": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
-    "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Deutsche Welle",
-    "rubrik": "Ukraine: 14 killed in Russian drone strike on crowded Dnipro train station",
-    "url": "https://www.dw.com/en/ukraine-14-killed-in-russian-drone-strike-on-crowded-dnipro-train-station/a-79795076?maca=en-rss-en-all-1573-rdf",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "Ukraine says at least 13 killed in Russian drone attack on Dnipro train station",
-    "url": "https://www.hindustantimes.com/world-news/ukraine-says-at-least-13-killed-in-russian-drone-attack-on-dnipro-train-station-101793271754944.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Meduza",
-    "rubrik": "Russian drone strikes train station in Ukraine’s Dnipro, killing at least 13",
-    "url": "https://meduza.io/en/news/2026/10/29/russian-drone-strikes-train-station-in-ukraine-s-dnipro-killing-at-least-13",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "LV",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The New York Times",
-    "rubrik": "Russian Strike on Ukrainian Train Station Kills 14",
-    "url": "https://www.nytimes.com/2026/10/29/world/europe/ukraine-dnipro-train-russia.html",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens Nyheter",
-    "rubrik": "Rysk drönare slog ned på perrong – tiotal döda",
-    "url": "https://www.dn.se/varlden/rysk-dronare-slog-ned-pa-perrong-tiotal-doda/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
-  "autopilot": [],
+  "autopilot": [
+   "färre än tre oberoende källor (1)",
+   "bara en region"
+  ],
   "data": null,
-  "godkand_tid": 1793340209.810654,
-  "automatisk": true
+  "godkand_tid": 1793343820.0936654,
+  "automatisk": false,
+  "uppdaterad_tid": 1793344000.1921382
  }
 }
