@@ -543,11 +543,11 @@
   "amnen_sektion": [
    "marknader"
   ],
-  "poang": 29.4,
+  "poang": 27.8,
   "vikt": {
-   "bredd": 0.767,
+   "bredd": 0.807,
    "regioner": {
-    "europa": 3,
+    "europa": 4,
     "latinamerika": 2,
     "asien": 2,
     "sverige": 1,
@@ -560,13 +560,13 @@
     "allvar": 3,
     "varaktighet": 3,
     "medel": 3.33,
-    "skal": "ECB:s ordförande lämnar tidigare än planerat, vilket ger en ledarskapsförändring i centralbanken för euroområdet men inga omedelbara kriser."
+    "skal": "ECB:s ordförande lämnar sin post nio månader före schemat, vilket påverkar eurozonens centralbank men inte direkt den dagliga ekonomin."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 10,
+  "antal_kallor": 11,
   "har_primarkalla": true,
   "senast": "2026-10-30T04:30:01+00:00",
   "utkast": {
@@ -724,8 +724,8 @@
      {
       "kalla": "Euractiv",
       "land": "BE",
-      "rubrik": "Lagarde to step down as ECB president",
-      "url": "https://www.rapporteur.com/news/lagarde-to-step-down-as-ecb-president/",
+      "rubrik": "Lagarde says early ECB exit ensures her ‘freedom of expression’",
+      "url": "https://www.rapporteur.com/news/lagarde-says-early-ecb-exit-ensures-her-freedom-of-expression/",
       "statskontrollerad": false
      },
      {
@@ -733,6 +733,13 @@
       "land": "DE",
       "rubrik": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
       "url": "https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353?maca=en-rss-en-all-1573-rdf",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Le Monde (English)",
+      "land": "FR",
+      "rubrik": "Christine Lagarde announces departure from ECB, wants 'freedom to engage' on matters other than monetary policy",
+      "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/at-the-ecb-christine-lagarde-announces-departure-saying-she-wants-freedom-to-engage-on-matters-that-are-not-monetary-policy-matters_6767059_19.html",
       "statskontrollerad": false
      }
     ],
@@ -825,6 +832,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Euractiv",
+    "rubrik": "Lagarde says early ECB exit ensures her ‘freedom of expression’",
+    "url": "https://www.rapporteur.com/news/lagarde-says-early-ecb-exit-ensures-her-freedom-of-expression/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "MercoPress",
     "rubrik": "Christine Lagarde to step down early as European Central Bank president in February",
     "url": "https://en.mercopress.com/2026/10/29/christine-lagarde-to-step-down-early-as-european-central-bank-president-in-february?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
@@ -843,17 +861,6 @@
     "typ": "media",
     "land": "IN",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Euractiv",
-    "rubrik": "Lagarde to step down as ECB president",
-    "url": "https://www.rapporteur.com/news/lagarde-to-step-down-as-ecb-president/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "BE",
-    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -877,6 +884,17 @@
     "land": "SE",
     "region": "sverige",
     "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Le Monde (English)",
+    "rubrik": "Christine Lagarde announces departure from ECB, wants 'freedom to engage' on matters other than monetary policy",
+    "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/at-the-ecb-christine-lagarde-announces-departure-saying-she-wants-freedom-to-engage-on-matters-that-are-not-monetary-policy-matters_6767059_19.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -914,7 +932,9 @@
    }
   ],
   "granskad": true,
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": [
    {
     "id": "ecb_ranta",
@@ -942,7 +962,7 @@
   ],
   "godkand_tid": 1793318782.5111327,
   "automatisk": true,
-  "uppdaterad_tid": 1793394440.811444
+  "uppdaterad_tid": 1793395975.2053335
  },
  "6bae3cb6aa": {
   "id": "6bae3cb6aa",
@@ -952,10 +972,11 @@
   "amnen_sektion": [
    "sverige"
   ],
-  "poang": 34.0,
+  "poang": 34.2,
   "vikt": {
-   "bredd": 0.869,
+   "bredd": 0.994,
    "regioner": {
+    "latinamerika": 1,
     "asien": 4,
     "europa": 4,
     "afrika": 1,
@@ -967,17 +988,17 @@
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
-    "varaktighet": 4,
-    "medel": 4.67,
-    "skal": "Tågolyckan i Spanien kostade människoliv, berörde personer från 27 nationaliteter och utlöste en politisk kris med krav på ansvar och säkerhetsgranskning."
+    "varaktighet": 5,
+    "medel": 5.0,
+    "skal": "Tågolycka i Spanien med 69 döda och människor från 27 nationaliteter berörda, vilket ger långvariga följder för familjer, säkerhet och politiskt ansvar."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 13,
+  "antal_kallor": 14,
   "har_primarkalla": false,
-  "senast": "2026-10-30T18:06:15+00:00",
+  "senast": "2026-10-30T21:19:01+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -1214,11 +1235,21 @@
     "afrika",
     "asien",
     "europa",
+    "latinamerika",
     "mellanostern",
     "sverige",
     "usa"
    ],
    "per_region": {
+    "latinamerika": [
+     {
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "La identidad de conductores de uno de los trenes que chocaron en grave accidente en España que dejó 69 muertos: ambos fallecieron; uno era aprendiz",
+      "url": "https://www.eltiempo.com/mundo/europa/la-identidad-de-conductores-de-uno-de-los-trenes-que-chocaron-en-grave-accidente-en-espana-que-dejo-69-muertos-ambos-fallecieron-uno-era-aprendiz-3597568",
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "CNA",
@@ -1327,8 +1358,19 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Spanish minister refuses to resign over second major train crash on his watch",
+  "reserv_rubrik": "La identidad de conductores de uno de los trenes que chocaron en grave accidente en España que dejó 69 muertos: ambos fallecieron; uno era aprendiz",
   "kallor": [
+   {
+    "namn": "El Tiempo",
+    "rubrik": "La identidad de conductores de uno de los trenes que chocaron en grave accidente en España que dejó 69 muertos: ambos fallecieron; uno era aprendiz",
+    "url": "https://www.eltiempo.com/mundo/europa/la-identidad-de-conductores-de-uno-de-los-trenes-que-chocaron-en-grave-accidente-en-espana-que-dejo-69-muertos-ambos-fallecieron-uno-era-aprendiz-3597568",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CO",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "CNA",
     "rubrik": "Spanish minister refuses to resign over second major train crash on his watch",
@@ -1474,11 +1516,13 @@
    }
   ],
   "granskad": true,
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 3 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1793394440.811444
+  "uppdaterad_tid": 1793395975.2053335
  },
  "ab4217a652": {
   "id": "ab4217a652",
