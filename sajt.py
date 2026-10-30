@@ -308,16 +308,18 @@ def story_page(u, ev, related, sources, banner, noindex):
     title_sv = d.get("rubrik_sv") or ev["reserv_rubrik"]
     desc_sv = d.get("sammanfattning_sv") or ""
     pub = _both(*_date(ev.get("godkand_tid", 0), clock=True)) if ev.get("godkand_tid") else ""
+    upd = (f'<span>{_both("Uppdaterad", "Updated")} {_both(*_date(ev["uppdaterad_tid"], clock=True))}</span>'
+           if ev.get("uppdaterad_tid") else "")
     more = ""
     if related:
         more = (f'<h2 class="more-h">{_both("Fler notiser i", "More in")} {_both(sv, en)}</h2><ul class="list" style="max-width:760px">'
                 + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
-    body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span></p>'
+    body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span>{upd}</p>'
             f'{story_full(ev)}'
             f'<p class="aiNote">{_ai_note(ev)} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
     return _shell(u, title=f"{title_sv}, Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
                   description=desc_sv[:200], og={"type": "article", "title": title_sv, "description": desc_sv},
-                  updated=ev.get("godkand_tid") or None, nsources=len(sources))
+                  updated=ev.get("uppdaterad_tid") or ev.get("godkand_tid") or None, nsources=len(sources))
 
 
 def newsletter_page(u, sources, banner, noindex, has_issue):

@@ -107,6 +107,12 @@ def archive(events, approved, automatic=()):
     for ev in events:
         if ev["id"] in approved and ev["id"] not in arkiv:
             arkiv[ev["id"]] = {**ev, "granskad": True, "godkand_tid": now, "automatisk": ev["id"] in automatic}
+        elif ev["id"] in arkiv:
+            # Samma händelse med nya källor: källorna uppdateras, den publicerade texten står kvar
+            post = arkiv[ev["id"]]
+            if {k["url"] for k in ev.get("kallor") or []} != {k["url"] for k in post.get("kallor") or []}:
+                keep = {k: post[k] for k in ("utkast", "kallkontroll", "godkand_tid", "automatisk", "granskad") if k in post}
+                arkiv[ev["id"]] = {**post, **ev, **keep, "uppdaterad_tid": now}
     limit = now - ARKIV_DAGAR * 86400
     arkiv = {k: v for k, v in arkiv.items() if v.get("godkand_tid", 0) >= limit}
     ARKIV.parent.mkdir(parents=True, exist_ok=True)

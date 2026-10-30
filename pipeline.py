@@ -474,6 +474,43 @@ def assign_id(c, used_ids):
     return cid
 
 
+def match_archive(events, arkiv, min_share=0.5, min_sources=3, min_words=0.5):
+    """En händelse som redan publicerats känns igen i nästa körning: minst hälften av artiklarna är gemensamma
+    med en arkivpost, eller minst tre källor är gemensamma och rubrikerna delar minst hälften av orden.
+    Händelsen får då arkivets id, så att notisen uppdateras i stället för att publiceras igen.
+    Varje arkivpost tas av högst en händelse, den med flest gemensamma artiklar."""
+    def urls(e):
+        return {k["url"] for k in e.get("kallor") or []}
+
+    def names(e):
+        return {k["namn"] for k in e.get("kallor") or []}
+
+    def words(e):
+        return tokens((e.get("utkast") or {}).get("rubrik_en") or e.get("reserv_rubrik") or "")
+
+    taken = {e["id"] for e in events}
+    cands = []
+    for n, ev in enumerate(events):
+        if ev["id"] in arkiv:
+            continue
+        for pid, post in arkiv.items():
+            if pid in taken:
+                continue
+            shared = len(urls(ev) & urls(post))
+            share = shared / max(1, min(len(urls(ev)), len(urls(post))))
+            wshare = len(words(ev) & words(post)) / max(1, min(len(words(ev)), len(words(post))))
+            if share >= min_share or (len(names(ev) & names(post)) >= min_sources and wshare >= min_words):
+                cands.append((max(share, wshare), shared, n, pid))
+    used_posts, used_events = set(), set()
+    for _, _, n, pid in sorted(cands, key=lambda x: (-x[0], -x[1])):
+        if pid in used_posts or n in used_events:
+            continue
+        events[n]["id"] = pid
+        used_posts.add(pid)
+        used_events.add(n)
+    return used_posts
+
+
 def reply_text(msg):
     """Plockar ut svarstexten. Modellen kan skicka resonemangsblock före texten, de hoppas över."""
     text = "".join(getattr(b, "text", "") for b in msg.content if getattr(b, "type", "text") == "text")
@@ -671,6 +708,10 @@ def main():
         })
     events.sort(key=lambda e: e["poang"], reverse=True)
     vikt_mod.save_history(hist)
+
+    # En händelse som redan är publicerad behåller sin notis: den får arkivets id och uppdateras där
+    from newsletter import load_archive
+    match_archive(events, load_archive())
 
     # Autopiloten: notiser som klarar grindarna köas med klockslag och godkänns när fönstret gått ut
     import autopilot
