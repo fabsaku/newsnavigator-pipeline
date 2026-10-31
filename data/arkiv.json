@@ -787,30 +787,31 @@
   "id": "6bae3cb6aa",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 26.5,
+  "poang": 24.5,
   "vikt": {
-   "bredd": 0.304,
+   "bredd": 0.508,
    "regioner": {
+    "sverige": 1,
+    "asien": 3,
     "europa": 2,
-    "asien": 1,
     "usa": 1,
     "mellanostern": 1
    },
-   "timmar": 27,
+   "timmar": 10,
    "konsekvens": {
     "berorda": 4,
     "allvar": 5,
     "varaktighet": 3,
     "medel": 4.0,
-    "skal": "En dödlig tågolycka i Spanien med misstänkta fel i trafikledningen, politiska krav på avgång och frågor om järnvägsnätets skick, med berörda även utomlands."
+    "skal": "Dödsolycka med tåg i Spanien där flera människor dog, med internationella följder, frågor om trafikledning och järnvägssäkerhet samt krav på ministerns avgång."
    },
    "bekraftad": false,
-   "maste": false
+   "maste": true
   },
-  "maste": false,
-  "antal_kallor": 5,
+  "maste": true,
+  "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-10-30T23:27:46+00:00",
+  "senast": "2026-10-31T15:23:00+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -1047,9 +1048,42 @@
     "asien",
     "europa",
     "mellanostern",
+    "sverige",
     "usa"
    ],
    "per_region": {
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Fullsatt kyrka i Spanien – minnesstund efter dödliga tågolyckan",
+      "url": "https://www.sverigesradio.se/artikel/9332111",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "CNA",
+      "land": "SG",
+      "rubrik": "Spanish village gathers for memorial Mass for train crash victims",
+      "url": "https://www.channelnewsasia.com/world/spain-train-crash-victim-memorial-mass-6509721",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Spanish village gathers for memorial Mass for train crash victims",
+      "url": "https://www.straitstimes.com/world/europe/spanish-village-gathers-for-memorial-mass-for-train-crash-victims",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Spain train crash: Indian Embassy in Madrid issues helpline after deadly accident",
+      "url": "https://www.thehindu.com/news/international/spain-train-crash-indian-embassy-madrid-emergency-helpline/article71639009.ece",
+      "statskontrollerad": false
+     }
+    ],
     "europa": [
      {
       "kalla": "Euractiv",
@@ -1063,15 +1097,6 @@
       "land": "FR",
       "rubrik": "Spain train crash raises questions over condition and maintenance of rail network",
       "url": "https://www.lemonde.fr/en/economy/article/2026/10/30/spain-train-crash-raises-questions-over-condition-and-maintenance-of-rail-network_6767719_19.html",
-      "statskontrollerad": false
-     }
-    ],
-    "asien": [
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Spain train crash: Indian Embassy in Madrid issues helpline after deadly accident",
-      "url": "https://www.thehindu.com/news/international/spain-train-crash-indian-embassy-madrid-emergency-helpline/article71639009.ece",
       "statskontrollerad": false
      }
     ],
@@ -1094,12 +1119,45 @@
      }
     ]
    },
-   "blind_flack": "saknas_i_sverige",
+   "blind_flack": null,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Spain’s transport minister refuses to step down over deadly train crash",
+  "reserv_rubrik": "Fullsatt kyrka i Spanien – minnesstund efter dödliga tågolyckan",
   "kallor": [
+   {
+    "namn": "Sveriges Radio Ekot",
+    "rubrik": "Fullsatt kyrka i Spanien – minnesstund efter dödliga tågolyckan",
+    "url": "https://www.sverigesradio.se/artikel/9332111",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CNA",
+    "rubrik": "Spanish village gathers for memorial Mass for train crash victims",
+    "url": "https://www.channelnewsasia.com/world/spain-train-crash-victim-memorial-mass-6509721",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Spanish village gathers for memorial Mass for train crash victims",
+    "url": "https://www.straitstimes.com/world/europe/spanish-village-gathers-for-memorial-mass-for-train-crash-victims",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Euractiv",
     "rubrik": "Spain’s transport minister refuses to step down over deadly train crash",
@@ -1158,13 +1216,12 @@
   ],
   "granskad": true,
   "autopilot": [
-   "källkontrollen har 1 anmärkningar",
-   "blind fläck"
+   "källkontrollen har 2 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1793437582.8887362
+  "uppdaterad_tid": 1793466440.1453736
  },
  "ab4217a652": {
   "id": "ab4217a652",
@@ -2044,27 +2101,28 @@
   "id": "e4102bbb96",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 28.9,
+  "poang": 29.7,
   "vikt": {
-   "bredd": 0.395,
+   "bredd": 0.458,
    "regioner": {
-    "europa": 3,
+    "europa": 4,
     "asien": 2,
-    "sverige": 2
+    "sverige": 2,
+    "usa": 1
    },
-   "timmar": 19,
+   "timmar": 20,
    "konsekvens": {
     "berorda": 5,
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.33,
-    "skal": "En konstitutionell maktkamp i Polen med polis vid domstolen och anklagelser om kuppförsök påverkar hela landets rättsstat, men inga liv står direkt på spel."
+    "skal": "En konstitutionell kris i Polen, där presidenten konfronterar domare vid författningsdomstolen, påverkar hela landet och rättsstatens ställning i EU."
    },
    "bekraftad": true,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 7,
+  "antal_kallor": 9,
   "har_primarkalla": false,
   "senast": "2026-10-31T11:37:48+00:00",
   "utkast": {
@@ -2195,7 +2253,8 @@
    "regioner": [
     "asien",
     "europa",
-    "sverige"
+    "sverige",
+    "usa"
    ],
    "per_region": {
     "europa": [
@@ -2204,6 +2263,13 @@
       "land": "PL",
       "rubrik": "Polish president in physical confrontation with judges amid power struggle at constitutional court",
       "url": "https://notesfrompoland.com/2026/10/31/polish-president-in-physical-confrontation-with-judges-amid-power-struggle-at-constitutional-court/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Politico Europe",
+      "land": "BE",
+      "rubrik": "Polish president Nawrocki pushes his way into top court amid rule-of-law tussle",
+      "url": "https://www.politico.eu/article/poland-president-karol-nawrocki-rule-of-law-crisis/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
       "statskontrollerad": false
      },
      {
@@ -2252,6 +2318,15 @@
       "url": "https://www.dn.se/varlden/tumultartade-protester-och-politisk-maktstrid-i-polen-statskupp/",
       "statskontrollerad": false
      }
+    ],
+    "usa": [
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Polish president turns plane around after 'coup' at nation’s top court",
+      "url": "https://www.foxnews.com/world/polish-president-turns-plane-around-after-coup-at-nations-top-court",
+      "statskontrollerad": false
+     }
     ]
    },
    "blind_flack": null,
@@ -2279,6 +2354,17 @@
     "typ": "media",
     "land": "SG",
     "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Politico Europe",
+    "rubrik": "Polish president Nawrocki pushes his way into top court amid rule-of-law tussle",
+    "url": "https://www.politico.eu/article/poland-president-karol-nawrocki-rule-of-law-crisis/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -2316,6 +2402,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Fox News",
+    "rubrik": "Polish president turns plane around after 'coup' at nation’s top court",
+    "url": "https://www.foxnews.com/world/polish-president-turns-plane-around-after-coup-at-nations-top-court",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Dagens Nyheter",
     "rubrik": "Polens president kallar till krismöte efter anklagelser om statskupp",
     "url": "https://www.dn.se/varlden/tumultartade-protester-och-politisk-maktstrid-i-polen-statskupp/",
@@ -2342,6 +2439,241 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1793463045.1758711,
+  "automatisk": false,
+  "uppdaterad_tid": 1793466440.1453736
+ },
+ "353caa99e2": {
+  "id": "353caa99e2",
+  "amnen": [
+   "latinamerika",
+   "varlden"
+  ],
+  "amnen_sektion": [
+   "latinamerika"
+  ],
+  "poang": 27.2,
+  "vikt": {
+   "bredd": 0.309,
+   "regioner": {
+    "latinamerika": 2,
+    "asien": 1
+   },
+   "timmar": 51,
+   "konsekvens": {
+    "berorda": 3,
+    "allvar": 3,
+    "varaktighet": 2,
+    "medel": 2.67,
+    "skal": "Politisk oro i Brasilien och en diplomatisk tvist med Argentina, men med begränsad påverkan på liv och ekonomi."
+   },
+   "bekraftad": true,
+   "maste": false
+  },
+  "maste": false,
+  "antal_kallor": 3,
+  "har_primarkalla": false,
+  "senast": "2026-10-31T16:12:55+00:00",
+  "utkast": {
+   "rubrik_sv": "Flávio Bolsonaro säger från USA att han kommer att bli kandidat igen",
+   "sammanfattning_sv": "Flávio Bolsonaro befinner sig i USA och säger enligt El País att han kommer att bli presidentkandidat igen. Enligt El Tiempo lämnade han Brasilien efter ett domstolsbeslut om att lämna in sitt pass, i en utredning om misstänkt penningtvätt.",
+   "rubrik_en": "Flávio Bolsonaro says from the US that he will run for president again",
+   "sammanfattning_en": "Flávio Bolsonaro is in the United States and says, according to El País, that he will again be a presidential candidate. According to El Tiempo, he left Brazil after a court order requiring him to hand over his passport, amid an investigation into alleged money laundering.",
+   "oenighet": "Hindustan Times skriver att Bolsonaro tog sig till USA via Argentina, att Brasilien kallade upp Argentinas företrädare och att Argentina kallade hem sin ambassadör. Enbart Hindustan Times beskriver dessa diplomatiska steg. Rubriken i Hindustan Times nämner Bolsonaro utan förnamn, medan El País och El Tiempo anger Flávio Bolsonaro.",
+   "oenighet_en": "Hindustan Times reports that Bolsonaro travelled to the US via Argentina, that Brazil summoned Argentina's representative, and that Argentina recalled its ambassador. Only Hindustan Times describes these diplomatic steps. Its headline refers to Bolsonaro without a first name, while El País and El Tiempo refer to Flávio Bolsonaro.",
+   "perspektiv_sv": "Spanska El País lyfter Flávio Bolsonaros uttalande om sin kandidatur och hans egen beskrivning av politisk förföljelse. Colombianska El Tiempo lyfter att han lämnade Brasilien efter ett domstolsbeslut och den penningtvättsutredning som beskrivs i samband med det. Indiska Hindustan Times lyfter i sin rubrik flykten till USA via Argentina och de diplomatiska åtgärderna mellan Brasilien och Argentina.",
+   "perspektiv_en": "The Spanish outlet El País highlights Flávio Bolsonaro's statement about his candidacy and his own account of political persecution. The Colombian outlet El Tiempo highlights that he left Brazil after a court order and the money-laundering investigation described in connection with it. The Indian outlet Hindustan Times highlights in its headline his route to the US via Argentina and the diplomatic measures between Brazil and Argentina.",
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "Tre källor från tre länder. Två av dem (El País och El Tiempo) beskriver samma person, Flávio Bolsonaro, i USA. Hindustan Times rubrik gäller Bolsonaro utan förnamn, och uppgifterna om Argentina och de diplomatiska åtgärderna finns bara i den källan. Dessa uppgifter är därför inte med i sammanfattningen. Kontrollera dem i originalkällan innan de används i en egen notis. Källmaterialet innehåller bara rubrik och ingress, så detaljer utöver dessa är inte verifierade."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 14,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Flávio Bolsonaro säger från USA att han blir kandidat igen",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Flávio Bolsonaro befinner sig i USA",
+     "stod": [
+      1,
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País: Bolsonaro uttalar sig om att han blir presidentkandidat igen",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "El Tiempo: Bolsonaro lämnade Brasilien efter ett domstolsbeslut om att lämna in sitt pass",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Utredningen gäller misstänkt penningtvätt",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País lyfter Bolsonaros uttalande om sin kandidatur och hans beskrivning av politisk förföljelse",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "El Tiempo lyfter domstolsbeslutet och penningtvättsutredningen i samband med att han lämnade Brasilien",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Hindustan Times rubrik lyfter flykten till USA via Argentina och de diplomatiska åtgärderna mellan Brasilien och Argentina",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Hindustan Times: Bolsonaro tog sig till USA via Argentina",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Brasilien kallade upp Argentinas representant",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Argentina kallade hem sin ambassadör",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Endast Hindustan Times beskriver de diplomatiska stegen",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Hindustan Times rubrik nämner Bolsonaro utan förnamn",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País och El Tiempo anger förnamnet Flávio",
+     "stod": [
+      1,
+      3
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "perspektiv": {
+   "regioner": [
+    "asien",
+    "latinamerika"
+   ],
+   "per_region": {
+    "latinamerika": [
+     {
+      "kalla": "El País América",
+      "land": "ES",
+      "rubrik": "Flávio Bolsonaro asegura desde Estados Unidos que volverá a ser candidato a la Presidencia de Brasil",
+      "url": "https://elpais.com/america/2026-10-31/flavio-bolsonaro-asegura-desde-estados-unidos-que-volvera-a-ser-candidato-a-la-presidencia-de-brasil.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "Flávio Bolsonaro reaparece tras huir de Brasil rumbo a Estados Unidos y volvió a hablar del resultado de la segunda vuelta presidencial",
+      "url": "https://www.eltiempo.com/mundo/latinoamerica/flavio-bolsonaro-reaparece-tras-huir-de-brasil-rumbo-a-estados-unidos-y-volvio-a-hablar-del-resultado-de-la-segunda-vuelta-presidencial-3597659",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Brazil summons Argentina's representative after Bolsonaro flees to US via Argentina",
+      "url": "https://www.hindustantimes.com/world-news/brazil-summons-argentinas-representative-after-bolsonaro-flees-to-us-via-argentina-101793413681003.html",
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": "saknas_i_sverige",
+   "usa": null,
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Flávio Bolsonaro asegura desde Estados Unidos que volverá a ser candidato a la Presidencia de Brasil",
+  "kallor": [
+   {
+    "namn": "El País América",
+    "rubrik": "Flávio Bolsonaro asegura desde Estados Unidos que volverá a ser candidato a la Presidencia de Brasil",
+    "url": "https://elpais.com/america/2026-10-31/flavio-bolsonaro-asegura-desde-estados-unidos-que-volvera-a-ser-candidato-a-la-presidencia-de-brasil.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ES",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "Brazil summons Argentina's representative after Bolsonaro flees to US via Argentina",
+    "url": "https://www.hindustantimes.com/world-news/brazil-summons-argentinas-representative-after-bolsonaro-flees-to-us-via-argentina-101793413681003.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "El Tiempo",
+    "rubrik": "Flávio Bolsonaro reaparece tras huir de Brasil rumbo a Estados Unidos y volvió a hablar del resultado de la segunda vuelta presidencial",
+    "url": "https://www.eltiempo.com/mundo/latinoamerica/flavio-bolsonaro-reaparece-tras-huir-de-brasil-rumbo-a-estados-unidos-y-volvio-a-hablar-del-resultado-de-la-segunda-vuelta-presidencial-3597659",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CO",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "autopilot": [
+   "spärrord: misstänkt",
+   "blind fläck"
+  ],
+  "data": null,
+  "godkand_tid": 1793466440.1453736,
   "automatisk": false
  }
 }
