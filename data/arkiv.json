@@ -4,37 +4,33 @@
   "amnen": [
    "geopolitik",
    "latinamerika",
-   "usa",
    "varlden"
   ],
   "amnen_sektion": [
    "geopolitik",
-   "latinamerika",
-   "usa"
+   "latinamerika"
   ],
-  "poang": 31.6,
+  "poang": 28.2,
   "vikt": {
-   "bredd": 0.788,
+   "bredd": 0.636,
    "regioner": {
-    "asien": 3,
+    "asien": 2,
     "latinamerika": 3,
-    "mellanostern": 1,
-    "sverige": 1,
-    "usa": 1
+    "mellanostern": 1
    },
-   "timmar": 47,
+   "timmar": 48,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 3,
     "allvar": 3,
-    "varaktighet": 3,
-    "medel": 3.33,
-    "skal": "Diplomatisk konflikt mellan Brasilien, Argentina och USA kring en politisk flykt, med begränsad effekt utanför de inblandade staterna."
+    "varaktighet": 2,
+    "medel": 2.67,
+    "skal": "Brasilien kallar upp Argentinas diplomat efter misstankar om att landet hjälpt en Bolsonaro-familjemedlem att fly till USA, vilket är en begränsad diplomatisk konflikt."
    },
    "bekraftad": false,
-   "maste": true
+   "maste": false
   },
-  "maste": true,
-  "antal_kallor": 9,
+  "maste": false,
+  "antal_kallor": 6,
   "har_primarkalla": false,
   "senast": "2026-10-31T05:49:37+00:00",
   "utkast": {
@@ -257,9 +253,7 @@
    "regioner": [
     "asien",
     "latinamerika",
-    "mellanostern",
-    "sverige",
-    "usa"
+    "mellanostern"
    ],
    "per_region": {
     "asien": [
@@ -273,15 +267,8 @@
      {
       "kalla": "The Straits Times",
       "land": "SG",
-      "rubrik": "Trump, Milei under pressure to explain Bolsonaro flight from Brazil",
-      "url": "https://www.straitstimes.com/world/trump-milei-under-pressure-to-explain-bolsonaro-flight-from-brazil",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "South China Morning Post",
-      "land": "HK",
-      "rubrik": "Trump and Milei under pressure to explain role in Flavio Bolsonaro’s dramatic escape to US",
-      "url": "https://www.scmp.com/news/world/americas/article/3372806/trump-and-milei-under-pressure-explain-role-flavio-bolsonaros-dramatic-escape-us",
+      "rubrik": "Brazil summons Argentine diplomat over role in Bolsonaro's flight to US, sources say",
+      "url": "https://www.straitstimes.com/world/brazil-summons-argentine-diplomat-over-role-in-bolsonaros-flight-to-us-sources-say",
       "statskontrollerad": false
      }
     ],
@@ -316,27 +303,9 @@
       "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us?traffic_source=rss",
       "statskontrollerad": false
      }
-    ],
-    "sverige": [
-     {
-      "kalla": "Dagens Nyheter",
-      "land": "SE",
-      "rubrik": "Uppgifter: Trump bakom Bolsonaros flykt till USA",
-      "url": "https://www.dn.se/varlden/uppgifter-trump-bakom-bolsonaros-flykt-till-usa/",
-      "statskontrollerad": false
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Trump and His Aides Helped Bolsonaro Flee Brazil and Enter U.S.",
-      "url": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
-      "statskontrollerad": false
-     }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "usa": null,
    "usa_blind": null
   },
@@ -365,28 +334,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Straits Times",
-    "rubrik": "Trump, Milei under pressure to explain Bolsonaro flight from Brazil",
-    "url": "https://www.straitstimes.com/world/trump-milei-under-pressure-to-explain-bolsonaro-flight-from-brazil",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "South China Morning Post",
-    "rubrik": "Trump and Milei under pressure to explain role in Flavio Bolsonaro’s dramatic escape to US",
-    "url": "https://www.scmp.com/news/world/americas/article/3372806/trump-and-milei-under-pressure-explain-role-flavio-bolsonaros-dramatic-escape-us",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "HK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Al Jazeera",
     "rubrik": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
     "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us?traffic_source=rss",
@@ -395,6 +342,17 @@
     "land": "QA",
     "region": "mellanostern",
     "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Brazil summons Argentine diplomat over role in Bolsonaro's flight to US, sources say",
+    "url": "https://www.straitstimes.com/world/brazil-summons-argentine-diplomat-over-role-in-bolsonaros-flight-to-us-sources-say",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -418,38 +376,17 @@
     "region": "latinamerika",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens Nyheter",
-    "rubrik": "Uppgifter: Trump bakom Bolsonaros flykt till USA",
-    "url": "https://www.dn.se/varlden/uppgifter-trump-bakom-bolsonaros-flykt-till-usa/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The New York Times",
-    "rubrik": "Trump and His Aides Helped Bolsonaro Flee Brazil and Enter U.S.",
-    "url": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "autopilot": [
-   "källkontrollen har 1 anmärkningar"
+   "källkontrollen har 1 anmärkningar",
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1793228821.352906,
   "automatisk": true,
-  "uppdaterad_tid": 1793426737.1390789
+  "uppdaterad_tid": 1793430402.9646938
  },
  "149dcd4bcb": {
   "id": "149dcd4bcb",
