@@ -100,3 +100,15 @@ def test_varje_workflow_skriver_drift(fil, namn):
     assert "data/drift.json" in misslyckad[0]["run"] and "git push" in misslyckad[0]["run"]
 
     assert any("NN_START" in s.get("run", "") for s in steg[:2]), "starttiden sparas först i jobbet"
+
+
+@pytest.mark.parametrize("fil", ["pipeline.yml", "granskning.yml", "instagram.yml", "angra.yml"])
+def test_senaste_korningen_vinner_vid_konflikt(fil):
+    """Två körningar nära varandra (GitHubs reservschema och klockan) gav konflikter i data/ och public/
+    29 och 30 oktober. Allt som sparas byggs om av varje körning, och ärendet är sanningen för bockarna,
+    så den senaste körningen får vinna."""
+    text = (WORKFLOWS / fil).read_text(encoding="utf-8")
+    pulls = [rad for rad in text.splitlines() if "git pull --rebase" in rad]
+    assert pulls and all("-X theirs" in rad for rad in pulls), pulls
+    if "failure()" in text:
+        assert "git rebase --abort" in text
