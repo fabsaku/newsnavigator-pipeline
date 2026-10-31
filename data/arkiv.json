@@ -4,35 +4,40 @@
   "amnen": [
    "geopolitik",
    "latinamerika",
+   "usa",
    "varlden"
   ],
   "amnen_sektion": [
    "geopolitik",
-   "latinamerika"
+   "latinamerika",
+   "usa"
   ],
-  "poang": 27.5,
+  "poang": 32.3,
   "vikt": {
-   "bredd": 0.505,
+   "bredd": 0.77,
    "regioner": {
-    "asien": 1,
+    "mellanostern": 1,
+    "asien": 2,
     "latinamerika": 3,
-    "sverige": 1
+    "europa": 1,
+    "sverige": 1,
+    "usa": 1
    },
-   "timmar": 44,
+   "timmar": 45,
    "konsekvens": {
-    "berorda": 3,
+    "berorda": 4,
     "allvar": 3,
-    "varaktighet": 1,
-    "medel": 2.33,
-    "skal": "En diplomatisk tvist mellan Brasilien och Argentina med begränsad politisk effekt som sannolikt löses inom några dagar."
+    "varaktighet": 2,
+    "medel": 3.0,
+    "skal": "En diplomatisk konflikt mellan Brasilien, Argentina och USA om den påstådda hjälpen till Bolsonaro att fly landet, som berör flera länder men har begränsad långsiktig effekt."
    },
    "bekraftad": true,
-   "maste": false
+   "maste": true
   },
-  "maste": false,
-  "antal_kallor": 5,
+  "maste": true,
+  "antal_kallor": 9,
   "har_primarkalla": false,
-  "senast": "2026-10-30T19:41:34+00:00",
+  "senast": "2026-10-31T00:02:06+00:00",
   "utkast": {
    "rubrik_sv": "Flavio Bolsonaro lämnar Brasilien för USA efter valförlust",
    "sammanfattning_sv": "Flavio Bolsonaro har lämnat Brasilien för USA efter att ha förlorat presidentvalet mot Luiz Inácio Lula da Silva, enligt flera källor. Han säger sig vara Brasiliens rättmätige ledare, och hans familj uppges ha rest med honom.",
@@ -252,16 +257,35 @@
   "perspektiv": {
    "regioner": [
     "asien",
+    "europa",
     "latinamerika",
-    "sverige"
+    "mellanostern",
+    "sverige",
+    "usa"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
+      "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us?traffic_source=rss",
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "The Straits Times",
       "land": "SG",
       "rubrik": "Brazil summons Argentine diplomat over role in Bolsonaro's flight to US, sources say",
       "url": "https://www.straitstimes.com/world/brazil-summons-argentine-diplomat-over-role-in-bolsonaros-flight-to-us-sources-say",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Trump helped Flávio Bolsonaro flee to US after Brazil election defeat, arranged temporary stay: Report",
+      "url": "https://www.hindustantimes.com/world-news/trump-helped-fl-vio-bolsonaro-flee-to-us-after-brazil-election-defeat-arranged-temporary-stay-report-101793330064931.html",
       "statskontrollerad": false
      }
     ],
@@ -288,12 +312,30 @@
       "statskontrollerad": false
      }
     ],
+    "europa": [
+     {
+      "kalla": "El País (English)",
+      "land": "ES",
+      "rubrik": "How Trump’s Latin American allies helped Flávio Bolsonaro flee Brazil",
+      "url": "https://english.elpais.com/international/2026-10-29/how-trumps-latin-american-allies-helped-flavio-bolsonaro-flee-brazil.html",
+      "statskontrollerad": false
+     }
+    ],
     "sverige": [
      {
       "kalla": "Dagens Nyheter",
       "land": "SE",
-      "rubrik": "Henrik Brandão Jönsson: Högern vänder Flávio Bolsonaro ryggen efter flykten",
-      "url": "https://www.dn.se/varlden/henrik-brandao-jonsson-hogern-vander-flavio-bolsonaro-ryggen-efter-flykten/",
+      "rubrik": "Uppgifter: Trump bakom Bolsonaros flykt till USA",
+      "url": "https://www.dn.se/varlden/uppgifter-trump-bakom-bolsonaros-flykt-till-usa/",
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Trump and His Aides Helped Bolsonaro Flee Brazil and Enter U.S.",
+      "url": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
       "statskontrollerad": false
      }
     ]
@@ -302,8 +344,19 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Brazil summons Argentine diplomat over role in Bolsonaro's flight to US, sources say",
+  "reserv_rubrik": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
   "kallor": [
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
+    "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us?traffic_source=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Straits Times",
     "rubrik": "Brazil summons Argentine diplomat over role in Bolsonaro's flight to US, sources say",
@@ -349,13 +402,46 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Hindustan Times",
+    "rubrik": "Trump helped Flávio Bolsonaro flee to US after Brazil election defeat, arranged temporary stay: Report",
+    "url": "https://www.hindustantimes.com/world-news/trump-helped-fl-vio-bolsonaro-flee-to-us-after-brazil-election-defeat-arranged-temporary-stay-report-101793330064931.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "El País (English)",
+    "rubrik": "How Trump’s Latin American allies helped Flávio Bolsonaro flee Brazil",
+    "url": "https://english.elpais.com/international/2026-10-29/how-trumps-latin-american-allies-helped-flavio-bolsonaro-flee-brazil.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ES",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Dagens Nyheter",
-    "rubrik": "Henrik Brandão Jönsson: Högern vänder Flávio Bolsonaro ryggen efter flykten",
-    "url": "https://www.dn.se/varlden/henrik-brandao-jonsson-hogern-vander-flavio-bolsonaro-ryggen-efter-flykten/",
+    "rubrik": "Uppgifter: Trump bakom Bolsonaros flykt till USA",
+    "url": "https://www.dn.se/varlden/uppgifter-trump-bakom-bolsonaros-flykt-till-usa/",
     "betalvagg": true,
     "typ": "media",
     "land": "SE",
     "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Trump and His Aides Helped Bolsonaro Flee Brazil and Enter U.S.",
+    "url": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    }
@@ -365,7 +451,7 @@
   "data": null,
   "godkand_tid": 1793228821.352906,
   "automatisk": true,
-  "uppdaterad_tid": 1793405222.589321
+  "uppdaterad_tid": 1793408763.3349624
  },
  "149dcd4bcb": {
   "id": "149dcd4bcb",
