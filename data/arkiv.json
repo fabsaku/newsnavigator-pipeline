@@ -808,32 +808,34 @@
  },
  "6bae3cb6aa": {
   "id": "6bae3cb6aa",
-  "amnen": [
-   "varlden"
-  ],
+  "amnen": [],
   "amnen_sektion": [],
-  "poang": 28.0,
+  "poang": 32.3,
   "vikt": {
-   "bredd": 0.211,
+   "bredd": 0.611,
    "regioner": {
+    "europa": 4,
     "latinamerika": 1,
-    "sverige": 1
+    "asien": 1,
+    "sverige": 1,
+    "usa": 1,
+    "mellanostern": 1
    },
-   "timmar": 24,
+   "timmar": 32,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
-    "medel": 4.33,
-    "skal": "Ett tågolycka med dödsfall och ungefär 60 saknade påverkar många familjer och hela landets säkerhetsdebatt."
+    "medel": 4.67,
+    "skal": "En dödlig tågolycka i Spanien med personer från 27 nationaliteter bland de döda eller skadade, och den väcker politiska frågor om trafikledning och säkerhet."
    },
-   "bekraftad": true,
-   "maste": false
+   "bekraftad": false,
+   "maste": true
   },
-  "maste": false,
-  "antal_kallor": 2,
+  "maste": true,
+  "antal_kallor": 9,
   "har_primarkalla": false,
-  "senast": "2026-10-30T15:47:01+00:00",
+  "senast": "2026-10-31T05:44:21+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -1067,16 +1069,59 @@
   },
   "perspektiv": {
    "regioner": [
+    "asien",
+    "europa",
     "latinamerika",
-    "sverige"
+    "mellanostern",
+    "sverige",
+    "usa"
    ],
    "per_region": {
+    "europa": [
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Spain train disaster clouds Sánchez chances of re-election",
+      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "People of 27 nationalities may be among those killed or injured in Spain train crash, Sánchez says – as it happened",
+      "url": "https://www.theguardian.com/world/live/2026/oct/30/spain-investigates-toledo-crash-pedro-sanchez-france-italy-protests-latest-news-updates",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Spain working to identify train crash dead as relatives' anguish grows",
+      "url": "https://www.france24.com/en/video/20261030-spain-working-to-identify-train-crash-dead-as-relatives-anguish-grows",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Euractiv",
+      "land": "BE",
+      "rubrik": "Spain’s transport minister refuses to step down over deadly train crash",
+      "url": "https://www.rapporteur.com/news/spains-transport-minister-refuses-to-step-down-over-deadly-train-crash/",
+      "statskontrollerad": false
+     }
+    ],
     "latinamerika": [
      {
       "kalla": "El País América",
       "land": "ES",
       "rubrik": "Desaparecida en el accidente de trenes Marta Shahbazi, una de las científicas españolas más brillantes",
       "url": "https://elpais.com/ciencia/2026-10-30/desaparecida-en-el-accidente-de-trenes-marta-shahbazi-una-de-las-cientificas-espanolas-mas-brillantes.html",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Spain train crash: Indian Embassy in Madrid issues helpline after deadly accident",
+      "url": "https://www.thehindu.com/news/international/spain-train-crash-indian-embassy-madrid-emergency-helpline/article71639009.ece",
       "statskontrollerad": false
      }
     ],
@@ -1088,14 +1133,54 @@
       "url": "https://www.svt.se/nyheter/utrikes/60-tal-personer-fortfarande-saknade-efter-tagolyckan",
       "statskontrollerad": false
      }
+    ],
+    "usa": [
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Traffic Control Errors Caused Spain’s Deadly Train Crash, Official Says",
+      "url": "https://www.nytimes.com/2026/10/30/world/europe/spain-crash-contoller-errors.html",
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Train driver killed in Spanish rail crash had warned of impending disaster",
+      "url": "https://www.thenationalnews.com/news/europe/2026/10/30/train-driver-killed-in-spanish-rail-crash-warned-of-impending-disaster/",
+      "statskontrollerad": true
+     }
     ]
    },
    "blind_flack": null,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Desaparecida en el accidente de trenes Marta Shahbazi, una de las científicas españolas más brillantes",
+  "reserv_rubrik": "Spain train disaster clouds Sánchez chances of re-election",
   "kallor": [
+   {
+    "namn": "BBC World",
+    "rubrik": "Spain train disaster clouds Sánchez chances of re-election",
+    "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "People of 27 nationalities may be among those killed or injured in Spain train crash, Sánchez says – as it happened",
+    "url": "https://www.theguardian.com/world/live/2026/oct/30/spain-investigates-toledo-crash-pedro-sanchez-france-italy-protests-latest-news-updates",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "El País América",
     "rubrik": "Desaparecida en el accidente de trenes Marta Shahbazi, una de las científicas españolas más brillantes",
@@ -1104,6 +1189,39 @@
     "typ": "media",
     "land": "ES",
     "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "Spain working to identify train crash dead as relatives' anguish grows",
+    "url": "https://www.france24.com/en/video/20261030-spain-working-to-identify-train-crash-dead-as-relatives-anguish-grows",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Euractiv",
+    "rubrik": "Spain’s transport minister refuses to step down over deadly train crash",
+    "url": "https://www.rapporteur.com/news/spains-transport-minister-refuses-to-step-down-over-deadly-train-crash/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Spain train crash: Indian Embassy in Madrid issues helpline after deadly accident",
+    "url": "https://www.thehindu.com/news/international/spain-train-crash-indian-embassy-madrid-emergency-helpline/article71639009.ece",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -1117,16 +1235,38 @@
     "region": "sverige",
     "agare": "public-service",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Traffic Control Errors Caused Spain’s Deadly Train Crash, Official Says",
+    "url": "https://www.nytimes.com/2026/10/30/world/europe/spain-crash-contoller-errors.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The National",
+    "rubrik": "Train driver killed in Spanish rail crash had warned of impending disaster",
+    "url": "https://www.thenationalnews.com/news/europe/2026/10/30/train-driver-killed-in-spanish-rail-crash-warned-of-impending-disaster/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "autopilot": [
-   "färre än tre oberoende källor (2)"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1793423185.9173865
+  "uppdaterad_tid": 1793433996.1779747
  },
  "ab4217a652": {
   "id": "ab4217a652",
@@ -1321,29 +1461,28 @@
    "varlden"
   ],
   "amnen_sektion": [],
-  "poang": 29.1,
+  "poang": 25.8,
   "vikt": {
-   "bredd": 1.008,
+   "bredd": 0.507,
    "regioner": {
-    "mellanostern": 1,
-    "asien": 2,
+    "asien": 1,
     "latinamerika": 1,
-    "norden": 2,
+    "norden": 1,
     "usa": 1
    },
-   "timmar": 15,
+   "timmar": 23,
    "konsekvens": {
     "berorda": 2,
     "allvar": 3,
     "varaktighet": 3,
     "medel": 2.67,
-    "skal": "Polisen i Skottland utreder om Andrew och Epstein missbrukade sin位置 vid Balmoral, en utredning som kan pågå i månader."
+    "skal": "Skotsk polis granskar Andrew och Epsteins besök på Balmoral, vilket kan ge rättsliga följder men berör främst få personer direkt."
    },
    "bekraftad": true,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 7,
+  "antal_kallor": 4,
   "har_primarkalla": false,
   "senast": "2026-10-30T18:51:14+00:00",
   "utkast": {
@@ -1501,33 +1640,16 @@
    "regioner": [
     "asien",
     "latinamerika",
-    "mellanostern",
     "norden",
     "usa"
    ],
    "per_region": {
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Police in Scotland launch Andrew and Epstein royal castle investigation",
-      "url": "https://www.aljazeera.com/news/2026/10/30/police-in-scotland-launch-andrew-and-epstein-royal-castle-investigation?traffic_source=rss",
-      "statskontrollerad": false
-     }
-    ],
     "asien": [
      {
       "kalla": "The Hindu",
       "land": "IN",
       "rubrik": "Scottish police probe Andrew, Epstein stay at royal castle: U.K. media",
       "url": "https://www.thehindu.com/news/international/scottish-police-probe-andrew-epstein-stay-at-royal-castle-uk-media/article71646328.ece",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "Scottish police probe Britain’s former prince Andrew, Epstein stay at royal castle: Report",
-      "url": "https://www.straitstimes.com/world/europe/scottish-police-probe-britains-former-prince-andrew-epstein-stay-at-royal-castle-report",
       "statskontrollerad": false
      }
     ],
@@ -1541,13 +1663,6 @@
      }
     ],
     "norden": [
-     {
-      "kalla": "DR Nyheder",
-      "land": "DK",
-      "rubrik": "Epsteins ophold på skotsk slot efterforskes",
-      "url": "https://www.dr.dk/nyheder/seneste/epsteins-ophold-paa-skotsk-slot-efterforskes",
-      "statskontrollerad": false
-     },
      {
       "kalla": "NRK",
       "land": "NO",
@@ -1570,19 +1685,8 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Police in Scotland launch Andrew and Epstein royal castle investigation",
+  "reserv_rubrik": "Scottish police probe Andrew, Epstein stay at royal castle: U.K. media",
   "kallor": [
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "Police in Scotland launch Andrew and Epstein royal castle investigation",
-    "url": "https://www.aljazeera.com/news/2026/10/30/police-in-scotland-launch-andrew-and-epstein-royal-castle-investigation?traffic_source=rss",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
    {
     "namn": "The Hindu",
     "rubrik": "Scottish police probe Andrew, Epstein stay at royal castle: U.K. media",
@@ -1603,28 +1707,6 @@
     "land": "ES",
     "region": "latinamerika",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "Scottish police probe Britain’s former prince Andrew, Epstein stay at royal castle: Report",
-    "url": "https://www.straitstimes.com/world/europe/scottish-police-probe-britains-former-prince-andrew-epstein-stay-at-royal-castle-report",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "DR Nyheder",
-    "rubrik": "Epsteins ophold på skotsk slot efterforskes",
-    "url": "https://www.dr.dk/nyheder/seneste/epsteins-ophold-paa-skotsk-slot-efterforskes",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DK",
-    "region": "norden",
-    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -1654,15 +1736,16 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1793405222.589321,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1793433996.1779747
  },
  "2a31176009": {
   "id": "2a31176009",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 29.7,
+  "poang": 25.0,
   "vikt": {
-   "bredd": 1.125,
+   "bredd": 0.825,
    "regioner": {
     "usa": 1,
     "asien": 2,
@@ -1670,22 +1753,21 @@
     "sverige": 3,
     "afrika": 1,
     "europa": 1,
-    "norden": 1,
     "mellanostern": 1
    },
-   "timmar": 35,
+   "timmar": 37,
    "konsekvens": {
     "berorda": 2,
     "allvar": 1,
     "varaktighet": 1,
     "medel": 1.33,
-    "skal": "Skådespelaren Patrick Stewarts död är en känd personlighet som sörjs av fans, men den påverkar i praktiken en begränsad krets och är underhållningsnyheter."
+    "skal": "Skådespelaren Patrick Stewart har avlidit, en kändisnyhet som berör familj, vänner och fans men inte påverkar samhället i stort."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 11,
+  "antal_kallor": 10,
   "har_primarkalla": false,
   "senast": "2026-10-30T22:21:05+00:00",
   "utkast": {
@@ -1867,7 +1949,6 @@
     "europa",
     "latinamerika",
     "mellanostern",
-    "norden",
     "sverige",
     "usa"
    ],
@@ -1944,15 +2025,6 @@
       "land": "DE",
       "rubrik": "'Star Trek' star Patrick Stewart dies age 86",
       "url": "https://www.dw.com/en/star-trek-star-patrick-stewart-dies-age-86/a-79803071?maca=en-rss-en-all-1573-rdf",
-      "statskontrollerad": false
-     }
-    ],
-    "norden": [
-     {
-      "kalla": "NRK",
-      "land": "NO",
-      "rubrik": "Skuespiller Patrick Stewart er død, 86 år gammel",
-      "url": "https://www.nrk.no/nyheter/skuespiller-patrick-stewart-er-dod_-86-ar-gammel-1.18068863",
       "statskontrollerad": false
      }
     ],
@@ -2061,17 +2133,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "NRK",
-    "rubrik": "Skuespiller Patrick Stewart er død, 86 år gammel",
-    "url": "https://www.nrk.no/nyheter/skuespiller-patrick-stewart-er-dod_-86-ar-gammel-1.18068863",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "NO",
-    "region": "norden",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Dagens Nyheter",
     "rubrik": "Skådespelaren Patrick Stewart död",
     "url": "https://www.dn.se/kultur/skadespelaren-patrick-stewart-dod/",
@@ -2095,9 +2156,12 @@
    }
   ],
   "granskad": true,
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 2 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793426737.1390789,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1793433996.1779747
  }
 }
