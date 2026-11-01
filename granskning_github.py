@@ -24,6 +24,7 @@ ROOT = Path(__file__).parent
 FLODE = ROOT / "data" / "flode.json"
 GODK = ROOT / "data" / "godkanda.json"
 ARKIV = ROOT / "data" / "arkiv.json"
+BEHOVER = ROOT / "data" / "behover.json"
 BOCKAR = ROOT / "data" / "bockar.json"   # vad redaktören sett i ärendet: rubrik och källor per id, så att id:t kan hållas
 BOCKAR_DAGAR = 7
 LABEL = "granskning"
@@ -164,6 +165,17 @@ def _item(ev, checked):
     return "\n".join(out)
 
 
+def behover_block(rader):
+    """Listan Behöver dig överst i ärendet, utan kryssrutor så att den inte tolkas som godkännanden."""
+    if not rader:
+        return ["### Behöver dig", "", "Inget just nu.", ""]
+    ut = ["### Behöver dig", ""]
+    for r in rader:
+        text = f"- {r['rad']}. {r['handling']}."
+        ut.append(text + (f" {r['url']}" if r.get("url") else ""))
+    return ut + [""]
+
+
 def _ko_rad(ev, post):
     from zoneinfo import ZoneInfo
     klar = datetime.fromtimestamp(post["klar"], ZoneInfo("Europe/Stockholm")).strftime("%H.%M")
@@ -183,6 +195,11 @@ def update_issue():
             "Bocka i de notiser som får publiceras. Sajten och Navigatorn uppdateras inom ett par minuter. "
             "Ta bort en bock för att ångra. Läs källorna innan du godkänner, särskilt notiser märkta OSÄKER.",
             "", f"Uppdaterad {now} UTC · {len(todo)} att granska · {len(vantar)} publiceras automatiskt · {len(done)} godkända i flödet", ""]
+    try:
+        rader = json.loads(BEHOVER.read_text(encoding="utf-8")).get("rader", [])
+    except (OSError, ValueError):
+        rader = []
+    body += behover_block(rader)
     if vantar:
         body += ["### Publiceras automatiskt", "Klarar grindarna. Bocka ur för att stoppa; bocken är inget godkännande.", ""]
         body += [_ko_rad(e, ko[e["id"]]) for e in vantar] + [""]

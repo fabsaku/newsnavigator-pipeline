@@ -98,6 +98,15 @@ sedan åtta). Inställningar i `data/autopilot.json` (`pa`, `tyst`, `tak`, `veto
 och Instagram. Status i `data/autopilot_status.json`. Automatiskt publicerade notiser märks "Publicerad utan manuell granskning" på sajten,
 i Navigatorn och på Instagramkorten. Ångra: workflowen `angra.yml` med notisens id, eller `python autopilot.py angra <id>`.
 
+## Behöver dig och morgonrapporten
+`behover.py` bygger listan över det som väntar på dig, med regler i stället för för hand: måste-med-notiser som väntat över två timmar eller
+hållits tillbaka av taket, körningar som fallerat två gånger i rad, klockan som stannat, hopslagna händelser, källor som tystnat (tre dygn för
+nyhetsmedier, fjorton för primärkällor), Instagram-token som löper ut och Instagram utan secrets, för få notiser till Navigatorn,
+rättelser (öppna ärenden märkta `rättelse`) och tyst läge. Pipelinen räknar ut listan varje timme (`data/behover.json`) och visar den överst i
+granskningsärendet. `rapport.yml` mejlar den kl 07.00 via Resend ("Allt kört." när den är tom) och mejlar direkt när något allvarligt gått sönder,
+en gång per fel och igen efter tolv timmar. Secrets: `RESEND_API_KEY` och `RAPPORT_TILL` (mottagare); valfri repovariabel `NN_RAPPORT_FRAN`
+(standard är Resends testavsändare, som bara når kontots egen adress). Prova utan att skicka: starta Rapport under Actions med "torrt".
+
 ## Instagram
 Två konton: **@newsnavigator.se** på svenska och **@news.navigator** på engelska. I dag gör `instagram.py` bara svenska kort
 och postar till ett konto (secrets `IG_USER_ID` och `IG_ACCESS_TOKEN`). Det engelska kontot kräver engelska kort och

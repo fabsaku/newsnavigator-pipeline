@@ -135,7 +135,7 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 ## Läget
 
-1 november 02.00 UTC. Klockan: 25 av 25 starter i tid senaste dygnet, inga fel sedan sparsteget rättades. Autopiloten: sju notiser publicerade automatiskt, sex manuellt godkända, två stoppade, fem i kön. Instagram postar inget: `IG_USER_ID` och `IG_ACCESS_TOKEN` saknas i repots secrets, tolv kort väntar. 116 av 138 källor går att läsa. 89 tester gröna.
+1 november 08.00 UTC. Klockan: 25 av 25 starter i tid senaste dygnet. Autopiloten: sju notiser publicerade automatiskt, sex manuellt godkända, två stoppade, tre i kön. Behöver dig ger just nu sex rader: tre måste-med-notiser som väntat upp till 47 timmar, en händelse med över 20 källor, och fyra källor som tystnat (CNN sedan 22 augusti, Riksbanken, WHO, Der Spiegel). Instagram postar inget: `IG_USER_ID` och `IG_ACCESS_TOKEN` saknas i repots secrets, tolv kort väntar. 115 av 138 källor går att läsa. 128 tester gröna.
 
 Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk tid ("Newsnavigator: nattlig byggsession"), en fas per natt, i ordningen nedan. Den hoppar över faser som väntar på något under Du gör. Natten till 29 oktober gjorde den inget: den startade utan repo. Sedan dess körs den i den session som har repot. Den stoppas eller ändras i Claude-appen under schemalagda uppgifter.
 
@@ -144,9 +144,10 @@ Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk ti
 Det här kan bara du göra. Det som står överst spärrar mest.
 
 1. **Instagram, svenska kontot.** Lägg `IG_USER_ID` och `IG_ACCESS_TOKEN` för @newsnavigator.se i repots secrets (GitHub: Settings, Secrets and variables, Actions). Utan dem postas inget, trots att korten byggs varje morgon.
-2. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` för @news.navigator på samma ställe.
-3. **Resend (fas 5).** Skapa ett Resend-konto, verifiera underdomänen för avsändaren, och lägg `RESEND_API_KEY` i repots secrets.
-4. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
+2. **Morgonrapporten (fas 5).** Skapa ett Resend-konto (resend.com, gratis), skapa en API-nyckel med behörigheten "Sending access", och lägg `RESEND_API_KEY` i repots secrets. Lägg också `RAPPORT_TILL` med den adress du registrerade kontot med. Då kommer rapporten kl 07.00 och varningar direkt, utan att du verifierar någon domän. Prova först: Actions, Rapport, Run workflow, kryssa i "torrt".
+3. **Klockan, tre minuter.** Klistra in nya `klocka/worker.js` i Cloudflare-Workern `newsnavigator-klocka` (Edit code, Deploy), så startar klockan rapporten exakt 07.00. Utan det kommer den när GitHubs reservschema går, oftast före 08.
+4. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` för @news.navigator på samma ställe som i 1.
+5. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
 
 ## Faser
 
@@ -162,7 +163,7 @@ Målet: aggregatorn, sajten, Navigatorn och båda Instagramkontona går av sig s
 
 **Fas 4: Instagram av sig självt, två konton (en session).** Svenska kort och captions till @newsnavigator.se, engelska till @news.navigator (de engelska utkasten finns redan), postningsstatus per konto, och en workflow som förnyar båda tokens varannan vecka. Postar bara publicerade notiser. Klart när: båda kontona har postat varje dag i en vecka utan ingrepp. Du gör: secrets för det engelska kontot (`IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN`), kontrollerar att `IG_USER_ID` och `IG_ACCESS_TOKEN` hör till @newsnavigator.se, och skapar en token som får skriva repots secrets, så att förnyelsen kan spara de nya tokens.
 
-**Fas 5: säkerhetsnätet (en session).** Reglerna för Behöver dig, `rapport.yml` och morgonrapporten med Resend, plus ett mejl direkt när en körning fallerat två gånger i rad. Navigatorn kan börja skickas med samma Resend-konto i samma session. Klart när: ett medvetet fel i en körning ger ett mejl inom en timme, och morgonrapporten kommer varje morgon kl 07.00. Du gör: skapar Resend-kontot och lägger `RESEND_API_KEY` i repots secrets.
+**Fas 5: säkerhetsnätet (en session). Byggd 1 november, utskicket väntar på Resend.** `behover.py` bygger listan Behöver dig av regler (`data/behover.json`, varje timme, och överst i granskningsärendet): måste-med-notiser som väntat över två timmar eller hållits tillbaka av taket, körningar som fallerat två gånger i rad, klockan som stannat, hopslagna händelser, tysta källor (tre dygn för nyhetsmedier, fjorton för primärkällor), Instagram-token som löper ut och Instagram utan secrets (nytt: `data/instagram_status.json` skrivs av varje postningsvarv), för få notiser till Navigatorn, rättelser (öppna ärenden märkta `rättelse`) och tyst läge. `rapport.yml` mejlar morgonrapporten kl 07.00 ("Allt kört." när listan är tom) och varnar direkt för allvarliga rader, en gång per fel och igen efter tolv timmar. Klockan startar rapporten kl 07.00 när du klistrat in nya `klocka/worker.js`; GitHubs scheman är reserv och vakthund varje timme. Klart när: ett medvetet fel i en körning ger ett mejl inom en timme, och morgonrapporten kommer varje morgon kl 07.00. Kvar: det är inte provat med riktiga mejl, eftersom `RESEND_API_KEY` och `RAPPORT_TILL` saknas; allt annat är testat (45 tester) och listan är verifierad mot riktiga data. Navigatorn till prenumeranter kräver en egen domän och en målgrupp i Resend och byggs separat. Du gör: skapar Resend-kontot och lägger `RESEND_API_KEY` och `RAPPORT_TILL` (din mejladress) i repots secrets. Utan verifierad domän når Resends testavsändare bara kontots egen adress, vilket räcker för rapporten.
 
 **Fas 6: panelen och inkorgen (en till två sessioner).** Pages-projektet `redaktionen` med Access (guiden finns, skalet är uppe), `flode.ts`, `godkann.ts`, `redigera.ts` och sidan Inkorg. Inkorgen visar vad autopiloten publicerat och vad som väntar, med stoppa, redigera, godkänn och ångra. Klart när: en rättad rubrik i mobilen syns på sajten, i Navigatorn och på Instagram inom fem minuter. Du gör: GitHub-nyckeln i Pages och Access med din adress.
 

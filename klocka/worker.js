@@ -19,6 +19,7 @@ function stockholm(date) {
 function due(t) {
   const jobs = [];
   if (t.minute < 15) jobs.push("pipeline.yml");                   // varje timme
+  if (t.hour === 7 && t.minute < 15) jobs.push("rapport.yml");     // morgonrapporten 07.00
   if (t.hour === 7 && t.minute >= 45) jobs.push("instagram.yml");  // 07.45
   return jobs;
 }

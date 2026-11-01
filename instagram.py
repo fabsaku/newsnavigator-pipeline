@@ -30,6 +30,7 @@ from render import LEANS, REGION_ORDER, REGIONS, country
 ROOT = Path(__file__).parent
 OUT = ROOT / "public" / "ig"
 STATE = ROOT / "data" / "instagram.json"
+STATUS = ROOT / "data" / "instagram_status.json"   # senaste postningsvarvet: secrets finns, kort som väntar, fel, token_utgar
 SITE_URL = os.environ.get("NN_SITE_URL", "https://newsnavigator.se").rstrip("/")
 IMAGE_BASE = os.environ.get("IG_IMAGE_BASE", "https://newsnavigator.pages.dev").rstrip("/")
 GRAPH = os.environ.get("IG_GRAPH", "https://graph.instagram.com").rstrip("/")
@@ -418,6 +419,16 @@ def publish_one(sid, item, user, token):
     return _api(f"{user}/media_publish", {"creation_id": container, "access_token": token})["id"]
 
 
+def spara_status(**kv):
+    try:
+        status = json.loads(STATUS.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        status = {}
+    status.update(kv)
+    STATUS.parent.mkdir(parents=True, exist_ok=True)
+    STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def posta(antal=1, hours=36):
     import autopilot
     if autopilot.load_settings().get("tyst"):
@@ -428,9 +439,9 @@ def posta(antal=1, hours=36):
     since = time.time() - hours * 3600
     queue = sorted((sid for sid, it in state.items() if not it.get("postad") and it.get("godkand_tid", 0) >= since),
                    key=lambda sid: state[sid].get("poang", 0), reverse=True)[:antal]
+    fel = None
     if not queue:
         print("Instagram: inget nytt att posta")
-        return
     for sid in queue:
         if not (user and token):
             print(f"Instagram: skulle posta {sid}: {state[sid]['rubrik'][:70]} (IG_USER_ID/IG_ACCESS_TOKEN saknas)")
@@ -440,8 +451,11 @@ def posta(antal=1, hours=36):
             state[sid].update({"postad": time.time(), "ig_id": media_id})
             print(f"Instagram: postade {sid} ({media_id})")
         except Exception as e:
+            fel = str(e)[:120]
             print(f"Instagram: misslyckades med {sid}: {e}", file=sys.stderr)
     save_state(state)
+    spara_status(senast=time.time(), secrets=bool(user and token), fel=fel,
+                 vantar=sum(1 for it in state.values() if not it.get("postad") and it.get("godkand_tid", 0) >= since))
 
 
 def urval(fil, out):

@@ -45,6 +45,10 @@ jobs:
         run: python publish.py
       - name: Instagramkort för godkända notiser
         run: python instagram.py bygg
+      - name: Behöver dig
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python behover.py || echo "Kunde inte räkna ut Behöver dig"
       - name: Uppdatera granskningsärendet
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
