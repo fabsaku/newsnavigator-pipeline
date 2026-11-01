@@ -3205,30 +3205,36 @@
  },
  "9c68d32d6d": {
   "id": "9c68d32d6d",
-  "amnen": [],
-  "amnen_sektion": [],
-  "poang": 29.3,
+  "amnen": [
+   "geopolitik",
+   "usa"
+  ],
+  "amnen_sektion": [
+   "geopolitik",
+   "usa"
+  ],
+  "poang": 30.2,
   "vikt": {
-   "bredd": 0.202,
+   "bredd": 0.403,
    "regioner": {
-    "mellanostern": 1,
-    "asien": 1
+    "asien": 2,
+    "mellanostern": 2
    },
-   "timmar": 68,
+   "timmar": 32,
    "konsekvens": {
-    "berorda": 3,
-    "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.33,
-    "skal": "Diplomatiska samtal mellan Iran och Qatar i skuggan av hotet om amerikanska angrepp kan påverka säkerheten i regionen, men utfallet är ännu oklart."
+    "berorda": 5,
+    "allvar": 5,
+    "varaktighet": 4,
+    "medel": 4.67,
+    "skal": "Förhandlingar mitt i ett pågående USA-Iran-krig påverkar flera länder och krig och liv står på spel."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 2,
+  "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-10-31T15:46:29+00:00",
+  "senast": "2026-11-01T13:00:52+00:00",
   "utkast": {
    "rubrik_sv": "Iranska förhandlare träffar katariska medlare i Doha",
    "sammanfattning_sv": "Iranska förhandlare har haft samtal med katariska medlare i Doha, enligt en källa som informerats om samtalen (Reuters via Al-Monitor). Enligt The Straits Times har USA:s president Donald Trump avstått från att anfalla Iran före valet den 3 november.",
@@ -3335,16 +3341,14 @@
     "mellanostern"
    ],
    "per_region": {
-    "mellanostern": [
-     {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Iranian envoys meet Qatari mediators as threat looms of US strikes after midterms",
-      "url": "https://www.al-monitor.com/originals/2026/10/iranian-envoys-meet-qatari-mediators-threat-looms-us-strikes-after-midterms",
-      "statskontrollerad": false
-     }
-    ],
     "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Iranian negotiators in Doha to continue talks to end the U.S.-Iran war, official says",
+      "url": "https://www.thehindu.com/news/international/iranian-negotiators-in-doha-to-continue-talks-to-end-the-us-iran-war-official-says/article71652891.ece",
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Straits Times",
       "land": "SG",
@@ -3352,23 +3356,61 @@
       "url": "https://www.straitstimes.com/world/middle-east/iranian-envoys-meet-qatari-mediators-as-threat-looms-of-us-strikes-after-midterms",
       "statskontrollerad": false
      }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "Iranian negotiators in Doha to continue talks to end the US-Iran war, official says",
+      "url": "https://www.al-monitor.com/originals/2026/11/iranian-negotiators-doha-continue-talks-end-us-iran-war-official-says",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Mediators continue US-Iran negotiations amid war rhetoric: What we know",
+      "url": "https://www.aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know?traffic_source=rss",
+      "statskontrollerad": false
+     }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Iranian envoys meet Qatari mediators as threat looms of US strikes after midterms",
+  "reserv_rubrik": "Iranian negotiators in Doha to continue talks to end the U.S.-Iran war, official says",
   "kallor": [
    {
+    "namn": "The Hindu",
+    "rubrik": "Iranian negotiators in Doha to continue talks to end the U.S.-Iran war, official says",
+    "url": "https://www.thehindu.com/news/international/iranian-negotiators-in-doha-to-continue-talks-to-end-the-us-iran-war-official-says/article71652891.ece",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Al-Monitor",
-    "rubrik": "Iranian envoys meet Qatari mediators as threat looms of US strikes after midterms",
-    "url": "https://www.al-monitor.com/originals/2026/10/iranian-envoys-meet-qatari-mediators-threat-looms-us-strikes-after-midterms",
+    "rubrik": "Iranian negotiators in Doha to continue talks to end the US-Iran war, official says",
+    "url": "https://www.al-monitor.com/originals/2026/11/iranian-negotiators-doha-continue-talks-end-us-iran-war-official-says",
     "betalvagg": false,
     "typ": "media",
     "land": "US",
     "region": "mellanostern",
     "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "Mediators continue US-Iran negotiations amid war rhetoric: What we know",
+    "url": "https://www.aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know?traffic_source=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -3385,12 +3427,13 @@
   ],
   "granskad": true,
   "autopilot": [
-   "färre än tre oberoende källor (2)"
+   "källkontrollen har 1 anmärkningar",
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1793495213.2387633,
   "automatisk": true,
-  "uppdaterad_tid": 1793531903.897972
+  "uppdaterad_tid": 1793538411.7738895
  },
  "4a1d17c3a4": {
   "id": "4a1d17c3a4",
