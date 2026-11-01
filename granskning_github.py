@@ -24,9 +24,14 @@ ROOT = Path(__file__).parent
 FLODE = ROOT / "data" / "flode.json"
 GODK = ROOT / "data" / "godkanda.json"
 ARKIV = ROOT / "data" / "arkiv.json"
+BOCKAR = ROOT / "data" / "bockar.json"   # vad redaktören sett i ärendet: rubrik och källor per id, så att id:t kan hållas
+BOCKAR_DAGAR = 7
 LABEL = "granskning"
 MARK = "<!-- newsnavigator-granskning -->"
 LINE = re.compile(r"^- \[([ xX])\] .*`([0-9a-f]{10})`", re.M)
+ITEM = re.compile(r"^- \[([ xX])\] (.*?)`([0-9a-f]{10})`\n((?:  .*\n?)*)", re.M)
+TITLE = re.compile(r"\*\*(.+?)\*\*")
+LINK = re.compile(r"\]\((https?://[^)\s]+)\)")
 MAX = 40
 
 
@@ -54,6 +59,34 @@ def save_approved(ok):
     GODK.write_text(json.dumps(sorted(ok), indent=2))
 
 
+def parse_items(body):
+    """Ärendets rader: per id bocken, rubriken och källornas adresser."""
+    out = {}
+    for m in ITEM.finditer(body or ""):
+        head, rest = m.group(2), m.group(4)
+        title = TITLE.search(head)
+        urls = []
+        for rad in rest.splitlines():
+            if rad.strip().startswith("Källor:"):
+                urls = LINK.findall(rad)
+        out[m.group(3)] = {"bock": m.group(1).lower() == "x", "rubrik": title.group(1).strip() if title else "", "urls": urls}
+    return out
+
+
+def save_items(items, now=None):
+    """Sparar vad redaktören sett, i sju dagar, så att pipelinen kan ge en ändrad händelse samma id igen."""
+    now = time.time() if now is None else now
+    try:
+        data = json.loads(BOCKAR.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        data = {}
+    for i, post in items.items():
+        data[i] = {"rubrik": post["rubrik"], "urls": post["urls"], "sedd": now}
+    data = {i: p for i, p in data.items() if now - p.get("sedd", 0) < BOCKAR_DAGAR * 86400}
+    BOCKAR.parent.mkdir(parents=True, exist_ok=True)
+    BOCKAR.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def tillampa_bockar(ticks, ok, status):
     """Bockarna i ärendet mot godkända och autopilotens status. Returnerar (godkända, nya, ångrade).
     En notis i autopilotens kö: bock = väntar kvar, urbockad = stoppad. En ångrad notis spärras för autopiloten."""
@@ -77,6 +110,7 @@ def read_ticks():
         print("Inget granskningsärende än.")
         return
     ticks = {m.group(2): m.group(1).lower() == "x" for m in LINE.finditer(issue["body"] or "")}
+    save_items(parse_items(issue["body"]))
     status = autopilot.load_status()
     ok, added, removed = tillampa_bockar(ticks, approved(), status)
     save_approved(ok)

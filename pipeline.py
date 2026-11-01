@@ -511,6 +511,39 @@ def match_archive(events, arkiv, min_share=0.5, min_sources=3, min_words=0.5):
     return used_posts
 
 
+def reclaim_ids(events, seen, arkiv, min_share=0.5, min_words=0.6):
+    """Ett id som redaktören sett i ärendet följer med händelsen när klustret ändras: en händelse i flödet
+    som delar minst hälften av artiklarna, eller minst 60 procent av rubrikens ord, med vad som stod under
+    id:t får det id:t tillbaka. Då försvinner inga bockar och inga veton. Id som redan finns i flödet eller i
+    arkivet rörs inte, och varje id går till högst en händelse."""
+    def urls(e):
+        return {k["url"] for k in e.get("kallor") or []}
+
+    def title(e):
+        return tokens((e.get("utkast") or {}).get("rubrik_sv") or e.get("reserv_rubrik") or "")
+
+    taken = {e["id"] for e in events} | set(arkiv)
+    cands = []
+    for n, ev in enumerate(events):
+        for old, info in seen.items():
+            if old in taken:
+                continue
+            u_old = set(info.get("urls") or [])
+            share = len(urls(ev) & u_old) / max(1, min(len(urls(ev)), len(u_old))) if u_old else 0.0
+            t_old = tokens(info.get("rubrik") or "")
+            wshare = len(title(ev) & t_old) / max(1, min(len(title(ev)), len(t_old))) if t_old else 0.0
+            if share >= min_share or wshare >= min_words:
+                cands.append((max(share, wshare), len(urls(ev) & u_old), n, old))
+    used_old, used_events = set(), set()
+    for _, _, n, old in sorted(cands, key=lambda x: (-x[0], -x[1])):
+        if old in used_old or n in used_events:
+            continue
+        events[n]["id"] = old
+        used_old.add(old)
+        used_events.add(n)
+    return used_old
+
+
 def reply_text(msg):
     """Plockar ut svarstexten. Modellen kan skicka resonemangsblock före texten, de hoppas över."""
     text = "".join(getattr(b, "text", "") for b in msg.content if getattr(b, "type", "text") == "text")
@@ -711,7 +744,14 @@ def main():
 
     # En händelse som redan är publicerad behåller sin notis: den får arkivets id och uppdateras där
     from newsletter import load_archive
-    match_archive(events, load_archive())
+    arkiv_nu = load_archive()
+    match_archive(events, arkiv_nu)
+    # Ett id som redaktören sett i ärendet följer med händelsen när klustret ändras
+    bockar_path = ROOT / "data" / "bockar.json"
+    try:
+        reclaim_ids(events, json.loads(bockar_path.read_text(encoding="utf-8")), arkiv_nu)
+    except (OSError, ValueError):
+        pass
 
     # Autopiloten: notiser som klarar grindarna köas med klockslag och godkänns när fönstret gått ut
     import autopilot

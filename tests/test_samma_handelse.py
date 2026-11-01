@@ -1,4 +1,5 @@
 """Fas 1: samma händelse en gång, och samma id när den får nya källor."""
+import json
 import re
 
 import vikt
@@ -140,3 +141,74 @@ def test_notissidan_visar_uppdaterad():
           "uppdaterad_tid": 1_793_010_000.0, "automatisk": False}
     html = sajt.story_page(sajt.Urls(flat=True), ev, [], [], "", True)
     assert "Uppdaterad" in html
+
+
+# ---------- Id:t håller mot det du sett i ärendet ----------
+
+ARENDE = """<!-- newsnavigator-granskning -->
+Bocka i de notiser som får publiceras.
+
+### Publiceras automatiskt
+
+- [x] ⏱ publiceras 23.19 om du inte bockar ur · ❗ Måste med · **Fed lämnar räntan** · 15 källor · `aaaaaaaaaa`
+  Källkontroll: alla 5 påståenden spårade till källorna.
+  Källor: [CNBC](https://c/1), [NPR](https://n/1) och 13 till
+
+### Att granska
+
+- [ ] **Tågolycka i Spanien** · 9 källor · `bbbbbbbbbb`
+  Minst 60 döda.
+  Källor: [BBC](https://b/1), [France 24](https://f/1), [NPR](https://n/2)
+- [x] ⚠️ **Bolsonaro i USA** · 5 källor · `cccccccccc`
+  Källor: [Guardian](https://g/1)
+"""
+
+
+def test_arendet_tolkas_med_rubrik_och_kallor():
+    import granskning_github
+    poster = granskning_github.parse_items(ARENDE)
+    assert set(poster) == {"aaaaaaaaaa", "bbbbbbbbbb", "cccccccccc"}
+    assert poster["aaaaaaaaaa"] == {"bock": True, "rubrik": "Fed lämnar räntan", "urls": ["https://c/1", "https://n/1"]}
+    assert poster["bbbbbbbbbb"]["bock"] is False and poster["bbbbbbbbbb"]["urls"] == ["https://b/1", "https://f/1", "https://n/2"]
+    assert poster["cccccccccc"]["rubrik"] == "Bolsonaro i USA"
+
+
+def test_handelse_far_tillbaka_id_som_redaktoren_sett():
+    import pipeline
+    info = {"bbbbbbbbbb": {"rubrik": "Tågolycka i Spanien", "urls": ["https://b/1", "https://f/1", "https://n/2"]},
+            "aaaaaaaaaa": {"rubrik": "Fed lämnar räntan", "urls": ["https://c/1", "https://n/1"]}}
+    ny = notis("nytt000001", ["https://b/1", "https://f/1", "https://n/2", "https://x/9"])
+    ny["utkast"]["rubrik_sv"] = "Tågolyckan i Spanien: dödstalet stiger"
+    annan = notis("annan00001", ["https://y/1", "https://y/2", "https://y/3"], rubrik_en="Unrelated story")
+    annan["utkast"]["rubrik_sv"] = "Något helt annat"
+    pipeline.reclaim_ids([ny, annan], info, arkiv={})
+    assert ny["id"] == "bbbbbbbbbb" and annan["id"] == "annan00001"
+
+
+def test_rubriken_racker_nar_kallorna_bytts():
+    import pipeline
+    info = {"bbbbbbbbbb": {"rubrik": "Tågolycka i Spanien: minst 60 döda", "urls": ["https://b/1"]}}
+    ny = notis("nytt000001", ["https://z/1", "https://z/2"])
+    ny["utkast"]["rubrik_sv"] = "Tågolycka i Spanien: minst 64 döda"
+    pipeline.reclaim_ids([ny], info, arkiv={})
+    assert ny["id"] == "bbbbbbbbbb"
+
+
+def test_id_som_redan_finns_tas_inte_tillbaka():
+    import pipeline
+    info = {"bbbbbbbbbb": {"rubrik": "Tågolycka i Spanien", "urls": ["https://b/1", "https://f/1"]}}
+    kvar = notis("bbbbbbbbbb", ["https://b/1", "https://f/1"])
+    ny = notis("nytt000001", ["https://b/1", "https://f/1"])
+    pipeline.reclaim_ids([kvar, ny], info, arkiv={})
+    assert ny["id"] == "nytt000001"
+    arkiverad = notis("nytt000002", ["https://b/1", "https://f/1"])
+    pipeline.reclaim_ids([arkiverad], info, arkiv={"bbbbbbbbbb": {}})
+    assert arkiverad["id"] == "nytt000002"
+
+
+def test_las_sparar_vad_redaktoren_sett(tmp_path, monkeypatch):
+    import granskning_github
+    monkeypatch.setattr(granskning_github, "BOCKAR", tmp_path / "bockar.json")
+    granskning_github.save_items(granskning_github.parse_items(ARENDE), now=5.0)
+    data = json.loads((tmp_path / "bockar.json").read_text(encoding="utf-8"))
+    assert data["bbbbbbbbbb"]["rubrik"] == "Tågolycka i Spanien" and data["bbbbbbbbbb"]["sedd"] == 5.0
