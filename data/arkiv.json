@@ -2948,32 +2948,31 @@
   "id": "78c12de853",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 26.6,
+  "poang": 25.6,
   "vikt": {
-   "bredd": 1.018,
+   "bredd": 0.723,
    "regioner": {
+    "asien": 2,
     "latinamerika": 3,
     "usa": 1,
-    "europa": 3,
-    "asien": 1,
-    "sverige": 2,
-    "mellanostern": 2
+    "europa": 1,
+    "mellanostern": 1
    },
-   "timmar": 6,
+   "timmar": 10,
    "konsekvens": {
     "berorda": 4,
     "allvar": 3,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "Stora protester mot levnadskostnader i Frankrike och Tyskland med hundratusentals deltagare, men utan rapporterade dödsoffer och med begränsade långsiktiga följder."
+    "skal": "Veckovisa protester mot levnadskostnader sprids i flera europeiska länder, med hundratusentals deltagare i Frankrike, men följderna är troligen begränsade i tid."
    },
    "bekraftad": true,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 12,
+  "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-10-31T21:40:01+00:00",
+  "senast": "2026-10-31T23:56:15+00:00",
   "utkast": {
    "rubrik_sv": "En död och sex skadade i skjutning i Spirit Halloween-butik i Fairfield, Kalifornien",
    "sammanfattning_sv": "Enligt polisen dödades en person och sex skadades när en skytt öppnade eld i en Spirit Halloween-butik i ett köpcentrum i Fairfield i Kalifornien på fredagskvällen. Enligt Dawn har utredarna ännu inte identifierat den ansvarige.",
@@ -3104,10 +3103,25 @@
     "europa",
     "latinamerika",
     "mellanostern",
-    "sverige",
     "usa"
    ],
    "per_region": {
+    "asien": [
+     {
+      "kalla": "ABC News (Australien)",
+      "land": "AU",
+      "rubrik": "Third weekend of protests in France as youth-led rallies sweep Europe",
+      "url": "https://www.abc.net.au/news/2026-11-01/germany-france-europe-youth-protests/107333208",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Germans to join Europe's youth protest wave",
+      "url": "https://www.thehindu.com/news/international/germans-to-join-europes-youth-protest-wave/article71646650.ece",
+      "statskontrollerad": false
+     }
+    ],
     "latinamerika": [
      {
       "kalla": "El País América",
@@ -3142,60 +3156,14 @@
     ],
     "europa": [
      {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Protests under way in Germany and France as minister warns against use of Halloween masks – as it happened",
-      "url": "https://www.theguardian.com/world/live/2026/oct/31/france-germany-protests-paris-europe-latest-news-updates",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "France 24",
       "land": "FR",
-      "rubrik": "France braces for Halloween protests, shops board up storefronts",
-      "url": "https://www.france24.com/en/france-braces-for-halloween-protests-shops-board-up-storefronts",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "RT",
-      "land": "RU",
-      "rubrik": "German Gen Z takes to streets over cost of living (VIDEOS)",
-      "url": "https://rt-english.com/news/648183-german-gen-z-takes-to-streets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-      "statskontrollerad": true
-     }
-    ],
-    "asien": [
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Fears of violence as France braces for Halloween protests",
-      "url": "https://www.thehindu.com/news/international/fears-of-violence-as-france-braces-for-halloween-protests/article71648280.ece",
-      "statskontrollerad": false
-     }
-    ],
-    "sverige": [
-     {
-      "kalla": "Dagens industri",
-      "land": "SE",
-      "rubrik": "Tårgas vid nya protester i Frankrike",
-      "url": "https://www.di.se/nyheter/targas-vid-nya-protester-i-frankrike/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens Nyheter",
-      "land": "SE",
-      "rubrik": "Tårgas och stora protester på halloween i Frankrike",
-      "url": "https://www.dn.se/varlden/targas-och-stora-protester-pa-halloween-i-frankrike/",
+      "rubrik": "Third weekend of protests in France",
+      "url": "https://www.france24.com/en/third-weekend-of-protests-in-france",
       "statskontrollerad": false
      }
     ],
     "mellanostern": [
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Isolated clashes in France after nationwide protests on Halloween",
-      "url": "https://www.thenationalnews.com/news/europe/2026/10/31/isolated-clashes-in-france-after-nationwide-protests-on-halloween/",
-      "statskontrollerad": true
-     },
      {
       "kalla": "Tehran Times",
       "land": "IR",
@@ -3205,12 +3173,23 @@
      }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida",
+  "reserv_rubrik": "Third weekend of protests in France as youth-led rallies sweep Europe",
   "kallor": [
+   {
+    "namn": "ABC News (Australien)",
+    "rubrik": "Third weekend of protests in France as youth-led rallies sweep Europe",
+    "url": "https://www.abc.net.au/news/2026-11-01/germany-france-europe-youth-protests/107333208",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AU",
+    "region": "asien",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "El País América",
     "rubrik": "Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida",
@@ -3231,17 +3210,6 @@
     "land": "US",
     "region": "usa",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Guardian",
-    "rubrik": "Protests under way in Germany and France as minister warns against use of Halloween masks – as it happened",
-    "url": "https://www.theguardian.com/world/live/2026/oct/31/france-germany-protests-paris-europe-latest-news-updates",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -3268,8 +3236,8 @@
    },
    {
     "namn": "France 24",
-    "rubrik": "France braces for Halloween protests, shops board up storefronts",
-    "url": "https://www.france24.com/en/france-braces-for-halloween-protests-shops-board-up-storefronts",
+    "rubrik": "Third weekend of protests in France",
+    "url": "https://www.france24.com/en/third-weekend-of-protests-in-france",
     "betalvagg": false,
     "typ": "media",
     "land": "FR",
@@ -3279,47 +3247,14 @@
    },
    {
     "namn": "The Hindu",
-    "rubrik": "Fears of violence as France braces for Halloween protests",
-    "url": "https://www.thehindu.com/news/international/fears-of-violence-as-france-braces-for-halloween-protests/article71648280.ece",
+    "rubrik": "Germans to join Europe's youth protest wave",
+    "url": "https://www.thehindu.com/news/international/germans-to-join-europes-youth-protest-wave/article71646650.ece",
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens industri",
-    "rubrik": "Tårgas vid nya protester i Frankrike",
-    "url": "https://www.di.se/nyheter/targas-vid-nya-protester-i-frankrike/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens Nyheter",
-    "rubrik": "Tårgas och stora protester på halloween i Frankrike",
-    "url": "https://www.dn.se/varlden/targas-och-stora-protester-pa-halloween-i-frankrike/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The National",
-    "rubrik": "Isolated clashes in France after nationwide protests on Halloween",
-    "url": "https://www.thenationalnews.com/news/europe/2026/10/31/isolated-clashes-in-france-after-nationwide-protests-on-halloween/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "AE",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
    },
    {
     "namn": "Tehran Times",
@@ -3331,27 +3266,17 @@
     "region": "mellanostern",
     "agare": "statlig",
     "statskontrollerad": true
-   },
-   {
-    "namn": "RT",
-    "rubrik": "German Gen Z takes to streets over cost of living (VIDEOS)",
-    "url": "https://rt-english.com/news/648183-german-gen-z-takes-to-streets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "RU",
-    "region": "europa",
-    "agare": "statlig",
-    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "autopilot": [
-   "spärrord: greps"
+   "spärrord: arrested, gripits",
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1793477079.5650015,
   "automatisk": false,
-  "uppdaterad_tid": 1793484407.0617855
+  "uppdaterad_tid": 1793498744.8626425
  },
  "9c68d32d6d": {
   "id": "9c68d32d6d",
