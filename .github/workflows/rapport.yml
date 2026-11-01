@@ -46,4 +46,5 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add data/rapport.json 2>/dev/null || true   # finns först när något skickats
           git commit -m "Rapport $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
+          git checkout -- data/behover.json   # räknas ut här men sparas av pipelinen
           git pull --rebase -X theirs origin main && git push
