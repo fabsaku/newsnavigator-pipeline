@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-01T21:06:09.241419+00:00",
+  "skapad": "2026-11-01T21:13:43.780669+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": true,
   "handelser": [
@@ -7,14 +7,14 @@
       "id": "bc8d7b9f7b",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 36.2,
+      "poang": 36.9,
       "vikt": {
-        "bredd": 0.693,
+        "bredd": 0.763,
         "regioner": {
+          "asien": 2,
           "norden": 1,
           "mellanostern": 2,
-          "europa": 1,
-          "asien": 1
+          "europa": 1
         },
         "timmar": 67,
         "konsekvens": {
@@ -22,144 +22,107 @@
           "allvar": 5,
           "varaktighet": 4,
           "medel": 4.0,
-          "skal": "Israeliska attacker i Gaza dödar åtta till nio personer, inklusive ett barn, vilket innebär oåterkalleliga förluster i en pågående konflikt."
+          "skal": "Israeliska attacker dödar åtta personer i Gaza, vilket gäller människoliv i en pågående krigssituation, men omfattningen är begränsad till en enskild händelse."
         },
         "bekraftad": true,
         "maste": false
       },
       "maste": false,
-      "antal_kallor": 5,
+      "antal_kallor": 6,
       "har_primarkalla": false,
-      "senast": "2026-11-01T20:24:35+00:00",
+      "senast": "2026-11-01T21:07:42+00:00",
       "utkast": {
-        "rubrik_sv": "Minst åtta döda i israeliska angrepp på Gaza",
-        "sammanfattning_sv": "Minst åtta personer dödades i israeliska angrepp på Gaza på söndagen, enligt medicinska källor och Hamas-styrda inrikesministeriet. Fem av de döda var poliser i Khan Younis enligt BBC, medan Middle East Eye uppger att antalet var minst nio.",
-        "rubrik_en": "At least eight killed in Israeli strikes in Gaza",
-        "sammanfattning_en": "At least eight people were killed in Israeli strikes in Gaza on Sunday, according to medics and the Hamas-run interior ministry. Five of the dead were police officers in Khan Younis, according to BBC, while Middle East Eye reports at least nine.",
-        "oenighet": "Källorna anger olika antal döda. DR, BBC, Al-Monitor och The Straits Times anger åtta. Middle East Eye anger minst nio, med hänvisning till Al Jazeera, och uppger att fem dödades i Khan Younis och tre i Gaza City.",
-        "oenighet_en": "The sources give different death tolls. DR, BBC, Al-Monitor and The Straits Times report eight. Middle East Eye reports at least nine, citing Al Jazeera, and says five were killed in Khan Younis and three in Gaza City.",
-        "perspektiv_sv": "Brittiska BBC lyfter att bland de döda fanns poliser från den Hamas-styrda polisen och ett barn i Gaza City. Amerikanska Al-Monitor, som återger Reuters, lyfter medicinska källor och det Hamas-styrda inrikesministeriet som källor. Singaporianska The Straits Times lyfter även de palestinska myndigheternas uppgift att över 74 000 personer har dödats i Israels angrepp på Gaza. Danska DR publicerar endast en kort rubrik med antalet döda.",
-        "perspektiv_en": "British BBC highlights that the dead included police officers from the Hamas-run police and a child in Gaza City. US-based Al-Monitor, citing Reuters, highlights medics and the Hamas-run interior ministry as sources. Singapore's The Straits Times also highlights the Palestinian authorities' figure that more than 74,000 people have been killed in Israel's assault on Gaza. Danish DR publishes only a short headline with the death toll.",
+        "rubrik_sv": "Israeliska angrepp i Gaza dödar minst åtta personer, enligt läkare",
+        "sammanfattning_sv": "Enligt läkare och Hamas-styrda inrikesministeriet dödade israeliska angrepp på söndagen minst åtta palestinier i Gazaremsan, däribland fem poliser. Middle East Eye uppger nio döda, inklusive ett barn.",
+        "rubrik_en": "Israeli strikes in Gaza kill at least eight people, medics say",
+        "sammanfattning_en": "According to medics and the Hamas-run interior ministry, Israeli strikes on Sunday killed at least eight Palestinians in Gaza, including five police officers. Middle East Eye reports nine deaths, including a child.",
+        "oenighet": "Middle East Eye anger nio döda och hänvisar till Al Jazeera och civilförsvarets uttalande. AU, BBC, Al-Monitor och Straits Times anger minst åtta. Den danska källan (DR Nyheder) anger åtta i rubriken, men materialet innehåller bara rubriken från den källan.",
+        "oenighet_en": "Middle East Eye reports nine deaths, citing Al Jazeera and a statement from the civil defence service. ABC News (Australia), BBC World, Al-Monitor and The Straits Times report at least eight. The Danish source (DR Nyheder) gives eight in its headline; the material contains only the headline from that source.",
+        "perspektiv_sv": "The Straits Times (Singapore) lyfter i ingressen att palestinska myndigheter uppger att fler än 74 000 personer har dödats i Israels angrepp mot Gaza.",
+        "perspektiv_en": "The Straits Times (Singapore) highlights in its standfirst that Palestinian authorities say more than 74,000 people have been killed in Israel's attacks on Gaza.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Middle East Eye anger både nio döda och en fördelning (fem i Khan Younis, tre i Gaza City) som summerar till åtta. Materialet består endast av rubriker och ingresser, så det går inte att avgöra vilken siffra som är korrekt. Notisen anger därför båda uppgifterna med tillskrivning."
+        "kommentar": "Källorna anger olika antal döda (åtta respektive nio). Middle East Eye:s uppgift om nio döda är tillskriven Al Jazeera och civilförsvaret. Den danska källan har endast rubrik i materialet. Uppgiften om över 74 000 döda i Gaza är tillskriven palestinska myndigheter via The Straits Times."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 15,
+        "antal": 10,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Minst åtta döda i israeliska angrepp på Gaza (rubrik)",
+            "text": "Israeliska angrepp i Gaza dödade minst åtta personer (rubrik, enligt läkare)",
             "stod": [
               1,
-              3,
               4,
+              5,
+              6
+            ],
+            "problem": null
+          },
+          {
+            "text": "Angreppen skedde på söndagen i Gazaremsan",
+            "stod": [
               5
             ],
             "problem": null
           },
           {
-            "text": "Minst åtta dödades i israeliska angrepp på Gaza på söndagen",
+            "text": "Enligt läkare och Hamas-styrda inrikesministeriet dödades minst åtta palestinier",
             "stod": [
-              4
+              1,
+              5
             ],
             "problem": null
           },
           {
-            "text": "Uppgifterna kommer från medicinska källor och Hamas-styrda inrikesministeriet",
+            "text": "Bland de döda fanns fem poliser",
             "stod": [
-              4
+              1,
+              5
             ],
             "problem": null
           },
           {
-            "text": "BBC: fem av de döda var poliser i Khan Younis",
+            "text": "Middle East Eye uppger nio döda, inklusive ett barn",
             "stod": [
               3
             ],
             "problem": null
           },
           {
-            "text": "Middle East Eye: minst nio döda",
+            "text": "The Straits Times lyfter i ingressen att palestinska myndigheter uppger att fler än 74 000 personer har dödats i Israels angrepp mot Gaza",
+            "stod": [
+              6
+            ],
+            "problem": null
+          },
+          {
+            "text": "Middle East Eye hänvisar till Al Jazeera och civilförsvarets uttalande",
+            "stod": [
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "AU, BBC, Al-Monitor och Straits Times anger minst åtta döda",
+            "stod": [
+              1,
+              4,
+              5,
+              6
+            ],
+            "problem": null
+          },
+          {
+            "text": "DR Nyheder anger åtta döda i rubriken",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "BBC lyfter att bland de döda fanns poliser från den Hamas-styrda polisen",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "BBC lyfter att bland de döda fanns ett barn i Gaza City",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Al-Monitor återger Reuters",
-            "stod": [
-              4
-            ],
-            "problem": null
-          },
-          {
-            "text": "Al-Monitor lyfter medicinska källor och det Hamas-styrda inrikesministeriet som källor",
-            "stod": [
-              4
-            ],
-            "problem": null
-          },
-          {
-            "text": "The Straits Times lyfter palestinska myndigheters uppgift att över 74 000 har dödats i Israels angrepp på Gaza",
-            "stod": [
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "DR publicerar endast en kort rubrik med antalet döda",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Källorna anger olika antal döda",
-            "stod": [
-              1,
-              2,
-              3,
-              4,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "DR, BBC, Al-Monitor och The Straits Times anger åtta döda",
-            "stod": [
-              1,
-              3,
-              4,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Middle East Eye anger minst nio med hänvisning till Al Jazeera",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Middle East Eye uppger att fem dödades i Khan Younis och tre i Gaza City",
+            "text": "Materialet från DR Nyheder innehåller endast rubriken",
             "stod": [
               2
             ],
@@ -176,6 +139,22 @@
           "norden"
         ],
         "per_region": {
+          "asien": [
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "Israeli strikes kill eight people in Gaza, medics say",
+              "url": "https://www.abc.net.au/news/2026-11-02/israeli-strikes-kill-eight-people-in-gaza-medics-say/107334984",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Israeli strikes kill eight people in Gaza, medics say",
+              "url": "https://www.straitstimes.com/world/middle-east/israeli-strikes-kill-eight-people-in-gaza-medics-say",
+              "statskontrollerad": false
+            }
+          ],
           "norden": [
             {
               "kalla": "DR Nyheder",
@@ -209,23 +188,25 @@
               "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
               "statskontrollerad": false
             }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Israeli strikes kill eight people in Gaza, medics say",
-              "url": "https://www.straitstimes.com/world/middle-east/israeli-strikes-kill-eight-people-in-gaza-medics-say",
-              "statskontrollerad": false
-            }
           ]
         },
         "blind_flack": null,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Otte dræbt i israelske angreb i Gaza",
+      "reserv_rubrik": "Israeli strikes kill eight people in Gaza, medics say",
       "kallor": [
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "Israeli strikes kill eight people in Gaza, medics say",
+          "url": "https://www.abc.net.au/news/2026-11-02/israeli-strikes-kill-eight-people-in-gaza-medics-say/107334984",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
         {
           "namn": "DR Nyheder",
           "rubrik": "Otte dræbt i israelske angreb i Gaza",
@@ -284,7 +265,7 @@
       ],
       "granskad": false,
       "autopilot": [
-        "spärrord: child"
+        "spärrord: barn, child"
       ],
       "data": null
     },
@@ -323,18 +304,18 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T20:35:58+00:00",
       "utkast": {
-        "rubrik_sv": "Iran varnar för att ett nytt krig kan bli längre",
-        "sammanfattning_sv": "Iran varnar för att ett nytt krig med USA kan bli längre än det föregående, efter Trumps uttalande om fler mål. Enligt Axios, med israeliska och amerikanska källor, hade Trump ett samtal med Netanyahu om läget i förhandlingarna med Iran.",
-        "rubrik_en": "Iran says a renewed war with the US could run longer",
-        "sammanfattning_en": "Iran warns that a renewed war with the US could last longer than the previous one, after Trump said more targets remained. According to Axios, citing Israeli and US sources, Trump spoke with Netanyahu about the Iran negotiations.",
-        "oenighet": "Axios uppger, med hänvisning till källor, att Netanyahu pressar Trump att slå mot Iran omedelbart. RT, med hänvisning till Marco Rubio, skriver att Trump ännu inte har fattat beslut om nya anfall. Middle East Eye och The Straits Times återger Trump som att fler mål återstår. Enligt The Hindu, som refererar Axios, beskrev en israelisk källa samtalet som tufft medan en amerikansk källa kallade det direkt.",
-        "oenighet_en": "Axios reports, citing sources, that Netanyahu is pressing Trump to strike Iran immediately. RT, citing Marco Rubio, reports that Trump has not yet decided on new strikes. Middle East Eye and The Straits Times report Trump as saying that more targets remain. According to The Hindu, citing Axios, an Israeli source described the call as tough, while an American source described it as direct.",
-        "perspektiv_sv": "Rubrikerna skiljer sig åt i vad de lyfter fram. Axios (USA) och The Hindu (Indien) lyfter Trumps samtal med Netanyahu. Middle East Eye (Storbritannien), Dawn (Pakistan) och The Straits Times (Singapore) lyfter Irans varning om ett eventuellt längre krig. RT, ett statskontrollerat ryskt medium, lyfter Marco Rubios uppgift att Trump inte fattat beslut om nya anfall.",
-        "perspektiv_en": "The headlines differ in what they highlight. Axios (US) and The Hindu (India) highlight Trump's call with Netanyahu. Middle East Eye (UK), Dawn (Pakistan) and The Straits Times (Singapore) highlight Iran's warning that a renewed war could last longer. RT, a state-controlled Russian outlet, highlights Marco Rubio's statement that Trump has not decided on new strikes.",
+        "rubrik_sv": "Iran varnar för att ett nytt krig med USA kan dra ut längre än det förra",
+        "sammanfattning_sv": "Iran varnade på söndagen att ett nytt krig med USA kan vara längre än den förra omgången, efter att Trump sagt att fler mål återstår. Enligt Axios hade Trump ett samtal med Netanyahu om förhandlingarna med Iran och hur snabbt strider ska återupptas.",
+        "rubrik_en": "Iran warns a renewed war with the US could last longer than the last one",
+        "sammanfattning_en": "Iran warned on Sunday that a renewed war with the US could last longer than the previous round, after Trump said more targets remained. According to Axios, Trump had a call with Netanyahu about negotiations with Iran and how quickly fighting could resume.",
+        "oenighet": "The Hindu, som citerar Axios, uppger att en israelisk källa beskrev samtalet mellan Trump och Netanyahu som ”tufft” och en amerikansk källa som ”direkt”. Enligt Axios pressar Netanyahu, enligt en israelisk och en amerikansk källa, på för att anfalla Iran omedelbart. RT uppger, med hänvisning till Marco Rubio, att Trump ännu inte har beslutat om nya anfall.",
+        "oenighet_en": "The Hindu, citing Axios, reports that an Israeli source described the Trump-Netanyahu call as “tough” and an American source described it as “direct”. According to Axios, citing one Israeli and one U.S. source, Netanyahu is pressing Trump to strike Iran immediately. RT reports, citing Marco Rubio, that Trump has not yet decided on new strikes.",
+        "perspektiv_sv": "Rubrikerna lyfter olika saker. Indiska The Hindu och amerikanska Axios lyfter samtalet mellan Trump och Netanyahu. Brittiska Middle East Eye, pakistanska Dawn och singaporianska The Straits Times lyfter Irans varning om ett längre krig. Ryska RT, som är ett statskontrollerat medium, lyfter Rubios uttalande att Trump inte fattat beslut om nya anfall.",
+        "perspektiv_en": "The headlines highlight different things. Indian outlet The Hindu and US outlet Axios highlight the Trump-Netanyahu call. British Middle East Eye, Pakistani Dawn and Singaporean The Straits Times highlight Iran's warning of a longer war. Russian RT, a state-controlled outlet, highlights Rubio's statement that Trump has not decided on new strikes.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Underlaget består av rubriker och ingresser från RSS, inte hela artiklar. Uppgifterna om samtalet mellan Trump och Netanyahu bygger på anonyma källor enligt Axios. Sammanfattningen återger endast det som står i ingresserna."
+        "kommentar": "Underlaget består av rubriker och ingresser från RSS. Axios-ingressen är avklippt, så uppgiften om att Netanyahu pressar på för omedelbara anfall bygger på den avklippta texten och bör läsas med det i åtanke. Materialet innehåller bara en amerikansk källa med AllSides-betyg, så avsnittet om amerikanska medier utelämnas."
       },
       "kallkontroll": {
         "ok": true,
@@ -342,7 +323,16 @@
         "problem": [],
         "pastaenden": [
           {
-            "text": "Iran varnar för att ett nytt krig med USA kan bli längre än det föregående",
+            "text": "Iran varnar för att ett nytt krig med USA kan dra ut längre än det förra (rubrik)",
+            "stod": [
+              2,
+              4,
+              5
+            ],
+            "problem": null
+          },
+          {
+            "text": "Iran varnade på söndagen att ett nytt krig kan vara längre än förra omgången",
             "stod": [
               2,
               4
@@ -350,7 +340,7 @@
             "problem": null
           },
           {
-            "text": "Varningen kommer efter Trumps uttalande om fler mål",
+            "text": "Trump har sagt att fler mål återstår",
             "stod": [
               2,
               4,
@@ -359,21 +349,21 @@
             "problem": null
           },
           {
-            "text": "Trump hade ett samtal med Netanyahu om läget i förhandlingarna med Iran",
+            "text": "Trump hade ett samtal med Netanyahu om förhandlingarna med Iran och hur snabbt strider ska återupptas",
             "stod": [
               3
             ],
             "problem": null
           },
           {
-            "text": "Uppgiften om samtalet kommer från Axios med en israelisk och en amerikansk källa",
+            "text": "Enligt Axios hade Trump ett samtal med Netanyahu om förhandlingarna och hur snabbt strider ska återupptas",
             "stod": [
               3
             ],
             "problem": null
           },
           {
-            "text": "Axios och The Hindu lyfter Trumps samtal med Netanyahu i sina rubriker",
+            "text": "The Hindu och Axios lyfter samtalet mellan Trump och Netanyahu",
             "stod": [
               1,
               3
@@ -381,7 +371,7 @@
             "problem": null
           },
           {
-            "text": "Middle East Eye, Dawn och The Straits Times lyfter Irans varning om ett längre krig i sina rubriker",
+            "text": "Middle East Eye, Dawn och The Straits Times lyfter Irans varning om ett längre krig",
             "stod": [
               2,
               4,
@@ -390,52 +380,44 @@
             "problem": null
           },
           {
-            "text": "RT lyfter Marco Rubios uppgift att Trump inte fattat beslut om nya anfall",
+            "text": "RT lyfter Rubios uttalande att Trump inte fattat beslut om nya anfall",
             "stod": [
               6
             ],
             "problem": null
           },
           {
-            "text": "RT är ett statskontrollerat ryskt medium",
+            "text": "RT är ett statskontrollerat medium",
             "stod": [
               6
             ],
             "problem": null
           },
           {
-            "text": "Axios uppger, med hänvisning till källor, att Netanyahu pressar Trump att slå mot Iran omedelbart",
+            "text": "The Hindu, som citerar Axios, uppger att en israelisk källa beskrev samtalet som 'tufft'",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Hindu uppger att en amerikansk källa beskrev samtalet som 'direkt'",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Enligt Axios pressar Netanyahu Trump att anfalla Iran omedelbart, enligt en israelisk och en amerikansk källa",
             "stod": [
               3
             ],
             "problem": null
           },
           {
-            "text": "RT, med hänvisning till Rubio, skriver att Trump ännu inte har fattat beslut om nya anfall",
+            "text": "RT uppger, med hänvisning till Marco Rubio, att Trump ännu inte har beslutat om nya anfall",
             "stod": [
               6
-            ],
-            "problem": null
-          },
-          {
-            "text": "Middle East Eye och The Straits Times återger Trump som att fler mål återstår",
-            "stod": [
-              2,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Enligt The Hindu, som refererar Axios, beskrev en israelisk källa samtalet som tufft",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Enligt The Hindu, som refererar Axios, kallade en amerikansk källa samtalet direkt",
-            "stod": [
-              1
             ],
             "problem": null
           }
@@ -923,136 +905,97 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T16:46:00+00:00",
       "utkast": {
-        "rubrik_sv": "Iran varnar USA och Israel för nya attacker",
-        "sammanfattning_sv": "Iran varnar USA och Israel för nya attacker, enligt Japan Times och The Hindu. Ekot skriver att flera amerikanska medier rapporterar att USA planerar nya attacker efter mellanårsvalet.",
-        "rubrik_en": "Iran warns US and Israel against new attacks",
-        "sammanfattning_en": "Iran warns the US and Israel against new attacks, according to The Japan Times and The Hindu. Swedish Radio's Ekot reports that several American media outlets say the US plans new attacks after the midterm elections.",
-        "oenighet": "Hindustan Times nämner Mojtaba när den skriver om Irans varning, medan The Hindu skriver att Khamenei gav befälhavarna order. Hindustan Times återger också Trumps uttalande att kvarvarande iranska kärnkraftsanläggningar kan träffas inom tio minuter och att Iran är \"not very reliable\". Ekot och Japan Times skriver om amerikanska hot eller planer om nya militära åtgärder, medan Middle East Eye skriver om Irans dokumentation av attacker mot sin maritima infrastruktur.",
-        "oenighet_en": "Hindustan Times names Mojtaba when writing about Iran's warning, while The Hindu says Khamenei ordered commanders. Hindustan Times also reports Trump's statement that remaining Iranian nuclear sites could be hit within ten minutes and that Iran is \"not very reliable\". Ekot and The Japan Times write about US threats or plans for new military action, while Middle East Eye writes about Iran's documentation of attacks on its maritime infrastructure.",
-        "perspektiv_sv": "Ekot (Sverige) lyfter uppgifter om att USA planerar nya attacker. Japan Times (Japan) lyfter Irans varning och Trumps och Netanyahus hot. Middle East Eye (Storbritannien) lyfter Irans inlämning av bevis om amerikanska och israeliska attacker mot sin maritima infrastruktur till IMO. Hindustan Times och The Hindu (Indien) lyfter Irans varningar, och Hindustan Times lyfter även Trumps uttalanden om iranska kärnkraftsanläggningar.",
-        "perspektiv_en": "Ekot (Sweden) highlights reports that the US plans new attacks. The Japan Times (Japan) highlights Iran's warning and threats from Trump and Netanyahu. Middle East Eye (UK) highlights Iran's submission of evidence of US and Israeli attacks on its maritime infrastructure to the IMO. Hindustan Times and The Hindu (India) highlight Iran's warnings, and Hindustan Times also highlights Trump's statements about Iranian nuclear sites.",
+        "rubrik_sv": "USA planerar enligt uppgifter nya attacker mot Iran",
+        "sammanfattning_sv": "Enligt Sveriges Radio Ekot planerar USA nya attacker mot Iran efter mellanårsvalet, uppgifter som bygger på källor bland annat i Pentagon. Iran varnar USA och Israel för nya attacker och uppger att landet lämnat bevis till IMO om attacker mot sin sjöinfrastruktur.",
+        "rubrik_en": "US reportedly plans new attacks on Iran; Iran warns against them",
+        "sammanfattning_en": "Sveriges Radio Ekot reports the US plans new attacks on Iran after the midterms, citing sources including the Pentagon. Iran warns the US and Israel against new attacks and says it has submitted evidence to the IMO of attacks on its maritime infrastructure.",
+        "oenighet": null,
+        "oenighet_en": null,
+        "perspektiv_sv": "Ekot och The Japan Times lyfter främst uppgifter om USA:s planer respektive Trumps uttalanden om möjliga nya militära åtgärder efter mellanårsvalet. Hindustan Times lyfter Trumps uttalanden om att kvarvarande kärnanläggningar kan träffas snabbt och om att Iran enligt honom inte är särskilt pålitligt. The Hindu lyfter ett uttalande där Irans högsta ledare beordrar befälhavare att svara på hot. Middle East Eye lyfter Irans inlämning av bevis om attacker mot sjöinfrastruktur till IMO.",
+        "perspektiv_en": "Ekot and The Japan Times highlight reported US plans and Trump's statements about possible new military action after the midterm elections, respectively. Hindustan Times highlights Trump's statements that remaining nuclear sites could be struck quickly and that, in his words, Iran is not very reliable. The Hindu highlights a statement in which Iran's Supreme Leader orders commanders to respond to threats. Middle East Eye highlights Iran's submission of evidence on attacks on maritime infrastructure to the IMO.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Underlaget består av RSS-rubriker och ingresser. Ekots och Middle East Eyes ingresser är avklippta, så fler detaljer kan finnas i de fullständiga artiklarna. Ekots uppgifter om amerikanska planer är återgivna som uppgifter från amerikanska medier enligt Ekot. Namnet på den iranska ledaren skiljer sig mellan Hindustan Times (Mojtaba) och The Hindu (Khamenei) och bör kontrolleras innan publicering."
+        "kommentar": "Ingresserna är avkortade i källmaterialet, så detaljer utöver rubrikerna kan saknas. Ekots uppgifter om att USA planerar nya attacker bygger enligt källan på anonyma källor och är inte bekräftade i materialet. Hindustan Times rubrik nämner Mojtaba medan The Hindu nämner Khamenei i samband med liknande varningar. Materialet kopplar inte namnen till varandra, så de återges inte som samma person. Ingen amerikansk källa med AllSides-betyg finns i materialet."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 16,
+        "antal": 11,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Rubriken: Iran varnar USA och Israel för nya attacker",
-            "stod": [
-              4,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Iran varnar USA och Israel för nya attacker (sammanfattning)",
-            "stod": [
-              4,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Japan Times och The Hindu är källorna till Irans varning",
-            "stod": [
-              4,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Ekot skriver att flera amerikanska medier rapporterar att USA planerar nya attacker efter mellanårsvalet",
+            "text": "Ekot rapporterar att USA planerar nya attacker mot Iran",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Ekot lyfter uppgifter om att USA planerar nya attacker",
+            "text": "Ekot: attackerna planeras efter mellanårsvalet",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Japan Times lyfter Irans varning",
+            "text": "Uppgifterna bygger bland annat på källor i Pentagon",
             "stod": [
-              4
+              1
             ],
             "problem": null
           },
           {
-            "text": "Japan Times lyfter Trumps och Netanyahus hot",
+            "text": "Iran varnar USA och Israel för nya attacker",
             "stod": [
-              4
+              4,
+              5
             ],
             "problem": null
           },
           {
-            "text": "Middle East Eye lyfter Irans inlämning av bevis om amerikanska och israeliska attacker mot maritim infrastruktur till IMO",
+            "text": "Iran har lämnat bevis till IMO om attacker mot sin sjöinfrastruktur",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Hindustan Times och The Hindu lyfter Irans varningar",
+            "text": "Ekot lyfter främst uppgifter om USA:s planer",
             "stod": [
-              3,
-              5
+              1
             ],
             "problem": null
           },
           {
-            "text": "Hindustan Times lyfter Trumps uttalanden om iranska kärnkraftsanläggningar",
+            "text": "The Japan Times lyfter Trumps uttalanden om möjliga nya militära åtgärder efter mellanårsvalet",
             "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times nämner Mojtaba när den skriver om Irans varning",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "The Hindu skriver att Khamenei gav befälhavarna order",
-            "stod": [
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Trump säger att kvarvarande iranska kärnkraftsanläggningar kan träffas inom tio minuter",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Trump säger att Iran är 'not very reliable'",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Ekot och Japan Times skriver om amerikanska hot eller planer om nya militära åtgärder",
-            "stod": [
-              1,
               4
             ],
             "problem": null
           },
           {
-            "text": "Middle East Eye skriver om Irans dokumentation av attacker mot sin maritima infrastruktur",
+            "text": "Hindustan Times lyfter Trumps uttalande att kvarvarande kärnanläggningar kan träffas inom 10 minuter",
+            "stod": [
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times lyfter Trumps påstående att Iran inte är särskilt pålitligt",
+            "stod": [
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Hindu lyfter ett uttalande där Irans högsta ledare beordrar befälhavare att svara på alla hot",
+            "stod": [
+              5
+            ],
+            "problem": null
+          },
+          {
+            "text": "Middle East Eye lyfter Irans inlämning av bevis om attacker mot sjöinfrastruktur till IMO",
             "stod": [
               2
             ],
@@ -1808,318 +1751,6 @@
       ],
       "granskad": false,
       "autopilot": [],
-      "data": null
-    },
-    {
-      "id": "d0fda266d2",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 32.3,
-      "vikt": {
-        "bredd": 0.397,
-        "regioner": {
-          "latinamerika": 2,
-          "europa": 2,
-          "asien": 1
-        },
-        "timmar": 54,
-        "konsekvens": {
-          "berorda": 5,
-          "allvar": 4,
-          "varaktighet": 3,
-          "medel": 4.0,
-          "skal": "Våldsamma levnadskostnadsprotester sprider sig över flera europeiska länder, med plundring i Tyskland och hundratusentals demonstranter i Frankrike."
-        },
-        "bekraftad": true,
-        "maste": false
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-01T15:52:00+00:00",
-      "utkast": {
-        "rubrik_sv": "Protester mot levnadskostnader i Frankrike och Tyskland, med sammanstötningar och plundring i Tyskland",
-        "sammanfattning_sv": "Protester mot levnadskostnader och försämrad offentlig service ägde rum i Frankrike och Tyskland under lördagen. Enligt El País greps 565 personer i Frankrike, och BBC uppger att butiker plundrades i Tyskland.",
-        "rubrik_en": "Cost-of-living protests in France and Germany bring clashes and looting in Germany",
-        "sammanfattning_en": "Protests against the cost of living and declining public services took place in France and Germany on Saturday. El País reports that 565 people were detained in France, and BBC reports that shops were looted in Germany.",
-        "oenighet": "Källorna anger olika antal deltagare. El País uppger över 300 000 deltagare i Frankrike, BBC talar om hundratusentals i Frankrike och MercoPress om tiotusentals i Frankrike och Tyskland tillsammans. MercoPress beskriver demonstrationerna som mestadels fredliga, medan BBC och Hindustan Times beskriver plundring i Tyskland. Hindustan Times rubrik nämner även bensinbomber och fyrverkerier, men ingressen beskriver inte dessa.",
-        "oenighet_en": "The sources give different numbers of participants. El País reports over 300,000 participants in France, BBC refers to hundreds of thousands in France, and MercoPress to tens of thousands in France and Germany combined. MercoPress describes the demonstrations as mostly peaceful, while BBC and Hindustan Times describe looting in Germany. The Hindustan Times headline also mentions petrol bombs and fireworks, but its summary does not describe these.",
-        "perspektiv_sv": "Brittiska BBC och indiska Hindustan Times lyfter plundring i Tyskland i sina rubriker. Uruguayanska MercoPress lyfter att demonstrationerna mestadels var fredliga och att de slutade med sammanstötningar mellan polis och maskerade grupper i flera städer. Spanska El País fokuserar på antalet deltagare, gripanden och polisens ingripanden i Frankrike. Ryska RT, ett statskontrollerat medium, lyfter tyska ungdomars protester och publicerar videor.",
-        "perspektiv_en": "British BBC and Indian Hindustan Times highlight looting in Germany in their headlines. Uruguayan MercoPress highlights that the demonstrations were mostly peaceful and ended in clashes between police and masked groups in several cities. Spanish El País focuses on the number of participants, arrests and police interventions in France. Russian RT, a state-controlled medium, highlights German youth protests and publishes videos.",
-        "usa_sv": null,
-        "usa_en": null,
-        "osaker": false,
-        "kommentar": "Sammanfattningen bygger på rubriker och ingresser från RSS, inte på hela artiklar. Källorna anger olika antal deltagare och skiljer sig åt i hur våldsamma protesterna var, vilket framgår under oenighet."
-      },
-      "kallkontroll": {
-        "ok": true,
-        "antal": 19,
-        "problem": [],
-        "pastaenden": [
-          {
-            "text": "Protester mot levnadskostnader i Frankrike och Tyskland",
-            "stod": [
-              1,
-              2,
-              4,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Sammanstötningar i Tyskland",
-            "stod": [
-              2,
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Plundring i Tyskland",
-            "stod": [
-              2,
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Protesterna gällde levnadskostnader och försämrad offentlig service",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Protesterna ägde rum under lördagen",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "El País uppger att 565 personer greps i Frankrike",
-            "stod": [
-              4
-            ],
-            "problem": null
-          },
-          {
-            "text": "BBC uppger att butiker plundrades i Tyskland",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "BBC och Hindustan Times lyfter plundring i Tyskland i sina rubriker",
-            "stod": [
-              2,
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "MercoPress lyfter att demonstrationerna mestadels var fredliga",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "MercoPress lyfter sammanstötningar mellan polis och maskerade grupper i flera städer",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "El País fokuserar på deltagarantal, gripanden och polisens ingripanden i Frankrike",
-            "stod": [
-              4
-            ],
-            "problem": null
-          },
-          {
-            "text": "RT lyfter tyska ungdomars protester och publicerar videor",
-            "stod": [
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Källorna anger olika antal deltagare",
-            "stod": [
-              1,
-              2,
-              4
-            ],
-            "problem": null
-          },
-          {
-            "text": "El País uppger över 300 000 deltagare i Frankrike",
-            "stod": [
-              4
-            ],
-            "problem": null
-          },
-          {
-            "text": "BBC talar om hundratusentals deltagare i Frankrike",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "MercoPress talar om tiotusentals deltagare i Frankrike och Tyskland tillsammans",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "MercoPress beskriver demonstrationerna som mestadels fredliga, medan BBC och Hindustan Times beskriver plundring i Tyskland",
-            "stod": [
-              1,
-              2,
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times rubrik nämner bensinbomber och fyrverkerier",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times ingress beskriver inte bensinbomber eller fyrverkerier",
-            "stod": [
-              3
-            ],
-            "problem": null
-          }
-        ],
-        "sammanfattning": null
-      },
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "latinamerika"
-        ],
-        "per_region": {
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "Cost-of-living protests spread across Europe with unrest in France and Germany",
-              "url": "https://en.mercopress.com/2026/11/01/cost-of-living-protests-spread-across-europe-with-unrest-in-france-and-germany?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida",
-              "url": "https://elpais.com/internacional/2026-10-31/mas-de-300000-franceses-salen-a-la-calle-por-tercer-fin-de-semana-para-protestar-por-el-coste-de-la-vida.html",
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Shops looted as German cost-of-living protests turn violent",
-              "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "German Gen Z takes to streets over cost of living (VIDEOS)",
-              "url": "https://rt-english.com/news/648183-german-gen-z-takes-to-streets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "statskontrollerad": true
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Looting, petrol bombs, fireworks: Protests turn violent in France, Germany as unrest grips Europe",
-              "url": "https://www.hindustantimes.com/world-news/looting-petrol-bombs-fireworks-protests-sweep-france-germany-as-demonstrations-hit-halloween-weekend-across-europe-101793495843998.html",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Cost-of-living protests spread across Europe with unrest in France and Germany",
-      "kallor": [
-        {
-          "namn": "MercoPress",
-          "rubrik": "Cost-of-living protests spread across Europe with unrest in France and Germany",
-          "url": "https://en.mercopress.com/2026/11/01/cost-of-living-protests-spread-across-europe-with-unrest-in-france-and-germany?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UY",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Shops looted as German cost-of-living protests turn violent",
-          "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Looting, petrol bombs, fireworks: Protests turn violent in France, Germany as unrest grips Europe",
-          "url": "https://www.hindustantimes.com/world-news/looting-petrol-bombs-fireworks-protests-sweep-france-germany-as-demonstrations-hit-halloween-weekend-across-europe-101793495843998.html",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País América",
-          "rubrik": "Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida",
-          "url": "https://elpais.com/internacional/2026-10-31/mas-de-300000-franceses-salen-a-la-calle-por-tercer-fin-de-semana-para-protestar-por-el-coste-de-la-vida.html",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "German Gen Z takes to streets over cost of living (VIDEOS)",
-          "url": "https://rt-english.com/news/648183-german-gen-z-takes-to-streets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "autopilot": [
-        "spärrord: greps, grips",
-        "blind fläck"
-      ],
       "data": null
     },
     {
@@ -3056,6 +2687,210 @@
       "data": null
     },
     {
+      "id": "f75b8e65de",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 31.7,
+      "vikt": {
+        "bredd": 0.202,
+        "regioner": {
+          "asien": 1,
+          "mellanostern": 1
+        },
+        "timmar": 58,
+        "konsekvens": {
+          "berorda": 4,
+          "allvar": 5,
+          "varaktighet": 4,
+          "medel": 4.33,
+          "skal": "Rapporten gäller ett militärt angrepp mellan Iran och USA med stora skador på baser, vilket kan förvärra en väpnad konflikt i flera länder."
+        },
+        "bekraftad": true,
+        "maste": false
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-01T15:26:07+00:00",
+      "utkast": {
+        "rubrik_sv": "Skador för miljarder dollar på amerikanska baser efter iranska attacker",
+        "sammanfattning_sv": "Satellitbilder visar skador vid mer än två dussin installationer, enligt Hindustan Times. Tehran Times skriver, med hänvisning till en undersökning av Wall Street Journal, att skadorna uppgår till minst 5 miljarder dollar.",
+        "rubrik_en": "Iranian attacks caused billions of dollars in damage to US bases",
+        "sammanfattning_en": "Satellite imagery shows damage at more than two dozen installations, according to Hindustan Times. Tehran Times, citing a Wall Street Journal investigation, reports damage of at least $5 billion.",
+        "oenighet": "Källorna skiljer sig åt i precision. Hindustan Times anger i rubriken skador för miljarder dollar utan någon specificerad summa. Tehran Times anger minst 5 miljarder dollar och tillskriver siffran Wall Street Journal. Källorna säger inte emot varandra, men bara Tehran Times anger en summa.",
+        "oenighet_en": "The sources differ in precision. Hindustan Times refers in its headline to damage in the billions of dollars without a specified figure. Tehran Times gives at least $5 billion and attributes the figure to the Wall Street Journal. The sources do not contradict each other, but only Tehran Times gives a specific amount.",
+        "perspektiv_sv": "Indiska Hindustan Times lyfter i rubriken skador för miljarder dollar och i ingressen satellitbilder från mer än två dussin installationer. Iranska statskontrollerade medier (Tehran Times) lyfter i rubriken en summa på minst 5 miljarder dollar och i ingressen en undersökning av Wall Street Journal.",
+        "perspektiv_en": "The Indian outlet Hindustan Times highlights in its headline damage in the billions of dollars, and in its lead satellite imagery of more than two dozen installations. The Iranian state-controlled outlet Tehran Times highlights in its headline a figure of at least $5 billion, and in its lead a Wall Street Journal investigation.",
+        "usa_sv": null,
+        "usa_en": null,
+        "osaker": false,
+        "kommentar": "Materialet består av rubriker och ingresser. Summan på minst 5 miljarder dollar kommer bara från Tehran Times ingress, som hänvisar till Wall Street Journal. Wall Street Journals undersökning finns inte i materialet och har inte kunnat kontrolleras. Hindustan Times anger inte i materialet vilken källa som ligger bakom uppgiften om miljarder dollar. Båda källorna tillskriver skadorna iranska attacker."
+      },
+      "kallkontroll": {
+        "ok": true,
+        "antal": 13,
+        "problem": [],
+        "pastaenden": [
+          {
+            "text": "Satellitbilder visar skador vid mer än två dussin installationer (Hindustan Times)",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Tehran Times skriver att skadorna uppgår till minst 5 miljarder dollar",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Siffran på minst 5 miljarder dollar hänvisas till en undersökning av Wall Street Journal (Tehran Times)",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Rubriken: skador för miljarder dollar på amerikanska baser efter iranska attacker",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times lyfter i rubriken skador för miljarder dollar",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times lyfter i ingressen satellitbilder från mer än två dussin installationer",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Tehran Times lyfter i rubriken en summa på minst 5 miljarder dollar",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Tehran Times lyfter i ingressen en undersökning av Wall Street Journal",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Tehran Times är ett iranskt statskontrollerat medium",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times är ett indiskt medium",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times anger i rubriken skador för miljarder dollar utan specificerad summa, medan bara Tehran Times anger en summa",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Källorna skiljer sig åt i precision",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Källorna säger inte emot varandra; summorna är förenliga",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          }
+        ],
+        "sammanfattning": null
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "How Iran Battered U.S. Bases and Caused Billions in Damage",
+              "url": "https://www.hindustantimes.com/world-news/how-iran-battered-u-s-bases-and-caused-billions-in-damage-101793452822807.html",
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Tehran Times",
+              "land": "IR",
+              "rubrik": "Iran inflicted at least $5 billion in damage on US military bases: WSJ",
+              "url": "https://www.tehrantimes.com/news/531719/Iran-inflicted-at-least-5-billion-in-damage-on-US-military-bases",
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "How Iran Battered U.S. Bases and Caused Billions in Damage",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "How Iran Battered U.S. Bases and Caused Billions in Damage",
+          "url": "https://www.hindustantimes.com/world-news/how-iran-battered-u-s-bases-and-caused-billions-in-damage-101793452822807.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Tehran Times",
+          "rubrik": "Iran inflicted at least $5 billion in damage on US military bases: WSJ",
+          "url": "https://www.tehrantimes.com/news/531719/Iran-inflicted-at-least-5-billion-in-damage-on-US-military-bases",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IR",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "autopilot": [
+        "färre än tre oberoende källor (1)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "78e7c00e44",
       "amnen": [
         "asien",
@@ -3088,75 +2923,92 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T18:34:05+00:00",
       "utkast": {
-        "rubrik_sv": "Tidigare underrättelsechefer oroade för Trumps agerande inför midtermvalet",
-        "sammanfattning_sv": "Tidigare amerikanska underrättelsechefer uttrycker enligt ABC News oro för att Trump kan gå över gränser för att behålla makten inför midtermvalet. Nikkei Asia rapporterar i en rubrik att Trump avvaktar med tariffer mot överkapacitet när valet närmar sig.",
+        "rubrik_sv": "Före detta underrättelsechefer oroar sig för Trumps agerande inför mellanvalen",
+        "sammanfattning_sv": "Enligt ABC News befarar före detta amerikanska underrättelsechefer att Donald Trump är beredd att gå bortom gränserna för att behålla makten inför de amerikanska mellanvalen, som hålls denna vecka. Nikkei Asia rapporterar separat att Trump har skjutit upp tullar på överkapacitet inför mellanvalen.",
         "rubrik_en": "Former US intelligence chiefs worry about Trump's conduct ahead of midterms",
-        "sammanfattning_en": "Former US intelligence chiefs tell ABC News they fear Trump may go beyond limits to keep power ahead of the midterm elections. Nikkei Asia reports in its headline that Trump is holding off on overcapacity tariffs as the midterms approach.",
+        "sammanfattning_en": "According to ABC News, former US intelligence chiefs fear Donald Trump is willing to go beyond limits to keep power ahead of this week's midterm elections. Nikkei Asia separately reports that Trump has held off on overcapacity tariffs as the midterms approach.",
         "oenighet": null,
         "oenighet_en": null,
-        "perspektiv_sv": "ABC News (Australien) lyfter tidigare amerikanska underrättelsechefers farhågor om Trumps agerande inför midtermvalet. Nikkei Asia (Japan) lyfter i sin rubrik i stället en tullfråga, att Trump avvaktar med tariffer mot överkapacitet inför valet.",
-        "perspektiv_en": "ABC News (Australia) highlights former US intelligence chiefs' concerns about Trump's conduct ahead of the midterms. Nikkei Asia (Japan) instead highlights, in its headline, a tariff question: that Trump is holding off on overcapacity tariffs before the election.",
+        "perspektiv_sv": "Källorna kommer från Australien (ABC News) och Japan (Nikkei Asia) och handlar om olika frågor. ABC News lyfter underrättelsechefers farhågor om Trumps agerande inför mellanvalen. Nikkei Asia lyfter i rubriken att Trump har skjutit upp tullar på överkapacitet.",
+        "perspektiv_en": "The sources come from Australia (ABC News) and Japan (Nikkei Asia) and cover different topics. ABC News highlights former intelligence chiefs' concerns about Trump's conduct ahead of the midterms. Nikkei Asia highlights, in its headline, that Trump has held off on overcapacity tariffs.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": true,
-        "kommentar": "Källmaterialet är tunt. Nikkei Asia-posten består endast av en rubrik utan ingress, så uppgiften om tarifferna kan inte utvecklas närmare. Källorna behandlar olika ämnen och någon oenighet mellan dem kan inte identifieras. Ingen av källorna är amerikansk, så fältet usa är lämnat tomt."
+        "kommentar": "Nikkei Asia-källan består endast av en rubrik, utan ingress eller tidpunkt, så dess innehåll kan inte återges säkert utöver rubriken. De två källorna handlar dessutom om olika ämnen, vilket gör en gemensam sammanfattning tunn. Rubriken och huvudsammanfattningen bygger på ABC News-artikeln. Nikkei-uppgiften bör antingen tas som en separat notis eller kompletteras med en fullständig ingress innan publicering."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 8,
+        "antal": 10,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Tidigare amerikanska underrättelsechefer oroar sig för att Trump kan gå över gränser för att behålla makten",
+            "text": "Före detta amerikanska underrättelsechefer befarar att Trump är beredd att gå bortom gränserna för att behålla makten",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Oron gäller Trumps agerande inför midtermvalet",
+            "text": "Tillskrivningen 'enligt ABC News' stämmer, ABC News är källa 1 och rubriken och ingressen säger detta",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Midtermvalet äger rum nu, den aktuella veckan",
+            "text": "Mellanvalen hålls denna vecka",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Enligt ABC News uttrycker tidigare underrättelsechefer oron",
+            "text": "Mellanvalen gäller det amerikanska valet",
             "stod": [
-              1
+              1,
+              2
             ],
             "problem": null
           },
           {
-            "text": "Nikkei Asia rapporterar i rubriken att Trump avvaktar med tariffer mot överkapacitet",
+            "text": "Nikkei Asia rapporterar att Trump har skjutit upp tullar på överkapacitet",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Trumps avvaktan med tarifferna sker när midtermvalet närmar sig",
+            "text": "Nikkei Asia:s rapport gäller tiden inför mellanvalen",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "ABC News (Australien) lyfter tidigare amerikanska underrättelsechefers farhågor om Trumps agerande inför midtermvalet",
+            "text": "Källorna kommer från Australien (ABC News) och Japan (Nikkei Asia)",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Källorna handlar om olika frågor",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "ABC News lyfter i rubriken underrättelsechefers farhågor om Trumps agerande inför mellanvalen",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Nikkei Asia (Japan) lyfter i sin rubrik en tullfråga om att Trump avvaktar med överkapacitetstariffer inför valet",
+            "text": "Nikkei Asia lyfter i rubriken att Trump har skjutit upp tullar på överkapacitet",
             "stod": [
               2
             ],
@@ -3256,26 +3108,26 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T07:48:40+00:00",
       "utkast": {
-        "rubrik_sv": "Trump och Netanyahu talar medan USA överväger nya militära åtgärder mot Iran",
-        "sammanfattning_sv": "Donald Trump och Benjamin Netanyahu har talat med varandra medan USA överväger nya militära alternativ mot Iran. Hindustan Times uppger att diplomatiska kontakter pågår via Qatar, medan RT skriver med hänvisning till Wall Street Journal att militära förberedelser pågår.",
-        "rubrik_en": "Trump and Netanyahu speak as US weighs new military action against Iran",
-        "sammanfattning_en": "Donald Trump and Benjamin Netanyahu have spoken while the US considers new military options against Iran. Hindustan Times reports that diplomatic contacts are continuing via Qatar, while RT, citing the Wall Street Journal, reports that military preparations are underway.",
-        "oenighet": "Hindustan Times nämner diplomatiska kontakter via Qatar. RT, med hänvisning till Wall Street Journal, nämner militära förberedelser och oro för förnyade fientligheter. Källorna lyfter olika delar av läget, och materialet visar inte om uppgifterna utesluter varandra.",
-        "oenighet_en": "Hindustan Times mentions diplomatic contacts via Qatar. RT, citing the Wall Street Journal, mentions military preparations and fears of renewed hostilities. The sources highlight different parts of the situation, and the material does not show whether the reports are mutually exclusive.",
-        "perspektiv_sv": "Hindustan Times (Indien) lyfter diplomatiska kontakter via Qatar och att USA överväger nya militära alternativ. RT (ryska statskontrollerade medier) lyfter Trumps samtal med Netanyahu, oro för förnyade fientligheter och, med hänvisning till Wall Street Journal, militära förberedelser.",
-        "perspektiv_en": "Hindustan Times (India) highlights diplomatic contacts via Qatar and the US considering new military options. RT (Russian state-controlled media) highlights Trump's call with Netanyahu, fears of renewed hostilities and, citing the Wall Street Journal, military preparations.",
+        "rubrik_sv": "Trump och Netanyahu har pratat medan USA överväger nya militära åtgärder mot Iran",
+        "sammanfattning_sv": "Enligt källorna har Trump och Netanyahu talat med varandra medan USA överväger nya militära åtgärder mot Iran. Hindustan Times uppger att diplomatiska kontakter förs via Qatar.",
+        "rubrik_en": "Trump and Netanyahu have spoken as US weighs new military action against Iran",
+        "sammanfattning_en": "According to the sources, Trump and Netanyahu have spoken while the US considers new military action against Iran. Hindustan Times reports that diplomatic contacts are being conducted through Qatar.",
+        "oenighet": null,
+        "oenighet_en": null,
+        "perspektiv_sv": "Hindustan Times (Indien) lyfter diplomatiska kontakter via Qatar och att Trump och Netanyahu överväger militära alternativ. RT, ett ryskt statskontrollerat medium, lyfter att militära förberedelser pågår och tillskriver uppgifterna Wall Street Journal.",
+        "perspektiv_en": "Hindustan Times (India) highlights diplomatic contacts through Qatar and that Trump and Netanyahu are considering military options. RT, a Russian state-controlled outlet, highlights that military preparations are underway and attributes the information to the Wall Street Journal.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Notisen bygger endast på rubrik och ingress från RSS, inte på hela artiklarna. Kärnfakta om samtalet mellan Trump och Netanyahu och övervägandet av nya militära alternativ finns i båda källorna. Detaljerna om diplomatiska kontakter respektive militära förberedelser kommer från en källa vardera."
+        "kommentar": "Underlaget består av korta rubriker och ingresser. Uppgiften om militära förberedelser kommer endast från RT, och uppgiften om Qatar endast från Hindustan Times. Uppgifterna om att Trump och Netanyahu har talat med varandra och att USA överväger nya militära åtgärder finns i båda källorna."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 12,
+        "antal": 8,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Trump och Netanyahu har talat med varandra",
+            "text": "Trump och Netanyahu har pratat med varandra",
             "stod": [
               1,
               2
@@ -3291,35 +3143,21 @@
             "problem": null
           },
           {
-            "text": "Hindustan Times uppger att diplomatiska kontakter pågår via Qatar",
+            "text": "Hindustan Times uppger att diplomatiska kontakter förs via Qatar",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "RT skriver med hänvisning till Wall Street Journal att militära förberedelser pågår",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times är en indisk källa",
+            "text": "Hindustan Times är ett indiskt medium",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Hindustan Times lyfter diplomatiska kontakter via Qatar",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times lyfter att USA överväger nya militära alternativ",
+            "text": "Trump och Netanyahu överväger militära alternativ (enligt Hindustan Times)",
             "stod": [
               1
             ],
@@ -3333,30 +3171,15 @@
             "problem": null
           },
           {
-            "text": "RT lyfter Trumps samtal med Netanyahu",
+            "text": "RT lyfter att militära förberedelser pågår",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "RT lyfter oro för förnyade fientligheter",
+            "text": "RT tillskriver uppgifterna Wall Street Journal",
             "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "RT lyfter, med hänvisning till Wall Street Journal, militära förberedelser",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Källorna lyfter olika delar av läget, och materialet visar inte om uppgifterna utesluter varandra",
-            "stod": [
-              1,
               2
             ],
             "problem": null
@@ -3845,6 +3668,340 @@
       "data": null
     },
     {
+      "id": "d0fda266d2",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 30.3,
+      "vikt": {
+        "bredd": 0.397,
+        "regioner": {
+          "latinamerika": 2,
+          "europa": 2,
+          "asien": 1
+        },
+        "timmar": 54,
+        "konsekvens": {
+          "berorda": 5,
+          "allvar": 4,
+          "varaktighet": 3,
+          "medel": 4.0,
+          "skal": "Våldsamma levnadskostnadsprotester sprider sig över flera europeiska länder, med plundring i Tyskland och hundratusentals demonstranter i Frankrike."
+        },
+        "bekraftad": false,
+        "maste": false
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-01T15:52:00+00:00",
+      "utkast": {
+        "rubrik_sv": "Protester mot levnadskostnader i Frankrike och Tyskland leder till sammandrabbningar med polis",
+        "sammanfattning_sv": "Enligt MercoPress, BBC World och Hindustan Times demonstrerade stora grupper mot levnadskostnaderna i Frankrike och Tyskland på lördagen, och flera rapporter beskriver sammandrabbningar med polisen. El País uppger att 565 personer har gripits i Frankrike.",
+        "rubrik_en": "Cost-of-living protests in France and Germany lead to clashes with police",
+        "sammanfattning_en": "According to MercoPress, BBC World and Hindustan Times, people protested against the cost of living in France and Germany on Saturday, and several reports describe clashes with police. El País reports that 565 people have been detained in France.",
+        "oenighet": "Uppgifterna om antalet deltagare skiljer sig åt. MercoPress talar om tiotusentals i Frankrike och Tyskland, BBC World om hundratusentals i Frankrike och El País om fler än 300 000 i Frankrike. BBC World och Hindustan Times beskriver plundring av butiker i Tyskland. MercoPress beskriver i huvudsak fredliga demonstrationer med sammandrabbningar i flera städer.",
+        "oenighet_en": "Reported participation figures differ. MercoPress refers to tens of thousands in France and Germany, BBC World to hundreds of thousands in France, and El País to more than 300,000 in France. BBC World and Hindustan Times report looting of shops in Germany. MercoPress describes mostly peaceful demonstrations with clashes in several cities.",
+        "perspektiv_sv": "Brittiska BBC World och indiska Hindustan Times lyfter i rubrikerna oroligheter, plundring och bensinbomber i Tyskland respektive Frankrike och Tyskland. Uruguayanska MercoPress lyfter tiotusentals demonstranter och att demonstrationerna främst var fredliga. Spanska El País lyfter antalet deltagare och gripanden i Frankrike. Ryska statsmedier (statskontrollerat medium) lyfter i rubriken unga tyskar, Gen Z, som demonstrerar, och i ingressen att Europa förbereder sig för mer oro.",
+        "perspektiv_en": "British BBC World and Indian Hindustan Times highlight unrest, looting and petrol bombs in their headlines, in Germany and in France and Germany respectively. Uruguayan MercoPress highlights tens of thousands of demonstrators and that the demonstrations were mostly peaceful. Spanish El País highlights participation figures and arrests in France. Russian state media (state-controlled outlet) highlights German Gen Z youth protesting in its headline, and in its ingress that Europe is preparing for more unrest.",
+        "usa_sv": null,
+        "usa_en": null,
+        "osaker": false,
+        "kommentar": "Underlaget består av rubriker och ingresser från fem källor i fem länder. Antalet deltagare anges inte som en fast siffra eftersom källorna uppger olika storlekar. Enligt underlaget finns ingen amerikansk källa med."
+      },
+      "kallkontroll": {
+        "ok": false,
+        "antal": 22,
+        "problem": [
+          "fel tillskrivning: Hindustan Times: stora demonstrationer mot levnadskostnader i Frankrike och Tyskland",
+          "fel tillskrivning: BBC World lyfter bensinbomber i Tyskland"
+        ],
+        "pastaenden": [
+          {
+            "text": "Rubrik: protester mot levnadskostnader i Frankrike och Tyskland",
+            "stod": [
+              1,
+              4
+            ],
+            "problem": null
+          },
+          {
+            "text": "Protesterna leder till sammandrabbningar med polis",
+            "stod": [
+              1,
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "MercoPress: stora demonstrationer mot levnadskostnader i Frankrike och Tyskland på lördagen",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "BBC World: demonstrationer mot levnadskostnader i Frankrike och Tyskland samma dag",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times: stora demonstrationer mot levnadskostnader i Frankrike och Tyskland",
+            "stod": [
+              3
+            ],
+            "problem": "fel tillskrivning"
+          },
+          {
+            "text": "Flera rapporter beskriver sammandrabbningar med polisen",
+            "stod": [
+              1,
+              2,
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "El País: 565 personer har gripits i Frankrike",
+            "stod": [
+              4
+            ],
+            "problem": null
+          },
+          {
+            "text": "BBC World lyfter plundring i Tyskland i rubriken",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "BBC World lyfter bensinbomber i Tyskland",
+            "stod": [
+              2
+            ],
+            "problem": "fel tillskrivning"
+          },
+          {
+            "text": "Hindustan Times lyfter bensinbomber i Frankrike och Tyskland i rubriken",
+            "stod": [
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "MercoPress lyfter tiotusentals demonstranter",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "MercoPress lyfter att demonstrationerna främst var fredliga",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "El País lyfter antalet deltagare i Frankrike",
+            "stod": [
+              4
+            ],
+            "problem": null
+          },
+          {
+            "text": "El País lyfter gripanden i Frankrike",
+            "stod": [
+              4
+            ],
+            "problem": null
+          },
+          {
+            "text": "RT lyfter i rubriken unga tyskar, Gen Z, som demonstrerar",
+            "stod": [
+              5
+            ],
+            "problem": null
+          },
+          {
+            "text": "RT lyfter i ingressen att Europa förbereder sig för mer oro",
+            "stod": [
+              5
+            ],
+            "problem": null
+          },
+          {
+            "text": "BBC World och Hindustan Times beskriver plundring av butiker i Tyskland",
+            "stod": [
+              2,
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "MercoPress beskriver sammandrabbningar i flera städer",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "BBC World anger hundratusentals deltagare i Frankrike",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "El País anger fler än 300 000 deltagare i Frankrike",
+            "stod": [
+              4
+            ],
+            "problem": null
+          },
+          {
+            "text": "MercoPress anger tiotusentals deltagare i Frankrike och Tyskland",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Uppgifterna om antalet deltagare skiljer sig åt mellan källorna",
+            "stod": [
+              1,
+              2,
+              4
+            ],
+            "problem": null
+          }
+        ],
+        "sammanfattning": "Hindustan Times tillskrivs att ha beskrivit protesterna som mot levnadskostnader, vilket inte framgår av dess rubrik eller ingress, och BBC World tillskrivs bensinbomber i Tyskland, vilket varken finns i BBC:s rubrik eller ingress."
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika"
+        ],
+        "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "Cost-of-living protests spread across Europe with unrest in France and Germany",
+              "url": "https://en.mercopress.com/2026/11/01/cost-of-living-protests-spread-across-europe-with-unrest-in-france-and-germany?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida",
+              "url": "https://elpais.com/internacional/2026-10-31/mas-de-300000-franceses-salen-a-la-calle-por-tercer-fin-de-semana-para-protestar-por-el-coste-de-la-vida.html",
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Shops looted as German cost-of-living protests turn violent",
+              "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "German Gen Z takes to streets over cost of living (VIDEOS)",
+              "url": "https://rt-english.com/news/648183-german-gen-z-takes-to-streets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Looting, petrol bombs, fireworks: Protests turn violent in France, Germany as unrest grips Europe",
+              "url": "https://www.hindustantimes.com/world-news/looting-petrol-bombs-fireworks-protests-sweep-france-germany-as-demonstrations-hit-halloween-weekend-across-europe-101793495843998.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Cost-of-living protests spread across Europe with unrest in France and Germany",
+      "kallor": [
+        {
+          "namn": "MercoPress",
+          "rubrik": "Cost-of-living protests spread across Europe with unrest in France and Germany",
+          "url": "https://en.mercopress.com/2026/11/01/cost-of-living-protests-spread-across-europe-with-unrest-in-france-and-germany?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UY",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Shops looted as German cost-of-living protests turn violent",
+          "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Looting, petrol bombs, fireworks: Protests turn violent in France, Germany as unrest grips Europe",
+          "url": "https://www.hindustantimes.com/world-news/looting-petrol-bombs-fireworks-protests-sweep-france-germany-as-demonstrations-hit-halloween-weekend-across-europe-101793495843998.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida",
+          "url": "https://elpais.com/internacional/2026-10-31/mas-de-300000-franceses-salen-a-la-calle-por-tercer-fin-de-semana-para-protestar-por-el-coste-de-la-vida.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "German Gen Z takes to streets over cost of living (VIDEOS)",
+          "url": "https://rt-english.com/news/648183-german-gen-z-takes-to-streets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "autopilot": [
+        "källkontrollen har 2 anmärkningar",
+        "spärrord: gripits, grips",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "945e4b645c",
       "amnen": [],
       "amnen_sektion": [],
@@ -4328,6 +4485,186 @@
       "data": null
     },
     {
+      "id": "1b0ced0369",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 30.1,
+      "vikt": {
+        "bredd": 0.082,
+        "regioner": {
+          "asien": 1,
+          "usa": 1
+        },
+        "timmar": 68,
+        "konsekvens": {
+          "berorda": 3,
+          "allvar": 5,
+          "varaktighet": 4,
+          "medel": 4.0,
+          "skal": "Civila från en krigsdrabbad stad evakueras efter att de tvingats äta gräs, vilket gäller liv, humanitär nöd och krigsförbrytelser."
+        },
+        "bekraftad": true,
+        "maste": false
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-31T21:43:34+00:00",
+      "utkast": {
+        "rubrik_sv": "Evakuerade från Oleshky berättar att de tvingades äta gräs och kallar vapenvilan en välsignelse",
+        "sammanfattning_sv": "Enligt The Straits Times säger evakuerade från Oleshky att de tvingades äta gräs och beskriver vapenvilan mellan Ryssland och Ukraina som en välsignelse. Vapenvilan tillkännagavs den 23 oktober av USA:s first lady Melania Trump, enligt samma källa.",
+        "rubrik_en": "Oleshky evacuees say they were forced to eat grass and call the Russia-Ukraine truce a blessing",
+        "sammanfattning_en": "According to The Straits Times, evacuees from Oleshky say they were forced to eat grass and describe the Russia-Ukraine truce as a blessing. The truce was announced on October 23 by US First Lady Melania Trump, according to the same source.",
+        "oenighet": null,
+        "oenighet_en": null,
+        "perspektiv_sv": "Singaporiska The Straits Times lyfter i rubriken evakuerades uppgifter om att de tvingades äta gräs och vapenvilan. Amerikanska The New York Times lyfter i sin rubrik att evakuerade från Oleshky berättar överlevnadshistorier.",
+        "perspektiv_en": "The Singaporean outlet The Straits Times highlights in its headline evacuees' accounts of being forced to eat grass and the truce. The US outlet The New York Times highlights in its headline that evacuees from Oleshky tell survival stories.",
+        "usa_sv": null,
+        "usa_en": null,
+        "osaker": false,
+        "kommentar": "Underlaget är begränsat: för The New York Times finns endast rubriken, ingen ingress. Sammanfattningen bygger därför på The Straits Times. Uppgifterna om att evakuerade tvingades äta gräs och om vapenvilan är evakuerades egna påståenden enligt källan och är inte verifierade här."
+      },
+      "kallkontroll": {
+        "ok": true,
+        "antal": 10,
+        "problem": [],
+        "pastaenden": [
+          {
+            "text": "Evakuerade från Oleshky säger att de tvingades äta gräs",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Evakuerade beskriver vapenvilan mellan Ryssland och Ukraina som en välsignelse",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Enligt The Straits Times säger evakuerade från Oleshky att de tvingades äta gräs",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Enligt The Straits Times beskriver evakuerade vapenvilan som en välsignelse",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Vapenvilan tillkännagavs den 23 oktober",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Vapenvilan tillkännagavs av USA:s first lady Melania Trump",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Straits Times är singaporiskt",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Straits Times rubrik lyfter att evakuerade tvingades äta gräs och att vapenvilan var en välsignelse",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "The New York Times är amerikanskt",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "The New York Times rubrik lyfter att evakuerade från Oleshky berättar överlevnadshistorier",
+            "stod": [
+              2
+            ],
+            "problem": null
+          }
+        ],
+        "sammanfattning": null
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Forced to eat grass, Oleshky evacuees say Russia-Ukraine truce was a ‘blessing’",
+              "url": "https://www.straitstimes.com/world/europe/forced-to-eat-grass-oleshky-evacuees-say-russia-ukraine-truce-was-a-blessing",
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Ukrainian Evacuees From Oleshky Tell Survival Stories",
+              "url": "https://www.nytimes.com/2026/10/31/world/europe/ukraine-evacuees-oleshky.html",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Forced to eat grass, Oleshky evacuees say Russia-Ukraine truce was a ‘blessing’",
+      "kallor": [
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Forced to eat grass, Oleshky evacuees say Russia-Ukraine truce was a ‘blessing’",
+          "url": "https://www.straitstimes.com/world/europe/forced-to-eat-grass-oleshky-evacuees-say-russia-ukraine-truce-was-a-blessing",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Ukrainian Evacuees From Oleshky Tell Survival Stories",
+          "url": "https://www.nytimes.com/2026/10/31/world/europe/ukraine-evacuees-oleshky.html",
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "autopilot": [
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "2862936df3",
       "amnen": [
         "usa",
@@ -4486,184 +4823,7 @@
       "data": null
     },
     {
-      "id": "f75b8e65de",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 29.7,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "asien": 1,
-          "mellanostern": 1
-        },
-        "timmar": 58,
-        "konsekvens": {
-          "berorda": 4,
-          "allvar": 5,
-          "varaktighet": 4,
-          "medel": 4.33,
-          "skal": "Rapporten gäller ett militärt angrepp mellan Iran och USA med stora skador på baser, vilket kan förvärra en väpnad konflikt i flera länder."
-        },
-        "bekraftad": false,
-        "maste": false
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-01T15:26:07+00:00",
-      "utkast": {
-        "rubrik_sv": "Skadorna på amerikanska militärbaser i Mellanöstern uppgår enligt rapporter till miljarder dollar",
-        "sammanfattning_sv": "Satellitbilder visar skador vid mer än två dussin installationer, enligt Hindustan Times. Tehran Times, ett statskontrollerat iranskt medium, skriver med hänvisning till en granskning av Wall Street Journal att skadorna uppgår till minst 5 miljarder dollar.",
-        "rubrik_en": "Damage to US military bases in the Middle East reportedly runs into billions",
-        "sammanfattning_en": "Satellite imagery shows damage at more than two dozen installations, according to Hindustan Times. Tehran Times, an Iranian state-controlled outlet, reports citing a Wall Street Journal investigation that the damage is at least $5 billion.",
-        "oenighet": "Källorna anger olika mått. Hindustan Times rubrik talar om miljarder utan att ange en summa i underlaget, medan Tehran Times anger minst 5 miljarder dollar. Det framgår inte av underlaget om källorna bygger på samma uppgifter.",
-        "oenighet_en": "The sources give different measures. The Hindustan Times headline refers to billions without stating a sum in the material, while Tehran Times gives at least $5 billion. The material does not show whether the sources rely on the same underlying data.",
-        "perspektiv_sv": "Hindustan Times (Indien) lyfter satellitbilder och skador vid över två dussin installationer. Tehran Times (Iran, statskontrollerat medium) lyfter en specifik summa, minst 5 miljarder dollar, enligt en Wall Street Journal-granskning, och använder i ingressen begreppet 'kriget mot Iran'.",
-        "perspektiv_en": "Hindustan Times (India) highlights satellite imagery and damage at more than two dozen installations. Tehran Times (Iran, state-controlled media) highlights a specific figure of at least $5 billion, attributed to a Wall Street Journal investigation, and uses the phrase 'war on Iran' in its lead.",
-        "usa_sv": null,
-        "usa_en": null,
-        "osaker": false,
-        "kommentar": "Underlaget består av RSS-rubriker och ingresser. Summan på minst 5 miljarder dollar är hämtad från Tehran Times och tillskriven Wall Street Journal. Wall Street Journal-granskningen har inte kontrollerats direkt. Inga amerikanska källor ingick i materialet."
-      },
-      "kallkontroll": {
-        "ok": false,
-        "antal": 9,
-        "problem": [
-          "egen slutsats: Källorna anger olika mått på skadorna"
-        ],
-        "pastaenden": [
-          {
-            "text": "Skadorna på amerikanska militärbaser i Mellanöstern uppgår enligt rapporter till miljarder dollar",
-            "stod": [
-              1,
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Satellitbilder visar skador vid mer än två dussin installationer, enligt Hindustan Times",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Tehran Times är ett statskontrollerat iranskt medium",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Tehran Times skriver, med hänvisning till en WSJ-granskning, att skadorna uppgår till minst 5 miljarder dollar",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times lyfter satellitbilder och skador vid över två dussin installationer",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Tehran Times lyfter en specifik summa, minst 5 miljarder dollar, enligt en Wall Street Journal-granskning",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Tehran Times använder i ingressen begreppet 'kriget mot Iran'",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times rubrik talar om miljarder utan att ange en summa",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Källorna anger olika mått på skadorna",
-            "stod": [
-              1,
-              2
-            ],
-            "problem": "egen slutsats"
-          }
-        ],
-        "sammanfattning": "Samtliga sakuppgifter och tillskrivningar har stöd i källorna, men oenighetsbedömningen att källorna anger olika mått är en egen tolkning: Hindustan Times rubrik om 'miljarder' är inte i sig motsägelsefull mot 'minst 5 miljarder', så formuleringen bör ändras till att beskriva att källorna anger olika grad av precision."
-      },
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "How Iran Battered U.S. Bases and Caused Billions in Damage",
-              "url": "https://www.hindustantimes.com/world-news/how-iran-battered-u-s-bases-and-caused-billions-in-damage-101793452822807.html",
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Tehran Times",
-              "land": "IR",
-              "rubrik": "Iran inflicted at least $5 billion in damage on US military bases: WSJ",
-              "url": "https://www.tehrantimes.com/news/531719/Iran-inflicted-at-least-5-billion-in-damage-on-US-military-bases",
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "How Iran Battered U.S. Bases and Caused Billions in Damage",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "How Iran Battered U.S. Bases and Caused Billions in Damage",
-          "url": "https://www.hindustantimes.com/world-news/how-iran-battered-u-s-bases-and-caused-billions-in-damage-101793452822807.html",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Tehran Times",
-          "rubrik": "Iran inflicted at least $5 billion in damage on US military bases: WSJ",
-          "url": "https://www.tehrantimes.com/news/531719/Iran-inflicted-at-least-5-billion-in-damage-on-US-military-bases",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IR",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "autopilot": [
-        "källkontrollen har 1 anmärkningar",
-        "färre än tre oberoende källor (1)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "0b78223a62",
+      "id": "584e78f8d1",
       "amnen": [],
       "amnen_sektion": [],
       "poang": 29.7,
@@ -4690,26 +4850,26 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T10:03:51+00:00",
       "utkast": {
-        "rubrik_sv": "Demonstranter i Israel kräver att oppositionen samarbetar med arabiska partier",
-        "sammanfattning_sv": "Hundratals israeliska demonstranter krävde under lördagen att oppositionen samarbetar med arabiska partier för att avsätta Netanyahu, enligt Al-Monitor. Arabiska partier gick enligt The Hindu starkt framåt i valet, men oppositionsledaren Gadi Eisenkot har ännu inte beslutat om ett samarbete.",
-        "rubrik_en": "Israeli protesters call on opposition to work with Arab parties",
-        "sammanfattning_en": "Hundreds of Israelis protested on Saturday, according to Al-Monitor, urging the opposition to work with Arab parties to oust Netanyahu. The Hindu reports Arab-majority parties made major gains in the vote, but opposition leader Gadi Eisenkot has not decided on a coalition with them.",
+        "rubrik_sv": "Israeliska demonstranter kräver oppositionsallians med arabiska partier mot Netanyahu",
+        "sammanfattning_sv": "Enligt Al-Monitor demonstrerade hundratals israeler på lördagen för att uppmana oppositionen att samarbeta med arabiska partier för att störta premiärminister Benjamin Netanyahu. Enligt The Hindu har oppositionsledaren Gadi Eisenkot inte bestämt om han ska söka koalition med partierna, som gjorde stora vinster i valet.",
+        "rubrik_en": "Israeli protesters call for opposition alliance with Arab parties against Netanyahu",
+        "sammanfattning_en": "Hundreds of Israelis protested on Saturday, according to Al-Monitor, urging the opposition to ally with Arab parties to oust Netanyahu. The Hindu reports opposition leader Gadi Eisenkot has not decided on a coalition with the Arab parties, which made major gains.",
         "oenighet": null,
         "oenighet_en": null,
-        "perspektiv_sv": "The Hindu (Indien) och Al-Monitor (USA) har samma rubrik, men ingresserna lyfter olika saker. The Hindu framhåller att oppositionsledaren Gadi Eisenkot ännu inte har beslutat om ett samarbete med de arabiska partierna. Al-Monitor framhåller demonstrationen och Netanyahus offensiv mot minoritetens ledare. The New York Times (USA) har en rubrik i frågeform som gäller var de arabiska partierna står politiskt.",
-        "perspektiv_en": "The Hindu (India) and Al-Monitor (US) carry the same headline, but their summaries highlight different points. The Hindu emphasizes that opposition leader Gadi Eisenkot has not yet decided on a coalition with the Arab parties. Al-Monitor emphasizes the protest and Netanyahu's offensive against the minority's leaders. The New York Times (US) runs a headline in question form about where Israel's Arab parties stand politically.",
+        "perspektiv_sv": "Den indiska källan The Hindu och den amerikanska källan Al-Monitor har samma rubrik. The Hindu lyfter i ingressen ilskan över retoriken mot det arabiska samhället från regeringen, medan Al-Monitor lyfter demonstrationen och att Netanyahu har gått till offensiv mot minoritetens ledare. Amerikanska The New York Times formulerar sin rubrik som en fråga om var de arabiska partierna står.",
+        "perspektiv_en": "The Indian outlet The Hindu and the US outlet Al-Monitor share the same headline. In its ingress, The Hindu highlights anger over rhetoric targeting the Arab community from the government, while Al-Monitor highlights the protest and Netanyahu's offensive against the minority's leaders. The US outlet The New York Times frames its headline as a question about where Arab parties stand.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Underlaget är begränsat: The Hindu och Al-Monitor levereras som korta RSS-ingresser och New York Times endast som rubrik, så NYT:s perspektiv bygger enbart på rubriken. Eftersom endast en av de amerikanska källorna har AllSides-betyg (lutar vänster) finns inte underlag för en jämförelse enligt regel 13, och fältet usa lämnas tomt. Al-Monitors ingress är avklippt i materialet, så sammanfattningen bygger på det som faktiskt står där."
+        "kommentar": "Sammanfattningen bygger på rubrik och ingress från The Hindu och Al-Monitor. Från The New York Times finns endast rubriken, så dess innehåll ingår inte i sammanfattningen. Ingen amerikansk källa med högerbetyg finns i materialet, varför usa-fältet är tomt."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 10,
+        "antal": 9,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Rubriken: demonstranter i Israel kräver att oppositionen samarbetar med arabiska partier",
+            "text": "Rubriken: israeliska demonstranter kräver oppositionsallians med arabiska partier mot Netanyahu",
             "stod": [
               1,
               2
@@ -4717,37 +4877,31 @@
             "problem": null
           },
           {
-            "text": "Hundratals demonstranter krävde på lördagen att oppositionen samarbetar med arabiska partier för att avsätta Netanyahu",
+            "text": "Al-Monitor: hundratals israeler demonstrerade på lördagen",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Tillskrivningen till Al-Monitor för demonstrationsuppgiften",
+            "text": "Al-Monitor: demonstranterna uppmanade oppositionen att samarbeta med arabiska partier för att störta Netanyahu",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Arabiska partier gick starkt framåt i valet",
+            "text": "The Hindu: oppositionsledaren Gadi Eisenkot har inte bestämt om han ska söka koalition med de arabiska partierna",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Tillskrivningen till The Hindu för att arabiska partier gick starkt framåt",
+            "text": "De arabiska partierna gjorde stora vinster i valet",
             "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Oppositionsledaren Gadi Eisenkot har ännu inte beslutat om ett samarbete med de arabiska partierna",
-            "stod": [
-              1
+              1,
+              2
             ],
             "problem": null
           },
@@ -4760,21 +4914,21 @@
             "problem": null
           },
           {
-            "text": "The Hindu framhåller att Eisenkot ännu inte har beslutat om samarbete med de arabiska partierna",
+            "text": "The Hindu lyfter i ingressen ilskan över regeringens retorik mot det arabiska samhället",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Al-Monitor framhåller demonstrationen och Netanyahus offensiv mot minoritetens ledare",
+            "text": "Al-Monitor lyfter demonstrationen och att Netanyahu har gått till offensiv mot minoritetens ledare",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "The New York Times har en rubrik i frågeform om var de arabiska partierna står politiskt",
+            "text": "The New York Times formulerar sin rubrik som en fråga om var de arabiska partierna står",
             "stod": [
               3
             ],
@@ -5539,7 +5693,7 @@
       "data": null
     },
     {
-      "id": "2e0c66c128",
+      "id": "0cd59dd662",
       "amnen": [
         "europa"
       ],
@@ -5566,40 +5720,26 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T17:24:31+00:00",
       "utkast": {
-        "rubrik_sv": "Invånare i Oleshky når ukrainskt kontrollerat område",
-        "sammanfattning_sv": "Enligt The Kyiv Independent nådde invånare från det ryskockuperade Oleshky ukrainskt kontrollerat område den 31 oktober, med sjutton bussar, efter en kort lokal vapenvila. France 24 uppger att de evakuerade beskrev år av isolering, matbrist och regelbunden beskjutning.",
-        "rubrik_en": "Residents of Oleshky reach Ukrainian-controlled territory",
-        "sammanfattning_en": "According to The Kyiv Independent, residents of Russian-occupied Oleshky reached Ukrainian-controlled territory on October 31, with seventeen buses, after a short pause in fighting. France 24 reports that evacuees described years of isolation, food shortages and regular shelling.",
+        "rubrik_sv": "Invånare i rysk-ockuperade Oleshky når ukrainskt kontrollerat område",
+        "sammanfattning_sv": "Enligt The Kyiv Independent och France 24 har invånare från det rysk-ockuperade Oleshky nått ukrainskt kontrollerat område efter en tillfällig vapenvila. Enligt France 24 beskrev invånarna år av isolering, matbrist och regelbunden beskjutning.",
+        "rubrik_en": "Residents of Russian-occupied Oleshky reach Ukrainian-controlled territory",
+        "sammanfattning_en": "According to The Kyiv Independent and France 24, residents of Russian-occupied Oleshky have reached Ukrainian-controlled territory after a brief truce. According to France 24, residents described years of isolation, food shortages and regular shelling.",
         "oenighet": null,
         "oenighet_en": null,
-        "perspektiv_sv": "Kyiv Independent (Ukraina) lyfter i rubriken återföreningen med anhöriga och skriver om glädje och tårar. Ingressen nämner att evakueringen medlades med medverkan av USA:s först dam Melania Trump. France 24 (Frankrike) har en kortare rubrik om att invånarna återvänder till Ukraina. Ingressen lyfter isolering, matbrist och beskjutning, och att några sade att de tvingades äta gräs och hundar för att överleva.",
-        "perspektiv_en": "The Kyiv Independent (Ukraine) headline highlights the reunions with relatives and describes tears and joy. Its summary mentions that the evacuation involved mediation with the involvement of U.S. First Lady Melania Trump. France 24 (France) uses a shorter headline about residents returning to Ukraine. Its summary highlights isolation, food shortages and shelling, and says some residents described eating grass and dogs to survive.",
+        "perspektiv_sv": "The Kyiv Independent (UA) lyfter i rubriken återföreningen med anhöriga och nämner att evakueringen medlades med inblandning av USA:s förstadam Melania Trump. France 24 (FR) lyfter i rubriken återvändandet och i ingressen invånarnas levnadsförhållanden, med isolering, matbrist och beskjutning.",
+        "perspektiv_en": "The Kyiv Independent (UA) highlights in its headline the reunions with relatives and mentions that the evacuation was mediated with the involvement of U.S. First Lady Melania Trump. France 24 (FR) highlights in its headline the return and, in its ingress, the residents' living conditions, including isolation, food shortages and shelling.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "France 24:s ingress anger ingen exakt dag för evakueringen, medan The Kyiv Independent anger den 31 oktober. Uppgifterna står inte i konflikt med varandra."
+        "kommentar": "Underlaget består av RSS-rubriker och ingresser. Ingresserna är avklippta, så uppgifter om evakueringens omfattning och detaljer utöver ingressen har inte kunnat verifieras."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 12,
+        "antal": 11,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Invånare från Oleshky nådde ukrainskt kontrollerat område den 31 oktober",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Evakueringen omfattade sjutton bussar",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Evakueringen skedde efter en kort lokal vapenvila",
+            "text": "Invånare från rysk-ockuperade Oleshky har nått ukrainskt kontrollerat område",
             "stod": [
               1,
               2
@@ -5607,63 +5747,71 @@
             "problem": null
           },
           {
-            "text": "De evakuerade beskrev år av isolering (enligt France 24)",
+            "text": "Förflyttningen skedde efter en tillfällig vapenvila eller paus i striderna",
             "stod": [
+              1,
               2
             ],
             "problem": null
           },
           {
-            "text": "De evakuerade beskrev matbrist (enligt France 24)",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "De evakuerade beskrev regelbunden beskjutning (enligt France 24)",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Kyiv Independents rubrik lyfter återföreningen med anhöriga",
+            "text": "Enligt The Kyiv Independent har invånarna nått ukrainskt kontrollerat område",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Kyiv Independents rubrik handlar om glädje och tårar",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Ingressen nämner att evakueringen medlades med medverkan av Melania Trump",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "France 24:s rubrik handlar om att invånarna återvänder till Ukraina",
+            "text": "Enligt France 24 har invånarna nått ukrainskt kontrollerat område",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "France 24:s ingress lyfter isolering, matbrist och beskjutning",
+            "text": "Enligt France 24 beskrev invånarna år av isolering",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Några sade att de tvingades äta gräs och hundar för att överleva",
+            "text": "Enligt France 24 beskrev invånarna matbrist",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Enligt France 24 beskrev invånarna regelbunden beskjutning",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Kyiv Independent lyfter i rubriken återföreningen med anhöriga",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Kyiv Independent nämner att evakueringen medlades med inblandning av USA:s förstadam Melania Trump",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "France 24 lyfter i rubriken återvändandet till Ukraina",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "France 24 lyfter i ingressen invånarnas levnadsförhållanden, med isolering, matbrist och beskjutning",
             "stod": [
               2
             ],
@@ -5727,198 +5875,6 @@
       "autopilot": [
         "färre än tre oberoende källor (2)",
         "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "1b0ced0369",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 28.1,
-      "vikt": {
-        "bredd": 0.082,
-        "regioner": {
-          "asien": 1,
-          "usa": 1
-        },
-        "timmar": 68,
-        "konsekvens": {
-          "berorda": 3,
-          "allvar": 5,
-          "varaktighet": 4,
-          "medel": 4.0,
-          "skal": "Civila från en krigsdrabbad stad evakueras efter att de tvingats äta gräs, vilket gäller liv, humanitär nöd och krigsförbrytelser."
-        },
-        "bekraftad": false,
-        "maste": false
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-10-31T21:43:34+00:00",
-      "utkast": {
-        "rubrik_sv": "Evakuerade från Oleshky säger att de tvingades äta gräs",
-        "sammanfattning_sv": "Enligt The Straits Times säger evakuerade från Oleshky att de tvingades äta gräs, och att vapenvilan mellan Ryssland och Ukraina var en välsignelse. Tidningen skriver att USA:s första dam Melania Trump tillkännagav vapenvilan den 23 oktober.",
-        "rubrik_en": "Oleshky evacuees say they were forced to eat grass",
-        "sammanfattning_en": "According to The Straits Times, evacuees from Oleshky say they were forced to eat grass and that the Russia-Ukraine truce was a blessing. The paper reports that US First Lady Melania Trump announced the truce on October 23.",
-        "oenighet": null,
-        "oenighet_en": null,
-        "perspektiv_sv": "The Straits Times (Singapore) lyfter i sin rubrik att evakuerade säger att de tvingades äta gräs och att vapenvilan var en välsignelse. The New York Times (USA) lyfter i sin rubrik fram överlevnadsberättelser från ukrainska evakuerade från Oleshky. Båda rubrikerna handlar om samma evakuerade men lyfter fram olika aspekter.",
-        "perspektiv_en": "The Straits Times (Singapore) headline highlights evacuees saying they were forced to eat grass and that the truce was a blessing. The New York Times (US) headline highlights survival stories from Ukrainian evacuees from Oleshky. Both headlines concern the same evacuees but emphasize different aspects.",
-        "usa_sv": null,
-        "usa_en": null,
-        "osaker": false,
-        "kommentar": "Materialet är tunt: The New York Times har endast rubrik i underlaget och The Straits Times endast rubrik och ingress. Påståendet om att evakuerade tvingades äta gräs kommer endast från The Straits Times rubrik, och uppgiften om Melania Trump endast från ingressen i samma källa. Ingen annan källa i underlaget bekräftar dessa uppgifter. Ingen amerikansk källa med AllSides-betyg för både vänster och höger finns, därför har usa-fälten lämnats tomma."
-      },
-      "kallkontroll": {
-        "ok": false,
-        "antal": 11,
-        "problem": [
-          "egen slutsats: Båda rubrikerna handlar om samma evakuerade"
-        ],
-        "pastaenden": [
-          {
-            "text": "Evakuerade från Oleshky säger att de tvingades äta gräs",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Evakuerade från Oleshky säger att vapenvilan mellan Ryssland och Ukraina var en välsignelse",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Vapenvilan gäller mellan Ryssland och Ukraina",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Melania Trump är USA:s första dam",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Melania Trump tillkännagav vapenvilan",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Vapenvilan tillkännagavs den 23 oktober",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "The Straits Times skriver om Melania Trumps tillkännagivande (tillskrivning)",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "The Straits Times rubrik lyfter att evakuerade säger att de tvingades äta gräs och att vapenvilan var en välsignelse",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "The New York Times rubrik lyfter fram överlevnadsberättelser från ukrainska evakuerade från Oleshky",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Båda rubrikerna handlar om samma evakuerade",
-            "stod": [
-              1,
-              2
-            ],
-            "problem": "egen slutsats"
-          },
-          {
-            "text": "Rubrikerna lyfter fram olika aspekter av händelserna",
-            "stod": [
-              1,
-              2
-            ],
-            "problem": null
-          }
-        ],
-        "sammanfattning": "Utkastets sakuppgifter och tillskrivningar stämmer med källorna. Påståendet att båda rubrikerna handlar om samma evakuerade är en egen slutsats som källorna inte uttryckligen bekräftar, eftersom NYT:s rubrik bara talar om ukrainska evakuerade från Oleshky utan att koppla dem till ST:s grupp."
-      },
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Forced to eat grass, Oleshky evacuees say Russia-Ukraine truce was a ‘blessing’",
-              "url": "https://www.straitstimes.com/world/europe/forced-to-eat-grass-oleshky-evacuees-say-russia-ukraine-truce-was-a-blessing",
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Ukrainian Evacuees From Oleshky Tell Survival Stories",
-              "url": "https://www.nytimes.com/2026/10/31/world/europe/ukraine-evacuees-oleshky.html",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Forced to eat grass, Oleshky evacuees say Russia-Ukraine truce was a ‘blessing’",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Forced to eat grass, Oleshky evacuees say Russia-Ukraine truce was a ‘blessing’",
-          "url": "https://www.straitstimes.com/world/europe/forced-to-eat-grass-oleshky-evacuees-say-russia-ukraine-truce-was-a-blessing",
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Ukrainian Evacuees From Oleshky Tell Survival Stories",
-          "url": "https://www.nytimes.com/2026/10/31/world/europe/ukraine-evacuees-oleshky.html",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "autopilot": [
-        "källkontrollen har 1 anmärkningar",
-        "färre än tre oberoende källor (2)"
       ],
       "data": null
     },
@@ -6213,7 +6169,7 @@
       "data": null
     },
     {
-      "id": "711035ff58",
+      "id": "5b85e2062f",
       "amnen": [
         "latinamerika",
         "usa",
@@ -6246,26 +6202,26 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T20:19:29+00:00",
       "utkast": {
-        "rubrik_sv": "Rubio: USA var inte direkt inblandat i Flávio Bolsonaros avresa från Brasilien",
-        "sammanfattning_sv": "Utrikesminister Marco Rubio säger enligt flera källor att USA inte var direkt inblandat i Flávio Bolsonaros avresa från Brasilien. Bolsonaro förlorade stickvalet den 25 oktober och kom till USA med sin familj den 28 oktober, enligt The Hindu.",
-        "rubrik_en": "Rubio says US was not directly involved in Flávio Bolsonaro's departure from Brazil",
-        "sammanfattning_en": "US Secretary of State Marco Rubio says the US was not directly involved in Flávio Bolsonaro's departure from Brazil, according to several outlets. Bolsonaro lost the October 25 run-off and arrived in the US with his family on October 28, according to The Hindu.",
-        "oenighet": "Källorna beskriver Rubios besked med olika formuleringar. Buenos Aires Times och The Hindu återger att USA inte var direkt inblandat. Hindustan Times återger att den amerikanska regeringen inte arrangerade flytten efter valförlusten och att USA inte underlättat något.",
-        "oenighet_en": "The sources describe Rubio's statement in different wording. Buenos Aires Times and The Hindu report that the US was not directly involved. Hindustan Times reports that the Trump administration did not arrange the move after the election defeat and did not facilitate anything.",
-        "perspektiv_sv": "Buenos Aires Times (Argentina) lyfter först president Donald Trumps uttalande att Flávio Bolsonaro får stanna i USA så länge han vill, och därefter Rubios besked. Hindustan Times (Indien) lyfter Rubios förnekande att regeringen arrangerat flytten. The Hindu (Indien) lyfter Rubios besked om att USA inte var direkt inblandat samt tidpunkterna för valet och ankomsten till USA.",
-        "perspektiv_en": "Buenos Aires Times (Argentina) leads with President Donald Trump saying Flávio Bolsonaro can stay in the US as long as he wants, followed by Rubio's statement. Hindustan Times (India) highlights Rubio's denial that the administration arranged the move. The Hindu (India) highlights Rubio's statement that the US was not directly involved, along with the dates of the election and Bolsonaro's arrival in the US.",
+        "rubrik_sv": "Rubio säger att USA inte var direkt inblandat i Flávio Bolsonaros resa från Brasilien",
+        "sammanfattning_sv": "USA:s utrikesminister Marco Rubio säger att USA inte var direkt inblandat i Flávio Bolsonaros flytt från Brasilien efter valförlusten. Enligt Buenos Aires Times uppger president Donald Trump att Bolsonaro kan stanna i USA så länge han vill.",
+        "rubrik_en": "Rubio says US not directly involved in Flávio Bolsonaro's departure from Brazil",
+        "sammanfattning_en": "US Secretary of State Marco Rubio says the US was not directly involved in Flávio Bolsonaro's departure from Brazil after his election defeat. According to Buenos Aires Times, President Donald Trump says Bolsonaro can stay in the US as long as he wants.",
+        "oenighet": "Hindustan Times återger Rubio så att USA inte arrangerade eller underlättade flytten. Buenos Aires Times och The Hindu beskriver i stället att USA inte var direkt inblandat.",
+        "oenighet_en": "Hindustan Times reports Rubio saying the US did not arrange or facilitate the move. Buenos Aires Times and The Hindu describe the US as not directly involved.",
+        "perspektiv_sv": "Den argentinska källan Buenos Aires Times lyfter Trumps uttalande att Bolsonaro kan stanna i USA så länge han vill. Den indiska källan Hindustan Times lyfter Rubios förnekande av att USA arrangerade flytten. Den andra indiska källan, The Hindu, lyfter att Bolsonaro anlände till USA med sin familj den 28 oktober.",
+        "perspektiv_en": "The Argentine source Buenos Aires Times highlights Trump's statement that Bolsonaro can stay in the US as long as he wants. The Indian source Hindustan Times highlights Rubio's denial that the US arranged the move. The other Indian source, The Hindu, highlights that Bolsonaro arrived in the US with his family on October 28.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Underlaget består av rubriker och ingresser från tre RSS-källor från Argentina och Indien. Trumps uttalande om att Bolsonaro får stanna återges bara av Buenos Aires Times. Inga amerikanska källor ingår i materialet."
+        "kommentar": "Materialet består av rubriker och korta ingresser. Uppgiften om ankomstdatumet (28 oktober) finns bara i The Hindu, och Trumps uttalande finns bara i Buenos Aires Times. Källorna återger Rubios ståndpunkt med något olika ordval, vilket redovisas under oenighet."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 12,
+        "antal": 11,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Rubio säger att USA inte var direkt inblandat i Bolsonaros avresa från Brasilien",
+            "text": "Rubio säger att USA inte var direkt inblandat i Bolsonaros flytt från Brasilien",
             "stod": [
               1,
               3
@@ -6273,82 +6229,75 @@
             "problem": null
           },
           {
-            "text": "Rubio är utrikesminister",
+            "text": "Rubio är USA:s utrikesminister",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Bolsonaro förlorade stickvalet den 25 oktober",
+            "text": "Flytten skedde efter valförlusten",
             "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Bolsonaro kom med sin familj till USA den 28 oktober",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Buenos Aires Times lyfter först Trumps uttalande att Bolsonaro får stanna i USA så länge han vill",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Buenos Aires Times lyfter därefter Rubios besked",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Hindustan Times lyfter Rubios förnekande att regeringen arrangerat flytten",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "The Hindu lyfter Rubios besked om att USA inte var direkt inblandat",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "The Hindu lyfter tidpunkterna för valet och ankomsten till USA",
-            "stod": [
-              3
-            ],
-            "problem": null
-          },
-          {
-            "text": "Källorna beskriver Rubios besked med olika formuleringar",
-            "stod": [
-              1,
               2,
               3
             ],
             "problem": null
           },
           {
-            "text": "Buenos Aires Times och The Hindu återger att USA inte var direkt inblandat",
+            "text": "Trump säger att Bolsonaro kan stanna i USA så länge han vill",
             "stod": [
-              1,
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Buenos Aires Times tillskrivs uppgiften om Trumps uttalande och innehåller den",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Buenos Aires Times är en argentinsk källa",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Hindustan Times och The Hindu är indiska källor",
+            "stod": [
+              2,
               3
             ],
             "problem": null
           },
           {
-            "text": "Hindustan Times återger att den amerikanska regeringen inte arrangerade flytten efter valförlusten och att USA inte underlättat något",
+            "text": "Hindustan Times lyfter Rubios förnekande att USA arrangerade flytten",
             "stod": [
               2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Rubio säger att USA inte arrangerade eller underlättade flytten",
+            "stod": [
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "The Hindu lyfter att Bolsonaro anlände till USA med sin familj den 28 oktober",
+            "stod": [
+              3
+            ],
+            "problem": null
+          },
+          {
+            "text": "Buenos Aires Times och The Hindu beskriver att USA inte var direkt inblandat",
+            "stod": [
+              1,
+              3
             ],
             "problem": null
           }
@@ -6633,139 +6582,6 @@
       "data": null
     },
     {
-      "id": "c7ee9038c4",
-      "amnen": [
-        "marknader",
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "marknader"
-      ],
-      "poang": 27.5,
-      "vikt": {
-        "bredd": 0.143,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 40,
-        "konsekvens": {
-          "berorda": 4,
-          "allvar": 4,
-          "varaktighet": 3,
-          "medel": 3.67,
-          "skal": "Räntehöjning väntas, vilket påverkar hushåll och företag i hela landet under några månader."
-        },
-        "bekraftad": true,
-        "maste": false
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-01T14:44:00+00:00",
-      "utkast": {
-        "rubrik_sv": "Skuggdirektionen vill att räntan höjs nu",
-        "sammanfattning_sv": "Enligt Dagens Industri uppmanar Skuggdirektionen till att räntan höjs nu. Dagens Nyheter skriver att en första räntehöjning väntas.",
-        "rubrik_en": "Shadow board urges rate hike now",
-        "sammanfattning_en": "According to Dagens Industri, the Skuggdirektionen (shadow board) urges raising the interest rate now. Dagens Nyheter reports that a first rate hike is expected.",
-        "oenighet": null,
-        "oenighet_en": null,
-        "perspektiv_sv": null,
-        "perspektiv_en": null,
-        "usa_sv": null,
-        "usa_en": null,
-        "osaker": true,
-        "kommentar": "Underlaget består endast av två rubriker utan ingress. Det framgår inte vilken institution räntan avser, vem som väntas höja den, hur stor höjningen kan bli eller när den väntas. Skuggdirektionen beskrivs i källan utan närmare förklaring. Rubrikerna beskriver olika saker (en uppmaning från en grupp respektive en förväntan), men de motsäger inte varandra, så oenighet har inte angetts. Utkastet bör kompletteras med ingresser eller fullständiga artiklar innan publicering."
-      },
-      "kallkontroll": {
-        "ok": true,
-        "antal": 3,
-        "problem": [],
-        "pastaenden": [
-          {
-            "text": "Skuggdirektionen uppmanar till att räntan höjs nu",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Enligt Dagens Industri uppmanar Skuggdirektionen till räntehöjning nu (tillskrivning till DI)",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "Dagens Nyheter skriver att en första räntehöjning väntas",
-            "stod": [
-              2
-            ],
-            "problem": null
-          }
-        ],
-        "sammanfattning": null
-      },
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Skuggdirektionen: Höj räntan nu",
-              "url": "https://www.di.se/analys/skuggdirektionen-hoj-rantan-nu/",
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Nu väntas första räntehöjningen – ”tuffare tider”",
-              "url": "https://www.dn.se/ekonomi/nu-vantas-forsta-rantehojningen-tuffare-tider/",
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Skuggdirektionen: Höj räntan nu",
-      "kallor": [
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Skuggdirektionen: Höj räntan nu",
-          "url": "https://www.di.se/analys/skuggdirektionen-hoj-rantan-nu/",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Nu väntas första räntehöjningen – ”tuffare tider”",
-          "url": "https://www.dn.se/ekonomi/nu-vantas-forsta-rantehojningen-tuffare-tider/",
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "autopilot": [
-        "utkastet är märkt osäkert",
-        "färre än tre oberoende källor (2)",
-        "bara en region",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "e5d423a449",
       "amnen": [
         "asien",
@@ -6971,7 +6787,7 @@
       "data": null
     },
     {
-      "id": "b7c5c78e6e",
+      "id": "0e600620fe",
       "amnen": [],
       "amnen_sektion": [],
       "poang": 27.2,
@@ -6999,26 +6815,26 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T17:20:58+00:00",
       "utkast": {
-        "rubrik_sv": "Ryssland gripar minderårig misstänkt för attackhot i Moskva efter USA:s varning",
-        "sammanfattning_sv": "Ryska säkerhetstjänsten FSB uppger att en minderårig har gripits misstänkt för att ha hotat med en terrorattack i en park i Moskva. Enligt FSB kom tipset från USA, enligt nyhetsbyrån Interfax.",
-        "rubrik_en": "Minor held in Russia over threatened Moscow park attack, after US tip-off",
-        "sammanfattning_en": "Russia's Federal Security Service (FSB) says a minor has been detained over a threat to carry out a terrorist attack in a Moscow park. According to the FSB, the tip-off came from the United States, as reported by Interfax.",
+        "rubrik_sv": "Rysk minderårig misstänkt för attackplan i Moskva efter USA:s varning",
+        "sammanfattning_sv": "Enligt den ryska säkerhetstjänsten FSB, som citeras av nyhetsbyrån Interfax, har en minderårig gripits misstänkt för att ha planerat en attack i en park i Moskva. FSB uppger att USA tipsade om hotet.",
+        "rubrik_en": "Russian minor suspected of plotting Moscow park attack after US warning",
+        "sammanfattning_en": "According to Russia's FSB security service, as reported by Interfax, a minor has been detained on suspicion of planning an attack on a park in Moscow. The FSB says the United States passed on a tip-off about the threat.",
         "oenighet": null,
         "oenighet_en": null,
-        "perspektiv_sv": "Källorna kommer från flera länder (Qatar, Singapore, Indien, Frankrike och Sverige). Straits Times och The Hindu lyfter i rubriken den ryska säkerhetstjänstens uppgifter. Al Jazeera och Le Monde lyfter i rubriken att gripandet skett efter en amerikansk varning, utan att nämna FSB. Dagens industri skriver att en person gripits efter USA:s varning och nämner inte FSB i rubriken.",
-        "perspektiv_en": "The sources come from several countries (Qatar, Singapore, India, France and Sweden). The Straits Times and The Hindu headlines highlight the claims of Russia's security service, the FSB. Al Jazeera and Le Monde headlines highlight that the arrest followed a US warning, without naming the FSB. Dagens industri writes that one person was arrested after the US warning and does not mention the FSB in its headline.",
+        "perspektiv_sv": "Al Jazeera (Qatar), Le Monde (Frankrike) och Dagens industri (Sverige) lyfter USA:s varning i rubriken. The Straits Times (Singapore) och The Hindu (Indien) lyfter i sina rubriker att det är den ryska säkerhetstjänsten FSB som uppger uppgifterna.",
+        "perspektiv_en": "Al Jazeera (Qatar), Le Monde (France) and Dagens industri (Sweden) put the US warning in their headlines. The Straits Times (Singapore) and The Hindu (India) attribute the claims to Russia's FSB in their headlines.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Uppgifterna om gripandet och om att tipset kom från USA kommer från ryska myndigheter (FSB, enligt Interfax). Materialet innehåller ingen oberoende bekräftelse. The Hindu skriver att den amerikanska ambassaden varnat för att extremister hade planer på en attack i Moskva, men det framgår inte av materialet vad varningen innehöll i detalj. Hindustan Times-artikeln om en ukrainsk drönarattack nära Moskva ingår inte, eftersom den handlar om en annan händelse."
+        "kommentar": "Uppgifterna om gripandet och USA:s tips kommer från ryska myndigheter (FSB) via återgivning i källorna. Materialet innehåller ingen oberoende bekräftelse. Källorna anger inte att personen är gripen för något specifikt brott. Hindustan Times artikel handlar om en ukrainsk drönarattack mot en industrianläggning nära Moskva, en annan händelse, och ingår därför inte i notisen. Le Monde skriver om en gripen person utan att ange ålder."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 10,
+        "antal": 7,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Ryssland griper minderårig efter amerikansk varning (rubrik)",
+            "text": "En minderårig har gripits i Ryssland",
             "stod": [
               1,
               2
@@ -7026,28 +6842,29 @@
             "problem": null
           },
           {
-            "text": "En minderårig har gripits i Ryssland",
+            "text": "Den gripne är misstänkt för att ha planerat en attack i en park i Moskva",
+            "stod": [
+              1,
+              2
+            ],
+            "problem": null
+          },
+          {
+            "text": "Uppgifterna kommer från FSB",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Ryska säkerhetstjänsten FSB uppger gripandet",
+            "text": "Interfax är nyhetsbyrån som citerar FSB",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Den misstänkte är misstänkt för hot om terrorattack i en park i Moskva",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Tipset kom från USA, enligt FSB",
+            "text": "USA tipsade om hotet",
             "stod": [
               2,
               4
@@ -7055,43 +6872,19 @@
             "problem": null
           },
           {
-            "text": "Nyhetsbyrån Interfax är den som rapporterade FSB:s uppgifter",
-            "stod": [
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Källorna kommer från Qatar, Singapore, Indien, Frankrike och Sverige",
+            "text": "Al Jazeera, Le Monde och Dagens industri lyfter USA:s varning i sina rubriker",
             "stod": [
               1,
-              2,
-              4,
               5,
               6
             ],
             "problem": null
           },
           {
-            "text": "Straits Times och The Hindu lyfter FSB i rubriken",
+            "text": "The Straits Times och The Hindu lyfter i sina rubriker att FSB är källan till uppgifterna",
             "stod": [
               2,
               4
-            ],
-            "problem": null
-          },
-          {
-            "text": "Al Jazeera och Le Monde lyfter den amerikanska varningen i rubriken utan att nämna FSB",
-            "stod": [
-              1,
-              5
-            ],
-            "problem": null
-          },
-          {
-            "text": "Dagens industri skriver att en person gripits efter USA:s varning utan att nämna FSB i rubriken",
-            "stod": [
-              6
             ],
             "problem": null
           }
@@ -7232,7 +7025,7 @@
       ],
       "granskad": false,
       "autopilot": [
-        "spärrord: gripen, gripits, misstänkt"
+        "spärrord: gripen, gripits, misstänkt, suspected"
       ],
       "data": null
     },
@@ -8298,7 +8091,7 @@
       "data": null
     },
     {
-      "id": "f4ccb920cb",
+      "id": "8c0d57f9fa",
       "amnen": [
         "varlden"
       ],
@@ -8326,26 +8119,26 @@
       "har_primarkalla": false,
       "senast": "2026-11-01T17:45:20+00:00",
       "utkast": {
-        "rubrik_sv": "Tusentals deltar i oppositionsprotest i New Delhi",
-        "sammanfattning_sv": "Indiens oppositionspartier höll stora protester i New Delhi på söndagen. Enligt France 24 riktades de mot regeringen och en översyn av röstlängderna, medan Al Jazeera skriver att demonstranterna kräver att valchefen avgår.",
-        "rubrik_en": "Thousands join India opposition protest in New Delhi",
-        "sammanfattning_en": "India's opposition parties held major protests in New Delhi on Sunday. According to France 24, they target the government and a review of voter lists, while Al Jazeera reports that demonstrators demand the election chief resign.",
-        "oenighet": null,
-        "oenighet_en": null,
-        "perspektiv_sv": "France 24 lyfter regeringen, översynen av röstlängderna och ungdomsrörelsen Cockroach Janta Party som leder protesterna. Al Jazeera lyfter valchefen, kravet på att hen ska avgå och att ändringarna i röstlängderna enligt tidningen uppfattas gynna Modis parti.",
-        "perspektiv_en": "France 24 highlights the government, the review of voter lists and the youth movement Cockroach Janta Party, which leads the protests. Al Jazeera highlights the election chief, the demand that they resign and changes to voter rolls that it says are seen as favouring Modi's party.",
+        "rubrik_sv": "Tusentals protesterar i New Delhi mot regeringen och röstlängdsöversynen",
+        "sammanfattning_sv": "Enligt France 24 och Al Jazeera deltog tusentals personer i protester i New Delhi på söndagen. Enligt France 24 har oppositionspartier demonstrerat mot regeringen och en nationell översyn av röstlängderna, och Al Jazeera skriver att demonstranterna kräver att valchefen avgår.",
+        "rubrik_en": "Thousands rally in New Delhi against government and voter roll review",
+        "sammanfattning_en": "According to France 24 and Al Jazeera, thousands took part in protests in New Delhi on Sunday. France 24 reports that opposition parties protested against the government and a nationwide voter list review, while Al Jazeera says demonstrators want the election chief to resign.",
+        "oenighet": "Källorna lyfter fram olika delar av protesterna. France 24 beskriver protester mot regeringen och röstlängdsöversynen och nämner ungdomsrörelsen Cockroach Janta Party som leder dem. Al Jazeera framhäver kravet att valchefen ska avgå på grund av ändringar i röstlängderna, vilka enligt källan uppfattas gynna Modis parti.",
+        "oenighet_en": "The sources highlight different parts of the protests. France 24 describes protests against the government and the voter list review and names the youth movement Cockroach Janta Party as leading them. Al Jazeera highlights the demand that the election chief resign over voter roll changes, which it says are seen as favouring Modi's party.",
+        "perspektiv_sv": "Franska France 24 lyfter fram protesterna mot regeringen och den nationella översynen av röstlängderna samt ungdomsrörelsen som enligt källan leder dem. Qatariska Al Jazeera lyfter främst kravet att valchefen avgår och ändringar i röstlängderna som uppfattas gynna Modis parti.",
+        "perspektiv_en": "France 24 (France) highlights the protests against the government and the nationwide voter list review, along with the youth movement it says is leading them. Al Jazeera (Qatar) highlights the demand that the election chief resign and the voter roll changes that it says are seen as favouring Modi's party.",
         "usa_sv": null,
         "usa_en": null,
         "osaker": false,
-        "kommentar": "Båda källorna bygger på rubrik och ingress från RSS, så detaljerna är begränsade. Källorna motsäger inte varandra men lyfter olika aspekter av protesterna."
+        "kommentar": "Underlaget är enbart rubrik och ingress från RSS. Uppgifter om omfattningen (tusentals deltagare) bygger på källornas formuleringar, och inga egna uppgifter om till exempel antal deltagare eller bakgrund har lagts till."
       },
       "kallkontroll": {
         "ok": true,
-        "antal": 12,
+        "antal": 9,
         "problem": [],
         "pastaenden": [
           {
-            "text": "Tusentals deltog i oppositionsprotest i New Delhi",
+            "text": "Tusentals personer deltog i protester i New Delhi",
             "stod": [
               1,
               2
@@ -8353,52 +8146,30 @@
             "problem": null
           },
           {
-            "text": "Protesterna arrangerades av indiska oppositionspartier",
-            "stod": [
-              1,
-              2
-            ],
-            "problem": null
-          },
-          {
-            "text": "Protesterna hölls på söndagen",
+            "text": "Protesterna ägde rum på söndagen",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Protesterna riktades mot regeringen (enligt France 24)",
+            "text": "France 24: oppositionspartier demonstrerade mot regeringen",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Protesterna riktades mot en översyn av röstlängderna (enligt France 24)",
+            "text": "France 24: protesterna gäller även den nationella översynen av röstlängderna",
             "stod": [
               1
             ],
             "problem": null
           },
           {
-            "text": "Demonstranterna kräver att valchefen avgår (enligt Al Jazeera)",
+            "text": "Al Jazeera: demonstranterna kräver att valchefen avgår",
             "stod": [
               2
-            ],
-            "problem": null
-          },
-          {
-            "text": "France 24 lyfter regeringen i sin beskrivning",
-            "stod": [
-              1
-            ],
-            "problem": null
-          },
-          {
-            "text": "France 24 lyfter översynen av röstlängderna",
-            "stod": [
-              1
             ],
             "problem": null
           },
@@ -8410,22 +8181,23 @@
             "problem": null
           },
           {
-            "text": "Al Jazeera lyfter valchefen",
+            "text": "Al Jazeera lyfter främst kravet att valchefen avgår",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Al Jazeera lyfter kravet på att valchefen ska avgå",
+            "text": "Al Jazeera: ändringarna i röstlängderna uppfattas gynna Modis parti",
             "stod": [
               2
             ],
             "problem": null
           },
           {
-            "text": "Al Jazeera skriver att ändringarna i röstlängderna uppfattas gynna Modis parti",
+            "text": "Källorna lyfter fram olika delar av protesterna",
             "stod": [
+              1,
               2
             ],
             "problem": null
@@ -8484,6 +8256,156 @@
           "land": "QA",
           "region": "mellanostern",
           "agare": "statlig",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "autopilot": [
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "7951dd7b2d",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 26.2,
+      "vikt": {
+        "bredd": 0.13,
+        "regioner": {
+          "asien": 1,
+          "sverige": 1
+        },
+        "timmar": 62,
+        "konsekvens": {
+          "berorda": 2,
+          "allvar": 4,
+          "varaktighet": 2,
+          "medel": 2.67,
+          "skal": "En skjutning med en död och sex skadade i ett lokalt köpcentrum berör främst de drabbade och deras närmaste, med allvarliga men i huvudsak kortvariga följder."
+        },
+        "bekraftad": true,
+        "maste": false
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-10-31T19:36:50+00:00",
+      "utkast": {
+        "rubrik_sv": "Skjutning i Spirit Halloween-butik i Kalifornien: en död och sex skadade",
+        "sammanfattning_sv": "Enligt polisen dödades en person och sex skadades i en skjutning vid en Spirit Halloween-butik i Kalifornien. Uppgifterna återges i en rapport från Hindustan Times.",
+        "rubrik_en": "Shooting at Spirit Halloween store in California leaves one dead and six wounded",
+        "sammanfattning_en": "According to police, one person was killed and six were wounded in a shooting at a Spirit Halloween store in California. The information is reported by Hindustan Times.",
+        "oenighet": null,
+        "oenighet_en": null,
+        "perspektiv_sv": null,
+        "perspektiv_en": null,
+        "usa_sv": null,
+        "usa_en": null,
+        "osaker": false,
+        "kommentar": "Underlaget är en enda källa (Hindustan Times) där rubrik och ingress är identiska, så det saknas uppgifter om tid, plats i butiken, gärningsman och händelseförlopp. Materialet om Pernilla Wahlgren och Emilio Ingrosso (Expressen Nöje) är en separat historia och har inte bearbetats här. Det har bara en rubrik som källa, så det behöver eget underlag innan en notis kan skrivas."
+      },
+      "kallkontroll": {
+        "ok": true,
+        "antal": 6,
+        "problem": [],
+        "pastaenden": [
+          {
+            "text": "Det har skett en skjutning vid en Spirit Halloween-butik",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Skjutningen skedde i Kalifornien",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "En person dödades",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Sex personer skadades",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Uppgifterna kommer från polisen",
+            "stod": [
+              1
+            ],
+            "problem": null
+          },
+          {
+            "text": "Uppgifterna återges i en rapport från Hindustan Times",
+            "stod": [
+              1
+            ],
+            "problem": null
+          }
+        ],
+        "sammanfattning": null
+      },
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "sverige"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Shooting at Spirit Halloween store in California leaves 1 dead and 6 wounded, police say",
+              "url": "https://www.hindustantimes.com/world-news/us-news/shooting-at-spirit-halloween-store-in-california-leaves-1-dead-and-6-wounded-police-say-101793475411420.html",
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Expressen Nöje",
+              "land": "SE",
+              "rubrik": "Här återförenas Pernilla Wahlgren och Emilio Ingrosso – på scen",
+              "url": "https://www.expressen.se/noje/har-aterforenas-pernilla-wahlgren-och-emilio-ingrosso-pa-scen/",
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Shooting at Spirit Halloween store in California leaves 1 dead and 6 wounded, police say",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Shooting at Spirit Halloween store in California leaves 1 dead and 6 wounded, police say",
+          "url": "https://www.hindustantimes.com/world-news/us-news/shooting-at-spirit-halloween-store-in-california-leaves-1-dead-and-6-wounded-police-say-101793475411420.html",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Expressen Nöje",
+          "rubrik": "Här återförenas Pernilla Wahlgren och Emilio Ingrosso – på scen",
+          "url": "https://www.expressen.se/noje/har-aterforenas-pernilla-wahlgren-och-emilio-ingrosso-pa-scen/",
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
           "statskontrollerad": false
         }
       ],
@@ -9342,7 +9264,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 79,
+      "artiklar": 76,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -9370,7 +9292,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 29,
+      "artiklar": 28,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -9488,7 +9410,7 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 43,
+      "artiklar": 41,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
@@ -9499,7 +9421,7 @@
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 17,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -9559,7 +9481,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 49,
+      "artiklar": 50,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -10008,7 +9930,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 36,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
