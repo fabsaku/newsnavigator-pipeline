@@ -421,6 +421,7 @@ def test_rapport_workflow():
     assert y["concurrency"]["group"] == "newsnavigator"
     assert "python behover.py --skicka" in text and "RESEND_API_KEY" in text and "RAPPORT_TILL" in text
     assert "git add data/rapport.json" in text and "-X theirs" in text
+    assert "git add data/rapport.json 2>/dev/null || true" in text, "filen finns inte förrän något skickats"
 
 
 def test_pipelinen_raknar_ut_behover_dig_fore_arendet():
