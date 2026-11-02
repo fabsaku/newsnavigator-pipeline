@@ -3632,34 +3632,33 @@
  "6ea351f85d": {
   "id": "6ea351f85d",
   "amnen": [
-   "usa"
+   "usa",
+   "varlden"
   ],
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 35.9,
+  "poang": 34.6,
   "vikt": {
-   "bredd": 0.676,
+   "bredd": 0.536,
    "regioner": {
     "mellanostern": 1,
-    "asien": 2,
     "afrika": 1,
-    "usa": 1,
     "latinamerika": 2
    },
-   "timmar": 41,
+   "timmar": 42,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "Amerikanska mellanårsvalen avgör kontrollen över kongressen för två år och påverkar USA:s politik och omvärlden."
+    "skal": "Amerikanska mellanårsvalen avgör kontrollen över kongressen och påverkar politiken i USA och världen i flera år."
    },
    "bekraftad": true,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 7,
+  "antal_kallor": 4,
   "har_primarkalla": false,
   "senast": "2026-11-02T08:05:03+00:00",
   "utkast": {
@@ -3806,10 +3805,8 @@
   "perspektiv": {
    "regioner": [
     "afrika",
-    "asien",
     "latinamerika",
-    "mellanostern",
-    "usa"
+    "mellanostern"
    ],
    "per_region": {
     "mellanostern": [
@@ -3821,37 +3818,12 @@
       "statskontrollerad": false
      }
     ],
-    "asien": [
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Donald Trump says he may become ‘Mr Veto’ if Democrats secure majority in midterm elections",
-      "url": "https://www.hindustantimes.com/world-news/us-news/donald-trump-says-he-may-become-mr-veto-if-democrats-secure-majority-in-midterm-elections-101793593131345.html",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CNA",
-      "land": "SG",
-      "rubrik": "Democrats, Trump hold final rallies before midterm elections",
-      "url": "https://www.channelnewsasia.com/world/democrats-republicans-trump-rallies-us-midterm-elections-6512286",
-      "statskontrollerad": false
-     }
-    ],
     "afrika": [
      {
       "kalla": "Daily Maverick",
       "land": "ZA",
       "rubrik": "CONGRESS IN THE BALANCE: A blue tsunami, a tide, or chaos as usual — the US midterm election",
       "url": "https://www.dailymaverick.co.za/article/2026-11-01-a-blue-tsunami-a-tide-or-chaos-as-usual-the-us-midterm-election/",
-      "statskontrollerad": false
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "The Daily Caller",
-      "land": "US",
-      "rubrik": "Americans’ Disapproval Of Trump, Economy Loom Over Midterm Elections",
-      "url": "https://dailycaller.com/2026/11/01/americans-disapproval-donald-trump-economy-loom-over-midterm-elections-nbc-news-poll-meet-press-steve-kornacki",
       "statskontrollerad": false
      }
     ],
@@ -3890,28 +3862,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Hindustan Times",
-    "rubrik": "Donald Trump says he may become ‘Mr Veto’ if Democrats secure majority in midterm elections",
-    "url": "https://www.hindustantimes.com/world-news/us-news/donald-trump-says-he-may-become-mr-veto-if-democrats-secure-majority-in-midterm-elections-101793593131345.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "CNA",
-    "rubrik": "Democrats, Trump hold final rallies before midterm elections",
-    "url": "https://www.channelnewsasia.com/world/democrats-republicans-trump-rallies-us-midterm-elections-6512286",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Daily Maverick",
     "rubrik": "CONGRESS IN THE BALANCE: A blue tsunami, a tide, or chaos as usual — the US midterm election",
     "url": "https://www.dailymaverick.co.za/article/2026-11-01-a-blue-tsunami-a-tide-or-chaos-as-usual-the-us-midterm-election/",
@@ -3919,17 +3869,6 @@
     "typ": "media",
     "land": "ZA",
     "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Daily Caller",
-    "rubrik": "Americans’ Disapproval Of Trump, Economy Loom Over Midterm Elections",
-    "url": "https://dailycaller.com/2026/11/01/americans-disapproval-donald-trump-economy-loom-over-midterm-elections-nbc-news-poll-meet-press-steve-kornacki",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -3963,12 +3902,138 @@
   "data": null,
   "godkand_tid": 1793584195.2615678,
   "automatisk": true,
-  "narrativ": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Mätningarna pekar mot demokraterna",
+     "namn_en": "Polls point toward Democrats",
+     "lyfter_sv": "Al Jazeera lyfter fram att mätningarna tyder på att presidentens parti inte vinner mandat i representanthuset, och MercoPress att demokraterna har mätningarna i sin favör.",
+     "lyfter_en": "Al Jazeera highlights that polls suggest the president's party will not win House seats, and MercoPress that Democrats have the polls in their favour.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/news/2026/11/2/how-the-presidents-party-has-fared-in-every-us-midterm-election-since-1946?traffic_source=rss"
+      },
+      {
+       "namn": "MercoPress",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.mercopress.com/2026/11/01/democrats-seek-to-retake-congress-in-tuesday-s-us-midterm-elections?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
+      }
+     ],
+     "regioner": [
+      "latinamerika",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Osäker utgång och rörliga väljare",
+     "namn_en": "Uncertain outcome and shifting voters",
+     "lyfter_sv": "Daily Maverick lyfter fram att kongressen hänger i balans, och El Tiempo att latinska väljare rör sig mot demokraterna utan att tillhöra något parti.",
+     "lyfter_en": "Daily Maverick highlights that control of Congress hangs in the balance, and El Tiempo that Latino voters are moving toward Democrats without belonging to any party.",
+     "kallor": [
+      {
+       "namn": "Daily Maverick",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dailymaverick.co.za/article/2026-11-01-a-blue-tsunami-a-tide-or-chaos-as-usual-the-us-midterm-election/"
+      },
+      {
+       "namn": "El Tiempo",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/el-bolsillo-acerca-de-nuevo-a-los-latinos-a-los-democratas-antes-de-las-legislativas-en-ee-uu-pero-su-voto-sigue-sin-pertenecer-a-un-partido-3597346"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "latinamerika"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 8,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Midtermvalet hålls på tisdag",
+      "stod": [
+       3,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Kontrollen över kongressen står på spel",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Berättelsen 'Mätningarna pekar mot demokraterna' har rubriken och de två källorna Al Jazeera och MercoPress",
+      "stod": [
+       1,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: mätningarna tyder på att presidentens parti inte vinner mandat i representanthuset",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: demokraterna har mätningarna i sin favör",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Berättelsen 'Osäker utgång och rörliga väljare' har rubriken och källorna Daily Maverick och El Tiempo",
+      "stod": [
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick: kongressen hänger i balans",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "El Tiempo: latinska väljare rör sig mot demokraterna utan att tillhöra något parti",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
   "relevans": {
    "sv": 1,
    "en": 3
   },
-  "uppdaterad_tid": 1793610473.4576786
+  "uppdaterad_tid": 1793614083.6472826
  },
  "1d6269e48d": {
   "id": "1d6269e48d",
