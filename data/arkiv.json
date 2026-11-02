@@ -4060,29 +4060,28 @@
   "amnen_sektion": [
    "latinamerika"
   ],
-  "poang": 36.8,
+  "poang": 35.3,
   "vikt": {
-   "bredd": 0.658,
+   "bredd": 0.533,
    "regioner": {
     "norden": 1,
-    "latinamerika": 1,
     "asien": 1,
     "europa": 2,
     "sverige": 1
    },
-   "timmar": 67,
+   "timmar": 78,
    "konsekvens": {
     "berorda": 4,
     "allvar": 5,
-    "varaktighet": 4,
-    "medel": 4.33,
-    "skal": "Tågolycka i Spanien med dödsoffer från flera länder, vilket berör många familjer och ger långvariga följder för säkerhet och utredning."
+    "varaktighet": 5,
+    "medel": 4.67,
+    "skal": "Tågolycka i Spanien med minst 12 döda utlänningar från flera länder, vilket innebär liv som förloras och sorg för anhöriga i flera länder."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 5,
   "har_primarkalla": false,
   "senast": "2026-11-02T03:49:26+00:00",
   "utkast": {
@@ -4228,12 +4227,141 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Utländska medborgare bland offren",
+     "namn_en": "Foreign nationals among the victims",
+     "lyfter_sv": "NRK lyfter fram tolv utlänningar bland de döda, The Straits Times fyra amerikanska medborgare och en kanadensare, och The Guardian medborgare från USA, Japan och Kanada bland de 69 omkomna.",
+     "lyfter_en": "NRK highlights twelve foreigners among the dead, The Straits Times four American citizens and one Canadian, and The Guardian citizens of the USA, Japan and Canada among the 69 killed.",
+     "kallor": [
+      {
+       "namn": "NRK",
+       "region": "norden",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.nrk.no/nyheter/minst-12-utlendinger-dode-i-togulykken-i-spania-1.18070859"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/europe/four-us-citizens-canadian-among-spain-train-crash-dead-official"
+      },
+      {
+       "namn": "The Guardian",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.theguardian.com/world/2026/nov/02/spain-train-crash-us-citizens-japan-canada-dead"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "norden"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Identifierade och namngivna offer",
+     "namn_en": "Identified and named victims",
+     "lyfter_sv": "SVT lyfter fram att de flesta döda identifierats men att tolv personer fortfarande saknas, och BBC lyfter fram en forskare vid University of Cambridge bland de omkomna.",
+     "lyfter_en": "SVT highlights that most of the dead have been identified but twelve people are still missing, and BBC highlights a University of Cambridge scientist among those who died.",
+     "kallor": [
+      {
+       "namn": "SVT Nyheter",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.svt.se/nyheter/utrikes/manga-doda-identifierade-efter-tagolyckan-i-spanien"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "sverige"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 8,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: minst 12 utländska medborgare bland de döda",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "NRK: tolv utlänningar bland de döda",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: fyra amerikanska medborgare",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: en kanadensare",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian: medborgare från USA, Japan och Kanada bland de 69 omkomna",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT: de flesta döda har identifierats",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT: tolv personer saknas fortfarande",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: en forskare vid University of Cambridge bland de omkomna",
+      "stod": [
+       5
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
-    "latinamerika",
     "norden",
     "sverige"
    ],
@@ -4244,15 +4372,6 @@
       "land": "NO",
       "rubrik": "Minst 12 utlendinger døde i togulykken i Spania",
       "url": "https://www.nrk.no/nyheter/minst-12-utlendinger-dode-i-togulykken-i-spania-1.18070859",
-      "statskontrollerad": false
-     }
-    ],
-    "latinamerika": [
-     {
-      "kalla": "The Rio Times",
-      "land": "BR",
-      "rubrik": "Four Americans Among 69 Dead in Spain Crash",
-      "url": "https://www.riotimesonline.com/spain-train-crash-four-americans-among-dead-2026/",
       "statskontrollerad": false
      }
     ],
@@ -4309,17 +4428,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Rio Times",
-    "rubrik": "Four Americans Among 69 Dead in Spain Crash",
-    "url": "https://www.riotimesonline.com/spain-train-crash-four-americans-among-dead-2026/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "BR",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Straits Times",
     "rubrik": "Four US citizens, Canadian among Spain train crash dead: Official",
     "url": "https://www.straitstimes.com/world/europe/four-us-citizens-canadian-among-spain-train-crash-dead-official",
@@ -4369,9 +4477,12 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793599613.0289958,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1793603227.1206932
  }
 }
