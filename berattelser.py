@@ -31,7 +31,7 @@ Regler som alltid gäller:
 2. Dela källorna i två till fyra grupper efter hur de ramar in händelsen i sina rubriker och ingresser: olika orsak, olika ansvarig, olika konsekvens, olika huvudperson eller olika fråga. Det som skiljer ska vara ramen, inte vilken detalj som råkar vara med.
    Varje berättelse måste bäras av minst två källor, och varje källa hör till högst en berättelse. En vinkel som bara en källa har är en detalj, inte en berättelse: lämna den utanför. Skiljer sig inte källorna åt, eller går de inte att dela så, svara med en tom lista.
 3. Varje berättelse får ett kort, sakligt namn på högst sju ord som beskriver vinkeln (till exempel "Kostnaden för bönder"), aldrig en värdering och aldrig ett påstående om vad som är sant.
-4. "lyfter" är EN mening på högst 40 ord som tillskriver: säg vilka källor som lyfter fram vad ("NPR och BBC lyfter fram ..."). Skriv med egna ord, inga citat längre än fem ord.
+4. "lyfter" är EN mening på högst 40 ord som tillskriver: säg vilka källor som lyfter fram vad ("NPR och BBC lyfter fram ..."). Skriv med egna ord, inga citat längre än fem ord. Tillskriv varje uppgift till den enskilda källa som själv har den ("NPR lyfter fram X, BBC lyfter fram Y"), aldrig till hela gruppen, och ta bara med uppgifter som står i just den källans rubrik eller ingress.
 5. Beskriv vad källorna lyfter fram, aldrig vad de utelämnar. Att peka ut vad en källa inte nämner är en värdering. Använd aldrig ord som "nämner inte", "utelämnar", "ignorerar", "tiger om", "döljer".
 6. Säg aldrig vilken berättelse som är sann eller rätt, och rangordna dem inte.
 7. Behandla amerikanska medier med olika AllSides-betyg med samma mått. Skriv "medier som AllSides bedömer lutar vänster eller höger", aldrig "vänstermedier" eller "högermedier".
