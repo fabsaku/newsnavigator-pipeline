@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bygger den publika sajten i public/. Bara granskade notiser kommer med.
 
-  python publish.py                       bygg public/ ur arkivet av godkända notiser
+  python publish.py                       bygg public/ ur arkivet av godkända notiser: /sv/, /en/ och en valsida i roten
   python publish.py --forhandsvisning DIR bygg en platt förhandsvisning av dagens utkast (märkt, ej publik)
 
 Sidorna byggs av sajt.py. Sätt NN_LANSERAD=1 när sajten ska synas i sökmotorer; innan dess
@@ -57,34 +57,31 @@ def main():
     for e in events:
         e["granskad"] = True
 
-    nav = ROOT / "site" / "navigatorn-sv.html"
-    has_issue = nav.exists() and "UTKAST" not in nav.read_text(encoding="utf-8")
+    issues = {}
+    for lang in sajt.utgava.UTGAVOR:
+        nav = ROOT / "site" / f"navigatorn-{lang}.html"
+        issues[lang] = nav.exists() and "UTKAST" not in nav.read_text(encoding="utf-8")
 
     PUBLIC.mkdir(exist_ok=True)
-    stats = sajt.build(PUBLIC, events, flat=False, noindex=not launched, has_issue=has_issue,
-                       over_sprak=_flode().get("over_sprak", False))
+    stats = sajt.build_editions(PUBLIC, events, noindex=not launched, issues=issues, over_sprak=_flode().get("over_sprak", False))
 
     png = ROOT / "site" / "newsgator.png"
     if png.exists():
         shutil.copy(png, PUBLIC / "newsgator.png")
 
-    if has_issue:
-        (PUBLIC / "navigatorn").mkdir(exist_ok=True)
-        shutil.copy(nav, PUBLIC / "navigatorn" / "index.html")
-        en = ROOT / "site" / "navigatorn-en.html"
-        if en.exists():
-            shutil.copy(en, PUBLIC / "navigatorn" / "en.html")
+    for lang, ok in issues.items():
+        if ok:
+            (PUBLIC / lang / "navigatorn").mkdir(parents=True, exist_ok=True)
+            shutil.copy(ROOT / "site" / f"navigatorn-{lang}.html", PUBLIC / lang / "navigatorn" / "index.html")
 
     (PUBLIC / "robots.txt").write_text(
         "User-agent: *\n" + (f"Allow: /\nSitemap: {sajt.SITE_URL}/sitemap.xml\n" if launched else "Disallow: /\n"), encoding="utf-8")
     sitemap = PUBLIC / "sitemap.xml"
     if launched:
-        urls = ["/", "/om/", "/kallor/", "/navigatorn/"] + [f"/{k}/" for k, *_ in sajt.SECTIONS] + [f"/n/{e['id']}/" for e in events]
-        sitemap.write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-                           + "".join(f"<url><loc>{sajt.SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>", encoding="utf-8")
+        sitemap.write_text(sajt.sitemap_xml(stats["per_utgava"]), encoding="utf-8")
     elif sitemap.exists():
         sitemap.unlink()
-    print(f"Publik sajt: {stats['notiser']} granskade notiser ({stats['forstasida']} på förstasidan) -> {PUBLIC}")
+    print(f"Publik sajt: {len(events)} granskade notiser, {len(stats['per_utgava']['sv'])} i /sv/ och {len(stats['per_utgava']['en'])} i /en/ -> {PUBLIC}")
 
 
 if __name__ == "__main__":

@@ -5,8 +5,7 @@
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://newsnavigator.se/404.html">
 <link rel="icon" href="/newsgator.png">
-<link rel="alternate" type="application/rss+xml" title="Newsnavigator" href="/feed.xml">
-<link rel="alternate" type="application/rss+xml" title="Newsnavigator (English)" href="/feed-en.xml">
+<link rel="alternate" type="application/rss+xml" title="Newsnavigator" href="/feed.xml"><link rel="alternate" type="application/rss+xml" title="Newsnavigator (English)" href="/feed-en.xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:wght@400;600;700;800&display=swap">
@@ -128,6 +127,12 @@ nav a{flex:0 0 auto;display:flex;align-items:center;min-height:46px;padding:0 11
 nav a:hover{color:var(--ink)}nav a[aria-current=page]{color:var(--ink);border-bottom-color:var(--ink)}
 nav a:first-child{padding-left:0}
 main.w{padding-top:28px}
+.lang a{display:flex;align-items:center;height:40px;padding:0 8px;color:var(--mute);font:600 13px var(--sans);text-decoration:none}.lang a:hover{color:var(--ink);text-decoration:underline}
+.pick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:860px;margin:28px 0 0}
+.pick a{display:block;border-top:2px solid var(--ink);padding-top:14px;text-decoration:none;color:var(--text)}
+.pick a:hover h2{text-decoration:underline}
+.pick h2{font-size:32px;margin:0 0 8px}.pick p{font:400 18px/1.5 var(--serif);margin:0}
+@media (max-width:640px){.pick{grid-template-columns:minmax(0,1fr)}}
 
 /* Förstasidan */
 .top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:0 40px;align-items:start}
@@ -216,10 +221,10 @@ footer{border-top:1px solid var(--ink);margin-top:64px;padding:28px 0 48px}
   }
   function setLang(l){b.classList.toggle('en',l==='en');document.documentElement.lang=l;
     btns.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.l===l)});date(l);
-    try{localStorage.setItem('nn-lang',l)}catch(e){}}
+    if(!window.NN_LANG){try{localStorage.setItem('nn-lang',l)}catch(e){}}}
   btns.forEach(function(x){x.addEventListener('click',function(){setLang(x.dataset.l)})});
   var s=null;try{s=localStorage.getItem('nn-lang')}catch(e){}
-  setLang(s==='en'?'en':'sv');
+  setLang(window.NN_LANG||(s==='en'?'en':'sv'));
   var chips=document.querySelectorAll('.chips button'), evs=document.querySelectorAll('.feed .story');
   chips.forEach(function(c){c.addEventListener('click',function(){
     chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});

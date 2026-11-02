@@ -241,7 +241,7 @@ def rapport(rader, lage, now):
         text += ["", "Publicerat automatiskt:"]
         for eid in pub:
             titel = (lage["arkiv"].get(eid, {}).get("utkast") or {}).get("rubrik_sv") or eid
-            text.append(f"- {titel} {site}/n/{eid}/")
+            text.append(f"- {titel} {site}/sv/n/{eid}/")
     kallor = lage["kallstatus"].get("kallor", [])
     if kallor:
         text += ["", f"Källor: {sum(1 for k in kallor if k.get('status') == 'ok')} av {len(kallor)} går att läsa."]

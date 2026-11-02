@@ -67,10 +67,13 @@ som en mening med länkar till originalen och "och 12 till" till notissidan, dä
 - Utskick: planen är Resend Broadcasts (gratis upp till 1 000 prenumeranter). `{{unsubscribe_url}}` byts mot leverantörens avregistreringslänk.
 
 ## Den publika sajten
-`publish.py` bygger `public/` med `sajt.py`: förstasida, en sida per notis (`/n/<id>/`, delbar länk), sektioner
-(`/varlden/`, `/sverige/`, `/marknader/`, `/tech/`, `/vetenskap/`, `/noje/`), `/navigatorn/`, `/om/` med principerna, `/kallor/`
-och RSS på svenska och engelska (`/feed.xml`, `/feed-en.xml`). Bara granskade notiser kommer med: förstasidan visar tre dygn,
-sektionerna sju, notissidorna lever lika länge som arkivet (14 dagar).
+`publish.py` bygger `public/` med `sajt.py` som två utgåvor, var och en ett eget språkträd med bara det språket i koden:
+`/sv/` och `/en/` med förstasida, en sida per notis (`/<sprak>/n/<id>/`, den adress Instagrambildtexterna länkar till), sektioner
+(`/<sprak>/varlden/`, `/sverige/`, `/marknader/`, `/tech/`, `/vetenskap/`, `/noje/`), `/navigatorn/`, `/om/` med principerna, `/kallor/`
+och RSS (`/<sprak>/feed.xml`). Roten `/` är en valsida. Varje utgåva visar bara de notiser som hör hemma där (`utgava.visa`), och den
+engelska kräver engelsk rubrik och sammanfattning och gör inte påståendet "saknas i svenska medier". Gamla adresser (`/n/...`, `/feed.xml`)
+skickas vidare till `/sv/` via `_redirects`. Förhandsvisningen (`publish.py --forhandsvisning`) är kvar som en tvåspråkig plan mapp.
+Bara granskade notiser kommer med: förstasidan visar tre dygn, sektionerna sju, notissidorna lever lika länge som arkivet (14 dagar).
 Inget på sidorna beror på byggtiden, så filerna ändras bara när innehållet ändras. Workflowen lägger `public/` i grenen `sajt`,
 och Cloudflare Pages (projektet newsnavigator) publicerar den grenen utan byggsteg.
 Innan lansering har sidorna noindex; sätt `NN_LANSERAD=1` i workflowen för att öppna för sökmotorer (ger också sitemap).

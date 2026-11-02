@@ -23,6 +23,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+import utgava
 from newsletter import SECTIONS, section_of
 from render import (CSS, FONTS_URL, JS, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
                     story_featured, story_full, story_item, story_lead)
@@ -50,6 +51,12 @@ nav a{flex:0 0 auto;display:flex;align-items:center;min-height:46px;padding:0 11
 nav a:hover{color:var(--ink)}nav a[aria-current=page]{color:var(--ink);border-bottom-color:var(--ink)}
 nav a:first-child{padding-left:0}
 main.w{padding-top:28px}
+.lang a{display:flex;align-items:center;height:40px;padding:0 8px;color:var(--mute);font:600 13px var(--sans);text-decoration:none}.lang a:hover{color:var(--ink);text-decoration:underline}
+.pick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:860px;margin:28px 0 0}
+.pick a{display:block;border-top:2px solid var(--ink);padding-top:14px;text-decoration:none;color:var(--text)}
+.pick a:hover h2{text-decoration:underline}
+.pick h2{font-size:32px;margin:0 0 8px}.pick p{font:400 18px/1.5 var(--serif);margin:0}
+@media (max-width:640px){.pick{grid-template-columns:minmax(0,1fr)}}
 
 /* Förstasidan */
 .top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:0 40px;align-items:start}
@@ -119,22 +126,31 @@ footer{border-top:1px solid var(--ink);margin-top:64px;padding:28px 0 48px}
 # ---------- Adresser ----------
 
 class Urls:
-    def __init__(self, flat):
+    """flat: förhandsvisning i en mapp. Annars ett träd, och med `lang` ett språkträd under /sv/ eller /en/."""
+
+    def __init__(self, flat, lang=None):
         self.flat = flat
+        self.lang = None if flat else lang
+        self.p = f"/{self.lang}" if self.lang else ""
 
     def home(self):
-        return "./" if self.flat else "/"
+        return "./" if self.flat else f"{self.p}/"
 
     def story(self, sid):
-        return f"n-{sid}.html" if self.flat else f"/n/{sid}/"
+        return f"n-{sid}.html" if self.flat else f"{self.p}/n/{sid}/"
 
     def section(self, slug):
-        return f"{slug}.html" if self.flat else f"/{slug}/"
+        return f"{slug}.html" if self.flat else f"{self.p}/{slug}/"
 
     def page(self, name):
-        return f"{name}.html" if self.flat else f"/{name}/"
+        return f"{name}.html" if self.flat else f"{self.p}/{name}/"
 
     def file(self, name):
+        """Filer som hör till språkträdet, till exempel flödet."""
+        return name if self.flat else f"{self.p}/{name}"
+
+    def asset(self, name):
+        """Delade filer i roten, till exempel loggan."""
         return name if self.flat else f"/{name}"
 
     def disk(self, out, url):
@@ -155,6 +171,19 @@ class Urls:
 def _bb(sv, en):
     """Tvåspråkig text som redan är HTML (för texter vi skriver själva)."""
     return f'<span class="sv">{sv}</span><span class="en">{en}</span>'
+
+
+def _t(u, sv, en):
+    """Text för sidhuvud, titel och beskrivning på trädets språk (svenska om trädet är tvåspråkigt)."""
+    return en if u.lang == "en" else sv
+
+
+_SPAN = re.compile(r'<span class="(sv|en)">(.*?)</span>', re.S)
+
+
+def _lock(text, lang):
+    """Språkträdets sidor har bara sitt eget språk i koden, inte det gömda andra."""
+    return _SPAN.sub(lambda m: m.group(2) if m.group(1) == lang else "", text)
 
 
 def _date(ts, clock=False):
@@ -182,11 +211,13 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
             (u.page("kallor"), "Källor", "Sources", "kallor")]
     links = "".join(f'<a href="{_e(h)}"{" aria-current=page" if k == active else ""}>{_both(sv, en)}</a>' for h, sv, en, k in nav)
     canonical = u.absolute(path)
+    lang = u.lang
+    other = "sv" if lang == "en" else "en"
     ogtags = ""
     if og:
         ogtags = (f'<meta property="og:type" content="{og.get("type", "website")}"><meta property="og:title" content="{_e(og["title"])}">'
                   f'<meta property="og:description" content="{_e(og.get("description", ""))}"><meta property="og:url" content="{_e(canonical)}">'
-                  f'<meta property="og:image" content="{_e(u.absolute(u.file("newsgator.png")))}"><meta property="og:site_name" content="Newsnavigator">'
+                  f'<meta property="og:image" content="{_e(u.absolute(u.asset("newsgator.png")))}"><meta property="og:site_name" content="Newsnavigator">'
                   f'<meta name="twitter:card" content="summary">')
     stamp = ""
     if updated:
@@ -195,25 +226,31 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
     else:
         stamp = "<p>"
     stamp += _both(f"{nsources} källor i åtta regioner.", f"{nsources} sources in eight regions.") + "</p>"
-    return f"""<!doctype html>
-<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    alt = ""
+    if lang and path == u.home():
+        alt = (f'<link rel="alternate" hreflang="sv" href="{SITE_URL}/sv/"><link rel="alternate" hreflang="en" href="{SITE_URL}/en/">'
+               f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}/">')
+    switch = (f'<div class="lang"><a href="{_e(f"/{other}/")}" hreflang="{other}" lang="{other}">{"Svenska" if other == "sv" else "English"}</a></div>' if lang else
+              '<div class="lang" role="group" aria-label="Språk"><button type="button" data-l="sv" aria-pressed="true">SV</button><button type="button" data-l="en" aria-pressed="false">EN</button></div>')
+    page = f"""<!doctype html>
+<html lang="{lang or 'sv'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{_e(title)}</title>
 <meta name="description" content="{_e(description)}">
 {'<meta name="robots" content="noindex">' if noindex else ''}
 <link rel="canonical" href="{_e(canonical)}">
-<link rel="icon" href="{_e(u.file("newsgator.png"))}">
-<link rel="alternate" type="application/rss+xml" title="Newsnavigator" href="{_e(u.file("feed.xml"))}">
-<link rel="alternate" type="application/rss+xml" title="Newsnavigator (English)" href="{_e(u.file("feed-en.xml"))}">
-{ogtags}
+<link rel="icon" href="{_e(u.asset("newsgator.png"))}">
+{f'<link rel="alternate" type="application/rss+xml" title="Newsnavigator{" (English)" if lang == "en" else ""}" href="{_e(u.file("feed.xml"))}">' if lang else
+ f'<link rel="alternate" type="application/rss+xml" title="Newsnavigator" href="{_e(u.file("feed.xml"))}"><link rel="alternate" type="application/rss+xml" title="Newsnavigator (English)" href="{_e(u.file("feed-en.xml"))}">'}
+{alt}{ogtags}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="{FONTS_URL}">
 <style>{SITE_CSS}</style></head>
-<body>
+<body{' class="en"' if lang == "en" else ''}>
 {f'<div class="banner"><div class="w">{banner}</div></div>' if banner else ''}
 <header><div class="w mast">
 <span class="date" data-date></span>
 <a class="brand" href="{_e(u.home())}">{_mascot()}<span>Newsnavigator</span></a>
-<div class="lang" role="group" aria-label="Språk"><button type="button" data-l="sv" aria-pressed="true">SV</button><button type="button" data-l="en" aria-pressed="false">EN</button></div>
+{switch}
 </div></header>
 <nav aria-label="Sektioner"><div class="w">{links}</div></nav>
 <main class="w">{body}</main>
@@ -222,8 +259,9 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
 <div class="links"><a href="{_e(u.page("om"))}">{_both("Om Newsnavigator och principerna", "About Newsnavigator and the principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Alla källor", "All sources")}</a><a href="{_e(u.page("navigatorn"))}">{_both("Navigatorn, morgonbrevet", "Navigatorn, the morning brief")}</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a></div>
 <p class="copy">© 2026 Newsnavigator</p>
 </div></footer>
-<script>{JS}</script>
+{f'<script>window.NN_LANG="{lang}"</script>' if lang else ''}<script>{JS}</script>
 </body></html>"""
+    return _lock(page, lang) if lang else page
 
 
 # ---------- Sidor ----------
@@ -271,9 +309,11 @@ def front(u, events, sources, banner, noindex):
                 inner = f'<div class="one">{left}{link}</div>'
             blocks.append(f'<section class="block"><h2><a href="{_e(u.section(slug))}">{_both(sv, en)}</a></h2>{inner}</section>')
         body = top + "".join(blocks)
-    return _shell(u, title="Newsnavigator", body=body, active="hem", path="/", banner=banner, noindex=noindex,
-                  description="Nyheter från hela världen, samlade och granskade. Se hur olika länder och medier berättar om samma händelse.",
-                  og={"title": "Newsnavigator", "description": "Vi levererar nyheterna. Vad du gör av dem är upp till dig."},
+    return _shell(u, title="Newsnavigator", body=body, active="hem", path=u.home(), banner=banner, noindex=noindex,
+                  description=_t(u, "Nyheter från hela världen, samlade och granskade. Se hur olika länder och medier berättar om samma händelse.",
+                                 "News from around the world, gathered and reviewed. See how different countries and outlets tell the same event."),
+                  og={"title": "Newsnavigator", "description": _t(u, "Vi levererar nyheterna. Vad du gör av dem är upp till dig.",
+                                                                  "We deliver the news. What you make of it is up to you.")},
                   updated=_latest(events), nsources=len(sources))
 
 
@@ -287,8 +327,8 @@ def section_page(u, slug, events, sources, banner, noindex):
             body += f'<ul class="list" style="margin-top:36px;max-width:760px">{"".join(story_item(e, u.story(e["id"])) for e in more)}</ul>'
     else:
         body += f'<p class="empty">{_both("Inga granskade notiser i den här sektionen de senaste dagarna.", "No reviewed stories in this section in the past few days.")}</p>'
-    return _shell(u, title=f"{sv}, Newsnavigator", body=body, active=slug, path=u.section(slug), banner=banner, noindex=noindex,
-                  description=f"Granskade nyheter: {sv}.", updated=_latest(events), nsources=len(sources))
+    return _shell(u, title=f"{_t(u, sv, en)}, Newsnavigator", body=body, active=slug, path=u.section(slug), banner=banner, noindex=noindex,
+                  description=_t(u, f"Granskade nyheter: {sv}.", f"Reviewed news: {en}."), updated=_latest(events), nsources=len(sources))
 
 
 def _ai_note(ev):
@@ -305,8 +345,9 @@ def story_page(u, ev, related, sources, banner, noindex):
     d = ev.get("utkast") or {}
     slug = section_of(ev)
     sv, en = _section_names(slug)
-    title_sv = d.get("rubrik_sv") or ev["reserv_rubrik"]
-    desc_sv = d.get("sammanfattning_sv") or ""
+    lg = "en" if u.lang == "en" else "sv"
+    title_sv = d.get(f"rubrik_{lg}") or d.get("rubrik_sv") or ev["reserv_rubrik"]
+    desc_sv = d.get(f"sammanfattning_{lg}") or d.get("sammanfattning_sv") or ""
     pub = _both(*_date(ev.get("godkand_tid", 0), clock=True)) if ev.get("godkand_tid") else ""
     upd = (f'<span>{_both("Uppdaterad", "Updated")} {_both(*_date(ev["uppdaterad_tid"], clock=True))}</span>'
            if ev.get("uppdaterad_tid") else "")
@@ -329,7 +370,7 @@ def newsletter_page(u, sources, banner, noindex, has_issue):
             f'<p class="lede">{_both("Morgonbrevet från Newsnavigator. Dagens viktigaste händelser i korthet, hur världen ser på dem, och redaktörens rad. Tre minuters läsning, varje morgon.", "The morning brief from Newsnavigator. The day’s most important events in brief, how the world sees them, and the editor’s note. A three-minute read, every morning.")}</p>'
             f'<div class="prose"><p>{_both("Första numret skickas när Newsnavigator öppnar. Vill du vara med från början, skriv till", "The first issue goes out when Newsnavigator opens. To be on the list from the start, write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>')
     return _shell(u, title="Navigatorn, Newsnavigator", body=body, active="navigatorn", path=u.page("navigatorn"), banner=banner, noindex=noindex,
-                  description="Navigatorn, morgonbrevet från Newsnavigator.", nsources=len(sources))
+                  description=_t(u, "Navigatorn, morgonbrevet från Newsnavigator.", "Navigatorn, the morning brief from Newsnavigator."), nsources=len(sources))
 
 
 PRINCIPLES = [
@@ -429,8 +470,9 @@ def about_page(u, sources, banner, noindex):
 <h2>{_both("Kontakt", "Contact")}</h2>
 <p>{_both("Tips, rättelser och frågor:", "Tips, corrections and questions:")} <a href="mailto:{CONTACT}">{CONTACT}</a>. {_both("Ansvarig utgivare är Fabian Sandberg Kuylenstierna, Stockholm.", "The publisher is Fabian Sandberg Kuylenstierna, Stockholm.")}</p>
 </div>"""
-    return _shell(u, title="Om Newsnavigator", body=body, active="om", path=u.page("om"), banner=banner, noindex=noindex,
-                  description="Vad Newsnavigator är, hur vi arbetar och våra tolv redaktionella principer.", nsources=len(sources))
+    return _shell(u, title=_t(u, "Om Newsnavigator", "About Newsnavigator"), body=body, active="om", path=u.page("om"), banner=banner, noindex=noindex,
+                  description=_t(u, "Vad Newsnavigator är, hur vi arbetar och våra tolv redaktionella principer.",
+                                 "What Newsnavigator is, how we work and our editorial principles."), nsources=len(sources))
 
 
 def _homepage(s):
@@ -473,8 +515,9 @@ def sources_page(u, sources, banner, noindex):
 <p>{_both("Saknar du en källa, eller driver du en? Skriv till", "Missing a source, or do you run one? Write to")} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
 </div>
 {"".join(groups)}"""
-    return _shell(u, title="Källor, Newsnavigator", body=body, active="kallor", path=u.page("kallor"), banner=banner, noindex=noindex,
-                  description=f"Alla {len(sources)} källor Newsnavigator bevakar, med region, typ och märkning.", nsources=len(sources))
+    return _shell(u, title=_t(u, "Källor, Newsnavigator", "Sources, Newsnavigator"), body=body, active="kallor", path=u.page("kallor"), banner=banner, noindex=noindex,
+                  description=_t(u, f"Alla {len(sources)} källor Newsnavigator bevakar, med region, typ och märkning.",
+                                 f"All {len(sources)} sources Newsnavigator follows, with region, type and labels."), nsources=len(sources))
 
 
 # ---------- RSS ----------
@@ -498,7 +541,7 @@ def feed(u, events, lang):
     build = datetime.fromtimestamp(latest, timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000") if latest else ""
     title = "Newsnavigator" if lang == "sv" else "Newsnavigator (English)"
     desc = "Vi levererar nyheterna. Vad du gör av dem är upp till dig." if lang == "sv" else "We deliver the news. What you make of it is up to you."
-    return (f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{title}</title><link>{_x(SITE_URL)}/</link>'
+    return (f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{title}</title><link>{_x(u.absolute(u.home()))}</link>'
             f'<description>{desc}</description><language>{lang}</language>{f"<lastBuildDate>{build}</lastBuildDate>" if build else ""}'
             f'{"".join(items)}</channel></rss>')
 
@@ -509,10 +552,11 @@ def load_sources():
     return yaml.safe_load((ROOT / "feeds.yaml").read_text(encoding="utf-8"))["sources"]
 
 
-def build(out, events, *, flat=False, banner="", noindex=True, has_issue=False, over_sprak=False):
-    """events: granskade notiser, nyast först, var och en med godkand_tid. Skriver alla sidor till out."""
+def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_issue=False, over_sprak=False):
+    """events: granskade notiser, nyast först, var och en med godkand_tid. Skriver alla sidor till out.
+    Med `lang` skrivs ett språkträd under out/<lang>/ (se build_editions); utan är sajten tvåspråkig (förhandsvisningen)."""
     out = Path(out)
-    u = Urls(flat)
+    u = Urls(flat, lang)
     sources = load_sources()
     for e in events:
         e["_over_sprak"] = over_sprak
@@ -525,7 +569,7 @@ def build(out, events, *, flat=False, banner="", noindex=True, has_issue=False, 
     for slug, *_ in SECTIONS:
         _write(u.disk(out, u.section(slug)), section_page(u, slug, [e for e in sect_events if section_of(e) == slug], sources, banner, noindex))
     # Notissidor: rensa gamla och skriv alla i arkivet, så att länkar lever lika länge som arkivet
-    ndir = out / "n"
+    ndir = out / u.p.strip("/") / "n"
     if not flat and ndir.exists():
         shutil.rmtree(ndir)
     if flat:
@@ -535,15 +579,106 @@ def build(out, events, *, flat=False, banner="", noindex=True, has_issue=False, 
         related = [r for r in sect_events if r["id"] != ev["id"] and section_of(r) == section_of(ev)][:4]
         _write(u.disk(out, u.story(ev["id"])), story_page(u, ev, related, sources, banner, noindex))
     _write(u.disk(out, u.page("om")), about_page(u, sources, banner, noindex))
-    if not flat:
+    if not flat and not lang:
         _write(out / "404.html", not_found_page(u, banner, len(sources)))
         _write(out / "_headers", HEADERS)
     _write(u.disk(out, u.page("kallor")), sources_page(u, sources, banner, noindex))
     nl = newsletter_page(u, sources, banner, noindex, has_issue)
     if nl:
         _write(u.disk(out, u.page("navigatorn")), nl)
-    _write(u.disk(out, u.file("feed.xml")), feed(u, events, "sv"))
-    _write(u.disk(out, u.file("feed-en.xml")), feed(u, events, "en"))
+    _write(u.disk(out, u.file("feed.xml")), feed(u, events, lang or "sv"))
+    if not lang:
+        _write(u.disk(out, u.file("feed-en.xml")), feed(u, events, "en"))
     for e in events:
         e.pop("_over_sprak", None)
     return {"notiser": len(events), "forstasida": len(front_events)}
+
+
+# ---------- Två utgåvor ----------
+
+def har_text(ev, lang):
+    """Engelska trädet kräver engelsk rubrik och sammanfattning, så att ingen svensk text hamnar där."""
+    d = ev.get("utkast") or {}
+    return bool(d.get("rubrik_en") and d.get("sammanfattning_en")) if lang == "en" else True
+
+
+def utgavans_notiser(events, lang):
+    return [e for e in events if utgava.visa(e, lang) and har_text(e, lang)]
+
+
+CHOOSER = (
+    ("sv", "Svenska", "Världen sedd från Sverige: det som berör oss, och hur andra länders medier berättar om samma händelse."),
+    ("en", "English", "The world’s news side by side: how different countries, and blue and red media in the US, tell the same event."),
+)
+
+LEGACY = [f"{k}" for k, *_ in SECTIONS] + ["n", "om", "kallor", "navigatorn", "feed.xml", "feed-en.xml"]
+
+
+def chooser_page(banner="", noindex=True):
+    u = Urls(False)
+    cards = "".join(f'<a href="/{k}/" hreflang="{k}" lang="{k}"><h2>{_e(name)}</h2><p>{_e(text)}</p></a>' for k, name, text in CHOOSER)
+    body = (f'<h1 class="pagetitle">Newsnavigator</h1><p class="lede">Välj utgåva. Choose your edition.</p><div class="pick">{cards}</div>')
+    nav_free = f"""<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newsnavigator</title>
+<meta name="description" content="Newsnavigator: nyheter från hela världen, på svenska och engelska. News from around the world, in Swedish and English.">
+{'<meta name="robots" content="noindex">' if noindex else ''}
+<link rel="canonical" href="{SITE_URL}/">
+<link rel="alternate" hreflang="sv" href="{SITE_URL}/sv/"><link rel="alternate" hreflang="en" href="{SITE_URL}/en/"><link rel="alternate" hreflang="x-default" href="{SITE_URL}/">
+<link rel="icon" href="/newsgator.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="{FONTS_URL}">
+<style>{SITE_CSS}</style></head>
+<body>
+{f'<div class="banner"><div class="w">{banner}</div></div>' if banner else ''}
+<header><div class="w mast"><span></span><a class="brand" href="/">{_mascot()}<span>Newsnavigator</span></a><span></span></div></header>
+<main class="w">{body}</main>
+<footer><div class="w ft"><div><p>Ansvarig utgivare: Fabian Sandberg Kuylenstierna. Publisher: Fabian Sandberg Kuylenstierna.</p></div>
+<div class="links"><a href="mailto:{CONTACT}">{CONTACT}</a></div><p class="copy">© 2026 Newsnavigator</p></div></footer>
+</body></html>"""
+    return nav_free
+
+
+def redirects():
+    """Adresserna från tiden före utgåvorna pekar nu på det svenska trädet."""
+    rader = ["/n/* /sv/n/:splat 301", "/feed.xml /sv/feed.xml 301", "/feed-en.xml /en/feed.xml 301",
+             "/navigatorn /sv/navigatorn/ 301", "/navigatorn/ /sv/navigatorn/ 301", "/navigatorn/en.html /en/navigatorn/ 301",
+             "/om /sv/om/ 301", "/om/ /sv/om/ 301", "/kallor /sv/kallor/ 301", "/kallor/ /sv/kallor/ 301"]
+    rader += [f"/{k}/ /sv/{k}/ 301" for k, *_ in SECTIONS]
+    return "\n".join(rader) + "\n"
+
+
+def sitemap_xml(per_utgava):
+    urls = ["/"]
+    for lang, events in per_utgava.items():
+        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
+        urls += [f"/{lang}/{k}/" for k, *_ in SECTIONS]
+        urls += [f"/{lang}/n/{e['id']}/" for e in events]
+    return ('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>")
+
+
+def build_editions(out, events, *, banner="", noindex=True, issues=None, over_sprak=False):
+    """Bygger sajten som två språkträd, /sv/ och /en/, var och en med de notiser som hör hemma i utgåvan, och en valsida i roten.
+    Lanseringens kort (ig/) och förhandsgranskning (lansering/) ligger kvar orörda."""
+    out = Path(out)
+    issues = issues or {}
+    out.mkdir(parents=True, exist_ok=True)
+    for namn in LEGACY:                                   # sajten före utgåvorna
+        gammal = out / namn
+        if gammal.is_dir():
+            shutil.rmtree(gammal)
+        elif gammal.exists():
+            gammal.unlink()
+    stats = {"notiser": 0, "forstasida": 0, "per_utgava": {}}
+    for lang in utgava.UTGAVOR:
+        evs = utgavans_notiser(events, lang)
+        st = build(out, evs, lang=lang, banner=banner, noindex=noindex, has_issue=issues.get(lang, False),
+                   over_sprak=over_sprak if lang == "sv" else False)
+        stats["per_utgava"][lang] = evs
+        stats["notiser"] += st["notiser"]
+        stats["forstasida"] += st["forstasida"]
+    _write(out / "index.html", chooser_page(banner, noindex))
+    _write(out / "404.html", not_found_page(Urls(False), banner, len(load_sources())))
+    _write(out / "_headers", HEADERS)
+    _write(out / "_redirects", redirects())
+    return stats

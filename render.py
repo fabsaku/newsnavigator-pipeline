@@ -164,10 +164,10 @@ JS = """
   }
   function setLang(l){b.classList.toggle('en',l==='en');document.documentElement.lang=l;
     btns.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.l===l)});date(l);
-    try{localStorage.setItem('nn-lang',l)}catch(e){}}
+    if(!window.NN_LANG){try{localStorage.setItem('nn-lang',l)}catch(e){}}}
   btns.forEach(function(x){x.addEventListener('click',function(){setLang(x.dataset.l)})});
   var s=null;try{s=localStorage.getItem('nn-lang')}catch(e){}
-  setLang(s==='en'?'en':'sv');
+  setLang(window.NN_LANG||(s==='en'?'en':'sv'));
   var chips=document.querySelectorAll('.chips button'), evs=document.querySelectorAll('.feed .story');
   chips.forEach(function(c){c.addEventListener('click',function(){
     chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});
