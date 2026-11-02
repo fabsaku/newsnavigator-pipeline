@@ -3641,20 +3641,21 @@
   ],
   "poang": 34.5,
   "vikt": {
-   "bredd": 0.59,
+   "bredd": 0.541,
    "regioner": {
     "afrika": 1,
     "latinamerika": 2,
-    "sverige": 2,
+    "usa": 1,
+    "sverige": 1,
     "europa": 1
    },
-   "timmar": 36,
+   "timmar": 40,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "Midtermvalen i USA avgör vem som kontrollerar kongressen och påverkar landets politik och världens ekonomi under de närmaste två åren."
+    "skal": "Midterm-valet i USA avgör kontrollen över kongressen och påverkar politik och ekonomi för hela landet under de kommande två åren."
    },
    "bekraftad": true,
    "maste": false
@@ -3809,7 +3810,8 @@
     "afrika",
     "europa",
     "latinamerika",
-    "sverige"
+    "sverige",
+    "usa"
    ],
    "per_region": {
     "afrika": [
@@ -3837,19 +3839,21 @@
       "statskontrollerad": false
      }
     ],
+    "usa": [
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "The midterm election could reshape the muni bond market. Here’s what investors need to know",
+      "url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html",
+      "statskontrollerad": false
+     }
+    ],
     "sverige": [
      {
       "kalla": "Sveriges Radio Ekot",
       "land": "SE",
       "rubrik": "Youngstown i Ohio – symbol i mellanårsvalet i USA",
       "url": "https://www.sverigesradio.se/artikel/9332121",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens industri",
-      "land": "SE",
-      "rubrik": "Det är USA-valets viktigaste fråga",
-      "url": "https://www.di.se/nyheter/det-ar-usa-valets-viktigaste-fraga/",
       "statskontrollerad": false
      }
     ],
@@ -3892,6 +3896,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "CNBC",
+    "rubrik": "The midterm election could reshape the muni bond market. Here’s what investors need to know",
+    "url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Sveriges Radio Ekot",
     "rubrik": "Youngstown i Ohio – symbol i mellanårsvalet i USA",
     "url": "https://www.sverigesradio.se/artikel/9332121",
@@ -3914,17 +3929,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dagens industri",
-    "rubrik": "Det är USA-valets viktigaste fråga",
-    "url": "https://www.di.se/nyheter/det-ar-usa-valets-viktigaste-fraga/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Financial Times",
     "rubrik": "Bond investors sit out ‘most consequential’ US midterm elections in years",
     "url": "https://www.ft.com/content/937308d7-aa2e-4dac-b19b-423d83bc1253?syn-25a6b1a6=1",
@@ -3940,6 +3944,136 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1793584195.2615678,
-  "automatisk": true
+  "automatisk": true,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Utsikterna för demokraterna",
+     "namn_en": "Democrats' prospects in the vote",
+     "lyfter_sv": "Daily Maverick lyfter fram tidig röstning, dalande godkännande och inflation som faktorer som kan vända kontrollen till demokraterna. MercoPress lyfter fram att opinionsmätningarna gynnar demokraterna. El Tiempo lyfter fram att demokraterna leder med 30 punkter bland hispanos.",
+     "lyfter_en": "Daily Maverick highlights early voting, falling approval and inflation as factors that could hand control to the Democrats. MercoPress highlights that polls favour the Democrats. El Tiempo highlights a 30-point Democratic lead among Hispanics.",
+     "kallor": [
+      {
+       "namn": "Daily Maverick",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dailymaverick.co.za/opinionista/2026-11-01-the-state-of-play-in-the-us-midterm-elections/"
+      },
+      {
+       "namn": "MercoPress",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.mercopress.com/2026/11/01/democrats-seek-to-retake-congress-in-tuesday-s-us-midterm-elections?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
+      },
+      {
+       "namn": "El Tiempo",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/el-bolsillo-acerca-de-nuevo-a-los-latinos-a-los-democratas-antes-de-las-legislativas-en-ee-uu-pero-su-voto-sigue-sin-pertenecer-a-un-partido-3597346"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "latinamerika"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Effekter på obligationsmarknaden",
+     "namn_en": "Effects on bond markets",
+     "lyfter_sv": "CNBC lyfter fram att valet kan påverka kommunala obligationer genom skatteåtgärder, ny emission och kongressens sammansättning, medan FT lyfter fram att obligationsinvesterare håller sig utanför valet.",
+     "lyfter_en": "CNBC highlights that the election could affect municipal bonds through tax measures, new bond supply and the makeup of Congress, while FT highlights that bond investors are staying out of the vote.",
+     "kallor": [
+      {
+       "namn": "CNBC",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html"
+      },
+      {
+       "namn": "Financial Times",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.ft.com/content/937308d7-aa2e-4dac-b19b-423d83bc1253?syn-25a6b1a6=1"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 7,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Mellanårsvalet i USA hålls på tisdag",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Demokraterna vill ta tillbaka kongressen",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick: tidig röstning, dalande godkännande och inflation kan vända kontrollen till demokraterna",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: opinionsmätningarna gynnar demokraterna",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "El Tiempo: demokraterna leder med 30 punkter bland hispanos",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC: valet kan påverka kommunala obligationer genom skatteåtgärder, ny emission och kongressens sammansättning",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Financial Times: obligationsinvesterare håller sig utanför valet",
+      "stod": [
+       6
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "relevans": {
+   "sv": 2,
+   "en": 3
+  },
+  "uppdaterad_tid": 1793596020.7817307
  }
 }
