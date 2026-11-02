@@ -4,6 +4,7 @@ Formen är en tidningssida i svartvitt, mörk först. Serif för rubriker och l�
 Det enda som får ta plats är täckningsremsan: en cell per region som tänds när regionen rapporterar.
 """
 import html
+import os
 import re
 from pathlib import Path
 
@@ -389,6 +390,24 @@ def story_item(ev, href, kicker=""):
     return f'<li><h3><a href="{_e(href)}">{_title(ev)}</a></h3><p class="meta">{k}{meta_line(ev)}</p></li>'
 
 
+def narratives_block(ev):
+    """Berättelserna (berattelser.py): tomt tills utvärderingen är gjord och NN_BERATTELSER=1, och bara om källkontrollen godkänt dem."""
+    n = ev.get("narrativ")
+    if os.environ.get("NN_BERATTELSER") != "1" or not n or not n.get("ok") or not n.get("berattelser"):
+        return ""
+    cols = []
+    for b in n["berattelser"]:
+        who = ", ".join(
+            _e(k["namn"]) + (f' ({_both(*REGIONS.get(k["region"], (k["region"], k["region"])))}'
+                             + (f', AllSides: {_both(*LEANS[k["lutning"]])}' if k.get("lutning") in LEANS else "")
+                             + ("<span class=stat>STAT</span>" if k.get("statskontrollerad") else "") + ")")
+            for k in b["kallor"])
+        cols.append(f'<div class="region"><h4>{_both(b["namn_sv"], b["namn_en"])}</h4><p class="persp">{_both(b["lyfter_sv"], b["lyfter_en"])}</p>'
+                    f'<p class="who">{_both("Bärs av", "Carried by")}: {who}</p></div>')
+    return (f'<h3 class="section-h">{_both("Berättelserna", "The narratives")}</h3><div class="regions">{"".join(cols)}</div>'
+            f'<p class="note">{_both("Grupperingen är gjord med hjälp av AI och kontrollerad mot källorna. Varje beskrivning gäller bara vad de namngivna källorna lyfter fram. Vi säger inte vilken berättelse som stämmer.", "The grouping is made with the help of AI and checked against the sources. Each description covers only what the named sources highlight. We do not say which narrative is right.")}</p>')
+
+
 def story_full(ev, internal=False):
     """Hela notisen: notissidan och den interna förhandsvisningen."""
     d = ev.get("utkast") or {}
@@ -421,6 +440,8 @@ def story_full(ev, internal=False):
         parts.append(f'<h3 class="section-h">{_both("USA: blått och rött", "US: blue and red")}</h3>{coverage_usa(p)}{txt}'
                      f'<div class="regions" style="margin-top:18px">{"".join(cols)}</div>'
                      f'<p class="note">{_both("Indelningen bygger på AllSides betyg av medierna, inte på vår bedömning.", "Grouping based on AllSides ratings of the outlets, not our own judgement.")}</p>')
+
+    parts.append(narratives_block(ev))
 
     dis = _disagreement(ev)
     if dis:

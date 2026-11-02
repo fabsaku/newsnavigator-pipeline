@@ -24,6 +24,7 @@ from pathlib import Path
 import feedparser
 import yaml
 
+import berattelser
 import kallkontroll
 import vikt as vikt_mod
 from prompts import SYSTEM_PROMPT, user_prompt
@@ -33,6 +34,7 @@ NEWSLETTER_ADMIN = re.compile(r"confirm|verify|welcome|subscription|subscribed|s
 CACHE_PATH = ROOT / "data" / "cache.json"
 CACHE_DAYS = 3        # utkast och översättningar som inte setts på tre dagar rensas
 WORKERS = 8           # samtidiga AI-anrop
+NARRATIV_TOPP = 30    # så många händelser får berättelser per körning (cachas per källuppsättning)
 KONSEKVENS_TOPP = 80  # så många händelser får en konsekvensbedömning per körning (cachas)
 STOPWORDS = set("""
 och i att det som en på är av för med till den har de inte om ett han hon men var
@@ -608,7 +610,7 @@ def load_cache():
 
 def save_cache(cache):
     limit = time.time() - CACHE_DAYS * 86400
-    for key in ("utkast", "titlar", "konsekvens"):
+    for key in ("utkast", "titlar", "konsekvens", "berattelser"):
         cache[key] = {k: v for k, v in cache.get(key, {}).items() if v.get("sedd", 0) >= limit}
     CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -710,6 +712,17 @@ def main():
     with ThreadPoolExecutor(WORKERS) as pool:
         results = list(pool.map(draft_for, chosen))
 
+    # Berättelserna (berattelser.py): de olika sätten källorna berättar händelsen på. Sparas, visas först efter utvärderingen.
+    narrativ = {}
+    if client:
+        kandidater = [(c, d) for c, (d, _, _) in zip(chosen, results)
+                      if d and not d.get("osaker") and d.get("rubrik_sv") and berattelser.kvalificerad(c)][:NARRATIV_TOPP]
+        with ThreadPoolExecutor(WORKERS) as pool:
+            for (c, _), n in zip(kandidater, pool.map(lambda cd: berattelser.bygg(cd[0], cd[1], client, model, reply_text, cache), kandidater)):
+                narrativ[c["id"]] = n
+        print(f"Berättelser: {sum(1 for n in narrativ.values() if n)} av {len(kandidater)} händelser fick berättelser, "
+              f"{sum(1 for n in narrativ.values() if n and n['ok'])} godkända av källkontrollen")
+
     reused = 0
     for c, (draft, kontroll, from_cache) in zip(chosen, results):
         reused += from_cache
@@ -731,6 +744,7 @@ def main():
             "senast": max((i["published"] or "") for i in c["items"]) or None,
             "utkast": draft,
             "kallkontroll": kontroll,
+            "narrativ": narrativ.get(c["id"]),
             "perspektiv": perspective(c),
             "reserv_rubrik": lead["title"],
             "kallor": [{"namn": i["source_name"], "rubrik": i["title"], "url": i["url"],

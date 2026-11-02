@@ -128,3 +128,9 @@ Formatet: vit text på svart, högst tre kort. Omslag med rubrik, sammanfattning
 med en rubrik per region; sist ett kort där det finns något att visa, i tur och ordning data bakom nyheten, ett stapeldiagram
 (fältet `graf` på notisen: titel, staplar med etikett, värde och visat värde), USA blått och rött, eller "Källorna skiljer sig åt".
 Handplockade notiser i en JSON-fil, till exempel ur flödeshistoriken: `python instagram.py urval urval.json /tmp/ig`.
+
+## Berättelserna
+`berattelser.py` ger händelser med minst fyra oberoende källor i minst två regioner två till fyra namngivna berättelser: vad grupper av
+källor lyfter fram, alltid tillskrivet, aldrig vad en källa utelämnar. Koden räknar ut vilka källor, regioner och AllSides-sidor som bär
+dem, och en egen källkontroll läser tillskrivningarna. Resultatet sparas som `narrativ` på händelsen. Visas på notissidan först när
+`NN_BERATTELSER=1` är satt (efter utvärderingen, B3 i planen).
