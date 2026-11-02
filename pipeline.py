@@ -742,6 +742,11 @@ def main():
     events.sort(key=lambda e: e["poang"], reverse=True)
     vikt_mod.save_history(hist)
 
+    # Relevans per utgåva (svenska och engelska läsaren), så att sajt, Instagram och brev kan välja rätt notiser
+    import utgava
+    for e in events:
+        e["relevans"] = utgava.relevans(e)
+
     # En händelse som redan är publicerad behåller sin notis: den får arkivets id och uppdateras där
     from newsletter import load_archive
     arkiv_nu = load_archive()

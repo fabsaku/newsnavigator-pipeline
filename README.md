@@ -98,6 +98,13 @@ sedan åtta). Inställningar i `data/autopilot.json` (`pa`, `tyst`, `tak`, `veto
 och Instagram. Status i `data/autopilot_status.json`. Automatiskt publicerade notiser märks "Publicerad utan manuell granskning" på sajten,
 i Navigatorn och på Instagramkorten. Ångra: workflowen `angra.yml` med notisens id, eller `python autopilot.py angra <id>`.
 
+## Två utgåvor
+`utgava.py` avgör vilken läsare en notis hör hemma hos. Svenska utgåvan (@newsnavigator.se): svenska nyheter, och globala händelser som berör
+Sverige och Europa, särskilt de som saknas i svenska medier. Engelska utgåvan (@news.navigator): globala händelser, svenskt och nordiskt bara när
+det påverkar läsaren (NATO, EU, ECB, stora bolag, marknader), aldrig lokalt svenskt. Varje händelse bär `relevans` (`sv` och `en`, 0 till 3).
+En notis godkänns en gång; utgåvorna avgör var den visas. Grindarna är autopilotens, utom att engelska utgåvan inte gör påståendet "saknas
+i svenska medier" och inte kräver svenska källor, och att tre svenska källor räcker för svensk inrikesnyhet.
+
 ## Behöver dig och morgonrapporten
 `behover.py` bygger listan över det som väntar på dig, med regler i stället för för hand: måste-med-notiser som väntat över två timmar eller
 hållits tillbaka av taket, körningar som fallerat två gånger i rad, klockan som stannat, hopslagna händelser, källor som tystnat (tre dygn för
