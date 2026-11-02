@@ -3632,35 +3632,42 @@
  "6ea351f85d": {
   "id": "6ea351f85d",
   "amnen": [
-   "usa",
-   "varlden"
-  ],
-  "amnen_sektion": [
+   "ai",
+   "marknader",
    "usa"
   ],
-  "poang": 34.6,
+  "amnen_sektion": [
+   "ai",
+   "marknader",
+   "usa"
+  ],
+  "poang": 34.3,
   "vikt": {
-   "bredd": 0.536,
+   "bredd": 0.833,
    "regioner": {
+    "asien": 2,
+    "usa": 2,
+    "europa": 1,
+    "sverige": 1,
     "mellanostern": 1,
     "afrika": 1,
     "latinamerika": 2
    },
-   "timmar": 42,
+   "timmar": 31,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "Amerikanska mellanårsvalen avgör kontrollen över kongressen och påverkar politiken i USA och världen i flera år."
+    "skal": "USA:s midtermval styr vilken makt som får kongressen, med effekter på politik, ekonomi och marknader i flera länder under de kommande två åren."
    },
-   "bekraftad": true,
-   "maste": false
+   "bekraftad": false,
+   "maste": true
   },
-  "maste": false,
-  "antal_kallor": 4,
+  "maste": true,
+  "antal_kallor": 10,
   "har_primarkalla": false,
-  "senast": "2026-11-02T08:05:03+00:00",
+  "senast": "2026-11-02T13:41:30+00:00",
   "utkast": {
    "rubrik_sv": "Demokraterna hoppas ta tillbaka kongressen i USA:s mellanårsval",
    "sammanfattning_sv": "Mellanårsvalet i USA hålls på tisdag, med alla 435 platser i representanthuset och 35 av 100 senatsplatser på spel. Enligt MercoPress hoppas demokraterna ta tillbaka kontrollen över kongressen, och valet beskrivs som ett test av Donald Trumps andra presidentperiod.",
@@ -3805,10 +3812,64 @@
   "perspektiv": {
    "regioner": [
     "afrika",
+    "asien",
+    "europa",
     "latinamerika",
-    "mellanostern"
+    "mellanostern",
+    "sverige",
+    "usa"
    ],
    "per_region": {
+    "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "US midterm elections: How the outcome could impact Wall Street, AI stocks and Treasury yields",
+      "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-elections-how-the-outcome-could-impact-wall-street-ai-stocks-and-treasury-yields-101793625802544.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Nikkei Asia",
+      "land": "JP",
+      "rubrik": "Indonesia GDP, US midterm elections, Hong Kong financial summit",
+      "url": "https://asia.nikkei.com/spotlight/your-week-in-asia/indonesia-gdp-us-midterm-elections-hong-kong-financial-summit",
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
+      "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Midterm Elections: Who Is Winning the Race for Congress?",
+      "url": "https://www.nytimes.com/2026/11/02/us/politics/congress-races-midterms.html",
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "US midterm elections: North Carolina farmers hit hard by inflation",
+      "url": "https://www.france24.com/en/tv-shows/focus/20261102-us-midterm-elections-north-carolina-farmers-hit-hard-by-inflation",
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Direktrapport | Mellanårsvalet i USA 2026",
+      "url": "https://www.sverigesradio.se/artikel/9332684",
+      "statskontrollerad": false
+     }
+    ],
     "mellanostern": [
      {
       "kalla": "Al Jazeera",
@@ -3844,12 +3905,73 @@
      }
     ]
    },
-   "blind_flack": "saknas_i_sverige",
-   "usa": null,
+   "blind_flack": null,
+   "usa": {
+    "mitten": [
+     {
+      "kalla": "CNBC",
+      "rubrik": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
+      "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+      "lutning": "mitten"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "The New York Times",
+      "rubrik": "Midterm Elections: Who Is Winning the Race for Congress?",
+      "url": "https://www.nytimes.com/2026/11/02/us/politics/congress-races-midterms.html",
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "How the president’s party has fared in every US midterm election since 1946",
+  "reserv_rubrik": "US midterm elections: How the outcome could impact Wall Street, AI stocks and Treasury yields",
   "kallor": [
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "US midterm elections: How the outcome could impact Wall Street, AI stocks and Treasury yields",
+    "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-elections-how-the-outcome-could-impact-wall-street-ai-stocks-and-treasury-yields-101793625802544.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CNBC",
+    "rubrik": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
+    "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "US midterm elections: North Carolina farmers hit hard by inflation",
+    "url": "https://www.france24.com/en/tv-shows/focus/20261102-us-midterm-elections-north-carolina-farmers-hit-hard-by-inflation",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Sveriges Radio Ekot",
+    "rubrik": "Direktrapport | Mellanårsvalet i USA 2026",
+    "url": "https://www.sverigesradio.se/artikel/9332684",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "Al Jazeera",
     "rubrik": "How the president’s party has fared in every US midterm election since 1946",
@@ -3893,11 +4015,33 @@
     "region": "latinamerika",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Midterm Elections: Who Is Winning the Race for Congress?",
+    "url": "https://www.nytimes.com/2026/11/02/us/politics/congress-races-midterms.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Nikkei Asia",
+    "rubrik": "Indonesia GDP, US midterm elections, Hong Kong financial summit",
+    "url": "https://asia.nikkei.com/spotlight/your-week-in-asia/indonesia-gdp-us-midterm-elections-hong-kong-financial-summit",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "JP",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "autopilot": [
-   "blind fläck"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793584195.2615678,
@@ -3905,11 +4049,47 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Mätningarna pekar mot demokraterna",
-     "namn_en": "Polls point toward Democrats",
-     "lyfter_sv": "Al Jazeera lyfter fram att mätningarna tyder på att presidentens parti inte vinner mandat i representanthuset, och MercoPress att demokraterna har mätningarna i sin favör.",
-     "lyfter_en": "Al Jazeera highlights that polls suggest the president's party will not win House seats, and MercoPress that Democrats have the polls in their favour.",
+     "namn_sv": "Konsekvenser för börsen och politiken",
+     "namn_en": "Impact on markets and economic policy",
+     "lyfter_sv": "Hindustan Times lyfter fram möjliga effekter för Wall Street, AI-aktier och statsobligationsräntor, medan CNBC lyfter fram försvar, sjukvård, krypto och ökad granskning av stora företag.",
+     "lyfter_en": "Hindustan Times highlights possible effects on Wall Street, AI stocks and Treasury yields, while CNBC highlights defense, healthcare, crypto and tougher scrutiny of large companies.",
      "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-elections-how-the-outcome-could-impact-wall-street-ai-stocks-and-treasury-yields-101793625802544.html"
+      },
+      {
+       "namn": "CNBC",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten"
+     ]
+    },
+    {
+     "namn_sv": "Trump och presidentpartiets utsikter",
+     "namn_en": "Trump and the president's party's prospects",
+     "lyfter_sv": "France 24 lyfter fram Trumps osäkra popularitet, Al Jazeera att presidentpartiet sällan vunnit mandat i representanthuset och MercoPress valet som ett test av Trumps andra mandatperiod.",
+     "lyfter_en": "France 24 highlights Trump's unpopularity, Al Jazeera that the president's party has rarely gained House seats, and MercoPress the vote as a test of Trump's second term.",
+     "kallor": [
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/tv-shows/focus/20261102-us-midterm-elections-north-carolina-farmers-hit-hard-by-inflation"
+      },
       {
        "namn": "Al Jazeera",
        "region": "mellanostern",
@@ -3926,16 +4106,17 @@
       }
      ],
      "regioner": [
+      "europa",
       "latinamerika",
       "mellanostern"
      ],
      "usa_sidor": []
     },
     {
-     "namn_sv": "Osäker utgång och rörliga väljare",
-     "namn_en": "Uncertain outcome and shifting voters",
-     "lyfter_sv": "Daily Maverick lyfter fram att kongressen hänger i balans, och El Tiempo att latinska väljare rör sig mot demokraterna utan att tillhöra något parti.",
-     "lyfter_en": "Daily Maverick highlights that control of Congress hangs in the balance, and El Tiempo that Latino voters are moving toward Democrats without belonging to any party.",
+     "namn_sv": "Osäker maktbalans i Kongressen",
+     "namn_en": "Uncertain balance of power in Congress",
+     "lyfter_sv": "Daily Maverick lyfter fram kontrollen över båda kamrarna som oviss, med frågan om en blå tsunami eller kaos, medan The New York Times lyfter fram vem som leder kapplöpningen om kongressen.",
+     "lyfter_en": "Daily Maverick highlights control of both houses as uncertain, asking whether it will be a blue tsunami or chaos, while The New York Times highlights who is leading the race for Congress.",
      "kallor": [
       {
        "namn": "Daily Maverick",
@@ -3945,95 +4126,109 @@
        "url": "https://www.dailymaverick.co.za/article/2026-11-01-a-blue-tsunami-a-tide-or-chaos-as-usual-the-us-midterm-election/"
       },
       {
-       "namn": "El Tiempo",
-       "region": "latinamerika",
-       "lutning": null,
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
        "statskontrollerad": false,
-       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/el-bolsillo-acerca-de-nuevo-a-los-latinos-a-los-democratas-antes-de-las-legislativas-en-ee-uu-pero-su-voto-sigue-sin-pertenecer-a-un-partido-3597346"
+       "url": "https://www.nytimes.com/2026/11/02/us/politics/congress-races-midterms.html"
       }
      ],
      "regioner": [
       "afrika",
-      "latinamerika"
+      "usa"
      ],
-     "usa_sidor": []
+     "usa_sidor": [
+      "bla"
+     ]
     }
    ],
    "kontroll": {
-    "ok": true,
-    "antal": 8,
-    "problem": [],
+    "ok": false,
+    "antal": 10,
+    "problem": [
+     "saknar stöd: France 24: Trumps popularitet är osäker"
+    ],
     "pastaenden": [
      {
-      "text": "Midtermvalet hålls på tisdag",
+      "text": "Mellanårsvalet hålls på tisdag",
       "stod": [
-       3,
-       2
+       7
       ],
       "problem": null
      },
      {
-      "text": "Kontrollen över kongressen står på spel",
+      "text": "Demokraterna hoppas ta tillbaka kontrollen över kongressen",
       "stod": [
-       2,
-       3
+       7
       ],
       "problem": null
      },
      {
-      "text": "Berättelsen 'Mätningarna pekar mot demokraterna' har rubriken och de två källorna Al Jazeera och MercoPress",
-      "stod": [
-       1,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: mätningarna tyder på att presidentens parti inte vinner mandat i representanthuset",
+      "text": "Hindustan Times: valutfallet kan påverka Wall Street, AI-aktier och statsobligationsräntor",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "MercoPress: demokraterna har mätningarna i sin favör",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Berättelsen 'Osäker utgång och rörliga väljare' har rubriken och källorna Daily Maverick och El Tiempo",
-      "stod": [
-       2,
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Maverick: kongressen hänger i balans",
+      "text": "CNBC lyfter fram försvar, sjukvård och krypto",
       "stod": [
        2
       ],
       "problem": null
      },
      {
-      "text": "El Tiempo: latinska väljare rör sig mot demokraterna utan att tillhöra något parti",
+      "text": "CNBC: ökad granskning av stora företag vid demokratiska vinster",
       "stod": [
-       4
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: Trumps popularitet är osäker",
+      "stod": [
+       3
+      ],
+      "problem": "saknar stöd"
+     },
+     {
+      "text": "Al Jazeera: presidentpartiet har sällan vunnit mandat i representanthuset",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: valet ses som ett test av Trumps andra mandatperiod",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick: kontrollen över båda kamrarna är oviss, med frågan om blå tsunami eller kaos",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times: fokus på vem som leder kapplöpningen om kongressen",
+      "stod": [
+       9
       ],
       "problem": null
      }
     ],
-    "sammanfattning": null
+    "sammanfattning": "Påståendet om France 24 är fel: källan säger att Trump är impopulär (unpopularity), inte att hans popularitet är osäker. Övriga påståenden har stöd i källmaterialet."
    },
-   "ok": true
+   "ok": false
   },
   "relevans": {
-   "sv": 1,
+   "sv": 2,
    "en": 3
   },
-  "uppdaterad_tid": 1793614083.6472826
+  "uppdaterad_tid": 1793628476.0926447
  },
  "1d6269e48d": {
   "id": "1d6269e48d",
