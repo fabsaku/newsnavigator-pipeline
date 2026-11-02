@@ -29,12 +29,10 @@ def kluster(extra=()):
 UTKAST = {"rubrik_sv": "Nya tullar införs", "sammanfattning_sv": "Text.", "rubrik_en": "New tariffs imposed", "sammanfattning_en": "Text.", "osaker": False}
 
 BERATTELSER = {"berattelser": [
-    {"namn_sv": "Kostnaden för bönder", "namn_en": "The cost to farmers", "lyfter_sv": "NPR lyfter fram konsekvenserna för amerikanska bönder.",
-     "lyfter_en": "NPR highlights the consequences for American farmers.", "kallor": [1]},
-    {"namn_sv": "Trycket på Kina", "namn_en": "Pressure on China", "lyfter_sv": "Fox News lyfter fram trycket på Kina.",
-     "lyfter_en": "Fox News highlights the pressure on China.", "kallor": [2]},
-    {"namn_sv": "Oro för handeln", "namn_en": "Worry for trade", "lyfter_sv": "SCMP och BBC lyfter fram oron för handeln.",
-     "lyfter_en": "SCMP and BBC highlight the worry for trade.", "kallor": [3, 4]}]}
+    {"namn_sv": "Kostnaden för bönder", "namn_en": "The cost to farmers", "lyfter_sv": "NPR och SCMP lyfter fram vad tullarna kostar bönder och handel.",
+     "lyfter_en": "NPR and SCMP highlight what the tariffs cost farmers and trade.", "kallor": [1, 3]},
+    {"namn_sv": "Trycket på Kina", "namn_en": "Pressure on China", "lyfter_sv": "Fox News och BBC lyfter fram trycket på Kina och Europas oro.",
+     "lyfter_en": "Fox News and BBC highlight the pressure on China and Europe's worry.", "kallor": [2, 4]}]}
 KONTROLL_OK = {"pastaenden": [{"text": "x", "stod": [1], "problem": None}], "ok": True, "sammanfattning": None}
 
 
@@ -80,36 +78,51 @@ def test_inget_utkast_inga_berattelser():
 
 def test_berattelserna_far_kallornas_region_och_allsides_sida_av_koden_inte_av_ai():
     n = bygg()
-    assert [b["namn_sv"] for b in n["berattelser"]] == ["Kostnaden för bönder", "Trycket på Kina", "Oro för handeln"]
-    forsta, andra, tredje = n["berattelser"]
-    assert forsta["kallor"] == [{"namn": "NPR", "region": "usa", "lutning": "lutar_vanster", "statskontrollerad": False, "url": "https://x/1"}]
-    assert forsta["regioner"] == ["usa"] and forsta["usa_sidor"] == ["bla"]
-    assert andra["usa_sidor"] == ["rod"]
-    assert tredje["regioner"] == ["asien", "europa"] and tredje["usa_sidor"] == []
+    assert [b["namn_sv"] for b in n["berattelser"]] == ["Kostnaden för bönder", "Trycket på Kina"]
+    forsta, andra = n["berattelser"]
+    assert [k["namn"] for k in forsta["kallor"]] == ["NPR", "SCMP"] and forsta["kallor"][0]["lutning"] == "lutar_vanster"
+    assert forsta["regioner"] == ["asien", "usa"] and forsta["usa_sidor"] == ["bla"]
+    assert andra["regioner"] == ["europa", "usa"] and andra["usa_sidor"] == ["rod"]
     assert n["kontroll"]["ok"] is True and n["ok"] is True
 
 
 def test_statskontrollerad_kalla_markeras():
     c = kluster([item(5, "CGTN", "asien", "Tariffs unfair", stat=True)])
-    svar = {"berattelser": [*BERATTELSER["berattelser"][:2], {**BERATTELSER["berattelser"][2], "kallor": [3, 5]}]}
+    svar = {"berattelser": [BERATTELSER["berattelser"][0], {**BERATTELSER["berattelser"][1], "kallor": [2, 4, 5]}]}
     n = bygg(c=c, client=Falsk(svar))
-    assert any(k["statskontrollerad"] for k in n["berattelser"][2]["kallor"])
+    assert any(k["statskontrollerad"] for k in n["berattelser"][1]["kallor"])
 
 
 def test_for_fa_eller_for_manga_berattelser_blir_inga():
     for antal in (0, 1, 5):
-        svar = {"berattelser": [BERATTELSER["berattelser"][i % 3] for i in range(antal)]}
+        svar = {"berattelser": [BERATTELSER["berattelser"][i % 2] for i in range(antal)]}
         assert bygg(client=Falsk(svar)) is None, antal
 
 
+def test_en_kalla_ar_en_detalj_inte_en_berattelse():
+    svar = {"berattelser": [{**BERATTELSER["berattelser"][0], "kallor": [1]}, BERATTELSER["berattelser"][1]]}
+    assert bygg(client=Falsk(svar)) is None
+
+
+def test_en_kalla_hor_till_hogst_en_berattelse():
+    svar = {"berattelser": [BERATTELSER["berattelser"][0], {**BERATTELSER["berattelser"][1], "kallor": [1, 2]}]}
+    assert bygg(client=Falsk(svar)) is None
+
+
+def test_for_lang_beskrivning_underkanns():
+    lang = " ".join(["ord"] * 60)
+    svar = {"berattelser": [{**BERATTELSER["berattelser"][0], "lyfter_sv": f"NPR lyfter fram {lang}."}, BERATTELSER["berattelser"][1]]}
+    assert bygg(client=Falsk(svar)) is None
+
+
 def test_ogiltigt_kallnummer_underkanns():
-    svar = {"berattelser": [{**BERATTELSER["berattelser"][0], "kallor": [99]}, *BERATTELSER["berattelser"][1:]]}
+    svar = {"berattelser": [{**BERATTELSER["berattelser"][0], "kallor": [1, 99]}, *BERATTELSER["berattelser"][1:]]}
     n = bygg(client=Falsk(svar))
     assert n is None
 
 
 @pytest.mark.parametrize("text", ["NPR nämner inte kostnaden.", "Fox News utelämnar bönderna.", "NPR ignorerar Kina.", "BBC tiger om priset.",
-                                  "Det här är sanningen om tullarna.", "NPR lyfter fram — kostnaden."])
+                                  "Det här är sanningen om tullarna.", "NPR och SCMP lyfter fram — kostnaden."])
 def test_det_en_kalla_utelamnar_och_tankstreck_underkanns(text):
     fel = {**BERATTELSER["berattelser"][0], "lyfter_sv": text}
     svar = {"berattelser": [fel, *BERATTELSER["berattelser"][1:]]}
@@ -131,7 +144,7 @@ def test_kallkontrollen_far_berattelserna_som_perspektiv_och_kallmaterialet():
     ai = Falsk()
     bygg(client=ai)
     kontroll = next(a for a in ai.anrop if a["system"] == kallkontroll.SYSTEM)["messages"][0]["content"]
-    assert "Kostnaden för bönder" in kontroll and "NPR lyfter fram" in kontroll and "[1] NPR" in kontroll
+    assert "Kostnaden för bönder" in kontroll and "NPR och SCMP lyfter fram" in kontroll and "[1] NPR" in kontroll
 
 
 def test_cachen_ger_samma_svar_utan_nya_anrop():
@@ -185,7 +198,7 @@ def test_visas_med_flaggan_och_bara_om_kontrollen_ar_ok(monkeypatch):
     monkeypatch.setenv("NN_BERATTELSER", "1")
     ev = notis_med_narrativ()
     sida = sajt.story_page(sajt.Urls(flat=True), ev, [], [], "", True)
-    assert "Kostnaden för bönder" in sida and "NPR lyfter fram konsekvenserna" in sida and "The cost to farmers" in sida
+    assert "Kostnaden för bönder" in sida and "NPR och SCMP lyfter fram vad tullarna kostar" in sida and "The cost to farmers" in sida
     ev["narrativ"]["ok"] = False
     assert "Kostnaden för bönder" not in sajt.story_page(sajt.Urls(flat=True), ev, [], [], "", True)
 
@@ -193,4 +206,4 @@ def test_visas_med_flaggan_och_bara_om_kontrollen_ar_ok(monkeypatch):
 def test_engelska_tradet_visar_bara_engelska(monkeypatch):
     monkeypatch.setenv("NN_BERATTELSER", "1")
     sida = sajt.story_page(sajt.Urls(flat=False, lang="en"), notis_med_narrativ(), [], [], "", True)
-    assert "The cost to farmers" in sida and "Kostnaden för bönder" not in sida and "NPR highlights" in sida
+    assert "The cost to farmers" in sida and "Kostnaden för bönder" not in sida and "NPR and SCMP highlight" in sida

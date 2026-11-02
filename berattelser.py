@@ -20,15 +20,18 @@ from prompts import LEAN_LABEL, user_prompt
 MIN_KALLOR, MIN_REGIONER = 4, 2
 MIN_BERATTELSER, MAX_BERATTELSER = 2, 4
 MAX_ORD_I_NAMN = 7
+MAX_ORD_I_LYFTER = 45
+MIN_KALLOR_PER_BERATTELSE = 2
 LEAN_SIDE = {"vanster": "bla", "lutar_vanster": "bla", "mitten": "mitten", "lutar_hoger": "rod", "hoger": "rod"}
 
 SYSTEM = """Du hittar de olika berättelserna i hur källor skriver om samma händelse, för Newsnavigator. Grundregel: vi visar vem som lyfter fram vad, läsaren drar slutsatserna.
 
 Regler som alltid gäller:
 1. Använd bara rubrikerna och ingresserna du får. Lägg aldrig till egen kunskap, siffror eller bakgrund.
-2. Dela källorna i två till fyra grupper efter vad de lyfter fram i sina rubriker och ingresser: olika vinkel, olika huvudperson, olika fråga. Samma vinkel hos flera källor är en berättelse. Skiljer sig inte källorna åt, svara med en tom lista.
+2. Dela källorna i två till fyra grupper efter hur de ramar in händelsen i sina rubriker och ingresser: olika orsak, olika ansvarig, olika konsekvens, olika huvudperson eller olika fråga. Det som skiljer ska vara ramen, inte vilken detalj som råkar vara med.
+   Varje berättelse måste bäras av minst två källor, och varje källa hör till högst en berättelse. En vinkel som bara en källa har är en detalj, inte en berättelse: lämna den utanför. Skiljer sig inte källorna åt, eller går de inte att dela så, svara med en tom lista.
 3. Varje berättelse får ett kort, sakligt namn på högst sju ord som beskriver vinkeln (till exempel "Kostnaden för bönder"), aldrig en värdering och aldrig ett påstående om vad som är sant.
-4. "lyfter" är en mening som tillskriver: säg vilka källor som lyfter fram vad ("NPR och BBC lyfter fram ..."). Skriv med egna ord, inga citat längre än fem ord.
+4. "lyfter" är EN mening på högst 40 ord som tillskriver: säg vilka källor som lyfter fram vad ("NPR och BBC lyfter fram ..."). Skriv med egna ord, inga citat längre än fem ord.
 5. Beskriv vad källorna lyfter fram, aldrig vad de utelämnar. Att peka ut vad en källa inte nämner är en värdering. Använd aldrig ord som "nämner inte", "utelämnar", "ignorerar", "tiger om", "döljer".
 6. Säg aldrig vilken berättelse som är sann eller rätt, och rangordna dem inte.
 7. Behandla amerikanska medier med olika AllSides-betyg med samma mått. Skriv "medier som AllSides bedömer lutar vänster eller höger", aldrig "vänstermedier" eller "högermedier".
@@ -75,7 +78,7 @@ def _validera(svar, antal_kallor):
     lista = svar.get("berattelser") if isinstance(svar, dict) else None
     if not isinstance(lista, list) or not MIN_BERATTELSER <= len(lista) <= MAX_BERATTELSER:
         return None
-    ut = []
+    ut, anvanda = [], set()
     for b in lista:
         try:
             namn_sv, namn_en = str(b["namn_sv"]).strip(), str(b["namn_en"]).strip()
@@ -83,10 +86,15 @@ def _validera(svar, antal_kallor):
             kallor = sorted({int(n) for n in b["kallor"]})
         except (KeyError, TypeError, ValueError):
             return None
-        if not kallor or any(not 1 <= n <= antal_kallor for n in kallor):
+        if len(kallor) < MIN_KALLOR_PER_BERATTELSE or any(not 1 <= n <= antal_kallor for n in kallor):
+            return None
+        if max(len(lyfter_sv.split()), len(lyfter_en.split())) > MAX_ORD_I_LYFTER:
             return None
         if max(len(namn_sv.split()), len(namn_en.split())) > MAX_ORD_I_NAMN or not _ok_text(namn_sv, namn_en, lyfter_sv, lyfter_en):
             return None
+        if any(n in anvanda for n in kallor):
+            return None                         # en källa hör till högst en berättelse
+        anvanda.update(kallor)
         ut.append({"namn_sv": namn_sv, "namn_en": namn_en, "lyfter_sv": lyfter_sv, "lyfter_en": lyfter_en, "_nr": kallor})
     return ut
 
