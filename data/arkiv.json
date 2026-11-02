@@ -3641,32 +3641,32 @@
    "marknader",
    "usa"
   ],
-  "poang": 33.8,
+  "poang": 34.6,
   "vikt": {
-   "bredd": 0.565,
+   "bredd": 0.635,
    "regioner": {
-    "asien": 2,
+    "asien": 3,
     "usa": 2,
     "europa": 1,
     "sverige": 1,
     "afrika": 1,
     "latinamerika": 1
    },
-   "timmar": 32,
+   "timmar": 33,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "Midtermvalen i USA avgör kongressens majoritet och kan påverka både amerikansk politik, ekonomi och finansmarknader under flera år."
+    "skal": "Mellanårsvalen i USA avgör vem som kontrollerar kongressen och påverkar politik, ekonomi och finansmarknader i hela världen."
    },
    "bekraftad": true,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 8,
+  "antal_kallor": 9,
   "har_primarkalla": false,
-  "senast": "2026-11-02T13:41:30+00:00",
+  "senast": "2026-11-02T15:42:47+00:00",
   "utkast": {
    "rubrik_sv": "Demokraterna hoppas ta tillbaka kongressen i USA:s mellanårsval",
    "sammanfattning_sv": "Mellanårsvalet i USA hålls på tisdag, med alla 435 platser i representanthuset och 35 av 100 senatsplatser på spel. Enligt MercoPress hoppas demokraterna ta tillbaka kontrollen över kongressen, och valet beskrivs som ett test av Donald Trumps andra presidentperiod.",
@@ -3820,6 +3820,13 @@
    "per_region": {
     "asien": [
      {
+      "kalla": "RNZ",
+      "land": "NZ",
+      "rubrik": "The top 10 things to watch for in the US midterm elections",
+      "url": "https://www.rnz.co.nz/news/world/2305415/the-top-10-things-to-watch-for-in-the-us-midterm-elections",
+      "statskontrollerad": false
+     },
+     {
       "kalla": "Hindustan Times",
       "land": "IN",
       "rubrik": "US midterm elections: How the outcome could impact Wall Street, AI stocks and Treasury yields",
@@ -3838,8 +3845,8 @@
      {
       "kalla": "CNBC",
       "land": "US",
-      "rubrik": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
-      "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+      "rubrik": "Jim Cramer's top 10 things to watch in the stock market Monday",
+      "url": "https://www.cnbc.com/investingclub/2026/11/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-monday.html",
       "statskontrollerad": false
      },
      {
@@ -3892,8 +3899,8 @@
     "mitten": [
      {
       "kalla": "CNBC",
-      "rubrik": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
-      "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+      "rubrik": "Jim Cramer's top 10 things to watch in the stock market Monday",
+      "url": "https://www.cnbc.com/investingclub/2026/11/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-monday.html",
       "lutning": "mitten"
      }
     ],
@@ -3908,8 +3915,30 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "US midterm elections: How the outcome could impact Wall Street, AI stocks and Treasury yields",
+  "reserv_rubrik": "The top 10 things to watch for in the US midterm elections",
   "kallor": [
+   {
+    "namn": "RNZ",
+    "rubrik": "The top 10 things to watch for in the US midterm elections",
+    "url": "https://www.rnz.co.nz/news/world/2305415/the-top-10-things-to-watch-for-in-the-us-midterm-elections",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "NZ",
+    "region": "asien",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CNBC",
+    "rubrik": "Jim Cramer's top 10 things to watch in the stock market Monday",
+    "url": "https://www.cnbc.com/investingclub/2026/11/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-monday.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Hindustan Times",
     "rubrik": "US midterm elections: How the outcome could impact Wall Street, AI stocks and Treasury yields",
@@ -3918,17 +3947,6 @@
     "typ": "media",
     "land": "IN",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "CNBC",
-    "rubrik": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
-    "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -4007,10 +4025,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Ekonomiska följder för marknaderna",
-     "namn_en": "Economic impact on markets",
-     "lyfter_sv": "Hindustan Times lyfter fram Wall Street, AI-aktier och statsobligationsräntor. CNBC lyfter fram försvar, sjukvård, krypto och AI samt strängare granskning av stora bolag.",
-     "lyfter_en": "Hindustan Times highlights Wall Street, AI stocks and Treasury yields. CNBC highlights defense, healthcare, crypto and AI, along with tougher oversight of large companies.",
+     "namn_sv": "Ekonomiska följder",
+     "namn_en": "Economic consequences",
+     "lyfter_sv": "Hindustan Times lyfter fram hur utfallet kan påverka Wall Street, AI-aktier och statsobligationsräntor, medan France 24 lyfter fram att inflationen slår hårt mot jordbrukare i North Carolina.",
+     "lyfter_en": "Hindustan Times highlights how the outcome could affect Wall Street, AI stocks and Treasury yields, while France 24 highlights that inflation is hitting farmers in North Carolina hard.",
      "kallor": [
       {
        "namn": "Hindustan Times",
@@ -4020,53 +4038,24 @@
        "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-elections-how-the-outcome-could-impact-wall-street-ai-stocks-and-treasury-yields-101793625802544.html"
       },
       {
-       "namn": "CNBC",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "usa"
-     ],
-     "usa_sidor": [
-      "mitten"
-     ]
-    },
-    {
-     "namn_sv": "Valet som prövning för Trump",
-     "namn_en": "The election as a test for Trump",
-     "lyfter_sv": "France 24 lyfter fram att Trumps impopularitet drar ner republikanerna och att jordbruket i North Carolina drabbas hårt av inflationen. MercoPress lyfter fram att valet är en prövning av Trumps andra presidentperiod.",
-     "lyfter_en": "France 24 highlights that Trump's unpopularity is dragging down Republicans and that North Carolina farming is hit hard by inflation. MercoPress highlights that the vote is a test of Trump's second term.",
-     "kallor": [
-      {
        "namn": "France 24",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.france24.com/en/tv-shows/focus/20261102-us-midterm-elections-north-carolina-farmers-hit-hard-by-inflation"
-      },
-      {
-       "namn": "MercoPress",
-       "region": "latinamerika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://en.mercopress.com/2026/11/01/democrats-seek-to-retake-congress-in-tuesday-s-us-midterm-elections?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
       }
      ],
      "regioner": [
-      "europa",
-      "latinamerika"
+      "asien",
+      "europa"
      ],
      "usa_sidor": []
     },
     {
-     "namn_sv": "Vem som får kontrollen i kongressen",
-     "namn_en": "Who gets control of Congress",
-     "lyfter_sv": "Daily Maverick lyfter fram att kontrollen över båda kongresskamrarna hänger i balans mellan en blå flodvåg, en tidvattenförskjutning eller kaos. The New York Times lyfter fram frågan om vem som leder loppet om kongressen.",
-     "lyfter_en": "Daily Maverick highlights that control of both houses of Congress hangs in the balance between a blue wave, a tide shift or chaos. The New York Times highlights the question of who is winning the race for Congress.",
+     "namn_sv": "Kontrollen över kongressen",
+     "namn_en": "Who controls Congress",
+     "lyfter_sv": "Daily Maverick lyfter fram att kontrollen över båda kamrarna hänger i balans, MercoPress att demokraterna vill ta tillbaka kongressen och att valet ses som ett test av Trump, och NYT frågar vem som leder loppet.",
+     "lyfter_en": "Daily Maverick highlights that control of both chambers hangs in the balance, MercoPress that Democrats want to retake Congress and that the vote is seen as a test of Trump, and NYT asks who is winning the race.",
      "kallor": [
       {
        "namn": "Daily Maverick",
@@ -4074,6 +4063,13 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.dailymaverick.co.za/article/2026-11-01-a-blue-tsunami-a-tide-or-chaos-as-usual-the-us-midterm-election/"
+      },
+      {
+       "namn": "MercoPress",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.mercopress.com/2026/11/01/democrats-seek-to-retake-congress-in-tuesday-s-us-midterm-elections?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
       },
       {
        "namn": "The New York Times",
@@ -4085,6 +4081,7 @@
      ],
      "regioner": [
       "afrika",
+      "latinamerika",
       "usa"
      ],
      "usa_sidor": [
@@ -4094,84 +4091,62 @@
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
+    "antal": 8,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Mellanårsvalet i USA hålls på tisdag",
-      "stod": [
-       4,
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Demokraterna vill ta tillbaka kongressen",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times lyfter fram Wall Street, AI-aktier och statsobligationsräntor",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "CNBC lyfter fram försvar, sjukvård, krypto och AI",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "CNBC lyfter fram strängare granskning av stora bolag",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24 lyfter fram att Trumps impopularitet drar ner republikanerna",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Jordbruket i North Carolina drabbas hårt av inflationen (France 24)",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "MercoPress lyfter fram att valet är en prövning av Trumps andra presidentperiod",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Maverick lyfter fram att kontrollen över båda kamrarna hänger i balans",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Maverick beskriver utfallet som en blå flodvåg, en tidvattenförskjutning eller kaos",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "NYT lyfter fram frågan om vem som leder loppet om kongressen",
+      "text": "Mellanårsval i USA hålls på tisdag",
       "stod": [
        7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Demokraterna vill vinna tillbaka kongressen",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: utfallet kan påverka Wall Street, AI-aktier och statsobligationsräntor",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: inflationen slår hårt mot jordbrukare i North Carolina",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick: kontrollen över båda kamrarna hänger i balans",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: demokraterna vill ta tillbaka kongressen",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: valet ses som ett test av Trump",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT: frågar vem som leder loppet om kongressen",
+      "stod": [
+       8
       ],
       "problem": null
      }
@@ -4184,7 +4159,7 @@
    "sv": 2,
    "en": 3
   },
-  "uppdaterad_tid": 1793632040.0055015
+  "uppdaterad_tid": 1793635698.1160128
  },
  "1d6269e48d": {
   "id": "1d6269e48d",
