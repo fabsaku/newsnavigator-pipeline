@@ -1,0 +1,104 @@
+name: Lansering
+
+# Lanseringen av de två Instagramkontona. Startas bara av dig, aldrig av klockan.
+#   lage=valj     väljer 56 per konto ur veckan, bygger korten och förhandsgranskningen (/lansering/ på sajten)
+#   lage=godkann  godkänner batchen (uteslut = löpnummer eller id, kommaseparerade)
+#   lage=posta    postar i rangordning, ett inlägg var 8:e minut. Prova med antal=1 först. torrt=true postar inget.
+on:
+  workflow_dispatch:
+    inputs:
+      lage:
+        description: "valj, godkann eller posta"
+        default: "valj"
+      konto:
+        description: "sv (@newsnavigator.se), en (@news.navigator) eller alla. Posta ett konto i taget, de kan gå parallellt"
+        default: "alla"
+      antal:
+        description: "Antal inlägg (valj: 56, posta: 1 som prov)"
+        default: ""
+      intervall:
+        description: "Minuter mellan inläggen"
+        default: "8"
+      torrt:
+        description: "true = posta inget, bara visa vad som skulle hända"
+        default: "true"
+      uteslut:
+        description: "godkann: löpnummer eller id att ta bort, kommaseparerade"
+        default: ""
+      rest:
+        description: "Används av körningen själv när den lämnar över"
+        default: ""
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: lansering-${{ github.event.inputs.konto || 'alla' }}
+  cancel-in-progress: false
+
+jobs:
+  lansering:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Lansering
+        id: kor
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID_EN: ${{ secrets.IG_USER_ID_EN }}
+          IG_ACCESS_TOKEN_EN: ${{ secrets.IG_ACCESS_TOKEN_EN }}
+          LANSERING_GIT: "1"
+          LAGE: ${{ github.event.inputs.lage || 'valj' }}
+          KONTO: ${{ github.event.inputs.konto || 'alla' }}
+          ANTAL: ${{ github.event.inputs.rest || github.event.inputs.antal }}
+          INTERVALL: ${{ github.event.inputs.intervall || '8' }}
+          TORRT: ${{ github.event.inputs.torrt || 'true' }}
+          UTESLUT: ${{ github.event.inputs.uteslut }}
+        run: |
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          ARGS=(--konto "$KONTO")
+          [ -n "$ANTAL" ] && ARGS+=(--antal "$ANTAL")
+          if [ "$LAGE" = "posta" ]; then
+            ARGS+=(--intervall "$INTERVALL" --budget 335)
+            [ "$TORRT" = "true" ] && ARGS+=(--torrt)
+          fi
+          [ "$LAGE" = "godkann" ] && [ -n "$UTESLUT" ] && ARGS+=(--uteslut "$UTESLUT")
+          python lansering.py "$LAGE" "${ARGS[@]}"
+      - name: Spara
+        if: always()
+        run: |
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/lansering data/instagram data/drift.json public
+          git commit -m "Lansering ${{ github.event.inputs.lage || 'valj' }} $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
+          git pull --rebase -X theirs origin main && git push
+      - name: Uppdatera sajten
+        if: always()
+        run: |
+          git fetch origin sajt || true
+          NEW=$(git rev-parse HEAD:public)
+          OLD=$(git rev-parse origin/sajt^{tree} 2>/dev/null || echo none)
+          if [ "$NEW" != "$OLD" ]; then
+            git push -f origin "$(git commit-tree $NEW -m "Sajt $(date -u +%Y-%m-%dT%H:%M)")":refs/heads/sajt
+          else
+            echo "Sajten oförändrad"
+          fi
+      - name: Lämna över till en ny körning
+        if: steps.kor.outputs.fortsatt == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run lansering.yml --ref main \
+            -f lage=posta -f konto=${{ steps.kor.outputs.konto }} -f rest=${{ steps.kor.outputs.rest }} \
+            -f intervall=${{ github.event.inputs.intervall || '8' }} -f torrt=false

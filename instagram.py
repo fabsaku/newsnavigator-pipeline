@@ -484,8 +484,9 @@ def bygg(sprak=UTGAVOR):
                           "godkand_tid": ev.get("godkand_tid", 0), "rubrik": _rubrik(ev, lang)}
             made += 1
         if (OUT / lang).exists():
+            from lansering import skyddade      # lanseringens kort ska stå kvar tills batchen är postad
             for d in (OUT / lang).iterdir():
-                if d.is_dir() and d.name not in valda:
+                if d.is_dir() and d.name not in valda and d.name not in skyddade(lang):
                     shutil.rmtree(d)
         for sid in [k for k in state if k not in valda and not state[k].get("postad")]:
             state.pop(sid)
