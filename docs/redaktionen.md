@@ -141,15 +141,62 @@ Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk ti
 
 ## Du gör
 
-Det här kan bara du göra. Det som står överst spärrar mest.
+Det här kan bara du göra. Det som står överst spärrar mest. Spår A0 i planen nedan är den kritiska vägen för målet att ha minst 56 inlägg per konto idag.
 
-1. **Instagram, svenska kontot.** Lägg `IG_USER_ID` och `IG_ACCESS_TOKEN` för @newsnavigator.se i repots secrets (GitHub: Settings, Secrets and variables, Actions). Utan dem postas inget, trots att korten byggs varje morgon.
-2. **Morgonrapporten (fas 5).** Skapa ett Resend-konto (resend.com, gratis), skapa en API-nyckel med behörigheten "Sending access", och lägg `RESEND_API_KEY` i repots secrets. Lägg också `RAPPORT_TILL` med den adress du registrerade kontot med. Då kommer rapporten kl 07.00 och varningar direkt, utan att du verifierar någon domän. Prova först: Actions, Rapport, Run workflow, kryssa i "torrt".
-3. **Klockan, tre minuter.** Klistra in nya `klocka/worker.js` i Cloudflare-Workern `newsnavigator-klocka` (Edit code, Deploy). Då startar klockan morgonrapporten exakt 07.00 och vakthunden varje timme, så ett mejl om något gått sönder kommer inom en timme. Utan det startar GitHubs reservschema vakthunden bara några gånger per dygn.
-4. **Instagram, engelska kontot (fas 4).** Secrets `IG_USER_ID_EN` och `IG_ACCESS_TOKEN_EN` för @news.navigator på samma ställe som i 1.
-5. **Panelen (fas 6).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress, enligt guiden du fått.
+1. **Meta och Instagram, båda kontona (spår A0).** Skapa appen, lägg till båda kontona och lägg secrets `IG_USER_ID`, `IG_ACCESS_TOKEN`, `IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN` och `IG_APP_SECRET` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Stegen står under A0.
+2. **Tre beslut** (längst ned i planen): lanseringsbatch ur veckan, en genomgång av de 112 korten, och Analys-raden.
+3. **Morgonrapporten (fas 5).** Resend-konto, API-nyckel med "Sending access", secrets `RESEND_API_KEY` och `RAPPORT_TILL`. Prova med Actions, Rapport, Run workflow, "torrt".
+4. **Klockan, tre minuter.** Nya `klocka/worker.js` i Cloudflare-Workern (Edit code, Deploy), så startar klockan rapporten kl 07.00 och vakthunden varje timme.
+5. **Panelen (spår C).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress.
+
+## Tesen och utgåvorna
+
+**Tesen.** Kombinerar man tillräckligt bra källor kan AI analysera dem och hitta berättelsen, eller de olika berättelserna. Newsnavigator ska därför ge tre lager per händelse: fakta (kärnan som källorna är överens om, källkontrollerad), berättelser (två till fyra sätt att berätta händelsen, vilka medier och regioner som bär dem och vad de lyfter fram) och betydelse (vad händelsen innebär för just den här läsaren, märkt Analys och spårbar till källorna).
+
+**Två läsare, två utgåvor.** De delar händelser men inte urval, språk eller konto.
+
+| | Svenska utgåvan (@newsnavigator.se, newsnavigator.se/sv) | Engelska utgåvan (@news.navigator, newsnavigator.se/en) |
+|---|---|---|
+| Läsaren | Svensk som inte ser hur mycket världen påverkar henne eller honom | Amerikan (och brittisk) som inte får en tydlig, kort bild av världen |
+| Urval | Svenska nyheter med minst två svenska källor, globala händelser som berör Sverige, Norden och Europa, och särskilt händelser som saknas i svenska medier (signaturen, 15 av 40 i dag) | Globala händelser med minst tre källor i två regioner. Svenskt och nordiskt bara när det påverkar läsaren (`relevans_en` 2 eller högre). Aldrig lokalt svenskt |
+| Tillägg | Vad det betyder för dig i Sverige (Analys) | Hur resten av världen berättar händelsen, USA blått och rött, vad det betyder för dig (Analys). Kort: vad hände, vilka berättelser finns, vad är oklart |
+| Grindar | Som autopilotens, men "blind fläck" är här innehållet, inte ett hinder: går till din batchgranskning | Samma utan grinden "saknas i svenska medier", som inte är ett påstående i den utgåvan. "Mest blå/röd publik" går fortfarande till dig |
+
+## Siffror (mätt 2 november)
+
+- Veckan som gick: 318 unika berättelser. 27 klarar alla grindar, 111 klarar allt utom blind fläck (runt 16 per dygn). Autopiloten publicerar i dag högst 2 per dygn (8 från 4 november).
+- 56 inlägg per konto på ett dygn är alltså sju gånger vad grindarna släpper igenom på ett dygn. Det går som en lanseringsbatch ur veckans 111, per utgåva (olika urval), efter en enda genomgång av dig. Det går inte som nya notiser.
+- Instagram: dokumenterad gräns är 100 API-publiceringar per 24 timmar och konto, en karusell räknas som ett inlägg. Metas sida anger också 50 på ett annat ställe, så `content_publishing_limit` kontrolleras per konto före start. Takt: ett inlägg var 8:e minut, alltså 56 på 7,5 timmar. Fler på kortare tid ökar risken att kontot flaggas som spam.
+
+## Planen från 2 november
+
+Mål idag: sajten fungerar som två utgåvor och båda Instagramkontona har minst 56 inlägg. Mål veckan: tesen, alltså berättelser och betydelse, på riktigt.
+
+**Spår A: lansera idag (kritisk väg).**
+- **A0. Du: Meta, båda kontona (cirka en timme, det enda jag inte kan göra).** Båda Instagramkontona ska vara professionella (Business eller Creator) och publika. På developers.facebook.com: skapa en app (typ Business, produkten Instagram), öppna "API setup with Instagram login", under "Generate access tokens" välj "Add account" och logga in på @newsnavigator.se, sedan på @news.navigator. Kopiera token och konto-id för varje konto. Lägg dem som secrets: `IG_USER_ID`, `IG_ACCESS_TOKEN` (svenska), `IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN` (engelska), och appens secret som `IG_APP_SECRET` (behövs för att byta kortlivat token mot 60-dagarstoken och förnya det). Stegen i Metas gränssnitt flyttas ibland; Metas dokumentation säger att Standard Access räcker för konton du äger och lagt till i appen, men att publicering i utvecklingsläge fungerar för egna konton är inte verifierat här.
+- **A1. Utgåvor i koden.** `relevans` per händelse och utgåva (AI på rubriker, cachad, som `vikt.konsekvens`, plus deterministiska signaler som antal svenska källor och omnämnda länder), `utgava_urval(ev, "sv" | "en")`, grindar per utgåva, tester mot veckans riktiga flöden.
+- **A2. Engelska kort och separata konton.** Engelska kort och captions av de engelska utkasten som redan finns, ett postningstillstånd per konto (`data/instagram/sv.json`, `en.json`) i stället för en gemensam fil, status och token per konto, `Behöver dig` per konto.
+- **A3. Lanseringsbatchen.** `lansering.py`: väljer de 56 bästa per konto ur veckan (variation i sektion, högst tre per händelsefamilj), bygger korten, skriver en förhandsgranskningssida med alla 112 kort som du bläddrar igenom en gång. Därefter ett maraton som postar ett inlägg var 8:e minut per konto, i en egen concurrency-grupp så att timmens pipeline inte blockeras, med avbrott via tyst läge. Först ett testinlägg per konto.
+- **A4. Sajten.** `/sv/` och `/en/` som egna sajtträd med egna sektioner, flöden och sitemap, en utgåvsväljare på roten, länkar från båda Instagram-biografierna, `NN_LANSERAD=1` (tar bort noindex). Domänen kan inte nås från den här sessionen: antingen tillåter du `newsnavigator.se` i sessionens nätverksinställningar eller kontrollerar du själv att sidorna laddar.
+- **A5. Verifiering.** Torrkörning av hela vägen, ett testinlägg per konto, kontroll av `content_publishing_limit`, sedan maraton.
+
+**Spår B: tesen, vecka 1.**
+- **B1. Berättelser.** Ett AI-steg per händelse med minst fyra källor: två till fyra berättelser med namn, vad de lyfter fram, vilka källor, regioner och AllSides-sidor som bär dem. Bara rubriker och ingresser, alltid tillskrivet, aldrig vad en källa utelämnar (promptregel 11), och källkontrollen utökas till att spåra tillskrivningarna. Visas på notissidan som "Berättelserna" och som kort två på Instagram.
+- **B2. Betydelse per läsare.** `betydelse_sv` och `betydelse_en`, kopplade till spårbara fakta (till exempel hur ECB:s besked hänger ihop med kronan). Kräver ditt beslut om princip 4: en rad märkt Analys, med AI-märkning, är tillåten i flödet.
+- **B3. Utvärdering.** Du granskar 30 händelser, vi mäter hur ofta berättelserna och betydelsen stämmer och justerar prompten innan de får gå automatiskt.
+
+**Spår C: säkerhetsnät och panel (fas 5 och 6 ovan).** Resend-kontot, nya `klocka/worker.js`, panelen med Access. Oförändrat, men lägre prioritet än A.
+
+**Spår D: Instagram i drift.** Automatisk förnyelse av båda tokens (60 dagar) med `IG_APP_SECRET`, `content_publishing_limit` i `Behöver dig`, och att taket för automatiska notiser höjs efter 4 november.
+
+**Beslut från dig, i den här ordningen:**
+1. 56 idag tolkas som lanseringsbatch ur veckan som gått, inte nya notiser (rekommenderas).
+2. Du bläddrar igenom de 112 korten en gång före maratonet, i stället för att enbart lita på grindarna (rekommenderas, cirka 20 minuter).
+3. Analys-raden "vad det betyder för dig" tillåts, märkt Analys (princip 4). Spår B2 väntar på det.
 
 ## Faser
+
+Fas 4 (engelska Instagram) och fas 6 och 7 (panelen) ersätts av spår A och C ovan; de äldre beskrivningarna står kvar som underlag.
 
 Målet: aggregatorn, sajten, Navigatorn och båda Instagramkontona går av sig själva. Panelen blir platsen där du stoppar, rättar och ångrar, inte där allt måste godkännas. Ordningen följer det: först det som gör att något alls publiceras utan dig, sedan säkerhetsnätet, sist panelens bekvämligheter.
 
