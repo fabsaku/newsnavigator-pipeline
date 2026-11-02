@@ -101,7 +101,7 @@ i Navigatorn och på Instagramkorten. Ångra: workflowen `angra.yml` med notisen
 ## Behöver dig och morgonrapporten
 `behover.py` bygger listan över det som väntar på dig, med regler i stället för för hand: måste-med-notiser som väntat över två timmar eller
 hållits tillbaka av taket, körningar som fallerat två gånger i rad, klockan som stannat, hopslagna händelser, källor som tystnat (tre dygn för
-nyhetsmedier, fjorton för primärkällor), Instagram-token som löper ut och Instagram utan secrets, för få notiser till Navigatorn,
+nyhetsmedier, fjorton för primärkällor), Instagram-token som löper ut och Instagram utan secrets, för få notiser till Navigatorn (bara när `navigatorn` är sant i `data/autopilot.json`),
 rättelser (öppna ärenden märkta `rättelse`) och tyst läge. Pipelinen räknar ut listan varje timme (`data/behover.json`) och visar den överst i
 granskningsärendet. `rapport.yml` mejlar den kl 07.00 via Resend ("Allt kört." när den är tom) och mejlar direkt när något allvarligt gått sönder,
 en gång per fel och igen efter tolv timmar. Secrets: `RESEND_API_KEY` och `RAPPORT_TILL` (mottagare); valfri repovariabel `NN_RAPPORT_FRAN`

@@ -93,11 +93,10 @@ def test_godkanda_koade_och_stoppade_raknas_inte():
     assert "vantar" not in koder(behover.regler(l, NU))
 
 
-def test_notis_i_kon_som_hallits_tillbaka_over_taket_raknas():
+def test_notis_i_kon_over_taket_ar_systemet_som_det_ska_inte_ett_beslut():
     l = lage(status={"ko": {"k000000001": {"tillagd": NU - 6 * TIMME, "klar": NU - 3 * TIMME, "rubrik": "x"}},
                      "publicerade": {}, "stoppade": {}, "startad": NU - 86400})
-    rad = next(r for r in behover.regler(l, NU) if r["kod"] == "vantar")
-    assert rad["rad"] == "1 notis väntar på dig, äldst 6 h"
+    assert behover.regler(l, NU) == []
 
 
 # ---------- Körningar ----------
@@ -161,6 +160,12 @@ def test_primarkallor_far_vara_tysta_i_fjorton_dygn():
     assert [r["rad"] for r in behover.regler(l, NU) if r["kod"] == "tyst"] == ["WHO tyst sedan 14 oktober"]
 
 
+def test_en_tyst_kalla_over_fem_sager_kalla_i_singular():
+    kallor = [{"id": f"k{n}", "namn": f"Källa {n}", "status": "ok", "senaste": iso(NU - 5 * 86400)} for n in range(6)]
+    rader = [r for r in behover.regler(lage(kallstatus={"kallor": kallor}, kallor_typ={}), NU) if r["kod"] == "tyst"]
+    assert rader[-1]["rad"] == "och 1 källa till är tyst"
+
+
 def test_tysta_kallor_over_fem_samlas():
     kallor = [{"id": f"k{n}", "namn": f"Källa {n}", "status": "ok", "senaste": iso(NU - 5 * 86400)} for n in range(8)]
     rader = [r for r in behover.regler(lage(kallstatus={"kallor": kallor}, kallor_typ={}), NU) if r["kod"] == "tyst"]
@@ -203,8 +208,10 @@ def test_hopslagna_handelser():
     assert rad["rad"] == "Troligen hopslagna händelser: Allt möjligt" and rad["handling"] == "Dela upp eller avvisa"
 
 
-def test_navigatorn_med_for_fa_notiser():
-    l = lage(arkiv={"a": {"godkand_tid": NU - 3600}, "b": {"godkand_tid": NU - 7200}, "c": {"godkand_tid": NU - 3 * 86400}})
+def test_navigatorn_med_for_fa_notiser_bara_nar_brevet_skickas():
+    arkiv = {"a": {"godkand_tid": NU - 3600}, "b": {"godkand_tid": NU - 7200}, "c": {"godkand_tid": NU - 3 * 86400}}
+    assert "brev" not in koder(behover.regler(lage(arkiv=arkiv), NU))
+    l = lage(arkiv=arkiv, installningar={"pa": True, "tyst": False, "navigatorn": True})
     rad = next(r for r in behover.regler(l, NU) if r["kod"] == "brev")
     assert rad["rad"] == "Navigatorn har bara 2 notiser i dag, minst 3 krävs"
 
@@ -436,6 +443,7 @@ def test_instagram_workflow_sparar_status():
     assert "data/instagram_status.json" in (WORKFLOWS / "instagram.yml").read_text(encoding="utf-8")
 
 
-def test_klockan_startar_rapporten_klockan_sju():
+def test_klockan_startar_rapporten_klockan_sju_och_som_vakthund_varje_timme():
     js = (Path(__file__).parent.parent / "klocka" / "worker.js").read_text(encoding="utf-8")
-    assert 'jobs.push("rapport.yml")' in js
+    assert js.count('jobs.push("rapport.yml")') == 2
+    assert "t.hour === 7 && t.minute < 15" in js and "t.minute >= 30 && t.minute < 45" in js

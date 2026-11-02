@@ -94,7 +94,7 @@ def arende_url(lage):
 def _vantar(lage, now):
     godk, ko = lage["godkanda"], lage["status"].get("ko", {})
     stoppade = lage["status"].get("stoppade", {})
-    aldst, titlar = {}, {}
+    aldst, titlar = {}, {}   # notiser i kön hålls tillbaka av taket med avsikt och är inget beslut åt dig
     for e in lage["flode"]:
         if e["id"] in godk or e["id"] in ko or e["id"] in stoppade:
             continue
@@ -102,12 +102,6 @@ def _vantar(lage, now):
         if e.get("maste") and timmar >= VANTAR_TIMMAR:
             aldst[e["id"]] = timmar
             titlar[e["id"]] = (e.get("utkast") or {}).get("rubrik_sv") or e.get("reserv_rubrik") or e["id"]
-    for eid, post in ko.items():
-        if eid in godk or eid in stoppade:
-            continue
-        if (now - post.get("klar", now)) / 3600 >= VANTAR_TIMMAR:       # hållen tillbaka av taket eller tyst läge
-            aldst[eid] = max(aldst.get(eid, 0), (now - post.get("tillagd", now)) / 3600)
-            titlar.setdefault(eid, post.get("rubrik") or eid)
     if not aldst:
         return []
     n = len(aldst)
@@ -159,7 +153,8 @@ def _tysta(lage, now):
     ut = [rad("tyst", f"{k['namn']} tyst sedan {_dag(ts, now)}", "Kontrollera flödet, pausa", id=f"tyst:{k['id']}")
           for ts, k in tyst[:MAX_TYSTA]]
     if len(tyst) > MAX_TYSTA:
-        ut.append(rad("tyst", f"och {len(tyst) - MAX_TYSTA} källor till är tysta", "Kontrollera källstatus", id="tyst:fler"))
+        kvar = len(tyst) - MAX_TYSTA
+        ut.append(rad("tyst", f"och {kvar} {'källa till är tyst' if kvar == 1 else 'källor till är tysta'}", "Kontrollera källstatus", id="tyst:fler"))
     return ut
 
 
@@ -182,6 +177,8 @@ def _instagram(lage, now):
 
 
 def _brev(lage, now):
+    if not lage["installningar"].get("navigatorn"):
+        return []
     n = sum(1 for p in lage["arkiv"].values() if now - p.get("godkand_tid", 0) < 86400)
     if n < BREV_MIN:
         return [rad("brev", f"Navigatorn har bara {n} notiser i dag, minst {BREV_MIN} krävs", "Godkänn fler i ärendet",

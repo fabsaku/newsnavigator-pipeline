@@ -26,7 +26,8 @@ GODK = ROOT / "data" / "godkanda.json"
 ARKIV = ROOT / "data" / "arkiv.json"
 IG_STATE = ROOT / "data" / "instagram.json"
 
-STANDARD = {"pa": False, "tyst": False, "tak": 2, "tak_efter_forsta_veckan": 8, "vetofonster_minuter": 45}
+STANDARD = {"pa": False, "tyst": False, "tak": 2, "tak_efter_forsta_veckan": 8, "vetofonster_minuter": 45,
+            "navigatorn": False}   # sant när brevet skickas: då kräver Behöver dig minst tre notiser
 FORSTA_VECKAN = 7 * 86400
 MAX_KALLOR, MAX_SEKTIONER = 20, 3
 

@@ -4,7 +4,7 @@ GitHub startade 14 av 58 schemalagda körningar mellan 25 och 27 oktober, med up
 Klockan är en Cloudflare Worker som startar workflows direkt med `workflow_dispatch`:
 
 - `pipeline.yml` varje timme (kvart över, ungefär)
-- `rapport.yml` kl 07.00 svensk tid (morgonrapporten)
+- `rapport.yml` kl 07.00 svensk tid (morgonrapporten) och varje timme kvart i (vakthund som mejlar när något gått sönder)
 - `instagram.yml` kl 07.45 svensk tid
 
 GitHubs egna scheman ligger kvar som reserv. Workflowerna har en gemensam concurrency-grupp, så två starter
