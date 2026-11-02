@@ -75,6 +75,9 @@ jobs:
           fi
           [ "$LAGE" = "godkann" ] && [ -n "$UTESLUT" ] && ARGS+=(--uteslut "$UTESLUT")
           python lansering.py "$LAGE" "${ARGS[@]}"
+      - name: Bygg notissidorna för den godkända batchen
+        if: github.event.inputs.lage == 'godkann'
+        run: python publish.py
       - name: Spara
         if: always()
         run: |
