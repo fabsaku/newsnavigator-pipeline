@@ -202,7 +202,9 @@ def test_angra_tar_bort_ur_godkanda_och_arkiv(tmp_path, monkeypatch):
     monkeypatch.setattr(autopilot, "GODK", godk)
     monkeypatch.setattr(autopilot, "ARKIV", arkiv)
     monkeypatch.setattr(autopilot, "STATUS", status_fil)
-    monkeypatch.setattr(autopilot, "IG_STATE", tmp_path / "instagram.json")
+    import instagram
+    monkeypatch.setattr(instagram, "STATE_DIR", tmp_path / "ig")
+    monkeypatch.setattr(instagram, "LEGACY_STATE", tmp_path / "gammal.json")
     autopilot.angra("abc1234567", now=5.0)
     assert json.loads(godk.read_text()) == ["x"]
     assert list(json.loads(arkiv.read_text())) == ["x"]
@@ -241,3 +243,20 @@ def test_instagram_marker_automatiska():
     assert AUTO_SV in instagram.caption(auto)
     assert AUTO_SV in instagram.slide_cover(auto, "28 oktober", False)
     assert AUTO_SV not in instagram.caption({**auto, "automatisk": False})
+
+
+def test_angra_tar_bort_inlagget_pa_kontot_dar_det_postades(tmp_path, monkeypatch):
+    import instagram
+    monkeypatch.setattr(autopilot, "GODK", tmp_path / "godkanda.json")
+    monkeypatch.setattr(autopilot, "ARKIV", tmp_path / "arkiv.json")
+    monkeypatch.setattr(autopilot, "STATUS", tmp_path / "status.json")
+    monkeypatch.setattr(instagram, "STATE_DIR", tmp_path / "ig")
+    monkeypatch.setattr(instagram, "LEGACY_STATE", tmp_path / "gammal.json")
+    instagram.save_state({"abc1234567": {"ig_id": "SVPOST", "postad": 1}}, "sv")
+    instagram.save_state({"abc1234567": {"ig_id": "ENPOST", "postad": 1}}, "en")
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "SVTOKEN")
+    monkeypatch.setenv("IG_ACCESS_TOKEN_EN", "ENTOKEN")
+    anrop = []
+    monkeypatch.setattr(instagram, "_api", lambda path, params, method="POST": anrop.append((path, params["access_token"], method)) or {"success": True})
+    autopilot.angra("abc1234567", now=5.0)
+    assert sorted(anrop) == [("ENPOST", "ENTOKEN", "DELETE"), ("SVPOST", "SVTOKEN", "DELETE")]

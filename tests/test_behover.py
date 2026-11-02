@@ -52,7 +52,7 @@ def lage(**andringar):
          "kallstatus": {"kallor": [{"id": "svt", "namn": "SVT Nyheter", "status": "ok", "senaste": iso(NU - 3600)}]},
          "kallor_typ": {"svt": "media"},
          "arkiv": {f"id{n}": {"godkand_tid": NU - n * TIMME, "utkast": {"rubrik_sv": f"Notis {n}"}} for n in range(4)},
-         "instagram": {}, "instagram_status": {}, "rattelser": []}
+         "instagram": {}, "instagram_status": {"sv": {}, "en": {}}, "rattelser": []}
     l.update(andringar)
     return l
 
@@ -175,29 +175,30 @@ def test_tysta_kallor_over_fem_samlas():
 # ---------- Instagram ----------
 
 def test_instagram_token_som_loper_ut():
-    l = lage(instagram_status={"token_utgar": "2026-11-09", "secrets": True})
+    l = lage(instagram_status={"sv": {"token_utgar": "2026-11-09", "secrets": True}, "en": {}})
     rad = next(r for r in behover.regler(l, NU) if r["kod"] == "token")
-    assert rad["rad"] == "Instagram-token går ut 9 november" and rad["handling"] == "Förnya" and rad["allvarlig"] is False
-    assert "token" not in koder(behover.regler(lage(instagram_status={"token_utgar": "2026-12-20"}), NU))
-    snart = next(r for r in behover.regler(lage(instagram_status={"token_utgar": "2026-11-05"}), NU) if r["kod"] == "token")
-    assert snart["allvarlig"] is True
-    gammal = next(r for r in behover.regler(lage(instagram_status={"token_utgar": "2026-11-01"}), NU) if r["kod"] == "token")
-    assert gammal["rad"] == "Instagram-token gick ut 1 november"
+    assert rad["rad"] == "Instagram-token för @newsnavigator.se går ut 9 november" and rad["handling"] == "Förnya" and rad["allvarlig"] is False
+    assert "token" not in koder(behover.regler(lage(instagram_status={"sv": {"token_utgar": "2026-12-20"}, "en": {}}), NU))
+    snart = next(r for r in behover.regler(lage(instagram_status={"sv": {}, "en": {"token_utgar": "2026-11-05"}}), NU) if r["kod"] == "token")
+    assert snart["allvarlig"] is True and "@news.navigator" in snart["rad"] and snart["id"] == "token:en"
+    gammal = next(r for r in behover.regler(lage(instagram_status={"sv": {"token_utgar": "2026-11-01"}, "en": {}}), NU) if r["kod"] == "token")
+    assert gammal["rad"] == "Instagram-token för @newsnavigator.se gick ut 1 november"
 
 
-def test_instagram_postar_inget_nar_secrets_saknas():
-    l = lage(instagram_status={"secrets": False, "vantar": 12})
-    rad = next(r for r in behover.regler(l, NU) if r["kod"] == "instagram")
-    assert rad["rad"] == "Instagram postar inget: secrets saknas, 12 kort väntar"
-    assert "IG_USER_ID" in rad["handling"] and "IG_ACCESS_TOKEN" in rad["handling"]
-    assert "instagram" not in koder(behover.regler(lage(instagram_status={"secrets": False, "vantar": 0}), NU))
-    assert "instagram" not in koder(behover.regler(lage(instagram_status={"secrets": True, "vantar": 3}), NU))
+def test_instagram_postar_inget_nar_secrets_saknas_per_konto():
+    l = lage(instagram_status={"sv": {"secrets": False, "vantar": 12}, "en": {"secrets": False, "vantar": 5}})
+    rader = [r for r in behover.regler(l, NU) if r["kod"] == "instagram"]
+    assert [r["rad"] for r in rader] == ["@newsnavigator.se postar inget: secrets saknas, 12 kort väntar",
+                                         "@news.navigator postar inget: secrets saknas, 5 kort väntar"]
+    assert "IG_USER_ID " in rader[0]["handling"] and "IG_ACCESS_TOKEN " in rader[0]["handling"] or "IG_USER_ID och IG_ACCESS_TOKEN i" in rader[0]["handling"]
+    assert "IG_USER_ID_EN" in rader[1]["handling"] and "IG_ACCESS_TOKEN_EN" in rader[1]["handling"]
+    assert "instagram" not in koder(behover.regler(lage(instagram_status={"sv": {"secrets": False, "vantar": 0}, "en": {"secrets": True, "vantar": 3}}), NU))
 
 
 def test_instagram_som_misslyckats():
-    rad = next(r for r in behover.regler(lage(instagram_status={"secrets": True, "vantar": 1, "fel": "Invalid token"}), NU)
+    rad = next(r for r in behover.regler(lage(instagram_status={"sv": {}, "en": {"secrets": True, "vantar": 1, "fel": "Invalid token"}}), NU)
                if r["kod"] == "instagram")
-    assert rad["rad"] == "Instagram misslyckades: Invalid token"
+    assert rad["rad"] == "@news.navigator misslyckades: Invalid token"
 
 
 # ---------- Övrigt ----------
@@ -400,23 +401,6 @@ def test_arendet_visar_behover_dig_overst():
     assert "Inget just nu." in granskning_github.behover_block([])
 
 
-def test_instagram_skriver_status(tmp_path, monkeypatch):
-    monkeypatch.setattr(instagram, "STATE", tmp_path / "instagram.json")
-    monkeypatch.setattr(instagram, "STATUS", tmp_path / "instagram_status.json")
-    import autopilot
-    monkeypatch.setattr(autopilot, "INSTALLNINGAR", tmp_path / "finns-inte.json")
-    (tmp_path / "instagram_status.json").write_text(json.dumps({"token_utgar": "2026-12-20"}), encoding="utf-8")
-    nu = __import__("time").time()
-    instagram.save_state({"a": {"rubrik": "A", "poang": 5, "godkand_tid": nu - 100},
-                          "b": {"rubrik": "B", "poang": 4, "godkand_tid": nu - 100, "postad": nu - 50}})
-    monkeypatch.delenv("IG_USER_ID", raising=False)
-    monkeypatch.delenv("IG_ACCESS_TOKEN", raising=False)
-    instagram.posta()
-    status = json.loads((tmp_path / "instagram_status.json").read_text(encoding="utf-8"))
-    assert status["secrets"] is False and status["vantar"] == 1 and status["token_utgar"] == "2026-12-20"
-    assert status["senast"] > nu - 5
-
-
 # ---------- Workflows och klockan ----------
 
 def test_rapport_workflow():
@@ -439,8 +423,12 @@ def test_pipelinen_raknar_ut_behover_dig_fore_arendet():
     assert forst < arende
 
 
-def test_instagram_workflow_sparar_status():
-    assert "data/instagram_status.json" in (WORKFLOWS / "instagram.yml").read_text(encoding="utf-8")
+def test_instagram_workflow_sparar_bada_kontona_och_har_deras_secrets():
+    text = (WORKFLOWS / "instagram.yml").read_text(encoding="utf-8")
+    assert "git add data/instagram data/drift.json" in text
+    for namn in ("IG_USER_ID", "IG_ACCESS_TOKEN", "IG_USER_ID_EN", "IG_ACCESS_TOKEN_EN"):
+        assert f"{namn}: ${{{{ secrets.{namn} }}}}" in text, namn
+    assert "--konto" in text
 
 
 def test_klockan_startar_rapporten_klockan_sju_och_som_vakthund_varje_timme():

@@ -24,7 +24,6 @@ INSTALLNINGAR = ROOT / "data" / "autopilot.json"
 STATUS = ROOT / "data" / "autopilot_status.json"
 GODK = ROOT / "data" / "godkanda.json"
 ARKIV = ROOT / "data" / "arkiv.json"
-IG_STATE = ROOT / "data" / "instagram.json"
 
 STANDARD = {"pa": False, "tyst": False, "tak": 2, "tak_efter_forsta_veckan": 8, "vetofonster_minuter": 45,
             "navigatorn": False}   # sant när brevet skickas: då kräver Behöver dig minst tre notiser
@@ -193,18 +192,15 @@ def angra(eid, now=None):
     status["ko"].pop(eid, None)
     status["stoppade"][eid] = now
     save_status(status)
-    try:
-        ig = json.loads(IG_STATE.read_text(encoding="utf-8")) if IG_STATE.exists() else {}
-    except (OSError, ValueError):
-        ig = {}
-    post = ig.get(eid) or {}
-    if post.get("ig_id") and os.environ.get("IG_ACCESS_TOKEN"):
-        import instagram
-        try:
-            instagram._api(post["ig_id"], {"access_token": os.environ["IG_ACCESS_TOKEN"]}, method="DELETE")
-            print(f"Instagram: tog bort inlägget {post['ig_id']}")
-        except Exception as e:  # Instagram tillåter inte alltid borttagning via API:t
-            print(f"Instagram: kunde inte ta bort {post['ig_id']}: {e}", file=sys.stderr)
+    import instagram
+    for lang, (_, token_var) in instagram.KONTON.items():
+        post = instagram.load_state(lang).get(eid) or {}
+        if post.get("ig_id") and os.environ.get(token_var):
+            try:
+                instagram._api(post["ig_id"], {"access_token": os.environ[token_var]}, method="DELETE")
+                print(f"Instagram {instagram.HANDTAG[lang]}: tog bort inlägget {post['ig_id']}")
+            except Exception as e:  # Instagram tillåter inte alltid borttagning via API:t
+                print(f"Instagram {instagram.HANDTAG[lang]}: kunde inte ta bort {post['ig_id']}: {e}", file=sys.stderr)
     print(f"Ångrat: {eid} är borttagen ur godkända och arkivet och spärrad för autopiloten.")
 
 

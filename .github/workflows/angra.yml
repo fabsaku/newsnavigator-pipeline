@@ -30,6 +30,7 @@ jobs:
       - name: Ångra
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN_EN: ${{ secrets.IG_ACCESS_TOKEN_EN }}
         run: python autopilot.py angra "${{ inputs.id }}"
       - name: Bygg om Navigatorn, sajten och korten
         run: |

@@ -159,20 +159,22 @@ def _tysta(lage, now):
 
 
 def _instagram(lage, now):
-    s = lage["instagram_status"] or {}
     ut = []
-    if s.get("token_utgar"):
-        utgar = date.fromisoformat(s["token_utgar"])
-        dagar = (utgar - lokal(now).date()).days
-        if dagar <= TOKEN_VARNING_DAGAR:
-            dag = f"{utgar.day} {MANADER[utgar.month - 1]}"
-            ut.append(rad("token", f"Instagram-token {'gick ut' if dagar < 0 else 'går ut'} {dag}", "Förnya",
-                          allvarlig=dagar <= TOKEN_ALLVARLIG_DAGAR))
-    if s.get("secrets") is False and s.get("vantar", 0) > 0:
-        ut.append(rad("instagram", f"Instagram postar inget: secrets saknas, {s['vantar']} kort väntar",
-                      "Lägg in IG_USER_ID och IG_ACCESS_TOKEN i repots secrets"))
-    elif s.get("secrets") and s.get("fel"):
-        ut.append(rad("instagram", f"Instagram misslyckades: {s['fel']}", "Öppna loggen och kontrollera token"))
+    for lang, handtag in (("sv", "@newsnavigator.se"), ("en", "@news.navigator")):
+        s = (lage["instagram_status"] or {}).get(lang) or {}
+        suffix = "_EN" if lang == "en" else ""
+        if s.get("token_utgar"):
+            utgar = date.fromisoformat(s["token_utgar"])
+            dagar = (utgar - lokal(now).date()).days
+            if dagar <= TOKEN_VARNING_DAGAR:
+                dag = f"{utgar.day} {MANADER[utgar.month - 1]}"
+                ut.append(rad("token", f"Instagram-token för {handtag} {'gick ut' if dagar < 0 else 'går ut'} {dag}", "Förnya",
+                              allvarlig=dagar <= TOKEN_ALLVARLIG_DAGAR, id=f"token:{lang}"))
+        if s.get("secrets") is False and s.get("vantar", 0) > 0:
+            ut.append(rad("instagram", f"{handtag} postar inget: secrets saknas, {s['vantar']} kort väntar",
+                          f"Lägg in IG_USER_ID{suffix} och IG_ACCESS_TOKEN{suffix} i repots secrets", id=f"instagram:{lang}"))
+        elif s.get("secrets") and s.get("fel"):
+            ut.append(rad("instagram", f"{handtag} misslyckades: {s['fel']}", "Öppna loggen och kontrollera token", id=f"instagram:{lang}"))
     return ut
 
 
@@ -329,8 +331,8 @@ def laddar_lage(root, repo, rattelser):
             "kallstatus": _las(d / "kallstatus.json", {"kallor": []}),
             "kallor_typ": {s["id"]: s.get("typ", "media") for s in (feeds or {}).get("sources", [])},
             "arkiv": _las(d / "arkiv.json", {}),
-            "instagram": _las(d / "instagram.json", {}),
-            "instagram_status": _las(d / "instagram_status.json", {}),
+            "instagram": {lang: _las(d / "instagram" / f"{lang}.json", {}) for lang in ("sv", "en")},
+            "instagram_status": {lang: _las(d / "instagram" / f"status-{lang}.json", {}) for lang in ("sv", "en")},
             "rattelser": rattelser}
 
 

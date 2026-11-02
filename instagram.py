@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 """Instagram: bildkort (karusell) av granskade notiser, och publicering via Instagrams API.
 
-  python instagram.py bygg                 gör kort för godkända notiser som saknar kort -> public/ig/<id>/N.jpg + caption.txt
-  python instagram.py posta [--antal 1]    publicerar de bästa opostade notiserna från senaste dygnet (kräver IG_USER_ID och IG_ACCESS_TOKEN)
-  python instagram.py forhandsvisning DIR  gör kort av dagens utkast (ogranskade, märkta) för att se formatet
-  python instagram.py urval FIL DIR        gör kort av handplockade notiser i en JSON-fil
+  python instagram.py bygg                 gör kort för godkända notiser som saknar kort -> public/ig/<språk>/<id>/N.jpg + caption.txt
+  python instagram.py posta [--antal 1] [--konto sv|en]
+                                           publicerar de bästa opostade notiserna från senaste dygnet, ett konto i taget
+  python instagram.py forhandsvisning DIR [--sprak en]   gör kort av dagens utkast (ogranskade, märkta) för att se formatet
+  python instagram.py urval FIL DIR [--sprak en]         gör kort av handplockade notiser i en JSON-fil
+
+Två konton: @newsnavigator.se på svenska (secrets IG_USER_ID, IG_ACCESS_TOKEN) och @news.navigator på engelska
+(IG_USER_ID_EN, IG_ACCESS_TOKEN_EN). Vad varje konto får visa avgör utgava.py. Tillstånd och status ligger per konto i data/instagram/.
 
 Korten är 1080x1350 (4:5), vit text på svart, i sajtens typografi: omslag med rubrik, sammanfattning och
 täckningsremsan, sedan "Så ser världen på det" med en rubrik per region, och ett tredje kort när det finns
 något att visa (data, ett diagram, USA blått och rött, eller "Källorna skiljer sig åt"). Högst tre kort.
 Bara rubriker och våra egna texter, aldrig källornas text. Bilderna hämtas av Instagram från sajten.
-Status sparas i data/instagram.json.
 """
 import argparse
 import base64
@@ -24,21 +27,55 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import utgava
 from newsletter import load_archive, section_of, SECTIONS
-from render import LEANS, REGION_ORDER, REGIONS, country
+from render import LEANS, REGION_ORDER, REGIONS, SHORT, country
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "public" / "ig"
-STATE = ROOT / "data" / "instagram.json"
-STATUS = ROOT / "data" / "instagram_status.json"   # senaste postningsvarvet: secrets finns, kort som väntar, fel, token_utgar
+STATE_DIR = ROOT / "data" / "instagram"             # sv.json och en.json (kön), status-sv.json och status-en.json
+LEGACY_STATE = ROOT / "data" / "instagram.json"     # före två konton: blir det svenska kontots kö
+UTGAVOR = utgava.UTGAVOR
+KONTON = {"sv": ("IG_USER_ID", "IG_ACCESS_TOKEN"), "en": ("IG_USER_ID_EN", "IG_ACCESS_TOKEN_EN")}
+HANDTAG = {"sv": "@newsnavigator.se", "en": "@news.navigator"}
 SITE_URL = os.environ.get("NN_SITE_URL", "https://newsnavigator.se").rstrip("/")
 IMAGE_BASE = os.environ.get("IG_IMAGE_BASE", "https://newsnavigator.pages.dev").rstrip("/")
 GRAPH = os.environ.get("IG_GRAPH", "https://graph.instagram.com").rstrip("/")
 TZ = ZoneInfo("Europe/Stockholm")
 MONTHS = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"]
-HASHTAGS = {"varlden": "#omvärlden #utrikes", "sverige": "#sverige #inrikes", "marknader": "#ekonomi #marknader #börsen",
-            "tech": "#teknik #ai", "vetenskap": "#vetenskap #forskning",
-            "noje": "#nöje #spel #kultur"}
+MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+HASHTAGS = {"sv": {"varlden": "#omvärlden #utrikes", "sverige": "#sverige #inrikes", "marknader": "#ekonomi #marknader #börsen",
+                   "tech": "#teknik #ai", "vetenskap": "#vetenskap #forskning", "noje": "#nöje #spel #kultur"},
+            "en": {"varlden": "#worldnews #global", "sverige": "#sweden #nordics", "marknader": "#markets #economy",
+                   "tech": "#tech #ai", "vetenskap": "#science #research", "noje": "#entertainment #gaming #culture"}}
+SPRAK = {"sv": 0, "en": 1}      # plats i render.REGIONS, LEANS och country, som är (svenska, engelska)
+TXT = {
+    "sv": {"swipe": "Svep: så ser världen på det", "world": "Så ser världen på det",
+           "world_lede": "Rubrikerna från {k} regioner, en per region. Länkar till alla hos oss.",
+           "usa": "USA: blått och rött", "usa_lede": "Samma händelse i medier med olika publik.",
+           "bla": "Blå publik", "mitten": "Mitten", "rod": "Röd publik",
+           "usa_note": "Indelningen bygger på AllSides betyg av medierna, inte på vår bedömning.",
+           "differ": "Källorna skiljer sig åt", "differ_note": "Vi väljer inte vilken version som är rätt. Vi visar vem som säger vad.",
+           "data": "Data bakom nyheten", "year_ago": "Ett år tidigare", "source": "Källa",
+           "src1": "källa", "srcn": "källor", "in": "i", "reg1": "region", "regn": "regioner",
+           "blind_sv": "Saknas i svenska medier", "only_sv": "Bara i svenska medier",
+           "mest_bla": "Mest i medier med blå publik", "mest_rod": "Mest i medier med röd publik",
+           "ai_granskad": "Sammanfattad med hjälp av AI och granskad av redaktionen.",
+           "ai_auto": "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns.",
+           "words": {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta", 9: "nio"}},
+    "en": {"swipe": "Swipe: how the world sees it", "world": "How the world sees it",
+           "world_lede": "Headlines from {k} regions, one per region. Links to all of them on our site.",
+           "usa": "US: blue and red", "usa_lede": "The same story in outlets with different audiences.",
+           "bla": "Blue audience", "mitten": "Centre", "rod": "Red audience",
+           "usa_note": "The grouping uses AllSides' ratings of the outlets, not our own judgement.",
+           "differ": "Sources differ", "differ_note": "We do not pick which version is right. We show who says what.",
+           "data": "The data behind the story", "year_ago": "A year earlier", "source": "Source",
+           "src1": "source", "srcn": "sources", "in": "in", "reg1": "region", "regn": "regions",
+           "mest_bla": "Mostly in outlets with a blue audience", "mest_rod": "Mostly in outlets with a red audience",
+           "ai_granskad": "Summarised with the help of AI and reviewed by the editors.",
+           "ai_auto": "Summarised with the help of AI and source-checked. Published without manual review; corrections are visible.",
+           "words": {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine"}},
+}
 
 
 # ---------- Typsnitt och logga som data-URI:er, så att rendering blir lika överallt ----------
@@ -114,8 +151,10 @@ def _e(s):
 WEEKDAYS = ["måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag", "söndag"]
 
 
-def _date(ts):
+def _date(ts, lang="sv"):
     d = datetime.fromtimestamp(ts, timezone.utc).astimezone(TZ)
+    if lang == "en":
+        return f"{d:%A} {d.day} {MONTHS_EN[d.month - 1]}"
     return f"{WEEKDAYS[d.weekday()].capitalize()} {d.day} {MONTHS[d.month - 1]}"
 
 
@@ -133,22 +172,23 @@ def _foot(i, n):
     return f'<div class="foot"><span class="site">newsnavigator.se</span><span class="n">{i} / {n}</span></div>'
 
 
-def _page(inner, banner=""):
-    return (f'<!doctype html><html lang="sv"><head><meta charset="utf-8"><style>{_css()}</style></head><body>'
+def _page(inner, banner="", lang="sv"):
+    return (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>{_css()}</style></head><body>'
             f'<div class="card">{f"<div class=banner>{_e(banner)}</div>" if banner else ""}{inner}</div></body></html>')
 
 
-def _words(n):
-    return {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta", 9: "nio"}.get(n, str(n))
+def _words(n, lang="sv"):
+    return TXT[lang]["words"].get(n, str(n))
 
 
-def _coverage(ev):
+def _coverage(ev, lang="sv"):
     p = ev.get("perspektiv") or {}
     counts = {r: len(v) for r, v in (p.get("per_region") or {}).items()}
     cells = []
+    i = SPRAK[lang]
     for r in REGION_ORDER:
         n = counts.get(r, 0)
-        name = {"mellanostern": "Mellan\u00adöstern", "latinamerika": "Latin\u00adamerika", "usa": "USA", "asien": "Asien"}.get(r, REGIONS[r][0])
+        name = SHORT.get(r, REGIONS[r])[i]
         if n:
             cells.append(f'<span class="c on"><b></b><i><strong>{n}</strong> {name}</i></span>')
         else:
@@ -156,19 +196,21 @@ def _coverage(ev):
     return f'<div class="cov">{"".join(cells)}</div>'
 
 
-def _meta(ev):
+def _meta(ev, lang="sv"):
+    x = TXT[lang]
     p = ev.get("perspektiv") or {}
     n, k = ev["antal_kallor"], len(p.get("regioner", [])) or 1
-    parts = [f"{n} {'källa' if n == 1 else 'källor'} i {_words(k)} {'region' if k == 1 else 'regioner'}"]
+    parts = [f"{n} {x['src1'] if n == 1 else x['srcn']} {x['in']} {_words(k, lang)} {x['reg1'] if k == 1 else x['regn']}"]
     blind = p.get("blind_flack")
-    if blind == "saknas_i_sverige":
-        parts.append("<b>Saknas i svenska medier</b>")
-    elif blind == "bara_i_sverige":
-        parts.append("<b>Bara i svenska medier</b>")
+    if lang == "sv":        # påståendet gäller svenska läsare och finns inte i den engelska utgåvan
+        if blind == "saknas_i_sverige":
+            parts.append(f"<b>{x['blind_sv']}</b>")
+        elif blind == "bara_i_sverige":
+            parts.append(f"<b>{x['only_sv']}</b>")
     if p.get("usa_blind") == "mest_bla":
-        parts.append("<b>Mest i medier med blå publik</b>")
+        parts.append(f"<b>{x['mest_bla']}</b>")
     elif p.get("usa_blind") == "mest_rod":
-        parts.append("<b>Mest i medier med röd publik</b>")
+        parts.append(f"<b>{x['mest_rod']}</b>")
     return f'<p class="meta">{". ".join(parts)}.</p>'
 
 
@@ -190,73 +232,78 @@ def _headline_block(x, who):
             f'<span class="who">{_e(who)}{stat}</span>')
 
 
-AI_GRANSKAD = "Sammanfattad med hjälp av AI och granskad av redaktionen."
-AI_AUTOMATISK = "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns."
+AI_GRANSKAD = TXT["sv"]["ai_granskad"]
+AI_AUTOMATISK = TXT["sv"]["ai_auto"]
 
 
-def _ai_line(ev):
-    return AI_AUTOMATISK if ev.get("automatisk") else AI_GRANSKAD
+def _ai_line(ev, lang="sv"):
+    return TXT[lang]["ai_auto" if ev.get("automatisk") else "ai_granskad"]
 
 
-def slide_cover(ev, date, more, banner=""):
+def slide_cover(ev, date, more, banner="", lang="sv"):
     d = ev.get("utkast") or {}
-    sec_sv = next((sv for k, sv, _, _ in SECTIONS if k == section_of(ev)), "Världen")
-    title = d.get("rubrik_sv") or ev["reserv_rubrik"]
+    i = SPRAK[lang]
+    sec = next((s[1 + i] for s in SECTIONS if s[0] == section_of(ev)), "Världen" if lang == "sv" else "World")
+    title = d.get(f"rubrik_{lang}") or ev["reserv_rubrik"]
+    summary = d.get(f"sammanfattning_{lang}")
     size = _headline_size(title)
     lines = 5 if size <= 74 else 6
-    swipe = '<p class="swipe">Svep: så ser världen på det</p>' if more else ""
-    return (_top(date) + f'<p class="kicker">{_e(sec_sv)}</p><h1 style="font-size:{size}px">{_e(title)}</h1>'
-            + (f'<p class="sum clamp" style="-webkit-line-clamp:{lines}">{_e(d["sammanfattning_sv"])}</p>' if d.get("sammanfattning_sv") else "")
-            + f'{_coverage(ev)}{_meta(ev)}<p class="ai">{_ai_line(ev)}</p>'
+    swipe = f'<p class="swipe">{TXT[lang]["swipe"]}</p>' if more else ""
+    return (_top(date) + f'<p class="kicker">{_e(sec)}</p><h1 style="font-size:{size}px">{_e(title)}</h1>'
+            + (f'<p class="sum clamp" style="-webkit-line-clamp:{lines}">{_e(summary)}</p>' if summary else "")
+            + f'{_coverage(ev, lang)}{_meta(ev, lang)}<p class="ai">{_ai_line(ev, lang)}</p>'
             f'<div class="grow"></div>{swipe}<div style="height:18px"></div>')
 
 
-def slide_world(ev):
+def slide_world(ev, lang="sv"):
     p = ev.get("perspektiv") or {}
     picks = _pick_regions(p)
     if len(picks) < 2:
         return None
-    blocks = "".join(f'<div class="region"><h3>{_e(REGIONS[r][0])}</h3>'
-                     + _headline_block(x, x["kalla"] + (", " + country(x["land"])[0] if x.get("land") else ""))
+    i = SPRAK[lang]
+    blocks = "".join(f'<div class="region"><h3>{_e(REGIONS[r][i])}</h3>'
+                     + _headline_block(x, x["kalla"] + (", " + country(x["land"])[i] if x.get("land") else ""))
                      + "</div>" for r, x in picks)
     k = len(p.get("regioner", []))
-    return (f'<div class="h2">Så ser världen på det</div><p class="lede">Rubrikerna från {_words(k)} regioner, en per region. Länkar till alla hos oss.</p>'
+    return (f'<div class="h2">{TXT[lang]["world"]}</div><p class="lede">{TXT[lang]["world_lede"].format(k=_words(k, lang))}</p>'
             f'<div class="regions{" two" if len(picks) == 2 else ""}">{blocks}</div><div class="grow"></div>')
 
 
-def slide_usa(ev):
+def slide_usa(ev, lang="sv"):
     p = ev.get("perspektiv") or {}
     usa = p.get("usa")
     if not usa or not (usa.get("bla") and usa.get("rod")):
         return None
+    x, i = TXT[lang], SPRAK[lang]
     cells = []
-    for key, name in (("bla", "Blå publik"), ("mitten", "Mitten"), ("rod", "Röd publik")):
+    for key, name in (("bla", x["bla"]), ("mitten", x["mitten"]), ("rod", x["rod"])):
         n = len(usa.get(key) or [])
         cells.append(f'<span class="c{" on" if n else ""}"><b></b><i>{f"<strong>{n}</strong> " if n else ""}{name}</i></span>')
     cols = []
-    for key, name in (("bla", "Blå publik"), ("rod", "Röd publik")):
+    for key, name in (("bla", x["bla"]), ("rod", x["rod"])):
         items = (usa.get(key) or [])[:2]
         cols.append(f'<div class="region"><h3>{name}</h3>'
-                    + "".join(_headline_block(x, f'{x["kalla"]}, AllSides: {LEANS[x["lutning"]][0]}') for x in items) + "</div>")
-    return (f'<div class="h2">USA: blått och rött</div><p class="lede">Samma händelse i medier med olika publik.</p>'
+                    + "".join(_headline_block(it, f'{it["kalla"]}, AllSides: {LEANS[it["lutning"]][i]}') for it in items) + "</div>")
+    return (f'<div class="h2">{x["usa"]}</div><p class="lede">{x["usa_lede"]}</p>'
             f'<div class="cov usa" style="margin-top:34px">{"".join(cells)}</div><div class="sides">{"".join(cols)}</div>'
-            f'<div class="grow"></div><p class="note">Indelningen bygger på AllSides betyg av medierna, inte på vår bedömning.</p><div style="height:18px"></div>')
+            f'<div class="grow"></div><p class="note">{x["usa_note"]}</p><div style="height:18px"></div>')
 
 
-def slide_chart(ev):
-    """Stapeldiagram när notisen har en 'graf': {"titel", "enhet", "staplar": [[etikett, värde, visat värde], ...]}."""
+def slide_chart(ev, lang="sv"):
+    """Stapeldiagram när notisen har en 'graf': {"titel", "enhet", "staplar": [[etikett, värde, visat värde], ...]}.
+    Engelska kort kräver 'titel_en'."""
     g = ev.get("graf")
-    if not g or not g.get("staplar"):
+    if not g or not g.get("staplar") or (lang == "en" and not g.get("titel_en")):
         return None
     top = max(v for _, v, *_ in g["staplar"]) or 1
     bars = "".join(f'<div class="bar"><div class="l"><span>{_e(l)}</span><b>{_e(shown[0] if shown else str(v))}</b></div>'
                    f'<div class="t"><i style="width:{v / top * 100:.1f}%"></i></div></div>' for l, v, *shown in g["staplar"])
-    note = f'<p class="note">{_e(g["not"])}</p>' if g.get("not") else ""
-    return (f'<div class="h2">Källorna skiljer sig åt</div><p class="lede">{_e(g["titel"])}</p><div class="bars">{bars}</div>'
+    note = f'<p class="note">{_e(g.get("not_en" if lang == "en" else "not"))}</p>' if g.get("not_en" if lang == "en" else "not") else ""
+    return (f'<div class="h2">{TXT[lang]["differ"]}</div><p class="lede">{_e(g["titel_en" if lang == "en" else "titel"])}</p><div class="bars">{bars}</div>'
             f'<div class="grow"></div>{note}<div style="height:18px"></div>')
 
 
-def slide_data(ev):
+def slide_data(ev, lang="sv"):
     """Data bakom nyheten: första serien som stor siffra med kurva."""
     items = ev.get("data") or []
     if not items:
@@ -272,53 +319,76 @@ def slide_data(ev):
         svg = (f'<svg viewBox="0 0 936 210" width="936" height="210" style="margin-top:36px;display:block">'
                f'<polyline points="{pts}" fill="none" stroke="#fff" stroke-width="4"/><circle cx="{x}" cy="{y}" r="9" fill="#fff"/></svg>')
     dec = d["decimaler"]
-    now = f"{d['senaste']:.{dec}f}".replace(".", ",") + " " + d["enhet"]
-    was = f"{d['ar_sedan']:.{dec}f}".replace(".", ",") + " " + d["enhet"]
-    return (f'<div class="h2">Data bakom nyheten</div><p class="lede">{_e(d["namn_sv"])}, {_e(d["datum"])}</p>'
+    now, was = f"{d['senaste']:.{dec}f} {d['enhet']}", f"{d['ar_sedan']:.{dec}f} {d['enhet']}"
+    if lang == "sv":
+        now, was = now.replace(".", ","), was.replace(".", ",")
+    x = TXT[lang]
+    return (f'<div class="h2">{x["data"]}</div><p class="lede">{_e(d["namn_" + lang])}, {_e(d["datum"])}</p>'
             f'<div style="font-family:SS4,serif;font-weight:600;font-size:150px;line-height:1;margin-top:40px;letter-spacing:-.02em">{_e(now)}</div>'
-            f'<p class="meta" style="margin-top:14px">Ett år tidigare {_e(was)}. Källa: {_e(d["kalla"])}.</p>{svg}<div class="grow"></div>')
+            f'<p class="meta" style="margin-top:14px">{x["year_ago"]} {_e(was)}. {x["source"]}: {_e(d["kalla"])}.</p>{svg}<div class="grow"></div>')
 
 
-def slide_differ(ev):
+def slide_differ(ev, lang="sv"):
     d = ev.get("utkast") or {}
-    if not d.get("oenighet"):
+    text = d.get("oenighet" if lang == "sv" else "oenighet_en")
+    if not text:
         return None
-    size = 42 if len(d["oenighet"]) < 380 else 38 if len(d["oenighet"]) < 560 else 34
-    return (f'<div class="h2">Källorna skiljer sig åt</div><p class="quote clamp" style="-webkit-line-clamp:13;font-size:{size}px">{_e(d["oenighet"])}</p>'
-            f'<div class="grow"></div><p class="note">Vi väljer inte vilken version som är rätt. Vi visar vem som säger vad.</p><div style="height:18px"></div>')
+    size = 42 if len(text) < 380 else 38 if len(text) < 560 else 34
+    return (f'<div class="h2">{TXT[lang]["differ"]}</div><p class="quote clamp" style="-webkit-line-clamp:13;font-size:{size}px">{_e(text)}</p>'
+            f'<div class="grow"></div><p class="note">{TXT[lang]["differ_note"]}</p><div style="height:18px"></div>')
 
 
-def slides(ev, banner="", max_slides=3):
+def slides(ev, banner="", max_slides=3, lang="sv"):
     """HTML för varje kort i karusellen: omslag, så ser världen på det, och ett tredje kort där det finns något att visa."""
-    date = _date(ev.get("godkand_tid") or time.time())
-    extra = [s for s in (slide_world(ev), slide_data(ev), slide_chart(ev), slide_usa(ev), slide_differ(ev)) if s][:max_slides - 1]
+    date = _date(ev.get("godkand_tid") or time.time(), lang)
+    extra = [s for s in (slide_world(ev, lang), slide_data(ev, lang), slide_chart(ev, lang), slide_usa(ev, lang), slide_differ(ev, lang)) if s][:max_slides - 1]
     n = 1 + len(extra)
-    out = [_page(slide_cover(ev, date, bool(extra)) + _foot(1, n), banner)]
+    out = [_page(slide_cover(ev, date, bool(extra), lang=lang) + _foot(1, n), banner, lang)]
     for i, inner in enumerate(extra, 2):
-        out.append(_page(_top(date) + inner + _foot(i, n), banner))
+        out.append(_page(_top(date) + inner + _foot(i, n), banner, lang))
     return out
 
 
-def caption(ev):
+def caption(ev, lang="sv"):
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
     sec = section_of(ev)
-    parts = [d.get("rubrik_sv") or ev["reserv_rubrik"], ""]
-    if d.get("sammanfattning_sv"):
-        parts += [d["sammanfattning_sv"], ""]
-    if d.get("perspektiv_sv") and len(p.get("regioner", [])) >= 2:
-        parts += ["Så ser världen på det: " + d["perspektiv_sv"], ""]
-    if d.get("oenighet"):
-        parts += ["Källorna skiljer sig åt: " + d["oenighet"], ""]
-    names = [s["namn"] + (" (statskontrollerat)" if s.get("statskontrollerad") else "") for s in ev["kallor"][:8]]
-    parts += ["Källor: " + ", ".join(names) + (f" och {len(ev['kallor']) - 8} till" if len(ev["kallor"]) > 8 else ""), ""]
-    parts += [f"Hela notisen med alla länkar: {SITE_URL}/n/{ev['id']}/", ""]
-    if d.get("rubrik_en"):
+    sv = lang == "sv"
+    parts = [d.get(f"rubrik_{lang}") or ev["reserv_rubrik"], ""]
+    if d.get(f"sammanfattning_{lang}"):
+        parts += [d[f"sammanfattning_{lang}"], ""]
+    if d.get(f"perspektiv_{lang}") and len(p.get("regioner", [])) >= 2:
+        parts += [("Så ser världen på det: " if sv else "How the world sees it: ") + d[f"perspektiv_{lang}"], ""]
+    if d.get("oenighet" if sv else "oenighet_en"):
+        parts += [("Källorna skiljer sig åt: " if sv else "Sources differ: ") + d["oenighet" if sv else "oenighet_en"], ""]
+    stat = " (statskontrollerat)" if sv else " (state-controlled)"
+    names = [s["namn"] + (stat if s.get("statskontrollerad") else "") for s in ev["kallor"][:8]]
+    more = f" och {len(ev['kallor']) - 8} till" if sv else f" and {len(ev['kallor']) - 8} more"
+    parts += [("Källor: " if sv else "Sources: ") + ", ".join(names) + (more if len(ev["kallor"]) > 8 else ""), ""]
+    parts += [("Hela notisen med alla länkar: " if sv else "Full story with all links: ") + notis_url(lang, ev["id"]), ""]
+    if sv and d.get("rubrik_en"):
         parts += ["In English: " + d["rubrik_en"], ""]
-    parts += [_ai_line(ev) + " Vi levererar nyheterna. Vad du gör av dem är upp till dig.", "",
-              f"#nyheter #newsnavigator {HASHTAGS.get(sec, '')} #sammanhang #källor".strip()]
+    slut = ("Vi levererar nyheterna. Vad du gör av dem är upp till dig." if sv
+            else "We deliver the news. What you do with it is up to you.")
+    tags = "#nyheter #newsnavigator" if sv else "#news #newsnavigator"
+    ending = "#sammanhang #källor" if sv else "#context #sources"
+    parts += [_ai_line(ev, lang) + " " + slut, "", f"{tags} {HASHTAGS[lang].get(sec, '')} {ending}".replace("  ", " ").strip()]
     text = "\n".join(parts)
     return text[:2190]
+
+
+def notis_url(lang, eid):
+    return f"{SITE_URL}/{lang}/n/{eid}/"
+
+
+def kan_byggas(ev, lang):
+    """Det engelska kontot kräver engelsk rubrik och sammanfattning; det svenska tar vad som finns."""
+    d = ev.get("utkast") or {}
+    return bool(d.get("rubrik_en") and d.get("sammanfattning_en")) if lang == "en" else True
+
+
+def _rubrik(ev, lang):
+    return (ev.get("utkast") or {}).get(f"rubrik_{lang}") or ev["reserv_rubrik"]
 
 
 # ---------- Rendering ----------
@@ -330,7 +400,7 @@ def _browser(p):
         return p.chromium.launch()
 
 
-def render(ev, out_dir, banner=""):
+def render(ev, out_dir, banner="", lang="sv"):
     from playwright.sync_api import sync_playwright
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -340,54 +410,91 @@ def render(ev, out_dir, banner=""):
     with sync_playwright() as p:
         b = _browser(p)
         pg = b.new_page(viewport={"width": 1080, "height": 1350}, device_scale_factor=1)
-        for i, html_ in enumerate(slides(ev, banner), 1):
+        for i, html_ in enumerate(slides(ev, banner, lang=lang), 1):
             pg.set_content(html_, wait_until="load")
             pg.wait_for_timeout(150)
             f = out_dir / f"{i}.jpg"
             pg.screenshot(path=str(f), type="jpeg", quality=92)
             files.append(f.name)
         b.close()
-    (out_dir / "caption.txt").write_text(caption(ev), encoding="utf-8")
+    (out_dir / "caption.txt").write_text(caption(ev, lang), encoding="utf-8")
     return files
 
 
-def load_state():
+# ---------- Tillstånd och status per konto ----------
+
+def state_path(lang):
+    return STATE_DIR / f"{lang}.json"
+
+
+def status_path(lang):
+    return STATE_DIR / f"status-{lang}.json"
+
+
+def _las(path):
     try:
-        return json.loads(STATE.read_text(encoding="utf-8"))
+        return json.loads(Path(path).read_text(encoding="utf-8"))
     except (OSError, ValueError):
-        return {}
+        return None
 
 
-def save_state(s):
-    STATE.parent.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps(s, ensure_ascii=False, indent=1), encoding="utf-8")
+def load_state(lang="sv"):
+    s = _las(state_path(lang))
+    if s is None and lang == "sv":
+        s = _las(LEGACY_STATE)      # kön före två konton var det svenska kontots
+    return s or {}
 
 
-def bygg():
-    """Kort för alla godkända notiser i arkivet som saknar kort. Tar bort kort för notiser som lämnat arkivet."""
-    arkiv, state = load_archive(), load_state()
-    made = 0
-    for sid, ev in arkiv.items():
-        if sid in state and (OUT / sid / "1.jpg").exists():
-            continue
-        try:
-            files = render(ev, OUT / sid)
-        except Exception as e:
-            print(f"Instagram: kunde inte göra kort för {sid}: {e}", file=sys.stderr)
-            continue
-        state[sid] = {**state.get(sid, {}), "skapad": time.time(), "bilder": files, "poang": ev.get("poang", 0),
-                      "godkand_tid": ev.get("godkand_tid", 0), "rubrik": (ev.get("utkast") or {}).get("rubrik_sv") or ev["reserv_rubrik"]}
-        made += 1
-    if OUT.exists():
+def save_state(s, lang="sv"):
+    state_path(lang).parent.mkdir(parents=True, exist_ok=True)
+    state_path(lang).write_text(json.dumps(s, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def load_status(lang="sv"):
+    return _las(status_path(lang)) or {}
+
+
+def spara_status(lang, **kv):
+    status = load_status(lang)
+    status.update(kv)
+    status_path(lang).parent.mkdir(parents=True, exist_ok=True)
+    status_path(lang).write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+# ---------- Bygge ----------
+
+def bygg(sprak=UTGAVOR):
+    """Kort för alla godkända notiser i arkivet som hör hemma i kontots utgåva och saknar kort.
+    Tar bort kort för notiser som lämnat arkivet eller utgåvan."""
+    import shutil
+    arkiv = load_archive()
+    for lang in sprak:
+        state, made = load_state(lang), 0
+        valda = {sid: ev for sid, ev in arkiv.items() if utgava.visa(ev, lang) and kan_byggas(ev, lang)}
+        for sid, ev in valda.items():
+            dest = OUT / lang / sid
+            if sid in state and (dest / "1.jpg").exists():
+                continue
+            try:
+                files = render(ev, dest, lang=lang)
+            except Exception as e:
+                print(f"Instagram {HANDTAG[lang]}: kunde inte göra kort för {sid}: {e}", file=sys.stderr)
+                continue
+            state[sid] = {**state.get(sid, {}), "skapad": time.time(), "bilder": files, "poang": ev.get("poang", 0),
+                          "godkand_tid": ev.get("godkand_tid", 0), "rubrik": _rubrik(ev, lang)}
+            made += 1
+        if (OUT / lang).exists():
+            for d in (OUT / lang).iterdir():
+                if d.is_dir() and d.name not in valda:
+                    shutil.rmtree(d)
+        for sid in [k for k in state if k not in valda and not state[k].get("postad")]:
+            state.pop(sid)
+        save_state(state, lang)
+        print(f"Instagram {HANDTAG[lang]}: {made} nya kort, {len(state)} i kön")
+    if OUT.exists():        # kort från före språkmapparna
         for d in OUT.iterdir():
-            if d.is_dir() and d.name not in arkiv:
-                for f in d.iterdir():
-                    f.unlink()
-                d.rmdir()
-    for sid in [k for k in state if k not in arkiv and not state[k].get("postad")]:
-        state.pop(sid)
-    save_state(state)
-    print(f"Instagram: {made} nya kort, {len(state)} i kön")
+            if d.is_dir() and d.name not in UTGAVOR:
+                shutil.rmtree(d)
 
 
 # ---------- Publicering ----------
@@ -395,15 +502,17 @@ def bygg():
 def _api(path, params, method="POST"):
     if method == "GET":
         req = urllib.request.Request(f"{GRAPH}/{path}?{urllib.parse.urlencode(params)}")
+    elif method == "DELETE":
+        req = urllib.request.Request(f"{GRAPH}/{path}?{urllib.parse.urlencode(params)}", method="DELETE")
     else:
         req = urllib.request.Request(f"{GRAPH}/{path}", data=urllib.parse.urlencode(params).encode(), method="POST")
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.loads(r.read())
 
 
-def publish_one(sid, item, user, token):
-    urls = [f"{IMAGE_BASE}/ig/{sid}/{f}" for f in item["bilder"]]
-    cap = (OUT / sid / "caption.txt").read_text(encoding="utf-8")
+def publish_one(lang, sid, item, user, token):
+    urls = [f"{IMAGE_BASE}/ig/{lang}/{sid}/{f}" for f in item["bilder"]]
+    cap = (OUT / lang / sid / "caption.txt").read_text(encoding="utf-8")
     if len(urls) == 1:
         container = _api(f"{user}/media", {"image_url": urls[0], "caption": cap, "access_token": token})["id"]
     else:
@@ -419,61 +528,59 @@ def publish_one(sid, item, user, token):
     return _api(f"{user}/media_publish", {"creation_id": container, "access_token": token})["id"]
 
 
-def spara_status(**kv):
-    try:
-        status = json.loads(STATUS.read_text(encoding="utf-8"))
-    except (OSError, ValueError):
-        status = {}
-    status.update(kv)
-    STATUS.parent.mkdir(parents=True, exist_ok=True)
-    STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-
-
-def posta(antal=1, hours=36):
-    import autopilot
-    if autopilot.load_settings().get("tyst"):
-        print("Instagram: tyst läge, inget postas")
-        return
-    user, token = os.environ.get("IG_USER_ID"), os.environ.get("IG_ACCESS_TOKEN")
-    state = load_state()
+def _posta_konto(lang, antal, hours):
+    user_var, token_var = KONTON[lang]
+    user, token = os.environ.get(user_var), os.environ.get(token_var)
+    state = load_state(lang)
     since = time.time() - hours * 3600
     queue = sorted((sid for sid, it in state.items() if not it.get("postad") and it.get("godkand_tid", 0) >= since),
                    key=lambda sid: state[sid].get("poang", 0), reverse=True)[:antal]
     fel = None
     if not queue:
-        print("Instagram: inget nytt att posta")
+        print(f"Instagram {HANDTAG[lang]}: inget nytt att posta")
     for sid in queue:
         if not (user and token):
-            print(f"Instagram: skulle posta {sid}: {state[sid]['rubrik'][:70]} (IG_USER_ID/IG_ACCESS_TOKEN saknas)")
+            print(f"Instagram {HANDTAG[lang]}: skulle posta {sid}: {state[sid]['rubrik'][:70]} ({user_var}/{token_var} saknas)")
             continue
         try:
-            media_id = publish_one(sid, state[sid], user, token)
+            media_id = publish_one(lang, sid, state[sid], user, token)
             state[sid].update({"postad": time.time(), "ig_id": media_id})
-            print(f"Instagram: postade {sid} ({media_id})")
+            print(f"Instagram {HANDTAG[lang]}: postade {sid} ({media_id})")
         except Exception as e:
             fel = str(e)[:120]
-            print(f"Instagram: misslyckades med {sid}: {e}", file=sys.stderr)
-    save_state(state)
-    spara_status(senast=time.time(), secrets=bool(user and token), fel=fel,
+            print(f"Instagram {HANDTAG[lang]}: misslyckades med {sid}: {e}", file=sys.stderr)
+    save_state(state, lang)
+    spara_status(lang, senast=time.time(), secrets=bool(user and token), fel=fel,
                  vantar=sum(1 for it in state.values() if not it.get("postad") and it.get("godkand_tid", 0) >= since))
 
 
-def urval(fil, out):
+def posta(antal=1, hours=36, konton=None):
+    import autopilot
+    if autopilot.load_settings().get("tyst"):
+        print("Instagram: tyst läge, inget postas")
+        return
+    for lang in konton or UTGAVOR:
+        _posta_konto(lang, antal, hours)
+
+
+def urval(fil, out, lang="sv"):
     """Kort för handplockade notiser i en JSON-fil (lista av händelser, gärna med 'graf')."""
     evs = json.loads(Path(fil).read_text(encoding="utf-8"))
     for i, e in enumerate(evs, 1):
         e.setdefault("godkand_tid", time.time())
-        files = render(e, Path(out) / f"{i:02d}-{e['id']}")
-        print(f"{i:02d}", len(files), "kort:", (e.get("utkast") or {}).get("rubrik_sv", "")[:60])
+        files = render(e, Path(out) / f"{i:02d}-{e['id']}", lang=lang)
+        print(f"{i:02d}", len(files), "kort:", _rubrik(e, lang)[:60])
 
 
-def forhandsvisning(out, n=2):
+def forhandsvisning(out, n=2, lang="sv"):
     flode = json.loads((ROOT / "data" / "flode.json").read_text(encoding="utf-8"))
-    evs = [e for e in flode["handelser"] if (e.get("utkast") or {}).get("rubrik_sv") and not (e.get("utkast") or {}).get("osaker")][:n]
+    evs = [e for e in flode["handelser"] if (e.get("utkast") or {}).get(f"rubrik_{lang}") and not (e.get("utkast") or {}).get("osaker")
+           and utgava.visa(e, lang) and kan_byggas(e, lang)][:n]
     for e in evs:
         e["godkand_tid"] = time.time()
-        files = render(e, Path(out) / e["id"], banner="Förhandsvisning · ogranskat utkast")
-        print(e["id"], len(files), "kort:", (e["utkast"] or {}).get("rubrik_sv", "")[:60])
+        banner = "Förhandsvisning · ogranskat utkast" if lang == "sv" else "Preview · unreviewed draft"
+        files = render(e, Path(out) / e["id"], banner=banner, lang=lang)
+        print(e["id"], len(files), "kort:", _rubrik(e, lang)[:60])
 
 
 if __name__ == "__main__":
@@ -482,12 +589,14 @@ if __name__ == "__main__":
     ap.add_argument("mapp", nargs="?")
     ap.add_argument("mapp2", nargs="?")
     ap.add_argument("--antal", type=int, default=1)
+    ap.add_argument("--konto", choices=["sv", "en", "alla"], default="alla")
+    ap.add_argument("--sprak", choices=["sv", "en"], default="sv")
     a = ap.parse_args()
     if a.kommando == "bygg":
         bygg()
     elif a.kommando == "posta":
-        posta(a.antal)
+        posta(a.antal, konton=None if a.konto == "alla" else [a.konto])
     elif a.kommando == "urval":
-        urval(a.mapp, a.mapp2 or "/tmp/ig")
+        urval(a.mapp, a.mapp2 or "/tmp/ig", a.sprak)
     else:
-        forhandsvisning(a.mapp or "/tmp/ig", a.antal if a.antal > 1 else 2)
+        forhandsvisning(a.mapp or "/tmp/ig", a.antal if a.antal > 1 else 2, a.sprak)

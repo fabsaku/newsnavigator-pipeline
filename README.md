@@ -115,11 +115,12 @@ en gång per fel och igen efter tolv timmar. Secrets: `RESEND_API_KEY` och `RAPP
 (standard är Resends testavsändare, som bara når kontots egen adress). Prova utan att skicka: starta Rapport under Actions med "torrt".
 
 ## Instagram
-Två konton: **@newsnavigator.se** på svenska och **@news.navigator** på engelska. I dag gör `instagram.py` bara svenska kort
-och postar till ett konto (secrets `IG_USER_ID` och `IG_ACCESS_TOKEN`). Det engelska kontot kräver engelska kort och
-captions, egna secrets och en egen postningsstatus per konto, så att samma notis kan gå på båda.
+Två konton: **@newsnavigator.se** på svenska (secrets `IG_USER_ID`, `IG_ACCESS_TOKEN`) och **@news.navigator** på engelska (`IG_USER_ID_EN`,
+`IG_ACCESS_TOKEN_EN`). Vad varje konto får visa avgör `utgava.py`. Korten byggs på kontots språk av de utkastfält som finns (`rubrik_en`,
+`sammanfattning_en`, `perspektiv_en`, `oenighet_en`), och engelska kort gör aldrig påståendet "saknas i svenska medier". Tillstånd, status
+och token ligger per konto i `data/instagram/` (`sv.json`, `en.json`, `status-sv.json`, `status-en.json`).
 
-`instagram.py bygg` gör karusellkort (1080x1350, JPEG) för varje godkänd notis i `public/ig/<id>/`, med caption i `caption.txt`. Korten ligger ute på sajten, så att Instagram kan hämta dem. `instagram.py posta` publicerar dagens bästa opostade notis via Instagrams API (workflowen `instagram.yml`, 07:45). Kräver ett Business- eller Creator-konto och secrets `IG_USER_ID` och `IG_ACCESS_TOKEN` (long-lived token, 60 dagar, förnyas via `refresh_access_token`). Utan secrets skriver skriptet bara vad det skulle ha postat. Typsnitt och maskot ligger i `assets/` så att korten blir lika överallt. Förhandsvisning av dagens utkast: `python instagram.py forhandsvisning /tmp/ig`.
+`instagram.py bygg` gör karusellkort (1080x1350, JPEG) för varje godkänd notis i `public/ig/<språk>/<id>/`, med caption i `caption.txt`. Korten ligger ute på sajten, så att Instagram kan hämta dem. `instagram.py posta [--konto sv|en|alla]` publicerar dagens bästa opostade notis per konto via Instagrams API (workflowen `instagram.yml`, 07:45). Kräver ett Business- eller Creator-konto och kontots secrets (long-lived token, 60 dagar, förnyas via `refresh_access_token`). Utan secrets skriver skriptet bara vad det skulle ha postat. Typsnitt och maskot ligger i `assets/` så att korten blir lika överallt. Förhandsvisning av dagens utkast: `python instagram.py forhandsvisning /tmp/ig` (`--sprak en` för engelska).
 Formatet: vit text på svart, högst tre kort. Omslag med rubrik, sammanfattning och täckningsremsan; sedan "Så ser världen på det"
 med en rubrik per region; sist ett kort där det finns något att visa, i tur och ordning data bakom nyheten, ett stapeldiagram
 (fältet `graf` på notisen: titel, staplar med etikett, värde och visat värde), USA blått och rött, eller "Källorna skiljer sig åt".
