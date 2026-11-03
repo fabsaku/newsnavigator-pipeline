@@ -148,3 +148,8 @@ def test_visas_inte_om_kontrollen_underkant_eller_raden_saknas(monkeypatch):
     assert "exportföretag" not in sajt.story_page(sajt.Urls(flat=False, lang="sv"), ev, [], [], "", True)
     ev = notis(betydelse={"sv": None, "en": "x y", "grund": [1], "kontroll": KONTROLL_OK, "ok": True, "grund_kallor": []})
     assert "Analys" not in sajt.story_page(sajt.Urls(flat=False, lang="sv"), ev, [], [], "", True)
+
+
+def test_kallnummer_i_hakparentes_tas_bort_ur_raden():
+    r = bygg(client=Falsk({**SVAR, "betydelse_sv": "Eftersom attackerna dödade 26 personer [3] hänger det ihop med säkerhetsläget i Europa.", "betydelse_en": None}))
+    assert r["sv"] == "Eftersom attackerna dödade 26 personer hänger det ihop med säkerhetsläget i Europa." and "[" not in r["sv"]

@@ -58,6 +58,11 @@ def aktiv():
     return os.environ.get("NN_BETYDELSE") == "1"
 
 
+def _rensa(text):
+    """Källnummer i hakparentes ([3]) hör till grunden, inte till texten som läsaren ser."""
+    return re.sub(r"\s*\[\d+(?:,\s*\d+)*\]", "", text).strip() if isinstance(text, str) else text
+
+
 def _ok_rad(text):
     return bool(text) and len(text.split()) <= MAX_ORD and not any(r.search(text) for r in (_FORUTSAGELSE, _RAD, _VARDE, _TANKSTRECK))
 
@@ -94,7 +99,7 @@ def bygg(c, utkast, client, model, reply_text, cache):
     try:
         msg = client.messages.create(model=model, max_tokens=2000, system=SYSTEM, messages=[{"role": "user", "content": _prompt(c, utkast)}])
         d = _json(reply_text(msg).strip())
-        sv, en = (d.get("betydelse_sv") or None), (d.get("betydelse_en") or None)
+        sv, en = (_rensa(d.get("betydelse_sv")) or None), (_rensa(d.get("betydelse_en")) or None)
         grund = sorted({int(n) for n in d.get("grund") or []})
         if (sv and not _ok_rad(sv)) or (en and not _ok_rad(en)) or (not sv and not en) or not grund or any(not 1 <= n <= len(c["items"]) for n in grund):
             resultat = None
