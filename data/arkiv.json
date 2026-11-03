@@ -3872,36 +3872,31 @@
  "1d6269e48d": {
   "id": "1d6269e48d",
   "amnen": [
-   "europa",
-   "usa"
+   "varlden"
   ],
-  "amnen_sektion": [
-   "europa",
-   "usa"
-  ],
-  "poang": 33.5,
+  "amnen_sektion": [],
+  "poang": 38.5,
   "vikt": {
-   "bredd": 0.349,
+   "bredd": 0.547,
    "regioner": {
-    "mellanostern": 1,
-    "asien": 2,
-    "europa": 2
+    "asien": 4,
+    "norden": 1
    },
-   "timmar": 79,
+   "timmar": 81,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
-    "varaktighet": 4,
-    "medel": 4.67,
-    "skal": "Mellanårsvalet i USA avgör vem som kontrollerar kongressen och kan begränsa Trumps makt under de kommande två åren."
+    "varaktighet": 5,
+    "medel": 5.0,
+    "skal": "Tågolyckan i Urda med 69 döda och offer från flera länder innebär oåterkalleligt människoliv och påverkar många familjer internationellt."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false
   },
   "maste": false,
   "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-03T07:46:30+00:00",
+  "senast": "2026-11-03T10:35:20+00:00",
   "utkast": {
    "rubrik_sv": "69 döda i tågolyckan i Spanien, bland dem tolv utländska medborgare",
    "sammanfattning_sv": "Enligt spanska myndigheter, uppgivet av The Guardian, omkom 69 personer i tågolyckan den 28 oktober, varav 54 spanjorer. Bland de omkomna finns tolv utländska medborgare, däribland fyra från USA enligt flera källor.",
@@ -4048,116 +4043,138 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Maktbalansen i Washington",
-     "namn_en": "The balance of power in Washington",
-     "lyfter_sv": "Al Jazeera lyfter fram att kontrollen över kongressen står på spel samt institutionernas förmåga att stå emot presidentens påtryckningar, och Dawn att demokraterna väntas ta över representanthuset, vilket skulle ge dem makt att bromsa Trump.",
-     "lyfter_en": "Al Jazeera highlights that control of Congress is at stake and that US institutions' ability to withstand presidential pressure is too, and Dawn that Democrats are poised to take the House, which would let them stall Trump.",
+     "namn_sv": "Utländska offer",
+     "namn_en": "Foreign victims",
+     "lyfter_sv": "ABC News lyfter fram att två australiensare är bland de döda, The Japan Times att en andra japansk medborgare bekräftats död och NRK att minst 12 utlänningar dött, varav fyra från USA.",
+     "lyfter_en": "ABC News highlights that two Australians are among the dead, The Japan Times that a second Japanese national has been confirmed dead, and NRK that at least 12 foreigners died, four of them from the US.",
      "kallor": [
       {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/opinions/2026/11/3/the-us-midterms-will-test-the-limits-of-trumps-power?traffic_source=rss"
-      },
-      {
-       "namn": "Dawn",
+       "namn": "ABC News (Australien)",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2041758/us-votes-today-in-midterms-that-could-weaken-trumps-hold-on-washington"
+       "url": "https://www.abc.net.au/news/2026-11-03/grave-concerns-for-australians-in-spain/107340256"
+      },
+      {
+       "namn": "The Japan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.japantimes.co.jp/news/2026/11/03/japan/spain-train-crash-japanese-second-victim/"
+      },
+      {
+       "namn": "NRK",
+       "region": "norden",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.nrk.no/nyheter/minst-12-utlendinger-dode-i-togulykken-i-spania-1.18070859"
       }
      ],
      "regioner": [
       "asien",
-      "mellanostern"
+      "norden"
      ],
      "usa_sidor": []
     },
     {
-     "namn_sv": "Trumps budskap inför valet",
-     "namn_en": "Trump's message ahead of the vote",
-     "lyfter_sv": "Hindustan Times lyfter fram Trumps vädjan till republikanerna att se valet som en folkomröstning om hans politik, och DW att han kallar demokraterna farliga och sänker förväntningarna om att sittande presidenter vinner mellanvalen.",
-     "lyfter_en": "Hindustan Times highlights Trump's appeal to Republicans to treat the vote as a referendum on his policies, and DW that he calls Democrats dangerous and lowers expectations that sitting presidents win midterms.",
+     "namn_sv": "Identifiering av alla offer",
+     "namn_en": "Identification of all victims",
+     "lyfter_sv": "The Straits Times lyfter fram att samtliga 69 offer identifierats, varav 54 spanska medborgare, och det statskontrollerade CGTN att alla identifierats medan 29 skadade fortfarande är inlagda.",
+     "lyfter_en": "The Straits Times highlights that all 69 victims have been identified, 54 of them Spanish nationals, and state-controlled CGTN that all were identified while 29 injured remain hospitalized.",
      "kallor": [
       {
-       "namn": "Hindustan Times",
+       "namn": "The Straits Times",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/us-news/if-our-people-vote-we-win-in-a-landslide-trumps-message-to-republicans-ahead-of-us-midterms-101793686821710.html"
+       "url": "https://www.straitstimes.com/world/europe/spanish-authorities-identify-all-69-victims-of-train-crash-including-2-japanese-nationals"
       },
       {
-       "namn": "Deutsche Welle",
-       "region": "europa",
+       "namn": "CGTN",
+       "region": "asien",
        "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/us-trump-labels-democrats-dangerous-ahead-of-midterms/a-79834945?maca=en-rss-en-all-1573-rdf"
+       "statskontrollerad": true,
+       "url": "https://news.cgtn.com/news/2026-11-03/news-1RLcKmrtXs4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World"
       }
      ],
      "regioner": [
-      "asien",
-      "europa"
+      "asien"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 8,
+    "antal": 10,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Rubriken: USA röstar i mellanårsval som kan försvaga Trumps grepp om Washington",
+      "text": "Alla 69 offer i tågolyckan i Urda i Spanien är identifierade (rubrik)",
       "stod": [
-       3
+       2,
+       3,
+       5
       ],
       "problem": null
      },
      {
-      "text": "Al Jazeera: kontrollen över kongressen står på spel",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: institutionernas förmåga att stå emot presidentens påtryckningar står på spel",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn: demokraterna väntas ta över representanthuset",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn: en republikansk förlust av representanthuset skulle ge demokraterna makt att bromsa Trump",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: Trump vädjar till republikanerna att se valet som en folkomröstning om hans politik",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "DW: Trump kallar demokraterna farliga",
+      "text": "Olyckan inträffade i Urda, Spanien",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "DW: Trump sänker förväntningarna genom att säga att en sittande president inte vinner mellanvalen",
+      "text": "ABC News: två australiensare är bland de döda",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Japan Times: en andra japansk medborgare har bekräftats död",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "NRK: minst 12 utlänningar har dött",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "NRK: fyra av de döda utlänningarna var från USA",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: samtliga 69 offer har identifierats",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: 54 av offren var spanska medborgare",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN: alla 69 offer har identifierats",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN: 29 skadade är fortfarande inlagda",
       "stod": [
        5
       ],
@@ -4171,148 +4188,137 @@
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa",
-    "mellanostern"
+    "norden"
    ],
    "per_region": {
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "The US midterms will test the limits of Trump’s power",
-      "url": "https://www.aljazeera.com/opinions/2026/11/3/the-us-midterms-will-test-the-limits-of-trumps-power?traffic_source=rss",
-      "statskontrollerad": false
-     }
-    ],
     "asien": [
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "‘If our people vote, we win in a landslide’: Trump's message to Republicans ahead of US midterms",
-      "url": "https://www.hindustantimes.com/world-news/us-news/if-our-people-vote-we-win-in-a-landslide-trumps-message-to-republicans-ahead-of-us-midterms-101793686821710.html",
+      "kalla": "ABC News (Australien)",
+      "land": "AU",
+      "rubrik": "Breaking: Two Australians dead after high-speed train crash in Spain",
+      "url": "https://www.abc.net.au/news/2026-11-03/grave-concerns-for-australians-in-spain/107340256",
       "statskontrollerad": false
      },
      {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "US votes today in midterms that could weaken Trump’s hold on Washington",
-      "url": "https://www.dawn.com/news/2041758/us-votes-today-in-midterms-that-could-weaken-trumps-hold-on-washington",
+      "kalla": "The Japan Times",
+      "land": "JP",
+      "rubrik": "Second Japanese national confirmed dead in Spanish train crash",
+      "url": "https://www.japantimes.co.jp/news/2026/11/03/japan/spain-train-crash-japanese-second-victim/",
       "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Spanish authorities identify all 69 victims of train crash, including 2 Japanese nationals",
+      "url": "https://www.straitstimes.com/world/europe/spanish-authorities-identify-all-69-victims-of-train-crash-including-2-japanese-nationals",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "All 69 victims of Spain's Urda train collision identified",
+      "url": "https://news.cgtn.com/news/2026-11-03/news-1RLcKmrtXs4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+      "statskontrollerad": true
      }
     ],
-    "europa": [
+    "norden": [
      {
-      "kalla": "Euractiv",
-      "land": "BE",
-      "rubrik": "US midterms: Brussels shrugs at prospect of Trump defeat",
-      "url": "https://www.rapporteur.com/news/us-midterms-brussels-shrugs-at-prospect-of-trump-defeat/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "US: Trump labels Democrats 'dangerous' ahead of midterms",
-      "url": "https://www.dw.com/en/us-trump-labels-democrats-dangerous-ahead-of-midterms/a-79834945?maca=en-rss-en-all-1573-rdf",
+      "kalla": "NRK",
+      "land": "NO",
+      "rubrik": "Minst 12 utlendinger døde i togulykken i Spania",
+      "url": "https://www.nrk.no/nyheter/minst-12-utlendinger-dode-i-togulykken-i-spania-1.18070859",
       "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": "saknas_i_sverige",
+   "blind_flack": null,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "The US midterms will test the limits of Trump’s power",
+  "reserv_rubrik": "Breaking: Two Australians dead after high-speed train crash in Spain",
   "kallor": [
    {
-    "namn": "Al Jazeera",
-    "rubrik": "The US midterms will test the limits of Trump’s power",
-    "url": "https://www.aljazeera.com/opinions/2026/11/3/the-us-midterms-will-test-the-limits-of-trumps-power?traffic_source=rss",
+    "namn": "ABC News (Australien)",
+    "rubrik": "Breaking: Two Australians dead after high-speed train crash in Spain",
+    "url": "https://www.abc.net.au/news/2026-11-03/grave-concerns-for-australians-in-spain/107340256",
     "betalvagg": false,
     "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "‘If our people vote, we win in a landslide’: Trump's message to Republicans ahead of US midterms",
-    "url": "https://www.hindustantimes.com/world-news/us-news/if-our-people-vote-we-win-in-a-landslide-trumps-message-to-republicans-ahead-of-us-midterms-101793686821710.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
+    "land": "AU",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dawn",
-    "rubrik": "US votes today in midterms that could weaken Trump’s hold on Washington",
-    "url": "https://www.dawn.com/news/2041758/us-votes-today-in-midterms-that-could-weaken-trumps-hold-on-washington",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Euractiv",
-    "rubrik": "US midterms: Brussels shrugs at prospect of Trump defeat",
-    "url": "https://www.rapporteur.com/news/us-midterms-brussels-shrugs-at-prospect-of-trump-defeat/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "BE",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Deutsche Welle",
-    "rubrik": "US: Trump labels Democrats 'dangerous' ahead of midterms",
-    "url": "https://www.dw.com/en/us-trump-labels-democrats-dangerous-ahead-of-midterms/a-79834945?maca=en-rss-en-all-1573-rdf",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The Japan Times",
+    "rubrik": "Second Japanese national confirmed dead in Spanish train crash",
+    "url": "https://www.japantimes.co.jp/news/2026/11/03/japan/spain-train-crash-japanese-second-victim/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "JP",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Spanish authorities identify all 69 victims of train crash, including 2 Japanese nationals",
+    "url": "https://www.straitstimes.com/world/europe/spanish-authorities-identify-all-69-victims-of-train-crash-including-2-japanese-nationals",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NRK",
+    "rubrik": "Minst 12 utlendinger døde i togulykken i Spania",
+    "url": "https://www.nrk.no/nyheter/minst-12-utlendinger-dode-i-togulykken-i-spania-1.18070859",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "NO",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CGTN",
+    "rubrik": "All 69 victims of Spain's Urda train collision identified",
+    "url": "https://news.cgtn.com/news/2026-11-03/news-1RLcKmrtXs4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CN",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 1,
-   "en": 3
+   "sv": 2,
+   "en": 2
   },
-  "autopilot": [
-   "källkontrollen har 1 anmärkningar",
-   "blind fläck"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1793599613.0289958,
   "automatisk": true,
-  "uppdaterad_tid": 1793696950.0343378,
+  "uppdaterad_tid": 1793704152.205713,
   "betydelse": {
-   "sv": "Eftersom demokraterna enligt Dawn kan ta representanthuset och bromsa Trumps politik hänger valet ihop med USA:s handels- och säkerhetspolitik, som påverkar Sverige som EU- och Natomedlem.",
-   "en": "Since Democrats could take the House and stall Trump's agenda, the midterms determine how much of his second-term policy Congress can check, which matters for markets, trade and US institutions.",
+   "sv": null,
+   "en": "Since NRK reports that four of the dead were from the United States, the crash directly concerns American families who may have relatives among the victims, now that all 69 have been identified.",
    "grund": [
-    1,
-    3
+    4
    ],
    "grund_kallor": [
     {
-     "namn": "Al Jazeera",
-     "url": "https://www.aljazeera.com/opinions/2026/11/3/the-us-midterms-will-test-the-limits-of-trumps-power?traffic_source=rss"
-    },
-    {
-     "namn": "Dawn",
-     "url": "https://www.dawn.com/news/2041758/us-votes-today-in-midterms-that-could-weaken-trumps-hold-on-washington"
+     "namn": "NRK",
+     "url": "https://www.nrk.no/nyheter/minst-12-utlendinger-dode-i-togulykken-i-spania-1.18070859"
     }
    ],
    "kontroll": {
     "ok": false,
     "problem": [
-     "ingen koppling: Engelska raden kopplar valet till marknader och handel, vilket varken källmaterialet eller utkastet tar upp."
+     "slutsats: \"Directly concerns American families who may have relatives among the victims\" är en slutsats. Källorna säger att fyra av offren var från USA, men inget material handlar om amerikanska familjer eller anhöriga."
     ]
    },
    "ok": false
