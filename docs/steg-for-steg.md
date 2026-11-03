@@ -58,6 +58,7 @@ Säg till mig när lanseringen är klar, så sätter jag `NN_LANSERAD=1`. Det ta
 Det här är tesen: att AI hittar de olika berättelserna i hur källorna skriver.
 
 1. Öppna ärendet "Utvärdering: berättelserna": github.com/fabsaku/newsnavigator-pipeline/issues/2.
+   Just nu ligger 12 händelser där (så många har både berättelser eller Analys-rad som kontrollen godkänt). Bedöm dem, kör sedan Actions, Utvärdering, `lage = skapa` igen en dag senare: bedömda står kvar och nya fylls på upp till 30.
 2. För varje av de 30 händelserna: läs berättelserna och öppna några av källorna. Bocka EN ruta:
    - **stämmer** om varje berättelse går att spåra till just de källor som anges, och inget sägs om vad en källa utelämnar
    - **missvisar** om en berättelse är fel, vinklad eller inte hör ihop
