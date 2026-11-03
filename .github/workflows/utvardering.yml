@@ -1,0 +1,44 @@
+name: Utvärdering
+
+# B3: ärendet där du bedömer berättelserna, och räkningen. Startas bara av dig.
+#   lage=skapa  skapar eller uppdaterar ärendet "Utvärdering: berättelserna" med 30 händelser (bedömda står kvar)
+#   lage=rakna  räknar dina bockar och säger om berättelserna kan slås på
+on:
+  workflow_dispatch:
+    inputs:
+      lage:
+        description: "skapa eller rakna"
+        default: "skapa"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: utvardering
+  cancel-in-progress: false
+
+jobs:
+  utvardering:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Utvärdering
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LAGE: ${{ github.event.inputs.lage || 'skapa' }}
+        run: python utvardering.py "$LAGE"
+      - name: Spara räkningen
+        if: github.event.inputs.lage == 'rakna'
+        run: |
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/utvardering.json
+          git commit -m "Utvärdering $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
+          git pull --rebase -X theirs origin main && git push

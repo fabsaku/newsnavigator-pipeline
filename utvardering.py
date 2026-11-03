@@ -1,0 +1,178 @@
+#!/usr/bin/env python3
+"""B3: utvärderingen av berättelserna. Ett GitHub-ärende med 30 händelser. Du bockar av om berättelserna stämmer med källorna eller
+missvisar, och räkningen säger hur ofta de stämmer. Först när minst 30 är bedömda och minst 80 procent stämmer rekommenderas
+NN_BERATTELSER=1 (berattelser.py). Inget slås på av sig självt.
+
+  python utvardering.py skapa    väljer 30 händelser med godkända berättelser och skapar eller uppdaterar ärendet
+  python utvardering.py rakna    läser ärendet och skriver data/utvardering.json
+"""
+import json
+import math
+import os
+import re
+import sys
+import time
+import urllib.request
+from pathlib import Path
+
+from newsletter import section_of
+
+ROOT = Path(__file__).parent
+FLODE = ROOT / "data" / "flode.json"
+UT = ROOT / "data" / "utvardering.json"
+LABEL = "utvardering"
+MARK = "<!-- newsnavigator-utvardering -->"
+N = 30
+MAX_ANDEL_SEKTION = 0.4
+TROSKEL_BEDOMDA, TROSKEL_ANDEL = 30, 0.8
+RUTA = re.compile(r"^- \[([ xX])\] .*`(stammer|fel):([0-9a-f]{10})`", re.M)
+BLOCK = re.compile(r"^### \d+\. .*?(?=^### \d+\. |\Z)", re.M | re.S)
+REGIONER = {"sverige": "Sverige", "norden": "Norden", "europa": "Europa", "usa": "USA", "latinamerika": "Latinamerika", "asien": "Asien",
+            "mellanostern": "Mellanöstern", "afrika": "Afrika", "global": "Globalt"}
+LUTNING = {"vanster": "vänster", "lutar_vanster": "lutar vänster", "mitten": "mitten", "lutar_hoger": "lutar höger", "hoger": "höger"}
+
+
+def api(method, path, body=None):
+    repo, token = os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_TOKEN"]
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{repo}{path}", method=method,
+        data=json.dumps(body).encode() if body is not None else None,
+        headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
+                 "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "newsnavigator"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read() or b"null")
+
+
+def valj(events, n=N, max_andel_sektion=MAX_ANDEL_SEKTION):
+    """Händelser vars berättelser källkontrollen godkänt, högsta poäng först, med tak per sektion (släpper om inget annat finns)."""
+    kand = sorted((e for e in events if (e.get("narrativ") or {}).get("ok") and len(e["narrativ"].get("berattelser") or []) >= 2),
+                  key=lambda e: e.get("poang", 0), reverse=True)
+    tak = math.ceil(max_andel_sektion * n)
+    valda, per = [], {}
+    for relaxa in (False, True):
+        for e in kand:
+            if len(valda) >= n:
+                break
+            if e in valda:
+                continue
+            s = section_of(e)
+            if not relaxa and per.get(s, 0) >= tak:
+                continue
+            valda.append(e)
+            per[s] = per.get(s, 0) + 1
+    return valda
+
+
+def _kalla(k):
+    extra = [REGIONER.get(k["region"], k["region"])]
+    if k.get("lutning") in LUTNING:
+        extra.append(f"AllSides: {LUTNING[k['lutning']]}")
+    if k.get("statskontrollerad"):
+        extra.append("statskontrollerad")
+    return f"[{k['namn']}]({k['url']}) ({', '.join(extra)})"
+
+
+def block(i, ev):
+    d = ev.get("utkast") or {}
+    rader = [f"### {i}. {d.get('rubrik_sv') or ev['reserv_rubrik']}", f"Händelse `{ev['id']}`, {ev.get('antal_kallor', '?')} källor", ""]
+    for b in ev["narrativ"]["berattelser"]:
+        rader.append(f"**{b['namn_sv']}.** {b['lyfter_sv']}  ")
+        rader.append(f"Bärs av: {', '.join(_kalla(k) for k in b['kallor'])}")
+        rader.append("")
+    rader += [f"- [ ] Berättelserna stämmer med källorna `stammer:{ev['id']}`", f"- [ ] Berättelserna missvisar `fel:{ev['id']}`", ""]
+    return "\n".join(rader)
+
+
+INTRO = """Utvärdering av berättelserna (B3 i planen). Läs varje händelse, öppna källorna vid behov och bocka i EN ruta:
+**stämmer** om varje berättelse går att spåra till just de källor som anges och inget påstås om vad en källa utelämnar, eller **missvisar** om en berättelse är fel, vinklad eller inte hör ihop. Rör inte rutan om du inte hunnit bedöma.
+Räkningen körs i Actions, Utvärdering, `lage=rakna`. Berättelserna slås på först när minst 30 är bedömda och minst 80 procent stämmer.
+"""
+
+
+def kropp(valda, behallna=()):
+    delar = list(behallna) + [block(i, e) for i, e in enumerate(valda, len(behallna) + 1)]
+    return f"{MARK}\n{INTRO}\n" + "\n".join(delar)
+
+
+def _bockade(body):
+    return {i for ruta, _, i in RUTA.findall(body or "") if ruta in "xX"}
+
+
+def uppdatera_kropp(gammal, nya, n=N):
+    """Bedömda händelser står kvar med sina bockar, resten byts mot dagens bästa."""
+    ratade = _bockade(gammal)
+    kvar = [b for b in BLOCK.findall(gammal or "") if any(f"`stammer:{i}`" in b for i in ratade)]
+    kvar_ids = {i for b in kvar for i in re.findall(r"`stammer:([0-9a-f]{10})`", b)}
+    nya = [e for e in nya if e["id"] not in kvar_ids][:max(0, n - len(kvar))]
+    # numreringen görs om så att den blir löpande
+    kvar = [re.sub(r"^### \d+\.", f"### {i}.", b, count=1) for i, b in enumerate(kvar, 1)]
+    return kropp(nya, kvar)
+
+
+def rakna(body):
+    stammer, fel = {}, {}
+    ids = set()
+    for ruta, vilken, i in RUTA.findall(body or ""):
+        ids.add(i)
+        if ruta in "xX":
+            (stammer if vilken == "stammer" else fel)[i] = True
+    oklara = set(stammer) & set(fel)
+    s, f = set(stammer) - oklara, set(fel) - oklara
+    bedomda = len(s) + len(f)
+    return {"totalt": len(ids), "bedomda": bedomda, "stammer": len(s), "fel": len(f), "oklara": len(oklara),
+            "obedomda": len(ids) - bedomda - len(oklara), "andel_stammer": (len(s) / bedomda) if bedomda else None}
+
+
+def rekommendation(r):
+    if r["bedomda"] < TROSKEL_BEDOMDA:
+        return f"Inte klart: {r['bedomda']} av {TROSKEL_BEDOMDA} bedömda."
+    if r["andel_stammer"] < TROSKEL_ANDEL:
+        return (f"{r['stammer']} av {r['bedomda']} stämmer ({round(100 * r['andel_stammer'])} procent), under {round(100 * TROSKEL_ANDEL)}. "
+                "Berättelserna visas inte. Justera prompten i berattelser.py och utvärdera igen.")
+    return (f"{r['stammer']} av {r['bedomda']} stämmer ({round(100 * r['andel_stammer'])} procent). "
+            "Berättelserna kan slås på: sätt NN_BERATTELSER=1 i pipeline.yml.")
+
+
+def _arende():
+    for i in api("GET", f"/issues?labels={LABEL}&state=open&per_page=5") or []:
+        if MARK in (i.get("body") or ""):
+            return i
+    return None
+
+
+def skapa(events, n=N):
+    valda = valj(events, n)
+    if not valda:
+        print("Inga händelser med godkända berättelser än.")
+        return None
+    arende = _arende()
+    if arende:
+        api("PATCH", f"/issues/{arende['number']}", {"body": uppdatera_kropp(arende["body"], valda, n)})
+        print(f"Uppdaterade ärende {arende['number']}")
+        return arende["number"]
+    ny = api("POST", "/issues", {"title": "Utvärdering: berättelserna", "body": kropp(valda), "labels": [LABEL]})
+    print(f"Skapade ärende {ny['number']}")
+    return ny["number"]
+
+
+def main(argv=None):
+    kommando = (argv or sys.argv[1:] or ["skapa"])[0]
+    if kommando == "skapa":
+        skapa(json.loads(FLODE.read_text(encoding="utf-8"))["handelser"])
+    elif kommando == "rakna":
+        arende = _arende()
+        if not arende:
+            print("Inget utvärderingsärende.")
+            return
+        r = rakna(arende["body"])
+        r["rekommendation"] = rekommendation(r)
+        r["raknad"] = time.time()
+        UT.parent.mkdir(parents=True, exist_ok=True)
+        UT.write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(json.dumps(r, ensure_ascii=False, indent=1))
+    else:
+        sys.exit("skapa eller rakna")
+
+
+if __name__ == "__main__":
+    main()
