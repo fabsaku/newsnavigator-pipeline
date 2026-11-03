@@ -408,7 +408,27 @@ def narratives_block(ev):
             f'<p class="note">{_both("Grupperingen är gjord med hjälp av AI och kontrollerad mot källorna. Varje beskrivning gäller bara vad de namngivna källorna lyfter fram. Vi säger inte vilken berättelse som stämmer.", "The grouping is made with the help of AI and checked against the sources. Each description covers only what the named sources highlight. We do not say which narrative is right.")}</p>')
 
 
-def story_full(ev, internal=False):
+def betydelse_block(ev, lang=None):
+    """Analys-raden (betydelse.py): efter fakta, märkt Analys, tom tills utvärderingen är gjord och NN_BETYDELSE=1, och bara om kontrollen godkänt den.
+    Med `lang` visas bara det språkets rad; utan (den tvåspråkiga förhandsvisningen) visas båda med språkväxlaren."""
+    b = ev.get("betydelse")
+    if os.environ.get("NN_BETYDELSE") != "1" or not b or not b.get("ok"):
+        return ""
+    sv, en = b.get("sv"), b.get("en")
+    if lang == "sv":
+        en = None
+    elif lang == "en":
+        sv = None
+    if not (sv or en):
+        return ""
+    text = (f'<span class="sv">{_e(sv)}</span>' if sv else "") + (f'<span class="en">{_e(en)}</span>' if en else "")
+    rubrik = (f'<span class="sv">Analys</span>' if sv else "") + (f'<span class="en">Analysis</span>' if en else "")
+    note = (f'<span class="sv">Det här är en bedömning, inte en nyhet. Raden är skriven med hjälp av AI, bygger på fakta ovan och kontrollerad mot källorna. Den innehåller inga råd och inga förutsägelser.</span>' if sv else "") + \
+           (f'<span class="en">This is a judgement, not news. The line is written with the help of AI, builds on the facts above and is checked against the sources. It contains no advice and no predictions.</span>' if en else "")
+    return f'<h3 class="section-h">{rubrik}</h3><p class="persp">{text}</p><p class="note">{note}</p>'
+
+
+def story_full(ev, internal=False, lang=None):
     """Hela notisen: notissidan och den interna förhandsvisningen."""
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
@@ -458,6 +478,7 @@ def story_full(ev, internal=False):
         n_issues = len(k.get("problem", []))
         parts.append(f'<p class="check"><b>{_both(f"Källkontroll: {n_issues} anmärkningar.", f"Source check: {n_issues} issues.")}</b> '
                      f'{_e(" ".join(k.get("problem", [])[:4]))}</p>')
+    parts.append(betydelse_block(ev, lang))
     topics = " ".join(ev.get("amnen", []))
     return f'<article class="story single" data-t="{_e(topics)}" id="h-{ev["id"]}">{"".join(parts)}</article>'
 

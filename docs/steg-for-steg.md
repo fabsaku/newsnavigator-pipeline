@@ -36,10 +36,8 @@ Sätt länken i respektive profil (Redigera profil, Länkar):
 - @newsnavigator.se: `https://newsnavigator.se/sv/`
 - @news.navigator: `https://newsnavigator.se/en/`
 
-### 1.5 Tre beslut (svara bara "ja" eller "nej, för att ..." till mig)
-1. 56 idag betyder en lanseringsbatch ur veckan som gått, inte nya notiser. Rekommenderas: ja.
-2. Du bläddrar igenom alla 112 kort en gång innan något postas, cirka 20 minuter. Rekommenderas: ja.
-3. Analys-raden "vad det betyder för dig" får finnas, tydligt märkt Analys. Det ändrar princip 4. Utan ditt ja bygger jag inte det.
+### 1.5 Besluten
+Du har svarat ja på alla tre: lanseringsbatch ur veckan, du bläddrar igenom de 112 korten själv, och Analys-raden får finnas (märkt Analys, visas först efter utvärderingen i del 2). Inget mer att göra här.
 
 ### 1.6 Lanseringen
 Allt här görs i GitHub: Actions (fliken överst), välj workflowen Lansering i listan till vänster, Run workflow.
@@ -64,8 +62,9 @@ Det här är tesen: att AI hittar de olika berättelserna i hur källorna skrive
    - **stämmer** om varje berättelse går att spåra till just de källor som anges, och inget sägs om vad en källa utelämnar
    - **missvisar** om en berättelse är fel, vinklad eller inte hör ihop
    Rör ingen ruta om du inte hunnit.
+   Händelser med en Analys-rad har två egna rutor för raden: stämmer om den följer av fakta och är försiktig (inga råd, inga förutsägelser), missvisar annars.
 3. Actions, Utvärdering, Run workflow, `lage = rakna`. Resultatet står i loggen och i `data/utvardering.json`.
-4. Berättelserna slås på först när minst 30 är bedömda och minst 80 procent stämmer. Säg till mig hur det gick, så justerar jag prompten eller slår på dem.
+4. Berättelserna och Analys-raderna slås på var för sig, först när minst 30 är bedömda och minst 80 procent stämmer. Säg till mig hur det gick, så justerar jag prompten eller slår på dem.
 
 ## Del 3. Säkerhetsnätet (cirka 15 minuter)
 

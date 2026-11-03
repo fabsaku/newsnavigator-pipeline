@@ -25,7 +25,7 @@ MARK = "<!-- newsnavigator-utvardering -->"
 N = 30
 MAX_ANDEL_SEKTION = 0.4
 TROSKEL_BEDOMDA, TROSKEL_ANDEL = 30, 0.8
-RUTA = re.compile(r"^- \[([ xX])\] .*`(stammer|fel):([0-9a-f]{10})`", re.M)
+RUTA = re.compile(r"^- \[([ xX])\] .*`(stammer|fel|bstammer|bfel):([0-9a-f]{10})`", re.M)
 BLOCK = re.compile(r"^### \d+\. .*?(?=^### \d+\. |\Z)", re.M | re.S)
 REGIONER = {"sverige": "Sverige", "norden": "Norden", "europa": "Europa", "usa": "USA", "latinamerika": "Latinamerika", "asien": "Asien",
             "mellanostern": "Mellanöstern", "afrika": "Afrika", "global": "Globalt"}
@@ -43,9 +43,18 @@ def api(method, path, body=None):
         return json.loads(r.read() or b"null")
 
 
+def _har_narrativ(e):
+    return bool((e.get("narrativ") or {}).get("ok") and len(e["narrativ"].get("berattelser") or []) >= 2)
+
+
+def _har_betydelse(e):
+    b = e.get("betydelse") or {}
+    return bool(b.get("ok") and (b.get("sv") or b.get("en")))
+
+
 def valj(events, n=N, max_andel_sektion=MAX_ANDEL_SEKTION):
     """Händelser vars berättelser källkontrollen godkänt, högsta poäng först, med tak per sektion (släpper om inget annat finns)."""
-    kand = sorted((e for e in events if (e.get("narrativ") or {}).get("ok") and len(e["narrativ"].get("berattelser") or []) >= 2),
+    kand = sorted((e for e in events if _har_narrativ(e) or _har_betydelse(e)),
                   key=lambda e: e.get("poang", 0), reverse=True)
     tak = math.ceil(max_andel_sektion * n)
     valda, per = [], {}
@@ -75,17 +84,27 @@ def _kalla(k):
 def block(i, ev):
     d = ev.get("utkast") or {}
     rader = [f"### {i}. {d.get('rubrik_sv') or ev['reserv_rubrik']}", f"Händelse `{ev['id']}`, {ev.get('antal_kallor', '?')} källor", ""]
-    for b in ev["narrativ"]["berattelser"]:
-        rader.append(f"**{b['namn_sv']}.** {b['lyfter_sv']}  ")
-        rader.append(f"Bärs av: {', '.join(_kalla(k) for k in b['kallor'])}")
-        rader.append("")
-    rader += [f"- [ ] Berättelserna stämmer med källorna `stammer:{ev['id']}`", f"- [ ] Berättelserna missvisar `fel:{ev['id']}`", ""]
+    if _har_narrativ(ev):
+        for b in ev["narrativ"]["berattelser"]:
+            rader.append(f"**{b['namn_sv']}.** {b['lyfter_sv']}  ")
+            rader.append(f"Bärs av: {', '.join(_kalla(k) for k in b['kallor'])}")
+            rader.append("")
+        rader += [f"- [ ] Berättelserna stämmer med källorna `stammer:{ev['id']}`", f"- [ ] Berättelserna missvisar `fel:{ev['id']}`", ""]
+    if _har_betydelse(ev):
+        b = ev["betydelse"]
+        for lang, namn in (("sv", "Svenska läsaren"), ("en", "Engelska läsaren")):
+            if b.get(lang):
+                rader.append(f"**Analys, {namn}.** {b[lang]}  ")
+        rader.append(f"Bygger på: {', '.join(f'[{k['namn']}]({k['url']})' for k in b.get('grund_kallor') or [])}")
+        rader += ["", f"- [ ] Analysen stämmer med fakta och är försiktig (inga råd, inga förutsägelser) `bstammer:{ev['id']}`",
+                  f"- [ ] Analysen missvisar, förutsäger eller ger råd `bfel:{ev['id']}`", ""]
     return "\n".join(rader)
 
 
 INTRO = """Utvärdering av berättelserna (B3 i planen). Läs varje händelse, öppna källorna vid behov och bocka i EN ruta:
 **stämmer** om varje berättelse går att spåra till just de källor som anges och inget påstås om vad en källa utelämnar, eller **missvisar** om en berättelse är fel, vinklad eller inte hör ihop. Rör inte rutan om du inte hunnit bedöma.
-Räkningen körs i Actions, Utvärdering, `lage=rakna`. Berättelserna slås på först när minst 30 är bedömda och minst 80 procent stämmer.
+Händelser med en Analys-rad (vad det betyder för läsaren, princip 4) har två egna rutor för raden: **stämmer** om den följer av fakta och är försiktig (inga råd, inga förutsägelser), **missvisar** annars.
+Räkningen körs i Actions, Utvärdering, `lage=rakna`. Berättelserna och Analys-raderna slås på var för sig, först när minst 30 är bedömda och minst 80 procent stämmer.
 """
 
 
@@ -101,36 +120,42 @@ def _bockade(body):
 def uppdatera_kropp(gammal, nya, n=N):
     """Bedömda händelser står kvar med sina bockar, resten byts mot dagens bästa."""
     ratade = _bockade(gammal)
-    kvar = [b for b in BLOCK.findall(gammal or "") if any(f"`stammer:{i}`" in b for i in ratade)]
-    kvar_ids = {i for b in kvar for i in re.findall(r"`stammer:([0-9a-f]{10})`", b)}
+    kvar = [b for b in BLOCK.findall(gammal or "") if any(f"`{k}:{i}`" in b for i in ratade for k in ("stammer", "bstammer"))]
+    kvar_ids = {i for b in kvar for i in re.findall(r"`b?stammer:([0-9a-f]{10})`", b)}
     nya = [e for e in nya if e["id"] not in kvar_ids][:max(0, n - len(kvar))]
     # numreringen görs om så att den blir löpande
     kvar = [re.sub(r"^### \d+\.", f"### {i}.", b, count=1) for i, b in enumerate(kvar, 1)]
     return kropp(nya, kvar)
 
 
-def rakna(body):
-    stammer, fel = {}, {}
-    ids = set()
+def _rakna(body, ja, nej):
+    stammer, fel, ids = set(), set(), set()
     for ruta, vilken, i in RUTA.findall(body or ""):
+        if vilken not in (ja, nej):
+            continue
         ids.add(i)
         if ruta in "xX":
-            (stammer if vilken == "stammer" else fel)[i] = True
-    oklara = set(stammer) & set(fel)
-    s, f = set(stammer) - oklara, set(fel) - oklara
+            (stammer if vilken == ja else fel).add(i)
+    oklara = stammer & fel
+    s, f = stammer - oklara, fel - oklara
     bedomda = len(s) + len(f)
     return {"totalt": len(ids), "bedomda": bedomda, "stammer": len(s), "fel": len(f), "oklara": len(oklara),
             "obedomda": len(ids) - bedomda - len(oklara), "andel_stammer": (len(s) / bedomda) if bedomda else None}
 
 
-def rekommendation(r):
+def rakna(body):
+    """Berättelserna på översta nivån (som förut) och Analys-raderna under "betydelse"."""
+    return {**_rakna(body, "stammer", "fel"), "betydelse": _rakna(body, "bstammer", "bfel")}
+
+
+def rekommendation(r, vad="Berättelserna", flagga="NN_BERATTELSER", fil="berattelser.py"):
     if r["bedomda"] < TROSKEL_BEDOMDA:
         return f"Inte klart: {r['bedomda']} av {TROSKEL_BEDOMDA} bedömda."
     if r["andel_stammer"] < TROSKEL_ANDEL:
         return (f"{r['stammer']} av {r['bedomda']} stämmer ({round(100 * r['andel_stammer'])} procent), under {round(100 * TROSKEL_ANDEL)}. "
-                "Berättelserna visas inte. Justera prompten i berattelser.py och utvärdera igen.")
+                f"{vad} visas inte. Justera prompten i {fil} och utvärdera igen.")
     return (f"{r['stammer']} av {r['bedomda']} stämmer ({round(100 * r['andel_stammer'])} procent). "
-            "Berättelserna kan slås på: sätt NN_BERATTELSER=1 i pipeline.yml.")
+            f"{vad} kan slås på: sätt {flagga}=1 i pipeline.yml.")
 
 
 def _arende():
@@ -166,6 +191,7 @@ def main(argv=None):
             return
         r = rakna(arende["body"])
         r["rekommendation"] = rekommendation(r)
+        r["betydelse"]["rekommendation"] = rekommendation(r["betydelse"], "Analys-raderna", "NN_BETYDELSE", "betydelse.py")
         r["raknad"] = time.time()
         UT.parent.mkdir(parents=True, exist_ok=True)
         UT.write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")

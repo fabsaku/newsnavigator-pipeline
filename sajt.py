@@ -356,7 +356,7 @@ def story_page(u, ev, related, sources, banner, noindex):
         more = (f'<h2 class="more-h">{_both("Fler notiser i", "More in")} {_both(sv, en)}</h2><ul class="list" style="max-width:760px">'
                 + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
     body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span>{upd}</p>'
-            f'{story_full(ev)}'
+            f'{story_full(ev, lang=u.lang)}'
             f'<p class="aiNote">{_ai_note(ev)} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
     return _shell(u, title=f"{title_sv}, Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
                   description=desc_sv[:200], og={"type": "article", "title": title_sv, "description": desc_sv},
@@ -383,9 +383,9 @@ PRINCIPLES = [
     ("Visa oenighet, välj inte sida", "Show disagreement, take no side",
      "När källor beskriver samma händelse olika visar vi det under ”Källorna skiljer sig åt”. Vi väljer inte vilken version som är rätt.",
      "When sources describe the same event differently, we show it under “Sources differ”. We do not choose which version is right."),
-    ("Nyheter och åsikter hålls isär", "News and opinion kept apart",
-     "Allt som innehåller en bedömning märks som Analys eller Spalt, med skribentens namn. Flödet är alltid fritt från åsikter.",
-     "Anything that contains a judgement is marked Analysis or Column, with the writer’s name. The feed is always free of opinion."),
+    ("Nyheter och bedömningar hålls isär", "News and judgement kept apart",
+     "Notisens fakta innehåller aldrig åsikter. En bedömning, till exempel vad en händelse betyder för dig, står i en egen rad märkt Analys, efter fakta, skriven med hjälp av AI och kontrollerad mot källorna. Spalter märks Spalt och har skribentens namn.",
+     "The facts of a story never contain opinion. A judgement, for example what an event means for you, sits in a line of its own marked Analysis, after the facts, written with the help of AI and checked against the sources. Columns are marked Column and carry the writer’s name."),
     ("Primärkällor före andrahandskällor", "Primary sources before secondary ones",
      "Finns det ett beslut, en rapport eller en studie länkar vi till originalet, inte bara till artiklar om det.",
      "If there is a decision, a report or a study, we link to the original, not only to articles about it."),

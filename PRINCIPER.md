@@ -13,8 +13,8 @@ Notiserna beskriver vad som har hänt, vem som säger vad och vad som är känt.
 ## 3. Visa oenighet, välj inte sida
 När källor beskriver samma händelse olika visar vi det, under ”Källorna skiljer sig åt”. Vi väljer inte vilken version som är rätt.
 
-## 4. Nyheter och åsikter hålls isär
-Allt som innehåller en bedömning märks som **Analys** eller **Spalt**, med skribentens namn. Flödet är alltid fritt från åsikter.
+## 4. Nyheter och bedömningar hålls isär
+Notisens fakta innehåller aldrig åsikter. Det som är en bedömning, till exempel vad en händelse betyder för läsaren, står i en egen rad märkt **Analys**, efter fakta och aldrig i rubriken eller sammanfattningen. En Analys-rad skrivs med hjälp av AI, bygger på fakta i notisen och källorna, innehåller inga råd och inga förutsägelser, och kontrolleras av en andra läsning innan den visas. Spalter märks **Spalt** och har skribentens namn. Flödet i övrigt är fritt från åsikter.
 
 ## 5. Primärkällor före andrahandskällor
 Om det finns ett beslut, en rapport eller en studie länkar vi till originalet, inte bara till artiklar om det.

@@ -60,7 +60,8 @@ def test_rakna_stammer_fel_obedomda_och_dubbelbockat():
         rad = next(r for r in kropp.splitlines() if f"`{rutor}:{tag}`" in r)
         kropp = kropp.replace(rad, rad.replace("[ ]", "[x]", 1))
     r = utvardering.rakna(kropp)
-    assert r == {"totalt": 5, "bedomda": 3, "stammer": 2, "fel": 1, "oklara": 1, "obedomda": 1, "andel_stammer": 2 / 3}
+    assert {k: v for k, v in r.items() if k != "betydelse"} == {"totalt": 5, "bedomda": 3, "stammer": 2, "fel": 1, "oklara": 1, "obedomda": 1, "andel_stammer": 2 / 3}
+    assert r["betydelse"]["totalt"] == 0
 
 
 def test_rakna_utan_bedomda_ger_ingen_andel():
@@ -100,3 +101,23 @@ def test_workflow():
     y = yaml.safe_load((Path(__file__).parent.parent / ".github" / "workflows" / "utvardering.yml").read_text(encoding="utf-8"))
     assert set(y[True]["workflow_dispatch"]["inputs"]) >= {"lage"} and "schedule" not in y[True]
     assert y["permissions"]["issues"] == "write" and y["permissions"]["contents"] == "write"
+
+
+def test_analysraden_far_egna_rutor_och_egen_rakning():
+    from test_betydelse import bygg as bygg_bet
+    ev = notis(1, med_narrativ=False)
+    ev["betydelse"] = bygg_bet()
+    kropp = utvardering.kropp(utvardering.valj([ev], 30))
+    assert "Analys, Svenska läsaren." in kropp and "Analys, Engelska läsaren." in kropp
+    assert f"`bstammer:{ev['id']}`" in kropp and f"`bfel:{ev['id']}`" in kropp and f"`stammer:{ev['id']}`" not in kropp
+    rad = next(r for r in kropp.splitlines() if f"`bstammer:{ev['id']}`" in r)
+    r = utvardering.rakna(kropp.replace(rad, rad.replace("[ ]", "[x]", 1)))
+    assert r["betydelse"]["stammer"] == 1 and r["betydelse"]["andel_stammer"] == 1.0 and r["totalt"] == 0
+
+
+def test_underkand_analys_utvarderas_inte():
+    from test_betydelse import bygg as bygg_bet
+    ev = notis(1, med_narrativ=False)
+    ev["betydelse"] = bygg_bet()
+    ev["betydelse"]["ok"] = False
+    assert utvardering.valj([ev], 30) == []

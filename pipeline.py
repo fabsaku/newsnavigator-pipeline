@@ -25,6 +25,7 @@ import feedparser
 import yaml
 
 import berattelser
+import betydelse
 import kallkontroll
 import vikt as vikt_mod
 from prompts import SYSTEM_PROMPT, user_prompt
@@ -34,6 +35,7 @@ NEWSLETTER_ADMIN = re.compile(r"confirm|verify|welcome|subscription|subscribed|s
 CACHE_PATH = ROOT / "data" / "cache.json"
 CACHE_DAYS = 3        # utkast och översättningar som inte setts på tre dagar rensas
 WORKERS = 8           # samtidiga AI-anrop
+BETYDELSE_TOPP = 30   # så många händelser får en Analys-rad per körning (cachas per källuppsättning)
 NARRATIV_TOPP = 30    # så många händelser får berättelser per körning (cachas per källuppsättning)
 KONSEKVENS_TOPP = 80  # så många händelser får en konsekvensbedömning per körning (cachas)
 STOPWORDS = set("""
@@ -610,7 +612,7 @@ def load_cache():
 
 def save_cache(cache):
     limit = time.time() - CACHE_DAYS * 86400
-    for key in ("utkast", "titlar", "konsekvens", "berattelser"):
+    for key in ("utkast", "titlar", "konsekvens", "berattelser", "betydelse"):
         cache[key] = {k: v for k, v in cache.get(key, {}).items() if v.get("sedd", 0) >= limit}
     CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -723,6 +725,16 @@ def main():
         print(f"Berättelser: {sum(1 for n in narrativ.values() if n)} av {len(kandidater)} händelser fick berättelser, "
               f"{sum(1 for n in narrativ.values() if n and n['ok'])} godkända av källkontrollen")
 
+    # Analys-raden (betydelse.py): vad händelsen betyder för svenska och engelska läsaren. Sparas, visas först efter utvärderingen.
+    bet = {}
+    if client:
+        kand = [(c, d) for c, (d, _, _) in zip(chosen, results) if d and not d.get("osaker") and d.get("rubrik_sv")][:BETYDELSE_TOPP]
+        with ThreadPoolExecutor(WORKERS) as pool:
+            for (c, _), b in zip(kand, pool.map(lambda cd: betydelse.bygg(cd[0], cd[1], client, model, reply_text, cache), kand)):
+                bet[c["id"]] = b
+        print(f"Betydelse: {sum(1 for b in bet.values() if b)} av {len(kand)} händelser fick en Analys-rad, "
+              f"{sum(1 for b in bet.values() if b and b['ok'])} godkända av kontrollen")
+
     reused = 0
     for c, (draft, kontroll, from_cache) in zip(chosen, results):
         reused += from_cache
@@ -745,6 +757,7 @@ def main():
             "utkast": draft,
             "kallkontroll": kontroll,
             "narrativ": narrativ.get(c["id"]),
+            "betydelse": bet.get(c["id"]),
             "perspektiv": perspective(c),
             "reserv_rubrik": lead["title"],
             "kallor": [{"namn": i["source_name"], "rubrik": i["title"], "url": i["url"],
