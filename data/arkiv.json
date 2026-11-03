@@ -3875,32 +3875,33 @@
  },
  "1d6269e48d": {
   "id": "1d6269e48d",
-  "amnen": [
-   "varlden"
-  ],
+  "amnen": [],
   "amnen_sektion": [],
-  "poang": 37.7,
+  "poang": 27.6,
   "vikt": {
-   "bredd": 0.418,
+   "bredd": 0.961,
    "regioner": {
+    "latinamerika": 2,
+    "europa": 3,
+    "sverige": 2,
     "norden": 1,
     "asien": 2
    },
-   "timmar": 90,
+   "timmar": 4,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
-    "varaktighet": 5,
-    "medel": 5.0,
-    "skal": "Olyckan i Urda kostade 69 människor livet, berör flera länder och är oåterkallelig för de anhöriga."
+    "varaktighet": 4,
+    "medel": 4.67,
+    "skal": "En tågolycka i Spanien med 69 döda och över 180 skadade, med offer från flera länder, och en minister som avgår."
    },
-   "bekraftad": true,
-   "maste": false
+   "bekraftad": false,
+   "maste": true
   },
-  "maste": false,
-  "antal_kallor": 3,
+  "maste": true,
+  "antal_kallor": 10,
   "har_primarkalla": false,
-  "senast": "2026-11-03T19:38:56+00:00",
+  "senast": "2026-11-03T21:02:08+00:00",
   "utkast": {
    "rubrik_sv": "69 döda i tågolyckan i Spanien, bland dem tolv utländska medborgare",
    "sammanfattning_sv": "Enligt spanska myndigheter, uppgivet av The Guardian, omkom 69 personer i tågolyckan den 28 oktober, varav 54 spanjorer. Bland de omkomna finns tolv utländska medborgare, däribland fyra från USA enligt flera källor.",
@@ -4048,9 +4049,67 @@
   "perspektiv": {
    "regioner": [
     "asien",
-    "norden"
+    "europa",
+    "latinamerika",
+    "norden",
+    "sverige"
    ],
    "per_region": {
+    "latinamerika": [
+     {
+      "kalla": "El País América",
+      "land": "ES",
+      "rubrik": "Última hora del accidente de trenes de Urda, en Toledo, en directo | Óscar Puente dimite: “Un ministro no puede continuar en su puesto con un accidente de este tipo”",
+      "url": "https://elpais.com/espana/2026-11-03/ultima-hora-del-accidente-de-trenes-de-urda-en-toledo-en-directo.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "Renuncia el ministro de Transportes de España, Óscar Puente, tras el grave accidente de dos trenes que causó 69 muertos y más de 180 heridos",
+      "url": "https://www.eltiempo.com/mundo/europa/renuncia-el-ministro-espanol-de-transportes-tras-el-grave-accidente-ferroviario-que-causo-69-muertos-y-mas-de-180-heridos-3598198",
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Spanish transport minister resigns days after deadly train crash",
+      "url": "https://www.bbc.co.uk/news/articles/c6wydqd4yxdyo?at_medium=RSS&at_campaign=rss",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Spain's transport minister offers his resignation after last week's deadly train crash",
+      "url": "https://www.dw.com/en/spain-s-transport-minister-offers-his-resignation-after-last-week-s-deadly-train-crash/a-79848097?maca=en-rss-en-all-1573-rdf",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "Two Australians confirmed dead in Spain’s high-speed train crash",
+      "url": "https://www.theguardian.com/world/2026/nov/04/two-australians-dead-in-spain-high-speed-train-crash-ntwnfb",
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Spaniens transportminister avgår",
+      "url": "https://www.sverigesradio.se/artikel/9333983",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dagens industri",
+      "land": "SE",
+      "rubrik": "Efter tågolyckorna: Minister avgår",
+      "url": "https://www.di.se/nyheter/efter-tagolyckorna-minister-avgar/",
+      "statskontrollerad": false
+     }
+    ],
     "norden": [
      {
       "kalla": "DR Nyheder",
@@ -4081,8 +4140,74 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Togdriften på spansk strækning reduceres efter ulykke",
+  "reserv_rubrik": "Última hora del accidente de trenes de Urda, en Toledo, en directo | Óscar Puente dimite: “Un ministro no puede continuar en su puesto con un accidente de este tipo”",
   "kallor": [
+   {
+    "namn": "El País América",
+    "rubrik": "Última hora del accidente de trenes de Urda, en Toledo, en directo | Óscar Puente dimite: “Un ministro no puede continuar en su puesto con un accidente de este tipo”",
+    "url": "https://elpais.com/espana/2026-11-03/ultima-hora-del-accidente-de-trenes-de-urda-en-toledo-en-directo.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ES",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "BBC World",
+    "rubrik": "Spanish transport minister resigns days after deadly train crash",
+    "url": "https://www.bbc.co.uk/news/articles/c6wydqd4yxdyo?at_medium=RSS&at_campaign=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "El Tiempo",
+    "rubrik": "Renuncia el ministro de Transportes de España, Óscar Puente, tras el grave accidente de dos trenes que causó 69 muertos y más de 180 heridos",
+    "url": "https://www.eltiempo.com/mundo/europa/renuncia-el-ministro-espanol-de-transportes-tras-el-grave-accidente-ferroviario-que-causo-69-muertos-y-mas-de-180-heridos-3598198",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CO",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Deutsche Welle",
+    "rubrik": "Spain's transport minister offers his resignation after last week's deadly train crash",
+    "url": "https://www.dw.com/en/spain-s-transport-minister-offers-his-resignation-after-last-week-s-deadly-train-crash/a-79848097?maca=en-rss-en-all-1573-rdf",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DE",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "Two Australians confirmed dead in Spain’s high-speed train crash",
+    "url": "https://www.theguardian.com/world/2026/nov/04/two-australians-dead-in-spain-high-speed-train-crash-ntwnfb",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Sveriges Radio Ekot",
+    "rubrik": "Spaniens transportminister avgår",
+    "url": "https://www.sverigesradio.se/artikel/9333983",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "DR Nyheder",
     "rubrik": "Togdriften på spansk strækning reduceres efter ulykke",
@@ -4106,6 +4231,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Dagens industri",
+    "rubrik": "Efter tågolyckorna: Minister avgår",
+    "url": "https://www.di.se/nyheter/efter-tagolyckorna-minister-avgar/",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "CGTN",
     "rubrik": "All 69 victims of Spain's Urda train collision identified",
     "url": "https://news.cgtn.com/news/2026-11-03/news-1RLcKmrtXs4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
@@ -4119,16 +4255,16 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
-   "en": 1
+   "sv": 3,
+   "en": 2
   },
   "autopilot": [
-   "färre än tre oberoende källor (2)"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793599613.0289958,
   "automatisk": true,
-  "uppdaterad_tid": 1793736457.0452232,
+  "uppdaterad_tid": 1793740130.7597728,
   "betydelse": null
  },
  "ec45c60899": {
