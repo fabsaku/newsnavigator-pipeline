@@ -4313,15 +4313,15 @@
    "geopolitik",
    "usa"
   ],
-  "poang": 39.3,
+  "poang": 37.2,
   "vikt": {
-   "bredd": 0.853,
+   "bredd": 0.841,
    "regioner": {
+    "asien": 4,
     "usa": 3,
     "europa": 2,
-    "sverige": 3,
-    "mellanostern": 2,
-    "asien": 3
+    "sverige": 2,
+    "mellanostern": 2
    },
    "timmar": 96,
    "konsekvens": {
@@ -4329,15 +4329,15 @@
     "allvar": 5,
     "varaktighet": 3,
     "medel": 4.0,
-    "skal": "USA medlar i planerade fredssamtal mellan Ryssland och Ukraina i Abu Dhabi, vilket rör ett pågående krig med stora konsekvenser för liv och säkerhet, men utfallet är ännu osäkert."
+    "skal": "Krigssamtal mellan USA, Ryssland och Ukraina kan påverka liv i ett krig, men det är ännu bara en planerad förhandling med osäkert utfall."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": true
   },
   "maste": true,
   "antal_kallor": 13,
   "har_primarkalla": false,
-  "senast": "2026-11-03T04:09:02+00:00",
+  "senast": "2026-11-03T06:50:12+00:00",
   "utkast": {
    "rubrik_sv": "USA ska medla i samtal mellan Ryssland och Ukraina i Abu Dhabi 10 och 11 november",
    "sammanfattning_sv": "USA:s sändebud Steve Witkoff uppger att delegationer från USA, Ryssland och Ukraina ska träffas i Abu Dhabi 10 och 11 november. Enligt honom ska samtalen handla om säkerhetsarrangemang efter kriget, nedtrappning och humanitära insatser.",
@@ -4499,7 +4499,155 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Säkerhet och nedtrappning",
+     "namn_en": "Security and de-escalation",
+     "lyfter_sv": "Fox News och Sveriges Radio Ekot lyfter fram säkerhetsarrangemang och nedtrappning, Ekot även humanitära insatser efter kriget, Al-Monitor säkerhetsavtal efter kriget och Hindustan Times säkerhetsgarantier.",
+     "lyfter_en": "Fox News and Sveriges Radio Ekot highlight security arrangements and de-escalation, Ekot also humanitarian efforts after the war, Al-Monitor post-war security agreements and Hindustan Times security guarantees.",
+     "kallor": [
+      {
+       "namn": "Fox News",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://www.foxnews.com/world/us-mediate-upcoming-ukraine-russia-talks-abu-dhabi-witkoff-says"
+      },
+      {
+       "namn": "Sveriges Radio Ekot",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.sverigesradio.se/artikel/9333225"
+      },
+      {
+       "namn": "Al-Monitor",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.al-monitor.com/originals/2026/11/us-mediate-trilateral-talks-ukraine-russia-abu-dhabi-next-week-us-envoy-says"
+      },
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/trilateral-talks-between-us-russia-and-ukraine-to-take-place-in-abu-dhabi-after-midterms-us-official-101793662452366.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern",
+      "sverige",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Genombrott före vintern",
+     "namn_en": "Breakthrough before winter",
+     "lyfter_sv": "CNA lyfter fram att USA:s förhandlare söker ett genombrott före vintern, Axios att ett genombrott eftersträvas och att diplomatin som pausades i februari återupptas.",
+     "lyfter_en": "CNA highlights US negotiators seeking a breakthrough before winter, Axios a breakthrough on a deal and a restart of diplomacy paused in February.",
+     "kallor": [
+      {
+       "namn": "CNA",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.channelnewsasia.com/world/russia-ukraine-us-trilateral-talks-6516046"
+      },
+      {
+       "namn": "Axios",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "antal": 8,
+    "problem": [
+     "saknar stöd: Ekot lyfter fram humanitära insatser efter kriget"
+    ],
+    "pastaenden": [
+     {
+      "text": "USA ska medla i samtal mellan Ukraina och Ryssland i Abu Dhabi nästa vecka",
+      "stod": [
+       2,
+       5,
+       7,
+       9,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News lyfter fram säkerhetsarrangemang och nedtrappning",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ekot lyfter fram säkerhetsarrangemang och nedtrappning",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ekot lyfter fram humanitära insatser efter kriget",
+      "stod": [
+       6
+      ],
+      "problem": "saknar stöd"
+     },
+     {
+      "text": "Al-Monitor lyfter fram säkerhetsavtal efter kriget",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times lyfter fram säkerhetsgarantier",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNA lyfter fram att USA:s förhandlare söker ett genombrott före vintern",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios säger att ett genombrott eftersträvas och att diplomatin som pausades i februari återupptas",
+      "stod": [
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Ekots källa nämner 'efter kriget' endast i samband med säkerhetsarrangemang, inte med humanitära insatser, så tidsangivelsen 'efter kriget' i utkastets beskrivning av Ekot saknar stöd."
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
     "asien",
@@ -4509,6 +4657,36 @@
     "usa"
    ],
    "per_region": {
+    "asien": [
+     {
+      "kalla": "CNA",
+      "land": "SG",
+      "rubrik": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
+      "url": "https://www.channelnewsasia.com/world/russia-ukraine-us-trilateral-talks-6516046",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Trilateral talks among US, Russia and Ukraine to take place in Abu Dhabi after midterms: US official",
+      "url": "https://www.hindustantimes.com/world-news/trilateral-talks-between-us-russia-and-ukraine-to-take-place-in-abu-dhabi-after-midterms-us-official-101793662452366.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, says US envoy",
+      "url": "https://www.straitstimes.com/world/united-states/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "US to host trilateral talks with Russia, Ukraine next week in UAE",
+      "url": "https://news.cgtn.com/news/2026-11-03/news-1RLdcyocydO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+      "statskontrollerad": true
+     }
+    ],
     "usa": [
      {
       "kalla": "The Hill",
@@ -4562,13 +4740,6 @@
       "rubrik": "Witkoff: Samtal Ryssland-Ukraina nästa vecka",
       "url": "https://www.svt.se/nyheter/utrikes/witkoff-samtal-ryssland-ukraina-nasta-vecka",
       "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens industri",
-      "land": "SE",
-      "rubrik": "Samtal mellan Ryssland och Ukraina nästa vecka",
-      "url": "https://www.di.se/nyheter/samtal-mellan-ryssland-och-ukraina-nasta-vecka/",
-      "statskontrollerad": false
      }
     ],
     "mellanostern": [
@@ -4584,29 +4755,6 @@
       "land": "AE",
       "rubrik": "Russia-Ukraine talks to take place in Abu Dhabi this month, US says",
       "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/",
-      "statskontrollerad": true
-     }
-    ],
-    "asien": [
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Trilateral talks among US, Russia and Ukraine to take place in Abu Dhabi after midterms: US official",
-      "url": "https://www.hindustantimes.com/world-news/trilateral-talks-between-us-russia-and-ukraine-to-take-place-in-abu-dhabi-after-midterms-us-official-101793662452366.html",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, says US envoy",
-      "url": "https://www.straitstimes.com/world/united-states/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CGTN",
-      "land": "CN",
-      "rubrik": "US to host trilateral talks with Russia, Ukraine next week in UAE",
-      "url": "https://news.cgtn.com/news/2026-11-03/news-1RLdcyocydO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
       "statskontrollerad": true
      }
     ]
@@ -4640,12 +4788,34 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "US to mediate Ukraine-Russia talks in Abu Dhabi next week, Witkoff says",
+  "reserv_rubrik": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
   "kallor": [
+   {
+    "namn": "CNA",
+    "rubrik": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
+    "url": "https://www.channelnewsasia.com/world/russia-ukraine-us-trilateral-talks-6516046",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Hill",
     "rubrik": "US to mediate Ukraine-Russia talks in Abu Dhabi next week, Witkoff says",
     "url": "https://thehill.com/policy/international/6190973-witkoff-announces-abu-dhabi-peace-negotiations/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Axios",
+    "rubrik": "U.S., Russia and Ukraine to resume peace talks in Abu Dhabi next week, Witkoff says",
+    "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner",
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -4661,17 +4831,6 @@
     "typ": "media",
     "land": "BE",
     "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Axios",
-    "rubrik": "U.S., Russia and Ukraine to resume peace talks in Abu Dhabi next week, Witkoff says",
-    "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -4742,17 +4901,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dagens industri",
-    "rubrik": "Samtal mellan Ryssland och Ukraina nästa vecka",
-    "url": "https://www.di.se/nyheter/samtal-mellan-ryssland-och-ukraina-nasta-vecka/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "RT",
     "rubrik": "Trump envoy announces new US-Russia-Ukraine talks",
     "url": "https://rt-english.com/news/648261-witkoff-russia-ukraine-talks/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
@@ -4791,12 +4939,38 @@
    "sv": 3,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793671679.46269,
   "automatisk": true,
-  "uppdaterad_tid": 1793680834.6016595,
-  "betydelse": null
+  "uppdaterad_tid": 1793689455.5755477,
+  "betydelse": {
+   "sv": "Eftersom samtalen ska handla om säkerhetsarrangemang efter kriget berör de också den europeiska säkerhetsordning som Sverige ingår i genom EU och Nato.",
+   "en": null,
+   "grund": [
+    6,
+    7
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Sveriges Radio Ekot",
+     "url": "https://www.sverigesradio.se/artikel/9333225"
+    },
+    {
+     "namn": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/11/us-mediate-trilateral-talks-ukraine-russia-abu-dhabi-next-week-us-envoy-says"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "ingen koppling: Kopplingen till Sveriges europeiska säkerhetsordning saknar stöd i källorna, som bara nämner säkerhetsarrangemang efter kriget mellan USA, Ryssland och Ukraina. Det är en långsökt koppling som lägger till en slutsats om vad samtalen berör."
+    ]
+   },
+   "ok": false
+  }
  },
  "95a2409fb6": {
   "id": "95a2409fb6",
