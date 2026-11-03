@@ -149,7 +149,7 @@ Det här kan bara du göra. Det som står överst spärrar mest. Spår A0 i plan
 2. **Tre beslut** (längst ned i planen): lanseringsbatch ur veckan, en genomgång av de 112 korten, och Analys-raden.
 3. **Morgonrapporten (fas 5).** Resend-konto, API-nyckel med "Sending access", secrets `RESEND_API_KEY` och `RAPPORT_TILL`. Prova med Actions, Rapport, Run workflow, "torrt".
 4. **Klockan, tre minuter.** Nya `klocka/worker.js` i Cloudflare-Workern (Edit code, Deploy), så startar klockan rapporten kl 07.00 och vakthunden varje timme.
-5. **Utvärdera berättelserna (B3, cirka 20 minuter).** Actions, Utvärdering, Run workflow, `lage=skapa`. Öppna ärendet "Utvärdering: berättelserna" under Issues, bocka stämmer eller missvisar för varje händelse, kör sedan `lage=rakna`. Det avgör om berättelserna, tesen, får visas.
+5. **Utvärdera berättelserna (B3, cirka 20 minuter).** Ärendet "Utvärdering: berättelserna" (nummer 2, under Issues) finns redan med 30 händelser. Bocka stämmer eller missvisar för varje händelse, kör sedan Actions, Utvärdering, Run workflow, `lage=rakna`. Det avgör om berättelserna, tesen, får visas.
 6. **Panelen (spår C).** GitHub-nyckeln i Pages-projektet `redaktionen` och Access med din adress.
 
 ## Tesen och utgåvorna
