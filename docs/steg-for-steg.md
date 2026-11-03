@@ -1,0 +1,91 @@
+# Steg för steg: allt du behöver göra
+
+Gör delarna i ordning. Del 1 och 2 spärrar mest. Del 3 och 4 går att göra när du har tio minuter över. Allt du klickar i står med den exakta menyn. Metas gränssnitt flyttas ibland, så om en knapp heter något annat: leta efter den som liknar.
+
+Du behöver aldrig klistra in något secret i chatten. Det går bara in i GitHubs secrets.
+
+## Del 1. Instagram (kritisk väg, cirka en timme första gången)
+
+### 1.1 Kontona
+1. Öppna Instagram på telefonen, logga in på @newsnavigator.se.
+2. Profil, menyn uppe till höger, Inställningar och aktivitet, Kontotyp och verktyg, Byt till professionellt konto. Välj Företag eller Skapare. Kontot ska vara publikt.
+3. Gör samma sak för @news.navigator (växla konto längst ned i inställningarna).
+
+### 1.2 Meta-appen
+1. Gå till developers.facebook.com och logga in med ett Facebookkonto (skapa ett om du saknar). Godkänn utvecklarvillkoren.
+2. Min appar, Skapa app. Namn: Newsnavigator. Välj användningsfall som innehåller Instagram och publicering av innehåll (typ Business om den frågar).
+3. I appens vänstermeny, Produkter eller Användningsfall: lägg till Instagram och öppna "API setup with Instagram login".
+4. Under "Generate access tokens", klicka "Add account" och logga in på @newsnavigator.se. Godkänn att appen får publicera innehåll.
+5. Du får nu ett konto-id (siffror) och en knapp som skapar en token. Skapa token. Kopiera båda till en anteckning på din dator, inte till något molnverktyg.
+6. Upprepa 4 och 5 för @news.navigator.
+7. Om Meta säger att kontot måste vara tester först: Appens vänstermeny, App roles, Roles, lägg till Instagram-testare med respektive kontonamn. Sedan i Instagram-appen: Inställningar, Appar och webbplatser, Testarinbjudningar, acceptera. Gör sedan om steg 4.
+
+Du behöver inte appens secret just nu. Koden använder den inte än.
+
+### 1.3 Lägg in secrets i GitHub
+1. github.com/fabsaku/newsnavigator-pipeline, Settings, Secrets and variables, Actions, New repository secret.
+2. Skapa fyra secrets, ett i taget, med exakt dessa namn:
+   - `IG_USER_ID` = konto-id för @newsnavigator.se
+   - `IG_ACCESS_TOKEN` = token för @newsnavigator.se
+   - `IG_USER_ID_EN` = konto-id för @news.navigator
+   - `IG_ACCESS_TOKEN_EN` = token för @news.navigator
+3. Radera anteckningen med token när du är klar.
+
+### 1.4 Bio-länkar
+Sätt länken i respektive profil (Redigera profil, Länkar):
+- @newsnavigator.se: `https://newsnavigator.se/sv/`
+- @news.navigator: `https://newsnavigator.se/en/`
+
+### 1.5 Tre beslut (svara bara "ja" eller "nej, för att ..." till mig)
+1. 56 idag betyder en lanseringsbatch ur veckan som gått, inte nya notiser. Rekommenderas: ja.
+2. Du bläddrar igenom alla 112 kort en gång innan något postas, cirka 20 minuter. Rekommenderas: ja.
+3. Analys-raden "vad det betyder för dig" får finnas, tydligt märkt Analys. Det ändrar princip 4. Utan ditt ja bygger jag inte det.
+
+### 1.6 Lanseringen
+Allt här görs i GitHub: Actions (fliken överst), välj workflowen Lansering i listan till vänster, Run workflow.
+
+1. **Välj.** `lage = valj`, `konto = alla`, `torrt = true`. Vänta ett par minuter tills den är grön. Då har 56 inlägg per konto valts och korten byggts om med dagens material.
+2. **Bläddra.** Öppna `https://newsnavigator.se/lansering/sv.html` och `https://newsnavigator.se/lansering/en.html`. Varje inlägg har ett löpnummer. Inlägg märkta "Kräver din genomgång" gäller påståendet "saknas i svenska medier": kontrollera mot källorna. Skriv upp löpnumren du vill stryka.
+3. **Godkänn.** `lage = godkann`, `konto = alla`, `uteslut` = löpnumren du strök, kommaseparerade (till exempel `3,17`), eller tomt. Det är här batchen blir granskad, så gör det först när du faktiskt har tittat.
+4. **Prov.** `lage = posta`, `konto = sv`, `antal = 1`, `torrt = false`. Kolla att inlägget syns på @newsnavigator.se, att bilderna är rätt och att länken i texten öppnar en sida. Gör samma sak med `konto = en`.
+5. **Kör alla.** Först när proven ser bra ut: `lage = posta`, `konto = sv`, `antal = 56`, `intervall = 8`, `torrt = false`. Starta sedan en egen körning för `konto = en` med samma värden. De går parallellt. Ett inlägg var åttonde minut tar cirka 7,5 timmar per konto, och körningen lämnar över till en ny av sig själv. Du behöver inte sitta kvar.
+6. **Stoppa.** Sätt `tyst` till sant i `data/autopilot.json` (eller säg till mig i chatten). Körningen stoppar före nästa inlägg. Avbryt också gärna körningen under Actions.
+
+Om något ser fel ut efter provet: skriv till mig innan du går vidare.
+
+### 1.7 Öppna för sökmotorer (först efter lyckad lansering)
+Säg till mig när lanseringen är klar, så sätter jag `NN_LANSERAD=1`. Det tar bort noindex och skapar sitemap.
+
+## Del 2. Utvärdera berättelserna (cirka 20 minuter, kan göras direkt)
+Det här är tesen: att AI hittar de olika berättelserna i hur källorna skriver.
+
+1. Öppna ärendet "Utvärdering: berättelserna": github.com/fabsaku/newsnavigator-pipeline/issues/2.
+2. För varje av de 30 händelserna: läs berättelserna och öppna några av källorna. Bocka EN ruta:
+   - **stämmer** om varje berättelse går att spåra till just de källor som anges, och inget sägs om vad en källa utelämnar
+   - **missvisar** om en berättelse är fel, vinklad eller inte hör ihop
+   Rör ingen ruta om du inte hunnit.
+3. Actions, Utvärdering, Run workflow, `lage = rakna`. Resultatet står i loggen och i `data/utvardering.json`.
+4. Berättelserna slås på först när minst 30 är bedömda och minst 80 procent stämmer. Säg till mig hur det gick, så justerar jag prompten eller slår på dem.
+
+## Del 3. Säkerhetsnätet (cirka 15 minuter)
+
+### 3.1 Morgonrapporten kl 07.00
+1. resend.com, skapa konto med din e-postadress.
+2. API Keys, Create API Key, behörighet Sending access. Kopiera nyckeln.
+3. GitHub, samma ställe som ovan, två nya secrets:
+   - `RESEND_API_KEY` = nyckeln
+   - `RAPPORT_TILL` = din e-postadress (samma som Resend-kontot, annars når inte mejlet fram med testavsändaren)
+4. Actions, Rapport, Run workflow, `torrt = true`. Den visar mejlet i loggen utan att skicka. Kör sedan en gång med `torrt = false` och kolla inkorgen.
+
+### 3.2 Klockan (tre minuter)
+Workern finns redan. Den behöver bara den nya koden så att den också startar rapporten.
+1. Öppna filen `klocka/worker.js` i repot på GitHub, klicka Raw, markera allt och kopiera.
+2. Cloudflare, Workers & Pages, `newsnavigator-klocka`, Edit code. Ta bort allt och klistra in det kopierade. Deploy.
+3. Öppna Workerns adress. Sidan ska visa `"token": true`.
+
+## Del 4. Panelen (vänta)
+Panelen (inkorg, planering) är inte byggd än. Gör inget här nu. Jag bygger den, och först då behöver du lägga en GitHub-nyckel i Cloudflare Pages och sätta upp Access med din adress. Jag säger till.
+
+## Underhåll som syns i Behöver dig
+- Källor som gett 404 eller 403 (Ny Teknik, Finansinspektionen, NATO, Fed, IMF och några till) behöver nya flödesadresser. Det går att pröva i Actions, Källprov, men jag gör det när jag har dina beslut klara.
+- Instagram-tokens förnyas av sig själva varje måndag när secrets finns. Om Behöver dig säger att Meta bytt token: skapa ett nytt i Meta (steg 1.2.4 och 1.2.5) och uppdatera secreten.
