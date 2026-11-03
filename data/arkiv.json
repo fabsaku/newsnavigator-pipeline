@@ -4325,11 +4325,11 @@
    },
    "timmar": 96,
    "konsekvens": {
-    "berorda": 4,
-    "allvar": 5,
+    "berorda": 5,
+    "allvar": 4,
     "varaktighet": 3,
     "medel": 4.0,
-    "skal": "Krigssamtal mellan USA, Ryssland och Ukraina kan påverka liv i ett krig, men det är ännu bara en planerad förhandling med osäkert utfall."
+    "skal": "USA medlar trepartssamtal om kriget i Ukraina i Abu Dhabi, vilket rör tre länder men är ännu bara ett planerat förhandlingsmöte utan beslut."
    },
    "bekraftad": false,
    "maste": true
@@ -4502,10 +4502,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Säkerhet och nedtrappning",
-     "namn_en": "Security and de-escalation",
-     "lyfter_sv": "Fox News och Sveriges Radio Ekot lyfter fram säkerhetsarrangemang och nedtrappning, Ekot även humanitära insatser efter kriget, Al-Monitor säkerhetsavtal efter kriget och Hindustan Times säkerhetsgarantier.",
-     "lyfter_en": "Fox News and Sveriges Radio Ekot highlight security arrangements and de-escalation, Ekot also humanitarian efforts after the war, Al-Monitor post-war security agreements and Hindustan Times security guarantees.",
+     "namn_sv": "Förhandlingarnas fokus på säkerhet och nedtrappning",
+     "namn_en": "Talks focus on security and de-escalation",
+     "lyfter_sv": "Fox News lyfter fram säkerhetsarrangemang och nedtrappning, Ekot säkerhetsarrangemang efter kriget och nedtrappning, Al-Monitor säkerhetsavtal efter kriget och nedtrappning och Hindustan Times säkerhetsgarantier och nedtrappning.",
+     "lyfter_en": "Fox News highlights security arrangements and de-escalation, Ekot post-war security arrangements and de-escalation, Al-Monitor post-war security agreements and de-escalation, and Hindustan Times security guarantees and de-escalation.",
      "kallor": [
       {
        "namn": "Fox News",
@@ -4547,10 +4547,10 @@
      ]
     },
     {
-     "namn_sv": "Genombrott före vintern",
-     "namn_en": "Breakthrough before winter",
-     "lyfter_sv": "CNA lyfter fram att USA:s förhandlare söker ett genombrott före vintern, Axios att ett genombrott eftersträvas och att diplomatin som pausades i februari återupptas.",
-     "lyfter_en": "CNA highlights US negotiators seeking a breakthrough before winter, Axios a breakthrough on a deal and a restart of diplomacy paused in February.",
+     "namn_sv": "Återupptagen diplomati efter paus",
+     "namn_en": "Resuming diplomacy after a pause",
+     "lyfter_sv": "Axios lyfter fram att samtalen ska återuppta en diplomatisk process som pausades i februari på grund av kriget i Iran, och CNA lyfter fram att förhandlarna söker ett genombrott innan vintern.",
+     "lyfter_en": "Axios highlights that the talks will restart a diplomatic process paused in February due to the war in Iran, and CNA highlights that negotiators are seeking a breakthrough before winter.",
      "kallor": [
       {
        "namn": "CNA",
@@ -4577,18 +4577,17 @@
     }
    ],
    "kontroll": {
-    "ok": false,
-    "antal": 8,
-    "problem": [
-     "saknar stöd: Ekot lyfter fram humanitära insatser efter kriget"
-    ],
+    "ok": true,
+    "antal": 7,
+    "problem": [],
     "pastaenden": [
      {
-      "text": "USA ska medla i samtal mellan Ukraina och Ryssland i Abu Dhabi nästa vecka",
+      "text": "USA medlar samtal mellan Ukraina och Ryssland i Abu Dhabi nästa vecka",
       "stod": [
+       1,
        2,
        5,
-       7,
+       6,
        9,
        13
       ],
@@ -4602,51 +4601,44 @@
       "problem": null
      },
      {
-      "text": "Ekot lyfter fram säkerhetsarrangemang och nedtrappning",
+      "text": "Ekot lyfter fram säkerhetsarrangemang efter kriget och nedtrappning",
       "stod": [
        6
       ],
       "problem": null
      },
      {
-      "text": "Ekot lyfter fram humanitära insatser efter kriget",
-      "stod": [
-       6
-      ],
-      "problem": "saknar stöd"
-     },
-     {
-      "text": "Al-Monitor lyfter fram säkerhetsavtal efter kriget",
+      "text": "Al-Monitor lyfter fram säkerhetsavtal efter kriget och nedtrappning",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times lyfter fram säkerhetsgarantier",
+      "text": "Hindustan Times lyfter fram säkerhetsgarantier och nedtrappning",
       "stod": [
        8
       ],
       "problem": null
      },
      {
-      "text": "CNA lyfter fram att USA:s förhandlare söker ett genombrott före vintern",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Axios säger att ett genombrott eftersträvas och att diplomatin som pausades i februari återupptas",
+      "text": "Axios: samtalen ska återuppta en diplomatisk process som pausades i februari på grund av kriget i Iran",
       "stod": [
        3
       ],
       "problem": null
+     },
+     {
+      "text": "CNA: förhandlarna söker ett genombrott innan vintern",
+      "stod": [
+       1
+      ],
+      "problem": null
      }
     ],
-    "sammanfattning": "Ekots källa nämner 'efter kriget' endast i samband med säkerhetsarrangemang, inte med humanitära insatser, så tidsangivelsen 'efter kriget' i utkastets beskrivning av Ekot saknar stöd."
+    "sammanfattning": null
    },
-   "ok": false
+   "ok": true
   },
   "perspektiv": {
    "regioner": [
@@ -4945,13 +4937,14 @@
   "data": null,
   "godkand_tid": 1793671679.46269,
   "automatisk": true,
-  "uppdaterad_tid": 1793689455.5755477,
+  "uppdaterad_tid": 1793689823.9707208,
   "betydelse": {
-   "sv": "Eftersom samtalen ska handla om säkerhetsarrangemang efter kriget berör de också den europeiska säkerhetsordning som Sverige ingår i genom EU och Nato.",
-   "en": null,
+   "sv": "Eftersom samtalen i Abu Dhabi den 10 och 11 november ska handla om säkerhetsarrangemang efter kriget hänger de ihop med säkerheten i Europa, även för Sverige som medlem i EU och Nato.",
+   "en": "Since the US is mediating talks on post-war security arrangements, the outcome bears on American diplomatic commitments and on European security, where NATO allies share exposure.",
    "grund": [
     6,
-    7
+    7,
+    9
    ],
    "grund_kallor": [
     {
@@ -4961,15 +4954,17 @@
     {
      "namn": "Al-Monitor",
      "url": "https://www.al-monitor.com/originals/2026/11/us-mediate-trilateral-talks-ukraine-russia-abu-dhabi-next-week-us-envoy-says"
+    },
+    {
+     "namn": "SVT Nyheter",
+     "url": "https://www.svt.se/nyheter/utrikes/witkoff-samtal-ryssland-ukraina-nasta-vecka"
     }
    ],
    "kontroll": {
-    "ok": false,
-    "problem": [
-     "ingen koppling: Kopplingen till Sveriges europeiska säkerhetsordning saknar stöd i källorna, som bara nämner säkerhetsarrangemang efter kriget mellan USA, Ryssland och Ukraina. Det är en långsökt koppling som lägger till en slutsats om vad samtalen berör."
-    ]
+    "ok": true,
+    "problem": []
    },
-   "ok": false
+   "ok": true
   }
  },
  "95a2409fb6": {
