@@ -170,6 +170,12 @@ def _instagram(lage, now):
                 dag = f"{utgar.day} {MANADER[utgar.month - 1]}"
                 ut.append(rad("token", f"Instagram-token för {handtag} {'gick ut' if dagar < 0 else 'går ut'} {dag}", "Förnya",
                               allvarlig=dagar <= TOKEN_ALLVARLIG_DAGAR, id=f"token:{lang}"))
+        if s.get("token_bytt"):
+            ut.append(rad("token", f"Meta gav {handtag} ett nytt token: skapa det i Meta och lägg det i secrets", f"Uppdatera IG_ACCESS_TOKEN{suffix}",
+                          allvarlig=True, id=f"token:{lang}"))
+        elif s.get("token_fel"):
+            ut.append(rad("token", f"Förnyelsen av Instagram-token för {handtag} misslyckades ({s['token_fel']})", "Skapa ett nytt token i Meta",
+                          allvarlig=False, id=f"token:{lang}"))
         if s.get("secrets") is False and s.get("vantar", 0) > 0:
             ut.append(rad("instagram", f"{handtag} postar inget: secrets saknas, {s['vantar']} kort väntar",
                           f"Lägg in IG_USER_ID{suffix} och IG_ACCESS_TOKEN{suffix} i repots secrets", id=f"instagram:{lang}"))

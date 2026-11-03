@@ -190,7 +190,7 @@ Mål idag: sajten fungerar som två utgåvor och båda Instagramkontona har mins
 
 **Spår C: säkerhetsnät och panel (fas 5 och 6 ovan).** Resend-kontot, nya `klocka/worker.js`, panelen med Access. Oförändrat, men lägre prioritet än A.
 
-**Spår D: Instagram i drift.** Automatisk förnyelse av båda tokens (60 dagar) med `IG_APP_SECRET`, `content_publishing_limit` i `Behöver dig`, och att taket för automatiska notiser höjs efter 4 november.
+**Spår D: Instagram i drift.** Automatisk förnyelse av båda tokens (60 dagar) med `IG_APP_SECRET`, `content_publishing_limit` i `Behöver dig`, och att taket för automatiska notiser höjs efter 4 november. **Förnyelsen byggd 3 november (`igtoken.py`, workflow Instagram-token, måndagar 04.17 UTC):** förlänger varje kontos token hos Meta med 60 dagar, sparar utgångsdatum i `data/instagram/status-<språk>.json` så att Behöver dig varnar (före bara läsning, ingen skrev datumet) och markerar `token_bytt` om Meta svarar med ett annat token än det vi har. Repots secrets kan Actions inte skriva utan en särskild nyckel, så i det fallet ber Behöver dig dig lägga in det nya. Ej verifierad mot Instagram förrän secrets finns. Taket höjs av sig självt 4 november (en vecka efter autopilotens start). Kvar: `content_publishing_limit` per konto i Behöver dig, när secrets finns.
 
 **Beslut från dig, i den här ordningen:**
 1. 56 idag tolkas som lanseringsbatch ur veckan som gått, inte nya notiser (rekommenderas).

@@ -1,0 +1,38 @@
+name: Instagram-token
+
+# Förnyar båda kontonas token (60 dagar) och sparar när de går ut, så att Behöver dig varnar i tid. Postar inget.
+on:
+  schedule:
+    - cron: "17 4 * * 1"    # måndagar
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: newsnavigator
+  cancel-in-progress: false
+
+jobs:
+  forny:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Förnya
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN_EN: ${{ secrets.IG_ACCESS_TOKEN_EN }}
+        run: python igtoken.py
+      - name: Spara status
+        run: |
+          git config user.name "newsnavigator-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/instagram
+          git commit -m "Instagram-token $(date -u +%Y-%m-%dT%H:%M)" || echo "Inget nytt"
+          git pull --rebase -X theirs origin main && git push
