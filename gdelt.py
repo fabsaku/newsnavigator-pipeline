@@ -114,7 +114,8 @@ def main(argv):
             continue
         per[r["utlatande"]] += 1
         rubrik = (ev.get("utkast") or {}).get("rubrik_en") or ev["reserv_rubrik"]
-        print(f"{r['utlatande']:<9} {len(r['svenska_domaner'])} dom. | {rubrik[:70]} | {r['fraga'] or r['fel']}" + (f" | {', '.join(r['svenska_domaner'][:4])}" if r["svenska_domaner"] else ""))
+        print(f"{r['utlatande']:<9} {len(r['svenska_domaner'])} dom. | {rubrik[:70]} | {r['fraga']}" + (f" | FEL {r['fel']}" if r["fel"] else "")
+              + (f" | {', '.join(r['svenska_domaner'][:4])}" if r["svenska_domaner"] else ""))
     print(f"\n{sum(per.values())} händelser som påstås saknas i svenska medier: GDELT stöder {per['stoder']}, motsäger {per['motsager']}, oklart {per['oklart']}.")
 
 

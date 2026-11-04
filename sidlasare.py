@@ -9,6 +9,7 @@ I feeds.yaml:
   - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm", hamtning: sida, lankar: "^/cps/en/natohq/news_\\d+\\.htm", ...}
     lankar     reguljärt uttryck som en länks sökväg ska matcha för att räknas som en nyhet (krävs)
     bas        adress som relativa länkar utgår från (standard: url)
+    utan_fraga true tar bort ?parametrar ur länkarna (till exempel ?selectedLocale=)
     rendera    true för sidor som ritar sin lista med JavaScript: hämtas med webbläsare (Playwright), efter robots.txt-kontrollen
     min_tecken kortaste rubrik (standard 20), max_antal flest länkar (standard 40)
 
@@ -85,7 +86,7 @@ def _rubrik(text):
     return ren or text
 
 
-def lankar(html, bas, monster, min_tecken=MIN_TECKEN, max_antal=MAX_ANTAL):
+def lankar(html, bas, monster, min_tecken=MIN_TECKEN, max_antal=MAX_ANTAL, utan_fraga=False):
     """[(rubrik, länk)] för länkar på samma webbplats vars sökväg matchar `monster`, i sidans ordning, en per länk."""
     if not monster:
         return []
@@ -97,6 +98,8 @@ def lankar(html, bas, monster, min_tecken=MIN_TECKEN, max_antal=MAX_ANTAL):
         if not href or len(hel) < min_tecken:
             continue
         url = urldefrag(urljoin(bas, href))[0]
+        if utan_fraga:
+            url = url.split("?", 1)[0]
         delar = urlsplit(url)
         if delar.scheme not in ("http", "https") or delar.netloc.removeprefix("www.") != host:
             continue
@@ -222,7 +225,7 @@ def som_flode(s, nu=None):
             html = (_rendera if s.get("rendera") else _sida)(url)
     except Exception as e:
         return None, None, str(e)[:160]
-    rubriker = lankar(html, s.get("bas") or url, s.get("lankar"), s.get("min_tecken", MIN_TECKEN), s.get("max_antal", MAX_ANTAL))
+    rubriker = lankar(html, s.get("bas") or url, s.get("lankar"), s.get("min_tecken", MIN_TECKEN), s.get("max_antal", MAX_ANTAL), s.get("utan_fraga", False))
     if not rubriker:
         return None, None, "inga rubriker hittades på sidan (kontrollera mönstret under lankar)"
     state = _las_state()

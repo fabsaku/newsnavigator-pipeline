@@ -329,3 +329,23 @@ def test_prova_sida_med_rendera(monkeypatch, capsys):
     kallprov.prova_sida("https://www.exempel.se/nyheter/", MONSTER, rendera=True)
     ut = capsys.readouterr().out
     assert "renderar med webbläsare" in ut and "7 rubriker" in ut
+
+
+def test_utan_fraga_tar_bort_sokfragan_ur_lankarna():
+    html = '<a href="/nyheter/2026/11/a-lang-nyhetsrubrik-om-nagot/?selectedLocale=en">En ganska lång nyhetsrubrik om något</a>'
+    assert sidlasare.lankar(html, BAS, MONSTER)[0][1].endswith("?selectedLocale=en")
+    assert sidlasare.lankar(html, BAS, MONSTER, utan_fraga=True)[0][1] == "https://www.exempel.se/nyheter/2026/11/a-lang-nyhetsrubrik-om-nagot/"
+
+
+def test_utan_fraga_gar_att_satta_i_kallan():
+    feed, _, _ = sidlasare.som_flode(kalla(utan_fraga=True), nu=1.0)
+    assert all("?" not in e["link"] for e in feed.entries)
+
+
+def test_nato_ar_med_och_renderas():
+    import yaml
+    s = {x["id"]: x for x in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
+    assert s["nato"]["hamtning"] == "sida" and s["nato"]["rendera"] is True and s["nato"]["utan_fraga"] is True
+    import re
+    assert re.search(s["nato"]["lankar"], "/en/news-and-events/articles/news/2026/11/04/allies-discuss-the-importance-of-the-nato-innovation-fund")
+    assert not re.search(s["nato"]["lankar"], "/en/news-and-events/press-office/media-accreditation-procedures-at-nato")

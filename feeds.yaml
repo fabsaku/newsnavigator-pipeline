@@ -43,7 +43,7 @@ sources:
   # Utesluten 4 november 2026, utgivaren tillåter inte oss: Euractiv (robots.txt: Disallow /feed/).
   - {id: ecb, namn: Europeiska centralbanken, url: "https://www.ecb.europa.eu/rss/press.html", amnen: [marknader, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
   - {id: esa, namn: ESA, url: "https://www.esa.int/rssfeed/Our_Activities", amnen: [rymd, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
-  - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm?rss", alternativ: ["https://www.nato.int/cps/rss/en/natohq/rssFeed.xml", "https://www.nato.int/rss/news.xml", "https://www.nato.int/cps/rss/en/natohq/rssFeed.xsl/rssFeed.xml"], amnen: [forsvar, geopolitik], sprak: en, typ: primar, betalvagg: false, land: INT, region: europa, agare: organisation, statskontrollerad: false}
+  - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm", hamtning: sida, rendera: true, utan_fraga: true, lankar: "^/en/news-and-events/articles/news/\\d{4}/", amnen: [forsvar, geopolitik], sprak: en, typ: primar, betalvagg: false, land: INT, region: europa, agare: organisation, statskontrollerad: false}
 
   # ---------- USA, över det politiska spektrumet ----------
   - {id: nyt, namn: The New York Times, url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"]}
