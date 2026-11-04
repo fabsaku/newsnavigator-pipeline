@@ -44,10 +44,6 @@ GRAPH = os.environ.get("IG_GRAPH", "https://graph.instagram.com").rstrip("/")
 TZ = ZoneInfo("Europe/Stockholm")
 MONTHS = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"]
 MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-HASHTAGS = {"sv": {"varlden": "#omvärlden #utrikes", "sverige": "#sverige #inrikes", "marknader": "#ekonomi #marknader #börsen",
-                   "tech": "#teknik #ai", "vetenskap": "#vetenskap #forskning", "noje": "#nöje #spel #kultur"},
-            "en": {"varlden": "#worldnews #global", "sverige": "#sweden #nordics", "marknader": "#markets #economy",
-                   "tech": "#tech #ai", "vetenskap": "#science #research", "noje": "#entertainment #gaming #culture"}}
 SPRAK = {"sv": 0, "en": 1}      # plats i render.REGIONS, LEANS och country, som är (svenska, engelska)
 TXT = {
     "sv": {"swipe": "Nästa sida: så ser världen på det", "world": "Så ser världen på det",
@@ -350,15 +346,13 @@ def slides(ev, banner="", max_slides=3, lang="sv"):
 
 
 def caption(ev, lang="sv"):
+    """Kort och sakligt, som text-tv: rubrik, sammanfattning, om källorna skiljer sig åt, källor, länk och hur notisen granskats.
+    Inga slogans, hashtaggar eller uppmaningar. Perspektiven står på korten och på notissidan."""
     d = ev.get("utkast") or {}
-    p = ev.get("perspektiv") or {}
-    sec = section_of(ev)
     sv = lang == "sv"
     parts = [d.get(f"rubrik_{lang}") or ev["reserv_rubrik"], ""]
     if d.get(f"sammanfattning_{lang}"):
         parts += [d[f"sammanfattning_{lang}"], ""]
-    if d.get(f"perspektiv_{lang}") and len(p.get("regioner", [])) >= 2:
-        parts += [("Så ser världen på det: " if sv else "How the world sees it: ") + d[f"perspektiv_{lang}"], ""]
     if d.get("oenighet" if sv else "oenighet_en"):
         parts += [("Källorna skiljer sig åt: " if sv else "Sources differ: ") + d["oenighet" if sv else "oenighet_en"], ""]
     stat = " (statskontrollerat)" if sv else " (state-controlled)"
@@ -366,15 +360,8 @@ def caption(ev, lang="sv"):
     more = f" och {len(ev['kallor']) - 8} till" if sv else f" and {len(ev['kallor']) - 8} more"
     parts += [("Källor: " if sv else "Sources: ") + ", ".join(names) + (more if len(ev["kallor"]) > 8 else ""), ""]
     parts += [("Hela notisen med alla länkar: " if sv else "Full story with all links: ") + notis_url(lang, ev["id"]), ""]
-    if sv and d.get("rubrik_en"):
-        parts += ["In English: " + d["rubrik_en"], ""]
-    slut = ("Vi levererar nyheterna. Vad du gör av dem är upp till dig." if sv
-            else "We deliver the news. What you do with it is up to you.")
-    tags = "#nyheter #newsnavigator" if sv else "#news #newsnavigator"
-    ending = "#sammanhang #källor" if sv else "#context #sources"
-    parts += [_ai_line(ev, lang) + " " + slut, "", f"{tags} {HASHTAGS[lang].get(sec, '')} {ending}".replace("  ", " ").strip()]
-    text = "\n".join(parts)
-    return text[:2190]
+    parts += [_ai_line(ev, lang)]
+    return "\n".join(parts)[:2190]
 
 
 def notis_url(lang, eid):

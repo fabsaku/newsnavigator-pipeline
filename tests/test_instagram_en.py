@@ -113,19 +113,31 @@ def test_karusellen_pa_engelska():
 
 # ---------- Caption ----------
 
-def test_caption_pa_engelska():
+def test_caption_pa_engelska_ar_kort_och_sakligt():
     cap = instagram.caption(handelse(), lang="en")
     assert cap.splitlines()[0] == "Train crash in Spain"
-    assert "At least 60 dead." in cap and "How the world sees it: European sources focus on the rescue effort." in cap
-    assert "Sources differ: The death toll varies." in cap
+    assert "At least 60 dead." in cap and "Sources differ: The death toll varies." in cap
     assert "Sources: BBC, NPR, SCMP" in cap and "/en/n/aaaaaaaaaa/" in cap
-    assert "We deliver the news. What you do with it is up to you." in cap and "#news #newsnavigator" in cap
     assert "In English:" not in cap and "Källor" not in cap and len(cap) <= 2200
 
 
-def test_caption_pa_svenska_har_kvar_engelsk_rubrik_och_svensk_lank():
+def test_caption_pa_svenska_ar_kort_och_sakligt():
     cap = instagram.caption(handelse())
-    assert "In English: Train crash in Spain" in cap and "Källor: BBC, NPR, SCMP" in cap and "/sv/n/aaaaaaaaaa/" in cap
+    assert "Källor: BBC, NPR, SCMP" in cap and "/sv/n/aaaaaaaaaa/" in cap and "In English" not in cap
+
+
+def test_bildtexten_har_inga_slogans_eller_hashtaggar():
+    """Text-tv: kort, tätt och att lita på. Inget trams."""
+    for lang in ("sv", "en"):
+        cap = instagram.caption(handelse(), lang=lang)
+        assert "#" not in cap and "Vi levererar" not in cap and "We deliver" not in cap
+        assert "How the world sees it" not in cap and "Så ser världen" not in cap      # perspektiven står på korten och sidan
+        assert len([r for r in cap.splitlines() if r.strip()]) <= 6
+
+
+def test_bildtexten_sager_hur_notisen_granskats():
+    assert "granskad av redaktionen" in instagram.caption(handelse())
+    assert "reviewed by the editors" in instagram.caption(handelse(), lang="en")
 
 
 # ---------- Vad varje konto får ----------

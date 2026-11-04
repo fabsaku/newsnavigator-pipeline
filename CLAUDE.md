@@ -4,7 +4,7 @@ Läs först: `README.md`, `PRINCIPER.md`, och för driftpanelen `docs/redaktione
 
 ## Regler
 - Gränssnitt och texter på svenska (och engelska där sajten är tvåspråkig). Inga tankstreck (—) i texter. Han/hon, inte hen.
-- Positionering: en modern global text-tv. Kort, tätt, faktabaserat, rubrik och källor först, sidor som nästa sida. Inga uppmaningar i kort, bildtexter eller brev: aldrig dela, följa, spara, gilla, svepa eller prenumerera (testas i `tests/test_instagram_en.py`).
+- Positionering: en modern global text-tv i Sverige-bemärkelsen: kortfattat, utan trams, och något man kan lita på. Rubrik, fakta och källor först; inga slogans, hashtaggar eller utfyllnad. Inga uppmaningar i kort, bildtexter eller brev: aldrig dela, följa, spara, gilla, svepa eller prenumerera (testas i `tests/test_instagram_en.py`). Varje notis säger öppet hur den granskats.
 - Formen kommer från `render.py`: svartvitt, Source Serif 4 och Source Sans 3, ingen monospace, inga versaletiketter.
 - Återge aldrig källornas text, bara rubrik och länk. Inget innehåll bakom betalväggar. Respektera källor som blockerar bottar.
 - Secrets (API-nycklar, tokens) skrivs aldrig i kod, filer eller chatt. Fabian lägger dem själv i GitHub och Cloudflare.
