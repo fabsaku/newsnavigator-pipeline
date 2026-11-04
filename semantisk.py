@@ -15,6 +15,9 @@ import sys
 TAU = 0.60                # mätt: precision 0,98 och recall 0,95 på de handmärkta rubrikerna (regler ensamma: 0,98 och 0,875)
 MIN_DELADE = 2
 PAIR_RATE = 0.25
+BEVAKNING_TAU = 0.55       # svensk täckning hos närliggande händelser räknas med lättare mått än sammanslagning: ett uteblivet
+BEVAKNING_DELADE = 1       # "saknas i svenska medier" kostar mindre än ett felaktigt
+BEVAKNING_MIN = 2
 MODELL = "paraphrase-multilingual-MiniLM-L12-v2"
 
 
@@ -54,11 +57,9 @@ def sla_ihop(clusters, kodare=None, tau=TAU, min_delade=MIN_DELADE, pair_rate=PA
         return clusters
     forslag = [(i, j) for i, j in _par(vek, tau)
                if flat[i][0]["source_id"] != flat[j][0]["source_id"] and len(flat[i][1] & flat[j][1]) >= min_delade]
-    if not forslag:
-        return clusters
     kl = list(clusters)
     antal_ihop = 0
-    while pair_rate <= 1.0:
+    while forslag and pair_rate <= 1.0:
         hem = {id(it): n for n, c in enumerate(kl) for it in c["items"]}
         traffar = {}
         for i, j in forslag:
@@ -87,7 +88,9 @@ def sla_ihop(clusters, kodare=None, tau=TAU, min_delade=MIN_DELADE, pair_rate=PA
             break
         if not gjort:
             break
-    markerade = _markera_svensk_bevakning(kl, flat, forslag)
+    lattare = [(i, j) for i, j in _par(vek, BEVAKNING_TAU)
+               if flat[i][0]["source_id"] != flat[j][0]["source_id"] and len(flat[i][1] & flat[j][1]) >= BEVAKNING_DELADE]
+    markerade = _markera_svensk_bevakning(kl, flat, lattare)
     if antal_ihop or markerade:
         print(f"Hybridklustringen: {antal_ihop} sammanslagningar ({len(clusters)} kluster blev {len(kl)}), {markerade} händelser utan svensk källa har svensk täckning hos närliggande händelser.")
     return kl
@@ -95,7 +98,7 @@ def sla_ihop(clusters, kodare=None, tau=TAU, min_delade=MIN_DELADE, pair_rate=PA
 
 def _markera_svensk_bevakning(kl, flat, forslag):
     """En händelse utan svensk källa, vars rubriker till stor del liknar rubriker i en annan händelse som har en svensk källa, har svensk täckning:
-    "saknas i svenska medier" vore fel (stora händelser delas i delhändelser). Kräver minst två av dess rubriker och minst hälften av dem."""
+    "saknas i svenska medier" vore fel (stora händelser delas i delhändelser). Kräver minst BEVAKNING_MIN av dess rubriker."""
     hem = {id(it): n for n, c in enumerate(kl) for it in c["items"]}
     har_svensk = [any(it.get("region") == "sverige" for it in c["items"]) for c in kl]
     traffade = {}
@@ -108,7 +111,7 @@ def _markera_svensk_bevakning(kl, flat, forslag):
                 traffade.setdefault(x, set()).add(id(it))
     antal = 0
     for x, ids in traffade.items():
-        if len(ids) >= max(2, (len(kl[x]["items"]) + 1) // 2):
+        if len(ids) >= BEVAKNING_MIN:
             kl[x]["svensk_bevakning"] = True
             antal += 1
     return antal
