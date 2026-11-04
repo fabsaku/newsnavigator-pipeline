@@ -34,6 +34,8 @@ def kallstatus(sources, nu=None):
             ts = e.get("published_parsed") or e.get("updated_parsed")
             if ts:
                 newest = max(newest or 0, calendar.timegm(ts))
+            if e.get("senast_sedd"):         # sidkällor: när länken sågs (sidlasare.py), annars är en nyss tillagd källa "tyst sedan 1970"
+                newest = max(newest or 0, e["senast_sedd"])
         if not entries:
             status = "fel"
         elif newest is not None and nu - newest > TYST_DAGAR * 86400:

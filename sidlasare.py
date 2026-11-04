@@ -146,6 +146,9 @@ def _las_state():
             _state = json.loads(STATE.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             _state = {}
+        for kalla, v in list(_state.items()):
+            if "lankar" not in v:                       # äldre format: bara länkarna
+                _state[kalla] = {"start": time.time(), "lankar": v}
     return _state
 
 
@@ -176,8 +179,8 @@ def spara(nu=None):
     if not state:
         return
     for kalla, urls in _sedda.items():
-        state[kalla] = {u: t for u, t in state.get(kalla, {}).items()
-                        if u in urls or (t > 0 and t >= nu - BEHALL_DAGAR * 86400)}
+        state[kalla]["lankar"] = {u: t for u, t in state[kalla]["lankar"].items()
+                                  if u in urls or (t > 0 and t >= nu - BEHALL_DAGAR * 86400)}
     STATE.parent.mkdir(parents=True, exist_ok=True)
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
@@ -201,10 +204,12 @@ def som_flode(s, nu=None):
         return None, None, "inga rubriker hittades på sidan (kontrollera mönstret under lankar)"
     state = _las_state()
     forsta_gangen = s["id"] not in state
-    kalla = state.setdefault(s["id"], {})
+    post = state.setdefault(s["id"], {"start": nu, "lankar": {}})
+    kalla = post["lankar"]
     _sedda[s["id"]] = {u for _, u in rubriker}
     poster = []
     for titel, lank in rubriker:
         kalla.setdefault(lank, 0.0 if forsta_gangen else nu)       # det som redan stod där första gången räknas som gammalt
-        poster.append({"title": titel, "link": lank, "published_parsed": time.gmtime(kalla[lank])})
+        # senast_sedd: när länken dök upp, eller när vi började läsa källan om den stod där från början (för källstatus, inte för åldern)
+        poster.append({"title": titel, "link": lank, "published_parsed": time.gmtime(kalla[lank]), "senast_sedd": kalla[lank] or post["start"]})
     return SimpleNamespace(entries=poster), url, None

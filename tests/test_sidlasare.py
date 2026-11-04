@@ -71,7 +71,7 @@ def test_forsta_korningen_markerar_det_som_star_pa_sidan_som_gammalt():
 def test_ny_lank_far_tiden_den_sags_och_gamla_behaller_sin():
     s = kalla()
     sidlasare.som_flode(s, nu=1_000_000.0)
-    del sidlasare._state["fi"]["https://www.exempel.se/nyheter/2026/11/ny-tillsynsrapport/"]       # som om länken dök upp efteråt
+    del sidlasare._state["fi"]["lankar"]["https://www.exempel.se/nyheter/2026/11/ny-tillsynsrapport/"]       # som om länken dök upp efteråt
     feed, _, _ = sidlasare.som_flode(s, nu=1_003_600.0)
     ny = next(e for e in feed.entries if e["link"].endswith("ny-tillsynsrapport/"))
     gammal = next(e for e in feed.entries if e["link"].endswith("gammalt-beslut/"))
@@ -82,11 +82,11 @@ def test_ny_lank_far_tiden_den_sags_och_gamla_behaller_sin():
 def test_tillstandet_sparas_och_rensas_pa_gamla_lankar():
     s = kalla()
     sidlasare.som_flode(s, nu=1_000_000.0)
-    sidlasare._state["fi"]["https://gammal.se/borta"] = 1_000_000.0 - 40 * 86400
+    sidlasare._state["fi"]["lankar"]["https://gammal.se/borta"] = 1_000_000.0 - 40 * 86400
     sidlasare.spara(nu=1_000_000.0)
     sidlasare._state = None
     sidlasare.som_flode(s, nu=1_000_100.0)
-    assert "https://gammal.se/borta" not in sidlasare._state["fi"]
+    assert "https://gammal.se/borta" not in sidlasare._state["fi"]["lankar"]
 
 
 # ---------- Respekt för utgivaren ----------
@@ -230,3 +230,37 @@ def test_monstret_gar_att_skriva_utan_avslutande_snedstreck():
 def test_datum_forst_i_rubriken_tas_bort(text, rubrik):
     lank = sidlasare.lankar(f'<a href="/nyheter/2026/a/">{text}</a>', BAS, MONSTER)
     assert lank == [(rubrik, "https://www.exempel.se/nyheter/2026/a/")]
+
+
+# ---------- Källstatus: en nyss tillagd sidkälla är inte tyst ----------
+
+def test_fro_ar_inte_tystnad_kallstatus_raknar_fran_att_vi_borjade_lasa():
+    import calendar
+    import verify_feeds
+    rad = verify_feeds.kallstatus([kalla()], nu=1_000_100.0)["kallor"][0]
+    assert rad["status"] == "ok" and rad["artiklar"] == 7 and rad["senaste"] is not None and not rad["senaste"].startswith("1970")
+
+
+def test_sidkalla_utan_nya_lankar_blir_tyst_forst_efter_tystnadsgransen():
+    import verify_feeds
+    s = kalla()
+    sidlasare.som_flode(s, nu=1_000_000.0)                # börjar läsas
+    sent = 1_000_000.0 + (verify_feeds.TYST_DAGAR + 1) * 86400
+    assert verify_feeds.kallstatus([s], nu=1_000_000.0 + 3600)["kallor"][0]["status"] == "ok"
+    assert verify_feeds.kallstatus([s], nu=sent)["kallor"][0]["status"] == "tyst"
+
+
+def test_ny_lank_nollstaller_tystnaden():
+    import verify_feeds
+    s = kalla()
+    sidlasare.som_flode(s, nu=1_000_000.0)
+    sent = 1_000_000.0 + (verify_feeds.TYST_DAGAR + 5) * 86400
+    del sidlasare._state["fi"]["lankar"]["https://www.exempel.se/nyheter/2026/11/ny-tillsynsrapport/"]
+    assert verify_feeds.kallstatus([s], nu=sent)["kallor"][0]["status"] == "ok"      # ny länk sedd precis nu
+
+
+def test_gammalt_tillstandsformat_flyttas_over():
+    sidlasare.STATE.write_text('{"fi": {"https://www.exempel.se/nyheter/2026/10/gammalt-beslut/": 0.0}}', encoding="utf-8")
+    sidlasare._state = None
+    state = sidlasare._las_state()
+    assert "lankar" in state["fi"] and state["fi"]["lankar"]["https://www.exempel.se/nyheter/2026/10/gammalt-beslut/"] == 0.0 and state["fi"]["start"] > 0
