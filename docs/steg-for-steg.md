@@ -87,5 +87,5 @@ Workern finns redan. Den behöver bara den nya koden så att den också startar 
 Panelen (inkorg, planering) är inte byggd än. Gör inget här nu. Jag bygger den, och först då behöver du lägga en GitHub-nyckel i Cloudflare Pages och sätta upp Access med din adress. Jag säger till.
 
 ## Underhåll som syns i Behöver dig
-- Källor som gett 404 eller 403 (Ny Teknik, Finansinspektionen, NATO, Fed, IMF och några till) behöver nya flödesadresser. Det går att pröva i Actions, Källprov, men jag gör det när jag har dina beslut klara.
+- Källor som gett 404 eller 403 (NATO, Mail & Guardian, Anthropic, Meta AI och några till) behöver nya flödesadresser. Det går att pröva i Actions, Källprov, men jag gör det när jag har dina beslut klara.
 - Instagram-tokens förnyas av sig själva varje måndag när secrets finns. Om Behöver dig säger att Meta bytt token: skapa ett nytt i Meta (steg 1.2.4 och 1.2.5) och uppdatera secreten.

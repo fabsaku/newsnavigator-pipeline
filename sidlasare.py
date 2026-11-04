@@ -173,9 +173,15 @@ def oversikt(html, bas, min_tecken=MIN_TECKEN):
     return dict(sorted(antal.items(), key=lambda kv: -kv[1]))
 
 
-def spara(nu=None):
+def spara(nu=None, aktiva=None):
+    """Sparar tillståndet. `aktiva`: id för de sidkällor som finns i feeds.yaml; tillstånd för borttagna eller uteslutna källor rensas."""
     nu = time.time() if nu is None else nu
     state = _las_state()
+    if aktiva is not None:
+        for gammal in [k for k in state if k not in aktiva]:
+            del state[gammal]
+        for k in [k for k in _sedda if k not in aktiva]:
+            del _sedda[k]
     if not state:
         return
     for kalla, urls in _sedda.items():

@@ -18,7 +18,7 @@ sources:
   - {id: dn, namn: Dagens Nyheter, url: "https://www.dn.se/rss/", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: di, namn: Dagens industri, url: "https://www.di.se/rss", amnen: [marknader, sverige], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: breakit, namn: Breakit, url: "https://www.breakit.se/feed/artiklar", amnen: [startups, teknik], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
-  - {id: nyteknik, namn: Ny Teknik, url: "https://www.nyteknik.se/", hamtning: sida, lankar: "^/[a-z-]+/[a-z0-9-]{25,}/\\d+$", bara_rubrik: true, amnen: [teknik, sverige], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
+  # Utesluten 4 november 2026 på Fabians beslut: Ny Teknik (betalvägg, och stänger ute AI-botar i robots.txt).
   - {id: yle, namn: Yle News, url: "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS", alternativ: ["https://yle.fi/rss/uutiset/news"], amnen: [norden, varlden], sprak: en, typ: media, betalvagg: false, land: FI, region: norden, agare: public-service, statskontrollerad: false}
   - {id: nrk, namn: NRK, url: "https://www.nrk.no/toppsaker.rss", amnen: [norden, varlden], sprak: no, typ: media, betalvagg: false, land: "NO", region: norden, agare: public-service, statskontrollerad: false}
 

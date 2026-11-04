@@ -201,7 +201,7 @@ def test_spara_skriver_ingen_fil_utan_tillstand(tillstand):
 def test_pipelinen_sparar_tillstandet_efter_hamtningen():
     import inspect
     main = inspect.getsource(pipeline.main)
-    assert "sidlasare.spara()" in main and main.index("fetch(sources") < main.index("sidlasare.spara()")
+    assert "sidlasare.spara(" in main and main.index("fetch(sources") < main.index("sidlasare.spara(")
 
 
 def test_rubrikelementet_i_kortet_ar_rubriken_och_ingress_och_datum_far_vara_kvar_i_texten():
@@ -264,3 +264,23 @@ def test_gammalt_tillstandsformat_flyttas_over():
     sidlasare._state = None
     state = sidlasare._las_state()
     assert "lankar" in state["fi"] and state["fi"]["lankar"]["https://www.exempel.se/nyheter/2026/10/gammalt-beslut/"] == 0.0 and state["fi"]["start"] > 0
+
+
+# ---------- Utesluten källa ----------
+
+def test_spara_tar_bort_tillstandet_for_kallor_som_inte_langre_finns():
+    sidlasare.som_flode(kalla(), nu=1_000_000.0)
+    sidlasare.som_flode(kalla(id="nyteknik"), nu=1_000_000.0)
+    sidlasare.spara(nu=1_000_000.0, aktiva={"fi"})
+    assert set(sidlasare._state) == {"fi"} and set(__import__("json").loads(sidlasare.STATE.read_text())) == {"fi"}
+
+
+def test_pipelinen_ger_spara_de_aktiva_sidkallorna():
+    import inspect
+    assert "aktiva=" in inspect.getsource(pipeline.main)
+
+
+def test_ny_teknik_ar_utesluten():
+    import yaml
+    ids = {s["id"] for s in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
+    assert "nyteknik" not in ids

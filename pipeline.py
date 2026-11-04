@@ -654,7 +654,7 @@ def main():
     totals = vikt_mod.region_totals(sources)
     items, report = fetch(sources, args.max_age_hours)
     import sidlasare
-    sidlasare.spara()
+    sidlasare.spara(aktiva={s["id"] for s in sources if s.get("hamtning") == "sida"})
     cross_language = translate_titles(items, client, model, cache) if client else False
     clusters = merge_clusters(cluster(items))
     events = []
