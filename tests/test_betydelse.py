@@ -153,3 +153,10 @@ def test_visas_inte_om_kontrollen_underkant_eller_raden_saknas(monkeypatch):
 def test_kallnummer_i_hakparentes_tas_bort_ur_raden():
     r = bygg(client=Falsk({**SVAR, "betydelse_sv": "Eftersom attackerna dödade 26 personer [3] hänger det ihop med säkerhetsläget i Europa.", "betydelse_en": None}))
     assert r["sv"] == "Eftersom attackerna dödade 26 personer hänger det ihop med säkerhetsläget i Europa." and "[" not in r["sv"]
+
+
+def test_tillrackligt_med_utrymme_for_modellens_tankande():
+    """Körningen 4 november: tomt svar (stop_reason=max_tokens, block=thinking) när tänkandet tog hela utrymmet."""
+    ai = Falsk()
+    bygg(client=ai)
+    assert all(a["max_tokens"] >= 6000 for a in ai.anrop)

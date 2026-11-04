@@ -97,14 +97,14 @@ def bygg(c, utkast, client, model, reply_text, cache):
         lager[nyckel]["sedd"] = time.time()
         return lager[nyckel]["betydelse"]
     try:
-        msg = client.messages.create(model=model, max_tokens=2000, system=SYSTEM, messages=[{"role": "user", "content": _prompt(c, utkast)}])
+        msg = client.messages.create(model=model, max_tokens=8000, system=SYSTEM, messages=[{"role": "user", "content": _prompt(c, utkast)}])
         d = _json(reply_text(msg).strip())
         sv, en = (_rensa(d.get("betydelse_sv")) or None), (_rensa(d.get("betydelse_en")) or None)
         grund = sorted({int(n) for n in d.get("grund") or []})
         if (sv and not _ok_rad(sv)) or (en and not _ok_rad(en)) or (not sv and not en) or not grund or any(not 1 <= n <= len(c["items"]) for n in grund):
             resultat = None
         else:
-            kmsg = client.messages.create(model=model, max_tokens=2000, system=KONTROLL,
+            kmsg = client.messages.create(model=model, max_tokens=8000, system=KONTROLL,
                                           messages=[{"role": "user", "content": _kontrollprompt(c, utkast, sv, en)}])
             k = _json(reply_text(kmsg).strip())
             problem = [f"{p.get('skal')}: {p.get('text')}" for p in k.get("problem") or []]

@@ -125,7 +125,7 @@ def bygg(c, utkast, client, model, reply_text, cache):
         lager[nyckel]["sedd"] = time.time()
         return lager[nyckel]["narrativ"]
     try:
-        msg = client.messages.create(model=model, max_tokens=4000, system=SYSTEM, messages=[{"role": "user", "content": _prompt(c)}])
+        msg = client.messages.create(model=model, max_tokens=10000, system=SYSTEM, messages=[{"role": "user", "content": _prompt(c)}])
         text = reply_text(msg).strip()
         berattelse = _validera(json.loads(text[text.find("{"): text.rfind("}") + 1]), len(c["items"]))
         if not berattelse:
