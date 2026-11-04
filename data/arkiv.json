@@ -5374,42 +5374,40 @@
  "2b37665037": {
   "id": "2b37665037",
   "amnen": [
-   "energi",
    "europa",
    "geopolitik",
    "usa"
   ],
   "amnen_sektion": [
-   "energi",
    "europa",
    "geopolitik",
    "usa"
   ],
-  "poang": 33.1,
+  "poang": 34.1,
   "vikt": {
-   "bredd": 0.871,
+   "bredd": 0.615,
    "regioner": {
-    "asien": 5,
     "mellanostern": 2,
-    "europa": 4,
+    "europa": 2,
+    "asien": 2,
     "usa": 2,
     "sverige": 1
    },
-   "timmar": 13,
+   "timmar": 62,
    "konsekvens": {
-    "berorda": 5,
+    "berorda": 4,
     "allvar": 5,
     "varaktighet": 4,
-    "medel": 4.67,
-    "skal": "Fredssamtal om kriget i Ukraina som berör Ukraina, Ryssland och flera länder, med liv och säkerhet på spel under en lång tid framåt."
+    "medel": 4.33,
+    "skal": "Fredssamtal mellan Ryssland, Ukraina och USA i Abu Dhabi, med krig och energiinfrastruktur på spel, kan påverka miljontals människor under lång tid."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": true
   },
   "maste": true,
-  "antal_kallor": 14,
+  "antal_kallor": 9,
   "har_primarkalla": false,
-  "senast": "2026-11-03T22:12:00+00:00",
+  "senast": "2026-11-03T17:46:53+00:00",
   "utkast": {
    "rubrik_sv": "Ryssland bombarderar Ukrainas elnät inför fredssamtal i Abu Dhabi",
    "sammanfattning_sv": "Ryssland angrep Ukrainas energiinfrastruktur med robotar och drönare, enligt Reuters, en vecka före USA-medlade samtal. Witkoff uppger att USA, Ryssland och Ukraina ska föra samtal i Abu Dhabi den 10 och 11 november.",
@@ -5619,8 +5617,199 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "betydelse": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Kremlin bekräftar trepartssamtalen",
+     "namn_en": "Kremlin confirms the talks",
+     "lyfter_sv": "The Hindu lyfter fram att Kremlin bekräftar samtal mellan Ukraina och USA, medan CGTN lyfter fram att Peskov bekräftar trepartssamtal i Abu Dhabi den 10 till 11 november.",
+     "lyfter_en": "The Hindu highlights that the Kremlin confirms talks between Ukraine and the US, while CGTN highlights that Peskov confirms three-way talks in Abu Dhabi on November 10 to 11.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/kremlin-confirms-ukraine-us-talks-in-abu-dhabi-on-november-10-11/article71660788.ece"
+      },
+      {
+       "namn": "CGTN",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://news.cgtn.com/news/2026-11-03/news-1RLVAxyxUVq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World"
+      }
+     ],
+     "regioner": [
+      "asien"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "USA:s roll som medlare",
+     "namn_en": "The US role as mediator",
+     "lyfter_sv": "Fox News lyfter fram att USA medlar i samtalen, SVT att USA agerar medlare enligt Witkoff, och The National att USA är källan till uppgiften om samtal den här månaden.",
+     "lyfter_en": "Fox News highlights that the US mediates the talks, SVT that the US acts as mediator according to Witkoff, and The National that the US is the source of the report on talks this month.",
+     "kallor": [
+      {
+       "namn": "Fox News",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://www.foxnews.com/world/us-mediate-upcoming-ukraine-russia-talks-abu-dhabi-witkoff-says"
+      },
+      {
+       "namn": "SVT Nyheter",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.svt.se/nyheter/utrikes/witkoff-samtal-ryssland-ukraina-nasta-vecka"
+      },
+      {
+       "namn": "The National",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/"
+      }
+     ],
+     "regioner": [
+      "mellanostern",
+      "sverige",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Europas roll i samtalen",
+     "namn_en": "Europe's role in the talks",
+     "lyfter_sv": "Al-Monitor lyfter fram att Merz uppmanar Moskva att engagera sig, medan Euractiv lyfter fram att samtal mellan USA, Europa och Nato hålls i Bryssel.",
+     "lyfter_en": "Al-Monitor highlights that Merz urges Moscow to engage, while Euractiv highlights that talks between the US, Europe and NATO are held in Brussels.",
+     "kallor": [
+      {
+       "namn": "Al-Monitor",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.al-monitor.com/originals/2026/11/russia-bombards-ukraine-power-grid-abu-dhabi-talks-merz-urges-moscow-engage"
+      },
+      {
+       "namn": "Euractiv",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.rapporteur.com/news/brussels-hosts-ukraine-talks-ahead-of-abu-dhabi-negotiations/"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "antal": 9,
+    "problem": [
+     "egen slutsats: Rubriken 'Europas roll i samtalen': att Europa har en roll i Abu Dhabi-samtalen"
+    ],
+    "pastaenden": [
+     {
+      "text": "Samtal om fred i Abu Dhabi den 10–11 november (rubrik)",
+      "stod": [
+       5,
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: Kremlin bekräftar samtal mellan Ukraina och USA",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN: Peskov bekräftar trepartssamtal i Abu Dhabi den 10–11 november",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News: USA medlar i samtalen",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT: USA agerar medlare enligt Witkoff",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "The National: USA är källan till uppgiften om samtal i denna månad",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al-Monitor: Merz uppmanar Moskva att engagera sig",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Euractiv: samtal mellan USA, Europa och Nato hålls i Bryssel",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubriken 'Europas roll i samtalen': att Europa har en roll i Abu Dhabi-samtalen",
+      "stod": [],
+      "problem": "egen slutsats"
+     }
+    ],
+    "sammanfattning": "Påståendet om Europas roll i samtalen är en egen slutsats: Euractiv beskriver samtal i Bryssel inför Abu Dhabi-förhandlingarna, inte att Europa deltar i Abu Dhabi-samtalen, och Al-Monitor beskriver bara Merz uppmaning till Moskva."
+   },
+   "ok": false
+  },
+  "betydelse": {
+   "sv": "Eftersom USA:s sändebud Steve Witkoff uppger att fredssamtal med Ryssland och Ukraina ska hållas i Abu Dhabi 10 och 11 november, hänger krigets diplomati ihop med säkerheten i Europa, där Sverige är medlem i både EU och Nato.",
+   "en": "With US envoy Steve Witkoff announcing US-mediated talks for 10 and 11 November, after Russian strikes on Ukraine's power grid, American diplomacy on the war is directly in play.",
+   "grund": [
+    1,
+    4
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/11/russia-bombards-ukraine-power-grid-abu-dhabi-talks-merz-urges-moscow-engage"
+    },
+    {
+     "namn": "Meduza",
+     "url": "https://meduza.io/en/news/2026/11/03/trilateral-talks-between-russia-ukraine-and-us-set-for-november-10-11-in-abu-dhabi"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "saknar stöd: Engelska raden: \"after Russian strikes on Ukraine's power grid\" anger en tidsordning som källorna inte stöder. Witkoff meddelade talkens datum den 2 november, och bombningarna skedde tisdagen den 3 november, alltså efter tillkännagivandet.",
+     "slutsats: Engelska raden: \"American diplomacy on the war is directly in play\" är en slutsats om betydelse som inte följer av uppgifterna."
+    ]
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
     "asien",
@@ -5630,43 +5819,6 @@
     "usa"
    ],
    "per_region": {
-    "asien": [
-     {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "Russia bombards Ukraine power grid before Abu Dhabi talks; Merz urges Moscow to engage",
-      "url": "https://www.japantimes.co.jp/news/2026/11/04/world/politics/russia-ukraine-power-abu-dhabi-merz/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "Russia bombards Ukraine power grid before Abu Dhabi talks; Merz urges Moscow to engage",
-      "url": "https://www.straitstimes.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-to-engage",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Yonhap",
-      "land": "KR",
-      "rubrik": "Melania Trump to meet Ukrainian, Russian representatives at White House this week",
-      "url": "https://en.yna.co.kr/view/AEN20261104000300315",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Kremlin confirms Ukraine-U.S. talks in Abu Dhabi on November 10-11",
-      "url": "https://www.thehindu.com/news/international/kremlin-confirms-ukraine-us-talks-in-abu-dhabi-on-november-10-11/article71660788.ece",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CGTN",
-      "land": "CN",
-      "rubrik": "Kremlin confirms trilateral Ukraine peace talks in Abu Dhabi next week",
-      "url": "https://news.cgtn.com/news/2026-11-03/news-1RLVAxyxUVq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-      "statskontrollerad": true
-     }
-    ],
     "mellanostern": [
      {
       "kalla": "Al-Monitor",
@@ -5685,13 +5837,6 @@
     ],
     "europa": [
      {
-      "kalla": "The Kyiv Independent",
-      "land": "UA",
-      "rubrik": "Ukraine, allies to coordinate peace efforts ahead of planned talks with Russia",
-      "url": "https://kyivindependent.com/ukraines-allies-to-coordinate-peace-efforts-ahead-of-planned-talks-with-russia-us/",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "Euractiv",
       "land": "BE",
       "rubrik": "Brussels hosts Ukraine talks ahead of Abu Dhabi negotiations",
@@ -5701,15 +5846,24 @@
      {
       "kalla": "Meduza",
       "land": "LV",
-      "rubrik": "White House says Melania Trump will meet with representatives of Russia and Ukraine in Washington",
-      "url": "https://meduza.io/en/news/2026/11/03/white-house-says-melania-trump-will-meet-with-representatives-of-russia-and-ukraine-in-washington",
+      "rubrik": "Trilateral talks between Russia, Ukraine and US set for November 10–11 in Abu Dhabi",
+      "url": "https://meduza.io/en/news/2026/11/03/trilateral-talks-between-russia-ukraine-and-us-set-for-november-10-11-in-abu-dhabi",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Kremlin confirms Ukraine-U.S. talks in Abu Dhabi on November 10-11",
+      "url": "https://www.thehindu.com/news/international/kremlin-confirms-ukraine-us-talks-in-abu-dhabi-on-november-10-11/article71660788.ece",
       "statskontrollerad": false
      },
      {
-      "kalla": "RT",
-      "land": "RU",
-      "rubrik": "Trump envoy announces new US-Russia-Ukraine talks",
-      "url": "https://rt-english.com/news/648261-witkoff-russia-ukraine-talks/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "Kremlin confirms trilateral Ukraine peace talks in Abu Dhabi next week",
+      "url": "https://news.cgtn.com/news/2026-11-03/news-1RLVAxyxUVq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
       "statskontrollerad": true
      }
     ],
@@ -5763,17 +5917,6 @@
   "reserv_rubrik": "Russia bombards Ukraine power grid before Abu Dhabi talks; Merz urges Moscow to engage",
   "kallor": [
    {
-    "namn": "The Japan Times",
-    "rubrik": "Russia bombards Ukraine power grid before Abu Dhabi talks; Merz urges Moscow to engage",
-    "url": "https://www.japantimes.co.jp/news/2026/11/04/world/politics/russia-ukraine-power-abu-dhabi-merz/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "JP",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Al-Monitor",
     "rubrik": "Russia bombards Ukraine power grid before Abu Dhabi talks; Merz urges Moscow to engage",
     "url": "https://www.al-monitor.com/originals/2026/11/russia-bombards-ukraine-power-grid-abu-dhabi-talks-merz-urges-moscow-engage",
@@ -5781,39 +5924,6 @@
     "typ": "media",
     "land": "US",
     "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "Russia bombards Ukraine power grid before Abu Dhabi talks; Merz urges Moscow to engage",
-    "url": "https://www.straitstimes.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-to-engage",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Yonhap",
-    "rubrik": "Melania Trump to meet Ukrainian, Russian representatives at White House this week",
-    "url": "https://en.yna.co.kr/view/AEN20261104000300315",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "KR",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Kyiv Independent",
-    "rubrik": "Ukraine, allies to coordinate peace efforts ahead of planned talks with Russia",
-    "url": "https://kyivindependent.com/ukraines-allies-to-coordinate-peace-efforts-ahead-of-planned-talks-with-russia-us/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "UA",
-    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -5829,17 +5939,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Meduza",
-    "rubrik": "White House says Melania Trump will meet with representatives of Russia and Ukraine in Washington",
-    "url": "https://meduza.io/en/news/2026/11/03/white-house-says-melania-trump-will-meet-with-representatives-of-russia-and-ukraine-in-washington",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "LV",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Hindu",
     "rubrik": "Kremlin confirms Ukraine-U.S. talks in Abu Dhabi on November 10-11",
     "url": "https://www.thehindu.com/news/international/kremlin-confirms-ukraine-us-talks-in-abu-dhabi-on-november-10-11/article71660788.ece",
@@ -5847,6 +5946,17 @@
     "typ": "media",
     "land": "IN",
     "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Meduza",
+    "rubrik": "Trilateral talks between Russia, Ukraine and US set for November 10–11 in Abu Dhabi",
+    "url": "https://meduza.io/en/news/2026/11/03/trilateral-talks-between-russia-ukraine-and-us-set-for-november-10-11-in-abu-dhabi",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "LV",
+    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -5895,17 +6005,6 @@
     "statskontrollerad": true
    },
    {
-    "namn": "RT",
-    "rubrik": "Trump envoy announces new US-Russia-Ukraine talks",
-    "url": "https://rt-english.com/news/648261-witkoff-russia-ukraine-talks/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "RU",
-    "region": "europa",
-    "agare": "statlig",
-    "statskontrollerad": true
-   },
-   {
     "namn": "The National",
     "rubrik": "Russia-Ukraine talks to take place in Abu Dhabi this month, US says",
     "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/",
@@ -5922,11 +6021,13 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793758112.5764794,
   "automatisk": true,
-  "uppdaterad_tid": 1793774680.7111192
+  "uppdaterad_tid": 1793778268.0011795
  },
  "5eaa78779a": {
   "id": "5eaa78779a",

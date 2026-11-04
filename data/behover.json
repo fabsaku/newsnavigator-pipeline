@@ -1,25 +1,47 @@
 {
- "skapad": "2026-11-04T07:07:49.770508+00:00",
+ "skapad": "2026-11-04T07:44:29.225649+00:00",
  "rader": [
   {
    "kod": "vantar",
    "id": "vantar",
-   "rad": "3 notiser väntar på dig, äldst 17 h",
+   "rad": "1 notis väntar på dig, äldst 13 h",
    "handling": "Till inkorgen",
    "url": "https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning",
    "allvarlig": false,
    "detaljer": [
-    "Demokraten James Talarico vinner senatsplatsen i Texas (17 h)",
-    "Trump säger att USA slutar ge militärt stöd till Israel vid årets slut (13 h)",
-    "Demokraterna tar kontrollen över kongressen i midtermvalet, enligt prognoser (3 h)"
+    "Trump säger att USA avslutar militärt stöd till Israel vid årets slut (13 h)"
    ]
   },
   {
    "kod": "hopslagen",
-   "id": "hopslagen:6d2526ec2e",
-   "rad": "Troligen hopslagna händelser: Demokraterna tar kontrollen över kongressen i midtermvalet, enligt prognoser",
+   "id": "hopslagen:35b877a553",
+   "rad": "Troligen hopslagna händelser: Demokraterna tar kontrollen över USA:s kongress, enligt prognoser",
    "handling": "Dela upp eller avvisa",
    "url": "https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning",
+   "allvarlig": false
+  },
+  {
+   "kod": "tyst",
+   "id": "tyst:fi",
+   "rad": "Finansinspektionen tyst sedan 1 januari",
+   "handling": "Kontrollera flödet, pausa",
+   "url": null,
+   "allvarlig": false
+  },
+  {
+   "kod": "tyst",
+   "id": "tyst:imf",
+   "rad": "IMF tyst sedan 1 januari",
+   "handling": "Kontrollera flödet, pausa",
+   "url": null,
+   "allvarlig": false
+  },
+  {
+   "kod": "tyst",
+   "id": "tyst:mistral",
+   "rad": "Mistral AI tyst sedan 1 januari",
+   "handling": "Kontrollera flödet, pausa",
+   "url": null,
    "allvarlig": false
   },
   {
@@ -40,17 +62,9 @@
   },
   {
    "kod": "tyst",
-   "id": "tyst:who",
-   "rad": "WHO tyst sedan 10 oktober",
-   "handling": "Kontrollera flödet, pausa",
-   "url": null,
-   "allvarlig": false
-  },
-  {
-   "kod": "tyst",
-   "id": "tyst:ieee-robotics",
-   "rad": "IEEE Spectrum Robotics tyst sedan fredag",
-   "handling": "Kontrollera flödet, pausa",
+   "id": "tyst:fler",
+   "rad": "och 2 källor till är tysta",
+   "handling": "Kontrollera källstatus",
    "url": null,
    "allvarlig": false
   },
@@ -72,7 +86,7 @@
   }
  ],
  "rapport": {
-  "amne": "Newsnavigator: 8 saker behöver dig",
-  "text": "8 saker behöver dig.\n\n1. 3 notiser väntar på dig, äldst 17 h\n   - Demokraten James Talarico vinner senatsplatsen i Texas (17 h)\n   - Trump säger att USA slutar ge militärt stöd till Israel vid årets slut (13 h)\n   - Demokraterna tar kontrollen över kongressen i midtermvalet, enligt prognoser (3 h)\n   Gör: Till inkorgen\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n2. Troligen hopslagna händelser: Demokraterna tar kontrollen över kongressen i midtermvalet, enligt prognoser\n   Gör: Dela upp eller avvisa\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n3. CNN tyst sedan 22 augusti\n   Gör: Kontrollera flödet, pausa\n4. Riksbanken tyst sedan 8 oktober\n   Gör: Kontrollera flödet, pausa\n5. WHO tyst sedan 10 oktober\n   Gör: Kontrollera flödet, pausa\n6. IEEE Spectrum Robotics tyst sedan fredag\n   Gör: Kontrollera flödet, pausa\n7. @newsnavigator.se postar inget: secrets saknas, 4 kort väntar\n   Gör: Lägg in IG_USER_ID och IG_ACCESS_TOKEN i repots secrets\n8. @news.navigator postar inget: secrets saknas, 4 kort väntar\n   Gör: Lägg in IG_USER_ID_EN och IG_ACCESS_TOKEN_EN i repots secrets\n\n2 notiser publicerades automatiskt senaste dygnet, 8 väntar i kön.\n\nPublicerat automatiskt:\n- Ryssland bombarderar Ukrainas elnät inför fredssamtal i Abu Dhabi https://newsnavigator.se/sv/n/2b37665037/\n- Kanada meddelar att ryska och belarusiska spelare inte får delta i juniorvärldsmästerskapet https://newsnavigator.se/sv/n/5eaa78779a/\n\nKällor: 120 av 138 går att läsa.\n\nDet här mejlet kommer varje morgon kl 07.00. Är listan tom behöver du inte öppna något.\n"
+  "amne": "Newsnavigator: 10 saker behöver dig",
+  "text": "10 saker behöver dig.\n\n1. 1 notis väntar på dig, äldst 13 h\n   - Trump säger att USA avslutar militärt stöd till Israel vid årets slut (13 h)\n   Gör: Till inkorgen\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n2. Troligen hopslagna händelser: Demokraterna tar kontrollen över USA:s kongress, enligt prognoser\n   Gör: Dela upp eller avvisa\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n3. Finansinspektionen tyst sedan 1 januari\n   Gör: Kontrollera flödet, pausa\n4. IMF tyst sedan 1 januari\n   Gör: Kontrollera flödet, pausa\n5. Mistral AI tyst sedan 1 januari\n   Gör: Kontrollera flödet, pausa\n6. CNN tyst sedan 22 augusti\n   Gör: Kontrollera flödet, pausa\n7. Riksbanken tyst sedan 8 oktober\n   Gör: Kontrollera flödet, pausa\n8. och 2 källor till är tysta\n   Gör: Kontrollera källstatus\n9. @newsnavigator.se postar inget: secrets saknas, 4 kort väntar\n   Gör: Lägg in IG_USER_ID och IG_ACCESS_TOKEN i repots secrets\n10. @news.navigator postar inget: secrets saknas, 4 kort väntar\n   Gör: Lägg in IG_USER_ID_EN och IG_ACCESS_TOKEN_EN i repots secrets\n\n2 notiser publicerades automatiskt senaste dygnet, 9 väntar i kön.\n\nPublicerat automatiskt:\n- Ryssland bombarderar Ukrainas elnät inför fredssamtal i Abu Dhabi https://newsnavigator.se/sv/n/2b37665037/\n- Kanada meddelar att ryska och belarusiska spelare inte får delta i juniorvärldsmästerskapet https://newsnavigator.se/sv/n/5eaa78779a/\n\nKällor: 119 av 138 går att läsa.\n\nDet här mejlet kommer varje morgon kl 07.00. Är listan tom behöver du inte öppna något.\n"
  }
 }
