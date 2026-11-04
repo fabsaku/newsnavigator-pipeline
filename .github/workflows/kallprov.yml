@@ -12,6 +12,10 @@ on:
         description: "true = gå igenom hela källistan mot utgivarnas robots.txt (hämtar inga flöden)"
         required: false
         default: "false"
+      inbaddningar:
+        description: "true = mät flerspråkiga inbäddningar mot dagens klustring på de handmärkta rubrikerna (installerar torch och sentence-transformers, skriver inget till repot)"
+        required: false
+        default: "false"
       jamfor:
         description: "Jämför alternativ A och B: källornas id som får bara rubrik i B (kör pipelinen med modellen två gånger, skriver inget till repot)"
         required: false
@@ -38,7 +42,7 @@ permissions:
 
 jobs:
   prova:
-    if: ${{ inputs.jamfor == '' }}
+    if: ${{ inputs.jamfor == '' && inputs.inbaddningar != 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -93,3 +97,24 @@ jobs:
         run: |
           python jamfor_alternativ.py /tmp/A/flode.json /tmp/B/flode.json "$KALLOR" | tee jamforelse.txt
           { echo '## Alternativ A mot B'; echo '```'; cat jamforelse.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+  inbaddningar:
+    # Experiment: flerspråkiga inbäddningar (sentence-transformers) mot dagens klustring, mätt på tests/kluster-rubriker.json.
+    if: ${{ inputs.inbaddningar == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Installera torch (cpu) och sentence-transformers
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install sentence-transformers
+      - name: Mät
+        run: |
+          python inbaddningar.py | tee inbaddningar.txt
+          { echo '## Inbäddningar mot dagens klustring'; echo '```'; cat inbaddningar.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

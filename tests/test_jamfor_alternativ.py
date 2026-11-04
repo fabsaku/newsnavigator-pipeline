@@ -77,6 +77,6 @@ def test_workflowen_kor_a_och_b_och_skriver_inget_till_repot():
     y = yaml.safe_load(text)
     assert y["permissions"] == {"contents": "read"} and "schedule" not in y[True]
     assert "git push" not in text and "git commit" not in text
-    assert "jamfor" in y[True]["workflow_dispatch"]["inputs"] and set(y["jobs"]) == {"prova", "jamfor"}
+    assert "jamfor" in y[True]["workflow_dispatch"]["inputs"] and set(y["jobs"]) == {"prova", "jamfor", "inbaddningar"}
     assert "--out /tmp/A" in text and "--out /tmp/B" in text and "NN_BARA_RUBRIK" in text and "ANTHROPIC_API_KEY" in text
-    assert y["jobs"]["prova"]["if"] != y["jobs"]["jamfor"]["if"]
+    assert len({y["jobs"][j]["if"] for j in y["jobs"]}) == 3
