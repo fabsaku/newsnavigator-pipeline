@@ -8,6 +8,10 @@ on:
         description: "Flödesadresser, åtskilda med mellanslag"
         required: false
         default: ""
+      alla:
+        description: "true = gå igenom hela källistan mot utgivarnas robots.txt (hämtar inga flöden)"
+        required: false
+        default: "false"
       sida:
         description: "Källa utan flöde: adressen till sidan med rubriklistan"
         required: false
@@ -36,6 +40,8 @@ jobs:
           ADRESSER: ${{ inputs.adresser }}
           SIDA: ${{ inputs.sida }}
           MONSTER: ${{ inputs.monster }}
+          ALLA: ${{ inputs.alla }}
         run: |
+          if [ "$ALLA" = "true" ]; then python kallprov.py --alla; fi
           if [ -n "$ADRESSER" ]; then python kallprov.py $ADRESSER; fi
           if [ -n "$SIDA" ]; then python kallprov.py --sida "$SIDA" "$MONSTER"; fi

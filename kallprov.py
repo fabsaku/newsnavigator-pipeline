@@ -15,6 +15,9 @@ from urllib.parse import urlsplit
 
 from pipeline import AGENT, fetch_one
 
+from pathlib import Path
+
+ROOT = Path(__file__).parent
 BOT = "NewsnavigatorBot"
 # Utgivare som stänger ute AI-botar har sagt något om hur de vill att texten används, även när vår bot är tillåten.
 AI_BOTAR = ["anthropic-ai", "ClaudeBot", "Claude-Web", "GPTBot", "ChatGPT-User", "Google-Extended", "CCBot",
@@ -113,6 +116,63 @@ def prova(url):
         print(f"   - {e.get('title', '')[:110]}")
 
 
+CLAUDE_BOTAR = ("anthropic-ai", "ClaudeBot", "Claude-Web")
+
+
+def genomgang(kallor, hamta=hamta_robots):
+    """Genomgång av en hel källista mot utgivarnas robots.txt, utan att hämta några flöden. En rad per källa:
+    robots (tillaten, blockerar, oklart), ai_blockerade, claude_blockerad, atgard (något vi bör göra) och beslut (något du bör avgöra).
+    robots.txt hämtas en gång per utgivare."""
+    cache, rader = {}, []
+    for k in kallor:
+        url = k["url"]
+        host = urlsplit(url).netloc
+        if host not in cache:
+            cache[host] = hamta(url)
+        text, fel = cache[host]
+        rad = {"id": k["id"], "namn": k.get("namn", k["id"]), "typ": k.get("typ"), "region": k.get("region"),
+               "betalvagg": bool(k.get("betalvagg")), "bara_rubrik": bool(k.get("bara_rubrik")), "url": url,
+               "robots": "oklart", "regel": None, "fel": fel, "ai_blockerade": [], "claude_blockerad": False, "atgard": None, "beslut": None}
+        if text is not None:
+            besked = robots_besked(text, url)
+            rad.update(robots="tillaten" if besked["tillaten"] else "blockerar", regel=besked["regel"], fel=None)
+            if besked["tillaten"]:          # blockerar utgivaren alla botar säger det inget särskilt om AI
+                rad["ai_blockerade"] = besked["ai_blockerade"]
+                rad["claude_blockerad"] = any(b in besked["ai_blockerade"] for b in CLAUDE_BOTAR)
+        if rad["robots"] == "blockerar":
+            rad["atgard"] = "ta bort, utgivaren tillåter inte oss"
+        elif rad["ai_blockerade"] and rad["betalvagg"]:
+            rad["beslut"] = "betalvägg och blockerar Claude" if rad["claude_blockerad"] else "betalvägg och blockerar andra AI-botar"
+        elif rad["ai_blockerade"] and not rad["bara_rubrik"]:
+            rad["atgard"] = "satt bara_rubrik"
+        rader.append(rad)
+    return rader
+
+
+def sammanfatta(rader):
+    return {"totalt": len(rader), "tillaten": sum(r["robots"] == "tillaten" for r in rader), "blockerar": sum(r["robots"] == "blockerar" for r in rader),
+            "oklart": sum(r["robots"] == "oklart" for r in rader), "ai_blockerar": sum(bool(r["ai_blockerade"]) for r in rader),
+            "claude_blockerar": sum(r["claude_blockerad"] for r in rader), "beslut": sum(bool(r["beslut"]) for r in rader),
+            "atgarder": sum(bool(r["atgard"]) for r in rader)}
+
+
+def skriv_genomgang(rader):
+    s = sammanfatta(rader)
+    print(f"{s['totalt']} källor: robots.txt tillåter oss {s['tillaten']}, blockerar oss {s['blockerar']}, oklart {s['oklart']}. "
+          f"Blockerar AI-botar {s['ai_blockerar']} (varav Claude {s['claude_blockerar']}). Åtgärder {s['atgarder']}, beslut {s['beslut']}.")
+    for rubrik, urval in (("BLOCKERAR OSS", lambda r: r["robots"] == "blockerar"), ("OKLART", lambda r: r["robots"] == "oklart"),
+                          ("BESLUT: betalvägg och AI-blockering", lambda r: bool(r["beslut"])),
+                          ("AI-BLOCKERAR, BARA RUBRIK SAKNAS", lambda r: r["atgard"] == "satt bara_rubrik"),
+                          ("AI-BLOCKERAR, REDAN BARA RUBRIK", lambda r: bool(r["ai_blockerade"]) and r["bara_rubrik"] and not r["betalvagg"])):
+        valda = [r for r in rader if urval(r)]
+        if valda:
+            print(f"\n## {rubrik} ({len(valda)})")
+            for r in valda:
+                print(f"{r['id']} | {r['namn']} | {r['typ']} | {r['region']} | betalvägg {'ja' if r['betalvagg'] else 'nej'} | "
+                      f"{', '.join(r['ai_blockerade']) or '-'}" + (f" | {r['regel']}" if r["robots"] == "blockerar" else "")
+                      + (f" | {r['fel']}" if r["robots"] == "oklart" else ""))
+
+
 def prova_sida(url, monster=None):
     """Prövar en källa utan flöde: tillåter robots.txt det, och vilka rubriker och länkar skulle läsaren (sidlasare.py) hitta?"""
     import sidlasare
@@ -135,6 +195,10 @@ def prova_sida(url, monster=None):
 
 
 def main(argv):
+    if argv and argv[0] == "--alla":
+        import yaml
+        skriv_genomgang(genomgang(yaml.safe_load(open(ROOT / "feeds.yaml", encoding="utf-8"))["sources"]))
+        return
     if argv and argv[0] == "--sida":
         if len(argv) < 2:
             sys.exit("Ange adress och helst mönster: --sida ADRESS MÖNSTER")
