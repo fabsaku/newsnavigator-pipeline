@@ -40,7 +40,7 @@ sources:
   - {id: dw, namn: Deutsche Welle, url: "https://rss.dw.com/rdf/rss-en-all", alternativ: ["https://rss.dw.com/xml/rss-en-all"], amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: public-service, statskontrollerad: false}
   - {id: elpais, namn: El País (English), url: "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: ES, region: europa, agare: privat, statskontrollerad: false}
   - {id: politico-eu, namn: Politico Europe, url: "https://www.politico.eu/feed/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: BE, region: europa, agare: privat, statskontrollerad: false}
-  - {id: euractiv, namn: Euractiv, url: "https://www.euractiv.com/feed/", amnen: [europa], sprak: en, typ: media, betalvagg: false, land: BE, region: europa, agare: privat, statskontrollerad: false}
+  # Utesluten 4 november 2026, utgivaren tillåter inte oss: Euractiv (robots.txt: Disallow /feed/).
   - {id: ecb, namn: Europeiska centralbanken, url: "https://www.ecb.europa.eu/rss/press.html", amnen: [marknader, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
   - {id: esa, namn: ESA, url: "https://www.esa.int/rssfeed/Our_Activities", amnen: [rymd, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
   - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm?rss", alternativ: ["https://www.nato.int/cps/rss/en/natohq/rssFeed.xml", "https://www.nato.int/rss/news.xml", "https://www.nato.int/cps/rss/en/natohq/rssFeed.xsl/rssFeed.xml"], amnen: [forsvar, geopolitik], sprak: en, typ: primar, betalvagg: false, land: INT, region: europa, agare: organisation, statskontrollerad: false}
@@ -111,7 +111,7 @@ sources:
   - {id: mistral, namn: Mistral AI, url: "https://mistral.ai/news", hamtning: sida, lankar: "^/news/.+", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}
 
   # ---------- AI- och techmedier ----------
-  - {id: the-decoder, namn: The Decoder, url: "https://the-decoder.com/feed/", amnen: [ai], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: privat, statskontrollerad: false}
+  # Utesluten 4 november 2026, utgivaren tillåter inte oss: The Decoder (robots.txt: Disallow */feed/).
   - {id: venturebeat-ai, namn: VentureBeat AI, url: "https://venturebeat.com/category/ai/feed/", amnen: [ai, startups], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: wired-ai, namn: Wired AI, url: "https://www.wired.com/feed/tag/ai/latest/rss", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: cyberscoop, namn: CyberScoop, url: "https://cyberscoop.com/feed/", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
@@ -180,12 +180,12 @@ sources:
   - {id: rnz, namn: RNZ, url: "https://www.rnz.co.nz/rss/world.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: NZ, region: asien, agare: public-service, statskontrollerad: false}
   - {id: dr, namn: DR Nyheder, url: "https://www.dr.dk/nyheder/service/feeds/allenyheder", amnen: [norden, varlden], sprak: da, typ: media, betalvagg: false, land: DK, region: norden, agare: public-service, statskontrollerad: false}
   - {id: ruv, namn: RÚV English, url: "https://www.ruv.is/rss/english", amnen: [norden], sprak: en, typ: media, betalvagg: false, land: IS, region: norden, agare: public-service, statskontrollerad: false}
-  - {id: unnews, namn: UN News, url: "https://news.un.org/feed/subscribe/en/news/all/rss.xml", amnen: [varlden, geopolitik], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false}
+  # Utesluten 4 november 2026, utgivaren tillåter inte oss: UN News (robots.txt: Disallow */news/).
   - {id: who, namn: WHO, url: "https://www.who.int/rss-feeds/news-english.xml", amnen: [vetenskap, varlden], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false}
   - {id: gdacs, namn: GDACS katastrofvarningar, url: "https://www.gdacs.org/xml/rss.xml", amnen: [varlden, klimat], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false, rubrik_filter: "(?i)^(orange|red)\\b"}
   - {id: usgs, namn: USGS jordskalv, url: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.atom", amnen: [vetenskap, varlden], sprak: en, typ: primar, betalvagg: false, land: US, region: global, agare: organisation, statskontrollerad: false}
   - {id: meduza, namn: Meduza, url: "https://meduza.io/rss/en/all", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: LV, region: europa, agare: privat, statskontrollerad: false}
-  - {id: balkaninsight, namn: Balkan Insight, url: "https://balkaninsight.com/feed/", amnen: [europa], sprak: en, typ: media, betalvagg: false, land: INT, region: europa, agare: organisation, statskontrollerad: false}
+  # Utesluten 4 november 2026, utgivaren tillåter inte oss: Balkan Insight (robots.txt: Disallow /).
   - {id: notesfrompoland, namn: Notes from Poland, url: "https://notesfrompoland.com/feed/", amnen: [europa], sprak: en, typ: media, betalvagg: false, land: PL, region: europa, agare: privat, statskontrollerad: false}
   - {id: hindustantimes, namn: Hindustan Times, url: "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: IN, region: asien, agare: privat, statskontrollerad: false}
   - {id: gleaner, namn: Jamaica Gleaner, url: "https://jamaica-gleaner.com/feed/rss.xml", alternativ: ["https://jamaica-gleaner.com/rss"], amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: JM, region: latinamerika, agare: privat, statskontrollerad: false}

@@ -278,9 +278,3 @@ def test_spara_tar_bort_tillstandet_for_kallor_som_inte_langre_finns():
 def test_pipelinen_ger_spara_de_aktiva_sidkallorna():
     import inspect
     assert "aktiva=" in inspect.getsource(pipeline.main)
-
-
-def test_ny_teknik_ar_utesluten():
-    import yaml
-    ids = {s["id"] for s in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
-    assert "nyteknik" not in ids

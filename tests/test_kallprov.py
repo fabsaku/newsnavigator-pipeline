@@ -121,3 +121,11 @@ def test_sammanfattningen_raknar_grupperna():
     tabell = {"a.se": ("", None), "b.se": ("User-agent: *\nDisallow: /\n", None), "c.se": ("User-agent: ClaudeBot\nDisallow: /\n", None)}
     sam = kallprov.sammanfatta(kallprov.genomgang(kallor, hamta=hamta_fran(tabell)))
     assert sam == {"totalt": 3, "tillaten": 2, "blockerar": 1, "oklart": 0, "ai_blockerar": 1, "claude_blockerar": 1, "beslut": 1, "atgarder": 1}
+
+
+def test_uteslutna_kallor_ar_inte_med_i_kallistan():
+    """Utgivare som stänger ute oss i robots.txt (genomgång 4 november) och Ny Teknik (Fabians beslut) hämtas inte."""
+    from pathlib import Path
+    import yaml
+    ids = {s["id"] for s in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
+    assert not ids & {"nyteknik", "euractiv", "the-decoder", "unnews", "balkaninsight"}
