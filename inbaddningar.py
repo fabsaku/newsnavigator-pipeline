@@ -50,10 +50,8 @@ def utvardera(rader, kodare, text_ur, troskler=TROSKLER):
     return svep([r["handelse"] for r in marktade], vek, troskler)
 
 
-def _dagens_hem(rader):
-    """{radnummer: klusternummer} för dagens klustring (pipeline.cluster) på alla rubriker."""
+def _artiklar(rader):
     import re
-    import pipeline
     t0 = 1_793_000_000
     items = []
     for n, r in enumerate(rader):
@@ -62,8 +60,15 @@ def _dagens_hem(rader):
         if r.get("rubrik_en"):
             a["title_en"] = r["rubrik_en"]
         items.append(a)
+    return items
+
+
+def _dagens_hem(rader):
+    """{radnummer: klusternummer} för dagens klustring (regler och andra varvet, pipeline.cluster och merge_clusters) på alla rubriker."""
+    import pipeline
+    items = _artiklar(rader)
     hem = {}
-    for k, kl in enumerate(pipeline.cluster(items)):
+    for k, kl in enumerate(pipeline.merge_clusters(pipeline.cluster(items))):           # som i pipelinen: första och andra varvet
         for it in kl["items"]:
             hem[it["_rad"]] = k
     return hem
@@ -73,6 +78,21 @@ def dagens_klustring(rader):
     """Samma mått för dagens klustring: förutsagt hör ihop = hamnar i samma kluster i pipeline.cluster (alla rubriker klustras, märkta jämförs)."""
     hem = _dagens_hem(rader)
     return parvisa_matt([r.get("handelse") for r in rader], lambda i, j: hem.get(i) == hem.get(j) and i in hem)
+
+
+def hybridens_kluster(rader, vek_per_text, tau, min_delade, pair_rate):
+    """Produktionsvägen: regler, andra varvet och semantisk.sla_ihop. vek_per_text: {rubrik (engelska om den finns): vektor}."""
+    import pipeline
+    import semantisk
+    kl = pipeline.merge_clusters(pipeline.cluster(_artiklar(rader)))
+    ut = semantisk.sla_ihop(kl, lambda texter: [vek_per_text[t] for t in texter], tau=tau, min_delade=min_delade, pair_rate=pair_rate)
+    hem = {it["_rad"]: k for k, c in enumerate(ut) for it in c["items"]}
+    return {"tau": tau, "min_delade": min_delade, "pair_rate": pair_rate,
+            **parvisa_matt([r.get("handelse") for r in rader], lambda i, j: i in hem and hem.get(i) == hem.get(j))}
+
+
+def parametersvep(rader, vek_per_text, taus=(0.5, 0.55, 0.6, 0.65), delade=(1, 2), rater=(0.25,)):
+    return [hybridens_kluster(rader, vek_per_text, t, d, r) for t in taus for d in delade for r in rater]
 
 
 def bast_med_precision(tabell, min_precision=0.98):
@@ -105,6 +125,10 @@ def text(r, modell=MODELL):
     rad.append("")
     for namn, tabell in r["modeller"].items():
         rad.append(f"Tröskelsvep, {namn}:  " + "  ".join(f"{x['troskel']:.2f}→{x['f1']:.2f}" for x in tabell))
+    if r.get("kluster"):
+        rad += ["", "Produktionsvägen (regler, andra varvet, hybridens andra varv), per tau, minst gemensamma ord, andel par:"]
+        for x in r["kluster"]:
+            rad.append(f"  tau {x['tau']:.2f}  ord {x['min_delade']}  andel {x['pair_rate']:.2f}:  precision {x['precision']:.3f}  recall {x['recall']:.3f}  F1 {x['f1']:.3f}")
     return "\n".join(rad)
 
 
@@ -115,7 +139,9 @@ def main(argv):
     m = SentenceTransformer(modell)
     kodare = lambda texter: m.encode(list(texter), normalize_embeddings=True).tolist()
     vek_o, vek_e = kodare([x["rubrik"] for x in rader]), kodare([x.get("rubrik_en") or x["rubrik"] for x in rader])
-    r = {"dagens": dagens_klustring(rader),
+    vek_per_text = dict(zip([x.get("rubrik_en") or x["rubrik"] for x in rader], vek_e))
+    r = {"kluster": parametersvep(rader, vek_per_text, taus=(0.5, 0.55, 0.6, 0.65, 0.7), delade=(1, 2), rater=(0.25, 0.5)),
+         "dagens": dagens_klustring(rader),
          "modeller": {"originalrubrik": svep([x.get("handelse") for x in rader], vek_o),
                       "engelsk rubrik": svep([x.get("handelse") for x in rader], vek_e),
                       "hybrid, minst 2 gemensamma ord (engelsk rubrik)": hybrid(rader, vek_e, min_delade=2),

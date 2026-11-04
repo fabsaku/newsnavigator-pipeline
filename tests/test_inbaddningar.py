@@ -84,3 +84,27 @@ def test_hybriden_slar_ihop_det_reglerna_redan_gor_och_det_inbaddningar_foreslar
     assert rent["sant_positiva"] == 3 and rent["falskt_positiva"] == 0           # med C har inga gemensamma ord men hög cosinus
     strang = inbaddningar.hybrid(rader, vek, troskler=[0.9], min_delade=2)[0]
     assert strang["sant_positiva"] == 1 and strang["falskt_negativa"] == 2
+
+
+# ---------- Produktionsvägen: regler, andra varvet och hybridens andra varv ----------
+
+def test_dagens_klustring_ar_regler_och_andra_varvet():
+    import inspect
+    assert "merge_clusters" in inspect.getsource(inbaddningar._dagens_hem)
+
+
+def test_hybridens_klustervag_matt_pa_samma_satt():
+    rader = [{"kalla": "A", "typ": "media", "rubrik": "Democrats win Congress control in midterm election", "handelse": "valet"},
+             {"kalla": "B", "typ": "media", "rubrik": "Democrats win Congress control in midterm vote", "handelse": "valet"},
+             {"kalla": "C", "typ": "media", "rubrik": "Storm Amy floods Gothenburg harbour", "handelse": "storm"}]
+    vek = {r["rubrik"]: v for r, v in zip(rader, [[1.0, 0.0], [0.99, 0.1], [0.0, 1.0]])}
+    m = inbaddningar.hybridens_kluster(rader, vek, tau=0.9, min_delade=2, pair_rate=0.25)
+    assert m["sant_positiva"] == 1 and m["falskt_positiva"] == 0 and m["falskt_negativa"] == 0 and m["tau"] == 0.9
+
+
+def test_parametersvepet_ger_en_rad_per_kombination():
+    rader = [{"kalla": "A", "typ": "media", "rubrik": "Democrats win Congress control in midterm election", "handelse": "valet"},
+             {"kalla": "B", "typ": "media", "rubrik": "Democrats win Congress control in midterm vote", "handelse": "valet"}]
+    vek = {r["rubrik"]: v for r, v in zip(rader, [[1.0, 0.0], [0.99, 0.1]])}
+    ut = inbaddningar.parametersvep(rader, vek, taus=[0.5, 0.6], delade=[1, 2], rater=[0.25])
+    assert len(ut) == 4 and {(r["tau"], r["min_delade"]) for r in ut} == {(0.5, 1), (0.5, 2), (0.6, 1), (0.6, 2)}
