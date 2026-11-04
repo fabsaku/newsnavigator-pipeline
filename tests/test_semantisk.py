@@ -132,3 +132,44 @@ def test_workflowen_installerar_modellen_utan_att_stoppa_vid_fel_och_cachar_den(
     assert install.get("continue-on-error") is True and "whl/cpu" in install["run"]
     assert any(s.get("uses", "").startswith("actions/cache") and "huggingface" in s["with"]["path"] for s in steg)
     assert steg.index(install) < next(i for i, s in enumerate(steg) if "pipeline.py" in str(s.get("run", "")))
+
+
+# ---------- Svensk bevakning hos närliggande händelser ----------
+
+def sv(kalla, rubrik, epoch, region="sverige"):
+    return art(kalla, rubrik, epoch, region=region)
+
+
+def test_handelse_utan_svensk_kalla_markeras_nar_en_narliggande_har_en():
+    x = [art("A", "Democrats win control of Congress in midterms", 300, region="usa"), art("B", "Democrats win control of Congress, midterm vote", 290, region="europa"),
+         art("C", "Midterms: Democrats win control of Congress", 280, region="asien")]
+    y = [sv("Ekot", "Democrats take control of Congress in midterm elections", 270), art("D", "Democrats take control of Congress midterm elections", 260, region="usa")]
+    z = [art("E", "Storm Amy floods Gothenburg harbour", 250, region="europa"), art("F", "Gothenburg harbour floods in Storm Amy", 240, region="usa")]
+    kl = kluster(x, y, z)
+    tabell = {i["title"]: 0 for i in x + y}
+    tabell.update({i["title"]: 90 for i in z})
+    ut = semantisk.sla_ihop(kl, kodare_fran(tabell), tau=0.9, min_delade=2, pair_rate=1.1)       # pair_rate över 1: inget slås ihop
+    markerade = {frozenset(i["source_name"] for i in k["items"]): k.get("svensk_bevakning", False) for k in ut}
+    assert markerade[frozenset({"A", "B", "C"})] is True
+    assert markerade[frozenset({"Ekot", "D"})] is False                       # har redan en svensk källa
+    assert markerade[frozenset({"E", "F"})] is False
+
+
+def test_en_enstaka_traff_racker_inte_for_att_markera():
+    x = [art("A", "Democrats win control of Congress in midterms", 300, region="usa"), art("B", "Storm Amy floods Gothenburg harbour", 290, region="europa"),
+         art("C", "Markets rally on rate cut hopes", 280, region="asien")]
+    y = [sv("Ekot", "Democrats take control of Congress in midterm elections", 270)]
+    tabell = {x[0]["title"]: 0, x[1]["title"]: 90, x[2]["title"]: 180, y[0]["title"]: 0}
+    ut = semantisk.sla_ihop(kluster(x, y), kodare_fran(tabell), tau=0.9, min_delade=2, pair_rate=1.1)
+    assert not any(k.get("svensk_bevakning") for k in ut)
+
+
+def test_blind_flack_tas_bort_for_markerade_handelser():
+    c = {"items": [art(f"K{n}", f"Democrats win Congress {n}", 300 - n, region=r, country="US", state_controlled=False, usa_lean=None, paywall=False,
+                       owner="", url=f"https://x/{n}") for n, r in enumerate(["usa", "europa", "asien"])], "svensk_bevakning": True}
+    for it in c["items"]:
+        it["source_type"] = "media"
+    ut = pipeline.perspective(c)
+    assert ut["blind_flack"] is None and ut["grannar_svenska"] is True
+    c["svensk_bevakning"] = False
+    assert pipeline.perspective(c)["blind_flack"] == "saknas_i_sverige"

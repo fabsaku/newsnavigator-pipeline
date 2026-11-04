@@ -401,11 +401,12 @@ def perspective(c):
     n_sources = len(independent(c))
     names = {i["region"] for i in c["items"] if i["source_type"] != "kuraterat"}
     blind = None
-    if n_sources >= 3 and len(names) >= 2 and not (names & HOME):
+    grannar = bool(c.get("svensk_bevakning"))       # närliggande händelser har en svensk källa (semantisk.py): inte en blind fläck
+    if n_sources >= 3 and len(names) >= 2 and not (names & HOME) and not grannar:
         blind = "saknas_i_sverige"      # stort i världen, inget i svenska källor
     elif n_sources >= 2 and names <= HOME:
         blind = "bara_i_sverige"        # bara svenska och nordiska källor
-    return {"regioner": sorted(names), "per_region": regions, "blind_flack": blind, **usa_spectrum(c)}
+    return {"regioner": sorted(names), "per_region": regions, "blind_flack": blind, "grannar_svenska": grannar, **usa_spectrum(c)}
 
 
 # AllSides skala grupperad i tre: vänster (blå publik), mitten, höger (röd publik)

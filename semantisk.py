@@ -58,7 +58,7 @@ def sla_ihop(clusters, kodare=None, tau=TAU, min_delade=MIN_DELADE, pair_rate=PA
         return clusters
     kl = list(clusters)
     antal_ihop = 0
-    while True:
+    while pair_rate <= 1.0:
         hem = {id(it): n for n, c in enumerate(kl) for it in c["items"]}
         traffar = {}
         for i, j in forslag:
@@ -87,6 +87,28 @@ def sla_ihop(clusters, kodare=None, tau=TAU, min_delade=MIN_DELADE, pair_rate=PA
             break
         if not gjort:
             break
-    if antal_ihop:
-        print(f"Hybridklustringen: {antal_ihop} sammanslagningar, {len(clusters)} kluster blev {len(kl)}.")
+    markerade = _markera_svensk_bevakning(kl, flat, forslag)
+    if antal_ihop or markerade:
+        print(f"Hybridklustringen: {antal_ihop} sammanslagningar ({len(clusters)} kluster blev {len(kl)}), {markerade} händelser utan svensk källa har svensk täckning hos närliggande händelser.")
     return kl
+
+
+def _markera_svensk_bevakning(kl, flat, forslag):
+    """En händelse utan svensk källa, vars rubriker till stor del liknar rubriker i en annan händelse som har en svensk källa, har svensk täckning:
+    "saknas i svenska medier" vore fel (stora händelser delas i delhändelser). Kräver minst två av dess rubriker och minst hälften av dem."""
+    hem = {id(it): n for n, c in enumerate(kl) for it in c["items"]}
+    har_svensk = [any(it.get("region") == "sverige" for it in c["items"]) for c in kl]
+    traffade = {}
+    for i, j in forslag:
+        a, b = hem.get(id(flat[i][0])), hem.get(id(flat[j][0]))
+        if a is None or b is None or a == b:
+            continue
+        for x, y, it in ((a, b, flat[i][0]), (b, a, flat[j][0])):
+            if not har_svensk[x] and har_svensk[y]:
+                traffade.setdefault(x, set()).add(id(it))
+    antal = 0
+    for x, ids in traffade.items():
+        if len(ids) >= max(2, (len(kl[x]["items"]) + 1) // 2):
+            kl[x]["svensk_bevakning"] = True
+            antal += 1
+    return antal
