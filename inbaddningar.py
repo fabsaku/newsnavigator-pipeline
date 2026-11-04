@@ -50,8 +50,8 @@ def utvardera(rader, kodare, text_ur, troskler=TROSKLER):
     return svep([r["handelse"] for r in marktade], vek, troskler)
 
 
-def dagens_klustring(rader):
-    """Samma mått för dagens klustring: förutsagt hör ihop = hamnar i samma kluster i pipeline.cluster (alla rubriker klustras, märkta jämförs)."""
+def _dagens_hem(rader):
+    """{radnummer: klusternummer} för dagens klustring (pipeline.cluster) på alla rubriker."""
     import re
     import pipeline
     t0 = 1_793_000_000
@@ -66,7 +66,30 @@ def dagens_klustring(rader):
     for k, kl in enumerate(pipeline.cluster(items)):
         for it in kl["items"]:
             hem[it["_rad"]] = k
+    return hem
+
+
+def dagens_klustring(rader):
+    """Samma mått för dagens klustring: förutsagt hör ihop = hamnar i samma kluster i pipeline.cluster (alla rubriker klustras, märkta jämförs)."""
+    hem = _dagens_hem(rader)
     return parvisa_matt([r.get("handelse") for r in rader], lambda i, j: hem.get(i) == hem.get(j) and i in hem)
+
+
+def bast_med_precision(tabell, min_precision=0.98):
+    """Raden med högst recall bland dem som håller precisionen, eller None. Falska sammanslagningar är värre än missade, så det är den punkten som räknas."""
+    ok = [r for r in tabell if r["precision"] >= min_precision]
+    return max(ok, key=lambda r: r["recall"]) if ok else None
+
+
+def hybrid(rader, vek, troskler=TROSKLER, min_delade=2):
+    """Dagens regler OR (cosinus >= tröskel och minst `min_delade` gemensamma ord i rubrikerna): inbäddningen får bara föreslå par som reglerna
+    missar, och ordkravet håller tillbaka falska sammanslagningar. vek har en vektor per rad i `rader`."""
+    import pipeline
+    hem = _dagens_hem(rader)
+    ord_ = [pipeline.tokens(r.get("rubrik_en") or r["rubrik"]) for r in rader]
+    etiketter = [r.get("handelse") for r in rader]
+    return [{"troskel": t, **parvisa_matt(etiketter, lambda i, j, t=t: (i in hem and hem.get(i) == hem.get(j))
+                                          or (cosinus(vek[i], vek[j]) >= t and len(ord_[i] & ord_[j]) >= min_delade))} for t in troskler]
 
 
 def text(r, modell=MODELL):
@@ -75,7 +98,10 @@ def text(r, modell=MODELL):
     rad.append(f"Dagens klustring: precision {d['precision']:.2f}  recall {d['recall']:.2f}  F1 {d['f1']:.2f}")
     for namn, tabell in r["modeller"].items():
         b = max(tabell, key=lambda x: x["f1"])
-        rad.append(f"{namn}: bäst vid tröskel {b['troskel']:.2f}: precision {b['precision']:.2f}  recall {b['recall']:.2f}  F1 {b['f1']:.2f}")
+        rad.append(f"{namn}: bäst F1 vid tröskel {b['troskel']:.2f}: precision {b['precision']:.2f}  recall {b['recall']:.2f}  F1 {b['f1']:.2f}")
+        h = bast_med_precision(tabell)
+        rad.append("   " + (f"bäst recall med precision minst 0,98 vid tröskel {h['troskel']:.2f}: precision {h['precision']:.2f}  recall {h['recall']:.2f}  F1 {h['f1']:.2f}"
+                            if h else "ingen tröskel håller precision 0,98"))
     rad.append("")
     for namn, tabell in r["modeller"].items():
         rad.append(f"Tröskelsvep, {namn}:  " + "  ".join(f"{x['troskel']:.2f}→{x['f1']:.2f}" for x in tabell))
@@ -88,9 +114,12 @@ def main(argv):
     rader = json.loads(FIXTUR.read_text(encoding="utf-8"))["rubriker"]
     m = SentenceTransformer(modell)
     kodare = lambda texter: m.encode(list(texter), normalize_embeddings=True).tolist()
+    vek_o, vek_e = kodare([x["rubrik"] for x in rader]), kodare([x.get("rubrik_en") or x["rubrik"] for x in rader])
     r = {"dagens": dagens_klustring(rader),
-         "modeller": {"originalrubrik": utvardera(rader, kodare, lambda x: x["rubrik"]),
-                      "engelsk rubrik": utvardera(rader, kodare, lambda x: x.get("rubrik_en") or x["rubrik"])}}
+         "modeller": {"originalrubrik": svep([x.get("handelse") for x in rader], vek_o),
+                      "engelsk rubrik": svep([x.get("handelse") for x in rader], vek_e),
+                      "hybrid, minst 2 gemensamma ord (engelsk rubrik)": hybrid(rader, vek_e, min_delade=2),
+                      "hybrid, minst 1 gemensamt ord (engelsk rubrik)": hybrid(rader, vek_e, min_delade=1)}}
     print(text(r, modell))
 
 

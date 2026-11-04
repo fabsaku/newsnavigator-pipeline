@@ -63,3 +63,24 @@ def test_rapporten_ar_kort_och_jamfor_metoderna():
                       "engelsk rubrik": [{"troskel": 0.6, "precision": 0.7, "recall": 0.7, "f1": 0.7, "par": 100, "sant_positiva": 1, "falskt_positiva": 1, "falskt_negativa": 1}]}}
     ut = inbaddningar.text(r, modell="m")
     assert "dagens klustring" in ut.lower() and "0.80" in ut and "originalrubrik" in ut and len(ut.splitlines()) < 25
+
+
+# ---------- Högprecisionspunkten och hybriden ----------
+
+def test_basta_recall_med_hog_precision():
+    tabell = [{"troskel": 0.4, "precision": 0.80, "recall": 0.95, "f1": 0.87}, {"troskel": 0.6, "precision": 0.98, "recall": 0.60, "f1": 0.74},
+              {"troskel": 0.7, "precision": 1.0, "recall": 0.55, "f1": 0.71}]
+    assert inbaddningar.bast_med_precision(tabell)["troskel"] == 0.6
+    assert inbaddningar.bast_med_precision([{"troskel": 0.4, "precision": 0.5, "recall": 1.0, "f1": 0.7}]) is None
+
+
+def test_hybriden_slar_ihop_det_reglerna_redan_gor_och_det_inbaddningar_foreslar_med_gemensamma_ord():
+    rader = [{"kalla": "A", "typ": "media", "rubrik": "Storm Amy floods Gothenburg harbour", "handelse": "storm"},
+             {"kalla": "B", "typ": "media", "rubrik": "Storm Amy floods Gothenburg, ferries cancelled", "handelse": "storm"},
+             {"kalla": "C", "typ": "media", "rubrik": "Hamnen i Göteborg översvämmas av stormen Amy", "handelse": "storm"},     # inga gemensamma ord
+             {"kalla": "D", "typ": "media", "rubrik": "Ferries cancelled after union strike", "handelse": "strejk"}]
+    vek = [[1.0, 0.0], [0.99, 0.1], [0.95, 0.3], [0.1, 0.99]]
+    rent = inbaddningar.hybrid(rader, vek, troskler=[0.9], min_delade=0)[0]
+    assert rent["sant_positiva"] == 3 and rent["falskt_positiva"] == 0           # med C har inga gemensamma ord men hög cosinus
+    strang = inbaddningar.hybrid(rader, vek, troskler=[0.9], min_delade=2)[0]
+    assert strang["sant_positiva"] == 1 and strang["falskt_negativa"] == 2
