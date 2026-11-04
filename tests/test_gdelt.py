@@ -6,6 +6,11 @@ import pytest
 import gdelt
 
 
+@pytest.fixture(autouse=True)
+def cache(tmp_path, monkeypatch):
+    monkeypatch.setattr(gdelt, "CACHE", tmp_path / "gdelt.json")
+
+
 def ev(rubrik_en="Strikes hit Qeshm island in Iran, Tehran says", blind="saknas_i_sverige", eid="a" * 10):
     return {"id": eid, "reserv_rubrik": rubrik_en, "utkast": {"rubrik_en": rubrik_en, "rubrik_sv": "x"},
             "perspektiv": {"blind_flack": blind, "regioner": ["usa", "asien"]}}
