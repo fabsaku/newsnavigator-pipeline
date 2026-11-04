@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Hybridklustringen: ett andra varv efter reglerna (pipeline.cluster och merge_clusters) som slår ihop kluster om samma händelse som reglerna delat upp.
 
-Mätt på de handmärkta rubrikerna i tests/kluster-rubriker.json (inbaddningar.py): reglerna ensamma har precision 1,00 och recall 0,71, hybriden
-"reglerna ELLER (flerspråkig inbäddning med cosinus minst TAU och minst MIN_DELADE gemensamma ord)" har precision 0,98 och recall 0,87. Delvis hör
-det ihop med att "saknas i svenska medier" annars blir fel: ett val som delats i tretton fragment ger tolv felaktiga påståenden.
+Mätt på de handmärkta rubrikerna i tests/kluster-rubriker.json (inbaddningar.py, produktionsvägen): reglerna och andra varvet har precision 0,98
+och recall 0,875; med hybridens andra varv (flerspråkig inbäddning med cosinus minst TAU och minst MIN_DELADE gemensamma ord, minst PAIR_RATE av
+paren) är precisionen 0,98 och recallen 0,95. På riktiga data delas stora händelser i fragment (USA-valet blev tio kluster med två till fyra
+källor), vilket också ger felaktiga "saknas i svenska medier".
 
 Två rubriker föreslås höra ihop när modellen och orden båda säger det och de kommer från olika källor. Två kluster slås ihop när minst PAIR_RATE av
 rubrikparen mellan dem föreslås (samma mått som merge_clusters), och bara om en källa fortfarande finns en gång per händelse och sektionerna räcker.
@@ -11,7 +12,7 @@ Saknas modellen (sentence-transformers) används klustren som de är: pipelinen 
 """
 import sys
 
-TAU = 0.55
+TAU = 0.60                # mätt: precision 0,98 och recall 0,95 på de handmärkta rubrikerna (regler ensamma: 0,98 och 0,875)
 MIN_DELADE = 2
 PAIR_RATE = 0.25
 MODELL = "paraphrase-multilingual-MiniLM-L12-v2"

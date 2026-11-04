@@ -112,4 +112,23 @@ def test_title_en_foredras_framfor_original():
 
 
 def test_parametrarna_har_de_matta_standardvardena():
-    assert semantisk.TAU == 0.55 and semantisk.MIN_DELADE == 2 and semantisk.MODELL == "paraphrase-multilingual-MiniLM-L12-v2"
+    assert semantisk.TAU == 0.60 and semantisk.MIN_DELADE == 2 and semantisk.MODELL == "paraphrase-multilingual-MiniLM-L12-v2"
+
+
+def test_pipelinen_kor_hybridens_andra_varv_efter_andra_varvet_och_kan_stangas_av():
+    import inspect
+    main = inspect.getsource(pipeline.main)
+    assert "semantisk.sla_ihop(clusters)" in main and main.index("merge_clusters(cluster(items))") < main.index("semantisk.sla_ihop")
+    assert 'NN_SEMANTISK' in main
+
+
+def test_workflowen_installerar_modellen_utan_att_stoppa_vid_fel_och_cachar_den():
+    from pathlib import Path
+    import yaml
+    text = (Path(__file__).parent.parent / ".github" / "workflows" / "pipeline.yml").read_text(encoding="utf-8")
+    y = yaml.safe_load(text)
+    steg = y["jobs"]["run"]["steps"]
+    install = next(s for s in steg if "sentence-transformers" in str(s.get("run", "")))
+    assert install.get("continue-on-error") is True and "whl/cpu" in install["run"]
+    assert any(s.get("uses", "").startswith("actions/cache") and "huggingface" in s["with"]["path"] for s in steg)
+    assert steg.index(install) < next(i for i, s in enumerate(steg) if "pipeline.py" in str(s.get("run", "")))

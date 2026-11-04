@@ -658,6 +658,9 @@ def main():
     sidlasare.spara(aktiva={s["id"] for s in sources if s.get("hamtning") == "sida"})
     cross_language = translate_titles(items, client, model, cache) if client else False
     clusters = merge_clusters(cluster(items))
+    if os.environ.get("NN_SEMANTISK") != "0":           # hybridens andra varv (semantisk.py); saknas modellen används klustren som de är
+        import semantisk
+        clusters = semantisk.sla_ihop(clusters)
     events = []
     for c in clusters:
         c["topics"], c["section_topics"] = tag(c)

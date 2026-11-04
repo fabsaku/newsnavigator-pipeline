@@ -28,6 +28,16 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Flerspråkig modell för hybridklustringen (semantisk.py)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install sentence-transformers
+        continue-on-error: true         # utan modell används klustren som de är
+      - name: Modellens cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-paraphrase-multilingual-MiniLM-L12-v2
       - name: Kontrollera källor (nattkörningarna)
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0,2 * * *'
         run: python verify_feeds.py
