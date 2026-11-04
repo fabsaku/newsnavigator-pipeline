@@ -51,7 +51,7 @@ sources:
   - {id: npr, namn: NPR, url: "https://feeds.npr.org/1004/rss.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: public-service, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://feeds.npr.org/1014/rss.xml"]}
   - {id: thehill, namn: The Hill, url: "https://thehill.com/news/feed/", amnen: [usa, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
   - {id: cnbc, namn: CNBC, url: "https://www.cnbc.com/id/100003114/device/rss/rss.html", amnen: [marknader], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
-  - {id: fed, namn: Federal Reserve, url: "https://www.federalreserve.gov/feeds/press_all.xml", amnen: [marknader], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: fed, namn: Federal Reserve, url: "https://www.federalreserve.gov/feeds/press_monetary.xml", extra: ["https://www.federalreserve.gov/feeds/press_other.xml"], amnen: [marknader], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: nasa, namn: NASA, url: "https://www.nasa.gov/news-release/feed/", amnen: [rymd], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
 
   # ---------- Asien ----------
@@ -103,7 +103,7 @@ sources:
   # ---------- AI-bolagens egna besked (primärkällor) ----------
   - {id: anthropic, namn: Anthropic, url: "https://www.anthropic.com/news/rss.xml", alternativ: ["https://www.anthropic.com/rss.xml"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: google-ai, namn: Google AI, url: "https://blog.google/technology/ai/rss/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: microsoft-ai, namn: Microsoft AI, url: "https://blogs.microsoft.com/ai/feed/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: microsoft-ai, namn: Microsoft AI, url: "https://news.microsoft.com/source/topics/ai/feed/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: meta-ai, namn: Meta AI, url: "https://ai.meta.com/blog/rss/", alternativ: ["https://about.fb.com/news/category/technology/ai/feed/"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: nvidia, namn: NVIDIA, url: "https://blogs.nvidia.com/feed/", amnen: [ai, halvledare], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: mistral, namn: Mistral AI, url: "https://mistral.ai/news/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}
