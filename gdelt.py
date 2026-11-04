@@ -11,6 +11,7 @@ söker i maskinöversatt text och egennamn är samma på alla språk.
 import json
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -18,7 +19,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 CACHE = ROOT / "data" / "gdelt.json"
 API = "https://api.gdeltproject.org/api/v2/doc/doc"
-VILA = 5.5                 # sekunder mellan frågor: GDELT tillåter ungefär en fråga per fem sekunder
+VILA = 9.0                 # sekunder mellan frågor: 5,5 räckte inte, GDELT svarade 429 på fyra av fem
+VANTA_429 = [15, 30]       # sekunder att vänta före ny försök när GDELT svarar 429
 MAX_FRAGOR = 15
 CACHE_SEKUNDER = 86400
 MIN_NAMN, MAX_NAMN = 2, 3
@@ -37,10 +39,20 @@ def _namn(rubrik):
     return ut
 
 
+def _namn_ur_kallor(ev):
+    """Egennamn (versaler, minst fyra bokstäver) som finns i minst två av källornas rubriker, vanligast först. Tål att händelsens egen rubrik är allmän."""
+    antal = {}
+    for k in ev.get("kallor") or []:
+        for n in set(_namn("x " + (k.get("rubrik") or ""))):          # "x " så att även första ordet räknas
+            antal[n] = antal.get(n, 0) + 1
+    return [n for n, c in sorted(antal.items(), key=lambda x: (-x[1], -len(x[0]))) if c >= 2]
+
+
 def fraga(ev):
-    """GDELT-frågan för en händelse, eller None när rubriken har för få egennamn för att frågan ska vara träffsäker."""
+    """GDELT-frågan för en händelse, eller None när rubrikerna har för få egennamn för att frågan ska vara träffsäker."""
     d = ev.get("utkast") or {}
-    namn = _namn(d.get("rubrik_en") or ev.get("reserv_rubrik") or "")
+    egna = _namn(d.get("rubrik_en") or ev.get("reserv_rubrik") or "")
+    namn = egna if len(egna) >= MIN_NAMN else _namn_ur_kallor(ev)
     if len(namn) < MIN_NAMN:
         return None
     return " ".join(f'"{n}"' for n in namn[:MAX_NAMN]) + " sourcecountry:sweden"
@@ -59,10 +71,22 @@ def kontrollera(ev, hamta=_hamta, vila=time.sleep):
     q = fraga(ev)
     if q is None:
         return {"fraga": None, "svenska_domaner": [], "utlatande": "oklart", "fel": "för få egennamn i rubriken"}
-    try:
-        svar = hamta(q)
-    except Exception as e:
-        return {"fraga": q, "svenska_domaner": [], "utlatande": "oklart", "fel": f"{type(e).__name__}: {str(e)[:100]}"}
+    svar, fel = None, None
+    for vanta in [0, *VANTA_429]:
+        if vanta:
+            vila(vanta)
+        try:
+            svar, fel = hamta(q), None
+            break
+        except urllib.error.HTTPError as e:
+            fel = f"{type(e).__name__}: {str(e)[:100]}"
+            if e.code != 429:
+                break
+        except Exception as e:
+            fel = f"{type(e).__name__}: {str(e)[:100]}"
+            break
+    if fel:
+        return {"fraga": q, "svenska_domaner": [], "utlatande": "oklart", "fel": fel}
     if not isinstance(svar, dict):
         return {"fraga": q, "svenska_domaner": [], "utlatande": "oklart", "fel": "oväntat svar"}
     domaner = sorted({a.get("domain") for a in svar.get("articles") or [] if a.get("domain")})

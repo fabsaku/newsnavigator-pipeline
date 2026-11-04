@@ -116,3 +116,42 @@ def test_endast_metadata_sparas():
     r = gdelt.kontrollera(ev(), hamta=lambda q: artiklar("svt.se", "dn.se"), vila=lambda s: None)
     sparat = json.dumps(r)
     assert "title" not in sparat and "https://" not in sparat
+
+
+# ---------- Fler egennamn ur källornas rubriker, och 429 ----------
+
+def ev_med_kallor(rubrik_en, kallrubriker):
+    e = ev(rubrik_en)
+    e["kallor"] = [{"namn": f"K{n}", "rubrik": r, "url": f"https://x/{n}"} for n, r in enumerate(kallrubriker)]
+    return e
+
+
+def test_namn_som_finns_i_flera_kallrubriker_ger_fragan_underlag():
+    e = ev_med_kallor("Democrats win control of Congress in US midterm elections",
+                      ["Democrats win House as Trump blames Iran war", "Trump says Iran war hurt Republicans in midterms", "Congress flips as Democrats win House, Trump reacts",
+                       "Midterms: Democrats take Congress"])
+    q = gdelt.fraga(e)
+    assert q is not None and '"Trump"' in q and '"Democrats"' in q and q.count('"') <= 2 * gdelt.MAX_NAMN
+
+
+def test_namn_som_bara_finns_i_en_rubrik_raknas_inte():
+    e = ev_med_kallor("Oil prices fall as talks resume", ["Oil falls as Qeshm talks resume", "Prices ease in Asia"])
+    assert gdelt.fraga(e) is None
+
+
+def test_429_ger_ny_forsok_med_vila_och_sedan_resultat():
+    anrop, vilor = [], []
+    def hamta(q):
+        anrop.append(q)
+        if len(anrop) < 3:
+            raise __import__("urllib.error").error.HTTPError("u", 429, "Too Many Requests", {}, None)
+        return artiklar("svt.se", "dn.se")
+    r = gdelt.kontrollera(ev(), hamta=hamta, vila=vilor.append)
+    assert r["utlatande"] == "motsager" and len(anrop) == 3 and vilor == gdelt.VANTA_429
+
+
+def test_429_hela_vagen_ger_oklart_med_felet():
+    def alltid(q):
+        raise __import__("urllib.error").error.HTTPError("u", 429, "Too Many Requests", {}, None)
+    r = gdelt.kontrollera(ev(), hamta=alltid, vila=lambda s: None)
+    assert r["utlatande"] == "oklart" and "429" in r["fel"]
