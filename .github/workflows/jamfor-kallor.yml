@@ -44,3 +44,5 @@ jobs:
         run: |
           python jamfor_alternativ.py /tmp/A/flode.json /tmp/B/flode.json "$KALLOR" | tee jamforelse.txt
           { echo '## Alternativ A mot B'; echo '```'; cat jamforelse.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+# Provas en gång när frågan om AI-blockerande källor ska avgöras.
