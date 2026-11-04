@@ -129,3 +129,13 @@ def test_uteslutna_kallor_ar_inte_med_i_kallistan():
     import yaml
     ids = {s["id"] for s in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
     assert not ids & {"nyteknik", "euractiv", "the-decoder", "unnews", "balkaninsight"}
+
+
+def test_kallor_som_stanger_ute_claude_ar_bara_rubrik():
+    """Beslut B (4 november): de 33 källor utan betalvägg vars robots.txt nämner Claude skickar inte sin ingress till modellen."""
+    from pathlib import Path
+    import yaml
+    kallor = {s["id"]: s for s in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
+    ids = "svt,sr-ekot,nrk,guardian,france24,spiegel,politico-eu,thehill,cnbc,thehindu,aljazeera,mit-tr,verge,techcrunch,ieee-robotics,fz,wired-ai,huffpost,vox,nypost,daily-caller,rest-of-world,ieee-spectrum,nation-ke,yonhap,rappler,abc-au,rnz,dr,ruv,eltiempo,theeastafrican,eurasianet".split(",")
+    assert len(ids) == 33 and all(kallor[i].get("bara_rubrik") is True for i in ids)
+    assert kallor["bbc"].get("bara_rubrik") is not True                       # blockerar inte Claude: ingressen används som förr

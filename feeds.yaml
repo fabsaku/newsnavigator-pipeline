@@ -7,20 +7,21 @@
 #       land, region (sverige/norden/europa/usa/asien/mellanostern/afrika/global),
 #       agare (privat/public-service/statlig/organisation), statskontrollerad (true = staten styr innehållet)
 #       hamtning: sida = källa utan flöde, läses från en sidas rubriklista (sidlasare.py): url är sidan, lankar är ett reguljärt uttryck som nyhetslänkarnas sökväg ska matcha.
+#       bara_rubrik sätts på källor vars robots.txt stänger ute Claude (genomgång 4 november, beslut B): ingressen skickas inte till modellen.
 #       Prova med Actions, Källprov, fälten sida och monster. Läsaren hämtar bara rubrik och länk och respekterar robots.txt.
 # Betalväggskällor används bara för rubrik och länk, aldrig för text.
 # Statskontrollerade medier tas med för att visa hur olika stater berättar, och märks alltid tydligt.
 
 sources:
   # ---------- Sverige och Norden ----------
-  - {id: svt, namn: SVT Nyheter, url: "https://www.svt.se/nyheter/rss.xml", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false}
-  - {id: sr-ekot, namn: Sveriges Radio Ekot, url: "https://api.sr.se/api/rss/program/83", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false, hemsida: "https://sverigesradio.se/ekot"}
+  - {id: svt, bara_rubrik: true, namn: SVT Nyheter, url: "https://www.svt.se/nyheter/rss.xml", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false}
+  - {id: sr-ekot, bara_rubrik: true, namn: Sveriges Radio Ekot, url: "https://api.sr.se/api/rss/program/83", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: public-service, statskontrollerad: false, hemsida: "https://sverigesradio.se/ekot"}
   - {id: dn, namn: Dagens Nyheter, url: "https://www.dn.se/rss/", amnen: [sverige, varlden], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: di, namn: Dagens industri, url: "https://www.di.se/rss", amnen: [marknader, sverige], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   - {id: breakit, namn: Breakit, url: "https://www.breakit.se/feed/artiklar", amnen: [startups, teknik], sprak: sv, typ: media, betalvagg: true, land: SE, region: sverige, agare: privat, statskontrollerad: false}
   # Utesluten 4 november 2026 på Fabians beslut: Ny Teknik (betalvägg, och stänger ute AI-botar i robots.txt).
   - {id: yle, namn: Yle News, url: "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS", alternativ: ["https://yle.fi/rss/uutiset/news"], amnen: [norden, varlden], sprak: en, typ: media, betalvagg: false, land: FI, region: norden, agare: public-service, statskontrollerad: false}
-  - {id: nrk, namn: NRK, url: "https://www.nrk.no/toppsaker.rss", amnen: [norden, varlden], sprak: no, typ: media, betalvagg: false, land: "NO", region: norden, agare: public-service, statskontrollerad: false}
+  - {id: nrk, bara_rubrik: true, namn: NRK, url: "https://www.nrk.no/toppsaker.rss", amnen: [norden, varlden], sprak: no, typ: media, betalvagg: false, land: "NO", region: norden, agare: public-service, statskontrollerad: false}
 
   # ---------- Svenska primärkällor ----------
   - {id: riksbanken, namn: Riksbanken, url: "https://www.riksbank.se/sv/rss/pressmeddelanden/", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
@@ -33,13 +34,13 @@ sources:
   - {id: ft, namn: Financial Times, url: "https://www.ft.com/rss/home", amnen: [marknader, varlden], sprak: en, typ: media, betalvagg: true, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: economist, namn: The Economist, url: "https://www.economist.com/finance-and-economics/rss.xml", amnen: [marknader, varlden], sprak: en, typ: media, betalvagg: true, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: bbc, namn: BBC World, url: "https://feeds.bbci.co.uk/news/world/rss.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: public-service, statskontrollerad: false, hemsida: "https://www.bbc.com/news"}
-  - {id: guardian, namn: The Guardian, url: "https://www.theguardian.com/world/rss", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
+  - {id: guardian, bara_rubrik: true, namn: The Guardian, url: "https://www.theguardian.com/world/rss", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: lemonde, namn: Le Monde (English), url: "https://www.lemonde.fr/en/rss/une.xml", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: true, land: FR, region: europa, agare: privat, statskontrollerad: false}
-  - {id: france24, namn: France 24, url: "https://www.france24.com/en/rss", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: FR, region: europa, agare: public-service, statskontrollerad: false}
-  - {id: spiegel, namn: Der Spiegel International, url: "https://www.spiegel.de/international/index.rss", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: privat, statskontrollerad: false}
+  - {id: france24, bara_rubrik: true, namn: France 24, url: "https://www.france24.com/en/rss", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: FR, region: europa, agare: public-service, statskontrollerad: false}
+  - {id: spiegel, bara_rubrik: true, namn: Der Spiegel International, url: "https://www.spiegel.de/international/index.rss", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: privat, statskontrollerad: false}
   - {id: dw, namn: Deutsche Welle, url: "https://rss.dw.com/rdf/rss-en-all", alternativ: ["https://rss.dw.com/xml/rss-en-all"], amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: public-service, statskontrollerad: false}
   - {id: elpais, namn: El País (English), url: "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada", amnen: [europa, varlden], sprak: en, typ: media, betalvagg: false, land: ES, region: europa, agare: privat, statskontrollerad: false}
-  - {id: politico-eu, namn: Politico Europe, url: "https://www.politico.eu/feed/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: BE, region: europa, agare: privat, statskontrollerad: false}
+  - {id: politico-eu, bara_rubrik: true, namn: Politico Europe, url: "https://www.politico.eu/feed/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: BE, region: europa, agare: privat, statskontrollerad: false}
   # Utesluten 4 november 2026, utgivaren tillåter inte oss: Euractiv (robots.txt: Disallow /feed/).
   - {id: ecb, namn: Europeiska centralbanken, url: "https://www.ecb.europa.eu/rss/press.html", amnen: [marknader, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
   - {id: esa, namn: ESA, url: "https://www.esa.int/rssfeed/Our_Activities", amnen: [rymd, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
@@ -51,8 +52,8 @@ sources:
   - {id: wsj, namn: The Wall Street Journal, url: "https://feeds.content.dowjones.io/public/rss/RSSWorldNews", amnen: [varlden, marknader], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten, extra: ["https://feeds.content.dowjones.io/public/rss/socialpoliticsfeed"], hemsida: "https://www.wsj.com"}
   - {id: fox, namn: Fox News, url: "https://moxie.foxnews.com/google-publisher/world.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger, extra: ["https://moxie.foxnews.com/google-publisher/politics.xml"]}
   - {id: npr, namn: NPR, url: "https://feeds.npr.org/1004/rss.xml", amnen: [varlden, usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: public-service, statskontrollerad: false, usa_lutning: lutar_vanster, extra: ["https://feeds.npr.org/1014/rss.xml"]}
-  - {id: thehill, namn: The Hill, url: "https://thehill.com/news/feed/", amnen: [usa, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
-  - {id: cnbc, namn: CNBC, url: "https://www.cnbc.com/id/100003114/device/rss/rss.html", amnen: [marknader], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
+  - {id: thehill, bara_rubrik: true, namn: The Hill, url: "https://thehill.com/news/feed/", amnen: [usa, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
+  - {id: cnbc, bara_rubrik: true, namn: CNBC, url: "https://www.cnbc.com/id/100003114/device/rss/rss.html", amnen: [marknader], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: mitten}
   - {id: fed, namn: Federal Reserve, url: "https://www.federalreserve.gov/feeds/press_monetary.xml", extra: ["https://www.federalreserve.gov/feeds/press_other.xml"], amnen: [marknader], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: nasa, namn: NASA, url: "https://www.nasa.gov/news-release/feed/", amnen: [rymd], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
 
@@ -60,10 +61,10 @@ sources:
   - {id: nikkei, namn: Nikkei Asia, url: "https://asia.nikkei.com/rss/feed/nar", amnen: [asien, marknader], sprak: en, typ: media, betalvagg: true, land: JP, region: asien, agare: privat, statskontrollerad: false}
   - {id: japantimes, namn: The Japan Times, url: "https://www.japantimes.co.jp/feed/", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: JP, region: asien, agare: privat, statskontrollerad: false}
   - {id: scmp, namn: South China Morning Post, url: "https://www.scmp.com/rss/91/feed", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: HK, region: asien, agare: privat, statskontrollerad: false}
-  - {id: thehindu, namn: The Hindu, url: "https://www.thehindu.com/news/international/feeder/default.rss", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: IN, region: asien, agare: privat, statskontrollerad: false}
+  - {id: thehindu, bara_rubrik: true, namn: The Hindu, url: "https://www.thehindu.com/news/international/feeder/default.rss", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: IN, region: asien, agare: privat, statskontrollerad: false}
 
   # ---------- Mellanöstern och Afrika ----------
-  - {id: aljazeera, namn: Al Jazeera, url: "https://www.aljazeera.com/xml/rss/all.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: QA, region: mellanostern, agare: statlig, statskontrollerad: false}
+  - {id: aljazeera, bara_rubrik: true, namn: Al Jazeera, url: "https://www.aljazeera.com/xml/rss/all.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: QA, region: mellanostern, agare: statlig, statskontrollerad: false}
   # Pausad 2026-10-27: robots.txt blockerar /feed/ för alla botar (User-agent: * / Disallow: /feed/).
   # - {id: timesofisrael, namn: The Times of Israel, url: "https://www.timesofisrael.com/feed/", amnen: [mellanostern, varlden], sprak: en, typ: media, betalvagg: false, land: IL, region: mellanostern, agare: privat, statskontrollerad: false}
   - {id: haaretz, namn: Haaretz, url: "https://www.haaretz.com/srv/haaretz-latest-headlines", amnen: [mellanostern, varlden], sprak: en, typ: media, betalvagg: true, land: IL, region: mellanostern, agare: privat, statskontrollerad: false}
@@ -82,17 +83,17 @@ sources:
   - {id: hf-blog, namn: Hugging Face, url: "https://huggingface.co/blog/feed.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: openai, namn: OpenAI, url: "https://openai.com/news/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: deepmind, namn: Google DeepMind, url: "https://deepmind.google/blog/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
-  - {id: mit-tr, namn: MIT Technology Review, url: "https://www.technologyreview.com/feed/", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
-  - {id: verge, namn: The Verge, url: "https://www.theverge.com/rss/index.xml", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: mit-tr, bara_rubrik: true, namn: MIT Technology Review, url: "https://www.technologyreview.com/feed/", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: verge, bara_rubrik: true, namn: The Verge, url: "https://www.theverge.com/rss/index.xml", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: ars, namn: Ars Technica, url: "https://feeds.arstechnica.com/arstechnica/index", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: techcrunch, namn: TechCrunch, url: "https://techcrunch.com/feed/", amnen: [teknik, startups], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: ieee-robotics, namn: IEEE Spectrum Robotics, url: "https://spectrum.ieee.org/feeds/topic/robotics.rss", amnen: [robotik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: techcrunch, bara_rubrik: true, namn: TechCrunch, url: "https://techcrunch.com/feed/", amnen: [teknik, startups], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: ieee-robotics, bara_rubrik: true, namn: IEEE Spectrum Robotics, url: "https://spectrum.ieee.org/feeds/topic/robotics.rss", amnen: [robotik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: robot-report, namn: The Robot Report, url: "https://www.therobotreport.com/feed/", amnen: [robotik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
   # ---------- Nöje och spel ----------
   # Aftonbladet och Expressen stänger ute AI-botar i robots.txt: bara rubrik och länk, ingressen går aldrig till AI:n.
   - {id: gameranx, namn: Gameranx, url: "https://gameranx.com/feed/", amnen: [spel], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: fz, namn: FZ, url: "https://www.fz.se/feeds/nyheter", amnen: [spel], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.fz.se"}
+  - {id: fz, bara_rubrik: true, namn: FZ, url: "https://www.fz.se/feeds/nyheter", amnen: [spel], sprak: sv, typ: media, betalvagg: false, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.fz.se"}
   - {id: aftonbladet-noje, namn: Aftonbladet Nöjesbladet, url: "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/", amnen: [noje], sprak: sv, typ: media, betalvagg: false, bara_rubrik: true, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.aftonbladet.se/nojesbladet"}
   - {id: expressen-noje, namn: Expressen Nöje, url: "https://www.expressen.se/rss/noje", amnen: [noje], sprak: sv, typ: media, betalvagg: false, bara_rubrik: true, land: SE, region: sverige, agare: privat, statskontrollerad: false, hemsida: "https://www.expressen.se/noje/"}
 
@@ -113,7 +114,7 @@ sources:
   # ---------- AI- och techmedier ----------
   # Utesluten 4 november 2026, utgivaren tillåter inte oss: The Decoder (robots.txt: Disallow */feed/).
   - {id: venturebeat-ai, namn: VentureBeat AI, url: "https://venturebeat.com/category/ai/feed/", amnen: [ai, startups], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: wired-ai, namn: Wired AI, url: "https://www.wired.com/feed/tag/ai/latest/rss", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: wired-ai, bara_rubrik: true, namn: Wired AI, url: "https://www.wired.com/feed/tag/ai/latest/rss", amnen: [ai, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: cyberscoop, namn: CyberScoop, url: "https://cyberscoop.com/feed/", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: the-information, namn: The Information, url: "https://www.theinformation.com/feed", amnen: [teknik, ai, startups], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
 
@@ -133,22 +134,22 @@ sources:
   - {id: cnn, namn: CNN, url: "http://rss.cnn.com/rss/cnn_latest.rss", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
   - {id: politico, namn: Politico, url: "https://rss.politico.com/politics-news.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
   - {id: axios, namn: Axios, url: "https://www.axios.com/feeds/feed.rss", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
-  - {id: huffpost, namn: HuffPost, url: "https://www.huffpost.com/section/front-page/feed", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
-  - {id: vox, namn: Vox, url: "https://www.vox.com/rss/index.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
+  - {id: huffpost, bara_rubrik: true, namn: HuffPost, url: "https://www.huffpost.com/section/front-page/feed", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
+  - {id: vox, bara_rubrik: true, namn: Vox, url: "https://www.vox.com/rss/index.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
   - {id: wash-examiner, namn: Washington Examiner, url: "https://www.washingtonexaminer.com/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
   - {id: wash-times, namn: The Washington Times, url: "https://www.washingtontimes.com/rss/headlines/news/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
   - {id: reason, namn: Reason, url: "https://reason.com/latest/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
-  - {id: nypost, namn: New York Post, url: "https://nypost.com/news/feed/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger}
-  - {id: daily-caller, namn: The Daily Caller, url: "https://dailycaller.com/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger}
+  - {id: nypost, bara_rubrik: true, namn: New York Post, url: "https://nypost.com/news/feed/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger}
+  - {id: daily-caller, bara_rubrik: true, namn: The Daily Caller, url: "https://dailycaller.com/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: hoger}
 
   # ---------- Tech utanför Silicon Valley och djupare tech ----------
-  - {id: rest-of-world, namn: Rest of World, url: "https://restofworld.org/feed/latest/", amnen: [teknik, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: global, agare: organisation, statskontrollerad: false}
+  - {id: rest-of-world, bara_rubrik: true, namn: Rest of World, url: "https://restofworld.org/feed/latest/", amnen: [teknik, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: global, agare: organisation, statskontrollerad: false}
   - {id: sifted, namn: Sifted, url: "https://sifted.eu/feed", amnen: [startups, teknik, europa], sprak: en, typ: media, betalvagg: false, land: GB, region: europa, agare: privat, statskontrollerad: false}
   - {id: technode, namn: TechNode, url: "https://technode.com/feed/", amnen: [teknik, asien], sprak: en, typ: media, betalvagg: false, land: CN, region: asien, agare: privat, statskontrollerad: false}
   - {id: 404media, namn: 404 Media, url: "https://www.404media.co/rss/", amnen: [teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: platformer, namn: Platformer, url: "https://www.platformer.news/rss/", amnen: [teknik], sprak: en, typ: media, betalvagg: true, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: toms-hardware, namn: Tom's Hardware, url: "https://www.tomshardware.com/feeds/all", amnen: [halvledare, teknik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: ieee-spectrum, namn: IEEE Spectrum, url: "https://spectrum.ieee.org/feeds/feed.rss", amnen: [teknik, vetenskap], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: ieee-spectrum, bara_rubrik: true, namn: IEEE Spectrum, url: "https://spectrum.ieee.org/feeds/feed.rss", amnen: [teknik, vetenskap], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
   - {id: simon-willison, namn: Simon Willison, url: "https://simonwillison.net/atom/everything/", amnen: [ai], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
 # Saknar RSS (bevakas på annat sätt senare): IEA, Xinhua.
@@ -165,21 +166,21 @@ sources:
   - {id: dailymaverick, namn: Daily Maverick, url: "https://www.dailymaverick.co.za/dmrss/", amnen: [afrika, varlden], sprak: en, typ: media, betalvagg: false, land: ZA, region: afrika, agare: privat, statskontrollerad: false}
   - {id: premiumtimes, namn: Premium Times, url: "https://www.premiumtimesng.com/feed", amnen: [afrika], sprak: en, typ: media, betalvagg: false, land: NG, region: afrika, agare: privat, statskontrollerad: false}
   - {id: africanews, namn: Africanews, url: "https://www.africanews.com/feed/rss", alternativ: ["https://www.africanews.com/feed/"], amnen: [afrika, varlden], sprak: en, typ: media, betalvagg: false, land: CG, region: afrika, agare: privat, statskontrollerad: false}
-  - {id: nation-ke, namn: Nation (Kenya), url: "https://nation.africa/kenya/rss.xml", amnen: [afrika], sprak: en, typ: media, betalvagg: false, land: KE, region: afrika, agare: privat, statskontrollerad: false}
+  - {id: nation-ke, bara_rubrik: true, namn: Nation (Kenya), url: "https://nation.africa/kenya/rss.xml", amnen: [afrika], sprak: en, typ: media, betalvagg: false, land: KE, region: afrika, agare: privat, statskontrollerad: false}
   - {id: thenational, namn: The National, url: "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml", amnen: [mellanostern, varlden], sprak: en, typ: media, betalvagg: false, land: AE, region: mellanostern, agare: statlig, statskontrollerad: true}
   - {id: mee, namn: Middle East Eye, url: "https://www.middleeasteye.net/rss", amnen: [mellanostern], sprak: en, typ: media, betalvagg: false, land: GB, region: mellanostern, agare: privat, statskontrollerad: false}
   - {id: almonitor, namn: Al-Monitor, url: "https://www.al-monitor.com/rss", amnen: [mellanostern], sprak: en, typ: media, betalvagg: false, land: US, region: mellanostern, agare: privat, statskontrollerad: false}
   - {id: tehrantimes, namn: Tehran Times, url: "https://www.tehrantimes.com/rss", amnen: [mellanostern], sprak: en, typ: media, betalvagg: false, land: IR, region: mellanostern, agare: statlig, statskontrollerad: true}
   - {id: straitstimes, namn: The Straits Times, url: "https://www.straitstimes.com/news/world/rss.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: SG, region: asien, agare: privat, statskontrollerad: false}
   - {id: cna, namn: CNA, url: "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: SG, region: asien, agare: statlig, statskontrollerad: false}
-  - {id: yonhap, namn: Yonhap, url: "https://en.yna.co.kr/RSS/news.xml", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: KR, region: asien, agare: statlig, statskontrollerad: false}
+  - {id: yonhap, bara_rubrik: true, namn: Yonhap, url: "https://en.yna.co.kr/RSS/news.xml", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: KR, region: asien, agare: statlig, statskontrollerad: false}
   - {id: dawn, namn: Dawn, url: "https://www.dawn.com/feeds/home", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: PK, region: asien, agare: privat, statskontrollerad: false}
   - {id: bangkokpost, namn: Bangkok Post, url: "https://www.bangkokpost.com/rss/data/topstories.xml", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: TH, region: asien, agare: privat, statskontrollerad: false}
-  - {id: rappler, namn: Rappler, url: "https://www.rappler.com/feed/", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: PH, region: asien, agare: privat, statskontrollerad: false}
-  - {id: abc-au, namn: ABC News (Australien), url: "https://www.abc.net.au/news/feed/51120/rss.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: AU, region: asien, agare: public-service, statskontrollerad: false}
-  - {id: rnz, namn: RNZ, url: "https://www.rnz.co.nz/rss/world.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: NZ, region: asien, agare: public-service, statskontrollerad: false}
-  - {id: dr, namn: DR Nyheder, url: "https://www.dr.dk/nyheder/service/feeds/allenyheder", amnen: [norden, varlden], sprak: da, typ: media, betalvagg: false, land: DK, region: norden, agare: public-service, statskontrollerad: false}
-  - {id: ruv, namn: RÚV English, url: "https://www.ruv.is/rss/english", amnen: [norden], sprak: en, typ: media, betalvagg: false, land: IS, region: norden, agare: public-service, statskontrollerad: false}
+  - {id: rappler, bara_rubrik: true, namn: Rappler, url: "https://www.rappler.com/feed/", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: PH, region: asien, agare: privat, statskontrollerad: false}
+  - {id: abc-au, bara_rubrik: true, namn: ABC News (Australien), url: "https://www.abc.net.au/news/feed/51120/rss.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: AU, region: asien, agare: public-service, statskontrollerad: false}
+  - {id: rnz, bara_rubrik: true, namn: RNZ, url: "https://www.rnz.co.nz/rss/world.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: NZ, region: asien, agare: public-service, statskontrollerad: false}
+  - {id: dr, bara_rubrik: true, namn: DR Nyheder, url: "https://www.dr.dk/nyheder/service/feeds/allenyheder", amnen: [norden, varlden], sprak: da, typ: media, betalvagg: false, land: DK, region: norden, agare: public-service, statskontrollerad: false}
+  - {id: ruv, bara_rubrik: true, namn: RÚV English, url: "https://www.ruv.is/rss/english", amnen: [norden], sprak: en, typ: media, betalvagg: false, land: IS, region: norden, agare: public-service, statskontrollerad: false}
   # Utesluten 4 november 2026, utgivaren tillåter inte oss: UN News (robots.txt: Disallow */news/).
   - {id: who, namn: WHO, url: "https://www.who.int/rss-feeds/news-english.xml", amnen: [vetenskap, varlden], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false}
   - {id: gdacs, namn: GDACS katastrofvarningar, url: "https://www.gdacs.org/xml/rss.xml", amnen: [varlden, klimat], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false, rubrik_filter: "(?i)^(orange|red)\\b"}
@@ -189,8 +190,8 @@ sources:
   - {id: notesfrompoland, namn: Notes from Poland, url: "https://notesfrompoland.com/feed/", amnen: [europa], sprak: en, typ: media, betalvagg: false, land: PL, region: europa, agare: privat, statskontrollerad: false}
   - {id: hindustantimes, namn: Hindustan Times, url: "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml", amnen: [asien, varlden], sprak: en, typ: media, betalvagg: false, land: IN, region: asien, agare: privat, statskontrollerad: false}
   - {id: gleaner, namn: Jamaica Gleaner, url: "https://jamaica-gleaner.com/feed/rss.xml", alternativ: ["https://jamaica-gleaner.com/rss"], amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: JM, region: latinamerika, agare: privat, statskontrollerad: false}
-  - {id: eltiempo, namn: El Tiempo, url: "https://www.eltiempo.com/rss/mundo.xml", amnen: [varlden], sprak: es, typ: media, betalvagg: false, land: CO, region: latinamerika, agare: privat, statskontrollerad: false}
-  - {id: theeastafrican, namn: The East African, url: "https://www.theeastafrican.co.ke/rss.xml", alternativ: ["https://www.theeastafrican.co.ke/tea/rss"], amnen: [afrika], sprak: en, typ: media, betalvagg: false, land: KE, region: afrika, agare: privat, statskontrollerad: false}
+  - {id: eltiempo, bara_rubrik: true, namn: El Tiempo, url: "https://www.eltiempo.com/rss/mundo.xml", amnen: [varlden], sprak: es, typ: media, betalvagg: false, land: CO, region: latinamerika, agare: privat, statskontrollerad: false}
+  - {id: theeastafrican, bara_rubrik: true, namn: The East African, url: "https://www.theeastafrican.co.ke/rss.xml", alternativ: ["https://www.theeastafrican.co.ke/tea/rss"], amnen: [afrika], sprak: en, typ: media, betalvagg: false, land: KE, region: afrika, agare: privat, statskontrollerad: false}
   - {id: kyivindependent, namn: The Kyiv Independent, url: "https://kyivindependent.com/news-archive/rss/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: UA, region: europa, agare: privat, statskontrollerad: false}
-  - {id: eurasianet, namn: Eurasianet, url: "https://eurasianet.org/rss", amnen: [asien, geopolitik], sprak: en, typ: media, betalvagg: false, land: INT, region: asien, agare: organisation, statskontrollerad: false}
+  - {id: eurasianet, bara_rubrik: true, namn: Eurasianet, url: "https://eurasianet.org/rss", amnen: [asien, geopolitik], sprak: en, typ: media, betalvagg: false, land: INT, region: asien, agare: organisation, statskontrollerad: false}
   - {id: focustaiwan, namn: Focus Taiwan, url: "https://feeds.feedburner.com/rsscna/engnews", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: TW, region: asien, agare: statlig, statskontrollerad: false}
