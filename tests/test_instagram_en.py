@@ -3,6 +3,8 @@ import json
 import time
 from datetime import datetime, timezone
 
+import re
+
 import pytest
 
 import instagram
@@ -33,7 +35,7 @@ def handelse(eid="aaaaaaaaaa", kallor=None, **extra):
     return ev
 
 
-SVENSKA = ["källor", "Saknas i svenska", "Så ser världen", "Sammanfattad med hjälp", "Svep:", "Källorna skiljer sig", "Blå publik", "granskad av redaktionen"]
+SVENSKA = ["källor", "Saknas i svenska", "Så ser världen", "Sammanfattad med hjälp", "Nästa sida:", "Källorna skiljer sig", "Blå publik", "granskad av redaktionen"]
 
 
 # ---------- Datum och kort ----------
@@ -46,7 +48,7 @@ def test_datum_pa_bada_spraken():
 def test_omslaget_pa_engelska_har_ingen_svenska():
     html = instagram.slide_cover(handelse(), "Monday 2 November", True, lang="en")
     assert "Train crash in Spain" in html and "At least 60 dead." in html and "Tågolycka" not in html
-    assert "3 sources in three regions" in html and "Swipe: how the world sees it" in html
+    assert "3 sources in three regions" in html and "Next page: how the world sees it" in html
     assert "Summarised with the help of AI and reviewed by the editors." in html
     assert "World" in html and "Asia and Oceania" not in html      # sektionen, och korta regionnamn i remsan
     assert not any(s in html for s in SVENSKA)
@@ -54,7 +56,7 @@ def test_omslaget_pa_engelska_har_ingen_svenska():
 
 def test_omslaget_pa_svenska_ar_oforandrat():
     html = instagram.slide_cover(handelse(), "Måndag 2 november", True)
-    assert "Tågolycka i Spanien" in html and "3 källor i tre regioner" in html and "Svep: så ser världen på det" in html
+    assert "Tågolycka i Spanien" in html and "3 källor i tre regioner" in html and "Nästa sida: så ser världen på det" in html
 
 
 def test_saknas_i_svenska_medier_finns_inte_pa_engelska_kort():
@@ -222,3 +224,18 @@ def test_status_behaller_token_utgar(rot):
     instagram.spara_status("en", token_utgar="2026-12-20")
     instagram.spara_status("en", secrets=True)
     assert instagram.load_status("en") == {"token_utgar": "2026-12-20", "secrets": True}
+
+
+# ---------- Tonen: en modern global text-tv ----------
+
+UPPMANINGAR = re.compile(r"\b(dela|delar|dela vidare|skicka vidare|tipsa|följ|följ oss|spara|gilla|kommentera|prenumerera|swipe|svep|share|send this|follow|follow us|"
+                         r"save this|like|comment|subscribe|tag a friend|link in bio|länk i bion|länken i bion)\b", re.I)
+
+
+@pytest.mark.parametrize("lang", ["sv", "en"])
+def test_inga_uppmaningar_i_kort_eller_bildtext(lang):
+    """Positioneringen är en modern global text-tv: rubrik, fakta, källor. Aldrig uppmaningar att dela, följa, spara eller svepa."""
+    ev = handelse()
+    texter = [instagram.caption(ev, lang=lang)] + [re.sub(r"<[^>]+>", " ", re.sub(r"<style.*?</style>", "", s, flags=re.S)) for s in instagram.slides(ev, lang=lang)]
+    for t in texter:
+        assert not UPPMANINGAR.search(t), UPPMANINGAR.search(t).group(0)

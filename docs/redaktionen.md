@@ -158,6 +158,8 @@ Det här kan bara du göra. Det som står överst spärrar mest. Spår A0 i plan
 
 **Tesen.** Kombinerar man tillräckligt bra källor kan AI analysera dem och hitta berättelsen, eller de olika berättelserna. Newsnavigator ska därför ge tre lager per händelse: fakta (kärnan som källorna är överens om, källkontrollerad), berättelser (två till fyra sätt att berätta händelsen, vilka medier och regioner som bär dem och vad de lyfter fram) och betydelse (vad händelsen innebär för just den här läsaren, märkt Analys och spårbar till källorna).
 
+**Tonen: en modern global text-tv.** Kort, tätt och faktabaserat: rubrik, ett par rader, källor, nästa sida. Vi ber aldrig läsaren att dela, följa, spara eller svepa, varken i Instagramkort, bildtexter, brev eller på sajten; kortet pekar bara vidare med en sidhänvisning ("Nästa sida: så ser världen på det"). Räckvidden kommer av att det är bra och lätt att läsa, inte av att vi ber om den.
+
 **Två läsare, två utgåvor.** De delar händelser men inte urval, språk eller konto.
 
 | | Svenska utgåvan (@newsnavigator.se, newsnavigator.se/sv) | Engelska utgåvan (@news.navigator, newsnavigator.se/en) |

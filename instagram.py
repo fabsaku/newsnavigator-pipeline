@@ -50,7 +50,7 @@ HASHTAGS = {"sv": {"varlden": "#omvärlden #utrikes", "sverige": "#sverige #inri
                    "tech": "#tech #ai", "vetenskap": "#science #research", "noje": "#entertainment #gaming #culture"}}
 SPRAK = {"sv": 0, "en": 1}      # plats i render.REGIONS, LEANS och country, som är (svenska, engelska)
 TXT = {
-    "sv": {"swipe": "Svep: så ser världen på det", "world": "Så ser världen på det",
+    "sv": {"swipe": "Nästa sida: så ser världen på det", "world": "Så ser världen på det",
            "world_lede": "Rubrikerna från {k} regioner, en per region. Länkar till alla hos oss.",
            "usa": "USA: blått och rött", "usa_lede": "Samma händelse i medier med olika publik.",
            "bla": "Blå publik", "mitten": "Mitten", "rod": "Röd publik",
@@ -63,7 +63,7 @@ TXT = {
            "ai_granskad": "Sammanfattad med hjälp av AI och granskad av redaktionen.",
            "ai_auto": "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns.",
            "words": {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta", 9: "nio"}},
-    "en": {"swipe": "Swipe: how the world sees it", "world": "How the world sees it",
+    "en": {"swipe": "Next page: how the world sees it", "world": "How the world sees it",
            "world_lede": "Headlines from {k} regions, one per region. Links to all of them on our site.",
            "usa": "US: blue and red", "usa_lede": "The same story in outlets with different audiences.",
            "bla": "Blue audience", "mitten": "Centre", "rod": "Red audience",
