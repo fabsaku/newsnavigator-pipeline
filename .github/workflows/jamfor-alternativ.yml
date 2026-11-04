@@ -1,4 +1,4 @@
-name: Jämför källor
+name: Jämförelse A och B
 
 # Jämför alternativ A (ingress från alla källor, som idag) och B (bara rubrik för källor som stänger ute Claude i robots.txt).
 # Kör pipelinen med modellen två gånger på samma flöden och skriver jämförelsen i körningens sammanfattning. Skriver inget till repot.
@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: jamfor-kallor
+  group: jamfor-alternativ
   cancel-in-progress: false
 
 jobs:

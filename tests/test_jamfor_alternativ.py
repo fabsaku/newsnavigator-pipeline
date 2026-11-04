@@ -73,7 +73,7 @@ def test_utskriften_ar_kort_och_sager_slutsatsen():
 def test_workflowen_kor_a_och_b_och_skriver_inget_till_repot():
     from pathlib import Path
     import yaml
-    text = (Path(__file__).parent.parent / ".github" / "workflows" / "jamfor-kallor.yml").read_text(encoding="utf-8")
+    text = (Path(__file__).parent.parent / ".github" / "workflows" / "jamfor-alternativ.yml").read_text(encoding="utf-8")
     y = yaml.safe_load(text)
     assert "schedule" not in y[True] and y["permissions"] == {"contents": "read"}
     assert "git push" not in text and "git commit" not in text
