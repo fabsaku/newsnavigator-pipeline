@@ -40,6 +40,13 @@ SECTION_PRIORITY = ["tech", "vetenskap", "marknader", "noje", "sverige", "varlde
 _SECTION_TAGS = {k: tags for k, _, _, tags in SECTIONS}
 
 
+def usa_text(ev, lang):
+    """USA: blått och rött, bara när det är relevant (utgava.usa_relevant)."""
+    import utgava
+    d = ev.get("utkast") or {}
+    return (d.get("usa_en" if lang == "en" else "usa_sv") or d.get("usa_sv")) if utgava.usa_relevant(ev) else None
+
+
 def section_of(ev):
     """Sektion efter sektionsämnena (texten, och bevakning som alla källor delar), annars Världen.
     Äldre notiser utan sektionsämnen går på alla ämnen."""
@@ -219,8 +226,8 @@ def _story(ev, lang, first):
         rows.append(f'<p style="margin:0 0 10px 0;font-family:{MONO};font-size:13px;line-height:1.5;color:{FG}">'
                     f'{_e(name)}: <b>{v} {x["enhet"]}</b> ({_e(x["datum"])}, {year} {prev} {x["enhet"]}) · '
                     f'<a href="{_e(x["url"])}" style="color:{MUTED}">{_e(x["kalla"])}</a></p>')
-    usa = d.get("usa_en" if lang == "en" else "usa_sv") or d.get("usa_sv")
-    if usa and (ev.get("perspektiv") or {}).get("usa"):
+    usa = usa_text(ev, lang)
+    if usa:
         rows.append(f'<p style="margin:0 0 10px 0;padding-left:12px;border-left:2px solid {FG};font-family:{SANS};'
                     f'font-size:15px;line-height:1.5;color:{FG}"><b>{t["usa"]}</b> '
                     f'<span style="font-family:{MONO};font-size:11px;color:{MUTED}">AllSides</span><br>{_e(usa)}</p>')
@@ -306,8 +313,8 @@ def build_text(lang, chosen, groups, col, now):
             persp = d.get(f"perspektiv_{lang}") or d.get("perspektiv_sv")
             if persp and len((e.get("perspektiv") or {}).get("regioner", [])) >= 2:
                 out.append(f"{t['varlden']}: {persp}")
-            usa = d.get(f"usa_{lang}") or d.get("usa_sv")
-            if usa and (e.get("perspektiv") or {}).get("usa"):
+            usa = usa_text(e, lang)
+            if usa:
                 out.append(f"{t['usa']}: {usa}")
             for s in e["kallor"][:MAX_KALLOR]:
                 out.append(f"  {s['namn']}{' (' + t['betalvagg'] + ')' if s.get('betalvagg') else ''}: {s['url']}")

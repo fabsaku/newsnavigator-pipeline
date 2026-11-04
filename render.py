@@ -428,6 +428,11 @@ def betydelse_block(ev, lang=None):
     return f'<h3 class="section-h">{rubrik}</h3><p class="persp">{text}</p><p class="note">{note}</p>'
 
 
+def _usa_relevant(ev):
+    import utgava
+    return utgava.usa_relevant(ev)
+
+
 def story_full(ev, internal=False, lang=None):
     """Hela notisen: notissidan och den interna förhandsvisningen."""
     d = ev.get("utkast") or {}
@@ -448,7 +453,7 @@ def story_full(ev, internal=False, lang=None):
         parts.append(f'<h3 class="section-h">{_both("Så ser världen på det", "How the world sees it")}</h3>{persp}'
                      f'<div class="regions">{"".join(cols) if len(regs) >= 2 else ""}</div>')
 
-    if p.get("usa"):
+    if _usa_relevant(ev):
         cols = []
         for key, sv, en in SIDES:
             items = p["usa"].get(key) or []

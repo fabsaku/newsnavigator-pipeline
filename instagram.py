@@ -19,6 +19,7 @@ import argparse
 import base64
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -268,7 +269,7 @@ def slide_world(ev, lang="sv"):
 def slide_usa(ev, lang="sv"):
     p = ev.get("perspektiv") or {}
     usa = p.get("usa")
-    if not usa or not (usa.get("bla") and usa.get("rod")):
+    if not utgava.usa_relevant(ev):
         return None
     x, i = TXT[lang], SPRAK[lang]
     cells = []
@@ -345,6 +346,27 @@ def slides(ev, banner="", max_slides=3, lang="sv"):
     return out
 
 
+_SKILJER = {"sv": re.compile(r"skiljer|skilja|olika|motsäg|oense|varierar|varierande|går isär|avviker|spretar|olikheter", re.I),
+            "en": re.compile(r"differ|vary|varies|varying|disagree|conflict|contradict|diverge|inconsistent|dispute|discrepan", re.I)}
+_NAMNER_KALLOR = {"sv": re.compile(r"källor|medier|rapporter|uppgifter", re.I), "en": re.compile(r"sources|outlets|media|reports", re.I)}
+MAX_SKILLNAD = 220
+
+
+def skillnadsrad(text, lang="sv"):
+    """En enda mening, och bara när källorna verkligen skiljer sig åt. Texten från AI:n börjar ibland med att källorna är eniga;
+    då tas första meningen som säger var de skiljer sig, utan en etikett som motsäger den. För lång mening hoppas över, den klipps aldrig."""
+    if not text:
+        return None
+    for mening in re.split(r"(?<=[.!?])\s+(?=[A-ZÅÄÖ])", text.strip()):
+        if _SKILJER[lang].search(mening):
+            if len(mening) > MAX_SKILLNAD:
+                return None
+            if _NAMNER_KALLOR[lang].search(mening):
+                return mening
+            return ("Källorna skiljer sig åt: " if lang == "sv" else "Sources differ: ") + mening
+    return None
+
+
 def caption(ev, lang="sv"):
     """Kort och sakligt, som text-tv: rubrik, sammanfattning, om källorna skiljer sig åt, källor, länk och hur notisen granskats.
     Inga slogans, hashtaggar eller uppmaningar. Perspektiven står på korten och på notissidan."""
@@ -353,8 +375,9 @@ def caption(ev, lang="sv"):
     parts = [d.get(f"rubrik_{lang}") or ev["reserv_rubrik"], ""]
     if d.get(f"sammanfattning_{lang}"):
         parts += [d[f"sammanfattning_{lang}"], ""]
-    if d.get("oenighet" if sv else "oenighet_en"):
-        parts += [("Källorna skiljer sig åt: " if sv else "Sources differ: ") + d["oenighet" if sv else "oenighet_en"], ""]
+    skillnad = skillnadsrad(d.get("oenighet" if sv else "oenighet_en"), lang)
+    if skillnad:
+        parts += [skillnad, ""]
     stat = " (statskontrollerat)" if sv else " (state-controlled)"
     names = [s["namn"] + (stat if s.get("statskontrollerad") else "") for s in ev["kallor"][:8]]
     more = f" och {len(ev['kallor']) - 8} till" if sv else f" and {len(ev['kallor']) - 8} more"

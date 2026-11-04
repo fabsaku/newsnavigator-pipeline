@@ -71,6 +71,26 @@ def relevans(ev):
     return {"sv": sv, "en": en}
 
 
+# En händelse är amerikansk när själva rubriken handlar om amerikanska aktörer, politik eller ekonomi.
+_USA_RUBRIK_CI = re.compile(r"\b(usa|u\.s\.|american\w*|trump|biden|harris|vance|washington|white house|vita huset|congress|kongress\w*|senat\w*|"
+                            r"senate|house of representatives|representanthus\w*|democrat\w*|demokrat\w*|republican\w*|republikan\w*|midterm\w*|"
+                            r"supreme court|högsta domstol\w*|federal reserve|wall street|pentagon\w*|nasdaq|dollar\w*|fbi|cia)\b", re.I)
+_USA_RUBRIK_CS = re.compile(r"\b(US|Fed|GOP|DOJ|IRS)\b")
+
+
+def usa_relevant(ev):
+    """Ska "USA: blått och rött" visas? Bara när händelsen är amerikansk (rubriken nämner amerikanska aktörer, politik eller ekonomi) och
+    det finns en verklig kontrast: minst tre amerikanska medier, med både en blå och en röd publik enligt AllSides."""
+    usa = (ev.get("perspektiv") or {}).get("usa")
+    if not usa or not (usa.get("bla") and usa.get("rod")):
+        return False
+    if len({x["kalla"] for sida in usa.values() for x in sida}) < 3:
+        return False
+    d = ev.get("utkast") or {}
+    rubrik = " ".join(str(x) for x in (d.get("rubrik_en"), d.get("rubrik_sv"), ev.get("reserv_rubrik")) if x)
+    return bool(_USA_RUBRIK_CI.search(rubrik) or _USA_RUBRIK_CS.search(rubrik))
+
+
 def visa(ev, utgava):
     """Ska notisen visas för den här utgåvans läsare?"""
     _kontrollera(utgava)

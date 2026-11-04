@@ -84,7 +84,10 @@ def test_varldskortet_pa_engelska():
 
 
 def test_usa_kortet_pa_engelska():
-    html = instagram.slide_usa(handelse(), lang="en")
+    ev = handelse()
+    ev["utkast"].update({"rubrik_en": "Trump signs spending bill", "rubrik_sv": "Trump skriver under budgeten"})
+    ev["perspektiv"]["usa"]["mitten"] = [{"kalla": "AP", "rubrik": "AP headline", "url": "u", "lutning": "mitten"}]    # minst tre medier
+    html = instagram.slide_usa(ev, lang="en")
     assert "US: blue and red" in html and "Blue audience" in html and "Red audience" in html and "lean left" in html
     assert "not our own judgement" in html and "Blå publik" not in html
 

@@ -129,6 +129,9 @@ med en rubrik per region; sist ett kort där det finns något att visa, i tur oc
 (fältet `graf` på notisen: titel, staplar med etikett, värde och visat värde), USA blått och rött, eller "Källorna skiljer sig åt".
 Handplockade notiser i en JSON-fil, till exempel ur flödeshistoriken: `python instagram.py urval urval.json /tmp/ig`.
 
+## Bildtext och USA-block
+Bildtexten på Instagram är kort och sakligt som text-tv: rubrik, sammanfattning, en mening om var källorna skiljer sig åt (bara när de gör det), källor, länk och hur notisen granskats. Inga slogans, hashtaggar eller uppmaningar. "USA: blått och rött" visas bara när det är relevant, se `utgava.usa_relevant`: amerikansk rubrik och minst tre amerikanska medier med både blå och röd publik.
+
 ## Berättelserna
 `berattelser.py` ger händelser med minst fyra oberoende källor i minst två regioner två till fyra namngivna berättelser: vad grupper av
 källor lyfter fram, alltid tillskrivet, aldrig vad en källa utelämnar. Koden räknar ut vilka källor, regioner och AllSides-sidor som bär
