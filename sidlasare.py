@@ -9,6 +9,7 @@ I feeds.yaml:
   - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm", hamtning: sida, lankar: "^/cps/en/natohq/news_\\d+\\.htm", ...}
     lankar     reguljärt uttryck som en länks sökväg ska matcha för att räknas som en nyhet (krävs)
     bas        adress som relativa länkar utgår från (standard: url)
+    rendera    true för sidor som ritar sin lista med JavaScript: hämtas med webbläsare (Playwright), efter robots.txt-kontrollen
     min_tecken kortaste rubrik (standard 20), max_antal flest länkar (standard 40)
 
 Provas i Actions med `python kallprov.py --sida ADRESS MÖNSTER`, som visar vilka rubriker och länkar läsaren skulle hitta.
@@ -120,6 +121,22 @@ def _sida(url):
         return r.read().decode("utf-8", errors="replace")
 
 
+def _rendera(url):
+    """Sidor som ritar sin lista med JavaScript: hämtas med en riktig webbläsare (Chrome finns på GitHubs körmiljö, som för Instagramkorten)."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        try:
+            b = p.chromium.launch(channel="chrome")
+        except Exception:
+            b = p.chromium.launch()
+        try:
+            sida = b.new_page(user_agent=AGENT)
+            sida.goto(url, wait_until="networkidle", timeout=45000)
+            return sida.content()
+        finally:
+            b.close()
+
+
 def nollstall_robots():
     _robots_cache.clear()
 
@@ -202,7 +219,7 @@ def som_flode(s, nu=None):
             ok, orsak = _tillaten(url)
             if not ok:
                 return None, None, orsak
-            html = _sida(url)
+            html = (_rendera if s.get("rendera") else _sida)(url)
     except Exception as e:
         return None, None, str(e)[:160]
     rubriker = lankar(html, s.get("bas") or url, s.get("lankar"), s.get("min_tecken", MIN_TECKEN), s.get("max_antal", MAX_ANTAL))

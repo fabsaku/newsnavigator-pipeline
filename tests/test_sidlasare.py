@@ -278,3 +278,54 @@ def test_spara_tar_bort_tillstandet_for_kallor_som_inte_langre_finns():
 def test_pipelinen_ger_spara_de_aktiva_sidkallorna():
     import inspect
     assert "aktiva=" in inspect.getsource(pipeline.main)
+
+
+# ---------- Sidor som ritas med JavaScript ----------
+
+def test_rendera_hamtar_sidan_med_webblasare_i_stallet_for_vanlig_hamtning(monkeypatch):
+    h = Hamtningar(("User-agent: *\nAllow: /\n", None), "<html></html>")
+    rendrad = []
+    monkeypatch.setattr(sidlasare, "_robots", h.robots_txt)
+    monkeypatch.setattr(sidlasare, "_sida", h.sida)
+    monkeypatch.setattr(sidlasare, "_rendera", lambda url: rendrad.append(url) or SIDA.read_text(encoding="utf-8"))
+    feed, _, fel = sidlasare.som_flode({**http_kalla(), "rendera": True}, nu=1.0)
+    assert fel is None and len(feed.entries) == 7 and rendrad == ["https://www.exempel.se/nyheter/"] and h.anrop == ["robots"]
+
+
+def test_rendera_kontrollerar_robots_txt_forst(monkeypatch):
+    h = Hamtningar(("User-agent: *\nDisallow: /\n", None))
+    rendrad = []
+    monkeypatch.setattr(sidlasare, "_robots", h.robots_txt)
+    monkeypatch.setattr(sidlasare, "_rendera", lambda url: rendrad.append(url) or "")
+    feed, _, fel = sidlasare.som_flode({**http_kalla(), "rendera": True}, nu=1.0)
+    assert feed is None and "robots.txt" in fel and rendrad == []
+
+
+def test_utan_rendera_anvands_vanlig_hamtning(monkeypatch):
+    h = Hamtningar(("User-agent: *\nAllow: /\n", None), SIDA.read_text(encoding="utf-8"))
+    monkeypatch.setattr(sidlasare, "_robots", h.robots_txt)
+    monkeypatch.setattr(sidlasare, "_sida", h.sida)
+    monkeypatch.setattr(sidlasare, "_rendera", lambda url: pytest.fail("ska inte renderas"))
+    feed, _, fel = sidlasare.som_flode(http_kalla(), nu=1.0)
+    assert fel is None and h.anrop == ["robots", "sida"]
+
+
+def test_rendera_utan_webblasare_ger_fel_inte_krasch(monkeypatch):
+    h = Hamtningar(("User-agent: *\nAllow: /\n", None))
+    monkeypatch.setattr(sidlasare, "_robots", h.robots_txt)
+    def saknas(url):
+        raise ImportError("playwright saknas")
+    monkeypatch.setattr(sidlasare, "_rendera", saknas)
+    feed, _, fel = sidlasare.som_flode({**http_kalla(), "rendera": True}, nu=1.0)
+    assert feed is None and "playwright" in fel
+
+
+def test_prova_sida_med_rendera(monkeypatch, capsys):
+    import kallprov
+    h = Hamtningar(("User-agent: *\nAllow: /\n", None))
+    monkeypatch.setattr(sidlasare, "_robots", h.robots_txt)
+    monkeypatch.setattr(sidlasare, "_sida", lambda u: pytest.fail("ska renderas"))
+    monkeypatch.setattr(sidlasare, "_rendera", lambda u: SIDA.read_text(encoding="utf-8"))
+    kallprov.prova_sida("https://www.exempel.se/nyheter/", MONSTER, rendera=True)
+    ut = capsys.readouterr().out
+    assert "renderar med webbläsare" in ut and "7 rubriker" in ut

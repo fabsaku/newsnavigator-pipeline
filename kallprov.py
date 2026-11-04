@@ -173,7 +173,7 @@ def skriv_genomgang(rader):
                       + (f" | {r['fel']}" if r["robots"] == "oklart" else ""))
 
 
-def prova_sida(url, monster=None):
+def prova_sida(url, monster=None, rendera=False):
     """Prövar en källa utan flöde: tillåter robots.txt det, och vilka rubriker och länkar skulle läsaren (sidlasare.py) hitta?"""
     import sidlasare
     print(f"\n== {url}  (mönster: {monster or 'inget än'})")
@@ -181,9 +181,9 @@ def prova_sida(url, monster=None):
     if not ok:
         print(f"   robots.txt: {orsak}. Sidan hämtas inte.")
         return
-    print(f"   robots.txt: tillåter {BOT}")
+    print(f"   robots.txt: tillåter {BOT}" + ("; renderar med webbläsare" if rendera else ""))
     try:
-        html = sidlasare._sida(url)
+        html = (sidlasare._rendera if rendera else sidlasare._sida)(url)
     except Exception as e:
         print(f"   sida: FEL ({str(e)[:120]})")
         return
@@ -202,7 +202,8 @@ def main(argv):
     if argv and argv[0] == "--sida":
         if len(argv) < 2:
             sys.exit("Ange adress och helst mönster: --sida ADRESS MÖNSTER")
-        prova_sida(argv[1], argv[2] if len(argv) > 2 else None)
+        rest = [a for a in argv[1:] if a != "--rendera"]
+        prova_sida(rest[0], rest[1] if len(rest) > 1 else None, rendera="--rendera" in argv)
         return
     if not argv:
         sys.exit("Ange minst en adress.")

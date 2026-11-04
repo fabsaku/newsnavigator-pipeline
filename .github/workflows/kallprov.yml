@@ -20,6 +20,10 @@ on:
         description: "Källa utan flöde: adressen till sidan med rubriklistan"
         required: false
         default: ""
+      rendera:
+        description: "Källa utan flöde: true om sidan ritar sin lista med JavaScript (hämtas med webbläsare)"
+        required: false
+        default: "false"
       monster:
         description: "Källa utan flöde: reguljärt uttryck som nyhetslänkarnas sökväg ska matcha (tomt visar bara sökvägarna)"
         required: false
@@ -46,10 +50,13 @@ jobs:
           SIDA: ${{ inputs.sida }}
           MONSTER: ${{ inputs.monster }}
           ALLA: ${{ inputs.alla }}
+          RENDERA: ${{ inputs.rendera }}
         run: |
           if [ "$ALLA" = "true" ]; then python kallprov.py --alla; fi
           if [ -n "$ADRESSER" ]; then python kallprov.py $ADRESSER; fi
-          if [ -n "$SIDA" ]; then python kallprov.py --sida "$SIDA" "$MONSTER"; fi
+          if [ -n "$SIDA" ]; then
+            if [ "$RENDERA" = "true" ]; then python kallprov.py --sida "$SIDA" "$MONSTER" --rendera; else python kallprov.py --sida "$SIDA" "$MONSTER"; fi
+          fi
 
   jamfor:
     # Alternativ A (ingress från alla källor, som idag) mot B (bara rubrik för de angivna källorna), samma flöden, två körningar med modellen.
