@@ -108,3 +108,18 @@ def test_parametersvepet_ger_en_rad_per_kombination():
     vek = {r["rubrik"]: v for r, v in zip(rader, [[1.0, 0.0], [0.99, 0.1]])}
     ut = inbaddningar.parametersvep(rader, vek, taus=[0.5, 0.6], delade=[1, 2], rater=[0.25])
     assert len(ut) == 4 and {(r["tau"], r["min_delade"]) for r in ut} == {(0.5, 1), (0.5, 2), (0.6, 1), (0.6, 2)}
+
+
+# ---------- Diagnos på riktiga händelser ----------
+
+def test_handelsediagnosen_visar_vilka_handelsepar_som_ligger_narmast_varandra():
+    def h(eid, rubriker):
+        return {"id": eid, "reserv_rubrik": rubriker[0], "utkast": {"rubrik_en": rubriker[0]},
+                "kallor": [{"namn": f"K{eid}{n}", "rubrik": r} for n, r in enumerate(rubriker)]}
+    handelser = [h("a", ["Democrats win Congress control in midterm election", "Democrats win Congress in midterms again vote"]),
+                 h("b", ["Democrats win Congress control in midterm vote", "Congress control: Democrats win midterm election"]),
+                 h("c", ["Storm Amy floods Gothenburg harbour", "Gothenburg harbour floods in Storm Amy"])]
+    vek = {t: [1.0, 0.0] if "Democrats" in t or "Congress" in t else [0.0, 1.0] for e in handelser for t in [k["rubrik"] for k in e["kallor"]]}
+    par = inbaddningar.handelsepar(handelser, lambda texter: [vek[t] for t in texter], tau=0.6, min_delade=2)
+    assert par[0]["a"] == "a" and par[0]["b"] == "b" and par[0]["traffar"] >= 2 and 0 < par[0]["andel"] <= 1
+    assert all({p["a"], p["b"]} != {"a", "c"} for p in par)

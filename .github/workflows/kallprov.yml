@@ -117,4 +117,5 @@ jobs:
       - name: Mät
         run: |
           python inbaddningar.py | tee inbaddningar.txt
-          { echo '## Inbäddningar mot dagens klustring'; echo '```'; cat inbaddningar.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          python inbaddningar.py --handelser | tee handelsepar.txt
+          { echo '## Inbäddningar mot dagens klustring'; echo '```'; cat inbaddningar.txt; echo '```'; echo '## Närmaste händelsepar i dagens flöde'; echo '```'; cat handelsepar.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

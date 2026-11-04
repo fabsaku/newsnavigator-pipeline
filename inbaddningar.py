@@ -95,6 +95,29 @@ def parametersvep(rader, vek_per_text, taus=(0.5, 0.55, 0.6, 0.65), delade=(1, 2
     return [hybridens_kluster(rader, vek_per_text, t, d, r) for t in taus for d in delade for r in rater]
 
 
+def handelsepar(handelser, kodare, tau=0.6, min_delade=2, topp=25):
+    """Diagnos på riktiga händelser (data/flode.json): för varje par av händelser, hur många rubrikpar mellan dem föreslår inbäddningen och orden (cosinus
+    minst tau, minst min_delade gemensamma ord, olika källor), och hur stor andel det är av alla rubrikpar. Visar vad som skulle slås ihop och varför inte."""
+    import pipeline
+    rader = [(e["id"], k["namn"], k["rubrik"], pipeline.tokens(k["rubrik"])) for e in handelser for k in e["kallor"] if k.get("rubrik")]
+    vek = kodare([r[2] for r in rader])
+    antal = {}
+    for i in range(len(rader)):
+        for j in range(i + 1, len(rader)):
+            if rader[i][0] == rader[j][0] or rader[i][1] == rader[j][1] or len(rader[i][3] & rader[j][3]) < min_delade:
+                continue
+            if cosinus(vek[i], vek[j]) >= tau:
+                nyckel = tuple(sorted((rader[i][0], rader[j][0])))
+                antal[nyckel] = antal.get(nyckel, 0) + 1
+    storlek = {}
+    for r in rader:
+        storlek[r[0]] = storlek.get(r[0], 0) + 1
+    titel = {e["id"]: (e.get("utkast") or {}).get("rubrik_en") or e["reserv_rubrik"] for e in handelser}
+    ut = [{"a": a, "b": b, "traffar": n, "andel": n / (storlek[a] * storlek[b]), "storlek": (storlek[a], storlek[b]), "titel": (titel[a], titel[b])}
+          for (a, b), n in antal.items()]
+    return sorted(ut, key=lambda x: -x["traffar"])[:topp]
+
+
 def bast_med_precision(tabell, min_precision=0.98):
     """Raden med högst recall bland dem som håller precisionen, eller None. Falska sammanslagningar är värre än missade, så det är den punkten som räknas."""
     ok = [r for r in tabell if r["precision"] >= min_precision]
@@ -134,6 +157,13 @@ def text(r, modell=MODELL):
 
 def main(argv):
     from sentence_transformers import SentenceTransformer
+    if argv and argv[0] == "--handelser":
+        m = SentenceTransformer(MODELL)
+        kodare = lambda texter: m.encode(list(texter), normalize_embeddings=True).tolist()
+        handelser = json.loads((ROOT / "data" / "flode.json").read_text(encoding="utf-8"))["handelser"]
+        for p in handelsepar(handelser, kodare, tau=0.55, min_delade=1):
+            print(f"{p['traffar']:>3} träffar, andel {p['andel']:.2f}, storlekar {p['storlek']}: {p['titel'][0][:55]} | {p['titel'][1][:55]}")
+        return
     modell = argv[0] if argv else MODELL
     rader = json.loads(FIXTUR.read_text(encoding="utf-8"))["rubriker"]
     m = SentenceTransformer(modell)
