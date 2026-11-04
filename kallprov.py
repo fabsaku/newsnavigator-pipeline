@@ -113,10 +113,36 @@ def prova(url):
         print(f"   - {e.get('title', '')[:110]}")
 
 
-def main(urls):
-    if not urls:
+def prova_sida(url, monster=None):
+    """Prövar en källa utan flöde: tillåter robots.txt det, och vilka rubriker och länkar skulle läsaren (sidlasare.py) hitta?"""
+    import sidlasare
+    print(f"\n== {url}  (mönster: {monster or 'inget än'})")
+    ok, orsak = sidlasare._tillaten(url)
+    if not ok:
+        print(f"   robots.txt: {orsak}. Sidan hämtas inte.")
+        return
+    print(f"   robots.txt: tillåter {BOT}")
+    try:
+        html = sidlasare._sida(url)
+    except Exception as e:
+        print(f"   sida: FEL ({str(e)[:120]})")
+        return
+    print("   sökvägar med rubrikliknande länkar: " + ", ".join(f"{k} ({n})" for k, n in list(sidlasare.oversikt(html, url).items())[:12]))
+    funna = sidlasare.lankar(html, url, monster)
+    print(f"   {len(funna)} rubriker med mönstret")
+    for titel, lank in funna[:15]:
+        print(f"   - {titel[:90]}\n     {lank}")
+
+
+def main(argv):
+    if argv and argv[0] == "--sida":
+        if len(argv) < 2:
+            sys.exit("Ange adress och helst mönster: --sida ADRESS MÖNSTER")
+        prova_sida(argv[1], argv[2] if len(argv) > 2 else None)
+        return
+    if not argv:
         sys.exit("Ange minst en adress.")
-    for url in urls:
+    for url in argv:
         prova(url)
 
 

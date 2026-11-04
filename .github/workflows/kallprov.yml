@@ -6,7 +6,16 @@ on:
     inputs:
       adresser:
         description: "Flödesadresser, åtskilda med mellanslag"
-        required: true
+        required: false
+        default: ""
+      sida:
+        description: "Källa utan flöde: adressen till sidan med rubriklistan"
+        required: false
+        default: ""
+      monster:
+        description: "Källa utan flöde: reguljärt uttryck som nyhetslänkarnas sökväg ska matcha (tomt visar bara sökvägarna)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -25,4 +34,8 @@ jobs:
       - name: Pröva källorna
         env:
           ADRESSER: ${{ inputs.adresser }}
-        run: python kallprov.py $ADRESSER
+          SIDA: ${{ inputs.sida }}
+          MONSTER: ${{ inputs.monster }}
+        run: |
+          if [ -n "$ADRESSER" ]; then python kallprov.py $ADRESSER; fi
+          if [ -n "$SIDA" ]; then python kallprov.py --sida "$SIDA" "$MONSTER"; fi

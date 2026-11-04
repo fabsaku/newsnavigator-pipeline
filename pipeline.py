@@ -112,6 +112,9 @@ def fetch_one(s):
     Laddar ner flödet själv och rensar bort tecken som är ogiltiga i XML innan det tolkas,
     eftersom några utgivare (t.ex. med trasiga kontrolltecken) annars ger noll artiklar.
     """
+    if s.get("hamtning") == "sida":     # källa utan flöde: rubriklistan på en sida (sidlasare.py)
+        import sidlasare
+        return sidlasare.som_flode(s)
     err = "inga adresser"
     for url in [s["url"], *s.get("alternativ", [])]:
         try:
@@ -160,7 +163,7 @@ def fetch(sources, max_age_hours):
             seen_links.add(e.get("link"))
             ts = e.get("published_parsed") or e.get("updated_parsed")
             epoch = time.mktime(ts) if ts else None
-            if max_age_hours and epoch and now - epoch > max_age_hours * 3600:
+            if max_age_hours and epoch is not None and now - epoch > max_age_hours * 3600:
                 continue
             if s.get("bara_rubrik") and NEWSLETTER_ADMIN.search(e.get("title", "")):
                 continue    # bekräftelse- och välkomstmejl är inga nyheter
@@ -188,7 +191,7 @@ def fetch(sources, max_age_hours):
                 # Betalväggskällor och nyhetsbrev: bara rubrik och länk används
                 "description": "" if s.get("betalvagg") or s.get("bara_rubrik") else clean(e.get("summary", "")),
                 "url": link,
-                "published": datetime.fromtimestamp(epoch, timezone.utc).isoformat() if epoch else None,
+                "published": datetime.fromtimestamp(epoch, timezone.utc).isoformat() if epoch is not None else None,
                 "epoch": epoch,
             })
             n += 1
@@ -650,6 +653,8 @@ def main():
     sources = load_sources(args.feeds)
     totals = vikt_mod.region_totals(sources)
     items, report = fetch(sources, args.max_age_hours)
+    import sidlasare
+    sidlasare.spara()
     cross_language = translate_titles(items, client, model, cache) if client else False
     clusters = merge_clusters(cluster(items))
     events = []
