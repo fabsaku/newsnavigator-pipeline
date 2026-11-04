@@ -20,6 +20,10 @@ on:
         description: "Källa utan flöde: adressen till sidan med rubriklistan"
         required: false
         default: ""
+      gdelt:
+        description: "true = kontrollera händelserna som påstås saknas i svenska medier mot GDELT (skriver inget till repot)"
+        required: false
+        default: "false"
       rendera:
         description: "Källa utan flöde: true om sidan ritar sin lista med JavaScript (hämtas med webbläsare)"
         required: false
@@ -51,8 +55,10 @@ jobs:
           MONSTER: ${{ inputs.monster }}
           ALLA: ${{ inputs.alla }}
           RENDERA: ${{ inputs.rendera }}
+          GDELT: ${{ inputs.gdelt }}
         run: |
           if [ "$ALLA" = "true" ]; then python kallprov.py --alla; fi
+          if [ "$GDELT" = "true" ]; then python gdelt.py; fi
           if [ -n "$ADRESSER" ]; then python kallprov.py $ADRESSER; fi
           if [ -n "$SIDA" ]; then
             if [ "$RENDERA" = "true" ]; then python kallprov.py --sida "$SIDA" "$MONSTER" --rendera; else python kallprov.py --sida "$SIDA" "$MONSTER"; fi
