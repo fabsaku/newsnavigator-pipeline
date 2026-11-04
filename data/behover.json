@@ -1,23 +1,31 @@
 {
- "skapad": "2026-11-04T16:08:41.774067+00:00",
+ "skapad": "2026-11-04T17:09:11.294132+00:00",
  "rader": [
   {
    "kod": "vantar",
    "id": "vantar",
-   "rad": "3 notiser väntar på dig, äldst 29 h",
+   "rad": "3 notiser väntar på dig, äldst 24 h",
    "handling": "Till inkorgen",
    "url": "https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning",
    "allvarlig": false,
    "detaljer": [
-    "Demokrater vinner guvernörsval i Nevada, Georgia och Texas samt senatsval i Michigan, Texas och Illinois (29 h)",
-    "Demokraterna tar kontrollen över USA:s kongress i midtermvalet (11 h)",
-    "Demokraterna vinner kontrollen över USA:s kongress i mellanårsvalet (11 h)"
+    "Demokraterna tar kontrollen över kongressen i midtermvalet: Vance säger att Irankriget kostade republikanerna (24 h)",
+    "Demokraterna vinner kontroll över USA:s kongress i mellanårsvalet (9 h)",
+    "Demokraterna vinner både representanthuset och senaten i USA:s midtermval (3 h)"
    ]
   },
   {
    "kod": "hopslagen",
+   "id": "hopslagen:d83b82c255",
+   "rad": "Troligen hopslagna händelser: Demokraterna vinner kontroll över USA:s kongress i mellanårsvalet",
+   "handling": "Dela upp eller avvisa",
+   "url": "https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning",
+   "allvarlig": false
+  },
+  {
+   "kod": "hopslagen",
    "id": "hopslagen:732ad8f2fa",
-   "rad": "Troligen hopslagna händelser: Demokraterna tar kontrollen över USA:s kongress i midtermvalet",
+   "rad": "Troligen hopslagna händelser: Demokraterna tar kontrollen över kongressen i midtermvalet: Vance säger att Irankriget kostade republikanerna",
    "handling": "Dela upp eller avvisa",
    "url": "https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning",
    "allvarlig": false
@@ -34,6 +42,14 @@
    "kod": "tyst",
    "id": "tyst:who",
    "rad": "WHO tyst sedan 10 oktober",
+   "handling": "Kontrollera flödet, pausa",
+   "url": null,
+   "allvarlig": false
+  },
+  {
+   "kod": "tyst",
+   "id": "tyst:microsoft-ai",
+   "rad": "Microsoft AI tyst sedan 21 oktober",
    "handling": "Kontrollera flödet, pausa",
    "url": null,
    "allvarlig": false
@@ -64,7 +80,7 @@
   }
  ],
  "rapport": {
-  "amne": "Newsnavigator: 7 saker behöver dig",
-  "text": "7 saker behöver dig.\n\n1. 3 notiser väntar på dig, äldst 29 h\n   - Demokrater vinner guvernörsval i Nevada, Georgia och Texas samt senatsval i Michigan, Texas och Illinois (29 h)\n   - Demokraterna tar kontrollen över USA:s kongress i midtermvalet (11 h)\n   - Demokraterna vinner kontrollen över USA:s kongress i mellanårsvalet (11 h)\n   Gör: Till inkorgen\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n2. Troligen hopslagna händelser: Demokraterna tar kontrollen över USA:s kongress i midtermvalet\n   Gör: Dela upp eller avvisa\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n3. CNN tyst sedan 22 augusti\n   Gör: Kontrollera flödet, pausa\n4. WHO tyst sedan 10 oktober\n   Gör: Kontrollera flödet, pausa\n5. IEEE Spectrum Robotics tyst sedan fredag\n   Gör: Kontrollera flödet, pausa\n6. @newsnavigator.se postar inget: secrets saknas, 4 kort väntar\n   Gör: Lägg in IG_USER_ID och IG_ACCESS_TOKEN i repots secrets\n7. @news.navigator postar inget: secrets saknas, 3 kort väntar\n   Gör: Lägg in IG_USER_ID_EN och IG_ACCESS_TOKEN_EN i repots secrets\n\n2 notiser publicerades automatiskt senaste dygnet, 6 väntar i kön.\n\nPublicerat automatiskt:\n- Ryssland bombarderar Ukrainas elnät inför fredssamtal i Abu Dhabi https://newsnavigator.se/sv/n/2b37665037/\n- Kanada meddelar att ryska och belarusiska spelare inte får delta i juniorvärldsmästerskapet https://newsnavigator.se/sv/n/5eaa78779a/\n\nKällor: 125 av 138 går att läsa.\n\nDet här mejlet kommer varje morgon kl 07.00. Är listan tom behöver du inte öppna något.\n"
+  "amne": "Newsnavigator: 9 saker behöver dig",
+  "text": "9 saker behöver dig.\n\n1. 3 notiser väntar på dig, äldst 24 h\n   - Demokraterna tar kontrollen över kongressen i midtermvalet: Vance säger att Irankriget kostade republikanerna (24 h)\n   - Demokraterna vinner kontroll över USA:s kongress i mellanårsvalet (9 h)\n   - Demokraterna vinner både representanthuset och senaten i USA:s midtermval (3 h)\n   Gör: Till inkorgen\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n2. Troligen hopslagna händelser: Demokraterna vinner kontroll över USA:s kongress i mellanårsvalet\n   Gör: Dela upp eller avvisa\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n3. Troligen hopslagna händelser: Demokraterna tar kontrollen över kongressen i midtermvalet: Vance säger att Irankriget kostade republikanerna\n   Gör: Dela upp eller avvisa\n   https://github.com/fabsaku/newsnavigator-pipeline/issues?q=is%3Aissue+label%3Agranskning\n4. CNN tyst sedan 22 augusti\n   Gör: Kontrollera flödet, pausa\n5. WHO tyst sedan 10 oktober\n   Gör: Kontrollera flödet, pausa\n6. Microsoft AI tyst sedan 21 oktober\n   Gör: Kontrollera flödet, pausa\n7. IEEE Spectrum Robotics tyst sedan fredag\n   Gör: Kontrollera flödet, pausa\n8. @newsnavigator.se postar inget: secrets saknas, 4 kort väntar\n   Gör: Lägg in IG_USER_ID och IG_ACCESS_TOKEN i repots secrets\n9. @news.navigator postar inget: secrets saknas, 3 kort väntar\n   Gör: Lägg in IG_USER_ID_EN och IG_ACCESS_TOKEN_EN i repots secrets\n\n2 notiser publicerades automatiskt senaste dygnet, 6 väntar i kön.\n\nPublicerat automatiskt:\n- Ryssland bombarderar Ukrainas elnät inför fredssamtal i Abu Dhabi https://newsnavigator.se/sv/n/2b37665037/\n- Kanada meddelar att ryska och belarusiska spelare inte får delta i juniorvärldsmästerskapet https://newsnavigator.se/sv/n/5eaa78779a/\n\nKällor: 124 av 138 går att läsa.\n\nDet här mejlet kommer varje morgon kl 07.00. Är listan tom behöver du inte öppna något.\n"
  }
 }
