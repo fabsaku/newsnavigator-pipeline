@@ -73,11 +73,10 @@ def test_utskriften_ar_kort_och_sager_slutsatsen():
 def test_workflowen_kor_a_och_b_och_skriver_inget_till_repot():
     from pathlib import Path
     import yaml
-    text = (Path(__file__).parent.parent / ".github" / "workflows" / "jamfor-alternativ.yml").read_text(encoding="utf-8")
+    text = (Path(__file__).parent.parent / ".github" / "workflows" / "kallprov.yml").read_text(encoding="utf-8")
     y = yaml.safe_load(text)
-    assert "schedule" not in y[True] and y["permissions"] == {"contents": "read"}
+    assert y["permissions"] == {"contents": "read"} and "schedule" not in y[True]
     assert "git push" not in text and "git commit" not in text
+    assert "jamfor" in y[True]["workflow_dispatch"]["inputs"] and set(y["jobs"]) == {"prova", "jamfor"}
     assert "--out /tmp/A" in text and "--out /tmp/B" in text and "NN_BARA_RUBRIK" in text and "ANTHROPIC_API_KEY" in text
-    ids = y[True]["workflow_dispatch"]["inputs"]["kallor"]["default"].split(",")
-    kallor = {s["id"] for s in yaml.safe_load((Path(__file__).parent.parent / "feeds.yaml").read_text(encoding="utf-8"))["sources"]}
-    assert len(ids) == 33 and set(ids) <= kallor
+    assert y["jobs"]["prova"]["if"] != y["jobs"]["jamfor"]["if"]
