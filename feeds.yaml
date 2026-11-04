@@ -6,6 +6,8 @@
 #       kuraterat = nyhetsbrev och topplistor som samlar andras nyheter. Räknas inte som oberoende källa.
 #       land, region (sverige/norden/europa/usa/asien/mellanostern/afrika/global),
 #       agare (privat/public-service/statlig/organisation), statskontrollerad (true = staten styr innehållet)
+#       hamtning: sida = källa utan flöde, läses från en sidas rubriklista (sidlasare.py): url är sidan, lankar är ett reguljärt uttryck som nyhetslänkarnas sökväg ska matcha.
+#       Prova med Actions, Källprov, fälten sida och monster. Läsaren hämtar bara rubrik och länk och respekterar robots.txt.
 # Betalväggskällor används bara för rubrik och länk, aldrig för text.
 # Statskontrollerade medier tas med för att visa hur olika stater berättar, och märks alltid tydligt.
 
@@ -23,7 +25,7 @@ sources:
   # ---------- Svenska primärkällor ----------
   - {id: riksbanken, namn: Riksbanken, url: "https://www.riksbank.se/sv/rss/pressmeddelanden/", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
   - {id: scb, namn: SCB, url: "https://www.scb.se/Feed/statistiknyheter/", alternativ: ["http://www.scb.se/Feed/statistiknyheter/"], amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
-  - {id: fi, namn: Finansinspektionen, url: "https://www.fi.se/sv/publicerat/nyheter/rss/", alternativ: ["https://www.fi.se/sv/rss/", "https://www.fi.se/en/rss/"], amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
+  - {id: fi, namn: Finansinspektionen, url: "https://www.fi.se/sv/publicerat/nyheter/", hamtning: sida, lankar: "^/sv/publicerat/nyheter/\\d{4}/.+", amnen: [marknader, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
   - {id: regeringen, namn: Regeringskansliet, url: "https://www.regeringen.se/Filter/RssFeed?filterType=Taxonomy&filterByType=FilterablePageBase&preFilteredCategories=1324", amnen: [sverige, geopolitik], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false}
   - {id: svk, namn: Svenska kraftnät, url: "https://via.tt.se/rss/releases/latest?publisherId=3235391", amnen: [energi, sverige], sprak: sv, typ: primar, betalvagg: false, land: SE, region: sverige, agare: organisation, statskontrollerad: false, hemsida: "https://www.svk.se"}
 
@@ -73,7 +75,7 @@ sources:
   - {id: rt, namn: RT, url: "https://www.rt.com/rss/news/", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: RU, region: europa, agare: statlig, statskontrollerad: true}
 
   # ---------- Globala organisationer ----------
-  - {id: imf, namn: IMF, url: "https://www.imf.org/en/Publications/RSS?language=eng&series=IMF%20News", alternativ: ["https://www.imf.org/en/News/rss?Language=ENG", "https://www.imf.org/external/rss/feeds.aspx?category=News", "https://www.imf.org/en/News/RSS"], amnen: [marknader, varlden], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false}
+  - {id: imf, namn: IMF, url: "https://www.imf.org/en/News", hamtning: sida, lankar: "^/en/news/articles/\\d{4}/", amnen: [marknader, varlden], sprak: en, typ: primar, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false}
 
   # ---------- AI, teknik, robotik ----------
   - {id: arxiv-ai, namn: arXiv cs.AI, url: "https://rss.arxiv.org/rss/cs.AI", amnen: [ai], sprak: en, typ: forskning, betalvagg: false, land: INT, region: global, agare: organisation, statskontrollerad: false}
@@ -106,7 +108,7 @@ sources:
   - {id: microsoft-ai, namn: Microsoft AI, url: "https://news.microsoft.com/source/topics/ai/feed/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: meta-ai, namn: Meta AI, url: "https://ai.meta.com/blog/rss/", alternativ: ["https://about.fb.com/news/category/technology/ai/feed/"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: nvidia, namn: NVIDIA, url: "https://blogs.nvidia.com/feed/", amnen: [ai, halvledare], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: mistral, namn: Mistral AI, url: "https://mistral.ai/news/rss.xml", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}
+  - {id: mistral, namn: Mistral AI, url: "https://mistral.ai/news", hamtning: sida, lankar: "^/news/.+", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}
 
   # ---------- AI- och techmedier ----------
   - {id: the-decoder, namn: The Decoder, url: "https://the-decoder.com/feed/", amnen: [ai], sprak: en, typ: media, betalvagg: false, land: DE, region: europa, agare: privat, statskontrollerad: false}

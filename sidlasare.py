@@ -25,6 +25,7 @@ from urllib.parse import urldefrag, urljoin, urlsplit
 ROOT = Path(__file__).parent
 STATE = ROOT / "data" / "sidor.json"
 MIN_TECKEN = 20
+MIN_RUBRIKELEMENT = 6      # en rubrik i ett rubrikelement får vara kortare än en hel länktext ("Voxtral 3")
 MAX_ANTAL = 40
 BEHALL_DAGAR = 30
 AGENT = "Mozilla/5.0 (compatible; NewsnavigatorBot/0.3; +https://newsnavigator.se/bot)"
@@ -33,27 +34,54 @@ _state = None
 _robots_cache = {}
 
 
+RUBRIK_TAGGAR = ("h1", "h2", "h3", "h4", "h5", "h6")
+
+
 class _Lankar(HTMLParser):
+    """Samlar länkar med texten i dem. Ligger ett rubrikelement (h1 till h6) i länken är det rubriken, annars hela länktexten."""
+
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.lankar, self._href, self._text, self._ignorera = [], None, [], 0
+        self.lankar, self._href, self._text, self._rubrik, self._i_rubrik, self._ignorera = [], None, [], [], 0, 0
 
     def handle_starttag(self, tag, attrs):
         if tag in ("script", "style", "noscript", "template"):
             self._ignorera += 1
         elif tag == "a" and not self._ignorera:
-            self._href, self._text = dict(attrs).get("href"), []
+            self._href, self._text, self._rubrik, self._i_rubrik = dict(attrs).get("href"), [], [], 0
+        elif tag in RUBRIK_TAGGAR and self._href is not None:
+            self._i_rubrik += 1
 
     def handle_endtag(self, tag):
         if tag in ("script", "style", "noscript", "template"):
             self._ignorera = max(0, self._ignorera - 1)
+        elif tag in RUBRIK_TAGGAR and self._href is not None:
+            self._i_rubrik = max(0, self._i_rubrik - 1)
+            self._text.append(" ")
         elif tag == "a" and self._href is not None:
-            self.lankar.append((self._href, " ".join("".join(self._text).split())))
+            hel = " ".join("".join(self._text).split())
+            rubrik = " ".join("".join(self._rubrik).split())
+            self.lankar.append((self._href, hel, rubrik))
             self._href = None
+        elif self._href is not None:
+            self._text.append(" ")
 
     def handle_data(self, data):
         if self._href is not None and not self._ignorera:
             self._text.append(data)
+            if self._i_rubrik:
+                self._rubrik.append(data)
+
+
+_DATUM_FORST = re.compile(
+    r"^(?:(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.? \d{1,2},? \d{4}|\d{1,2} (?:jan|feb|mar|apr|maj|may|jun|jul|aug|sep|okt|oct|nov|dec)\w* \d{4}|\d{4}-\d{2}-\d{2})\s*",
+    re.I)
+
+
+def _rubrik(text):
+    """Ett datum först i länktexten ("October 7, 2026Coming Soon: ...") hör inte till rubriken."""
+    ren = _DATUM_FORST.sub("", text).strip()
+    return ren or text
 
 
 def lankar(html, bas, monster, min_tecken=MIN_TECKEN, max_antal=MAX_ANTAL):
@@ -64,13 +92,16 @@ def lankar(html, bas, monster, min_tecken=MIN_TECKEN, max_antal=MAX_ANTAL):
     p.feed(html)
     host = urlsplit(bas).netloc.removeprefix("www.")
     funna = {}
-    for href, text in p.lankar:
-        if not href or len(text) < min_tecken:
+    for href, hel, rubrik in p.lankar:
+        if not href or len(hel) < min_tecken:
             continue
         url = urldefrag(urljoin(bas, href))[0]
         delar = urlsplit(url)
-        if delar.scheme not in ("http", "https") or delar.netloc.removeprefix("www.") != host or not re.search(monster, delar.path):
+        if delar.scheme not in ("http", "https") or delar.netloc.removeprefix("www.") != host:
             continue
+        if not (re.search(monster, delar.path) or re.search(monster, delar.path.rstrip("/"))):
+            continue
+        text = _rubrik(rubrik if len(rubrik) >= MIN_RUBRIKELEMENT else hel)
         if url not in funna or len(text) > len(funna[url]):
             funna[url] = text
     return [(t, u) for u, t in funna.items()][:max_antal]
@@ -127,7 +158,7 @@ def oversikt(html, bas, min_tecken=MIN_TECKEN):
     p.feed(html)
     host = urlsplit(bas).netloc.removeprefix("www.")
     antal, sedda = {}, set()
-    for href, text in p.lankar:
+    for href, text, _ in p.lankar:
         if not href or len(text) < min_tecken:
             continue
         url = urldefrag(urljoin(bas, href))[0]

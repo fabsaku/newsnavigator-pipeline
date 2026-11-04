@@ -34,7 +34,10 @@ def test_rubriker_och_lankar_ur_en_sida():
         ("Riksbanken håller styrräntan oförändrad på 1,75 procent", "https://www.exempel.se/nyheter/2026/11/riksbanken-haller-styrrantan/"),
         ("Ny tillsynsrapport visar brister hos bankerna", "https://www.exempel.se/nyheter/2026/11/ny-tillsynsrapport/"),
         ("Gammalt beslut om kapitalkrav för försäkringsbolag", "https://www.exempel.se/nyheter/2026/10/gammalt-beslut/"),
-        ("Pressmeddelande om tillstånd för nytt betalinstitut", "https://www.exempel.se/pressrum/2026/11/pressmeddelande-om-tillstand/")]
+        ("Pressmeddelande om tillstånd för nytt betalinstitut", "https://www.exempel.se/pressrum/2026/11/pressmeddelande-om-tillstand/"),
+        ("Voxtral 3", "https://www.exempel.se/nyheter/2026/11/kort-med-rubrikelement/"),
+        ("Bolag Mistral öppnar ett tyskt nav i München för industriell AI 6 oktober 2026", "https://www.exempel.se/nyheter/2026/11/kort-utan-rubrikelement-men-med-lang-text-och-datum/"),
+        ("Nyhet vars sökväg inte slutar med snedstreck alls", "https://www.exempel.se/nyheter/2026/11/sist-i-listan-utan-snedstreck-i-monstret")]
 
 
 def test_navigering_korta_texter_bildlankar_andra_sajter_och_skript_utesluts():
@@ -61,7 +64,7 @@ def test_utan_monster_tas_inget_med():
 
 def test_forsta_korningen_markerar_det_som_star_pa_sidan_som_gammalt():
     feed, _, fel = sidlasare.som_flode(kalla(), nu=1_000_000.0)
-    assert fel is None and len(feed.entries) == 4
+    assert fel is None and len(feed.entries) == 7
     assert all(time.mktime(e["published_parsed"]) < 1_000_000.0 - 86400 for e in feed.entries)
 
 
@@ -126,7 +129,7 @@ def test_tillatet_hamtar_sidan(monkeypatch):
     monkeypatch.setattr(sidlasare, "_robots", h.robots_txt)
     monkeypatch.setattr(sidlasare, "_sida", h.sida)
     feed, _, fel = sidlasare.som_flode(http_kalla(), nu=1.0)
-    assert fel is None and len(feed.entries) == 4 and h.anrop == ["robots", "sida"]
+    assert fel is None and len(feed.entries) == 7 and h.anrop == ["robots", "sida"]
 
 
 def test_robots_hamtas_en_gang_per_utgivare_och_korning(monkeypatch):
@@ -153,7 +156,7 @@ def test_fetch_one_skickar_sidkallor_till_lasaren():
 
 def test_fetch_ger_artiklar_med_bara_rubrik_och_lank(monkeypatch):
     items, rapport = pipeline.fetch([kalla()], max_age_hours=0)
-    assert rapport[0]["ok"] and rapport[0]["artiklar"] == 4
+    assert rapport[0]["ok"] and rapport[0]["artiklar"] == 7
     assert {i["description"] for i in items} == {""} and all(i["url"].startswith("https://") for i in items)
     assert items[0]["source_id"] == "fi" and items[0]["source_type"] == "primar"
 
@@ -167,7 +170,7 @@ def test_gamla_lankar_pa_forsta_korningen_blir_inga_artiklar():
 
 def test_oversikt_visar_vilka_sokvagar_sidan_har_for_att_valja_monster():
     o = sidlasare.oversikt(SIDA.read_text(encoding="utf-8"), BAS)
-    assert o["/nyheter/2026"] == 3 and o["/pressrum/2026"] == 1
+    assert o["/nyheter/2026"] == 6 and o["/pressrum/2026"] == 1
     assert "/om-oss" not in o                       # för korta rubriker räknas inte
 
 
@@ -178,7 +181,7 @@ def test_prova_sida_skriver_rubriker_och_robotsbesked(monkeypatch, capsys):
     monkeypatch.setattr(sidlasare, "_sida", h.sida)
     kallprov.prova_sida("https://www.exempel.se/nyheter/", MONSTER)
     ut = capsys.readouterr().out
-    assert "tillåter NewsnavigatorBot" in ut and "4 rubriker" in ut and "Riksbanken håller styrräntan" in ut and "/nyheter/2026" in ut
+    assert "tillåter NewsnavigatorBot" in ut and "7 rubriker" in ut and "Riksbanken håller styrräntan" in ut and "/nyheter/2026" in ut
 
 
 def test_prova_sida_hamtar_inget_nar_robots_nekar(monkeypatch, capsys):
@@ -199,3 +202,31 @@ def test_pipelinen_sparar_tillstandet_efter_hamtningen():
     import inspect
     main = inspect.getsource(pipeline.main)
     assert "sidlasare.spara()" in main and main.index("fetch(sources") < main.index("sidlasare.spara()")
+
+
+def test_rubrikelementet_i_kortet_ar_rubriken_och_ingress_och_datum_far_vara_kvar_i_texten():
+    lank = dict((u.rsplit("/", 2)[-2], t) for t, u in sidlasare.lankar(SIDA.read_text(encoding="utf-8"), BAS, MONSTER))
+    assert lank["kort-med-rubrikelement"] == "Voxtral 3"
+    assert "Bygg agenter" not in lank["kort-med-rubrikelement"] and "augusti" not in lank["kort-med-rubrikelement"]
+
+
+def test_text_i_intilliggande_element_skiljs_at_med_mellanslag():
+    lank = dict(sidlasare.lankar('<a href="/nyheter/2026/a/"><span>Bolag</span>Mistral öppnar ett nav</a>', BAS, MONSTER))
+    assert "BolagMistral" not in " ".join(lank) and "Bolag Mistral öppnar ett nav" in " ".join(lank)
+
+
+def test_monstret_gar_att_skriva_utan_avslutande_snedstreck():
+    html = '<a href="/elbilar/en-ganska-lang-rubrik-om-elbilar-i-sverige/">Kort bildtext som är över tjugo tecken</a>'
+    assert sidlasare.lankar(html, "https://www.exempel.se/", r"^/[a-z-]+/[a-z0-9-]{25,}$")
+
+
+@pytest.mark.parametrize("text,rubrik", [
+    ("October 7, 2026Coming Soon: 2026 Annual Meetings Curtain Raiser", "Coming Soon: 2026 Annual Meetings Curtain Raiser"),
+    ("September 30, 2026 IMF Executive Board Completes the Third Review", "IMF Executive Board Completes the Third Review"),
+    ("6 oktober 2026 Riksbanken sänker räntan med en kvarts procentenhet", "Riksbanken sänker räntan med en kvarts procentenhet"),
+    ("2026-11-03 FI publicerar ny vägledning om ESG-data och AI", "FI publicerar ny vägledning om ESG-data och AI"),
+    ("Nepal Stabilizes Its Economy and Sets Its Sights Higher", "Nepal Stabilizes Its Economy and Sets Its Sights Higher"),
+])
+def test_datum_forst_i_rubriken_tas_bort(text, rubrik):
+    lank = sidlasare.lankar(f'<a href="/nyheter/2026/a/">{text}</a>', BAS, MONSTER)
+    assert lank == [(rubrik, "https://www.exempel.se/nyheter/2026/a/")]
