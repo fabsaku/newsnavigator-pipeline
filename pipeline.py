@@ -145,6 +145,7 @@ def fetch_one(s):
 
 def fetch(sources, max_age_hours):
     items, report = [], []
+    bara_rubrik_env = {i for i in os.environ.get("NN_BARA_RUBRIK", "").split(",") if i}    # för jämförelsen av alternativ (jamfor_alternativ.py)
     now = time.time()
     for s in sources:
         feed, used, err = fetch_one(s)
@@ -189,7 +190,7 @@ def fetch(sources, max_age_hours):
                 "topics": list(s.get("amnen", [])),
                 "title": clean(e.get("title", ""), 200),
                 # Betalväggskällor och nyhetsbrev: bara rubrik och länk används
-                "description": "" if s.get("betalvagg") or s.get("bara_rubrik") else clean(e.get("summary", "")),
+                "description": "" if s.get("betalvagg") or s.get("bara_rubrik") or s["id"] in bara_rubrik_env else clean(e.get("summary", "")),
                 "url": link,
                 "published": datetime.fromtimestamp(epoch, timezone.utc).isoformat() if epoch is not None else None,
                 "epoch": epoch,
