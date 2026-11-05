@@ -35,7 +35,7 @@ _RATTIGHETER = _re("human rights|mänskliga rättigheter|rights group*|rights gr
                    "international criminal court|internationella brottmålsdomstolen|icc|asylum seeker*|asylsökande")
 _MILJO = _re("klimat*|climate*|utsläpp*|emissions|cop\\d+|biodiversity|biologisk mångfald|deforestation|avskogning*|pollution|"
              "förorening*|renewable*|förnybar*|wildfire*|skogsbrand*|skogsbränder*|oil spill*|oljeutsläpp*|glacier*|glaciär*|"
-             "paris agreement|parisavtalet|carbon|koldioxid*|sea level*|havsnivå*|microplastic*|mikroplast*|ozone|ozon*|"
+             "paris agreement|parisavtalet|carbon|koldioxid*|sea level*|havsnivå*|microplastic*|mikroplast*|ozone layer|ozonlager*|"
              "net zero|nettonoll|extinction|utrotning*|ecosystem*|ekosystem*|coral reef*|korallrev*|heatwave*|värmebölja*")
 # Teknikspåret har delspår, från försvarsteknik till hemelektronik. Vapenanvändning i krig räknas inte, bara tekniken.
 TEKNIK = (

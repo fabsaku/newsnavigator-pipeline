@@ -157,7 +157,10 @@ def test_manuellt_godkand_notis_lamnar_kon():
 
 
 def test_taket_per_dygn():
-    evs = [handelse(id=f"id{n}00000000"[:10]) for n in range(4)]
+    amnen = ["Harbour strike in Rotterdam", "Volcano erupts on Iceland", "Bank merger in Tokyo", "Drought hits Kenya"]
+    evs = [handelse(id=f"id{i}00000000"[:10], reserv_rubrik=t, utkast={**handelse()["utkast"], "rubrik_en": t},
+                    kallor=[{**k, "url": f"https://k/{i}/{j}"} for j, k in enumerate(handelse()["kallor"])])
+           for i, t in enumerate(amnen)]
     _, status = kor(evs)
     nya, status = kor(evs, status=status, now=1_000_000.0 + 60 * 60)
     assert len(nya) == 2 and len(status["ko"]) == 2
@@ -314,4 +317,34 @@ def test_bara_i_sverige_stoppar_inte_inrikes():
 def test_saknas_i_sverige_stoppar_fortfarande():
     ev = {**_svensk("usa", "europa", "asien", amnen=("usa",)), "perspektiv": {"blind_flack": "saknas_i_sverige"}}
     assert "blind fläck" in autopilot.grindar(ev)
+
+
+def _i_ko(eid, rubrik, poang, *regioner, amnen=("usa",)):
+    ev = {**_svensk(*regioner, amnen=amnen, rubrik=rubrik), "id": eid, "poang": poang, "reserv_rubrik": rubrik, "antal_kallor": len(regioner)}
+    ev["utkast"]["rubrik_en"] = rubrik
+    for i, k in enumerate(ev["kallor"]):
+        k["url"] = f"https://k/{eid}/{i}"
+    return ev
+
+
+def _kor(events, tak=8):
+    status = {**autopilot.tom_status(), "startad": 1.0, "ko": {e["id"]: {"klar": 0, "rubrik": "x"} for e in events}}
+    settings = {**autopilot.STANDARD, "pa": True, "tak": tak, "tak_efter_forsta_veckan": tak}
+    return autopilot.kor(events, set(), settings, status, now=1000.0), status
+
+
+def test_samma_handelse_publiceras_inte_tva_ganger_samma_dygn(tmp_path, monkeypatch):
+    monkeypatch.setattr(autopilot, "ARKIV", tmp_path / "arkiv.json")
+    a = _i_ko("a", "Democrats win control of Congress in midterm elections", 40, "usa", "europa", "asien")
+    b = _i_ko("b", "Democrats win control of Congress in the midterm vote", 30, "usa", "europa", "afrika")
+    nya, status = _kor([a, b])
+    assert nya == {"a"} and "b" in status["ko"]
+
+
+def test_svensk_inrikes_gar_fore_hog_poang_under_taket(tmp_path, monkeypatch):
+    monkeypatch.setattr(autopilot, "ARKIV", tmp_path / "arkiv.json")
+    stor = _i_ko("a", "Summit opens in Nairobi with leaders", 40, "usa", "europa", "asien")
+    svensk = _i_ko("b", "Riksdagen röstar om budgeten", 10, "sverige", "sverige", amnen=("sverige",))
+    nya, _ = _kor([stor, svensk], tak=1)
+    assert nya == {"b"}
 

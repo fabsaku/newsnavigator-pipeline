@@ -167,18 +167,46 @@ def kor(events, approved, settings, status, now=None):
     senaste_dygnet = sum(1 for t in status["publicerade"].values() if now - t < 86400)
     tak = effektivt_tak(settings, status, now)
     mogna = sorted((eid for eid, post in status["ko"].items() if post["klar"] <= now),
-                   key=lambda eid: i_flodet[eid].get("poang", 0), reverse=True)
+                   key=lambda eid: (_forst(i_flodet[eid]), i_flodet[eid].get("poang", 0)), reverse=True)
+    utgivna = _publicerade_senaste_dygnet(status, i_flodet, now)
     for eid in mogna:
         if senaste_dygnet >= tak:
             break
-        if grindar(i_flodet[eid]):      # notisen kan ha ändrats medan den väntade
+        ev = i_flodet[eid]
+        if grindar(ev):      # notisen kan ha ändrats medan den väntade
             status["ko"].pop(eid)
+            continue
+        if _upprepar(ev, utgivna):      # står kvar i kön: i morgon kan den vara en ny utveckling
             continue
         status["ko"].pop(eid)
         status["publicerade"][eid] = now
+        utgivna.append(ev)
         nya.add(eid)
         senaste_dygnet += 1
     return nya
+
+
+def _forst(ev):
+    """Svensk inrikes och bevakningsspåren går före: de har få källor, så poängen skulle annars alltid ställa dem sist."""
+    import spar
+    oberoende = [s for s in ev.get("kallor") or [] if s.get("typ") != "kuraterat" and not s.get("statskontrollerad")]
+    return _svensk_inrikes(oberoende, _sektioner(ev)) or bool(spar.av(ev))
+
+
+def _publicerade_senaste_dygnet(status, i_flodet, now):
+    try:
+        arkiv = json.loads(ARKIV.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        arkiv = {}
+    ids = [eid for eid, t in status["publicerade"].items() if now - t < 86400]
+    return [e for e in (i_flodet.get(eid) or arkiv.get(eid) for eid in ids) if e]
+
+
+def _upprepar(ev, utgivna):
+    """Handlar notisen om samma händelse som något som redan gått ut det här dygnet?"""
+    from lansering import _bas, _lika
+    bas = _bas({"ev": ev})
+    return any(_lika(bas, _bas({"ev": e})) for e in utgivna)
 
 
 def automatiska(status=None):
