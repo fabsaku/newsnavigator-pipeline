@@ -13182,14 +13182,16 @@
  },
  "aefa67ca37": {
   "id": "aefa67ca37",
-  "amnen": [],
+  "amnen": [
+   "varlden"
+  ],
   "amnen_sektion": [],
-  "poang": 31.4,
+  "poang": 30.0,
   "vikt": {
-   "bredd": 0.521,
+   "bredd": 0.379,
    "regioner": {
-    "afrika": 2,
     "europa": 2,
+    "afrika": 1,
     "sverige": 1,
     "asien": 1
    },
@@ -13199,15 +13201,15 @@
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Lokalval i Sydafrika där missnöje över bristande service kan påverka ANC:s makt i flera kommuner under en femårsperiod."
+    "skal": "Lokalval i Sydafrika, där missnöje med brister i kommunal service kan påverka styret i många kommuner under flera år."
    },
    "bekraftad": false,
    "maste": false
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-05T11:15:00+00:00",
+  "senast": "2026-11-05T10:48:38+00:00",
   "utkast": {
    "rubrik_sv": "ANC leder tidiga resultat i Sydafrikas lokalval",
    "sammanfattning_sv": "Röstningen i lokalvalen i Sydafrika ägde rum den 4 november och rösträkningen har inletts. Enligt The Straits Times leder ANC de tidiga, preliminära resultaten med en kraftigt minskad andel röster, och valmyndigheten väntas presentera slutresultat senast på söndag.",
@@ -13339,45 +13341,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Vrede mot ANC över dåliga tjänster",
-     "namn_en": "Anger at ANC over poor services",
-     "lyfter_sv": "The East African lyfter fram att vreden över misslyckade tjänster hotar ANC, The Guardian att ANC möter ilska över dåliga tjänster och Dagens Nyheter att sopberg och tomma kranar kan straffa partiet.",
-     "lyfter_en": "The East African says discontent with weak services endangers the ANC, The Guardian that the ANC faces anger over poor services, and Dagens Nyheter that waste and empty taps could punish the party.",
-     "kallor": [
-      {
-       "namn": "The East African",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452"
-      },
-      {
-       "namn": "The Guardian",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
-      },
-      {
-       "namn": "Dagens Nyheter",
-       "region": "sverige",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dn.se/varlden/sopberg-och-tomma-kranar-kan-straffa-anc-i-sydafrikas-lokalval/"
-      }
-     ],
-     "regioner": [
-      "afrika",
-      "europa",
-      "sverige"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Valets betydelse och väljarnas engagemang",
-     "namn_en": "Stakes of the vote and voter engagement",
-     "lyfter_sv": "France 24 lyfter fram ivriga väljare och fokus på misslyckade tjänster, medan CGTN, ett statskontrollerat medium, lyfter fram att valet avgör styret i större städer.",
-     "lyfter_en": "France 24 highlights eager voters and a focus on failing services, while CGTN, a state-controlled outlet, highlights that the vote will decide control of major cities.",
+     "namn_sv": "Väljarnas oro över tjänster",
+     "namn_en": "Voters' concerns over services",
+     "lyfter_sv": "France 24 lyfter fram att sydafrikaner är ivriga att rösta medan bristande tjänster hamnar i fokus, och CGTN lyfter fram växande frustration över trasiga offentliga tjänster, arbetslöshet och brott.",
+     "lyfter_en": "France 24 highlights South Africans' eagerness to vote while failing services take center stage, and CGTN highlights growing frustration over failing public services, unemployment and crime.",
      "kallor": [
       {
        "namn": "France 24",
@@ -13399,77 +13366,94 @@
       "europa"
      ],
      "usa_sidor": []
+    },
+    {
+     "namn_sv": "ANC under tryck över tjänster",
+     "namn_en": "ANC under pressure over services",
+     "lyfter_sv": "The Guardian lyfter fram att ANC möter ilska över dåliga tjänster, och Dagens Nyheter lyfter fram att sopberg och tomma kranar kan straffa partiet.",
+     "lyfter_en": "The Guardian highlights that the ANC faces anger over poor services, and Dagens Nyheter highlights that garbage heaps and empty taps could punish the party.",
+     "kallor": [
+      {
+       "namn": "The Guardian",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
+      },
+      {
+       "namn": "Dagens Nyheter",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dn.se/varlden/sopberg-och-tomma-kranar-kan-straffa-anc-i-sydafrikas-lokalval/"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "sverige"
+     ],
+     "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 9,
+    "antal": 8,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Sydafrikaner röstar i lokalval",
+      "text": "Rösträkningen i Sydafrikas lokalval har inletts",
       "stod": [
-       1,
-       2,
-       4,
-       6
+       2
       ],
       "problem": null
      },
      {
-      "text": "Valet har fokus på bristande kommunala tjänster",
-      "stod": [
-       2,
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "The East African: vreden över misslyckade tjänster hotar ANC",
+      "text": "France 24 lyfter fram att sydafrikaner är ivriga att rösta",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "The Guardian: ANC möter ilska över dåliga tjänster",
+      "text": "France 24 lyfter fram att bristande tjänster hamnar i fokus",
       "stod": [
-       4
+       1
       ],
       "problem": null
      },
      {
-      "text": "Dagens Nyheter: sopberg och tomma kranar kan straffa partiet",
+      "text": "CGTN lyfter fram växande frustration över trasiga offentliga tjänster",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "France 24: väljarna är ivriga att rösta",
+      "text": "CGTN lyfter fram arbetslöshet och brott som del av frustrationen",
       "stod": [
-       2
+       5
       ],
       "problem": null
      },
      {
-      "text": "France 24: fokus på misslyckade tjänster",
+      "text": "ANC är under tryck på grund av tjänsterna",
       "stod": [
-       2
+       3,
+       4
       ],
       "problem": null
      },
      {
-      "text": "CGTN är ett statskontrollerat medium",
+      "text": "The Guardian lyfter fram att ANC möter ilska över dåliga tjänster",
       "stod": [
-       6
+       3
       ],
       "problem": null
      },
      {
-      "text": "CGTN: valet avgör styret i större städer",
+      "text": "Dagens Nyheter lyfter fram att sopberg och tomma kranar kan straffa ANC",
       "stod": [
-       6
+       4
       ],
       "problem": null
      }
@@ -13478,7 +13462,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.571,
+  "sammanhang": 0.547,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -13488,22 +13472,6 @@
     "sverige"
    ],
    "per_region": {
-    "afrika": [
-     {
-      "kalla": "The East African",
-      "land": "KE",
-      "rubrik": "South Africans vote as anger over failing services threatens ANC",
-      "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Africanews",
-      "land": "CG",
-      "rubrik": "Vote counting gets underway in critical South Africa local elections",
-      "url": "http://www.africanews.com/2026/11/05/vote-counting-gets-underway-in-critical-south-africa-local-elections/",
-      "statskontrollerad": false
-     }
-    ],
     "europa": [
      {
       "kalla": "France 24",
@@ -13517,6 +13485,15 @@
       "land": "GB",
       "rubrik": "ANC faces anger over poor services as South Africans vote in local elections",
       "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "Vote counting gets underway in critical South Africa local elections",
+      "url": "http://www.africanews.com/2026/11/05/vote-counting-gets-underway-in-critical-south-africa-local-elections/",
       "statskontrollerad": false
      }
     ],
@@ -13544,19 +13521,8 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "South Africans vote as anger over failing services threatens ANC",
+  "reserv_rubrik": "South Africans eager to vote as local elections put failing services in focus",
   "kallor": [
-   {
-    "namn": "The East African",
-    "rubrik": "South Africans vote as anger over failing services threatens ANC",
-    "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "KE",
-    "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
    {
     "namn": "France 24",
     "rubrik": "South Africans eager to vote as local elections put failing services in focus",
@@ -13624,7 +13590,7 @@
   "data": null,
   "godkand_tid": 1793862912.6923525,
   "automatisk": false,
-  "uppdaterad_tid": 1793880722.103981
+  "uppdaterad_tid": 1793881777.8972044
  },
  "cabd71303f": {
   "id": "cabd71303f",
