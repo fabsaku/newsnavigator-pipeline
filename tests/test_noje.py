@@ -90,3 +90,21 @@ def test_nordiska_kallor_om_utlandet_stannar_i_varlden():
 def test_en_nordisk_kalla_bland_manga_ger_inte_sverige():
     assert section_of({"amnen_sektion": pipeline.tag(_kluster(["sverige"], ["europa"], ["asien"]))[1]}) == "varlden"
 
+
+def _rubriker(*titlar):
+    return {"items": [{"title": t, "description": "", "topics": []} for t in titlar]}
+
+
+def test_en_rubrik_bland_manga_avgor_inte_sektionen():
+    c = _rubriker("Stocks rise after the vote", *[f"Democrats win the midterm election {i}" for i in range(9)])
+    assert "marknader" not in pipeline.tag(c)[1]
+
+
+def test_en_rubrik_racker_i_en_liten_handelse():
+    assert "marknader" in pipeline.tag(_rubriker("Stocks rise after the vote", "Democrats win the vote"))[1]
+
+
+def test_var_femte_rubrik_racker_i_en_stor_handelse():
+    c = _rubriker("Stocks rise", "Stocks fall", *[f"Democrats win {i}" for i in range(8)])
+    assert "marknader" in pipeline.tag(c)[1]
+

@@ -375,12 +375,15 @@ def tag(c):
     dedicated = {t for t, k in counts.items() if t in DEDICATED and (n == 1 or k * 2 > n)}
     # Nyckelord i rubrikerna räcker; i ingresserna krävs träff hos minst två källor, så att ett
     # enstaka "energy" eller "AI" i en ingress inte flyttar notisen till fel sektion.
-    titles = " ".join(i["title"] for i in c["items"]).lower()
+    # I stora händelser krävs träff i minst var femte rubrik: en enda rubrik om börsens reaktion
+    # bland 21 om valet gör inte valet till en marknadsnyhet.
+    titles = [i["title"].lower() for i in c["items"]]
     descs = [(i["description"] or "").lower() for i in c["items"]]
+    min_rubriker = max(1, -(-n // 5))
     from_text = set()
     for topic, words in KEYWORDS.items():
         pats = [_kw(w) for w in words]
-        if any(p.search(titles) for p in pats):
+        if sum(1 for t in titles if any(p.search(t) for p in pats)) >= min_rubriker:
             from_text.add(topic)
             continue
         hits = sum(1 for d in descs if any(p.search(d) for p in pats))
