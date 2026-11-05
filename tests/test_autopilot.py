@@ -269,3 +269,39 @@ def test_sammanhangsmattet_luckrar_inte_upp_hopslagningsgrinden():
     stor = handelse(kallor=[kalla(f"K{i}", "usa" if i % 2 else "europa") for i in range(24)], sammanhang=0.9)
     assert any("hopslagna" in s for s in autopilot.grindar(stor))
 
+
+def _svensk(*regioner, amnen=("sverige",), rubrik="Riksdagen röstar om budgeten"):
+    return {"amnen_sektion": list(amnen), "kallkontroll": {"ok": True},
+            "utkast": {"rubrik_sv": rubrik, "sammanfattning_sv": "Text."},
+            "kallor": [{"region": r, "rubrik": rubrik, "typ": "media"} for r in regioner]}
+
+
+def test_tva_svenska_kallor_racker_for_inrikes():
+    assert autopilot.grindar(_svensk("sverige", "sverige")) == []
+
+
+def test_en_svensk_kalla_racker_inte():
+    assert any("färre än tre" in s for s in autopilot.grindar(_svensk("sverige", "norden")))
+
+
+def test_utlandsnyhet_i_svenska_medier_omfattas_inte_om_annan_region_finns():
+    skal = autopilot.grindar(_svensk("sverige", "sverige", "usa", amnen=("usa",)))
+    assert skal == []
+    assert any("färre än tre" in s for s in autopilot.grindar(_svensk("sverige", "usa", amnen=("usa",))))
+
+
+def test_svenskt_noje_omfattas_inte():
+    assert "bara en region" in autopilot.grindar(_svensk("sverige", "sverige", amnen=("noje",)))
+
+
+def test_sparrord_galler_aven_inrikes():
+    assert any("spärrord" in s for s in autopilot.grindar(_svensk("sverige", "sverige", rubrik="Man häktad i Malmö")))
+
+
+def test_svenska_medier_om_utlandet_ar_inte_inrikes():
+    assert "bara en region" in autopilot.grindar(_svensk("sverige", "sverige", amnen=("usa",), rubrik="Trump talar i Ohio"))
+
+
+def test_namngivet_brottmal_gar_till_redaktoren():
+    assert any("spärrord" in s for s in autopilot.grindar(_svensk("sverige", "sverige", rubrik="Marius Borg Høiby hålls kvar i häkte")))
+

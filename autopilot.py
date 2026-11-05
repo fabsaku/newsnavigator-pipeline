@@ -33,7 +33,8 @@ MAX_KALLOR, MAX_SEKTIONER = 20, 3
 # Ord som alltid skickar notisen till redaktören: brottmål med namngivna personer, självmord, sexualbrott, barn.
 # Hela ord; * betyder ordstam.
 SPARRORD = """
-misstänkt* åtalad* åtalas anhållen anhölls anhålls häktad* häktas gripen gripits grips greps dömd* döms
+misstänkt* åtalad* åtalas anhållen anhölls anhålls häktad* häktas häkte* gripen gripits grips greps dömd* döms
+åklagare* tingsrätt* polisanmäl*
 mord* mördad* mördare knivskuren
 självmord* suicid*
 våldtäkt* våldtagen våldtog sexualbrott* sexuellt övergrepp* pedofil* barnporr*
@@ -53,6 +54,13 @@ def _sektioner(ev):
     return {k for k, _, _, tags in SECTIONS if amnen & tags}
 
 
+def _svensk_inrikes(oberoende, sektioner):
+    """Svensk inrikesnyhet: bara nordiska källor, minst två svenska, och inte nöje eller utrikes. Den kan inte nå flera regioner
+    och har sällan tre källor, så två svenska källor räcker. Övriga grindar, som spärrorden, gäller som vanligt."""
+    return ({s.get("region") for s in oberoende} <= {"sverige", "norden"} and not sektioner & {"noje", "varlden"}
+            and sum(1 for s in oberoende if s.get("region") == "sverige") >= 2)
+
+
 def grindar(ev):
     """Skälen till att en notis inte får publiceras automatiskt. Tom lista betyder att den klarar grindarna."""
     skal = []
@@ -69,11 +77,12 @@ def grindar(ev):
 
     kallor = ev.get("kallor") or []
     oberoende = [s for s in kallor if s.get("typ") != "kuraterat" and not s.get("statskontrollerad")]
-    if len(oberoende) < 3:
-        skal.append(f"färre än tre oberoende källor ({len(oberoende)})")
-    if len({s.get("region") for s in oberoende}) < 2:
-        skal.append("bara en region")
     sektioner = _sektioner(ev)
+    inrikes = _svensk_inrikes(oberoende, sektioner)
+    if len(oberoende) < 3 and not inrikes:
+        skal.append(f"färre än tre oberoende källor ({len(oberoende)})")
+    if len({s.get("region") for s in oberoende}) < 2 and not inrikes:
+        skal.append("bara en region")
     if "sverige" in sektioner and sum(1 for s in oberoende if s.get("region") == "sverige") < 2:
         skal.append("färre än två svenska källor")
     if len(kallor) > MAX_KALLOR or len(sektioner) > MAX_SEKTIONER:
