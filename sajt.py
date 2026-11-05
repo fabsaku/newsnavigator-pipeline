@@ -256,7 +256,7 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
 <nav aria-label="Sektioner"><div class="w">{links}</div></nav>
 <main class="w">{body}</main>
 <footer><div class="w ft">
-<div><p>{_both("Notiserna sammanfattas med hjälp av AI och granskas av redaktionen innan publicering. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI and reviewed by the editors before publication. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>{stamp}</div>
+<div><p>{_both("Notiserna sammanfattas med hjälp av AI. Varje notis säger hur den har granskats: av redaktionen, eller med källkontroll utan manuell granskning. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI. Each story says how it was reviewed: by the editors, or source-checked without manual review. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>{stamp}</div>
 <div class="links"><a href="{_e(u.page("om"))}">{_both("Om Newsnavigator och principerna", "About Newsnavigator and the principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Alla källor", "All sources")}</a><a href="{_e(u.page("navigatorn"))}">{_both("Navigatorn, morgonbrevet", "Navigatorn, the morning brief")}</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a></div>
 <p class="copy">© 2026 Newsnavigator</p>
 </div></footer>
