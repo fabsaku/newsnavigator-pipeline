@@ -348,3 +348,12 @@ def test_svensk_inrikes_gar_fore_hog_poang_under_taket(tmp_path, monkeypatch):
     nya, _ = _kor([stor, svensk], tak=1)
     assert nya == {"b"}
 
+
+def test_det_som_maste_med_gar_forst_och_rakans_inte_mot_taket(tmp_path, monkeypatch):
+    monkeypatch.setattr(autopilot, "ARKIV", tmp_path / "arkiv.json")
+    maste = {**_i_ko("a", "Summit opens in Nairobi with leaders", 30, "usa", "europa", "asien"), "maste": True}
+    svensk = _i_ko("b", "Riksdagen röstar om budgeten", 10, "sverige", "sverige", amnen=("sverige",))
+    vanlig = _i_ko("c", "Harbour strike halts Rotterdam traffic", 20, "usa", "europa", "asien")
+    nya, _ = _kor([vanlig, svensk, maste], tak=1)
+    assert nya == {"a", "b"}
+

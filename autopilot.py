@@ -167,12 +167,13 @@ def kor(events, approved, settings, status, now=None):
     senaste_dygnet = sum(1 for t in status["publicerade"].values() if now - t < 86400)
     tak = effektivt_tak(settings, status, now)
     mogna = sorted((eid for eid, post in status["ko"].items() if post["klar"] <= now),
-                   key=lambda eid: (_forst(i_flodet[eid]), i_flodet[eid].get("poang", 0)), reverse=True)
+                   key=lambda eid: (bool(i_flodet[eid].get("maste")), _forst(i_flodet[eid]), i_flodet[eid].get("poang", 0)),
+                   reverse=True)
     utgivna = _publicerade_senaste_dygnet(status, i_flodet, now)
     for eid in mogna:
-        if senaste_dygnet >= tak:
-            break
         ev = i_flodet[eid]
+        if senaste_dygnet >= tak and not ev.get("maste"):     # det som måste med räknas inte mot taket
+            continue
         if grindar(ev):      # notisen kan ha ändrats medan den väntade
             status["ko"].pop(eid)
             continue
@@ -182,7 +183,7 @@ def kor(events, approved, settings, status, now=None):
         status["publicerade"][eid] = now
         utgivna.append(ev)
         nya.add(eid)
-        senaste_dygnet += 1
+        senaste_dygnet += 0 if ev.get("maste") else 1
     return nya
 
 
