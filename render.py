@@ -45,7 +45,7 @@ FONTS_URL = ("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,
              "&family=Source+Sans+3:wght@400;600;700;800&display=swap")
 
 CSS = """
-:root{--bg:#000;--ink:#fff;--text:#d6d6d6;--mute:#8c8c8c;--rule:#2e2e2e;--panel:#121212;
+:root{color-scheme:dark;--bg:#000;--ink:#fff;--text:#d6d6d6;--mute:#8c8c8c;--rule:#2e2e2e;--panel:#121212;
 --serif:'Source Serif 4',Georgia,'Times New Roman',serif;--sans:'Source Sans 3','Helvetica Neue',Arial,sans-serif}
 *{box-sizing:border-box}html{background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.5 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -73,13 +73,13 @@ header{border-bottom:1px solid var(--ink)}
 .story{display:grid;gap:12px;min-width:0}
 .story .kicker{font-size:14px;color:var(--mute)}
 .story .kicker a{color:var(--mute);text-decoration:none}.story .kicker a:hover{color:var(--ink)}
-.story h2,.story h3{line-height:1.1}
+.story h1,.story h2,.story h3{line-height:1.1}
 .story h2 a,.story h3 a{text-decoration:none}.story h2 a:hover,.story h3 a:hover{text-decoration:underline}
 .story .sum{font:400 19px/1.5 var(--serif);color:var(--text);max-width:64ch}
 .story.lead h2{font-size:50px;line-height:1.04;letter-spacing:-.015em;max-width:20ch}
 .story.lead .sum{font-size:21px}
 .story.featured h3{font-size:28px;max-width:26ch}
-.story.single h2{font-size:48px;line-height:1.06;letter-spacing:-.015em;max-width:24ch}
+.story.single h1,.story.single h2{font-size:48px;line-height:1.06;letter-spacing:-.015em;max-width:24ch}
 .story.single .sum{font-size:22px;max-width:60ch}
 .story.single .cov{max-width:760px}
 .meta{font-size:14px;color:var(--mute)}
@@ -148,7 +148,7 @@ body.en .sv,body:not(.en) .en{display:none}
 .w{padding:0 16px}
 .mast{grid-template-columns:1fr auto;padding:12px 0 10px}.mast .date{display:none}
 .brand{justify-self:start;gap:10px}.brand svg{height:40px}.brand span{font-size:17px}
-.story.lead h2{font-size:34px}.story.single h2{font-size:32px}.story.featured h3{font-size:24px}
+.story.lead h2{font-size:34px}.story.single h1,.story.single h2{font-size:32px}.story.featured h3{font-size:24px}
 .story.lead .sum,.story.single .sum{font-size:19px}
 .cov{gap:3px}.cov .c i{font-size:10.5px}
 .srcfull{columns:1}
@@ -433,12 +433,12 @@ def _usa_relevant(ev):
     return utgava.usa_relevant(ev)
 
 
-def story_full(ev, internal=False, lang=None):
+def story_full(ev, internal=False, lang=None, rubrik="h2"):
     """Hela notisen: notissidan och den interna förhandsvisningen."""
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
     regs = p.get("regioner", [])
-    parts = [f'<h2>{_title(ev)}</h2>', _summary(ev), coverage(ev), meta_block(ev, internal)]
+    parts = [f'<{rubrik}>{_title(ev)}</{rubrik}>', _summary(ev), coverage(ev), meta_block(ev, internal)]
 
     if len(regs) >= 2 or d.get("perspektiv_sv"):
         cols = []

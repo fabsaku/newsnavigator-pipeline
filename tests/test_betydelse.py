@@ -138,7 +138,7 @@ def test_raden_efter_fakta_inte_i_rubrik_eller_sammanfattning(monkeypatch):
     monkeypatch.setenv("NN_BETYDELSE", "1")
     sida = sajt.story_page(sajt.Urls(flat=False, lang="sv"), notis(), [], [], "", True)
     assert sida.index("Beslutet om tullar rör") > sida.index("<h3 class=\"section-h\">Källor")
-    assert sida.index("<h2>") < sida.index("Beslutet om tullar rör")
+    assert sida.index("<h1>") < sida.index("Beslutet om tullar rör")
 
 
 def test_visas_inte_om_kontrollen_underkant_eller_raden_saknas(monkeypatch):
