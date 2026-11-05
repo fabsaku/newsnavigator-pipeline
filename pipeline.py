@@ -71,7 +71,7 @@ HOME = {"sverige", "norden"}
 # Källor som bara bevakar ett ämne: deras ämne styr sektionen när de är fler än hälften av källorna (eller ensamma)
 DEDICATED = {"spel", "noje"}
 # Platser bland de utvalda händelserna som hålls åt sektioner som sällan når upp i poäng
-RESERVED = {"noje": 4}
+RESERVED = {"noje": 4, "sverige": 8}
 _KW = {}
 
 
