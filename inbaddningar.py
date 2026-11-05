@@ -118,6 +118,28 @@ def handelsepar(handelser, kodare, tau=0.6, min_delade=2, topp=25):
     return sorted(ut, key=lambda x: -x["traffar"])[:topp]
 
 
+def sammanhang_efter_renhet(rader, vek_per_text, min_storlek=3):
+    """Sammanhang (semantisk._satt_sammanhang) för produktionsklustren med minst min_storlek rubriker som alla är handmärkta: rena (alla samma händelse)
+    och blandade (flera händelser). Underlag för tröskeln SAMMANHANG_MIN i autopilot.py."""
+    import pipeline
+    import semantisk
+    kl = pipeline.merge_clusters(pipeline.cluster(_artiklar(rader)))
+    kl = semantisk.sla_ihop(kl, lambda texter: [vek_per_text[t] for t in texter])
+    rena, blandade = [], []
+    for c in kl:
+        etiketter = [rader[it["_rad"]].get("handelse") for it in c["items"]]
+        if len(c["items"]) < min_storlek or any(e is None for e in etiketter) or "sammanhang" not in c:
+            continue
+        (rena if len(set(etiketter)) == 1 else blandade).append(c["sammanhang"])
+    return {"rena": rena, "blandade": blandade}
+
+
+def sammanhangstroskel(rena, blandade, troskler=(0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7)):
+    """För varje tröskel: hur många blandade kluster som skulle stoppas (sammanhang under tröskeln) och hur många rena som stoppas av misstag."""
+    return [{"troskel": t, "blandade_stoppade": sum(x < t for x in blandade), "blandade": len(blandade),
+             "rena_stoppade": sum(x < t for x in rena), "rena": len(rena)} for t in troskler]
+
+
 def bast_med_precision(tabell, min_precision=0.98):
     """Raden med högst recall bland dem som håller precisionen, eller None. Falska sammanslagningar är värre än missade, så det är den punkten som räknas."""
     ok = [r for r in tabell if r["precision"] >= min_precision]
@@ -163,6 +185,16 @@ def main(argv):
         handelser = json.loads((ROOT / "data" / "flode.json").read_text(encoding="utf-8"))["handelser"]
         for p in handelsepar(handelser, kodare, tau=0.55, min_delade=1):
             print(f"{p['traffar']:>3} träffar, andel {p['andel']:.2f}, storlekar {p['storlek']}: {p['titel'][0][:55]} | {p['titel'][1][:55]}")
+        rader = json.loads(FIXTUR.read_text(encoding="utf-8"))["rubriker"]
+        vek = dict(zip([x.get("rubrik_en") or x["rubrik"] for x in rader], kodare([x.get("rubrik_en") or x["rubrik"] for x in rader])))
+        r = sammanhang_efter_renhet(rader, vek, min_storlek=3)
+        print(f"\nSammanhang i handmärkta kluster med minst 3 rubriker: {len(r['rena'])} rena, {len(r['blandade'])} blandade")
+        for namn in ("rena", "blandade"):
+            v = sorted(r[namn])
+            if v:
+                print(f"  {namn}: min {v[0]:.2f}  median {v[len(v) // 2]:.2f}  max {v[-1]:.2f}")
+        for x in sammanhangstroskel(r["rena"], r["blandade"]):
+            print(f"  tröskel {x['troskel']:.2f}: stoppar {x['blandade_stoppade']} av {x['blandade']} blandade och {x['rena_stoppade']} av {x['rena']} rena")
         return
     modell = argv[0] if argv else MODELL
     rader = json.loads(FIXTUR.read_text(encoding="utf-8"))["rubriker"]

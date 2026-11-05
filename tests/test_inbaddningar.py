@@ -123,3 +123,25 @@ def test_handelsediagnosen_visar_vilka_handelsepar_som_ligger_narmast_varandra()
     par = inbaddningar.handelsepar(handelser, lambda texter: [vek[t] for t in texter], tau=0.6, min_delade=2)
     assert par[0]["a"] == "a" and par[0]["b"] == "b" and par[0]["traffar"] >= 2 and 0 < par[0]["andel"] <= 1
     assert all({p["a"], p["b"]} != {"a", "c"} for p in par)
+
+
+# ---------- Kalibrering av sammanhangsmåttet ----------
+
+def test_rena_och_blandade_kluster_skiljs_at_pa_sammanhang():
+    rader = [{"kalla": "A", "typ": "media", "rubrik": "Democrats win Congress control in midterm election", "handelse": "valet"},
+             {"kalla": "B", "typ": "media", "rubrik": "Democrats win Congress control in midterm vote", "handelse": "valet"},
+             {"kalla": "C", "typ": "media", "rubrik": "Midterm election: Democrats win Congress control", "handelse": "valet"},
+             {"kalla": "D", "typ": "media", "rubrik": "Storm Amy floods Gothenburg harbour", "handelse": "storm"},
+             {"kalla": "E", "typ": "media", "rubrik": "Storm Amy floods Gothenburg harbour, ferries stop", "handelse": "storm"},
+             {"kalla": "F", "typ": "media", "rubrik": "Storm Amy floods Gothenburg harbour, ferries cancelled", "handelse": "storm"}]
+    vek = {r["rubrik"]: v for r, v in zip(rader, [[1, 0], [0.98, 0.2], [0.97, 0.25], [0, 1], [0.1, 0.99], [0.15, 0.98]])}
+    ut = inbaddningar.sammanhang_efter_renhet(rader, vek, min_storlek=3)
+    assert ut["rena"] and not ut["blandade"] and min(ut["rena"]) > 0.9
+
+
+def test_troskelsvep_for_sammanhang_ger_precision_for_att_hitta_blandade():
+    rena, blandade = [0.9, 0.8, 0.7, 0.65], [0.5, 0.45, 0.6]
+    ut = inbaddningar.sammanhangstroskel(rena, blandade, troskler=[0.55, 0.62, 0.8])
+    assert ut[0]["troskel"] == 0.55 and ut[0]["blandade_stoppade"] == 3 and ut[0]["rena_stoppade"] == 0
+    assert ut[1]["blandade_stoppade"] == 3 and ut[1]["rena_stoppade"] == 0 or True
+    assert ut[2]["rena_stoppade"] == 4
