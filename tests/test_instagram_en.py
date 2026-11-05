@@ -254,3 +254,61 @@ def test_inga_uppmaningar_i_kort_eller_bildtext(lang):
     texter = [instagram.caption(ev, lang=lang)] + [re.sub(r"<[^>]+>", " ", re.sub(r"<style.*?</style>", "", s, flags=re.S)) for s in instagram.slides(ev, lang=lang)]
     for t in texter:
         assert not UPPMANINGAR.search(t), UPPMANINGAR.search(t).group(0)
+
+
+# ---------- Kontrollen av kontona (läser bara) ----------
+
+def _svar(username, konto_typ="BUSINESS", anvant=0, total=100):
+    def api(path, params, method="POST"):
+        assert method == "GET"                                  # kontrollen skriver aldrig
+        if path == "me":
+            return {"username": username, "account_type": konto_typ, "user_id": "1784"}
+        if path.endswith("/content_publishing_limit"):
+            return {"data": [{"quota_usage": anvant, "config": {"quota_total": total}}]}
+        raise AssertionError(path)
+    return api
+
+
+def test_kontroll_visar_kontonamn_typ_och_kvot(monkeypatch):
+    monkeypatch.setenv("IG_USER_ID", "17841400000000001")
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "TOKEN-SV")
+    monkeypatch.delenv("IG_USER_ID_EN", raising=False)
+    monkeypatch.delenv("IG_ACCESS_TOKEN_EN", raising=False)
+    rader = {r["lang"]: r for r in instagram.kontrollera_konton(api=_svar("newsnavigator.se", anvant=3))}
+    assert rader["sv"]["status"] == "ok" and rader["sv"]["konto"] == "newsnavigator.se" and rader["sv"]["kvot_kvar"] == 97
+    assert rader["en"]["status"] == "saknas"                                # secrets saknas för engelska kontot
+
+
+def test_kontroll_fangar_ombytta_tokens(monkeypatch):
+    monkeypatch.setenv("IG_USER_ID", "1")
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "T")
+    rad = next(r for r in instagram.kontrollera_konton(api=_svar("news.navigator")) if r["lang"] == "sv")
+    assert rad["status"] == "fel konto" and "news.navigator" in rad["text"] and "newsnavigator.se" in rad["text"]
+
+
+def test_kontroll_varnar_for_personligt_konto(monkeypatch):
+    monkeypatch.setenv("IG_USER_ID", "1")
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "T")
+    rad = next(r for r in instagram.kontrollera_konton(api=_svar("newsnavigator.se", konto_typ="PERSONAL")) if r["lang"] == "sv")
+    assert rad["status"] == "fel kontotyp"
+
+
+def test_kontroll_redovisar_fel_fran_instagram_utan_token(monkeypatch):
+    import urllib.error
+    monkeypatch.setenv("IG_USER_ID", "1")
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "HEMLIG-TOKEN-123")
+    def api(path, params, method="POST"):
+        raise urllib.error.HTTPError("u", 400, "Bad Request", {}, None)
+    rad = next(r for r in instagram.kontrollera_konton(api=api) if r["lang"] == "sv")
+    assert rad["status"] == "token fungerar inte" and "HEMLIG-TOKEN-123" not in str(rad) and "400" in rad["text"]
+
+
+def test_kontrollen_skrivs_ut_utan_token_och_workflowen_har_kontrollage(monkeypatch, capsys):
+    from pathlib import Path
+    monkeypatch.setenv("IG_USER_ID", "1")
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "HEMLIG-TOKEN-123")
+    instagram.skriv_kontroll(instagram.kontrollera_konton(api=_svar("newsnavigator.se")))
+    ut = capsys.readouterr().out
+    assert "@newsnavigator.se" in ut and "HEMLIG-TOKEN-123" not in ut and "97" not in ut or "100" in ut
+    wf = (Path(__file__).parent.parent / ".github" / "workflows" / "instagram.yml").read_text(encoding="utf-8")
+    assert "kontroll" in wf and "python instagram.py kontroll" in wf

@@ -12,6 +12,9 @@ on:
       konto:
         description: "Vilket konto: sv (@newsnavigator.se), en (@news.navigator) eller alla"
         default: "alla"
+      kontroll:
+        description: "true = bara kontrollera att token och konto stämmer och visa kvoten (läser, postar inget)"
+        default: "false"
 
 permissions:
   contents: write
@@ -39,7 +42,12 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID_EN: ${{ secrets.IG_USER_ID_EN }}
           IG_ACCESS_TOKEN_EN: ${{ secrets.IG_ACCESS_TOKEN_EN }}
-        run: python instagram.py posta --antal ${{ github.event.inputs.antal || '1' }} --konto ${{ github.event.inputs.konto || 'alla' }}
+        run: |
+          if [ "${{ github.event.inputs.kontroll }}" = "true" ]; then
+            python instagram.py kontroll
+          else
+            python instagram.py posta --antal ${{ github.event.inputs.antal || '1' }} --konto ${{ github.event.inputs.konto || 'alla' }}
+          fi
       - name: Driftstatus
         run: python drift.py instagram ${{ job.status }}
       - name: Spara status

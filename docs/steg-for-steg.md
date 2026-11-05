@@ -12,17 +12,19 @@ Du behöver aldrig klistra in något secret i chatten. Det går bara in i GitHub
 3. Gör samma sak för @news.navigator (växla konto längst ned i inställningarna).
 
 ### 1.2 Meta-appen
-1. Gå till developers.facebook.com och logga in med ett Facebookkonto (skapa ett om du saknar). Godkänn utvecklarvillkoren.
-2. Min appar, Skapa app. Namn: Newsnavigator. Välj användningsfall som innehåller Instagram och publicering av innehåll (typ Business om den frågar).
-3. I appens vänstermeny, Produkter eller Användningsfall: lägg till Instagram och öppna "API setup with Instagram login".
-4. Under "Generate access tokens", klicka "Add account" och logga in på @newsnavigator.se. Godkänn att appen får publicera innehåll.
-5. Du får nu ett konto-id (siffror) och en knapp som skapar en token. Skapa token. Kopiera båda till en anteckning på din dator, inte till något molnverktyg.
+Metas gränssnitt flyttas ofta. Namnen nedan är de som gäller i november 2026 enligt Metas dokumentation. Leta efter närmaste motsvarighet om något heter annorlunda. Vi använder "Instagram API with Instagram Login", så du behöver varken Facebook-sida eller Facebook-inloggning för kontona, bara ett Facebookkonto för att få öppna developers.facebook.com.
+
+1. Gå till developers.facebook.com och logga in. Godkänn utvecklarvillkoren om du blir ombedd.
+2. Min appar, Skapa app. Namn: Newsnavigator. Välj användningsfallet som gäller att hantera och publicera innehåll på Instagram (typ Business om den frågar).
+3. I appens vänstermeny, Instagram, "API setup with Instagram login".
+4. Under "Generate access tokens", klicka "Add account" och logga in på @newsnavigator.se. Godkänn behörigheterna `instagram_business_basic` och `instagram_business_content_publish`.
+5. Klicka "Generate token" vid kontot. Du får en token (giltig i 60 dagar) och ett konto-id med siffror. Kopiera båda till en anteckning på din dator, inte till något molnverktyg och inte till chatten.
 6. Upprepa 4 och 5 för @news.navigator.
-7. Om Meta säger att kontot måste vara tester först: Appens vänstermeny, App roles, Roles, lägg till Instagram-testare med respektive kontonamn. Sedan i Instagram-appen: Inställningar, Appar och webbplatser, Testarinbjudningar, acceptera. Gör sedan om steg 4.
+7. Om "Add account" inte tillåter kontot: App roles, Roles, lägg till Instagram-testare med kontonamnet. Acceptera sedan inbjudan i Instagram-appen (Inställningar, Appar och webbplatser, Testarinbjudningar) och gör om steg 4.
 
-Du behöver inte appens secret just nu. Koden använder den inte än.
+Du behöver varken App Review eller att appen sätts i live-läge för att publicera på dina egna konton. Appens secret behövs inte nu.
 
-### 1.3 Lägg in secrets i GitHub
+### 1.3 Lägg in secrets i GitHub och kontrollera dem
 1. github.com/fabsaku/newsnavigator-pipeline, Settings, Secrets and variables, Actions, New repository secret.
 2. Skapa fyra secrets, ett i taget, med exakt dessa namn:
    - `IG_USER_ID` = konto-id för @newsnavigator.se
@@ -30,6 +32,8 @@ Du behöver inte appens secret just nu. Koden använder den inte än.
    - `IG_USER_ID_EN` = konto-id för @news.navigator
    - `IG_ACCESS_TOKEN_EN` = token för @news.navigator
 3. Radera anteckningen med token när du är klar.
+4. **Kontrollera.** Actions, workflowen Instagram, Run workflow, `kontroll = true`, kör. Inget publiceras. Loggen visar för varje konto om secrets finns, vilket konto token hör till, kontotyp och hur många publiceringar som finns kvar i dygnskvoten. Rätt resultat är "OK" på båda raderna. Står det "fel konto" har du bytt token mellan kontona. Står det "fel kontotyp" är kontot inte professionellt (se 1.1). Står det "token fungerar inte" har den gått ut eller kopierats fel: generera en ny.
+5. Tokens förnyas sedan av sig själva varje vecka (workflowen `igtoken.yml`). Du behöver inte göra något mer.
 
 ### 1.4 Bio-länkar
 Sätt länken i respektive profil (Redigera profil, Länkar):

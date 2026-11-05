@@ -521,6 +521,45 @@ def _api(path, params, method="POST"):
         return json.loads(r.read())
 
 
+def kontrollera_konton(api=None):
+    """Läser bara: vilket konto varje token hör till, kontotyp och hur mycket kvot som finns. Fångar ombytta tokens, personliga konton och
+    tokens som inte fungerar. Skriver aldrig något till Instagram och visar aldrig token."""
+    api = api or _api
+    rader = []
+    for lang, (user_var, token_var) in KONTON.items():
+        user, token = os.environ.get(user_var), os.environ.get(token_var)
+        forvantat = HANDTAG[lang].lstrip("@")
+        rad = {"lang": lang, "forvantat": forvantat, "konto": None, "typ": None, "kvot_kvar": None, "status": "saknas",
+               "text": f"secrets saknas ({user_var} och {token_var})"}
+        if user and token:
+            try:
+                me = api("me", {"fields": "username,account_type", "access_token": token}, method="GET")
+                rad.update(konto=me.get("username"), typ=me.get("account_type"))
+                try:
+                    d = api(f"{user}/content_publishing_limit", {"fields": "quota_usage,config", "access_token": token}, method="GET")["data"][0]
+                    rad["kvot_kvar"] = d.get("config", {}).get("quota_total", 100) - d.get("quota_usage", 0)
+                except Exception:
+                    rad["kvot_kvar"] = None
+                if (rad["konto"] or "") != forvantat:
+                    rad.update(status="fel konto", text=f"token och konto-id hör till @{rad['konto']}, men {token_var} ska vara för @{forvantat}: kontrollera att secrets inte är ombytta")
+                elif rad["typ"] not in ("BUSINESS", "MEDIA_CREATOR", "CREATOR"):
+                    rad.update(status="fel kontotyp", text=f"kontot är {rad['typ']}: byt till företags- eller skaparkonto i Instagram")
+                else:
+                    rad.update(status="ok", text="token fungerar")
+            except Exception as e:
+                kod = getattr(e, "code", None)
+                rad.update(status="token fungerar inte", text=f"Instagram svarade {'HTTP ' + str(kod) if kod else type(e).__name__}: skapa ett nytt token i Meta och uppdatera {token_var}")
+        rader.append(rad)
+    return rader
+
+
+def skriv_kontroll(rader):
+    for r in rader:
+        kvot = f", kvot kvar {r['kvot_kvar']}" if r["kvot_kvar"] is not None else ""
+        konto = f" (token tillhör @{r['konto']}, {r['typ']}{kvot})" if r["konto"] else ""
+        print(f"{HANDTAG[r['lang']]}: {r['status'].upper()}: {r['text']}{konto}")
+
+
 def publish_one(lang, sid, item, user, token):
     urls = [f"{IMAGE_BASE}/ig/{lang}/{sid}/{f}" for f in item["bilder"]]
     cap = (OUT / lang / sid / "caption.txt").read_text(encoding="utf-8")
@@ -596,7 +635,7 @@ def forhandsvisning(out, n=2, lang="sv"):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("kommando", choices=["bygg", "posta", "forhandsvisning", "urval"])
+    ap.add_argument("kommando", choices=["bygg", "posta", "forhandsvisning", "urval", "kontroll"])
     ap.add_argument("mapp", nargs="?")
     ap.add_argument("mapp2", nargs="?")
     ap.add_argument("--antal", type=int, default=1)
@@ -605,6 +644,8 @@ if __name__ == "__main__":
     a = ap.parse_args()
     if a.kommando == "bygg":
         bygg()
+    elif a.kommando == "kontroll":
+        skriv_kontroll(kontrollera_konton())
     elif a.kommando == "posta":
         posta(a.antal, konton=None if a.konto == "alla" else [a.konto])
     elif a.kommando == "urval":

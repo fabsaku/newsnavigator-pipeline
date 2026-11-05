@@ -155,7 +155,7 @@ Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk ti
 
 Det här kan bara du göra. Det som står överst spärrar mest. Två ärenden väntar också på dig i GitHub: fyra notiser i granskningsärendet (två av dem är stora valhändelser med över 20 källor som autopiloten inte släpper igenom) och utvärderingen i ärende 2. Spår A0 i planen nedan är den kritiska vägen för målet att ha minst 56 inlägg per konto idag.
 
-1. **Meta och Instagram, båda kontona (spår A0).** Skapa appen, lägg till båda kontona och lägg secrets `IG_USER_ID`, `IG_ACCESS_TOKEN`, `IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN` och `IG_APP_SECRET` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Stegen står under A0.
+1. **Meta och Instagram, båda kontona (spår A0).** Skapa appen, lägg till båda kontona och lägg secrets `IG_USER_ID`, `IG_ACCESS_TOKEN`, `IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN` och `IG_APP_SECRET` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Stegen står i `docs/steg-for-steg.md` (1.2 och 1.3) och under A0. Därefter kontrollerar du allt utan att publicera: Actions, Instagram, Run workflow, `kontroll = true` (visar vilket konto varje token hör till, kontotyp och kvarvarande kvot). `IG_APP_SECRET` behövs inte än.
 2. ~~Källor som stänger ute AI-botar~~ Avgjort 4 november: alternativ B. De 33 källor som nämner Claude är bara rubrik.
 3. ~~Tre beslut~~ Besvarade med ja 3 november. Du bläddrar alltså igenom korten själv före godkännandet (steg 1.6 i `docs/steg-for-steg.md`).
 4. **Morgonrapporten (fas 5).** Resend-konto, API-nyckel med "Sending access", secrets `RESEND_API_KEY` och `RAPPORT_TILL`. Prova med Actions, Rapport, Run workflow, "torrt".
