@@ -15,6 +15,7 @@ import autopilot
 UTGAVOR = ("sv", "en")
 TROSKEL = {"sv": 1, "en": 2}        # lägsta relevans för att notisen ska visas i utgåvan
 SVENSK_REGION = {"sverige", "norden"}
+FORSPRANG = 12 * 3600               # sekunder: så mycket nyare en notis räknas när den angår utgåvans läsare mest
 
 # Det som gör en svensk eller nordisk nyhet relevant för engelska läsaren: stormakter, allianser, marknader, stora bolag.
 _EN_GLOBALT = re.compile(r"\b(nato|ukraine|russia\w*|putin|china|chinese|taiwan|tariffs?|eu|ecb|opec|nobel|ericsson|spotify|"
@@ -61,7 +62,7 @@ def relevans(ev):
         sv = 0
 
     if kallor and regioner <= SVENSK_REGION:
-        en = 2 if _EN_GLOBALT.search(text) else 0
+        en = 2 if _EN_GLOBALT.search(text) and len(kallor) >= 3 else 0
     elif globalt:
         en = 2
     else:
@@ -95,6 +96,13 @@ def visa(ev, utgava):
     """Ska notisen visas för den här utgåvans läsare?"""
     _kontrollera(utgava)
     return relevans(ev)[utgava] >= TROSKEL[utgava]
+
+
+def ordna(events, utgava):
+    """Nyast först, men det som angår utgåvans läsare mest ligger som om det vore FORSPRANG nyare: svenskt i den
+    svenska utgåvan, amerikanskt och globalt i den engelska."""
+    _kontrollera(utgava)
+    return sorted(events, key=lambda e: e.get("godkand_tid", 0) + (FORSPRANG if relevans(e)[utgava] == 3 else 0), reverse=True)
 
 
 def kraver_genomgang(ev, utgava):

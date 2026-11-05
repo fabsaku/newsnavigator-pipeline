@@ -182,3 +182,26 @@ def test_forstasidan_visar_hogst_tva_notiser_per_handelse():
     annan = notis(9, "Train crash near Toledo in Spain leaves many dead", 2)
     kvar = newsletter.utan_upprepningar(val + [annan])
     assert [e["id"] for e in kvar] == ["2", "3", "9"]
+
+
+def _utgavenotis(i, tid, *regioner, rubrik="Budget vote in parliament"):
+    return {"id": str(i), "godkand_tid": tid, "reserv_rubrik": rubrik, "utkast": {"rubrik_en": rubrik},
+            "kallor": [{"region": r, "typ": "media"} for r in regioner]}
+
+
+def test_utgavorna_lyfter_det_som_angar_lasaren():
+    import utgava
+    nu = 1_000_000
+    svenskt = _utgavenotis(1, nu - 3600, "sverige", "sverige", "sverige")
+    amerikanskt = _utgavenotis(2, nu - 3600, "usa", "europa", "asien", rubrik="Congress passes budget")
+    annat = _utgavenotis(3, nu, "afrika", "asien", "europa", rubrik="Summit opens in Nairobi")
+    assert utgava.ordna([annat, amerikanskt, svenskt], "sv")[0]["id"] == "1"
+    assert utgava.ordna([annat, svenskt, amerikanskt], "en")[0]["id"] == "2"
+
+
+def test_lokalt_svenskt_med_tva_kallor_visas_inte_pa_engelska():
+    import utgava
+    assert not utgava.visa(_utgavenotis(1, 1, "sverige", "sverige", rubrik="Nato debate in parliament"), "en")
+    assert utgava.visa(_utgavenotis(2, 1, "sverige", "sverige", "sverige", rubrik="Nato debate in parliament"), "en")
+    assert utgava.visa(_utgavenotis(3, 1, "sverige", "sverige"), "sv")
+

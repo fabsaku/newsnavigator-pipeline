@@ -207,7 +207,7 @@ def _write(path, text):
 
 def _shell(u, *, title, body, active=None, description="", path="/", og=None, banner="", noindex=True, updated=None, nsources=0):
     nav = [(u.home(), "Senaste", "Latest", "hem")]
-    nav += [(u.section(k), sv, en, k) for k, sv, en, _ in SECTIONS]
+    nav += [(u.section(k), sv, en, k) for k, sv, en, _ in SECTIONS if not (u.lang == "en" and k == "sverige")]
     nav += [(u.page("navigatorn"), "Navigatorn", "Navigatorn", "navigatorn"), (u.page("om"), "Om", "About", "om"),
             (u.page("kallor"), "Källor", "Sources", "kallor")]
     links = "".join(f'<a href="{_e(h)}"{" aria-current=page" if k == active else ""}>{_both(sv, en)}</a>' for h, sv, en, k in nav)
@@ -295,7 +295,7 @@ def front(u, events, sources, banner, noindex):
                + "".join(story_item(e, u.story(e["id"]), kicker=_section_link(u, section_of(e))) for e in latest)
                + "</ul></aside></section>")
         blocks = []
-        for slug, sv, en, _ in SECTIONS:
+        for slug, sv, en, _ in sorted(SECTIONS, key=lambda s: u.lang == "sv" and s[0] != "sverige"):
             items = [e for e in rest if section_of(e) == slug]
             if not items:
                 continue
@@ -605,7 +605,7 @@ def har_text(ev, lang):
 
 
 def utgavans_notiser(events, lang):
-    return [e for e in events if utgava.visa(e, lang) and har_text(e, lang)]
+    return utgava.ordna([e for e in events if utgava.visa(e, lang) and har_text(e, lang)], lang)
 
 
 CHOOSER = (

@@ -87,6 +87,7 @@ MONO = "'IBM Plex Mono', Menlo, Consolas, monospace"
 
 
 MAX_KALLOR = 5
+FORSPRANG_POANG = 10    # så mycket högre en notis rankas i brevet när den angår utgåvans läsare mest
 
 
 def _clean(s):
@@ -143,15 +144,19 @@ def utan_upprepningar(events, per_familj=2):
     return [e for e in events if id(e) in behall]
 
 
-def pick(include_drafts, hours=24, limit=12):
+def pick(include_drafts, hours=24, limit=12, lang=None):
+    """Brevets urval. Med `lang` bara det utgåvan visar, och det som angår läsaren mest först."""
+    import utgava
     since = time.time() - hours * 3600
-    chosen = sorted((e for e in load_archive().values() if e.get("godkand_tid", 0) >= since),
-                    key=lambda e: e.get("poang", 0), reverse=True)
+    chosen = sorted((e for e in load_archive().values() if e.get("godkand_tid", 0) >= since
+                     and (not lang or utgava.visa(e, lang))),
+                    key=lambda e: e.get("poang", 0) + (FORSPRANG_POANG if lang and utgava.relevans(e)[lang] == 3 else 0),
+                    reverse=True)
     if include_drafts and len(chosen) < limit and FLODE.exists():
         have = {e["id"] for e in chosen}
         for e in json.loads(FLODE.read_text(encoding="utf-8"))["handelser"]:
             d = e.get("utkast") or {}
-            if e["id"] in have or not d.get("rubrik_sv") or d.get("osaker"):
+            if e["id"] in have or not d.get("rubrik_sv") or d.get("osaker") or (lang and not utgava.visa(e, lang)):
                 continue
             chosen.append({**e, "granskad": False})
             if len(chosen) >= limit:
@@ -351,19 +356,19 @@ def main():
         approved = set(json.loads(godk.read_text())) if godk.exists() else set()
         archive(json.loads(FLODE.read_text(encoding="utf-8"))["handelser"], approved)
 
-    chosen, groups = pick(args.utkast, args.timmar)
-    if not chosen:
-        print("Inga godkända notiser senaste dygnet. Kör granska.py godkann, eller --utkast för förhandsvisning.")
-        return
     now = datetime.now(timezone.utc).astimezone(TZ)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     for lang in ("sv", "en"):
+        chosen, groups = pick(args.utkast, args.timmar, lang=lang)
+        if not chosen:
+            print(f"Navigatorn {lang}: inga godkända notiser senaste dygnet. Kör granska.py godkann, eller --utkast för förhandsvisning.")
+            continue
         col = column(lang)
         (out / f"navigatorn-{lang}.html").write_text(build_html(lang, chosen, groups, col, now), encoding="utf-8")
         (out / f"navigatorn-{lang}.txt").write_text(build_text(lang, chosen, groups, col, now), encoding="utf-8")
-    reviewed = sum(1 for e in chosen if e.get("granskad"))
-    print(f"Navigatorn: {len(chosen)} notiser ({reviewed} granskade, {len(chosen) - reviewed} utkast) -> {out}/navigatorn-*.html")
+        reviewed = sum(1 for e in chosen if e.get("granskad"))
+        print(f"Navigatorn {lang}: {len(chosen)} notiser ({reviewed} granskade, {len(chosen) - reviewed} utkast) -> {out}/navigatorn-{lang}.*")
 
 
 if __name__ == "__main__":
