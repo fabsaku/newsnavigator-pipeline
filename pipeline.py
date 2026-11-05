@@ -67,6 +67,7 @@ KEYWORDS = {
 }
 # Källornas geografiska ämnen (var de bevakar) räknas bara om alla källor delar dem.
 GEO = {"sverige", "norden", "europa", "usa", "latinamerika", "asien", "mellanostern", "afrika", "varlden"}
+HOME = {"sverige", "norden"}
 # Källor som bara bevakar ett ämne: deras ämne styr sektionen när de är fler än hälften av källorna (eller ensamma)
 DEDICATED = {"spel", "noje"}
 # Platser bland de utvalda händelserna som hålls åt sektioner som sällan når upp i poäng
@@ -385,10 +386,13 @@ def tag(c):
         hits = sum(1 for d in descs if any(p.search(d) for p in pats))
         if hits >= 2 or (n == 1 and hits == 1):
             from_text.add(topic)
-    return sorted(from_sources | from_text | dedicated), sorted(from_text | shared_by_all | dedicated)
+    # Skriver mest nordiska källor om händelsen, och nämner texten inget annat område, är det en nordisk nyhet.
+    # GEO är undantaget från shared_by_all, så utan det här får ingen notis sektionsämnet sverige.
+    hemma = sum(1 for i in c["items"] if HOME & set(i["topics"]))
+    nordisk = {"sverige"} if hemma * 2 > n and not from_text & (GEO - HOME - {"varlden"}) else set()
+    return sorted(from_sources | from_text | dedicated | nordisk), sorted(from_text | shared_by_all | dedicated | nordisk)
 
 
-HOME = {"sverige", "norden"}
 
 
 def perspective(c):

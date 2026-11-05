@@ -72,3 +72,21 @@ def test_energi_i_en_varldsnyhet_ar_inte_vetenskap():
     assert section_of({"amnen_sektion": ["energi", "geopolitik"]}) == "varlden"
     assert section_of({"amnen_sektion": ["energi"]}) == "vetenskap"
     assert section_of({"amnen_sektion": ["klimat", "usa"]}) == "vetenskap"
+
+
+def _kluster(*amnen, rubrik="Häktningen förlängs"):
+    return {"items": [{"title": rubrik, "description": "", "topics": list(a)} for a in amnen]}
+
+
+def test_nordiska_kallor_ger_sektionen_sverige():
+    assert section_of({"amnen_sektion": pipeline.tag(_kluster(["sverige", "varlden"], ["norden", "varlden"], ["sverige"]))[1]}) == "sverige"
+
+
+def test_nordiska_kallor_om_utlandet_stannar_i_varlden():
+    c = _kluster(["sverige", "varlden"], ["sverige", "varlden"], rubrik="Trump vinner i USA")
+    assert section_of({"amnen_sektion": pipeline.tag(c)[1]}) == "varlden"
+
+
+def test_en_nordisk_kalla_bland_manga_ger_inte_sverige():
+    assert section_of({"amnen_sektion": pipeline.tag(_kluster(["sverige"], ["europa"], ["asien"]))[1]}) == "varlden"
+
