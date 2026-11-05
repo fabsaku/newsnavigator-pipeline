@@ -262,29 +262,10 @@ def test_angra_tar_bort_inlagget_pa_kontot_dar_det_postades(tmp_path, monkeypatc
     assert sorted(anrop) == [("ENPOST", "ENTOKEN", "DELETE"), ("SVPOST", "SVTOKEN", "DELETE")]
 
 
-# ---------- Stora berättelser: sammanhang i stället för bara antal källor ----------
+# ---------- Stora berättelser: sammanhangsmåttet är bara information ----------
 
-def stor(n, sammanhang, sektioner=("varlden",)):
-    return handelse(kallor=[kalla(f"K{i}", "usa" if i % 2 else "europa") for i in range(n)], amnen_sektion=list(sektioner), sammanhang=sammanhang)
+def test_sammanhangsmattet_luckrar_inte_upp_hopslagningsgrinden():
+    """Kalibrering 5 november: rena kluster låg mellan 0,47 och 0,88 och det enda blandade på 0,63, så måttet skiljer inte hopslagningar från stora berättelser."""
+    stor = handelse(kallor=[kalla(f"K{i}", "usa" if i % 2 else "europa") for i in range(24)], sammanhang=0.9)
+    assert any("hopslagna" in s for s in autopilot.grindar(stor))
 
-
-def test_stor_berattelse_med_hogt_sammanhang_ar_inte_hopslagen():
-    assert not any("hopslagna" in s for s in autopilot.grindar(stor(24, 0.72)))
-
-
-def test_stor_berattelse_med_lagt_eller_okant_sammanhang_stoppar_som_forr():
-    assert any("hopslagna" in s for s in autopilot.grindar(stor(24, 0.45)))
-    assert any("hopslagna" in s for s in autopilot.grindar(stor(24, None)))
-    assert any("hopslagna" in s for s in autopilot.grindar(handelse(kallor=[kalla(f"K{i}", "usa" if i % 2 else "europa") for i in range(24)])))   # fältet saknas
-
-
-def test_for_manga_kallor_stoppar_trots_hogt_sammanhang():
-    assert any("hopslagna" in s for s in autopilot.grindar(stor(autopilot.MAX_KALLOR_HARD + 1, 0.9)))
-
-
-def test_for_manga_sektioner_stoppar_trots_hogt_sammanhang():
-    assert any("hopslagna" in s for s in autopilot.grindar(stor(24, 0.9, sektioner=("ai", "marknader", "sverige", "rymd"))))
-
-
-def test_gransen_for_sammanhang_ar_matt_och_satt_i_koden():
-    assert autopilot.SAMMANHANG_MIN == 0.6 and autopilot.MAX_KALLOR_HARD == 40
