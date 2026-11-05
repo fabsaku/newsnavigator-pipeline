@@ -13021,15 +13021,13 @@
  },
  "aefa67ca37": {
   "id": "aefa67ca37",
-  "amnen": [
-   "varlden"
-  ],
+  "amnen": [],
   "amnen_sektion": [],
-  "poang": 34.5,
+  "poang": 34.0,
   "vikt": {
-   "bredd": 0.496,
+   "bredd": 0.639,
    "regioner": {
-    "afrika": 1,
+    "afrika": 2,
     "asien": 3,
     "europa": 2,
     "sverige": 1
@@ -13040,16 +13038,16 @@
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.33,
-    "skal": "Lokalval i hela Sydafrika kan omforma styret i städer och kommuner under flera år, särskilt om ANC förlorar majoritet och koalitioner blir nödvändiga."
+    "skal": "Kommunalval i Sydafrika där ANC förlorar stöd och koalitionsstyren väntar, vilket påverkar hela landet under flera år."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 7,
+  "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-11-05T05:55:25+00:00",
+  "senast": "2026-11-05T11:15:00+00:00",
   "utkast": {
    "rubrik_sv": "ANC leder tidiga resultat i Sydafrikas lokalval",
    "sammanfattning_sv": "Röstningen i lokalvalen i Sydafrika ägde rum den 4 november och rösträkningen har inletts. Enligt The Straits Times leder ANC de tidiga, preliminära resultaten med en kraftigt minskad andel röster, och valmyndigheten väntas presentera slutresultat senast på söndag.",
@@ -13181,50 +13179,24 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Lägre röststöd för ANC",
-     "namn_en": "ANC's lower vote share",
-     "lyfter_sv": "The Straits Times lyfter fram en kraftigt sjunkande röstandel för ANC och svagare kontroll över större städer, medan The Hindu lyfter fram fortsatta förluster och att koalitionsstyre väntar.",
-     "lyfter_en": "The Straits Times highlights a sharply reduced ANC vote share and weaker control over major cities, while The Hindu highlights further losses for the ANC and that coalition rule looms.",
+     "namn_sv": "Missnöje med dåliga tjänster",
+     "namn_en": "Anger over failing services",
+     "lyfter_sv": "The East African och The Guardian lyfter fram ANC:s väljarmissnöje över dåliga tjänster, DN att sopberg och tomma kranar kan straffa partiet och CGTN frustration över offentliga tjänster, arbetslöshet och brott.",
+     "lyfter_en": "The East African and The Guardian highlight ANC voter anger over poor services, DN that garbage and empty taps could punish the party, and CGTN frustration over failing public services, unemployment and crime.",
      "kallor": [
       {
-       "namn": "The Straits Times",
-       "region": "asien",
+       "namn": "The East African",
+       "region": "afrika",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/anc-narrowly-leads-da-in-early-south-africa-municipal-election-results"
+       "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452"
       },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/south-africa-votes-as-anc-faces-further-losses-and-coalition-rule-looms/article71667127.ece"
-      }
-     ],
-     "regioner": [
-      "asien"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Bristande service och missnöje",
-     "namn_en": "Poor services and public anger",
-     "lyfter_sv": "The Guardian lyfter fram vrede över dåliga tjänster, BBC lyfter fram trötthet över servicens kvalitet, Dagens Nyheter lyfter fram sopberg och tomma kranar, CGTN (statskontrollerat medium) lyfter fram frustration över misslyckade tjänster.",
-     "lyfter_en": "The Guardian highlights anger over poor services, BBC highlights residents being tired of service quality, Dagens Nyheter highlights garbage heaps and empty taps, CGTN (state-controlled media) highlights frustration over failing services.",
-     "kallor": [
       {
        "namn": "The Guardian",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
-      },
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss"
       },
       {
        "namn": "Dagens Nyheter",
@@ -13242,93 +13214,124 @@
       }
      ],
      "regioner": [
+      "afrika",
       "asien",
       "europa",
       "sverige"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "ANC:s förluster och koalitioner",
+     "namn_en": "ANC losses and coalition politics",
+     "lyfter_sv": "Straits Times lyfter fram att ANC:s röstandel sjunker kraftigt och att partiets kontroll över större städer som Johannesburg försvagas, The Hindu att fler förluster och koalitionsstyre väntar, och BBC att partiet står under press att vända tillbakagången.",
+     "lyfter_en": "Straits Times highlights that the ANC's vote share is falling sharply and its control of major cities such as Johannesburg is weakening, The Hindu that further losses and coalition rule lie ahead, and BBC that the party is under pressure to reverse its decline.",
+     "kallor": [
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/anc-narrowly-leads-da-in-early-south-africa-municipal-election-results"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/south-africa-votes-as-anc-faces-further-losses-and-coalition-rule-looms/article71667127.ece"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
+    "antal": 10,
     "problem": [],
     "pastaenden": [
      {
+      "text": "Sydafrika håller lokalval",
+      "stod": [
+       2,
+       4,
+       5,
+       6,
+       8
+      ],
+      "problem": null
+     },
+     {
       "text": "Tidiga resultat visar lägre röstandel för ANC",
       "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Valet är ett lokalval i Sydafrika",
-      "stod": [
-       1,
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Straits Times: kraftigt sjunkande röstandel för ANC",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Straits Times: svagare kontroll över större städer",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: fortsatta förluster för ANC",
-      "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "The Hindu: koalitionsstyre väntar",
+      "text": "The East African lyfter fram ANC:s väljarmissnöje över dåliga tjänster",
       "stod": [
-       3
+       1
       ],
       "problem": null
      },
      {
-      "text": "The Guardian: vrede över dåliga tjänster",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "BBC: trötthet över servicens kvalitet",
+      "text": "The Guardian lyfter fram ANC:s väljarmissnöje över dåliga tjänster",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "Dagens Nyheter: sopberg och tomma kranar",
+      "text": "DN skriver att sopberg och tomma kranar kan straffa ANC",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN lyfter fram frustration över offentliga tjänster, arbetslöshet och brott",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times lyfter fram att ANC:s röstandel sjunker kraftigt",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times lyfter fram att ANC:s kontroll över större städer som Johannesburg försvagas",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu lyfter fram att fler förluster och koalitionsstyre väntar för ANC",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC lyfter fram att ANC står under press att vända tillbakagången",
       "stod": [
        6
-      ],
-      "problem": null
-     },
-     {
-      "text": "CGTN: frustration över misslyckade tjänster",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "CGTN är ett statskontrollerat medium",
-      "stod": [
-       7
       ],
       "problem": null
      }
@@ -13337,7 +13340,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.507,
+  "sammanhang": 0.543,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -13348,6 +13351,13 @@
    ],
    "per_region": {
     "afrika": [
+     {
+      "kalla": "The East African",
+      "land": "KE",
+      "rubrik": "South Africans vote as anger over failing services threatens ANC",
+      "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452",
+      "statskontrollerad": false
+     },
      {
       "kalla": "Africanews",
       "land": "CG",
@@ -13410,8 +13420,19 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Vote counting gets underway in critical South Africa local elections",
+  "reserv_rubrik": "South Africans vote as anger over failing services threatens ANC",
   "kallor": [
+   {
+    "namn": "The East African",
+    "rubrik": "South Africans vote as anger over failing services threatens ANC",
+    "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Africanews",
     "rubrik": "Vote counting gets underway in critical South Africa local elections",
@@ -13495,11 +13516,13 @@
    "sv": 2,
    "en": 2
   },
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793862912.6923525,
   "automatisk": false,
-  "uppdaterad_tid": 1793898652.615622
+  "uppdaterad_tid": 1793900636.6196346
  },
  "cabd71303f": {
   "id": "cabd71303f",
