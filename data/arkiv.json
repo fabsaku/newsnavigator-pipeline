@@ -13021,33 +13021,35 @@
  },
  "aefa67ca37": {
   "id": "aefa67ca37",
-  "amnen": [],
+  "amnen": [
+   "varlden"
+  ],
   "amnen_sektion": [],
-  "poang": 34.0,
+  "poang": 32.6,
   "vikt": {
-   "bredd": 0.639,
+   "bredd": 0.496,
    "regioner": {
-    "afrika": 2,
+    "afrika": 1,
     "asien": 3,
     "europa": 2,
     "sverige": 1
    },
-   "timmar": 57,
+   "timmar": 58,
    "konsekvens": {
     "berorda": 5,
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.33,
-    "skal": "Kommunalval i Sydafrika där ANC förlorar stöd och koalitionsstyren väntar, vilket påverkar hela landet under flera år."
+    "skal": "Lokalval i hela Sydafrika kan omforma styret i städer och kommuner under flera år, särskilt om ANC förlorar majoritet och koalitioner blir nödvändiga."
    },
    "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 8,
+  "antal_kallor": 7,
   "har_primarkalla": false,
-  "senast": "2026-11-05T11:15:00+00:00",
+  "senast": "2026-11-05T05:55:25+00:00",
   "utkast": {
    "rubrik_sv": "ANC leder tidiga resultat i Sydafrikas lokalval",
    "sammanfattning_sv": "Röstningen i lokalvalen i Sydafrika ägde rum den 4 november och rösträkningen har inletts. Enligt The Straits Times leder ANC de tidiga, preliminära resultaten med en kraftigt minskad andel röster, och valmyndigheten väntas presentera slutresultat senast på söndag.",
@@ -13179,24 +13181,50 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Missnöje med dåliga tjänster",
-     "namn_en": "Anger over failing services",
-     "lyfter_sv": "The East African och The Guardian lyfter fram ANC:s väljarmissnöje över dåliga tjänster, DN att sopberg och tomma kranar kan straffa partiet och CGTN frustration över offentliga tjänster, arbetslöshet och brott.",
-     "lyfter_en": "The East African and The Guardian highlight ANC voter anger over poor services, DN that garbage and empty taps could punish the party, and CGTN frustration over failing public services, unemployment and crime.",
+     "namn_sv": "Lägre röststöd för ANC",
+     "namn_en": "ANC's lower vote share",
+     "lyfter_sv": "The Straits Times lyfter fram en kraftigt sjunkande röstandel för ANC och svagare kontroll över större städer, medan The Hindu lyfter fram fortsatta förluster och att koalitionsstyre väntar.",
+     "lyfter_en": "The Straits Times highlights a sharply reduced ANC vote share and weaker control over major cities, while The Hindu highlights further losses for the ANC and that coalition rule looms.",
      "kallor": [
       {
-       "namn": "The East African",
-       "region": "afrika",
+       "namn": "The Straits Times",
+       "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452"
+       "url": "https://www.straitstimes.com/world/anc-narrowly-leads-da-in-early-south-africa-municipal-election-results"
       },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/south-africa-votes-as-anc-faces-further-losses-and-coalition-rule-looms/article71667127.ece"
+      }
+     ],
+     "regioner": [
+      "asien"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Bristande service och missnöje",
+     "namn_en": "Poor services and public anger",
+     "lyfter_sv": "The Guardian lyfter fram vrede över dåliga tjänster, BBC lyfter fram trötthet över servicens kvalitet, Dagens Nyheter lyfter fram sopberg och tomma kranar, CGTN (statskontrollerat medium) lyfter fram frustration över misslyckade tjänster.",
+     "lyfter_en": "The Guardian highlights anger over poor services, BBC highlights residents being tired of service quality, Dagens Nyheter highlights garbage heaps and empty taps, CGTN (state-controlled media) highlights frustration over failing services.",
+     "kallor": [
       {
        "namn": "The Guardian",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss"
       },
       {
        "namn": "Dagens Nyheter",
@@ -13214,124 +13242,93 @@
       }
      ],
      "regioner": [
-      "afrika",
       "asien",
       "europa",
       "sverige"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "ANC:s förluster och koalitioner",
-     "namn_en": "ANC losses and coalition politics",
-     "lyfter_sv": "Straits Times lyfter fram att ANC:s röstandel sjunker kraftigt och att partiets kontroll över större städer som Johannesburg försvagas, The Hindu att fler förluster och koalitionsstyre väntar, och BBC att partiet står under press att vända tillbakagången.",
-     "lyfter_en": "Straits Times highlights that the ANC's vote share is falling sharply and its control of major cities such as Johannesburg is weakening, The Hindu that further losses and coalition rule lie ahead, and BBC that the party is under pressure to reverse its decline.",
-     "kallor": [
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/anc-narrowly-leads-da-in-early-south-africa-municipal-election-results"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/south-africa-votes-as-anc-faces-further-losses-and-coalition-rule-looms/article71667127.ece"
-      },
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 10,
+    "antal": 11,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Sydafrika håller lokalval",
-      "stod": [
-       2,
-       4,
-       5,
-       6,
-       8
-      ],
-      "problem": null
-     },
-     {
       "text": "Tidiga resultat visar lägre röstandel för ANC",
       "stod": [
-       3
+       2
       ],
       "problem": null
      },
      {
-      "text": "The East African lyfter fram ANC:s väljarmissnöje över dåliga tjänster",
+      "text": "Valet är ett lokalval i Sydafrika",
       "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Guardian lyfter fram ANC:s väljarmissnöje över dåliga tjänster",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "DN skriver att sopberg och tomma kranar kan straffa ANC",
-      "stod": [
+       1,
        7
       ],
       "problem": null
      },
      {
-      "text": "CGTN lyfter fram frustration över offentliga tjänster, arbetslöshet och brott",
+      "text": "The Straits Times: kraftigt sjunkande röstandel för ANC",
       "stod": [
-       8
+       2
       ],
       "problem": null
      },
      {
-      "text": "The Straits Times lyfter fram att ANC:s röstandel sjunker kraftigt",
+      "text": "The Straits Times: svagare kontroll över större städer",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: fortsatta förluster för ANC",
       "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "The Straits Times lyfter fram att ANC:s kontroll över större städer som Johannesburg försvagas",
+      "text": "The Hindu: koalitionsstyre väntar",
       "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "The Hindu lyfter fram att fler förluster och koalitionsstyre väntar för ANC",
+      "text": "The Guardian: vrede över dåliga tjänster",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "BBC lyfter fram att ANC står under press att vända tillbakagången",
+      "text": "BBC: trötthet över servicens kvalitet",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dagens Nyheter: sopberg och tomma kranar",
       "stod": [
        6
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN: frustration över misslyckade tjänster",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN är ett statskontrollerat medium",
+      "stod": [
+       7
       ],
       "problem": null
      }
@@ -13340,7 +13337,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.543,
+  "sammanhang": 0.507,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -13351,13 +13348,6 @@
    ],
    "per_region": {
     "afrika": [
-     {
-      "kalla": "The East African",
-      "land": "KE",
-      "rubrik": "South Africans vote as anger over failing services threatens ANC",
-      "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452",
-      "statskontrollerad": false
-     },
      {
       "kalla": "Africanews",
       "land": "CG",
@@ -13420,19 +13410,8 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "South Africans vote as anger over failing services threatens ANC",
+  "reserv_rubrik": "Vote counting gets underway in critical South Africa local elections",
   "kallor": [
-   {
-    "namn": "The East African",
-    "rubrik": "South Africans vote as anger over failing services threatens ANC",
-    "url": "https://www.theeastafrican.co.ke/tea/news/southern-africa/south-africans-vote-anger-over-failing-services-threatens-anc-5659452",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "KE",
-    "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
    {
     "namn": "Africanews",
     "rubrik": "Vote counting gets underway in critical South Africa local elections",
@@ -13517,12 +13496,12 @@
    "en": 2
   },
   "autopilot": [
-   "källkontrollen har 1 anmärkningar"
+   "källkontrollen har 2 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793862912.6923525,
   "automatisk": false,
-  "uppdaterad_tid": 1793900636.6196346
+  "uppdaterad_tid": 1793902591.831983
  },
  "cabd71303f": {
   "id": "cabd71303f",
@@ -14969,36 +14948,38 @@
  "ab64df1685": {
   "id": "ab64df1685",
   "amnen": [
+   "energi",
    "usa"
   ],
   "amnen_sektion": [
+   "energi",
    "usa"
   ],
-  "poang": 34.6,
+  "poang": 29.8,
   "vikt": {
-   "bredd": 0.805,
+   "bredd": 0.422,
    "regioner": {
-    "europa": 2,
-    "asien": 4,
-    "mellanostern": 2,
-    "usa": 2,
-    "latinamerika": 1
+    "europa": 3,
+    "usa": 4,
+    "mellanostern": 1,
+    "asien": 1
    },
-   "timmar": 22,
+   "timmar": 28,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "Demokraternas seger i de amerikanska midterm-valen ger kontroll över kongressen, med påverkan på USA:s politik och omvärlden under flera år."
+    "skal": "Demokraterna tar kontrollen över både representanthuset och senaten i USA:s mellanårsval, vilket påverkar politik, energipriser och världsordningen i flera år framöver."
    },
-   "bekraftad": true,
-   "maste": true
+   "bekraftad": false,
+   "maste": false,
+   "spar": []
   },
-  "maste": true,
-  "antal_kallor": 11,
+  "maste": false,
+  "antal_kallor": 9,
   "har_primarkalla": false,
-  "senast": "2026-11-05T15:04:00+00:00",
+  "senast": "2026-11-05T17:59:24+00:00",
   "utkast": {
    "rubrik_sv": "Demokraterna vinner kontrollen över USA:s kongress i midtermvalet",
    "sammanfattning_sv": "Demokraterna tog enligt flera källor kontrollen över båda kamrarna i USA:s kongress, skriver bland andra Buenos Aires Times och South China Morning Post. Den amerikanska tioåriga statsobligationsräntan föll efter valet, uppger Hindustan Times.",
@@ -15153,73 +15134,97 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Följder för utrikespolitiken",
-     "namn_en": "Foreign policy consequences",
-     "lyfter_sv": "Deutsche Welle lyfter fram Irans skeptiska reaktion och att segern ses som följd av Irankriget, Al Jazeera vad valet betyder för Iran, Gaza och Ukraina, Focus Taiwan bipartisan stöd för Taiwan och SCMP effekterna för Kina.",
-     "lyfter_en": "Deutsche Welle highlights Iran's skeptical reaction and that the win is seen as a result of the Iran war, Al Jazeera what the vote means for Iran, Gaza and Ukraine, Focus Taiwan bipartisan support for Taiwan, and SCMP the effects on China.",
+     "namn_sv": "Undersökningar av Trump",
+     "namn_en": "Investigations into Trump",
+     "lyfter_sv": "NPR lyfter fram att demokraterna har en lång lista över planerade undersökningar av Trump, FT lyfter fram riksrätt, Iran och presidentskapet, och CNBC lyfter fram en våg av utredningar mot Trumps energiavtal.",
+     "lyfter_en": "NPR highlights that Democrats have a long list of planned investigations into Trump, FT highlights impeachments, Iran and the presidency, and CNBC highlights a wave of investigations into Trump's energy deals.",
      "kallor": [
       {
-       "namn": "Deutsche Welle",
+       "namn": "CNBC",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html"
+      },
+      {
+       "namn": "NPR",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction"
+      },
+      {
+       "namn": "Financial Times",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.dw.com/en/iran-signals-satisfaction-skepticism-after-us-midterm-vote/a-79867149?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373344/us-midterm-elections-all-you-need-know-democrats-big-wins-effects-china"
-      },
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss"
-      },
-      {
-       "namn": "Focus Taiwan",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://focustaiwan.tw/politics/202611040018"
+       "url": "https://www.ft.com/content/18e00ce0-aef2-41e9-ab7f-8a5dd8a9c217?syn-25a6b1a6=1"
       }
      ],
      "regioner": [
-      "asien",
       "europa",
-      "mellanostern"
+      "usa"
      ],
-     "usa_sidor": []
+     "usa_sidor": [
+      "bla",
+      "mitten"
+     ]
     },
     {
-     "namn_sv": "Ekonomiska och energipolitiska följder",
-     "namn_en": "Economic and energy policy impact",
-     "lyfter_sv": "Hindustan Times lyfter fram att den amerikanska tioåriga obligationsräntan sjunker efter demokraternas seger, The National (statskontrollerat medium) att datacenterboomen får press och MIT Technology Review vad som händer med USA:s energipolitik.",
-     "lyfter_en": "Hindustan Times highlights that the US 10-year Treasury yield falls after the Democratic win, The National (state-controlled outlet) that the data centre boom faces pressure, and MIT Technology Review what happens to US energy policy.",
+     "namn_sv": "Republikanernas nederlag",
+     "namn_en": "Republican defeat and blame",
+     "lyfter_sv": "The Guardian lyfter fram att republikaner skyller på varandra efter tunga valförluster, medan Daily Caller lyfter fram internetskämt efter att demokraterna krossat republikanerna i valet.",
+     "lyfter_en": "The Guardian highlights Republicans blaming each other after heavy midterm losses, while the Daily Caller highlights internet jokes after Democrats routed Republicans in the election.",
      "kallor": [
       {
-       "namn": "Hindustan Times",
-       "region": "asien",
+       "namn": "The Guardian",
+       "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/us-news/us-10-year-treasury-yield-falls-after-democrats-midterm-win-jobs-data-in-focus-101793885542425.html"
+       "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race"
       },
       {
-       "namn": "MIT Technology Review",
+       "namn": "The Daily Caller",
        "region": "usa",
-       "lutning": null,
+       "lutning": "hoger",
        "statskontrollerad": false,
-       "url": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/"
+       "url": "https://dailycaller.com/2026/11/05/michigan-college-republicans-shane-gillis-midterms-twitter-trolling-abbott-wheelchair-pronouns-learning-arabic"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Demokraternas seger och nästa steg",
+     "namn_en": "Democratic victory and next steps",
+     "lyfter_sv": "Statskontrollerade CGTN lyfter fram fem nyckelslutsatser när demokraterna tar kontrollen över kongressen, statskontrollerade The National frågar vad som händer nu, och WSJ lyfter fram att demokraterna vann efter att ha pressat republikanerna om höga energipriser.",
+     "lyfter_en": "State-controlled CGTN highlights five key takeaways as Democrats take control of Congress, state-controlled The National asks what happens next, and WSJ highlights that Democrats won after pressing Republicans over high energy prices.",
+     "kallor": [
+      {
+       "namn": "The Wall Street Journal",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.wsj.com/politics/policy/the-democrats-are-about-to-get-an-early-test-on-the-energy-crisis-9e86926f?mod=rss_socialpoliticsfeed"
       },
       {
        "namn": "The National",
        "region": "mellanostern",
        "lutning": null,
        "statskontrollerad": true,
-       "url": "https://www.thenationalnews.com/news/2026/11/05/democrats-midterm-gains-put-us-data-centre-boom-under-pressure/"
+       "url": "https://www.thenationalnews.com/news/us/2026/11/04/watch-latest-us-elections-2026-democrats-win-middle-east-iran-war/"
+      },
+      {
+       "namn": "CGTN",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://news.cgtn.com/news/2026-11-04/US-midterms-2026-Five-key-takeaways-as-Democrats-sweep-Congress-1RNuNTtD5G8/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World"
       }
      ],
      "regioner": [
@@ -15227,149 +15232,79 @@
       "mellanostern",
       "usa"
      ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Partiernas reaktioner och nästa steg",
-     "namn_en": "Party reactions and next steps",
-     "lyfter_sv": "NPR lyfter fram att partierna reflekterar över väljarnas budskap, CGTN (statskontrollerat medium) att republikaner och demokrater reagerar på resultatet, Buenos Aires Times att Trump säger sig vara villig att acceptera resultatet och France 24 vad som väntar demokraterna efter valsegern.",
-     "lyfter_en": "NPR highlights that the parties reflect on the message from voters, CGTN (state-controlled outlet) that Republicans and Democrats react to the result, Buenos Aires Times that Trump says he is willing to accept the result, and France 24 what awaits the Democrats after their win.",
-     "kallor": [
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261105-what-comes-next-for-democrats-after-midterm-election-victory"
-      },
-      {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/05/nx-s1-6029732/democrats-and-republicans-reflect-on-midterm-results-and-the-message-sent-by-voters"
-      },
-      {
-       "namn": "Buenos Aires Times",
-       "region": "latinamerika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.batimes.com.ar/news/world/democrats-win-control-of-us-congress-as-voters-deliver-trump-midterm-rout.phtml"
-      },
-      {
-       "namn": "CGTN",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://newsus.cgtn.com/news/2026-11-05/Republicans-Democrats-react-to-monumental-midterm-results-1ROz9fmJlxm/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa",
-      "latinamerika",
-      "usa"
-     ],
      "usa_sidor": [
-      "bla"
+      "mitten"
      ]
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 13,
+    "antal": 9,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Demokraterna vinner kontrollen över USA:s kongress i midtermvalet",
+      "text": "Demokraterna vinner kontrollen över kongressen i midtermsvalet 2026",
       "stod": [
        4,
-       8,
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "Deutsche Welle lyfter fram Irans skeptiska reaktion",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Deutsche Welle: segern ses som följd av Irankriget",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera tar upp vad valet betyder för Iran, Gaza och Ukraina",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Focus Taiwan lyfter fram bipartisan stöd för Taiwan",
-      "stod": [
+       5,
+       7,
        8
       ],
       "problem": null
      },
      {
-      "text": "SCMP tar upp effekterna för Kina",
+      "text": "NPR lyfter fram att demokraterna har en lång lista över planerade undersökningar av Trump",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times: den amerikanska tioåriga obligationsräntan sjunker efter demokraternas seger",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The National: datacenterboomen får press",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "MIT Technology Review tar upp vad som händer med USA:s energipolitik",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR: partierna reflekterar över väljarnas budskap",
+      "text": "FT lyfter fram riksrätt, Iran och presidentskapet",
       "stod": [
        6
       ],
       "problem": null
      },
      {
-      "text": "CGTN: republikaner och demokrater reagerar på resultatet",
+      "text": "CNBC lyfter fram en våg av utredningar mot Trumps energiavtal",
       "stod": [
-       11
+       2
       ],
       "problem": null
      },
      {
-      "text": "Buenos Aires Times: Trump säger sig vara villig att acceptera resultatet",
+      "text": "The Guardian lyfter fram att republikaner skyller på varandra efter tunga valförluster",
       "stod": [
-       9
+       1
       ],
       "problem": null
      },
      {
-      "text": "France 24 tar upp vad som väntar demokraterna efter valsegern",
+      "text": "Daily Caller lyfter fram internetskämt efter att demokraterna krossat republikanerna i valet",
       "stod": [
        3
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN, som är statskontrollerat, lyfter fram fem nyckelslutsatser när demokraterna tar kontrollen över kongressen",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "The National, som är statskontrollerat, frågar vad som händer nu",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ lyfter fram att demokraterna vann efter att ha pressat republikanerna om höga energipriser",
+      "stod": [
+       5
       ],
       "problem": null
      }
@@ -15378,36 +15313,1611 @@
    },
    "ok": true
   },
-  "sammanhang": 0.409,
+  "sammanhang": 0.519,
   "betydelse": {
-   "sv": "Eftersom Demokraterna tog kontrollen över båda kamrarna i USA:s kongress och den amerikanska tioåriga statsobligationsräntan föll efter valet, hänger det ihop med räntenivåerna för lån, och därmed med bolånen i Sverige.",
-   "en": "Since Democrats took control of both chambers of Congress and the 10-year Treasury yield fell after the vote, it matters for US households because mortgage rates tend to follow this benchmark yield.",
+   "sv": null,
+   "en": "Since Democrats regained control of Congress and plan investigations into Trump's energy deals, the party that campaigned on high energy prices now holds the power to scrutinize them.",
    "grund": [
+    1,
     2,
     4,
-    9
+    5
    ],
    "grund_kallor": [
     {
-     "namn": "Hindustan Times",
-     "url": "https://www.hindustantimes.com/world-news/us-news/us-10-year-treasury-yield-falls-after-democrats-midterm-win-jobs-data-in-focus-101793885542425.html"
+     "namn": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race"
     },
     {
-     "namn": "South China Morning Post",
-     "url": "https://www.scmp.com/news/world/united-states-canada/article/3373344/us-midterm-elections-all-you-need-know-democrats-big-wins-effects-china"
+     "namn": "CNBC",
+     "url": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html"
+    },
+    {
+     "namn": "NPR",
+     "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction"
+    },
+    {
+     "namn": "The Wall Street Journal",
+     "url": "https://www.wsj.com/politics/policy/the-democrats-are-about-to-get-an-early-test-on-the-energy-crisis-9e86926f?mod=rss_socialpoliticsfeed"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
+  "perspektiv": {
+   "regioner": [
+    "asien",
+    "europa",
+    "mellanostern",
+    "usa"
+   ],
+   "per_region": {
+    "europa": [
+     {
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "US elections 2026 live: Democrats flip four more House seats as Republicans trade blame for brutal midterms losses",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Financial Times",
+      "land": "GB",
+      "rubrik": "Impeachments, Iran and the presidency: what’s next after the midterms?",
+      "url": "https://www.ft.com/content/18e00ce0-aef2-41e9-ab7f-8a5dd8a9c217?syn-25a6b1a6=1",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "RT",
+      "land": "RU",
+      "rubrik": "What the US midterms tell us about the changing world order",
+      "url": "https://rt-english.com/news/648354-why-americas-midterms-matter/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+      "statskontrollerad": true
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Trump's energy deals are about to face a wave of investigations by Democrats",
+      "url": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Daily Caller",
+      "land": "US",
+      "rubrik": "Internet Unleashes With Jokes After Democrats Shellack Republicans In Midterms",
+      "url": "https://dailycaller.com/2026/11/05/michigan-college-republicans-shane-gillis-midterms-twitter-trolling-abbott-wheelchair-pronouns-learning-arabic",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "What's next for Democrats after the midterms. And, a look at the outstanding races",
+      "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "The Democrats strolled to victory in the midterms after pummeling Republicans over high energy prices. Now they face tough decisions about what to do about it.",
+      "url": "https://www.wsj.com/politics/policy/the-democrats-are-about-to-get-an-early-test-on-the-energy-crisis-9e86926f?mod=rss_socialpoliticsfeed",
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "US midterms 2026: As Democrats take the House and the Senate, what comes next?",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/04/watch-latest-us-elections-2026-democrats-win-middle-east-iran-war/",
+      "statskontrollerad": true
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "US midterms 2026: Five key takeaways as Democrats sweep Congress",
+      "url": "https://news.cgtn.com/news/2026-11-04/US-midterms-2026-Five-key-takeaways-as-Democrats-sweep-Congress-1RNuNTtD5G8/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+      "statskontrollerad": true
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": true,
+   "usa": {
+    "mitten": [
+     {
+      "kalla": "CNBC",
+      "rubrik": "Trump's energy deals are about to face a wave of investigations by Democrats",
+      "url": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
+      "lutning": "mitten"
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "The Democrats strolled to victory in the midterms after pummeling Republicans over high energy prices. Now they face tough decisions about what to do about it.",
+      "url": "https://www.wsj.com/politics/policy/the-democrats-are-about-to-get-an-early-test-on-the-energy-crisis-9e86926f?mod=rss_socialpoliticsfeed",
+      "lutning": "mitten"
+     }
+    ],
+    "rod": [
+     {
+      "kalla": "The Daily Caller",
+      "rubrik": "Internet Unleashes With Jokes After Democrats Shellack Republicans In Midterms",
+      "url": "https://dailycaller.com/2026/11/05/michigan-college-republicans-shane-gillis-midterms-twitter-trolling-abbott-wheelchair-pronouns-learning-arabic",
+      "lutning": "hoger"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "NPR",
+      "rubrik": "What's next for Democrats after the midterms. And, a look at the outstanding races",
+      "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction",
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
+   "usa_blind": null
+  },
+  "reserv_rubrik": "US elections 2026 live: Democrats flip four more House seats as Republicans trade blame for brutal midterms losses",
+  "kallor": [
+   {
+    "namn": "The Guardian",
+    "rubrik": "US elections 2026 live: Democrats flip four more House seats as Republicans trade blame for brutal midterms losses",
+    "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CNBC",
+    "rubrik": "Trump's energy deals are about to face a wave of investigations by Democrats",
+    "url": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Daily Caller",
+    "rubrik": "Internet Unleashes With Jokes After Democrats Shellack Republicans In Midterms",
+    "url": "https://dailycaller.com/2026/11/05/michigan-college-republicans-shane-gillis-midterms-twitter-trolling-abbott-wheelchair-pronouns-learning-arabic",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NPR",
+    "rubrik": "What's next for Democrats after the midterms. And, a look at the outstanding races",
+    "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "The Democrats strolled to victory in the midterms after pummeling Republicans over high energy prices. Now they face tough decisions about what to do about it.",
+    "url": "https://www.wsj.com/politics/policy/the-democrats-are-about-to-get-an-early-test-on-the-energy-crisis-9e86926f?mod=rss_socialpoliticsfeed",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Financial Times",
+    "rubrik": "Impeachments, Iran and the presidency: what’s next after the midterms?",
+    "url": "https://www.ft.com/content/18e00ce0-aef2-41e9-ab7f-8a5dd8a9c217?syn-25a6b1a6=1",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The National",
+    "rubrik": "US midterms 2026: As Democrats take the House and the Senate, what comes next?",
+    "url": "https://www.thenationalnews.com/news/us/2026/11/04/watch-latest-us-elections-2026-democrats-win-middle-east-iran-war/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
+   },
+   {
+    "namn": "CGTN",
+    "rubrik": "US midterms 2026: Five key takeaways as Democrats sweep Congress",
+    "url": "https://news.cgtn.com/news/2026-11-04/US-midterms-2026-Five-key-takeaways-as-Democrats-sweep-Congress-1RNuNTtD5G8/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CN",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": true
+   },
+   {
+    "namn": "RT",
+    "rubrik": "What the US midterms tell us about the changing world order",
+    "url": "https://rt-english.com/news/648354-why-americas-midterms-matter/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "RU",
+    "region": "europa",
+    "agare": "statlig",
+    "statskontrollerad": true
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 1,
+   "en": 3
+  },
+  "autopilot": [
+   "källkontrollen har 2 anmärkningar"
+  ],
+  "data": null,
+  "godkand_tid": 1793891971.8599718,
+  "automatisk": false,
+  "uppdaterad_tid": 1793902591.831983
+ },
+ "5c4e587e45": {
+  "id": "5c4e587e45",
+  "amnen": [
+   "usa"
+  ],
+  "amnen_sektion": [
+   "usa"
+  ],
+  "poang": 35.4,
+  "vikt": {
+   "bredd": 1.098,
+   "regioner": {
+    "usa": 9,
+    "mellanostern": 1,
+    "asien": 4,
+    "afrika": 2,
+    "latinamerika": 2
+   },
+   "timmar": 21,
+   "konsekvens": {
+    "berorda": 5,
+    "allvar": 5,
+    "varaktighet": 4,
+    "medel": 4.67,
+    "skal": "Demokraterna tar kontrollen över kongressen, vilket påverkar hela USA:s politik och maktbalansen mot president Trump under de närmaste åren."
+   },
+   "bekraftad": false,
+   "maste": true,
+   "spar": []
+  },
+  "maste": true,
+  "antal_kallor": 18,
+  "har_primarkalla": false,
+  "senast": "2026-11-05T17:20:00+00:00",
+  "utkast": {
+   "rubrik_sv": "Demokraterna tar kontrollen över både representanthuset och senaten",
+   "sammanfattning_sv": "Demokraterna har fått kontroll över både representanthuset och senaten efter midtermvalet 2026, enligt flera källor. Fox News uppger att partiet vunnit sju platser i senaten och 27 i representanthuset, medan Buenos Aires Times skriver om minst sju senatsplatser.",
+   "rubrik_en": "Democrats take control of both chambers of Congress",
+   "sammanfattning_en": "Democrats have won control of both the House of Representatives and the Senate in the 2026 midterm elections, according to several outlets. Fox News reports Democrats gained seven Senate seats and 27 House seats, while Buenos Aires Times reports at least seven Senate seats.",
+   "oenighet": "Källorna skildrar olika vem som får ta skulden för valresultatet. Fox News skriver att republikanska företrädare riktar kritik mot Trump, medan Africanews uppger att Trump själv inte tar på sig skulden och säger att kriget i Iran kan ha bidragit till förlusten.",
+   "oenighet_en": "The outlets describe differently who is being blamed for the result. Fox News reports that Republican insiders are criticizing Trump, while Africanews reports that Trump does not take the blame himself and said the Iran war may have contributed to the loss.",
+   "perspektiv_sv": "Amerikanska källor som CNBC, Wall Street Journal, New York Times och NPR lyfter främst den nya maktbalansen i kongressen, bland annat demokraternas planer att granska JPMorgans förbindelser med Jeffrey Epstein och hur kongressen kan begränsa Trump. Indiska källor (The Hindu och Hindustan Times) och japanska Nikkei Asia beskriver valet som en tillrättavisning av Trump, och Hindustan Times lyfter dessutom en artists kommentar om Trump. Yonhap från Sydkorea lyfter möjliga konsekvenser för sydkoreanska ubåtar och ett eventuellt Trump-Kim-möte. Nation från Kenya lyfter demokraternas uttalanden om sitt förhållande till Trump.",
+   "perspektiv_en": "American outlets such as CNBC, The Wall Street Journal, The New York Times and NPR mainly highlight the new balance of power in Congress, including Democrats' plans to probe JPMorgan's relationship with Jeffrey Epstein and how Congress may check Trump. Indian outlets (The Hindu and Hindustan Times) and Japan's Nikkei Asia describe the vote as a rebuke of Trump, and Hindustan Times also highlights a singer's comments about Trump. South Korea's Yonhap highlights possible consequences for South Korean nuclear submarines and a possible Trump-Kim summit. Kenya's Nation highlights Democrats' statements about their relationship with Trump.",
+   "usa_sv": "Medier som AllSides bedömer lutar höger: Washington Examiner (lutar höger) ställer en retorisk fråga om hur demokraterna kunde vinna om Trump är fascist, och ingressen räknar upp kritik från liberaler och demokrater mot Trump. Fox News (höger) lyfter att republikanska företrädare riktar kritik mot Trump efter valförlusterna och anger antalet vunna mandat. Medier som AllSides bedömer lutar vänster: NPR (lutar vänster) frågar om en demokratisk kongress kan ändra Trumps utrikespolitik och för fram en historiker och journalist som kommenterar frågan. The New York Times (lutar vänster) skriver att kongressen nu väntas återta makten att granska Trump.",
+   "usa_en": "Outlets rated by AllSides as leaning right: The Washington Examiner (leans right) asks rhetorically how Democrats could win if Trump is a fascist, and its summary lists criticism of Trump from liberals and Democrats. Fox News (right) highlights that Republican insiders are criticizing Trump after the election losses and gives the number of seats won. Outlets rated by AllSides as leaning left: NPR (leans left) asks whether a Democratic-led Congress could change Trump's foreign policy and features a historian and journalist commenting on the question. The New York Times (leans left) reports that Congress is now set to reclaim power to check Trump.",
+   "osaker": false,
+   "kommentar": "Underlaget består av rubriker och ingresser från RSS. Siffrorna om mandat kommer från Fox News (sju i senaten, 27 i representanthuset) respektive Buenos Aires Times (minst sju i senaten) och är inte bekräftade av övriga källor i materialet. Flera källor har ingen ingress alls, så bedömningen bygger till stor del på rubrikerna."
+  },
+  "kallkontroll": {
+   "ok": false,
+   "antal": 26,
+   "problem": [
+    "saknar stöd: The Hindu och Hindustan Times beskriver valet som en tillrättavisning av Trump"
+   ],
+   "pastaenden": [
+    {
+     "text": "Demokraterna har tagit kontrollen över både representanthuset och senaten",
+     "stod": [
+      10,
+      13,
+      14,
+      16
+     ],
+     "problem": null
+    },
+    {
+     "text": "Kontrollövertagandet gäller efter midtermvalet 2026",
+     "stod": [
+      14
+     ],
+     "problem": null
+    },
+    {
+     "text": "Fox News uppger att demokraterna vunnit sju senatsplatser",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "Fox News uppger att demokraterna vunnit 27 platser i representanthuset",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "Buenos Aires Times skriver om minst sju senatsplatser",
+     "stod": [
+      13
+     ],
+     "problem": null
+    },
+    {
+     "text": "CNBC, WSJ, NYT och NPR lyfter främst den nya maktbalansen i kongressen",
+     "stod": [
+      1,
+      4,
+      16,
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "Demokraterna planerar att granska JPMorgans förbindelser med Jeffrey Epstein",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Kongressen kan begränsa Trump",
+     "stod": [
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Hindu och Hindustan Times beskriver valet som en tillrättavisning av Trump",
+     "stod": [
+      10
+     ],
+     "problem": "saknar stöd"
+    },
+    {
+     "text": "Nikkei Asia beskriver valet som en tillrättavisning av Trump",
+     "stod": [
+      18
+     ],
+     "problem": null
+    },
+    {
+     "text": "Hindustan Times lyfter en artists kommentar om Trump",
+     "stod": [
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "Yonhap lyfter möjliga konsekvenser för sydkoreanska ubåtar",
+     "stod": [
+      12
+     ],
+     "problem": null
+    },
+    {
+     "text": "Yonhap lyfter ett eventuellt Trump-Kim-möte",
+     "stod": [
+      12
+     ],
+     "problem": null
+    },
+    {
+     "text": "Nation från Kenya lyfter demokraternas uttalanden om sitt förhållande till Trump",
+     "stod": [
+      7
+     ],
+     "problem": null
+    },
+    {
+     "text": "AllSides bedömer Washington Examiner som lutande höger",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Washington Examiner ställer en retorisk fråga om hur demokraterna kunde vinna om Trump är fascist",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Washington Examiners ingress räknar upp kritik från liberaler och demokrater mot Trump",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Fox News lyfter att republikanska företrädare kritiserar Trump efter valförlusterna",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "AllSides bedömer NPR som lutande vänster",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR frågar om en demokratisk kongress kan ändra Trumps utrikespolitik",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR för fram historikern och journalisten Anne Applebaum som kommenterar frågan",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "AllSides bedömer The New York Times som lutande vänster",
+     "stod": [
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "NYT skriver att kongressen väntas återta makten att granska Trump",
+     "stod": [
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "Källorna skildrar olika vem som får ta skulden för valresultatet",
+     "stod": [
+      5,
+      15
+     ],
+     "problem": null
+    },
+    {
+     "text": "Africanews uppger att Trump själv inte tar på sig skulden",
+     "stod": [
+      15
+     ],
+     "problem": null
+    },
+    {
+     "text": "Africanews uppger att Trump säger att kriget i Iran kan ha bidragit till förlusten",
+     "stod": [
+      15
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": "Utkastet är i huvudsak väl underbyggt, men påståendet att Hindustan Times beskriver valet som en tillrättavisning av Trump saknar stöd: rubriken och ingressen i Hindustan Times handlar om Nicki Minaj och säger inget om tillrättavisning. Tillskrivningen bör ändras till The Hindu och Nikkei Asia."
+  },
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Trumps ansvar för förlusten",
+     "namn_en": "Trump's responsibility for the loss",
+     "lyfter_sv": "Fox News lyfter fram att GOP-profiler skyller på Trump efter förlusten, medan Africanews lyfter fram att Trump avvisar skuld och medger att Irankriget kan ha spelat in.",
+     "lyfter_en": "Fox News highlights GOP insiders blaming Trump for the loss, while Africanews highlights Trump rejecting blame and conceding the Iran war may have played a part.",
+     "kallor": [
+      {
+       "namn": "Fox News",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress"
+      },
+      {
+       "namn": "Africanews",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "http://www.africanews.com/2026/11/04/democrats-seize-congress-as-trump-refuses-to-take-blame/"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Valet som dom över Trump",
+     "namn_en": "The election as a verdict on Trump",
+     "lyfter_sv": "The Hindu lyfter fram ett massivt nederlag för Trump, Buenos Aires Times en tillrättavisning i GOP-fästen, MercoPress ett tungt slag och Nikkei Asia en skarp tillrättavisning.",
+     "lyfter_en": "The Hindu highlights a massive defeat for Trump, Buenos Aires Times a rebuke in GOP strongholds, MercoPress a heavy blow and Nikkei Asia a sharp rebuke.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/us-midterm-elections-2026-senate-governor-races-winners-losers-trump-republicans-democrats-news/article71663818.ece"
+      },
+      {
+       "namn": "Buenos Aires Times",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.batimes.com.ar/news/world/democrats-sweep-to-control-of-us-congress-in-rebuke-of-trump.phtml"
+      },
+      {
+       "namn": "MercoPress",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.mercopress.com/2026/11/04/democrats-retake-control-of-the-us-congress-in-a-heavy-blow-to-trump?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
+      },
+      {
+       "namn": "Nikkei Asia",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://asia.nikkei.com/politics/u.s.-midterm-elections/democrats-win-control-of-congress-in-sharp-rebuke-to-trump"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "latinamerika"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Maktskiftets konsekvenser för politiken",
+     "namn_en": "What the power shift could change",
+     "lyfter_sv": "Al Jazeera lyfter fram vad demokraterna kan göra i kongressen, NPR frågan om utrikespolitiken, Yonhap kärnubåtar och ett Trump-Kim-möte, NYT kongressens makt att granska Trump och CyberScoop konsekvenserna för cybersäkerhet.",
+     "lyfter_en": "Al Jazeera highlights what Democrats can do in Congress, NPR the question of foreign policy, Yonhap submarines and a possible Trump-Kim summit, NYT Congress's power to check Trump and CyberScoop the consequences for cybersecurity.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/what-can-democrats-do-in-congress-under-president-trump?traffic_source=rss"
+      },
+      {
+       "namn": "NPR",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.npr.org/2026/11/05/nx-s1-6028977/democrats-will-control-congress-will-it-change-trumps-approach-to-foreign-policy"
+      },
+      {
+       "namn": "CyberScoop",
+       "region": "usa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://cyberscoop.com/democrats-congress-cybersecurity-cisa-ai-priorities/"
+      },
+      {
+       "namn": "Yonhap",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.yna.co.kr/view/AEN20261105000200315"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/04/us/politics/democrats-house-senate-congress-trump.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Senaten och tillsättningar före maktskiftet",
+     "namn_en": "Senate moves before and after handover",
+     "lyfter_sv": "CNBC lyfter fram en granskning av JPMorgans koppling till Epstein, Nation att demokraterna inte jobbar för Trump, Ars Technica att Cruz vill fylla FCC före maktskiftet och WSJ Schumers glädje och utmaningar från progressiva.",
+     "lyfter_en": "CNBC highlights a probe into JPMorgan's ties to Epstein, Nation that Democrats don't work for Trump, Ars Technica that Cruz wants to fill the FCC before the handover and WSJ Schumer's jubilation and challenges from progressives.",
+     "kallor": [
+      {
+       "namn": "CNBC",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html"
+      },
+      {
+       "namn": "Nation (Kenya)",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://nation.africa/kenya/business/companies/-we-don-t-work-for-trump-democrats-seize-control-of-senate--5659006"
+      },
+      {
+       "namn": "Ars Technica",
+       "region": "usa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://arstechnica.com/tech-policy/2026/11/ted-cruz-aims-to-put-another-republican-on-fcc-in-senates-lame-duck-session/"
+      },
+      {
+       "namn": "The Wall Street Journal",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.wsj.com/politics/policy/chuck-schumer-was-democrats-punching-bag-now-hes-riding-high-b77bcaa2?mod=rss_socialpoliticsfeed"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "antal": 17,
+    "problem": [
+     "värdeord: The Hindu: ett massivt nederlag för Trump"
+    ],
+    "pastaenden": [
+     {
+      "text": "Demokraterna tar kontrollen över representanthuset och senaten",
+      "stod": [
+       5,
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News: GOP-profiler skyller på Trump efter förlusten",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Africanews: Trump avvisar skuld för förlusten",
+      "stod": [
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "Africanews: Trump medger att Irankriget kan ha spelat in",
+      "stod": [
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: ett massivt nederlag för Trump",
+      "stod": [
+       10
+      ],
+      "problem": "värdeord"
+     },
+     {
+      "text": "Buenos Aires Times: en tillrättavisning i GOP-fästen",
+      "stod": [
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: ett tungt slag för Trump",
+      "stod": [
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "Nikkei Asia: en skarp tillrättavisning",
+      "stod": [
+       18
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: vad demokraterna kan göra i kongressen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR: frågan om kongressen ändrar utrikespolitiken",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Yonhap: kärnubåtar och ett Trump-Kim-möte",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT: kongressens makt att granska Trump",
+      "stod": [
+       17
+      ],
+      "problem": null
+     },
+     {
+      "text": "CyberScoop: konsekvenserna för cybersäkerhet",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC: en granskning av JPMorgans koppling till Epstein",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Nation: demokraterna jobbar inte för Trump",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ars Technica: Cruz vill fylla FCC med republikaner före maktskiftet",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ: Schumer var jublande men står inför utmaningar från progressiva",
+      "stod": [
+       16
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Påståendet om The Hindu kallar nederlaget för 'massivt', ett värdeord som inte finns i källan (som säger 'midterm rout'). Övriga påståenden har stöd."
+   },
+   "ok": false
+  },
+  "sammanhang": 0.44,
+  "betydelse": {
+   "sv": "Eftersom demokraterna nu kontrollerar både representanthuset och senaten kan kongressen granska presidentens politik, även säkerhetspolitiken. Det berör Sverige eftersom landet är Natomedlem och USA är alliansens största militära makt.",
+   "en": "Since Democrats now control both the House and the Senate, Congress can scrutinize the Trump administration's policies, including how federal spending and regulation decisions are made.",
+   "grund": [
+    5,
+    13,
+    17
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Fox News",
+     "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress"
     },
     {
      "namn": "Buenos Aires Times",
-     "url": "https://www.batimes.com.ar/news/world/democrats-win-control-of-us-congress-as-voters-deliver-trump-midterm-rout.phtml"
+     "url": "https://www.batimes.com.ar/news/world/democrats-sweep-to-control-of-us-congress-in-rebuke-of-trump.phtml"
+    },
+    {
+     "namn": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/04/us/politics/democrats-house-senate-congress-trump.html"
     }
    ],
    "kontroll": {
     "ok": false,
     "problem": [
-     "ingen koppling: Kopplingen från den amerikanska tioåriga räntan till svenska bolån saknar stöd i källorna och är långsökt"
+     "ingen koppling: \"Det berör Sverige eftersom landet är Natomedlem\": källmaterialet nämner varken Sverige eller Nato, och kopplingen görs utan stöd i källorna."
     ]
    },
    "ok": false
+  },
+  "perspektiv": {
+   "regioner": [
+    "afrika",
+    "asien",
+    "latinamerika",
+    "mellanostern",
+    "usa"
+   ],
+   "per_region": {
+    "usa": [
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+      "url": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Washington Examiner",
+      "land": "US",
+      "rubrik": "If Trump is a fascist, king, and authoritarian dictator, how did Democrats win control of Congress?",
+      "url": "https://www.washingtonexaminer.com/opinion/4793799/trump-authoritarianism-democratic-victory-2026-elections/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "Democrats will control Congress. Will it change Trump's approach to foreign policy?",
+      "url": "https://www.npr.org/2026/11/05/nx-s1-6028977/democrats-will-control-congress-will-it-change-trumps-approach-to-foreign-policy",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Republicans turn on Trump after devastating midterm losses hand Democrats control of Congress",
+      "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CyberScoop",
+      "land": "US",
+      "rubrik": "What Democratic control of Congress means for cybersecurity",
+      "url": "https://cyberscoop.com/democrats-congress-cybersecurity-cisa-ai-priorities/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Inside Climate News",
+      "land": "US",
+      "rubrik": "Democrats Win Control of Georgia’s Energy Regulator",
+      "url": "https://insideclimatenews.org/news/04112026/georgia-public-service-commission-democrat-majority/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Ars Technica",
+      "land": "US",
+      "rubrik": "Ted Cruz aims to stack FCC with Republicans before Democrats take Senate control",
+      "url": "https://arstechnica.com/tech-policy/2026/11/ted-cruz-aims-to-put-another-republican-on-fcc-in-senates-lame-duck-session/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Senate Minority Leader Chuck Schumer was jubilant after the Democrats flipped control of both houses of Congress in the midterms—but faces possible fights with party progressives",
+      "url": "https://www.wsj.com/politics/policy/chuck-schumer-was-democrats-punching-bag-now-hes-riding-high-b77bcaa2?mod=rss_socialpoliticsfeed",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "With Democrats’ Sweep, Congress Is Set to Reassert Power to Check Trump",
+      "url": "https://www.nytimes.com/2026/11/04/us/politics/democrats-house-senate-congress-trump.html",
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "What can Democrats do in Congress under President Trump?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/what-can-democrats-do-in-congress-under-president-trump?traffic_source=rss",
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "‘I don’t vote, I veto’: Rapper Nicki Minaj takes a dig at critics, stands by Trump after Democrats sweep Congress",
+      "url": "https://www.hindustantimes.com/world-news/us-news/i-don-t-vote-i-veto-rapper-nicki-minaj-takes-a-dig-at-critics-stands-by-trump-after-democrats-sweep-congress-101793860409915.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Democrats win U.S. Congress in midterm rout of U.S. President Donald Trump",
+      "url": "https://www.thehindu.com/news/international/us-midterm-elections-2026-senate-governor-races-winners-losers-trump-republicans-democrats-news/article71663818.ece",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Yonhap",
+      "land": "KR",
+      "rubrik": "(News Focus) Democratic control of Congress could complicate S. Korea's nuclear submarines, Trump-Kim summit prospects: experts",
+      "url": "https://en.yna.co.kr/view/AEN20261105000200315",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Nikkei Asia",
+      "land": "JP",
+      "rubrik": "Democrats win control of Congress in sharp rebuke to Trump",
+      "url": "https://asia.nikkei.com/politics/u.s.-midterm-elections/democrats-win-control-of-congress-in-sharp-rebuke-to-trump",
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Nation (Kenya)",
+      "land": "KE",
+      "rubrik": "'We don't work for Trump': Democrats seize control of Senate",
+      "url": "https://nation.africa/kenya/business/companies/-we-don-t-work-for-trump-democrats-seize-control-of-senate--5659006",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "Democrats seize Congress as Trump refuses to take blame",
+      "url": "http://www.africanews.com/2026/11/04/democrats-seize-congress-as-trump-refuses-to-take-blame/",
+      "statskontrollerad": false
+     }
+    ],
+    "latinamerika": [
+     {
+      "kalla": "Buenos Aires Times",
+      "land": "AR",
+      "rubrik": "Democrats sweep to control of US Congress in rebuke of Trump",
+      "url": "https://www.batimes.com.ar/news/world/democrats-sweep-to-control-of-us-congress-in-rebuke-of-trump.phtml",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "MercoPress",
+      "land": "UY",
+      "rubrik": "Democrats retake control of the US Congress in a heavy blow to Trump",
+      "url": "https://en.mercopress.com/2026/11/04/democrats-retake-control-of-the-us-congress-in-a-heavy-blow-to-trump?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": true,
+   "usa": {
+    "mitten": [
+     {
+      "kalla": "CNBC",
+      "rubrik": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+      "url": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
+      "lutning": "mitten"
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "Senate Minority Leader Chuck Schumer was jubilant after the Democrats flipped control of both houses of Congress in the midterms—but faces possible fights with party progressives",
+      "url": "https://www.wsj.com/politics/policy/chuck-schumer-was-democrats-punching-bag-now-hes-riding-high-b77bcaa2?mod=rss_socialpoliticsfeed",
+      "lutning": "mitten"
+     }
+    ],
+    "rod": [
+     {
+      "kalla": "Washington Examiner",
+      "rubrik": "If Trump is a fascist, king, and authoritarian dictator, how did Democrats win control of Congress?",
+      "url": "https://www.washingtonexaminer.com/opinion/4793799/trump-authoritarianism-democratic-victory-2026-elections/",
+      "lutning": "lutar_hoger"
+     },
+     {
+      "kalla": "Fox News",
+      "rubrik": "Republicans turn on Trump after devastating midterm losses hand Democrats control of Congress",
+      "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress",
+      "lutning": "hoger"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "NPR",
+      "rubrik": "Democrats will control Congress. Will it change Trump's approach to foreign policy?",
+      "url": "https://www.npr.org/2026/11/05/nx-s1-6028977/democrats-will-control-congress-will-it-change-trumps-approach-to-foreign-policy",
+      "lutning": "lutar_vanster"
+     },
+     {
+      "kalla": "The New York Times",
+      "rubrik": "With Democrats’ Sweep, Congress Is Set to Reassert Power to Check Trump",
+      "url": "https://www.nytimes.com/2026/11/04/us/politics/democrats-house-senate-congress-trump.html",
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+  "kallor": [
+   {
+    "namn": "CNBC",
+    "rubrik": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+    "url": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Washington Examiner",
+    "rubrik": "If Trump is a fascist, king, and authoritarian dictator, how did Democrats win control of Congress?",
+    "url": "https://www.washingtonexaminer.com/opinion/4793799/trump-authoritarianism-democratic-victory-2026-elections/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "What can Democrats do in Congress under President Trump?",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/what-can-democrats-do-in-congress-under-president-trump?traffic_source=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NPR",
+    "rubrik": "Democrats will control Congress. Will it change Trump's approach to foreign policy?",
+    "url": "https://www.npr.org/2026/11/05/nx-s1-6028977/democrats-will-control-congress-will-it-change-trumps-approach-to-foreign-policy",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Fox News",
+    "rubrik": "Republicans turn on Trump after devastating midterm losses hand Democrats control of Congress",
+    "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "‘I don’t vote, I veto’: Rapper Nicki Minaj takes a dig at critics, stands by Trump after Democrats sweep Congress",
+    "url": "https://www.hindustantimes.com/world-news/us-news/i-don-t-vote-i-veto-rapper-nicki-minaj-takes-a-dig-at-critics-stands-by-trump-after-democrats-sweep-congress-101793860409915.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Nation (Kenya)",
+    "rubrik": "'We don't work for Trump': Democrats seize control of Senate",
+    "url": "https://nation.africa/kenya/business/companies/-we-don-t-work-for-trump-democrats-seize-control-of-senate--5659006",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CyberScoop",
+    "rubrik": "What Democratic control of Congress means for cybersecurity",
+    "url": "https://cyberscoop.com/democrats-congress-cybersecurity-cisa-ai-priorities/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Inside Climate News",
+    "rubrik": "Democrats Win Control of Georgia’s Energy Regulator",
+    "url": "https://insideclimatenews.org/news/04112026/georgia-public-service-commission-democrat-majority/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "organisation",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Democrats win U.S. Congress in midterm rout of U.S. President Donald Trump",
+    "url": "https://www.thehindu.com/news/international/us-midterm-elections-2026-senate-governor-races-winners-losers-trump-republicans-democrats-news/article71663818.ece",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Ars Technica",
+    "rubrik": "Ted Cruz aims to stack FCC with Republicans before Democrats take Senate control",
+    "url": "https://arstechnica.com/tech-policy/2026/11/ted-cruz-aims-to-put-another-republican-on-fcc-in-senates-lame-duck-session/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Yonhap",
+    "rubrik": "(News Focus) Democratic control of Congress could complicate S. Korea's nuclear submarines, Trump-Kim summit prospects: experts",
+    "url": "https://en.yna.co.kr/view/AEN20261105000200315",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KR",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Buenos Aires Times",
+    "rubrik": "Democrats sweep to control of US Congress in rebuke of Trump",
+    "url": "https://www.batimes.com.ar/news/world/democrats-sweep-to-control-of-us-congress-in-rebuke-of-trump.phtml",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AR",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "MercoPress",
+    "rubrik": "Democrats retake control of the US Congress in a heavy blow to Trump",
+    "url": "https://en.mercopress.com/2026/11/04/democrats-retake-control-of-the-us-congress-in-a-heavy-blow-to-trump?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "UY",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Africanews",
+    "rubrik": "Democrats seize Congress as Trump refuses to take blame",
+    "url": "http://www.africanews.com/2026/11/04/democrats-seize-congress-as-trump-refuses-to-take-blame/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CG",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "Senate Minority Leader Chuck Schumer was jubilant after the Democrats flipped control of both houses of Congress in the midterms—but faces possible fights with party progressives",
+    "url": "https://www.wsj.com/politics/policy/chuck-schumer-was-democrats-punching-bag-now-hes-riding-high-b77bcaa2?mod=rss_socialpoliticsfeed",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "With Democrats’ Sweep, Congress Is Set to Reassert Power to Check Trump",
+    "url": "https://www.nytimes.com/2026/11/04/us/politics/democrats-house-senate-congress-trump.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Nikkei Asia",
+    "rubrik": "Democrats win control of Congress in sharp rebuke to Trump",
+    "url": "https://asia.nikkei.com/politics/u.s.-midterm-elections/democrats-win-control-of-congress-in-sharp-rebuke-to-trump",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "JP",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 1,
+   "en": 3
+  },
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
+  "data": null,
+  "godkand_tid": 1793902316.898005,
+  "automatisk": false
+ },
+ "c2b8284323": {
+  "id": "c2b8284323",
+  "amnen": [
+   "usa",
+   "varlden"
+  ],
+  "amnen_sektion": [
+   "usa"
+  ],
+  "poang": 36.6,
+  "vikt": {
+   "bredd": 0.515,
+   "regioner": {
+    "europa": 2,
+    "asien": 2,
+    "latinamerika": 1,
+    "usa": 1,
+    "mellanostern": 1
+   },
+   "timmar": 88,
+   "konsekvens": {
+    "berorda": 5,
+    "allvar": 4,
+    "varaktighet": 4,
+    "medel": 4.33,
+    "skal": "Demokraternas valseger i USA:s midtermval gör Trump till lame duck med fientlig kongress, vilket påverkar hela landets politik och ekonomi under de två återstående åren."
+   },
+   "bekraftad": true,
+   "maste": false,
+   "spar": []
+  },
+  "maste": false,
+  "antal_kallor": 7,
+  "har_primarkalla": false,
+  "senast": "2026-11-05T15:46:48+00:00",
+  "utkast": {
+   "rubrik_sv": "Republikanerna förlorar kontrollen i kongressen i mellanvalen i USA",
+   "sammanfattning_sv": "Enligt flera medier förlorade Republikanerna kontrollen i kongressen i mellanvalen, och Trump går in i de två sista åren av sin mandatperiod som så kallad lame duck. The Straits Times uppger att Trump vill samarbeta med demokraterna men behålla sina vetorätter.",
+   "rubrik_en": "Republicans lose control of Congress in US midterms",
+   "sammanfattning_en": "According to several outlets, Republicans lost control of Congress in the midterms, and Trump enters his last two years as a lame duck. The Straits Times reports that Trump said he would work with Democrats while keeping his veto powers.",
+   "oenighet": "Källorna skiljer sig åt i hur de beskriver den kommande perioden. The Straits Times uppger att Trump vill samarbeta med demokraterna. South China Morning Post skriver att Trump kan få ett ständigt motstånd mot sin agenda och att förlusten väntas leda till en mer aggressiv utrikespolitik. Deutsche Welle ställer frågan om demokraterna nu kan göra skillnad.",
+   "oenighet_en": "The sources differ on how the coming period may unfold. The Straits Times reports that Trump said he would work with Democrats. South China Morning Post writes that Trump could face constant resistance to his agenda and that the loss is expected to lead to a more aggressive foreign policy. Deutsche Welle asks whether the Democrats can now make a difference.",
+   "perspektiv_sv": "France 24 lyfter att Trumps politiska handlingsutrymme har beskurits. Deutsche Welle lyfter ekonomiska frågor som höga oljepriser, datacenter, tullar och ökande statsskuld som en central del av förklaringen till valresultatet. The Straits Times och The National (AE, statskontrollerat medium) lyfter Trumps nya roll som lame duck, där The Straits Times också lyfter ett fientligt sinnat kongress. South China Morning Post lyfter utsikterna till en mer aggressiv utrikespolitik. The New York Times lyfter att Trump står inför en ny verklighet med två år kvar att kämpa. Buenos Aires Times lyfter konsekvenser för Argentina och citerar CEPA som varnar för att Trumps möjligheter att stödja Javier Milei ekonomiskt kan försvagas.",
+   "perspektiv_en": "France 24 highlights that Trump's political room to maneuver has been curtailed. Deutsche Welle highlights economic issues such as high oil prices, data centers, tariffs and mounting debt as a central part of the explanation for the result. The Straits Times and The National (AE, state-controlled media) highlight Trump's new role as a lame duck, and The Straits Times also highlights a hostile Congress. South China Morning Post highlights the prospect of a more aggressive foreign policy. The New York Times highlights that Trump faces a new reality with two years left to fight. Buenos Aires Times highlights consequences for Argentina and cites CEPA warning that Trump's ability to provide financial support to Javier Milei's government could weaken.",
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "Källmaterialet anger inte vilken kammare i kongressen som bytte kontroll, så rubriken använder den formulering som South China Morning Post använder. The National är märkt som statskontrollerat medium i källmaterialet och angivs som sådant. New York Times är den enda amerikanska källan och saknar en motsvarande källa med annat AllSides-betyg, därför finns ingen USA-jämförelse."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 18,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Republikanerna förlorade kontrollen i kongressen i mellanvalen",
+     "stod": [
+      2,
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Flera medier beskriver förlusten",
+     "stod": [
+      2,
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Trump går in i de två sista åren av mandatperioden som lame duck",
+     "stod": [
+      2,
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Straits Times: Trump vill samarbeta med demokraterna",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Straits Times: Trump vill behålla sina vetorätter",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "France 24 lyfter att Trumps politiska handlingsutrymme har beskurits",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Deutsche Welle lyfter höga oljepriser, datacenter, tullar och ökande statsskuld som central förklaring till valresultatet",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Straits Times och The National lyfter Trumps nya roll som lame duck",
+     "stod": [
+      4,
+      7
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Straits Times lyfter ett fientligt sinnat kongress",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "The National är ett statskontrollerat medium (AE)",
+     "stod": [
+      7
+     ],
+     "problem": null
+    },
+    {
+     "text": "South China Morning Post lyfter utsikterna till en mer aggressiv utrikespolitik",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "The New York Times lyfter att Trump står inför en ny verklighet med två år kvar att kämpa",
+     "stod": [
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "Buenos Aires Times lyfter konsekvenser för Argentina",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "CEPA varnar för att Trumps möjligheter att stödja Milei ekonomiskt kan försvagas (citerat av Buenos Aires Times)",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "Källorna skiljer sig åt i hur de beskriver den kommande perioden",
+     "stod": [
+      2,
+      3,
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "South China Morning Post: Trump kan få ett ständigt motstånd mot sin agenda",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Förlusten väntas leda till en mer aggressiv utrikespolitik (SCMP)",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Deutsche Welle ställer frågan om demokraterna nu kan göra skillnad",
+     "stod": [
+      3
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Trumps politiska handlingsutrymme",
+     "namn_en": "Trump's political room to maneuver",
+     "lyfter_sv": "France 24 lyfter fram att Trumps inflytande beskurits, SCMP att han kan möta ständigt motstånd, Straits Times att han håller fast vid sina vetorätter, NYT och The National att han nu är en lame duck.",
+     "lyfter_en": "France 24 highlights that Trump's influence has been clipped, SCMP that he could face constant resistance, The Straits Times that he is clinging to his veto powers, and NYT and The National that he is now a lame duck.",
+     "kallor": [
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/video/20261105-us-midterms-donald-trump-s-wings-have-been-more-than-clipped"
+      },
+      {
+       "namn": "South China Morning Post",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.scmp.com/news/china/diplomacy/article/3373425/facing-two-years-lame-duck-what-can-trump-do-stay-control"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/united-states/us-midterms-trump-confronts-a-new-role-as-a-lame-duck-facing-a-hostile-congress"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/04/us/politics/trump-new-role-lame-duck.html"
+      },
+      {
+       "namn": "The National",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.thenationalnews.com/opinion/comment/2026/11/04/lame-duck-trump-midterms-middle-east/"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Ekonomiska följder av valförlusten",
+     "namn_en": "Economic consequences of the defeat",
+     "lyfter_sv": "DW lyfter fram att höga oljepriser, tariffer och skuld spelade roll i förlusten, Buenos Aires Times att valförlusten kan försvaga Trumps ekonomiska stöd till Milei.",
+     "lyfter_en": "DW highlights that high oil prices, tariffs and debt played a role in the defeat, Buenos Aires Times that the loss could weaken Trump's financial support for Milei.",
+     "kallor": [
+      {
+       "namn": "Deutsche Welle",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf"
+      },
+      {
+       "namn": "Buenos Aires Times",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.batimes.com.ar/news/economy/how-trumps-defeat-in-us-midterms-might-affect-argentina.phtml"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "latinamerika"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 8,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Republikanerna förlorar kontrollen i kongressen i mellanvalen",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: Trumps inflytande har beskurits",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP: Trump kan möta ständigt motstånd",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: Trump håller fast vid sina vetorätter",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT: Trump är nu en lame duck",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "The National: Trump är nu en lame duck",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW: höga oljepriser, tariffer och skuld spelade roll i förlusten",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Buenos Aires Times: valförlusten kan försvaga Trumps ekonomiska stöd till Milei",
+      "stod": [
+       5
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.491,
+  "betydelse": {
+   "sv": "Eftersom höga oljepriser och tullar enligt DW spelade en central roll i mellanvalen hänger USA:s ekonomipolitik ihop med bränslepriser och exportföretag i Sverige.",
+   "en": "Since high oil prices and tariffs, according to DW, played a key role in the midterm results, the US economic agenda is tied to fuel prices and exporters.",
+   "grund": [
+    3
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Deutsche Welle",
+     "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
   },
   "perspektiv": {
    "regioner": [
@@ -15420,79 +16930,33 @@
    "per_region": {
     "europa": [
      {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Iran signals satisfaction, skepticism after US midterm vote",
-      "url": "https://www.dw.com/en/iran-signals-satisfaction-skepticism-after-us-midterm-vote/a-79867149?maca=en-rss-en-all-1573-rdf",
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "US midterms: 'Donald Trump's wings have been more than clipped'",
+      "url": "https://www.france24.com/en/video/20261105-us-midterms-donald-trump-s-wings-have-been-more-than-clipped",
       "statskontrollerad": false
      },
      {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "What comes next for Democrats after midterm election victory?",
-      "url": "https://www.france24.com/en/video/20261105-what-comes-next-for-democrats-after-midterm-election-victory",
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "What the Democrats' midterms win means for the US economy and Trump",
+      "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf",
       "statskontrollerad": false
      }
     ],
     "asien": [
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "US 10-year Treasury yield falls after Democrats' midterm win, jobs data in focus",
-      "url": "https://www.hindustantimes.com/world-news/us-news/us-10-year-treasury-yield-falls-after-democrats-midterm-win-jobs-data-in-focus-101793885542425.html",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "South China Morning Post",
       "land": "HK",
-      "rubrik": "US midterm elections: all you need to know, from Democrats’ big wins to effects on China",
-      "url": "https://www.scmp.com/news/world/united-states-canada/article/3373344/us-midterm-elections-all-you-need-know-democrats-big-wins-effects-china",
+      "rubrik": "Facing 2 years as a lame duck, what can Trump do to stay in control?",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3373425/facing-two-years-lame-duck-what-can-trump-do-stay-control",
       "statskontrollerad": false
      },
      {
-      "kalla": "Focus Taiwan",
-      "land": "TW",
-      "rubrik": "Taiwan cites bipartisan U.S. support after Democrats win Congress",
-      "url": "https://focustaiwan.tw/politics/202611040018",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CGTN",
-      "land": "CN",
-      "rubrik": "Republicans, Democrats react to monumental midterm results",
-      "url": "https://newsus.cgtn.com/news/2026-11-05/Republicans-Democrats-react-to-monumental-midterm-results-1ROz9fmJlxm/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-      "statskontrollerad": true
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?",
-      "url": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Democrats’ midterm gains put US data centre boom under pressure",
-      "url": "https://www.thenationalnews.com/news/2026/11/05/democrats-midterm-gains-put-us-data-centre-boom-under-pressure/",
-      "statskontrollerad": true
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "NPR",
-      "land": "US",
-      "rubrik": "Democrats and Republicans reflect on midterm results and the message sent by voters",
-      "url": "https://www.npr.org/2026/11/05/nx-s1-6029732/democrats-and-republicans-reflect-on-midterm-results-and-the-message-sent-by-voters",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "MIT Technology Review",
-      "land": "US",
-      "rubrik": "What’s next for US energy policy after the midterm elections?",
-      "url": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/",
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "US midterms: Trump confronts new role as a lame duck facing a hostile Congress",
+      "url": "https://www.straitstimes.com/world/united-states/us-midterms-trump-confronts-a-new-role-as-a-lame-duck-facing-a-hostile-congress",
       "statskontrollerad": false
      }
     ],
@@ -15500,9 +16964,27 @@
      {
       "kalla": "Buenos Aires Times",
       "land": "AR",
-      "rubrik": "Democrats win control of US Congress as voters deliver Trump midterm rout",
-      "url": "https://www.batimes.com.ar/news/world/democrats-win-control-of-us-congress-as-voters-deliver-trump-midterm-rout.phtml",
+      "rubrik": "How Trump's defeat in US midterms might affect Argentina",
+      "url": "https://www.batimes.com.ar/news/economy/how-trumps-defeat-in-us-midterms-might-affect-argentina.phtml",
       "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Trump Wrestles With New Reality: A Lame Duck With Two Years Left to Fight",
+      "url": "https://www.nytimes.com/2026/11/04/us/politics/trump-new-role-lame-duck.html",
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Donald the lame duck president",
+      "url": "https://www.thenationalnews.com/opinion/comment/2026/11/04/lame-duck-trump-midterms-middle-east/",
+      "statskontrollerad": true
      }
     ]
    },
@@ -15511,34 +16993,12 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Iran signals satisfaction, skepticism after US midterm vote",
+  "reserv_rubrik": "US midterms: 'Donald Trump's wings have been more than clipped'",
   "kallor": [
    {
-    "namn": "Deutsche Welle",
-    "rubrik": "Iran signals satisfaction, skepticism after US midterm vote",
-    "url": "https://www.dw.com/en/iran-signals-satisfaction-skepticism-after-us-midterm-vote/a-79867149?maca=en-rss-en-all-1573-rdf",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "US 10-year Treasury yield falls after Democrats' midterm win, jobs data in focus",
-    "url": "https://www.hindustantimes.com/world-news/us-news/us-10-year-treasury-yield-falls-after-democrats-midterm-win-jobs-data-in-focus-101793885542425.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "France 24",
-    "rubrik": "What comes next for Democrats after midterm election victory?",
-    "url": "https://www.france24.com/en/video/20261105-what-comes-next-for-democrats-after-midterm-election-victory",
+    "rubrik": "US midterms: 'Donald Trump's wings have been more than clipped'",
+    "url": "https://www.france24.com/en/video/20261105-us-midterms-donald-trump-s-wings-have-been-more-than-clipped",
     "betalvagg": false,
     "typ": "media",
     "land": "FR",
@@ -15548,8 +17008,8 @@
    },
    {
     "namn": "South China Morning Post",
-    "rubrik": "US midterm elections: all you need to know, from Democrats’ big wins to effects on China",
-    "url": "https://www.scmp.com/news/world/united-states-canada/article/3373344/us-midterm-elections-all-you-need-know-democrats-big-wins-effects-china",
+    "rubrik": "Facing 2 years as a lame duck, what can Trump do to stay in control?",
+    "url": "https://www.scmp.com/news/china/diplomacy/article/3373425/facing-two-years-lame-duck-what-can-trump-do-stay-control",
     "betalvagg": false,
     "typ": "media",
     "land": "HK",
@@ -15558,53 +17018,31 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Al Jazeera",
-    "rubrik": "Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?",
-    "url": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
+    "namn": "Deutsche Welle",
+    "rubrik": "What the Democrats' midterms win means for the US economy and Trump",
+    "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf",
     "betalvagg": false,
     "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "NPR",
-    "rubrik": "Democrats and Republicans reflect on midterm results and the message sent by voters",
-    "url": "https://www.npr.org/2026/11/05/nx-s1-6029732/democrats-and-republicans-reflect-on-midterm-results-and-the-message-sent-by-voters",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
+    "land": "DE",
+    "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
    },
    {
-    "namn": "MIT Technology Review",
-    "rubrik": "What’s next for US energy policy after the midterm elections?",
-    "url": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/",
+    "namn": "The Straits Times",
+    "rubrik": "US midterms: Trump confronts new role as a lame duck facing a hostile Congress",
+    "url": "https://www.straitstimes.com/world/united-states/us-midterms-trump-confronts-a-new-role-as-a-lame-duck-facing-a-hostile-congress",
     "betalvagg": false,
     "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "organisation",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Focus Taiwan",
-    "rubrik": "Taiwan cites bipartisan U.S. support after Democrats win Congress",
-    "url": "https://focustaiwan.tw/politics/202611040018",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "TW",
+    "land": "SG",
     "region": "asien",
-    "agare": "statlig",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
     "namn": "Buenos Aires Times",
-    "rubrik": "Democrats win control of US Congress as voters deliver Trump midterm rout",
-    "url": "https://www.batimes.com.ar/news/world/democrats-win-control-of-us-congress-as-voters-deliver-trump-midterm-rout.phtml",
+    "rubrik": "How Trump's defeat in US midterms might affect Argentina",
+    "url": "https://www.batimes.com.ar/news/economy/how-trumps-defeat-in-us-midterms-might-affect-argentina.phtml",
     "betalvagg": false,
     "typ": "media",
     "land": "AR",
@@ -15613,24 +17051,24 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The New York Times",
+    "rubrik": "Trump Wrestles With New Reality: A Lame Duck With Two Years Left to Fight",
+    "url": "https://www.nytimes.com/2026/11/04/us/politics/trump-new-role-lame-duck.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The National",
-    "rubrik": "Democrats’ midterm gains put US data centre boom under pressure",
-    "url": "https://www.thenationalnews.com/news/2026/11/05/democrats-midterm-gains-put-us-data-centre-boom-under-pressure/",
+    "rubrik": "Donald the lame duck president",
+    "url": "https://www.thenationalnews.com/opinion/comment/2026/11/04/lame-duck-trump-midterms-middle-east/",
     "betalvagg": false,
     "typ": "media",
     "land": "AE",
     "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
-   },
-   {
-    "namn": "CGTN",
-    "rubrik": "Republicans, Democrats react to monumental midterm results",
-    "url": "https://newsus.cgtn.com/news/2026-11-05/Republicans-Democrats-react-to-monumental-midterm-results-1ROz9fmJlxm/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CN",
-    "region": "asien",
     "agare": "statlig",
     "statskontrollerad": true
    }
@@ -15642,7 +17080,943 @@
   },
   "autopilot": [],
   "data": null,
-  "godkand_tid": 1793891971.8599718,
+  "godkand_tid": 1793902591.831983,
+  "automatisk": false
+ },
+ "f39e25653f": {
+  "id": "f39e25653f",
+  "amnen": [
+   "geopolitik",
+   "usa"
+  ],
+  "amnen_sektion": [
+   "geopolitik",
+   "usa"
+  ],
+  "poang": 35.6,
+  "vikt": {
+   "bredd": 1.507,
+   "regioner": {
+    "europa": 2,
+    "usa": 6,
+    "mellanostern": 3,
+    "asien": 3,
+    "afrika": 2,
+    "sverige": 1,
+    "norden": 1
+   },
+   "timmar": 17,
+   "konsekvens": {
+    "berorda": 4,
+    "allvar": 4,
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "Vances kritik av Irankriget efter valförlusten kan påverka USA:s krigspolitik och relationerna med Iran och allierade under flera månader."
+   },
+   "bekraftad": false,
+   "maste": true,
+   "spar": []
+  },
+  "maste": true,
+  "antal_kallor": 18,
+  "har_primarkalla": false,
+  "senast": "2026-11-05T18:02:08+00:00",
+  "utkast": {
+   "rubrik_sv": "Vance säger att kriget mot Iran låg bakom republikanernas valförlust",
+   "sammanfattning_sv": "Vicepresident JD Vance säger att kriget mot Iran var orsaken till republikanernas förluster i mellanvalet, enligt flera källor. Israels FN-ambassadör Danny Danon avvisar påståendet, medan Trump enligt SVT anser att kriget var värt det.",
+   "rubrik_en": "Vance says Iran war was behind Republican midterm losses",
+   "sammanfattning_en": "Vice President JD Vance says the war against Iran was the reason Republicans lost the midterm elections, according to several sources. Israel's UN ambassador Danny Danon rejects the claim, while Trump, according to SVT, says the war was worth it.",
+   "oenighet": "Vance säger enligt Reuters (via Daily Maverick) och The Hindu att kriget mot Iran var orsaken till valförlusten, och Reuters skriver att han helt skyller på kriget. Israels FN-ambassadör Danny Danon avvisar enligt Middle East Eye påståendet och säger att det är lätt att alltid skylla på Israel. Enligt SVT Nyheter säger Trump att kriget var värt det. Enligt Hindustan Times använder iranska tjänstemän valförlusten för att hävda att kriget har kostat USA politiskt och ekonomiskt.",
+   "oenighet_en": "According to Reuters (via Daily Maverick) and The Hindu, Vance says the Iran war was the reason for the losses, and Reuters writes that he blames it entirely. According to Middle East Eye, Israel's UN ambassador Danny Danon rejects the claim and says it is easy to always blame Israel. According to SVT Nyheter, Trump says the war was worth it. According to Hindustan Times, Iranian officials use the defeat to argue that the war has cost the US politically and economically.",
+   "perspektiv_sv": "Statskontrollerade medier: Tehran Times (Iran) rubricerar att amerikaner straffar Trump för kriget mot Iran och skriver att väljarna gav demokraterna kontrollen över kongressen. The National (Förenade Arabemiraten) lyfter att oljepriset steg igen från en tvåmånadersbotten medan osäkerheten kring kriget kvarstår. Hindustan Times (Indien) lyfter iranska tjänstemäns argument att valförlusten visar att kriget kostat USA politiskt och ekonomiskt. Straits Times (Singapore) skriver att de kommande åtta veckorna är det optimala fönstret för ett amerikanskt militärt angrepp mot Iran. Meduza (Lettland) rubricerar Zelenskyjs hopp om mer amerikanskt stöd från en demokratisk kongress och att Moskva räknar med Trump för fredsansträngningarna. Källorna lyfter alltså olika aspekter: iransk och statskontrollerad rapportering om krigets kostnad, Meduza om Ukraina och Ryssland, och de övriga källorna främst Vances uttalanden.",
+   "perspektiv_en": "State-controlled media: Tehran Times (Iran) headlines that Americans punish Trump over the war on Iran and writes that voters handed Democrats control of Congress. The National (UAE) reports that oil rebounded from a two-month low while uncertainty over the war lingers. Hindustan Times (India) highlights Iranian officials arguing that the Republican defeat shows the war has cost the US politically and economically. The Straits Times (Singapore) writes that the next eight weeks are the optimal window for a US military strike on Iran. Meduza (Latvia) headlines Zelensky's hope for more US support from a Democratic Congress and says Moscow counts on Trump to keep up peace efforts. The sources thus highlight different aspects: Iranian and state-controlled reporting on the cost of the war, Meduza on Ukraine and Russia, and the other sources mainly on Vance's remarks.",
+   "usa_sv": "Medier som AllSides bedömer lutar vänster: NPR rubricerar att senator Kirsten Gillibrand säger att demokraterna måste avsluta Iran-kriget och hålla Trump ansvarig, och ingressen tar upp hennes prioriteringar och frågan om hur de ska genomföras. The New York Times rubricerar att valförlusterna komplicerar Trumps alternativ i Iran-kriget. Axios rubricerar att oljepriserna föll kraftigt efter ett inlägg av Vance och tar upp valet som ett tryck på Vita huset att hitta en väg ur konflikten. Medier som AllSides bedömer lutar höger: Reason rubricerar att J.D. Vance skyller republikanernas valförlust på Iran. De vänsterbedömda källorna lyfter demokraternas agenda, konsekvenserna för Trumps alternativ och oljemarknaden, medan den högerbedömda källan sätter Vances egen utsaga i centrum.",
+   "usa_en": "Media that AllSides rates as leaning left: NPR headlines that Senator Kirsten Gillibrand says Democrats must end the Iran war and hold Trump accountable, and its standfirst covers her priorities and the question of how they will be delivered. The New York Times headlines that the midterm losses complicate Trump's options on the Iran war. Axios headlines that oil prices fell sharply after a post by Vance and frames the election as pressure on the White House to find a way out of the conflict. Media that AllSides rates as leaning right: Reason headlines that J.D. Vance blames Iran for the Republican midterm losses. The left-rated sources highlight the Democratic agenda, the consequences for Trump's options and the oil market, while the right-rated source places Vance's own statement at the center.",
+   "osaker": false,
+   "kommentar": "Underlaget består av rubriker och ingresser, och en del källor har endast rubrik. Vances påstående återges av flera källor, vilket gör sammanfattningen säker. Källorna skiljer sig åt i synen på krigets roll i valet, vilket redovisas i fältet oenighet. Reason-rubriken och ingressen är begränsade till en bildbeskrivning, så underlaget från den källan är tunt."
+  },
+  "kallkontroll": {
+   "ok": false,
+   "antal": 23,
+   "problem": [
+    "egen slutsats: Källorna lyfter olika aspekter, och de övriga källorna främst Vances uttalanden"
+   ],
+   "pastaenden": [
+    {
+     "text": "Vance säger att kriget mot Iran var orsaken till republikanernas valförlust (rubrik)",
+     "stod": [
+      9,
+      11,
+      14
+     ],
+     "problem": null
+    },
+    {
+     "text": "Vance säger att kriget var orsaken till förlusterna i mellanvalet, enligt flera källor (sammanfattning)",
+     "stod": [
+      9,
+      10,
+      11,
+      14
+     ],
+     "problem": null
+    },
+    {
+     "text": "Danny Danon, Israels FN-ambassadör, avvisar påståendet",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Trump säger enligt SVT att kriget var värt det",
+     "stod": [
+      12
+     ],
+     "problem": null
+    },
+    {
+     "text": "Tehran Times rubricerar att amerikaner straffar Trump för kriget mot Iran",
+     "stod": [
+      18
+     ],
+     "problem": null
+    },
+    {
+     "text": "Tehran Times skriver att väljarna gav demokraterna kontrollen över kongressen",
+     "stod": [
+      18
+     ],
+     "problem": null
+    },
+    {
+     "text": "The National lyfter att oljepriset steg igen från en tvåmånadersbotten medan osäkerheten kring kriget kvarstår",
+     "stod": [
+      17
+     ],
+     "problem": null
+    },
+    {
+     "text": "Hindustan Times lyfter iranska tjänstemäns argument att valförlusten visar att kriget kostat USA politiskt och ekonomiskt",
+     "stod": [
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "Straits Times skriver att de kommande åtta veckorna är det optimala fönstret för ett amerikanskt militärt angrepp mot Iran",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "Meduza rubricerar Zelenskyjs hopp om mer amerikanskt stöd från en demokratisk kongress",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Meduza rubricerar att Moskva räknar med Trump för fredsansträngningarna",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR rubricerar att Gillibrand säger att demokraterna måste avsluta Iran-kriget och hålla Trump ansvarig, och ingressen tar upp prioriteringar och hur de ska genomföras",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "NYT rubricerar att valförlusterna komplicerar Trumps alternativ i Iran-kriget",
+     "stod": [
+      16
+     ],
+     "problem": null
+    },
+    {
+     "text": "Axios rubricerar att oljepriserna föll kraftigt efter ett inlägg av Vance",
+     "stod": [
+      13
+     ],
+     "problem": null
+    },
+    {
+     "text": "Axios tar upp valet som ett tryck på Vita huset att hitta en väg ur konflikten",
+     "stod": [
+      13
+     ],
+     "problem": null
+    },
+    {
+     "text": "Reason rubricerar att Vance skyller republikanernas valförlust på Iran",
+     "stod": [
+      10
+     ],
+     "problem": null
+    },
+    {
+     "text": "De vänsterbedömda källorna lyfter demokraternas agenda, konsekvenserna för Trumps alternativ och oljemarknaden, medan Reason sätter Vances utsaga i centrum",
+     "stod": [
+      4,
+      13,
+      16,
+      10
+     ],
+     "problem": null
+    },
+    {
+     "text": "Källorna lyfter olika aspekter, och de övriga källorna främst Vances uttalanden",
+     "stod": [
+      2,
+      5,
+      7,
+      8,
+      13,
+      15,
+      16
+     ],
+     "problem": "egen slutsats"
+    },
+    {
+     "text": "Vance säger enligt Reuters (via Daily Maverick) och The Hindu att kriget var orsaken till valförlusten",
+     "stod": [
+      9,
+      11
+     ],
+     "problem": null
+    },
+    {
+     "text": "Reuters skriver att Vance helt skyller på kriget",
+     "stod": [
+      11
+     ],
+     "problem": null
+    },
+    {
+     "text": "Danon säger enligt Middle East Eye att det är lätt att alltid skylla på Israel",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Enligt SVT Nyheter säger Trump att kriget var värt det",
+     "stod": [
+      12
+     ],
+     "problem": null
+    },
+    {
+     "text": "Enligt Hindustan Times använder iranska tjänstemän valförlusten för att hävda att kriget kostat USA politiskt och ekonomiskt",
+     "stod": [
+      6
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": "Samtliga sakuppgifter stöds av källmaterialet, men perspektivtexten påstår att övriga källor främst fokuserar på Vances uttalanden. Det stämmer inte: NYT, Axios och NPR lyfter andra aspekter, vilket utkastet själv beskriver på ett annat ställe. Generaliseringen bör strykas eller formuleras om."
+  },
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Vance pekar ut Iran-kriget",
+     "namn_en": "Vance blames the Iran war",
+     "lyfter_sv": "The Hindu lyfter fram att Vance kallar Iran-kriget skälet, Reason att han skyller valnederlaget på Iran, Daily Maverick att han helt skyller väljarnas tillrättavisning på kriget och NRK att republikanerna tappade på grund av Iran-kriget.",
+     "lyfter_en": "The Hindu says Vance calls the Iran war the reason, Reason that he blames Iran for the wipeout, Daily Maverick that he blames the voter rebuke wholly on the war and NRK that Republicans lost over the Iran war.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/us-vp-vance-says-iran-war-was-the-reason-republicans-lost-midterms/article71667003.ece"
+      },
+      {
+       "namn": "Reason",
+       "region": "usa",
+       "lutning": "lutar_hoger",
+       "statskontrollerad": false,
+       "url": "https://reason.com/video/2026/11/04/j-d-vance-blames-iran-for-republican-midterm-wipeout/"
+      },
+      {
+       "namn": "Daily Maverick",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dailymaverick.co.za/article/2026-11-04-vance-repudiates-iran-war-after-us-electoral-defeat/"
+      },
+      {
+       "namn": "NRK",
+       "region": "norden",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.nrk.no/nyheter/jd-vance_-republikanerne-tapte-mellomvalget-pa-grunn-av-iran-krigen-1.18073823"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "asien",
+      "norden",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Vance tar avstånd från Trump",
+     "namn_en": "Vance distances himself from Trump",
+     "lyfter_sv": "Africanews lyfter fram att Vance distanserar sig från Trump, BBC att det är ett av de skarpaste brotten med en sittande president, WSJ att han kanske skär loss sig och The Hill frågar om han stämt av med Trump.",
+     "lyfter_en": "Africanews says Vance distances himself from Trump, BBC that it is one of the sharpest breaks with a sitting president, WSJ that he may be cutting himself loose and The Hill asks whether he cleared the message with Trump.",
+     "kallor": [
+      {
+       "namn": "The Hill",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://thehill.com/newsletters/1230-report/6201375-did-vance-clear-post-midterm-message-with-trump/"
+      },
+      {
+       "namn": "Africanews",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "http://www.africanews.com/2026/11/05/jd-vance-distances-himself-from-trump-and-iran-war-after-us-midterms-debacle/"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+       "namn": "The Wall Street Journal",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.wsj.com/politics/vance-breaks-with-trump-and-steps-into-political-abyss-330c7724?mod=rss_socialpoliticsfeed"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten"
+     ]
+    },
+    {
+     "namn_sv": "Iranska reaktioner på valet",
+     "namn_en": "Iranian reactions to the midterms",
+     "lyfter_sv": "Hindustan Times lyfter fram att iranska tjänstemän använder förlusten för att hävda att kriget kostat USA politiskt och ekonomiskt, Tehran Times, statskontrollerat, att väljarna straffar Trump för kriget.",
+     "lyfter_en": "Hindustan Times says Iranian officials use the defeat to argue the war has cost the US politically and economically, and Tehran Times, state-controlled, that American voters punish Trump over the war.",
+     "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/boss-prepping-next-phase-iran-jabs-team-trump-as-jd-vance-blames-war-for-midterms-loss-republicans-democrats-101793874089616.html"
+      },
+      {
+       "namn": "Tehran Times",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.tehrantimes.com/news/531848/Americans-punish-Trump-over-the-war-on-Iran"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Trumps vägval efter valet",
+     "namn_en": "Trump's options after the midterms",
+     "lyfter_sv": "The Straits Times lyfter fram att de åtta veckorna är det bästa läget för en amerikansk attack mot Iran, NYT att mellanårsförlusterna försvårar Trumps alternativ i kriget och SVT att Trump efter förlusten menar att kriget mot Iran var värt det.",
+     "lyfter_en": "The Straits Times says the next eight weeks are the optimal window for a US strike on Iran, NYT that midterm losses complicate Trump's options in the war and SVT that Trump calls the war on Iran worth it after the defeat.",
+     "kallor": [
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/united-states/with-us-congress-flipped-trump-faces-hard-choices-on-the-iran-war"
+      },
+      {
+       "namn": "SVT Nyheter",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.svt.se/nyheter/utrikes/trump-efter-valforlusten-kriget-mot-iran-vart-det"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "sverige",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 14,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: Vance säger att kriget mot Iran låg bakom republikanernas valförlust",
+      "stod": [
+       9,
+       14,
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: Vance kallar Iran-kriget skälet till valförlusten",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "Reason: Vance skyller valnederlaget på Iran",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick: Vance skyller helt väljarnas tillrättavisning på kriget",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "NRK: republikanerna tappade mellanvalet på grund av Iran-kriget",
+      "stod": [
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "Africanews: Vance distanserar sig från Trump",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: Vances kritik är ett av de skarpaste brotten med en sittande president",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ: Vance kanske skär loss sig från Trump (formulerat som fråga i källan)",
+      "stod": [
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill frågar om Vance har stämt av budskapet med Trump",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: iranska tjänstemän använder förlusten för att hävda att kriget kostat USA politiskt och ekonomiskt",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times är statskontrollerat och skriver att väljarna straffar Trump för kriget",
+      "stod": [
+       18
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: de kommande åtta veckorna är det bästa läget för en amerikansk attack mot Iran",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT: mellanårsförlusterna försvårar Trumps alternativ i kriget",
+      "stod": [
+       16
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT: Trump menar efter förlusten att kriget mot Iran var värt det",
+      "stod": [
+       12
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.473,
+  "betydelse": {
+   "sv": "Eftersom oljepriserna föll kraftigt efter Vances inlägg om kriget mot Iran hänger bensin- och dieselpriserna i Sverige ihop med oljepriset på världsmarknaden.",
+   "en": "Because oil prices fell sharply after Vance's post on the Iran war, pump prices for US households track crude oil markets, which now reflect the Iran conflict.",
+   "grund": [
+    13
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Axios",
+     "url": "https://www.axios.com/2026/11/04/oil-prices-plunge-midterms-vance-democrats-iran"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
+  "perspektiv": {
+   "regioner": [
+    "afrika",
+    "asien",
+    "europa",
+    "mellanostern",
+    "norden",
+    "sverige",
+    "usa"
+   ],
+   "per_region": {
+    "europa": [
+     {
+      "kalla": "Meduza",
+      "land": "LV",
+      "rubrik": "Zelensky says he hopes a Democratic Congress will bring more U.S. support, while Moscow counts on Trump to keep up peace efforts",
+      "url": "https://meduza.io/en/feature/2026/11/05/zelensky-says-he-hopes-a-democratic-congress-will-bring-more-u-s-support-while-moscow-counts-on-trump-to-keep-up-peace-efforts",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The Hill",
+      "land": "US",
+      "rubrik": "Did Vance clear postmidterm message with Trump?",
+      "url": "https://thehill.com/newsletters/1230-report/6201375-did-vance-clear-post-midterm-message-with-trump/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "Sen. Gillibrand says Democrats must end Iran war, hold Trump accountable. But how?",
+      "url": "https://www.npr.org/2026/11/05/nx-s1-6028837/kirsten-gillibrand-democrats-congress-priorities",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Reason",
+      "land": "US",
+      "rubrik": "J.D. Vance Blames Iran for Republican Midterm Wipeout",
+      "url": "https://reason.com/video/2026/11/04/j-d-vance-blames-iran-for-republican-midterm-wipeout/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Axios",
+      "land": "US",
+      "rubrik": "Oil prices plunge after Vance post on Iran war",
+      "url": "https://www.axios.com/2026/11/04/oil-prices-plunge-midterms-vance-democrats-iran",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Vice President JD Vance delivered a stunning repudiation of the president’s messaging on the Iran War. Is he cutting himself loose? Read more in today’s WSJ Politics Newsletter:",
+      "url": "https://www.wsj.com/politics/vance-breaks-with-trump-and-steps-into-political-abyss-330c7724?mod=rss_socialpoliticsfeed",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Midterm Election Losses Complicate Trump’s Options on Iran War",
+      "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Middle East Eye",
+      "land": "GB",
+      "rubrik": "Israel's UN ambassador rejects Vance's claim that Iran war was behind midterm losses",
+      "url": "https://www.middleeasteye.net/news/israels-un-ambassador-rejects-vances-claim-iran-war-was-behind-midterm-losses",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Oil rebounds from two-month low as uncertainty lingers over Iran war",
+      "url": "https://www.thenationalnews.com/business/energy/2026/11/05/oil-rebounds-from-two-month-low-as-uncertainty-lingers-over-iran-war/",
+      "statskontrollerad": true
+     },
+     {
+      "kalla": "Tehran Times",
+      "land": "IR",
+      "rubrik": "Americans punish Trump over the war on Iran",
+      "url": "https://www.tehrantimes.com/news/531848/Americans-punish-Trump-over-the-war-on-Iran",
+      "statskontrollerad": true
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "With US Congress flipped, Trump faces hard choices on the Iran war",
+      "url": "https://www.straitstimes.com/world/united-states/with-us-congress-flipped-trump-faces-hard-choices-on-the-iran-war",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "‘Boss prepping next phase’: Iran jabs team Trump as Vance blames war for midterms loss",
+      "url": "https://www.hindustantimes.com/world-news/boss-prepping-next-phase-iran-jabs-team-trump-as-jd-vance-blames-war-for-midterms-loss-republicans-democrats-101793874089616.html",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "U.S. VP Vance says Iran war was the reason Republicans lost midterms",
+      "url": "https://www.thehindu.com/news/international/us-vp-vance-says-iran-war-was-the-reason-republicans-lost-midterms/article71667003.ece",
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "JD Vance distances himself from Trump and Iran war after US midterms debacle",
+      "url": "http://www.africanews.com/2026/11/05/jd-vance-distances-himself-from-trump-and-iran-war-after-us-midterms-debacle/",
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Daily Maverick",
+      "land": "ZA",
+      "rubrik": "Vance repudiates Iran war after US electoral defeat",
+      "url": "https://www.dailymaverick.co.za/article/2026-11-04-vance-repudiates-iran-war-after-us-electoral-defeat/",
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "SVT Nyheter",
+      "land": "SE",
+      "rubrik": "Trump efter valförlusten: Kriget mot Iran värt det",
+      "url": "https://www.svt.se/nyheter/utrikes/trump-efter-valforlusten-kriget-mot-iran-vart-det",
+      "statskontrollerad": false
+     }
+    ],
+    "norden": [
+     {
+      "kalla": "NRK",
+      "land": "NO",
+      "rubrik": "JD Vance: Republikanerne tapte mellomvalget på grunn av Iran-krigen",
+      "url": "https://www.nrk.no/nyheter/jd-vance_-republikanerne-tapte-mellomvalget-pa-grunn-av-iran-krigen-1.18073823",
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": false,
+   "usa": {
+    "mitten": [
+     {
+      "kalla": "The Hill",
+      "rubrik": "Did Vance clear postmidterm message with Trump?",
+      "url": "https://thehill.com/newsletters/1230-report/6201375-did-vance-clear-post-midterm-message-with-trump/",
+      "lutning": "mitten"
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "Vice President JD Vance delivered a stunning repudiation of the president’s messaging on the Iran War. Is he cutting himself loose? Read more in today’s WSJ Politics Newsletter:",
+      "url": "https://www.wsj.com/politics/vance-breaks-with-trump-and-steps-into-political-abyss-330c7724?mod=rss_socialpoliticsfeed",
+      "lutning": "mitten"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "NPR",
+      "rubrik": "Sen. Gillibrand says Democrats must end Iran war, hold Trump accountable. But how?",
+      "url": "https://www.npr.org/2026/11/05/nx-s1-6028837/kirsten-gillibrand-democrats-congress-priorities",
+      "lutning": "lutar_vanster"
+     },
+     {
+      "kalla": "Axios",
+      "rubrik": "Oil prices plunge after Vance post on Iran war",
+      "url": "https://www.axios.com/2026/11/04/oil-prices-plunge-midterms-vance-democrats-iran",
+      "lutning": "lutar_vanster"
+     },
+     {
+      "kalla": "The New York Times",
+      "rubrik": "Midterm Election Losses Complicate Trump’s Options on Iran War",
+      "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+      "lutning": "lutar_vanster"
+     }
+    ],
+    "rod": [
+     {
+      "kalla": "Reason",
+      "rubrik": "J.D. Vance Blames Iran for Republican Midterm Wipeout",
+      "url": "https://reason.com/video/2026/11/04/j-d-vance-blames-iran-for-republican-midterm-wipeout/",
+      "lutning": "lutar_hoger"
+     }
+    ]
+   },
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Zelensky says he hopes a Democratic Congress will bring more U.S. support, while Moscow counts on Trump to keep up peace efforts",
+  "kallor": [
+   {
+    "namn": "Meduza",
+    "rubrik": "Zelensky says he hopes a Democratic Congress will bring more U.S. support, while Moscow counts on Trump to keep up peace efforts",
+    "url": "https://meduza.io/en/feature/2026/11/05/zelensky-says-he-hopes-a-democratic-congress-will-bring-more-u-s-support-while-moscow-counts-on-trump-to-keep-up-peace-efforts",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "LV",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hill",
+    "rubrik": "Did Vance clear postmidterm message with Trump?",
+    "url": "https://thehill.com/newsletters/1230-report/6201375-did-vance-clear-post-midterm-message-with-trump/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Middle East Eye",
+    "rubrik": "Israel's UN ambassador rejects Vance's claim that Iran war was behind midterm losses",
+    "url": "https://www.middleeasteye.net/news/israels-un-ambassador-rejects-vances-claim-iran-war-was-behind-midterm-losses",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NPR",
+    "rubrik": "Sen. Gillibrand says Democrats must end Iran war, hold Trump accountable. But how?",
+    "url": "https://www.npr.org/2026/11/05/nx-s1-6028837/kirsten-gillibrand-democrats-congress-priorities",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "With US Congress flipped, Trump faces hard choices on the Iran war",
+    "url": "https://www.straitstimes.com/world/united-states/with-us-congress-flipped-trump-faces-hard-choices-on-the-iran-war",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "‘Boss prepping next phase’: Iran jabs team Trump as Vance blames war for midterms loss",
+    "url": "https://www.hindustantimes.com/world-news/boss-prepping-next-phase-iran-jabs-team-trump-as-jd-vance-blames-war-for-midterms-loss-republicans-democrats-101793874089616.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Africanews",
+    "rubrik": "JD Vance distances himself from Trump and Iran war after US midterms debacle",
+    "url": "http://www.africanews.com/2026/11/05/jd-vance-distances-himself-from-trump-and-iran-war-after-us-midterms-debacle/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CG",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "BBC World",
+    "rubrik": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+    "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "U.S. VP Vance says Iran war was the reason Republicans lost midterms",
+    "url": "https://www.thehindu.com/news/international/us-vp-vance-says-iran-war-was-the-reason-republicans-lost-midterms/article71667003.ece",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Reason",
+    "rubrik": "J.D. Vance Blames Iran for Republican Midterm Wipeout",
+    "url": "https://reason.com/video/2026/11/04/j-d-vance-blames-iran-for-republican-midterm-wipeout/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Daily Maverick",
+    "rubrik": "Vance repudiates Iran war after US electoral defeat",
+    "url": "https://www.dailymaverick.co.za/article/2026-11-04-vance-repudiates-iran-war-after-us-electoral-defeat/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ZA",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "SVT Nyheter",
+    "rubrik": "Trump efter valförlusten: Kriget mot Iran värt det",
+    "url": "https://www.svt.se/nyheter/utrikes/trump-efter-valforlusten-kriget-mot-iran-vart-det",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Axios",
+    "rubrik": "Oil prices plunge after Vance post on Iran war",
+    "url": "https://www.axios.com/2026/11/04/oil-prices-plunge-midterms-vance-democrats-iran",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NRK",
+    "rubrik": "JD Vance: Republikanerne tapte mellomvalget på grunn av Iran-krigen",
+    "url": "https://www.nrk.no/nyheter/jd-vance_-republikanerne-tapte-mellomvalget-pa-grunn-av-iran-krigen-1.18073823",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "NO",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "Vice President JD Vance delivered a stunning repudiation of the president’s messaging on the Iran War. Is he cutting himself loose? Read more in today’s WSJ Politics Newsletter:",
+    "url": "https://www.wsj.com/politics/vance-breaks-with-trump-and-steps-into-political-abyss-330c7724?mod=rss_socialpoliticsfeed",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Midterm Election Losses Complicate Trump’s Options on Iran War",
+    "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The National",
+    "rubrik": "Oil rebounds from two-month low as uncertainty lingers over Iran war",
+    "url": "https://www.thenationalnews.com/business/energy/2026/11/05/oil-rebounds-from-two-month-low-as-uncertainty-lingers-over-iran-war/",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
+   },
+   {
+    "namn": "Tehran Times",
+    "rubrik": "Americans punish Trump over the war on Iran",
+    "url": "https://www.tehrantimes.com/news/531848/Americans-punish-Trump-over-the-war-on-Iran",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IR",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 2,
+   "en": 3
+  },
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
+  "data": null,
+  "godkand_tid": 1793902591.831983,
   "automatisk": false
  }
 }
