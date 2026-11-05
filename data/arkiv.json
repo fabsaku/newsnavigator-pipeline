@@ -17825,37 +17825,34 @@
   "id": "8a91ca237c",
   "amnen": [
    "geopolitik",
-   "marknader",
-   "sverige"
+   "marknader"
   ],
   "amnen_sektion": [
    "geopolitik",
-   "marknader",
-   "sverige"
+   "marknader"
   ],
-  "poang": 31.4,
+  "poang": 31.5,
   "vikt": {
-   "bredd": 0.217,
+   "bredd": 0.124,
    "regioner": {
     "europa": 1,
     "asien": 1,
-    "sverige": 1,
     "usa": 1
    },
-   "timmar": 83,
+   "timmar": 84,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 5,
     "allvar": 4,
     "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "Bank of England höjer räntan till 4 procent för att bekämpa inflationen, vilket påverkar bolåneräntor och ekonomi i hela Storbritannien, och effekterna märks i månader."
+    "medel": 4.0,
+    "skal": "Storbritanniens centralbank höjer styrräntan till 4 procent för att bekämpa inflationen, vilket påverkar hushåll med lån och hela ekonomin."
    },
    "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 3,
   "har_primarkalla": false,
   "senast": "2026-11-05T18:00:28+00:00",
   "utkast": {
@@ -18004,14 +18001,13 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.644,
+  "sammanhang": 0.747,
   "betydelse": {
-   "sv": "Eftersom Bank of England höjt styrräntan till 4 procent för att bekämpa inflation som drivs av stigande energikostnader. Riksbanken har också höjt sin styrränta, och styrräntor hänger ihop med bolåneräntor för svenska hushåll.",
-   "en": "Because the Bank of England raised its benchmark rate to 4% to fight inflation driven by soaring energy costs, UK mortgage and loan rates are tied to higher borrowing costs.",
+   "sv": null,
+   "en": "Since the Bank of England raised its benchmark rate to 4%, its first increase since 2023, borrowing costs for UK households are tied to that rate, while rising energy costs are pushing up inflation globally.",
    "grund": [
     1,
-    2,
-    3
+    2
    ],
    "grund_kallor": [
     {
@@ -18021,10 +18017,6 @@
     {
      "namn": "Dawn",
      "url": "https://www.dawn.com/news/2042350/bank-of-england-lifts-rate-for-first-time-since-2023-to-fight-inflation"
-    },
-    {
-     "namn": "SVT Nyheter",
-     "url": "https://www.svt.se/nyheter/ekonomi/riksbanken-hojer-rantan-661uov"
     }
    ],
    "kontroll": {
@@ -18037,7 +18029,6 @@
    "regioner": [
     "asien",
     "europa",
-    "sverige",
     "usa"
    ],
    "per_region": {
@@ -18059,15 +18050,6 @@
       "statskontrollerad": false
      }
     ],
-    "sverige": [
-     {
-      "kalla": "SVT Nyheter",
-      "land": "SE",
-      "rubrik": "Riksbanken höjer räntan – och mer väntas",
-      "url": "https://www.svt.se/nyheter/ekonomi/riksbanken-hojer-rantan-661uov",
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
      {
       "kalla": "The Wall Street Journal",
@@ -18078,7 +18060,7 @@
      }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
@@ -18108,17 +18090,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "SVT Nyheter",
-    "rubrik": "Riksbanken höjer räntan – och mer väntas",
-    "url": "https://www.svt.se/nyheter/ekonomi/riksbanken-hojer-rantan-661uov",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Wall Street Journal",
     "rubrik": "Bank of England Raises Rates for First Time Since Start of Iran War",
     "url": "https://www.wsj.com/economy/central-banking/bank-of-england-raises-rates-for-first-time-since-start-of-iran-war-f6353d96?mod=rss_worldnews",
@@ -18132,11 +18103,11 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
+   "sv": 1,
    "en": 3
   },
   "autopilot": [
-   "färre än två svenska källor"
+   "blind fläck"
   ],
   "data": [
    {
@@ -18222,7 +18193,8 @@
    }
   ],
   "godkand_tid": 1793905814.3097808,
-  "automatisk": false
+  "automatisk": false,
+  "uppdaterad_tid": 1793911561.3507814
  },
  "d0fda266d2": {
   "id": "d0fda266d2",
