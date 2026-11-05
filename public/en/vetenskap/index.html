@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:wght@400;600;700;800&display=swap">
 <style>
-:root{--bg:#000;--ink:#fff;--text:#d6d6d6;--mute:#8c8c8c;--rule:#2e2e2e;--panel:#121212;
+:root{color-scheme:dark;--bg:#000;--ink:#fff;--text:#d6d6d6;--mute:#8c8c8c;--rule:#2e2e2e;--panel:#121212;
 --serif:'Source Serif 4',Georgia,'Times New Roman',serif;--sans:'Source Sans 3','Helvetica Neue',Arial,sans-serif}
 *{box-sizing:border-box}html{background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.5 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -38,13 +38,13 @@ header{border-bottom:1px solid var(--ink)}
 .story{display:grid;gap:12px;min-width:0}
 .story .kicker{font-size:14px;color:var(--mute)}
 .story .kicker a{color:var(--mute);text-decoration:none}.story .kicker a:hover{color:var(--ink)}
-.story h2,.story h3{line-height:1.1}
+.story h1,.story h2,.story h3{line-height:1.1}
 .story h2 a,.story h3 a{text-decoration:none}.story h2 a:hover,.story h3 a:hover{text-decoration:underline}
 .story .sum{font:400 19px/1.5 var(--serif);color:var(--text);max-width:64ch}
 .story.lead h2{font-size:50px;line-height:1.04;letter-spacing:-.015em;max-width:20ch}
 .story.lead .sum{font-size:21px}
 .story.featured h3{font-size:28px;max-width:26ch}
-.story.single h2{font-size:48px;line-height:1.06;letter-spacing:-.015em;max-width:24ch}
+.story.single h1,.story.single h2{font-size:48px;line-height:1.06;letter-spacing:-.015em;max-width:24ch}
 .story.single .sum{font-size:22px;max-width:60ch}
 .story.single .cov{max-width:760px}
 .meta{font-size:14px;color:var(--mute)}
@@ -113,7 +113,7 @@ body.en .sv,body:not(.en) .en{display:none}
 .w{padding:0 16px}
 .mast{grid-template-columns:1fr auto;padding:12px 0 10px}.mast .date{display:none}
 .brand{justify-self:start;gap:10px}.brand svg{height:40px}.brand span{font-size:17px}
-.story.lead h2{font-size:34px}.story.single h2{font-size:32px}.story.featured h3{font-size:24px}
+.story.lead h2{font-size:34px}.story.single h1,.story.single h2{font-size:32px}.story.featured h3{font-size:24px}
 .story.lead .sum,.story.single .sum{font-size:19px}
 .cov{gap:3px}.cov .c i{font-size:10.5px}
 .srcfull{columns:1}
@@ -154,6 +154,7 @@ main.w{padding-top:28px}
 
 /* Sidor */
 .pagetitle{font-size:40px;line-height:1.08;letter-spacing:-.012em;margin:4px 0 10px}
+.dold{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .lede{font:400 21px/1.45 var(--serif);color:var(--text);max-width:60ch;margin:0 0 10px}
 .crumb{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:var(--mute);margin:0 0 20px}
 .crumb a{color:var(--ink);text-decoration:none}.crumb a:hover{text-decoration:underline}
@@ -205,9 +206,9 @@ footer{border-top:1px solid var(--ink);margin-top:64px;padding:28px 0 48px}
 <div class="lang"><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></div>
 </div></header>
 <nav aria-label="Sektioner"><div class="w"><a href="/en/">Latest</a><a href="/en/varlden/">World</a><a href="/en/sverige/">Sweden and the Nordics</a><a href="/en/marknader/">Markets</a><a href="/en/tech/">Tech and AI</a><a href="/en/vetenskap/" aria-current=page>Science</a><a href="/en/noje/">Entertainment and games</a><a href="/en/navigatorn/">Navigatorn</a><a href="/en/om/">About</a><a href="/en/kallor/">Sources</a></div></nav>
-<main class="w"><h1 class="pagetitle">Science</h1><div style="margin-top:22px"><article class="story lead"><h2><a href="/en/n/ee36129d7c/">Democrats reportedly take US Senate majority as Mississippi and Alaska races remain undecided</a></h2><p class="sum">According to Hindustan Times, CGTN and Axios, Democrats have won a majority in the US Senate in the midterm elections. Al Jazeera reports that results in Mississippi and Alaska were delayed.</p><div class="cov" role="img" aria-label="Rapporteras i: Sverige 2, Europa 7, USA och Kanada 4, Afrika 1, Mellanöstern 3, Asien och Oceanien 4"><span class="c on"><b></b><i><strong>2</strong> Sweden</i></span><span class="c"><b></b><i>Nordics</i></span><span class="c on"><b></b><i><strong>7</strong> Europe</i></span><span class="c on"><b></b><i><strong>4</strong> US</i></span><span class="c"><b></b><i>Latin America</i></span><span class="c on"><b></b><i><strong>1</strong> Africa</i></span><span class="c on"><b></b><i><strong>3</strong> Middle East</i></span><span class="c on"><b></b><i><strong>4</strong> Asia</i></span><span class="c"><b></b><i>Global</i></span></div><p class="meta">21 sources in six regions.</p><div class="dis"><b>Sources differ.</b> The sources differ on the House of Representatives. Axios writes that Democrats retake the Senate and flip the House, and CGTN, citing Decision Desk HQ, reports that the party controls both chambers. Hindustan Times instead writes that Democrats have made substantial progress toward gaining control of the House.</div><p class="srcline"><a href="https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race" rel="noopener">The Guardian</a>, <a href="https://www.middleeasteye.net/live-blog/live-blog-update/us-midterm-elections-2026-record-number-hijabis-elected-statewide-and" rel="noopener">Middle East Eye</a>, <a href="https://www.thehindu.com/news/international/us-mid-term-election-poll-results-2026-full-list-of-winners/article71663723.ece" rel="noopener">The Hindu</a> <a href="/en/n/ee36129d7c/">and 18 more</a></p></article></div><ul class="list" style="margin-top:36px;max-width:760px"><li><h3><a href="/en/n/77650e4270/">Democrats win control of US Congress in midterm elections</a></h3><p class="meta">13 sources in four regions</p></li><li><h3><a href="/en/n/93d54ed6be/">Talarico projected to win Texas Senate seat in midterms</a></h3><p class="meta">7 sources in five regions</p></li></ul></main>
+<main class="w"><h1 class="pagetitle">Science</h1><p class="empty">No reviewed stories in this section in the past few days.</p></main>
 <footer><div class="w ft">
-<div><p>Stories are summarised with the help of AI and reviewed by the editors before publication. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.</p><p>Last updated 5 November 2026 at 08:09. 133 sources in eight regions.</p></div>
+<div><p>Stories are summarised with the help of AI. Each story says how it was reviewed: by the editors, or source-checked without manual review. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.</p><p>133 sources in eight regions.</p></div>
 <div class="links"><a href="/en/om/">About Newsnavigator and the principles</a><a href="/en/kallor/">All sources</a><a href="/en/navigatorn/">Navigatorn, the morning brief</a><a href="/en/feed.xml">RSS</a><a href="mailto:we@newsnavigator.se">we@newsnavigator.se</a></div>
 <p class="copy">© 2026 Newsnavigator</p>
 </div></footer>
