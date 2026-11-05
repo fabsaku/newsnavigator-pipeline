@@ -23,6 +23,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+import spar
 import utgava
 from newsletter import SECTIONS, section_of, utan_upprepningar
 from render import (CSS, FONTS_URL, JS, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
@@ -34,6 +35,7 @@ CONTACT = "we@newsnavigator.se"
 TZ = ZoneInfo("Europe/Stockholm")
 FRONT_DAYS, SECTION_DAYS = 3, 7
 LATEST, PER_SECTION = 5, 7  # Senaste-listan, och rubriker per sektionsblock utöver den utvalda
+SPAR_PER_SPAR = 6
 
 MONTHS_SV = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
              "september", "oktober", "november", "december"]
@@ -208,7 +210,8 @@ def _write(path, text):
 def _shell(u, *, title, body, active=None, description="", path="/", og=None, banner="", noindex=True, updated=None, nsources=0):
     nav = [(u.home(), "Senaste", "Latest", "hem")]
     nav += [(u.section(k), sv, en, k) for k, sv, en, _ in SECTIONS if not (u.lang == "en" and k == "sverige")]
-    nav += [(u.page("navigatorn"), "Navigatorn", "Navigatorn", "navigatorn"), (u.page("om"), "Om", "About", "om"),
+    nav += [(u.page("spar"), "Spår", "Focus areas", "spar"),
+            (u.page("navigatorn"), "Navigatorn", "Navigatorn", "navigatorn"), (u.page("om"), "Om", "About", "om"),
             (u.page("kallor"), "Källor", "Sources", "kallor")]
     links = "".join(f'<a href="{_e(h)}"{" aria-current=page" if k == active else ""}>{_both(sv, en)}</a>' for h, sv, en, k in nav)
     canonical = u.absolute(path)
@@ -333,6 +336,25 @@ def section_page(u, slug, events, sources, banner, noindex):
                   description=_t(u, f"Granskade nyheter: {sv}.", f"Reviewed news: {en}."), updated=_latest(events), nsources=len(sources))
 
 
+def spar_page(u, events, sources, banner, noindex):
+    """Bevakningsspåren: det senaste i varje spår, så att ett område går att följa över tid."""
+    block = []
+    for slug, sv, en, om_sv, om_en in spar.SPAR:
+        items = [e for e in events if slug in spar.av(e)][:SPAR_PER_SPAR]
+
+        def rad(e):
+            d = spar.delspar(e) if slug == "teknik" else None
+            return story_item(e, u.story(e["id"]), kicker=(_both(d[1], d[2]), f'{u.page("spar")}#teknik') if d else "")
+        lista = (f'<ul class="list" style="max-width:760px">{"".join(rad(e) for e in items)}</ul>' if items else
+                 f'<p class="empty">{_both("Inga notiser i det här spåret de senaste två veckorna.", "No stories in this area in the past two weeks.")}</p>')
+        block.append(f'<section class="block" id="{slug}"><h2>{_both(sv, en)}</h2><p class="lede">{_both(om_sv, om_en)}</p>{lista}</section>')
+    body = (f'<h1 class="pagetitle">{_both("Spår", "Focus areas")}</h1>'
+            f'<p class="lede">{_both("Fem områden som redaktionen följer särskilt. De väger lite extra i urvalet men ändrar aldrig hur en notis är skriven.", "Five areas the editors follow closely. They carry some extra weight in selection but never change how a story is written.")}</p>'
+            + "".join(block))
+    return _shell(u, title=f'{_t(u, "Spår", "Focus areas")}, Newsnavigator', body=body, active="spar", path=u.page("spar"), banner=banner, noindex=noindex,
+                  description=_t(u, "Fem områden som redaktionen följer särskilt.", "Five areas the editors follow closely."), nsources=len(sources))
+
+
 def _ai_note(ev):
     if ev.get("automatisk"):
         return _both("Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns. "
@@ -357,7 +379,9 @@ def story_page(u, ev, related, sources, banner, noindex):
     if related:
         more = (f'<h2 class="more-h">{_both("Fler notiser i", "More in")} {_both(sv, en)}</h2><ul class="list" style="max-width:760px">'
                 + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
-    body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a><span>{_both("Publicerad", "Published")} {pub}</span>{upd}</p>'
+    namn = {s[0]: (s[1], s[2]) for s in spar.SPAR}
+    spor = "".join(f'<a href="{_e(u.page("spar"))}#{k}">{_both(*namn[k])}</a>' for k in spar.av(ev))
+    body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a>{spor}<span>{_both("Publicerad", "Published")} {pub}</span>{upd}</p>'
             f'{story_full(ev, lang=u.lang, rubrik="h1")}'
             f'<p class="aiNote">{_ai_note(ev)} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
     return _shell(u, title=f"{title_sv}, Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
@@ -412,6 +436,9 @@ PRINCIPLES = [
     ("Källkontroll", "Source check",
      "Varje utkast läses en andra gång av AI, som spårar varje påstående till källmaterialet. Ansvaret för fakta ligger hos källan; vårt jobb är att lyfta fram deras granskning och återge den rätt. Notiser där allt går att spåra märks ”Källkontrollerad”.",
      "Every draft is read a second time by AI, which traces each claim to the source material. Responsibility for the facts rests with the source; our job is to highlight their reporting and render it correctly. Stories where everything can be traced are marked “Source-checked”."),
+    ("Fem spår", "Five focus areas",
+     "Redaktionen följer fem områden särskilt: samarbete och fred, angrepp på människor för deras tro, mänskliga rättigheter, miljön och teknikens utveckling. Det är ett öppet val av vad vi tycker är viktigt att bevaka, och spåren väger lite extra i urvalet. De ändrar aldrig hur en notis är skriven. Ett bakslag får samma plats som ett framsteg, och alla länder och religioner mäts med samma mått.",
+     "The editors follow five areas closely: cooperation and peace, attacks on people for their faith, human rights, the environment and the development of technology. This is an open choice of what we think matters, and the areas carry some extra weight in selection. They never change how a story is written. A setback gets the same place as progress, and every country and religion is measured the same way."),
 ]
 
 STEPS = [
@@ -473,7 +500,7 @@ def about_page(u, sources, banner, noindex):
 <p>{_both("Tips, rättelser och frågor:", "Tips, corrections and questions:")} <a href="mailto:{CONTACT}">{CONTACT}</a>. {_both("Ansvarig utgivare är Fabian Sandberg Kuylenstierna, Stockholm.", "The publisher is Fabian Sandberg Kuylenstierna, Stockholm.")}</p>
 </div>"""
     return _shell(u, title=_t(u, "Om Newsnavigator", "About Newsnavigator"), body=body, active="om", path=u.page("om"), banner=banner, noindex=noindex,
-                  description=_t(u, "Vad Newsnavigator är, hur vi arbetar och våra tolv redaktionella principer.",
+                  description=_t(u, "Vad Newsnavigator är, hur vi arbetar och våra tretton redaktionella principer.",
                                  "What Newsnavigator is, how we work and our editorial principles."), nsources=len(sources))
 
 
@@ -581,6 +608,7 @@ def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_is
         related = [r for r in sect_events if r["id"] != ev["id"] and section_of(r) == section_of(ev)][:4]
         _write(u.disk(out, u.story(ev["id"])), story_page(u, ev, related, sources, banner, noindex))
     _write(u.disk(out, u.page("om")), about_page(u, sources, banner, noindex))
+    _write(u.disk(out, u.page("spar")), spar_page(u, events, sources, banner, noindex))
     if not flat and not lang:
         _write(out / "404.html", not_found_page(u, banner, len(sources)))
         _write(out / "_headers", HEADERS)
@@ -652,7 +680,7 @@ def redirects():
 def sitemap_xml(per_utgava):
     urls = ["/"]
     for lang, events in per_utgava.items():
-        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
+        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/spar/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
         urls += [f"/{lang}/{k}/" for k, *_ in SECTIONS]
         urls += [f"/{lang}/n/{e['id']}/" for e in events]
     return ('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'

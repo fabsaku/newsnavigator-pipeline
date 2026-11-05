@@ -8,6 +8,7 @@ Fem delar, alla synliga i flödet så att det går att se varför något hamnade
   uthållighet  hur många timmar händelsen funnits i flödet (data/historik.json). Det som håller i sig är viktigt.
   tyngd        ingår i bredden via källornas vikt.
   bekräftelse  källkontrollen har spårat alla påståenden (läggs på efter utkasten).
+  spår         händelsen hör till ett av redaktionens bevakningsspår (spar.py): lika mycket som ett steg på konsekvensskalan.
   konsekvens   AI:n bedömer bara rubrikerna: hur många som berörs, hur allvarligt, hur varaktigt (1 till 5).
                Kändis, sport och nöje får låg konsekvens även när hela världen skriver om det.
 
@@ -19,6 +20,8 @@ import math
 import re
 import time
 from pathlib import Path
+
+import spar as spar_mod
 
 ROOT = Path(__file__).parent
 HISTORIK = ROOT / "data" / "historik.json"
@@ -166,9 +169,10 @@ def vikt(c, totals, kons=None, bekraftad=None):
     timmar = c.get("timmar", 1)
     k = kons["medel"] if kons else 2.5          # utan AI: neutral mitt
     bek = 1.0 if bekraftad else 0.0 if bekraftad is False else 0.5
-    total = 10 * b + 3 * math.log2(1 + timmar) + 3 * (k - 1) + 2 * bek
+    spar = spar_mod.av_rubriker([t for it in c["items"] for t in (it.get("title_en") or it.get("title"),)])
+    total = 10 * b + 3 * math.log2(1 + timmar) + 3 * (k - 1) + 2 * bek + (spar_mod.VIKT if spar else 0)
     independent = sum(per_region.values())
     primar = len({it["source_id"] for it in c["items"] if it.get("source_type") in ("primar", "forskning")})
     maste = k >= 3 and ((len(per_region) >= 5 and independent >= 8) or primar >= 2)
     return round(total, 1), {"bredd": b, "regioner": per_region, "timmar": timmar, "konsekvens": kons,
-                             "bekraftad": bekraftad, "maste": maste}
+                             "bekraftad": bekraftad, "maste": maste, "spar": spar}

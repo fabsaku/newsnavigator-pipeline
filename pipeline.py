@@ -27,6 +27,7 @@ import yaml
 import berattelser
 import betydelse
 import kallkontroll
+import spar as spar_mod
 import vikt as vikt_mod
 from prompts import SYSTEM_PROMPT, user_prompt
 
@@ -72,6 +73,7 @@ HOME = {"sverige", "norden"}
 DEDICATED = {"spel", "noje"}
 # Platser bland de utvalda händelserna som hålls åt sektioner som sällan når upp i poäng
 RESERVED = {"noje": 4, "sverige": 8}
+SPAR_PLATSER = 2    # platser som hålls åt varje bevakningsspår, när spåret har händelser
 _KW = {}
 
 
@@ -470,7 +472,22 @@ def choose(clusters, limit, reserved=None):
                 break
             chosen.remove(drop)
             chosen.append(extra)
+    # Bevakningsspåren (spar.py) har ofta få källor och når annars aldrig listan.
+    fria = lambda c: sec[id(c)] not in reserved and not _spar(c)
+    for spar_id, *_ in spar_mod.SPAR:
+        missing = SPAR_PLATSER - sum(1 for c in chosen if spar_id in _spar(c))
+        kvar = [c for c in ranked if spar_id in _spar(c) and c not in chosen]
+        for extra in kvar[:max(missing, 0)]:
+            drop = next((c for c in reversed(chosen) if fria(c)), None)
+            if drop is None:
+                break
+            chosen.remove(drop)
+            chosen.append(extra)
     return sorted(chosen, key=lambda c: c["score"], reverse=True)
+
+
+def _spar(c):
+    return (c.get("vikt") or {}).get("spar") or []
 
 
 def assign_id(c, used_ids):

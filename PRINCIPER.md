@@ -41,3 +41,6 @@ Vi visar hur amerikanska medier med olika publik berättar om samma händelse. V
 
 ## 12. Källkontroll före granskning
 Varje utkast läses en andra gång av en kontrollant som spårar påstående för påstående till källmaterialet. Ett påstående utan stöd, en felaktig tillskrivning eller ett värdeord märks och visas för redaktören innan något godkänns. Ansvaret för fakta ligger hos källan: vi återger vad den har rapporterat, och visar vem som rapporterat vad, sida vid sida.
+
+## 13. Fem spår
+Redaktionen följer fem områden särskilt: samarbete och fred, angrepp på människor för deras tro, mänskliga rättigheter, miljön och teknikens utveckling. Det är ett öppet val av vad vi tycker är viktigt att bevaka, och spåren väger lite extra i urvalet. De ändrar aldrig hur en notis är skriven. Ett bakslag får samma plats som ett framsteg, och alla länder och religioner mäts med samma mått.
