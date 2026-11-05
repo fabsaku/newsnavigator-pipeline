@@ -1,6 +1,7 @@
 name: Instagram
 
 # Postar dagens bästa godkända notis som karusell. Bilderna ligger redan ute på sajten (public/ig/).
+# Schemat postar bara när repo-variabeln IG_SCHEMA är 1, så att secrets inte ensamma startar postningen före lanseringen.
 on:
   schedule:
     - cron: "45 5 * * *"    # 07:45 svensk sommartid, 06:45 vintertid
@@ -45,6 +46,8 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.kontroll }}" = "true" ]; then
             python instagram.py kontroll
+          elif [ "${{ github.event_name }}" = "schedule" ] && [ "${{ vars.IG_SCHEMA }}" != "1" ]; then
+            echo "Schemat postar inte: repo-variabeln IG_SCHEMA är inte 1 (sätts efter lanseringen)"
           else
             python instagram.py posta --antal ${{ github.event.inputs.antal || '1' }} --konto ${{ github.event.inputs.konto || 'alla' }}
           fi

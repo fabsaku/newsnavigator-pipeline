@@ -312,3 +312,11 @@ def test_kontrollen_skrivs_ut_utan_token_och_workflowen_har_kontrollage(monkeypa
     assert "@newsnavigator.se" in ut and "HEMLIG-TOKEN-123" not in ut and "97" not in ut or "100" in ut
     wf = (Path(__file__).parent.parent / ".github" / "workflows" / "instagram.yml").read_text(encoding="utf-8")
     assert "kontroll" in wf and "python instagram.py kontroll" in wf
+
+
+def test_schemat_postar_inte_utan_ig_schema():
+    """Secrets ensamma får inte starta postningen: schemat kräver repo-variabeln IG_SCHEMA."""
+    from pathlib import Path
+    wf = (Path(__file__).parent.parent / ".github" / "workflows" / "instagram.yml").read_text(encoding="utf-8")
+    spärr = wf.index('github.event_name }}" = "schedule" ] && [ "${{ vars.IG_SCHEMA }}" != "1"')
+    assert wf.index("python instagram.py kontroll") < spärr < wf.index("python instagram.py posta --antal")
