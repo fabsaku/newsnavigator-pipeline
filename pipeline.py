@@ -767,6 +767,7 @@ def main():
             "utkast": draft,
             "kallkontroll": kontroll,
             "narrativ": narrativ.get(c["id"]),
+            "sammanhang": c.get("sammanhang"),
             "betydelse": bet.get(c["id"]),
             "perspektiv": perspective(c),
             "reserv_rubrik": lead["title"],

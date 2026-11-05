@@ -173,3 +173,28 @@ def test_blind_flack_tas_bort_for_markerade_handelser():
     assert ut["blind_flack"] is None and ut["grannar_svenska"] is True
     c["svensk_bevakning"] = False
     assert pipeline.perspective(c)["blind_flack"] == "saknas_i_sverige"
+
+
+def test_varje_kluster_far_ett_sammanhangsmatt():
+    a = art("A", "Democrats win Congress control in midterm election", 300)
+    b = art("B", "Democrats win Congress control in midterm vote", 290)
+    c = art("C", "Storm Amy floods Gothenburg harbour", 280)
+    d = art("D", "Gothenburg harbour floods in Storm Amy", 270)
+    tabell = {a["title"]: 0, b["title"]: 4, c["title"]: 90, d["title"]: 170}
+    ut = semantisk.sla_ihop(kluster([a, b], [c, d]), kodare_fran(tabell), tau=0.99, min_delade=9)
+    varden = {frozenset(i["source_name"] for i in k["items"]): k["sammanhang"] for k in ut}
+    assert varden[frozenset({"A", "B"})] > 0.99 and varden[frozenset({"C", "D"})] < 0.2
+
+
+def test_enstaka_artikel_ar_helt_sammanhangande_och_utan_modell_finns_inget_matt():
+    kl = kluster([art("A", "Storm Amy floods harbour", 300)], [art("B", "Markets rally on rate cut hopes", 290)])
+    ut = semantisk.sla_ihop(kl, kodare_fran({"Storm Amy floods harbour": 0, "Markets rally on rate cut hopes": 90}), tau=0.99, min_delade=9)
+    assert all(k["sammanhang"] == 1.0 for k in ut)
+    def saknas(texter):
+        raise ImportError("x")
+    assert all("sammanhang" not in k for k in semantisk.sla_ihop(kluster([art("A", "a b c d", 1)], [art("B", "e f g h", 2)]), saknas))
+
+
+def test_pipelinen_ger_handelsen_sammanhanget():
+    import inspect
+    assert '"sammanhang": c.get("sammanhang")' in inspect.getsource(pipeline.main)

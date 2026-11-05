@@ -90,10 +90,32 @@ def sla_ihop(clusters, kodare=None, tau=TAU, min_delade=MIN_DELADE, pair_rate=PA
             break
     lattare = [(i, j) for i, j in _par(vek, BEVAKNING_TAU)
                if flat[i][0]["source_id"] != flat[j][0]["source_id"] and len(flat[i][1] & flat[j][1]) >= BEVAKNING_DELADE]
+    _satt_sammanhang(kl, flat, vek)
     markerade = _markera_svensk_bevakning(kl, flat, lattare)
     if antal_ihop or markerade:
         print(f"Hybridklustringen: {antal_ihop} sammanslagningar ({len(clusters)} kluster blev {len(kl)}), {markerade} händelser utan svensk källa har svensk täckning hos närliggande händelser.")
     return kl
+
+
+def _satt_sammanhang(kl, flat, vek):
+    """Varje klusters sammanhang: medelcosinus mellan alla rubrikpar i klustret (1,0 för en enda rubrik). En stor händelse med högt sammanhang är en
+    enda berättelse; autopiloten stoppar den inte för att den har många källor (autopilot.SAMMANHANG_MIN)."""
+    import math
+    plats = {id(it): n for n, (it, _) in enumerate(flat)}
+    rader = [[float(x) for x in v] for v in vek]
+    normer = [math.sqrt(sum(x * x for x in r)) or 1.0 for r in rader]
+    for c in kl:
+        idx = [plats[id(it)] for it in c["items"] if id(it) in plats]
+        if len(idx) < 2:
+            c["sammanhang"] = 1.0
+            continue
+        summa, par = 0.0, 0
+        for a in range(len(idx)):
+            for b in range(a + 1, len(idx)):
+                i, j = idx[a], idx[b]
+                summa += sum(x * y for x, y in zip(rader[i], rader[j])) / (normer[i] * normer[j])
+                par += 1
+        c["sammanhang"] = round(summa / par, 3)
 
 
 def _markera_svensk_bevakning(kl, flat, forslag):

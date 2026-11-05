@@ -29,6 +29,8 @@ STANDARD = {"pa": False, "tyst": False, "tak": 2, "tak_efter_forsta_veckan": 8, 
             "navigatorn": False}   # sant när brevet skickas: då kräver Behöver dig minst tre notiser
 FORSTA_VECKAN = 7 * 86400
 MAX_KALLOR, MAX_SEKTIONER = 20, 3
+MAX_KALLOR_HARD = 40        # över detta stoppar en händelse alltid som troligen hopslagen
+SAMMANHANG_MIN = 0.6        # en händelse med fler än MAX_KALLOR källor är en enda stor berättelse när rubrikerna hänger ihop (semantisk.py)
 
 # Ord som alltid skickar notisen till redaktören: brottmål med namngivna personer, självmord, sexualbrott, barn.
 # Hela ord; * betyder ordstam.
@@ -76,7 +78,8 @@ def grindar(ev):
     sektioner = _sektioner(ev)
     if "sverige" in sektioner and sum(1 for s in oberoende if s.get("region") == "sverige") < 2:
         skal.append("färre än två svenska källor")
-    if len(kallor) > MAX_KALLOR or len(sektioner) > MAX_SEKTIONER:
+    stor_men_sammanhangande = MAX_KALLOR < len(kallor) <= MAX_KALLOR_HARD and (ev.get("sammanhang") or 0) >= SAMMANHANG_MIN
+    if (len(kallor) > MAX_KALLOR and not stor_men_sammanhangande) or len(sektioner) > MAX_SEKTIONER:
         skal.append("troligen hopslagna händelser")
 
     texter = [d.get("rubrik_sv"), d.get("sammanfattning_sv"), d.get("rubrik_en"), d.get("sammanfattning_en")]
