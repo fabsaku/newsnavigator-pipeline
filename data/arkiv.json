@@ -7348,31 +7348,29 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 36.0,
+  "poang": 30.0,
   "vikt": {
-   "bredd": 0.812,
+   "bredd": 0.283,
    "regioner": {
-    "asien": 4,
-    "mellanostern": 2,
-    "latinamerika": 1,
-    "afrika": 1,
+    "mellanostern": 1,
+    "asien": 2,
     "usa": 1
    },
-   "timmar": 77,
+   "timmar": 83,
    "konsekvens": {
     "berorda": 3,
     "allvar": 3,
-    "varaktighet": 4,
-    "medel": 3.33,
-    "skal": "Ett US-senatsmandat för en delstat går till en ny ledamot med sexårig mandatperiod, vilket ger begränsad men långvarig politisk effekt."
+    "varaktighet": 3,
+    "medel": 3.0,
+    "skal": "Valseger för två senatskandidater i USA, med begränsad politisk effekt utanför delstaterna, men en historisk första för tre svarta kvinnor i senaten samtidigt."
    },
    "bekraftad": true,
-   "maste": true
+   "maste": false
   },
-  "maste": true,
-  "antal_kallor": 9,
+  "maste": false,
+  "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-04T19:48:15+00:00",
+  "senast": "2026-11-04T17:46:52+00:00",
   "utkast": {
    "rubrik_sv": "Abdul El-Sayed vinner Michigans senatsval och blir först muslim i USA:s senat",
    "sammanfattning_sv": "Demokraten Abdul El-Sayed vann enligt medieprognoser Michigans senatsplats över republikanen Mike Rogers och blir först muslim i USA:s senat. Reuters-texten beskriver att kampanjen präglades av angrepp, bland annat från president Trump.",
@@ -7517,22 +7515,161 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Egyptisk reaktion på El-Sayeds val",
+     "namn_en": "Egyptian reaction to El-Sayed's win",
+     "lyfter_sv": "Al-Monitor lyfter fram att prominenta egyptier hyllade El-Sayeds val medan statskontrollerade medier knappt noterade det, och The Straits Times lyfter fram samma kontrast i sin rubrik.",
+     "lyfter_en": "Al-Monitor highlights that prominent Egyptians welcomed El-Sayed's election while state-controlled media barely noted it, and The Straits Times highlights the same contrast in its headline.",
+     "kallor": [
+      {
+       "namn": "Al-Monitor",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.al-monitor.com/originals/2026/11/el-sayeds-senate-win-hailed-egyptians-snubbed-state-media"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/middle-east/el-sayeds-senate-win-hailed-by-egyptians-but-snubbed-by-state-media"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Tre svarta kvinnor i senaten",
+     "namn_en": "Three Black women in the Senate",
+     "lyfter_sv": "Hindustan Times lyfter fram Strattons valseger när tre svarta kvinnor från januari 2027 tjänstgör i senaten, medan Axios, som AllSides bedömer lutar vänster, betonar att det tagit över 235 år för två svarta kvinnor att tjänstgöra samtidigt.",
+     "lyfter_en": "Hindustan Times highlights Stratton's win as three Black women serve in the Senate from January 2027, while Axios, which AllSides rates as leaning left, stresses it took over 235 years for two Black women to serve simultaneously.",
+     "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/us-news/in-a-first-for-us-senate-three-black-women-to-serve-simultaneously-after-stratton-s-midterms-win-101793795951363.html"
+      },
+      {
+       "namn": "Axios",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.axios.com/2026/11/04/juliana-stratton-black-women-senate-record"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Abdul El-Sayed vinner en plats i USA:s senat",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Juliana Stratton vinner en plats i USA:s senat",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Prominenta egyptier hyllade El-Sayeds val",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Statskontrollerade medier noterade knappt El-Sayeds val",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times lyfter i sin rubrik fram kontrasten mellan egyptiers hyllningar och statsmediers tystnad",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times lyfter fram Strattons valseger",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tre svarta kvinnor tjänstgör tillsammans i senaten från januari 2027",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Det tog över 235 år för två svarta kvinnor att tjänstgöra samtidigt i senaten",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios bedöms av AllSides luta vänster",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
   "betydelse": {
    "sv": null,
-   "en": "Because Democrat Abdul El-Sayed won Michigan's open Senate seat, a crucial Democratic seat is preserved in the party's fight for control of the Senate.",
+   "en": "Because Abdul El-Sayed and Juliana Stratton won seats in the US Senate, the chamber gains new members who vote on federal laws and appointments, which shapes policy for US voters.",
    "grund": [
-    6,
-    7
+    1,
+    3,
+    4
    ],
    "grund_kallor": [
     {
-     "namn": "Daily Maverick",
-     "url": "https://www.dailymaverick.co.za/article/2026-11-04-abdul-el-sayed-becomes-first-muslim-elected-to-us-senat/"
+     "namn": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/11/el-sayeds-senate-win-hailed-egyptians-snubbed-state-media"
+    },
+    {
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/us-news/in-a-first-for-us-senate-three-black-women-to-serve-simultaneously-after-stratton-s-midterms-win-101793795951363.html"
     },
     {
      "namn": "Axios",
-     "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers"
+     "url": "https://www.axios.com/2026/11/04/juliana-stratton-black-women-senate-record"
     }
    ],
    "kontroll": {
@@ -7543,74 +7680,33 @@
   },
   "perspektiv": {
    "regioner": [
-    "afrika",
     "asien",
-    "latinamerika",
     "mellanostern",
     "usa"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "El-Sayed's Senate win hailed by Egyptians but snubbed by state media",
+      "url": "https://www.al-monitor.com/originals/2026/11/el-sayeds-senate-win-hailed-egyptians-snubbed-state-media",
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "The Straits Times",
       "land": "SG",
-      "rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
-      "url": "https://www.straitstimes.com/world/middle-east/politics-of-fear-failed-to-stop-el-sayeds-historic-us-senate-win",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "'We did it!': Democrat El-Sayed hails US Senate win, becomes first Muslim elected to upper chamber of Congress",
-      "url": "https://www.dawn.com/news/2042063/we-did-it-democrat-el-sayed-hails-us-senate-win-becomes-first-muslim-elected-to-upper-chamber-of-congress",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Who is Abdul El-Sayed, first Muslim U.S. Senator-elect?",
-      "url": "https://www.thehindu.com/news/international/who-is-abdul-el-sayed-first-muslim-us-senator-elect-united-states-us-midterm-elections-2026/article71664610.ece",
+      "rubrik": "US midterms: El-Sayed’s Senate win hailed by Egyptians but snubbed by state media",
+      "url": "https://www.straitstimes.com/world/middle-east/el-sayeds-senate-win-hailed-by-egyptians-but-snubbed-by-state-media",
       "statskontrollerad": false
      },
      {
       "kalla": "Hindustan Times",
       "land": "IN",
-      "rubrik": "Abdul El-Sayed makes history as first Muslim elected to US Senate, defeats Trump-backed Mike Rogers",
-      "url": "https://www.hindustantimes.com/world-news/us-news/from-doctor-to-senator-abdul-el-sayed-makes-history-as-first-muslim-elected-to-us-senate-defeats-trump-backed-mike-rogers-101793773882515.html",
-      "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
-      "url": "https://www.al-monitor.com/originals/2026/11/politics-fear-failed-stop-el-sayeds-historic-us-senate-win",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Abdul El-Sayed becomes first Muslim to be elected to US Senate",
-      "url": "https://www.thenationalnews.com/news/us/2026/11/04/abdul-el-sayed-becomes-first-muslim-to-be-elected-to-us-senate/",
-      "statskontrollerad": true
-     }
-    ],
-    "latinamerika": [
-     {
-      "kalla": "El Tiempo",
-      "land": "CO",
-      "rubrik": "Del primer senador gay a un musulmán en el Senado: ¿Qué hay detrás de las nuevas caras que llegan al Congreso tras las elecciones en Estados Unidos?",
-      "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/del-primer-senador-gay-a-un-musulman-en-el-senado-que-hay-detras-de-las-nuevas-caras-que-llegan-al-congreso-tras-las-elecciones-en-estados-unidos-3598408",
-      "statskontrollerad": false
-     }
-    ],
-    "afrika": [
-     {
-      "kalla": "Daily Maverick",
-      "land": "ZA",
-      "rubrik": "Abdul El-Sayed becomes first Muslim elected to US Senate",
-      "url": "https://www.dailymaverick.co.za/article/2026-11-04-abdul-el-sayed-becomes-first-muslim-elected-to-us-senat/",
+      "rubrik": "In a first for US Senate, three black women to serve simultaneously after Stratton’s midterms win",
+      "url": "https://www.hindustantimes.com/world-news/us-news/in-a-first-for-us-senate-three-black-women-to-serve-simultaneously-after-stratton-s-midterms-win-101793795951363.html",
       "statskontrollerad": false
      }
     ],
@@ -7618,23 +7714,34 @@
      {
       "kalla": "Axios",
       "land": "US",
-      "rubrik": "El-Sayed becomes first Muslim U.S. senator",
-      "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
+      "rubrik": "Stratton's win sets up Senate first for 3 Black women",
+      "url": "https://www.axios.com/2026/11/04/juliana-stratton-black-women-senate-record",
       "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": null,
-   "grannar_svenska": true,
+   "blind_flack": "saknas_i_sverige",
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
+  "reserv_rubrik": "El-Sayed's Senate win hailed by Egyptians but snubbed by state media",
   "kallor": [
    {
+    "namn": "Al-Monitor",
+    "rubrik": "El-Sayed's Senate win hailed by Egyptians but snubbed by state media",
+    "url": "https://www.al-monitor.com/originals/2026/11/el-sayeds-senate-win-hailed-egyptians-snubbed-state-media",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The Straits Times",
-    "rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
-    "url": "https://www.straitstimes.com/world/middle-east/politics-of-fear-failed-to-stop-el-sayeds-historic-us-senate-win",
+    "rubrik": "US midterms: El-Sayed’s Senate win hailed by Egyptians but snubbed by state media",
+    "url": "https://www.straitstimes.com/world/middle-east/el-sayeds-senate-win-hailed-by-egyptians-but-snubbed-by-state-media",
     "betalvagg": false,
     "typ": "media",
     "land": "SG",
@@ -7643,42 +7750,9 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Al-Monitor",
-    "rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
-    "url": "https://www.al-monitor.com/originals/2026/11/politics-fear-failed-stop-el-sayeds-historic-us-senate-win",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "El Tiempo",
-    "rubrik": "Del primer senador gay a un musulmán en el Senado: ¿Qué hay detrás de las nuevas caras que llegan al Congreso tras las elecciones en Estados Unidos?",
-    "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/del-primer-senador-gay-a-un-musulman-en-el-senado-que-hay-detras-de-las-nuevas-caras-que-llegan-al-congreso-tras-las-elecciones-en-estados-unidos-3598408",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CO",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dawn",
-    "rubrik": "'We did it!': Democrat El-Sayed hails US Senate win, becomes first Muslim elected to upper chamber of Congress",
-    "url": "https://www.dawn.com/news/2042063/we-did-it-democrat-el-sayed-hails-us-senate-win-becomes-first-muslim-elected-to-upper-chamber-of-congress",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Who is Abdul El-Sayed, first Muslim U.S. Senator-elect?",
-    "url": "https://www.thehindu.com/news/international/who-is-abdul-el-sayed-first-muslim-us-senator-elect-united-states-us-midterm-elections-2026/article71664610.ece",
+    "namn": "Hindustan Times",
+    "rubrik": "In a first for US Senate, three black women to serve simultaneously after Stratton’s midterms win",
+    "url": "https://www.hindustantimes.com/world-news/us-news/in-a-first-for-us-senate-three-black-women-to-serve-simultaneously-after-stratton-s-midterms-win-101793795951363.html",
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
@@ -7687,48 +7761,15 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Daily Maverick",
-    "rubrik": "Abdul El-Sayed becomes first Muslim elected to US Senate",
-    "url": "https://www.dailymaverick.co.za/article/2026-11-04-abdul-el-sayed-becomes-first-muslim-elected-to-us-senat/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ZA",
-    "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Axios",
-    "rubrik": "El-Sayed becomes first Muslim U.S. senator",
-    "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
+    "rubrik": "Stratton's win sets up Senate first for 3 Black women",
+    "url": "https://www.axios.com/2026/11/04/juliana-stratton-black-women-senate-record",
     "betalvagg": false,
     "typ": "media",
     "land": "US",
     "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "Abdul El-Sayed makes history as first Muslim elected to US Senate, defeats Trump-backed Mike Rogers",
-    "url": "https://www.hindustantimes.com/world-news/us-news/from-doctor-to-senator-abdul-el-sayed-makes-history-as-first-muslim-elected-to-us-senate-defeats-trump-backed-mike-rogers-101793773882515.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The National",
-    "rubrik": "Abdul El-Sayed becomes first Muslim to be elected to US Senate",
-    "url": "https://www.thenationalnews.com/news/us/2026/11/04/abdul-el-sayed-becomes-first-muslim-to-be-elected-to-us-senate/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "AE",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
    }
   ],
   "granskad": true,
@@ -7736,10 +7777,14 @@
    "sv": 1,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "blind fläck"
+  ],
   "data": null,
   "godkand_tid": 1793830210.56248,
-  "automatisk": true
+  "automatisk": true,
+  "sammanhang": 0.434,
+  "uppdaterad_tid": 1793851787.3522193
  },
  "93d54ed6be": {
   "id": "93d54ed6be",
@@ -8969,36 +9014,37 @@
  "79c6d0122f": {
   "id": "79c6d0122f",
   "amnen": [
+   "geopolitik",
    "usa"
   ],
   "amnen_sektion": [
+   "geopolitik",
    "usa"
   ],
-  "poang": 36.2,
+  "poang": 35.5,
   "vikt": {
-   "bredd": 0.812,
+   "bredd": 0.569,
    "regioner": {
-    "asien": 4,
-    "mellanostern": 2,
-    "latinamerika": 1,
+    "asien": 2,
     "afrika": 1,
-    "usa": 1
+    "usa": 1,
+    "mellanostern": 2
    },
-   "timmar": 82,
+   "timmar": 96,
    "konsekvens": {
-    "berorda": 3,
+    "berorda": 4,
     "allvar": 3,
     "varaktighet": 4,
-    "medel": 3.33,
-    "skal": "En delstats senatsplats och en ny senator som varar i flera år, men med begränsad direkt påverkan utanför politiken."
+    "medel": 3.67,
+    "skal": "Abdul El-Sayed blir första muslim i USA:s senat, en politisk milstolpe för en sexårig mandatperiod i en delstat."
    },
    "bekraftad": true,
-   "maste": true
+   "maste": false
   },
-  "maste": true,
-  "antal_kallor": 9,
+  "maste": false,
+  "antal_kallor": 6,
   "har_primarkalla": false,
-  "senast": "2026-11-04T19:48:15+00:00",
+  "senast": "2026-11-04T17:46:35+00:00",
   "utkast": {
    "rubrik_sv": "Abdul El-Sayed vinner Michigans senatsval och blir första muslim i USA:s senat",
    "sammanfattning_sv": "Demokraten Abdul El-Sayed vann enligt AP och amerikanska nätverk över republikanen Mike Rogers i Michigans senatsval och blir den första muslimen som väljs till USA:s senat. Enligt Reuters kallade presidenten honom jihadist under kampanjen.",
@@ -9144,51 +9190,24 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Politik av rädsla i kampanjen",
-     "namn_en": "Politics of fear in the campaign",
-     "lyfter_sv": "The Straits Times lyfter fram att kritiker kallade kampanjen en av de mest islamofobiska i modern amerikansk politik, medan Al-Monitor lyfter fram att presidenten kallade honom jihadist och att kampanjmaterial kopplade honom till terrorister.",
-     "lyfter_en": "The Straits Times highlights that critics called the campaign one of the most Islamophobic in modern US politics, while Al-Monitor highlights that the president branded him a jihadist and that campaign mailers linked him to terrorists.",
+     "namn_sv": "Första muslimska senatorn",
+     "namn_en": "First Muslim senator",
+     "lyfter_sv": "The Hindu frågar vem El-Sayed är som USA:s första muslimska senatorvald, Daily Maverick lyfter fram att han blivit första muslim vald till senaten, och The National bekräftar samma milstolpe.",
+     "lyfter_en": "The Hindu asks who El-Sayed is as the first Muslim senator-elect, Daily Maverick highlights that he became the first Muslim elected to the Senate, and The National reports the same milestone.",
      "kallor": [
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/united-states/politics-of-fear-failed-to-stop-el-sayeds-historic-us-senate-win"
-      },
-      {
-       "namn": "Al-Monitor",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.al-monitor.com/originals/2026/11/politics-fear-failed-stop-el-sayeds-historic-us-senate-win"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "mellanostern"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Första muslim i senaten",
-     "namn_en": "First Muslim in the Senate",
-     "lyfter_sv": "Dawn lyfter fram El-Sayeds segerfirande och att han blir första muslim i överhuset, The Hindu lyfter fram vem han är, och The National lyfter fram att han blir första muslim i senaten.",
-     "lyfter_en": "Dawn highlights El-Sayed's victory celebration and that he becomes the first Muslim in the upper chamber, The Hindu highlights who he is, and The National highlights that he becomes the first Muslim in the Senate.",
-     "kallor": [
-      {
-       "namn": "Dawn",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2042063/we-did-it-democrat-el-sayed-hails-us-senate-win-becomes-first-muslim-elected-to-upper-chamber-of-congress"
-      },
       {
        "namn": "The Hindu",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.thehindu.com/news/international/who-is-abdul-el-sayed-first-muslim-us-senator-elect-united-states-us-midterm-elections-2026/article71664610.ece"
+      },
+      {
+       "namn": "Daily Maverick",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dailymaverick.co.za/article/2026-11-04-abdul-el-sayed-becomes-first-muslim-elected-to-us-senat/"
       },
       {
        "namn": "The National",
@@ -9199,34 +9218,35 @@
       }
      ],
      "regioner": [
+      "afrika",
       "asien",
       "mellanostern"
      ],
      "usa_sidor": []
     },
     {
-     "namn_sv": "Kampen om senatsmajoriteten",
-     "namn_en": "The fight for Senate control",
-     "lyfter_sv": "Daily Maverick lyfter fram att El-Sayed behöll ett avgörande demokratiskt säte i partiets kamp om senaten, medan Axios lyfter fram att hans seger visar att en öppet progressiv kandidat kan vinna i en vågmålsdelstat.",
-     "lyfter_en": "Daily Maverick highlights that El-Sayed preserved a crucial Democratic seat in the party's fight for the Senate, while Axios highlights that his win shows an openly progressive candidate can win in a battleground state.",
+     "namn_sv": "Progressiv profil och politisk linje",
+     "namn_en": "Progressive profile and policy stance",
+     "lyfter_sv": "Axios lyfter fram att en uttalat progressiv kandidat kan vinna i en avgörande delstat, medan Tehran Times lyfter fram El-Sayeds ståndpunkt att amerikanska skattepengar inte ska finansiera Israels krig.",
+     "lyfter_en": "Axios highlights that an openly progressive candidate can win in a battleground state, while Tehran Times highlights El-Sayed's position that US tax dollars should not fund Israel's war.",
      "kallor": [
-      {
-       "namn": "Daily Maverick",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dailymaverick.co.za/article/2026-11-04-abdul-el-sayed-becomes-first-muslim-elected-to-us-senat/"
-      },
       {
        "namn": "Axios",
        "region": "usa",
        "lutning": "lutar_vanster",
        "statskontrollerad": false,
        "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers"
+      },
+      {
+       "namn": "Tehran Times",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.tehrantimes.com/news/531846/Senator-elect-El-Sayed-says-US-tax-dollars-should-not-fund-Israel-s"
       }
      ],
      "regioner": [
-      "afrika",
+      "mellanostern",
       "usa"
      ],
      "usa_sidor": [
@@ -9236,95 +9256,60 @@
    ],
    "kontroll": {
     "ok": true,
-    "antal": 12,
+    "antal": 7,
     "problem": [],
     "pastaenden": [
      {
-      "text": "El-Sayed vinner Michigans senatsval enligt prognoser",
+      "text": "El-Sayed vann Michigans senatsplats",
       "stod": [
-       7,
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "El-Sayed blir första muslim i USA:s senat",
-      "stod": [
+       3,
        4,
-       6,
-       7,
-       8,
-       9
+       5
       ],
       "problem": null
      },
      {
-      "text": "Kritiker kallade kampanjen en av de mest islamofobiska i modern amerikansk politik",
+      "text": "El-Sayed blir USA:s första muslimska senator",
       "stod": [
-       1
+       3,
+       4,
+       5,
+       6
       ],
       "problem": null
      },
      {
-      "text": "The Straits Times lyfter fram att kritiker kallade kampanjen islamofobisk",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Presidenten kallade El-Sayed jihadist",
+      "text": "The Hindu frågar vem El-Sayed är som första muslimska senatorvald",
       "stod": [
        2
       ],
       "problem": null
      },
      {
-      "text": "Kampanjmaterial kopplade El-Sayed till terrorister",
+      "text": "Daily Maverick lyfter fram att han blivit första muslim vald till senaten",
       "stod": [
-       2
+       3
       ],
       "problem": null
      },
      {
-      "text": "Dawn lyfter fram El-Sayeds segerfirande",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn lyfter fram att El-Sayed blir första muslim i överhuset",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu lyfter fram vem El-Sayed är",
+      "text": "The National bekräftar milstolpen att han är första muslim vald till senaten",
       "stod": [
        6
       ],
       "problem": null
      },
      {
-      "text": "The National lyfter fram att El-Sayed blir första muslim i senaten",
+      "text": "Axios lyfter fram att en uttalat progressiv kandidat kan vinna i en avgörande delstat",
       "stod": [
-       9
+       4
       ],
       "problem": null
      },
      {
-      "text": "Daily Maverick lyfter fram att El-Sayed behöll ett avgörande demokratiskt säte i partiets kamp om senaten",
+      "text": "Tehran Times lyfter fram El-Sayeds ståndpunkt att amerikanska skattepengar inte ska finansiera Israels krig",
       "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Axios lyfter fram att en öppet progressiv kandidat kan vinna i en vågmålsdelstat",
-      "stod": [
-       8
+       5
       ],
       "problem": null
      }
@@ -9335,14 +9320,19 @@
   },
   "betydelse": {
    "sv": null,
-   "en": "Since El-Sayed won Michigan's open Senate seat, which Democrats were defending in the fight for Senate control, the result bears directly on which party holds the Senate majority.",
+   "en": "Because Democrat Abdul El-Sayed won Michigan's open Senate seat, which is crucial to the Democrats' fight for control of the Senate, the result is tied to the balance of power in Congress.",
    "grund": [
-    7
+    3,
+    4
    ],
    "grund_kallor": [
     {
      "namn": "Daily Maverick",
      "url": "https://www.dailymaverick.co.za/article/2026-11-04-abdul-el-sayed-becomes-first-muslim-elected-to-us-senat/"
+    },
+    {
+     "namn": "Axios",
+     "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers"
     }
    ],
    "kontroll": {
@@ -9355,26 +9345,11 @@
    "regioner": [
     "afrika",
     "asien",
-    "latinamerika",
     "mellanostern",
     "usa"
    ],
    "per_region": {
     "asien": [
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "US midterms: Politics of fear failed to stop El-Sayed’s historic US Senate win",
-      "url": "https://www.straitstimes.com/world/united-states/politics-of-fear-failed-to-stop-el-sayeds-historic-us-senate-win",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "'We did it!': Democrat El-Sayed hails US Senate win, becomes first Muslim elected to upper chamber of Congress",
-      "url": "https://www.dawn.com/news/2042063/we-did-it-democrat-el-sayed-hails-us-senate-win-becomes-first-muslim-elected-to-upper-chamber-of-congress",
-      "statskontrollerad": false
-     },
      {
       "kalla": "Hindustan Times",
       "land": "IN",
@@ -9387,31 +9362,6 @@
       "land": "IN",
       "rubrik": "Who is Abdul El-Sayed, first Muslim U.S. Senator-elect?",
       "url": "https://www.thehindu.com/news/international/who-is-abdul-el-sayed-first-muslim-us-senator-elect-united-states-us-midterm-elections-2026/article71664610.ece",
-      "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
-      "url": "https://www.al-monitor.com/originals/2026/11/politics-fear-failed-stop-el-sayeds-historic-us-senate-win",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Abdul El-Sayed becomes first Muslim to be elected to US Senate",
-      "url": "https://www.thenationalnews.com/news/us/2026/11/04/abdul-el-sayed-becomes-first-muslim-to-be-elected-to-us-senate/",
-      "statskontrollerad": true
-     }
-    ],
-    "latinamerika": [
-     {
-      "kalla": "El Tiempo",
-      "land": "CO",
-      "rubrik": "Del primer senador gay a un musulmán en el Senado: ¿Qué hay detrás de las nuevas caras que llegan al Congreso tras las elecciones en Estados Unidos?",
-      "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/del-primer-senador-gay-a-un-musulman-en-el-senado-que-hay-detras-de-las-nuevas-caras-que-llegan-al-congreso-tras-las-elecciones-en-estados-unidos-3598408",
       "statskontrollerad": false
      }
     ],
@@ -9432,59 +9382,31 @@
       "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
       "statskontrollerad": false
      }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Tehran Times",
+      "land": "IR",
+      "rubrik": "Senator-elect El-Sayed says US tax dollars should not fund Israel’s ‘genocidal war’",
+      "url": "https://www.tehrantimes.com/news/531846/Senator-elect-El-Sayed-says-US-tax-dollars-should-not-fund-Israel-s",
+      "statskontrollerad": true
+     },
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Abdul El-Sayed becomes first Muslim to be elected to US Senate",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/04/abdul-el-sayed-becomes-first-muslim-to-be-elected-to-us-senate/",
+      "statskontrollerad": true
+     }
     ]
    },
-   "blind_flack": null,
-   "grannar_svenska": true,
+   "blind_flack": "saknas_i_sverige",
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "US midterms: Politics of fear failed to stop El-Sayed’s historic US Senate win",
+  "reserv_rubrik": "Aber Kawas becomes first Palestinian-American elected to New York State Senate, defeats Republican Han-Khon To",
   "kallor": [
-   {
-    "namn": "The Straits Times",
-    "rubrik": "US midterms: Politics of fear failed to stop El-Sayed’s historic US Senate win",
-    "url": "https://www.straitstimes.com/world/united-states/politics-of-fear-failed-to-stop-el-sayeds-historic-us-senate-win",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al-Monitor",
-    "rubrik": "Politics of fear failed to stop El-Sayed's historic US Senate win",
-    "url": "https://www.al-monitor.com/originals/2026/11/politics-fear-failed-stop-el-sayeds-historic-us-senate-win",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "El Tiempo",
-    "rubrik": "Del primer senador gay a un musulmán en el Senado: ¿Qué hay detrás de las nuevas caras que llegan al Congreso tras las elecciones en Estados Unidos?",
-    "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/del-primer-senador-gay-a-un-musulman-en-el-senado-que-hay-detras-de-las-nuevas-caras-que-llegan-al-congreso-tras-las-elecciones-en-estados-unidos-3598408",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CO",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dawn",
-    "rubrik": "'We did it!': Democrat El-Sayed hails US Senate win, becomes first Muslim elected to upper chamber of Congress",
-    "url": "https://www.dawn.com/news/2042063/we-did-it-democrat-el-sayed-hails-us-senate-win-becomes-first-muslim-elected-to-upper-chamber-of-congress",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
    {
     "namn": "Hindustan Times",
     "rubrik": "Aber Kawas becomes first Palestinian-American elected to New York State Senate, defeats Republican Han-Khon To",
@@ -9530,6 +9452,17 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Tehran Times",
+    "rubrik": "Senator-elect El-Sayed says US tax dollars should not fund Israel’s ‘genocidal war’",
+    "url": "https://www.tehrantimes.com/news/531846/Senator-elect-El-Sayed-says-US-tax-dollars-should-not-fund-Israel-s",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IR",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
+   },
+   {
     "namn": "The National",
     "rubrik": "Abdul El-Sayed becomes first Muslim to be elected to US Senate",
     "url": "https://www.thenationalnews.com/news/us/2026/11/04/abdul-el-sayed-becomes-first-muslim-to-be-elected-to-us-senate/",
@@ -9546,12 +9479,14 @@
    "sv": 1,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "blind fläck"
+  ],
   "data": null,
   "godkand_tid": 1793837402.5207515,
   "automatisk": true,
-  "uppdaterad_tid": 1793848229.5069418,
-  "sammanhang": 0.571
+  "uppdaterad_tid": 1793851787.3522193,
+  "sammanhang": 0.601
  },
  "0885b658b7": {
   "id": "0885b658b7",
