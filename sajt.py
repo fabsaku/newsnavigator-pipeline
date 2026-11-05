@@ -24,7 +24,7 @@ from zoneinfo import ZoneInfo
 import yaml
 
 import utgava
-from newsletter import SECTIONS, section_of
+from newsletter import SECTIONS, section_of, utan_upprepningar
 from render import (CSS, FONTS_URL, JS, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
                     story_featured, story_full, story_item, story_lead)
 
@@ -34,7 +34,6 @@ CONTACT = "we@newsnavigator.se"
 TZ = ZoneInfo("Europe/Stockholm")
 FRONT_DAYS, SECTION_DAYS = 3, 7
 LATEST, PER_SECTION = 5, 7  # Senaste-listan, och rubriker per sektionsblock utöver den utvalda
-PER_FAMILJ = 2  # notiser om samma händelse på förstasidan; alla finns kvar på sektionssidan
 
 MONTHS_SV = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
              "september", "oktober", "november", "december"]
@@ -284,22 +283,11 @@ def _section_link(u, slug):
     return (_both(sv, en), u.section(slug))
 
 
-def _utan_upprepningar(events):
-    """Förstasidan visar högst PER_FAMILJ notiser per händelse: de med flest källor, i ursprunglig ordning."""
-    from lansering import _familjer
-    familjer = {}
-    for e, f in zip(events, _familjer([{"ev": e} for e in events])):
-        familjer.setdefault(f, []).append(e)
-    behall = {id(e) for grupp in familjer.values()
-              for e in sorted(grupp, key=lambda x: x.get("antal_kallor", 0), reverse=True)[:PER_FAMILJ]}
-    return [e for e in events if id(e) in behall]
-
-
 def front(u, events, sources, banner, noindex):
     if not events:
         body = _waiting(u)
     else:
-        alla, events = events, _utan_upprepningar(events)
+        alla, events = events, utan_upprepningar(events)
         lead, rest = events[0], events[1:]
         latest, rest = rest[:LATEST], rest[LATEST:]
         top = (f'<section class="top">{story_lead(lead, u.story(lead["id"]), kicker=_section_link(u, section_of(lead)))}'

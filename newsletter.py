@@ -131,6 +131,18 @@ def archive(events, approved, automatic=()):
 
 # ---------- Urval ----------
 
+def utan_upprepningar(events, per_familj=2):
+    """Högst per_familj notiser om samma händelse: de med flest källor, i ursprunglig ordning.
+    Förstasidan och brevet använder det; alla notiser finns kvar på sektionssidorna."""
+    from lansering import _familjer
+    familjer = {}
+    for e, f in zip(events, _familjer([{"ev": e} for e in events])):
+        familjer.setdefault(f, []).append(e)
+    behall = {id(e) for grupp in familjer.values()
+              for e in sorted(grupp, key=lambda x: x.get("antal_kallor", 0), reverse=True)[:per_familj]}
+    return [e for e in events if id(e) in behall]
+
+
 def pick(include_drafts, hours=24, limit=12):
     since = time.time() - hours * 3600
     chosen = sorted((e for e in load_archive().values() if e.get("godkand_tid", 0) >= since),
@@ -144,7 +156,7 @@ def pick(include_drafts, hours=24, limit=12):
             chosen.append({**e, "granskad": False})
             if len(chosen) >= limit:
                 break
-    chosen = chosen[:limit]
+    chosen = utan_upprepningar(chosen)[:limit]
     groups = {key: [] for key, *_ in SECTIONS}
     for e in chosen:
         groups[section_of(e)].append(e)

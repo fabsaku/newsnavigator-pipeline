@@ -175,10 +175,10 @@ def test_forhandsvisningen_ar_oforandrad_tvasprakig(tmp_path):
 
 
 def test_forstasidan_visar_hogst_tva_notiser_per_handelse():
-    import sajt
+    import newsletter
     def notis(i, rubrik, kallor):
         return {"id": str(i), "antal_kallor": kallor, "reserv_rubrik": rubrik, "kallor": [{"url": f"https://k/{i}"}], "utkast": {}}
     val = [notis(i, "Democrats win control of Congress in midterm election", i + 1) for i in range(4)]
     annan = notis(9, "Train crash near Toledo in Spain leaves many dead", 2)
-    kvar = sajt._utan_upprepningar(val + [annan])
+    kvar = newsletter.utan_upprepningar(val + [annan])
     assert [e["id"] for e in kvar] == ["2", "3", "9"]
