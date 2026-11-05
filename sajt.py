@@ -34,6 +34,7 @@ CONTACT = "we@newsnavigator.se"
 TZ = ZoneInfo("Europe/Stockholm")
 FRONT_DAYS, SECTION_DAYS = 3, 7
 LATEST, PER_SECTION = 5, 7  # Senaste-listan, och rubriker per sektionsblock utöver den utvalda
+PER_FAMILJ = 2  # notiser om samma händelse på förstasidan; alla finns kvar på sektionssidan
 
 MONTHS_SV = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
              "september", "oktober", "november", "december"]
@@ -78,6 +79,7 @@ main.w{padding-top:28px}
 
 /* Sidor */
 .pagetitle{font-size:40px;line-height:1.08;letter-spacing:-.012em;margin:4px 0 10px}
+.dold{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .lede{font:400 21px/1.45 var(--serif);color:var(--text);max-width:60ch;margin:0 0 10px}
 .crumb{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:var(--mute);margin:0 0 20px}
 .crumb a{color:var(--ink);text-decoration:none}.crumb a:hover{text-decoration:underline}
@@ -282,10 +284,22 @@ def _section_link(u, slug):
     return (_both(sv, en), u.section(slug))
 
 
+def _utan_upprepningar(events):
+    """Förstasidan visar högst PER_FAMILJ notiser per händelse: de med flest källor, i ursprunglig ordning."""
+    from lansering import _familjer
+    familjer = {}
+    for e, f in zip(events, _familjer([{"ev": e} for e in events])):
+        familjer.setdefault(f, []).append(e)
+    behall = {id(e) for grupp in familjer.values()
+              for e in sorted(grupp, key=lambda x: x.get("antal_kallor", 0), reverse=True)[:PER_FAMILJ]}
+    return [e for e in events if id(e) in behall]
+
+
 def front(u, events, sources, banner, noindex):
     if not events:
         body = _waiting(u)
     else:
+        alla, events = events, _utan_upprepningar(events)
         lead, rest = events[0], events[1:]
         latest, rest = rest[:LATEST], rest[LATEST:]
         top = (f'<section class="top">{story_lead(lead, u.story(lead["id"]), kicker=_section_link(u, section_of(lead)))}'
@@ -299,7 +313,7 @@ def front(u, events, sources, banner, noindex):
                 continue
             first, more = items[0], items[1:PER_SECTION + 1]
             left = story_featured(first, u.story(first["id"]))
-            tail = len(items) - 1 - len(more)
+            tail = sum(1 for e in alla if section_of(e) == slug) - 1 - len(more)
             link = (f'<p class="more"><a href="{_e(u.section(slug))}">{_both(f"Fler notiser i {sv}", f"More in {en}")} ({tail})</a></p>'
                     if tail > 0 else "")
             if more:
@@ -308,7 +322,7 @@ def front(u, events, sources, banner, noindex):
             else:
                 inner = f'<div class="one">{left}{link}</div>'
             blocks.append(f'<section class="block"><h2><a href="{_e(u.section(slug))}">{_both(sv, en)}</a></h2>{inner}</section>')
-        body = top + "".join(blocks)
+        body = '<h1 class="dold">Newsnavigator</h1>' + top + "".join(blocks)
     return _shell(u, title="Newsnavigator", body=body, active="hem", path=u.home(), banner=banner, noindex=noindex,
                   description=_t(u, "Nyheter från hela världen, samlade och granskade. Se hur olika länder och medier berättar om samma händelse.",
                                  "News from around the world, gathered and reviewed. See how different countries and outlets tell the same event."),
