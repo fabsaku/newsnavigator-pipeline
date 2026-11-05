@@ -58,7 +58,7 @@ TXT = {
            "blind_sv": "Saknas i svenska medier", "only_sv": "Bara i svenska medier",
            "mest_bla": "Mest i medier med blå publik", "mest_rod": "Mest i medier med röd publik",
            "ai_granskad": "Sammanfattad med hjälp av AI och granskad av redaktionen.",
-           "ai_auto": "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns.",
+           "ai_auto": "Sammanfattad med hjälp av AI och maskinellt källkontrollerad. Publicerad utan manuell granskning; rättelser syns.",
            "words": {1: "en", 2: "två", 3: "tre", 4: "fyra", 5: "fem", 6: "sex", 7: "sju", 8: "åtta", 9: "nio"}},
     "en": {"swipe": "Next page: how the world sees it", "world": "How the world sees it",
            "world_lede": "Headlines from {k} regions, one per region. Links to all of them on our site.",
@@ -70,7 +70,7 @@ TXT = {
            "src1": "source", "srcn": "sources", "in": "in", "reg1": "region", "regn": "regions",
            "mest_bla": "Mostly in outlets with a blue audience", "mest_rod": "Mostly in outlets with a red audience",
            "ai_granskad": "Summarised with the help of AI and reviewed by the editors.",
-           "ai_auto": "Summarised with the help of AI and source-checked. Published without manual review; corrections are visible.",
+           "ai_auto": "Summarised with the help of AI and machine source-checked. Published without manual review; corrections are visible.",
            "words": {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine"}},
 }
 

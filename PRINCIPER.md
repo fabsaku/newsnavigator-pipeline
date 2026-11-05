@@ -23,7 +23,7 @@ Om det finns ett beslut, en rapport eller en studie länkar vi till originalet, 
 Sammanfattningar skrivs med egna ord och bygger på flera källor när det går. Vi återger aldrig innehåll bakom betalväggar och citerar bara korta utdrag.
 
 ## 7. Öppet om AI
-Utkasten skrivs med hjälp av AI, och varje notis säger hur den har granskats. En notis som redaktionen har läst märks: "Sammanfattad med hjälp av AI och granskad av redaktionen." En notis som publicerats automatiskt märks: "Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns."
+Utkasten skrivs med hjälp av AI, och varje notis säger hur den har granskats. En notis som redaktionen har läst märks: "Sammanfattad med hjälp av AI och granskad av redaktionen." En notis som publicerats automatiskt märks: "Sammanfattad med hjälp av AI och maskinellt källkontrollerad. Publicerad utan manuell granskning; rättelser syns."
 
 Automatisk publicering sker bara under tydliga villkor: källkontrollen har spårat alla påståenden till källorna, minst tre oberoende källor i minst två regioner rapporterar (för svenska inrikesnyheter räcker två svenska källor), utkastet är inte märkt osäkert, ämnet står inte på spärrlistan (namngivna privatpersoner i brottmål, självmord, sexualbrott, barn), och notisen innehåller ingen blind fläck. Sådana notiser väntar 45 minuter i redaktionens inkorg innan de går ut, högst åtta per dygn utöver de stora händelser som rapporteras i minst fem regioner av minst åtta oberoende källor, och går att ta bort med ett tryck. Ansvarig utgivare står för allt som publiceras, även det som går automatiskt.
 

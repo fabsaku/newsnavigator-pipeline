@@ -221,3 +221,12 @@ def test_engelska_utgavan_ar_global_utan_hemland():
     import utgava
     assert utgava.angar(_utgavenotis(1, 1, "afrika", "asien", "europa", rubrik="Summit opens in Nairobi"), "en")
     assert not utgava.angar(_utgavenotis(2, 1, "usa", "usa", "usa", rubrik="Senate passes budget"), "en")
+
+
+def test_varje_notis_i_listor_bar_sitt_marke():
+    from render import story_item
+    bas = {"id": "a", "antal_kallor": 3, "reserv_rubrik": "Rubrik", "kallor": [], "utkast": {}, "perspektiv": {"regioner": ["usa"]}}
+    assert "ej manuellt granskad" in story_item({**bas, "automatisk": True}, "/n/a/")
+    assert "granskad av redaktionen" in story_item({**bas, "granskad": True}, "/n/a/")
+    assert "reviewed in Swedish" in story_item({**bas, "granskad": True}, "/n/a/")
+    assert "AI," not in story_item(bas, "/n/a/")

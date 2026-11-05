@@ -259,7 +259,7 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
 <nav aria-label="Sektioner"><div class="w">{links}</div></nav>
 <main class="w">{body}</main>
 <footer><div class="w ft">
-<div><p>{_both("Notiserna sammanfattas med hjälp av AI. Varje notis säger hur den har granskats: av redaktionen, eller med källkontroll utan manuell granskning. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI. Each story says how it was reviewed: by the editors, or source-checked without manual review. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>{stamp}</div>
+<div><p>{_both("Notiserna sammanfattas med hjälp av AI. Varje notis säger hur den har granskats: av redaktionen, eller med maskinell källkontroll utan manuell granskning. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI. Each story says how it was reviewed: by the editors, or machine source-checked without manual review. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>{stamp}</div>
 <div class="links"><a href="{_e(u.page("om"))}">{_both("Om Newsnavigator och principerna", "About Newsnavigator and the principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Alla källor", "All sources")}</a><a href="{_e(u.page("navigatorn"))}">{_both("Navigatorn, morgonbrevet", "Navigatorn, the morning brief")}</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a></div>
 <p class="copy">© 2026 Newsnavigator</p>
 </div></footer>
@@ -358,12 +358,12 @@ def spar_page(u, events, sources, banner, noindex):
 
 def _ai_note(ev):
     if ev.get("automatisk"):
-        return _both("Sammanfattad med hjälp av AI och källkontrollerad. Publicerad utan manuell granskning; rättelser syns. "
+        return _both("Sammanfattad med hjälp av AI och maskinellt källkontrollerad. Publicerad utan manuell granskning; rättelser syns. "
                      "Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till",
-                     "Summarised with the help of AI and source-checked. Published without manual review; corrections are visible. "
+                     "Summarised with the help of AI and machine source-checked. Published without manual review; corrections are visible. "
                      "We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")
     return _both("Sammanfattad med hjälp av AI och granskad av redaktionen. Vi återger inte text från källorna, bara rubrik och länk. Fel? Skriv till",
-                 "Summarised with the help of AI and reviewed by the editors. We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")
+                 "Summarised with the help of AI and reviewed in Swedish by the editors. We do not reproduce the sources’ text, only the headline and link. Spotted an error? Write to")
 
 
 def story_page(u, ev, related, sources, banner, noindex):
@@ -420,8 +420,8 @@ PRINCIPLES = [
      "Sammanfattningar skrivs med egna ord och bygger på flera källor när det går. Vi återger aldrig innehåll bakom betalväggar och citerar bara korta utdrag.",
      "Summaries are written in our own words and draw on several sources where possible. We never reproduce content behind paywalls and quote only short excerpts."),
     ("Öppet om AI", "Open about AI",
-     "Utkasten skrivs med hjälp av AI, och varje notis säger hur den har granskats: ”granskad av redaktionen” när redaktionen har läst den, eller ”källkontrollerad, publicerad utan manuell granskning” när den gått automatiskt. Automatisk publicering kräver att alla påståenden är spårade till källorna, minst tre oberoende källor i minst två regioner (två svenska källor för svenska inrikesnyheter), inga känsliga ämnen och ingen blind fläck, och notisen går att ta bort med ett tryck. Ansvarig utgivare står för allt som publiceras.",
-     "Drafts are written with the help of AI, and every story says how it was reviewed: “reviewed by the editors” when an editor has read it, or “source-checked, published without manual review” when it went out automatically. Automatic publication requires every claim to be traced to its sources, at least three independent sources in at least two regions (two Swedish sources for Swedish domestic news), no sensitive topics and no blind spot, and the story can be removed with one tap. The responsible publisher answers for everything published."),
+     "Utkasten skrivs med hjälp av AI, och varje notis säger hur den har granskats: ”granskad av redaktionen” när redaktionen har läst den, eller ”maskinellt källkontrollerad, publicerad utan manuell granskning” när den gått automatiskt. Automatisk publicering kräver att alla påståenden är spårade till källorna, minst tre oberoende källor i minst två regioner (två svenska källor för svenska inrikesnyheter), inga känsliga ämnen och ingen blind fläck, och notisen går att ta bort med ett tryck. Ansvarig utgivare står för allt som publiceras.",
+     "Drafts are written with the help of AI, and every story says how it was reviewed: “reviewed by the editors” when an editor has read it, or “machine source-checked, published without manual review” when it went out automatically. Automatic publication requires every claim to be traced to its sources, at least three independent sources in at least two regions (two Swedish sources for Swedish domestic news), no sensitive topics and no blind spot, and the story can be removed with one tap. The responsible publisher answers for everything published."),
     ("Rättelser syns", "Corrections are visible",
      "Ett fel rättas öppet, med en notis om vad som ändrades och när.",
      "An error is corrected openly, with a note on what changed and when."),
@@ -556,6 +556,12 @@ def _x(s):
     return html.escape(s or "", quote=True)
 
 
+def _rss_marke(ev, lang):
+    if ev.get("automatisk"):
+        return "AI, ej manuellt granskad. " if lang == "sv" else "AI, not manually reviewed. "
+    return "AI, granskad av redaktionen. " if lang == "sv" else "AI, reviewed in Swedish by the editors. "
+
+
 def feed(u, events, lang):
     items = []
     for ev in sorted(events, key=lambda e: e.get("godkand_tid", 0), reverse=True)[:50]:
@@ -566,7 +572,7 @@ def feed(u, events, lang):
         link = u.absolute(u.story(ev["id"]))
         pub = datetime.fromtimestamp(ev.get("godkand_tid", 0), timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
         items.append(f"<item><title>{_x(title)}</title><link>{_x(link)}</link><guid isPermaLink=\"true\">{_x(link)}</guid>"
-                     f"<pubDate>{pub}</pubDate><description>{_x(desc + (' (' + ('Källor' if lang == 'sv' else 'Sources') + ': ' + srcs + ')' if srcs else ''))}</description></item>")
+                     f"<pubDate>{pub}</pubDate><description>{_x(_rss_marke(ev, lang) + desc + (' (' + ('Källor' if lang == 'sv' else 'Sources') + ': ' + srcs + ')' if srcs else ''))}</description></item>")
     latest = max((e.get("godkand_tid", 0) for e in events), default=0)
     build = datetime.fromtimestamp(latest, timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000") if latest else ""
     title = "Newsnavigator" if lang == "sv" else "Newsnavigator (English)"

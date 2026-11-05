@@ -240,8 +240,17 @@ def notes(ev, internal=False):
     return out
 
 
+def ai_marke(ev):
+    """Kort märke för varje publicerad notis: att AI skrev och vad en människa gjorde. Tomt för utkast."""
+    if ev.get("automatisk"):
+        return _both("AI, ej manuellt granskad", "AI, not manually reviewed")
+    if ev.get("granskad"):
+        return _both("AI, granskad av redaktionen", "AI, reviewed in Swedish by the editors")
+    return ""
+
+
 def meta_block(ev, internal=False):
-    parts = [meta_line(ev)] + [f"<b>{n}</b>" for n in notes(ev, internal)]
+    parts = [meta_line(ev)] + [f"<b>{n}</b>" for n in notes(ev, internal)] + ([ai_marke(ev)] if ai_marke(ev) and not internal else [])
     return f'<p class="meta">{". ".join(parts)}.</p>'
 
 
@@ -387,7 +396,7 @@ def story_featured(ev, href, kicker=""):
 def story_item(ev, href, kicker=""):
     """Rad i en rubriklista."""
     k = f'<a href="{_e(kicker[1])}">{kicker[0]}</a> ' if kicker else ""
-    return f'<li><h3><a href="{_e(href)}">{_title(ev)}</a></h3><p class="meta">{k}{meta_line(ev)}</p></li>'
+    return f'<li><h3><a href="{_e(href)}">{_title(ev)}</a></h3><p class="meta">{k}{meta_line(ev)}{". " + ai_marke(ev) if ai_marke(ev) else ""}</p></li>'
 
 
 def narratives_block(ev):
@@ -477,7 +486,7 @@ def story_full(ev, internal=False, lang=None, rubrik="h2"):
 
     k = ev.get("kallkontroll")
     if k and k.get("ok"):
-        parts.append(f'<p class="check"><b>{_both("Källkontrollerad.", "Source-checked.")}</b> '
+        parts.append(f'<p class="check"><b>{_both("Maskinellt källkontrollerad.", "Machine source-checked.")}</b> '
                      f'{_both(f"Alla {k['antal']} påståenden i notisen går att spåra till källorna.", f"All {k['antal']} claims in this story can be traced to the sources.")}</p>')
     elif k and internal:
         n_issues = len(k.get("problem", []))
