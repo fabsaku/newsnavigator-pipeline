@@ -95,7 +95,8 @@ def grindar(ev):
         skal.append("spärrord: " + ", ".join(traffar[:5]))
 
     p = ev.get("perspektiv") or {}
-    if p.get("blind_flack") or p.get("usa_blind"):
+    # "Bara i svenska medier" är normalläget för inrikes, inte ett påstående att kontrollera.
+    if (p.get("blind_flack") and not (inrikes and p["blind_flack"] == "bara_i_sverige")) or p.get("usa_blind"):
         skal.append("blind fläck")
     return skal
 

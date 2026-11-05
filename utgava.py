@@ -131,7 +131,7 @@ def grindar(ev, utgava, batch=False):
             continue        # svensk inrikesnyhet: tre svenska källor räcker, regionkravet kan inte uppfyllas
         ut.append(s)
     p = ev.get("perspektiv") or {}
-    if p.get("usa_blind") or (utgava == "sv" and not batch and p.get("blind_flack")):
+    if p.get("usa_blind") or (utgava == "sv" and not batch and "blind fläck" in skal):
         ut.append("blind fläck")
     return ut
 

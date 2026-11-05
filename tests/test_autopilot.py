@@ -305,3 +305,13 @@ def test_svenska_medier_om_utlandet_ar_inte_inrikes():
 def test_namngivet_brottmal_gar_till_redaktoren():
     assert any("spärrord" in s for s in autopilot.grindar(_svensk("sverige", "sverige", rubrik="Marius Borg Høiby hålls kvar i häkte")))
 
+
+def test_bara_i_sverige_stoppar_inte_inrikes():
+    ev = {**_svensk("sverige", "sverige"), "perspektiv": {"blind_flack": "bara_i_sverige"}}
+    assert autopilot.grindar(ev) == []
+
+
+def test_saknas_i_sverige_stoppar_fortfarande():
+    ev = {**_svensk("usa", "europa", "asien", amnen=("usa",)), "perspektiv": {"blind_flack": "saknas_i_sverige"}}
+    assert "blind fläck" in autopilot.grindar(ev)
+
