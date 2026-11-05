@@ -150,7 +150,7 @@ def pick(include_drafts, hours=24, limit=12, lang=None):
     since = time.time() - hours * 3600
     chosen = sorted((e for e in load_archive().values() if e.get("godkand_tid", 0) >= since
                      and (not lang or utgava.visa(e, lang))),
-                    key=lambda e: e.get("poang", 0) + (FORSPRANG_POANG if lang and utgava.relevans(e)[lang] == 3 else 0),
+                    key=lambda e: e.get("poang", 0) + (FORSPRANG_POANG if lang and utgava.angar(e, lang) else 0),
                     reverse=True)
     if include_drafts and len(chosen) < limit and FLODE.exists():
         have = {e["id"] for e in chosen}

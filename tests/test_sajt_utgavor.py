@@ -205,3 +205,9 @@ def test_lokalt_svenskt_med_tva_kallor_visas_inte_pa_engelska():
     assert utgava.visa(_utgavenotis(2, 1, "sverige", "sverige", "sverige", rubrik="Nato debate in parliament"), "en")
     assert utgava.visa(_utgavenotis(3, 1, "sverige", "sverige"), "sv")
 
+
+def test_amerikansk_kalla_gor_inte_handelsen_amerikansk():
+    import utgava
+    assert not utgava.angar(_utgavenotis(1, 1, "usa", "europa", "asien", rubrik="Netanyahu alleges foreign interference"), "en")
+    assert utgava.angar(_utgavenotis(2, 1, "europa", "asien", "afrika", rubrik="Senate passes budget"), "en")
+

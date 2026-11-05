@@ -87,9 +87,20 @@ def usa_relevant(ev):
         return False
     if len({x["kalla"] for sida in usa.values() for x in sida}) < 3:
         return False
+    return _amerikansk(ev)
+
+
+def _amerikansk(ev):
     d = ev.get("utkast") or {}
     rubrik = " ".join(str(x) for x in (d.get("rubrik_en"), d.get("rubrik_sv"), ev.get("reserv_rubrik")) if x)
     return bool(_USA_RUBRIK_CI.search(rubrik) or _USA_RUBRIK_CS.search(rubrik))
+
+
+def angar(ev, utgava):
+    """Angår händelsen utgåvans läsare mest? Svenskt i den svenska utgåvan. I den engelska det som handlar om USA:
+    att en amerikansk källa finns med räcker inte, det gör den nästan alltid."""
+    _kontrollera(utgava)
+    return relevans(ev)["sv"] == 3 if utgava == "sv" else visa(ev, "en") and _amerikansk(ev)
 
 
 def visa(ev, utgava):
@@ -99,10 +110,8 @@ def visa(ev, utgava):
 
 
 def ordna(events, utgava):
-    """Nyast först, men det som angår utgåvans läsare mest ligger som om det vore FORSPRANG nyare: svenskt i den
-    svenska utgåvan, amerikanskt och globalt i den engelska."""
-    _kontrollera(utgava)
-    return sorted(events, key=lambda e: e.get("godkand_tid", 0) + (FORSPRANG if relevans(e)[utgava] == 3 else 0), reverse=True)
+    """Nyast först, men det som angår utgåvans läsare mest (`angar`) ligger som om det vore FORSPRANG nyare."""
+    return sorted(events, key=lambda e: e.get("godkand_tid", 0) + (FORSPRANG if angar(e, utgava) else 0), reverse=True)
 
 
 def kraver_genomgang(ev, utgava):
