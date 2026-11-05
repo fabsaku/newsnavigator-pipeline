@@ -195,3 +195,17 @@ sources:
   - {id: kyivindependent, namn: The Kyiv Independent, url: "https://kyivindependent.com/news-archive/rss/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: UA, region: europa, agare: privat, statskontrollerad: false}
   - {id: eurasianet, bara_rubrik: true, namn: Eurasianet, url: "https://eurasianet.org/rss", amnen: [asien, geopolitik], sprak: en, typ: media, betalvagg: false, land: INT, region: asien, agare: organisation, statskontrollerad: false}
   - {id: focustaiwan, namn: Focus Taiwan, url: "https://feeds.feedburner.com/rsscna/engnews", amnen: [asien], sprak: en, typ: media, betalvagg: false, land: TW, region: asien, agare: statlig, statskontrollerad: false}
+
+  # ---------- Bevakningsspåren (spar.py) ----------
+  # Prövade med Källprov 5 november 2026. Människorättsorganisationer och Crisis Group är påverkans- eller analysorganisationer:
+  # de räknas som media, inte primärkällor, så att de inte får extra vikt.
+  - {id: hrw, namn: Human Rights Watch, url: "https://www.hrw.org/rss/news", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: amnesty, namn: Amnesty International, url: "https://www.amnesty.org/en/feed/", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: GB, region: global, agare: organisation, statskontrollerad: false}
+  - {id: cpj, namn: Committee to Protect Journalists, url: "https://cpj.org/feed/", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: crisisgroup, namn: International Crisis Group, url: "https://www.crisisgroup.org/rss", amnen: [geopolitik], sprak: en, typ: media, betalvagg: false, land: BE, region: global, agare: organisation, statskontrollerad: false}
+  - {id: insideclimate, namn: Inside Climate News, url: "https://insideclimatenews.org/feed/", amnen: [klimat], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: mongabay, namn: Mongabay, url: "https://news.mongabay.com/feed/", amnen: [klimat], sprak: en, typ: media, betalvagg: false, land: US, region: global, agare: organisation, statskontrollerad: false}
+  - {id: climatehome, namn: Climate Home News, url: "https://www.climatechangenews.com/feed/", amnen: [klimat], sprak: en, typ: media, betalvagg: false, land: GB, region: global, agare: privat, statskontrollerad: false}
+  - {id: yale-e360, namn: Yale Environment 360, url: "https://e360.yale.edu/feed.xml", amnen: [klimat], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: rns, namn: Religion News Service, url: "https://religionnews.com/feed/", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: organisation, statskontrollerad: false}
+  - {id: defensenews, namn: Defense News, url: "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml", amnen: [forsvar], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
