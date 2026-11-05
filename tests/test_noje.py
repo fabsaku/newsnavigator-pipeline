@@ -65,3 +65,10 @@ def test_nya_kallor():
         assert set(kallor[kid]["amnen"]) & {"spel", "noje"}
     # Stänger ute AI-botar i robots.txt: bara rubrik och länk, ingressen går aldrig till AI:n
     assert kallor["aftonbladet-noje"]["bara_rubrik"] and kallor["expressen-noje"]["bara_rubrik"]
+
+
+def test_energi_i_en_varldsnyhet_ar_inte_vetenskap():
+    assert section_of({"amnen_sektion": ["energi", "usa"]}) == "varlden"
+    assert section_of({"amnen_sektion": ["energi", "geopolitik"]}) == "varlden"
+    assert section_of({"amnen_sektion": ["energi"]}) == "vetenskap"
+    assert section_of({"amnen_sektion": ["klimat", "usa"]}) == "vetenskap"

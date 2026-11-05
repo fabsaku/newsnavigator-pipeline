@@ -51,6 +51,8 @@ def section_of(ev):
     """Sektion efter sektionsämnena (texten, och bevakning som alla källor delar), annars Världen.
     Äldre notiser utan sektionsämnen går på alla ämnen."""
     topics = set(ev["amnen_sektion"] if "amnen_sektion" in ev else ev.get("amnen") or [])
+    if topics & _SECTION_TAGS["varlden"]:
+        topics.discard("energi")    # oljepriser i en valnotis gör den inte till vetenskap
     return next((k for k in SECTION_PRIORITY if topics & _SECTION_TAGS[k]), "varlden")
 
 
