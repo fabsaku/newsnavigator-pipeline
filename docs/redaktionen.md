@@ -153,10 +153,10 @@ Faserna byggs av en schemalagd Claude Code-session varje natt kl 02.41 svensk ti
 
 ## Du gör
 
-Det här kan bara du göra. Det som står överst spärrar mest. Spår A0 i planen nedan är den kritiska vägen för målet att ha minst 56 inlägg per konto idag.
+Det här kan bara du göra. Det som står överst spärrar mest. Två ärenden väntar också på dig i GitHub: fyra notiser i granskningsärendet (två av dem är stora valhändelser med över 20 källor som autopiloten inte släpper igenom) och utvärderingen i ärende 2. Spår A0 i planen nedan är den kritiska vägen för målet att ha minst 56 inlägg per konto idag.
 
 1. **Meta och Instagram, båda kontona (spår A0).** Skapa appen, lägg till båda kontona och lägg secrets `IG_USER_ID`, `IG_ACCESS_TOKEN`, `IG_USER_ID_EN`, `IG_ACCESS_TOKEN_EN` och `IG_APP_SECRET` i repots secrets (GitHub: Settings, Secrets and variables, Actions). Stegen står under A0.
-2. **Källor som stänger ute AI-botar (genomgång 4 november).** 53 av 133 källor blockerar AI-botar i robots.txt. Åtta har också betalvägg (Dagens Nyheter, Dagens industri, Breakit, Financial Times, The Economist, Le Monde, Nikkei Asia, Nature) och används redan bara för rubrik och länk. 44 saknar betalvägg och skickar idag sin ingress till modellen (33 av dem nämner Claude, till exempel SVT, Sveriges Radio Ekot, DR, NRK, The Guardian, Al Jazeera och CNBC). Välj: A, behåll som nu; B, bara rubrik för de 33 som nämner Claude; C, bara rubrik för alla 44; eller utesluta de åtta med betalvägg som Ny Teknik. Se chatten för avvägningen.
+2. ~~Källor som stänger ute AI-botar~~ Avgjort 4 november: alternativ B. De 33 källor som nämner Claude är bara rubrik.
 3. ~~Tre beslut~~ Besvarade med ja 3 november. Du bläddrar alltså igenom korten själv före godkännandet (steg 1.6 i `docs/steg-for-steg.md`).
 4. **Morgonrapporten (fas 5).** Resend-konto, API-nyckel med "Sending access", secrets `RESEND_API_KEY` och `RAPPORT_TILL`. Prova med Actions, Rapport, Run workflow, "torrt".
 5. **Klockan, tre minuter.** Nya `klocka/worker.js` i Cloudflare-Workern (Edit code, Deploy), så startar klockan rapporten kl 07.00 och vakthunden varje timme.
