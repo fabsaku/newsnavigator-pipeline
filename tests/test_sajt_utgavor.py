@@ -193,10 +193,10 @@ def test_utgavorna_lyfter_det_som_angar_lasaren():
     import utgava
     nu = 1_000_000
     svenskt = _utgavenotis(1, nu - 3600, "sverige", "sverige", "sverige")
-    amerikanskt = _utgavenotis(2, nu - 3600, "usa", "europa", "asien", rubrik="Congress passes budget")
-    annat = _utgavenotis(3, nu, "afrika", "asien", "europa", rubrik="Summit opens in Nairobi")
-    assert utgava.ordna([annat, amerikanskt, svenskt], "sv")[0]["id"] == "1"
-    assert utgava.ordna([annat, svenskt, amerikanskt], "en")[0]["id"] == "2"
+    globalt = _utgavenotis(2, nu - 3600, "usa", "europa", "asien", rubrik="Summit opens in Nairobi")
+    annat = _utgavenotis(3, nu, "usa", "usa", "usa", rubrik="Senate passes budget")
+    assert utgava.ordna([annat, globalt, svenskt], "sv")[0]["id"] == "1"
+    assert utgava.ordna([annat, svenskt, globalt], "en")[0]["id"] == "2"
 
 
 def test_lokalt_svenskt_med_tva_kallor_visas_inte_pa_engelska():
@@ -206,8 +206,7 @@ def test_lokalt_svenskt_med_tva_kallor_visas_inte_pa_engelska():
     assert utgava.visa(_utgavenotis(3, 1, "sverige", "sverige"), "sv")
 
 
-def test_amerikansk_kalla_gor_inte_handelsen_amerikansk():
+def test_engelska_utgavan_ar_global_utan_hemland():
     import utgava
-    assert not utgava.angar(_utgavenotis(1, 1, "usa", "europa", "asien", rubrik="Netanyahu alleges foreign interference"), "en")
-    assert utgava.angar(_utgavenotis(2, 1, "europa", "asien", "afrika", rubrik="Senate passes budget"), "en")
-
+    assert utgava.angar(_utgavenotis(1, 1, "afrika", "asien", "europa", rubrik="Summit opens in Nairobi"), "en")
+    assert not utgava.angar(_utgavenotis(2, 1, "usa", "usa", "usa", rubrik="Senate passes budget"), "en")

@@ -2,7 +2,8 @@
 
   sv  Svenska läsaren: svenska nyheter, och globala händelser som berör Sverige och Europa. Särskilt de som saknas i
       svenska medier, eftersom det är där läsaren har minst att hämta annars.
-  en  Engelska läsaren: globala händelser. Svenskt och nordiskt bara när det påverkar läsaren. Aldrig lokalt svenskt.
+  en  Global English: en gemensam nivå för läsare var som helst i världen, utan hemland. Svenskt och nordiskt bara när
+      det påverkar läsaren. Aldrig lokalt svenskt.
 
 En notis godkänns en gång (redaktören eller autopiloten). Utgåvorna avgör var den visas: sajtens /sv/ och /en/, de två
 Instagramkontona och breven. `relevans` är deterministisk och bygger på var källorna finns och vad rubrikerna nämner;
@@ -87,20 +88,18 @@ def usa_relevant(ev):
         return False
     if len({x["kalla"] for sida in usa.values() for x in sida}) < 3:
         return False
-    return _amerikansk(ev)
-
-
-def _amerikansk(ev):
     d = ev.get("utkast") or {}
     rubrik = " ".join(str(x) for x in (d.get("rubrik_en"), d.get("rubrik_sv"), ev.get("reserv_rubrik")) if x)
     return bool(_USA_RUBRIK_CI.search(rubrik) or _USA_RUBRIK_CS.search(rubrik))
 
 
 def angar(ev, utgava):
-    """Angår händelsen utgåvans läsare mest? Svenskt i den svenska utgåvan. I den engelska det som handlar om USA:
-    att en amerikansk källa finns med räcker inte, det gör den nästan alltid."""
+    """Angår händelsen utgåvans läsare mest? Svenskt i den svenska utgåvan. Den engelska är en gemensam global nivå,
+    utan hemland: där lyfts det som minst tre regioner bevakar."""
     _kontrollera(utgava)
-    return relevans(ev)["sv"] == 3 if utgava == "sv" else visa(ev, "en") and _amerikansk(ev)
+    if utgava == "sv":
+        return relevans(ev)["sv"] == 3
+    return visa(ev, "en") and len({k["region"] for k in _oberoende(ev)}) >= 3
 
 
 def visa(ev, utgava):
