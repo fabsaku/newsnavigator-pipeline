@@ -141,7 +141,7 @@ def test_rena_och_blandade_kluster_skiljs_at_pa_sammanhang():
 
 def test_troskelsvep_for_sammanhang_ger_precision_for_att_hitta_blandade():
     rena, blandade = [0.9, 0.8, 0.7, 0.65], [0.5, 0.45, 0.6]
-    ut = inbaddningar.sammanhangstroskel(rena, blandade, troskler=[0.55, 0.62, 0.8])
-    assert ut[0]["troskel"] == 0.55 and ut[0]["blandade_stoppade"] == 3 and ut[0]["rena_stoppade"] == 0
-    assert ut[1]["blandade_stoppade"] == 3 and ut[1]["rena_stoppade"] == 0 or True
-    assert ut[2]["rena_stoppade"] == 4
+    ut = {r["troskel"]: r for r in inbaddningar.sammanhangstroskel(rena, blandade, troskler=[0.55, 0.62, 0.8])}
+    assert (ut[0.55]["blandade_stoppade"], ut[0.55]["rena_stoppade"]) == (2, 0)       # 0,50 och 0,45 stoppas, 0,60 slipper igenom
+    assert (ut[0.62]["blandade_stoppade"], ut[0.62]["rena_stoppade"]) == (3, 0)
+    assert (ut[0.8]["blandade_stoppade"], ut[0.8]["rena_stoppade"]) == (3, 2)         # av de rena är 0,70 och 0,65 under 0,8
