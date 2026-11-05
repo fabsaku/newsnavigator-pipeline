@@ -195,8 +195,19 @@ def test_utgavorna_lyfter_det_som_angar_lasaren():
     svenskt = _utgavenotis(1, nu - 3600, "sverige", "sverige", "sverige")
     globalt = _utgavenotis(2, nu - 3600, "usa", "europa", "asien", rubrik="Summit opens in Nairobi")
     annat = _utgavenotis(3, nu, "usa", "usa", "usa", rubrik="Senate passes budget")
-    assert utgava.ordna([annat, globalt, svenskt], "sv")[0]["id"] == "1"
-    assert utgava.ordna([annat, svenskt, globalt], "en")[0]["id"] == "2"
+    for e in (svenskt, globalt, annat):
+        e["poang"] = 30
+    assert utgava.ordna([annat, globalt, svenskt], "sv", nu=nu)[0]["id"] == "1"
+    assert utgava.ordna([annat, svenskt, globalt], "en", nu=nu)[0]["id"] == "2"
+
+
+def test_viktigast_forst_och_vikten_klingar_av():
+    import utgava
+    nu = 1_000_000
+    tung = {**_utgavenotis(1, nu - 3600, "usa", "usa", "usa"), "poang": 40}
+    latt = {**_utgavenotis(2, nu, "usa", "usa", "usa"), "poang": 20}
+    gammal = {**_utgavenotis(3, nu - 3 * 86400, "usa", "usa", "usa"), "poang": 40}
+    assert [e["id"] for e in utgava.ordna([latt, gammal, tung], "sv", nu=nu)] == ["1", "2", "3"]
 
 
 def test_lokalt_svenskt_med_tva_kallor_visas_inte_pa_engelska():

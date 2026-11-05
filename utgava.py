@@ -10,13 +10,15 @@ Instagramkontona och breven. `relevans` är deterministisk och bygger på var k�
 en AI-förfining kan läggas ovanpå utan att ändra gränssnittet.
 """
 import re
+import time
 
 import autopilot
 
 UTGAVOR = ("sv", "en")
 TROSKEL = {"sv": 1, "en": 2}        # lägsta relevans för att notisen ska visas i utgåvan
 SVENSK_REGION = {"sverige", "norden"}
-FORSPRANG = 12 * 3600               # sekunder: så mycket nyare en notis räknas när den angår utgåvans läsare mest
+HALVERINGSTID = 24 * 3600           # sekunder: en notis väger hälften efter ett dygn
+LYFT = 1.3                          # så mycket mer en notis väger när den angår utgåvans läsare mest
 
 # Det som gör en svensk eller nordisk nyhet relevant för engelska läsaren: stormakter, allianser, marknader, stora bolag.
 _EN_GLOBALT = re.compile(r"\b(nato|ukraine|russia\w*|putin|china|chinese|taiwan|tariffs?|eu|ecb|opec|nobel|ericsson|spotify|"
@@ -108,9 +110,16 @@ def visa(ev, utgava):
     return relevans(ev)[utgava] >= TROSKEL[utgava]
 
 
-def ordna(events, utgava):
-    """Nyast först, men det som angår utgåvans läsare mest (`angar`) ligger som om det vore FORSPRANG nyare."""
-    return sorted(events, key=lambda e: e.get("godkand_tid", 0) + (FORSPRANG if angar(e, utgava) else 0), reverse=True)
+def viktighet(ev, utgava, nu=None):
+    """Hur högt notisen ska stå: Vikt (poang), som halveras per HALVERINGSTID, och lite mer om den angår utgåvans läsare."""
+    nu = time.time() if nu is None else nu
+    alder = max(0.0, nu - (ev.get("godkand_tid") or nu))
+    return ev.get("poang", 0) * (LYFT if angar(ev, utgava) else 1) * 0.5 ** (alder / HALVERINGSTID)
+
+
+def ordna(events, utgava, nu=None):
+    """Viktigast först."""
+    return sorted(events, key=lambda e: viktighet(e, utgava, nu), reverse=True)
 
 
 def kraver_genomgang(ev, utgava):

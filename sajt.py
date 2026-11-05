@@ -292,7 +292,8 @@ def front(u, events, sources, banner, noindex):
     else:
         alla, events = events, utan_upprepningar(events)
         lead, rest = events[0], events[1:]
-        latest, rest = rest[:LATEST], rest[LATEST:]
+        latest = sorted(rest, key=lambda e: e.get("godkand_tid", 0), reverse=True)[:LATEST]
+        rest = [e for e in rest if not any(e is x for x in latest)]
         top = (f'<section class="top">{story_lead(lead, u.story(lead["id"]), kicker=_section_link(u, section_of(lead)))}'
                f'<aside class="latest"><h2>{_both("Senaste", "Latest")}</h2><ul class="list">'
                + "".join(story_item(e, u.story(e["id"]), kicker=_section_link(u, section_of(e))) for e in latest)
@@ -557,7 +558,7 @@ def _x(s):
 
 def feed(u, events, lang):
     items = []
-    for ev in events[:50]:
+    for ev in sorted(events, key=lambda e: e.get("godkand_tid", 0), reverse=True)[:50]:
         d = ev.get("utkast") or {}
         title = d.get(f"rubrik_{lang}") or d.get("rubrik_sv") or ev["reserv_rubrik"]
         desc = d.get(f"sammanfattning_{lang}") or d.get("sammanfattning_sv") or ""
