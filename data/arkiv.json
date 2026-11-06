@@ -20254,34 +20254,33 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 34.9,
+  "poang": 32.9,
   "vikt": {
-   "bredd": 1.341,
+   "bredd": 1.014,
    "regioner": {
     "mellanostern": 1,
-    "asien": 4,
-    "europa": 4,
     "latinamerika": 3,
-    "afrika": 1,
+    "europa": 3,
+    "asien": 2,
     "usa": 3,
     "sverige": 2
    },
-   "timmar": 17,
+   "timmar": 18,
    "konsekvens": {
     "berorda": 5,
     "allvar": 4,
-    "varaktighet": 3,
-    "medel": 4.0,
-    "skal": "Ett helt lands sparare berörs när en bankkollaps fryser pengar och presidenten avgår eller ställs inför riksrätt, vilket ger en allvarlig politisk och ekonomisk kris som sannolikt pågår i månader."
+    "varaktighet": 4,
+    "medel": 4.33,
+    "skal": "Ett bankras som fryst sparande för stora delar av Paraguays befolkning har lett till presidentens avgång och en djup statlig kris."
    },
    "bekraftad": false,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 18,
+  "antal_kallor": 14,
   "har_primarkalla": false,
-  "senast": "2026-11-06T16:58:56+00:00",
+  "senast": "2026-11-06T17:42:22+00:00",
   "utkast": {
    "rubrik_sv": "Paraguays president Santiago Peña avgår efter bankkollaps",
    "sammanfattning_sv": "Paraguays president Santiago Peña har avgått efter kollapsen av banken Ueno, enligt flera källor, som uppger att miljontals kunders konton har frysts. Lagstiftare har enligt NPR och BBC röstat för att driva en riksrättsprocess mot honom.",
@@ -20492,38 +20491,17 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Riksrättsprocessen mot Peña",
-     "namn_en": "Impeachment proceedings against Peña",
-     "lyfter_sv": "Al Jazeera lyfter fram den återupptagna riksrättsprocessen, The Hindu Peñas begäran om tre extra dagar, The Straits Times senatens extra möte, NPR och MercoPress omröstningen minuter efter avgången, Dagens Nyheter risken att presidenten avsätts.",
-     "lyfter_en": "Al Jazeera highlights the resumed impeachment, The Hindu Peña's request for three more days, The Straits Times the Senate's extraordinary meeting, NPR and MercoPress the vote minutes after resignation, Dagens Nyheter the risk of removal.",
+     "namn_sv": "Presidentens avgång och riksrätt",
+     "namn_en": "The president's resignation and impeachment",
+     "lyfter_sv": "NPR lyfter fram att riksrätt röstades fram minuter efter avgången, BBC att underhuset ville driva riksrätt, DN att presidenten riskerar avsättning, SVT att presidenten avgår och The Hindu att han avgår när bankkrisen skapar kaos.",
+     "lyfter_en": "NPR says impeachment came minutes after the resignation, BBC that the lower house backed impeachment, DN that the president risks removal, SVT that he resigns, and The Hindu that he steps down as the crisis sows chaos.",
      "kallor": [
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens?traffic_source=rss"
-      },
       {
        "namn": "The Hindu",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/paraguay-president-santiago-pena-requests-extra-three-days-to-prepare-impeachment-defence/article71674857.ece"
-      },
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/paraguays-senate-resumes-president-pena-impeachment-proceedings"
-      },
-      {
-       "namn": "MercoPress",
-       "region": "latinamerika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://en.mercopress.com/2026/11/05/paraguay-s-santiago-pena-tenders-his-resignation-but-congress-presses-ahead-with-impeachment?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
+       "url": "https://www.thehindu.com/news/international/santiago-pena-paraguay-president-steps-down-as-banking-crisis-sows-chaos/article71672650.ece"
       },
       {
        "namn": "NPR",
@@ -20531,6 +20509,20 @@
        "lutning": "lutar_vanster",
        "statskontrollerad": false,
        "url": "https://www.npr.org/2026/11/05/nx-s1-6030842/paraguay-president-impeached-bank-collapse"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+       "namn": "SVT Nyheter",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.svt.se/nyheter/utrikes/bankkollaps-i-paraguay-presidenten-avgar"
       },
       {
        "namn": "Dagens Nyheter",
@@ -20542,8 +20534,7 @@
      ],
      "regioner": [
       "asien",
-      "latinamerika",
-      "mellanostern",
+      "europa",
       "sverige",
       "usa"
      ],
@@ -20552,25 +20543,46 @@
      ]
     },
     {
-     "namn_sv": "Avgången efter bankskandalen",
-     "namn_en": "Resignation after the bank scandal",
-     "lyfter_sv": "France 24 lyfter fram att Peña erbjuder sin avgång, BBC att han avgår efter bankkollapsen, Buenos Aires Times att Trump och Milei förlorar en bundsförvant, WSJ att banken har nära band till honom, NYT att avgången sker mitt i bankskandalen.",
-     "lyfter_en": "France 24 highlights Peña's offer to resign, BBC his resignation after the bank collapse, Buenos Aires Times that Trump and Milei lose an ally, WSJ the bank's close ties to him, NYT the resignation amid the bank scandal.",
+     "namn_sv": "Frysta sparmedel och åtkomst",
+     "namn_en": "Frozen savings and access",
+     "lyfter_sv": "The Guardian lyfter fram att miljontals personers sparande har frysts, Hindustan Times att banken låst ute halva landet från pengarna och MercoPress att Paraguay vill få tillbaka delar av sparandet inom 24 timmar.",
+     "lyfter_en": "The Guardian says millions of people's savings were frozen, Hindustan Times that the bank locked half the country out of its money, and MercoPress that Paraguay seeks to return part of the savings within 24 hours.",
      "kallor": [
       {
-       "namn": "France 24",
+       "namn": "The Guardian",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261106-paraguay-s-pe%C3%B1a-offers-resignation-amid-banking-scandal-protests"
+       "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns"
       },
       {
-       "namn": "BBC World",
-       "region": "europa",
+       "namn": "Hindustan Times",
+       "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss"
+       "url": "https://www.hindustantimes.com/world-news/explained-the-ueno-bank-collapse-paraguay-half-country-locked-out-money-president-santiago-pena-resignation-101793938578725.html"
       },
+      {
+       "namn": "MercoPress",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.mercopress.com/2026/11/05/paraguay-seeks-to-return-part-of-the-savings-frozen-at-ueno-bank-within-24-hours?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "latinamerika"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Skandal och koppling till presidenten",
+     "namn_en": "Scandal and ties to the president",
+     "lyfter_sv": "WSJ lyfter fram att en bank med nära band till presidenten kollapsat, NYT att avgången sker mitt i Ueno-skandalen, Buenos Aires Times att bankskandalen skakar regeringen och RT att en senator anklagar presidenten för bedrägeri.",
+     "lyfter_en": "WSJ says a bank with close ties to the president collapsed, NYT that the resignation came amid the Ueno scandal, Buenos Aires Times that the banking scandal rocks the government, and RT that a senator accuses the president of fraud.",
+     "kallor": [
       {
        "namn": "Buenos Aires Times",
        "region": "latinamerika",
@@ -20591,6 +20603,13 @@
        "lutning": "mitten",
        "statskontrollerad": false,
        "url": "https://www.wsj.com/world/americas/paraguays-president-resigns-as-collapse-of-bank-with-close-ties-to-him-sparks-crisis-a62895f1?mod=rss_worldnews"
+      },
+      {
+       "namn": "RT",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://rt-english.com/news/648521-paraguay-bank-collapse-pena-fraud-impeachment/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
       }
      ],
      "regioner": [
@@ -20602,181 +20621,113 @@
       "bla",
       "mitten"
      ]
-    },
-    {
-     "namn_sv": "Sparare utan tillgång till pengar",
-     "namn_en": "Savers without access to their money",
-     "lyfter_sv": "Africanews lyfter fram att tusentals demonstrerar, The Guardian att miljoner människors sparpengar är frysta, Hindustan Times att kollapsen låste ute halva landet, RT att tre miljoner kunder saknar tillgång till sina besparingar.",
-     "lyfter_en": "Africanews highlights thousands protesting, The Guardian millions of people's savings frozen, Hindustan Times the collapse locking out half the country, RT three million customers without access to savings.",
-     "kallor": [
-      {
-       "namn": "Africanews",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "http://www.africanews.com/2026/11/06/paraguay-thousands-protest-banking-scandal-as-president-faces-impeachment/"
-      },
-      {
-       "namn": "The Guardian",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns"
-      },
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/explained-the-ueno-bank-collapse-paraguay-half-country-locked-out-money-president-santiago-pena-resignation-101793938578725.html"
-      },
-      {
-       "namn": "RT",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://rt-english.com/news/648521-paraguay-bank-collapse-pena-fraud-impeachment/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
-      }
-     ],
-     "regioner": [
-      "afrika",
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 18,
+    "antal": 14,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Peña erbjuder sin avgång (rubrik)",
+      "text": "Santiago Peña avgår som Paraguays president",
       "stod": [
-       4,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Avgången sker efter bankkollapsen (rubrik)",
-      "stod": [
-       12,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Riksrättsprocessen fortsätter (rubrik)",
-      "stod": [
-       1,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera lyfter fram att riksrättsprocessen återupptas",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: Peña begär tre extra dagar",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Straits Times: senaten håller ett extra möte",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR: omröstningen om riksrätt sker minuter efter avgången",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "MercoPress: omröstningen sker minuter efter avgången",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dagens Nyheter: presidenten riskerar att avsättas",
-      "stod": [
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24: Peña erbjuder sin avgång",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "BBC: han avgår efter bankkollapsen",
-      "stod": [
+       3,
+       7,
+       9,
        12
       ],
       "problem": null
      },
      {
-      "text": "Buenos Aires Times: Trump och Milei förlorar en bundsförvant",
+      "text": "Avgången sker efter bankkollapsen i Ueno",
       "stod": [
+       7,
+       12,
        13
       ],
       "problem": null
      },
      {
-      "text": "WSJ: banken har nära band till Peña",
-      "stod": [
-       17
-      ],
-      "problem": null
-     },
-     {
-      "text": "NYT: avgången sker mitt i bankskandalen",
-      "stod": [
-       16
-      ],
-      "problem": null
-     },
-     {
-      "text": "Africanews: tusentals demonstrerar",
+      "text": "NPR: riksrätt röstades fram minuter efter avgången",
       "stod": [
        6
       ],
       "problem": null
      },
      {
-      "text": "The Guardian: miljoners sparpengar är frysta",
+      "text": "BBC: underhuset ville driva riksrätt",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times: kollapsen låste ute halva landet",
+      "text": "DN: presidenten riskerar avsättning",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "SVT: presidenten avgår",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: presidenten avgår när bankkrisen skapar kaos",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian: miljontals personers sparande har frysts",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: banken har låst ute halva landet från pengarna",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "MercoPress: Paraguay vill få tillbaka delar av sparandet inom 24 timmar",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ: en bank med nära band till presidenten har kollapsat",
+      "stod": [
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT: avgången sker mitt i Ueno-skandalen",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "Buenos Aires Times: bankskandalen skakar regeringen",
       "stod": [
        8
       ],
       "problem": null
      },
      {
-      "text": "RT: tre miljoner kunder saknar tillgång till sina besparingar",
+      "text": "RT: en senator anklagar presidenten för bedrägeri",
       "stod": [
-       18
+       14
       ],
       "problem": null
      }
@@ -20785,18 +20736,18 @@
    },
    "ok": true
   },
-  "sammanhang": 0.616,
+  "sammanhang": 0.641,
   "betydelse": {
    "sv": null,
-   "en": "Since Paraguay's president Santiago Peña has offered to resign after the Ueno Bank collapse, Buenos Aires Times reports that Trump and Milei lose an ally in Latin America, which matters for US policy toward the region.",
+   "en": "Since Paraguay's president Santiago Peña resigned after the Ueno bank collapse, Trump and Milei have lost a Latin American ally, which ties the crisis to US and Argentine regional politics.",
    "grund": [
-    3,
-    13
+    7,
+    8
    ],
    "grund_kallor": [
     {
-     "namn": "The Straits Times",
-     "url": "https://www.straitstimes.com/world/paraguays-senate-resumes-president-pena-impeachment-proceedings"
+     "namn": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss"
     },
     {
      "namn": "Buenos Aires Times",
@@ -20806,14 +20757,13 @@
    "kontroll": {
     "ok": false,
     "problem": [
-     "slutsats: \"which matters for US policy toward the region\" är en slutsats om betydelse för USA:s politik som inte stöds av källorna. Källan säger bara att Trump och Milei förlorar en allierad."
+     "slutsats: \"ties the crisis to US and Argentine regional politics\" är en slutsats. Källorna beskriver bankkollapsen och att presidenten avgick, men de visar inte att krisen är kopplad till USA:s eller Argentinas politik. Att Trump och Milei förlorat en allierad är en politisk följd, inte en orsak till krisen."
     ]
    },
    "ok": false
   },
   "perspektiv": {
    "regioner": [
-    "afrika",
     "asien",
     "europa",
     "latinamerika",
@@ -20826,55 +20776,39 @@
      {
       "kalla": "Al Jazeera",
       "land": "QA",
-      "rubrik": "Paraguay resumes Pena impeachment proceedings as financial crisis deepens",
-      "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens?traffic_source=rss",
-      "tid": 1793984336.0,
+      "rubrik": "How Paraguay’s Ueno collapse is only its latest banking crisis",
+      "url": "https://www.aljazeera.com/news/2026/11/6/how-paraguays-ueno-collapse-is-only-its-latest-banking-crisis?traffic_source=rss",
+      "tid": 1793986942.0,
       "statskontrollerad": false
      }
     ],
-    "asien": [
+    "latinamerika": [
      {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Paraguay President Santiago Pena requests extra three days to prepare impeachment defence",
-      "url": "https://www.thehindu.com/news/international/paraguay-president-santiago-pena-requests-extra-three-days-to-prepare-impeachment-defence/article71674857.ece",
-      "tid": 1793974200.0,
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "Crisis de Ueno Bank en Paraguay: ¿qué pasó con el banco que desató protestas y la renuncia presidencial?",
+      "url": "https://www.eltiempo.com/mundo/latinoamerica/crisis-de-ueno-bank-en-paraguay-que-paso-con-el-banco-que-desato-protestas-y-la-renuncia-presidencial-3598948",
+      "tid": 1793971061.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "Paraguay’s leadership in limbo as Pena’s impeachment trial starts over bank collapse",
-      "url": "https://www.straitstimes.com/world/paraguays-senate-resumes-president-pena-impeachment-proceedings",
-      "tid": 1793973501.0,
+      "kalla": "Buenos Aires Times",
+      "land": "AR",
+      "rubrik": "Paraguay's President Santiago Peña resigns amid banking scandal",
+      "url": "https://www.batimes.com.ar/news/latin-america/paraguays-president-santiago-pena-resigns-amid-banking-scandal.phtml",
+      "tid": 1793897146.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Paraguay's ueno bank collapse: The controversy that toppled president, locked half country out of money",
-      "url": "https://www.hindustantimes.com/world-news/explained-the-ueno-bank-collapse-paraguay-half-country-locked-out-money-president-santiago-pena-resignation-101793938578725.html",
-      "tid": 1793944770.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "ABC News (Australien)",
-      "land": "AU",
-      "rubrik": "Paraguay's president tangled up in Ueno banking crisis",
-      "url": "https://www.abc.net.au/news/2026-11-06/banking-crisis-plunges-paraguay-into-political-disarray/107355316",
-      "tid": 1793943574.0,
+      "kalla": "MercoPress",
+      "land": "UY",
+      "rubrik": "Paraguay seeks to return part of the savings frozen at Ueno Bank within 24 hours",
+      "url": "https://en.mercopress.com/2026/11/05/paraguay-seeks-to-return-part-of-the-savings-frozen-at-ueno-bank-within-24-hours?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+      "tid": 1793862480.0,
       "statskontrollerad": false
      }
     ],
     "europa": [
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "Paraguay's Peña offers resignation amid banking scandal, protests",
-      "url": "https://www.france24.com/en/video/20261106-paraguay-s-pe%C3%B1a-offers-resignation-amid-banking-scandal-protests",
-      "tid": 1793972758.0,
-      "statskontrollerad": false
-     },
      {
       "kalla": "The Guardian",
       "land": "GB",
@@ -20900,39 +20834,21 @@
       "statskontrollerad": true
      }
     ],
-    "latinamerika": [
+    "asien": [
      {
-      "kalla": "El Tiempo",
-      "land": "CO",
-      "rubrik": "Crisis de Ueno Bank en Paraguay: ¿qué pasó con el banco que desató protestas y la renuncia presidencial?",
-      "url": "https://www.eltiempo.com/mundo/latinoamerica/crisis-de-ueno-bank-en-paraguay-que-paso-con-el-banco-que-desato-protestas-y-la-renuncia-presidencial-3598948",
-      "tid": 1793971061.0,
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Paraguay's ueno bank collapse: The controversy that toppled president, locked half country out of money",
+      "url": "https://www.hindustantimes.com/world-news/explained-the-ueno-bank-collapse-paraguay-half-country-locked-out-money-president-santiago-pena-resignation-101793938578725.html",
+      "tid": 1793944770.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "MercoPress",
-      "land": "UY",
-      "rubrik": "Paraguay’s Santiago Peña tenders his resignation, but Congress presses ahead with impeachment",
-      "url": "https://en.mercopress.com/2026/11/05/paraguay-s-santiago-pena-tenders-his-resignation-but-congress-presses-ahead-with-impeachment?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-      "tid": 1793916720.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Buenos Aires Times",
-      "land": "AR",
-      "rubrik": "Paraguay's President Santiago Peña resigns amid banking scandal",
-      "url": "https://www.batimes.com.ar/news/latin-america/paraguays-president-santiago-pena-resigns-amid-banking-scandal.phtml",
-      "tid": 1793897146.0,
-      "statskontrollerad": false
-     }
-    ],
-    "afrika": [
-     {
-      "kalla": "Africanews",
-      "land": "CG",
-      "rubrik": "Paraguay: Thousands protest banking scandal as president faces impeachment",
-      "url": "http://www.africanews.com/2026/11/06/paraguay-thousands-protest-banking-scandal-as-president-faces-impeachment/",
-      "tid": 1793953750.0,
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Santiago Pena, Paraguay President, steps down as banking crisis sows chaos",
+      "url": "https://www.thehindu.com/news/international/santiago-pena-paraguay-president-steps-down-as-banking-crisis-sows-chaos/article71672650.ece",
+      "tid": 1793941244.0,
       "statskontrollerad": false
      }
     ],
@@ -21012,54 +20928,18 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Paraguay resumes Pena impeachment proceedings as financial crisis deepens",
+  "reserv_rubrik": "How Paraguay’s Ueno collapse is only its latest banking crisis",
   "kallor": [
    {
     "namn": "Al Jazeera",
-    "rubrik": "Paraguay resumes Pena impeachment proceedings as financial crisis deepens",
-    "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens?traffic_source=rss",
-    "tid": 1793984336.0,
+    "rubrik": "How Paraguay’s Ueno collapse is only its latest banking crisis",
+    "url": "https://www.aljazeera.com/news/2026/11/6/how-paraguays-ueno-collapse-is-only-its-latest-banking-crisis?traffic_source=rss",
+    "tid": 1793986942.0,
     "betalvagg": false,
     "typ": "media",
     "land": "QA",
     "region": "mellanostern",
     "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Paraguay President Santiago Pena requests extra three days to prepare impeachment defence",
-    "url": "https://www.thehindu.com/news/international/paraguay-president-santiago-pena-requests-extra-three-days-to-prepare-impeachment-defence/article71674857.ece",
-    "tid": 1793974200.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "Paraguay’s leadership in limbo as Pena’s impeachment trial starts over bank collapse",
-    "url": "https://www.straitstimes.com/world/paraguays-senate-resumes-president-pena-impeachment-proceedings",
-    "tid": 1793973501.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "France 24",
-    "rubrik": "Paraguay's Peña offers resignation amid banking scandal, protests",
-    "url": "https://www.france24.com/en/video/20261106-paraguay-s-pe%C3%B1a-offers-resignation-amid-banking-scandal-protests",
-    "tid": 1793972758.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -21071,18 +20951,6 @@
     "typ": "media",
     "land": "CO",
     "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Africanews",
-    "rubrik": "Paraguay: Thousands protest banking scandal as president faces impeachment",
-    "url": "http://www.africanews.com/2026/11/06/paraguay-thousands-protest-banking-scandal-as-president-faces-impeachment/",
-    "tid": 1793953750.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CG",
-    "region": "afrika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -21111,26 +20979,14 @@
     "statskontrollerad": false
    },
    {
-    "namn": "ABC News (Australien)",
-    "rubrik": "Paraguay's president tangled up in Ueno banking crisis",
-    "url": "https://www.abc.net.au/news/2026-11-06/banking-crisis-plunges-paraguay-into-political-disarray/107355316",
-    "tid": 1793943574.0,
+    "namn": "The Hindu",
+    "rubrik": "Santiago Pena, Paraguay President, steps down as banking crisis sows chaos",
+    "url": "https://www.thehindu.com/news/international/santiago-pena-paraguay-president-steps-down-as-banking-crisis-sows-chaos/article71672650.ece",
+    "tid": 1793941244.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "AU",
+    "land": "IN",
     "region": "asien",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "MercoPress",
-    "rubrik": "Paraguay’s Santiago Peña tenders his resignation, but Congress presses ahead with impeachment",
-    "url": "https://en.mercopress.com/2026/11/05/paraguay-s-santiago-pena-tenders-his-resignation-but-congress-presses-ahead-with-impeachment?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-    "tid": 1793916720.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "UY",
-    "region": "latinamerika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -21180,6 +21036,18 @@
     "land": "SE",
     "region": "sverige",
     "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "MercoPress",
+    "rubrik": "Paraguay seeks to return part of the savings frozen at Ueno Bank within 24 hours",
+    "url": "https://en.mercopress.com/2026/11/05/paraguay-seeks-to-return-part-of-the-savings-frozen-at-ueno-bank-within-24-hours?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+    "tid": 1793862480.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "UY",
+    "region": "latinamerika",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -21242,7 +21110,7 @@
   "data": null,
   "godkand_tid": 1793948948.5031242,
   "automatisk": false,
-  "uppdaterad_tid": 1793985022.268238
+  "uppdaterad_tid": 1793988715.7403252
  },
  "ad595b9bde": {
   "id": "ad595b9bde",
@@ -22159,37 +22027,38 @@
  "5b994d8d51": {
   "id": "5b994d8d51",
   "amnen": [
-   "usa"
+   "usa",
+   "varlden"
   ],
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 30.1,
+  "poang": 32.7,
   "vikt": {
-   "bredd": 0.843,
+   "bredd": 0.765,
    "regioner": {
+    "latinamerika": 1,
     "europa": 2,
-    "usa": 6,
+    "usa": 3,
     "asien": 3,
-    "mellanostern": 1,
     "norden": 1
    },
-   "timmar": 46,
+   "timmar": 64,
    "konsekvens": {
     "berorda": 3,
     "allvar": 3,
     "varaktighet": 2,
     "medel": 2.67,
-    "skal": "En federal domstol har tillfälligt stoppat bygget av Trumps triumfbåge i Washington, vilket är en politisk tvist med begränsad och tillfällig påverkan."
+    "skal": "En federal domare stoppar tillfälligt bygget av Trumps triumfbåge i Washington, en politisk tvist med begränsad och kortvarig effekt."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 13,
+  "antal_kallor": 10,
   "har_primarkalla": false,
-  "senast": "2026-11-06T14:04:35+00:00",
+  "senast": "2026-11-06T16:55:11+00:00",
   "utkast": {
    "rubrik_sv": "Domare stoppar byggandet av Trumps triumfbåge i Washington i 14 dagar",
    "sammanfattning_sv": "En federal domare har beslutat att byggandet av Trumps triumfbåge i Washington ska pausas i 14 dagar. Enligt flera källor hade en federal planeringsnämnd godkänt projektet timmar tidigare, med en omröstning på 8 mot 4 enligt Deutsche Welle.",
@@ -22352,88 +22221,24 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Domstolens tillfälliga stopp",
-     "namn_en": "Court's temporary halt",
-     "lyfter_sv": "Guardian, Al Jazeera och DR lyfter fram att en domare stoppar bygget, The Hindu och Straits Times att pausen varar i två veckor, Hindustan Times att domaren pekar på risk för skada i Virginia och Washington.",
-     "lyfter_en": "The Guardian, Al Jazeera and DR highlight that a judge halts the construction, The Hindu and The Straits Times that the pause lasts two weeks, Hindustan Times that the judge points to a risk of harm in Virginia and Washington.",
+     "namn_sv": "Godkännande före domstolsstopp",
+     "namn_en": "Approval before the court block",
+     "lyfter_sv": "BBC lyfter fram att blockeringen kom efter myndighetens godkännande, NPR att den kom strax efter, Axios att den kom timmar efter slutligt planeringsgodkännande och Fox att planeringskommissionen godkänt bygget timmar före beslutet.",
+     "lyfter_en": "BBC highlights that the block came after agency approval, NPR that it came moments after, Axios that it came hours after final planning approval, and Fox that the planning commission approved construction hours before the order.",
      "kallor": [
       {
-       "namn": "The Guardian",
+       "namn": "BBC World",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.theguardian.com/us-news/2026/nov/06/judge-temporarily-halts-work-trump-triumphal-arch-washington"
+       "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss"
       },
       {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/us-news/trumps-planned-washington-memorial-arch-construction-faces-14-day-pause-after-court-ruling-101793959391997.html"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/key-federal-panel-approves-trumps-arch-while-it-is-being-challenged-in-court/article71673086.ece"
-      },
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/6/us-judge-halts-construction-of-trumps-triumphal-arch-in-washington-dc?traffic_source=rss"
-      },
-      {
-       "namn": "DR Nyheder",
-       "region": "norden",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dr.dk/nyheder/seneste/dommer-saetter-stopper-trumps-triumfbue"
-      },
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/united-states/panel-votes-to-proceed-with-trumps-massive-arch-despite-complaints"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa",
-      "mellanostern",
-      "norden"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Godkännande följt av blockering",
-     "namn_en": "Approval followed by blockade",
-     "lyfter_sv": "New York Post och Fox News lyfter fram att nämnden godkände bygget timmar före domstolens beslut, Deutsche Welle att röstningen gick 8-4, Washington Examiner att domaren utsågs av Obama, Axios att blockeringen kom timmar efter godkännandet.",
-     "lyfter_en": "New York Post and Fox News highlight the commission's approval hours before the court's decision, Deutsche Welle an 8-4 vote, Washington Examiner that the judge was appointed by Obama, Axios that the block came hours after approval.",
-     "kallor": [
-      {
-       "namn": "Washington Examiner",
+       "namn": "NPR",
        "region": "usa",
-       "lutning": "lutar_hoger",
+       "lutning": "lutar_vanster",
        "statskontrollerad": false,
-       "url": "https://www.washingtonexaminer.com/news/justice/4795112/trump-arch-delayed-federal-judge-temporary-restraining-order/"
-      },
-      {
-       "namn": "New York Post",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://nypost.com/2026/11/06/us-news/trumps-250-foot-triumphal-arch-gets-greenlight-from-key-federal-panel/"
-      },
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/us-judge-temporarily-blocks-trump-s-arch-project-after-panel-approval/a-79871690?maca=en-rss-en-all-1573-rdf"
+       "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon"
       },
       {
        "namn": "Axios",
@@ -22460,132 +22265,172 @@
      ]
     },
     {
-     "namn_sv": "Samtidigt: jobbrapport och börsfall",
-     "namn_en": "Alongside jobs report and stock drop",
-     "lyfter_sv": "NPR lyfter fram att jobbrapporten släpps dagen efter ett börsfall, The Hill att rapporten innehåller överraskningar.",
-     "lyfter_en": "NPR highlights that the jobs report comes a day after a stock drop, The Hill that the report contains surprises.",
+     "namn_sv": "Tvåveckorsfristen för bygget",
+     "namn_en": "The two-week construction freeze",
+     "lyfter_sv": "Hindustan Times lyfter fram en 14-dagars paus, The Hindu en 14-dagars fördröjning och The Straits Times att bygget inte får starta på två veckor.",
+     "lyfter_en": "Hindustan Times highlights a 14-day pause, The Hindu a 14-day delay, and The Straits Times that construction cannot start for two weeks.",
      "kallor": [
       {
-       "namn": "The Hill",
-       "region": "usa",
-       "lutning": "mitten",
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
        "statskontrollerad": false,
-       "url": "https://thehill.com/homenews/administration/6203096-live-updates-trump-midterm-elections-iran-jobs/"
+       "url": "https://www.hindustantimes.com/world-news/us-news/trumps-planned-washington-memorial-arch-construction-faces-14-day-pause-after-court-ruling-101793959391997.html"
       },
       {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon"
+       "url": "https://www.thehindu.com/news/international/key-federal-panel-approves-trumps-arch-while-it-is-being-challenged-in-court/article71673086.ece"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/united-states/panel-votes-to-proceed-with-trumps-massive-arch-despite-complaints"
       }
      ],
      "regioner": [
-      "usa"
+      "asien"
      ],
-     "usa_sidor": [
-      "bla",
-      "mitten"
-     ]
+     "usa_sidor": []
     }
    ],
    "kontroll": {
-    "ok": false,
-    "antal": 10,
-    "problem": [
-     "saknar stöd: New York Post lyfter fram att nämnden godkände bygget timmar före domstolens beslut"
-    ],
+    "ok": true,
+    "antal": 9,
+    "problem": [],
     "pastaenden": [
      {
-      "text": "Guardian, Al Jazeera och DR lyfter fram att en domare stoppar bygget",
+      "text": "Federal domare stoppar bygget av Trumps triumfbåge i 14 dagar (rubrik)",
       "stod": [
-       1,
-       7,
+       6,
+       8,
        9
       ],
       "problem": null
      },
      {
-      "text": "The Hindu och Straits Times: pausen varar i två veckor",
+      "text": "Bygget av Trumps triumfbåge i Washington är föremål för blockeringen (rubrik)",
       "stod": [
-       6,
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: domaren pekar på risk för skada i Virginia och Washington",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fox News lyfter fram att nämnden godkände bygget timmar före domstolens beslut",
-      "stod": [
-       13
-      ],
-      "problem": null
-     },
-     {
-      "text": "New York Post lyfter fram att nämnden godkände bygget timmar före domstolens beslut",
-      "stod": [
-       8
-      ],
-      "problem": "saknar stöd"
-     },
-     {
-      "text": "Deutsche Welle: röstningen i nämnden gick 8-4",
-      "stod": [
+       2,
        10
       ],
       "problem": null
      },
      {
-      "text": "Washington Examiner: domaren utsågs av Obama",
+      "text": "BBC: blockeringen kom efter myndighetens godkännande",
       "stod": [
-       3
+       2
       ],
       "problem": null
      },
      {
-      "text": "Axios: blockeringen kom timmar efter godkännandet",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR lyfter fram att jobbrapporten släpps dagen efter ett börsfall",
+      "text": "NPR: blockeringen kom strax efter att bygget godkänts av federala myndigheter",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "The Hill: rapporten innehåller överraskningar",
+      "text": "Axios: blockeringen kom timmar efter slutligt planeringsgodkännande",
       "stod": [
-       2
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox: planeringskommissionen godkände bygget timmar före beslutet",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: en 14-dagars paus i bygget",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: en 14-dagars fördröjning av allt arbete",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: bygget får inte starta på två veckor",
+      "stod": [
+       9
       ],
       "problem": null
      }
     ],
-    "sammanfattning": "New York Posts rubrik nämner godkännandet men inte att det skedde timmar före domstolens beslut; den tidsangivelsen stöds bara av Fox News. Tillskrivningen till New York Post bör ändras eller strykas."
+    "sammanfattning": null
    },
-   "ok": false
+   "ok": true
   },
-  "sammanhang": 0.712,
-  "betydelse": null,
+  "sammanhang": 0.775,
+  "betydelse": {
+   "sv": null,
+   "en": "Because a federal judge has temporarily blocked construction for 14 days, work on the arch cannot start in that period, which matters most for residents of Virginia and Washington, D.C., where the judge cited likely harm.",
+   "grund": [
+    2,
+    5,
+    9
+   ],
+   "grund_kallor": [
+    {
+     "namn": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/us-news/trumps-planned-washington-memorial-arch-construction-faces-14-day-pause-after-court-ruling-101793959391997.html"
+    },
+    {
+     "namn": "The Straits Times",
+     "url": "https://www.straitstimes.com/world/united-states/panel-votes-to-proceed-with-trumps-massive-arch-despite-complaints"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
-    "mellanostern",
+    "latinamerika",
     "norden",
     "usa"
    ],
    "per_region": {
+    "latinamerika": [
+     {
+      "kalla": "El País América",
+      "land": "ES",
+      "rubrik": "Una jueza federal paraliza ‘in extremis’ las obras del arco del triunfo que Trump quiere construir en Washington",
+      "url": "https://elpais.com/us/2026-11-06/una-jueza-federal-paraliza-in-extremis-las-obras-del-arco-del-triunfo-que-trump-quiere-construir-en-washington.html",
+      "tid": 1793984111.0,
+      "statskontrollerad": false
+     }
+    ],
     "europa": [
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Judge blocks construction of Trump's massive arch after federal agency approval",
+      "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
+      "tid": 1793979042.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Guardian",
       "land": "GB",
@@ -22593,47 +22438,15 @@
       "url": "https://www.theguardian.com/us-news/2026/nov/06/judge-temporarily-halts-work-trump-triumphal-arch-washington",
       "tid": 1793973875.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "US judge temporarily blocks Trump's arch project after panel approval",
-      "url": "https://www.dw.com/en/us-judge-temporarily-blocks-trump-s-arch-project-after-panel-approval/a-79871690?maca=en-rss-en-all-1573-rdf",
-      "tid": 1793946600.0,
-      "statskontrollerad": false
      }
     ],
     "usa": [
-     {
-      "kalla": "The Hill",
-      "land": "US",
-      "rubrik": "Live updates: Trump's triumphal arch OK'd by panel, halted by judge; jobs report surprises",
-      "url": "https://thehill.com/homenews/administration/6203096-live-updates-trump-midterm-elections-iran-jobs/",
-      "tid": 1793973340.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Washington Examiner",
-      "land": "US",
-      "rubrik": "Trump’s planned arch delayed after federal judge orders temporary restraining order",
-      "url": "https://www.washingtonexaminer.com/news/justice/4795112/trump-arch-delayed-federal-judge-temporary-restraining-order/",
-      "tid": 1793970759.0,
-      "statskontrollerad": false
-     },
      {
       "kalla": "NPR",
       "land": "US",
       "rubrik": "Judge halts construction of Trump's arch. And, Labor Department to release jobs report",
       "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon",
       "tid": 1793967892.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "New York Post",
-      "land": "US",
-      "rubrik": "Trump’s 250-foot triumphal arch gets green light from key federal panel — but judge blocks construction for at least 14 days",
-      "url": "https://nypost.com/2026/11/06/us-news/trumps-250-foot-triumphal-arch-gets-greenlight-from-key-federal-panel/",
-      "tid": 1793948120.0,
       "statskontrollerad": false
      },
      {
@@ -22679,16 +22492,6 @@
       "statskontrollerad": false
      }
     ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "US judge halts construction of Trump’s triumphal arch in Washington, DC",
-      "url": "https://www.aljazeera.com/news/2026/11/6/us-judge-halts-construction-of-trumps-triumphal-arch-in-washington-dc?traffic_source=rss",
-      "tid": 1793950328.0,
-      "statskontrollerad": false
-     }
-    ],
     "norden": [
      {
       "kalla": "DR Nyheder",
@@ -22703,38 +22506,6 @@
    "blind_flack": null,
    "grannar_svenska": false,
    "usa": {
-    "mitten": [
-     {
-      "kalla": "The Hill",
-      "rubrik": "Live updates: Trump's triumphal arch OK'd by panel, halted by judge; jobs report surprises",
-      "url": "https://thehill.com/homenews/administration/6203096-live-updates-trump-midterm-elections-iran-jobs/",
-      "tid": 1793973340.0,
-      "lutning": "mitten"
-     }
-    ],
-    "rod": [
-     {
-      "kalla": "Washington Examiner",
-      "rubrik": "Trump’s planned arch delayed after federal judge orders temporary restraining order",
-      "url": "https://www.washingtonexaminer.com/news/justice/4795112/trump-arch-delayed-federal-judge-temporary-restraining-order/",
-      "tid": 1793970759.0,
-      "lutning": "lutar_hoger"
-     },
-     {
-      "kalla": "New York Post",
-      "rubrik": "Trump’s 250-foot triumphal arch gets green light from key federal panel — but judge blocks construction for at least 14 days",
-      "url": "https://nypost.com/2026/11/06/us-news/trumps-250-foot-triumphal-arch-gets-greenlight-from-key-federal-panel/",
-      "tid": 1793948120.0,
-      "lutning": "hoger"
-     },
-     {
-      "kalla": "Fox News",
-      "rubrik": "Federal judge temporarily blocks construction of Trump's Arlington triumphal arch hours after approval",
-      "url": "https://www.foxnews.com/politics/trumps-massive-arlington-triumphal-arch-approved-construction-federal-planning-commission",
-      "tid": 1793937725.0,
-      "lutning": "hoger"
-     }
-    ],
     "bla": [
      {
       "kalla": "NPR",
@@ -22750,12 +22521,45 @@
       "tid": 1793944496.0,
       "lutning": "lutar_vanster"
      }
+    ],
+    "rod": [
+     {
+      "kalla": "Fox News",
+      "rubrik": "Federal judge temporarily blocks construction of Trump's Arlington triumphal arch hours after approval",
+      "url": "https://www.foxnews.com/politics/trumps-massive-arlington-triumphal-arch-approved-construction-federal-planning-commission",
+      "tid": 1793937725.0,
+      "lutning": "hoger"
+     }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Federal judge temporarily halts building work on Trump’s triumphal arch",
+  "reserv_rubrik": "Una jueza federal paraliza ‘in extremis’ las obras del arco del triunfo que Trump quiere construir en Washington",
   "kallor": [
+   {
+    "namn": "El País América",
+    "rubrik": "Una jueza federal paraliza ‘in extremis’ las obras del arco del triunfo que Trump quiere construir en Washington",
+    "url": "https://elpais.com/us/2026-11-06/una-jueza-federal-paraliza-in-extremis-las-obras-del-arco-del-triunfo-que-trump-quiere-construir-en-washington.html",
+    "tid": 1793984111.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ES",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "BBC World",
+    "rubrik": "Judge blocks construction of Trump's massive arch after federal agency approval",
+    "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
+    "tid": 1793979042.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Guardian",
     "rubrik": "Federal judge temporarily halts building work on Trump’s triumphal arch",
@@ -22765,30 +22569,6 @@
     "typ": "media",
     "land": "GB",
     "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hill",
-    "rubrik": "Live updates: Trump's triumphal arch OK'd by panel, halted by judge; jobs report surprises",
-    "url": "https://thehill.com/homenews/administration/6203096-live-updates-trump-midterm-elections-iran-jobs/",
-    "tid": 1793973340.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Washington Examiner",
-    "rubrik": "Trump’s planned arch delayed after federal judge orders temporary restraining order",
-    "url": "https://www.washingtonexaminer.com/news/justice/4795112/trump-arch-delayed-federal-judge-temporary-restraining-order/",
-    "tid": 1793970759.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -22829,30 +22609,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Al Jazeera",
-    "rubrik": "US judge halts construction of Trump’s triumphal arch in Washington, DC",
-    "url": "https://www.aljazeera.com/news/2026/11/6/us-judge-halts-construction-of-trumps-triumphal-arch-in-washington-dc?traffic_source=rss",
-    "tid": 1793950328.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "New York Post",
-    "rubrik": "Trump’s 250-foot triumphal arch gets green light from key federal panel — but judge blocks construction for at least 14 days",
-    "url": "https://nypost.com/2026/11/06/us-news/trumps-250-foot-triumphal-arch-gets-greenlight-from-key-federal-panel/",
-    "tid": 1793948120.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "DR Nyheder",
     "rubrik": "Dommer sætter stopper for Trumps 'triumfbue'",
     "url": "https://www.dr.dk/nyheder/seneste/dommer-saetter-stopper-trumps-triumfbue",
@@ -22861,18 +22617,6 @@
     "typ": "media",
     "land": "DK",
     "region": "norden",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Deutsche Welle",
-    "rubrik": "US judge temporarily blocks Trump's arch project after panel approval",
-    "url": "https://www.dw.com/en/us-judge-temporarily-blocks-trump-s-arch-project-after-panel-approval/a-79871690?maca=en-rss-en-all-1573-rdf",
-    "tid": 1793946600.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
    },
@@ -22918,13 +22662,11 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [
-   "källkontrollen har 1 anmärkningar"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1793967371.365122,
   "automatisk": false,
-  "uppdaterad_tid": 1793977802.24119
+  "uppdaterad_tid": 1793988715.7403252
  },
  "7aef1b9765": {
   "id": "7aef1b9765",
