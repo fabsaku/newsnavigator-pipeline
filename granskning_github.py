@@ -8,7 +8,6 @@ Kräver GITHUB_TOKEN och GITHUB_REPOSITORY (finns automatiskt i GitHub Actions).
 En bock = godkänd. En borttagen bock = godkännandet ångras.
 Autopilotens kö visas förbockad med klockslag: bocken är inget godkännande, men en urbockad notis stoppas.
 """
-import rattelser
 import json
 import os
 import re
@@ -20,6 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import autopilot
+import rattelser
 
 ROOT = Path(__file__).parent
 FLODE = ROOT / "data" / "flode.json"
