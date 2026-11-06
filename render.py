@@ -6,7 +6,9 @@ Det enda som får ta plats är täckningsremsan: en cell per region som tänds n
 import html
 import os
 import re
+from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).parent
 
@@ -182,6 +184,25 @@ def _e(s):
     return html.escape(s or "", quote=True)
 
 
+MANADER_SV = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"]
+MANADER_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+
+def tidstext(ts, kort=False):
+    """(svenska, engelska). Svensk tid i den svenska utgåvan, UTC i den engelska, som är global. `kort` utan år."""
+    s = datetime.fromtimestamp(ts, timezone.utc).astimezone(ZoneInfo("Europe/Stockholm"))
+    u = datetime.fromtimestamp(ts, timezone.utc)
+    ar_s, ar_u = ("", "") if kort else (f" {s.year}", f" {u.year}")
+    return (f"{s.day} {MANADER_SV[s.month - 1]}{ar_s} kl {s:%H.%M}",
+            f"{u.day} {MANADER_EN[u.month - 1]}{ar_u} at {u:%H:%M} UTC")
+
+
+def stampel(ts, kort=False):
+    """Tidsstämpel som riktigt <time>-element."""
+    iso = datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return f'<time datetime="{iso}">{_both(*tidstext(ts, kort))}</time>'
+
+
 def _both(sv, en):
     sv, en = _e(sv), _e(en or sv)
     return sv if sv == en else f'<span class="sv">{sv}</span><span class="en">{en}</span>'
@@ -249,8 +270,17 @@ def ai_marke(ev):
     return ""
 
 
-def meta_block(ev, internal=False):
-    parts = [meta_line(ev)] + [f"<b>{n}</b>" for n in notes(ev, internal)] + ([ai_marke(ev)] if ai_marke(ev) and not internal else [])
+def _nar(ev):
+    return stampel(ev["godkand_tid"], kort=True) if ev.get("godkand_tid") else ""
+
+
+def _kalltid(x):
+    return f', {stampel(x["tid"], kort=True)}' if x.get("tid") else ""
+
+
+def meta_block(ev, internal=False, tid=True):
+    parts = ([_nar(ev)] if tid and _nar(ev) else []) + [meta_line(ev)] + [f"<b>{n}</b>" for n in notes(ev, internal)]
+    parts += [ai_marke(ev)] if ai_marke(ev) and not internal else []
     return f'<p class="meta">{". ".join(parts)}.</p>'
 
 
@@ -319,6 +349,8 @@ def source_list(ev):
             who.append(_both(*country(s["land"])))
         if s.get("betalvagg"):
             who.append(_both("betalvägg", "paywall"))
+        if s.get("tid"):
+            who.append(stampel(s["tid"], kort=True))
         tail = f' <span class="who">{", ".join(who)}</span>' if who else ""
         stat = '<span class="stat">STAT</span>' if s.get("statskontrollerad") else ""
         items.append(f'<li><a href="{_e(s["url"])}" rel="noopener">{_e(s["namn"])}</a>{stat}{tail}</li>')
@@ -396,7 +428,7 @@ def story_featured(ev, href, kicker=""):
 def story_item(ev, href, kicker=""):
     """Rad i en rubriklista."""
     k = f'<a href="{_e(kicker[1])}">{kicker[0]}</a> ' if kicker else ""
-    return f'<li><h3><a href="{_e(href)}">{_title(ev)}</a></h3><p class="meta">{k}{meta_line(ev)}{". " + ai_marke(ev) if ai_marke(ev) else ""}</p></li>'
+    return f'<li><h3><a href="{_e(href)}">{_title(ev)}</a></h3><p class="meta">{k}{_nar(ev) + ". " if _nar(ev) else ""}{meta_line(ev)}{". " + ai_marke(ev) if ai_marke(ev) else ""}</p></li>'
 
 
 def narratives_block(ev):
@@ -447,14 +479,14 @@ def story_full(ev, internal=False, lang=None, rubrik="h2"):
     d = ev.get("utkast") or {}
     p = ev.get("perspektiv") or {}
     regs = p.get("regioner", [])
-    parts = [f'<{rubrik}>{_title(ev)}</{rubrik}>', _summary(ev), coverage(ev), meta_block(ev, internal)]
+    parts = [f'<{rubrik}>{_title(ev)}</{rubrik}>', _summary(ev), coverage(ev), meta_block(ev, internal, tid=False)]
 
     if len(regs) >= 2 or d.get("perspektiv_sv"):
         cols = []
         for r in regs:
             items = "".join(
                 f'<li><a href="{_e(x["url"])}" rel="noopener">{_e(x["rubrik"])}</a>'
-                f'<span class="who">{_e(x["kalla"])}{", " + _both(*country(x["land"])) if x.get("land") else ""}'
+                f'<span class="who">{_e(x["kalla"])}{", " + _both(*country(x["land"])) if x.get("land") else ""}{_kalltid(x)}'
                 f'{"<span class=stat>STAT</span>" if x.get("statskontrollerad") else ""}</span></li>'
                 for x in p["per_region"][r])
             cols.append(f'<div class="region"><h4>{_both(*REGIONS.get(r, (r, r)))}</h4><ul>{items}</ul></div>')
@@ -468,7 +500,7 @@ def story_full(ev, internal=False, lang=None, rubrik="h2"):
             items = p["usa"].get(key) or []
             lis = "".join(
                 f'<li><a href="{_e(x["url"])}" rel="noopener">{_e(x["rubrik"])}</a>'
-                f'<span class="who">{_e(x["kalla"])}, AllSides: {_both(*LEANS[x["lutning"]])}</span></li>' for x in items)
+                f'<span class="who">{_e(x["kalla"])}, AllSides: {_both(*LEANS[x["lutning"]])}{_kalltid(x)}</span></li>' for x in items)
             cols.append(f'<div class="region"><h4>{_both(sv, en)}</h4><ul>{lis or "<li class=none>" + _both("Inga rubriker", "No headlines") + "</li>"}</ul></div>')
         txt = f'<p class="persp">{_both(d["usa_sv"], d.get("usa_en"))}</p>' if d.get("usa_sv") else ""
         parts.append(f'<h3 class="section-h">{_both("USA: blått och rött", "US: blue and red")}</h3>{coverage_usa(p)}{txt}'

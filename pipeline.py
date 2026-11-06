@@ -405,7 +405,7 @@ def perspective(c):
     regions = {}
     for i in c["items"]:
         regions.setdefault(i["region"], []).append({
-            "kalla": i["source_name"], "land": i["country"], "rubrik": i["title"], "url": i["url"],
+            "kalla": i["source_name"], "land": i["country"], "rubrik": i["title"], "url": i["url"], "tid": i["epoch"],
             "statskontrollerad": i["state_controlled"]})
     n_sources = len(independent(c))
     names = {i["region"] for i in c["items"] if i["source_type"] != "kuraterat"}
@@ -432,7 +432,7 @@ def usa_spectrum(c):
     for i in c["items"]:
         side = LEAN_SIDE.get(i.get("usa_lean") or "")
         if side:
-            sides.setdefault(side, []).append({"kalla": i["source_name"], "rubrik": i["title"], "url": i["url"],
+            sides.setdefault(side, []).append({"kalla": i["source_name"], "rubrik": i["title"], "url": i["url"], "tid": i["epoch"],
                                                "lutning": i["usa_lean"]})
     blind = None
     for a, b in (("bla", "rod"), ("rod", "bla")):
@@ -795,7 +795,7 @@ def main():
             "betydelse": bet.get(c["id"]),
             "perspektiv": perspective(c),
             "reserv_rubrik": lead["title"],
-            "kallor": [{"namn": i["source_name"], "rubrik": i["title"], "url": i["url"],
+            "kallor": [{"namn": i["source_name"], "rubrik": i["title"], "url": i["url"], "tid": i["epoch"],
                         "betalvagg": i["paywall"], "typ": i["source_type"], "land": i["country"],
                         "region": i["region"], "agare": i["owner"],
                         "statskontrollerad": i["state_controlled"]} for i in c["items"]],

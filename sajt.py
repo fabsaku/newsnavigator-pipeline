@@ -27,7 +27,7 @@ import rattelser
 import spar
 import utgava
 from newsletter import SECTIONS, section_of, utan_upprepningar
-from render import (CSS, FONTS_URL, JS, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
+from render import (CSS, FONTS_URL, JS, stampel, tidstext, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
                     story_featured, story_full, story_item, story_lead)
 
 ROOT = Path(__file__).parent
@@ -191,10 +191,10 @@ def _lock(text, lang):
 
 
 def _date(ts, clock=False):
+    if clock:
+        return tidstext(ts)
     d = datetime.fromtimestamp(ts, timezone.utc).astimezone(TZ)
-    t = f" kl {d:%H.%M}" if clock else ""
-    te = f" at {d:%H:%M}" if clock else ""
-    return f"{d.day} {MONTHS_SV[d.month - 1]} {d.year}{t}", f"{d.day} {MONTHS_EN[d.month - 1]} {d.year}{te}"
+    return f"{d.day} {MONTHS_SV[d.month - 1]} {d.year}", f"{d.day} {MONTHS_EN[d.month - 1]} {d.year}"
 
 
 def _section_names(slug):
@@ -361,7 +361,7 @@ def rattelser_page(u, poster, sources, banner, noindex):
     """Allt som rättats eller tagits bort efter publicering, senast först (princip 8)."""
     def rad(p):
         rubrik = _e(p.get(f"rubrik_{'en' if u.lang == 'en' else 'sv'}") or p.get("rubrik_sv") or "")
-        datum = _both(*_date(p["tid"], clock=True))
+        datum = stampel(p["tid"])
         if p.get("typ") == "borttagen":
             vad = _both("Notisen togs bort efter publicering.", "The story was removed after publication.")
         else:
@@ -393,14 +393,14 @@ def story_page(u, ev, related, sources, banner, noindex):
     lg = "en" if u.lang == "en" else "sv"
     title_sv = d.get(f"rubrik_{lg}") or d.get("rubrik_sv") or ev["reserv_rubrik"]
     desc_sv = d.get(f"sammanfattning_{lg}") or d.get("sammanfattning_sv") or ""
-    pub = _both(*_date(ev.get("godkand_tid", 0), clock=True)) if ev.get("godkand_tid") else ""
-    upd = (f'<span>{_both("Uppdaterad", "Updated")} {_both(*_date(ev["uppdaterad_tid"], clock=True))}</span>'
+    pub = stampel(ev["godkand_tid"]) if ev.get("godkand_tid") else ""
+    upd = (f'<span>{_both("Uppdaterad", "Updated")} {stampel(ev["uppdaterad_tid"])}</span>'
            if ev.get("uppdaterad_tid") else "")
     more = ""
     if related:
         more = (f'<h2 class="more-h">{_both("Fler notiser i", "More in")} {_both(sv, en)}</h2><ul class="list" style="max-width:760px">'
                 + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
-    rattat = "".join(f'<p class="check"><b>{_both("Rättad", "Corrected")} {_both(*_date(p["tid"], clock=True))}.</b> '
+    rattat = "".join(f'<p class="check"><b>{_both("Rättad", "Corrected")} {stampel(p["tid"])}.</b> '
                      f'{_both(_e(p.get("vad_sv") or ""), _e(p.get("vad_en") or p.get("vad_sv") or ""))}</p>' for p in rattelser.for_notis(ev["id"]))
     namn = {s[0]: (s[1], s[2]) for s in spar.SPAR}
     spor = "".join(f'<a href="{_e(u.page("spar"))}#{k}">{_both(*namn[k])}</a>' for k in spar.av(ev))

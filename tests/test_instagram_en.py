@@ -135,7 +135,7 @@ def test_bildtexten_har_inga_slogans_eller_hashtaggar():
         cap = instagram.caption(handelse(), lang=lang)
         assert "#" not in cap and "Vi levererar" not in cap and "We deliver" not in cap
         assert "How the world sees it" not in cap and "Så ser världen" not in cap      # perspektiven står på korten och sidan
-        assert len([r for r in cap.splitlines() if r.strip()]) <= 6
+        assert len([r for r in cap.splitlines() if r.strip()]) <= 7     # med tidsstämpeln
 
 
 def test_bildtexten_sager_hur_notisen_granskats():

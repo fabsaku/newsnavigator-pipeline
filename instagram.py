@@ -30,7 +30,7 @@ from zoneinfo import ZoneInfo
 
 import utgava
 from newsletter import load_archive, section_of, SECTIONS
-from render import LEANS, REGION_ORDER, REGIONS, SHORT, country
+from render import LEANS, REGION_ORDER, REGIONS, SHORT, country, tidstext
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "public" / "ig"
@@ -382,6 +382,8 @@ def caption(ev, lang="sv"):
     names = [s["namn"] + (stat if s.get("statskontrollerad") else "") for s in ev["kallor"][:8]]
     more = f" och {len(ev['kallor']) - 8} till" if sv else f" and {len(ev['kallor']) - 8} more"
     parts += [("Källor: " if sv else "Sources: ") + ", ".join(names) + (more if len(ev["kallor"]) > 8 else ""), ""]
+    if ev.get("godkand_tid"):
+        parts += [("Publicerad " if sv else "Published ") + tidstext(ev["godkand_tid"])[0 if sv else 1]]
     parts += [("Hela notisen med alla länkar: " if sv else "Full story with all links: ") + notis_url(lang, ev["id"]), ""]
     parts += [_ai_line(ev, lang)]
     return "\n".join(parts)[:2190]

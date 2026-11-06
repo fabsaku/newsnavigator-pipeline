@@ -214,6 +214,11 @@ def _source_links(ev, lang):
     return ", ".join(out)
 
 
+def _tid(ev, lang):
+    from render import tidstext
+    return tidstext(ev["godkand_tid"])[0 if lang == "sv" else 1]
+
+
 def _story(ev, lang, first):
     t, d = TXT[lang], ev.get("utkast") or {}
     title = d.get(f"rubrik_{lang}") or d.get("rubrik_sv") or ev["reserv_rubrik"]
@@ -224,8 +229,9 @@ def _story(ev, lang, first):
     draft = "" if ev.get("granskad") else (
         f'<span style="font-family:{MONO};font-size:11px;letter-spacing:.08em;border:1px solid {FG};'
         f'padding:1px 5px;margin-right:6px">{t["utkast"]}</span>')
-    auto = (f'<p style="margin:-4px 0 10px 0;font-family:{SANS};font-size:12px;color:{MUTED}">{t["automatisk"]}.</p>'
-            if ev.get("automatisk") else "")
+    rad = [_tid(ev, lang)] if ev.get("godkand_tid") else []
+    rad += [t["automatisk"]] if ev.get("automatisk") else []
+    auto = (f'<p style="margin:-4px 0 10px 0;font-family:{SANS};font-size:12px;color:{MUTED}">{". ".join(rad)}.</p>' if rad else "")
     rows = [f'<tr><td style="padding:{"4px" if first else "22px"} 0 0 0;border-top:{"0" if first else "1px solid " + RULE}">'
             f'<h2 style="margin:0 0 8px 0;padding-top:{"0" if first else "18px"};font-family:{SERIF};font-weight:600;'
             f'font-size:22px;line-height:1.25;color:{FG}">{draft}{_e(title)}</h2>{auto}']
@@ -327,6 +333,8 @@ def build_text(lang, chosen, groups, col, now):
             d = e.get("utkast") or {}
             tag = "" if e.get("granskad") else f"[{t['utkast']}] "
             out.append(tag + (d.get(f"rubrik_{lang}") or d.get("rubrik_sv") or e["reserv_rubrik"]))
+            if e.get("godkand_tid"):
+                out.append(_tid(e, lang))
             if d.get(f"sammanfattning_{lang}") or d.get("sammanfattning_sv"):
                 out.append(d.get(f"sammanfattning_{lang}") or d.get("sammanfattning_sv"))
             persp = d.get(f"perspektiv_{lang}") or d.get("perspektiv_sv")
