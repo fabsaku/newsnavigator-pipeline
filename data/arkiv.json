@@ -10103,40 +10103,36 @@
  "c7ee9038c4": {
   "id": "c7ee9038c4",
   "amnen": [
-   "geopolitik",
-   "latinamerika",
    "usa"
   ],
   "amnen_sektion": [
-   "geopolitik",
-   "latinamerika",
    "usa"
   ],
-  "poang": 39.2,
+  "poang": 32.4,
   "vikt": {
-   "bredd": 1.51,
+   "bredd": 0.267,
    "regioner": {
-    "asien": 8,
-    "mellanostern": 4,
-    "latinamerika": 1,
-    "europa": 4,
-    "afrika": 1
+    "usa": 1,
+    "asien": 1,
+    "europa": 1,
+    "mellanostern": 1
    },
-   "timmar": 12,
+   "timmar": 95,
    "konsekvens": {
-    "berorda": 5,
-    "allvar": 5,
-    "varaktighet": 4,
-    "medel": 4.67,
-    "skal": "Demokraterna vinner mellanvalen i USA, vilket påverkar politik, Irans- och Kinapolitik och ekonomi i flera länder under de kommande åren."
+    "berorda": 4,
+    "allvar": 4,
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "Republikanernas valförlust i mellanårsvalet väcker frågan om Trumps och Vances framtid, vilket påverkar USA:s politiska riktning under de kommande åren."
    },
    "bekraftad": true,
-   "maste": true
+   "maste": false,
+   "spar": []
   },
-  "maste": true,
-  "antal_kallor": 18,
+  "maste": false,
+  "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-04T23:34:43+00:00",
+  "senast": "2026-11-05T22:50:00+00:00",
   "utkast": {
    "rubrik_sv": "Demokraterna vinner kontrollen över USA:s kongress i midtermvalet",
    "sammanfattning_sv": "Flera källor uppger att demokraterna tagit kontrollen över både representanthuset och senaten i USA:s midtermval. Källorna kopplar resultatet till Trumps politik, bland annat kriget i Iran och ekonomiska frågor som oljepriser.",
@@ -10311,33 +10307,157 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.418,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Vances ambitioner 2028 efter valet",
+     "namn_en": "Vance's 2028 ambitions after the midterms",
+     "lyfter_sv": "Hindustan Times lyfter fram Trumps uttalande att Vance kanske inte ställer upp 2028 och Vances antydan om Trumps krig mot Iran, medan Le Monde lyfter fram Vances frustration och debatten bland republikaner.",
+     "lyfter_en": "Hindustan Times highlights Trump saying Vance may not run in 2028 and Vance blaming Trump's war on Iran for Democratic gains, while Le Monde highlights Vance's frustration and the debate among Republicans.",
+     "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/us-news/maybe-he-won-t-run-trump-on-jd-vance-2028-presidential-bid-after-midterm-setback-for-republicans-101793858321935.html"
+      },
+      {
+       "namn": "Le Monde (English)",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.lemonde.fr/en/international/article/2026/11/05/midterms-2026-jd-vance-frustrated-by-his-party-s-defeat-sparks-debate-among-republicans_6772406_4.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Trumps framtid efter mellanårsvalet",
+     "namn_en": "Trump's future after the midterms",
+     "lyfter_sv": "Vox lyfter fram vad mellanårsvalen kan betyda för Trumps kabinett, medan det statskontrollerade Tehran Times lyfter fram valet mellan Trump och en framtid utan honom för republikanerna.",
+     "lyfter_en": "Vox highlights what the midterms could mean for Trump's Cabinet, while the state-controlled Tehran Times highlights a choice for Republicans between Trump and a future beyond him.",
+     "kallor": [
+      {
+       "namn": "Vox",
+       "region": "usa",
+       "lutning": "vanster",
+       "statskontrollerad": false,
+       "url": "https://www.vox.com/the-logoff-newsletter-trump/509638/trump-midterms-cabinet-shakeup-hegseth-rubio"
+      },
+      {
+       "namn": "Tehran Times",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.tehrantimes.com/news/531838/After-the-midterms-Republicans-face-a-choice-Trump-or-a-future"
+      }
+     ],
+     "regioner": [
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Republikanerna fick motgångar (nederlag) i mellanårsvalen",
+      "stod": [
+       2,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump har sagt att Vance kanske inte ställer upp i presidentvalet 2028",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Vance antydde att Trumps krig mot Iran bidrog till demokraternas vinster",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Vance är frustrerad över partiets nederlag",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Vances agerande har väckt debatt bland republikaner",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Vox lyfter fram vad mellanårsvalen kan betyda för Trumps kabinett",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times är ett statskontrollerat medium",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times lyfter fram valet mellan Trump och en framtid utan honom för republikanerna",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Berättelsen om Vances ambitioner 2028 handlar om hans presidentambitioner efter valet",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.586,
   "betydelse": {
-   "sv": "Eftersom demokraterna tagit kontrollen över både representanthuset och senaten kan de blockera Trumps lagförslag. Höga oljepriser, som källorna kopplar till kriget i Iran, hänger ihop med bränslepriserna i Sverige.",
-   "en": "Because Democrats now control both chambers of Congress, they can block Trump's legislation and challenge spending on the Iran war. High oil prices, which voters cited, tie into fuel costs for American households.",
+   "sv": null,
+   "en": "Since Republicans lost congressional seats in the midterms, the balance of power in Washington has shifted, which affects which policies can pass Congress.",
    "grund": [
-    5,
-    8,
-    10,
-    13
+    2,
+    4
    ],
    "grund_kallor": [
     {
-     "namn": "South China Morning Post",
-     "url": "https://www.scmp.com/news/us/us-elections/article/3373318/five-takeaways-us-midterms-democrats-sweep-congress-and-trump-faces-iran-reckoning"
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/us-news/maybe-he-won-t-run-trump-on-jd-vance-2028-presidential-bid-after-midterm-setback-for-republicans-101793858321935.html"
     },
     {
-     "namn": "Al-Monitor",
-     "url": "https://www.al-monitor.com/originals/2026/11/analysis-beaten-home-trump-faces-stark-choice-iran-deal-or-escalation"
-    },
-    {
-     "namn": "Deutsche Welle",
-     "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-     "namn": "Daily Maverick",
-     "url": "https://www.dailymaverick.co.za/article/2026-11-04-democrats-capture-congress-in-sweeping-setback-for-trump/"
+     "namn": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/531838/After-the-midterms-Republicans-face-a-choice-Trump-or-a-future"
     }
    ],
    "kontroll": {
@@ -10348,147 +10468,46 @@
   },
   "perspektiv": {
    "regioner": [
-    "afrika",
     "asien",
     "europa",
-    "latinamerika",
-    "mellanostern"
+    "mellanostern",
+    "usa"
    ],
    "per_region": {
+    "usa": [
+     {
+      "kalla": "Vox",
+      "land": "US",
+      "rubrik": "What the midterms could mean for Trump’s Cabinet",
+      "url": "https://www.vox.com/the-logoff-newsletter-trump/509638/trump-midterms-cabinet-shakeup-hegseth-rubio",
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "Hindustan Times",
       "land": "IN",
-      "rubrik": "Kamala Harris uncertain on 2028 White House run even as Democrats sweep midterms: ‘I will contribute’",
-      "url": "https://www.hindustantimes.com/world-news/us-news/kamala-harris-uncertain-on-2028-white-house-run-even-as-democrats-sweep-midterms-i-will-contribute-101793834072285.html",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "Beaten at home, Trump faces stark choice on Iran: deal or escalation",
-      "url": "https://www.japantimes.co.jp/news/2026/11/05/world/politics/trump-midterms-iran-deal/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CNA",
-      "land": "SG",
-      "rubrik": "US midterms: Democrats' victory puts Trump's China diplomacy to the test",
-      "url": "https://www.channelnewsasia.com/asia/us-democrats-midterm-results-asia-impact-china-6523456",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "South China Morning Post",
-      "land": "HK",
-      "rubrik": "5 takeaways from US midterms as Democrats sweep Congress and Trump faces Iran reckoning",
-      "url": "https://www.scmp.com/news/us/us-elections/article/3373318/five-takeaways-us-midterms-democrats-sweep-congress-and-trump-faces-iran-reckoning",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "US midterms: Democrats savour big wins in Congress, as Trump shows off his ballroom project",
-      "url": "https://www.straitstimes.com/world/united-states/as-democrats-savour-big-wins-in-congress-trump-shows-off-his-ballroom-project",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Rappler",
-      "land": "PH",
-      "rubrik": "Democrats seize US congress, hand Trump major loss | The wRap",
-      "url": "https://www.rappler.com/video/daily-wrap/november-4-2026/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Democrats win U.S. House in growing midterms wave against Trump",
-      "url": "https://www.thehindu.com/news/international/democrats-win-us-house-in-growing-midterms-wave-against-trump/article71663879.ece",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CGTN",
-      "land": "CN",
-      "rubrik": "US-Iran tensions persist amid US midterms, regional mediation",
-      "url": "https://news.cgtn.com/news/2026-11-04/US-Iran-tensions-persist-amid-US-midterms-regional-mediation-1RMVPdC1Bba/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-      "statskontrollerad": true
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Palestinians, Israelis react after Democrats sweep US midterms",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/palestinians-israelis-react-after-democrats-sweep-us-midterms?traffic_source=rss",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Analysis-Beaten at home, Trump faces stark choice on Iran: deal or escalation",
-      "url": "https://www.al-monitor.com/originals/2026/11/analysis-beaten-home-trump-faces-stark-choice-iran-deal-or-escalation",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Tehran Times",
-      "land": "IR",
-      "rubrik": "The impact of US elections on Iran",
-      "url": "https://www.tehrantimes.com/news/531843/The-impact-of-US-elections-on-Iran",
-      "statskontrollerad": true
-     },
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Brent oil slides to $94 on Iran uncertainty after US midterms",
-      "url": "https://www.thenationalnews.com/business/energy/2026/11/04/brent-oil-slides-to-94-on-iran-uncertainty-after-us-midterms/",
-      "statskontrollerad": true
-     }
-    ],
-    "latinamerika": [
-     {
-      "kalla": "Buenos Aires Times",
-      "land": "AR",
-      "rubrik": "How Trump's defeat in US midterms might affect Argentina",
-      "url": "https://www.batimes.com.ar/news/economy/how-trumps-defeat-in-us-midterms-might-affect-argentina.phtml",
+      "rubrik": "‘Maybe he won’t run’: Trump on JD Vance’s 2028 presidential bid after midterm setback for Republicans",
+      "url": "https://www.hindustantimes.com/world-news/us-news/maybe-he-won-t-run-trump-on-jd-vance-2028-presidential-bid-after-midterm-setback-for-republicans-101793858321935.html",
       "statskontrollerad": false
      }
     ],
     "europa": [
      {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "US midterms: Iran's deputy parliament speaker reacts to Trump's elections setback",
-      "url": "https://www.france24.com/en/video/20261104-us-midterms-iran-s-deputy-parliament-speaker-reacts-to-trump-s-elections-setback-1",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "What the Democrats' midterms win means for the US economy and Trump",
-      "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "El País (English)",
-      "land": "ES",
-      "rubrik": "Democrats sweep the midterms on a wave of rebuke to Trump’s presidency",
-      "url": "https://english.elpais.com/usa/2026-11-04/democrats-sweep-the-midterms-on-a-wave-of-rebuke-to-trumps-presidency.html",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "Le Monde (English)",
       "land": "FR",
-      "rubrik": "With midterms over, fears of renewed US war with Iran",
-      "url": "https://www.lemonde.fr/en/international/article/2026/11/04/with-midterms-over-fears-of-renewed-us-war-with-iran_6771712_4.html",
+      "rubrik": "2026 midterms: JD Vance, frustrated by his party's defeat, sparks debate among Republicans",
+      "url": "https://www.lemonde.fr/en/international/article/2026/11/05/midterms-2026-jd-vance-frustrated-by-his-party-s-defeat-sparks-debate-among-republicans_6772406_4.html",
       "statskontrollerad": false
      }
     ],
-    "afrika": [
+    "mellanostern": [
      {
-      "kalla": "Daily Maverick",
-      "land": "ZA",
-      "rubrik": "US MIDTERMS: Democrats capture Congress in sweeping setback for Trump",
-      "url": "https://www.dailymaverick.co.za/article/2026-11-04-democrats-capture-congress-in-sweeping-setback-for-trump/",
-      "statskontrollerad": false
+      "kalla": "Tehran Times",
+      "land": "IR",
+      "rubrik": "After the midterms, Republicans face a choice: Trump, or a future beyond him?",
+      "url": "https://www.tehrantimes.com/news/531838/After-the-midterms-Republicans-face-a-choice-Trump-or-a-future",
+      "statskontrollerad": true
      }
     ]
    },
@@ -10497,166 +10516,34 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Kamala Harris uncertain on 2028 White House run even as Democrats sweep midterms: ‘I will contribute’",
+  "reserv_rubrik": "What the midterms could mean for Trump’s Cabinet",
   "kallor": [
    {
-    "namn": "Hindustan Times",
-    "rubrik": "Kamala Harris uncertain on 2028 White House run even as Democrats sweep midterms: ‘I will contribute’",
-    "url": "https://www.hindustantimes.com/world-news/us-news/kamala-harris-uncertain-on-2028-white-house-run-even-as-democrats-sweep-midterms-i-will-contribute-101793834072285.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Japan Times",
-    "rubrik": "Beaten at home, Trump faces stark choice on Iran: deal or escalation",
-    "url": "https://www.japantimes.co.jp/news/2026/11/05/world/politics/trump-midterms-iran-deal/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "JP",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "Palestinians, Israelis react after Democrats sweep US midterms",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/palestinians-israelis-react-after-democrats-sweep-us-midterms?traffic_source=rss",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "CNA",
-    "rubrik": "US midterms: Democrats' victory puts Trump's China diplomacy to the test",
-    "url": "https://www.channelnewsasia.com/asia/us-democrats-midterm-results-asia-impact-china-6523456",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "South China Morning Post",
-    "rubrik": "5 takeaways from US midterms as Democrats sweep Congress and Trump faces Iran reckoning",
-    "url": "https://www.scmp.com/news/us/us-elections/article/3373318/five-takeaways-us-midterms-democrats-sweep-congress-and-trump-faces-iran-reckoning",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "HK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "US midterms: Democrats savour big wins in Congress, as Trump shows off his ballroom project",
-    "url": "https://www.straitstimes.com/world/united-states/as-democrats-savour-big-wins-in-congress-trump-shows-off-his-ballroom-project",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Buenos Aires Times",
-    "rubrik": "How Trump's defeat in US midterms might affect Argentina",
-    "url": "https://www.batimes.com.ar/news/economy/how-trumps-defeat-in-us-midterms-might-affect-argentina.phtml",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "AR",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al-Monitor",
-    "rubrik": "Analysis-Beaten at home, Trump faces stark choice on Iran: deal or escalation",
-    "url": "https://www.al-monitor.com/originals/2026/11/analysis-beaten-home-trump-faces-stark-choice-iran-deal-or-escalation",
+    "namn": "Vox",
+    "rubrik": "What the midterms could mean for Trump’s Cabinet",
+    "url": "https://www.vox.com/the-logoff-newsletter-trump/509638/trump-midterms-cabinet-shakeup-hegseth-rubio",
     "betalvagg": false,
     "typ": "media",
     "land": "US",
-    "region": "mellanostern",
+    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "France 24",
-    "rubrik": "US midterms: Iran's deputy parliament speaker reacts to Trump's elections setback",
-    "url": "https://www.france24.com/en/video/20261104-us-midterms-iran-s-deputy-parliament-speaker-reacts-to-trump-s-elections-setback-1",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Deutsche Welle",
-    "rubrik": "What the Democrats' midterms win means for the US economy and Trump",
-    "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-rdf",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Rappler",
-    "rubrik": "Democrats seize US congress, hand Trump major loss | The wRap",
-    "url": "https://www.rappler.com/video/daily-wrap/november-4-2026/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PH",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Democrats win U.S. House in growing midterms wave against Trump",
-    "url": "https://www.thehindu.com/news/international/democrats-win-us-house-in-growing-midterms-wave-against-trump/article71663879.ece",
+    "namn": "Hindustan Times",
+    "rubrik": "‘Maybe he won’t run’: Trump on JD Vance’s 2028 presidential bid after midterm setback for Republicans",
+    "url": "https://www.hindustantimes.com/world-news/us-news/maybe-he-won-t-run-trump-on-jd-vance-2028-presidential-bid-after-midterm-setback-for-republicans-101793858321935.html",
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Daily Maverick",
-    "rubrik": "US MIDTERMS: Democrats capture Congress in sweeping setback for Trump",
-    "url": "https://www.dailymaverick.co.za/article/2026-11-04-democrats-capture-congress-in-sweeping-setback-for-trump/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ZA",
-    "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "El País (English)",
-    "rubrik": "Democrats sweep the midterms on a wave of rebuke to Trump’s presidency",
-    "url": "https://english.elpais.com/usa/2026-11-04/democrats-sweep-the-midterms-on-a-wave-of-rebuke-to-trumps-presidency.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ES",
-    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
     "namn": "Le Monde (English)",
-    "rubrik": "With midterms over, fears of renewed US war with Iran",
-    "url": "https://www.lemonde.fr/en/international/article/2026/11/04/with-midterms-over-fears-of-renewed-us-war-with-iran_6771712_4.html",
+    "rubrik": "2026 midterms: JD Vance, frustrated by his party's defeat, sparks debate among Republicans",
+    "url": "https://www.lemonde.fr/en/international/article/2026/11/05/midterms-2026-jd-vance-frustrated-by-his-party-s-defeat-sparks-debate-among-republicans_6772406_4.html",
     "betalvagg": true,
     "typ": "media",
     "land": "FR",
@@ -10666,34 +10553,12 @@
    },
    {
     "namn": "Tehran Times",
-    "rubrik": "The impact of US elections on Iran",
-    "url": "https://www.tehrantimes.com/news/531843/The-impact-of-US-elections-on-Iran",
+    "rubrik": "After the midterms, Republicans face a choice: Trump, or a future beyond him?",
+    "url": "https://www.tehrantimes.com/news/531838/After-the-midterms-Republicans-face-a-choice-Trump-or-a-future",
     "betalvagg": false,
     "typ": "media",
     "land": "IR",
     "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
-   },
-   {
-    "namn": "The National",
-    "rubrik": "Brent oil slides to $94 on Iran uncertainty after US midterms",
-    "url": "https://www.thenationalnews.com/business/energy/2026/11/04/brent-oil-slides-to-94-on-iran-uncertainty-after-us-midterms/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "AE",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
-   },
-   {
-    "namn": "CGTN",
-    "rubrik": "US-Iran tensions persist amid US midterms, regional mediation",
-    "url": "https://news.cgtn.com/news/2026-11-04/US-Iran-tensions-persist-amid-US-midterms-regional-mediation-1RMVPdC1Bba/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CN",
-    "region": "asien",
     "agare": "statlig",
     "statskontrollerad": true
    }
@@ -10706,7 +10571,8 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1793844593.4348354,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1793933307.3962967
  },
  "ee36129d7c": {
   "id": "ee36129d7c",
@@ -20169,6 +20035,261 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1793927442.8857913,
+  "automatisk": true
+ },
+ "1a0d20444d": {
+  "id": "1a0d20444d",
+  "amnen": [
+   "geopolitik",
+   "usa",
+   "varlden"
+  ],
+  "amnen_sektion": [
+   "geopolitik",
+   "usa"
+  ],
+  "poang": 31.3,
+  "vikt": {
+   "bredd": 0.247,
+   "regioner": {
+    "europa": 1,
+    "latinamerika": 1,
+    "sverige": 1
+   },
+   "timmar": 96,
+   "konsekvens": {
+    "berorda": 4,
+    "allvar": 3,
+    "varaktighet": 3,
+    "medel": 3.33,
+    "skal": "Republikanerna söker syndabockar efter ett misslyckat midtermval i USA, vilket kan påverka partiets politik och inriktning under en period."
+   },
+   "bekraftad": true,
+   "maste": false,
+   "spar": []
+  },
+  "maste": false,
+  "antal_kallor": 3,
+  "har_primarkalla": false,
+  "senast": "2026-11-05T09:50:12+00:00",
+  "utkast": {
+   "rubrik_sv": "Republikanerna söker skyldiga efter förlusten i mellanvalen",
+   "sammanfattning_sv": "Republikanerna har förlorat mellanvalen, och enligt El País söker partiet efter skyldiga utan att peka ut Trump direkt. Presidenten skyller enligt tidningen förlusten på kriget i Iran och talar samtidigt om framsteg med bygget av en balsal i Vita huset.",
+   "rubrik_en": "Republicans look for those to blame after midterm defeat",
+   "sammanfattning_en": "Republicans have lost the midterm elections, and according to El País they are looking for culprits without directly naming Trump. The president, according to the paper, blames the Iran war for the defeat while touting progress on the construction of a White House ballroom.",
+   "oenighet": "Dagens Nyheter har rubriken 'Republikaner anklagar Trump för valfiaskot', medan El País rubricerar att republikanerna söker skyldiga men inte pekar ut Trump. Tidningarna beskriver alltså olika hur partiets kritik mot Trump ser ut.",
+   "oenighet_en": "Dagens Nyheter's headline says Republicans accuse Trump of the election failure, while El País's headline says Republicans seek culprits but fall short of pointing to Trump. The two outlets describe the criticism of Trump differently.",
+   "perspektiv_sv": "Den svenska Dagens Nyheter lyfter i sin rubrik att republikanerna anklagar Trump för förlusten i valet. Den spanska El País lyfter i sin rubrik att republikanerna inte pekar ut Trump, och i ingressen presidentens uppgifter om kriget i Iran och bygget av balsalen.",
+   "perspektiv_en": "The Swedish Dagens Nyheter highlights in its headline that Republicans accuse Trump of the election loss. The Spanish El País highlights in its headline that Republicans fall short of pointing to Trump, and in its lede the president's statements about the Iran war and the ballroom construction.",
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "El País (English) och El País América har identisk rubrik och ingress och är samma artikel, så de räknas som en källa. Dagens Nyheter har endast rubrik, så jämförelsen bygger på rubrikerna. Sammanfattningen bygger på El País ingress, eftersom DN inte har någon ingress att återge."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 11,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Republikanerna har förlorat mellanvalen",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Enligt El País söker partiet efter skyldiga",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País skriver att partiet inte pekar ut Trump direkt",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Presidenten skyller enligt El País förlusten på kriget i Iran",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Presidenten talar om framsteg med bygget av en balsal i Vita huset",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "DN:s rubrik säger att republikanerna anklagar Trump för förlusten i valet",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País rubricerar att republikanerna inte pekar ut Trump",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País ingress tar upp presidentens uppgifter om kriget i Iran och bygget av balsalen",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "DN:s rubrik är 'Republikaner anklagar Trump för valfiaskot'",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "El País rubricerar att republikanerna söker skyldiga men inte pekar ut Trump",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Tidningarna beskriver partiets kritik mot Trump olika",
+     "stod": [
+      1,
+      2,
+      3
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": null,
+  "sammanhang": 0.781,
+  "betydelse": {
+   "sv": null,
+   "en": "Because the president blames the Iran war for the Republican midterm defeat, the war has become part of the debate over who is responsible for the result.",
+   "grund": [
+    1,
+    2
+   ],
+   "grund_kallor": [
+    {
+     "namn": "El País (English)",
+     "url": "https://english.elpais.com/usa/2026-11-05/republicans-seek-culprits-for-midterms-debacle-but-fall-short-of-pointing-to-trump.html"
+    },
+    {
+     "namn": "El País América",
+     "url": "https://english.elpais.com/usa/2026-11-05/republicans-seek-culprits-for-midterms-debacle-but-fall-short-of-pointing-to-trump.html"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
+  "perspektiv": {
+   "regioner": [
+    "europa",
+    "latinamerika",
+    "sverige"
+   ],
+   "per_region": {
+    "europa": [
+     {
+      "kalla": "El País (English)",
+      "land": "ES",
+      "rubrik": "Republicans seek culprits for midterms debacle but fall short of pointing to Trump",
+      "url": "https://english.elpais.com/usa/2026-11-05/republicans-seek-culprits-for-midterms-debacle-but-fall-short-of-pointing-to-trump.html",
+      "statskontrollerad": false
+     }
+    ],
+    "latinamerika": [
+     {
+      "kalla": "El País América",
+      "land": "ES",
+      "rubrik": "Republicans seek culprits for midterms debacle but fall short of pointing to Trump",
+      "url": "https://english.elpais.com/usa/2026-11-05/republicans-seek-culprits-for-midterms-debacle-but-fall-short-of-pointing-to-trump.html",
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Republikaner anklagar Trump för valfiaskot",
+      "url": "https://www.dn.se/varlden/republikaner-anklagar-trump-for-valfiaskot/",
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": false,
+   "usa": null,
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Republicans seek culprits for midterms debacle but fall short of pointing to Trump",
+  "kallor": [
+   {
+    "namn": "El País (English)",
+    "rubrik": "Republicans seek culprits for midterms debacle but fall short of pointing to Trump",
+    "url": "https://english.elpais.com/usa/2026-11-05/republicans-seek-culprits-for-midterms-debacle-but-fall-short-of-pointing-to-trump.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ES",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "El País América",
+    "rubrik": "Republicans seek culprits for midterms debacle but fall short of pointing to Trump",
+    "url": "https://english.elpais.com/usa/2026-11-05/republicans-seek-culprits-for-midterms-debacle-but-fall-short-of-pointing-to-trump.html",
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ES",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens Nyheter",
+    "rubrik": "Republikaner anklagar Trump för valfiaskot",
+    "url": "https://www.dn.se/varlden/republikaner-anklagar-trump-for-valfiaskot/",
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 2,
+   "en": 3
+  },
+  "autopilot": [],
+  "data": null,
+  "godkand_tid": 1793933307.3962967,
   "automatisk": true
  }
 }
