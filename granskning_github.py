@@ -8,6 +8,7 @@ Kräver GITHUB_TOKEN och GITHUB_REPOSITORY (finns automatiskt i GitHub Actions).
 En bock = godkänd. En borttagen bock = godkännandet ångras.
 Autopilotens kö visas förbockad med klockslag: bocken är inget godkännande, men en urbockad notis stoppas.
 """
+import rattelser
 import json
 import os
 import re
@@ -123,6 +124,8 @@ def read_ticks():
     if removed:
         arkiv = load_archive()
         for i in removed:
+            if i in arkiv:
+                rattelser.borttagen(arkiv[i], ARKIV.parent / "rattelser.json")
             arkiv.pop(i, None)
         ARKIV.write_text(json.dumps(arkiv, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Granskning: {len(added)} nya godkända, {len(removed)} ångrade, {len(ok)} totalt")
@@ -153,6 +156,8 @@ def _item(ev, checked):
         out.append(f"  **OSÄKER:** {_clean(d.get('kommentar'))}")
     if d.get("sammanfattning_sv"):
         out.append(f"  {_clean(d['sammanfattning_sv'])}")
+    if d.get("rubrik_en"):
+        out.append(f"  *English:* **{_clean(d['rubrik_en'])}** {_clean(d.get('sammanfattning_en'))}")
     if d.get("perspektiv_sv") and regs >= 2:
         out.append(f"  *Så ser världen på det:* {_clean(d['perspektiv_sv'])}")
     if d.get("usa_sv") and p.get("usa"):
