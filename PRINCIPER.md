@@ -28,7 +28,7 @@ Utkasten skrivs med hjälp av AI, och varje notis säger hur den har granskats. 
 Automatisk publicering sker bara under tydliga villkor: källkontrollen har spårat alla påståenden till källorna, minst tre oberoende källor i minst två regioner rapporterar (för svenska inrikesnyheter räcker två svenska källor), utkastet är inte märkt osäkert, ämnet står inte på spärrlistan (namngivna privatpersoner i brottmål, självmord, sexualbrott, barn), och notisen innehåller ingen blind fläck. Sådana notiser väntar 45 minuter i redaktionens inkorg innan de går ut, högst åtta per dygn utöver de stora händelser som rapporteras i minst fem regioner av minst åtta oberoende källor, och går att ta bort med ett tryck. Ansvarig utgivare står för allt som publiceras, även det som går automatiskt.
 
 ## 8. Rättelser syns
-Ett fel rättas öppet, med en notis om vad som ändrades och när.
+Ett fel rättas öppet, med en notis om vad som ändrades och när. Allt som rättats eller tagits bort efter publicering står på sidan Rättelser.
 
 ## 9. Inga lockrubriker
 Rubriken säger vad som har hänt. Den överdriver inte och undanhåller inte svaret för att få klick.

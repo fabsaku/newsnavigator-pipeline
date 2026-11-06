@@ -23,6 +23,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+import rattelser
 import spar
 import utgava
 from newsletter import SECTIONS, section_of, utan_upprepningar
@@ -260,7 +261,7 @@ def _shell(u, *, title, body, active=None, description="", path="/", og=None, ba
 <main class="w">{body}</main>
 <footer><div class="w ft">
 <div><p>{_both("Notiserna sammanfattas med hjälp av AI. Varje notis säger hur den har granskats: av redaktionen, eller med maskinell källkontroll utan manuell granskning. Varje notis länkar till originalkällorna. Statskontrollerade medier är märkta STAT. Ansvarig utgivare: Fabian Sandberg Kuylenstierna.", "Stories are summarised with the help of AI. Each story says how it was reviewed: by the editors, or machine source-checked without manual review. Every story links to its original sources. State-controlled media are marked STAT. Publisher: Fabian Sandberg Kuylenstierna.")}</p>{stamp}</div>
-<div class="links"><a href="{_e(u.page("om"))}">{_both("Om Newsnavigator och principerna", "About Newsnavigator and the principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Alla källor", "All sources")}</a><a href="{_e(u.page("navigatorn"))}">{_both("Navigatorn, morgonbrevet", "Navigatorn, the morning brief")}</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a></div>
+<div class="links"><a href="{_e(u.page("om"))}">{_both("Om Newsnavigator och principerna", "About Newsnavigator and the principles")}</a><a href="{_e(u.page("kallor"))}">{_both("Alla källor", "All sources")}</a><a href="{_e(u.page("rattelser"))}">{_both("Rättelser", "Corrections")}</a><a href="{_e(u.page("navigatorn"))}">{_both("Navigatorn, morgonbrevet", "Navigatorn, the morning brief")}</a><a href="{_e(u.file("feed.xml"))}">RSS</a><a href="mailto:{CONTACT}">{CONTACT}</a></div>
 <p class="copy">© 2026 Newsnavigator</p>
 </div></footer>
 {f'<script>window.NN_LANG="{lang}"</script>' if lang else ''}<script>{JS}</script>
@@ -356,6 +357,25 @@ def spar_page(u, events, sources, banner, noindex):
                   description=_t(u, "Fem områden som redaktionen följer särskilt.", "Five areas the editors follow closely."), nsources=len(sources))
 
 
+def rattelser_page(u, poster, sources, banner, noindex):
+    """Allt som rättats eller tagits bort efter publicering, senast först (princip 8)."""
+    def rad(p):
+        rubrik = _e(p.get(f"rubrik_{'en' if u.lang == 'en' else 'sv'}") or p.get("rubrik_sv") or "")
+        datum = _both(*_date(p["tid"], clock=True))
+        if p.get("typ") == "borttagen":
+            vad = _both("Notisen togs bort efter publicering.", "The story was removed after publication.")
+        else:
+            vad = _both(_e(p.get("vad_sv") or ""), _e(p.get("vad_en") or p.get("vad_sv") or ""))
+        return f'<li><h3>{rubrik}</h3><p class="meta">{datum}. {vad}</p></li>'
+    lista = (f'<ul class="list" style="max-width:760px">{"".join(rad(p) for p in sorted(poster, key=lambda x: x["tid"], reverse=True))}</ul>' if poster else
+             f'<p class="empty">{_both("Inga rättelser än.", "No corrections yet.")}</p>')
+    body = (f'<h1 class="pagetitle">{_both("Rättelser", "Corrections")}</h1>'
+            f'<p class="lede">{_both("Det vi har rättat eller tagit bort efter publicering.", "What we have corrected or removed after publication.")}</p>{lista}')
+    return _shell(u, title=f'{_t(u, "Rättelser", "Corrections")}, Newsnavigator', body=body, active="rattelser", path=u.page("rattelser"),
+                  banner=banner, noindex=noindex, description=_t(u, "Det vi har rättat eller tagit bort efter publicering.", "What we have corrected or removed after publication."),
+                  nsources=len(sources))
+
+
 def _ai_note(ev):
     if ev.get("automatisk"):
         return _both("Sammanfattad med hjälp av AI och maskinellt källkontrollerad. Publicerad utan manuell granskning; rättelser syns. "
@@ -380,10 +400,12 @@ def story_page(u, ev, related, sources, banner, noindex):
     if related:
         more = (f'<h2 class="more-h">{_both("Fler notiser i", "More in")} {_both(sv, en)}</h2><ul class="list" style="max-width:760px">'
                 + "".join(story_item(r, u.story(r["id"])) for r in related) + "</ul>")
+    rattat = "".join(f'<p class="check"><b>{_both("Rättad", "Corrected")} {_both(*_date(p["tid"], clock=True))}.</b> '
+                     f'{_both(_e(p.get("vad_sv") or ""), _e(p.get("vad_en") or p.get("vad_sv") or ""))}</p>' for p in rattelser.for_notis(ev["id"]))
     namn = {s[0]: (s[1], s[2]) for s in spar.SPAR}
     spor = "".join(f'<a href="{_e(u.page("spar"))}#{k}">{_both(*namn[k])}</a>' for k in spar.av(ev))
     body = (f'<p class="crumb"><a href="{_e(u.section(slug))}">{_both(sv, en)}</a>{spor}<span>{_both("Publicerad", "Published")} {pub}</span>{upd}</p>'
-            f'{story_full(ev, lang=u.lang, rubrik="h1")}'
+            f'{rattat}{story_full(ev, lang=u.lang, rubrik="h1")}'
             f'<p class="aiNote">{_ai_note(ev)} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>{more}')
     return _shell(u, title=f"{title_sv}, Newsnavigator", body=body, active=slug, path=u.story(ev["id"]), banner=banner, noindex=noindex,
                   description=desc_sv[:200], og={"type": "article", "title": title_sv, "description": desc_sv},
@@ -606,8 +628,9 @@ def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_is
         _write(u.disk(out, u.section(slug)), section_page(u, slug, [e for e in sect_events if section_of(e) == slug], sources, banner, noindex))
     # Notissidor: rensa gamla och skriv alla i arkivet, så att länkar lever lika länge som arkivet
     ndir = out / u.p.strip("/") / "n"
-    if not flat and ndir.exists():
-        shutil.rmtree(ndir)
+    if not flat and ndir.exists():      # notissidorna består, så att gamla länkar håller; bara borttagna notiser försvinner
+        for bort in rattelser.borttagna_id():
+            shutil.rmtree(ndir / bort, ignore_errors=True)
     if flat:
         for old in out.glob("n-*.html"):
             old.unlink()
@@ -616,6 +639,7 @@ def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_is
         _write(u.disk(out, u.story(ev["id"])), story_page(u, ev, related, sources, banner, noindex))
     _write(u.disk(out, u.page("om")), about_page(u, sources, banner, noindex))
     _write(u.disk(out, u.page("spar")), spar_page(u, events, sources, banner, noindex))
+    _write(u.disk(out, u.page("rattelser")), rattelser_page(u, rattelser.load(), sources, banner, noindex))
     if not flat and not lang:
         _write(out / "404.html", not_found_page(u, banner, len(sources)))
         _write(out / "_headers", HEADERS)
@@ -687,7 +711,7 @@ def redirects():
 def sitemap_xml(per_utgava):
     urls = ["/"]
     for lang, events in per_utgava.items():
-        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/spar/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
+        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/spar/", f"/{lang}/rattelser/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
         urls += [f"/{lang}/{k}/" for k, *_ in SECTIONS]
         urls += [f"/{lang}/n/{e['id']}/" for e in events]
     return ('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'

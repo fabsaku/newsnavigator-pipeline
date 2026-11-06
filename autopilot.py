@@ -225,6 +225,9 @@ def angra(eid, now=None):
         arkiv = json.loads(ARKIV.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         arkiv = {}
+    if eid in arkiv:
+        import rattelser
+        rattelser.borttagen(arkiv[eid], ARKIV.parent / "rattelser.json", nu=now)
     arkiv.pop(eid, None)
     ARKIV.write_text(json.dumps(arkiv, ensure_ascii=False, indent=1), encoding="utf-8")
     status = load_status()
