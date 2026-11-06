@@ -6903,27 +6903,30 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 32.2,
+  "poang": 33.1,
   "vikt": {
-   "bredd": 0.045,
+   "bredd": 0.301,
    "regioner": {
+    "asien": 2,
+    "afrika": 1,
     "usa": 2
    },
-   "timmar": 96,
+   "timmar": 81,
    "konsekvens": {
     "berorda": 5,
-    "allvar": 4,
+    "allvar": 5,
     "varaktighet": 4,
-    "medel": 4.33,
-    "skal": "Väljarna i USA har tagit kongressmajoriteten från republikanerna, vilket får stora politiska följder för hela landet under flera år."
+    "medel": 4.67,
+    "skal": "Mellanårsvalen i USA avgör vilket parti som kontrollerar kongressen och påverkar politiken i ett land med stor global betydelse under de kommande två åren."
    },
-   "bekraftad": true,
-   "maste": false
+   "bekraftad": false,
+   "maste": false,
+   "spar": []
   },
   "maste": false,
-  "antal_kallor": 2,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-04T17:48:19+00:00",
+  "senast": "2026-11-06T03:36:36+00:00",
   "utkast": {
    "rubrik_sv": "Republikanerna förlorar kontrollen över USA:s kongress",
    "sammanfattning_sv": "Enligt Wall Street Journal förlorade republikanerna kontrollen över kongressen i tisdagens val, mitt i utbredd frustration över ekonomin. The New York Times publicerar en text där amerikaner förklarar varför de tackade nej till Trumps republikanska parti.",
@@ -6978,22 +6981,54 @@
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "afrika",
+    "asien",
     "usa"
    ],
    "per_region": {
-    "usa": [
+    "asien": [
      {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Americans on Why They Rejected Trump’s Republican Party",
-      "url": "https://www.nytimes.com/2026/11/04/us/elections/midterms-mood.html",
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Trump debacle: On the U.S. midterm election results",
+      "url": "https://www.thehindu.com/opinion/editorial/trump-debacle-on-the-us-midterm-election-results/article71670096.ece",
+      "tid": 1793936196.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "The Wall Street Journal",
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Trump watched midterm results with Natalie Harp and Susie Wiles; Melania wasn't with POTUS: Report",
+      "url": "https://www.hindustantimes.com/world-news/us-news/donald-trump-watched-us-midterm-results-with-natalie-harp-susie-wiles-melania-wasnt-with-potus-report-101793857938696.html",
+      "tid": 1793860529.0,
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Daily Maverick",
+      "land": "ZA",
+      "rubrik": "LOCAL ELECTIONS 2026: DA draws coalition red lines as Nelson Mandela Bay results take shape",
+      "url": "https://www.dailymaverick.co.za/article/2026-11-05-da-draws-coalition-red-lines-as-nelson-mandela-bay-results-take-shape/",
+      "tid": 1793920509.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "Fox News",
       "land": "US",
-      "rubrik": "Voters delivered an astonishing rebuke to President Trump and his party on Tuesday, stripping Republicans of congressional control amid widespread frustrations with the economy",
-      "url": "https://www.wsj.com/politics/elections/five-takeaways-from-democrats-stunning-midterm-blowout-9da38a22?mod=rss_socialpoliticsfeed",
+      "rubrik": "Ohio's most popular midterm Republican says election results hold a warning for Dems",
+      "url": "https://www.foxnews.com/politics/ohios-popular-midterm-republican-says-election-results-hold-warning-dems",
+      "tid": 1793896506.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "How Trump Is Reacting to the Midterm Results",
+      "url": "https://www.nytimes.com/video/us/politics/100000011262332/how-trump-is-reacting-to-the-midterm-results.html",
+      "tid": 1793887573.0,
       "statskontrollerad": false
      }
     ]
@@ -7001,32 +7036,59 @@
    "blind_flack": null,
    "grannar_svenska": true,
    "usa": {
+    "rod": [
+     {
+      "kalla": "Fox News",
+      "rubrik": "Ohio's most popular midterm Republican says election results hold a warning for Dems",
+      "url": "https://www.foxnews.com/politics/ohios-popular-midterm-republican-says-election-results-hold-warning-dems",
+      "tid": 1793896506.0,
+      "lutning": "hoger"
+     }
+    ],
     "bla": [
      {
       "kalla": "The New York Times",
-      "rubrik": "Americans on Why They Rejected Trump’s Republican Party",
-      "url": "https://www.nytimes.com/2026/11/04/us/elections/midterms-mood.html",
+      "rubrik": "How Trump Is Reacting to the Midterm Results",
+      "url": "https://www.nytimes.com/video/us/politics/100000011262332/how-trump-is-reacting-to-the-midterm-results.html",
+      "tid": 1793887573.0,
       "lutning": "lutar_vanster"
-     }
-    ],
-    "mitten": [
-     {
-      "kalla": "The Wall Street Journal",
-      "rubrik": "Voters delivered an astonishing rebuke to President Trump and his party on Tuesday, stripping Republicans of congressional control amid widespread frustrations with the economy",
-      "url": "https://www.wsj.com/politics/elections/five-takeaways-from-democrats-stunning-midterm-blowout-9da38a22?mod=rss_socialpoliticsfeed",
-      "lutning": "mitten"
      }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Americans on Why They Rejected Trump’s Republican Party",
+  "reserv_rubrik": "Trump debacle: On the U.S. midterm election results",
   "kallor": [
    {
-    "namn": "The New York Times",
-    "rubrik": "Americans on Why They Rejected Trump’s Republican Party",
-    "url": "https://www.nytimes.com/2026/11/04/us/elections/midterms-mood.html",
-    "betalvagg": true,
+    "namn": "The Hindu",
+    "rubrik": "Trump debacle: On the U.S. midterm election results",
+    "url": "https://www.thehindu.com/opinion/editorial/trump-debacle-on-the-us-midterm-election-results/article71670096.ece",
+    "tid": 1793936196.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Daily Maverick",
+    "rubrik": "LOCAL ELECTIONS 2026: DA draws coalition red lines as Nelson Mandela Bay results take shape",
+    "url": "https://www.dailymaverick.co.za/article/2026-11-05-da-draws-coalition-red-lines-as-nelson-mandela-bay-results-take-shape/",
+    "tid": 1793920509.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ZA",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Fox News",
+    "rubrik": "Ohio's most popular midterm Republican says election results hold a warning for Dems",
+    "url": "https://www.foxnews.com/politics/ohios-popular-midterm-republican-says-election-results-hold-warning-dems",
+    "tid": 1793896506.0,
+    "betalvagg": false,
     "typ": "media",
     "land": "US",
     "region": "usa",
@@ -7034,9 +7096,22 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Wall Street Journal",
-    "rubrik": "Voters delivered an astonishing rebuke to President Trump and his party on Tuesday, stripping Republicans of congressional control amid widespread frustrations with the economy",
-    "url": "https://www.wsj.com/politics/elections/five-takeaways-from-democrats-stunning-midterm-blowout-9da38a22?mod=rss_socialpoliticsfeed",
+    "namn": "Hindustan Times",
+    "rubrik": "Trump watched midterm results with Natalie Harp and Susie Wiles; Melania wasn't with POTUS: Report",
+    "url": "https://www.hindustantimes.com/world-news/us-news/donald-trump-watched-us-midterm-results-with-natalie-harp-susie-wiles-melania-wasnt-with-potus-report-101793857938696.html",
+    "tid": 1793860529.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "How Trump Is Reacting to the Midterm Results",
+    "url": "https://www.nytimes.com/video/us/politics/100000011262332/how-trump-is-reacting-to-the-midterm-results.html",
+    "tid": 1793887573.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -7047,17 +7122,18 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 0,
-   "en": 1
+   "sv": 1,
+   "en": 3
   },
   "autopilot": [
    "utkastet är märkt osäkert",
-   "färre än tre oberoende källor (2)",
-   "bara en region"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793819696.1850073,
-  "automatisk": false
+  "automatisk": false,
+  "sammanhang": 0.497,
+  "uppdaterad_tid": 1793948756.9739895
  },
  "6c80115423": {
   "id": "6c80115423",
