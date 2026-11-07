@@ -22242,30 +22242,29 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 38.6,
+  "poang": 38.2,
   "vikt": {
-   "bredd": 0.952,
+   "bredd": 0.906,
    "regioner": {
     "latinamerika": 1,
     "mellanostern": 4,
-    "sverige": 1,
     "asien": 2,
-    "europa": 1
+    "sverige": 1
    },
-   "timmar": 40,
+   "timmar": 41,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "USA:s midtermval påverkar hela landet och stödet till Ukraina och Israel, med följder som varar i flera år."
+    "skal": "USA:s midtermval påverkar hela landet och politiken mot Ukraina och Israel under de kommande två åren."
    },
    "bekraftad": true,
-   "maste": true,
+   "maste": false,
    "spar": []
   },
-  "maste": true,
-  "antal_kallor": 9,
+  "maste": false,
+  "antal_kallor": 8,
   "har_primarkalla": false,
   "senast": "2026-11-07T22:00:32+00:00",
   "utkast": {
@@ -22382,13 +22381,178 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.406,
-  "betydelse": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Israelfrågan i valet",
+     "namn_en": "The Israel question in the election",
+     "lyfter_sv": "Al Jazeera frågar hur AIPAC-stödda kandidater gick, Middle East Eye ser stödet till Israel som valbelastning, Hindustan Times ser minskat stöd i båda partierna och Tehran Times, statskontrollerat, lyfter fram Trumps besked om att avsluta det årliga biståndet.",
+     "lyfter_en": "Al Jazeera asks how AIPAC-backed candidates fared, Middle East Eye sees support for Israel as an electoral liability, Hindustan Times sees declining support across both parties and Tehran Times, state-controlled, highlights Trump's pledge to end the annual aid.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/news/2026/11/7/how-did-aipac-backed-candidates-fare-in-the-us-midterm-elections?traffic_source=rss"
+      },
+      {
+       "namn": "Middle East Eye",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.middleeasteye.net/opinion/us-midterms-not-even-trumps-israel-aid-stunt-could-rescue-republicans"
+      },
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-election-confirms-erosion-of-support-for-israel-with-even-trump-questioning-military-aid-101794028655114.html"
+      },
+      {
+       "namn": "Tehran Times",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Utrikespolitik efter valet",
+     "namn_en": "Foreign policy after the vote",
+     "lyfter_sv": "Mexico News Daily lyfter fram att en ny kongress kan flytta Trumps fokus utomlands och ge nya krav på Mexikos regering, och Ekot lyfter fram Bildts syn att mellanårsvalen kan ändra USA:s Ukrainapolitik.",
+     "lyfter_en": "Mexico News Daily says a changed Congress could shift Trump's focus abroad and bring fresh demands on Mexico's government, and Ekot highlights Bildt's view that the midterms could change US Ukraine policy.",
+     "kallor": [
+      {
+       "namn": "Mexico News Daily",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://mexiconewsdaily.com/mnd-tutor/us-midterms-trump-pressure-mexico/"
+      },
+      {
+       "namn": "Sveriges Radio Ekot",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.sverigesradio.se/artikel/9335477"
+      }
+     ],
+     "regioner": [
+      "latinamerika",
+      "sverige"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump har föreslagit/aviserat att USA avslutar militärt bistånd till Israel",
+      "stod": [
+       6,
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera frågar hur AIPAC-stödda kandidater gick i mellanårsvalet",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Middle East Eye ser stödet till Israel som en valbelastning",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times ser minskat stöd för Israel i båda partierna",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times lyfter fram Trumps besked om att avsluta det årliga biståndet till Israel",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times är ett statskontrollerat medium",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Mexico News Daily lyfter fram att en ny kongress kan flytta Trumps fokus utomlands",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Mexico News Daily lyfter fram att en ny kongress kan ge nya krav på Mexikos regering",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ekot lyfter fram Bildts syn att mellanårsvalen kan ändra USA:s Ukrainapolitik",
+      "stod": [
+       5
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.446,
+  "betydelse": {
+   "sv": null,
+   "en": "Since Trump has floated ending roughly $4 billion in yearly military aid to Israel, with criticism of Israel rising in both US parties, the proposal would change how federal defence money is spent abroad, which matters for US taxpayers.",
+   "grund": [
+    6,
+    7
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-election-confirms-erosion-of-support-for-israel-with-even-trump-questioning-military-aid-101794028655114.html"
+    },
+    {
+     "namn": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa",
     "latinamerika",
     "mellanostern",
     "sverige"
@@ -22438,17 +22602,15 @@
       "statskontrollerad": true
      }
     ],
-    "sverige": [
-     {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Bildt: Mellanårsvalen kan ändra USA:s Ukrainapolitik",
-      "url": "https://www.sverigesradio.se/artikel/9335477",
-      "tid": 1794031500.0,
-      "statskontrollerad": false
-     }
-    ],
     "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Why are the U.S. midterm elections significant?",
+      "url": "https://www.thehindu.com/news/international/why-are-the-us-midterm-elections-significant/article71679440.ece",
+      "tid": 1794077813.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "Hindustan Times",
       "land": "IN",
@@ -22456,23 +22618,15 @@
       "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-election-confirms-erosion-of-support-for-israel-with-even-trump-questioning-military-aid-101794028655114.html",
       "tid": 1794028991.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "US midterm election results 2026: Key Indian-origin winners",
-      "url": "https://www.thehindu.com/news/international/us-midterm-election-results-2026-list-of-indian-origin-winners-american/article71664310.ece",
-      "tid": 1793961212.0,
-      "statskontrollerad": false
      }
     ],
-    "europa": [
+    "sverige": [
      {
-      "kalla": "The Kyiv Independent",
-      "land": "UA",
-      "rubrik": "Midterm elections 'doubled' Ukraine's chances of getting US military aid, official says",
-      "url": "https://kyivindependent.com/midterm-elections-doubled-ukraines-chances-of-getting-us-military-aid-official-says/",
-      "tid": 1793999982.0,
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Bildt: Mellanårsvalen kan ändra USA:s Ukrainapolitik",
+      "url": "https://www.sverigesradio.se/artikel/9335477",
+      "tid": 1794031500.0,
       "statskontrollerad": false
      }
     ]
@@ -22506,6 +22660,18 @@
     "land": "QA",
     "region": "mellanostern",
     "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Why are the U.S. midterm elections significant?",
+    "url": "https://www.thehindu.com/news/international/why-are-the-us-midterm-elections-significant/article71679440.ece",
+    "tid": 1794077813.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -22545,30 +22711,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Kyiv Independent",
-    "rubrik": "Midterm elections 'doubled' Ukraine's chances of getting US military aid, official says",
-    "url": "https://kyivindependent.com/midterm-elections-doubled-ukraines-chances-of-getting-us-military-aid-official-says/",
-    "tid": 1793999982.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "UA",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "US midterm election results 2026: Key Indian-origin winners",
-    "url": "https://www.thehindu.com/news/international/us-midterm-election-results-2026-list-of-indian-origin-winners-american/article71664310.ece",
-    "tid": 1793961212.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Tehran Times",
     "rubrik": "US-Israel military aid: End of dependence, or a new chapter?",
     "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter",
@@ -22598,13 +22740,11 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [
-   "utkastet är märkt osäkert"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1793985022.268238,
   "automatisk": true,
-  "uppdaterad_tid": 1794089364.5483274
+  "uppdaterad_tid": 1794092900.4637673
  },
  "729e6e0bdf": {
   "id": "729e6e0bdf",
