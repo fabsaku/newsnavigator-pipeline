@@ -18775,37 +18775,31 @@
  },
  "a5940a11a3": {
   "id": "a5940a11a3",
-  "amnen": [
-   "geopolitik",
-   "varlden"
-  ],
-  "amnen_sektion": [
-   "geopolitik"
-  ],
-  "poang": 34.3,
+  "amnen": [],
+  "amnen_sektion": [],
+  "poang": 30.6,
   "vikt": {
-   "bredd": 0.256,
+   "bredd": 0.345,
    "regioner": {
-    "asien": 1,
-    "europa": 1,
-    "mellanostern": 1
+    "mellanostern": 2,
+    "asien": 1
    },
-   "timmar": 96,
+   "timmar": 82,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 5,
-    "varaktighet": 4,
-    "medel": 4.33,
-    "skal": "En sjöman har dödats vid en attack mot ett tankfartyg i Persiska viken, och rubrikerna pekar på en möjlig upptrappning till krig med Iran."
+    "allvar": 4,
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "En oljetanker har träffat en sjömina i Hormuzsundet med brand och dödsoffer, vilket hotar säkerheten i en viktig oljeled."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
   "antal_kallor": 3,
   "har_primarkalla": false,
-  "senast": "2026-11-06T19:10:32+00:00",
+  "senast": "2026-11-07T17:33:45+00:00",
   "utkast": {
    "rubrik_sv": "Iran uppger att fartyg brinner i Hormuzsundet",
    "sammanfattning_sv": "Iran uppger att fem oljetankfartyg och en bogserbåt har fattat eld i Hormuzsundet, enligt uttalanden från Revolutionsgardet och armén. Al-Monitor, som citerar Reuters, skriver att tre tankfartyg skadats.",
@@ -18934,17 +18928,22 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.549,
+  "sammanhang": 0.629,
   "betydelse": {
-   "sv": "Eftersom Iran enligt notisen intensifierar attacker mot fartyg i Persiska viken och Hormuzsundet hänger det ihop med oljetransporterna från regionen. Oljepriset påverkar i sin tur priset på bensin och diesel i Sverige.",
-   "en": "Because Iran is stepping up attacks on shipping in the Persian Gulf and Strait of Hormuz, oil prices can move, which feeds into fuel costs for US and UK households.",
+   "sv": "Eftersom en oljetanker enligt Irans marin har börjat brinna efter en sjömina i Hormuzsundet hänger oljepriser ihop med bränslepriser, vilket berör svenska hushåll och transportföretag.",
+   "en": "Because an oil tanker reportedly caught fire after hitting a sea mine in the Strait of Hormuz, according to Iran's navy, oil prices and therefore petrol costs for drivers in the US and UK are linked.",
    "grund": [
-    2
+    1,
+    3
    ],
    "grund_kallor": [
     {
-     "namn": "Deutsche Welle",
-     "url": "https://www.dw.com/en/iran-war-gulf-tanker-attacked-1-seaferer-killed/a-79879270?maca=en-rss-en-all-1573-rdf"
+     "namn": "Middle East Eye",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-tanker-fire-strait-hormuz-after-mine-collision"
+    },
+    {
+     "namn": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine"
     }
    ],
    "kontroll": {
@@ -18956,10 +18955,27 @@
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa",
     "mellanostern"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Middle East Eye",
+      "land": "GB",
+      "rubrik": "Oil tanker on fire in Strait of Hormuz after mine collision",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-tanker-fire-strait-hormuz-after-mine-collision",
+      "tid": 1794057619.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Tehran Times",
+      "land": "IR",
+      "rubrik": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz",
+      "url": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine",
+      "tid": 1794072825.0,
+      "statskontrollerad": true
+     }
+    ],
     "asien": [
      {
       "kalla": "The Hindu",
@@ -18969,26 +18985,6 @@
       "tid": 1793992232.0,
       "statskontrollerad": false
      }
-    ],
-    "europa": [
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Iran war: Gulf tanker attacked, 1 seaferer killed",
-      "url": "https://www.dw.com/en/iran-war-gulf-tanker-attacked-1-seaferer-killed/a-79879270?maca=en-rss-en-all-1573-rdf",
-      "tid": 1793987220.0,
-      "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Third US carrier mission to Gulf 'major indicator' of new war on Iran",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/06/third-us-carrier-mission-to-gulf-major-indicator-of-new-war-on-iran/",
-      "tid": 1793958438.0,
-      "statskontrollerad": true
-     }
     ]
    },
    "blind_flack": "saknas_i_sverige",
@@ -18996,8 +18992,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Sailor killed in Gulf as Iran says tankers on fire",
+  "reserv_rubrik": "Oil tanker on fire in Strait of Hormuz after mine collision",
   "kallor": [
+   {
+    "namn": "Middle East Eye",
+    "rubrik": "Oil tanker on fire in Strait of Hormuz after mine collision",
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-tanker-fire-strait-hormuz-after-mine-collision",
+    "tid": 1794057619.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Hindu",
     "rubrik": "Sailor killed in Gulf as Iran says tankers on fire",
@@ -19011,25 +19019,13 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Deutsche Welle",
-    "rubrik": "Iran war: Gulf tanker attacked, 1 seaferer killed",
-    "url": "https://www.dw.com/en/iran-war-gulf-tanker-attacked-1-seaferer-killed/a-79879270?maca=en-rss-en-all-1573-rdf",
-    "tid": 1793987220.0,
+    "namn": "Tehran Times",
+    "rubrik": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz",
+    "url": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine",
+    "tid": 1794072825.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The National",
-    "rubrik": "Third US carrier mission to Gulf 'major indicator' of new war on Iran",
-    "url": "https://www.thenationalnews.com/news/mena/2026/11/06/third-us-carrier-mission-to-gulf-major-indicator-of-new-war-on-iran/",
-    "tid": 1793958438.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "AE",
+    "land": "IR",
     "region": "mellanostern",
     "agare": "statlig",
     "statskontrollerad": true
@@ -19041,13 +19037,14 @@
    "en": 1
   },
   "autopilot": [
+   "källkontrollen har 2 anmärkningar",
    "färre än tre oberoende källor (2)",
    "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1793927442.8857913,
   "automatisk": true,
-  "uppdaterad_tid": 1794038917.513104
+  "uppdaterad_tid": 1794074928.997113
  },
  "de0e99ee50": {
   "id": "de0e99ee50",
@@ -22681,29 +22678,25 @@
  },
  "729e6e0bdf": {
   "id": "729e6e0bdf",
-  "amnen": [
-   "geopolitik"
-  ],
-  "amnen_sektion": [
-   "geopolitik"
-  ],
-  "poang": 32.3,
+  "amnen": [],
+  "amnen_sektion": [],
+  "poang": 30.5,
   "vikt": {
    "bredd": 0.625,
    "regioner": {
+    "mellanostern": 2,
     "asien": 2,
     "europa": 2,
-    "mellanostern": 2,
     "sverige": 1,
     "usa": 1
    },
-   "timmar": 31,
+   "timmar": 33,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 3,
     "allvar": 5,
-    "varaktighet": 5,
-    "medel": 4.67,
-    "skal": "Flera dödliga flyganfall i Jemen, med uppgifter om 22 till över 50 döda och ett pågående krig med humanitär kris."
+    "varaktighet": 4,
+    "medel": 4.0,
+    "skal": "Flera rapporter om dödliga flyg- och marknadsattacker i Jemen med dussintals döda, en del av ett pågående krig med stora humanitära konsekvenser."
    },
    "bekraftad": false,
    "maste": true,
@@ -22712,7 +22705,7 @@
   "maste": true,
   "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-11-07T16:39:31+00:00",
+  "senast": "2026-11-07T17:39:23+00:00",
   "utkast": {
    "rubrik_sv": "Runt 30 döda vid attack mot marknad i Taiz i Jemen",
    "sammanfattning_sv": "Runt 30 personer dödades vid en attack mot en marknad i Taiz-provinsen i Jemen, enligt flera källor. Houthirörelsen uppger att saudiska flygplan genomförde anfallen. Jemens regering och Houthirörelsen anklagar varandra för attacken.",
@@ -22805,7 +22798,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.645,
+  "sammanhang": 0.68,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -22816,6 +22809,24 @@
     "usa"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Houthis report 25 killed in Yemen strikes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
+      "tid": 1794073163.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Middle East Eye",
+      "land": "GB",
+      "rubrik": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-says-11-killed-saudi-strikes-yemens-sanaa-province",
+      "tid": 1794047893.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "The Hindu",
@@ -22852,24 +22863,6 @@
       "statskontrollerad": false
      }
     ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Dozens killed as humanitarian crisis mounts in Yemen: What next for war?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war?traffic_source=rss",
-      "tid": 1794052766.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-says-11-killed-saudi-strikes-yemens-sanaa-province",
-      "tid": 1794047893.0,
-      "statskontrollerad": false
-     }
-    ],
     "sverige": [
      {
       "kalla": "Sveriges Radio Ekot",
@@ -22896,8 +22889,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Airstrike kills 22 people near Yemen's capital, Houthi official says",
+  "reserv_rubrik": "Houthis report 25 killed in Yemen strikes",
   "kallor": [
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "Houthis report 25 killed in Yemen strikes",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
+    "tid": 1794073163.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Hindu",
     "rubrik": "Airstrike kills 22 people near Yemen's capital, Houthi official says",
@@ -22932,18 +22937,6 @@
     "land": "IN",
     "region": "asien",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "Dozens killed as humanitarian crisis mounts in Yemen: What next for war?",
-    "url": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war?traffic_source=rss",
-    "tid": 1794052766.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -23007,7 +23000,7 @@
   "data": null,
   "godkand_tid": 1794006578.2515485,
   "automatisk": true,
-  "uppdaterad_tid": 1794070556.5827217
+  "uppdaterad_tid": 1794074928.997113
  },
  "b2d1231725": {
   "id": "b2d1231725",
