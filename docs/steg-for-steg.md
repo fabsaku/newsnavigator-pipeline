@@ -16,7 +16,7 @@ Metas gränssnitt flyttas ofta. Namnen nedan är de som gäller i november 2026 
 
 1. Gå till developers.facebook.com och logga in. Godkänn utvecklarvillkoren om du blir ombedd.
 2. Min appar, Skapa app. Namn: Newsnavigator. Välj användningsfallet som gäller att hantera och publicera innehåll på Instagram (typ Business om den frågar).
-3. I appens vänstermeny, Instagram, "API setup with Instagram login".
+3. Öppna Use cases och klicka pennan vid Instagram-användningsfallet (på vissa konton heter knappen Customize). Fliken som förr hette "API setup with Instagram login" heter nu "API setup with Unified login". Den kräver en företagsportfölj: klicka att koppla en, skapa en ny (namn Newsnavigator, ditt namn och din e-post) och välj den i appen. Portföljen behöver inte verifieras. Efter det ska "Add account" synas. Det här är avläst från en annan session på din skärm, inte provat av mig.
 4. Under "Generate access tokens", klicka "Add account" och logga in på @newsnavigator.se. Godkänn behörigheterna `instagram_business_basic` och `instagram_business_content_publish`.
 5. Klicka "Generate token" vid kontot. Du får en token (giltig i 60 dagar) och ett konto-id med siffror. Kopiera båda till en anteckning på din dator, inte till något molnverktyg och inte till chatten.
 6. Upprepa 4 och 5 för @news.navigator.
