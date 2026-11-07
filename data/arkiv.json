@@ -22680,32 +22680,31 @@
   "id": "729e6e0bdf",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 30.5,
+  "poang": 35.3,
   "vikt": {
-   "bredd": 0.625,
+   "bredd": 0.587,
    "regioner": {
     "mellanostern": 2,
+    "europa": 3,
     "asien": 2,
-    "europa": 2,
-    "sverige": 1,
     "usa": 1
    },
-   "timmar": 33,
+   "timmar": 69,
    "konsekvens": {
     "berorda": 3,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Flera rapporter om dödliga flyg- och marknadsattacker i Jemen med dussintals döda, en del av ett pågående krig med stora humanitära konsekvenser."
+    "skal": "Flera dödliga flygangrepp i Jemen, med 22 till över 50 döda beroende på källa, berör främst civilbefolkningen i Sanaa och Taiz och rör ett pågående krig."
    },
-   "bekraftad": false,
-   "maste": true,
+   "bekraftad": true,
+   "maste": false,
    "spar": []
   },
-  "maste": true,
+  "maste": false,
   "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-11-07T17:39:23+00:00",
+  "senast": "2026-11-07T18:45:33+00:00",
   "utkast": {
    "rubrik_sv": "Runt 30 döda vid attack mot marknad i Taiz i Jemen",
    "sammanfattning_sv": "Runt 30 personer dödades vid en attack mot en marknad i Taiz-provinsen i Jemen, enligt flera källor. Houthirörelsen uppger att saudiska flygplan genomförde anfallen. Jemens regering och Houthirörelsen anklagar varandra för attacken.",
@@ -22798,18 +22797,25 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.68,
+  "sammanhang": 0.737,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
     "mellanostern",
-    "sverige",
     "usa"
    ],
    "per_region": {
     "mellanostern": [
+     {
+      "kalla": "Middle East Eye",
+      "land": "GB",
+      "rubrik": "Saudi-led strikes kill at least 27 in Yemen's Sanaa, Houthis say",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-strikes-kill-least-27-yemens-sanaa-houthis-say",
+      "tid": 1794077133.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "Al Jazeera",
       "land": "QA",
@@ -22817,13 +22823,31 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
       "tid": 1794073163.0,
       "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Houthis say at least 25 killed in Saudi air strike",
+      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+      "tid": 1794071364.0,
+      "statskontrollerad": false
      },
      {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-says-11-killed-saudi-strikes-yemens-sanaa-province",
-      "tid": 1794047893.0,
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Yemen: 22 killed in strike near Sanaa, Houthis say",
+      "url": "https://www.dw.com/en/yemen-22-killed-in-strike-near-sanaa-houthis-say/a-79885177?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794059400.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Yemen: 30 dead in strikes on Taiz market",
+      "url": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market",
+      "tid": 1794044236.0,
       "statskontrollerad": false
      }
     ],
@@ -22845,34 +22869,6 @@
       "statskontrollerad": false
      }
     ],
-    "europa": [
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Yemen: 22 killed in strike near Sanaa, Houthis say",
-      "url": "https://www.dw.com/en/yemen-22-killed-in-strike-near-sanaa-houthis-say/a-79885177?maca=en-rss-en-all-1573-rdf",
-      "tid": 1794059400.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "Yemen: 30 dead in strikes on Taiz market",
-      "url": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market",
-      "tid": 1794044236.0,
-      "statskontrollerad": false
-     }
-    ],
-    "sverige": [
-     {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Runt 30 dödade vid attack mot marknad i Jemen",
-      "url": "https://www.sverigesradio.se/artikel/9336424",
-      "tid": 1793989860.0,
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
      {
       "kalla": "The New York Times",
@@ -22884,13 +22880,25 @@
      }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Houthis report 25 killed in Yemen strikes",
+  "reserv_rubrik": "Saudi-led strikes kill at least 27 in Yemen's Sanaa, Houthis say",
   "kallor": [
+   {
+    "namn": "Middle East Eye",
+    "rubrik": "Saudi-led strikes kill at least 27 in Yemen's Sanaa, Houthis say",
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-strikes-kill-least-27-yemens-sanaa-houthis-say",
+    "tid": 1794077133.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Al Jazeera",
     "rubrik": "Houthis report 25 killed in Yemen strikes",
@@ -22901,6 +22909,18 @@
     "land": "QA",
     "region": "mellanostern",
     "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "BBC World",
+    "rubrik": "Houthis say at least 25 killed in Saudi air strike",
+    "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+    "tid": 1794071364.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -22940,18 +22960,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Middle East Eye",
-    "rubrik": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province",
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-says-11-killed-saudi-strikes-yemens-sanaa-province",
-    "tid": 1794047893.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "France 24",
     "rubrik": "Yemen: 30 dead in strikes on Taiz market",
     "url": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market",
@@ -22960,18 +22968,6 @@
     "typ": "media",
     "land": "FR",
     "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Sveriges Radio Ekot",
-    "rubrik": "Runt 30 dödade vid attack mot marknad i Jemen",
-    "url": "https://www.sverigesradio.se/artikel/9336424",
-    "tid": 1793989860.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
     "agare": "public-service",
     "statskontrollerad": false
    },
@@ -22990,17 +22986,18 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
+   "sv": 1,
    "en": 3
   },
   "autopilot": [
    "utkastet är märkt osäkert",
-   "källkontrollen har 1 anmärkningar"
+   "spärrord: barn, children",
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1794006578.2515485,
   "automatisk": true,
-  "uppdaterad_tid": 1794074928.997113
+  "uppdaterad_tid": 1794078581.8572304
  },
  "b2d1231725": {
   "id": "b2d1231725",
@@ -23617,30 +23614,29 @@
    "geopolitik",
    "usa"
   ],
-  "poang": 36.3,
+  "poang": 35.9,
   "vikt": {
-   "bredd": 0.351,
+   "bredd": 0.209,
    "regioner": {
     "europa": 2,
-    "mellanostern": 1,
     "asien": 2
    },
    "timmar": 96,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 5,
+    "allvar": 4,
     "varaktighet": 4,
-    "medel": 4.33,
-    "skal": "Kriget i Ukraina och en möjlig vapenvila påverkar flera länder i Europa, och en rysk-amerikansk oljeaffär skapar osäkerhet på energimarknaden."
+    "medel": 4.0,
+    "skal": "Diplomatiska positioner kring Ukrainakriget, med ett kortvarigt vapenstillestånd i Oleshky och spänningar mellan Europa, Nato och Ryssland, men inga konkreta avgöranden."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false,
    "spar": [
     "samarbete"
    ]
   },
   "maste": false,
-  "antal_kallor": 5,
+  "antal_kallor": 4,
   "har_primarkalla": false,
   "senast": "2026-11-07T16:13:52+00:00",
   "utkast": {
@@ -23801,13 +23797,36 @@
    "sammanfattning": "France 24 beskrivs felaktigt som att det fokuserar på sanktioner som hindrar tankfartygen från att lägga till i USA; källans rubrik nämner inte sanktioner, så den tillskrivningen saknar stöd."
   },
   "narrativ": null,
-  "sammanhang": 0.538,
-  "betydelse": null,
+  "sammanhang": 0.63,
+  "betydelse": {
+   "sv": "Eftersom Europa står fast vid att Putin måste avsluta kriget innan Rysslands farhågor diskuteras, och hållningen enligt källorna riskerar spänningar med USA, berör det Sveriges säkerhetspolitik, då Sverige är med i både EU och Nato.",
+   "en": "Since European leaders insist Putin end the war before Russia's concerns are discussed, a stance that sources say risks friction with the Trump administration, the divide affects how Washington and London coordinate with European allies on Ukraine and NATO security.",
+   "grund": [
+    2,
+    3
+   ],
+   "grund_kallor": [
+    {
+     "namn": "The Straits Times",
+     "url": "https://www.straitstimes.com/world/europe/europe-insists-putin-end-ukraine-war-before-discussing-russias-concerns"
+    },
+    {
+     "namn": "The Japan Times",
+     "url": "https://www.japantimes.co.jp/news/2026/11/07/world/politics/europe-putin-end-war-russia-concerns/"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "ingen koppling: Engelska raden: påståendet att splittringen påverkar hur Washington och London samordnar med europeiska allierade om Ukraina och Natos säkerhet saknar stöd i källorna, som bara nämner spänningar med USA och ingenting om Storbritannien eller samordning."
+    ]
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa",
-    "mellanostern"
+    "europa"
    ],
    "per_region": {
     "europa": [
@@ -23826,16 +23845,6 @@
       "url": "https://rt-english.com/news/648524-nato-chief-europe-trump-diesel-criticism/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
       "tid": 1793972668.0,
       "statskontrollerad": true
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Why are oil traders refusing to buy Russian diesel after Trump-Putin deal?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/why-are-oil-traders-refusing-to-buy-russian-diesel-after-trump-putin-deal?traffic_source=rss",
-      "tid": 1794054251.0,
-      "statskontrollerad": false
      }
     ],
     "asien": [
@@ -23874,18 +23883,6 @@
     "land": "UA",
     "region": "europa",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "Why are oil traders refusing to buy Russian diesel after Trump-Putin deal?",
-    "url": "https://www.aljazeera.com/news/2026/11/7/why-are-oil-traders-refusing-to-buy-russian-diesel-after-trump-putin-deal?traffic_source=rss",
-    "tid": 1794054251.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -23931,14 +23928,12 @@
    "en": 3
   },
   "autopilot": [
-   "utkastet är märkt osäkert",
-   "källkontrollen har 1 anmärkningar",
    "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1794010625.871926,
   "automatisk": false,
-  "uppdaterad_tid": 1794071357.4921393
+  "uppdaterad_tid": 1794078581.8572304
  },
  "2d80424f97": {
   "id": "2d80424f97",
@@ -25140,36 +25135,34 @@
  },
  "6a39c4e7ed": {
   "id": "6a39c4e7ed",
-  "amnen": [
-   "sverige"
-  ],
-  "amnen_sektion": [
-   "sverige"
-  ],
-  "poang": 26.1,
+  "amnen": [],
+  "amnen_sektion": [],
+  "poang": 32.6,
   "vikt": {
-   "bredd": 0.447,
+   "bredd": 1.04,
    "regioner": {
-    "sverige": 1,
-    "europa": 1,
+    "asien": 2,
+    "europa": 4,
+    "sverige": 4,
+    "usa": 4,
     "norden": 1
    },
-   "timmar": 36,
+   "timmar": 20,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 3,
+    "allvar": 4,
     "varaktighet": 2,
-    "medel": 3.0,
-    "skal": "Bombhot mot flyg och medier i flera länder berör många resenärer och anställda, men inga skador är rapporterade och effekterna väntas bli kortvariga."
+    "medel": 3.33,
+    "skal": "Koordinerade bombhot mot flyg och medier i flera europeiska länder misstänks ha kopplingar till främmande makt, vilket påverkar säkerheten inom flyget."
    },
-   "bekraftad": false,
-   "maste": false,
+   "bekraftad": true,
+   "maste": true,
    "spar": []
   },
-  "maste": false,
-  "antal_kallor": 3,
+  "maste": true,
+  "antal_kallor": 15,
   "har_primarkalla": false,
-  "senast": "2026-11-06T20:01:00+00:00",
+  "senast": "2026-11-07T18:02:18+00:00",
   "utkast": {
    "rubrik_sv": "Nya bombhot mot flyg och TV-bolag i flera europeiska länder",
    "sammanfattning_sv": "Flera flyg i Europa har stört av bombhot under en vecka, enligt flera medier. TV-bolag i flera länder har också fått hot, och inga bomber hittades på de drabbade platserna, uppger SCMP.",
@@ -25326,33 +25319,411 @@
    ],
    "sammanfattning": "Bangkok Post kopplar inte hoten till nedgången på 20–30 procent; källan säger att nedgången beror på reskostnader och att hoten väntas störa ytterligare. Rubriken 'Oenighet' är dessutom en egen slutsats, eftersom ingen källa beskriver en oenighet om orsaken."
   },
-  "narrativ": null,
-  "sammanhang": 0.618,
-  "betydelse": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Misstänkt utländsk inblandning",
+     "namn_en": "Suspected foreign involvement",
+     "lyfter_sv": "The Straits Times, France 24 och Le Monde lyfter fram att Frankrike utreder kopplingar till 'främmande makter'. Ekot och Dagens industri lyfter fram att ryska kopplingar utreds.",
+     "lyfter_en": "The Straits Times, France 24 and Le Monde highlight that France is probing links to 'foreign powers'. Ekot and Dagens industri highlight that Russian links are being investigated.",
+     "kallor": [
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/europe/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers"
+      },
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/france/20261107-france-investigating-if-bogus-bomb-threats-against-airlines-linked-to-foreign-powers"
+      },
+      {
+       "namn": "Sveriges Radio Ekot",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.sverigesradio.se/artikel/9336556"
+      },
+      {
+       "namn": "Le Monde (English)",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.lemonde.fr/en/economy/article/2026/11/07/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers_6774486_19.html"
+      },
+      {
+       "namn": "Dagens industri",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.di.se/nyheter/minst-35-flyg-hotades-rysk-koppling-utreds/"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "sverige"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Samordnad kampanj",
+     "namn_en": "Coordinated campaign",
+     "lyfter_sv": "The Hindu och New York Times lyfter fram att Irland anser att hoten sannolikt är en samordnad kampanj.",
+     "lyfter_en": "The Hindu and The New York Times highlight that Ireland considers the threats probably a coordinated campaign.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/europe-bomb-threats-likely-co-ordinated-campaign-irish-government/article71675060.ece"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/06/world/europe/bomb-threats-flights-campaign-ireland.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Utmaning för flygbranschen",
+     "namn_en": "Challenge for the airline industry",
+     "lyfter_sv": "CNBC lyfter fram att det är svårt för Europas flygmyndigheter att hålla tillbaka vågen, BBC att hotet utgör en allvarlig utmaning för flygbranschen, och Daily Caller att fler än ett dussin flygningar omdirigerats och redaktioner evakuerats.",
+     "lyfter_en": "CNBC highlights that Europe's aviation authorities find the wave hard to contain, BBC that the threats pose a serious challenge to the airline industry, and The Daily Caller that more than a dozen flights were diverted and newsrooms evacuated.",
+     "kallor": [
+      {
+       "namn": "CNBC",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html"
+      },
+      {
+       "namn": "The Daily Caller",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://dailycaller.com/2026/11/06/bomb-threats-divert-european-flights-newsrooms-evacuated-nato-ireland-hungary"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/cv8ezz9yn6pyo?at_medium=RSS&at_campaign=rss"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten",
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Hot mot medier och flyg",
+     "namn_en": "Threats against media and flights",
+     "lyfter_sv": "Politico lyfter fram att vågen riktar sig mot irländska medier och fler europeiska flyg, och NPR att både flyg och sändare är måltavlor.",
+     "lyfter_en": "Politico highlights that the wave targets Irish media outlets and more European flights, and NPR that both flights and broadcasters are targeted.",
+     "kallor": [
+      {
+       "namn": "Politico Europe",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.politico.eu/article/bomb-threats-target-irish-media-and-more-european-flights/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication"
+      },
+      {
+       "namn": "NPR",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 12,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Bombhot riktas mot flyg och medier i Europa",
+      "stod": [
+       6,
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "Koppling till främmande makt utreds",
+      "stod": [
+       1,
+       2,
+       12,
+       3,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Frankrike utreder kopplingar till 'främmande makter'",
+      "stod": [
+       1,
+       2,
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times, France 24 och Le Monde lyfter fram Frankrikes utredning om 'främmande makter'",
+      "stod": [
+       1,
+       2,
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "Ekot och Dagens industri lyfter fram att ryska kopplingar utreds",
+      "stod": [
+       3,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Irland anser att hoten sannolikt är en samordnad kampanj",
+      "stod": [
+       8,
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu och New York Times lyfter fram Irlands bedömning om samordnad kampanj",
+      "stod": [
+       8,
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "Det är svårt för Europas flygmyndigheter att hålla tillbaka vågen (CNBC)",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hotet utgör en allvarlig utmaning för flygbranschen (BBC)",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fler än ett dussin flygningar har omdirigerats och redaktioner evakuerats (Daily Caller)",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Vågen riktar sig mot irländska medier och fler europeiska flyg (Politico)",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Både flyg och sändare är måltavlor (NPR)",
+      "stod": [
+       9
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.587,
+  "betydelse": {
+   "sv": "Eftersom minst 35 flygresor har hotats i Europa och ryska kopplingar utreds, berör det säkerheten för flygresor som svenskar gör inom och utanför Europa.",
+   "en": null,
+   "grund": [
+    3,
+    13
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Sveriges Radio Ekot",
+     "url": "https://www.sverigesradio.se/artikel/9336556"
+    },
+    {
+     "namn": "Dagens industri",
+     "url": "https://www.di.se/nyheter/minst-35-flyg-hotades-rysk-koppling-utreds/"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "ingen koppling: Påståendet att hoten berör säkerheten för flygresor som svenskar gör utanför Europa saknar stöd i källmaterialet, som bara handlar om hot mot flyg i Europa."
+    ]
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
+    "asien",
     "europa",
     "norden",
-    "sverige"
+    "sverige",
+    "usa"
    ],
    "per_region": {
-    "sverige": [
+    "asien": [
      {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Bombhot mot mediebolag efter hoten mot flygtrafiken",
-      "url": "https://www.sverigesradio.se/artikel/9336447",
-      "tid": 1793995260.0,
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "France probes if bomb threats against airlines linked to ‘foreign powers’",
+      "url": "https://www.straitstimes.com/world/europe/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers",
+      "tid": 1794074538.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Europe bomb threats 'likely co-ordinated campaign': Irish government",
+      "url": "https://www.thehindu.com/news/international/europe-bomb-threats-likely-co-ordinated-campaign-irish-government/article71675060.ece",
+      "tid": 1793981616.0,
       "statskontrollerad": false
      }
     ],
     "europa": [
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "France investigating if bogus bomb threats against airlines linked to 'foreign powers'",
+      "url": "https://www.france24.com/en/france/20261107-france-investigating-if-bogus-bomb-threats-against-airlines-linked-to-foreign-powers",
+      "tid": 1794069233.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Politico Europe",
+      "land": "BE",
+      "rubrik": "Wave of bomb threats target Irish media outlets and more European flights",
+      "url": "https://www.politico.eu/article/bomb-threats-target-irish-media-and-more-european-flights/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "tid": 1793983831.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "BBC World",
       "land": "GB",
       "rubrik": "Spate of bomb threats poses serious challenge to airline industry",
       "url": "https://www.bbc.co.uk/news/articles/cv8ezz9yn6pyo?at_medium=RSS&at_campaign=rss",
       "tid": 1793981924.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Le Monde (English)",
+      "land": "FR",
+      "rubrik": "France probes if bomb threats against airlines linked to 'foreign powers'",
+      "url": "https://www.lemonde.fr/en/economy/article/2026/11/07/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers_6774486_19.html",
+      "tid": 1794071637.0,
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Uppgifter: Ryska kopplingar utreds efter bombhot mot 35 flygresor",
+      "url": "https://www.sverigesradio.se/artikel/9336556",
+      "tid": 1794049800.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "SVT Nyheter",
+      "land": "SE",
+      "rubrik": "Nya hot mot flygplatser i Europa",
+      "url": "https://www.svt.se/nyheter/utrikes/nya-hot-mot-flygplatser-i-europa",
+      "tid": 1793963231.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dagens industri",
+      "land": "SE",
+      "rubrik": "Minst 35 flyg hotades – rysk koppling utreds",
+      "url": "https://www.di.se/nyheter/minst-35-flyg-hotades-rysk-koppling-utreds/",
+      "tid": 1794043224.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Nya bombhot mot flyg i flera länder",
+      "url": "https://www.dn.se/varlden/larm-om-nya-bombhot-mot-flyg-i-flera-lander/",
+      "tid": 1793963019.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
+      "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
+      "tid": 1794042117.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Daily Caller",
+      "land": "US",
+      "rubrik": "More Than A Dozen Flights Diverted Over Bomb Threats, Newsrooms Evacuated",
+      "url": "https://dailycaller.com/2026/11/06/bomb-threats-divert-european-flights-newsrooms-evacuated-nato-ireland-hungary",
+      "tid": 1793984615.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "European flights and broadcasters are targeted with another wave of bomb threats",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes",
+      "tid": 1793978491.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Bomb Threats in Europe Probably a Coordinated Campaign, Ireland Says",
+      "url": "https://www.nytimes.com/2026/11/06/world/europe/bomb-threats-flights-campaign-ireland.html",
+      "tid": 1793995668.0,
       "statskontrollerad": false
      }
     ],
@@ -25369,21 +25740,116 @@
    },
    "blind_flack": null,
    "grannar_svenska": false,
-   "usa": null,
+   "usa": {
+    "mitten": [
+     {
+      "kalla": "CNBC",
+      "rubrik": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
+      "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
+      "tid": 1794042117.0,
+      "lutning": "mitten"
+     }
+    ],
+    "rod": [
+     {
+      "kalla": "The Daily Caller",
+      "rubrik": "More Than A Dozen Flights Diverted Over Bomb Threats, Newsrooms Evacuated",
+      "url": "https://dailycaller.com/2026/11/06/bomb-threats-divert-european-flights-newsrooms-evacuated-nato-ireland-hungary",
+      "tid": 1793984615.0,
+      "lutning": "hoger"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "NPR",
+      "rubrik": "European flights and broadcasters are targeted with another wave of bomb threats",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes",
+      "tid": 1793978491.0,
+      "lutning": "lutar_vanster"
+     },
+     {
+      "kalla": "The New York Times",
+      "rubrik": "Bomb Threats in Europe Probably a Coordinated Campaign, Ireland Says",
+      "url": "https://www.nytimes.com/2026/11/06/world/europe/bomb-threats-flights-campaign-ireland.html",
+      "tid": 1793995668.0,
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "Bombhot mot mediebolag efter hoten mot flygtrafiken",
+  "reserv_rubrik": "France probes if bomb threats against airlines linked to ‘foreign powers’",
   "kallor": [
    {
+    "namn": "The Straits Times",
+    "rubrik": "France probes if bomb threats against airlines linked to ‘foreign powers’",
+    "url": "https://www.straitstimes.com/world/europe/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers",
+    "tid": 1794074538.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "France investigating if bogus bomb threats against airlines linked to 'foreign powers'",
+    "url": "https://www.france24.com/en/france/20261107-france-investigating-if-bogus-bomb-threats-against-airlines-linked-to-foreign-powers",
+    "tid": 1794069233.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Sveriges Radio Ekot",
-    "rubrik": "Bombhot mot mediebolag efter hoten mot flygtrafiken",
-    "url": "https://www.sverigesradio.se/artikel/9336447",
-    "tid": 1793995260.0,
+    "rubrik": "Uppgifter: Ryska kopplingar utreds efter bombhot mot 35 flygresor",
+    "url": "https://www.sverigesradio.se/artikel/9336556",
+    "tid": 1794049800.0,
     "betalvagg": false,
     "typ": "media",
     "land": "SE",
     "region": "sverige",
     "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CNBC",
+    "rubrik": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
+    "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
+    "tid": 1794042117.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Daily Caller",
+    "rubrik": "More Than A Dozen Flights Diverted Over Bomb Threats, Newsrooms Evacuated",
+    "url": "https://dailycaller.com/2026/11/06/bomb-threats-divert-european-flights-newsrooms-evacuated-nato-ireland-hungary",
+    "tid": 1793984615.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Politico Europe",
+    "rubrik": "Wave of bomb threats target Irish media outlets and more European flights",
+    "url": "https://www.politico.eu/article/bomb-threats-target-irish-media-and-more-european-flights/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "tid": 1793983831.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -25399,6 +25865,42 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Hindu",
+    "rubrik": "Europe bomb threats 'likely co-ordinated campaign': Irish government",
+    "url": "https://www.thehindu.com/news/international/europe-bomb-threats-likely-co-ordinated-campaign-irish-government/article71675060.ece",
+    "tid": 1793981616.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NPR",
+    "rubrik": "European flights and broadcasters are targeted with another wave of bomb threats",
+    "url": "https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes",
+    "tid": 1793978491.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "SVT Nyheter",
+    "rubrik": "Nya hot mot flygplatser i Europa",
+    "url": "https://www.svt.se/nyheter/utrikes/nya-hot-mot-flygplatser-i-europa",
+    "tid": 1793963231.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "RÚV English",
     "rubrik": "Bomb threat against Keflavík Airport not thought linked to threats abroad",
     "url": "https://www.ruv.is/english/2026-11-06-bomb-threat-against-keflavik-airport-not-thought-linked-to-threats-abroad-491944/",
@@ -25409,21 +25911,65 @@
     "region": "norden",
     "agare": "public-service",
     "statskontrollerad": false
+   },
+   {
+    "namn": "Le Monde (English)",
+    "rubrik": "France probes if bomb threats against airlines linked to 'foreign powers'",
+    "url": "https://www.lemonde.fr/en/economy/article/2026/11/07/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers_6774486_19.html",
+    "tid": 1794071637.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens industri",
+    "rubrik": "Minst 35 flyg hotades – rysk koppling utreds",
+    "url": "https://www.di.se/nyheter/minst-35-flyg-hotades-rysk-koppling-utreds/",
+    "tid": 1794043224.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Bomb Threats in Europe Probably a Coordinated Campaign, Ireland Says",
+    "url": "https://www.nytimes.com/2026/11/06/world/europe/bomb-threats-flights-campaign-ireland.html",
+    "tid": 1793995668.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens Nyheter",
+    "rubrik": "Nya bombhot mot flyg i flera länder",
+    "url": "https://www.dn.se/varlden/larm-om-nya-bombhot-mot-flyg-i-flera-lander/",
+    "tid": 1793963019.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
-   "en": 2
+   "sv": 3,
+   "en": 3
   },
-  "autopilot": [
-   "utkastet är märkt osäkert",
-   "källkontrollen har 1 anmärkningar",
-   "färre än två svenska källor"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1794050129.9855556,
   "automatisk": false,
-  "uppdaterad_tid": 1794067751.7006571
+  "uppdaterad_tid": 1794078581.8572304
  }
 }
