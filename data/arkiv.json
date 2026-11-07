@@ -23617,34 +23617,37 @@
  "409c67cfde": {
   "id": "409c67cfde",
   "amnen": [
-   "geopolitik"
+   "geopolitik",
+   "usa"
   ],
   "amnen_sektion": [
-   "geopolitik"
+   "geopolitik",
+   "usa"
   ],
-  "poang": 35.4,
+  "poang": 36.3,
   "vikt": {
-   "bredd": 0.163,
+   "bredd": 0.351,
    "regioner": {
-    "europa": 1,
+    "europa": 2,
+    "mellanostern": 1,
     "asien": 2
    },
    "timmar": 96,
    "konsekvens": {
     "berorda": 4,
     "allvar": 5,
-    "varaktighet": 3,
-    "medel": 4.0,
-    "skal": "Händelsen gäller ett pågående krig med stora säkerhetskonsekvenser för Ukraina och Europa, men det är uttalanden och en lokal vapenvila snarare än ett avgörande vändpunktsbeslut."
+    "varaktighet": 4,
+    "medel": 4.33,
+    "skal": "Kriget i Ukraina och en möjlig vapenvila påverkar flera länder i Europa, och en rysk-amerikansk oljeaffär skapar osäkerhet på energimarknaden."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": [
     "samarbete"
    ]
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 5,
   "har_primarkalla": false,
   "senast": "2026-11-07T16:13:52+00:00",
   "utkast": {
@@ -23805,34 +23808,13 @@
    "sammanfattning": "France 24 beskrivs felaktigt som att det fokuserar på sanktioner som hindrar tankfartygen från att lägga till i USA; källans rubrik nämner inte sanktioner, så den tillskrivningen saknar stöd."
   },
   "narrativ": null,
-  "sammanhang": 0.75,
-  "betydelse": {
-   "sv": "Eftersom Europa enligt källorna vill att Putin avslutar kriget före samtal och det riskerar spänningar med USA, är det relevant för Sveriges säkerhetspolitik som EU- och Natomedlem.",
-   "en": "Because Europe insists Putin must end the war before Russia's concerns are discussed, a stance that risks tension with the Trump administration, the dispute bears on transatlantic unity over ending the war.",
-   "grund": [
-    2,
-    3
-   ],
-   "grund_kallor": [
-    {
-     "namn": "The Straits Times",
-     "url": "https://www.straitstimes.com/world/europe/europe-insists-putin-end-ukraine-war-before-discussing-russias-concerns"
-    },
-    {
-     "namn": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/07/world/politics/europe-putin-end-war-russia-concerns/"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "sammanhang": 0.538,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa"
+    "europa",
+    "mellanostern"
    ],
    "per_region": {
     "europa": [
@@ -23842,6 +23824,24 @@
       "rubrik": "Zelensky says Oleshky ceasefire shows Russia can halt fighting but Putin is unwilling",
       "url": "https://kyivindependent.com/zelensky-says-oleshky-ceasefire-shows-russia-can-halt-fighting-but-putin-is-unwilling/",
       "tid": 1794068032.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "RT",
+      "land": "RU",
+      "rubrik": "NATO chief calls out Europe over Putin-Trump diesel deal criticism",
+      "url": "https://rt-english.com/news/648524-nato-chief-europe-trump-diesel-criticism/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+      "tid": 1793972668.0,
+      "statskontrollerad": true
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Why are oil traders refusing to buy Russian diesel after Trump-Putin deal?",
+      "url": "https://www.aljazeera.com/news/2026/11/7/why-are-oil-traders-refusing-to-buy-russian-diesel-after-trump-putin-deal?traffic_source=rss",
+      "tid": 1794054251.0,
       "statskontrollerad": false
      }
     ],
@@ -23864,8 +23864,8 @@
      }
     ]
    },
-   "blind_flack": null,
-   "grannar_svenska": true,
+   "blind_flack": "saknas_i_sverige",
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
@@ -23881,6 +23881,18 @@
     "land": "UA",
     "region": "europa",
     "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "Why are oil traders refusing to buy Russian diesel after Trump-Putin deal?",
+    "url": "https://www.aljazeera.com/news/2026/11/7/why-are-oil-traders-refusing-to-buy-russian-diesel-after-trump-putin-deal?traffic_source=rss",
+    "tid": 1794054251.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -23906,6 +23918,18 @@
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "RT",
+    "rubrik": "NATO chief calls out Europe over Putin-Trump diesel deal criticism",
+    "url": "https://rt-english.com/news/648524-nato-chief-europe-trump-diesel-criticism/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+    "tid": 1793972668.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "RU",
+    "region": "europa",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
@@ -23913,11 +23937,15 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "utkastet är märkt osäkert",
+   "källkontrollen har 1 anmärkningar",
+   "blind fläck"
+  ],
   "data": null,
   "godkand_tid": 1794010625.871926,
   "automatisk": false,
-  "uppdaterad_tid": 1794070556.5827217
+  "uppdaterad_tid": 1794071357.4921393
  },
  "2d80424f97": {
   "id": "2d80424f97",
