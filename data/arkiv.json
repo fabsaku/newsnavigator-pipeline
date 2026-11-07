@@ -23534,37 +23534,38 @@
   "id": "409c67cfde",
   "amnen": [
    "geopolitik",
-   "usa"
+   "usa",
+   "varlden"
   ],
   "amnen_sektion": [
    "geopolitik",
    "usa"
   ],
-  "poang": 37.0,
+  "poang": 35.3,
   "vikt": {
-   "bredd": 0.42,
+   "bredd": 0.548,
    "regioner": {
-    "asien": 3,
-    "europa": 2,
+    "asien": 4,
+    "europa": 4,
     "sverige": 1,
-    "usa": 3
+    "usa": 1
    },
    "timmar": 96,
    "konsekvens": {
-    "berorda": 5,
+    "berorda": 4,
     "allvar": 5,
     "varaktighet": 4,
-    "medel": 4.67,
-    "skal": "Diplomatiska förhandlingar om att få slut på kriget i Ukraina, med möjliga konsekvenser för flera länder i Europa, och en lokal evakuerings- och vapenvilaplan i Oleshky."
+    "medel": 4.33,
+    "skal": "Diskussioner om att avsluta kriget i Ukraina och om rysk diesel till USA berör flera länder och rör krig, säkerhet och energi, även om dieselaffären verkar ha stannat av."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 9,
+  "antal_kallor": 10,
   "har_primarkalla": false,
-  "senast": "2026-11-07T02:57:07+00:00",
+  "senast": "2026-11-07T03:11:38+00:00",
   "utkast": {
    "rubrik_sv": "Tankfartyg med rysk diesel till USA ändrar kurs",
    "sammanfattning_sv": "Enligt Deutsche Welle ändrar tankfartyg med rysk diesel kurs från USA, eftersom sanktioner uppges hindra dem från att lägga till. Trump säger att han träffat Putins utsände Kirill Dmitriev och förutspår en stor uppgörelse före samtalen i Abu Dhabi.",
@@ -23723,8 +23724,28 @@
    "sammanfattning": "France 24 beskrivs felaktigt som att det fokuserar på sanktioner som hindrar tankfartygen från att lägga till i USA; källans rubrik nämner inte sanktioner, så den tillskrivningen saknar stöd."
   },
   "narrativ": null,
-  "sammanhang": 0.348,
-  "betydelse": null,
+  "sammanhang": 0.503,
+  "betydelse": {
+   "sv": "Eftersom ryska dieseltankfartyg ändrar kurs från USA på grund av sanktioner hänger det ihop med dieselpriser, som påverkar bränslekostnaderna för svenska hushåll och transportföretag.",
+   "en": "Because sanctions are keeping Russian diesel tankers from docking in the US, the supply of diesel is affected, and diesel prices feed into fuel and transport costs for American households and businesses.",
+   "grund": [
+    3
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Deutsche Welle",
+     "url": "https://www.dw.com/en/tankers-carrying-russian-diesel-to-the-us-change-course/a-79870807?maca=en-rss-en-all-1573-rdf"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "ingen koppling: Svenska raden: kopplingen från ryska tankers som ändrar kurs från USA till dieselpriser och svenska hushålls och transportföretags bränslekostnader är långsökt. Källorna nämner inte någon prispåverkan.",
+     "saknar stöd: Engelska raden: påståendet att dieselutbudet påverkas saknar stöd. Källorna säger att leveranser inte kan lägga till i USA, men inte hur utbudet påverkas."
+    ]
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
     "asien",
@@ -23734,14 +23755,6 @@
    ],
    "per_region": {
     "asien": [
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "China says discussions underway on Xi-Trump-Putin meeting",
-      "url": "https://www.thehindu.com/news/international/china-says-discussions-underway-on-xi-trump-putin-meeting/article71677194.ece",
-      "tid": 1794020227.0,
-      "statskontrollerad": false
-     },
      {
       "kalla": "The Straits Times",
       "land": "SG",
@@ -23757,15 +23770,47 @@
       "url": "https://www.japantimes.co.jp/news/2026/11/07/world/politics/europe-putin-end-war-russia-concerns/",
       "tid": 1794008160.0,
       "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Trump questions 2022 Russian oil import ban, says he’ll ‘take a look’ amid diesel controversy",
+      "url": "https://www.hindustantimes.com/world-news/trump-questions-2022-russian-oil-import-ban-says-he-ll-take-a-look-amid-diesel-controversy-101793943084905.html",
+      "tid": 1793947752.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Donald Trump predicts deal with Russia on Ukraine and ‘all of Europe’",
+      "url": "https://www.thehindu.com/news/international/donald-trump-predicts-deal-with-russia-on-ukraine-and-all-of-europe/article71672626.ece",
+      "tid": 1793945947.0,
+      "statskontrollerad": false
      }
     ],
     "europa": [
      {
-      "kalla": "Meduza",
-      "land": "LV",
-      "rubrik": "Melania Trump receives Ukraine’s Order of Princess Olha at White House meeting on Oleshky evacuation",
-      "url": "https://meduza.io/en/feature/2026/11/07/melania-trump-receives-ukraine-s-order-of-princess-olha-at-white-house-meeting-on-oleshky-evacuation",
-      "tid": 1793999265.0,
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Tankers carrying Russian diesel to the US change course",
+      "url": "https://www.dw.com/en/tankers-carrying-russian-diesel-to-the-us-change-course/a-79870807?maca=en-rss-en-all-1573-rdf",
+      "tid": 1793998500.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Trump’s stillborn diesel deal: Why Russian oil tankers are not heading to the US",
+      "url": "https://www.france24.com/en/americas/20261106-trump-stillborn-diesel-deal-why-russian-oil-tankers-are-not-heading-to-the-us",
+      "tid": 1793972316.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Le Monde (English)",
+      "land": "FR",
+      "rubrik": "US-Russia diesel deal touted by Trump falters",
+      "url": "https://www.lemonde.fr/en/international/article/2026/11/07/us-russia-diesel-deal-touted-by-trump-falters_6774022_4.html",
+      "tid": 1794021098.0,
       "statskontrollerad": false
      },
      {
@@ -23789,22 +23834,6 @@
     ],
     "usa": [
      {
-      "kalla": "Fox News",
-      "land": "US",
-      "rubrik": "Melania Trump hails Oleshky ceasefire as potential ‘spark’ for progress amid Ukraine-Russia war",
-      "url": "https://www.foxnews.com/world/melania-trump-oleshky-ceasefire-spark-more-enduring-peace-ukraine-russia",
-      "tid": 1793899567.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Melania Trump Repositions the White Suit",
-      "url": "https://www.nytimes.com/2026/11/06/style/melania-trump-white-suit-russia-ukraine-cease-fire.html",
-      "tid": 1793971787.0,
-      "statskontrollerad": false
-     },
-     {
       "kalla": "The Washington Post",
       "land": "US",
       "rubrik": "Trump says he and Putin are close to a deal about Ukraine and ‘all of Europe’",
@@ -23816,49 +23845,11 @@
    },
    "blind_flack": null,
    "grannar_svenska": false,
-   "usa": {
-    "rod": [
-     {
-      "kalla": "Fox News",
-      "rubrik": "Melania Trump hails Oleshky ceasefire as potential ‘spark’ for progress amid Ukraine-Russia war",
-      "url": "https://www.foxnews.com/world/melania-trump-oleshky-ceasefire-spark-more-enduring-peace-ukraine-russia",
-      "tid": 1793899567.0,
-      "lutning": "hoger"
-     }
-    ],
-    "bla": [
-     {
-      "kalla": "The New York Times",
-      "rubrik": "Melania Trump Repositions the White Suit",
-      "url": "https://www.nytimes.com/2026/11/06/style/melania-trump-white-suit-russia-ukraine-cease-fire.html",
-      "tid": 1793971787.0,
-      "lutning": "lutar_vanster"
-     },
-     {
-      "kalla": "The Washington Post",
-      "rubrik": "Trump says he and Putin are close to a deal about Ukraine and ‘all of Europe’",
-      "url": "https://www.washingtonpost.com/world/2026/11/05/ukraine-continues-strikes-russian-refineries-lead-up-white-house-meeting/",
-      "tid": 1793923342.0,
-      "lutning": "lutar_vanster"
-     }
-    ]
-   },
+   "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "China says discussions underway on Xi-Trump-Putin meeting",
+  "reserv_rubrik": "Europe insists Putin end Ukraine war before discussing Russia’s concerns",
   "kallor": [
-   {
-    "namn": "The Hindu",
-    "rubrik": "China says discussions underway on Xi-Trump-Putin meeting",
-    "url": "https://www.thehindu.com/news/international/china-says-discussions-underway-on-xi-trump-putin-meeting/article71677194.ece",
-    "tid": 1794020227.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
    {
     "namn": "The Straits Times",
     "rubrik": "Europe insists Putin end Ukraine war before discussing Russia’s concerns",
@@ -23884,15 +23875,15 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Meduza",
-    "rubrik": "Melania Trump receives Ukraine’s Order of Princess Olha at White House meeting on Oleshky evacuation",
-    "url": "https://meduza.io/en/feature/2026/11/07/melania-trump-receives-ukraine-s-order-of-princess-olha-at-white-house-meeting-on-oleshky-evacuation",
-    "tid": 1793999265.0,
+    "namn": "Deutsche Welle",
+    "rubrik": "Tankers carrying Russian diesel to the US change course",
+    "url": "https://www.dw.com/en/tankers-carrying-russian-diesel-to-the-us-change-course/a-79870807?maca=en-rss-en-all-1573-rdf",
+    "tid": 1793998500.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "LV",
+    "land": "DE",
     "region": "europa",
-    "agare": "privat",
+    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -23908,26 +23899,50 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Fox News",
-    "rubrik": "Melania Trump hails Oleshky ceasefire as potential ‘spark’ for progress amid Ukraine-Russia war",
-    "url": "https://www.foxnews.com/world/melania-trump-oleshky-ceasefire-spark-more-enduring-peace-ukraine-russia",
-    "tid": 1793899567.0,
+    "namn": "France 24",
+    "rubrik": "Trump’s stillborn diesel deal: Why Russian oil tankers are not heading to the US",
+    "url": "https://www.france24.com/en/americas/20261106-trump-stillborn-diesel-deal-why-russian-oil-tankers-are-not-heading-to-the-us",
+    "tid": 1793972316.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "US",
-    "region": "usa",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "Trump questions 2022 Russian oil import ban, says he’ll ‘take a look’ amid diesel controversy",
+    "url": "https://www.hindustantimes.com/world-news/trump-questions-2022-russian-oil-import-ban-says-he-ll-take-a-look-amid-diesel-controversy-101793943084905.html",
+    "tid": 1793947752.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "The New York Times",
-    "rubrik": "Melania Trump Repositions the White Suit",
-    "url": "https://www.nytimes.com/2026/11/06/style/melania-trump-white-suit-russia-ukraine-cease-fire.html",
-    "tid": 1793971787.0,
+    "namn": "The Hindu",
+    "rubrik": "Donald Trump predicts deal with Russia on Ukraine and ‘all of Europe’",
+    "url": "https://www.thehindu.com/news/international/donald-trump-predicts-deal-with-russia-on-ukraine-and-all-of-europe/article71672626.ece",
+    "tid": 1793945947.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Le Monde (English)",
+    "rubrik": "US-Russia diesel deal touted by Trump falters",
+    "url": "https://www.lemonde.fr/en/international/article/2026/11/07/us-russia-diesel-deal-touted-by-trump-falters_6774022_4.html",
+    "tid": 1794021098.0,
     "betalvagg": true,
     "typ": "media",
-    "land": "US",
-    "region": "usa",
+    "land": "FR",
+    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -23962,12 +23977,12 @@
    "en": 3
   },
   "autopilot": [
-   "utkastet är märkt osäkert"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1794010625.871926,
   "automatisk": false,
-  "uppdaterad_tid": 1794020932.3204815
+  "uppdaterad_tid": 1794024590.2758203
  },
  "2d80424f97": {
   "id": "2d80424f97",
