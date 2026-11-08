@@ -5260,34 +5260,36 @@
  "5eaa78779a": {
   "id": "5eaa78779a",
   "amnen": [
-   "geopolitik",
+   "sverige",
    "varlden"
   ],
   "amnen_sektion": [
-   "geopolitik"
+   "sverige"
   ],
-  "poang": 29.1,
+  "poang": 28.1,
   "vikt": {
-   "bredd": 0.38,
+   "bredd": 0.431,
    "regioner": {
-    "europa": 2,
-    "norden": 1
+    "norden": 1,
+    "europa": 1,
+    "sverige": 1
    },
-   "timmar": 68,
+   "timmar": 96,
    "konsekvens": {
     "berorda": 3,
     "allvar": 2,
-    "varaktighet": 3,
-    "medel": 2.67,
-    "skal": "Flera länder vägrar spela ishockey mot Ryssland, vilket främst påverkar idrottare och förbund men har en politisk koppling till Ukrainakriget."
+    "varaktighet": 2,
+    "medel": 2.33,
+    "skal": "Idrottsnyheter om Rysslands deltagande i ishockey-VM, med en politisk debatt om värdskap och sanktioner som berör flera länders hockeyförbund."
    },
-   "bekraftad": true,
-   "maste": false
+   "bekraftad": false,
+   "maste": false,
+   "spar": []
   },
   "maste": false,
   "antal_kallor": 3,
   "har_primarkalla": false,
-  "senast": "2026-11-04T02:34:52+00:00",
+  "senast": "2026-11-08T09:02:10+00:00",
   "utkast": {
    "rubrik_sv": "Kanada meddelar att ryska och belarusiska spelare inte får delta i juniorvärldsmästerskapet",
    "sammanfattning_sv": "Kanadas premiärminister Mark Carney uppger att ryska och belarusiska spelare inte får delta i juniorvärldsmästerskapet i Kanada. Enligt källorna har flera europeiska länder, bland dem Sverige och Finland, aviserat att de inte spelar mot ryska lag.",
@@ -5404,87 +5406,100 @@
   "perspektiv": {
    "regioner": [
     "europa",
-    "norden"
+    "norden",
+    "sverige"
    ],
    "per_region": {
-    "europa": [
-     {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Canada joins coalition refusing to play ice hockey against Russia over Ukraine war",
-      "url": "https://www.theguardian.com/world/2026/nov/04/canada-bans-russian-players-junior-ice-hockey-championships-ukraine-war",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "RT",
-      "land": "RU",
-      "rubrik": "Four Nordic nations refuse to play hockey with Russia",
-      "url": "https://rt-english.com/news/648347-nations-refuse-russia-hockey/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-      "statskontrollerad": true
-     }
-    ],
     "norden": [
      {
-      "kalla": "Yle News",
-      "land": "FI",
-      "rubrik": "Finland refuses to play Russia at ice hockey world championships",
-      "url": "https://yle.fi/a/74-20254773?origin=rss",
+      "kalla": "NRK",
+      "land": "NO",
+      "rubrik": "Dagbladet: Russland skyver Norge ut av junior-VM i ishockey",
+      "url": "https://www.nrk.no/sport/dagbladet_-russland-skyver-norge-ut-av-junior-vm-i-ishockey-1.18076739",
+      "tid": 1794128530.0,
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Germany hopes to host world ice hockey championship — without Russia",
+      "url": "https://www.dw.com/en/germany-hopes-to-host-world-ice-hockey-championship-without-russia/a-79879536?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794049560.0,
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Finland: VM kan inte spelas om Ryssland är med",
+      "url": "https://www.dn.se/sport/finland-vm-kan-inte-spelas-om-ryssland-ar-med/",
+      "tid": 1794053850.0,
       "statskontrollerad": false
      }
     ]
    },
    "blind_flack": null,
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Canada joins coalition refusing to play ice hockey against Russia over Ukraine war",
+  "reserv_rubrik": "Dagbladet: Russland skyver Norge ut av junior-VM i ishockey",
   "kallor": [
    {
-    "namn": "The Guardian",
-    "rubrik": "Canada joins coalition refusing to play ice hockey against Russia over Ukraine war",
-    "url": "https://www.theguardian.com/world/2026/nov/04/canada-bans-russian-players-junior-ice-hockey-championships-ukraine-war",
+    "namn": "NRK",
+    "rubrik": "Dagbladet: Russland skyver Norge ut av junior-VM i ishockey",
+    "url": "https://www.nrk.no/sport/dagbladet_-russland-skyver-norge-ut-av-junior-vm-i-ishockey-1.18076739",
+    "tid": 1794128530.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Yle News",
-    "rubrik": "Finland refuses to play Russia at ice hockey world championships",
-    "url": "https://yle.fi/a/74-20254773?origin=rss",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FI",
+    "land": "NO",
     "region": "norden",
     "agare": "public-service",
     "statskontrollerad": false
    },
    {
-    "namn": "RT",
-    "rubrik": "Four Nordic nations refuse to play hockey with Russia",
-    "url": "https://rt-english.com/news/648347-nations-refuse-russia-hockey/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+    "namn": "Deutsche Welle",
+    "rubrik": "Germany hopes to host world ice hockey championship — without Russia",
+    "url": "https://www.dw.com/en/germany-hopes-to-host-world-ice-hockey-championship-without-russia/a-79879536?maca=en-rss-en-all-1573-rdf",
+    "tid": 1794049560.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "RU",
+    "land": "DE",
     "region": "europa",
-    "agare": "statlig",
-    "statskontrollerad": true
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens Nyheter",
+    "rubrik": "Finland: VM kan inte spelas om Ryssland är med",
+    "url": "https://www.dn.se/sport/finland-vm-kan-inte-spelas-om-ryssland-ar-med/",
+    "tid": 1794053850.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
    "sv": 2,
-   "en": 1
+   "en": 2
   },
   "autopilot": [
-   "färre än tre oberoende källor (2)"
+   "utkastet är märkt osäkert",
+   "källkontrollen har 1 anmärkningar",
+   "färre än två svenska källor"
   ],
   "data": null,
   "godkand_tid": 1793774680.7111192,
   "automatisk": true,
-  "uppdaterad_tid": 1793778742.4627497
+  "uppdaterad_tid": 1794128958.5905309,
+  "sammanhang": 0.579
  },
  "427ad975ec": {
   "id": "427ad975ec",
@@ -26765,7 +26780,7 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 34.7,
+  "poang": 35.7,
   "vikt": {
    "bredd": 1.454,
    "regioner": {
@@ -26777,13 +26792,13 @@
     "europa": 3,
     "sverige": 1
    },
-   "timmar": 82,
+   "timmar": 83,
    "konsekvens": {
-    "berorda": 1,
+    "berorda": 2,
     "allvar": 2,
     "varaktighet": 1,
-    "medel": 1.33,
-    "skal": "Trump erbjuder UFC-chefen Dana White jobbet som Vita husets pressekreterare, en politiskt märklig men kortlivad och begränsad händelse."
+    "medel": 1.67,
+    "skal": "Trump erbjuder UFC-chefen Dana White jobbet som Vita husets pressekreterare, en uppmärksammad men begränsad politisk händelse med kort varaktig påverkan."
    },
    "bekraftad": false,
    "maste": false,
@@ -26792,7 +26807,7 @@
   "maste": false,
   "antal_kallor": 24,
   "har_primarkalla": false,
-  "senast": "2026-11-08T07:56:45+00:00",
+  "senast": "2026-11-08T08:00:10+00:00",
   "utkast": {
    "rubrik_sv": "Trump erbjuder UFC-chefen Dana White jobbet som pressekreterare i Vita huset: svar oklart",
    "sammanfattning_sv": "Donald Trump skriver att han har erbjudit UFC-chefen Dana White jobbet som pressekreterare i Vita huset och uppmanar samtidigt till brottsutredningar mot demokrater, enligt flera medier. Vita huset har saknat pressekreterare sedan den 16 oktober.",
@@ -27028,298 +27043,8 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Om Dana White tackar nej",
-     "namn_en": "Whether Dana White declines",
-     "lyfter_sv": "Daily Caller och NRK lyfter fram att White enligt uppgift tackar nej, El País att CNN rapporterar att han avböjer erbjudandet och Hindustan Times att han trots rapporter om nej reser till Washington.",
-     "lyfter_en": "Daily Caller and NRK highlight that White reportedly declines, El País that CNN reports he turns down the offer, and Hindustan Times that he is flying to Washington despite reports he declined.",
-     "kallor": [
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/us-news/im-flying-to-washington-dana-white-to-meet-trump-despite-reports-he-declined-white-house-press-secretary-job-101794096854788.html"
-      },
-      {
-       "namn": "The Daily Caller",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines"
-      },
-      {
-       "namn": "El País América",
-       "region": "latinamerika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://elpais.com/internacional/2026-11-07/trump-ofrece-su-portavocia-a-un-exluchador-profesional.html"
-      },
-      {
-       "namn": "NRK",
-       "region": "norden",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.nrk.no/nyheter/dana-white-takker-nei-til-a-bli-trumps-pressesekretaer-1.18076663"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "latinamerika",
-      "norden",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "White planerar möte i Washington",
-     "namn_en": "White plans meeting in Washington",
-     "lyfter_sv": "NPR och RT lyfter fram att White ska träffa Trump på måndagen, WSJ att han planerar möte om erbjudandet, NY Post att han flyger till DC och Washington Examiner att han är på väg till Washington.",
-     "lyfter_en": "NPR and RT highlight that White will meet Trump on Monday, WSJ that he plans a meeting about the offer, NY Post that he is flying to DC and Washington Examiner that he is heading to Washington.",
-     "kallor": [
-      {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
-      },
-      {
-       "namn": "Washington Examiner",
-       "region": "usa",
-       "lutning": "lutar_hoger",
-       "statskontrollerad": false,
-       "url": "https://www.washingtonexaminer.com/news/white-house/4796653/dana-white-responds-question-trump-white-house-press-secretary-request/"
-      },
-      {
-       "namn": "New York Post",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/"
-      },
-      {
-       "namn": "The Wall Street Journal",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://www.wsj.com/politics/policy/ufc-chief-dana-white-to-meet-with-trump-to-discuss-press-secretary-job-af0cb2e4?mod=rss_socialpoliticsfeed"
-      },
-      {
-       "namn": "RT",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://rt-english.com/news/648550-trump-dana-white-house-press-secretary/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla",
-      "mitten",
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "Trumps kamp mot demokraterna",
-     "namn_en": "Trump's fight against Democrats",
-     "lyfter_sv": "The Hindu lyfter fram att Trump uppmanar till brottsutredningar mot demokrater, Japan Times att inläggen ekar hans krigiska linje från 2018 och SCMP att han i stridslysten ton ber justitiedepartementet utreda motståndare.",
-     "lyfter_en": "The Hindu highlights Trump urging criminal probes of Democrats, Japan Times that the posts echo his 2018 war-like stance, and SCMP that in a combative tone he orders the Justice Department to investigate opponents.",
-     "kallor": [
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary/article71679478.ece"
-      },
-      {
-       "namn": "The Japan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
-      },
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job"
-      }
-     ],
-     "regioner": [
-      "asien"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Kämpar som assistenter",
-     "namn_en": "Fighters as assistants",
-     "lyfter_sv": "Dawn och Straits Times lyfter fram att Trump vill att White tar med kämpar som assistenter, även om vissa inte är från landet, och France 24 att Trump beskriver honom som en våldsam kämpe och krigare.",
-     "lyfter_en": "Dawn and Straits Times highlight Trump asking White to bring fighters as assistants, even if some are foreign, and France 24 that Trump describes him as a violent fighter and warrior.",
-     "kallor": [
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/americas/20261107-a-violent-fighter-and-warrior-trump-offers-press-secretary-role-to-ufc-chief-dana-white"
-      },
-      {
-       "namn": "Dawn",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary"
-      },
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/united-states/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 16,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Trump erbjuder Dana White jobbet som Vita husets pressekreterare",
-      "stod": [
-       2,
-       10,
-       17
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Caller: White tackar enligt uppgift nej",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "NRK: White tackar nej",
-      "stod": [
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "El País: CNN rapporterar att White avböjer erbjudandet",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: White reser till Washington trots rapporter om nej",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR: White ska träffa Trump på måndagen",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "RT: White ska träffa Trump i Washington på måndagen",
-      "stod": [
-       24
-      ],
-      "problem": null
-     },
-     {
-      "text": "WSJ: White planerar möte med Trump om erbjudandet",
-      "stod": [
-       21
-      ],
-      "problem": null
-     },
-     {
-      "text": "New York Post: White flyger till DC",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "Washington Examiner: White är på väg till Washington",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: Trump uppmanar till brottsutredningar mot demokrater",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Japan Times: inläggen ekar Trumps krigiska linje från 2018",
-      "stod": [
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "SCMP: i stridslysten ton ber Trump justitiedepartementet utreda motståndare",
-      "stod": [
-       18
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn: Trump vill att White tar med kämpar som assistenter, även om vissa inte är från landet",
-      "stod": [
-       14
-      ],
-      "problem": null
-     },
-     {
-      "text": "Straits Times: Trump vill att White tar med kämpar som assistenter, även om vissa inte är från landet",
-      "stod": [
-       16
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24: Trump beskriver White som en våldsam kämpe och krigare",
-      "stod": [
-       13
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.714,
+  "narrativ": null,
+  "sammanhang": 0.698,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -27334,19 +27059,19 @@
    "per_region": {
     "asien": [
      {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Not just Dana White, Trump wants 6 ex-UFC titleholders on his team to tackle ‘Lunatic Left’",
+      "url": "https://www.hindustantimes.com/world-news/not-just-dana-white-trump-wants-6-ex-ufc-titleholders-on-his-team-to-tackle-lunatic-left-101794118927252.html",
+      "tid": 1794124810.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "Rappler",
       "land": "PH",
       "rubrik": "Trump offers White House press secretary job to UFC CEO Dana White",
       "url": "https://www.rappler.com/world/us-canada/donald-trump-offers-ufc-dana-white-press-secretary/",
       "tid": 1794124605.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "‘I'm flying to Washington’: Dana White to meet Trump despite reports he declined White House press secretary job",
-      "url": "https://www.hindustantimes.com/world-news/us-news/im-flying-to-washington-dana-white-to-meet-trump-despite-reports-he-declined-white-house-press-secretary-job-101794096854788.html",
-      "tid": 1794117074.0,
       "statskontrollerad": false
      },
      {
@@ -27614,8 +27339,20 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Trump offers White House press secretary job to UFC CEO Dana White",
+  "reserv_rubrik": "Not just Dana White, Trump wants 6 ex-UFC titleholders on his team to tackle ‘Lunatic Left’",
   "kallor": [
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "Not just Dana White, Trump wants 6 ex-UFC titleholders on his team to tackle ‘Lunatic Left’",
+    "url": "https://www.hindustantimes.com/world-news/not-just-dana-white-trump-wants-6-ex-ufc-titleholders-on-his-team-to-tackle-lunatic-left-101794118927252.html",
+    "tid": 1794124810.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Rappler",
     "rubrik": "Trump offers White House press secretary job to UFC CEO Dana White",
@@ -27638,18 +27375,6 @@
     "land": "US",
     "region": "usa",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "‘I'm flying to Washington’: Dana White to meet Trump despite reports he declined White House press secretary job",
-    "url": "https://www.hindustantimes.com/world-news/us-news/im-flying-to-washington-dana-white-to-meet-trump-despite-reports-he-declined-white-house-press-secretary-job-101794096854788.html",
-    "tid": 1794117074.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -27917,7 +27642,7 @@
   "data": null,
   "godkand_tid": 1794103723.2466316,
   "automatisk": true,
-  "uppdaterad_tid": 1794125363.1059399
+  "uppdaterad_tid": 1794128958.5905309
  },
  "7951dd7b2d": {
   "id": "7951dd7b2d",
