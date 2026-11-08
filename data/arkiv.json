@@ -731,35 +731,35 @@
   "id": "6bae3cb6aa",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 40.5,
+  "poang": 41.1,
   "vikt": {
-   "bredd": 1.523,
+   "bredd": 1.773,
    "regioner": {
+    "latinamerika": 2,
     "europa": 5,
     "mellanostern": 3,
     "asien": 5,
-    "europa": 4,
     "afrika": 1,
     "norden": 1,
     "sverige": 1,
     "usa": 1
    },
-   "timmar": 53,
+   "timmar": 54,
    "konsekvens": {
     "berorda": 3,
     "allvar": 4,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "En tågkollision i Egypten dödade minst sju och skadade många, en allvarlig olycka med lokal påverkan men begränsade långsiktiga följder."
+    "skal": "Tågkrock i Giza med minst fyra till sju döda och dussintals till över hundra skadade, en lokal tragedi med allvarliga men avgränsade följder."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 17,
+  "antal_kallor": 19,
   "har_primarkalla": false,
-  "senast": "2026-11-08T18:02:50+00:00",
+  "senast": "2026-11-08T18:28:02+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -996,13 +996,32 @@
     "afrika",
     "asien",
     "europa",
+    "latinamerika",
     "mellanostern",
     "norden",
     "sverige",
     "usa"
    ],
    "per_region": {
-    "mellanostern": [
+    "latinamerika": [
+     {
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "Al menos cuatro muertos y 88 heridos en colisión entre dos trenes en provincia egipcia de Giza",
+      "url": "https://www.eltiempo.com/mundo/medio-oriente/al-menos-cuatro-muertos-y-88-heridos-en-colision-entre-dos-trenes-en-provincia-egipcia-de-giza-3599391",
+      "tid": 1794162482.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Rio Times",
+      "land": "BR",
+      "rubrik": "Egypt Train Crash Kills 7, Injures 112",
+      "url": "https://www.riotimesonline.com/egypt-train-collision-giza-al-ayat-2026/",
+      "tid": 1794159961.0,
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
      {
       "kalla": "The Guardian",
       "land": "GB",
@@ -1112,40 +1131,6 @@
       "statskontrollerad": false
      }
     ],
-    "europa": [
-     {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Collision of two trains in Egypt kills at least seven",
-      "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
-      "tid": 1794158379.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Egypt train crash leaves several dead, many injured",
-      "url": "https://www.dw.com/en/egypt-train-crash-leaves-several-dead-many-injured/a-79892916?maca=en-rss-en-all-1573-rdf",
-      "tid": 1794156540.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "Footage shows derailed carriages after fatal train crash in Egypt",
-      "url": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
-      "tid": 1794153957.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Le Monde (English)",
-      "land": "FR",
-      "rubrik": "Train collision in Egypt kills at least seven, injures over 100",
-      "url": "https://www.lemonde.fr/en/le-monde-africa/article/2026/11/08/train-collision-in-egypt-s-giza-kills-at-least-4-injures-88_6775111_124.html",
-      "tid": 1794155344.0,
-      "statskontrollerad": false
-     }
-    ],
     "afrika": [
      {
       "kalla": "Africanews",
@@ -1192,8 +1177,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Collision of two trains in Egypt kills at least seven",
+  "reserv_rubrik": "Al menos cuatro muertos y 88 heridos en colisión entre dos trenes en provincia egipcia de Giza",
   "kallor": [
+   {
+    "namn": "El Tiempo",
+    "rubrik": "Al menos cuatro muertos y 88 heridos en colisión entre dos trenes en provincia egipcia de Giza",
+    "url": "https://www.eltiempo.com/mundo/medio-oriente/al-menos-cuatro-muertos-y-88-heridos-en-colision-entre-dos-trenes-en-provincia-egipcia-de-giza-3599391",
+    "tid": 1794162482.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CO",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Guardian",
     "rubrik": "Collision of two trains in Egypt kills at least seven",
@@ -1215,6 +1212,18 @@
     "typ": "media",
     "land": "US",
     "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Rio Times",
+    "rubrik": "Egypt Train Crash Kills 7, Injures 112",
+    "url": "https://www.riotimesonline.com/egypt-train-collision-giza-al-ayat-2026/",
+    "tid": 1794159961.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BR",
+    "region": "latinamerika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -1400,13 +1409,15 @@
    }
   ],
   "granskad": true,
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1794161345.192726,
+  "uppdaterad_tid": 1794164972.38284,
   "narrativ": null,
-  "sammanhang": 0.789,
+  "sammanhang": 0.788,
   "betydelse": null,
   "relevans": {
    "sv": 2,
@@ -9236,11 +9247,11 @@
    "per_region": {
     "mellanostern": [
      {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
-      "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-rival-eisenkot-seeks-wide-government-path-power-uncertain",
-      "tid": 1794159988.0,
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Israeli opposition leader warns of ‘point of no return’ for democracy",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
+      "tid": 1794156701.0,
       "statskontrollerad": false
      }
     ],
@@ -9268,61 +9279,13 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
+  "reserv_rubrik": "Israeli opposition leader warns of ‘point of no return’ for democracy",
   "kallor": [
    {
-    "namn": "Al-Monitor",
-    "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
-    "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-rival-eisenkot-seeks-wide-government-path-power-uncertain",
-    "tid": 1794159988.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "El Tiempo",
-    "rubrik": "Herzog encarga a Eisenkot la formación del próximo Gobierno de Israel",
-    "url": "https://www.eltiempo.com/mundo/medio-oriente/herzog-encarga-a-eisenkot-la-formacion-del-proximo-gobierno-de-israel-3599399",
-    "tid": 1794159526.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CO",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
-    "url": "https://www.straitstimes.com/world/middle-east/netanyahu-rival-eisenkot-seeks-wide-government-but-path-to-power-uncertain",
-    "tid": 1794159521.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Eisenkot warns of Israel crisis as he seeks to replace Netanyahu’s government",
-    "url": "https://www.thehindu.com/news/international/eisenkot-warns-of-israel-crisis-as-he-seeks-to-replace-netanyahus-government/article71681159.ece",
-    "tid": 1794159118.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Al Jazeera",
-    "rubrik": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
-    "tid": 1794157912.0,
+    "rubrik": "Israeli opposition leader warns of ‘point of no return’ for democracy",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
+    "tid": 1794156701.0,
     "betalvagg": false,
     "typ": "media",
     "land": "QA",
@@ -9365,7 +9328,7 @@
   "godkand_tid": 1793837402.5207515,
   "automatisk": true,
   "sammanhang": 0.39,
-  "uppdaterad_tid": 1794161345.192726
+  "uppdaterad_tid": 1794164702.17004
  },
  "d429cbf73a": {
   "id": "d429cbf73a",
@@ -27119,32 +27082,32 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 35.6,
+  "poang": 33.9,
   "vikt": {
-   "bredd": 1.4,
+   "bredd": 1.219,
    "regioner": {
-    "usa": 7,
-    "mellanostern": 2,
+    "usa": 8,
     "europa": 4,
-    "asien": 8,
-    "norden": 1
+    "asien": 7,
+    "norden": 1,
+    "mellanostern": 1
    },
-   "timmar": 92,
+   "timmar": 93,
    "konsekvens": {
     "berorda": 2,
     "allvar": 2,
     "varaktighet": 1,
     "medel": 1.67,
-    "skal": "Ett erbjudande om en politisk post till en enskild person, med begränsad påverkan på andra och kort varaktighet."
+    "skal": "Trump erbjuder UFC-chefen Dana White en roll som pressekreterare, vilket är ett politiskt spektakel med begränsade konsekvenser och kortvariga följder."
    },
    "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 22,
+  "antal_kallor": 21,
   "har_primarkalla": false,
-  "senast": "2026-11-08T17:09:16+00:00",
+  "senast": "2026-11-08T18:50:47+00:00",
   "utkast": {
    "rubrik_sv": "Trump erbjuder UFC-chefen Dana White jobbet som pressekreterare i Vita huset: svar oklart",
    "sammanfattning_sv": "Donald Trump skriver att han har erbjudit UFC-chefen Dana White jobbet som pressekreterare i Vita huset och uppmanar samtidigt till brottsutredningar mot demokrater, enligt flera medier. Vita huset har saknat pressekreterare sedan den 16 oktober.",
@@ -27383,10 +27346,39 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Kämpar som assistenter",
-     "namn_en": "Fighters as assistants",
-     "lyfter_sv": "France 24 lyfter fram att Trump vill ha UFC-kämpar som assistenter, Hindustan Times lyfter fram sex tidigare UFC-titelhållare mot ‘Lunatic Left’, och Dawn och Straits Times lyfter fram att några kämpar inte är från landet.",
-     "lyfter_en": "France 24 highlights that Trump wants UFC fighters as assistants, Hindustan Times six former UFC titleholders against the ‘Lunatic Left’, and Dawn and Straits Times that some fighters are not from the country.",
+     "namn_sv": "AI-video och tecknad bild",
+     "namn_en": "AI video and cartoon image",
+     "lyfter_sv": "Washington Examiner lyfter fram en AI-genererad video där UFC-kämpar attackerar pressen, medan The Hill lyfter fram en tecknad bild av Dana White som pressekreterare.",
+     "lyfter_en": "Washington Examiner highlights an AI-generated video showing UFC fighters attacking the press, while The Hill highlights a cartoon image of Dana White as press secretary.",
+     "kallor": [
+      {
+       "namn": "Washington Examiner",
+       "region": "usa",
+       "lutning": "lutar_hoger",
+       "statskontrollerad": false,
+       "url": "https://www.washingtonexaminer.com/news/white-house/4796796/trump-video-dana-white-ufc-white-house-press/"
+      },
+      {
+       "namn": "The Hill",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://thehill.com/homenews/media/6206667-trump-shares-dana-white-cartoon/"
+      }
+     ],
+     "regioner": [
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten",
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Kämpar som medarbetare i Vita huset",
+     "namn_en": "Fighters as White House aides",
+     "lyfter_sv": "France 24 lyfter fram att Trump vill ha UFC-kämpar som assistenter, Hindustan Times sex tidigare mästare mot vänstern och The Straits Times att vissa av dem inte är amerikanska.",
+     "lyfter_en": "France 24 highlights that Trump wants UFC fighters as assistants, Hindustan Times six former champions against the left, and The Straits Times that some of them are not American.",
      "kallor": [
       {
        "namn": "France 24",
@@ -27403,13 +27395,6 @@
        "url": "https://www.hindustantimes.com/world-news/not-just-dana-white-trump-wants-6-ex-ufc-titleholders-on-his-team-to-tackle-lunatic-left-101794118927252.html"
       },
       {
-       "namn": "Dawn",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary"
-      },
-      {
        "namn": "The Straits Times",
        "region": "asien",
        "lutning": null,
@@ -27424,10 +27409,10 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Kriminella utredningar mot demokrater",
-     "namn_en": "Criminal probes of Democrats",
-     "lyfter_sv": "The Hindu lyfter fram att Trump uppmanar till kriminella utredningar av demokrater, Japan Times lyfter fram att inläggen liknar hans kommentarer efter valförlusten 2018, och SCMP lyfter fram att Trump beordrar justitiedepartementet att utreda sina motståndare.",
-     "lyfter_en": "The Hindu highlights that Trump urges criminal probes of Democrats, Japan Times that his posts echo comments after the 2018 midterm defeat, and SCMP that Trump orders the Justice Department to investigate his opponents.",
+     "namn_sv": "Krav på utredningar mot demokrater",
+     "namn_en": "Calls for probes into Democrats",
+     "lyfter_sv": "The Hindu lyfter fram krav på kriminella utredningar av demokrater, Japan Times att Trump vill ha utredningar mot demokrater och South China Morning Post att Justitiedepartementet ska utreda motståndarna.",
+     "lyfter_en": "The Hindu highlights calls for criminal probes of Democrats, Japan Times that Trump wants probes against Democrats, and South China Morning Post that the Justice Department should investigate his opponents.",
      "kallor": [
       {
        "namn": "The Hindu",
@@ -27458,10 +27443,17 @@
     },
     {
      "namn_sv": "Dana Whites svar på erbjudandet",
-     "namn_en": "White's response to the offer",
-     "lyfter_sv": "Daily Caller lyfter fram att White enligt uppgift tackar nej, NRK lyfter fram att White tackar nej, och Deutsche Welle lyfter fram att White varken accepterat eller tackat nej formellt.",
-     "lyfter_en": "Daily Caller highlights that White reportedly declines, NRK that White declines, and Deutsche Welle that White has neither formally accepted nor turned down the offer.",
+     "namn_en": "Dana White's response to the offer",
+     "lyfter_sv": "Daily Caller lyfter fram att Dana White enligt uppgift tackar nej och NRK att han säger nej, medan NPR, Wall Street Journal och RT lyfter fram att han ska träffa Trump på måndag.",
+     "lyfter_en": "Daily Caller highlights that Dana White reportedly declines and NRK that he says no, while NPR, Wall Street Journal and RT highlight that he will meet Trump on Monday.",
      "kallor": [
+      {
+       "namn": "NPR",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
+      },
       {
        "namn": "The Daily Caller",
        "region": "usa",
@@ -27475,36 +27467,6 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.nrk.no/nyheter/dana-white-takker-nei-til-a-bli-trumps-pressesekretaer-1.18076663"
-      },
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "norden",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "Möte med Trump på måndag",
-     "namn_en": "Monday meeting with Trump",
-     "lyfter_sv": "NPR lyfter fram att White ska träffa Trump på måndag, Wall Street Journal lyfter fram att han planerar ett möte på måndag för att diskutera erbjudandet, och RT (statskontrollerat medium) lyfter fram att mötet ska ske i Washington.",
-     "lyfter_en": "NPR highlights that White will meet Trump on Monday, Wall Street Journal that he plans a Monday meeting to discuss the offer, and RT (state-controlled media) that the meeting will take place in Washington.",
-     "kallor": [
-      {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
       },
       {
        "namn": "The Wall Street Journal",
@@ -27523,124 +27485,111 @@
      ],
      "regioner": [
       "europa",
+      "norden",
       "usa"
      ],
      "usa_sidor": [
       "bla",
-      "mitten"
+      "mitten",
+      "rod"
      ]
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 14,
+    "antal": 12,
     "problem": [],
     "pastaenden": [
      {
       "text": "Trump erbjuder Dana White jobbet som Vita husets pressekreterare",
       "stod": [
+       4,
        6,
-       10,
+       8,
+       12,
        13,
        14,
-       19,
+       20,
        21
       ],
       "problem": null
      },
      {
-      "text": "Svaret från White är oklart",
+      "text": "Washington Examiner lyfter fram en AI-genererad video där UFC-kämpar attackerar pressen",
       "stod": [
-       8,
-       11,
-       14
+       1
       ],
       "problem": null
      },
      {
-      "text": "NPR, RT och WSJ: White ska träffa Trump på måndag",
+      "text": "The Hill lyfter fram en tecknad bild av Dana White som pressekreterare",
       "stod": [
-       6,
-       22,
-       18
+       2
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times: sex tidigare UFC-titelhållare ska mot 'Lunatic Left'",
+      "text": "France 24 lyfter fram att Trump vill ha UFC-kämpar som assistenter",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: Trump vill ha sex tidigare UFC-mästare mot vänstern",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "Dawn och Straits Times: några kämpar är inte från USA",
+      "text": "The Straits Times: vissa av kämparna är inte från USA",
       "stod": [
-       12,
-       13
+       12
       ],
       "problem": null
      },
      {
-      "text": "The Hindu: Trump uppmanar till kriminella utredningar av demokrater",
+      "text": "The Hindu lyfter fram krav på kriminella utredningar av demokrater",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "Japan Times: inläggen liknar kommentarer efter valförlusten 2018",
+      "text": "Japan Times: Trump vill ha utredningar mot demokrater",
       "stod": [
        9
       ],
       "problem": null
      },
      {
-      "text": "SCMP: Trump beordrar justitiedepartementet att utreda sina motståndare",
-      "stod": [
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Caller: White tackar enligt uppgift nej",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "NRK: White säger nej till jobbet",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "Deutsche Welle: White har varken accepterat eller tackat nej formellt",
+      "text": "South China Morning Post: Justitiedepartementet ska utreda Trumps motståndare",
       "stod": [
        14
       ],
       "problem": null
      },
      {
-      "text": "NPR: White ska träffa Trump på måndag",
+      "text": "Daily Caller lyfter fram att Dana White enligt uppgift tackar nej",
       "stod": [
-       6
+       8
       ],
       "problem": null
      },
      {
-      "text": "Wall Street Journal: White planerar möte på måndag för att diskutera erbjudandet",
+      "text": "NRK lyfter fram att Dana White säger nej",
       "stod": [
-       18
+       11
       ],
       "problem": null
      },
      {
-      "text": "RT: mötet ska ske i Washington",
+      "text": "NPR, Wall Street Journal och RT lyfter fram att Dana White ska träffa Trump på måndag",
       "stod": [
-       22
+       6,
+       17,
+       21
       ],
       "problem": null
      }
@@ -27649,7 +27598,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.695,
+  "sammanhang": 0.68,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -27661,6 +27610,14 @@
    ],
    "per_region": {
     "usa": [
+     {
+      "kalla": "Washington Examiner",
+      "land": "US",
+      "rubrik": "Trump posts animated video of Dana White’s UFC staffers beating up press corps",
+      "url": "https://www.washingtonexaminer.com/news/white-house/4796796/trump-video-dana-white-ufc-white-house-press/",
+      "tid": 1794163847.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Hill",
       "land": "US",
@@ -27716,24 +27673,6 @@
       "url": "https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/",
       "tid": 1794096510.0,
       "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Could UFC boss Dana White be next White House press secretary?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss",
-      "tid": 1794139025.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Will UFC's Dana White be Trump's press secretary?",
-      "url": "https://www.thenationalnews.com/news/us/2026/11/08/dana-white-washington-monday-trump/",
-      "tid": 1794156300.0,
-      "statskontrollerad": true
      }
     ],
     "europa": [
@@ -27804,14 +27743,6 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "'Please take the job': Trump asks UFC chief Dana White to be White House press secretary",
-      "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary",
-      "tid": 1794084323.0,
-      "statskontrollerad": false
-     },
-     {
       "kalla": "The Straits Times",
       "land": "SG",
       "rubrik": "Trump says he wants UFC chief Dana White for White House press secretary",
@@ -27845,11 +27776,37 @@
       "tid": 1794087737.0,
       "statskontrollerad": false
      }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Will UFC's Dana White be Trump's press secretary?",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/08/dana-white-washington-monday-trump/",
+      "tid": 1794156300.0,
+      "statskontrollerad": true
+     }
     ]
    },
    "blind_flack": null,
    "grannar_svenska": true,
    "usa": {
+    "rod": [
+     {
+      "kalla": "Washington Examiner",
+      "rubrik": "Trump posts animated video of Dana White’s UFC staffers beating up press corps",
+      "url": "https://www.washingtonexaminer.com/news/white-house/4796796/trump-video-dana-white-ufc-white-house-press/",
+      "tid": 1794163847.0,
+      "lutning": "lutar_hoger"
+     },
+     {
+      "kalla": "The Daily Caller",
+      "rubrik": "Trump Offers Press Secretary Position To Dana White, Who Reportedly Declines",
+      "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines",
+      "tid": 1794102450.0,
+      "lutning": "hoger"
+     }
+    ],
     "mitten": [
      {
       "kalla": "The Hill",
@@ -27895,21 +27852,24 @@
       "tid": 1794096510.0,
       "lutning": "lutar_vanster"
      }
-    ],
-    "rod": [
-     {
-      "kalla": "The Daily Caller",
-      "rubrik": "Trump Offers Press Secretary Position To Dana White, Who Reportedly Declines",
-      "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines",
-      "tid": 1794102450.0,
-      "lutning": "hoger"
-     }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Trump shares cartoon of Dana White as press secretary",
+  "reserv_rubrik": "Trump posts animated video of Dana White’s UFC staffers beating up press corps",
   "kallor": [
+   {
+    "namn": "Washington Examiner",
+    "rubrik": "Trump posts animated video of Dana White’s UFC staffers beating up press corps",
+    "url": "https://www.washingtonexaminer.com/news/white-house/4796796/trump-video-dana-white-ufc-white-house-press/",
+    "tid": 1794163847.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Hill",
     "rubrik": "Trump shares cartoon of Dana White as press secretary",
@@ -27920,18 +27880,6 @@
     "land": "US",
     "region": "usa",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "Could UFC boss Dana White be next White House press secretary?",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss",
-    "tid": 1794139025.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -28040,18 +27988,6 @@
     "land": "NO",
     "region": "norden",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dawn",
-    "rubrik": "'Please take the job': Trump asks UFC chief Dana White to be White House press secretary",
-    "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary",
-    "tid": 1794084323.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -28181,13 +28117,13 @@
    "en": 3
   },
   "autopilot": [
-   "källkontrollen har 3 anmärkningar",
+   "källkontrollen har 2 anmärkningar",
    "troligen hopslagna händelser"
   ],
   "data": null,
   "godkand_tid": 1794103723.2466316,
   "automatisk": true,
-  "uppdaterad_tid": 1794161345.192726
+  "uppdaterad_tid": 1794164972.38284
  },
  "7951dd7b2d": {
   "id": "7951dd7b2d",
@@ -28383,13 +28319,13 @@
   "amnen_sektion": [
    "sverige"
   ],
-  "poang": 18.2,
+  "poang": 18.6,
   "vikt": {
    "bredd": 0.169,
    "regioner": {
     "sverige": 2
    },
-   "timmar": 9,
+   "timmar": 10,
    "konsekvens": null,
    "bekraftad": true,
    "maste": false,
@@ -28527,7 +28463,7 @@
   "data": null,
   "godkand_tid": 1794136121.6499743,
   "automatisk": true,
-  "uppdaterad_tid": 1794161345.192726
+  "uppdaterad_tid": 1794164972.38284
  },
  "b6fcb34114": {
   "id": "b6fcb34114",
