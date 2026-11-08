@@ -22242,29 +22242,29 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 36.1,
+  "poang": 32.7,
   "vikt": {
-   "bredd": 0.621,
+   "bredd": 0.478,
    "regioner": {
     "latinamerika": 1,
-    "mellanostern": 2,
     "asien": 2,
-    "sverige": 1
+    "sverige": 1,
+    "mellanostern": 1
    },
-   "timmar": 48,
+   "timmar": 49,
    "konsekvens": {
     "berorda": 5,
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.67,
-    "skal": "Midterm-valet i USA påverkar landets politik, militärt stöd till Israel och Ukrainapolitiken, med effekter för flera länder."
+    "skal": "USA:s midtermval kan ändra landets militärstöd till Israel och politiken mot Ukraina, med effekter för flera länder under flera år."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 5,
   "har_primarkalla": false,
   "senast": "2026-11-07T22:00:32+00:00",
   "utkast": {
@@ -22381,9 +22381,169 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.428,
-  "betydelse": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Kongressvalet och USA:s utrikespolitik",
+     "namn_en": "Midterms and US foreign policy",
+     "lyfter_sv": "Mexico News Daily lyfter fram att en förändring i kongressen kan flytta Trumps fokus utomlands och ge nya krav till Mexikos regering, medan Ekot lyfter fram Bildts bedömning att mellanårsvalet kan ändra USA:s Ukrainapolitik.",
+     "lyfter_en": "Mexico News Daily highlights that a change in Congress could shift Trump's focus abroad and bring fresh demands on Mexico's government, while Ekot highlights Bildt's assessment that the midterms could change US Ukraine policy.",
+     "kallor": [
+      {
+       "namn": "Mexico News Daily",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://mexiconewsdaily.com/mnd-tutor/us-midterms-trump-pressure-mexico/"
+      },
+      {
+       "namn": "Sveriges Radio Ekot",
+       "region": "sverige",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.sverigesradio.se/artikel/9335477"
+      }
+     ],
+     "regioner": [
+      "latinamerika",
+      "sverige"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Minskat militärt stöd till Israel",
+     "namn_en": "Cutting military aid to Israel",
+     "lyfter_sv": "Hindustan Times lyfter fram Trumps förslag att skära ned militärt bistånd mitt i kritik mot Israel i båda partierna, medan det statskontrollerade Tehran Times lyfter fram Trumps besked att avsluta årligt bistånd på cirka fyra miljarder dollar.",
+     "lyfter_en": "Hindustan Times highlights Trump's proposal to cut military aid amid rising criticism of Israel across both parties, while the state-controlled Tehran Times highlights Trump's announcement to end annual aid of about four billion dollars.",
+     "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-election-confirms-erosion-of-support-for-israel-with-even-trump-questioning-military-aid-101794028655114.html"
+      },
+      {
+       "namn": "Tehran Times",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump uttalar sig om att minska militärt stöd till Israel",
+      "stod": [
+       4,
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Mellanårsvalen i USA är bakgrunden till notisen",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "En förändring i kongressen kan flytta Trumps fokus utomlands",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "En förändring i kongressen kan ge nya krav till Mexikos regering",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Bildt bedömer att mellanårsvalet kan ändra USA:s Ukrainapolitik",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump har föreslagit att skära ned militärt bistånd till Israel",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Minskningen sker mitt i kritik mot Israel i båda partierna",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times är ett statskontrollerat medium",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump har meddelat att USA avslutar årligt bistånd till Israel på cirka fyra miljarder dollar",
+      "stod": [
+       5
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.406,
+  "betydelse": {
+   "sv": "Eftersom Bildt säger att mellanårsvalet kan ändra USA:s Ukrainapolitik, hänger stödet till Ukraina och därmed säkerheten i Europa ihop med valutgången. Sverige är medlem i Nato och EU.",
+   "en": "Since Trump said the US would end about $4 billion in annual military aid to Israel by year end, and criticism of Israel is rising in both parties, US foreign aid spending is under political debate.",
+   "grund": [
+    3,
+    4,
+    5
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Sveriges Radio Ekot",
+     "url": "https://www.sverigesradio.se/artikel/9335477"
+    },
+    {
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/us-news/us-midterm-election-confirms-erosion-of-support-for-israel-with-even-trump-questioning-military-aid-101794028655114.html"
+    },
+    {
+     "namn": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "slutsats: \"hänger stödet till Ukraina och därmed säkerheten i Europa ihop med valutgången\" går längre än källan. Bildt säger att valet kan ändra USA:s Ukrainapolitik, inte att säkerheten i Europa beror på utgången."
+    ]
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
     "asien",
@@ -22400,24 +22560,6 @@
       "url": "https://mexiconewsdaily.com/mnd-tutor/us-midterms-trump-pressure-mexico/",
       "tid": 1794088832.0,
       "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "How did AIPAC-backed candidates fare in the US midterm elections?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/how-did-aipac-backed-candidates-fare-in-the-us-midterm-elections?traffic_source=rss",
-      "tid": 1794079746.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Tehran Times",
-      "land": "IR",
-      "rubrik": "US-Israel military aid: End of dependence, or a new chapter?",
-      "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter",
-      "tid": 1794074149.0,
-      "statskontrollerad": true
      }
     ],
     "asien": [
@@ -22447,6 +22589,16 @@
       "tid": 1794031500.0,
       "statskontrollerad": false
      }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Tehran Times",
+      "land": "IR",
+      "rubrik": "US-Israel military aid: End of dependence, or a new chapter?",
+      "url": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter",
+      "tid": 1794074149.0,
+      "statskontrollerad": true
+     }
     ]
    },
    "blind_flack": null,
@@ -22466,18 +22618,6 @@
     "land": "MX",
     "region": "latinamerika",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "How did AIPAC-backed candidates fare in the US midterm elections?",
-    "url": "https://www.aljazeera.com/news/2026/11/7/how-did-aipac-backed-candidates-fare-in-the-us-midterm-elections?traffic_source=rss",
-    "tid": 1794079746.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -22535,12 +22675,12 @@
    "en": 3
   },
   "autopilot": [
-   "utkastet är märkt osäkert"
+   "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1793985022.268238,
   "automatisk": true,
-  "uppdaterad_tid": 1794118942.4500425
+  "uppdaterad_tid": 1794121685.570658
  },
  "729e6e0bdf": {
   "id": "729e6e0bdf",
@@ -26766,34 +26906,34 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 30.9,
+  "poang": 35.8,
   "vikt": {
-   "bredd": 1.371,
+   "bredd": 1.475,
    "regioner": {
-    "asien": 7,
-    "usa": 8,
-    "mellanostern": 1,
+    "asien": 6,
+    "usa": 9,
+    "mellanostern": 2,
     "latinamerika": 1,
     "norden": 1,
     "europa": 3,
     "sverige": 1
    },
-   "timmar": 20,
+   "timmar": 81,
    "konsekvens": {
     "berorda": 2,
     "allvar": 2,
     "varaktighet": 1,
     "medel": 1.67,
-    "skal": "Ett personalförslag från Trump till UFC-chefen Dana White har stor mediebevakning men begränsade konsekvenser för de flesta."
+    "skal": "Trump erbjöd UFC-chefen Dana White posten som pressekreterare, en personalfråga med begränsad påverkan som snabbt riskerar att glömmas bort."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 22,
+  "antal_kallor": 23,
   "har_primarkalla": false,
-  "senast": "2026-11-08T05:51:14+00:00",
+  "senast": "2026-11-08T06:52:27+00:00",
   "utkast": {
    "rubrik_sv": "Trump erbjuder UFC-chefen Dana White jobbet som pressekreterare i Vita huset: svar oklart",
    "sammanfattning_sv": "Donald Trump skriver att han har erbjudit UFC-chefen Dana White jobbet som pressekreterare i Vita huset och uppmanar samtidigt till brottsutredningar mot demokrater, enligt flera medier. Vita huset har saknat pressekreterare sedan den 16 oktober.",
@@ -27032,10 +27172,51 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "White svarar och planerar möte",
-     "namn_en": "White responds and plans meeting",
-     "lyfter_sv": "Hindustan Times och New York Post lyfter fram att White reser till Washington, Daily Caller och NRK att han uppges tacka nej, WSJ och RT (statskontrollerat) att mötet med Trump är på måndag.",
-     "lyfter_en": "Hindustan Times and New York Post highlight that White is flying to Washington, Daily Caller and NRK that he reportedly declines, WSJ and RT (state-controlled) that the meeting with Trump is on Monday.",
+     "namn_sv": "Trumps uppmaning om utredningar mot demokrater",
+     "namn_en": "Trump's call for probes of Democrats",
+     "lyfter_sv": "The Hindu lyfter fram Trumps uppmaning om straffrättsliga utredningar mot demokrater, Arab News en trotsig hållning mot den kommande demokratiska kongressen, The Japan Times en krigisk hållning och SCMP att Trump ber justitiedepartementet utreda motståndare.",
+     "lyfter_en": "The Hindu highlights Trump's call for criminal probes of Democrats, Arab News a defiant stance against the incoming Democratic Congress, The Japan Times a war-like posture, and SCMP that Trump orders the Justice Department to investigate opponents.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary/article71679478.ece"
+      },
+      {
+       "namn": "Arab News",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.arabnews.com/world/trump-taps-ufc-boss-dana-white-as-press-secretary-urges-criminal-probes-into-democrats-3010418"
+      },
+      {
+       "namn": "The Japan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
+      },
+      {
+       "namn": "South China Morning Post",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Dana Whites besked och möte i Washington",
+     "namn_en": "Dana White's answer and Washington meeting",
+     "lyfter_sv": "Daily Caller uppger enligt uppgift att han tackat nej, NRK att han tackar nej, New York Post och Washington Examiner att han flyger till Washington, och Wall Street Journal och RT ett möte med Trump på måndag.",
+     "lyfter_en": "Daily Caller reports he reportedly declined, NRK that he is declining, New York Post and Washington Examiner that he is flying to Washington, and Wall Street Journal and RT a meeting with Trump on Monday.",
      "kallor": [
       {
        "namn": "Hindustan Times",
@@ -27080,13 +27261,6 @@
        "url": "https://www.nrk.no/nyheter/dana-white-takker-nei-til-a-bli-trumps-pressesekretaer-1.18076663"
       },
       {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf"
-      },
-      {
        "namn": "The Wall Street Journal",
        "region": "usa",
        "lutning": "mitten",
@@ -27114,25 +27288,11 @@
      ]
     },
     {
-     "namn_sv": "Trumps erbjudande och lovord",
-     "namn_en": "Trump's offer and praise",
-     "lyfter_sv": "Al Jazeera, CNBC och NYT lyfter fram att Trump ber eller erbjuder White jobbet, France 24 att han kallar honom våldsam kämpe, Dawn och Straits Times att han vill ha med kämpar, CGTN (statskontrollerat) att Trump erbjudit jobbet.",
-     "lyfter_en": "Al Jazeera, CNBC and NYT highlight that Trump asks or offers White the job, France 24 that he calls him a violent fighter, Dawn and Straits Times that he wants fighters included, CGTN (state-controlled) that Trump has offered the job.",
+     "namn_sv": "Trumps beskrivning av Dana White",
+     "namn_en": "Trump's description of Dana White",
+     "lyfter_sv": "France 24 lyfter fram Trumps beskrivning av White som en våldsam kämpe och krigare, The Straits Times att Trump bad honom ta med kämpar som assistenter, även från andra länder.",
+     "lyfter_en": "France 24 highlights Trump's description of White as a violent fighter and warrior, The Straits Times that Trump asked him to bring fighters as assistants, including some from other countries.",
      "kallor": [
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/8/trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary?traffic_source=rss"
-      },
-      {
-       "namn": "CNBC",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html"
-      },
       {
        "namn": "France 24",
        "region": "europa",
@@ -27141,182 +27301,111 @@
        "url": "https://www.france24.com/en/americas/20261107-a-violent-fighter-and-warrior-trump-offers-press-secretary-role-to-ufc-chief-dana-white"
       },
       {
-       "namn": "Dawn",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary"
-      },
-      {
-       "namn": "The Hill",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/"
-      },
-      {
        "namn": "The Straits Times",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.straitstimes.com/world/united-states/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary"
-      },
-      {
-       "namn": "The New York Times",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.nytimes.com/2026/11/07/us/politics/trump-dana-white-ufc-press-secretary.html"
-      },
-      {
-       "namn": "The Washington Post",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/"
-      },
-      {
-       "namn": "Dagens industri",
-       "region": "sverige",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.di.se/nyheter/trump-erbjuder-ufc-chefen-jobb/"
-      },
-      {
-       "namn": "CGTN",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://news.cgtn.com/news/2026-11-08/Trump-offers-UFC-CEO-Dana-White-White-House-press-secretary-job-1RTwGYPjANW/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World"
       }
      ],
      "regioner": [
       "asien",
-      "europa",
-      "mellanostern",
-      "sverige",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla",
-      "mitten"
-     ]
-    },
-    {
-     "namn_sv": "Krav på utredningar mot demokrater",
-     "namn_en": "Calls for probes of Democrats",
-     "lyfter_sv": "The Hindu och Japan Times lyfter fram att Trump uppmanar till straffrättsliga utredningar mot demokrater, SCMP att han i en stridslysten ton ber justitiedepartementet utreda motståndare.",
-     "lyfter_en": "The Hindu and Japan Times highlight that Trump urges criminal probes of Democrats, SCMP that in a combative tone he orders the Justice Department to investigate opponents.",
-     "kallor": [
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary/article71679478.ece"
-      },
-      {
-       "namn": "The Japan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
-      },
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job"
-      }
-     ],
-     "regioner": [
-      "asien"
+      "europa"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 10,
+    "antal": 12,
     "problem": [],
     "pastaenden": [
      {
       "text": "Trump erbjuder Dana White jobbet som Vita husets pressekreterare",
       "stod": [
-       5,
-       8,
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "White reser till Washington",
-      "stod": [
-       1,
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "White uppges tacka nej till jobbet",
-      "stod": [
-       5,
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Mötet mellan White och Trump är på måndag",
-      "stod": [
-       18,
-       22
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera, CNBC och NYT lyfter fram att Trump ber eller erbjuder White jobbet",
-      "stod": [
+       2,
        4,
-       8,
+       5,
        17
       ],
       "problem": null
      },
      {
-      "text": "France 24 lyfter fram att Trump kallar White för våldsam kämpe",
+      "text": "The Hindu lyfter fram Trumps uppmaning om straffrättsliga utredningar mot demokrater",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Arab News lyfter fram en trotsig hållning mot den kommande demokratiska kongressen",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Japan Times lyfter fram en krigisk hållning",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP: Trump ber justitiedepartementet utreda motståndare",
+      "stod": [
+       16
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Caller uppger att White enligt uppgift tackat nej",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "NRK: White tackar nej",
       "stod": [
        11
       ],
       "problem": null
      },
      {
-      "text": "Dawn och Straits Times lyfter fram att Trump vill ha med kämpar som assistenter",
+      "text": "New York Post och Washington Examiner: White flyger till Washington",
       "stod": [
-       12,
+       6,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Wall Street Journal och RT: möte med Trump på måndag",
+      "stod": [
+       20,
+       23
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24 lyfter fram Trumps beskrivning av White som en våldsam kämpe och krigare",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: Trump bad White ta med kämpar som assistenter",
+      "stod": [
        14
       ],
       "problem": null
      },
      {
-      "text": "CGTN (statskontrollerat) uppger att Trump erbjudit jobbet",
+      "text": "Kämparna kan vara från andra länder",
       "stod": [
-       21
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu och Japan Times lyfter fram att Trump uppmanar till straffrättsliga utredningar mot demokrater",
-      "stod": [
-       2,
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "SCMP lyfter fram att Trump i en stridslysten ton ber justitiedepartementet utreda motståndare",
-      "stod": [
-       16
+       14
       ],
       "problem": null
      }
@@ -27325,45 +27414,8 @@
    },
    "ok": true
   },
-  "sammanhang": 0.705,
-  "betydelse": {
-   "sv": null,
-   "en": "Since several outlets report that Trump offered UFC chief Dana White the White House press secretary post, and White says he is flying to Washington, the role that briefs the public on administration policy is in the spotlight.",
-   "grund": [
-    3,
-    4,
-    8,
-    15,
-    19
-   ],
-   "grund_kallor": [
-    {
-     "namn": "Washington Examiner",
-     "url": "https://www.washingtonexaminer.com/news/white-house/4796653/dana-white-responds-question-trump-white-house-press-secretary-request/"
-    },
-    {
-     "namn": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/11/8/trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary?traffic_source=rss"
-    },
-    {
-     "namn": "CNBC",
-     "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html"
-    },
-    {
-     "namn": "Deutsche Welle",
-     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-     "namn": "The Washington Post",
-     "url": "https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "sammanhang": 0.709,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -27398,14 +27450,6 @@
       "rubrik": "Trump taps UFC boss as press secretary and urges criminal probes into Democrats",
       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/",
       "tid": 1794093420.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "'Please take the job': Trump asks UFC chief Dana White to be White House press secretary",
-      "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary",
-      "tid": 1794084323.0,
       "statskontrollerad": false
      },
      {
@@ -27475,6 +27519,14 @@
       "statskontrollerad": false
      },
      {
+      "kalla": "The Washington Times",
+      "land": "US",
+      "rubrik": "Trump asks UFC's Dana White to be White House press secretary",
+      "url": "https://www.washingtontimes.com/news/2026/nov/7/trump-asks-ufcs-dana-white-white-house-press-secretary/",
+      "tid": 1794079116.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "The New York Times",
       "land": "US",
       "rubrik": "Trump Asks Dana White of U.F.C. to Be His Press Secretary",
@@ -27506,6 +27558,14 @@
       "rubrik": "Trump asks UFC chief Dana White to be White House press secretary",
       "url": "https://www.aljazeera.com/news/2026/11/8/trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary?traffic_source=rss",
       "tid": 1794107564.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Arab News",
+      "land": "SA",
+      "rubrik": "Trump taps UFC boss Dana White as press secretary, urges criminal probes into Democrats",
+      "url": "https://www.arabnews.com/world/trump-taps-ufc-boss-dana-white-as-press-secretary-urges-criminal-probes-into-democrats-3010418",
+      "tid": 1794096676.0,
       "statskontrollerad": false
      }
     ],
@@ -27561,7 +27621,7 @@
       "land": "SE",
       "rubrik": "Trump: Erbjuder UFC-chefen jobb",
       "url": "https://www.di.se/nyheter/trump-erbjuder-ufc-chefen-jobb/",
-      "tid": 1794089020.0,
+      "tid": 1794120747.0,
       "statskontrollerad": false
      }
     ]
@@ -27590,6 +27650,13 @@
       "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/",
       "tid": 1794100444.0,
       "lutning": "hoger"
+     },
+     {
+      "kalla": "The Washington Times",
+      "rubrik": "Trump asks UFC's Dana White to be White House press secretary",
+      "url": "https://www.washingtontimes.com/news/2026/nov/7/trump-asks-ufcs-dana-white-white-house-press-secretary/",
+      "tid": 1794079116.0,
+      "lutning": "lutar_hoger"
      }
     ],
     "mitten": [
@@ -27709,6 +27776,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Arab News",
+    "rubrik": "Trump taps UFC boss Dana White as press secretary, urges criminal probes into Democrats",
+    "url": "https://www.arabnews.com/world/trump-taps-ufc-boss-dana-white-as-press-secretary-urges-criminal-probes-into-democrats-3010418",
+    "tid": 1794096676.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SA",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The Japan Times",
     "rubrik": "Trump taps UFC boss as press secretary and urges criminal probes into Democrats",
     "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/",
@@ -27769,18 +27848,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dawn",
-    "rubrik": "'Please take the job': Trump asks UFC chief Dana White to be White House press secretary",
-    "url": "https://www.dawn.com/news/2042867/please-take-the-job-trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary",
-    "tid": 1794084323.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Hill",
     "rubrik": "Live updates: Melania Trump attends LSU-Alabama game; UFC's Dana White offered press secretary role",
     "url": "https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/",
@@ -27829,6 +27896,30 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Washington Times",
+    "rubrik": "Trump asks UFC's Dana White to be White House press secretary",
+    "url": "https://www.washingtontimes.com/news/2026/nov/7/trump-asks-ufcs-dana-white-white-house-press-secretary/",
+    "tid": 1794079116.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens industri",
+    "rubrik": "Trump: Erbjuder UFC-chefen jobb",
+    "url": "https://www.di.se/nyheter/trump-erbjuder-ufc-chefen-jobb/",
+    "tid": 1794120747.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The New York Times",
     "rubrik": "Trump Asks Dana White of U.F.C. to Be His Press Secretary",
     "url": "https://www.nytimes.com/2026/11/07/us/politics/trump-dana-white-ufc-press-secretary.html",
@@ -27865,18 +27956,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dagens industri",
-    "rubrik": "Trump: Erbjuder UFC-chefen jobb",
-    "url": "https://www.di.se/nyheter/trump-erbjuder-ufc-chefen-jobb/",
-    "tid": 1794089020.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "CGTN",
     "rubrik": "Trump offers UFC CEO Dana White White House press secretary job",
     "url": "https://news.cgtn.com/news/2026-11-08/Trump-offers-UFC-CEO-Dana-White-White-House-press-secretary-job-1RTwGYPjANW/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
@@ -27907,11 +27986,187 @@
    "en": 3
   },
   "autopilot": [
+   "källkontrollen har 1 anmärkningar",
    "troligen hopslagna händelser"
   ],
   "data": null,
   "godkand_tid": 1794103723.2466316,
   "automatisk": true,
-  "uppdaterad_tid": 1794118174.734144
+  "uppdaterad_tid": 1794121685.570658
+ },
+ "7951dd7b2d": {
+  "id": "7951dd7b2d",
+  "amnen": [
+   "sverige",
+   "varlden"
+  ],
+  "amnen_sektion": [
+   "sverige"
+  ],
+  "poang": 19.1,
+  "vikt": {
+   "bredd": 0.224,
+   "regioner": {
+    "europa": 1,
+    "sverige": 2
+   },
+   "timmar": 10,
+   "konsekvens": null,
+   "bekraftad": true,
+   "maste": false,
+   "spar": []
+  },
+  "maste": false,
+  "antal_kallor": 3,
+  "har_primarkalla": false,
+  "senast": "2026-11-08T01:47:41+00:00",
+  "utkast": {
+   "rubrik_sv": "Sex döda i skjutning på huvudtorget i Krakow",
+   "sammanfattning_sv": "Enligt BBC dödades sex personer i en slumpmässig skjutning på stadens huvudtorg i Krakow. Tre döda hittades senare i gärningsmannens hem, skriver BBC.",
+   "rubrik_en": "Six killed in shooting in central Krakow",
+   "sammanfattning_en": "According to BBC, six people were killed in a random shooting in the main square of Krakow. BBC reports that three bodies were later found at the attacker's home.",
+   "oenighet": null,
+   "oenighet_en": null,
+   "perspektiv_sv": "Brittiska BBC lyfter antalet döda och fynden i gärningsmannens hem. Svenska Dagens Nyheter lyfter att en minister beskriver skjutningen som ett terrordåd. SVT:s rubrik är en fråga om vad som är känt om skjutningen.",
+   "perspektiv_en": "British broadcaster BBC highlights the number of dead and the bodies found at the attacker's home. Swedish newspaper Dagens Nyheter highlights a minister's description of the shooting as a terror attack. The SVT headline asks what is known about the shooting.",
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "Beskrivningen av skjutningen som terrordåd kommer enbart från DN:s rubrik, som återger en minister. Den uppgiften har inte bekräftats av någon annan källa i materialet. SVT:s källmaterial består enbart av en rubrik, och faktauppgifterna bygger i huvudsak på BBC:s ingress. Uppgifterna om antal döda och fynd i gärningsmannens hem bör följas upp innan de betraktas som fastställda."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 5,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Sex personer dödades i en slumpmässig skjutning på stadens huvudtorg i Krakow (enligt BBC)",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Tre döda hittades senare i gärningsmannens hem",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "BBC lyfter antalet döda och fynden i gärningsmannens hem",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "DN lyfter att en minister beskriver skjutningen som ett terrordåd",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "SVT:s rubrik handlar om vad som är känt om skjutningen",
+     "stod": [
+      2
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": null,
+  "sammanhang": 0.751,
+  "betydelse": null,
+  "perspektiv": {
+   "regioner": [
+    "europa",
+    "sverige"
+   ],
+   "per_region": {
+    "europa": [
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "What we know so far after Krakow gun attack",
+      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+      "tid": 1794102461.0,
+      "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "SVT Nyheter",
+      "land": "SE",
+      "rubrik": "Detta vet vi om dödsskjutningen i Krakow",
+      "url": "https://www.svt.se/nyheter/utrikes/detta-vet-vi-om-skytten-i-krakow",
+      "tid": 1794085263.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Ministern: Masskjutningen i Krakow var ett terrordåd",
+      "url": "https://www.dn.se/varlden/minst-fem-doda-i-skjutning-i-krakow/",
+      "tid": 1794067357.0,
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": false,
+   "usa": null,
+   "usa_blind": null
+  },
+  "reserv_rubrik": "What we know so far after Krakow gun attack",
+  "kallor": [
+   {
+    "namn": "BBC World",
+    "rubrik": "What we know so far after Krakow gun attack",
+    "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+    "tid": 1794102461.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "SVT Nyheter",
+    "rubrik": "Detta vet vi om dödsskjutningen i Krakow",
+    "url": "https://www.svt.se/nyheter/utrikes/detta-vet-vi-om-skytten-i-krakow",
+    "tid": 1794085263.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens Nyheter",
+    "rubrik": "Ministern: Masskjutningen i Krakow var ett terrordåd",
+    "url": "https://www.dn.se/varlden/minst-fem-doda-i-skjutning-i-krakow/",
+    "tid": 1794067357.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 3,
+   "en": 2
+  },
+  "autopilot": [],
+  "data": null,
+  "godkand_tid": 1794121685.570658,
+  "automatisk": true
  }
 }
