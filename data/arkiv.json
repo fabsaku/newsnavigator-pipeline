@@ -731,35 +731,34 @@
   "id": "6bae3cb6aa",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 36.8,
+  "poang": 37.0,
   "vikt": {
-   "bredd": 1.36,
+   "bredd": 1.478,
    "regioner": {
-    "europa": 2,
-    "mellanostern": 2,
+    "mellanostern": 3,
     "asien": 5,
+    "europa": 4,
     "afrika": 1,
     "norden": 1,
     "sverige": 1,
-    "latinamerika": 1,
     "usa": 1
    },
    "timmar": 52,
    "konsekvens": {
     "berorda": 2,
     "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.0,
-    "skal": "Tågolycka nära Kairo med några dödsoffer och nästan 90 skadade, en lokal händelse med tydliga liv i fara men begränsad nationell påverkan."
+    "varaktighet": 2,
+    "medel": 2.67,
+    "skal": "En tågolycka i Egypten med minst fyra till sju döda och dussintals skadade, där allvaret ligger i förlorade liv men effekterna främst gäller de drabbade och deras närmaste."
    },
    "bekraftad": false,
-   "maste": true,
+   "maste": false,
    "spar": []
   },
-  "maste": true,
-  "antal_kallor": 14,
+  "maste": false,
+  "antal_kallor": 16,
   "har_primarkalla": false,
-  "senast": "2026-11-08T16:58:13+00:00",
+  "senast": "2026-11-08T17:46:28+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -996,32 +995,21 @@
     "afrika",
     "asien",
     "europa",
-    "latinamerika",
     "mellanostern",
     "norden",
     "sverige",
     "usa"
    ],
    "per_region": {
-    "europa": [
+    "mellanostern": [
      {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Egypt train crash leaves several dead, many injured",
-      "url": "https://www.dw.com/en/egypt-train-crash-leaves-several-dead-many-injured/a-79892916?maca=en-rss-en-all-1573-rdf",
-      "tid": 1794156540.0,
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "Train collision in Egypt kills at least 7, injures dozens, health ministry says",
+      "url": "https://www.al-monitor.com/originals/2026/11/train-collision-egypt-kills-least-7-injures-dozens-health-ministry-says",
+      "tid": 1794159988.0,
       "statskontrollerad": false
      },
-     {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Collision of two trains in Egypt kills at least four",
-      "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
-      "tid": 1794155937.0,
-      "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
      {
       "kalla": "Al Jazeera",
       "land": "QA",
@@ -1033,7 +1021,7 @@
      {
       "kalla": "The National",
       "land": "AE",
-      "rubrik": "Egypt train crash kills four and injures 88 in Giza, health ministry says",
+      "rubrik": "Egypt train crash kills seven and injures 114 south of Cairo",
       "url": "https://www.thenationalnews.com/news/mena/2026/11/08/at-least-64-injured-in-egypt-train-derailment/",
       "tid": 1794143240.0,
       "statskontrollerad": true
@@ -1045,7 +1033,7 @@
       "land": "PK",
       "rubrik": "Train collision in Egypt's Giza kills 4, injures 88: health ministry",
       "url": "https://www.dawn.com/news/2043076/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
-      "tid": 1794153035.0,
+      "tid": 1794159351.0,
       "statskontrollerad": false
      },
      {
@@ -1081,6 +1069,40 @@
       "statskontrollerad": false
      }
     ],
+    "europa": [
+     {
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "Collision of two trains in Egypt kills at least seven",
+      "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
+      "tid": 1794158379.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Egypt train crash leaves several dead, many injured",
+      "url": "https://www.dw.com/en/egypt-train-crash-leaves-several-dead-many-injured/a-79892916?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794156540.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Footage shows derailed carriages after fatal train crash in Egypt",
+      "url": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
+      "tid": 1794153957.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Le Monde (English)",
+      "land": "FR",
+      "rubrik": "Train collision in Egypt kills at least seven, injures over 100",
+      "url": "https://www.lemonde.fr/en/le-monde-africa/article/2026/11/08/train-collision-in-egypt-s-giza-kills-at-least-4-injures-88_6775111_124.html",
+      "tid": 1794155344.0,
+      "statskontrollerad": false
+     }
+    ],
     "afrika": [
      {
       "kalla": "Africanews",
@@ -1095,7 +1117,7 @@
      {
       "kalla": "DR Nyheder",
       "land": "DK",
-      "rubrik": "Fire omkommet og mange kvæstet i togulykke i Egypten",
+      "rubrik": "Syv omkommet og mange kvæstet i togulykke i Egypten",
       "url": "https://www.dr.dk/nyheder/seneste/fire-omkommet-og-mange-kvaestet-i-togulykke-i-egypten",
       "tid": 1794151153.0,
       "statskontrollerad": false
@@ -1111,23 +1133,13 @@
       "statskontrollerad": false
      }
     ],
-    "latinamerika": [
-     {
-      "kalla": "El País América",
-      "land": "ES",
-      "rubrik": "Una colisión múltiple en Santo Domingo, en la región de Valparaíso, deja al menos 11 muertos y 15 heridos",
-      "url": "https://elpais.com/chile/2026-11-07/una-colision-multiple-en-santo-domingo-en-la-region-de-valparaiso-deja-12-muertos-y-15-heridos.html",
-      "tid": 1794079392.0,
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
      {
       "kalla": "The New York Times",
       "land": "US",
       "rubrik": "Trains Collide Near Cairo, Killing 4",
       "url": "https://www.nytimes.com/2026/11/08/world/middleeast/egypt-train-collision-al-ayyat-district.html",
-      "tid": 1794157093.0,
+      "tid": 1794158245.0,
       "statskontrollerad": false
      }
     ]
@@ -1137,8 +1149,44 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Egypt train crash leaves several dead, many injured",
+  "reserv_rubrik": "Train collision in Egypt kills at least 7, injures dozens, health ministry says",
   "kallor": [
+   {
+    "namn": "Al-Monitor",
+    "rubrik": "Train collision in Egypt kills at least 7, injures dozens, health ministry says",
+    "url": "https://www.al-monitor.com/originals/2026/11/train-collision-egypt-kills-least-7-injures-dozens-health-ministry-says",
+    "tid": 1794159988.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dawn",
+    "rubrik": "Train collision in Egypt's Giza kills 4, injures 88: health ministry",
+    "url": "https://www.dawn.com/news/2043076/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
+    "tid": 1794159351.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "PK",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "Collision of two trains in Egypt kills at least seven",
+    "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
+    "tid": 1794158379.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Deutsche Welle",
     "rubrik": "Egypt train crash leaves several dead, many injured",
@@ -1149,18 +1197,6 @@
     "land": "DE",
     "region": "europa",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Guardian",
-    "rubrik": "Collision of two trains in Egypt kills at least four",
-    "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
-    "tid": 1794155937.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -1176,15 +1212,15 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dawn",
-    "rubrik": "Train collision in Egypt's Giza kills 4, injures 88: health ministry",
-    "url": "https://www.dawn.com/news/2043076/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
-    "tid": 1794153035.0,
+    "namn": "BBC World",
+    "rubrik": "Footage shows derailed carriages after fatal train crash in Egypt",
+    "url": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
+    "tid": 1794153957.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -1213,7 +1249,7 @@
    },
    {
     "namn": "DR Nyheder",
-    "rubrik": "Fire omkommet og mange kvæstet i togulykke i Egypten",
+    "rubrik": "Syv omkommet og mange kvæstet i togulykke i Egypten",
     "url": "https://www.dr.dk/nyheder/seneste/fire-omkommet-og-mange-kvaestet-i-togulykke-i-egypten",
     "tid": 1794151153.0,
     "betalvagg": false,
@@ -1272,22 +1308,10 @@
     "statskontrollerad": false
    },
    {
-    "namn": "El País América",
-    "rubrik": "Una colisión múltiple en Santo Domingo, en la región de Valparaíso, deja al menos 11 muertos y 15 heridos",
-    "url": "https://elpais.com/chile/2026-11-07/una-colision-multiple-en-santo-domingo-en-la-region-de-valparaiso-deja-12-muertos-y-15-heridos.html",
-    "tid": 1794079392.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ES",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The New York Times",
     "rubrik": "Trains Collide Near Cairo, Killing 4",
     "url": "https://www.nytimes.com/2026/11/08/world/middleeast/egypt-train-collision-al-ayyat-district.html",
-    "tid": 1794157093.0,
+    "tid": 1794158245.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -1296,8 +1320,20 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Le Monde (English)",
+    "rubrik": "Train collision in Egypt kills at least seven, injures over 100",
+    "url": "https://www.lemonde.fr/en/le-monde-africa/article/2026/11/08/train-collision-in-egypt-s-giza-kills-at-least-4-injures-88_6775111_124.html",
+    "tid": 1794155344.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The National",
-    "rubrik": "Egypt train crash kills four and injures 88 in Giza, health ministry says",
+    "rubrik": "Egypt train crash kills seven and injures 114 south of Cairo",
     "url": "https://www.thenationalnews.com/news/mena/2026/11/08/at-least-64-injured-in-egypt-train-derailment/",
     "tid": 1794143240.0,
     "betalvagg": false,
@@ -1315,230 +1351,9 @@
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1794157753.4711745,
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Krockens förlopp: bakifrån",
-     "namn_en": "How the collision happened: rear-end",
-     "lyfter_sv": "Dawn, Africanews, The Straits Times, SCMP och Hindustan Times lyfter fram att ett tåg krockade bakifrån med ett annat tåg.",
-     "lyfter_en": "Dawn, Africanews, The Straits Times, SCMP and Hindustan Times highlight that one train crashed into the rear of another train.",
-     "kallor": [
-      {
-       "namn": "Dawn",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2043076/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry"
-      },
-      {
-       "namn": "Africanews",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "http://www.africanews.com/2026/11/08/egypt-4-dead-and-dozens-injured-after-two-trains-collide-south-of-cairo/"
-      },
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry"
-      },
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/world/africa/article/3373713/train-collision-egypt-kills-4-injures-88"
-      },
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/egypt-giza-train-collision-killed-injured-health-ministry-101794149191039.html"
-      }
-     ],
-     "regioner": [
-      "afrika",
-      "asien"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Antal döda och skadade",
-     "namn_en": "Number of dead and injured",
-     "lyfter_sv": "Guardian lyfter fram minst fyra döda, NYT fyra, Al Jazeera sju döda, DW flera döda, The Hindu och The National fyra döda och 88 skadade, DR och Ekot fyra döda och många skadade.",
-     "lyfter_en": "The Guardian highlights at least four dead, NYT four, Al Jazeera seven dead, DW several dead, The Hindu and The National four dead and 88 injured, DR and Ekot four dead and many injured.",
-     "kallor": [
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/egypt-train-crash-leaves-several-dead-many-injured/a-79892916?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "The Guardian",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision"
-      },
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/8/train-crash-kills-four-injures-dozens-near-egypts-cairo-city?traffic_source=rss"
-      },
-      {
-       "namn": "DR Nyheder",
-       "region": "norden",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dr.dk/nyheder/seneste/fire-omkommet-og-mange-kvaestet-i-togulykke-i-egypten"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/egypt-train-collision-giza-to-fayoum-crash-updates-november-8-2026/article71681077.ece"
-      },
-      {
-       "namn": "Sveriges Radio Ekot",
-       "region": "sverige",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.sverigesradio.se/artikel/9336831"
-      },
-      {
-       "namn": "The New York Times",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.nytimes.com/2026/11/08/world/middleeast/egypt-train-collision-al-ayyat-district.html"
-      },
-      {
-       "namn": "The National",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://www.thenationalnews.com/news/mena/2026/11/08/at-least-64-injured-in-egypt-train-derailment/"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa",
-      "mellanostern",
-      "norden",
-      "sverige",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 11,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Två tåg krockade söder om Kairo",
-      "stod": [
-       1,
-       4,
-       5,
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fyra döda enligt myndigheter",
-      "stod": [
-       4,
-       5,
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn, Africanews, The Straits Times, SCMP och Hindustan Times: ett tåg krockade bakifrån med ett annat tåg",
-      "stod": [
-       4,
-       5,
-       6,
-       9,
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Guardian: minst fyra döda",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The New York Times: fyra döda",
-      "stod": [
-       13
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: sju döda",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Deutsche Welle: flera döda",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: fyra döda och 88 skadade",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "The National: fyra döda och 88 skadade",
-      "stod": [
-       14
-      ],
-      "problem": null
-     },
-     {
-      "text": "DR: fyra döda och många skadade",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Sveriges Radio Ekot: fyra döda och många skadade",
-      "stod": [
-       11
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.726,
+  "uppdaterad_tid": 1794160925.471946,
+  "narrativ": null,
+  "sammanhang": 0.769,
   "betydelse": null,
   "relevans": {
    "sv": 2,
@@ -9231,34 +9046,35 @@
   "id": "0885b658b7",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 41.4,
+  "poang": 45.6,
   "vikt": {
-   "bredd": 1.766,
+   "bredd": 2.0,
    "regioner": {
     "mellanostern": 3,
-    "latinamerika": 1,
-    "europa": 6,
-    "usa": 6,
+    "latinamerika": 2,
     "asien": 7,
+    "europa": 5,
+    "usa": 7,
+    "afrika": 1,
     "norden": 1,
     "sverige": 1
    },
-   "timmar": 23,
+   "timmar": 36,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 5,
     "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "Israels president ger oppositionsledaren Eisenkot i uppdrag att bilda regering efter ett osäkert valresultat, i en politiskt laddad situation med Netanyahu."
+    "varaktighet": 4,
+    "medel": 4.33,
+    "skal": "Israels president ger oppositionsledaren Eisenkot uppdraget att bilda regering efter ett osäkert valresultat, vilket kan påverka hela landet under flera år."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 25,
+  "antal_kallor": 27,
   "har_primarkalla": false,
-  "senast": "2026-11-08T16:51:41+00:00",
+  "senast": "2026-11-08T17:46:28+00:00",
   "utkast": {
    "rubrik_sv": "Israels president inleder samtal med partiledare om regeringsbildning",
    "sammanfattning_sv": "Israels president Isaac Herzog har inlett samtal med partiledarna om vem som ska få i uppdrag att bilda regering, enligt DR. The New York Times skriver att frågan gäller om Netanyahu eller Eisenkot kan bilda regeringen.",
@@ -9361,304 +9177,11 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Förlust för Netanyahu",
-     "namn_en": "Setback for Netanyahu",
-     "lyfter_sv": "NPR lyfter fram att Herzogs uppdrag till oppositionsledaren Eisenkot är ett slag mot Netanyahus makt, Axios att det är en stor motgång för Netanyahu och The National att det är ett bakslag för Netanyahu.",
-     "lyfter_en": "NPR highlights that Herzog's mandate to opposition leader Eisenkot is a blow to Netanyahu's grip on power, Axios that it is a major setback for Netanyahu, and The National that it is a setback for Netanyahu.",
-     "kallor": [
-      {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government"
-      },
-      {
-       "namn": "Axios",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog"
-      },
-      {
-       "namn": "The National",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://www.thenationalnews.com/news/mena/2026/11/08/israeli-president-picks-eisenkot-to-form-government-in-setback-for-netanyahu/"
-      }
-     ],
-     "regioner": [
-      "mellanostern",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    },
-    {
-     "namn_sv": "Svår väg till regeringsbildning",
-     "namn_en": "Difficult path to forming government",
-     "lyfter_sv": "Al-Monitor och RT lyfter fram en svår uppgift, DW utmaningar på vägen, Straits Times riskerna med att samarbeta med arabiska eller ultraortodoxa partier och Fox koalitionsklyftor kring arabiska partier och värnplikt.",
-     "lyfter_en": "Al-Monitor and RT highlight a tough task, DW political challenges along the way, the Straits Times the risks of joining Arab or ultra-Orthodox parties, and Fox deep coalition divisions over Arab parties and conscription.",
-     "kallor": [
-      {
-       "namn": "Al-Monitor",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-given-tough-task-forming-israeli-government-over-netanyahu"
-      },
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/israel-eisenkot-officially-tasked-with-forming-a-government/a-79891422?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/tasked-with-forming-next-government-eisenkot-faces-complex-path-to-end-netanyahus-reign"
-      },
-      {
-       "namn": "Fox News",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://www.foxnews.com/world/israeli-president-picks-netanyahu-rival-form-government-coalition-battle-looms"
-      },
-      {
-       "namn": "RT",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://rt-english.com/news/648551-netanyahu-eisenkot-israel-government/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa",
-      "mellanostern",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "Valresultat utan majoritet",
-     "namn_en": "Election result without majority",
-     "lyfter_sv": "NY Post lyfter fram att Eisenkot får första chansen trots ett blekt valresultat, BBC att varken Netanyahus block eller rivalens fick majoritet och Dawn att ett låst val lämnade ingen tydlig väg till makten.",
-     "lyfter_en": "The New York Post highlights that Eisenkot gets the first chance despite a lackluster result, the BBC that neither Netanyahu's bloc nor his rival won a majority, and Dawn that a deadlocked election left no clear path to power.",
-     "kallor": [
-      {
-       "namn": "New York Post",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://nypost.com/2026/11/08/us-news/israels-president-gives-netanyahus-rival-gadi-eisenkot-a-chance/"
-      },
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-       "namn": "Dawn",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dawn.com/news/2042866/israeli-president-picks-netanyahus-rival-gadi-eisenkot-to-try-to-form-government"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "Vem är Eisenkot",
-     "namn_en": "Who is Eisenkot",
-     "lyfter_sv": "SCMP lyfter fram Eisenkot som en anspråkslös före detta arméchef, Le Monde som en politisk nykomling, Washington Post som en tidigare militär chef och motståndare till Netanyahu och NYT ställer frågan vem Eisenkot är.",
-     "lyfter_en": "SCMP highlights Eisenkot as an unassuming former army chief, Le Monde as a political newcomer, the Washington Post as an ex-military chief and Netanyahu opponent, and the NYT asks who Eisenkot is.",
-     "kallor": [
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/world/middle-east/article/3373679/who-eisenkot-former-israeli-general-expected-replace-netanyahu"
-      },
-      {
-       "namn": "The New York Times",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html"
-      },
-      {
-       "namn": "Le Monde (English)",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.lemonde.fr/en/international/article/2026/11/08/gadi-eisenkot-the-political-newcomer-tasked-with-forming-israel-s-government_6774913_4.html"
-      },
-      {
-       "namn": "The Washington Post",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.washingtonpost.com/world/2026/11/07/israeli-president-taps-ex-general-eisenkot-opponent-netanyahu-form-government/"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 16,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Israels president ger Gadi Eisenkot uppdraget att bilda regering (rubrik)",
-      "stod": [
-       10,
-       16
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR: Herzogs uppdrag till Eisenkot är ett slag mot Netanyahus makt",
-      "stod": [
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "Axios: uppdraget är en stor motgång för Netanyahu",
-      "stod": [
-       17
-      ],
-      "problem": null
-     },
-     {
-      "text": "The National: uppdraget är ett bakslag för Netanyahu",
-      "stod": [
-       23
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al-Monitor: Eisenkot får en svår uppgift",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "RT: Eisenkot har en svår uppgift att bilda koalition",
-      "stod": [
-       25
-      ],
-      "problem": null
-     },
-     {
-      "text": "DW: vägen till regeringsbildning är full av politiska utmaningar",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Straits Times: att samarbeta med arabiska eller ultraortodoxa partier är riskabelt",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fox News: koalitionsklyftor kring arabiska partier och värnplikt",
-      "stod": [
-       14
-      ],
-      "problem": null
-     },
-     {
-      "text": "New York Post: Eisenkot får första chansen trots ett blekt valresultat",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "BBC: varken Netanyahus block eller rivalens block fick majoritet",
-      "stod": [
-       13
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn: ett låst val lämnade ingen tydlig väg till makten",
-      "stod": [
-       16
-      ],
-      "problem": null
-     },
-     {
-      "text": "SCMP: Eisenkot är en anspråkslös före detta arméchef",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "Le Monde: Eisenkot är en politisk nykomling",
-      "stod": [
-       20
-      ],
-      "problem": null
-     },
-     {
-      "text": "Washington Post: Eisenkot är en tidigare militär chef och motståndare till Netanyahu",
-      "stod": [
-       21
-      ],
-      "problem": null
-     },
-     {
-      "text": "NYT: ställer frågan vem Eisenkot är",
-      "stod": [
-       19
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
+  "narrativ": null,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "afrika",
     "asien",
     "europa",
     "latinamerika",
@@ -9670,19 +9193,19 @@
    "per_region": {
     "mellanostern": [
      {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Israeli opposition leader warns of ‘point of no return’ for democracy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
-      "tid": 1794156701.0,
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
+      "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-rival-eisenkot-seeks-wide-government-path-power-uncertain",
+      "tid": 1794159988.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Eisenkot given tough task of forming Israeli government over Netanyahu",
-      "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-given-tough-task-forming-israeli-government-over-netanyahu",
-      "tid": 1794151827.0,
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
+      "tid": 1794157912.0,
       "statskontrollerad": false
      },
      {
@@ -9696,6 +9219,14 @@
     ],
     "latinamerika": [
      {
+      "kalla": "El Tiempo",
+      "land": "CO",
+      "rubrik": "Herzog encarga a Eisenkot la formación del próximo Gobierno de Israel",
+      "url": "https://www.eltiempo.com/mundo/medio-oriente/herzog-encarga-a-eisenkot-la-formacion-del-proximo-gobierno-de-israel-3599399",
+      "tid": 1794159526.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "El País América",
       "land": "ES",
       "rubrik": "Eisenkot apela a un Gobierno de “emergencia nacional” ante la “necesidad urgente de un nuevo liderazgo” en Israel",
@@ -9704,7 +9235,73 @@
       "statskontrollerad": false
      }
     ],
+    "asien": [
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
+      "url": "https://www.straitstimes.com/world/middle-east/netanyahu-rival-eisenkot-seeks-wide-government-but-path-to-power-uncertain",
+      "tid": 1794159521.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Eisenkot warns of Israel crisis as he seeks to replace Netanyahu’s government",
+      "url": "https://www.thehindu.com/news/international/eisenkot-warns-of-israel-crisis-as-he-seeks-to-replace-netanyahus-government/article71681159.ece",
+      "tid": 1794159118.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Netanyahu rival Eisenkot gets chance to form new Israel govt, will have 6 weeks to prove majority",
+      "url": "https://www.hindustantimes.com/world-news/10-things-to-know-as-gadi-eisenkot-netanyahu-rival-gets-chance-to-form-israel-government-after-close-vote-101794131667578.html",
+      "tid": 1794133747.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "South China Morning Post",
+      "land": "HK",
+      "rubrik": "Who is Eisenkot, the former Israeli general expected to replace Netanyahu?",
+      "url": "https://www.scmp.com/news/world/middle-east/article/3373679/who-eisenkot-former-israeli-general-expected-replace-netanyahu",
+      "tid": 1794116011.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Japan Times",
+      "land": "JP",
+      "rubrik": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government",
+      "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/israel-president-gadi-eisenkot-government/",
+      "tid": 1794092820.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dawn",
+      "land": "PK",
+      "rubrik": "Israeli president picks Netanyahu's rival Gadi Eisenkot to try to form government",
+      "url": "https://www.dawn.com/news/2042866/israeli-president-picks-netanyahus-rival-gadi-eisenkot-to-try-to-form-government",
+      "tid": 1794085634.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "Herzog taps Eisenkot to form next Israeli government",
+      "url": "https://news.cgtn.com/news/2026-11-08/Herzog-taps-Eisenkot-to-form-next-Israeli-government-1RTzopQZPiw/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+      "tid": 1794100857.0,
+      "statskontrollerad": true
+     }
+    ],
     "europa": [
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Gadi Eisenkot receives mandate to form government",
+      "url": "https://www.france24.com/en/gadi-eisenkot-receives-mandate-to-form-government",
+      "tid": 1794157091.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "Deutsche Welle",
       "land": "DE",
@@ -9719,22 +9316,6 @@
       "rubrik": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
       "url": "https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government",
       "tid": 1794147974.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "Middle East live: Israeli president officially tasks Eisenkot with forming government",
-      "url": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
-      "tid": 1794131256.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "Israel's president tasks opposition leader Eisenkot with forming government",
-      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
-      "tid": 1794089999.0,
       "statskontrollerad": false
      },
      {
@@ -9772,14 +9353,6 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "NPR",
-      "land": "US",
-      "rubrik": "Israeli president invites Netanyahu's opposition leader to broker new government",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
-      "tid": 1794089529.0,
-      "statskontrollerad": false
-     },
-     {
       "kalla": "Axios",
       "land": "US",
       "rubrik": "Netanyahu rival Eisenkot tapped to form Israeli government",
@@ -9788,11 +9361,27 @@
       "statskontrollerad": false
      },
      {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "Israel's president taps opposition candidate, not Netanyahu, to form a government",
+      "url": "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog",
+      "tid": 1794082698.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Netanyahu Rival Gets First Run at Power, but Hurdles Lie in Wait",
+      "url": "https://www.wsj.com/world/middle-east/netanyahus-challenger-tapped-to-try-to-form-israeli-government-583fd2da?mod=rss_worldnews",
+      "tid": 1794153480.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "The New York Times",
       "land": "US",
-      "rubrik": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
-      "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
-      "tid": 1794155959.0,
+      "rubrik": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+      "url": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
+      "tid": 1794130916.0,
       "statskontrollerad": false
      },
      {
@@ -9804,62 +9393,14 @@
       "statskontrollerad": false
      }
     ],
-    "asien": [
+    "afrika": [
      {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "Tasked with forming next government, Eisenkot faces complex path to end Netanyahu’s reign",
-      "url": "https://www.straitstimes.com/world/tasked-with-forming-next-government-eisenkot-faces-complex-path-to-end-netanyahus-reign",
-      "tid": 1794143700.0,
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "Divided Israelis agree: Forming next government won't be easy",
+      "url": "http://www.africanews.com/2026/11/08/divided-israelis-agree-forming-next-government-wont-be-easy/",
+      "tid": 1794137298.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Netanyahu rival Eisenkot gets chance to form new Israel govt, will have 6 weeks to prove majority",
-      "url": "https://www.hindustantimes.com/world-news/10-things-to-know-as-gadi-eisenkot-netanyahu-rival-gets-chance-to-form-israel-government-after-close-vote-101794131667578.html",
-      "tid": 1794133747.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Israeli President picks Gadi Eisenkot, Netanyahu rival, to try to form government",
-      "url": "https://www.thehindu.com/news/international/israeli-president-picks-gadi-eisenkot-netanyahu-rival-to-try-to-form-government/article71679477.ece",
-      "tid": 1794116416.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "South China Morning Post",
-      "land": "HK",
-      "rubrik": "Who is Eisenkot, the former Israeli general expected to replace Netanyahu?",
-      "url": "https://www.scmp.com/news/world/middle-east/article/3373679/who-eisenkot-former-israeli-general-expected-replace-netanyahu",
-      "tid": 1794116011.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government",
-      "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/israel-president-gadi-eisenkot-government/",
-      "tid": 1794092820.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "Israeli president picks Netanyahu's rival Gadi Eisenkot to try to form government",
-      "url": "https://www.dawn.com/news/2042866/israeli-president-picks-netanyahus-rival-gadi-eisenkot-to-try-to-form-government",
-      "tid": 1794085634.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CGTN",
-      "land": "CN",
-      "rubrik": "Herzog taps Eisenkot to form next Israeli government",
-      "url": "https://news.cgtn.com/news/2026-11-08/Herzog-taps-Eisenkot-to-form-next-Israeli-government-1RTzopQZPiw/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-      "tid": 1794100857.0,
-      "statskontrollerad": true
      }
     ],
     "norden": [
@@ -9904,13 +9445,6 @@
     ],
     "bla": [
      {
-      "kalla": "NPR",
-      "rubrik": "Israeli president invites Netanyahu's opposition leader to broker new government",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
-      "tid": 1794089529.0,
-      "lutning": "lutar_vanster"
-     },
-     {
       "kalla": "Axios",
       "rubrik": "Netanyahu rival Eisenkot tapped to form Israeli government",
       "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog",
@@ -9918,10 +9452,17 @@
       "lutning": "lutar_vanster"
      },
      {
+      "kalla": "NPR",
+      "rubrik": "Israel's president taps opposition candidate, not Netanyahu, to form a government",
+      "url": "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog",
+      "tid": 1794082698.0,
+      "lutning": "lutar_vanster"
+     },
+     {
       "kalla": "The New York Times",
-      "rubrik": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
-      "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
-      "tid": 1794155959.0,
+      "rubrik": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+      "url": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
+      "tid": 1794130916.0,
       "lutning": "lutar_vanster"
      },
      {
@@ -9931,22 +9472,91 @@
       "tid": 1794089889.0,
       "lutning": "lutar_vanster"
      }
+    ],
+    "mitten": [
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "Netanyahu Rival Gets First Run at Power, but Hurdles Lie in Wait",
+      "url": "https://www.wsj.com/world/middle-east/netanyahus-challenger-tapped-to-try-to-form-israeli-government-583fd2da?mod=rss_worldnews",
+      "tid": 1794153480.0,
+      "lutning": "mitten"
+     }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Israeli opposition leader warns of ‘point of no return’ for democracy",
+  "reserv_rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
   "kallor": [
    {
+    "namn": "Al-Monitor",
+    "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
+    "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-rival-eisenkot-seeks-wide-government-path-power-uncertain",
+    "tid": 1794159988.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "El Tiempo",
+    "rubrik": "Herzog encarga a Eisenkot la formación del próximo Gobierno de Israel",
+    "url": "https://www.eltiempo.com/mundo/medio-oriente/herzog-encarga-a-eisenkot-la-formacion-del-proximo-gobierno-de-israel-3599399",
+    "tid": 1794159526.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CO",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Netanyahu rival Eisenkot seeks 'wide' government but path to power uncertain",
+    "url": "https://www.straitstimes.com/world/middle-east/netanyahu-rival-eisenkot-seeks-wide-government-but-path-to-power-uncertain",
+    "tid": 1794159521.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Eisenkot warns of Israel crisis as he seeks to replace Netanyahu’s government",
+    "url": "https://www.thehindu.com/news/international/eisenkot-warns-of-israel-crisis-as-he-seeks-to-replace-netanyahus-government/article71681159.ece",
+    "tid": 1794159118.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Al Jazeera",
-    "rubrik": "Israeli opposition leader warns of ‘point of no return’ for democracy",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
-    "tid": 1794156701.0,
+    "rubrik": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
+    "tid": 1794157912.0,
     "betalvagg": false,
     "typ": "media",
     "land": "QA",
     "region": "mellanostern",
     "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "Gadi Eisenkot receives mandate to form government",
+    "url": "https://www.france24.com/en/gadi-eisenkot-receives-mandate-to-form-government",
+    "tid": 1794157091.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -9958,18 +9568,6 @@
     "typ": "media",
     "land": "ES",
     "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al-Monitor",
-    "rubrik": "Eisenkot given tough task of forming Israeli government over Netanyahu",
-    "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-given-tough-task-forming-israeli-government-over-netanyahu",
-    "tid": 1794151827.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "mellanostern",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -10010,14 +9608,14 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Straits Times",
-    "rubrik": "Tasked with forming next government, Eisenkot faces complex path to end Netanyahu’s reign",
-    "url": "https://www.straitstimes.com/world/tasked-with-forming-next-government-eisenkot-faces-complex-path-to-end-netanyahus-reign",
-    "tid": 1794143700.0,
+    "namn": "Africanews",
+    "rubrik": "Divided Israelis agree: Forming next government won't be easy",
+    "url": "http://www.africanews.com/2026/11/08/divided-israelis-agree-forming-next-government-wont-be-easy/",
+    "tid": 1794137298.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "SG",
-    "region": "asien",
+    "land": "CG",
+    "region": "afrika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -10026,30 +9624,6 @@
     "rubrik": "Netanyahu rival Eisenkot gets chance to form new Israel govt, will have 6 weeks to prove majority",
     "url": "https://www.hindustantimes.com/world-news/10-things-to-know-as-gadi-eisenkot-netanyahu-rival-gets-chance-to-form-israel-government-after-close-vote-101794131667578.html",
     "tid": 1794133747.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "France 24",
-    "rubrik": "Middle East live: Israeli president officially tasks Eisenkot with forming government",
-    "url": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
-    "tid": 1794131256.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Israeli President picks Gadi Eisenkot, Netanyahu rival, to try to form government",
-    "url": "https://www.thehindu.com/news/international/israeli-president-picks-gadi-eisenkot-netanyahu-rival-to-try-to-form-government/article71679477.ece",
-    "tid": 1794116416.0,
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
@@ -10082,18 +9656,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "BBC World",
-    "rubrik": "Israel's president tasks opposition leader Eisenkot with forming government",
-    "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
-    "tid": 1794089999.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Fox News",
     "rubrik": "Israeli president taps Netanyahu rival to form government as coalition battle looms",
     "url": "https://www.foxnews.com/world/israeli-president-picks-netanyahu-rival-form-government-coalition-battle-looms",
@@ -10103,18 +9665,6 @@
     "land": "US",
     "region": "usa",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "NPR",
-    "rubrik": "Israeli president invites Netanyahu's opposition leader to broker new government",
-    "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
-    "tid": 1794089529.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -10142,6 +9692,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "NPR",
+    "rubrik": "Israel's president taps opposition candidate, not Netanyahu, to form a government",
+    "url": "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog",
+    "tid": 1794082698.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "NRK",
     "rubrik": "Eisenkot får i oppdrag å danne regjering i Israel",
     "url": "https://www.nrk.no/nyheter/eisenkot-far-i-oppdrag-a-danne-regjering-i-israel-1.18076617",
@@ -10154,10 +9716,10 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The New York Times",
-    "rubrik": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
-    "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
-    "tid": 1794155959.0,
+    "namn": "The Wall Street Journal",
+    "rubrik": "Netanyahu Rival Gets First Run at Power, but Hurdles Lie in Wait",
+    "url": "https://www.wsj.com/world/middle-east/netanyahus-challenger-tapped-to-try-to-form-israeli-government-583fd2da?mod=rss_worldnews",
+    "tid": 1794153480.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -10174,6 +9736,18 @@
     "typ": "media",
     "land": "FR",
     "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+    "url": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
+    "tid": 1794130916.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -10244,13 +9818,14 @@
    "en": 3
   },
   "autopilot": [
+   "källkontrollen har 1 anmärkningar",
    "troligen hopslagna händelser"
   ],
   "data": null,
   "godkand_tid": 1793837402.5207515,
   "automatisk": true,
-  "sammanhang": 0.637,
-  "uppdaterad_tid": 1794157753.4711745
+  "sammanhang": 0.626,
+  "uppdaterad_tid": 1794160925.471946
  },
  "d429cbf73a": {
   "id": "d429cbf73a",
@@ -28004,7 +27579,7 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 37.6,
+  "poang": 35.6,
   "vikt": {
    "bredd": 1.4,
    "regioner": {
@@ -28020,16 +27595,16 @@
     "allvar": 2,
     "varaktighet": 1,
     "medel": 1.67,
-    "skal": "Trump erbjuder UFC-chefen Dana White presssekreterarjobbet, men rapporterna säger att White tackar nej, vilket gör att händelsen främst är en personalfråga med begränsad påverkan."
+    "skal": "Trump erbjuder UFC-chefen Dana White jobbet som Vita husets pressekreterare, en politisk kuriositet utan större direkt påverkan."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
   "antal_kallor": 22,
   "har_primarkalla": false,
-  "senast": "2026-11-08T16:45:00+00:00",
+  "senast": "2026-11-08T17:09:16+00:00",
   "utkast": {
    "rubrik_sv": "Trump erbjuder UFC-chefen Dana White jobbet som pressekreterare i Vita huset: svar oklart",
    "sammanfattning_sv": "Donald Trump skriver att han har erbjudit UFC-chefen Dana White jobbet som pressekreterare i Vita huset och uppmanar samtidigt till brottsutredningar mot demokrater, enligt flera medier. Vita huset har saknat pressekreterare sedan den 16 oktober.",
@@ -28268,43 +27843,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Krav på utredningar av demokrater",
-     "namn_en": "Calls for probes into Democrats",
-     "lyfter_sv": "The Hindu lyfter fram att Trump uppmanar till brottsutredningar mot demokrater, Japan Times att han kräver brottsutredningar mot demokrater, och SCMP att han i en kämpande ton ber justitiedepartementet utreda sina motståndare.",
-     "lyfter_en": "The Hindu highlights that Trump urges criminal probes of Democrats, Japan Times that he calls for criminal probes into Democrats, and SCMP that he, in a combative tone, asks the Justice Department to investigate his opponents.",
-     "kallor": [
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary/article71679478.ece"
-      },
-      {
-       "namn": "The Japan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
-      },
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job"
-      }
-     ],
-     "regioner": [
-      "asien"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Ex-UFC-kämpar i Trumps team",
-     "namn_en": "Ex-UFC fighters on Trump's team",
-     "lyfter_sv": "France 24 lyfter fram att Trump vill ha UFC-kämpar som assistenter, Hindustan Times att han vill ha sex ex-mästare i sitt team, Dawn och Straits Times att han vill att kämpar följer med, även från andra länder.",
-     "lyfter_en": "France 24 highlights that Trump wants UFC fighters as assistants, Hindustan Times that he wants six former champions on his team, and Dawn and Straits Times that he asks White to bring fighters, including from other countries.",
+     "namn_sv": "Kämpar som medhjälpare",
+     "namn_en": "Fighters as assistants",
+     "lyfter_sv": "France 24 lyfter fram att Trump vill ha UFC-kämpar som medhjälpare, Hindustan Times att de ska ta sig an “Lunatic Left”, medan Dawn och Straits Times lyfter fram att några av kämparna inte är från landet.",
+     "lyfter_en": "France 24 highlights that Trump wants UFC fighters as assistants, Hindustan Times that they should tackle the “Lunatic Left”, while Dawn and Straits Times highlight that some of the fighters are not from the country.",
      "kallor": [
       {
        "namn": "France 24",
@@ -28342,10 +27884,43 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Dana Whites besked",
-     "namn_en": "Dana White's response",
-     "lyfter_sv": "Daily Caller lyfter fram att White enligt uppgift tackar nej, NRK att han tackar nej, NPR, WSJ och RT att han ska träffa Trump på måndag, och Deutsche Welle att han varken tackat ja eller nej.",
-     "lyfter_en": "Daily Caller highlights that White reportedly declines, NRK that he declines, NPR, WSJ and RT that he will meet Trump on Monday, and Deutsche Welle that he has neither accepted nor declined.",
+     "namn_sv": "Utredningar mot Trumps motståndare",
+     "namn_en": "Probes against Trump's opponents",
+     "lyfter_sv": "The Hindu och Japan Times lyfter fram att Trump uppmanar till brottsutredningar mot demokrater, och SCMP att han beordrar Justitiedepartementet att utreda sina motståndare.",
+     "lyfter_en": "The Hindu and Japan Times highlight that Trump urges criminal probes into Democrats, while SCMP highlights that he orders the Justice Department to investigate his opponents.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/trump-says-he-wants-ufc-chief-dana-white-for-white-house-press-secretary/article71679478.ece"
+      },
+      {
+       "namn": "The Japan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
+      },
+      {
+       "namn": "South China Morning Post",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job"
+      }
+     ],
+     "regioner": [
+      "asien"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Dana Whites svar på erbjudandet",
+     "namn_en": "White's response to the offer",
+     "lyfter_sv": "NPR, RT och WSJ lyfter fram att White ska träffa Trump på måndag, Daily Caller att han enligt uppgift tackar nej, NRK att han säger nej och DW att han varken accepterat eller tackat nej.",
+     "lyfter_en": "NPR, RT and WSJ highlight that White will meet Trump on Monday, Daily Caller that he reportedly declines, NRK that he says no and DW that he has neither accepted nor declined.",
      "kallor": [
       {
        "namn": "NPR",
@@ -28400,55 +27975,47 @@
       "mitten",
       "rod"
      ]
-    },
-    {
-     "namn_sv": "Om White överväger erbjudandet",
-     "namn_en": "Whether White is considering the offer",
-     "lyfter_sv": "The Hill lyfter fram att White överväger erbjudandet, Al Jazeera frågar om han kan bli nästa pressekreterare och The National om han blir Trumps pressekreterare.",
-     "lyfter_en": "The Hill highlights that White is weighing the offer, Al Jazeera asks whether he could be the next press secretary, and The National whether he will become Trump's press secretary.",
-     "kallor": [
-      {
-       "namn": "The Hill",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://thehill.com/homenews/administration/6206264-live-trump-60-minutes-congress-midterms/"
-      },
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
-      },
-      {
-       "namn": "The National",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": true,
-       "url": "https://www.thenationalnews.com/news/us/2026/11/08/dana-white-washington-monday-trump/"
-      }
-     ],
-     "regioner": [
-      "mellanostern",
-      "usa"
-     ],
-     "usa_sidor": [
-      "mitten"
-     ]
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 16,
+    "antal": 12,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Trump erbjuder UFC-chefen Dana White jobbet som Vita husets pressekreterare (rubrik)",
+      "text": "Trump erbjuder Dana White jobbet som Vita husets pressekreterare",
       "stod": [
-       5,
        6,
-       10
+       14,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: Trump vill ha UFC-kämpar som medhjälpare",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: kämparna ska ta sig an \"Lunatic Left\"",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dawn: några av kämparna är inte från USA",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: några av kämparna är inte från USA",
+      "stod": [
+       13
       ],
       "problem": null
      },
@@ -28460,101 +28027,46 @@
       "problem": null
      },
      {
-      "text": "Japan Times: Trump kräver brottsutredningar mot demokrater",
+      "text": "Japan Times: Trump uppmanar till brottsutredningar mot demokrater",
       "stod": [
        9
       ],
       "problem": null
      },
      {
-      "text": "SCMP: Trump ber justitiedepartementet utreda sina motståndare i en kämpande ton",
+      "text": "SCMP: Trump beordrar Justitiedepartementet att utreda sina motståndare",
       "stod": [
        15
       ],
       "problem": null
      },
      {
-      "text": "France 24: Trump vill ha UFC-kämpar som assistenter",
+      "text": "NPR, RT och WSJ: White ska träffa Trump på måndag",
       "stod": [
-       3
+       6,
+       22,
+       18
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times: Trump vill ha sex ex-mästare i sitt team",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Dawn och Straits Times: Trump vill att kämpar följer med, även från andra länder",
-      "stod": [
-       12,
-       13
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Caller: White tackar enligt uppgift nej till erbjudandet",
+      "text": "Daily Caller: White tackar enligt uppgift nej till jobbet",
       "stod": [
        8
       ],
       "problem": null
      },
      {
-      "text": "NRK: White tackar nej",
+      "text": "NRK: White säger nej till jobbet",
       "stod": [
        11
       ],
       "problem": null
      },
      {
-      "text": "NPR: White ska träffa Trump på måndag",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "WSJ: White ska träffa Trump på måndag",
-      "stod": [
-       18
-      ],
-      "problem": null
-     },
-     {
-      "text": "RT: White ska träffa Trump på måndag",
-      "stod": [
-       22
-      ],
-      "problem": null
-     },
-     {
-      "text": "Deutsche Welle: White har varken tackat ja eller nej",
+      "text": "Deutsche Welle: White har varken accepterat eller tackat nej",
       "stod": [
        14
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hill: White överväger erbjudandet",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: frågar om White kan bli nästa pressekreterare",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The National: frågar om White blir Trumps pressekreterare",
-      "stod": [
-       20
       ],
       "problem": null
      }
@@ -28563,30 +28075,8 @@
    },
    "ok": true
   },
-  "sammanhang": 0.696,
-  "betydelse": {
-   "sv": null,
-   "en": "Since Trump says he has offered the press secretary job to UFC chief Dana White, who has not formally accepted, the role matters for how the White House speaks to reporters and the public.",
-   "grund": [
-    6,
-    14
-   ],
-   "grund_kallor": [
-    {
-     "namn": "NPR",
-     "url": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
-    },
-    {
-     "namn": "Deutsche Welle",
-     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "sammanhang": 0.695,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -28600,9 +28090,9 @@
      {
       "kalla": "The Hill",
       "land": "US",
-      "rubrik": "Live updates: Trump shares cartoon of Dana White as press secretary as he mulls offer",
-      "url": "https://thehill.com/homenews/administration/6206264-live-trump-60-minutes-congress-midterms/",
-      "tid": 1794155437.0,
+      "rubrik": "Trump shares cartoon of Dana White as press secretary",
+      "url": "https://thehill.com/homenews/media/6206667-trump-shares-dana-white-cartoon/",
+      "tid": 1794157756.0,
       "statskontrollerad": false
      },
      {
@@ -28784,14 +28274,14 @@
     ]
    },
    "blind_flack": null,
-   "grannar_svenska": false,
+   "grannar_svenska": true,
    "usa": {
     "mitten": [
      {
       "kalla": "The Hill",
-      "rubrik": "Live updates: Trump shares cartoon of Dana White as press secretary as he mulls offer",
-      "url": "https://thehill.com/homenews/administration/6206264-live-trump-60-minutes-congress-midterms/",
-      "tid": 1794155437.0,
+      "rubrik": "Trump shares cartoon of Dana White as press secretary",
+      "url": "https://thehill.com/homenews/media/6206667-trump-shares-dana-white-cartoon/",
+      "tid": 1794157756.0,
       "lutning": "mitten"
      },
      {
@@ -28844,13 +28334,13 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Live updates: Trump shares cartoon of Dana White as press secretary as he mulls offer",
+  "reserv_rubrik": "Trump shares cartoon of Dana White as press secretary",
   "kallor": [
    {
     "namn": "The Hill",
-    "rubrik": "Live updates: Trump shares cartoon of Dana White as press secretary as he mulls offer",
-    "url": "https://thehill.com/homenews/administration/6206264-live-trump-60-minutes-congress-midterms/",
-    "tid": 1794155437.0,
+    "rubrik": "Trump shares cartoon of Dana White as press secretary",
+    "url": "https://thehill.com/homenews/media/6206667-trump-shares-dana-white-cartoon/",
+    "tid": 1794157756.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -29117,12 +28607,13 @@
    "en": 3
   },
   "autopilot": [
+   "källkontrollen har 3 anmärkningar",
    "troligen hopslagna händelser"
   ],
   "data": null,
   "godkand_tid": 1794103723.2466316,
   "automatisk": true,
-  "uppdaterad_tid": 1794157753.4711745
+  "uppdaterad_tid": 1794160925.471946
  },
  "7951dd7b2d": {
   "id": "7951dd7b2d",
@@ -29312,27 +28803,28 @@
  "30cc2132f9": {
   "id": "30cc2132f9",
   "amnen": [
-   "sverige"
+   "sverige",
+   "varlden"
   ],
   "amnen_sektion": [
    "sverige"
   ],
-  "poang": 15.0,
+  "poang": 18.2,
   "vikt": {
-   "bredd": 0.246,
+   "bredd": 0.169,
    "regioner": {
-    "sverige": 3
+    "sverige": 2
    },
-   "timmar": 3,
+   "timmar": 9,
    "konsekvens": null,
    "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 2,
   "har_primarkalla": false,
-  "senast": "2026-11-08T09:47:37+00:00",
+  "senast": "2026-11-08T09:17:02+00:00",
   "utkast": {
    "rubrik_sv": "Andersson säger att S går i opposition mot en Tidö 2-regering",
    "sammanfattning_sv": "S-ledaren Andersson säger enligt Sveriges Radio och Dagens Nyheter att S går i full opposition mot en Tidö 2-regering. Dagens industri skriver att även Dadgostar ratar Tidö 2.",
@@ -29394,7 +28886,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.647,
+  "sammanhang": 0.724,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -29408,14 +28900,6 @@
       "rubrik": "Andersson: Går i full opposition till en Tidö 2-regering",
       "url": "https://www.sverigesradio.se/artikel/9336747",
       "tid": 1794126240.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens industri",
-      "land": "SE",
-      "rubrik": "Andersson och Dadgostar ratar ”Tidö 2”: ”Full opposition”",
-      "url": "https://www.di.se/nyheter/andersson-och-dadgostar-ratar-tido-2-full-opposition/",
-      "tid": 1794131257.0,
       "statskontrollerad": false
      },
      {
@@ -29448,18 +28932,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dagens industri",
-    "rubrik": "Andersson och Dadgostar ratar ”Tidö 2”: ”Full opposition”",
-    "url": "https://www.di.se/nyheter/andersson-och-dadgostar-ratar-tido-2-full-opposition/",
-    "tid": 1794131257.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Dagens Nyheter",
     "rubrik": "S-ledaren: ”Går i full opposition mot en Tidö 2-regering”",
     "url": "https://www.dn.se/sverige/s-ledaren-gar-i-full-opposition-mot-en-tido-2-regering/",
@@ -29480,7 +28952,8 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1794136121.6499743,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1794160925.471946
  },
  "b6fcb34114": {
   "id": "b6fcb34114",
