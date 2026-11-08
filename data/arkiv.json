@@ -22718,13 +22718,15 @@
   "id": "729e6e0bdf",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 38.5,
+  "poang": 39.6,
   "vikt": {
-   "bredd": 0.769,
+   "bredd": 0.881,
    "regioner": {
-    "mellanostern": 3,
     "asien": 3,
-    "europa": 3
+    "sverige": 1,
+    "mellanostern": 3,
+    "europa": 3,
+    "usa": 1
    },
    "timmar": 96,
    "konsekvens": {
@@ -22732,16 +22734,16 @@
     "allvar": 5,
     "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Flygangrepp i Jemen med 22 till 33 döda, och flera rubriker rapporterar även ett angrepp på en marknad i Taiz med 30 döda; dödsoffren är oåterkalleliga men händelserna är lokala."
+    "skal": "Flera flygattacker i Jemen dödar dussintals civila nära Sanaa och Taiz, vilket är allvarligt för liv och säkerhet i ett pågående krig."
    },
    "bekraftad": true,
-   "maste": false,
+   "maste": true,
    "spar": []
   },
-  "maste": false,
-  "antal_kallor": 9,
+  "maste": true,
+  "antal_kallor": 11,
   "har_primarkalla": false,
-  "senast": "2026-11-07T23:19:49+00:00",
+  "senast": "2026-11-08T02:17:02+00:00",
   "utkast": {
    "rubrik_sv": "Runt 30 döda vid attack mot marknad i Taiz i Jemen",
    "sammanfattning_sv": "Runt 30 personer dödades vid en attack mot en marknad i Taiz-provinsen i Jemen, enligt flera källor. Houthirörelsen uppger att saudiska flygplan genomförde anfallen. Jemens regering och Houthirörelsen anklagar varandra för attacken.",
@@ -22836,18 +22838,67 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Stigande dödssiffra enligt Houthi-källor",
-     "namn_en": "Rising death toll per Houthi sources",
-     "lyfter_sv": "MEE lyfter fram att dödstalet stigit till minst 33 enligt houthierna, Al-Monitor att hälsoministeriet som drivs av houthierna uppger 33 döda, och Straits Times att nyhetsbyrån Saba uppger 33 döda.",
-     "lyfter_en": "MEE reports the death toll rose to at least 33 according to the Houthis, Al-Monitor that the Houthi-run health ministry reports 33 dead, and Straits Times that the Saba news agency reports 33 dead.",
+     "namn_sv": "Dödstal enligt Houthi-källor",
+     "namn_en": "Death toll according to Houthi sources",
+     "lyfter_sv": "Hindustan Times lyfter fram 33 döda enligt Houthi-styrt hälsoministerium, Middle East Eye 27 döda enligt Houthierna, Al Jazeera 25 döda, BBC 25 döda, The Hindu 22 döda enligt en Houthi-tjänsteman och DW 22 döda enligt Houthierna.",
+     "lyfter_en": "Hindustan Times reports 33 dead according to the Houthi-run health ministry, Middle East Eye 27 dead according to the Houthis, Al Jazeera 25 dead, BBC 25 dead, The Hindu 22 dead according to a Houthi official, and DW 22 dead according to the Houthis.",
      "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/saudi-airstrikes-kill-33-injure-39-near-yemen-s-capital-sanaa-houthi-health-ministry-says-101794103641681.html"
+      },
       {
        "namn": "Middle East Eye",
        "region": "mellanostern",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-air-strikes-near-yemeni-capital-rises-33-houthis-say"
+       "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-strikes-kill-least-27-yemens-sanaa-houthis-say"
       },
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/airstrike-kills-22-people-near-yemens-capital-houthi-official-says/article71678473.ece"
+      },
+      {
+       "namn": "Deutsche Welle",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dw.com/en/yemen-22-killed-in-strike-near-sanaa-houthis-say/a-79885177?maca=en-rss-en-all-1573-rdf"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Dödligaste anfallen under kriget",
+     "namn_en": "Deadliest attacks in the war",
+     "lyfter_sv": "Al-Monitor och The Straits Times lyfter fram att attacken vid Sanaa var en av de dödligaste sedan striderna i juli, medan The New York Times lyfter fram över 50 döda på ett dygn, en av krigets dödligaste.",
+     "lyfter_en": "Al-Monitor and The Straits Times highlight that the Sanaa attack was one of the deadliest since fighting resumed in July, while The New York Times highlights over 50 dead in one day, one of the war's deadliest.",
+     "kallor": [
       {
        "namn": "Al-Monitor",
        "region": "mellanostern",
@@ -22861,166 +22912,166 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.straitstimes.com/world/middle-east/houthi-run-health-ministry-says-airstrikes-it-blames-on-saudi-arabia-kill-27-near-yemen-capital"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html"
       }
      ],
      "regioner": [
       "asien",
-      "mellanostern"
+      "mellanostern",
+      "usa"
      ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Saudiska anklagelser utan Riyadhs svar",
-     "namn_en": "Saudi accusations without Riyadh's reply",
-     "lyfter_sv": "BBC lyfter fram att houthierna uppger minst 25 döda i ett saudiskt flyganfall, DW att gruppen anklagar Saudiarabien för att ha träffat hem, och Hindustan Times att 22 döda anges utan saudisk kommentar.",
-     "lyfter_en": "BBC reports Houthis say at least 25 died in a Saudi air strike, DW that the group accuses Saudi Arabia of hitting homes, and Hindustan Times that 22 dead are reported without a Saudi comment.",
-     "kallor": [
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/yemen-22-killed-in-strike-near-sanaa-houthis-say/a-79885177?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/houthis-say-22-killed-in-saudi-strikes-on-yemens-sanaa-province-101794054979369.html"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
+     "usa_sidor": [
+      "bla"
+     ]
     }
    ],
    "kontroll": {
     "ok": false,
-    "antal": 9,
+    "antal": 11,
     "problem": [
-     "fel tillskrivning: Berättelsen heter \"Saudiska anklagelser utan Riyadhs svar\""
+     "värdeord: Rubriken \"Dödligaste anfallen under kriget\" beskriver attackerna som de dödligaste i kriget"
     ],
     "pastaenden": [
      {
-      "text": "Minst 33 döda i flygangrepp nära Sanaa enligt houthiska myndigheter (rubrik)",
+      "text": "Minst 33 döda i flygattacker nära Jemens huvudstad",
       "stod": [
        1,
-       2,
-       3
+       3,
+       4
       ],
       "problem": null
      },
      {
-      "text": "MEE: dödstalet har stigit till minst 33 enligt houthierna",
+      "text": "Dödstalet 33 enligt houthiska myndigheter (hälsoministeriet)",
+      "stod": [
+       1,
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: 33 döda enligt Houthi-styrt hälsoministerium",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "Al-Monitor: hälsoministeriet, som drivs av houthierna, uppger 33 döda",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Straits Times: nyhetsbyrån Saba uppger 33 döda",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Berättelsen heter \"Saudiska anklagelser utan Riyadhs svar\"",
-      "stod": [
-       5,
-       7,
-       8
-      ],
-      "problem": "fel tillskrivning"
-     },
-     {
-      "text": "BBC: houthierna uppger minst 25 döda i ett saudiskt flyganfall",
+      "text": "Middle East Eye: 27 döda enligt Houthierna",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "DW: gruppen anklagar Saudiarabien för att ha träffat hem",
+      "text": "Al Jazeera: 25 döda",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: 25 döda",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times: 22 döda anges utan saudisk kommentar",
+      "text": "The Hindu: 22 döda enligt en Houthi-tjänsteman",
       "stod": [
        8
       ],
       "problem": null
      },
      {
-      "text": "Saudiarabien har inte kommenterat (BBC, DW, Hindustan Times)",
+      "text": "Deutsche Welle: 22 döda enligt Houthierna",
       "stod": [
-       5,
-       7,
-       8
+       9
       ],
       "problem": null
+     },
+     {
+      "text": "Al-Monitor och The Straits Times: attacken vid Sanaa var en av de dödligaste sedan striderna i juli",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times: över 50 döda på ett dygn, en av krigets dödligaste",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubriken \"Dödligaste anfallen under kriget\" beskriver attackerna som de dödligaste i kriget",
+      "stod": [
+       3,
+       4,
+       11
+      ],
+      "problem": "värdeord"
      }
     ],
-    "sammanfattning": "Alla sakuppgifter och tillskrivningar för de enskilda källorna stämmer, men rubriken för den andra berättelsen, \"Saudiska anklagelser\", tillskriver fel part: anklagelserna kommer från houthierna mot Saudiarabien, inte från Saudiarabien."
+    "sammanfattning": "Rubriken för berättelsen \"Dödligaste anfallen under kriget\" överdriver: källorna säger \"en av de dödligaste\", inte de dödligaste. Övriga påståenden har stöd i källmaterialet."
    },
    "ok": false
   },
-  "sammanhang": 0.671,
-  "betydelse": null,
+  "sammanhang": 0.73,
+  "betydelse": {
+   "sv": "Eftersom striderna mellan Saudiarabien och houthirörelsen blossade upp igen i juli hänger konflikter i Mellanöstern ihop med energipriser, som påverkar bränslepriserna för svenska hushåll.",
+   "en": "Since fighting between Saudi Arabia and the Houthis resumed in July, Middle East conflict is linked to oil prices, which feed into gasoline prices for US households.",
+   "grund": [
+    1,
+    3
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/saudi-airstrikes-kill-33-injure-39-near-yemen-s-capital-sanaa-houthi-health-ministry-says-101794103641681.html"
+    },
+    {
+     "namn": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/11/houthi-run-health-ministry-says-airstrikes-kill-33-near-yemen-capital"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "slutsats: Sv: \"Eftersom\" kopplar juli-återupptagandet av striderna till energiprisernas påverkan, men det följer inte av uppgifterna. Kopplingen från en flygattack i Jemen till svenska bränslepriser är långsökt.",
+     "slutsats: En: \"Since\" kopplar juli-återupptagandet till oljepriser och bensinpriser för amerikanska hushåll. Slutsatsen följer inte av uppgifterna, och kopplingen från attacken till bensinpriser är långsökt."
+    ]
+   },
+   "ok": false
+  },
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
-    "mellanostern"
+    "mellanostern",
+    "sverige",
+    "usa"
    ],
    "per_region": {
-    "mellanostern": [
-     {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Death toll from air strikes near Yemeni capital rises to 33, Houthis say",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-air-strikes-near-yemeni-capital-rises-33-houthis-say",
-      "tid": 1794093589.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Houthi-run health ministry says airstrikes kill 33 near Yemen capital",
-      "url": "https://www.al-monitor.com/originals/2026/11/houthi-run-health-ministry-says-airstrikes-kill-33-near-yemen-capital",
-      "tid": 1794084388.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Yemeni gov’t forces report advances as Houthis say deadly strikes hit Sanaa",
-      "url": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa?traffic_source=rss",
-      "tid": 1794078391.0,
-      "statskontrollerad": false
-     }
-    ],
     "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Saudi airstrikes kill 33, injure 39 near Yemen’s capital Sanaa, Houthi health ministry says",
+      "url": "https://www.hindustantimes.com/world-news/saudi-airstrikes-kill-33-injure-39-near-yemen-s-capital-sanaa-houthi-health-ministry-says-101794103641681.html",
+      "tid": 1794104222.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Straits Times",
       "land": "SG",
@@ -23036,13 +23087,41 @@
       "url": "https://www.thehindu.com/news/international/airstrike-kills-22-people-near-yemens-capital-houthi-official-says/article71678473.ece",
       "tid": 1794059523.0,
       "statskontrollerad": false
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "33 personer döda i Jemen efter Saudi-attack",
+      "url": "https://www.sverigesradio.se/artikel/9336713",
+      "tid": 1794103800.0,
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "Houthi-run health ministry says airstrikes kill 33 near Yemen capital",
+      "url": "https://www.al-monitor.com/originals/2026/11/houthi-run-health-ministry-says-airstrikes-kill-33-near-yemen-capital",
+      "tid": 1794084388.0,
+      "statskontrollerad": false
      },
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Houthis say 22 killed in Saudi strikes on Yemen's Sanaa province",
-      "url": "https://www.hindustantimes.com/world-news/houthis-say-22-killed-in-saudi-strikes-on-yemens-sanaa-province-101794054979369.html",
-      "tid": 1794055276.0,
+      "kalla": "Middle East Eye",
+      "land": "GB",
+      "rubrik": "Saudi-led strikes kill at least 27 in Yemen's Sanaa, Houthis say",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-strikes-kill-least-27-yemens-sanaa-houthis-say",
+      "tid": 1794077133.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Houthis report 25 killed in Yemen strikes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
+      "tid": 1794073163.0,
       "statskontrollerad": false
      }
     ],
@@ -23071,25 +23150,47 @@
       "tid": 1794044236.0,
       "statskontrollerad": false
      }
+    ],
+    "usa": [
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "More Than 50 Killed in Yemen in One of the Deadliest 24 Hours of the War",
+      "url": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html",
+      "tid": 1794069571.0,
+      "statskontrollerad": false
+     }
     ]
    },
-   "blind_flack": "saknas_i_sverige",
+   "blind_flack": null,
    "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Death toll from air strikes near Yemeni capital rises to 33, Houthis say",
+  "reserv_rubrik": "Saudi airstrikes kill 33, injure 39 near Yemen’s capital Sanaa, Houthi health ministry says",
   "kallor": [
    {
-    "namn": "Middle East Eye",
-    "rubrik": "Death toll from air strikes near Yemeni capital rises to 33, Houthis say",
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-air-strikes-near-yemeni-capital-rises-33-houthis-say",
-    "tid": 1794093589.0,
+    "namn": "Hindustan Times",
+    "rubrik": "Saudi airstrikes kill 33, injure 39 near Yemen’s capital Sanaa, Houthi health ministry says",
+    "url": "https://www.hindustantimes.com/world-news/saudi-airstrikes-kill-33-injure-39-near-yemen-s-capital-sanaa-houthi-health-ministry-says-101794103641681.html",
+    "tid": 1794104222.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
-    "region": "mellanostern",
+    "land": "IN",
+    "region": "asien",
     "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Sveriges Radio Ekot",
+    "rubrik": "33 personer döda i Jemen efter Saudi-attack",
+    "url": "https://www.sverigesradio.se/artikel/9336713",
+    "tid": 1794103800.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -23117,10 +23218,22 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Middle East Eye",
+    "rubrik": "Saudi-led strikes kill at least 27 in Yemen's Sanaa, Houthis say",
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-strikes-kill-least-27-yemens-sanaa-houthis-say",
+    "tid": 1794077133.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Al Jazeera",
-    "rubrik": "Yemeni gov’t forces report advances as Houthis say deadly strikes hit Sanaa",
-    "url": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa?traffic_source=rss",
-    "tid": 1794078391.0,
+    "rubrik": "Houthis report 25 killed in Yemen strikes",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
+    "tid": 1794073163.0,
     "betalvagg": false,
     "typ": "media",
     "land": "QA",
@@ -23165,18 +23278,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Hindustan Times",
-    "rubrik": "Houthis say 22 killed in Saudi strikes on Yemen's Sanaa province",
-    "url": "https://www.hindustantimes.com/world-news/houthis-say-22-killed-in-saudi-strikes-on-yemens-sanaa-province-101794054979369.html",
-    "tid": 1794055276.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "France 24",
     "rubrik": "Yemen: 30 dead in strikes on Taiz market",
     "url": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market",
@@ -23187,20 +23288,30 @@
     "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "More Than 50 Killed in Yemen in One of the Deadliest 24 Hours of the War",
+    "url": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html",
+    "tid": 1794069571.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 1,
-   "en": 2
+   "sv": 2,
+   "en": 3
   },
-  "autopilot": [
-   "blind fläck"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1794006578.2515485,
   "automatisk": true,
-  "uppdaterad_tid": 1794103723.2466316
+  "uppdaterad_tid": 1794107341.2544532
  },
  "b2d1231725": {
   "id": "b2d1231725",
@@ -26942,33 +27053,33 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 34.9,
+  "poang": 32.4,
   "vikt": {
-   "bredd": 1.208,
+   "bredd": 1.149,
    "regioner": {
-    "asien": 7,
     "usa": 7,
+    "asien": 6,
     "latinamerika": 1,
     "norden": 1,
     "europa": 3,
     "sverige": 1
    },
-   "timmar": 76,
+   "timmar": 77,
    "konsekvens": {
     "berorda": 2,
     "allvar": 2,
     "varaktighet": 1,
     "medel": 1.67,
-    "skal": "Ett erbjudande till en enskild person om en post, som dessutom verkar ha tackats nej till, har begränsad påverkan och kort varaktighet."
+    "skal": "Trump erbjöd UFC-chefen Dana White jobbet som pressekreterare, men han tackar nej enligt uppgifter, vilket främst är en kuriös politisk episod utan större konsekvenser."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 20,
+  "antal_kallor": 19,
   "har_primarkalla": false,
-  "senast": "2026-11-08T01:26:43+00:00",
+  "senast": "2026-11-08T01:47:30+00:00",
   "utkast": {
    "rubrik_sv": "Trump erbjuder UFC-chefen Dana White jobbet som pressekreterare i Vita huset: svar oklart",
    "sammanfattning_sv": "Donald Trump skriver att han har erbjudit UFC-chefen Dana White jobbet som pressekreterare i Vita huset och uppmanar samtidigt till brottsutredningar mot demokrater, enligt flera medier. Vita huset har saknat pressekreterare sedan den 16 oktober.",
@@ -27207,24 +27318,24 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Dana Whites besked om jobbet",
-     "namn_en": "Dana White's response to the offer",
-     "lyfter_sv": "Hindustan Times och NRK lyfter fram att White tackat nej, New York Post att han åker till Washington och WSJ att han ska träffa Trump på måndag, El País att CNN säger nej.",
-     "lyfter_en": "Hindustan Times and NRK highlight that White turned down the job, New York Post that he is heading to Washington, WSJ that he will meet Trump on Monday, and El País that CNN reports a refusal.",
+     "namn_sv": "Dana White tackar nej",
+     "namn_en": "Dana White declines",
+     "lyfter_sv": "Daily Caller, Hindustan Times och NRK lyfter fram att White enligt uppgift tackat nej, och El País att CNN uppger att han avböjt erbjudandet.",
+     "lyfter_en": "Daily Caller, Hindustan Times and NRK highlight that White reportedly declined, and El País that CNN reports he turned down the offer.",
      "kallor": [
+      {
+       "namn": "The Daily Caller",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines"
+      },
       {
        "namn": "Hindustan Times",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.hindustantimes.com/world-news/ufc-ceo-dana-white-declined-trumps-white-house-press-secretary-offer-report-101794099850473.html"
-      },
-      {
-       "namn": "New York Post",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/"
       },
       {
        "namn": "El País América",
@@ -27239,13 +27350,6 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.nrk.no/nyheter/dana-white-takker-nei-til-a-bli-trumps-pressesekretaer-1.18076663"
-      },
-      {
-       "namn": "The Wall Street Journal",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://www.wsj.com/politics/policy/ufc-chief-dana-white-to-meet-with-trump-to-discuss-press-secretary-job-af0cb2e4?mod=rss_socialpoliticsfeed"
       }
      ],
      "regioner": [
@@ -27255,15 +27359,51 @@
       "usa"
      ],
      "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Möte i Washington på måndag",
+     "namn_en": "Meeting in Washington on Monday",
+     "lyfter_sv": "New York Post lyfter fram att White är på väg till Washington, och WSJ och det statskontrollerade RT att han planerar att träffa Trump på måndag.",
+     "lyfter_en": "New York Post highlights that White is heading to Washington, and WSJ and the state-controlled RT that he plans to meet Trump on Monday.",
+     "kallor": [
+      {
+       "namn": "New York Post",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/"
+      },
+      {
+       "namn": "The Wall Street Journal",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.wsj.com/politics/policy/ufc-chief-dana-white-to-meet-with-trump-to-discuss-press-secretary-job-af0cb2e4?mod=rss_socialpoliticsfeed"
+      },
+      {
+       "namn": "RT",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://rt-english.com/news/648550-trump-dana-white-house-press-secretary/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
       "mitten",
       "rod"
      ]
     },
     {
-     "namn_sv": "Trumps krav mot demokraterna",
-     "namn_en": "Trump's combative push against Democrats",
-     "lyfter_sv": "The Japan Times och CNA lyfter fram Trumps krav på brottsutredningar mot demokrater, South China Morning Post hans stridslystna ton och order till justitiedepartementet.",
-     "lyfter_en": "The Japan Times and CNA highlight Trump's call for criminal probes of Democrats, South China Morning Post his combative tone and order to the Justice Department.",
+     "namn_sv": "Hårdare ton efter valförlust",
+     "namn_en": "Tougher tone after election loss",
+     "lyfter_sv": "Japan Times lyfter fram att Trump vill ha straffrättsliga utredningar mot demokrater och kopplar det till en krigisk hållning. SCMP lyfter fram en stridslysten ton inför en demokratisk kongress.",
+     "lyfter_en": "Japan Times highlights that Trump wants criminal probes into Democrats and links it to a war-like stance. SCMP highlights a combative tone ahead of a Democratic Congress.",
      "kallor": [
       {
        "namn": "The Japan Times",
@@ -27271,13 +27411,6 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
-      },
-      {
-       "namn": "CNA",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.channelnewsasia.com/world/trump-white-house-press-secretary-dana-white-ufc-6533481"
       },
       {
        "namn": "South China Morning Post",
@@ -27293,10 +27426,10 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Trumps beskrivning av White",
-     "namn_en": "Trump's description of White",
-     "lyfter_sv": "France 24 och Washington Examiner lyfter fram Trumps beskrivning av White som en våldsam kämpe och krigare, och att Trump presenterade erbjudandet i ett inlägg.",
-     "lyfter_en": "France 24 and Washington Examiner highlight Trump's description of White as a violent fighter and warrior, and that Trump announced the offer in a post.",
+     "namn_sv": "Trumps personliga vädjan",
+     "namn_en": "Trump's personal appeal",
+     "lyfter_sv": "France 24 lyfter fram Trumps beskrivning av White som våldsam kämpe och krigare, Dawn att Trump ber honom ta jobbet, och Straits Times att han vill ha med kämpar som assistenter.",
+     "lyfter_en": "France 24 highlights Trump's description of White as a violent fighter and warrior, Dawn that Trump asks him to take the job, and Straits Times that he wants fighters as assistants.",
      "kallor": [
       {
        "namn": "France 24",
@@ -27305,28 +27438,6 @@
        "statskontrollerad": false,
        "url": "https://www.france24.com/en/americas/20261107-a-violent-fighter-and-warrior-trump-offers-press-secretary-role-to-ufc-chief-dana-white"
       },
-      {
-       "namn": "Washington Examiner",
-       "region": "usa",
-       "lutning": "lutar_hoger",
-       "statskontrollerad": false,
-       "url": "https://www.washingtonexaminer.com/news/white-house/4796567/trump-white-house-press-secretary-dana-white/"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "Kämpare som medhjälpare",
-     "namn_en": "Fighters as assistants",
-     "lyfter_sv": "Dawn och The Straits Times lyfter fram Trumps uppmaning att White tar med sig kämpar som assistenter, även sådana som inte är från USA.",
-     "lyfter_en": "Dawn and The Straits Times highlight Trump's call for White to bring fighters along as assistants, some of them not from the United States.",
-     "kallor": [
       {
        "namn": "Dawn",
        "region": "asien",
@@ -27343,100 +27454,115 @@
       }
      ],
      "regioner": [
-      "asien"
+      "asien",
+      "europa"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
+    "antal": 14,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Trump erbjuder Dana White jobbet som pressekreterare i Vita huset",
-      "stod": [
-       1,
-       7,
-       13,
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "White har inte gett ett tydligt besked (svar oklart)",
+      "text": "Trump erbjöd Dana White jobbet som Vita husets pressekreterare",
       "stod": [
        5,
-       6,
-       13,
        17
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times och NRK: White har tackat nej",
+      "text": "Daily Caller lyfter fram att White enligt uppgift tackat nej",
       "stod": [
-       1,
-       6
+       1
       ],
       "problem": null
      },
      {
-      "text": "New York Post: White åker till Washington",
+      "text": "Hindustan Times lyfter fram att White enligt uppgift tackat nej",
       "stod": [
        2
       ],
       "problem": null
      },
      {
-      "text": "WSJ: White ska träffa Trump på måndag",
+      "text": "NRK lyfter fram att White tackat nej",
       "stod": [
-       17
-      ],
-      "problem": null
-     },
-     {
-      "text": "El País: CNN säger att White nekar erbjudandet",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Japan Times och CNA: Trump kräver brottsutredningar mot demokrater",
-      "stod": [
-       3,
        7
       ],
       "problem": null
      },
      {
-      "text": "South Child China Morning Post: Trump har en stridslysten ton och beordrar justitiedepartementet att utreda motståndare",
+      "text": "El País uppger att CNN rapporterar att White avböjt erbjudandet",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "New York Post lyfter fram att White är på väg till Washington",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ uppger att White planerar träffa Trump på måndag",
+      "stod": [
+       16
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT (statskontrollerat medium) uppger att White planerar träffa Trump på måndag",
+      "stod": [
+       19
+      ],
+      "problem": null
+     },
+     {
+      "text": "Japan Times lyfter fram att Trump vill ha straffrättsliga utredningar mot demokrater",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Japan Times kopplar detta till en krigisk hållning",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP lyfter fram en stridslysten ton inför en demokratisk kongress",
       "stod": [
        14
       ],
       "problem": null
      },
      {
-      "text": "France 24 och Washington Examiner: Trump beskriver White som en våldsam kämpe och krigare",
+      "text": "France 24 lyfter fram Trumps beskrivning av White som våldsam kämpe och krigare",
       "stod": [
        8,
-       15
+       2
       ],
       "problem": null
      },
      {
-      "text": "Washington Examiner: Trump presenterade erbjudandet i ett inlägg",
+      "text": "Dawn uppger att Trump ber White ta jobbet",
       "stod": [
-       15
+       9
       ],
       "problem": null
      },
      {
-      "text": "Dawn och The Straits Times: Trump uppmanar White att ta med kämpar som assistenter, även icke-amerikanska",
+      "text": "Straits Times uppger att Trump vill ha med kämpar som assistenter",
       "stod": [
-       9,
-       12
+       12,
+       9
       ],
       "problem": null
      }
@@ -27446,32 +27572,7 @@
    "ok": true
   },
   "sammanhang": 0.715,
-  "betydelse": {
-   "sv": null,
-   "en": "Because Trump has urged the Justice Department to investigate his opponents as a Democratic-led Congress takes office, the issue concerns how the justice system is used in politics.",
-   "grund": [
-    3,
-    14
-   ],
-   "grund_kallor": [
-    {
-     "namn": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/"
-    },
-    {
-     "namn": "South China Morning Post",
-     "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job"
-    }
-   ],
-   "kontroll": {
-    "ok": false,
-    "problem": [
-     "slutsats: \"Because\" anger en orsakssamband (att den demokratiska kongressen tillträder är skälet till uppmaningen om utredningar) som källorna inte säger. SCMP skriver bara att Trump ger ordern \"facing an incoming Democratic Congress\".",
-     "slutsats: \"the issue concerns how the justice system is used in politics\" är en tolkning av vad saken handlar om, inte en uppgift i källmaterialet."
-    ]
-   },
-   "ok": false
-  },
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -27482,6 +27583,64 @@
     "usa"
    ],
    "per_region": {
+    "usa": [
+     {
+      "kalla": "The Daily Caller",
+      "land": "US",
+      "rubrik": "Trump Offers Press Secretary Position To Dana White, Who Reportedly Declines",
+      "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines",
+      "tid": 1794102450.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "New York Post",
+      "land": "US",
+      "rubrik": "Dana White reveals he’s flying to DC ‘right now’ after Trump offered him press secretary gig",
+      "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/",
+      "tid": 1794100444.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Trump offers UFC chief Dana White press secretary job",
+      "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
+      "tid": 1794093218.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hill",
+      "land": "US",
+      "rubrik": "Live updates: Melania Trump attends LSU-Alabama game; UFC's Dana White offered press secretary role",
+      "url": "https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/",
+      "tid": 1794082675.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Trump Asks Dana White of U.F.C. to Be His Press Secretary",
+      "url": "https://www.nytimes.com/2026/11/07/us/politics/trump-dana-white-ufc-press-secretary.html",
+      "tid": 1794097199.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "UFC CEO Dana White said plans to meet with President Trump on Monday to discuss the president’s offer to become the next White House press secretary",
+      "url": "https://www.wsj.com/politics/policy/ufc-chief-dana-white-to-meet-with-trump-to-discuss-press-secretary-job-af0cb2e4?mod=rss_socialpoliticsfeed",
+      "tid": 1794096960.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Washington Post",
+      "land": "US",
+      "rubrik": "Trump says he offered White House press secretary role to UFC’s Dana White",
+      "url": "https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/",
+      "tid": 1794096510.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "Hindustan Times",
@@ -27497,14 +27656,6 @@
       "rubrik": "Trump taps UFC boss as press secretary, urges criminal probes into Democrats",
       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/",
       "tid": 1794093420.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CNA",
-      "land": "SG",
-      "rubrik": "Trump offers UFC boss press secretary post, urges criminal probes of Democrats",
-      "url": "https://www.channelnewsasia.com/world/trump-white-house-press-secretary-dana-white-ufc-6533481",
-      "tid": 1794085200.0,
       "statskontrollerad": false
      },
      {
@@ -27537,64 +27688,6 @@
       "rubrik": "Trump asks UFC chief Dana White to be his new press secretary: ‘please take the job’",
       "url": "https://www.scmp.com/news/world/united-states-canada/article/3373670/trump-asks-ufc-chief-dana-white-be-his-new-press-secretary-please-take-job",
       "tid": 1794080649.0,
-      "statskontrollerad": false
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "New York Post",
-      "land": "US",
-      "rubrik": "Dana White reveals he’s flying to DC ‘right now’ after Trump offered him press secretary gig",
-      "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/",
-      "tid": 1794100444.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CNBC",
-      "land": "US",
-      "rubrik": "Trump offers UFC chief Dana White press secretary job",
-      "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
-      "tid": 1794093218.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hill",
-      "land": "US",
-      "rubrik": "Live updates: Melania Trump attends LSU-Alabama game; UFC's Dana White offered press secretary role",
-      "url": "https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/",
-      "tid": 1794082675.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Washington Examiner",
-      "land": "US",
-      "rubrik": "Trump offers White House press secretary position to Dana White",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4796567/trump-white-house-press-secretary-dana-white/",
-      "tid": 1794077786.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Trump Asks Dana White of U.F.C. to Be His Press Secretary",
-      "url": "https://www.nytimes.com/2026/11/07/us/politics/trump-dana-white-ufc-press-secretary.html",
-      "tid": 1794097199.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Wall Street Journal",
-      "land": "US",
-      "rubrik": "UFC CEO Dana White said plans to meet with President Trump on Monday to discuss the president’s offer to become the next White House press secretary",
-      "url": "https://www.wsj.com/politics/policy/ufc-chief-dana-white-to-meet-with-trump-to-discuss-press-secretary-job-af0cb2e4?mod=rss_socialpoliticsfeed",
-      "tid": 1794096960.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Washington Post",
-      "land": "US",
-      "rubrik": "Trump says he offered White House press secretary role to UFC’s Dana White",
-      "url": "https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/",
-      "tid": 1794096510.0,
       "statskontrollerad": false
      }
     ],
@@ -27660,18 +27753,18 @@
    "usa": {
     "rod": [
      {
+      "kalla": "The Daily Caller",
+      "rubrik": "Trump Offers Press Secretary Position To Dana White, Who Reportedly Declines",
+      "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines",
+      "tid": 1794102450.0,
+      "lutning": "hoger"
+     },
+     {
       "kalla": "New York Post",
       "rubrik": "Dana White reveals he’s flying to DC ‘right now’ after Trump offered him press secretary gig",
       "url": "https://nypost.com/2026/11/07/us-news/dana-white-reveals-hes-flying-to-dc-right-now-after-trump-offered-him-press-secretary-gig/",
       "tid": 1794100444.0,
       "lutning": "hoger"
-     },
-     {
-      "kalla": "Washington Examiner",
-      "rubrik": "Trump offers White House press secretary position to Dana White",
-      "url": "https://www.washingtonexaminer.com/news/white-house/4796567/trump-white-house-press-secretary-dana-white/",
-      "tid": 1794077786.0,
-      "lutning": "lutar_hoger"
      }
     ],
     "mitten": [
@@ -27716,8 +27809,20 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "UFC CEO Dana White declined Trump's White House press secretary offer: Report",
+  "reserv_rubrik": "Trump Offers Press Secretary Position To Dana White, Who Reportedly Declines",
   "kallor": [
+   {
+    "namn": "The Daily Caller",
+    "rubrik": "Trump Offers Press Secretary Position To Dana White, Who Reportedly Declines",
+    "url": "https://dailycaller.com/2026/11/07/donald-trump-press-secretary-dana-white-declines",
+    "tid": 1794102450.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Hindustan Times",
     "rubrik": "UFC CEO Dana White declined Trump's White House press secretary offer: Report",
@@ -27788,18 +27893,6 @@
     "land": "NO",
     "region": "norden",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "CNA",
-    "rubrik": "Trump offers UFC boss press secretary post, urges criminal probes of Democrats",
-    "url": "https://www.channelnewsasia.com/world/trump-white-house-press-secretary-dana-white-ufc-6533481",
-    "tid": 1794085200.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -27887,18 +27980,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Washington Examiner",
-    "rubrik": "Trump offers White House press secretary position to Dana White",
-    "url": "https://www.washingtonexaminer.com/news/white-house/4796567/trump-white-house-press-secretary-dana-white/",
-    "tid": 1794077786.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The New York Times",
     "rubrik": "Trump Asks Dana White of U.F.C. to Be His Press Secretary",
     "url": "https://www.nytimes.com/2026/11/07/us/politics/trump-dana-white-ufc-press-secretary.html",
@@ -27964,9 +28045,12 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1794103723.2466316,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1794107341.2544532
  }
 }
