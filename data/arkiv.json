@@ -729,32 +729,33 @@
  },
  "6bae3cb6aa": {
   "id": "6bae3cb6aa",
-  "amnen": [
-   "varlden"
-  ],
+  "amnen": [],
   "amnen_sektion": [],
-  "poang": 27.0,
+  "poang": 31.4,
   "vikt": {
-   "bredd": 0.203,
+   "bredd": 0.829,
    "regioner": {
-    "asien": 2,
-    "sverige": 1
+    "asien": 5,
+    "norden": 1,
+    "sverige": 1,
+    "mellanostern": 1
    },
-   "timmar": 49,
+   "timmar": 51,
    "konsekvens": {
     "berorda": 3,
     "allvar": 4,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "En dödlig tågolycka i Spanien har drabbat en by och de anhöriga hårt, men följderna är främst sorg och minnesstunder snarare än långvariga samhällseffekter."
+    "skal": "En tågkollision i Giza med fyra döda och 88 skadade är allvarlig för de drabbade, men påverkan är lokal och tillfällig."
    },
-   "bekraftad": true,
-   "maste": false
+   "bekraftad": false,
+   "maste": false,
+   "spar": []
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-10-31T21:24:41+00:00",
+  "senast": "2026-11-08T15:50:35+00:00",
   "utkast": {
    "rubrik_sv": "Minst 69 döda i tågolyckan nära Toledo i Spanien",
    "sammanfattning_sv": "Minst 69 personer har dött efter att ett höghastighetståg kört in i ett stillastående tåg nära Toledo i Spanien på onsdagen, enligt flera medier. Spanien har inlett tre dagars sorgeperiod, och sök- och räddningsarbetet i vraken fortsätter.",
@@ -989,22 +990,60 @@
   "perspektiv": {
    "regioner": [
     "asien",
+    "mellanostern",
+    "norden",
     "sverige"
    ],
    "per_region": {
     "asien": [
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Spanish village holds memorial mass for train crash victims",
-      "url": "https://www.hindustantimes.com/world-news/spanish-village-holds-memorial-mass-for-train-crash-victims-101793481882048.html",
+      "kalla": "Dawn",
+      "land": "PK",
+      "rubrik": "Train collision in Egypt's Giza kills 4, injures 88: health ministry",
+      "url": "https://www.dawn.com/news/2043076/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
+      "tid": 1794153035.0,
       "statskontrollerad": false
      },
      {
       "kalla": "The Straits Times",
       "land": "SG",
-      "rubrik": "Spanish village holds memorial Mass for train crash victims",
-      "url": "https://www.straitstimes.com/world/europe/spanish-village-gathers-for-memorial-mass-for-train-crash-victims",
+      "rubrik": "Train collision in Egypt’s Giza kills 4, injures 88",
+      "url": "https://www.straitstimes.com/world/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
+      "tid": 1794151920.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Train collision in Egypt's Giza kills four, injures 88 others: Health Ministry",
+      "url": "https://www.thehindu.com/news/international/egypt-train-collision-giza-to-fayoum-crash-updates-november-8-2026/article71681077.ece",
+      "tid": 1794150719.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "South China Morning Post",
+      "land": "HK",
+      "rubrik": "Train collision in Egypt kills 4, injures 88",
+      "url": "https://www.scmp.com/news/world/africa/article/3373713/train-collision-egypt-kills-4-injures-88",
+      "tid": 1794149802.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Four killed, 88 injured as two trains collide in Egypt",
+      "url": "https://www.hindustantimes.com/world-news/egypt-giza-train-collision-killed-injured-health-ministry-101794149191039.html",
+      "tid": 1794149665.0,
+      "statskontrollerad": false
+     }
+    ],
+    "norden": [
+     {
+      "kalla": "DR Nyheder",
+      "land": "DK",
+      "rubrik": "Fire omkommet og mange kvæstet i togulykke i Egypten",
+      "url": "https://www.dr.dk/nyheder/seneste/fire-omkommet-og-mange-kvaestet-i-togulykke-i-egypten",
+      "tid": 1794151153.0,
       "statskontrollerad": false
      }
     ],
@@ -1012,22 +1051,95 @@
      {
       "kalla": "Sveriges Radio Ekot",
       "land": "SE",
-      "rubrik": "Fullsatt kyrka i Spanien – minnesstund efter dödliga tågolyckan",
-      "url": "https://www.sverigesradio.se/artikel/9332111",
+      "rubrik": "Fyra döda och många skadade när tåg krockade i Egypten",
+      "url": "https://www.sverigesradio.se/artikel/9336831",
+      "tid": 1794148620.0,
       "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Egypt train crash kills four and injures 88 in Giza, health ministry says",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/08/at-least-64-injured-in-egypt-train-derailment/",
+      "tid": 1794143240.0,
+      "statskontrollerad": true
      }
     ]
    },
    "blind_flack": null,
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Spanish village holds memorial mass for train crash victims",
+  "reserv_rubrik": "Train collision in Egypt's Giza kills 4, injures 88: health ministry",
   "kallor": [
    {
+    "namn": "Dawn",
+    "rubrik": "Train collision in Egypt's Giza kills 4, injures 88: health ministry",
+    "url": "https://www.dawn.com/news/2043076/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
+    "tid": 1794153035.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "PK",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Train collision in Egypt’s Giza kills 4, injures 88",
+    "url": "https://www.straitstimes.com/world/train-collision-in-egypts-giza-kills-4-injures-88-health-ministry",
+    "tid": 1794151920.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "DR Nyheder",
+    "rubrik": "Fire omkommet og mange kvæstet i togulykke i Egypten",
+    "url": "https://www.dr.dk/nyheder/seneste/fire-omkommet-og-mange-kvaestet-i-togulykke-i-egypten",
+    "tid": 1794151153.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DK",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Train collision in Egypt's Giza kills four, injures 88 others: Health Ministry",
+    "url": "https://www.thehindu.com/news/international/egypt-train-collision-giza-to-fayoum-crash-updates-november-8-2026/article71681077.ece",
+    "tid": 1794150719.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "South China Morning Post",
+    "rubrik": "Train collision in Egypt kills 4, injures 88",
+    "url": "https://www.scmp.com/news/world/africa/article/3373713/train-collision-egypt-kills-4-injures-88",
+    "tid": 1794149802.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "HK",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Hindustan Times",
-    "rubrik": "Spanish village holds memorial mass for train crash victims",
-    "url": "https://www.hindustantimes.com/world-news/spanish-village-holds-memorial-mass-for-train-crash-victims-101793481882048.html",
+    "rubrik": "Four killed, 88 injured as two trains collide in Egypt",
+    "url": "https://www.hindustantimes.com/world-news/egypt-giza-train-collision-killed-injured-health-ministry-101794149191039.html",
+    "tid": 1794149665.0,
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
@@ -1037,8 +1149,9 @@
    },
    {
     "namn": "Sveriges Radio Ekot",
-    "rubrik": "Fullsatt kyrka i Spanien – minnesstund efter dödliga tågolyckan",
-    "url": "https://www.sverigesradio.se/artikel/9332111",
+    "rubrik": "Fyra döda och många skadade när tåg krockade i Egypten",
+    "url": "https://www.sverigesradio.se/artikel/9336831",
+    "tid": 1794148620.0,
     "betalvagg": false,
     "typ": "media",
     "land": "SE",
@@ -1047,23 +1160,33 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Straits Times",
-    "rubrik": "Spanish village holds memorial Mass for train crash victims",
-    "url": "https://www.straitstimes.com/world/europe/spanish-village-gathers-for-memorial-mass-for-train-crash-victims",
+    "namn": "The National",
+    "rubrik": "Egypt train crash kills four and injures 88 in Giza, health ministry says",
+    "url": "https://www.thenationalnews.com/news/mena/2026/11/08/at-least-64-injured-in-egypt-train-derailment/",
+    "tid": 1794143240.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
-  "autopilot": [],
+  "autopilot": [
+   "källkontrollen har 1 anmärkningar"
+  ],
   "data": null,
   "godkand_tid": 1793343820.0936654,
   "automatisk": false,
-  "uppdaterad_tid": 1793497709.0092294
+  "uppdaterad_tid": 1794154199.242231,
+  "narrativ": null,
+  "sammanhang": 0.81,
+  "betydelse": null,
+  "relevans": {
+   "sv": 2,
+   "en": 2
+  }
  },
  "ab4217a652": {
   "id": "ab4217a652",
@@ -8783,34 +8906,34 @@
   "id": "0885b658b7",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 47.5,
+  "poang": 40.6,
   "vikt": {
-   "bredd": 2.004,
+   "bredd": 1.746,
    "regioner": {
-    "europa": 6,
-    "usa": 7,
-    "asien": 7,
     "mellanostern": 3,
-    "latinamerika": 2,
+    "europa": 6,
+    "asien": 7,
+    "latinamerika": 1,
+    "usa": 5,
     "norden": 1,
-    "sverige": 2
+    "sverige": 1
    },
-   "timmar": 35,
+   "timmar": 20,
    "konsekvens": {
     "berorda": 5,
-    "allvar": 4,
-    "varaktighet": 4,
-    "medel": 4.33,
-    "skal": "Israels president har pekat ut oppositionsledaren Gadi Eisenkot att försöka bilda regering, vilket kan innebära slutet på Netanyahus långa maktperiod i ett land i krigstillstånd."
+    "allvar": 3,
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "Israels president ger oppositionsledaren Eisenkot uppdraget att bilda regering, vilket kan avsluta Netanyahus tid vid makten men är ännu osäkert."
    },
    "bekraftad": true,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 28,
+  "antal_kallor": 24,
   "har_primarkalla": false,
-  "senast": "2026-11-08T14:26:14+00:00",
+  "senast": "2026-11-08T15:30:27+00:00",
   "utkast": {
    "rubrik_sv": "Israels president inleder samtal med partiledare om regeringsbildning",
    "sammanfattning_sv": "Israels president Isaac Herzog har inlett samtal med partiledarna om vem som ska få i uppdrag att bilda regering, enligt DR. The New York Times skriver att frågan gäller om Netanyahu eller Eisenkot kan bilda regeringen.",
@@ -8913,7 +9036,358 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Svårt att bilda regering",
+     "namn_en": "Difficult coalition-building",
+     "lyfter_sv": "Straits Times lyfter fram riskabla samarbeten, DW politiska utmaningar, Al Jazeera frågar om en splittrad opposition, Fox koalitionsklyftor om arabiska partier, RT ett svårt koalitionsbygge och BBC att ingen bloc fick majoritet.",
+     "lyfter_en": "The Straits Times highlights risky partnerships, DW political challenges, Al Jazeera asks about a divided opposition, Fox coalition rifts over Arab parties, RT a difficult coalition-building task, and the BBC that neither bloc won a majority.",
+     "kallor": [
+      {
+       "namn": "Deutsche Welle",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dw.com/en/israel-eisenkot-officially-tasked-with-forming-a-government/a-79891422?maca=en-rss-en-all-1573-rdf"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/tasked-with-forming-next-government-eisenkot-faces-complex-path-to-end-netanyahus-reign"
+      },
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+       "namn": "Fox News",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://www.foxnews.com/world/israeli-president-picks-netanyahu-rival-form-government-coalition-battle-looms"
+      },
+      {
+       "namn": "RT",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://rt-english.com/news/648551-netanyahu-eisenkot-israel-government/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Slag mot Netanyahus makt",
+     "namn_en": "Blow to Netanyahu's power",
+     "lyfter_sv": "NPR lyfter fram ett slag mot Netanyahus grepp om makten, Axios ett stort bakslag för honom, The National (statskontrollerat medium) en motgång för Netanyahu och Dawn att Netanyahu kämpar för att stanna kvar.",
+     "lyfter_en": "NPR highlights a blow to Netanyahu's grip on power, Axios a major setback for him, The National (state-controlled media) a setback for Netanyahu, and Dawn that Netanyahu is fighting to stay in office.",
+     "kallor": [
+      {
+       "namn": "NPR",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government"
+      },
+      {
+       "namn": "Dawn",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dawn.com/news/2042866/israeli-president-picks-netanyahus-rival-gadi-eisenkot-to-try-to-form-government"
+      },
+      {
+       "namn": "Axios",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog"
+      },
+      {
+       "namn": "The National",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.thenationalnews.com/news/mena/2026/11/08/israeli-president-picks-eisenkot-to-form-government-in-setback-for-netanyahu/"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Vem Eisenkot är",
+     "namn_en": "Who Eisenkot is",
+     "lyfter_sv": "Al-Monitor lyfter fram Eisenkots politiska oerfarenhet, Le Monde att han är en nykomling i politiken, SCMP att han är en anspråkslös före detta arméchef och NYT frågar vem han är som oppositionsledare.",
+     "lyfter_en": "Al-Monitor highlights Eisenkot's political inexperience, Le Monde that he is a newcomer to politics, the SCMP that he is an unassuming former army chief, and the NYT asks who he is as opposition leader.",
+     "kallor": [
+      {
+       "namn": "Al-Monitor",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-given-tough-task-forming-israeli-government-over-netanyahu"
+      },
+      {
+       "namn": "South China Morning Post",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.scmp.com/news/world/middle-east/article/3373679/who-eisenkot-former-israeli-general-expected-replace-netanyahu"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html"
+      },
+      {
+       "namn": "Le Monde (English)",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.lemonde.fr/en/international/article/2026/11/08/gadi-eisenkot-the-political-newcomer-tasked-with-forming-israel-s-government_6774913_4.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Uppdraget och tidsfristen",
+     "namn_en": "The mandate and the deadline",
+     "lyfter_sv": "Hindustan Times lyfter fram 28 dagar med möjlig förlängning, Rio Times 28 dagar och 61 av 120 mandat, CGTN ett uppdrag efter samråd med partierna, Japan Times och The Hindu att presidenten valt Eisenkot.",
+     "lyfter_en": "Hindustan Times highlights 28 days with a possible extension, Rio Times 28 days and 61 of 120 seats, CGTN a mandate following consultations with parties, and the Japan Times and The Hindu that the president chose Eisenkot.",
+     "kallor": [
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/10-things-to-know-as-gadi-eisenkot-netanyahu-rival-gets-chance-to-form-israel-government-after-close-vote-101794131667578.html"
+      },
+      {
+       "namn": "The Rio Times",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.riotimesonline.com/eisenkot-gets-first-chance-form-israel-government/"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/israeli-president-picks-gadi-eisenkot-netanyahu-rival-to-try-to-form-government/article71679477.ece"
+      },
+      {
+       "namn": "The Japan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/israel-president-gadi-eisenkot-government/"
+      },
+      {
+       "namn": "CGTN",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://news.cgtn.com/news/2026-11-08/Herzog-taps-Eisenkot-to-form-next-Israeli-government-1RTzopQZPiw/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "latinamerika"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 20,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Israels president ger Eisenkot uppdraget att bilda regering",
+      "stod": [
+       2,
+       11,
+       12,
+       16
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: samarbete med arabiska eller ultraortodoxa partier är riskabelt",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW: uppdraget innebär politiska utmaningar",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera frågar om Eisenkot kan bilda regering med en splittrad opposition",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News: djupa koalitionsklyftor kring arabiska partier",
+      "stod": [
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "RT: svårt att bygga en regeringskoalition",
+      "stod": [
+       24
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: varken Netanyahus block eller motståndarnas block fick majoritet i valet",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR: uppdraget är ett slag mot Netanyahus grepp om makten",
+      "stod": [
+       14
+      ],
+      "problem": null
+     },
+     {
+      "text": "Axios: uppdraget är ett stort bakslag för Netanyahu",
+      "stod": [
+       16
+      ],
+      "problem": null
+     },
+     {
+      "text": "The National (statskontrollerat): uppdraget är en motgång för Netanyahu",
+      "stod": [
+       22
+      ],
+      "problem": null
+     },
+     {
+      "text": "Dawn: Netanyahu kämpar för att stanna kvar vid makten",
+      "stod": [
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al-Monitor: Eisenkot är politiskt oerfaren",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Le Monde: Eisenkot är en nykomling i politiken",
+      "stod": [
+       19
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP: Eisenkot är en anspråkslös före detta arméchef",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT frågar vem Eisenkot är som oppositionsledare",
+      "stod": [
+       18
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: 28 dagar, med möjlighet till förlängning",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rio Times: 28 dagar och 61 av 120 mandat krävs",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "CGTN: uppdraget ges efter samråd med partierna",
+      "stod": [
+       23
+      ],
+      "problem": null
+     },
+     {
+      "text": "Japan Times: presidenten har valt Eisenkot",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: presidenten har valt Eisenkot",
+      "stod": [
+       9
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -8926,7 +9400,41 @@
     "usa"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "Eisenkot given tough task of forming Israeli government over Netanyahu",
+      "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-given-tough-task-forming-israeli-government-over-netanyahu",
+      "tid": 1794151827.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Will Eisenkot be able to form Israel’s next gov’t amid divided opposition?",
+      "url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss",
+      "tid": 1794137698.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Israeli president picks Eisenkot to form government in setback for Netanyahu",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/08/israeli-president-picks-eisenkot-to-form-government-in-setback-for-netanyahu/",
+      "tid": 1794113013.0,
+      "statskontrollerad": true
+     }
+    ],
     "europa": [
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Israel: Eisenkot officially tasked with forming a government",
+      "url": "https://www.dw.com/en/israel-eisenkot-officially-tasked-with-forming-a-government/a-79891422?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794151080.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Guardian",
       "land": "GB",
@@ -8936,27 +9444,19 @@
       "statskontrollerad": false
      },
      {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Middle East live: Israeli president officially tasks Eisenkot with forming government",
+      "url": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
+      "tid": 1794131256.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "BBC World",
       "land": "GB",
       "rubrik": "Israel's president tasks opposition leader Eisenkot with forming government",
       "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
       "tid": 1794089999.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Israeli president tasks Gadi Eisenkot with forming government",
-      "url": "https://www.dw.com/en/israeli-president-tasks-gadi-eisenkot-with-forming-government/a-79888288?maca=en-rss-en-all-1573-rdf",
-      "tid": 1794081360.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "🔴 Israeli president picks Netanyahu's rival Eisenkot to try to form government",
-      "url": "https://www.france24.com/en/middle-east/20261107-israeli-president-picks-netanyahu-s-rival-eisenkot-to-try-to-form-government",
-      "tid": 1794080304.0,
       "statskontrollerad": false
      },
      {
@@ -8974,64 +9474,6 @@
       "url": "https://rt-english.com/news/648551-netanyahu-eisenkot-israel-government/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
       "tid": 1794093842.0,
       "statskontrollerad": true
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "New York Post",
-      "land": "US",
-      "rubrik": "Netanyahu’s rival will have first shot at becoming Israel’s new prime minister — despite lackluster election result",
-      "url": "https://nypost.com/2026/11/08/us-news/israels-president-gives-netanyahus-rival-gadi-eisenkot-a-chance/",
-      "tid": 1794146856.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Fox News",
-      "land": "US",
-      "rubrik": "Israeli president taps Netanyahu rival to form government as coalition battle looms",
-      "url": "https://www.foxnews.com/world/israeli-president-picks-netanyahu-rival-form-government-coalition-battle-looms",
-      "tid": 1794089857.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "NPR",
-      "land": "US",
-      "rubrik": "Israeli president invites Netanyahu's opposition leader to broker new government",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
-      "tid": 1794089529.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Axios",
-      "land": "US",
-      "rubrik": "Netanyahu rival Eisenkot tapped to form Israeli government",
-      "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog",
-      "tid": 1794084512.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
-      "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
-      "tid": 1794141220.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Washington Post",
-      "land": "US",
-      "rubrik": "Ex-military chief Gadi Eisenkot, opponent of Netanyahu, tapped to form government",
-      "url": "https://www.washingtonpost.com/world/2026/11/07/israeli-president-taps-ex-general-eisenkot-opponent-netanyahu-form-government/",
-      "tid": 1794089889.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Wall Street Journal",
-      "land": "US",
-      "rubrik": "Netanyahu’s Challenger Tapped to Try to Form Israeli Government",
-      "url": "https://www.wsj.com/world/middle-east/netanyahus-challenger-tapped-to-try-to-form-israeli-government-583fd2da?mod=rss_worldnews",
-      "tid": 1794085260.0,
-      "statskontrollerad": false
      }
     ],
     "asien": [
@@ -9092,47 +9534,55 @@
       "statskontrollerad": true
      }
     ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Will Eisenkot be able to form Israel’s next gov’t amid divided opposition?",
-      "url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss",
-      "tid": 1794137698.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Al-Monitor",
-      "land": "US",
-      "rubrik": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government",
-      "url": "https://www.al-monitor.com/originals/2026/11/israeli-president-picks-gadi-eisenkot-netanyahu-rival-try-form-government",
-      "tid": 1794084388.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Israeli president picks Eisenkot to form government in setback for Netanyahu",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/08/israeli-president-picks-eisenkot-to-form-government-in-setback-for-netanyahu/",
-      "tid": 1794113013.0,
-      "statskontrollerad": true
-     }
-    ],
     "latinamerika": [
      {
       "kalla": "The Rio Times",
       "land": "BR",
-      "rubrik": "Israel Pick Sends Netanyahu Exit Odds to 68%",
-      "url": "https://www.riotimesonline.com/netanyahu-exit-odds-herzog-eisenkot-pick-2026/",
-      "tid": 1794130192.0,
+      "rubrik": "Israel Taps Eisenkot to Form a Government",
+      "url": "https://www.riotimesonline.com/eisenkot-gets-first-chance-form-israel-government/",
+      "tid": 1794128767.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Israeli president taps Netanyahu rival to form government as coalition battle looms",
+      "url": "https://www.foxnews.com/world/israeli-president-picks-netanyahu-rival-form-government-coalition-battle-looms",
+      "tid": 1794089857.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "El País América",
-      "land": "ES",
-      "rubrik": "El presidente de Israel encarga formar Gobierno al líder opositor Gadi Eisenkot",
-      "url": "https://elpais.com/internacional/2026-11-07/el-presidente-de-israel-encarga-formar-gobierno-al-lider-opositor-gadi-eisenkot.html",
-      "tid": 1794086508.0,
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "Israeli president invites Netanyahu's opposition leader to broker new government",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
+      "tid": 1794089529.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Axios",
+      "land": "US",
+      "rubrik": "Netanyahu rival Eisenkot tapped to form Israeli government",
+      "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog",
+      "tid": 1794084512.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
+      "url": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
+      "tid": 1794141220.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Washington Post",
+      "land": "US",
+      "rubrik": "Ex-military chief Gadi Eisenkot, opponent of Netanyahu, tapped to form government",
+      "url": "https://www.washingtonpost.com/world/2026/11/07/israeli-president-taps-ex-general-eisenkot-opponent-netanyahu-form-government/",
+      "tid": 1794089889.0,
       "statskontrollerad": false
      }
     ],
@@ -9148,14 +9598,6 @@
     ],
     "sverige": [
      {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Eisenkot får uppdrag att bilda regering i Israel",
-      "url": "https://www.sverigesradio.se/artikel/9336695",
-      "tid": 1794081660.0,
-      "statskontrollerad": false
-     },
-     {
       "kalla": "Dagens Nyheter",
       "land": "SE",
       "rubrik": "Netanyahus rival ska försöka bilda regering",
@@ -9169,13 +9611,6 @@
    "grannar_svenska": false,
    "usa": {
     "rod": [
-     {
-      "kalla": "New York Post",
-      "rubrik": "Netanyahu’s rival will have first shot at becoming Israel’s new prime minister — despite lackluster election result",
-      "url": "https://nypost.com/2026/11/08/us-news/israels-president-gives-netanyahus-rival-gadi-eisenkot-a-chance/",
-      "tid": 1794146856.0,
-      "lutning": "hoger"
-     },
      {
       "kalla": "Fox News",
       "rubrik": "Israeli president taps Netanyahu rival to form government as coalition battle looms",
@@ -9213,21 +9648,36 @@
       "tid": 1794089889.0,
       "lutning": "lutar_vanster"
      }
-    ],
-    "mitten": [
-     {
-      "kalla": "The Wall Street Journal",
-      "rubrik": "Netanyahu’s Challenger Tapped to Try to Form Israeli Government",
-      "url": "https://www.wsj.com/world/middle-east/netanyahus-challenger-tapped-to-try-to-form-israeli-government-583fd2da?mod=rss_worldnews",
-      "tid": 1794085260.0,
-      "lutning": "mitten"
-     }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
+  "reserv_rubrik": "Eisenkot given tough task of forming Israeli government over Netanyahu",
   "kallor": [
+   {
+    "namn": "Al-Monitor",
+    "rubrik": "Eisenkot given tough task of forming Israeli government over Netanyahu",
+    "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-given-tough-task-forming-israeli-government-over-netanyahu",
+    "tid": 1794151827.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Deutsche Welle",
+    "rubrik": "Israel: Eisenkot officially tasked with forming a government",
+    "url": "https://www.dw.com/en/israel-eisenkot-officially-tasked-with-forming-a-government/a-79891422?maca=en-rss-en-all-1573-rdf",
+    "tid": 1794151080.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DE",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Guardian",
     "rubrik": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
@@ -9237,18 +9687,6 @@
     "typ": "media",
     "land": "GB",
     "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "New York Post",
-    "rubrik": "Netanyahu’s rival will have first shot at becoming Israel’s new prime minister — despite lackluster election result",
-    "url": "https://nypost.com/2026/11/08/us-news/israels-president-gives-netanyahus-rival-gadi-eisenkot-a-chance/",
-    "tid": 1794146856.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -9289,10 +9727,22 @@
     "statskontrollerad": false
    },
    {
+    "namn": "France 24",
+    "rubrik": "Middle East live: Israeli president officially tasks Eisenkot with forming government",
+    "url": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
+    "tid": 1794131256.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The Rio Times",
-    "rubrik": "Israel Pick Sends Netanyahu Exit Odds to 68%",
-    "url": "https://www.riotimesonline.com/netanyahu-exit-odds-herzog-eisenkot-pick-2026/",
-    "tid": 1794130192.0,
+    "rubrik": "Israel Taps Eisenkot to Form a Government",
+    "url": "https://www.riotimesonline.com/eisenkot-gets-first-chance-form-israel-government/",
+    "tid": 1794128767.0,
     "betalvagg": false,
     "typ": "media",
     "land": "BR",
@@ -9373,18 +9823,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "El País América",
-    "rubrik": "El presidente de Israel encarga formar Gobierno al líder opositor Gadi Eisenkot",
-    "url": "https://elpais.com/internacional/2026-11-07/el-presidente-de-israel-encarga-formar-gobierno-al-lider-opositor-gadi-eisenkot.html",
-    "tid": 1794086508.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ES",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Dawn",
     "rubrik": "Israeli president picks Netanyahu's rival Gadi Eisenkot to try to form government",
     "url": "https://www.dawn.com/news/2042866/israeli-president-picks-netanyahus-rival-gadi-eisenkot-to-try-to-form-government",
@@ -9409,18 +9847,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Al-Monitor",
-    "rubrik": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government",
-    "url": "https://www.al-monitor.com/originals/2026/11/israeli-president-picks-gadi-eisenkot-netanyahu-rival-try-form-government",
-    "tid": 1794084388.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "NRK",
     "rubrik": "Eisenkot får i oppdrag å danne regjering i Israel",
     "url": "https://www.nrk.no/nyheter/eisenkot-far-i-oppdrag-a-danne-regjering-i-israel-1.18076617",
@@ -9429,42 +9855,6 @@
     "typ": "media",
     "land": "NO",
     "region": "norden",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Sveriges Radio Ekot",
-    "rubrik": "Eisenkot får uppdrag att bilda regering i Israel",
-    "url": "https://www.sverigesradio.se/artikel/9336695",
-    "tid": 1794081660.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Deutsche Welle",
-    "rubrik": "Israeli president tasks Gadi Eisenkot with forming government",
-    "url": "https://www.dw.com/en/israeli-president-tasks-gadi-eisenkot-with-forming-government/a-79888288?maca=en-rss-en-all-1573-rdf",
-    "tid": 1794081360.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "France 24",
-    "rubrik": "🔴 Israeli president picks Netanyahu's rival Eisenkot to try to form government",
-    "url": "https://www.france24.com/en/middle-east/20261107-israeli-president-picks-netanyahu-s-rival-eisenkot-to-try-to-form-government",
-    "tid": 1794080304.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
    },
@@ -9517,18 +9907,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Wall Street Journal",
-    "rubrik": "Netanyahu’s Challenger Tapped to Try to Form Israeli Government",
-    "url": "https://www.wsj.com/world/middle-east/netanyahus-challenger-tapped-to-try-to-form-israeli-government-583fd2da?mod=rss_worldnews",
-    "tid": 1794085260.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The National",
     "rubrik": "Israeli president picks Eisenkot to form government in setback for Netanyahu",
     "url": "https://www.thenationalnews.com/news/mena/2026/11/08/israeli-president-picks-eisenkot-to-form-government-in-setback-for-netanyahu/",
@@ -9567,7 +9945,7 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 3,
+   "sv": 2,
    "en": 3
   },
   "autopilot": [
@@ -9576,8 +9954,8 @@
   "data": null,
   "godkand_tid": 1793837402.5207515,
   "automatisk": true,
-  "sammanhang": 0.663,
-  "uppdaterad_tid": 1794150510.3686857
+  "sammanhang": 0.678,
+  "uppdaterad_tid": 1794154199.242231
  },
  "d429cbf73a": {
   "id": "d429cbf73a",
@@ -19223,27 +19601,27 @@
   "id": "a5940a11a3",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 34.9,
+  "poang": 34.5,
   "vikt": {
-   "bredd": 0.415,
+   "bredd": 0.474,
    "regioner": {
-    "asien": 2,
+    "asien": 3,
     "mellanostern": 2
    },
    "timmar": 96,
    "konsekvens": {
-    "berorda": 5,
+    "berorda": 4,
     "allvar": 4,
     "varaktighet": 3,
-    "medel": 4.0,
-    "skal": "Flera tankfartyg har satts i brand i Hormuzsundet, en viktig oljeled, i en konflikt med Iran som kan påverka världens energiförsörjning och sjöfart under en längre tid."
+    "medel": 3.67,
+    "skal": "Flera tankfartyg brinner i Hormuzsundet efter explosioner, vilket hotar sjöfart och energiförsörjning i en redan spänd konflikt med Iran."
    },
    "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 5,
   "har_primarkalla": false,
   "senast": "2026-11-08T11:46:47+00:00",
   "utkast": {
@@ -19373,15 +19751,154 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.625,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Fartyg bröt mot restriktioner",
+     "namn_en": "Vessels breached restrictions",
+     "lyfter_sv": "Middle East Eye lyfter fram att IRGC beskriver tankfartygen som otillåtna på en egen rutt, medan Tehran Times lyfter fram att ett fartyg gick in i en begränsad zon trots varningar och träffade en sjömina.",
+     "lyfter_en": "Middle East Eye reports that the IRGC describes the tankers as using an unauthorized route, while Tehran Times reports that a vessel entered a restricted zone despite warnings and struck a sea mine.",
+     "kallor": [
+      {
+       "namn": "Middle East Eye",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-three-tankers-ablaze-strait-hormuz"
+      },
+      {
+       "namn": "Tehran Times",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine"
+      }
+     ],
+     "regioner": [
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Explosioner och bränder i sundet",
+     "namn_en": "Explosions and fires in the strait",
+     "lyfter_sv": "The Hindu lyfter fram att tre tankfartyg fattat eld och tillskriver Iran, ABC News lyfter fram explosioner i sundet parallellt med Irans granskning av avtrappningsförslag, och Straits Times lyfter fram explosioner på Qeshm-ön med oklar orsak.",
+     "lyfter_en": "The Hindu reports three tankers caught fire and attributes this to Iran, ABC News reports explosions in the strait alongside Iran reviewing de-escalation proposals, and The Straits Times reports explosions on Qeshm Island with unclear cause.",
+     "kallor": [
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/iran-says-two-tankers-caught-fire-in-hormuz-after-hitting-mines/article71680557.ece"
+      },
+      {
+       "namn": "ABC News (Australien)",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/middle-east/explosions-heard-in-irans-qeshm-island-iranian-media-reports"
+      }
+     ],
+     "regioner": [
+      "asien"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "antal": 9,
+    "problem": [
+     "fel tillskrivning: Fartyg bröt mot restriktioner (berättelsens titel, framställd som fakta)"
+    ],
+    "pastaenden": [
+     {
+      "text": "Explosioner och bränder på tankfartyg i Hormuzsundet (rubriken)",
+      "stod": [
+       1,
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fartyg bröt mot restriktioner (berättelsens titel, framställd som fakta)",
+      "stod": [
+       2,
+       5
+      ],
+      "problem": "fel tillskrivning"
+     },
+     {
+      "text": "Middle East Eye: IRGC beskriver tankfartygen som otillåtna på en egen rutt",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times: ett fartyg gick in i en begränsad zon trots varningar",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Tehran Times: ett fartyg träffade en sjömina",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: tre tankfartyg fattade eld",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: tillskriver Iran",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "ABC News: explosioner i sundet parallellt med Irans granskning av avtrappningsförslag",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: explosioner på Qeshm-ön med oklar orsak",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": "Berättelsetiteln \"Fartyg bröt mot restriktioner\" återger som fakta vad som bara är IRGC:s och den iranska flottans påståenden, utan tillskrivning. Övriga påståenden har stöd i källorna."
+   },
+   "ok": false
+  },
+  "sammanhang": 0.589,
   "betydelse": {
-   "sv": "Eftersom tankfartyg enligt Irans revolutionsgarde brinner i Hormuzsundet kan oljepriset och därmed bränslepriserna i Sverige påverkas.",
-   "en": "Since the IRGC says three tankers are ablaze in the Strait of Hormuz, oil prices and, in turn, fuel costs for households in the US and UK could be affected.",
+   "sv": "Eftersom tankfartyg i Hormuzsundet enligt uppgifter brinner efter explosioner hänger detta ihop med oljepriset, som i sin tur påverkar priserna på bensin och diesel i Sverige.",
+   "en": "Since tankers in the Strait of Hormuz are reported ablaze after explosions, this links to oil prices, which in turn affect fuel prices at the pump for households.",
    "grund": [
     1,
     2,
-    4
+    4,
+    5
    ],
    "grund_kallor": [
     {
@@ -19391,6 +19908,10 @@
     {
      "namn": "Middle East Eye",
      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-three-tankers-ablaze-strait-hormuz"
+    },
+    {
+     "namn": "The Straits Times",
+     "url": "https://www.straitstimes.com/world/middle-east/explosions-heard-in-irans-qeshm-island-iranian-media-reports"
     },
     {
      "namn": "Tehran Times",
@@ -19424,6 +19945,14 @@
       "rubrik": "Explosions in Strait of Hormuz as Iran reviews de-escalation proposals",
       "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
       "tid": 1794100071.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Explosions heard in Iran's Qeshm Island, Iranian media reports",
+      "url": "https://www.straitstimes.com/world/middle-east/explosions-heard-in-irans-qeshm-island-iranian-media-reports",
+      "tid": 1794082998.0,
       "statskontrollerad": false
      }
     ],
@@ -19490,6 +20019,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Straits Times",
+    "rubrik": "Explosions heard in Iran's Qeshm Island, Iranian media reports",
+    "url": "https://www.straitstimes.com/world/middle-east/explosions-heard-in-irans-qeshm-island-iranian-media-reports",
+    "tid": 1794082998.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Tehran Times",
     "rubrik": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz",
     "url": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine",
@@ -19513,7 +20054,7 @@
   "data": null,
   "godkand_tid": 1793927442.8857913,
   "automatisk": true,
-  "uppdaterad_tid": 1794147018.2686584
+  "uppdaterad_tid": 1794154199.242231
  },
  "de0e99ee50": {
   "id": "de0e99ee50",
