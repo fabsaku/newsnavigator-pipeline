@@ -463,9 +463,9 @@ def betydelse_block(ev, lang=None):
     if not (sv or en):
         return ""
     text = (f'<span class="sv">{_e(sv)}</span>' if sv else "") + (f'<span class="en">{_e(en)}</span>' if en else "")
-    rubrik = (f'<span class="sv">Analys</span>' if sv else "") + (f'<span class="en">Analysis</span>' if en else "")
-    note = (f'<span class="sv">Det här är en bedömning, inte en nyhet. Raden är skriven med hjälp av AI, bygger på fakta ovan och kontrollerad mot källorna. Den innehåller inga råd och inga förutsägelser.</span>' if sv else "") + \
-           (f'<span class="en">This is a judgement, not news. The line is written with the help of AI, builds on the facts above and is checked against the sources. It contains no advice and no predictions.</span>' if en else "")
+    rubrik = ('<span class="sv">Analys</span>' if sv else "") + ('<span class="en">Analysis</span>' if en else "")
+    note = ('<span class="sv">Det här är en bedömning, inte en nyhet. Raden är skriven med hjälp av AI, bygger på fakta ovan och kontrollerad mot källorna. Den innehåller inga råd och inga förutsägelser.</span>' if sv else "") + \
+           ('<span class="en">This is a judgement, not news. The line is written with the help of AI, builds on the facts above and is checked against the sources. It contains no advice and no predictions.</span>' if en else "")
     return f'<h3 class="section-h">{rubrik}</h3><p class="persp">{text}</p><p class="note">{note}</p>'
 
 

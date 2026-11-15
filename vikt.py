@@ -17,7 +17,6 @@ med konsekvens minst 3. Sådana händelser får inte missas och går till Behöv
 """
 import json
 import math
-import re
 import time
 from pathlib import Path
 

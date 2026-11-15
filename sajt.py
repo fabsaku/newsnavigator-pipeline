@@ -27,7 +27,7 @@ import rattelser
 import spar
 import utgava
 from newsletter import SECTIONS, section_of, utan_upprepningar
-from render import (CSS, FONTS_URL, JS, stampel, tidstext, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country, meta_line,
+from render import (CSS, FONTS_URL, JS, stampel, tidstext, LEANS, REGION_ORDER, REGIONS, _both, _e, _mascot, country,
                     story_featured, story_full, story_item, story_lead)
 
 ROOT = Path(__file__).parent
@@ -676,7 +676,6 @@ LEGACY = [f"{k}" for k, *_ in SECTIONS] + ["n", "om", "kallor", "navigatorn", "f
 
 
 def chooser_page(banner="", noindex=True):
-    u = Urls(False)
     cards = "".join(f'<a href="/{k}/" hreflang="{k}" lang="{k}"><h2>{_e(name)}</h2><p>{_e(text)}</p></a>' for k, name, text in CHOOSER)
     body = (f'<h1 class="pagetitle">Newsnavigator</h1><p class="lede">Välj utgåva. Choose your edition.</p><div class="pick">{cards}</div>')
     nav_free = f"""<!doctype html>

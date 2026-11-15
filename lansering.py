@@ -210,7 +210,6 @@ pre{white-space:pre-wrap;font:inherit;margin:8px 0 0}@media(max-width:700px){.po
 
 def _forhandsgranskning(lang, data):
     PREVIEW.mkdir(parents=True, exist_ok=True)
-    sv = lang == "sv"
     delar = [f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
              f'<meta name="robots" content="noindex, nofollow"><title>Lansering {html.escape(data["konto"])}</title>'
              f'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Source+Sans+3:wght@400;700&display=swap">'

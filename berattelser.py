@@ -15,7 +15,7 @@ import re
 import time
 
 import kallkontroll
-from prompts import LEAN_LABEL, user_prompt
+from prompts import user_prompt
 
 MIN_KALLOR, MIN_REGIONER = 4, 2
 MIN_BERATTELSER, MAX_BERATTELSER = 2, 4
