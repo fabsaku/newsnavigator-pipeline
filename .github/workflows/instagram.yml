@@ -26,7 +26,8 @@ concurrency:
 
 jobs:
   posta:
-    if: false   # PAUSAT 11 november på Fabians begäran. Ta bort raden för att starta igen.
+    # PAUSAT 11 november på Fabians begäran: bara kontrollen (postar inget) får köras. Byt raden mot `if: true` för att starta igen.
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.kontroll == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
