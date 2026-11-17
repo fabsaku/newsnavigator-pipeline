@@ -14622,33 +14622,40 @@
  "5db6a782f2": {
   "id": "5db6a782f2",
   "amnen": [
-   "varlden"
+   "halvledare",
+   "marknader",
+   "usa"
   ],
-  "amnen_sektion": [],
-  "poang": 34.2,
+  "amnen_sektion": [
+   "halvledare",
+   "marknader",
+   "usa"
+  ],
+  "poang": 31.3,
   "vikt": {
-   "bredd": 0.472,
+   "bredd": 0.158,
    "regioner": {
     "asien": 2,
-    "norden": 1,
-    "europa": 1
+    "usa": 2
    },
-   "timmar": 70,
+   "timmar": 74,
    "konsekvens": {
-    "berorda": 5,
-    "allvar": 4,
+    "berorda": 3,
+    "allvar": 3,
     "varaktighet": 3,
-    "medel": 4.0,
-    "skal": "Mongoliens president avgår mitt i korruptionsanklagelser, vilket skapar en politisk kris för hela landet."
+    "medel": 3.0,
+    "skal": "USA skärper exportrestriktioner för chip under Trumps Asienbesök, vilket drabbar datacenteraktier i regionen och skapar osäkerhet i en viktig bransch, men effekten är ekonomisk och avgränsad."
    },
    "bekraftad": true,
    "maste": false,
-   "spar": []
+   "spar": [
+    "teknik"
+   ]
   },
   "maste": false,
   "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-17T10:35:35+00:00",
+  "senast": "2026-11-17T13:19:10+00:00",
   "utkast": {
    "rubrik_sv": "Paraguays president Santiago Peña avgår efter bankkollaps",
    "sammanfattning_sv": "Paraguays president Santiago Peña har avgått efter kollapsen av banken Ueno, enligt flera källor, som uppger att miljontals kunders konton har frysts. Lagstiftare har enligt NPR och BBC röstat för att driva en riksrättsprocess mot honom.",
@@ -14857,120 +14864,153 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.807,
-  "betydelse": null,
+  "sammanhang": 0.413,
+  "betydelse": {
+   "sv": null,
+   "en": "Since Southeast Asian data center operators now need a U.S. license to buy advanced Nvidia chips, Nvidia's regional sales depend on Washington's export decisions, which is relevant for investors in Nvidia and Asian data center stocks.",
+   "grund": [
+    1
+   ],
+   "grund_kallor": [
+    {
+     "namn": "The Japan Times",
+     "url": "https://www.japantimes.co.jp/business/2026/11/17/tech/asia-data-center-chip-trump/"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa",
-    "norden"
+    "usa"
    ],
    "per_region": {
     "asien": [
      {
-      "kalla": "CNA",
-      "land": "SG",
-      "rubrik": "Mongolian president announces resignation over alleged corruption",
-      "url": "https://www.channelnewsasia.com/asia/mongolian-president-announces-resignation-over-alleged-corruption-6558716",
-      "tid": 1794911735.0,
+      "kalla": "The Japan Times",
+      "land": "JP",
+      "rubrik": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
+      "url": "https://www.japantimes.co.jp/business/2026/11/17/tech/asia-data-center-chip-trump/",
+      "tid": 1794895980.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Mongolian president abruptly resigns after facing allegations of misconduct",
-      "url": "https://www.hindustantimes.com/world-news/mongolian-president-abruptly-resigns-after-facing-allegations-of-misconduct-101794893889436.html",
-      "tid": 1794895062.0,
+      "kalla": "Nikkei Asia",
+      "land": "JP",
+      "rubrik": "US chip curbs, Nvidia uncertainty weigh on Asian data center stocks",
+      "url": "https://asia.nikkei.com/business/markets/us-chip-curbs-nvidia-uncertainty-weigh-on-asian-data-center-stocks",
+      "tid": null,
       "statskontrollerad": false
      }
     ],
-    "norden": [
+    "usa": [
      {
-      "kalla": "DR Nyheder",
-      "land": "DK",
-      "rubrik": "Mongoliets præsident vil træde tilbage efter anklager om korruption",
-      "url": "https://www.dr.dk/nyheder/seneste/mongoliets-praesident-vil-traede-tilbage-efter-anklager-om-korruption",
-      "tid": 1794903514.0,
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
+      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
+      "tid": 1794921550.0,
       "statskontrollerad": false
-     }
-    ],
-    "europa": [
+     },
      {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Mongolian President Khurelsukh to resign amid corruption allegations",
-      "url": "https://www.dw.com/en/mongolian-president-khurelsukh-to-resign-amid-corruption-allegations/a-79964717?maca=en-rss-en-all-1573-rdf",
-      "tid": 1794894900.0,
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
+      "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
+      "tid": 1794898140.0,
       "statskontrollerad": false
      }
     ]
    },
    "blind_flack": null,
-   "grannar_svenska": false,
-   "usa": null,
+   "grannar_svenska": true,
+   "usa": {
+    "bla": [
+     {
+      "kalla": "The New York Times",
+      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
+      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
+      "tid": 1794921550.0,
+      "lutning": "lutar_vanster"
+     }
+    ],
+    "mitten": [
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
+      "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
+      "tid": 1794898140.0,
+      "lutning": "mitten"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "Mongolian president announces resignation over alleged corruption",
+  "reserv_rubrik": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
   "kallor": [
    {
-    "namn": "CNA",
-    "rubrik": "Mongolian president announces resignation over alleged corruption",
-    "url": "https://www.channelnewsasia.com/asia/mongolian-president-announces-resignation-over-alleged-corruption-6558716",
-    "tid": 1794911735.0,
+    "namn": "The Japan Times",
+    "rubrik": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
+    "url": "https://www.japantimes.co.jp/business/2026/11/17/tech/asia-data-center-chip-trump/",
+    "tid": 1794895980.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "SG",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "DR Nyheder",
-    "rubrik": "Mongoliets præsident vil træde tilbage efter anklager om korruption",
-    "url": "https://www.dr.dk/nyheder/seneste/mongoliets-praesident-vil-traede-tilbage-efter-anklager-om-korruption",
-    "tid": 1794903514.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DK",
-    "region": "norden",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "Mongolian president abruptly resigns after facing allegations of misconduct",
-    "url": "https://www.hindustantimes.com/world-news/mongolian-president-abruptly-resigns-after-facing-allegations-of-misconduct-101794893889436.html",
-    "tid": 1794895062.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
+    "land": "JP",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "Deutsche Welle",
-    "rubrik": "Mongolian President Khurelsukh to resign amid corruption allegations",
-    "url": "https://www.dw.com/en/mongolian-president-khurelsukh-to-resign-amid-corruption-allegations/a-79964717?maca=en-rss-en-all-1573-rdf",
-    "tid": 1794894900.0,
-    "betalvagg": false,
+    "namn": "The New York Times",
+    "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
+    "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
+    "tid": 1794921550.0,
+    "betalvagg": true,
     "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
+    "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
+    "tid": 1794898140.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Nikkei Asia",
+    "rubrik": "US chip curbs, Nvidia uncertainty weigh on Asian data center stocks",
+    "url": "https://asia.nikkei.com/business/markets/us-chip-curbs-nvidia-uncertainty-weigh-on-asian-data-center-stocks",
+    "tid": null,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "JP",
+    "region": "asien",
+    "agare": "privat",
     "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
-   "en": 2
+   "sv": 1,
+   "en": 3
   },
   "autopilot": [],
   "data": null,
   "godkand_tid": 1793948948.5031242,
   "automatisk": false,
-  "uppdaterad_tid": 1794913050.6884737
+  "uppdaterad_tid": 1794924617.9176867
  },
  "ad595b9bde": {
   "id": "ad595b9bde",
@@ -20301,32 +20341,34 @@
  },
  "b4ac575a4b": {
   "id": "b4ac575a4b",
-  "amnen": [],
+  "amnen": [
+   "varlden"
+  ],
   "amnen_sektion": [],
-  "poang": 30.6,
+  "poang": 29.5,
   "vikt": {
-   "bredd": 0.984,
+   "bredd": 0.762,
    "regioner": {
     "afrika": 1,
-    "asien": 5,
-    "europa": 3,
+    "asien": 2,
+    "europa": 2,
     "norden": 1,
     "sverige": 1
    },
-   "timmar": 37,
+   "timmar": 38,
    "konsekvens": {
     "berorda": 3,
     "allvar": 3,
-    "varaktighet": 2,
-    "medel": 2.67,
-    "skal": "Ryska militärflygplan kränkte luftrum eller luftförsvarszoner i Japan, Taiwan och Sydkorea, vilket är en säkerhetsfråga med begränsad effekt som sannolikt klingar av inom några dagar."
+    "varaktighet": 1,
+    "medel": 2.33,
+    "skal": "Misstänkta ryska flygplan kränkte japanskt luftrum, vilket lett till protester och insatser av jaktplan, men det rör sig om en begränsad säkerhetshändelse med kortvariga följder."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 11,
+  "antal_kallor": 7,
   "har_primarkalla": false,
   "senast": "2026-11-17T10:06:03+00:00",
   "utkast": {
@@ -20441,10 +20483,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Japans protest mot Moskva",
-     "namn_en": "Japan's protest against Moscow",
-     "lyfter_sv": "The Hindu och Hindustan Times lyfter fram Tokyos protest, DW att protesten riktas mot Moskva och DR och SVT att Japan säger att ryska plan kränkt luftrummet.",
-     "lyfter_en": "The Hindu and Hindustan Times highlight Tokyo's protest, DW that the protest is directed at Moscow, and DR and SVT that Japan says Russian planes violated its airspace.",
+     "namn_sv": "Japans protest mot Ryssland",
+     "namn_en": "Japan's protest against Russia",
+     "lyfter_sv": "The Hindu lyfter fram att Tokyo protesterat, Hindustan Times och Deutsche Welle att protesten var mycket sträng, SVT och DR att Japan hävdar att Ryssland kränkt luftrummet.",
+     "lyfter_en": "The Hindu highlights that Tokyo lodged a protest, Hindustan Times and Deutsche Welle that the protest was very stern, and SVT and DR that Japan claims Russia violated its airspace.",
      "kallor": [
       {
        "namn": "The Hindu",
@@ -20491,10 +20533,10 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Ryska plan vid flera länders zoner",
-     "namn_en": "Russian planes at several countries' zones",
-     "lyfter_sv": "Daily Maverick och Focus Taiwan lyfter fram ryska plan vid Taiwan, Yonhap ryska plan i Sydkoreas zon utan förvarning, Kyiv Independent att Sydkorea larmat jaktplan och BBC att Taiwan och Sydkorea också svarat.",
-     "lyfter_en": "Daily Maverick and Focus Taiwan highlight Russian planes near Taiwan, Yonhap Russian planes in South Korea's zone without notice, Kyiv Independent that South Korea scrambled fighters, and BBC that Taiwan and South Korea also responded.",
+     "namn_sv": "Ryska flygplan nära flera länder",
+     "namn_en": "Russian aircraft near several countries",
+     "lyfter_sv": "Daily Maverick lyfter fram att Taiwan upptäckt två ryska militärplan och att Putin ska anlända till Kina, BBC lyfter fram att Taiwan och Sydkorea också reagerat på ryska militärplan nära deras luftrum.",
+     "lyfter_en": "Daily Maverick highlights that Taiwan detected two Russian military aircraft and that Putin is set to arrive in China, while BBC highlights that Taiwan and South Korea also responded to Russian military aircraft near their airspace.",
      "kallor": [
       {
        "namn": "Daily Maverick",
@@ -20509,32 +20551,10 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.bbc.co.uk/news/articles/c60evw20qe47o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-       "namn": "Focus Taiwan",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://focustaiwan.tw/politics/202611170014"
-      },
-      {
-       "namn": "The Kyiv Independent",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://kyivindependent.com/south-korea-scrambles-fighter-jets-after-russian-military-aircraft-enter-air-defense-zone/"
-      },
-      {
-       "namn": "Yonhap",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://en.yna.co.kr/view/AEN20261117000851315"
       }
      ],
      "regioner": [
       "afrika",
-      "asien",
       "europa"
      ],
      "usa_sidor": []
@@ -20542,83 +20562,70 @@
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
+    "antal": 9,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Japan protesterar mot misstänkt ryskt luftrumsintrång (rubrik)",
+      "text": "Japan protesterar mot misstänkt rysk kränkning av luftrummet (rubrik)",
       "stod": [
        2,
        4,
+       6,
        7
       ],
       "problem": null
      },
      {
-      "text": "The Hindu lyfter fram Tokyos protest",
+      "text": "The Hindu: Tokyo har protesterat",
       "stod": [
        2
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times lyfter fram Tokyos protest",
+      "text": "Hindustan Times: protesten var extremt sträng",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "DW: protesten riktas mot Moskva",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "DR: Japan säger att ryska plan kränkt luftrummet",
+      "text": "Deutsche Welle: protesten var mycket sträng",
       "stod": [
        6
       ],
       "problem": null
      },
      {
-      "text": "SVT: Japan säger att ryska plan kränkt luftrummet",
+      "text": "SVT: Japan hävdar att Ryssland kränkt luftrummet",
       "stod": [
-       10
+       7
       ],
       "problem": null
      },
      {
-      "text": "Daily Maverick lyfter fram ryska plan vid Taiwan",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Focus Taiwan lyfter fram ryska plan vid Taiwan",
+      "text": "DR: Japan hävdar att Ryssland kränkt luftrummet",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "Yonhap: ryska plan i Sydkoreas zon utan förvarning",
+      "text": "Daily Maverick: Taiwan har upptäckt två ryska militärplan",
       "stod": [
-       11
+       1
       ],
       "problem": null
      },
      {
-      "text": "Kyiv Independent: Sydkorea har larmat jaktplan",
+      "text": "Daily Maverick: Putin ska anlända till Kina",
       "stod": [
-       8
+       1
       ],
       "problem": null
      },
      {
-      "text": "BBC: Taiwan och Sydkorea har också svarat på ryska militärplan",
+      "text": "BBC: Taiwan och Sydkorea har också reagerat på ryska militärplan nära deras luftrum",
       "stod": [
        3
       ],
@@ -20629,7 +20636,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.641,
+  "sammanhang": 0.687,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -20666,30 +20673,6 @@
       "url": "https://www.hindustantimes.com/world-news/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-101794900379072.html",
       "tid": 1794900864.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "Focus Taiwan",
-      "land": "TW",
-      "rubrik": "Russian military aircraft enter Taiwan's ADIZ: Defense ministry",
-      "url": "https://focustaiwan.tw/politics/202611170014",
-      "tid": 1794898800.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "Japan scrambles fighters after suspected Russian military planes enter airspace",
-      "url": "https://www.japantimes.co.jp/news/2026/11/17/japan/russia-japan-airspace-violation-defense/",
-      "tid": 1794883440.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Yonhap",
-      "land": "KR",
-      "rubrik": "(LEAD) Several Russian military aircraft enter S. Korea's air defense zone without notice: JCS",
-      "url": "https://en.yna.co.kr/view/AEN20261117000851315",
-      "tid": 1794872658.0,
-      "statskontrollerad": false
      }
     ],
     "europa": [
@@ -20707,14 +20690,6 @@
       "rubrik": "Japan scrambles jets to counter suspected Russian aircraft",
       "url": "https://www.dw.com/en/japan-scrambles-jets-to-counter-suspected-russian-aircraft/a-79964537?maca=en-rss-en-all-1573-rdf",
       "tid": 1794886140.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Kyiv Independent",
-      "land": "UA",
-      "rubrik": "South Korea scrambles fighter jets after Russian military aircraft enter air defense zone",
-      "url": "https://kyivindependent.com/south-korea-scrambles-fighter-jets-after-russian-military-aircraft-enter-air-defense-zone/",
-      "tid": 1794885995.0,
       "statskontrollerad": false
      }
     ],
@@ -20795,18 +20770,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Focus Taiwan",
-    "rubrik": "Russian military aircraft enter Taiwan's ADIZ: Defense ministry",
-    "url": "https://focustaiwan.tw/politics/202611170014",
-    "tid": 1794898800.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "TW",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
     "namn": "DR Nyheder",
     "rubrik": "Japan hævder, at Rusland har krænket landets luftrum",
     "url": "https://www.dr.dk/nyheder/seneste/japan-haevder-rusland-har-kraenket-landets-luftrum",
@@ -20831,30 +20794,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Kyiv Independent",
-    "rubrik": "South Korea scrambles fighter jets after Russian military aircraft enter air defense zone",
-    "url": "https://kyivindependent.com/south-korea-scrambles-fighter-jets-after-russian-military-aircraft-enter-air-defense-zone/",
-    "tid": 1794885995.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "UA",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Japan Times",
-    "rubrik": "Japan scrambles fighters after suspected Russian military planes enter airspace",
-    "url": "https://www.japantimes.co.jp/news/2026/11/17/japan/russia-japan-airspace-violation-defense/",
-    "tid": 1794883440.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "JP",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "SVT Nyheter",
     "rubrik": "Japan: Ryska plan har kränkt vårt luftrum",
     "url": "https://www.svt.se/nyheter/utrikes/japan-ryska-plan-har-krankt-vart-luftrum",
@@ -20865,18 +20804,6 @@
     "region": "sverige",
     "agare": "public-service",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Yonhap",
-    "rubrik": "(LEAD) Several Russian military aircraft enter S. Korea's air defense zone without notice: JCS",
-    "url": "https://en.yna.co.kr/view/AEN20261117000851315",
-    "tid": 1794872658.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "KR",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": false
    }
   ],
   "granskad": true,
@@ -20885,13 +20812,12 @@
    "en": 2
   },
   "autopilot": [
-   "källkontrollen har 2 anmärkningar",
-   "spärrord: suspected"
+   "spärrord: misstänkt, suspected"
   ],
   "data": null,
   "godkand_tid": 1794096567.929113,
   "automatisk": true,
-  "uppdaterad_tid": 1794920920.4980764
+  "uppdaterad_tid": 1794924617.9176867
  },
  "6c715891a8": {
   "id": "6c715891a8",
@@ -23211,38 +23137,41 @@
  "11d8b935fe": {
   "id": "11d8b935fe",
   "amnen": [
+   "geopolitik",
    "usa"
   ],
   "amnen_sektion": [
+   "geopolitik",
    "usa"
   ],
-  "poang": 39.4,
+  "poang": 30.0,
   "vikt": {
-   "bredd": 0.981,
+   "bredd": 1.228,
    "regioner": {
-    "asien": 5,
+    "asien": 6,
     "latinamerika": 1,
-    "europa": 1,
-    "mellanostern": 1,
+    "europa": 2,
+    "afrika": 1,
     "usa": 3,
-    "norden": 1
+    "norden": 1,
+    "mellanostern": 1
    },
-   "timmar": 92,
+   "timmar": 5,
    "konsekvens": {
     "berorda": 4,
     "allvar": 4,
     "varaktighet": 3,
     "medel": 3.67,
-    "skal": "Trumps Asienresa med möjliga möten med Kim, Xi och Putin kan påverka fredssamtal om Ukraina och Nordkoreas kärnvapenfråga, men utfallet är ännu osäkert."
+    "skal": "Möjliga toppmöten mellan Trump, Xi, Putin och Kim Jong-un kring Ukrainakriget, kärnvapenfrågor och handel, men allt är ännu osäkert och bygger på uttalanden."
    },
    "bekraftad": true,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 12,
+  "antal_kallor": 15,
   "har_primarkalla": false,
-  "senast": "2026-11-17T12:35:49+00:00",
+  "senast": "2026-11-17T12:59:46+00:00",
   "utkast": {
    "rubrik_sv": "Trump säger att han kan träffa Kim Jong Un i Kina",
    "sammanfattning_sv": "Trump säger att han kan träffa Nordkoreas ledare Kim Jong Un i Kina, enligt Yonhap och The Straits Times. Enligt Arab News uppger Kina att landet inte har någon information om ett sådant möte.",
@@ -23408,15 +23337,29 @@
     {
      "namn_sv": "Möjligt möte med Kim Jong Un",
      "namn_en": "Possible meeting with Kim Jong Un",
-     "lyfter_sv": "BBC säger att Trump gärna vill träffa Kim, Yonhap att han kan göra det, Straits Times att han kan möta Kim, Fox News att Xi avgör Kims närvaro och WaPo att Trump funderar på ett möte under Asienresan.",
-     "lyfter_en": "BBC says Trump would like to meet Kim, Yonhap that he may do so, The Straits Times that he may meet Kim, Fox News that Xi decides Kim's presence and WaPo that Trump is considering a meeting during his Asia trip.",
+     "lyfter_sv": "BBC lyfter fram att Trump vill träffa Kim, Yonhap att det kan ske i Kina, Straits Times och Fox att mötet är öppet, WaPo att det svävar, The National att Kim kan delta, The Hindu att Kim syns vid en skidort.",
+     "lyfter_en": "BBC highlights that Trump wants to meet Kim, Yonhap that it may happen in China, Straits Times and Fox that the meeting is open, WaPo that it is floated, The National that Kim may join, The Hindu that Kim is seen at a ski resort.",
      "kallor": [
+      {
+       "namn": "El País América",
+       "region": "latinamerika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://elpais.com/internacional/2026-11-17/un-sillon-de-orejas-en-la-pista-de-esqui-el-lider-norcoreano-kim-jong-un-se-deja-ver-con-su-hija-en-la-frontera-con-china.html"
+      },
       {
        "namn": "BBC World",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/north-koreas-kim-visits-ski-resort-as-donald-trump-hints-at-possible-meeting/article71710685.ece"
       },
       {
        "namn": "Yonhap",
@@ -23445,11 +23388,20 @@
        "lutning": "lutar_vanster",
        "statskontrollerad": false,
        "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-floats-meeting-with-kim-jong-un-while-asia/"
+      },
+      {
+       "namn": "The National",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.thenationalnews.com/news/us/2026/11/17/trump-to-hold-nuclear-talks-with-xi-and-putin-with-kim-jong-un-possibly-joining/"
       }
      ],
      "regioner": [
       "asien",
       "europa",
+      "latinamerika",
+      "mellanostern",
       "usa"
      ],
      "usa_sidor": [
@@ -23458,17 +23410,24 @@
      ]
     },
     {
-     "namn_sv": "Trumps Asienresa och toppmötet",
-     "namn_en": "Trump's Asia trip and summit",
-     "lyfter_sv": "Rappler tar upp Trumps möten med allierade i Manila före Kinabesöket, Hindustan Times Ukrainakriget i trepartssamtalen, NPR resan mitt i Nvidia-konflikten och väljarkritik efter mellanårsvalet, NRK att Kina bekräftar mötet med Xi och Putin på torsdag.",
-     "lyfter_en": "Rappler covers Trump's meetings with allies in Manila before his China visit, Hindustan Times the Ukraine war in the trilateral talks, NPR the trip amid the Nvidia dispute and voter backlash after the midterms, NRK that China confirms the Thursday meeting with Xi and Putin.",
+     "namn_sv": "Ukrainakriget på dagordningen",
+     "namn_en": "Ukraine war on the agenda",
+     "lyfter_sv": "Kyiv Independent lyfter fram att Trump är villig att träffa Putin separat, Africanews att Trump tar upp Ukrainakriget med Xi och Putin, Hindustan Times att Trump vill tala om kriget, med oro för att Kyiv hamnar i skymundan.",
+     "lyfter_en": "Kyiv Independent highlights that Trump is willing to meet Putin separately, Africanews that Trump will raise the Ukraine war with Xi and Putin, Hindustan Times that Trump plans to discuss the war, with concern that Kyiv may be sidelined.",
      "kallor": [
       {
-       "namn": "Rappler",
-       "region": "asien",
+       "namn": "The Kyiv Independent",
+       "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.rappler.com/philippines/trump-meets-regional-allies-asean-special-summit-2026/"
+       "url": "https://kyivindependent.com/trump-says-he-is-willing-to-hold-separate-talks-with-putin-in-china/"
+      },
+      {
+       "namn": "Africanews",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "http://www.africanews.com/2026/11/17/trump-to-raise-ukraine-war-in-talks-with-xi-and-putin-at-apec/"
       },
       {
        "namn": "Hindustan Times",
@@ -23476,182 +23435,112 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.hindustantimes.com/world-news/trump-xi-putin-meeting-shenzhen-ukraine-war-kim-jong-un-yalta-conference-elon-musk-latest-news-101794885377339.html"
-      },
-      {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia"
-      },
-      {
-       "namn": "NRK",
-       "region": "norden",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.nrk.no/nyheter/kina-bekrefter_-trump_-xi-og-putin-motes-torsdag-1.18082462"
       }
      ],
      "regioner": [
+      "afrika",
       "asien",
-      "norden",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    },
-    {
-     "namn_sv": "Kim och dottern på skidorten",
-     "namn_en": "Kim and daughter at the ski resort",
-     "lyfter_sv": "El País visar Kim med dottern vid skidanläggningen och rykten om toppmötet, Al Jazeera att Kim besöker skidorten med dottern Ju Ae, SCMP att dotterns skidutrustning sägs kosta mer än ett års lön.",
-     "lyfter_en": "El País shows Kim with his daughter at the ski facility and rumors about the summit, Al Jazeera that Kim visits the ski resort with daughter Ju Ae, SCMP that the daughter's ski gear is said to cost more than a year's pay.",
-     "kallor": [
-      {
-       "namn": "El País América",
-       "region": "latinamerika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://elpais.com/internacional/2026-11-17/un-sillon-de-orejas-en-la-pista-de-esqui-el-lider-norcoreano-kim-jong-un-se-deja-ver-con-su-hija-en-la-frontera-con-china.html"
-      },
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss"
-      },
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/week-asia/people/article/3374725/north-korean-leader-kims-daughter-wears-european-ski-gear-worth-over-years-pay"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "latinamerika",
-      "mellanostern"
+      "europa"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 16,
+    "antal": 13,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Kina bekräftar torsdagsmöte mellan Trump, Xi och Putin",
+      "text": "Trump ska träffa Xi i Kina",
+      "stod": [
+       1,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump ska träffa Putin i Kina",
+      "stod": [
+       10,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trump kan träffa Kim Jong Un",
+      "stod": [
+       11,
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: Trump vill träffa Kim",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "Yonhap: mötet med Kim kan ske i Kina",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: Trump kan träffa Kim i Kina (öppet)",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox: dörren står öppen för Kim",
       "stod": [
        11
       ],
       "problem": null
      },
      {
-      "text": "Trump säger sig kunna träffa Kim Jong Un",
+      "text": "WaPo: Trump för fram ett möte med Kim (svävar)",
       "stod": [
-       6,
-       8
+       14
       ],
       "problem": null
      },
      {
-      "text": "BBC: Trump gärna vill träffa Kim",
+      "text": "The National: Kim kan delta",
       "stod": [
-       3
+       15
       ],
       "problem": null
      },
      {
-      "text": "Yonhap: Trump kan göra det (träffa Kim)",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Straits Times: Trump kan möta Kim",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fox News: Xi avgör Kims närvaro",
-      "stod": [
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "WaPo: Trump funderar på ett möte under Asienresan",
-      "stod": [
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Rappler: Trumps möten med allierade i Manila före Kinabesöket",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: Ukrainakriget i trepartssamtalen",
+      "text": "The Hindu: Kim besöker en skidort",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "NPR: resan mitt i Nvidia-konflikten",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR: väljarkritik efter mellanårsvalet",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "NRK: Kina bekräftar mötet med Xi och Putin på torsdag",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "El País: visar Kim med dottern vid skidanläggningen",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "El País: rykten om toppmötet",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: Kim besöker skidorten med dottern Ju Ae",
+      "text": "Kyiv Independent: Trump är villig att tala separat med Putin",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "SCMP: dotterns skidutrustning sägs kosta mer än ett års lön",
+      "text": "Africanews: Trump tar upp Ukrainakriget med Xi och Putin",
       "stod": [
-       5
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: Trump vill tala om kriget, med oro för att Kyiv hamnar i skymundan",
+      "stod": [
+       9
       ],
       "problem": null
      }
@@ -23660,22 +23549,27 @@
    },
    "ok": true
   },
-  "sammanhang": 0.53,
+  "sammanhang": 0.544,
   "betydelse": {
-   "sv": "Eftersom Trump enligt Hindustan Times planerar att ta upp kriget i Ukraina vid torsdagens möte med Putin och Xi, berör samtalen den europeiska säkerheten, vilket angår Sverige som Nato- och EU-medlem.",
-   "en": "Because Trump plans to raise the Ukraine war at Thursday's talks with Putin and Xi, the discussions touch on European security, which matters to UK readers.",
+   "sv": "Eftersom Trump enligt flera källor ska ta upp Ukrainakriget med Xi och Putin i Kina berör utfallet Sveriges säkerhet, eftersom Sverige är medlem i både EU och Nato och därmed deltar i den europeiska säkerhetspolitiken.",
+   "en": "Since Trump plans to raise the Ukraine war in talks with Xi and Putin at APEC in Shenzhen, the outcome bears on US policy toward Ukraine and Russia.",
    "grund": [
-    7,
-    11
+    4,
+    6,
+    9
    ],
    "grund_kallor": [
     {
-     "namn": "Hindustan Times",
-     "url": "https://www.hindustantimes.com/world-news/trump-xi-putin-meeting-shenzhen-ukraine-war-kim-jong-un-yalta-conference-elon-musk-latest-news-101794885377339.html"
+     "namn": "The Kyiv Independent",
+     "url": "https://kyivindependent.com/trump-says-he-is-willing-to-hold-separate-talks-with-putin-in-china/"
     },
     {
-     "namn": "NRK",
-     "url": "https://www.nrk.no/nyheter/kina-bekrefter_-trump_-xi-og-putin-motes-torsdag-1.18082462"
+     "namn": "Africanews",
+     "url": "http://www.africanews.com/2026/11/17/trump-to-raise-ukraine-war-in-talks-with-xi-and-putin-at-apec/"
+    },
+    {
+     "namn": "Hindustan Times",
+     "url": "https://www.hindustantimes.com/world-news/trump-xi-putin-meeting-shenzhen-ukraine-war-kim-jong-un-yalta-conference-elon-musk-latest-news-101794885377339.html"
     }
    ],
    "kontroll": {
@@ -23686,6 +23580,7 @@
   },
   "perspektiv": {
    "regioner": [
+    "afrika",
     "asien",
     "europa",
     "latinamerika",
@@ -23696,6 +23591,14 @@
    "per_region": {
     "asien": [
      {
+      "kalla": "South China Morning Post",
+      "land": "HK",
+      "rubrik": "Can Xi-Trump talks at Apec turn China’s pledge to buy 200 Boeing jets into firm orders?",
+      "url": "https://www.scmp.com/economy/china-economy/article/3374781/can-xi-trump-talks-apec-turn-chinas-pledge-buy-200-boeing-jets-firm-orders",
+      "tid": 1794920386.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "Rappler",
       "land": "PH",
       "rubrik": "Trump meets regional allies in Manila ahead of China visit",
@@ -23704,11 +23607,11 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "South China Morning Post",
-      "land": "HK",
-      "rubrik": "North Korean leader Kim’s daughter wears European ski gear worth over a year’s pay",
-      "url": "https://www.scmp.com/week-asia/people/article/3374725/north-korean-leader-kims-daughter-wears-european-ski-gear-worth-over-years-pay",
-      "tid": 1794905730.0,
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "North Korea’s Kim visits ski resort as Donald Trump hints at possible meeting",
+      "url": "https://www.thehindu.com/news/international/north-koreas-kim-visits-ski-resort-as-donald-trump-hints-at-possible-meeting/article71710685.ece",
+      "tid": 1794902852.0,
       "statskontrollerad": false
      },
      {
@@ -23748,6 +23651,14 @@
     ],
     "europa": [
      {
+      "kalla": "The Kyiv Independent",
+      "land": "UA",
+      "rubrik": "Trump says he is willing to hold separate talks with Putin in China",
+      "url": "https://kyivindependent.com/trump-says-he-is-willing-to-hold-separate-talks-with-putin-in-china/",
+      "tid": 1794914592.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "BBC World",
       "land": "GB",
       "rubrik": "Will President Trump meet Kim Jong Un?",
@@ -23756,13 +23667,13 @@
       "statskontrollerad": false
      }
     ],
-    "mellanostern": [
+    "afrika": [
      {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Kim Jong Un tours North Korea ski resort with daughter Ju Ae",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss",
-      "tid": 1794906758.0,
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "Trump to raise Ukraine war in talks with Xi and Putin at APEC",
+      "url": "http://www.africanews.com/2026/11/17/trump-to-raise-ukraine-war-in-talks-with-xi-and-putin-at-apec/",
+      "tid": 1794907859.0,
       "statskontrollerad": false
      }
     ],
@@ -23801,6 +23712,16 @@
       "tid": 1794799448.0,
       "statskontrollerad": false
      }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Trump to hold nuclear talks with Xi and Putin, with Kim Jong-un possibly joining",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/17/trump-to-hold-nuclear-talks-with-xi-and-putin-with-kim-jong-un-possibly-joining/",
+      "tid": 1794884400.0,
+      "statskontrollerad": true
+     }
     ]
    },
    "blind_flack": null,
@@ -23834,8 +23755,20 @@
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Trump meets regional allies in Manila ahead of China visit",
+  "reserv_rubrik": "Can Xi-Trump talks at Apec turn China’s pledge to buy 200 Boeing jets into firm orders?",
   "kallor": [
+   {
+    "namn": "South China Morning Post",
+    "rubrik": "Can Xi-Trump talks at Apec turn China’s pledge to buy 200 Boeing jets into firm orders?",
+    "url": "https://www.scmp.com/economy/china-economy/article/3374781/can-xi-trump-talks-apec-turn-chinas-pledge-buy-200-boeing-jets-firm-orders",
+    "tid": 1794920386.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "HK",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Rappler",
     "rubrik": "Trump meets regional allies in Manila ahead of China visit",
@@ -23861,6 +23794,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Kyiv Independent",
+    "rubrik": "Trump says he is willing to hold separate talks with Putin in China",
+    "url": "https://kyivindependent.com/trump-says-he-is-willing-to-hold-separate-talks-with-putin-in-china/",
+    "tid": 1794914592.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "UA",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "BBC World",
     "rubrik": "Will President Trump meet Kim Jong Un?",
     "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss",
@@ -23873,25 +23818,25 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Al Jazeera",
-    "rubrik": "Kim Jong Un tours North Korea ski resort with daughter Ju Ae",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss",
-    "tid": 1794906758.0,
+    "namn": "Africanews",
+    "rubrik": "Trump to raise Ukraine war in talks with Xi and Putin at APEC",
+    "url": "http://www.africanews.com/2026/11/17/trump-to-raise-ukraine-war-in-talks-with-xi-and-putin-at-apec/",
+    "tid": 1794907859.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
+    "land": "CG",
+    "region": "afrika",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "South China Morning Post",
-    "rubrik": "North Korean leader Kim’s daughter wears European ski gear worth over a year’s pay",
-    "url": "https://www.scmp.com/week-asia/people/article/3374725/north-korean-leader-kims-daughter-wears-european-ski-gear-worth-over-years-pay",
-    "tid": 1794905730.0,
+    "namn": "The Hindu",
+    "rubrik": "North Korea’s Kim visits ski resort as Donald Trump hints at possible meeting",
+    "url": "https://www.thehindu.com/news/international/north-koreas-kim-visits-ski-resort-as-donald-trump-hints-at-possible-meeting/article71710685.ece",
+    "tid": 1794902852.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "HK",
+    "land": "IN",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
@@ -23979,6 +23924,18 @@
     "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The National",
+    "rubrik": "Trump to hold nuclear talks with Xi and Putin, with Kim Jong-un possibly joining",
+    "url": "https://www.thenationalnews.com/news/us/2026/11/17/trump-to-hold-nuclear-talks-with-xi-and-putin-with-kim-jong-un-possibly-joining/",
+    "tid": 1794884400.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
@@ -23990,7 +23947,7 @@
   "data": null,
   "godkand_tid": 1794917292.8920832,
   "automatisk": true,
-  "uppdaterad_tid": 1794920920.4980764
+  "uppdaterad_tid": 1794924617.9176867
  },
  "304fa3d01f": {
   "id": "304fa3d01f",
@@ -24163,39 +24120,41 @@
  "c6b673686f": {
   "id": "c6b673686f",
   "amnen": [
-   "europa"
+   "europa",
+   "varlden"
   ],
   "amnen_sektion": [
    "europa"
   ],
-  "poang": 30.5,
+  "poang": 30.1,
   "vikt": {
-   "bredd": 1.471,
+   "bredd": 1.608,
    "regioner": {
-    "afrika": 4,
+    "norden": 1,
+    "afrika": 3,
     "europa": 4,
     "mellanostern": 2,
     "asien": 3,
-    "usa": 3,
     "global": 1,
+    "usa": 2,
     "sverige": 1
    },
-   "timmar": 2,
+   "timmar": 1,
    "konsekvens": {
     "berorda": 4,
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Fem EU-länder planerar ett returcenter i Rwanda för avslagna asylsökande, en politiskt omstridd migrationspolitik med möjliga folkrättsliga konsekvenser."
+    "skal": "Fem EU-länder planerar returcentrum i Rwanda för avvisade asylsökande, en större förändring av migrationspolitiken som FN och Human Rights Watch ifrågasätter utifrån folkrätten."
    },
    "bekraftad": true,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 18,
+  "antal_kallor": 17,
   "har_primarkalla": false,
-  "senast": "2026-11-17T11:10:53+00:00",
+  "senast": "2026-11-17T13:09:17+00:00",
   "utkast": {
    "rubrik_sv": "Fem europeiska länder planerar returcenter i Rwanda för avvisade asylsökande",
    "sammanfattning_sv": "Fem europeiska länder, Österrike, Danmark, Tyskland, Grekland och Nederländerna, planerar att skicka avvisade asylsökande till ett returcenter i Rwanda. Enligt Premium Times väntas ett inledande pilotprojekt omfatta cirka 100 personer, och människorättsorganisationer kritiserar planerna.",
@@ -24258,226 +24217,35 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
+  "narrativ": null,
+  "sammanhang": 0.67,
+  "betydelse": {
+   "sv": "Eftersom Österrike, Danmark, Tyskland, Grekland och Nederländerna har presenterat planer på returcenter i Rwanda, berör det den gemensamma EU-migrationspolitik som Sverige är med i.",
+   "en": null,
+   "grund": [
+    3,
+    8,
+    13
+   ],
+   "grund_kallor": [
     {
-     "namn_sv": "Kritik från människorättsorganisationer",
-     "namn_en": "Criticism from human rights organisations",
-     "lyfter_sv": "Africanews lyfter fram att planen riskerar bryta mot internationell rätt, Deutsche Welle kritik från människorättsgrupper, Japan Times protester och UNHCR:s varning, Daily Maverick fördömande från rättighetsgrupper, Amnesty att planen upprepar tidigare misstag.",
-     "lyfter_en": "Africanews reports that the plan risks breaching international law, Deutsche Welle criticism from human rights groups, Japan Times protests and a UNHCR warning, Daily Maverick condemnation from rights groups, Amnesty that the plan repeats past mistakes.",
-     "kallor": [
-      {
-       "namn": "Africanews",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "http://www.africanews.com/2026/11/17/hrw-rwanda-migration-hub-plan-risks-violating-international-law/"
-      },
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/germany-news-plans-for-rwanda-migrant-hub-come-under-fire/live-79965639?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "The Japan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.japantimes.co.jp/news/2026/11/17/world/politics/european-nations-rwanda-hub-migrants/"
-      },
-      {
-       "namn": "Daily Maverick",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dailymaverick.co.za/article/2026-11-16-five-eu-countries-unveil-plans-for-rwanda-deportation-hub/"
-      },
-      {
-       "namn": "Amnesty International",
-       "region": "global",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/"
-      }
-     ],
-     "regioner": [
-      "afrika",
-      "asien",
-      "europa",
-      "global"
-     ],
-     "usa_sidor": []
+     "namn": "France 24",
+     "url": "https://www.france24.com/en/video/20261117-5-european-countries-aim-to-send-rejected-asylum-seekers-to-rwanda"
     },
     {
-     "namn_sv": "Pilotupplägg och partnerskap",
-     "namn_en": "Pilot scale and partnership terms",
-     "lyfter_sv": "Premium Times lyfter fram att centret väntas starta som pilot med cirka 100 personer, AllAfrica att Rwanda kan ta emot migranter medan de fem länderna utforskar återvändande eller bosättning i Rwanda.",
-     "lyfter_en": "Premium Times highlights that the centre is expected to start as a pilot with about 100 people, AllAfrica that Rwanda may receive migrants while the five countries explore return or settlement in Rwanda.",
-     "kallor": [
-      {
-       "namn": "Premium Times",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.premiumtimesng.com/news/top-news/925800-eu-countries-plan-deportation-centre-in-rwanda-for-rejected-asylum-seekers.html"
-      },
-      {
-       "namn": "AllAfrica",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://allafrica.com/stories/202611170114.html"
-      }
-     ],
-     "regioner": [
-      "afrika"
-     ],
-     "usa_sidor": []
+     "namn": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
     },
     {
-     "namn_sv": "Ett skifte i migrationspolitiken",
-     "namn_en": "A shift in migration policy",
-     "lyfter_sv": "Le Monde lyfter fram planen som ett skifte i europeisk migrationspolitik, Al Jazeera frågar varför fem EU-länder återupplivar planerna att utvisa migranter till Rwanda.",
-     "lyfter_en": "Le Monde highlights the plan as a shift in European migration policy, Al Jazeera asks why five EU countries are reviving plans to deport migrants to Rwanda.",
-     "kallor": [
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda?traffic_source=rss"
-      },
-      {
-       "namn": "Le Monde (English)",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "mellanostern"
-     ],
-     "usa_sidor": []
+     "namn": "Le Monde (English)",
+     "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html"
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Fem europeiska länder planerar returcenter (return hubs) i Rwanda",
-      "stod": [
-       10,
-       14
-      ],
-      "problem": null
-     },
-     {
-      "text": "Planen gäller avvisade asylsökande",
-      "stod": [
-       3,
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Africanews: planen riskerar bryta mot internationell rätt (enligt HRW)",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Deutsche Welle: kritik från människorättsgrupper",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Japan Times: protester från människorättsgrupper och UNHCR:s varning",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Maverick: fördömande från rättighetsgrupper",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Amnesty: planen upprepar tidigare misstag",
-      "stod": [
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Premium Times: centret väntas starta som pilot med cirka 100 personer",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "AllAfrica: Rwanda kan ta emot migranter medan de fem länderna utforskar återvändande eller bosättning i Rwanda",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Le Monde: planen är ett skifte i europeisk migrationspolitik",
-      "stod": [
-       14
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera frågar varför fem EU-länder återupplivar planerna att utvisa migranter till Rwanda",
-      "stod": [
-       4
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
+    "problem": []
    },
    "ok": true
-  },
-  "sammanhang": 0.71,
-  "betydelse": {
-   "sv": "Eftersom fem EU-länder planerar ett returcenter i Rwanda berörs EU:s asylsamarbete, som Sverige deltar i.",
-   "en": null,
-   "grund": [
-    10,
-    17
-   ],
-   "grund_kallor": [
-    {
-     "namn": "Daily Maverick",
-     "url": "https://www.dailymaverick.co.za/article/2026-11-16-five-eu-countries-unveil-plans-for-rwanda-deportation-hub/"
-    },
-    {
-     "namn": "Dagens Nyheter",
-     "url": "https://www.dn.se/varlden/erik-esbjornsson-asylavtal-med-rwanda-riskerar-att-skapa-nya-flyktingstrommar/"
-    }
-   ],
-   "kontroll": {
-    "ok": false,
-    "problem": [
-     "ingen koppling: Kopplingen till EU:s asylsamarbete är långsökt. Källorna beskriver en överenskommelse mellan fem länder vid en konferens i Wien, inte en EU-gemensam åtgärd, så det framgår inte att planen berör EU-samarbetet."
-    ]
-   },
-   "ok": false
   },
   "perspektiv": {
    "regioner": [
@@ -24486,10 +24254,21 @@
     "europa",
     "global",
     "mellanostern",
+    "norden",
     "sverige",
     "usa"
    ],
    "per_region": {
+    "norden": [
+     {
+      "kalla": "DR Nyheder",
+      "land": "DK",
+      "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
+      "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan",
+      "tid": 1794920957.0,
+      "statskontrollerad": false
+     }
+    ],
     "afrika": [
      {
       "kalla": "Africanews",
@@ -24497,14 +24276,6 @@
       "rubrik": "HRW: Rwanda 'migration hub' plan risks violating international law",
       "url": "http://www.africanews.com/2026/11/17/hrw-rwanda-migration-hub-plan-risks-violating-international-law/",
       "tid": 1794913853.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Premium Times",
-      "land": "NG",
-      "rubrik": "EU countries plan deportation centre in Rwanda for rejected asylum seekers",
-      "url": "https://www.premiumtimesng.com/news/top-news/925800-eu-countries-plan-deportation-centre-in-rwanda-for-rejected-asylum-seekers.html",
-      "tid": 1794911202.0,
       "statskontrollerad": false
      },
      {
@@ -24602,15 +24373,17 @@
       "statskontrollerad": false
      }
     ],
-    "usa": [
+    "global": [
      {
-      "kalla": "Human Rights Watch",
-      "land": "US",
-      "rubrik": "EU: Countries Plan Rwanda Deportation Centers",
-      "url": "https://www.hrw.org/news/2026/11/16/eu-countries-plan-rwanda-deportation-centers",
-      "tid": 1794870000.0,
+      "kalla": "Amnesty International",
+      "land": "GB",
+      "rubrik": "Europe: Disgraceful Rwanda deportation deal repeats mistakes of the past",
+      "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/",
+      "tid": 1794845540.0,
       "statskontrollerad": false
-     },
+     }
+    ],
+    "usa": [
      {
       "kalla": "The Washington Post",
       "land": "US",
@@ -24625,16 +24398,6 @@
       "rubrik": "Five European Countries Plan to Deport Migrants to Rwanda",
       "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
       "tid": 1794850581.0,
-      "statskontrollerad": false
-     }
-    ],
-    "global": [
-     {
-      "kalla": "Amnesty International",
-      "land": "GB",
-      "rubrik": "Europe: Disgraceful Rwanda deportation deal repeats mistakes of the past",
-      "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/",
-      "tid": 1794845540.0,
       "statskontrollerad": false
      }
     ],
@@ -24654,8 +24417,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "HRW: Rwanda 'migration hub' plan risks violating international law",
+  "reserv_rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
   "kallor": [
+   {
+    "namn": "DR Nyheder",
+    "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
+    "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan",
+    "tid": 1794920957.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DK",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "Africanews",
     "rubrik": "HRW: Rwanda 'migration hub' plan risks violating international law",
@@ -24678,18 +24453,6 @@
     "land": "FR",
     "region": "europa",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Premium Times",
-    "rubrik": "EU countries plan deportation centre in Rwanda for rejected asylum seekers",
-    "url": "https://www.premiumtimesng.com/news/top-news/925800-eu-countries-plan-deportation-centre-in-rwanda-for-rejected-asylum-seekers.html",
-    "tid": 1794911202.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "NG",
-    "region": "afrika",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -24750,18 +24513,6 @@
     "land": "GB",
     "region": "europa",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Human Rights Watch",
-    "rubrik": "EU: Countries Plan Rwanda Deportation Centers",
-    "url": "https://www.hrw.org/news/2026/11/16/eu-countries-plan-rwanda-deportation-centers",
-    "tid": 1794870000.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "organisation",
     "statskontrollerad": false
    },
    {
@@ -24881,7 +24632,8 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1794920920.4980764,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1794924617.9176867
  },
  "8714ea791a": {
   "id": "8714ea791a",
@@ -25555,6 +25307,288 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1794920920.4980764,
+  "automatisk": true
+ },
+ "f540668e6d": {
+  "id": "f540668e6d",
+  "amnen": [
+   "europa",
+   "geopolitik"
+  ],
+  "amnen_sektion": [
+   "europa",
+   "geopolitik"
+  ],
+  "poang": 33.7,
+  "vikt": {
+   "bredd": 0.288,
+   "regioner": {
+    "europa": 3,
+    "afrika": 1
+   },
+   "timmar": 96,
+   "konsekvens": {
+    "berorda": 4,
+    "allvar": 4,
+    "varaktighet": 4,
+    "medel": 4.0,
+    "skal": "EU:s nya sanktionspaket riktar sig mot rysk oljeindustri, banker och betalningstjänster i ett pågående krig, vilket får stora ekonomiska och säkerhetspolitiska följder under lång tid."
+   },
+   "bekraftad": true,
+   "maste": false,
+   "spar": []
+  },
+  "maste": false,
+  "antal_kallor": 4,
+  "har_primarkalla": false,
+  "senast": "2026-11-17T05:05:00+00:00",
+  "utkast": {
+   "rubrik_sv": "EU utökar sanktionerna mot Ryssland: oljeraffinaderier, banker och Wildberries-chefen",
+   "sammanfattning_sv": "Enligt Meduza har EU utökat sanktionslistan mot Ryssland till att omfatta oljeraffinaderier, petrokemiska anläggningar och dussintals banker. Deutsche Welle uppger att EU fryst tillgångar för Wildberries-chefen Tatyana Kim och infört ett reseförbud till unionen för henne.",
+   "rubrik_en": "EU expands Russia sanctions to oil refineries, banks and Wildberries chief",
+   "sammanfattning_en": "According to Meduza, the EU has expanded its Russia sanctions list to include oil refineries, petrochemical plants and dozens of banks. Deutsche Welle reports that the EU has frozen assets of Wildberries chief Tatyana Kim and imposed a travel ban on her to the bloc.",
+   "oenighet": null,
+   "oenighet_en": null,
+   "perspektiv_sv": "Rubrikerna lyfter olika delar av nyheten. Politico Europe (Belgien) ställer frågan om nästa EU-sanktioner kommer att få effekt. The East African (Kenya) lyfter hur Afrika kan begränsa rekryteringen till det ryska kriget. Deutsche Welle (Tyskland) fokuserar på Wildberries-chefen och Meduza (Lettland) på oljeraffinaderier och banker.",
+   "perspektiv_en": "The headlines highlight different parts of the story. Politico Europe (Belgium) asks whether the EU's next sanctions will have an effect. The East African (Kenya) highlights how Africa can curb recruitment to the Russian war. Deutsche Welle (Germany) focuses on the Wildberries chief, and Meduza (Latvia) on oil refineries and banks.",
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "Politico Europe och The East African bidrar endast med rubriker, så deras innehåll ingår inte i sammanfattningen. Sammanfattningen bygger på Deutsche Welle och Meduza, som inte motsäger varandra men nämner olika detaljer. Inga USA-medier ingår i materialet."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 14,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "EU har utökat sanktionerna mot Ryssland (rubrik)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Sanktionerna omfattar oljeraffinaderier (rubrik)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Sanktionerna omfattar banker (rubrik)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "EU har sanktionerat Wildberries-chefen (rubrik)",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "EU har utökat sanktionslistan mot Ryssland (Meduza)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Sanktionslistan omfattar oljeraffinaderier (Meduza)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Sanktionslistan omfattar petrokemiska anläggningar (Meduza)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Sanktionslistan omfattar dussintals banker (Meduza)",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "EU har fryst tillgångar för Wildberries-chefen Tatyana Kim (Deutsche Welle)",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "EU har infört reseförbud till unionen för Tatyana Kim (Deutsche Welle)",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Politico Europe (Belgien) ställer frågan om nästa EU-sanktioner får effekt",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "The East African (Kenya) lyfter hur Afrika kan begränsa rekryteringen till det ryska kriget",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Deutsche Welle fokuserar på Wildberries-chefen",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Meduza (Lettland) fokuserar på oljeraffinaderier och banker",
+     "stod": [
+      4
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": null,
+  "sammanhang": 0.562,
+  "betydelse": {
+   "sv": "Eftersom EU utökat sanktionslistan mot Ryssland till att omfatta oljeraffinaderier och över 40 banker hänger det ihop med oljepriset och därmed bränslepriserna.",
+   "en": "Since the EU has expanded its Russia sanctions to cover oil refineries and more than 40 banks, this is linked to oil prices and, in turn, fuel prices for households in the US and UK.",
+   "grund": [
+    4
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Meduza",
+     "url": "https://meduza.io/en/news/2026/11/16/eu-sanctions-russia-s-biggest-oil-refineries-payment-service-yoomoney-and-more-than-40-banks"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
+  "perspektiv": {
+   "regioner": [
+    "afrika",
+    "europa"
+   ],
+   "per_region": {
+    "europa": [
+     {
+      "kalla": "Politico Europe",
+      "land": "BE",
+      "rubrik": "Will the EU’s next Russia sanctions bite?",
+      "url": "https://www.politico.eu/podcast/brussels-playbook-podcast/will-the-eus-next-russia-sanctions-bite/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "tid": 1794891900.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "EU sanctions Wildberries CEO Tatyana Kim, Russia's richest woman",
+      "url": "https://www.dw.com/en/eu-sanctions-wildberries-ceo-tatyana-kim-russia-s-richest-woman/a-79962532?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794856680.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Meduza",
+      "land": "LV",
+      "rubrik": "EU sanctions Russia’s biggest oil refineries, payment service YooMoney, and more than 40 banks",
+      "url": "https://meduza.io/en/news/2026/11/16/eu-sanctions-russia-s-biggest-oil-refineries-payment-service-yoomoney-and-more-than-40-banks",
+      "tid": 1794854443.0,
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "The East African",
+      "land": "KE",
+      "rubrik": "EU: How Africa can tame recruitment to Russian war",
+      "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/eu-how-africa-can-tame-recruitment-to-russian-war-5673100",
+      "tid": 1794884400.0,
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": true,
+   "usa": null,
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Will the EU’s next Russia sanctions bite?",
+  "kallor": [
+   {
+    "namn": "Politico Europe",
+    "rubrik": "Will the EU’s next Russia sanctions bite?",
+    "url": "https://www.politico.eu/podcast/brussels-playbook-podcast/will-the-eus-next-russia-sanctions-bite/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "tid": 1794891900.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The East African",
+    "rubrik": "EU: How Africa can tame recruitment to Russian war",
+    "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/eu-how-africa-can-tame-recruitment-to-russian-war-5673100",
+    "tid": 1794884400.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Deutsche Welle",
+    "rubrik": "EU sanctions Wildberries CEO Tatyana Kim, Russia's richest woman",
+    "url": "https://www.dw.com/en/eu-sanctions-wildberries-ceo-tatyana-kim-russia-s-richest-woman/a-79962532?maca=en-rss-en-all-1573-rdf",
+    "tid": 1794856680.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DE",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Meduza",
+    "rubrik": "EU sanctions Russia’s biggest oil refineries, payment service YooMoney, and more than 40 banks",
+    "url": "https://meduza.io/en/news/2026/11/16/eu-sanctions-russia-s-biggest-oil-refineries-payment-service-yoomoney-and-more-than-40-banks",
+    "tid": 1794854443.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "LV",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 2,
+   "en": 2
+  },
+  "autopilot": [],
+  "data": null,
+  "godkand_tid": 1794924617.9176867,
   "automatisk": true
  }
 }
