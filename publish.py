@@ -35,7 +35,7 @@ def preview(out):
             events.append({**e, "granskad": True, "godkand_tid": skapad})
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    stats = sajt.build(out, events, flat=True, banner="Förhandsvisning: ogranskade utkast · Preview: unreviewed drafts",
+    stats = sajt.build(out, events, flat=True, konsol=data["handelser"], banner="Förhandsvisning: ogranskade utkast · Preview: unreviewed drafts",
                        noindex=True, over_sprak=data.get("over_sprak", False))
     png = ROOT / "site" / "newsgator.png"
     if png.exists():
@@ -63,8 +63,9 @@ def main():
         issues[lang] = nav.exists() and "UTKAST" not in nav.read_text(encoding="utf-8")
 
     PUBLIC.mkdir(exist_ok=True)
-    stats = sajt.build_editions(PUBLIC, events, noindex=not launched, issues=issues, over_sprak=_flode().get("over_sprak", False),
-                               konsol=_flode().get("handelser", []))
+    flode = _flode()
+    stats = sajt.build_editions(PUBLIC, events, noindex=not launched, issues=issues, over_sprak=flode.get("over_sprak", False),
+                               konsol=flode.get("handelser", []))
 
     png = ROOT / "site" / "newsgator.png"
     if png.exists():

@@ -1,5 +1,7 @@
 """Konsolen /lage/: alla aktuella händelser som källornas egna rubriker och länkar, utan AI-text, med valfri koppling till läsarens egen AI."""
 import re
+
+import sajt
 from pathlib import Path
 
 from test_lansering import historia
@@ -68,3 +70,26 @@ def test_konsolen_ar_noindex_tills_lanseringen(tmp_path):
 def test_publish_skickar_flodets_alla_handelser_till_konsolen():
     kod = (Path(__file__).parent.parent / "publish.py").read_text(encoding="utf-8")
     assert "konsol=" in kod
+
+
+def test_farliga_lankar_slapps_inte_igenom_och_fragment_bevaras(tmp_path):
+    assert sajt._rensa_url("javascript:alert(1)") == "" and sajt._rensa_url("data:text/html,x") == ""
+    assert sajt._rensa_url("https://a.se/x?utm_source=1&k=2#del") == "https://a.se/x?k=2#del"
+
+
+def test_rubriken_ar_inte_en_statskalla_och_antalet_stammer_med_raderna(tmp_path):
+    ev = handelse(4)
+    stat = {**ev["kallor"][0], "namn": "RT", "url": "https://rt.example/1", "rubrik": "RT rubrik", "statskontrollerad": True}
+    ev["kallor"].insert(0, stat)
+    ev["antal_kallor"] = 99
+    bygg(tmp_path, [], konsol=[ev])
+    sida = text(tmp_path / "sv" / "lage" / "index.html")
+    h2 = re.search(r"<h2><a href=\"([^\"]+)\"", sida[sida.index('class="kons"'):]).group(1)
+    lista = sida[sida.index('class="kons"'):sida.index("</ol>")]
+    assert h2 != "https://rt.example/1" and "99 " not in lista and "4 källor" in lista
+    assert "Ogranskat" in sida
+
+
+def test_forhandsvisningen_har_konsolen():
+    kod = (Path(__file__).parent.parent / "publish.py").read_text(encoding="utf-8")
+    assert 'konsol=data["handelser"]' in kod
