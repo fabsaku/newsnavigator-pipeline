@@ -20303,30 +20303,33 @@
   "id": "b4ac575a4b",
   "amnen": [],
   "amnen_sektion": [],
-  "poang": 30.2,
+  "poang": 37.9,
   "vikt": {
-   "bredd": 0.984,
+   "bredd": 1.127,
    "regioner": {
     "afrika": 1,
     "asien": 5,
     "europa": 3,
     "norden": 1,
-    "sverige": 1
+    "sverige": 1,
+    "mellanostern": 1
    },
-   "timmar": 34,
+   "timmar": 36,
    "konsekvens": {
-    "berorda": 3,
+    "berorda": 4,
     "allvar": 3,
     "varaktighet": 2,
-    "medel": 2.67,
-    "skal": "Ryska militärflygplan kränkte luftrum eller luftförsvarszoner i Japan, Taiwan och Sydkorea, vilket är en säkerhetsfråga med begränsad effekt som sannolikt klingar av inom några dagar."
+    "medel": 3.0,
+    "skal": "Ryska militärflygplan kränkte luftrum eller luftförsvarszoner i Japan, Taiwan och Sydkorea, vilket väcker säkerhetsoro men med begränsad direkt effekt."
    },
-   "bekraftad": false,
-   "maste": false,
-   "spar": []
+   "bekraftad": true,
+   "maste": true,
+   "spar": [
+    "teknik"
+   ]
   },
-  "maste": false,
-  "antal_kallor": 11,
+  "maste": true,
+  "antal_kallor": 12,
   "har_primarkalla": false,
   "senast": "2026-11-17T10:06:03+00:00",
   "utkast": {
@@ -20441,10 +20444,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Japans protest mot Moskva",
-     "namn_en": "Japan's protest against Moscow",
-     "lyfter_sv": "The Hindu och Hindustan Times lyfter fram Tokyos protest, DW att protesten riktas mot Moskva och DR och SVT att Japan säger att ryska plan kränkt luftrummet.",
-     "lyfter_en": "The Hindu and Hindustan Times highlight Tokyo's protest, DW that the protest is directed at Moscow, and DR and SVT that Japan says Russian planes violated its airspace.",
+     "namn_sv": "Kränkning av japanskt luftrum",
+     "namn_en": "Alleged violation of Japanese airspace",
+     "lyfter_sv": "The Hindu och Hindustan Times lyfter fram Japans protest, Deutsche Welle att Japan protesterat hos Moskva och The Japan Times att japanska stridsflyg varnat planen. BBC lyfter fram att Japan skickat upp stridsflyg.",
+     "lyfter_en": "The Hindu and Hindustan Times highlight Japan's protest, Deutsche Welle that Japan lodged a protest with Moscow and The Japan Times that Japanese fighters warned the aircraft. BBC highlights that Japan scrambled fighter jets.",
      "kallor": [
       {
        "namn": "The Hindu",
@@ -20452,6 +20455,13 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.thehindu.com/news/international/tokyo-lodges-protest-after-aircraft-believed-to-be-russian-violate-japan-airspace/article71710315.ece"
+      },
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/articles/c60evw20qe47o?at_medium=RSS&at_campaign=rss"
       },
       {
        "namn": "Hindustan Times",
@@ -20475,6 +20485,13 @@
        "url": "https://www.dw.com/en/japan-scrambles-jets-to-counter-suspected-russian-aircraft/a-79964537?maca=en-rss-en-all-1573-rdf"
       },
       {
+       "namn": "The Japan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.japantimes.co.jp/news/2026/11/17/japan/russia-japan-airspace-violation-defense/"
+      },
+      {
        "namn": "SVT Nyheter",
        "region": "sverige",
        "lutning": null,
@@ -20491,25 +20508,11 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Ryska plan vid flera länders zoner",
-     "namn_en": "Russian planes at several countries' zones",
-     "lyfter_sv": "Daily Maverick och Focus Taiwan lyfter fram ryska plan vid Taiwan, Yonhap ryska plan i Sydkoreas zon utan förvarning, Kyiv Independent att Sydkorea larmat jaktplan och BBC att Taiwan och Sydkorea också svarat.",
-     "lyfter_en": "Daily Maverick and Focus Taiwan highlight Russian planes near Taiwan, Yonhap Russian planes in South Korea's zone without notice, Kyiv Independent that South Korea scrambled fighters, and BBC that Taiwan and South Korea also responded.",
+     "namn_sv": "Inträde i luftförsvarszoner",
+     "namn_en": "Entry into air defense zones",
+     "lyfter_sv": "Focus Taiwan lyfter fram två ryska flygpass i Taiwans luftförsvarszon, Kyiv Independent att Sydkorea skickat upp stridsflyg som försiktighetsåtgärd, Arab News att flera ryska plan gått in i zonen och Yonhap att det skedde utan förvarning.",
+     "lyfter_en": "Focus Taiwan highlights two Russian sorties in Taiwan's air defense zone, The Kyiv Independent that South Korea scrambled fighter jets as a precaution, Arab News that several Russian aircraft entered the zone and Yonhap that this happened without notice.",
      "kallor": [
-      {
-       "namn": "Daily Maverick",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dailymaverick.co.za/article/2026-11-17-taiwan-japan-flag-incursions-by-russian-aircraft-as-putin-set-to-arrive-in-china/"
-      },
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/c60evw20qe47o?at_medium=RSS&at_campaign=rss"
-      },
       {
        "namn": "Focus Taiwan",
        "region": "asien",
@@ -20525,6 +20528,13 @@
        "url": "https://kyivindependent.com/south-korea-scrambles-fighter-jets-after-russian-military-aircraft-enter-air-defense-zone/"
       },
       {
+       "namn": "Arab News",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.arabnews.com/world/seoul-deploys-fighter-jets-after-russian-aircraft-enters-air-defense-zone-3012404"
+      },
+      {
        "namn": "Yonhap",
        "region": "asien",
        "lutning": null,
@@ -20533,20 +20543,20 @@
       }
      ],
      "regioner": [
-      "afrika",
       "asien",
-      "europa"
+      "europa",
+      "mellanostern"
      ],
      "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
+    "antal": 10,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Japan protesterar mot misstänkt ryskt luftrumsintrång (rubrik)",
+      "text": "Japan protesterar efter misstänkt rysk kränkning av luftrummet (rubrik)",
       "stod": [
        2,
        4,
@@ -20555,72 +20565,65 @@
       "problem": null
      },
      {
-      "text": "The Hindu lyfter fram Tokyos protest",
+      "text": "The Hindu lyfter fram Japans protest",
       "stod": [
        2
       ],
       "problem": null
      },
      {
-      "text": "Hindustan Times lyfter fram Tokyos protest",
+      "text": "Hindustan Times lyfter fram Japans protest",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "DW: protesten riktas mot Moskva",
+      "text": "Deutsche Welle: Japan har protesterat hos Moskva",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "DR: Japan säger att ryska plan kränkt luftrummet",
+      "text": "The Japan Times: japanska stridsflyg har varnat de ryska planen",
       "stod": [
-       6
+       9
       ],
       "problem": null
      },
      {
-      "text": "SVT: Japan säger att ryska plan kränkt luftrummet",
+      "text": "BBC: Japan har skickat upp stridsflyg",
       "stod": [
-       10
+       3
       ],
       "problem": null
      },
      {
-      "text": "Daily Maverick lyfter fram ryska plan vid Taiwan",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Focus Taiwan lyfter fram ryska plan vid Taiwan",
+      "text": "Focus Taiwan: två ryska flygpass i Taiwans luftförsvarszon",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "Yonhap: ryska plan i Sydkoreas zon utan förvarning",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "Kyiv Independent: Sydkorea har larmat jaktplan",
+      "text": "Kyiv Independent: Sydkorea har skickat upp stridsflyg som försiktighetsåtgärd",
       "stod": [
        8
       ],
       "problem": null
      },
      {
-      "text": "BBC: Taiwan och Sydkorea har också svarat på ryska militärplan",
+      "text": "Arab News: flera ryska plan har gått in i luftförsvarszonen",
       "stod": [
-       3
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Yonhap: incidenten skedde utan förvarning",
+      "stod": [
+       12
       ],
       "problem": null
      }
@@ -20629,19 +20632,19 @@
    },
    "ok": true
   },
-  "sammanhang": 0.641,
+  "sammanhang": 0.644,
   "betydelse": {
    "sv": null,
-   "en": "Since Japan protested to Moscow after two suspected Russian aircraft violated its airspace, and South Korea scrambled fighters, the incidents involve US treaty allies in Asia, which links them to American security commitments in the region.",
+   "en": "Because Japan protested to Moscow over a suspected Russian airspace violation and South Korea scrambled fighter jets, the situation touches US defense commitments, since both are US treaty allies.",
    "grund": [
-    4,
+    1,
     7,
     8
    ],
    "grund_kallor": [
     {
-     "namn": "Hindustan Times",
-     "url": "https://www.hindustantimes.com/world-news/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-101794900379072.html"
+     "namn": "Daily Maverick",
+     "url": "https://www.dailymaverick.co.za/article/2026-11-17-taiwan-japan-flag-incursions-by-russian-aircraft-as-putin-set-to-arrive-in-china/"
     },
     {
      "namn": "Deutsche Welle",
@@ -20655,7 +20658,7 @@
    "kontroll": {
     "ok": false,
     "problem": [
-     "slutsats: \"which links them to American security commitments in the region\" är en slutsats som inte följer av källmaterialet, som inte nämner USA alls"
+     "slutsats: \"touches US defense commitments\" dras som slutsats av protester och jaktflygplan, men källorna nämner inte USA alls. Att de är USA:s fördragsallierade är allmänt känt, men att händelserna berör de åtagandena följer inte av uppgifterna."
     ]
    },
    "ok": false
@@ -20665,6 +20668,7 @@
     "afrika",
     "asien",
     "europa",
+    "mellanostern",
     "norden",
     "sverige"
    ],
@@ -20764,6 +20768,16 @@
       "rubrik": "Japan: Ryska plan har kränkt vårt luftrum",
       "url": "https://www.svt.se/nyheter/utrikes/japan-ryska-plan-har-krankt-vart-luftrum",
       "tid": 1794879619.0,
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Arab News",
+      "land": "SA",
+      "rubrik": "Seoul deploys fighter jets after Russian aircraft enters air defense zone",
+      "url": "https://www.arabnews.com/world/seoul-deploys-fighter-jets-after-russian-aircraft-enters-air-defense-zone-3012404",
+      "tid": 1794875963.0,
       "statskontrollerad": false
      }
     ]
@@ -20896,6 +20910,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Arab News",
+    "rubrik": "Seoul deploys fighter jets after Russian aircraft enters air defense zone",
+    "url": "https://www.arabnews.com/world/seoul-deploys-fighter-jets-after-russian-aircraft-enters-air-defense-zone-3012404",
+    "tid": 1794875963.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SA",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Yonhap",
     "rubrik": "(LEAD) Several Russian military aircraft enter S. Korea's air defense zone without notice: JCS",
     "url": "https://en.yna.co.kr/view/AEN20261117000851315",
@@ -20914,13 +20940,12 @@
    "en": 2
   },
   "autopilot": [
-   "källkontrollen har 1 anmärkningar",
    "spärrord: misstänkt, suspected"
   ],
   "data": null,
   "godkand_tid": 1794096567.929113,
   "automatisk": true,
-  "uppdaterad_tid": 1794913050.6884737
+  "uppdaterad_tid": 1794917292.8920832
  },
  "6c715891a8": {
   "id": "6c715891a8",
@@ -23236,5 +23261,811 @@
   "godkand_tid": 1794161089.4936125,
   "automatisk": false,
   "uppdaterad_tid": 1794161345.192726
+ },
+ "11d8b935fe": {
+  "id": "11d8b935fe",
+  "amnen": [
+   "usa"
+  ],
+  "amnen_sektion": [
+   "usa"
+  ],
+  "poang": 34.1,
+  "vikt": {
+   "bredd": 0.881,
+   "regioner": {
+    "europa": 1,
+    "mellanostern": 2,
+    "asien": 3,
+    "usa": 3,
+    "norden": 1
+   },
+   "timmar": 53,
+   "konsekvens": {
+    "berorda": 4,
+    "allvar": 3,
+    "varaktighet": 2,
+    "medel": 3.0,
+    "skal": "Möjligt möte mellan Trump och Kim Jong Un i samband med toppmöten i Asien, en säkerhetspolitiskt känslig fråga men med osäker utgång."
+   },
+   "bekraftad": true,
+   "maste": true,
+   "spar": []
+  },
+  "maste": true,
+  "antal_kallor": 10,
+  "har_primarkalla": false,
+  "senast": "2026-11-17T10:13:27+00:00",
+  "utkast": {
+   "rubrik_sv": "Trump säger att han kan träffa Kim Jong Un i Kina",
+   "sammanfattning_sv": "Trump säger att han kan träffa Nordkoreas ledare Kim Jong Un i Kina, enligt Yonhap och The Straits Times. Enligt Arab News uppger Kina att landet inte har någon information om ett sådant möte.",
+   "rubrik_en": "Trump says he may meet Kim Jong Un in China",
+   "sammanfattning_en": "Trump says he may meet North Korean leader Kim Jong Un in China, according to Yonhap and The Straits Times. Arab News reports that China says it has no information about such a meeting.",
+   "oenighet": "Källorna säger olika saker om huruvida ett möte mellan Trump och Kim är aktuellt. Trump uppger att han kan träffa Kim, medan Kina enligt Arab News uppger att landet inte har någon information om ett möte.",
+   "oenighet_en": "The sources differ on whether a meeting between Trump and Kim is possible. Trump says he may meet Kim, while China, according to Arab News, says it has no information about a meeting.",
+   "perspektiv_sv": "Norska NRK lyfter att Kina enligt NRK bekräftar att Trump, Xi och Putin möts på torsdag. Arab News lyfter Kinas uppgift om att landet inte har någon information om ett möte mellan Trump och Kim. Yonhap, The Straits Times och BBC lyfter Trumps uttalande om att han kan träffa Kim, där BBC ställer frågan om mötet blir av. The Hindu lyfter att Trump antyder ett möte och Kims besök på ett skidcenter. Al Jazeera lyfter främst Kims besök på ett skidcenter tillsammans med dottern Ju Ae.",
+   "perspektiv_en": "Norway's NRK highlights that China, according to NRK, confirms that Trump, Xi and Putin will meet on Thursday. Arab News highlights China's statement that it has no information about a meeting between Trump and Kim. Yonhap, The Straits Times and BBC highlight Trump's statement that he may meet Kim, with BBC asking whether the meeting will happen. The Hindu highlights Trump hinting at a meeting and Kim's visit to a ski resort. Al Jazeera mainly highlights Kim's visit to a ski resort with his daughter Ju Ae.",
+   "usa_sv": "Fox News (AllSides: höger) lyfter i rubriken att Trump lämnar dörren öppen för att Kim Jong Un kan delta i samtal med Xi och Putin, och i ingressen att Trump enligt källan säger att Kims närvaro beror på Xi Jinping. NPR (AllSides: lutar vänster) lyfter i rubriken att Trump reser till Asien för att möta Xi och Putin mitt i Nvidia-fallouten, och i ingressen att resan är Trumps andra i år och sker efter kritik från väljare i de senaste midtermvalen. The Washington Post (AllSides: lutar vänster) lyfter i rubriken att Trump för fram tanken på ett möte med Kim under sin Asienresa. Källmaterialet innehåller ingen ingress från The Washington Post.",
+   "usa_en": "Fox News (AllSides: right) highlights in its headline that Trump leaves the door open for Kim Jong Un to join talks with Xi and Putin, and in its lead that, according to the source, Trump says Kim's presence is up to Xi Jinping. NPR (AllSides: leans left) highlights in its headline that Trump travels to Asia to meet Xi and Putin amid the Nvidia fallout, and in its lead that the trip is Trump's second this year and comes after criticism from voters in the recent midterm elections. The Washington Post (AllSides: leans left) highlights in its headline that Trump floats a meeting with Kim during his Asia trip. The source material contains no lead from The Washington Post.",
+   "osaker": false,
+   "kommentar": "The Washington Posts ingress saknas i källmaterialet, så jämförelsen av amerikanska källor bygger för den källan enbart på rubriken."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 19,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Trump säger att han kan träffa Kim Jong Un i Kina",
+     "stod": [
+      1,
+      5,
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "Yonhap rapporterar att Trump säger att han kan träffa Kim i Kina",
+     "stod": [
+      5
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Straits Times rapporterar att Trump säger att han kan träffa Kim i Kina",
+     "stod": [
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "Kina uppger att landet inte har någon information om ett möte mellan Trump och Kim",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Arab News lyfter Kinas uppgift att landet inte har någon information om ett möte mellan Trump och Kim",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "NRK lyfter att Kina bekräftar att Trump, Xi och Putin möts på torsdag",
+     "stod": [
+      9
+     ],
+     "problem": null
+    },
+    {
+     "text": "BBC lyfter Trumps uttalande att han kan träffa Kim",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "BBC ställer frågan om mötet blir av",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Yonhap och The Straits Times lyfter Trumps uttalande att han kan träffa Kim",
+     "stod": [
+      5,
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Hindu lyfter att Trump antyder ett möte och att Kim besöker ett skidcenter",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Al Jazeera lyfter främst Kims besök på ett skidcenter tillsammans med dottern Ju Ae",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Fox News lyfter i rubriken att Trump lämnar dörren öppen för att Kim kan delta i samtal med Xi och Putin",
+     "stod": [
+      7
+     ],
+     "problem": null
+    },
+    {
+     "text": "Fox News säger i ingressen att Trump enligt källan menar att Kims närvaro beror på Xi Jinping",
+     "stod": [
+      7
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR lyfter i rubriken att Trump reser till Asien för att möta Xi och Putin mitt i Nvidia-fallouten",
+     "stod": [
+      8
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR lyfter i ingressen att resan är Trumps andra i år",
+     "stod": [
+      8
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR lyfter i ingressen att resan sker efter kritik från väljare i de senaste midtermvalen",
+     "stod": [
+      8
+     ],
+     "problem": null
+    },
+    {
+     "text": "The Washington Post lyfter i rubriken att Trump för fram tanken på ett möte med Kim under sin Asienresa",
+     "stod": [
+      10
+     ],
+     "problem": null
+    },
+    {
+     "text": "Källmaterialet innehåller ingen ingress från The Washington Post",
+     "stod": [
+      10
+     ],
+     "problem": null
+    },
+    {
+     "text": "Källorna säger olika saker om huruvida ett möte mellan Trump och Kim är aktuellt",
+     "stod": [
+      4,
+      5,
+      6
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Trumps öppenhet för ett möte med Kim",
+     "namn_en": "Trump's openness to meeting Kim",
+     "lyfter_sv": "BBC lyfter fram Trump som angelägen om ett möte med Kim i Kina, Yonhap att Trump säger sig kanske träffa honom, The Straits Times att Trump kanske möter honom och The Washington Post att Trump föreslår ett möte under Asienresan.",
+     "lyfter_en": "BBC highlights Trump as keen to meet Kim in China, Yonhap that Trump says he may meet him, The Straits Times that Trump might meet him and The Washington Post that Trump floats a meeting during the Asia trip.",
+     "kallor": [
+      {
+       "namn": "BBC World",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+       "namn": "Yonhap",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://en.yna.co.kr/view/AEN20261116010052315"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/united-states/trump-says-he-might-meet-with-north-koreas-kim-jong-un-in-china"
+      },
+      {
+       "namn": "The Washington Post",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-floats-meeting-with-kim-jong-un-while-asia/"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Kinas roll i ett möte",
+     "namn_en": "China's role in a meeting",
+     "lyfter_sv": "Arab News lyfter fram att Kina säger sig sakna information om ett möte mellan Trump och Kim, Fox News att Trump säger att Kims närvaro är upp till Xi Jinping.",
+     "lyfter_en": "Arab News highlights that China says it lacks information about a meeting between Trump and Kim, Fox News that Trump says Kim's presence depends on Xi Jinping.",
+     "kallor": [
+      {
+       "namn": "Arab News",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.arabnews.com/world/china-says-has-no-information-on-whether-n-koreas-kim-will-meet-trump-3012442"
+      },
+      {
+       "namn": "Fox News",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://www.foxnews.com/politics/trump-leaves-door-open-kim-jong-un-joining-high-stakes-talks-xi-putin"
+      }
+     ],
+     "regioner": [
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Kims besök på skidort",
+     "namn_en": "Kim's visit to ski resort",
+     "lyfter_sv": "Al Jazeera lyfter fram att Kim Jong Un besöker en skidort tillsammans med dottern Ju Ae, The Hindu att besöket sker samtidigt som Trump antyder ett möjligt möte.",
+     "lyfter_en": "Al Jazeera highlights Kim Jong Un visiting a ski resort with his daughter Ju Ae, The Hindu that the visit coincides with Trump hinting at a possible meeting.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/north-koreas-kim-visits-ski-resort-as-donald-trump-hints-at-possible-meeting/article71710685.ece"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 9,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump säger att han kan träffa Kim Jong Un i Kina (rubrik)",
+      "stod": [
+       1,
+       5,
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: Trump är angelägen om ett möte med Kim i Kina",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Yonhap: Trump säger sig kanske träffa Kim",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: Trump kanske möter Kim",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Washington Post: Trump föreslår ett möte med Kim under Asienresan",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Arab News: Kina säger sig sakna information om ett möte mellan Trump och Kim",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News: Trump säger att Kims närvaro är upp till Xi Jinping",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: Kim Jong Un besöker en skidort tillsammans med dottern Ju Ae",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: Kims skidortsbesök sker samtidigt som Trump antyder ett möjligt möte",
+      "stod": [
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.641,
+  "betydelse": null,
+  "perspektiv": {
+   "regioner": [
+    "asien",
+    "europa",
+    "mellanostern",
+    "norden",
+    "usa"
+   ],
+   "per_region": {
+    "europa": [
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Will President Trump meet Kim Jong Un?",
+      "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss",
+      "tid": 1794910407.0,
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Kim Jong Un tours North Korea ski resort with daughter Ju Ae",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss",
+      "tid": 1794906758.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Arab News",
+      "land": "SA",
+      "rubrik": "China says has ‘no information’ on whether N. Korea’s Kim will meet Trump",
+      "url": "https://www.arabnews.com/world/china-says-has-no-information-on-whether-n-koreas-kim-will-meet-trump-3012442",
+      "tid": 1794902293.0,
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "North Korea’s Kim visits ski resort as Donald Trump hints at possible meeting",
+      "url": "https://www.thehindu.com/news/international/north-koreas-kim-visits-ski-resort-as-donald-trump-hints-at-possible-meeting/article71710685.ece",
+      "tid": 1794902852.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Yonhap",
+      "land": "KR",
+      "rubrik": "(2nd LD) Trump says he may meet with N. Korean leader in China",
+      "url": "https://en.yna.co.kr/view/AEN20261116010052315",
+      "tid": 1794898379.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Trump says he might meet with North Korea’s Kim Jong Un in China",
+      "url": "https://www.straitstimes.com/world/united-states/trump-says-he-might-meet-with-north-koreas-kim-jong-un-in-china",
+      "tid": 1794874920.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Trump leaves door open to Kim Jong Un joining high-stakes talks with Xi, Putin",
+      "url": "https://www.foxnews.com/politics/trump-leaves-door-open-kim-jong-un-joining-high-stakes-talks-xi-putin",
+      "tid": 1794849716.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+      "tid": 1794823200.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Washington Post",
+      "land": "US",
+      "rubrik": "Trump floats meeting with Kim Jong Un while in Asia",
+      "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-floats-meeting-with-kim-jong-un-while-asia/",
+      "tid": 1794843330.0,
+      "statskontrollerad": false
+     }
+    ],
+    "norden": [
+     {
+      "kalla": "NRK",
+      "land": "NO",
+      "rubrik": "Kina bekrefter: Trump, Xi og Putin møtes torsdag",
+      "url": "https://www.nrk.no/nyheter/kina-bekrefter_-trump_-xi-og-putin-motes-torsdag-1.18082462",
+      "tid": 1794799448.0,
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": true,
+   "usa": {
+    "rod": [
+     {
+      "kalla": "Fox News",
+      "rubrik": "Trump leaves door open to Kim Jong Un joining high-stakes talks with Xi, Putin",
+      "url": "https://www.foxnews.com/politics/trump-leaves-door-open-kim-jong-un-joining-high-stakes-talks-xi-putin",
+      "tid": 1794849716.0,
+      "lutning": "hoger"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "NPR",
+      "rubrik": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+      "tid": 1794823200.0,
+      "lutning": "lutar_vanster"
+     },
+     {
+      "kalla": "The Washington Post",
+      "rubrik": "Trump floats meeting with Kim Jong Un while in Asia",
+      "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-floats-meeting-with-kim-jong-un-while-asia/",
+      "tid": 1794843330.0,
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Will President Trump meet Kim Jong Un?",
+  "kallor": [
+   {
+    "namn": "BBC World",
+    "rubrik": "Will President Trump meet Kim Jong Un?",
+    "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss",
+    "tid": 1794910407.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "Kim Jong Un tours North Korea ski resort with daughter Ju Ae",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss",
+    "tid": 1794906758.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "North Korea’s Kim visits ski resort as Donald Trump hints at possible meeting",
+    "url": "https://www.thehindu.com/news/international/north-koreas-kim-visits-ski-resort-as-donald-trump-hints-at-possible-meeting/article71710685.ece",
+    "tid": 1794902852.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Arab News",
+    "rubrik": "China says has ‘no information’ on whether N. Korea’s Kim will meet Trump",
+    "url": "https://www.arabnews.com/world/china-says-has-no-information-on-whether-n-koreas-kim-will-meet-trump-3012442",
+    "tid": 1794902293.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SA",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Yonhap",
+    "rubrik": "(2nd LD) Trump says he may meet with N. Korean leader in China",
+    "url": "https://en.yna.co.kr/view/AEN20261116010052315",
+    "tid": 1794898379.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KR",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Trump says he might meet with North Korea’s Kim Jong Un in China",
+    "url": "https://www.straitstimes.com/world/united-states/trump-says-he-might-meet-with-north-koreas-kim-jong-un-in-china",
+    "tid": 1794874920.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Fox News",
+    "rubrik": "Trump leaves door open to Kim Jong Un joining high-stakes talks with Xi, Putin",
+    "url": "https://www.foxnews.com/politics/trump-leaves-door-open-kim-jong-un-joining-high-stakes-talks-xi-putin",
+    "tid": 1794849716.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NPR",
+    "rubrik": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
+    "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+    "tid": 1794823200.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NRK",
+    "rubrik": "Kina bekrefter: Trump, Xi og Putin møtes torsdag",
+    "url": "https://www.nrk.no/nyheter/kina-bekrefter_-trump_-xi-og-putin-motes-torsdag-1.18082462",
+    "tid": 1794799448.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "NO",
+    "region": "norden",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Washington Post",
+    "rubrik": "Trump floats meeting with Kim Jong Un while in Asia",
+    "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-floats-meeting-with-kim-jong-un-while-asia/",
+    "tid": 1794843330.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 2,
+   "en": 3
+  },
+  "autopilot": [],
+  "data": null,
+  "godkand_tid": 1794917292.8920832,
+  "automatisk": true
+ },
+ "304fa3d01f": {
+  "id": "304fa3d01f",
+  "amnen": [
+   "sverige",
+   "varlden"
+  ],
+  "amnen_sektion": [
+   "sverige"
+  ],
+  "poang": 26.6,
+  "vikt": {
+   "bredd": 0.185,
+   "regioner": {
+    "sverige": 2
+   },
+   "timmar": 96,
+   "konsekvens": {
+    "berorda": 2,
+    "allvar": 3,
+    "varaktighet": 1,
+    "medel": 2.0,
+    "skal": "En flygolycka vid Grand Canyon med tre döda berör främst de närmast anhöriga och har begränsade bredare följder."
+   },
+   "bekraftad": true,
+   "maste": false,
+   "spar": []
+  },
+  "maste": false,
+  "antal_kallor": 2,
+  "har_primarkalla": false,
+  "senast": "2026-11-17T06:20:32+00:00",
+  "utkast": {
+   "rubrik_sv": "Tre döda i flygkrasch vid Grand Canyon",
+   "sammanfattning_sv": "Enligt SVT Nyheter och Sveriges Radio Ekot har tre personer dött i en flygkrasch vid Grand Canyon. Övriga omständigheter framgår inte av underlaget.",
+   "rubrik_en": "Three dead in plane crash at Grand Canyon",
+   "sammanfattning_en": "According to SVT Nyheter and Sveriges Radio Ekot, three people have died in a plane crash at the Grand Canyon. Other circumstances are not stated in the source material.",
+   "oenighet": null,
+   "oenighet_en": null,
+   "perspektiv_sv": null,
+   "perspektiv_en": null,
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "Underlaget består endast av rubriker från två svenska källor. Båda uppger samma sak (tre döda efter flygkrasch vid Grand Canyon), men ingen ingress fanns med, så tid, flygplanstyp och förlopp kan inte återges. Sammanfattningen är därför kort och begränsad till det som båda källorna anger."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 6,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Tre personer har dött",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Dödsfallen orsakades av en flygkrasch",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Kraschen skedde vid/i Grand Canyon",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Uppgiften tillskrivs SVT Nyheter, vars rubrik säger tre döda efter flygkrasch vid Grand Canyon",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Uppgiften tillskrivs Sveriges Radio Ekot, vars rubrik säger tre döda efter flygkrasch i Grand Canyon",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Övriga omständigheter framgår inte av underlaget",
+     "stod": [
+      1,
+      2
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": null,
+  "sammanhang": 0.998,
+  "betydelse": null,
+  "perspektiv": {
+   "regioner": [
+    "sverige"
+   ],
+   "per_region": {
+    "sverige": [
+     {
+      "kalla": "SVT Nyheter",
+      "land": "SE",
+      "rubrik": "Tre döda efter flygkrasch vid Grand Canyon",
+      "url": "https://www.svt.se/nyheter/utrikes/tre-doda-efter-flygkrasch-vid-grand-canyon",
+      "tid": 1794896432.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Tre döda efter flygkrasch i Grand Canyon",
+      "url": "https://www.sverigesradio.se/artikel/9344081",
+      "tid": 1794896160.0,
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": "bara_i_sverige",
+   "grannar_svenska": false,
+   "usa": null,
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Tre döda efter flygkrasch vid Grand Canyon",
+  "kallor": [
+   {
+    "namn": "SVT Nyheter",
+    "rubrik": "Tre döda efter flygkrasch vid Grand Canyon",
+    "url": "https://www.svt.se/nyheter/utrikes/tre-doda-efter-flygkrasch-vid-grand-canyon",
+    "tid": 1794896432.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Sveriges Radio Ekot",
+    "rubrik": "Tre döda efter flygkrasch i Grand Canyon",
+    "url": "https://www.sverigesradio.se/artikel/9344081",
+    "tid": 1794896160.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 3,
+   "en": 0
+  },
+  "autopilot": [],
+  "data": null,
+  "godkand_tid": 1794917292.8920832,
+  "automatisk": true
  }
 }
