@@ -93,3 +93,12 @@ def test_rubriken_ar_inte_en_statskalla_och_antalet_stammer_med_raderna(tmp_path
 def test_forhandsvisningen_har_konsolen():
     kod = (Path(__file__).parent.parent / "publish.py").read_text(encoding="utf-8")
     assert 'konsol=data["handelser"]' in kod
+
+
+def test_konsolen_kan_filtreras_pa_sektion(tmp_path, monkeypatch):
+    a, b = handelse(5), handelse(6)
+    monkeypatch.setattr(sajt, "section_of", lambda e: "varlden" if e is a else "tech")
+    bygg(tmp_path, [], konsol=[a, b])
+    sida = text(tmp_path / "sv" / "lage" / "index.html")
+    assert 'class="filt"' in sida and 'data-f="alla"' in sida
+    assert 'data-f="varlden"' in sida and 'data-f="tech"' in sida and '<li data-sek="tech"' in sida

@@ -135,6 +135,7 @@ footer{border-top:1px solid var(--ink);margin-top:64px;padding:28px 0 48px}
 .kons .nm{color:var(--mute);margin-right:6px}
 .kons details{margin-top:4px}.kons summary{cursor:pointer;color:var(--mute);font:15px var(--sans)}
 .kons .ai{margin:8px 0 0}.kons .ai button{font:600 14px var(--sans);padding:6px 10px;border:1px solid var(--rule);background:none;color:var(--ink);border-radius:4px;cursor:pointer}
+.filt{margin:16px 0 0;display:flex;flex-wrap:wrap;gap:6px}.filt button{font:600 14px var(--sans);padding:5px 10px;border:1px solid var(--rule);background:none;color:var(--mute);border-radius:14px;cursor:pointer}.filt button[aria-pressed=true]{color:var(--ink);border-color:var(--ink)}
 .aival{display:none;margin:14px 0 0;font:15px var(--sans);color:var(--mute)}.aival.on{display:block}
 .aival select{font:15px var(--sans);margin-left:6px}
 """
@@ -693,11 +694,17 @@ def _kons_rad(u, ev):
     prompt = _ai_prompt(ev, kallor, u.lang or "sv")
     ai = f'<p class="ai" data-prompt="{_e(prompt)}"></p>'
     forst = next((k for k in kallor if not k.get("statskontrollerad") and not k.get("betalvagg")), kallor[0])
-    return f'<li><h2><a href="{_e(forst["url"])}" rel="noopener">{_e(forst["rubrik"])}</a></h2>{meta}{lista}{ai}</li>'
+    return f'<li data-sek="{_e(section_of(ev))}"><h2><a href="{_e(forst["url"])}" rel="noopener">{_e(forst["rubrik"])}</a></h2>{meta}{lista}{ai}</li>'
 
 
 KONSOL_JS = """
 (function(){
+  var fb=document.querySelectorAll('.filt button');
+  fb.forEach(function(b){b.addEventListener('click',function(){
+    var f=b.getAttribute('data-f');
+    fb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    document.querySelectorAll('.kons>li').forEach(function(li){li.hidden=(f!=='alla'&&li.getAttribute('data-sek')!==f)});
+  })});
   var rows=document.querySelectorAll('.ai[data-prompt]'); if(!rows.length) return;
   var sel=document.getElementById('aival'), box=document.querySelector('.aival'), key='nn_ai';
   function get(){try{return localStorage.getItem(key)||'claude'}catch(e){return 'claude'}}
@@ -726,7 +733,12 @@ def lage_page(u, handelser, sources, banner, noindex):
     evs = [e for e in handelser if utgava.visa(e, u.lang or "sv")]
     evs = utgava.ordna(evs, u.lang or "sv")[:KONSOL_MAX]
     rader = "".join(_kons_rad(u, e) for e in evs)
-    lista = f'<ol class="kons">{rader}</ol>' if rader else f'<p class="lede">{_both("Inga aktuella händelser just nu.", "No current events right now.")}</p>'
+    sekt = [k for k, *_ in SECTIONS if any(section_of(e) == k for e in evs)]
+    filt = ""
+    if len(sekt) > 1:
+        knappar = "".join(f'<button type="button" data-f="{k}">{_both(*_section_names(k))}</button>' for k in sekt)
+        filt = f'<p class="filt"><button type="button" data-f="alla" aria-pressed="true">{_both("Alla", "All")}</button>{knappar}</p>'
+    lista = f'{filt}<ol class="kons">{rader}</ol>' if rader else f'<p class="lede">{_both("Inga aktuella händelser just nu.", "No current events right now.")}</p>'
     aival = (f'<p class="aival"><label for="aival">{_both("Din AI:", "Your AI:")}</label>'
              f'<select id="aival"><option value="claude">Claude</option><option value="chatgpt">ChatGPT</option>'
              f'<option value="kopiera">{_both("Kopiera prompten", "Copy the prompt")}</option></select> '
