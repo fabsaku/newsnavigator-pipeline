@@ -74,3 +74,18 @@ def test_pipelinen_anvander_raknaren_och_budgeten():
     main = inspect.getsource(pipeline.main)
     assert "kostnad.RaknandeKlient" in main and "kostnad.spara" in main
     assert "far_nytt" in inspect.getsource(pipeline.main)
+
+
+def test_effort_laggs_pa_som_standard_och_kan_stangas_av(monkeypatch):
+    sett = {}
+    inre = FalskKlient()
+    orig = inre.messages.create
+    inre.messages.create = lambda **kw: (sett.update(kw), orig(**kw))[1]
+    k = kostnad.RaknandeKlient(inre, kostnad.Rakning("claude-haiku-5-5"))
+    monkeypatch.delenv("NN_AI_EFFORT", raising=False)
+    k.messages.create(model="x", max_tokens=1, messages=[])
+    assert sett["extra_body"] == {"output_config": {"effort": "low"}}
+    sett.clear()
+    monkeypatch.setenv("NN_AI_EFFORT", "")
+    k.messages.create(model="x", max_tokens=1, messages=[])
+    assert "extra_body" not in sett

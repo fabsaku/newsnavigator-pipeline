@@ -5,6 +5,7 @@ data/kostnad.json, och `Budget` stoppar nya utkast när körningens eller dygnet
 i cachen kostar ingenting och påverkas inte. Priser i USD per miljon tokens (in, ut); okänd modell prissätts
 försiktigt som Sonnet 5.5."""
 import json
+import os
 import threading
 from datetime import datetime, timezone
 from pathlib import Path
@@ -41,6 +42,10 @@ class _Meddelanden:
         self._k, self._r = klient, rakning
 
     def create(self, **kw):
+        # Lägre effort ger färre tankningstokens (som räknas som utdata). extra_body fungerar med alla SDK-versioner.
+        effort = os.environ.get("NN_AI_EFFORT", "low")
+        if effort and "extra_body" not in kw:
+            kw["extra_body"] = {"output_config": {"effort": effort}}
         msg = self._k.messages.create(**kw)
         self._r.lagg_till(getattr(msg, "usage", None))
         return msg
