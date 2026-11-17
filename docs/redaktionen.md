@@ -135,6 +135,17 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 ## Läget
 
+**17 november: planen till full drift (sajt och båda Instagramkonton löpande).** Läge: pipelinen går varje timme sedan repot blev publikt (senast 14.10 UTC, 40 händelser, 128 av 143 källor), autopiloten har 50 publicerade, 3 i kön, 7 stoppade. Kvar, i ordning:
+1. **Sajten ut (Fabian, 10 min).** Kontrollera att newsnavigator.se visar dagens flöde; säg till om det är fruset. Kontrollera att Actions-inställningarna och Secret scanning blev påslagna. Därefter `NN_LANSERAD=1` (jag sätter det) när lanseringen är klar.
+2. **Meta (Fabian, 30 min).** Företagsportfölj, lägg till båda kontona, fyra secrets, kör Instagram med `kontroll = true` tills båda raderna är OK.
+3. **Lanseringen (Fabian och jag, 1 timme plus 7,5 timmar maraton).** Lansering `valj`, bläddra `/lansering/sv.html` och `/en.html`, `godkann` med strykningar, prov med ett inlägg per konto, sedan 56 per konto.
+4. **Löpande Instagram (jag, efter 3).** Sätt repo-variabeln `IG_SCHEMA` = 1 (Fabian), så postar schemat ett inlägg per konto och dygn. Höj autopilotens tak enligt planen och följ upp en vecka.
+5. **Berättelserna och Analys (Fabian 20 min, sedan jag).** Bedöm issue #2, kör Utvärdering `lage = rakna`; vid minst 80 procent stämmer slår jag på `NN_BERATTELSER` och `NN_BETYDELSE`.
+6. **Säkerhetsnätet (Fabian 15 min).** Resend-secrets och ny `klocka/worker.js`.
+7. **Källor (jag).** Nya flödesadresser för döda källor, besluta om de tysta (CNN, WHO, Microsoft AI, Svenska kraftnät, Platformer), dela upp hopslagna händelser.
+8. **Konsolen (jag).** Sajten som nyhetskonsol: rubrik, kort fakta och källlänken alltid nära, snabba filter, mätt som steg från rubrik till källans artikel.
+9. **Nattsessionen (Fabian väljer).** Slås på igen om du vill att jag fortsätter bygga automatiskt.
+
 **17 november: repot är publikt och pausen är hävd.** Fabian gjorde repot publikt, så Actions kostar inget. Alla workflows går som före pausen, pipelinen varje timme. Nattsessionen är fortfarande avstängd.
 
 **17 november: Fabians beslut: öppet repo och löpande uppdatering.** Dygnsdriften (en körning per dygn) byggdes samma dag men är återställd: Newsnavigator ska uppdateras varje timme som förut, och repot görs publikt så att Actions är gratis. Riktningen: Gatorn är en nyhetskonsol, alltså platsen där man får överblicken och sedan tar sig vidare till de artiklar man vill läsa hos källorna. Pausen ligger kvar tills repot faktiskt är publikt (det är fortfarande privat, och inställningen går inte att ändra från Claude-sessionen). När det är publikt tas `if: false` bort i de fem workflowsen och villkoret i `instagram.yml` sätts till `if: true`.
