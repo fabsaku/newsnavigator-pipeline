@@ -5,10 +5,12 @@ name: Rapport
 # Mejlet skickas en gång per dag och varningen en gång per fel (och igen efter tolv timmar), enligt data/rapport.json.
 on:
   schedule:
-    - cron: "5 5,6 * * *"    # 07.05 svensk tid, sommar och vinter
-    - cron: "47 * * * *"     # vakthund varje timme
+    - cron: "15 6 * * *"     # en gång per dygn, efter pipelinen och Instagram: morgonrapport och varning vid fel
   workflow_dispatch:
     inputs:
+      kor:
+        description: "true = kör på riktigt. Starter utan detta (klockan i Cloudflare) hoppas över."
+        default: "false"
       torrt:
         description: "Skriv ut mejlet i loggen i stället för att skicka det"
         type: boolean
@@ -24,7 +26,8 @@ concurrency:
 
 jobs:
   rapport:
-    if: false   # PAUSAT 11 november på Fabians begäran. Ta bort raden för att starta igen.
+    # PAUSAT till 1 december (Actions-minuterna är slut). Ta bort `false && ` för att starta.
+    if: ${{ false && (github.event_name == 'schedule' || inputs.kor == 'true' || inputs.torrt) }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

@@ -32,7 +32,7 @@ Du behöver varken App Review eller att appen sätts i live-läge för att publi
    - `IG_USER_ID_EN` = konto-id för @news.navigator
    - `IG_ACCESS_TOKEN_EN` = token för @news.navigator
 3. Radera anteckningen med token när du är klar.
-4. **Kontrollera.** Actions, workflowen Instagram, Run workflow, `kontroll = true`, kör. Ändra fältet från `false` till `true` innan du kör: en manuell körning med `false` postar på riktigt. Med `true` publiceras inget. Loggen visar för varje konto om secrets finns, vilket konto token hör till, kontotyp och hur många publiceringar som finns kvar i dygnskvoten. Rätt resultat är "OK" på båda raderna. Står det "fel konto" har du bytt token mellan kontona. Står det "fel kontotyp" är kontot inte professionellt (se 1.1). Står det "token fungerar inte" har den gått ut eller kopierats fel: generera en ny.
+4. **Kontrollera.** Actions, workflowen Instagram, Run workflow, `kontroll = true`, kör. Ändra fältet från `false` till `true` innan du kör. Med `true` publiceras inget. (En manuell körning postar bara om du sätter `kor = true`.) Loggen visar för varje konto om secrets finns, vilket konto token hör till, kontotyp och hur många publiceringar som finns kvar i dygnskvoten. Rätt resultat är "OK" på båda raderna. Står det "fel konto" har du bytt token mellan kontona. Står det "fel kontotyp" är kontot inte professionellt (se 1.1). Står det "token fungerar inte" har den gått ut eller kopierats fel: generera en ny.
 5. Tokens förnyas sedan av sig själva varje vecka (workflowen `igtoken.yml`). Du behöver inte göra något mer.
 
 ### 1.4 Bio-länkar

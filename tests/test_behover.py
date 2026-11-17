@@ -134,10 +134,11 @@ def test_fel_galler_varje_workflow_for_sig():
 
 
 def test_klockan_har_stannat():
-    l = lage(drift={"historik": [korning(minuter_sedan=200)]})
+    """Pipelinen går en gång per dygn (i två steg), så larmet kommer först när ett helt dygn uteblivit."""
+    l = lage(drift={"historik": [korning(minuter_sedan=28 * 60)]})
     rad = next(r for r in behover.regler(l, NU) if r["kod"] == "klocka")
-    assert rad["rad"] == "Klockan har stannat: senaste körningen startade 03.50" and rad["allvarlig"] is True
-    assert "klocka" not in koder(behover.regler(lage(drift={"historik": [korning(minuter_sedan=100)]}), NU))
+    assert rad["rad"].startswith("Klockan har stannat: senaste körningen startade") and rad["allvarlig"] is True
+    assert "klocka" not in koder(behover.regler(lage(drift={"historik": [korning(minuter_sedan=25 * 60)]}), NU))
 
 
 # ---------- Källor ----------
@@ -407,7 +408,7 @@ def test_rapport_workflow():
     y = yaml.safe_load((WORKFLOWS / "rapport.yml").read_text(encoding="utf-8"))
     text = (WORKFLOWS / "rapport.yml").read_text(encoding="utf-8")
     crons = [s["cron"] for s in y[True]["schedule"]]
-    assert "5 5,6 * * *" in crons and any(c.startswith("47 ") for c in crons)
+    assert crons == ["15 6 * * *"], "en gång per dygn: varje timme tog slut på Actions-minuterna"
     assert "workflow_dispatch" in y[True]
     assert y["concurrency"]["group"] == "newsnavigator"
     assert "python behover.py --skicka" in text and "RESEND_API_KEY" in text and "RAPPORT_TILL" in text
@@ -435,3 +436,18 @@ def test_klockan_startar_rapporten_klockan_sju_och_som_vakthund_varje_timme():
     js = (Path(__file__).parent.parent / "klocka" / "worker.js").read_text(encoding="utf-8")
     assert js.count('jobs.push("rapport.yml")') == 2
     assert "t.hour === 7 && t.minute < 15" in js and "t.minute >= 30 && t.minute < 45" in js
+
+
+def test_allt_gar_en_gang_per_dygn_och_klockans_starter_hoppas_over():
+    """Varje timme tog slut på Actions-minuterna (2 000 per månad). Pipelinen går därför en gång per dygn i två steg
+    (kö, sedan publicering efter vetofönstret), Instagram och rapporten en gång. Starter utan `kor = true`, som
+    klockan i Cloudflare gör, hoppas över så att ingenting körs dubbelt."""
+    pipe = yaml.safe_load((WORKFLOWS / "pipeline.yml").read_text(encoding="utf-8"))
+    assert [s["cron"] for s in pipe[True]["schedule"]] == ["17 3 * * *", "47 4 * * *"]
+    for fil in ("pipeline.yml", "instagram.yml", "rapport.yml"):
+        y = yaml.safe_load((WORKFLOWS / fil).read_text(encoding="utf-8"))
+        assert len(y[True]["schedule"]) <= 2, fil
+        assert y[True]["workflow_dispatch"]["inputs"]["kor"]["default"] == "false", fil
+        villkor = next(iter(y["jobs"].values()))["if"]
+        assert "github.event_name == 'schedule'" in villkor and "inputs.kor == 'true'" in villkor, fil
+    assert behover.KLOCKA_MINUTER >= 24 * 60

@@ -2,10 +2,16 @@ name: Newsnavigator pipeline
 
 on:
   schedule:
-    # Tider i UTC. Varje timme 06-23 svensk sommartid (05-22 vintertid), två körningar natten.
-    - cron: "17 4-21 * * *"
-    - cron: "17 0,2 * * *"
+    # En gång per dygn, i två steg (UTC). Första körningen hämtar och lägger notiser i autopilotens kö,
+    # andra publicerar dem vars vetofönster (45 minuter) gått ut. Två korta körningar per dygn ryms i
+    # de 2 000 Actions-minuter som ingår per månad; varje timme gjorde det inte.
+    - cron: "17 3 * * *"
+    - cron: "47 4 * * *"
   workflow_dispatch:
+    inputs:
+      kor:
+        description: "true = kör på riktigt. Starter utan detta (klockan i Cloudflare) hoppas över."
+        default: "false"
 
 permissions:
   contents: write
@@ -17,7 +23,8 @@ concurrency:
 
 jobs:
   run:
-    if: false   # PAUSAT 11 november på Fabians begäran. Ta bort raden för att starta igen.
+    # PAUSAT till 1 december (Actions-minuterna är slut). Ta bort `false && ` för att starta.
+    if: ${{ false && (github.event_name == 'schedule' || inputs.kor == 'true') }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -39,8 +46,8 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: hf-paraphrase-multilingual-MiniLM-L12-v2
-      - name: Kontrollera källor (nattkörningarna)
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0,2 * * *'
+      - name: Kontrollera källor (dygnets första körning)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 3 * * *'
         run: python verify_feeds.py
       - name: Läs godkännanden från granskningsärendet
         env:

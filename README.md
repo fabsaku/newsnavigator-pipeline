@@ -38,7 +38,7 @@ senaste körningen per workflow, och de tjugo senaste körningarna med status, t
 
 1. Skapa ett privat repo på GitHub och lägg upp filerna.
 2. Under Settings, Secrets, lägg till `ANTHROPIC_API_KEY`.
-3. `.github/workflows/pipeline.yml` kör pipelinen varje timme dagtid och två gånger på natten, och källkontrollen på nattkörningarna. Utkast och översättningar sparas i `data/cache.json`, så bara nya eller ändrade händelser skickas till AI:n.
+3. `.github/workflows/pipeline.yml` kör pipelinen en gång per dygn i två steg (03.17 och 04.47 UTC: kö, sedan publicering efter vetofönstret), och källkontrollen på den första. Utkast och översättningar sparas i `data/cache.json`, så bara nya eller ändrade händelser skickas till AI:n.
 
 ## Nästa version
 

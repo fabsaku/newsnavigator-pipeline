@@ -5,7 +5,7 @@ Listan byggs av regler (`regler`), inte av hand. Morgonrapporten kl 07.00 är sa
 "Allt kört." när den är tom. Allvarliga rader (en körning som fallerat två gånger i rad, klockan som stannat,
 en token som snart löper ut) mejlas direkt och upprepas efter tolv timmar om felet finns kvar.
 
-  python behover.py                  räknar ut listan och skriver data/behover.json (pipelinen gör det varje timme)
+  python behover.py                  räknar ut listan och skriver data/behover.json (pipelinen gör det varje dygn)
   python behover.py --skicka         dessutom: mejla morgonrapport och varningar via Resend (workflowen rapport.yml)
   python behover.py --skicka --torrt skriv ut mejlet i stället för att skicka det
 
@@ -38,7 +38,7 @@ TYST_DAGAR = 3              # en nyhetskälla som varit tyst så länge
 TYST_DAGAR_PRIMAR = 14      # primärkällor, forskning och listor publicerar sällan
 TOKEN_VARNING_DAGAR = 14
 TOKEN_ALLVARLIG_DAGAR = 3
-KLOCKA_MINUTER = 150        # pipelinen ska starta varje timme
+KLOCKA_MINUTER = 27 * 60    # pipelinen ska starta varje dygn; larma efter ett missat dygn
 BREV_MIN = 3
 RAPPORT_TIMME = 7
 OMVARNA_TIMMAR = 12

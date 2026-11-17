@@ -465,8 +465,8 @@ PRINCIPLES = [
 ]
 
 STEPS = [
-    ("Samla", "Gather", "Varje timme hämtar vi rubriker och ingresser från över 130 källor i åtta regioner. Från betalväggskällor används bara rubrik och länk.",
-     "Every hour we gather headlines and standfirsts from more than 130 sources in eight regions. From paywalled sources we use only the headline and link."),
+    ("Samla", "Gather", "Varje dygn hämtar vi rubriker och ingresser från över 130 källor i åtta regioner. Från betalväggskällor används bara rubrik och länk.",
+     "Every day we gather headlines and standfirsts from more than 130 sources in eight regions. From paywalled sources we use only the headline and link."),
     ("Gruppera", "Group", "Artiklar om samma händelse slås ihop, över språkgränserna. Så ser vi vilka som rapporterar, och vilka som inte gör det.",
      "Articles about the same event are grouped together, across languages. That shows who is reporting, and who is not."),
     ("Skriva", "Draft", "AI skriver ett neutralt utkast på svenska och engelska, efter samma regler som redaktionen. Den får bara rubriker och ingresser, aldrig hela artiklar.",
