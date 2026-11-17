@@ -12280,36 +12280,34 @@
  },
  "d0fda266d2": {
   "id": "d0fda266d2",
-  "amnen": [],
+  "amnen": [
+   "varlden"
+  ],
   "amnen_sektion": [],
-  "poang": 32.4,
+  "poang": 31.0,
   "vikt": {
-   "bredd": 1.391,
+   "bredd": 0.318,
    "regioner": {
-    "latinamerika": 2,
-    "europa": 4,
-    "asien": 5,
-    "usa": 2,
-    "afrika": 2,
-    "sverige": 2,
-    "mellanostern": 1
+    "mellanostern": 1,
+    "europa": 1,
+    "asien": 2
    },
-   "timmar": 8,
+   "timmar": 96,
    "konsekvens": {
-    "berorda": 5,
+    "berorda": 4,
     "allvar": 3,
     "varaktighet": 2,
-    "medel": 3.33,
-    "skal": "Nationell generalstrejk i Frankrike med hundratusentals demonstranter mot levnadskostnader och för högre löner, med stor synlighet men begränsad varaktig effekt."
+    "medel": 3.0,
+    "skal": "Stora fackliga protester och strejker i Frankrike om löner och levnadskostnader berör många offentliganställda, men effekterna väntas bli kortvariga."
    },
    "bekraftad": true,
-   "maste": true,
+   "maste": false,
    "spar": []
   },
-  "maste": true,
-  "antal_kallor": 18,
+  "maste": false,
+  "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-05T19:03:51+00:00",
+  "senast": "2026-11-17T16:39:01+00:00",
   "utkast": {
    "rubrik_sv": "Protester i hela Frankrike under nationell strejk om levnadskostnader",
    "sammanfattning_sv": "Enligt franska inrikesdepartementet deltog cirka 600 000 personer i protester över hela Frankrike den 5 november, medan fackföreningarna uppger att siffran var betydligt högre. Protesterna gällde levnadskostnader och offentliga tjänster, och enligt Dawn uppstod sammandrabbningar med polisen i Paris och Lyon.",
@@ -12473,244 +12471,186 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.676,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Löneökningar och regeringens erbjudande",
+     "namn_en": "Pay demands and the government's offer",
+     "lyfter_sv": "The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning, medan Hindustan Times lyfter fram att regeringen erbjuder högre minimilön men att facken anser att det inte räcker.",
+     "lyfter_en": "The Straits Times highlights that public sector unions are pushing for an across-the-board pay rise, while Hindustan Times highlights that the government has offered a higher minimum wage but that unions say it falls short.",
+     "kallor": [
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay"
+      },
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html"
+      }
+     ],
+     "regioner": [
+      "asien"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Ilska och protester på gatorna",
+     "namn_en": "Public anger and mass protest",
+     "lyfter_sv": "Al Jazeera lyfter fram tiotusentals som demonstrerar i Frankrike om levnadsstandard och löner, medan France 24 lyfter fram stark ilska och en svag regering som förklaring till strejkerna.",
+     "lyfter_en": "Al Jazeera highlights tens of thousands rallying in France over living standards and wages, while France 24 highlights strong public anger and a weak government as the reason behind the strikes.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss"
+      },
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 6,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: tiotusentals demonstrerar i Frankrike för levnadsstandard och löner",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: offentliga fackförbund driver på för en generell löneökning",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: regeringen erbjuder högre minimilön",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: facken anser att erbjudandet inte räcker",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: tiotusentals demonstrerar i Frankrike om levnadsstandard och löner",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: stark ilska och en svag regering som förklaring till strejkerna",
+      "stod": [
+       2
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.618,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
-    "afrika",
     "asien",
     "europa",
-    "latinamerika",
-    "mellanostern",
-    "sverige",
-    "usa"
+    "mellanostern"
    ],
    "per_region": {
-    "latinamerika": [
+    "mellanostern": [
      {
-      "kalla": "El Tiempo",
-      "land": "CO",
-      "rubrik": "Protestas en Francia: cientos de miles de personas se vuelcan a las calles en una huelga general para exigir un 'salario digno'",
-      "url": "https://www.eltiempo.com/mundo/europa/protestas-en-francia-cientos-de-miles-de-personas-se-vuelcan-a-las-calles-en-una-huelga-general-para-exigir-un-salario-digno-3598764",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "El País América",
-      "land": "ES",
-      "rubrik": "Más de medio millón de personas mantienen el vigor de la protesta social en Francia",
-      "url": "https://elpais.com/internacional/2026-11-05/francia-afronta-un-jueves-de-protestas-y-manifestaciones-masivas-en-todo-el-pais.html",
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
+      "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
+      "tid": 1794933541.0,
       "statskontrollerad": false
      }
     ],
     "europa": [
      {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "French protests see numbers surge as unions join strikes over high cost of living",
-      "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "France: More than 600,000 protest as anger grows over cost of living",
-      "url": "https://www.dw.com/en/france-more-than-600-000-protest-as-anger-grows-over-cost-of-living/a-79860616?maca=en-rss-en-all-1573-rdf",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Protesters march in cities across France as unions stage general strike",
-      "url": "https://www.theguardian.com/world/2026/nov/05/protesters-france-march-strikes-education-cost-of-living",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "France 24",
       "land": "FR",
-      "rubrik": "🔴 Live: Interior ministry says 600,000 protest across France as unions claim 'close to 1.6 million'",
-      "url": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs",
+      "rubrik": "'A lot of anger and a weak government': Why are French public sector workers striking?",
+      "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking",
+      "tid": 1794933288.0,
       "statskontrollerad": false
      }
     ],
     "asien": [
      {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "Largely peaceful marches take place across France as workers stage strike",
-      "url": "https://www.dawn.com/news/2042372/largely-peaceful-marches-take-place-across-france-as-workers-stage-strike",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "France workers strike, march for 'dignified wage'",
-      "url": "https://www.thehindu.com/news/international/france-workers-strike-march-for-dignified-wage/article71670093.ece",
-      "statskontrollerad": false
-     },
-     {
       "kalla": "The Straits Times",
       "land": "SG",
-      "rubrik": "What is behind the France protests and what comes next?",
-      "url": "https://www.straitstimes.com/world/europe/explainer-france-protests-what-is-behind-the-unrest-and-what-comes-next",
+      "rubrik": "France braces itself for fresh public-sector strike over pay",
+      "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay",
+      "tid": 1794899100.0,
       "statskontrollerad": false
      },
      {
       "kalla": "Hindustan Times",
       "land": "IN",
-      "rubrik": "France faces new protests as Macron seeks to prevent repeat of October unrest",
-      "url": "https://www.hindustantimes.com/world-news/france-faces-new-protests-as-emanuel-macron-seeks-to-prevent-repeat-of-october-unrest-101793871387213.html",
+      "rubrik": "France braces for more strikes and protests over cost of living",
+      "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html",
+      "tid": 1794897319.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "France faces fresh protest wave with budget impasse deepening",
-      "url": "https://www.japantimes.co.jp/news/2026/11/05/world/politics/france-protest-budget-impasse/",
-      "statskontrollerad": false
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "Fox News",
-      "land": "US",
-      "rubrik": "Protests erupt across France after left-wing groups call for mobilization",
-      "url": "https://www.foxnews.com/world/protests-erupt-across-france-left-wing-groups-call-mobilization",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "After Barricades, Riots and Protests, French Workers Go on Strike",
-      "url": "https://www.nytimes.com/2026/11/05/world/europe/france-protests-general-strike.html",
-      "statskontrollerad": false
-     }
-    ],
-    "afrika": [
-     {
-      "kalla": "Africanews",
-      "land": "CG",
-      "rubrik": "France: Mass protests and school blockades mark fourth national strike",
-      "url": "http://www.africanews.com/2026/11/05/france-workers-and-students-unite-in-nationwide-protests-over-living-costs/",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Daily Maverick",
-      "land": "ZA",
-      "rubrik": "France faces new protests as Macron seeks to prevent repeat of October unrest",
-      "url": "https://www.dailymaverick.co.za/article/2026-11-05-france-faces-new-protests-as-macron-seeks-to-prevent-repeat-of-october-unrest/",
-      "statskontrollerad": false
-     }
-    ],
-    "sverige": [
-     {
-      "kalla": "SVT Nyheter",
-      "land": "SE",
-      "rubrik": "Demonstrationer i Frankrike fortsätter – sammandrabbningar i Lyon",
-      "url": "https://www.svt.se/nyheter/utrikes/demonstrationer-i-frankrike-fortsatter-sammandrabbningar-i-lyon",
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens Nyheter",
-      "land": "SE",
-      "rubrik": "Fransk generalstrejk – en kvarts miljon protesterar",
-      "url": "https://www.dn.se/varlden/fransk-generalstrejk-en-kvarts-miljon-protesterar/",
-      "statskontrollerad": false
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "France hit by more protests as Macron tries to prevent civil unrest",
-      "url": "https://www.thenationalnews.com/news/europe/2026/11/05/france-faces-more-protests-as-macron-tries-to-prevent-civil-unrest/",
-      "statskontrollerad": true
      }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
-   "usa": {
-    "rod": [
-     {
-      "kalla": "Fox News",
-      "rubrik": "Protests erupt across France after left-wing groups call for mobilization",
-      "url": "https://www.foxnews.com/world/protests-erupt-across-france-left-wing-groups-call-mobilization",
-      "lutning": "hoger"
-     }
-    ],
-    "bla": [
-     {
-      "kalla": "The New York Times",
-      "rubrik": "After Barricades, Riots and Protests, French Workers Go on Strike",
-      "url": "https://www.nytimes.com/2026/11/05/world/europe/france-protests-general-strike.html",
-      "lutning": "lutar_vanster"
-     }
-    ]
-   },
+   "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Protestas en Francia: cientos de miles de personas se vuelcan a las calles en una huelga general para exigir un 'salario digno'",
+  "reserv_rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
   "kallor": [
    {
-    "namn": "El Tiempo",
-    "rubrik": "Protestas en Francia: cientos de miles de personas se vuelcan a las calles en una huelga general para exigir un 'salario digno'",
-    "url": "https://www.eltiempo.com/mundo/europa/protestas-en-francia-cientos-de-miles-de-personas-se-vuelcan-a-las-calles-en-una-huelga-general-para-exigir-un-salario-digno-3598764",
+    "namn": "Al Jazeera",
+    "rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
+    "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
+    "tid": 1794933541.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "CO",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "BBC World",
-    "rubrik": "French protests see numbers surge as unions join strikes over high cost of living",
-    "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Deutsche Welle",
-    "rubrik": "France: More than 600,000 protest as anger grows over cost of living",
-    "url": "https://www.dw.com/en/france-more-than-600-000-protest-as-anger-grows-over-cost-of-living/a-79860616?maca=en-rss-en-all-1573-rdf",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Guardian",
-    "rubrik": "Protesters march in cities across France as unions stage general strike",
-    "url": "https://www.theguardian.com/world/2026/nov/05/protesters-france-march-strikes-education-cost-of-living",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dawn",
-    "rubrik": "Largely peaceful marches take place across France as workers stage strike",
-    "url": "https://www.dawn.com/news/2042372/largely-peaceful-marches-take-place-across-france-as-workers-stage-strike",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
     "statskontrollerad": false
    },
    {
     "namn": "France 24",
-    "rubrik": "🔴 Live: Interior ministry says 600,000 protest across France as unions claim 'close to 1.6 million'",
-    "url": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs",
+    "rubrik": "'A lot of anger and a weak government': Why are French public sector workers striking?",
+    "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking",
+    "tid": 1794933288.0,
     "betalvagg": false,
     "typ": "media",
     "land": "FR",
@@ -12719,42 +12659,10 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Hindu",
-    "rubrik": "France workers strike, march for 'dignified wage'",
-    "url": "https://www.thehindu.com/news/international/france-workers-strike-march-for-dignified-wage/article71670093.ece",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Fox News",
-    "rubrik": "Protests erupt across France after left-wing groups call for mobilization",
-    "url": "https://www.foxnews.com/world/protests-erupt-across-france-left-wing-groups-call-mobilization",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Africanews",
-    "rubrik": "France: Mass protests and school blockades mark fourth national strike",
-    "url": "http://www.africanews.com/2026/11/05/france-workers-and-students-unite-in-nationwide-protests-over-living-costs/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CG",
-    "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Straits Times",
-    "rubrik": "What is behind the France protests and what comes next?",
-    "url": "https://www.straitstimes.com/world/europe/explainer-france-protests-what-is-behind-the-unrest-and-what-comes-next",
+    "rubrik": "France braces itself for fresh public-sector strike over pay",
+    "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay",
+    "tid": 1794899100.0,
     "betalvagg": false,
     "typ": "media",
     "land": "SG",
@@ -12763,103 +12671,30 @@
     "statskontrollerad": false
    },
    {
-    "namn": "SVT Nyheter",
-    "rubrik": "Demonstrationer i Frankrike fortsätter – sammandrabbningar i Lyon",
-    "url": "https://www.svt.se/nyheter/utrikes/demonstrationer-i-frankrike-fortsatter-sammandrabbningar-i-lyon",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Daily Maverick",
-    "rubrik": "France faces new protests as Macron seeks to prevent repeat of October unrest",
-    "url": "https://www.dailymaverick.co.za/article/2026-11-05-france-faces-new-protests-as-macron-seeks-to-prevent-repeat-of-october-unrest/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ZA",
-    "region": "afrika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Hindustan Times",
-    "rubrik": "France faces new protests as Macron seeks to prevent repeat of October unrest",
-    "url": "https://www.hindustantimes.com/world-news/france-faces-new-protests-as-emanuel-macron-seeks-to-prevent-repeat-of-october-unrest-101793871387213.html",
+    "rubrik": "France braces for more strikes and protests over cost of living",
+    "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html",
+    "tid": 1794897319.0,
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "El País América",
-    "rubrik": "Más de medio millón de personas mantienen el vigor de la protesta social en Francia",
-    "url": "https://elpais.com/internacional/2026-11-05/francia-afronta-un-jueves-de-protestas-y-manifestaciones-masivas-en-todo-el-pais.html",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "ES",
-    "region": "latinamerika",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Japan Times",
-    "rubrik": "France faces fresh protest wave with budget impasse deepening",
-    "url": "https://www.japantimes.co.jp/news/2026/11/05/world/politics/france-protest-budget-impasse/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "JP",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The New York Times",
-    "rubrik": "After Barricades, Riots and Protests, French Workers Go on Strike",
-    "url": "https://www.nytimes.com/2026/11/05/world/europe/france-protests-general-strike.html",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens Nyheter",
-    "rubrik": "Fransk generalstrejk – en kvarts miljon protesterar",
-    "url": "https://www.dn.se/varlden/fransk-generalstrejk-en-kvarts-miljon-protesterar/",
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The National",
-    "rubrik": "France hit by more protests as Macron tries to prevent civil unrest",
-    "url": "https://www.thenationalnews.com/news/europe/2026/11/05/france-faces-more-protests-as-macron-tries-to-prevent-civil-unrest/",
-    "betalvagg": false,
-    "typ": "media",
-    "land": "AE",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 3,
-   "en": 3
+   "sv": 1,
+   "en": 2
   },
-  "autopilot": [],
+  "autopilot": [
+   "blind fläck"
+  ],
   "data": null,
   "godkand_tid": 1793909388.8814037,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1794938877.8331776
  },
  "732ad8f2fa": {
   "id": "732ad8f2fa",
@@ -14622,33 +14457,37 @@
  "5db6a782f2": {
   "id": "5db6a782f2",
   "amnen": [
+   "usa",
    "varlden"
   ],
-  "amnen_sektion": [],
-  "poang": 28.9,
+  "amnen_sektion": [
+   "usa"
+  ],
+  "poang": 32.3,
   "vikt": {
-   "bredd": 0.315,
+   "bredd": 0.346,
    "regioner": {
-    "mellanostern": 1,
-    "europa": 1,
-    "asien": 2
+    "asien": 1,
+    "afrika": 1,
+    "europa": 2,
+    "usa": 2
    },
-   "timmar": 96,
+   "timmar": 77,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 3,
-    "varaktighet": 2,
-    "medel": 3.0,
-    "skal": "Stora fackliga protester och strejker i Frankrike om löner och levnadskostnader berör många offentliganställda, men effekterna väntas bli kortvariga."
+    "allvar": 4,
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "Ett toppmöte med Xi, Putin och APEC-länder kan påverka handel, Ukrainakriget och relationerna mellan stormakterna under månader."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 6,
   "har_primarkalla": false,
-  "senast": "2026-11-17T16:39:01+00:00",
+  "senast": "2026-11-17T14:26:17+00:00",
   "utkast": {
    "rubrik_sv": "Paraguays president Santiago Peña avgår efter bankkollaps",
    "sammanfattning_sv": "Paraguays president Santiago Peña har avgått efter kollapsen av banken Ueno, enligt flera källor, som uppger att miljontals kunders konton har frysts. Lagstiftare har enligt NPR och BBC röstat för att driva en riksrättsprocess mot honom.",
@@ -14856,214 +14695,169 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Löneökningar och regeringens erbjudande",
-     "namn_en": "Pay demands and the government's offer",
-     "lyfter_sv": "The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning, medan Hindustan Times lyfter fram att regeringen erbjuder högre minimilön men att facken anser att det inte räcker.",
-     "lyfter_en": "The Straits Times highlights that public sector unions are pushing for an across-the-board pay rise, while Hindustan Times highlights that the government has offered a higher minimum wage but that unions say it falls short.",
-     "kallor": [
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay"
-      },
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html"
-      }
-     ],
-     "regioner": [
-      "asien"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Ilska och protester på gatorna",
-     "namn_en": "Public anger and mass protest",
-     "lyfter_sv": "Al Jazeera lyfter fram tiotusentals som demonstrerar i Frankrike om levnadsstandard och löner, medan France 24 lyfter fram stark ilska och en svag regering som förklaring till strejkerna.",
-     "lyfter_en": "Al Jazeera highlights tens of thousands rallying in France over living standards and wages, while France 24 highlights strong public anger and a weak government as the reason behind the strikes.",
-     "kallor": [
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss"
-      },
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "mellanostern"
-     ],
-     "usa_sidor": []
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 6,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Rubriken: tiotusentals demonstrerar i Frankrike för levnadsstandard och löner",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Straits Times: offentliga fackförbund driver på för en generell löneökning",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: regeringen erbjuder högre minimilön",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: facken anser att erbjudandet inte räcker",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: tiotusentals demonstrerar i Frankrike om levnadsstandard och löner",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24: stark ilska och en svag regering som förklaring till strejkerna",
-      "stod": [
-       2
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.618,
+  "narrativ": null,
+  "sammanhang": 0.423,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "afrika",
     "asien",
     "europa",
-    "mellanostern"
+    "usa"
    ],
    "per_region": {
-    "mellanostern": [
+    "asien": [
      {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
-      "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
-      "tid": 1794933541.0,
+      "kalla": "South China Morning Post",
+      "land": "HK",
+      "rubrik": "Can Xi-Trump talks at Apec turn China’s pledge to buy 200 Boeing jets into firm orders?",
+      "url": "https://www.scmp.com/economy/china-economy/article/3374781/can-xi-trump-talks-apec-turn-chinas-pledge-buy-200-boeing-jets-firm-orders",
+      "tid": 1794920386.0,
+      "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "Trump to raise Ukraine war in talks with Xi and Putin at APEC",
+      "url": "http://www.africanews.com/2026/11/17/trump-to-raise-ukraine-war-in-talks-with-xi-and-putin-at-apec/",
+      "tid": 1794907859.0,
       "statskontrollerad": false
      }
     ],
     "europa": [
      {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "'A lot of anger and a weak government': Why are French public sector workers striking?",
-      "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking",
-      "tid": 1794933288.0,
-      "statskontrollerad": false
-     }
-    ],
-    "asien": [
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "France braces itself for fresh public-sector strike over pay",
-      "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay",
-      "tid": 1794899100.0,
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Trump kicks off Asia tour ahead of major talks with Putin, Xi in China",
+      "url": "https://www.dw.com/en/trump-kicks-off-asia-tour-ahead-of-major-talks-with-putin-xi-in-china/live-79964719?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794900840.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "France braces for more strikes and protests over cost of living",
-      "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html",
-      "tid": 1794897319.0,
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "Trump to embark on Asia trip in apparent foreign policy push before end of term",
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/trump-asia-foreign-domestic-policy",
+      "tid": 1794826858.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Trump’s Asia trip takes Alaska detour as weather forces refueling stop change",
+      "url": "https://www.foxnews.com/politics/trumps-asia-trip-takes-alaska-detour-weather-forces-refueling-stop-change",
+      "tid": 1794872924.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
+      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
+      "tid": 1794925577.0,
       "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": "saknas_i_sverige",
-   "grannar_svenska": false,
-   "usa": null,
+   "blind_flack": null,
+   "grannar_svenska": true,
+   "usa": {
+    "rod": [
+     {
+      "kalla": "Fox News",
+      "rubrik": "Trump’s Asia trip takes Alaska detour as weather forces refueling stop change",
+      "url": "https://www.foxnews.com/politics/trumps-asia-trip-takes-alaska-detour-weather-forces-refueling-stop-change",
+      "tid": 1794872924.0,
+      "lutning": "hoger"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "The New York Times",
+      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
+      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
+      "tid": 1794925577.0,
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
+  "reserv_rubrik": "Can Xi-Trump talks at Apec turn China’s pledge to buy 200 Boeing jets into firm orders?",
   "kallor": [
    {
-    "namn": "Al Jazeera",
-    "rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
-    "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
-    "tid": 1794933541.0,
+    "namn": "South China Morning Post",
+    "rubrik": "Can Xi-Trump talks at Apec turn China’s pledge to buy 200 Boeing jets into firm orders?",
+    "url": "https://www.scmp.com/economy/china-economy/article/3374781/can-xi-trump-talks-apec-turn-chinas-pledge-buy-200-boeing-jets-firm-orders",
+    "tid": 1794920386.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "France 24",
-    "rubrik": "'A lot of anger and a weak government': Why are French public sector workers striking?",
-    "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking",
-    "tid": 1794933288.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "France braces itself for fresh public-sector strike over pay",
-    "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay",
-    "tid": 1794899100.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
+    "land": "HK",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "Hindustan Times",
-    "rubrik": "France braces for more strikes and protests over cost of living",
-    "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html",
-    "tid": 1794897319.0,
+    "namn": "Africanews",
+    "rubrik": "Trump to raise Ukraine war in talks with Xi and Putin at APEC",
+    "url": "http://www.africanews.com/2026/11/17/trump-to-raise-ukraine-war-in-talks-with-xi-and-putin-at-apec/",
+    "tid": 1794907859.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "IN",
-    "region": "asien",
+    "land": "CG",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Deutsche Welle",
+    "rubrik": "Trump kicks off Asia tour ahead of major talks with Putin, Xi in China",
+    "url": "https://www.dw.com/en/trump-kicks-off-asia-tour-ahead-of-major-talks-with-putin-xi-in-china/live-79964719?maca=en-rss-en-all-1573-rdf",
+    "tid": 1794900840.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DE",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Fox News",
+    "rubrik": "Trump’s Asia trip takes Alaska detour as weather forces refueling stop change",
+    "url": "https://www.foxnews.com/politics/trumps-asia-trip-takes-alaska-detour-weather-forces-refueling-stop-change",
+    "tid": 1794872924.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "Trump to embark on Asia trip in apparent foreign policy push before end of term",
+    "url": "https://www.theguardian.com/us-news/2026/nov/16/trump-asia-foreign-domestic-policy",
+    "tid": 1794826858.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The New York Times",
+    "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
+    "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
+    "tid": 1794925577.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    }
@@ -15071,16 +14865,13 @@
   "granskad": true,
   "relevans": {
    "sv": 1,
-   "en": 2
+   "en": 3
   },
-  "autopilot": [
-   "källkontrollen har 1 anmärkningar",
-   "blind fläck"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1793948948.5031242,
   "automatisk": false,
-  "uppdaterad_tid": 1794937183.279506
+  "uppdaterad_tid": 1794938877.8331776
  },
  "ad595b9bde": {
   "id": "ad595b9bde",
@@ -23067,32 +22858,32 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 34.9,
+  "poang": 28.0,
   "vikt": {
-   "bredd": 0.951,
+   "bredd": 1.001,
    "regioner": {
-    "europa": 4,
+    "usa": 5,
     "asien": 3,
-    "usa": 3,
+    "europa": 4,
     "mellanostern": 3,
     "sverige": 1
    },
-   "timmar": 55,
+   "timmar": 9,
    "konsekvens": {
-    "berorda": 3,
+    "berorda": 4,
     "allvar": 4,
     "varaktighet": 2,
-    "medel": 3.0,
-    "skal": "En obekräftad uppgift om en iransk smutsig bomb-plot mot Washington väcker säkerhetsoro och spänningar mellan USA och Iran, men utan verifierat hot."
+    "medel": 3.33,
+    "skal": "En rapporterad, omstridd iransk plan om en smutsig bomb mot Washington väcker säkerhetsoro och diplomatisk konflikt, men hotet är ouppklarat och troligen kortvarigt."
    },
-   "bekraftad": true,
+   "bekraftad": null,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 14,
+  "antal_kallor": 16,
   "har_primarkalla": false,
-  "senast": "2026-11-17T17:37:04+00:00",
+  "senast": "2026-11-17T18:01:38+00:00",
   "utkast": {
    "rubrik_sv": "Trump säger att han kan träffa Kim Jong Un i Kina",
    "sammanfattning_sv": "Trump säger att han kan träffa Nordkoreas ledare Kim Jong Un i Kina, enligt Yonhap och The Straits Times. Enligt Arab News uppger Kina att landet inte har någon information om ett sådant möte.",
@@ -23253,312 +23044,9 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Trump varnar Iran",
-     "namn_en": "Trump warns Iran",
-     "lyfter_sv": "Al Jazeera lyfter fram att Trump varnar Iran för en rapporterad smutsbombsplan, Hindustan Times att Iran hotas med ett oöverträffat svar och Fox News att Iran hotas med oöverträffad vedergällning medan högre tjänstemän flyttar till militärbostäder.",
-     "lyfter_en": "Al Jazeera highlights Trump warning Iran over a reported dirty bomb plan, Hindustan Times that Iran faces an unprecedented response, and Fox News that Iran faces unprecedented retaliation as senior officials move to military housing.",
-     "kallor": [
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss"
-      },
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/us-news/trump-issues-stark-warning-to-iran-over-alleged-dc-dirty-bomb-plot-we-take-it-very-seriously-101794920834305.html"
-      },
-      {
-       "namn": "Fox News",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "mellanostern",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    },
-    {
-     "namn_sv": "Trump tar hotet på allvar",
-     "namn_en": "Trump takes threat seriously",
-     "lyfter_sv": "CNBC lyfter fram Trumps uttalande att USA tar en rapporterad iransk smutsbombsplan på allvar, France 24 att Trump tar ett möjligt hot på allvar och Al-Monitor att USA tar en möjlig plan på allvar.",
-     "lyfter_en": "CNBC highlights Trump saying the US takes a reported Iranian dirty bomb plan seriously, France 24 that Trump takes a possible threat seriously, and Al-Monitor that the US takes a possible plan seriously.",
-     "kallor": [
-      {
-       "namn": "CNBC",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html"
-      },
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/americas/20261117-trump-says-he-takes-possible-iran-bomb-threat-to-washington-very-seriously"
-      },
-      {
-       "namn": "Al-Monitor",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.al-monitor.com/originals/2026/11/trump-says-us-taking-seriously-report-possible-iranian-dirty-bomb-plot-washington"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "mellanostern",
-      "usa"
-     ],
-     "usa_sidor": [
-      "mitten"
-     ]
-    },
-    {
-     "namn_sv": "Iran avvisar rapporten",
-     "namn_en": "Iran rejects the report",
-     "lyfter_sv": "BBC lyfter fram att Teheran avvisar uppgifterna som grundlösa, The Hindu att rapporten kallas fabricerad, DW att CNN:s påstående ses som försök att skapa legitimitet för kriget och Straits Times att Irans utrikesministerium förnekar anklagelserna.",
-     "lyfter_en": "BBC highlights Tehran rejecting the claims as baseless, The Hindu that the report is called fabricated, DW that CNN's claim is seen as an attempt to create legitimacy for the war, and the Straits Times that Iran's foreign ministry denies the allegations.",
-     "kallor": [
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece"
-      },
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "The Straits Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.straitstimes.com/world/united-states/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Tvivel om underrättelseläckan",
-     "namn_en": "Doubts about the intelligence leak",
-     "lyfter_sv": "Daily Caller lyfter fram att läckan kring den iranska smutsbomben bär spår av Deep State, The Guardian att Trump säger sig undersöka planen trots att det inte finns några trovärdiga hot.",
-     "lyfter_en": "Daily Caller highlights that the leak about the Iranian dirty bomb bears traces of the Deep State, and The Guardian that Trump says he is looking into the plan despite no credible threats.",
-     "kallor": [
-      {
-       "namn": "The Daily Caller",
-       "region": "usa",
-       "lutning": "hoger",
-       "statskontrollerad": false,
-       "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand"
-      },
-      {
-       "namn": "The Guardian",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theguardian.com/world/2026/nov/17/trump-reported-iranian-plot-dirty-bomb-washington"
-      }
-     ],
-     "regioner": [
-      "europa",
-      "usa"
-     ],
-     "usa_sidor": [
-      "rod"
-     ]
-    }
-   ],
-   "kontroll": {
-    "ok": false,
-    "antal": 17,
-    "problem": [
-     "egen slutsats: Sektionsrubriken 'Tvivel om underrättelseläckan' beskriver bevakningen som tvivelaktig, vilket ingen källa uttrycker"
-    ],
-    "pastaenden": [
-     {
-      "text": "Rubriken: uppgifter om iransk plan för smutsig bomb mot Washington",
-      "stod": [
-       13
-      ],
-      "problem": null
-     },
-     {
-      "text": "Rubriken: Trump tar det på allvar",
-      "stod": [
-       4,
-       6,
-       9,
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Rubriken: Iran avvisar",
-      "stod": [
-       1,
-       2,
-       8,
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera: Trump varnar Iran för en rapporterad smutsbombsplan",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times: Iran hotas med ett oöverträffat svar",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fox News: Iran hotas med oöverträffad vedergällning",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fox News: högre tjänstemän flyttar till militärbostäder",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "CNBC: Trump säger att USA tar en rapporterad iransk smutsbombsplan på allvar",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24: Trump tar ett möjligt hot på allvar",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al-Monitor: USA tar en möjlig plan på allvar",
-      "stod": [
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "BBC: Teheran avvisar uppgifterna som grundlösa",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: rapporten kallas fabricerad",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "DW: CNN:s påstående ses som ett försök att skapa legitimitet för kriget",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "Straits Times: Irans utrikesministerium förnekar anklagelserna",
-      "stod": [
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Caller: läckan kring den iranska smutsbomben bär spår av Deep State",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Guardian: Trump säger sig undersöka planen trots att det inte finns några trovärdiga hot",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Sektionsrubriken 'Tvivel om underrättelseläckan' beskriver bevakningen som tvivelaktig, vilket ingen källa uttrycker",
-      "stod": [],
-      "problem": "egen slutsats"
-     }
-    ],
-    "sammanfattning": "Alla sakpåståenden i utkastet har stöd i källorna och tillskrivningarna stämmer. Sektionsrubriken 'Tvivel om underrättelseläckan' är en egen tolkning som inte finns i källmaterialet och bör ersättas med en mer neutral beskrivning."
-   },
-   "ok": false
-  },
-  "sammanhang": 0.603,
-  "betydelse": {
-   "sv": "Eftersom Iran enligt DW talar om ett pågående krig hänger läget i Mellanöstern ihop med oljepriset, som påverkar bränslepriserna i Sverige.",
-   "en": "Since reports say Iran allegedly planned a dirty bomb attack on Washington and senior officials are relocating to military housing, the story bears on security for DC residents and federal officials.",
-   "grund": [
-    8,
-    11
-   ],
-   "grund_kallor": [
-    {
-     "namn": "Deutsche Welle",
-     "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-     "namn": "Fox News",
-     "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "narrativ": null,
+  "sammanhang": 0.571,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -23568,6 +23056,74 @@
     "usa"
    ],
    "per_region": {
+    "usa": [
+     {
+      "kalla": "Washington Examiner",
+      "land": "US",
+      "rubrik": "Iranian foreign minister blames Israel for dirty bomb reports",
+      "url": "https://www.washingtonexaminer.com/news/world/4806122/iran-blame-israel-dirty-bomb-report/",
+      "tid": 1794938498.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
+      "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
+      "tid": 1794937785.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hill",
+      "land": "US",
+      "rubrik": "Trump responds to dirty bomb threat",
+      "url": "https://thehill.com/newsletters/1230-report/6225507-trump-responds-to-dirty-bomb-threat/",
+      "tid": 1794936813.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Daily Caller",
+      "land": "US",
+      "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
+      "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
+      "tid": 1794934275.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Trump warns Iran about reported plot against admin officials: 'We take it very seriously'",
+      "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
+      "tid": 1794919835.0,
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Iran targets Bahrain, slams 'fabricated' dirty-bomb report",
+      "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece",
+      "tid": 1794937616.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Trump issues stark warning to Iran over alleged DC dirty bomb plot: ‘We take it very seriously’",
+      "url": "https://www.hindustantimes.com/world-news/us-news/trump-issues-stark-warning-to-iran-over-alleged-dc-dirty-bomb-plot-we-take-it-very-seriously-101794920834305.html",
+      "tid": 1794922283.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington",
+      "url": "https://www.straitstimes.com/world/united-states/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington",
+      "tid": 1794917400.0,
+      "statskontrollerad": false
+     }
+    ],
     "europa": [
      {
       "kalla": "BBC World",
@@ -23599,58 +23155,6 @@
       "rubrik": "Iran dismisses report of alleged 'dirty bomb' attack on Washington",
       "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf",
       "tid": 1794926340.0,
-      "statskontrollerad": false
-     }
-    ],
-    "asien": [
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Iran targets Bahrain, slams 'fabricated' dirty-bomb report",
-      "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece",
-      "tid": 1794935233.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Trump issues stark warning to Iran over alleged DC dirty bomb plot: ‘We take it very seriously’",
-      "url": "https://www.hindustantimes.com/world-news/us-news/trump-issues-stark-warning-to-iran-over-alleged-dc-dirty-bomb-plot-we-take-it-very-seriously-101794920834305.html",
-      "tid": 1794922283.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington",
-      "url": "https://www.straitstimes.com/world/united-states/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington",
-      "tid": 1794917400.0,
-      "statskontrollerad": false
-     }
-    ],
-    "usa": [
-     {
-      "kalla": "The Daily Caller",
-      "land": "US",
-      "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
-      "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
-      "tid": 1794934275.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CNBC",
-      "land": "US",
-      "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
-      "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-      "tid": 1794934072.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Fox News",
-      "land": "US",
-      "rubrik": "Trump warns Iran about reported plot against admin officials: 'We take it very seriously'",
-      "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
-      "tid": 1794919835.0,
       "statskontrollerad": false
      }
     ],
@@ -23696,6 +23200,13 @@
    "usa": {
     "rod": [
      {
+      "kalla": "Washington Examiner",
+      "rubrik": "Iranian foreign minister blames Israel for dirty bomb reports",
+      "url": "https://www.washingtonexaminer.com/news/world/4806122/iran-blame-israel-dirty-bomb-report/",
+      "tid": 1794938498.0,
+      "lutning": "lutar_hoger"
+     },
+     {
       "kalla": "The Daily Caller",
       "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
       "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
@@ -23715,15 +23226,58 @@
       "kalla": "CNBC",
       "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
       "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-      "tid": 1794934072.0,
+      "tid": 1794937785.0,
+      "lutning": "mitten"
+     },
+     {
+      "kalla": "The Hill",
+      "rubrik": "Trump responds to dirty bomb threat",
+      "url": "https://thehill.com/newsletters/1230-report/6225507-trump-responds-to-dirty-bomb-threat/",
+      "tid": 1794936813.0,
       "lutning": "mitten"
      }
     ]
    },
-   "usa_blind": null
+   "usa_blind": "mest_rod"
   },
-  "reserv_rubrik": "Trump says US taking 'very seriously' any Iranian plot against Washington",
+  "reserv_rubrik": "Iranian foreign minister blames Israel for dirty bomb reports",
   "kallor": [
+   {
+    "namn": "Washington Examiner",
+    "rubrik": "Iranian foreign minister blames Israel for dirty bomb reports",
+    "url": "https://www.washingtonexaminer.com/news/world/4806122/iran-blame-israel-dirty-bomb-report/",
+    "tid": 1794938498.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "CNBC",
+    "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
+    "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
+    "tid": 1794937785.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Iran targets Bahrain, slams 'fabricated' dirty-bomb report",
+    "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece",
+    "tid": 1794937616.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "BBC World",
     "rubrik": "Trump says US taking 'very seriously' any Iranian plot against Washington",
@@ -23737,22 +23291,10 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Hindu",
-    "rubrik": "Iran targets Bahrain, slams 'fabricated' dirty-bomb report",
-    "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece",
-    "tid": 1794935233.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Daily Caller",
-    "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
-    "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
-    "tid": 1794934275.0,
+    "namn": "The Hill",
+    "rubrik": "Trump responds to dirty bomb threat",
+    "url": "https://thehill.com/newsletters/1230-report/6225507-trump-responds-to-dirty-bomb-threat/",
+    "tid": 1794936813.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -23761,10 +23303,10 @@
     "statskontrollerad": false
    },
    {
-    "namn": "CNBC",
-    "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
-    "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-    "tid": 1794934072.0,
+    "namn": "The Daily Caller",
+    "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
+    "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
+    "tid": 1794934275.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -23898,11 +23440,15 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "inget utkast",
+   "ingen källkontroll",
+   "blind fläck"
+  ],
   "data": null,
   "godkand_tid": 1794917292.8920832,
   "automatisk": true,
-  "uppdaterad_tid": 1794937559.4773004
+  "uppdaterad_tid": 1794938877.8331776
  },
  "304fa3d01f": {
   "id": "304fa3d01f",
@@ -24080,25 +23626,25 @@
   "amnen_sektion": [
    "europa"
   ],
-  "poang": 34.7,
+  "poang": 35.5,
   "vikt": {
-   "bredd": 1.369,
+   "bredd": 1.374,
    "regioner": {
     "asien": 2,
-    "norden": 1,
     "afrika": 4,
+    "norden": 1,
     "europa": 2,
     "usa": 3,
     "sverige": 1,
     "mellanostern": 1
    },
-   "timmar": 4,
+   "timmar": 5,
    "konsekvens": {
     "berorda": 4,
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Fem EU-länder planerar gemensamma returcenter i Rwanda för avvisade asylsökande, vilket väcker oro för mänskliga rättigheter och internationell rätt."
+    "skal": "Fem EU-länder planerar gemensamma returcentrum i Rwanda för avvisade asylsökande, vilket väcker kritik om mänskliga rättigheter och folkrättsliga risker."
    },
    "bekraftad": true,
    "maste": true,
@@ -24175,10 +23721,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Kritik från rättighetsorganisationer",
-     "namn_en": "Criticism from rights organisations",
-     "lyfter_sv": "The Straits Times lyfter fram att FN:s människorättschef oroas, Africanews att HRW varnar för risk att bryta mot internationell rätt, Deutsche Welle att människorättsgrupper slår mot planerna, The Japan Times protester och UNHCR:s varning samt Daily Maverick fördömanden från rättighetsgrupper.",
-     "lyfter_en": "The Straits Times highlights the UN rights chief's concern, Africanews HRW's warning about breaching international law, Deutsche Welle criticism from rights groups, The Japan Times protests and a UNHCR warning, and Daily Maverick condemnation from rights groups.",
+     "namn_sv": "Kritik från rättighetsgrupper",
+     "namn_en": "Criticism from rights groups",
+     "lyfter_sv": "The Straits Times och DR Nyheder lyfter fram FN:s människorättschefs oro, Africanews HRW:s farhågor om internationell rätt, Deutsche Welle rättighetsgruppers kritik, The Japan Times protester och UNHCR:s varning, Daily Maverick fördömanden och risk för utnyttjande.",
+     "lyfter_en": "The Straits Times and DR Nyheder highlight the UN human rights chief's concern, Africanews HRW's worries about international law, Deutsche Welle criticism from rights groups, The Japan Times protests and a UNHCR warning, Daily Maverick condemnation and the risk of abuse.",
      "kallor": [
       {
        "namn": "The Straits Times",
@@ -24186,6 +23732,13 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.straitstimes.com/world/europe/un-rights-chief-concerned-by-eu-countries-rwanda-migrant-hub-plans"
+      },
+      {
+       "namn": "DR Nyheder",
+       "region": "norden",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan"
       },
       {
        "namn": "Africanews",
@@ -24219,16 +23772,24 @@
      "regioner": [
       "afrika",
       "asien",
-      "europa"
+      "europa",
+      "norden"
      ],
      "usa_sidor": []
     },
     {
-     "namn_sv": "Regeringarna presenterar planerna",
-     "namn_en": "Governments announce the hub plans",
-     "lyfter_sv": "AllAfrica lyfter fram ett partnerskap med överföringar från 2027, The Guardian att fem EU-stater annonserar planer, The Washington Post att fem länder enats om deportationer, The New York Times att planen gäller deportationer, The National, statskontrollerat medium, att planen tillkännages.",
-     "lyfter_en": "AllAfrica highlights a partnership with transfers from 2027, The Guardian five EU states announcing plans, The Washington Post five countries agreeing to deport, The New York Times a plan to deport, and The National, a state-controlled outlet, an announcement.",
+     "namn_sv": "Det nya returcentret i Rwanda",
+     "namn_en": "The new Rwanda return hub",
+     "lyfter_sv": "The East African, The New York Times och The National lyfter fram att fem EU-länder presenterar planer, AllAfrica ett partnerskap med första överföringar 2027, The Guardian returcenter, The Washington Post en överenskommelse om utvisningar och HRW utvisningscentrer.",
+     "lyfter_en": "The East African, The New York Times and The National highlight that five EU countries are presenting plans, AllAfrica a partnership with first transfers in 2027, The Guardian return hubs, The Washington Post an agreement on deportations and HRW deportation centres.",
      "kallor": [
+      {
+       "namn": "The East African",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.theeastafrican.co.ke/tea/news/world/five-eu-countries-unveil-plans-for-rwanda-deportation-hub-5674090"
+      },
       {
        "namn": "AllAfrica",
        "region": "afrika",
@@ -24242,6 +23803,13 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
+      },
+      {
+       "namn": "Human Rights Watch",
+       "region": "usa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hrw.org/news/2026/11/16/eu-countries-plan-rwanda-deportation-centers"
       },
       {
        "namn": "The Washington Post",
@@ -24278,84 +23846,122 @@
    ],
    "kontroll": {
     "ok": true,
-    "antal": 11,
+    "antal": 16,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Fem europeiska länder presenterar plan för återvändandecenter i Rwanda (rubrik)",
+      "text": "Fem EU-länder presenterar planer på migrantcenter i Rwanda (rubrik)",
       "stod": [
-       5,
-       8
+       2,
+       8,
+       10,
+       12,
+       14
       ],
       "problem": null
      },
      {
-      "text": "The Straits Times: FN:s människorättschef oroas",
+      "text": "The Straits Times lyfter fram FN:s människorättschefs oro",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "Africanews: HRW varnar för risk att bryta mot internationell rätt",
+      "text": "DR Nyheder lyfter fram FN:s människorättschefs oro",
       "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "Deutsche Welle: människorättsgrupper slår mot planerna",
+      "text": "Africanews lyfter fram HRW:s farhågor om internationell rätt",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "The Japan Times: protester från människorättsgrupper och UNHCR:s varning",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Maverick: fördömanden från rättighetsgrupper",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "AllAfrica: partnerskap med överföringar från 2027",
+      "text": "Deutsche Welle lyfter fram rättighetsgruppers kritik",
       "stod": [
        5
       ],
       "problem": null
      },
      {
-      "text": "The Guardian: fem EU-stater annonserar planer",
+      "text": "The Japan Times lyfter fram protester från rättighetsgrupper",
       "stod": [
-       8
+       7
       ],
       "problem": null
      },
      {
-      "text": "The Washington Post: fem länder har enats om deportationer",
+      "text": "The Japan Times lyfter fram UNHCR:s varning",
       "stod": [
-       11
+       7
       ],
       "problem": null
      },
      {
-      "text": "The New York Times: planen gäller deportationer",
+      "text": "Daily Maverick lyfter fram fördömanden från rättighetsgrupper",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick lyfter fram risk för utnyttjande (missbruk) av sårbara personer",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "The East African lyfter fram att fem EU-länder presenterar planer",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times lyfter fram att fem EU-länder planerar utvisningar till Rwanda",
       "stod": [
        12
       ],
       "problem": null
      },
      {
-      "text": "The National (statskontrollerat medium): planen tillkännages",
+      "text": "The National lyfter fram att fem EU-länder presenterar planer",
       "stod": [
        14
+      ],
+      "problem": null
+     },
+     {
+      "text": "AllAfrica lyfter fram ett partnerskap med första överföringar 2027",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian lyfter fram returcenter (return hubs) i Rwanda",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Washington Post lyfter fram en överenskommelse om utvisningar",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Human Rights Watch lyfter fram utvisningscentrer (deportation centers) i Rwanda",
+      "stod": [
+       9
       ],
       "problem": null
      }
@@ -24364,7 +23970,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.648,
+  "sammanhang": 0.687,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -24395,17 +24001,15 @@
       "statskontrollerad": false
      }
     ],
-    "norden": [
-     {
-      "kalla": "DR Nyheder",
-      "land": "DK",
-      "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
-      "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan",
-      "tid": 1794920957.0,
-      "statskontrollerad": false
-     }
-    ],
     "afrika": [
+     {
+      "kalla": "The East African",
+      "land": "KE",
+      "rubrik": "Five EU countries unveil plans for Rwanda deportation hub",
+      "url": "https://www.theeastafrican.co.ke/tea/news/world/five-eu-countries-unveil-plans-for-rwanda-deportation-hub-5674090",
+      "tid": 1794925800.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "Africanews",
       "land": "CG",
@@ -24423,19 +24027,21 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "The East African",
-      "land": "KE",
-      "rubrik": "Why the EU may explore idea of return hubs in Africa",
-      "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/why-the-eu-may-explore-idea-of-return-hubs-in-africa-5673308",
-      "tid": 1794884400.0,
-      "statskontrollerad": false
-     },
-     {
       "kalla": "Daily Maverick",
       "land": "ZA",
       "rubrik": "Five EU countries unveil plans for Rwanda deportation hub",
       "url": "https://www.dailymaverick.co.za/article/2026-11-16-five-eu-countries-unveil-plans-for-rwanda-deportation-hub/",
       "tid": 1794862275.0,
+      "statskontrollerad": false
+     }
+    ],
+    "norden": [
+     {
+      "kalla": "DR Nyheder",
+      "land": "DK",
+      "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
+      "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan",
+      "tid": 1794920957.0,
       "statskontrollerad": false
      }
     ],
@@ -24524,6 +24130,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The East African",
+    "rubrik": "Five EU countries unveil plans for Rwanda deportation hub",
+    "url": "https://www.theeastafrican.co.ke/tea/news/world/five-eu-countries-unveil-plans-for-rwanda-deportation-hub-5674090",
+    "tid": 1794925800.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "DR Nyheder",
     "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
     "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan",
@@ -24580,18 +24198,6 @@
     "typ": "media",
     "land": "JP",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The East African",
-    "rubrik": "Why the EU may explore idea of return hubs in Africa",
-    "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/why-the-eu-may-explore-idea-of-return-hubs-in-africa-5673308",
-    "tid": 1794884400.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "KE",
-    "region": "afrika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -24689,7 +24295,7 @@
   "data": null,
   "godkand_tid": 1794920920.4980764,
   "automatisk": true,
-  "uppdaterad_tid": 1794937183.279506
+  "uppdaterad_tid": 1794938877.8331776
  },
  "8714ea791a": {
   "id": "8714ea791a",
@@ -24700,31 +24306,31 @@
   "amnen_sektion": [
    "ai"
   ],
-  "poang": 27.2,
+  "poang": 27.0,
   "vikt": {
-   "bredd": 0.52,
+   "bredd": 0.5,
    "regioner": {
     "norden": 1,
     "asien": 1,
-    "usa": 4,
+    "usa": 3,
     "sverige": 1
    },
-   "timmar": 7,
+   "timmar": 9,
    "konsekvens": {
-    "berorda": 3,
-    "allvar": 4,
+    "berorda": 4,
+    "allvar": 3,
     "varaktighet": 4,
     "medel": 3.67,
-    "skal": "Delstaten Kalifornien stämmer OpenAI efter att AI-agenter ska ha utfört cyberattacker, bland annat mot Hugging Face, vilket kan påverka AI-säkerhetsregler och konsumentskydd under lång tid."
+    "skal": "Delstaten Kalifornien stämmer OpenAI efter att AI-agenter ska ha attackerat andra system, vilket berör säkerhet och konsumentskydd i flera länder, men effekterna är ännu begränsade."
    },
-   "bekraftad": true,
+   "bekraftad": null,
    "maste": false,
    "spar": [
     "teknik"
    ]
   },
   "maste": false,
-  "antal_kallor": 7,
+  "antal_kallor": 6,
   "har_primarkalla": false,
   "senast": "2026-11-17T09:33:00+00:00",
   "utkast": {
@@ -24867,185 +24473,9 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Säkerhetsbrister och hackningar",
-     "namn_en": "Security failures and hacking",
-     "lyfter_sv": "CyberScoop lyfter fram AI-agenternas hackning under sommaren, NPR att attacken var förutsebar på grund av brister i säkerhet, Breakit att AI-agenter attackerade Hugging Face och The Information attacken mot Hugging Face jämte andra cyberincidenter.",
-     "lyfter_en": "CyberScoop highlights AI agents' hacking over the summer, NPR that the attack was foreseeable due to weak security practices, Breakit that AI agents attacked Hugging Face, and The Information the Hugging Face attack alongside other cybersecurity incidents.",
-     "kallor": [
-      {
-       "namn": "CyberScoop",
-       "region": "usa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://cyberscoop.com/california-ag-rob-bonta-sues-openai/"
-      },
-      {
-       "namn": "NPR",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident"
-      },
-      {
-       "namn": "Breakit",
-       "region": "sverige",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.breakit.se/artikel/48053/ai-agenterna-attackerade-hugging-face-nu-stammer-kalifornien-openai"
-      },
-      {
-       "namn": "The Information",
-       "region": "usa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theinformation.com/briefings/california-sues-openai-hugging-face-attack-cybersecurity-incidents"
-      }
-     ],
-     "regioner": [
-      "sverige",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    },
-    {
-     "namn_sv": "Avvikande beteende hos AI-agenter",
-     "namn_en": "Rogue behaviour in AI agents",
-     "lyfter_sv": "Hindustan Times lyfter fram att AI-agenter uppför sig avvikande och att Kalifornien vill att OpenAI slutar bryta mot lagen och betalar för överträdelserna, TechCrunch att delstatens åklagare stämmer OpenAI för incidenter med avvikande agenter.",
-     "lyfter_en": "Hindustan Times highlights rogue AI behaviour and that California wants OpenAI to stop breaking the law and pay for its violations, TechCrunch that the state attorney general sues OpenAI over rogue agent incidents.",
-     "kallor": [
-      {
-       "namn": "Hindustan Times",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hindustantimes.com/world-news/us-news/california-takes-openai-to-court-over-rogue-ai-behaviour-and-alleged-consumer-safety-violations-101794887701561.html"
-      },
-      {
-       "namn": "TechCrunch",
-       "region": "usa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "usa"
-     ],
-     "usa_sidor": []
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 9,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Kalifornien stämmer OpenAI",
-      "stod": [
-       1,
-       3,
-       4,
-       5,
-       6,
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Stämningen följer efter attacken mot Hugging Face",
-      "stod": [
-       4,
-       6,
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "CyberScoop lyfter fram AI-agenternas hackning under sommaren",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "NPR säger att attacken var förutsebar på grund av brister i säkerhet",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Breakit säger att AI-agenter attackerade Hugging Face",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Information nämner attacken mot Hugging Face tillsammans med andra cyberincidenter",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times lyfter fram att AI-agenter uppför sig avvikande",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Kalifornien vill att OpenAI slutar bryta mot lagen och betalar för överträdelserna",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "TechCrunch säger att delstatens åklagare stämmer OpenAI för incidenter med avvikande agenter",
-      "stod": [
-       5
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.774,
-  "betydelse": {
-   "sv": null,
-   "en": "Since California's attorney general is suing OpenAI, alleging that AI agents' hacking endangered state and private IT systems, the case ties AI security practices to risks for organisations that run AI tools and the systems connected to them.",
-   "grund": [
-    3,
-    5
-   ],
-   "grund_kallor": [
-    {
-     "namn": "CyberScoop",
-     "url": "https://cyberscoop.com/california-ag-rob-bonta-sues-openai/"
-    },
-    {
-     "namn": "TechCrunch",
-     "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
-    }
-   ],
-   "kontroll": {
-    "ok": false,
-    "problem": [
-     "ingen koppling: \"organisations that run AI tools and the systems connected to them\" är inte stöd i källmaterialet, som säger att stämningen gäller hot mot statliga och privata IT-system."
-    ]
-   },
-   "ok": false
-  },
+  "narrativ": null,
+  "sammanhang": 0.766,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -25089,14 +24519,6 @@
       "rubrik": "California sues OpenAI over hacking risks",
       "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
       "tid": 1794866782.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "TechCrunch",
-      "land": "US",
-      "rubrik": "California state AG sues OpenAI over rogue agent incidents",
-      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-      "tid": 1794859633.0,
       "statskontrollerad": false
      },
      {
@@ -25175,18 +24597,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "TechCrunch",
-    "rubrik": "California state AG sues OpenAI over rogue agent incidents",
-    "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-    "tid": 1794859633.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Breakit",
     "rubrik": "AI-agenterna attackerade Hugging Face – nu stämmer Kalifornien OpenAI",
     "url": "https://www.breakit.se/artikel/48053/ai-agenterna-attackerade-hugging-face-nu-stammer-kalifornien-openai",
@@ -25216,11 +24626,14 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "inget utkast",
+   "ingen källkontroll"
+  ],
   "data": null,
   "godkand_tid": 1794920920.4980764,
   "automatisk": true,
-  "uppdaterad_tid": 1794931780.6007223
+  "uppdaterad_tid": 1794938877.8331776
  },
  "f540668e6d": {
   "id": "f540668e6d",
@@ -25234,7 +24647,7 @@
   ],
   "poang": 33.3,
   "vikt": {
-   "bredd": 0.251,
+   "bredd": 0.254,
    "regioner": {
     "europa": 1,
     "asien": 3,
@@ -25246,7 +24659,7 @@
     "allvar": 3,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "Trumps besök vid ASEAN-mötet i Manila berör flera länders ledare och handelsfrågor som rörelsemineraler och chipsexport, men effekterna blir troligen begränsade i tid och omfattning."
+    "skal": "USA:s president deltar i ASEAN- och Quad-möten i Manila med diskussioner om handel, chipsen Nvidia och sällsynta jordartsmetaller, vilket berör flera länder men har begränsad långsiktig effekt."
    },
    "bekraftad": true,
    "maste": false,
@@ -25258,7 +24671,7 @@
   "maste": false,
   "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-17T15:37:28+00:00",
+  "senast": "2026-11-17T17:51:27+00:00",
   "utkast": {
    "rubrik_sv": "EU utökar sanktionerna mot Ryssland: oljeraffinaderier, banker och Wildberries-chefen",
    "sammanfattning_sv": "Enligt Meduza har EU utökat sanktionslistan mot Ryssland till att omfatta oljeraffinaderier, petrokemiska anläggningar och dussintals banker. Deutsche Welle uppger att EU fryst tillgångar för Wildberries-chefen Tatyana Kim och infört ett reseförbud till unionen för henne.",
@@ -25379,146 +24792,9 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Trumps korta besök i Manila",
-     "namn_en": "Trump's brief Manila visit",
-     "lyfter_sv": "NYT lyfter fram att Trump missar största delen av ASEAN-mötet, SCMP att besöket bara varar drygt 20 timmar.",
-     "lyfter_en": "NYT highlights that Trump will miss most of the ASEAN summit, SCMP that the visit lasts just over 20 hours.",
-     "kallor": [
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china"
-      },
-      {
-       "namn": "The New York Times",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    },
-    {
-     "namn_sv": "Samarbete och protester inför mötet",
-     "namn_en": "Cooperation and protests before the summit",
-     "lyfter_sv": "France 24 lyfter fram upprop om samarbete inför ASEAN-mötet, The Hindu att ledare och demonstranter väntar på Trumps ankomst.",
-     "lyfter_en": "France 24 highlights calls for cooperation ahead of the ASEAN summit, The Hindu that leaders and protesters are waiting for Trump's arrival.",
-     "kallor": [
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261117-calls-for-cooperation-as-asean-summit-awaits-trump"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 7,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Trump är i Manila",
-      "stod": [
-       2,
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Mötet är ASEAN-toppmötet",
-      "stod": [
-       1,
-       2,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Trumps besök i Manila är kort",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "NYT lyfter fram att Trump missar största delen av ASEAN-mötet",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "SCMP säger att besöket varar drygt 20 timmar",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24 lyfter fram upprop om samarbete inför ASEAN-mötet",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu skriver att ledare och demonstranter väntar på Trumps ankomst",
-      "stod": [
-       3
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.541,
-  "betydelse": {
-   "sv": null,
-   "en": "Because SCMP reports Trump discussed Nvidia and rare earths in Manila, the talks touch on chipmakers and critical-mineral supplies that US businesses rely on.",
-   "grund": [
-    4
-   ],
-   "grund_kallor": [
-    {
-     "namn": "South China Morning Post",
-     "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "narrativ": null,
+  "sammanhang": 0.503,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -25546,19 +24822,19 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Leaders, protesters await Donald Trump arrival for Manila summit",
-      "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece",
-      "tid": 1794910031.0,
-      "statskontrollerad": false
-     },
-     {
       "kalla": "South China Morning Post",
       "land": "HK",
       "rubrik": "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
       "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china",
       "tid": 1794908205.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Our future must be shaped by ‘cooperation, not competition’: PM Modi to ASEAN leaders",
+      "url": "https://www.thehindu.com/news/national/pm-modi-asean-summit-address-india-world-leaders-manila/article71710772.ece",
+      "tid": 1794905151.0,
       "statskontrollerad": false
      }
     ],
@@ -25568,7 +24844,7 @@
       "land": "US",
       "rubrik": "Trump Will Miss Most of the ASEAN Summit",
       "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-      "tid": 1794912663.0,
+      "tid": 1794937887.0,
       "statskontrollerad": false
      }
     ]
@@ -25605,18 +24881,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Hindu",
-    "rubrik": "Leaders, protesters await Donald Trump arrival for Manila summit",
-    "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece",
-    "tid": 1794910031.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "South China Morning Post",
     "rubrik": "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
     "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china",
@@ -25629,10 +24893,22 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Hindu",
+    "rubrik": "Our future must be shaped by ‘cooperation, not competition’: PM Modi to ASEAN leaders",
+    "url": "https://www.thehindu.com/news/national/pm-modi-asean-summit-address-india-world-leaders-manila/article71710772.ece",
+    "tid": 1794905151.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The New York Times",
     "rubrik": "Trump Will Miss Most of the ASEAN Summit",
     "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-    "tid": 1794912663.0,
+    "tid": 1794937887.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -25646,11 +24922,13 @@
    "sv": 1,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "utkastet är märkt osäkert"
+  ],
   "data": null,
   "godkand_tid": 1794924617.9176867,
   "automatisk": true,
-  "uppdaterad_tid": 1794937183.279506
+  "uppdaterad_tid": 1794938877.8331776
  },
  "b71492cb51": {
   "id": "b71492cb51",
@@ -25863,32 +25141,32 @@
    "halvledare",
    "usa"
   ],
-  "poang": 27.5,
+  "poang": 26.9,
   "vikt": {
-   "bredd": 0.447,
+   "bredd": 0.595,
    "regioner": {
+    "europa": 3,
     "asien": 6,
-    "europa": 1,
-    "usa": 2
+    "usa": 4
    },
-   "timmar": 7,
+   "timmar": 9,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 4,
-    "varaktighet": 4,
-    "medel": 4.0,
-    "skal": "USA inför nya regler som begränsar kinesiska företags fjärråtkomst till AI-chip, vilket påverkar teknikbranschen i flera länder och spänner upp den ekonomiska och säkerhetspolitiska konflikten mellan "
+    "allvar": 3,
+    "varaktighet": 3,
+    "medel": 3.33,
+    "skal": "USA inför nya exportrestriktioner för AI-chip som påverkar Nvidia, global chipindustri och relationen mellan USA och Kina, med ekonomiska följder som kan bestå i månader."
    },
-   "bekraftad": true,
+   "bekraftad": null,
    "maste": false,
    "spar": [
     "teknik"
    ]
   },
   "maste": false,
-  "antal_kallor": 9,
+  "antal_kallor": 13,
   "har_primarkalla": false,
-  "senast": "2026-11-17T15:00:09+00:00",
+  "senast": "2026-11-17T17:22:50+00:00",
   "utkast": {
    "rubrik_sv": "USA inför nya regler mot kinesiska företags fjärråtkomst till AI-chip",
    "sammanfattning_sv": "Enligt Tom's Hardware inför USA nya regler som ska hindra kinesiska företag från fjärråtkomst till AI-chip. CNA uppger att datacenter överallt behöver amerikansk licens för att leverera stora mängder datorkraft till bolag i Kina och flera andra länder, och Kina kritiserar åtgärden.",
@@ -26005,223 +25283,9 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Politisk splittring i USA",
-     "namn_en": "Political split in the US",
-     "lyfter_sv": "SCMP lyfter fram splittring i Washington och Silicon Valley efter Nvidias ledningskris, Ars Technica att Trump satsar på att Kina inte bryr sig om blockeringen av fjärråtkomst.",
-     "lyfter_en": "SCMP highlights a split in Washington and Silicon Valley after Nvidia's leadership crisis, while Ars Technica highlights Trump's bet that China will not care about blocking remote access.",
-     "kallor": [
-      {
-       "namn": "South China Morning Post",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.scmp.com/tech/tech-war/article/3374770/china-question-nvidia-crisis-and-new-us-chip-curbs-split-washington-and-silicon-valley"
-      },
-      {
-       "namn": "Ars Technica",
-       "region": "usa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "usa"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Regelns räckvidd över världen",
-     "namn_en": "Global reach of the rules",
-     "lyfter_sv": "CNA lyfter fram att datacenter var som helst i världen behöver en amerikansk licens, Tom's Hardware att reglerna ska förhindra kringgående via fjärråtkomst i datacenter världen över.",
-     "lyfter_en": "CNA highlights that data centres anywhere in the world need a US licence, while Tom's Hardware highlights rules meant to stop bypassing through remote access in data centres worldwide.",
-     "kallor": [
-      {
-       "namn": "CNA",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.channelnewsasia.com/world/china-slams-new-us-chip-curbs-vows-necessary-measures-6559376"
-      },
-      {
-       "namn": "Tom's Hardware",
-       "region": "usa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "usa"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Nvidia-skandalen som utlösare",
-     "namn_en": "Nvidia scandal as trigger",
-     "lyfter_sv": "The Hindu lyfter fram att USA blockerar kinesisk fjärråtkomst efter Nvidia-skandalen och att Kina kritiserar beslutet, Nikkei Asia att USA vill begränsa fjärråtkomst efter samma skandal.",
-     "lyfter_en": "The Hindu highlights that the US blocks Chinese remote access after the Nvidia scandal and that China criticises the decision, while Nikkei Asia highlights that the US moves to curb remote access after the same scandal.",
-     "kallor": [
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece"
-      },
-      {
-       "namn": "Nikkei Asia",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-moves-to-curb-china-s-remote-access-to-ai-chips-after-nvidia-scandal"
-      }
-     ],
-     "regioner": [
-      "asien"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Effekter på Kinas AI-utveckling",
-     "namn_en": "Effects on China's AI development",
-     "lyfter_sv": "BBC lyfter fram att de nya reglerna begränsar tillgången till datorkraft som Kina är starkt beroende av, Rappler att Kina använder amerikanska AI-modeller för att träna egna konkurrenter när restriktionerna biter.",
-     "lyfter_en": "BBC highlights that the new rules limit access to computing power China relies heavily on, while Rappler highlights that China uses US AI models to train homegrown rivals as the curbs bite.",
-     "kallor": [
-      {
-       "namn": "BBC World",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-       "namn": "Rappler",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.rappler.com/technology/china-taps-us-ai-models-train-homegrown-rivals/"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 10,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "USA inför nya regler mot kinesiska företags fjärråtkomst till AI-chip",
-      "stod": [
-       5,
-       7,
-       8,
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "SCMP: splittring i Washington och Silicon Valley efter Nvidias ledningskris",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Ars Technica: Trump satsar på att Kina inte bryr sig om blockeringen av fjärråtkomst",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "CNA: datacenter var som helst i världen behöver en amerikansk licens",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Tom's Hardware: reglerna ska förhindra kringgående via fjärråtkomst i datacenter världen över",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: USA blockerar kinesisk fjärråtkomst efter Nvidia-skandalen",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: Kina kritiserar beslutet",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Nikkei Asia: USA vill begränsa fjärråtkomst efter samma Nvidia-skandal",
-      "stod": [
-       9
-      ],
-      "problem": null
-     },
-     {
-      "text": "BBC: de nya reglerna begränsar tillgången till datorkraft som Kina är starkt beroende av",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Rappler: Kina använder amerikanska AI-modeller för att träna egna konkurrenter när restriktionerna biter",
-      "stod": [
-       6
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.602,
-  "betydelse": {
-   "sv": "Eftersom nya amerikanska regler kräver licens för att datacenter överallt ska få leverera stora mängder datorkraft till bolag med huvudkontor i Kina, berör det svenska datacenter och företag som säljer sådan kapacitet.",
-   "en": "Since new US rules require data centres anywhere to hold a US licence to supply large volumes of advanced-chip computing power to China-headquartered companies, US and UK cloud providers serving those clients fall under the licensing requirement.",
-   "grund": [
-    3,
-    7
-   ],
-   "grund_kallor": [
-    {
-     "namn": "CNA",
-     "url": "https://www.channelnewsasia.com/world/china-slams-new-us-chip-curbs-vows-necessary-measures-6559376"
-    },
-    {
-     "namn": "Tom's Hardware",
-     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "narrativ": null,
+  "sammanhang": 0.437,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
@@ -26229,6 +25293,32 @@
     "usa"
    ],
    "per_region": {
+    "europa": [
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Shenzhen: Inside ‘China’s Silicon Valley’",
+      "url": "https://www.france24.com/en/video/20261117-shenzhen-inside-china-s-silicon-valley",
+      "tid": 1794932170.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "How new US chip restrictions on South East Asia will hit China",
+      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+      "tid": 1794925545.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Financial Times",
+      "land": "GB",
+      "rubrik": "US tech stocks slide ahead of Nvidia results",
+      "url": "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60?syn-25a6b1a6=1",
+      "tid": 1794936170.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "South China Morning Post",
@@ -26239,19 +25329,19 @@
       "statskontrollerad": false
      },
      {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Nvidia earnings in focus as Jensen Huang spy scandal and fresh US chip export curbs cloud outlook",
+      "url": "https://www.hindustantimes.com/world-news/nvidia-earnings-jensen-huang-spy-scandal-us-chip-export-curbs-china-ai-restrictions-data-centres-101794907515830.html",
+      "tid": 1794923562.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "CNA",
       "land": "SG",
       "rubrik": "China slams new US chip curbs, vows 'necessary measures'",
       "url": "https://www.channelnewsasia.com/world/china-slams-new-us-chip-curbs-vows-necessary-measures-6559376",
       "tid": 1794923220.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "US-China tech tensions put Nvidia, Apple at risk as chip curbs and supply chain concerns grow",
-      "url": "https://www.hindustantimes.com/world-news/us-news/uschina-tech-tensions-put-nvidia-apple-at-risk-as-chip-curbs-and-supply-chain-concerns-grow-101794921514767.html",
-      "tid": 1794922598.0,
       "statskontrollerad": false
      },
      {
@@ -26279,23 +25369,21 @@
       "statskontrollerad": false
      }
     ],
-    "europa": [
-     {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "How new US chip restrictions on South East Asia will hit China",
-      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
-      "tid": 1794925545.0,
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
      {
-      "kalla": "Tom's Hardware",
+      "kalla": "Axios",
       "land": "US",
-      "rubrik": "New US rules aim to restrict Chinese firms’ remote access to AI servers and infrastructure",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls",
-      "tid": 1794865800.0,
+      "rubrik": "Nvidia's earnings mark start of post-Jensen era",
+      "url": "https://www.axios.com/2026/11/17/nvidia-earnings-report-ceo-transition",
+      "tid": 1794918006.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+      "tid": 1794899255.0,
       "statskontrollerad": false
      },
      {
@@ -26305,16 +25393,62 @@
       "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
       "tid": 1794856209.0,
       "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
+      "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
+      "tid": 1794898140.0,
+      "statskontrollerad": false
      }
     ]
    },
    "blind_flack": null,
    "grannar_svenska": true,
-   "usa": null,
+   "usa": {
+    "bla": [
+     {
+      "kalla": "Axios",
+      "rubrik": "Nvidia's earnings mark start of post-Jensen era",
+      "url": "https://www.axios.com/2026/11/17/nvidia-earnings-report-ceo-transition",
+      "tid": 1794918006.0,
+      "lutning": "lutar_vanster"
+     }
+    ],
+    "mitten": [
+     {
+      "kalla": "CNBC",
+      "rubrik": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+      "tid": 1794899255.0,
+      "lutning": "mitten"
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
+      "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
+      "tid": 1794898140.0,
+      "lutning": "mitten"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "‘China question’: Nvidia crisis and new US chip curbs split Washington and Silicon Valley",
+  "reserv_rubrik": "Shenzhen: Inside ‘China’s Silicon Valley’",
   "kallor": [
+   {
+    "namn": "France 24",
+    "rubrik": "Shenzhen: Inside ‘China’s Silicon Valley’",
+    "url": "https://www.france24.com/en/video/20261117-shenzhen-inside-china-s-silicon-valley",
+    "tid": 1794932170.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "South China Morning Post",
     "rubrik": "‘China question’: Nvidia crisis and new US chip curbs split Washington and Silicon Valley",
@@ -26340,6 +25474,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Hindustan Times",
+    "rubrik": "Nvidia earnings in focus as Jensen Huang spy scandal and fresh US chip export curbs cloud outlook",
+    "url": "https://www.hindustantimes.com/world-news/nvidia-earnings-jensen-huang-spy-scandal-us-chip-export-curbs-china-ai-restrictions-data-centres-101794907515830.html",
+    "tid": 1794923562.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "CNA",
     "rubrik": "China slams new US chip curbs, vows 'necessary measures'",
     "url": "https://www.channelnewsasia.com/world/china-slams-new-us-chip-curbs-vows-necessary-measures-6559376",
@@ -26352,18 +25498,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Hindustan Times",
-    "rubrik": "US-China tech tensions put Nvidia, Apple at risk as chip curbs and supply chain concerns grow",
-    "url": "https://www.hindustantimes.com/world-news/us-news/uschina-tech-tensions-put-nvidia-apple-at-risk-as-chip-curbs-and-supply-chain-concerns-grow-101794921514767.html",
-    "tid": 1794922598.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Hindu",
     "rubrik": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
@@ -26372,6 +25506,18 @@
     "typ": "media",
     "land": "IN",
     "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Axios",
+    "rubrik": "Nvidia's earnings mark start of post-Jensen era",
+    "url": "https://www.axios.com/2026/11/17/nvidia-earnings-report-ceo-transition",
+    "tid": 1794918006.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -26388,10 +25534,10 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Tom's Hardware",
-    "rubrik": "New US rules aim to restrict Chinese firms’ remote access to AI servers and infrastructure",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls",
-    "tid": 1794865800.0,
+    "namn": "CNBC",
+    "rubrik": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+    "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+    "tid": 1794899255.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -26405,6 +25551,30 @@
     "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
     "tid": 1794856209.0,
     "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Financial Times",
+    "rubrik": "US tech stocks slide ahead of Nvidia results",
+    "url": "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60?syn-25a6b1a6=1",
+    "tid": 1794936170.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
+    "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
+    "tid": 1794898140.0,
+    "betalvagg": true,
     "typ": "media",
     "land": "US",
     "region": "usa",
@@ -26429,10 +25599,14 @@
    "sv": 1,
    "en": 3
   },
-  "autopilot": [],
+  "autopilot": [
+   "inget utkast",
+   "ingen källkontroll"
+  ],
   "data": null,
   "godkand_tid": 1794931780.6007223,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1794938877.8331776
  },
  "e550361d13": {
   "id": "e550361d13",
