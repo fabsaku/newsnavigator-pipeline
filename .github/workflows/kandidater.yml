@@ -14,7 +14,6 @@ concurrency:
 
 jobs:
   run:
-    if: false   # PAUSAT 11 november på Fabians begäran. Ta bort raden för att starta igen.
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
