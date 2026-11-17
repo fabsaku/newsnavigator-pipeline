@@ -14625,7 +14625,7 @@
    "varlden"
   ],
   "amnen_sektion": [],
-  "poang": 30.9,
+  "poang": 28.9,
   "vikt": {
    "bredd": 0.315,
    "regioner": {
@@ -14639,9 +14639,9 @@
     "allvar": 3,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "Nationella strejker i Frankrike om löner och levnadskostnader berör många offentliga anställda, men effekterna är oftast kortvariga."
+    "skal": "Stora fackliga protester och strejker i Frankrike om löner och levnadskostnader berör många offentliganställda, men effekterna väntas bli kortvariga."
    },
-   "bekraftad": true,
+   "bekraftad": false,
    "maste": false,
    "spar": []
   },
@@ -14859,44 +14859,17 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Lönekrav i offentlig sektor",
-     "namn_en": "Public sector pay demands",
-     "lyfter_sv": "France 24 lyfter fram en ny nationell strejk i offentlig sektor, medan The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning.",
-     "lyfter_en": "France 24 highlights a fresh nationwide public sector strike, while The Straits Times highlights that public sector unions are pushing for a general pay rise.",
+     "namn_sv": "Löneökningar och regeringens erbjudande",
+     "namn_en": "Pay demands and the government's offer",
+     "lyfter_sv": "The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning, medan Hindustan Times lyfter fram att regeringen erbjuder högre minimilön men att facken anser att det inte räcker.",
+     "lyfter_en": "The Straits Times highlights that public sector unions are pushing for an across-the-board pay rise, while Hindustan Times highlights that the government has offered a higher minimum wage but that unions say it falls short.",
      "kallor": [
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261117-france-hit-by-fresh-nationwide-public-sector-strike"
-      },
       {
        "namn": "The Straits Times",
        "region": "asien",
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Levnadskostnader och regeringens erbjudande",
-     "namn_en": "Living costs and the government offer",
-     "lyfter_sv": "Al Jazeera lyfter fram tiotusentals demonstranter i Frankrike som samlas kring levnadsstandard och löner, medan Hindustan Times lyfter fram ett regeringserbjudande om höjd minimilön som fackförbunden anser otillräckligt.",
-     "lyfter_en": "Al Jazeera highlights tens of thousands rallying in France over living standards and wages, while Hindustan Times highlights a government offer of a higher minimum wage that unions say falls short.",
-     "kallor": [
-      {
-       "namn": "Al Jazeera",
-       "region": "mellanostern",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss"
       },
       {
        "namn": "Hindustan Times",
@@ -14907,7 +14880,33 @@
       }
      ],
      "regioner": [
-      "asien",
+      "asien"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Ilska och protester på gatorna",
+     "namn_en": "Public anger and mass protest",
+     "lyfter_sv": "Al Jazeera lyfter fram tiotusentals som demonstrerar i Frankrike om levnadsstandard och löner, medan France 24 lyfter fram stark ilska och en svag regering som förklaring till strejkerna.",
+     "lyfter_en": "Al Jazeera highlights tens of thousands rallying in France over living standards and wages, while France 24 highlights strong public anger and a weak government as the reason behind the strikes.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss"
+      },
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking"
+      }
+     ],
+     "regioner": [
+      "europa",
       "mellanostern"
      ],
      "usa_sidor": []
@@ -14915,64 +14914,48 @@
    ],
    "kontroll": {
     "ok": true,
-    "antal": 8,
+    "antal": 6,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Rubriken: ny nationell strejk i offentlig sektor i Frankrike",
+      "text": "Rubriken: tiotusentals demonstrerar i Frankrike för levnadsstandard och löner",
       "stod": [
-       2,
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times: offentliga fackförbund driver på för en generell löneökning",
+      "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "Rubriken: strejken gäller löner",
+      "text": "Hindustan Times: regeringen erbjuder högre minimilön",
       "stod": [
-       3,
        4
       ],
       "problem": null
      },
      {
-      "text": "France 24 lyfter fram en ny nationell strejk i offentlig sektor",
+      "text": "Hindustan Times: facken anser att erbjudandet inte räcker",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: tiotusentals demonstrerar i Frankrike om levnadsstandard och löner",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: stark ilska och en svag regering som förklaring till strejkerna",
       "stod": [
        2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Al Jazeera lyfter fram tiotusentals demonstranter i Frankrike",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Demonstranterna samlas kring levnadsstandard och löner",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Hindustan Times lyfter fram ett regeringserbjudande om höjd minimilön",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Fackförbunden anser erbjudandet otillräckligt",
-      "stod": [
-       4
       ],
       "problem": null
      }
@@ -14981,7 +14964,7 @@
    },
    "ok": true
   },
-  "sammanhang": 0.657,
+  "sammanhang": 0.618,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -15004,9 +14987,9 @@
      {
       "kalla": "France 24",
       "land": "FR",
-      "rubrik": "France hit by fresh nationwide public sector strike",
-      "url": "https://www.france24.com/en/video/20261117-france-hit-by-fresh-nationwide-public-sector-strike",
-      "tid": 1794930181.0,
+      "rubrik": "'A lot of anger and a weak government': Why are French public sector workers striking?",
+      "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking",
+      "tid": 1794933288.0,
       "statskontrollerad": false
      }
     ],
@@ -15050,9 +15033,9 @@
    },
    {
     "namn": "France 24",
-    "rubrik": "France hit by fresh nationwide public sector strike",
-    "url": "https://www.france24.com/en/video/20261117-france-hit-by-fresh-nationwide-public-sector-strike",
-    "tid": 1794930181.0,
+    "rubrik": "'A lot of anger and a weak government': Why are French public sector workers striking?",
+    "url": "https://www.france24.com/en/video/20261117-a-lot-of-anger-and-a-weak-government-why-are-french-public-sector-workers-striking",
+    "tid": 1794933288.0,
     "betalvagg": false,
     "typ": "media",
     "land": "FR",
@@ -15091,12 +15074,13 @@
    "en": 2
   },
   "autopilot": [
+   "källkontrollen har 1 anmärkningar",
    "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1793948948.5031242,
   "automatisk": false,
-  "uppdaterad_tid": 1794935365.922328
+  "uppdaterad_tid": 1794937183.279506
  },
  "ad595b9bde": {
   "id": "ad595b9bde",
@@ -23720,22 +23704,20 @@
  "c6b673686f": {
   "id": "c6b673686f",
   "amnen": [
-   "europa",
-   "varlden"
+   "europa"
   ],
   "amnen_sektion": [
    "europa"
   ],
-  "poang": 33.8,
+  "poang": 34.7,
   "vikt": {
-   "bredd": 1.485,
+   "bredd": 1.369,
    "regioner": {
-    "asien": 3,
+    "asien": 2,
     "norden": 1,
-    "afrika": 3,
-    "europa": 4,
+    "afrika": 4,
+    "europa": 2,
     "usa": 3,
-    "global": 1,
     "sverige": 1,
     "mellanostern": 1
    },
@@ -23745,16 +23727,16 @@
     "allvar": 4,
     "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Fem EU-länder planerar gemensamt returcenter i Rwanda för avvisade asylsökande, vilket väcker kritik om mänskliga rättigheter och folkrättsliga risker och markerar ett principiellt skifte i EU:s migra"
+    "skal": "Fem EU-länder planerar gemensamma returcenter i Rwanda för avvisade asylsökande, vilket väcker oro för mänskliga rättigheter och internationell rätt."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": true,
    "spar": [
     "rattigheter"
    ]
   },
   "maste": true,
-  "antal_kallor": 17,
+  "antal_kallor": 14,
   "har_primarkalla": false,
   "senast": "2026-11-17T15:43:28+00:00",
   "utkast": {
@@ -23822,10 +23804,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Kritik från människorättsorganisationer",
-     "namn_en": "Criticism from human rights groups",
-     "lyfter_sv": "The Straits Times lyfter fram FN:s människorättschef som oroad, Africanews att HRW ser risk för brott mot internationell rätt, Amnesty att avtalet upprepar tidigare misstag och Japan Times protester och UNHCR:s varning.",
-     "lyfter_en": "The Straits Times highlights the UN rights chief as concerned, Africanews that HRW sees a risk of breaching international law, Amnesty that the deal repeats past mistakes, and Japan Times protests and a UNHCR warning.",
+     "namn_sv": "Kritik från rättighetsorganisationer",
+     "namn_en": "Criticism from rights organisations",
+     "lyfter_sv": "The Straits Times lyfter fram att FN:s människorättschef oroas, Africanews att HRW varnar för risk att bryta mot internationell rätt, Deutsche Welle att människorättsgrupper slår mot planerna, The Japan Times protester och UNHCR:s varning samt Daily Maverick fördömanden från rättighetsgrupper.",
+     "lyfter_en": "The Straits Times highlights the UN rights chief's concern, Africanews HRW's warning about breaching international law, Deutsche Welle criticism from rights groups, The Japan Times protests and a UNHCR warning, and Daily Maverick condemnation from rights groups.",
      "kallor": [
       {
        "namn": "The Straits Times",
@@ -23833,13 +23815,6 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.straitstimes.com/world/europe/un-rights-chief-concerned-by-eu-countries-rwanda-migrant-hub-plans"
-      },
-      {
-       "namn": "DR Nyheder",
-       "region": "norden",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan"
       },
       {
        "namn": "Africanews",
@@ -23868,57 +23843,6 @@
        "lutning": null,
        "statskontrollerad": false,
        "url": "https://www.dailymaverick.co.za/article/2026-11-16-five-eu-countries-unveil-plans-for-rwanda-deportation-hub/"
-      },
-      {
-       "namn": "Amnesty International",
-       "region": "global",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/"
-      }
-     ],
-     "regioner": [
-      "afrika",
-      "asien",
-      "europa",
-      "global",
-      "norden"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Partnerskap och ny migrationspolitik",
-     "namn_en": "Partnership and new migration policy",
-     "lyfter_sv": "AllAfrica lyfter fram ett migrationspartnerskap mellan Rwanda och fem EU-länder, Le Monde att planen markerar ett skifte i europeisk migrationspolitik, The Guardian att länderna presenterar planer för returhubbar och The Hindu att avtalet ska presenteras.",
-     "lyfter_en": "AllAfrica highlights migration partnership between Rwanda and five EU countries, Le Monde that the plan marks a shift in European migration policy, The Guardian that countries announce plans for return hubs, and The Hindu that the deal will be unveiled.",
-     "kallor": [
-      {
-       "namn": "AllAfrica",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://allafrica.com/stories/202611170114.html"
-      },
-      {
-       "namn": "The Guardian",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/international/european-union-nations-to-unveil-rwanda-deal-for-migrant-return-hub/article71706988.ece"
-      },
-      {
-       "namn": "Le Monde (English)",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html"
       }
      ],
      "regioner": [
@@ -23929,24 +23853,24 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Planen beskrivs som utvisning",
-     "namn_en": "The plan described as deportation",
-     "lyfter_sv": "France 24 lyfter fram att avslagna asylsökande ska skickas till Rwanda, Washington Post att länderna gått med på att utvisa dem, New York Times att planen gäller utvisning, The National, statskontrollerat medium, ett utvisningsupplägg och HRW utvisningscenter.",
-     "lyfter_en": "France 24 highlights that rejected asylum seekers are to be sent to Rwanda, Washington Post that the countries agreed to deport them, New York Times that the plan concerns deportation, The National, a state-controlled outlet, a deportation scheme and HRW deportation centers.",
+     "namn_sv": "Regeringarna presenterar planerna",
+     "namn_en": "Governments announce the hub plans",
+     "lyfter_sv": "AllAfrica lyfter fram ett partnerskap med överföringar från 2027, The Guardian att fem EU-stater annonserar planer, The Washington Post att fem länder enats om deportationer, The New York Times att planen gäller deportationer, The National, statskontrollerat medium, att planen tillkännages.",
+     "lyfter_en": "AllAfrica highlights a partnership with transfers from 2027, The Guardian five EU states announcing plans, The Washington Post five countries agreeing to deport, The New York Times a plan to deport, and The National, a state-controlled outlet, an announcement.",
      "kallor": [
       {
-       "namn": "France 24",
+       "namn": "AllAfrica",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://allafrica.com/stories/202611170105.html"
+      },
+      {
+       "namn": "The Guardian",
        "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261117-5-european-countries-aim-to-send-rejected-asylum-seekers-to-rwanda"
-      },
-      {
-       "namn": "Human Rights Watch",
-       "region": "usa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.hrw.org/news/2026/11/16/eu-countries-plan-rwanda-deportation-centers"
+       "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
       },
       {
        "namn": "The Washington Post",
@@ -23971,6 +23895,7 @@
       }
      ],
      "regioner": [
+      "afrika",
       "europa",
       "mellanostern",
       "usa"
@@ -23982,106 +23907,84 @@
    ],
    "kontroll": {
     "ok": true,
-    "antal": 14,
+    "antal": 11,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Fem europeiska länder planerar att skicka avvisade asylsökande till Rwanda",
+      "text": "Fem europeiska länder presenterar plan för återvändandecenter i Rwanda (rubrik)",
       "stod": [
-       4,
-       10,
-       3
+       5,
+       8
       ],
       "problem": null
      },
      {
-      "text": "The Straits Times: FN:s människorättschef är oroad",
+      "text": "The Straits Times: FN:s människorättschef oroas",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "Africanews: HRW ser risk för brott mot internationell rätt",
+      "text": "Africanews: HRW varnar för risk att bryta mot internationell rätt",
       "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "Amnesty: avtalet upprepar tidigare misstag",
-      "stod": [
-       11
-      ],
-      "problem": null
-     },
-     {
-      "text": "Japan Times: protester från människorättsgrupper och UNHCR:s varning",
-      "stod": [
-       7
-      ],
-      "problem": null
-     },
-     {
-      "text": "AllAfrica: migrationspartnerskap mellan Rwanda och fem EU-länder",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Le Monde: planen markerar ett skifte i europeisk migrationspolitik",
-      "stod": [
-       13
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Guardian: länderna presenterar planer för returhubbar i Rwanda",
-      "stod": [
-       8
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu: avtalet ska presenteras",
-      "stod": [
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24: avslagna asylsökande ska skickas till Rwanda",
+      "text": "Deutsche Welle: människorättsgrupper slår mot planerna",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "Washington Post: länderna har gått med på att utvisa avslagna asylsökande",
+      "text": "The Japan Times: protester från människorättsgrupper och UNHCR:s varning",
+      "stod": [
+       6
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Maverick: fördömanden från rättighetsgrupper",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "AllAfrica: partnerskap med överföringar från 2027",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian: fem EU-stater annonserar planer",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Washington Post: fem länder har enats om deportationer",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "The New York Times: planen gäller deportationer",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "The National (statskontrollerat medium): planen tillkännages",
       "stod": [
        14
-      ],
-      "problem": null
-     },
-     {
-      "text": "New York Times: planen gäller utvisning",
-      "stod": [
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "The National är ett statskontrollerat medium och beskriver ett utvisningsupplägg",
-      "stod": [
-       17
-      ],
-      "problem": null
-     },
-     {
-      "text": "HRW beskriver utvisningscenter i Rwanda",
-      "stod": [
-       9
       ],
       "problem": null
      }
@@ -24090,14 +23993,13 @@
    },
    "ok": true
   },
-  "sammanhang": 0.664,
+  "sammanhang": 0.648,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "afrika",
     "asien",
     "europa",
-    "global",
     "mellanostern",
     "norden",
     "sverige",
@@ -24119,14 +24021,6 @@
       "rubrik": "Germany, Denmark, Austria, Greece and the Netherlands plan Rwanda migrant hub",
       "url": "https://www.japantimes.co.jp/news/2026/11/17/world/politics/european-nations-rwanda-hub-migrants/",
       "tid": 1794885960.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "European Union nations to unveil Rwanda deal for migrant return hub",
-      "url": "https://www.thehindu.com/news/international/european-union-nations-to-unveil-rwanda-deal-for-migrant-return-hub/article71706988.ece",
-      "tid": 1794812496.0,
       "statskontrollerad": false
      }
     ],
@@ -24152,9 +24046,17 @@
      {
       "kalla": "AllAfrica",
       "land": "INT",
-      "rubrik": "Rwanda: Rwanda, Five EU Countries Announce Migration Partnership",
-      "url": "https://allafrica.com/stories/202611170114.html",
-      "tid": 1794891923.0,
+      "rubrik": "Rwanda: What to Know About Migrant Partnership Between Rwanda and Five EU Countries",
+      "url": "https://allafrica.com/stories/202611170105.html",
+      "tid": 1794891661.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The East African",
+      "land": "KE",
+      "rubrik": "Why the EU may explore idea of return hubs in Africa",
+      "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/why-the-eu-may-explore-idea-of-return-hubs-in-africa-5673308",
+      "tid": 1794884400.0,
       "statskontrollerad": false
      },
      {
@@ -24167,14 +24069,6 @@
      }
     ],
     "europa": [
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "5 European countries aim to send rejected asylum seekers to Rwanda",
-      "url": "https://www.france24.com/en/video/20261117-5-european-countries-aim-to-send-rejected-asylum-seekers-to-rwanda",
-      "tid": 1794912113.0,
-      "statskontrollerad": false
-     },
      {
       "kalla": "Deutsche Welle",
       "land": "DE",
@@ -24189,14 +24083,6 @@
       "rubrik": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
       "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
       "tid": 1794877859.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Le Monde (English)",
-      "land": "FR",
-      "rubrik": "Five EU countries plan 'return hub' in Rwanda, a shift in European immigration policy",
-      "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html",
-      "tid": 1794885725.0,
       "statskontrollerad": false
      }
     ],
@@ -24226,23 +24112,13 @@
       "statskontrollerad": false
      }
     ],
-    "global": [
-     {
-      "kalla": "Amnesty International",
-      "land": "GB",
-      "rubrik": "Europe: Disgraceful Rwanda deportation deal repeats mistakes of the past",
-      "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/",
-      "tid": 1794845540.0,
-      "statskontrollerad": false
-     }
-    ],
     "sverige": [
      {
       "kalla": "Dagens Nyheter",
       "land": "SE",
-      "rubrik": "Erik Esbjörnsson: Asylavtal med Rwanda riskerar att skapa nya flyktingströmmar",
-      "url": "https://www.dn.se/varlden/erik-esbjornsson-asylavtal-med-rwanda-riskerar-att-skapa-nya-flyktingstrommar/",
-      "tid": 1794846249.0,
+      "rubrik": "Tungviktare i EU vill skicka migranter till Rwanda – tidigare försök har slutat i fiasko",
+      "url": "https://www.dn.se/varlden/tungviktare-i-eu-vill-skicka-migranter-till-rwanda-tidigare-forsok-har-slutat-i-fiasko/",
+      "tid": 1794846245.0,
       "statskontrollerad": false
      }
     ],
@@ -24301,18 +24177,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "France 24",
-    "rubrik": "5 European countries aim to send rejected asylum seekers to Rwanda",
-    "url": "https://www.france24.com/en/video/20261117-5-european-countries-aim-to-send-rejected-asylum-seekers-to-rwanda",
-    "tid": 1794912113.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Deutsche Welle",
     "rubrik": "Germany news: Plans for Rwanda migrant hub come under fire",
     "url": "https://www.dw.com/en/germany-news-plans-for-rwanda-migrant-hub-come-under-fire/live-79965639?maca=en-rss-en-all-1573-rdf",
@@ -24326,9 +24190,9 @@
    },
    {
     "namn": "AllAfrica",
-    "rubrik": "Rwanda: Rwanda, Five EU Countries Announce Migration Partnership",
-    "url": "https://allafrica.com/stories/202611170114.html",
-    "tid": 1794891923.0,
+    "rubrik": "Rwanda: What to Know About Migrant Partnership Between Rwanda and Five EU Countries",
+    "url": "https://allafrica.com/stories/202611170105.html",
+    "tid": 1794891661.0,
     "betalvagg": false,
     "typ": "media",
     "land": "INT",
@@ -24345,6 +24209,18 @@
     "typ": "media",
     "land": "JP",
     "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The East African",
+    "rubrik": "Why the EU may explore idea of return hubs in Africa",
+    "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/why-the-eu-may-explore-idea-of-return-hubs-in-africa-5673308",
+    "tid": 1794884400.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
     "agare": "privat",
     "statskontrollerad": false
    },
@@ -24385,42 +24261,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Amnesty International",
-    "rubrik": "Europe: Disgraceful Rwanda deportation deal repeats mistakes of the past",
-    "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/",
-    "tid": 1794845540.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "global",
-    "agare": "organisation",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "European Union nations to unveil Rwanda deal for migrant return hub",
-    "url": "https://www.thehindu.com/news/international/european-union-nations-to-unveil-rwanda-deal-for-migrant-return-hub/article71706988.ece",
-    "tid": 1794812496.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Le Monde (English)",
-    "rubrik": "Five EU countries plan 'return hub' in Rwanda, a shift in European immigration policy",
-    "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html",
-    "tid": 1794885725.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Washington Post",
     "rubrik": "Five European countries agree to deport rejected asylum seekers to Rwanda",
     "url": "https://www.washingtonpost.com/world/2026/11/16/five-european-countries-agree-deport-rejected-asylum-seekers-rwanda/",
@@ -24446,9 +24286,9 @@
    },
    {
     "namn": "Dagens Nyheter",
-    "rubrik": "Erik Esbjörnsson: Asylavtal med Rwanda riskerar att skapa nya flyktingströmmar",
-    "url": "https://www.dn.se/varlden/erik-esbjornsson-asylavtal-med-rwanda-riskerar-att-skapa-nya-flyktingstrommar/",
-    "tid": 1794846249.0,
+    "rubrik": "Tungviktare i EU vill skicka migranter till Rwanda – tidigare försök har slutat i fiasko",
+    "url": "https://www.dn.se/varlden/tungviktare-i-eu-vill-skicka-migranter-till-rwanda-tidigare-forsok-har-slutat-i-fiasko/",
+    "tid": 1794846245.0,
     "betalvagg": true,
     "typ": "media",
     "land": "SE",
@@ -24474,13 +24314,11 @@
    "sv": 2,
    "en": 3
   },
-  "autopilot": [
-   "källkontrollen har 4 anmärkningar"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1794920920.4980764,
   "automatisk": true,
-  "uppdaterad_tid": 1794935365.922328
+  "uppdaterad_tid": 1794937183.279506
  },
  "8714ea791a": {
   "id": "8714ea791a",
@@ -25016,17 +24854,19 @@
  "f540668e6d": {
   "id": "f540668e6d",
   "amnen": [
+   "halvledare",
    "usa"
   ],
   "amnen_sektion": [
+   "halvledare",
    "usa"
   ],
-  "poang": 30.7,
+  "poang": 33.3,
   "vikt": {
-   "bredd": 0.192,
+   "bredd": 0.251,
    "regioner": {
     "europa": 1,
-    "asien": 2,
+    "asien": 3,
     "usa": 1
    },
    "timmar": 96,
@@ -25035,16 +24875,17 @@
     "allvar": 3,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "Ett toppmöte med ASEAN-länderna och USA berör flera länder i Sydostasien, med begränsad säkerhets- och diplomatisk betydelse och kortvariga följder."
+    "skal": "Trumps besök vid ASEAN-mötet i Manila berör flera länders ledare och handelsfrågor som rörelsemineraler och chipsexport, men effekterna blir troligen begränsade i tid och omfattning."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false,
    "spar": [
-    "samarbete"
+    "samarbete",
+    "teknik"
    ]
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 5,
   "har_primarkalla": false,
   "senast": "2026-11-17T15:37:28+00:00",
   "utkast": {
@@ -25167,9 +25008,146 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.542,
-  "betydelse": null,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Trumps korta besök i Manila",
+     "namn_en": "Trump's brief Manila visit",
+     "lyfter_sv": "NYT lyfter fram att Trump missar största delen av ASEAN-mötet, SCMP att besöket bara varar drygt 20 timmar.",
+     "lyfter_en": "NYT highlights that Trump will miss most of the ASEAN summit, SCMP that the visit lasts just over 20 hours.",
+     "kallor": [
+      {
+       "namn": "South China Morning Post",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china"
+      },
+      {
+       "namn": "The New York Times",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla"
+     ]
+    },
+    {
+     "namn_sv": "Samarbete och protester inför mötet",
+     "namn_en": "Cooperation and protests before the summit",
+     "lyfter_sv": "France 24 lyfter fram upprop om samarbete inför ASEAN-mötet, The Hindu att ledare och demonstranter väntar på Trumps ankomst.",
+     "lyfter_en": "France 24 highlights calls for cooperation ahead of the ASEAN summit, The Hindu that leaders and protesters are waiting for Trump's arrival.",
+     "kallor": [
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/video/20261117-calls-for-cooperation-as-asean-summit-awaits-trump"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 7,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump är i Manila",
+      "stod": [
+       2,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Mötet är ASEAN-toppmötet",
+      "stod": [
+       1,
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Trumps besök i Manila är kort",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "NYT lyfter fram att Trump missar största delen av ASEAN-mötet",
+      "stod": [
+       5
+      ],
+      "problem": null
+     },
+     {
+      "text": "SCMP säger att besöket varar drygt 20 timmar",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24 lyfter fram upprop om samarbete inför ASEAN-mötet",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu skriver att ledare och demonstranter väntar på Trumps ankomst",
+      "stod": [
+       3
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.541,
+  "betydelse": {
+   "sv": null,
+   "en": "Because SCMP reports Trump discussed Nvidia and rare earths in Manila, the talks touch on chipmakers and critical-mineral supplies that US businesses rely on.",
+   "grund": [
+    4
+   ],
+   "grund_kallor": [
+    {
+     "namn": "South China Morning Post",
+     "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china"
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "problem": []
+   },
+   "ok": true
+  },
   "perspektiv": {
    "regioner": [
     "asien",
@@ -25189,6 +25167,14 @@
     ],
     "asien": [
      {
+      "kalla": "Rappler",
+      "land": "PH",
+      "rubrik": "Trump in Manila for state visit, ASEAN meetings | The wRap",
+      "url": "https://www.rappler.com/video/daily-wrap/november-17-2026/",
+      "tid": 1794924660.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "The Hindu",
       "land": "IN",
       "rubrik": "Leaders, protesters await Donald Trump arrival for Manila summit",
@@ -25197,11 +25183,11 @@
       "statskontrollerad": false
      },
      {
-      "kalla": "Rappler",
-      "land": "PH",
-      "rubrik": "Trump arrives in Manila for state visit, ASEAN-US Special Summit",
-      "url": "https://www.rappler.com/philippines/trump-arrives-state-visit-asean-special-summit-2026/",
-      "tid": 1794908152.0,
+      "kalla": "South China Morning Post",
+      "land": "HK",
+      "rubrik": "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+      "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china",
+      "tid": 1794908205.0,
       "statskontrollerad": false
      }
     ],
@@ -25236,6 +25222,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Rappler",
+    "rubrik": "Trump in Manila for state visit, ASEAN meetings | The wRap",
+    "url": "https://www.rappler.com/video/daily-wrap/november-17-2026/",
+    "tid": 1794924660.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "PH",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "The Hindu",
     "rubrik": "Leaders, protesters await Donald Trump arrival for Manila summit",
     "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece",
@@ -25248,13 +25246,13 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Rappler",
-    "rubrik": "Trump arrives in Manila for state visit, ASEAN-US Special Summit",
-    "url": "https://www.rappler.com/philippines/trump-arrives-state-visit-asean-special-summit-2026/",
-    "tid": 1794908152.0,
+    "namn": "South China Morning Post",
+    "rubrik": "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "url": "https://www.scmp.com/news/asia/southeast-asia/article/3374740/donald-trump-arrives-manila-speak-asean-summit-heading-china",
+    "tid": 1794908205.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "PH",
+    "land": "HK",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
@@ -25277,14 +25275,11 @@
    "sv": 1,
    "en": 3
   },
-  "autopilot": [
-   "utkastet är märkt osäkert",
-   "källkontrollen har 1 anmärkningar"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1794924617.9176867,
   "automatisk": true,
-  "uppdaterad_tid": 1794935365.922328
+  "uppdaterad_tid": 1794937183.279506
  },
  "b71492cb51": {
   "id": "b71492cb51",
