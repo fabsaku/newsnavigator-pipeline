@@ -23062,34 +23062,37 @@
  "11d8b935fe": {
   "id": "11d8b935fe",
   "amnen": [
-   "geopolitik"
+   "usa"
   ],
   "amnen_sektion": [
-   "geopolitik"
+   "usa"
   ],
-  "poang": 34.7,
+  "poang": 34.9,
   "vikt": {
-   "bredd": 0.326,
+   "bredd": 0.951,
    "regioner": {
-    "usa": 2,
-    "mellanostern": 2
+    "europa": 4,
+    "asien": 3,
+    "usa": 3,
+    "mellanostern": 3,
+    "sverige": 1
    },
    "timmar": 55,
    "konsekvens": {
-    "berorda": 5,
-    "allvar": 5,
-    "varaktighet": 5,
-    "medel": 5.0,
-    "skal": "Rubrikerna beskriver ett pågående USA–Israel-krig mot Iran, med risk för långvarig konflikt och nya anfall, vilket berör flera länder och står på spel för liv och regional säkerhet."
+    "berorda": 3,
+    "allvar": 4,
+    "varaktighet": 2,
+    "medel": 3.0,
+    "skal": "En obekräftad uppgift om en iransk smutsig bomb-plot mot Washington väcker säkerhetsoro och spänningar mellan USA och Iran, men utan verifierat hot."
    },
    "bekraftad": true,
-   "maste": false,
+   "maste": true,
    "spar": []
   },
-  "maste": false,
-  "antal_kallor": 4,
+  "maste": true,
+  "antal_kallor": 14,
   "har_primarkalla": false,
-  "senast": "2026-11-17T16:19:58+00:00",
+  "senast": "2026-11-17T17:37:04+00:00",
   "utkast": {
    "rubrik_sv": "Trump säger att han kan träffa Kim Jong Un i Kina",
    "sammanfattning_sv": "Trump säger att han kan träffa Nordkoreas ledare Kim Jong Un i Kina, enligt Yonhap och The Straits Times. Enligt Arab News uppger Kina att landet inte har någon information om ett sådant möte.",
@@ -23253,27 +23256,72 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Krigets långsiktiga kurs",
-     "namn_en": "The war's long-term course",
-     "lyfter_sv": "The Hill lyfter fram att Vance lovar att USA inte gör något långsiktigt åtagande i kriget, medan Al Jazeera frågar om kriget håller på att bli en frusen konflikt.",
-     "lyfter_en": "The Hill reports that Vance vows the US will not make a long-term commitment to the war, while Al Jazeera asks whether the conflict is becoming a frozen one.",
+     "namn_sv": "Trump varnar Iran",
+     "namn_en": "Trump warns Iran",
+     "lyfter_sv": "Al Jazeera lyfter fram att Trump varnar Iran för en rapporterad smutsbombsplan, Hindustan Times att Iran hotas med ett oöverträffat svar och Fox News att Iran hotas med oöverträffad vedergällning medan högre tjänstemän flyttar till militärbostäder.",
+     "lyfter_en": "Al Jazeera highlights Trump warning Iran over a reported dirty bomb plan, Hindustan Times that Iran faces an unprecedented response, and Fox News that Iran faces unprecedented retaliation as senior officials move to military housing.",
      "kallor": [
-      {
-       "namn": "The Hill",
-       "region": "usa",
-       "lutning": "mitten",
-       "statskontrollerad": false,
-       "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/"
-      },
       {
        "namn": "Al Jazeera",
        "region": "mellanostern",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss"
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss"
+      },
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/us-news/trump-issues-stark-warning-to-iran-over-alleged-dc-dirty-bomb-plot-we-take-it-very-seriously-101794920834305.html"
+      },
+      {
+       "namn": "Fox News",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously"
       }
      ],
      "regioner": [
+      "asien",
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "rod"
+     ]
+    },
+    {
+     "namn_sv": "Trump tar hotet på allvar",
+     "namn_en": "Trump takes threat seriously",
+     "lyfter_sv": "CNBC lyfter fram Trumps uttalande att USA tar en rapporterad iransk smutsbombsplan på allvar, France 24 att Trump tar ett möjligt hot på allvar och Al-Monitor att USA tar en möjlig plan på allvar.",
+     "lyfter_en": "CNBC highlights Trump saying the US takes a reported Iranian dirty bomb plan seriously, France 24 that Trump takes a possible threat seriously, and Al-Monitor that the US takes a possible plan seriously.",
+     "kallor": [
+      {
+       "namn": "CNBC",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html"
+      },
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/americas/20261117-trump-says-he-takes-possible-iran-bomb-threat-to-washington-very-seriously"
+      },
+      {
+       "namn": "Al-Monitor",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.al-monitor.com/originals/2026/11/trump-says-us-taking-seriously-report-possible-iranian-dirty-bomb-plot-washington"
+      }
+     ],
+     "regioner": [
+      "europa",
       "mellanostern",
       "usa"
      ],
@@ -23282,118 +23330,227 @@
      ]
     },
     {
-     "namn_sv": "Netanyahus motiv för nya anfall",
-     "namn_en": "Netanyahu's motives for new strikes",
-     "lyfter_sv": "Al-Monitor lyfter fram att Netanyahu utnyttjar oro för Irans underjordiska kärnprogram och är oense med militärledningen om tiden; The Washington Post lyfter fram att han driver på nytt anfall för att behålla makten, enligt rivaler.",
-     "lyfter_en": "Al-Monitor reports that Netanyahu is exploiting fears about Iran's underground nuclear program and disagrees with military chiefs on timing; The Washington Post reports that he is pushing a new attack to stay in power, according to rivals.",
+     "namn_sv": "Iran avvisar rapporten",
+     "namn_en": "Iran rejects the report",
+     "lyfter_sv": "BBC lyfter fram att Teheran avvisar uppgifterna som grundlösa, The Hindu att rapporten kallas fabricerad, DW att CNN:s påstående ses som försök att skapa legitimitet för kriget och Straits Times att Irans utrikesministerium förnekar anklagelserna.",
+     "lyfter_en": "BBC highlights Tehran rejecting the claims as baseless, The Hindu that the report is called fabricated, DW that CNN's claim is seen as an attempt to create legitimacy for the war, and the Straits Times that Iran's foreign ministry denies the allegations.",
      "kallor": [
       {
-       "namn": "Al-Monitor",
-       "region": "mellanostern",
+       "namn": "BBC World",
+       "region": "europa",
        "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes"
+       "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss"
       },
       {
-       "namn": "The Washington Post",
-       "region": "usa",
-       "lutning": "lutar_vanster",
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
        "statskontrollerad": false,
-       "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/"
+       "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece"
+      },
+      {
+       "namn": "Deutsche Welle",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/united-states/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington"
       }
      ],
      "regioner": [
-      "mellanostern",
+      "asien",
+      "europa"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Tvivel om underrättelseläckan",
+     "namn_en": "Doubts about the intelligence leak",
+     "lyfter_sv": "Daily Caller lyfter fram att läckan kring den iranska smutsbomben bär spår av Deep State, The Guardian att Trump säger sig undersöka planen trots att det inte finns några trovärdiga hot.",
+     "lyfter_en": "Daily Caller highlights that the leak about the Iranian dirty bomb bears traces of the Deep State, and The Guardian that Trump says he is looking into the plan despite no credible threats.",
+     "kallor": [
+      {
+       "namn": "The Daily Caller",
+       "region": "usa",
+       "lutning": "hoger",
+       "statskontrollerad": false,
+       "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand"
+      },
+      {
+       "namn": "The Guardian",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.theguardian.com/world/2026/nov/17/trump-reported-iranian-plot-dirty-bomb-washington"
+      }
+     ],
+     "regioner": [
+      "europa",
       "usa"
      ],
      "usa_sidor": [
-      "bla"
+      "rod"
      ]
     }
    ],
    "kontroll": {
-    "ok": true,
-    "antal": 8,
-    "problem": [],
+    "ok": false,
+    "antal": 17,
+    "problem": [
+     "egen slutsats: Sektionsrubriken 'Tvivel om underrättelseläckan' beskriver bevakningen som tvivelaktig, vilket ingen källa uttrycker"
+    ],
     "pastaenden": [
      {
-      "text": "Netanyahu driver på för nya anfall mot Iran (rubrik)",
+      "text": "Rubriken: uppgifter om iransk plan för smutsig bomb mot Washington",
       "stod": [
-       3,
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubriken: Trump tar det på allvar",
+      "stod": [
+       4,
+       6,
+       9,
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubriken: Iran avvisar",
+      "stod": [
+       1,
+       2,
+       8,
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera: Trump varnar Iran för en rapporterad smutsbombsplan",
+      "stod": [
+       7
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times: Iran hotas med ett oöverträffat svar",
+      "stod": [
+       10
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News: Iran hotas med oöverträffad vedergällning",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fox News: högre tjänstemän flyttar till militärbostäder",
+      "stod": [
+       11
+      ],
+      "problem": null
+     },
+     {
+      "text": "CNBC: Trump säger att USA tar en rapporterad iransk smutsbombsplan på allvar",
+      "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "Militärledningen är oense med Netanyahu om tidpunkten för anfallen (rubrik)",
+      "text": "France 24: Trump tar ett möjligt hot på allvar",
       "stod": [
-       3
+       6
       ],
       "problem": null
      },
      {
-      "text": "The Hill lyfter fram att Vance lovar att USA inte gör något långsiktigt åtagande i kriget",
+      "text": "Al-Monitor: USA tar en möjlig plan på allvar",
+      "stod": [
+       9
+      ],
+      "problem": null
+     },
+     {
+      "text": "BBC: Teheran avvisar uppgifterna som grundlösa",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "Al Jazeera frågar om kriget håller på att bli en frusen konflikt",
+      "text": "The Hindu: rapporten kallas fabricerad",
       "stod": [
        2
       ],
       "problem": null
      },
      {
-      "text": "Al-Monitor lyfter fram att Netanyahu utnyttjar oro för Irans underjordiska kärnprogram",
+      "text": "DW: CNN:s påstående ses som ett försök att skapa legitimitet för kriget",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "Straits Times: Irans utrikesministerium förnekar anklagelserna",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "Daily Caller: läckan kring den iranska smutsbomben bär spår av Deep State",
       "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "Al-Monitor lyfter fram att Netanyahu är oense med militärledningen om tiden för anfallen",
+      "text": "The Guardian: Trump säger sig undersöka planen trots att det inte finns några trovärdiga hot",
       "stod": [
-       3
+       5
       ],
       "problem": null
      },
      {
-      "text": "The Washington Post lyfter fram att Netanyahu driver på nytt anfall för att behålla makten",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Uppgiften om att Netanyahu driver på för att behålla makten kommer från hans rivaler",
-      "stod": [
-       4
-      ],
-      "problem": null
+      "text": "Sektionsrubriken 'Tvivel om underrättelseläckan' beskriver bevakningen som tvivelaktig, vilket ingen källa uttrycker",
+      "stod": [],
+      "problem": "egen slutsats"
      }
     ],
-    "sammanfattning": null
+    "sammanfattning": "Alla sakpåståenden i utkastet har stöd i källorna och tillskrivningarna stämmer. Sektionsrubriken 'Tvivel om underrättelseläckan' är en egen tolkning som inte finns i källmaterialet och bör ersättas med en mer neutral beskrivning."
    },
-   "ok": true
+   "ok": false
   },
-  "sammanhang": 0.466,
+  "sammanhang": 0.603,
   "betydelse": {
-   "sv": "Eftersom USA:s Vance lovar att inte göra långsiktiga åtaganden i kriget mot Iran och Israels militärledning är oense med Netanyahu om tidpunkten för nya anfall, hänger läget ihop med oljepriset, som påverkar bränslepriserna.",
-   "en": "Because Vance vows the US won't make a long-term commitment to the Iran war and Israeli military chiefs disagree with Netanyahu on the timing of new strikes, the situation is tied to oil prices, which feed into gasoline prices.",
+   "sv": "Eftersom Iran enligt DW talar om ett pågående krig hänger läget i Mellanöstern ihop med oljepriset, som påverkar bränslepriserna i Sverige.",
+   "en": "Since reports say Iran allegedly planned a dirty bomb attack on Washington and senior officials are relocating to military housing, the story bears on security for DC residents and federal officials.",
    "grund": [
-    1,
-    3
+    8,
+    11
    ],
    "grund_kallor": [
     {
-     "namn": "The Hill",
-     "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/"
+     "namn": "Deutsche Welle",
+     "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf"
     },
     {
-     "namn": "Al-Monitor",
-     "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes"
+     "namn": "Fox News",
+     "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously"
     }
    ],
    "kontroll": {
@@ -23404,25 +23561,96 @@
   },
   "perspektiv": {
    "regioner": [
+    "asien",
+    "europa",
     "mellanostern",
+    "sverige",
     "usa"
    ],
    "per_region": {
-    "usa": [
+    "europa": [
      {
-      "kalla": "The Hill",
-      "land": "US",
-      "rubrik": "Vance vows US won’t make long-term commitment to Iran war",
-      "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/",
-      "tid": 1794932398.0,
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Trump says US taking 'very seriously' any Iranian plot against Washington",
+      "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
+      "tid": 1794937024.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "The Washington Post",
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "Trump claims US is ‘looking into’ Iranian bomb plot in Washington despite ‘no credible threats’",
+      "url": "https://www.theguardian.com/world/2026/nov/17/trump-reported-iranian-plot-dirty-bomb-washington",
+      "tid": 1794931414.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Trump says he takes possible Iran bomb threat to Washington 'very seriously'",
+      "url": "https://www.france24.com/en/americas/20261117-trump-says-he-takes-possible-iran-bomb-threat-to-washington-very-seriously",
+      "tid": 1794930294.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Iran dismisses report of alleged 'dirty bomb' attack on Washington",
+      "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794926340.0,
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Iran targets Bahrain, slams 'fabricated' dirty-bomb report",
+      "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece",
+      "tid": 1794935233.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Trump issues stark warning to Iran over alleged DC dirty bomb plot: ‘We take it very seriously’",
+      "url": "https://www.hindustantimes.com/world-news/us-news/trump-issues-stark-warning-to-iran-over-alleged-dc-dirty-bomb-plot-we-take-it-very-seriously-101794920834305.html",
+      "tid": 1794922283.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington",
+      "url": "https://www.straitstimes.com/world/united-states/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington",
+      "tid": 1794917400.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The Daily Caller",
       "land": "US",
-      "rubrik": "Netanyahu is pushing for new Iran attack in bid to stay in power, his rivals warn",
-      "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/",
-      "tid": 1794925591.0,
+      "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
+      "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
+      "tid": 1794934275.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
+      "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
+      "tid": 1794934072.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Fox News",
+      "land": "US",
+      "rubrik": "Trump warns Iran about reported plot against admin officials: 'We take it very seriously'",
+      "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
+      "tid": 1794919835.0,
       "statskontrollerad": false
      }
     ],
@@ -23430,52 +23658,101 @@
      {
       "kalla": "Al Jazeera",
       "land": "QA",
-      "rubrik": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-      "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-      "tid": 1794918831.0,
+      "rubrik": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss",
+      "tid": 1794928437.0,
       "statskontrollerad": false
      },
      {
       "kalla": "Al-Monitor",
       "land": "US",
-      "rubrik": "Netanyahu, Israeli military chiefs at odds over timing, urgency of Iran strikes",
-      "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes",
-      "tid": 1794912991.0,
+      "rubrik": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington",
+      "url": "https://www.al-monitor.com/originals/2026/11/trump-says-us-taking-seriously-report-possible-iranian-dirty-bomb-plot-washington",
+      "tid": 1794923198.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Iran will 'pay a price' if dirty bomb is detonated in US",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/17/iran-will-pay-a-price-if-dirty-bomb-is-detonated-in-us/",
+      "tid": 1794936842.0,
+      "statskontrollerad": true
+     }
+    ],
+    "sverige": [
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Uppgifter: Iran planerar bombdåd mot Washington DC",
+      "url": "https://www.dn.se/varlden/uppgifter-iran-forbereder-bombdad-mot-washington/",
+      "tid": 1794885231.0,
       "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": "saknas_i_sverige",
+   "blind_flack": null,
    "grannar_svenska": false,
    "usa": {
-    "mitten": [
+    "rod": [
      {
-      "kalla": "The Hill",
-      "rubrik": "Vance vows US won’t make long-term commitment to Iran war",
-      "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/",
-      "tid": 1794932398.0,
-      "lutning": "mitten"
+      "kalla": "The Daily Caller",
+      "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
+      "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
+      "tid": 1794934275.0,
+      "lutning": "hoger"
+     },
+     {
+      "kalla": "Fox News",
+      "rubrik": "Trump warns Iran about reported plot against admin officials: 'We take it very seriously'",
+      "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
+      "tid": 1794919835.0,
+      "lutning": "hoger"
      }
     ],
-    "bla": [
+    "mitten": [
      {
-      "kalla": "The Washington Post",
-      "rubrik": "Netanyahu is pushing for new Iran attack in bid to stay in power, his rivals warn",
-      "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/",
-      "tid": 1794925591.0,
-      "lutning": "lutar_vanster"
+      "kalla": "CNBC",
+      "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
+      "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
+      "tid": 1794934072.0,
+      "lutning": "mitten"
      }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Vance vows US won’t make long-term commitment to Iran war",
+  "reserv_rubrik": "Trump says US taking 'very seriously' any Iranian plot against Washington",
   "kallor": [
    {
-    "namn": "The Hill",
-    "rubrik": "Vance vows US won’t make long-term commitment to Iran war",
-    "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/",
-    "tid": 1794932398.0,
+    "namn": "BBC World",
+    "rubrik": "Trump says US taking 'very seriously' any Iranian plot against Washington",
+    "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
+    "tid": 1794937024.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Hindu",
+    "rubrik": "Iran targets Bahrain, slams 'fabricated' dirty-bomb report",
+    "url": "https://www.thehindu.com/news/international/iran-targets-bahrain-slams-fabricated-dirty-bomb-report/article71713177.ece",
+    "tid": 1794935233.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Daily Caller",
+    "rubrik": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
+    "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
+    "tid": 1794934275.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -23484,10 +23761,46 @@
     "statskontrollerad": false
    },
    {
+    "namn": "CNBC",
+    "rubrik": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
+    "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
+    "tid": 1794934072.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "Trump claims US is ‘looking into’ Iranian bomb plot in Washington despite ‘no credible threats’",
+    "url": "https://www.theguardian.com/world/2026/nov/17/trump-reported-iranian-plot-dirty-bomb-washington",
+    "tid": 1794931414.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "Trump says he takes possible Iran bomb threat to Washington 'very seriously'",
+    "url": "https://www.france24.com/en/americas/20261117-trump-says-he-takes-possible-iran-bomb-threat-to-washington-very-seriously",
+    "tid": 1794930294.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Al Jazeera",
-    "rubrik": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-    "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-    "tid": 1794918831.0,
+    "rubrik": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss",
+    "tid": 1794928437.0,
     "betalvagg": false,
     "typ": "media",
     "land": "QA",
@@ -23496,10 +23809,22 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Deutsche Welle",
+    "rubrik": "Iran dismisses report of alleged 'dirty bomb' attack on Washington",
+    "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf",
+    "tid": 1794926340.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DE",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Al-Monitor",
-    "rubrik": "Netanyahu, Israeli military chiefs at odds over timing, urgency of Iran strikes",
-    "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes",
-    "tid": 1794912991.0,
+    "rubrik": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington",
+    "url": "https://www.al-monitor.com/originals/2026/11/trump-says-us-taking-seriously-report-possible-iranian-dirty-bomb-plot-washington",
+    "tid": 1794923198.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -23508,30 +23833,76 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Washington Post",
-    "rubrik": "Netanyahu is pushing for new Iran attack in bid to stay in power, his rivals warn",
-    "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/",
-    "tid": 1794925591.0,
-    "betalvagg": true,
+    "namn": "Hindustan Times",
+    "rubrik": "Trump issues stark warning to Iran over alleged DC dirty bomb plot: ‘We take it very seriously’",
+    "url": "https://www.hindustantimes.com/world-news/us-news/trump-issues-stark-warning-to-iran-over-alleged-dc-dirty-bomb-plot-we-take-it-very-seriously-101794920834305.html",
+    "tid": 1794922283.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Fox News",
+    "rubrik": "Trump warns Iran about reported plot against admin officials: 'We take it very seriously'",
+    "url": "https://www.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
+    "tid": 1794919835.0,
+    "betalvagg": false,
     "typ": "media",
     "land": "US",
     "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington",
+    "url": "https://www.straitstimes.com/world/united-states/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington",
+    "tid": 1794917400.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dagens Nyheter",
+    "rubrik": "Uppgifter: Iran planerar bombdåd mot Washington DC",
+    "url": "https://www.dn.se/varlden/uppgifter-iran-forbereder-bombdad-mot-washington/",
+    "tid": 1794885231.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The National",
+    "rubrik": "Iran will 'pay a price' if dirty bomb is detonated in US",
+    "url": "https://www.thenationalnews.com/news/mena/2026/11/17/iran-will-pay-a-price-if-dirty-bomb-is-detonated-in-us/",
+    "tid": 1794936842.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 1,
+   "sv": 2,
    "en": 3
   },
-  "autopilot": [
-   "blind fläck"
-  ],
+  "autopilot": [],
   "data": null,
   "godkand_tid": 1794917292.8920832,
   "automatisk": true,
-  "uppdaterad_tid": 1794935365.922328
+  "uppdaterad_tid": 1794937559.4773004
  },
  "304fa3d01f": {
   "id": "304fa3d01f",
