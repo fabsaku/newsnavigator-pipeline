@@ -43,7 +43,7 @@ sources:
   - {id: politico-eu, bara_rubrik: true, namn: Politico Europe, url: "https://www.politico.eu/feed/", amnen: [europa, geopolitik], sprak: en, typ: media, betalvagg: false, land: BE, region: europa, agare: privat, statskontrollerad: false}
   # Utesluten 4 november 2026, utgivaren tillåter inte oss: Euractiv (robots.txt: Disallow /feed/).
   - {id: ecb, namn: Europeiska centralbanken, url: "https://www.ecb.europa.eu/rss/press.html", amnen: [marknader, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
-  - {id: esa, namn: ESA, url: "https://www.esa.int/rssfeed/Our_Activities", amnen: [rymd, europa], sprak: en, typ: primar, betalvagg: false, land: EU, region: europa, agare: organisation, statskontrollerad: false}
+  # Utesluten 17 november 2026: ESA:s flöde ger 404 på alla prövade adresser (Our_Activities, Space_News).
   - {id: nato, namn: NATO, url: "https://www.nato.int/cps/en/natohq/news.htm", hamtning: sida, rendera: true, utan_fraga: true, lankar: "^/en/news-and-events/articles/news/\\d{4}/", amnen: [forsvar, geopolitik], sprak: en, typ: primar, betalvagg: false, land: INT, region: europa, agare: organisation, statskontrollerad: false}
 
   # ---------- USA, över det politiska spektrumet ----------
@@ -69,7 +69,7 @@ sources:
   # - {id: timesofisrael, namn: The Times of Israel, url: "https://www.timesofisrael.com/feed/", amnen: [mellanostern, varlden], sprak: en, typ: media, betalvagg: false, land: IL, region: mellanostern, agare: privat, statskontrollerad: false}
   - {id: haaretz, namn: Haaretz, url: "https://www.haaretz.com/srv/haaretz-latest-headlines", amnen: [mellanostern, varlden], sprak: en, typ: media, betalvagg: true, land: IL, region: mellanostern, agare: privat, statskontrollerad: false}
   - {id: arabnews, namn: Arab News, url: "https://www.arabnews.com/rss.xml", amnen: [mellanostern, varlden], sprak: en, typ: media, betalvagg: false, land: SA, region: mellanostern, agare: privat, statskontrollerad: false}
-  - {id: mg, namn: Mail & Guardian, url: "https://mg.co.za/feed/", amnen: [afrika, varlden], sprak: en, typ: media, betalvagg: false, land: ZA, region: afrika, agare: privat, statskontrollerad: false}
+  - {id: mg, namn: Mail & Guardian, url: "https://mg.co.za/rss/", amnen: [afrika, varlden], sprak: en, typ: media, betalvagg: false, land: ZA, region: afrika, agare: privat, statskontrollerad: false}
 
   # ---------- Statskontrollerade medier (märks alltid) ----------
   - {id: cgtn, namn: CGTN, url: "https://www.cgtn.com/subscribe/rss/section/world.xml", amnen: [varlden], sprak: en, typ: media, betalvagg: false, land: CN, region: asien, agare: statlig, statskontrollerad: true}
@@ -104,9 +104,9 @@ sources:
   - {id: breaking-defense, namn: Breaking Defense, url: "https://breakingdefense.com/feed/", amnen: [forsvar, geopolitik], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
 
   # ---------- AI-bolagens egna besked (primärkällor) ----------
-  - {id: anthropic, namn: Anthropic, url: "https://www.anthropic.com/news/rss.xml", alternativ: ["https://www.anthropic.com/rss.xml"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: anthropic, namn: Anthropic, url: "https://www.anthropic.com/news", hamtning: sida, lankar: "^/news/.+", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: google-ai, namn: Google AI, url: "https://blog.google/technology/ai/rss/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
-  - {id: microsoft-ai, namn: Microsoft AI, url: "https://news.microsoft.com/source/topics/ai/feed/", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
+  - {id: microsoft-ai, namn: Microsoft AI, url: "https://news.microsoft.com/source/feed/", alternativ: ["https://news.microsoft.com/source/topics/ai/feed/"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: meta-ai, namn: Meta AI, url: "https://ai.meta.com/blog/rss/", alternativ: ["https://about.fb.com/news/category/technology/ai/feed/"], amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: nvidia, namn: NVIDIA, url: "https://blogs.nvidia.com/feed/", amnen: [ai, halvledare], sprak: en, typ: primar, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false}
   - {id: mistral, namn: Mistral AI, url: "https://mistral.ai/news", hamtning: sida, lankar: "^/news/.+", amnen: [ai], sprak: en, typ: primar, betalvagg: false, land: FR, region: europa, agare: privat, statskontrollerad: false}
@@ -134,7 +134,7 @@ sources:
   - {id: cnn, namn: CNN, url: "http://rss.cnn.com/rss/cnn_latest.rss", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
   - {id: politico, namn: Politico, url: "https://rss.politico.com/politics-news.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
   - {id: axios, namn: Axios, url: "https://www.axios.com/feeds/feed.rss", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_vanster}
-  - {id: huffpost, bara_rubrik: true, namn: HuffPost, url: "https://www.huffpost.com/section/front-page/feed", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
+  - {id: huffpost, bara_rubrik: true, namn: HuffPost, url: "https://www.huffpost.com/section/world-news/feed", alternativ: ["https://www.huffpost.com/section/front-page/feed"], amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
   - {id: vox, bara_rubrik: true, namn: Vox, url: "https://www.vox.com/rss/index.xml", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: vanster}
   - {id: wash-examiner, namn: Washington Examiner, url: "https://www.washingtonexaminer.com/feed/", amnen: [usa], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
   - {id: wash-times, namn: The Washington Times, url: "https://www.washingtontimes.com/rss/headlines/news/", amnen: [usa, varlden], sprak: en, typ: media, betalvagg: false, land: US, region: usa, agare: privat, statskontrollerad: false, usa_lutning: lutar_hoger}
