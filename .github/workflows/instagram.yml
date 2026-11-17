@@ -4,7 +4,7 @@ name: Instagram
 # Schemat postar bara när repo-variabeln IG_SCHEMA är 1, så att secrets inte ensamma startar postningen före lanseringen.
 on:
   schedule:
-    - cron: "45 5 * * *"    # en gång per dygn: 07:45 svensk sommartid, 06:45 vintertid, efter dygnets pipeline
+    - cron: "45 5 * * *"    # 07:45 svensk sommartid, 06:45 vintertid
   workflow_dispatch:
     inputs:
       antal:
@@ -13,9 +13,6 @@ on:
       konto:
         description: "Vilket konto: sv (@newsnavigator.se), en (@news.navigator) eller alla"
         default: "alla"
-      kor:
-        description: "true = kör på riktigt. Starter utan detta (klockan i Cloudflare) hoppas över."
-        default: "false"
       kontroll:
         description: "true = bara kontrollera att token och konto stämmer och visa kvoten (läser, postar inget)"
         default: "false"
@@ -29,8 +26,8 @@ concurrency:
 
 jobs:
   posta:
-    # PAUSAT till 1 december: bara kontrollen (postar inget) får köras. Ta bort `false && ` för att starta.
-    if: ${{ inputs.kontroll == 'true' || (false && (github.event_name == 'schedule' || inputs.kor == 'true')) }}
+    # PAUSAT 11 november på Fabians begäran: bara kontrollen (postar inget) får köras. Byt raden mot `if: true` för att starta igen.
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.kontroll == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
