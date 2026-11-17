@@ -14625,20 +14625,21 @@
    "varlden"
   ],
   "amnen_sektion": [],
-  "poang": 28.9,
+  "poang": 30.9,
   "vikt": {
-   "bredd": 0.218,
+   "bredd": 0.315,
    "regioner": {
-    "europa": 2,
+    "mellanostern": 1,
+    "europa": 1,
     "asien": 2
    },
-   "timmar": 75,
+   "timmar": 96,
    "konsekvens": {
     "berorda": 4,
     "allvar": 3,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "Nationell strejk i Frankrike om löner i offentlig sektor, med valdebatt om levnadskostnader, men effekterna väntas bli kortvariga."
+    "skal": "Nationella strejker i Frankrike om löner och levnadskostnader berör många offentliga anställda, men effekterna är oftast kortvariga."
    },
    "bekraftad": true,
    "maste": false,
@@ -14647,7 +14648,7 @@
   "maste": false,
   "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-17T14:44:56+00:00",
+  "senast": "2026-11-17T16:39:01+00:00",
   "utkast": {
    "rubrik_sv": "Paraguays president Santiago Peña avgår efter bankkollaps",
    "sammanfattning_sv": "Paraguays president Santiago Peña har avgått efter kollapsen av banken Ueno, enligt flera källor, som uppger att miljontals kunders konton har frysts. Lagstiftare har enligt NPR och BBC röstat för att driva en riksrättsprocess mot honom.",
@@ -14855,30 +14856,157 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": null,
-  "sammanhang": 0.601,
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Lönekrav i offentlig sektor",
+     "namn_en": "Public sector pay demands",
+     "lyfter_sv": "France 24 lyfter fram en ny nationell strejk i offentlig sektor, medan The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning.",
+     "lyfter_en": "France 24 highlights a fresh nationwide public sector strike, while The Straits Times highlights that public sector unions are pushing for a general pay rise.",
+     "kallor": [
+      {
+       "namn": "France 24",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.france24.com/en/video/20261117-france-hit-by-fresh-nationwide-public-sector-strike"
+      },
+      {
+       "namn": "The Straits Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.straitstimes.com/world/europe/france-braces-for-fresh-public-sector-strike-over-pay"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "europa"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Levnadskostnader och regeringens erbjudande",
+     "namn_en": "Living costs and the government offer",
+     "lyfter_sv": "Al Jazeera lyfter fram tiotusentals demonstranter i Frankrike som samlas kring levnadsstandard och löner, medan Hindustan Times lyfter fram ett regeringserbjudande om höjd minimilön som fackförbunden anser otillräckligt.",
+     "lyfter_en": "Al Jazeera highlights tens of thousands rallying in France over living standards and wages, while Hindustan Times highlights a government offer of a higher minimum wage that unions say falls short.",
+     "kallor": [
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss"
+      },
+      {
+       "namn": "Hindustan Times",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.hindustantimes.com/world-news/france-braces-for-more-strikes-and-protests-over-cost-of-living-101794896812156.html"
+      }
+     ],
+     "regioner": [
+      "asien",
+      "mellanostern"
+     ],
+     "usa_sidor": []
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 8,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Rubriken: ny nationell strejk i offentlig sektor i Frankrike",
+      "stod": [
+       2,
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Rubriken: strejken gäller löner",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24 lyfter fram en ny nationell strejk i offentlig sektor",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Straits Times lyfter fram att offentliga fackförbund driver på för en generell löneökning",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al Jazeera lyfter fram tiotusentals demonstranter i Frankrike",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Demonstranterna samlas kring levnadsstandard och löner",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Hindustan Times lyfter fram ett regeringserbjudande om höjd minimilön",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Fackförbunden anser erbjudandet otillräckligt",
+      "stod": [
+       4
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.657,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
-    "europa"
+    "europa",
+    "mellanostern"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
+      "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
+      "tid": 1794933541.0,
+      "statskontrollerad": false
+     }
+    ],
     "europa": [
      {
       "kalla": "France 24",
       "land": "FR",
-      "rubrik": "Candidates clash over cost of living in French presidential debate",
-      "url": "https://www.france24.com/en/video/20261117-candidates-clash-over-cost-of-living-in-french-presidential-debate",
-      "tid": 1794909719.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Le Monde (English)",
-      "land": "FR",
-      "rubrik": "French public-sector workers strike again over pay",
-      "url": "https://www.lemonde.fr/en/france/article/2026/11/17/france-s-public-sector-strikes-again-over-pay_6782818_7.html",
-      "tid": 1794926696.0,
+      "rubrik": "France hit by fresh nationwide public sector strike",
+      "url": "https://www.france24.com/en/video/20261117-france-hit-by-fresh-nationwide-public-sector-strike",
+      "tid": 1794930181.0,
       "statskontrollerad": false
      }
     ],
@@ -14906,13 +15034,25 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Candidates clash over cost of living in French presidential debate",
+  "reserv_rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
   "kallor": [
    {
+    "namn": "Al Jazeera",
+    "rubrik": "Photos: Tens of thousands rally in France over living standards and wages",
+    "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
+    "tid": 1794933541.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
     "namn": "France 24",
-    "rubrik": "Candidates clash over cost of living in French presidential debate",
-    "url": "https://www.france24.com/en/video/20261117-candidates-clash-over-cost-of-living-in-french-presidential-debate",
-    "tid": 1794909719.0,
+    "rubrik": "France hit by fresh nationwide public sector strike",
+    "url": "https://www.france24.com/en/video/20261117-france-hit-by-fresh-nationwide-public-sector-strike",
+    "tid": 1794930181.0,
     "betalvagg": false,
     "typ": "media",
     "land": "FR",
@@ -14943,18 +15083,6 @@
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Le Monde (English)",
-    "rubrik": "French public-sector workers strike again over pay",
-    "url": "https://www.lemonde.fr/en/france/article/2026/11/17/france-s-public-sector-strikes-again-over-pay_6782818_7.html",
-    "tid": 1794926696.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
    }
   ],
   "granskad": true,
@@ -14968,7 +15096,7 @@
   "data": null,
   "godkand_tid": 1793948948.5031242,
   "automatisk": false,
-  "uppdaterad_tid": 1794928184.9871373
+  "uppdaterad_tid": 1794935365.922328
  },
  "ad595b9bde": {
   "id": "ad595b9bde",
@@ -22950,39 +23078,34 @@
  "11d8b935fe": {
   "id": "11d8b935fe",
   "amnen": [
-   "halvledare",
-   "usa",
-   "varlden"
+   "geopolitik"
   ],
   "amnen_sektion": [
-   "halvledare",
-   "usa"
+   "geopolitik"
   ],
-  "poang": 30.2,
+  "poang": 34.7,
   "vikt": {
-   "bredd": 0.184,
+   "bredd": 0.326,
    "regioner": {
-    "europa": 2,
-    "usa": 4
+    "usa": 2,
+    "mellanostern": 2
    },
-   "timmar": 54,
+   "timmar": 55,
    "konsekvens": {
-    "berorda": 4,
-    "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "Trumps Asienresa med möten med Xi och Putin kan påverka säkerhetspolitiken mellan stormakterna, men dess direkta effekter är osäkra."
+    "berorda": 5,
+    "allvar": 5,
+    "varaktighet": 5,
+    "medel": 5.0,
+    "skal": "Rubrikerna beskriver ett pågående USA–Israel-krig mot Iran, med risk för långvarig konflikt och nya anfall, vilket berör flera länder och står på spel för liv och regional säkerhet."
    },
-   "bekraftad": false,
+   "bekraftad": true,
    "maste": false,
-   "spar": [
-    "teknik"
-   ]
+   "spar": []
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-17T14:26:17+00:00",
+  "senast": "2026-11-17T16:19:58+00:00",
   "utkast": {
    "rubrik_sv": "Trump säger att han kan träffa Kim Jong Un i Kina",
    "sammanfattning_sv": "Trump säger att han kan träffa Nordkoreas ledare Kim Jong Un i Kina, enligt Yonhap och The Straits Times. Enligt Arab News uppger Kina att landet inte har någon information om ett sådant möte.",
@@ -23146,264 +23269,229 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Försvagad efter valförlusten",
-     "namn_en": "Weakened after midterm losses",
-     "lyfter_sv": "NPR lyfter fram att resan sker mitt i kritik från väljare efter mellanvalen och Nvidia-turbulensen, medan The Washington Post lyfter fram att förluster i mellanvalen och en Nvidia-skandal försvagar Trump inför mötena med Xi och Putin.",
-     "lyfter_en": "NPR highlights that the trip comes amid voter backlash after the midterms and Nvidia turmoil, while The Washington Post highlights that losses in the midterms and a Nvidia scandal weaken Trump ahead of meetings with Xi and Putin.",
+     "namn_sv": "Krigets långsiktiga kurs",
+     "namn_en": "The war's long-term course",
+     "lyfter_sv": "The Hill lyfter fram att Vance lovar att USA inte gör något långsiktigt åtagande i kriget, medan Al Jazeera frågar om kriget håller på att bli en frusen konflikt.",
+     "lyfter_en": "The Hill reports that Vance vows the US will not make a long-term commitment to the war, while Al Jazeera asks whether the conflict is becoming a frozen one.",
      "kallor": [
       {
-       "namn": "NPR",
+       "namn": "The Hill",
        "region": "usa",
-       "lutning": "lutar_vanster",
+       "lutning": "mitten",
        "statskontrollerad": false,
-       "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia"
+       "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/"
+      },
+      {
+       "namn": "Al Jazeera",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss"
+      }
+     ],
+     "regioner": [
+      "mellanostern",
+      "usa"
+     ],
+     "usa_sidor": [
+      "mitten"
+     ]
+    },
+    {
+     "namn_sv": "Netanyahus motiv för nya anfall",
+     "namn_en": "Netanyahu's motives for new strikes",
+     "lyfter_sv": "Al-Monitor lyfter fram att Netanyahu utnyttjar oro för Irans underjordiska kärnprogram och är oense med militärledningen om tiden; The Washington Post lyfter fram att han driver på nytt anfall för att behålla makten, enligt rivaler.",
+     "lyfter_en": "Al-Monitor reports that Netanyahu is exploiting fears about Iran's underground nuclear program and disagrees with military chiefs on timing; The Washington Post reports that he is pushing a new attack to stay in power, according to rivals.",
+     "kallor": [
+      {
+       "namn": "Al-Monitor",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes"
       },
       {
        "namn": "The Washington Post",
        "region": "usa",
        "lutning": "lutar_vanster",
        "statskontrollerad": false,
-       "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-heads-asia-hobbled-by-nvidia-scandal-midterm-losses/"
+       "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/"
       }
      ],
      "regioner": [
+      "mellanostern",
       "usa"
      ],
      "usa_sidor": [
       "bla"
      ]
-    },
-    {
-     "namn_sv": "Diplomatisk framstöt före mandatperiodens slut",
-     "namn_en": "Diplomatic push before term ends",
-     "lyfter_sv": "DW lyfter fram att Trump inleder resan med ett Quad-möte i Manila före mötet med ryska och kinesiska motparter, medan The Guardian lyfter fram att resan beskrivs som en utrikespolitisk framstöt före mandatperiodens slut.",
-     "lyfter_en": "DW highlights that Trump opens the trip with a Quad meeting in Manila before talks with Russian and Chinese counterparts, while The Guardian highlights an apparent foreign policy push before his term ends.",
-     "kallor": [
-      {
-       "namn": "Deutsche Welle",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.dw.com/en/trump-kicks-off-asia-tour-ahead-of-major-talks-with-putin-xi-in-china/live-79964719?maca=en-rss-en-all-1573-rdf"
-      },
-      {
-       "namn": "The Guardian",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.theguardian.com/us-news/2026/nov/16/trump-asia-foreign-domestic-policy"
-      }
-     ],
-     "regioner": [
-      "europa"
-     ],
-     "usa_sidor": []
     }
    ],
    "kontroll": {
-    "ok": false,
-    "antal": 7,
-    "problem": [
-     "värdeord: Berättelsen heter \"Diplomatisk framstöt före mandatperiodens slut\""
-    ],
+    "ok": true,
+    "antal": 8,
+    "problem": [],
     "pastaenden": [
      {
-      "text": "Trump inleder Asienresa inför samtal med Putin och Xi (rubrik)",
+      "text": "Netanyahu driver på för nya anfall mot Iran (rubrik)",
+      "stod": [
+       3,
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Militärledningen är oense med Netanyahu om tidpunkten för anfallen (rubrik)",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hill lyfter fram att Vance lovar att USA inte gör något långsiktigt åtagande i kriget",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "NPR lyfter fram att resan sker mitt i kritik från väljare efter mellanvalen och Nvidia-turbulensen",
+      "text": "Al Jazeera frågar om kriget håller på att bli en frusen konflikt",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al-Monitor lyfter fram att Netanyahu utnyttjar oro för Irans underjordiska kärnprogram",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "Al-Monitor lyfter fram att Netanyahu är oense med militärledningen om tiden för anfallen",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Washington Post lyfter fram att Netanyahu driver på nytt anfall för att behålla makten",
       "stod": [
        4
       ],
       "problem": null
      },
      {
-      "text": "The Washington Post lyfter fram att mellanvalsförluster och en Nvidia-skandal försvagar Trump inför mötena med Xi och Putin",
+      "text": "Uppgiften om att Netanyahu driver på för att behålla makten kommer från hans rivaler",
       "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Berättelsen heter \"Försvagad efter valförlusten\"",
-      "stod": [
-       6
-      ],
-      "problem": null
-     },
-     {
-      "text": "Berättelsen heter \"Diplomatisk framstöt före mandatperiodens slut\"",
-      "stod": [
-       3
-      ],
-      "problem": "värdeord"
-     },
-     {
-      "text": "DW lyfter fram att Trump inleder resan med ett Quad-möte i Manila före mötet med ryska och kinesiska motparter",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Guardian lyfter fram att resan beskrivs som en utrikespolitisk framstöt före mandatperiodens slut",
-      "stod": [
-       3
+       4
       ],
       "problem": null
      }
     ],
-    "sammanfattning": "Alla sakpåståenden och tillskrivningar stöds av källorna, men berättelsens rubrik \"Diplomatisk framstöt\" är ett värdeord. The Guardian säger \"apparent foreign policy push\", alltså utrikespolitisk framstöt med förbehåll, inte diplomatisk."
+    "sammanfattning": null
    },
-   "ok": false
+   "ok": true
   },
-  "sammanhang": 0.507,
+  "sammanhang": 0.466,
   "betydelse": {
-   "sv": "Eftersom Trump ska träffa Putin och Xi under resan i Asien, och Sverige är medlem i både Nato och EU, hänger mötena ihop med Sveriges säkerhetspolitiska läge och relationer till USA.",
-   "en": "Since Trump is set to meet Xi and Putin during his Asia trip, the talks link US trade with China and security policy toward Russia.",
+   "sv": "Eftersom USA:s Vance lovar att inte göra långsiktiga åtaganden i kriget mot Iran och Israels militärledning är oense med Netanyahu om tidpunkten för nya anfall, hänger läget ihop med oljepriset, som påverkar bränslepriserna.",
+   "en": "Because Vance vows the US won't make a long-term commitment to the Iran war and Israeli military chiefs disagree with Netanyahu on the timing of new strikes, the situation is tied to oil prices, which feed into gasoline prices.",
    "grund": [
     1,
-    4
+    3
    ],
    "grund_kallor": [
     {
-     "namn": "Deutsche Welle",
-     "url": "https://www.dw.com/en/trump-kicks-off-asia-tour-ahead-of-major-talks-with-putin-xi-in-china/live-79964719?maca=en-rss-en-all-1573-rdf"
+     "namn": "The Hill",
+     "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/"
     },
     {
-     "namn": "NPR",
-     "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia"
+     "namn": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes"
     }
    ],
    "kontroll": {
-    "ok": false,
-    "problem": [
-     "ingen koppling: Sv: 'hänger ihop med Sveriges säkerhetspolitiska läge och relationer till USA' är en långsökt koppling. Källorna nämner inget om Sverige, och mötena beskrivs inte som något som påverkar svensk säkerhetspolitik.",
-     "saknar stöd: En: 'the talks link US trade with China and security policy toward Russia' anger vad mötena handlar om. Källorna nämner Nvidia-skandalen och att möten med Xi och Putin väntas, men inte att samtalen gäller handel eller Rysslandspolitik."
-    ]
+    "ok": true,
+    "problem": []
    },
-   "ok": false
+   "ok": true
   },
   "perspektiv": {
    "regioner": [
-    "europa",
+    "mellanostern",
     "usa"
    ],
    "per_region": {
-    "europa": [
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Trump kicks off Asia tour ahead of major talks with Putin, Xi in China",
-      "url": "https://www.dw.com/en/trump-kicks-off-asia-tour-ahead-of-major-talks-with-putin-xi-in-china/live-79964719?maca=en-rss-en-all-1573-rdf",
-      "tid": 1794900840.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Trump to embark on Asia trip in apparent foreign policy push before end of term",
-      "url": "https://www.theguardian.com/us-news/2026/nov/16/trump-asia-foreign-domestic-policy",
-      "tid": 1794826858.0,
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
      {
-      "kalla": "Fox News",
+      "kalla": "The Hill",
       "land": "US",
-      "rubrik": "Trump’s Asia trip takes Alaska detour as weather forces refueling stop change",
-      "url": "https://www.foxnews.com/politics/trumps-asia-trip-takes-alaska-detour-weather-forces-refueling-stop-change",
-      "tid": 1794872924.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "NPR",
-      "land": "US",
-      "rubrik": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
-      "tid": 1794823200.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
-      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
-      "tid": 1794925577.0,
+      "rubrik": "Vance vows US won’t make long-term commitment to Iran war",
+      "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/",
+      "tid": 1794932398.0,
       "statskontrollerad": false
      },
      {
       "kalla": "The Washington Post",
       "land": "US",
-      "rubrik": "Midterm losses, Nvidia scandal weaken Trump as he faces Xi and Putin",
-      "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-heads-asia-hobbled-by-nvidia-scandal-midterm-losses/",
-      "tid": 1794823200.0,
+      "rubrik": "Netanyahu is pushing for new Iran attack in bid to stay in power, his rivals warn",
+      "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/",
+      "tid": 1794925591.0,
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
+      "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
+      "tid": 1794918831.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "Netanyahu, Israeli military chiefs at odds over timing, urgency of Iran strikes",
+      "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes",
+      "tid": 1794912991.0,
       "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": null,
-   "grannar_svenska": true,
+   "blind_flack": "saknas_i_sverige",
+   "grannar_svenska": false,
    "usa": {
-    "rod": [
+    "mitten": [
      {
-      "kalla": "Fox News",
-      "rubrik": "Trump’s Asia trip takes Alaska detour as weather forces refueling stop change",
-      "url": "https://www.foxnews.com/politics/trumps-asia-trip-takes-alaska-detour-weather-forces-refueling-stop-change",
-      "tid": 1794872924.0,
-      "lutning": "hoger"
+      "kalla": "The Hill",
+      "rubrik": "Vance vows US won’t make long-term commitment to Iran war",
+      "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/",
+      "tid": 1794932398.0,
+      "lutning": "mitten"
      }
     ],
     "bla": [
      {
-      "kalla": "NPR",
-      "rubrik": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
-      "tid": 1794823200.0,
-      "lutning": "lutar_vanster"
-     },
-     {
-      "kalla": "The New York Times",
-      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
-      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
-      "tid": 1794925577.0,
-      "lutning": "lutar_vanster"
-     },
-     {
       "kalla": "The Washington Post",
-      "rubrik": "Midterm losses, Nvidia scandal weaken Trump as he faces Xi and Putin",
-      "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-heads-asia-hobbled-by-nvidia-scandal-midterm-losses/",
-      "tid": 1794823200.0,
+      "rubrik": "Netanyahu is pushing for new Iran attack in bid to stay in power, his rivals warn",
+      "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/",
+      "tid": 1794925591.0,
       "lutning": "lutar_vanster"
      }
     ]
    },
    "usa_blind": null
   },
-  "reserv_rubrik": "Trump kicks off Asia tour ahead of major talks with Putin, Xi in China",
+  "reserv_rubrik": "Vance vows US won’t make long-term commitment to Iran war",
   "kallor": [
    {
-    "namn": "Deutsche Welle",
-    "rubrik": "Trump kicks off Asia tour ahead of major talks with Putin, Xi in China",
-    "url": "https://www.dw.com/en/trump-kicks-off-asia-tour-ahead-of-major-talks-with-putin-xi-in-china/live-79964719?maca=en-rss-en-all-1573-rdf",
-    "tid": 1794900840.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "DE",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Fox News",
-    "rubrik": "Trump’s Asia trip takes Alaska detour as weather forces refueling stop change",
-    "url": "https://www.foxnews.com/politics/trumps-asia-trip-takes-alaska-detour-weather-forces-refueling-stop-change",
-    "tid": 1794872924.0,
+    "namn": "The Hill",
+    "rubrik": "Vance vows US won’t make long-term commitment to Iran war",
+    "url": "https://thehill.com/homenews/administration/6225067-vance-denies-iran-forever-war/",
+    "tid": 1794932398.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
@@ -23412,46 +23500,34 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Guardian",
-    "rubrik": "Trump to embark on Asia trip in apparent foreign policy push before end of term",
-    "url": "https://www.theguardian.com/us-news/2026/nov/16/trump-asia-foreign-domestic-policy",
-    "tid": 1794826858.0,
+    "namn": "Al Jazeera",
+    "rubrik": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
+    "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
+    "tid": 1794918831.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "privat",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
     "statskontrollerad": false
    },
    {
-    "namn": "NPR",
-    "rubrik": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
-    "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
-    "tid": 1794823200.0,
+    "namn": "Al-Monitor",
+    "rubrik": "Netanyahu, Israeli military chiefs at odds over timing, urgency of Iran strikes",
+    "url": "https://www.al-monitor.com/originals/2026/11/netanyahu-israeli-military-chiefs-odds-over-timing-urgency-iran-strikes",
+    "tid": 1794912991.0,
     "betalvagg": false,
     "typ": "media",
     "land": "US",
-    "region": "usa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The New York Times",
-    "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
-    "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
-    "tid": 1794925577.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
+    "region": "mellanostern",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
     "namn": "The Washington Post",
-    "rubrik": "Midterm losses, Nvidia scandal weaken Trump as he faces Xi and Putin",
-    "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-heads-asia-hobbled-by-nvidia-scandal-midterm-losses/",
-    "tid": 1794823200.0,
+    "rubrik": "Netanyahu is pushing for new Iran attack in bid to stay in power, his rivals warn",
+    "url": "https://www.washingtonpost.com/world/2026/11/17/netanyahu-is-pushing-new-iran-attack-bid-stay-power-his-rivals-warn/",
+    "tid": 1794925591.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -23466,12 +23542,12 @@
    "en": 3
   },
   "autopilot": [
-   "källkontrollen har 1 anmärkningar"
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1794917292.8920832,
   "automatisk": true,
-  "uppdaterad_tid": 1794931780.6007223
+  "uppdaterad_tid": 1794935365.922328
  },
  "304fa3d01f": {
   "id": "304fa3d01f",
@@ -23650,11 +23726,11 @@
   "amnen_sektion": [
    "europa"
   ],
-  "poang": 33.4,
+  "poang": 33.8,
   "vikt": {
-   "bredd": 1.544,
+   "bredd": 1.485,
    "regioner": {
-    "asien": 4,
+    "asien": 3,
     "norden": 1,
     "afrika": 3,
     "europa": 4,
@@ -23663,13 +23739,13 @@
     "sverige": 1,
     "mellanostern": 1
    },
-   "timmar": 3,
+   "timmar": 4,
    "konsekvens": {
-    "berorda": 5,
+    "berorda": 4,
     "allvar": 4,
-    "varaktighet": 3,
+    "varaktighet": 4,
     "medel": 4.0,
-    "skal": "Fem EU-länder planerar ett returcenter i Rwanda för avvisade asylsökande, vilket väcker kritik om brott mot internationell rätt och mänskliga rättigheter."
+    "skal": "Fem EU-länder planerar gemensamt returcenter i Rwanda för avvisade asylsökande, vilket väcker kritik om mänskliga rättigheter och folkrättsliga risker och markerar ett principiellt skifte i EU:s migra"
    },
    "bekraftad": false,
    "maste": true,
@@ -23678,7 +23754,7 @@
    ]
   },
   "maste": true,
-  "antal_kallor": 18,
+  "antal_kallor": 17,
   "har_primarkalla": false,
   "senast": "2026-11-17T15:43:28+00:00",
   "utkast": {
@@ -23746,10 +23822,10 @@
   "narrativ": {
    "berattelser": [
     {
-     "namn_sv": "Kritik om mänskliga rättigheter",
-     "namn_en": "Human rights criticism",
-     "lyfter_sv": "The Straits Times och DR Nyheder lyfter fram FN:s människorättschefs oro, Africanews rättsliga risker, Amnesty att planen upprepar gamla misstag och Deutsche Welle, Daily Maverick och Japan Times fördömande från rättighetsgrupper.",
-     "lyfter_en": "The Straits Times and DR Nyheder highlight the UN human rights chief's concern, Africanews legal risks, Amnesty repeated past mistakes, and Deutsche Welle, Daily Maverick and Japan Times condemnation from rights groups.",
+     "namn_sv": "Kritik från människorättsorganisationer",
+     "namn_en": "Criticism from human rights groups",
+     "lyfter_sv": "The Straits Times lyfter fram FN:s människorättschef som oroad, Africanews att HRW ser risk för brott mot internationell rätt, Amnesty att avtalet upprepar tidigare misstag och Japan Times protester och UNHCR:s varning.",
+     "lyfter_en": "The Straits Times highlights the UN rights chief as concerned, Africanews that HRW sees a risk of breaching international law, Amnesty that the deal repeats past mistakes, and Japan Times protests and a UNHCR warning.",
      "kallor": [
       {
        "namn": "The Straits Times",
@@ -23811,10 +23887,52 @@
      "usa_sidor": []
     },
     {
-     "namn_sv": "Vilka som kan utvisas",
-     "namn_en": "Who could be deported",
-     "lyfter_sv": "France 24 lyfter fram att fem länder vill skicka avvisade asylsökande till Rwanda, HRW utvisningscenter, The Washington Post att fem länder kommit överens om utvisningar och The New York Times planer på att utvisa migranter.",
-     "lyfter_en": "France 24 highlights five countries wanting to send rejected asylum seekers to Rwanda, HRW deportation centers, The Washington Post an agreement on deportations and The New York Times plans to deport migrants.",
+     "namn_sv": "Partnerskap och ny migrationspolitik",
+     "namn_en": "Partnership and new migration policy",
+     "lyfter_sv": "AllAfrica lyfter fram ett migrationspartnerskap mellan Rwanda och fem EU-länder, Le Monde att planen markerar ett skifte i europeisk migrationspolitik, The Guardian att länderna presenterar planer för returhubbar och The Hindu att avtalet ska presenteras.",
+     "lyfter_en": "AllAfrica highlights migration partnership between Rwanda and five EU countries, Le Monde that the plan marks a shift in European migration policy, The Guardian that countries announce plans for return hubs, and The Hindu that the deal will be unveiled.",
+     "kallor": [
+      {
+       "namn": "AllAfrica",
+       "region": "afrika",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://allafrica.com/stories/202611170114.html"
+      },
+      {
+       "namn": "The Guardian",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
+      },
+      {
+       "namn": "The Hindu",
+       "region": "asien",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.thehindu.com/news/international/european-union-nations-to-unveil-rwanda-deal-for-migrant-return-hub/article71706988.ece"
+      },
+      {
+       "namn": "Le Monde (English)",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html"
+      }
+     ],
+     "regioner": [
+      "afrika",
+      "asien",
+      "europa"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Planen beskrivs som utvisning",
+     "namn_en": "The plan described as deportation",
+     "lyfter_sv": "France 24 lyfter fram att avslagna asylsökande ska skickas till Rwanda, Washington Post att länderna gått med på att utvisa dem, New York Times att planen gäller utvisning, The National, statskontrollerat medium, ett utvisningsupplägg och HRW utvisningscenter.",
+     "lyfter_en": "France 24 highlights that rejected asylum seekers are to be sent to Rwanda, Washington Post that the countries agreed to deport them, New York Times that the plan concerns deportation, The National, a state-controlled outlet, a deportation scheme and HRW deportation centers.",
      "kallor": [
       {
        "namn": "France 24",
@@ -23843,154 +23961,69 @@
        "lutning": "lutar_vanster",
        "statskontrollerad": false,
        "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html"
+      },
+      {
+       "namn": "The National",
+       "region": "mellanostern",
+       "lutning": null,
+       "statskontrollerad": true,
+       "url": "https://www.thenationalnews.com/news/europe/2026/11/16/five-eu-countries-to-announce-rwanda-deportation-hub-scheme/"
       }
      ],
      "regioner": [
       "europa",
+      "mellanostern",
       "usa"
      ],
      "usa_sidor": [
       "bla"
      ]
-    },
-    {
-     "namn_sv": "Partnerskap och politiskt skifte",
-     "namn_en": "Partnership and policy shift",
-     "lyfter_sv": "AllAfrica lyfter fram ett partnerskap där Rwanda kan ta emot migranter medan återvändande eller bosättning utreds, Le Monde att planen markerar ett skifte i europeisk migrationspolitik.",
-     "lyfter_en": "AllAfrica highlights a partnership in which Rwanda may receive migrants while return or settlement options are explored, Le Monde a shift in European immigration policy.",
-     "kallor": [
-      {
-       "namn": "AllAfrica",
-       "region": "afrika",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://allafrica.com/stories/202611170114.html"
-      },
-      {
-       "namn": "Le Monde (English)",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.lemonde.fr/en/international/article/2026/11/17/five-european-countries-plan-to-open-a-return-hub-in-rwanda-signaling-a-shift-in-european-immigration-policy_6782602_4.html"
-      }
-     ],
-     "regioner": [
-      "afrika",
-      "europa"
-     ],
-     "usa_sidor": []
     }
    ],
    "kontroll": {
     "ok": true,
-    "antal": 16,
+    "antal": 14,
     "problem": [],
     "pastaenden": [
      {
-      "text": "Fem europeiska länder planerar återvändandecentrum (return hub) i Rwanda",
-      "stod": [
-       8,
-       14,
-       12
-      ],
-      "problem": null
-     },
-     {
-      "text": "Planen gäller avvisade asylsökande",
+      "text": "Fem europeiska länder planerar att skicka avvisade asylsökande till Rwanda",
       "stod": [
        4,
-       10
+       10,
+       3
       ],
       "problem": null
      },
      {
-      "text": "FN:s människorättschef Volker Türk är oroad över planerna",
-      "stod": [
-       1,
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Straits Times lyfter fram FN:s människorättschefs oro",
+      "text": "The Straits Times: FN:s människorättschef är oroad",
       "stod": [
        1
       ],
       "problem": null
      },
      {
-      "text": "DR Nyheder lyfter fram FN:s människorättschefs oro",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "Africanews lyfter fram att planen riskerar att bryta mot internationell rätt",
+      "text": "Africanews: HRW ser risk för brott mot internationell rätt",
       "stod": [
        3
       ],
       "problem": null
      },
      {
-      "text": "Amnesty International menar att planen upprepar gamla misstag",
+      "text": "Amnesty: avtalet upprepar tidigare misstag",
       "stod": [
-       12
+       11
       ],
       "problem": null
      },
      {
-      "text": "Deutsche Welle rapporterar fördömande från rättighetsgrupper",
-      "stod": [
-       5
-      ],
-      "problem": null
-     },
-     {
-      "text": "Daily Maverick rapporterar fördömande från rättighetsgrupper",
-      "stod": [
-       10
-      ],
-      "problem": null
-     },
-     {
-      "text": "Japan Times rapporterar protester från rättighetsgrupper mot planen",
+      "text": "Japan Times: protester från människorättsgrupper och UNHCR:s varning",
       "stod": [
        7
       ],
       "problem": null
      },
      {
-      "text": "France 24: fem länder vill skicka avvisade asylsökande till Rwanda",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Human Rights Watch beskriver planen som utvisningscenter i Rwanda",
-      "stod": [
-       9,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Washington Post: fem länder har kommit överens om utvisningar till Rwanda",
-      "stod": [
-       15
-      ],
-      "problem": null
-     },
-     {
-      "text": "New York Times: fem länder planerar att utvisa migranter till Rwanda",
-      "stod": [
-       16
-      ],
-      "problem": null
-     },
-     {
-      "text": "AllAfrica: Rwanda kan ta emot migranter från de fem länderna medan återvändande eller bosättning utreds",
+      "text": "AllAfrica: migrationspartnerskap mellan Rwanda och fem EU-länder",
       "stod": [
        6
       ],
@@ -23999,7 +24032,56 @@
      {
       "text": "Le Monde: planen markerar ett skifte i europeisk migrationspolitik",
       "stod": [
+       13
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Guardian: länderna presenterar planer för returhubbar i Rwanda",
+      "stod": [
+       8
+      ],
+      "problem": null
+     },
+     {
+      "text": "The Hindu: avtalet ska presenteras",
+      "stod": [
+       12
+      ],
+      "problem": null
+     },
+     {
+      "text": "France 24: avslagna asylsökande ska skickas till Rwanda",
+      "stod": [
+       4
+      ],
+      "problem": null
+     },
+     {
+      "text": "Washington Post: länderna har gått med på att utvisa avslagna asylsökande",
+      "stod": [
        14
+      ],
+      "problem": null
+     },
+     {
+      "text": "New York Times: planen gäller utvisning",
+      "stod": [
+       15
+      ],
+      "problem": null
+     },
+     {
+      "text": "The National är ett statskontrollerat medium och beskriver ett utvisningsupplägg",
+      "stod": [
+       17
+      ],
+      "problem": null
+     },
+     {
+      "text": "HRW beskriver utvisningscenter i Rwanda",
+      "stod": [
+       9
       ],
       "problem": null
      }
@@ -24008,30 +24090,8 @@
    },
    "ok": true
   },
-  "sammanhang": 0.675,
-  "betydelse": {
-   "sv": "Eftersom fem EU-medlemsländer planerar återvändandecentrum i Rwanda för avvisade asylsökande berör frågan den gemensamma EU-asylpolitiken, som Sverige deltar i som medlem, även om Sverige inte ingår i planerna.",
-   "en": null,
-   "grund": [
-    10,
-    16
-   ],
-   "grund_kallor": [
-    {
-     "namn": "Daily Maverick",
-     "url": "https://www.dailymaverick.co.za/article/2026-11-16-five-eu-countries-unveil-plans-for-rwanda-deportation-hub/"
-    },
-    {
-     "namn": "The New York Times",
-     "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "sammanhang": 0.664,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "afrika",
@@ -24059,14 +24119,6 @@
       "rubrik": "Germany, Denmark, Austria, Greece and the Netherlands plan Rwanda migrant hub",
       "url": "https://www.japantimes.co.jp/news/2026/11/17/world/politics/european-nations-rwanda-hub-migrants/",
       "tid": 1794885960.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Five European nations plan Rwanda hub for rejected migrants",
-      "url": "https://www.hindustantimes.com/world-news/us-news/five-european-nations-plan-rwanda-hub-for-rejected-migrants-101794861960723.html",
-      "tid": 1794861960.0,
       "statskontrollerad": false
      },
      {
@@ -24333,18 +24385,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Hindustan Times",
-    "rubrik": "Five European nations plan Rwanda hub for rejected migrants",
-    "url": "https://www.hindustantimes.com/world-news/us-news/five-european-nations-plan-rwanda-hub-for-rejected-migrants-101794861960723.html",
-    "tid": 1794861960.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Amnesty International",
     "rubrik": "Europe: Disgraceful Rwanda deportation deal repeats mistakes of the past",
     "url": "https://www.amnesty.org/en/latest/news/2026/11/europe-rwanda-deportation-deal-repeats-mistakes-of-the-past/",
@@ -24435,12 +24475,12 @@
    "en": 3
   },
   "autopilot": [
-   "källkontrollen har 2 anmärkningar"
+   "källkontrollen har 4 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1794920920.4980764,
   "automatisk": true,
-  "uppdaterad_tid": 1794931780.6007223
+  "uppdaterad_tid": 1794935365.922328
  },
  "8714ea791a": {
   "id": "8714ea791a",
@@ -24995,7 +25035,7 @@
     "allvar": 3,
     "varaktighet": 2,
     "medel": 3.0,
-    "skal": "Ett toppmöte i ASEAN med flera länder och USA:s president, där diplomatiska och säkerhetspolitiska frågor diskuteras, men utan tydliga beslut med långvarig effekt i rubrikerna."
+    "skal": "Ett toppmöte med ASEAN-länderna och USA berör flera länder i Sydostasien, med begränsad säkerhets- och diplomatisk betydelse och kortvariga följder."
    },
    "bekraftad": false,
    "maste": false,
@@ -25127,135 +25167,8 @@
    ],
    "sammanfattning": null
   },
-  "narrativ": {
-   "berattelser": [
-    {
-     "namn_sv": "Samarbete framför konkurrens",
-     "namn_en": "Cooperation over competition",
-     "lyfter_sv": "France 24 lyfter fram uppmaningar till samarbete inför toppmötet, medan The Hindu lyfter fram att Modi säger att framtiden ska formas av samarbete, inte konkurrens.",
-     "lyfter_en": "France 24 highlights calls for cooperation ahead of the summit, while The Hindu highlights Modi saying the future must be shaped by cooperation, not competition.",
-     "kallor": [
-      {
-       "namn": "France 24",
-       "region": "europa",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.france24.com/en/video/20261117-calls-for-cooperation-as-asean-summit-awaits-trump"
-      },
-      {
-       "namn": "The Hindu",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.thehindu.com/news/national/pm-modi-asean-summit-address-india-world-leaders-manila/article71710772.ece"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "europa"
-     ],
-     "usa_sidor": []
-    },
-    {
-     "namn_sv": "Trumps närvaro vid toppmötet",
-     "namn_en": "Trump's presence at the summit",
-     "lyfter_sv": "Rappler lyfter fram att Trump anländer till Manila för statsbesök och ett särskilt ASEAN-USA-toppmöte, medan The New York Times, som AllSides bedömer lutar vänster, lyfter fram att Trump kommer att missa större delen av ASEAN-toppmötet.",
-     "lyfter_en": "Rappler highlights Trump arriving in Manila for a state visit and an ASEAN-US special summit, while The New York Times, which AllSides rates as leaning left, highlights that Trump will miss most of the ASEAN summit.",
-     "kallor": [
-      {
-       "namn": "Rappler",
-       "region": "asien",
-       "lutning": null,
-       "statskontrollerad": false,
-       "url": "https://www.rappler.com/philippines/trump-arrives-state-visit-asean-special-summit-2026/"
-      },
-      {
-       "namn": "The New York Times",
-       "region": "usa",
-       "lutning": "lutar_vanster",
-       "statskontrollerad": false,
-       "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html"
-      }
-     ],
-     "regioner": [
-      "asien",
-      "usa"
-     ],
-     "usa_sidor": [
-      "bla"
-     ]
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "antal": 8,
-    "problem": [],
-    "pastaenden": [
-     {
-      "text": "Trump anländer till Manila inför ASEAN-toppmötet",
-      "stod": [
-       2,
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "Berättelsen 'Samarbete framför konkurrens' bygger på France 24 och The Hindu",
-      "stod": [
-       1,
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "France 24 lyfter fram uppmaningar till samarbete inför toppmötet",
-      "stod": [
-       1
-      ],
-      "problem": null
-     },
-     {
-      "text": "The Hindu lyfter fram att Modi säger att framtiden ska formas av samarbete, inte konkurrens",
-      "stod": [
-       3
-      ],
-      "problem": null
-     },
-     {
-      "text": "Berättelsen 'Trumps närvaro vid toppmötet' bygger på Rappler och The New York Times",
-      "stod": [
-       2,
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "Rappler lyfter fram att Trump anländer till Manila för statsbesök och ett särskilt ASEAN-USA-toppmöte",
-      "stod": [
-       2
-      ],
-      "problem": null
-     },
-     {
-      "text": "The New York Times bedöms av AllSides lutar vänster",
-      "stod": [
-       4
-      ],
-      "problem": null
-     },
-     {
-      "text": "The New York Times lyfter fram att Trump kommer att missa större delen av ASEAN-toppmötet",
-      "stod": [
-       4
-      ],
-      "problem": null
-     }
-    ],
-    "sammanfattning": null
-   },
-   "ok": true
-  },
-  "sammanhang": 0.489,
+  "narrativ": null,
+  "sammanhang": 0.542,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -25276,19 +25189,19 @@
     ],
     "asien": [
      {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Leaders, protesters await Donald Trump arrival for Manila summit",
+      "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece",
+      "tid": 1794910031.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "Rappler",
       "land": "PH",
       "rubrik": "Trump arrives in Manila for state visit, ASEAN-US Special Summit",
       "url": "https://www.rappler.com/philippines/trump-arrives-state-visit-asean-special-summit-2026/",
       "tid": 1794908152.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Hindu",
-      "land": "IN",
-      "rubrik": "Our future must be shaped by ‘cooperation, not competition’: PM Modi to ASEAN leaders",
-      "url": "https://www.thehindu.com/news/national/pm-modi-asean-summit-address-india-world-leaders-manila/article71710772.ece",
-      "tid": 1794905151.0,
       "statskontrollerad": false
      }
     ],
@@ -25323,6 +25236,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Hindu",
+    "rubrik": "Leaders, protesters await Donald Trump arrival for Manila summit",
+    "url": "https://www.thehindu.com/news/international/leaders-protesters-await-donald-trump-arrival-for-manila-summit/article71710980.ece",
+    "tid": 1794910031.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Rappler",
     "rubrik": "Trump arrives in Manila for state visit, ASEAN-US Special Summit",
     "url": "https://www.rappler.com/philippines/trump-arrives-state-visit-asean-special-summit-2026/",
@@ -25330,18 +25255,6 @@
     "betalvagg": false,
     "typ": "media",
     "land": "PH",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Hindu",
-    "rubrik": "Our future must be shaped by ‘cooperation, not competition’: PM Modi to ASEAN leaders",
-    "url": "https://www.thehindu.com/news/national/pm-modi-asean-summit-address-india-world-leaders-manila/article71710772.ece",
-    "tid": 1794905151.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
@@ -25365,38 +25278,41 @@
    "en": 3
   },
   "autopilot": [
+   "utkastet är märkt osäkert",
    "källkontrollen har 1 anmärkningar"
   ],
   "data": null,
   "godkand_tid": 1794924617.9176867,
   "automatisk": true,
-  "uppdaterad_tid": 1794931780.6007223
+  "uppdaterad_tid": 1794935365.922328
  },
  "b71492cb51": {
   "id": "b71492cb51",
-  "amnen": [],
+  "amnen": [
+   "varlden"
+  ],
   "amnen_sektion": [],
-  "poang": 33.7,
+  "poang": 31.2,
   "vikt": {
-   "bredd": 0.391,
+   "bredd": 0.345,
    "regioner": {
     "norden": 1,
-    "europa": 2
+    "europa": 1
    },
    "timmar": 96,
    "konsekvens": {
-    "berorda": 4,
+    "berorda": 3,
     "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "Finlands president uppmanar Europa att själv föra samtal med Putin, vilket berör flera länders säkerhetspolitik i ett krig, men det är ännu ett uttalande snarare än ett beslut."
+    "varaktighet": 2,
+    "medel": 3.0,
+    "skal": "Finlands president uppmanar europeiska ledare att föra direkta samtal med Putin, vilket berör krigssäkerhet men är ett uttalande snarare än ett beslut."
    },
    "bekraftad": true,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 2,
   "har_primarkalla": false,
   "senast": "2026-11-17T14:10:44+00:00",
   "utkast": {
@@ -25495,35 +25411,8 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.74,
-  "betydelse": {
-   "sv": "Eftersom Finlands president, enligt Yle och Kyiv Independent, vill att europeiska ledare för egna samtal med Putin, berör frågan hur EU hanterar Ryssland Sverige, som är medlem i både EU och Nato.",
-   "en": "Because Finland's president calls relying on the United States for Russia-Ukraine talks irresponsible and urges European leaders to engage Putin directly, the division of diplomatic roles between Washington and Europe is under public debate.",
-   "grund": [
-    1,
-    2,
-    3
-   ],
-   "grund_kallor": [
-    {
-     "namn": "Yle News",
-     "url": "https://yle.fi/a/74-20257532?origin=rss"
-    },
-    {
-     "namn": "The Kyiv Independent",
-     "url": "https://kyivindependent.com/finlands-stubb-urges-europe-to-take-russia-talks-into-its-own-hands/"
-    },
-    {
-     "namn": "Financial Times",
-     "url": "https://www.ft.com/content/671d7a7d-c06f-4947-a0ac-72c41e262cca?syn-25a6b1a6=1"
-    }
-   ],
-   "kontroll": {
-    "ok": true,
-    "problem": []
-   },
-   "ok": true
-  },
+  "sammanhang": 0.789,
+  "betydelse": null,
   "perspektiv": {
    "regioner": [
     "europa",
@@ -25541,14 +25430,6 @@
      }
     ],
     "europa": [
-     {
-      "kalla": "The Kyiv Independent",
-      "land": "UA",
-      "rubrik": "Finland's Stubb urges Europe to take Russia talks into its own hands after 'irresponsible' US reliance",
-      "url": "https://kyivindependent.com/finlands-stubb-urges-europe-to-take-russia-talks-into-its-own-hands/",
-      "tid": 1794908347.0,
-      "statskontrollerad": false
-     },
      {
       "kalla": "Financial Times",
       "land": "GB",
@@ -25579,18 +25460,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Kyiv Independent",
-    "rubrik": "Finland's Stubb urges Europe to take Russia talks into its own hands after 'irresponsible' US reliance",
-    "url": "https://kyivindependent.com/finlands-stubb-urges-europe-to-take-russia-talks-into-its-own-hands/",
-    "tid": 1794908347.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "UA",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Financial Times",
     "rubrik": "Finland urges European leaders to talk to Putin directly",
     "url": "https://www.ft.com/content/671d7a7d-c06f-4947-a0ac-72c41e262cca?syn-25a6b1a6=1",
@@ -25606,12 +25475,15 @@
   "granskad": true,
   "relevans": {
    "sv": 2,
-   "en": 3
+   "en": 1
   },
-  "autopilot": [],
+  "autopilot": [
+   "färre än tre oberoende källor (2)"
+  ],
   "data": null,
   "godkand_tid": 1794931780.6007223,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1794935365.922328
  },
  "fdc4ce6f23": {
   "id": "fdc4ce6f23",
@@ -26194,6 +26066,438 @@
   "autopilot": [],
   "data": null,
   "godkand_tid": 1794931780.6007223,
+  "automatisk": true
+ },
+ "e550361d13": {
+  "id": "e550361d13",
+  "amnen": [
+   "halvledare",
+   "usa"
+  ],
+  "amnen_sektion": [
+   "halvledare",
+   "usa"
+  ],
+  "poang": 29.8,
+  "vikt": {
+   "bredd": 0.193,
+   "regioner": {
+    "usa": 4,
+    "europa": 2
+   },
+   "timmar": 38,
+   "konsekvens": {
+    "berorda": 4,
+    "allvar": 4,
+    "varaktighet": 2,
+    "medel": 3.33,
+    "skal": "Toppmötet i Asien rör kärnvapenkontroll och kriget i Ukraina med flera världsledare, men utfallet väntas bli begränsat och följderna sannolikt kortvariga."
+   },
+   "bekraftad": true,
+   "maste": false,
+   "spar": [
+    "teknik"
+   ]
+  },
+  "maste": false,
+  "antal_kallor": 6,
+  "har_primarkalla": false,
+  "senast": "2026-11-17T16:10:34+00:00",
+  "utkast": {
+   "rubrik_sv": "Trump vill diskutera kärnvapenminskningar inför toppmöte med Xi och Putin",
+   "sammanfattning_sv": "Trump, Xi Jinping och Vladimir Putin ska enligt DW hålla sitt första möte i trepart på sidlinjen av APEC. Defense News uppger att Trump vill diskutera minskning av kärnvapen, men att utsikterna är små.",
+   "rubrik_en": "Trump wants nuclear arms cuts on the agenda at summit with Xi and Putin",
+   "sammanfattning_en": "Trump, Xi Jinping and Vladimir Putin are set to hold their first trilateral meeting on the sidelines of APEC, according to DW. Defense News reports that Trump wants to discuss cutting nuclear weapons, but that prospects are low.",
+   "oenighet": "Enligt NPR säger Trump att han planerar att ta upp Ukraina under sin Asienresa, vilket strider mot vad Vita huset tidigare meddelat. WSJ bedömer att varken Trump eller Xi sannolikt tar upp Nvidia vid toppmötet, medan NPR rapporterar att teknikledare i Silicon Valley vill att Jensen Huang återvänder till Nvidia.",
+   "oenighet_en": "NPR reports that Trump says he plans to discuss Ukraine during his Asia trip, which contradicts what the White House previously announced. WSJ assesses that neither Trump nor Xi is likely to raise Nvidia at the summit, while NPR reports that tech leaders in Silicon Valley want Jensen Huang to return to Nvidia.",
+   "perspektiv_sv": "Defense News lyfter Trumps förslag om minskning av kärnvapen. DW fokuserar på vad de tre ledarna hoppas vinna, bland annat när det gäller handel, Ukraina, Iran och vapenkontroll. France 24 lyfter att Ukraina och Ryssland enligt rubriken har träffat viktiga broar.",
+   "perspektiv_en": "Defense News highlights Trump's push for cuts in nuclear weapons. DW focuses on what the three leaders hope to gain, including on trade, Ukraine, Iran and arms control. France 24 highlights that, according to its headline, Ukraine and Russia have hit key bridges.",
+   "usa_sv": null,
+   "usa_en": null,
+   "osaker": false,
+   "kommentar": "Underlaget består av rubriker och korta ingresser. Sammanfattningen bygger främst på Defense News och DW. France 24:s rubrik saknar ingress och har inte använts i sammanfattningen. Källorna med AllSides-betyg har bara vänster och mitten, så avsnittet om amerikanska medier är utelämnat."
+  },
+  "kallkontroll": {
+   "ok": true,
+   "antal": 10,
+   "problem": [],
+   "pastaenden": [
+    {
+     "text": "Trump, Xi och Putin ska hålla sitt första trepartsmöte på sidlinjen av APEC",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "Trump vill diskutera minskning av kärnvapen",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Utsikterna för kärnvapenminskning är små",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "Defense News lyfter Trumps förslag om kärnvapenminskning",
+     "stod": [
+      1
+     ],
+     "problem": null
+    },
+    {
+     "text": "DW fokuserar på vad ledarna hoppas vinna, bland annat om handel, Ukraina, Iran och vapenkontroll",
+     "stod": [
+      2
+     ],
+     "problem": null
+    },
+    {
+     "text": "France 24 lyfter i rubriken att Ukraina och Ryssland har träffat viktiga broar",
+     "stod": [
+      4
+     ],
+     "problem": null
+    },
+    {
+     "text": "Enligt NPR säger Trump att han planerar att ta upp Ukraina under sin Asienresa",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "Trumps uttalande strider mot vad Vita huset tidigare meddelat",
+     "stod": [
+      3
+     ],
+     "problem": null
+    },
+    {
+     "text": "WSJ bedömer att varken Trump eller Xi sannolikt tar upp Nvidia vid toppmötet",
+     "stod": [
+      6
+     ],
+     "problem": null
+    },
+    {
+     "text": "NPR rapporterar att teknikledare i Silicon Valley vill att Jensen Huang återvänder till Nvidia",
+     "stod": [
+      3
+     ],
+     "problem": null
+    }
+   ],
+   "sammanfattning": null
+  },
+  "narrativ": {
+   "berattelser": [
+    {
+     "namn_sv": "Kärnvapenminskning på dagordningen",
+     "namn_en": "Nuclear arms cuts on the agenda",
+     "lyfter_sv": "Defense News lyfter fram att USA driver på kärnvapenminskning trots låga utsikter, medan DW lyfter fram arms control som en av ledarnas skilda prioriteringar.",
+     "lyfter_en": "Defense News highlights the US push for nuclear cuts despite low prospects, while DW highlights arms control as one of the leaders' differing priorities.",
+     "kallor": [
+      {
+       "namn": "Defense News",
+       "region": "usa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.defensenews.com/global/the-americas/2026/11/17/trump-seeks-nuclear-cuts-at-summit-with-putin-and-xi-but-prospects-are-low/"
+      },
+      {
+       "namn": "Deutsche Welle",
+       "region": "europa",
+       "lutning": null,
+       "statskontrollerad": false,
+       "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462?maca=en-rss-en-all-1573-rdf"
+      }
+     ],
+     "regioner": [
+      "europa",
+      "usa"
+     ],
+     "usa_sidor": []
+    },
+    {
+     "namn_sv": "Nvidia på toppmötesagendan",
+     "namn_en": "Nvidia on the summit agenda",
+     "lyfter_sv": "NPR lyfter fram att techledare vill få tillbaka Jensen Huang till Nvidia, medan WSJ lyfter fram att varken Trump eller Xi sannolikt tar upp Nvidia på mötet.",
+     "lyfter_en": "NPR highlights that tech leaders want Jensen Huang back at Nvidia, while WSJ highlights that neither Trump nor Xi is likely to raise Nvidia at the summit.",
+     "kallor": [
+      {
+       "namn": "NPR",
+       "region": "usa",
+       "lutning": "lutar_vanster",
+       "statskontrollerad": false,
+       "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy"
+      },
+      {
+       "namn": "The Wall Street Journal",
+       "region": "usa",
+       "lutning": "mitten",
+       "statskontrollerad": false,
+       "url": "https://www.wsj.com/world/china/why-neither-trump-nor-xi-is-likely-to-raise-nvidia-at-their-summit-5b93bc1a?mod=rss_worldnews"
+      }
+     ],
+     "regioner": [
+      "usa"
+     ],
+     "usa_sidor": [
+      "bla",
+      "mitten"
+     ]
+    }
+   ],
+   "kontroll": {
+    "ok": true,
+    "antal": 5,
+    "problem": [],
+    "pastaenden": [
+     {
+      "text": "Trump vill diskutera kärnvapenminskningar inför toppmöte med Xi och Putin",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "Defense News: USA driver på kärnvapenminskning trots låga utsikter",
+      "stod": [
+       1
+      ],
+      "problem": null
+     },
+     {
+      "text": "DW: arms control är en av ledarnas skilda prioriteringar",
+      "stod": [
+       2
+      ],
+      "problem": null
+     },
+     {
+      "text": "NPR: techledare vill få tillbaka Jensen Huang till Nvidia",
+      "stod": [
+       3
+      ],
+      "problem": null
+     },
+     {
+      "text": "WSJ: varken Trump eller Xi tar sannolikt upp Nvidia på mötet",
+      "stod": [
+       6
+      ],
+      "problem": null
+     }
+    ],
+    "sammanfattning": null
+   },
+   "ok": true
+  },
+  "sammanhang": 0.404,
+  "betydelse": {
+   "sv": "Eftersom Trump vill diskutera minskning av kärnvapen med Putin och Xi, och Defense News bedömer utsikterna som små, hänger frågan ihop med säkerhetsläget i Europa, där Sverige är Natomedlem.",
+   "en": "Because Trump is seeking nuclear arms cuts in talks with Putin and Xi, a topic that bears on US and UK security planning, Defense News says prospects are low.",
+   "grund": [
+    1,
+    2
+   ],
+   "grund_kallor": [
+    {
+     "namn": "Defense News",
+     "url": "https://www.defensenews.com/global/the-americas/2026/11/17/trump-seeks-nuclear-cuts-at-summit-with-putin-and-xi-but-prospects-are-low/"
+    },
+    {
+     "namn": "Deutsche Welle",
+     "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462?maca=en-rss-en-all-1573-rdf"
+    }
+   ],
+   "kontroll": {
+    "ok": false,
+    "problem": [
+     "ingen koppling: Engelska raden: \"a topic that bears on US and UK security planning\" lägger till en koppling till Storbritannien och brittisk säkerhetsplanering, som källmaterialet inte nämner."
+    ]
+   },
+   "ok": false
+  },
+  "perspektiv": {
+   "regioner": [
+    "europa",
+    "usa"
+   ],
+   "per_region": {
+    "usa": [
+     {
+      "kalla": "Defense News",
+      "land": "US",
+      "rubrik": "Trump seeks nuclear cuts at summit with Putin and Xi, but prospects are low",
+      "url": "https://www.defensenews.com/global/the-americas/2026/11/17/trump-seeks-nuclear-cuts-at-summit-with-putin-and-xi-but-prospects-are-low/",
+      "tid": 1794931834.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "NPR",
+      "land": "US",
+      "rubrik": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
+      "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
+      "tid": 1794918057.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Axios",
+      "land": "US",
+      "rubrik": "U.S. allies on edge as Trump heads to summit with Xi and Putin",
+      "url": "https://www.axios.com/2026/11/17/trump-xi-putin-summit-europe-worried",
+      "tid": 1794910210.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Why Neither Trump Nor Xi Is Likely to Raise Nvidia at Their Summit",
+      "url": "https://www.wsj.com/world/china/why-neither-trump-nor-xi-is-likely-to-raise-nvidia-at-their-summit-5b93bc1a?mod=rss_worldnews",
+      "tid": 1794916500.0,
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "APEC summit: What Trump, Xi and Putin want",
+      "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462?maca=en-rss-en-all-1573-rdf",
+      "tid": 1794925500.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Ukraine, Russia hit key bridges ahead of Putin-Xi-Trump summit",
+      "url": "https://www.france24.com/en/video/20261117-ukraine-russia-hit-key-bridges-ahead-of-putin-xi-trump-summit",
+      "tid": 1794916859.0,
+      "statskontrollerad": false
+     }
+    ]
+   },
+   "blind_flack": null,
+   "grannar_svenska": true,
+   "usa": {
+    "bla": [
+     {
+      "kalla": "NPR",
+      "rubrik": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
+      "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
+      "tid": 1794918057.0,
+      "lutning": "lutar_vanster"
+     },
+     {
+      "kalla": "Axios",
+      "rubrik": "U.S. allies on edge as Trump heads to summit with Xi and Putin",
+      "url": "https://www.axios.com/2026/11/17/trump-xi-putin-summit-europe-worried",
+      "tid": 1794910210.0,
+      "lutning": "lutar_vanster"
+     }
+    ],
+    "mitten": [
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "Why Neither Trump Nor Xi Is Likely to Raise Nvidia at Their Summit",
+      "url": "https://www.wsj.com/world/china/why-neither-trump-nor-xi-is-likely-to-raise-nvidia-at-their-summit-5b93bc1a?mod=rss_worldnews",
+      "tid": 1794916500.0,
+      "lutning": "mitten"
+     }
+    ]
+   },
+   "usa_blind": null
+  },
+  "reserv_rubrik": "Trump seeks nuclear cuts at summit with Putin and Xi, but prospects are low",
+  "kallor": [
+   {
+    "namn": "Defense News",
+    "rubrik": "Trump seeks nuclear cuts at summit with Putin and Xi, but prospects are low",
+    "url": "https://www.defensenews.com/global/the-americas/2026/11/17/trump-seeks-nuclear-cuts-at-summit-with-putin-and-xi-but-prospects-are-low/",
+    "tid": 1794931834.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Deutsche Welle",
+    "rubrik": "APEC summit: What Trump, Xi and Putin want",
+    "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462?maca=en-rss-en-all-1573-rdf",
+    "tid": 1794925500.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "DE",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NPR",
+    "rubrik": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
+    "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
+    "tid": 1794918057.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "Ukraine, Russia hit key bridges ahead of Putin-Xi-Trump summit",
+    "url": "https://www.france24.com/en/video/20261117-ukraine-russia-hit-key-bridges-ahead-of-putin-xi-trump-summit",
+    "tid": 1794916859.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Axios",
+    "rubrik": "U.S. allies on edge as Trump heads to summit with Xi and Putin",
+    "url": "https://www.axios.com/2026/11/17/trump-xi-putin-summit-europe-worried",
+    "tid": 1794910210.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "Why Neither Trump Nor Xi Is Likely to Raise Nvidia at Their Summit",
+    "url": "https://www.wsj.com/world/china/why-neither-trump-nor-xi-is-likely-to-raise-nvidia-at-their-summit-5b93bc1a?mod=rss_worldnews",
+    "tid": 1794916500.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   }
+  ],
+  "granskad": true,
+  "relevans": {
+   "sv": 1,
+   "en": 3
+  },
+  "autopilot": [],
+  "data": null,
+  "godkand_tid": 1794935365.922328,
   "automatisk": true
  }
 }
