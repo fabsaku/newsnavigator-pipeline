@@ -13546,31 +13546,34 @@
  "a5940a11a3": {
   "id": "a5940a11a3",
   "amnen": [
-   "mellanostern"
+   "marknader"
   ],
-  "amnen_sektion": [],
-  "poang": 31.7,
+  "amnen_sektion": [
+   "marknader"
+  ],
+  "poang": 27.2,
   "vikt": {
-   "bredd": 0.286,
+   "bredd": 0.136,
    "regioner": {
-    "mellanostern": 2
+    "asien": 1,
+    "sverige": 1
    },
    "timmar": 96,
    "konsekvens": {
-    "berorda": 4,
-    "allvar": 5,
-    "varaktighet": 3,
-    "medel": 4.0,
-    "skal": "Flera tankfartyg i Hormuzsundet har attackerats eller exploderat i en konflikt mellan Iran och USA, vilket hotar liv, säkerhet och världens oljeförsörjning."
+    "berorda": 3,
+    "allvar": 3,
+    "varaktighet": 2,
+    "medel": 2.67,
+    "skal": "Prognoser och dagliga rörelser i amerikanska statsobligationsräntor påverkar finansmarknaderna och låneräntor, men effekterna är ekonomiska och tillfälliga snarare än akuta."
    },
-   "bekraftad": false,
+   "bekraftad": null,
    "maste": false,
    "spar": []
   },
   "maste": false,
   "antal_kallor": 2,
   "har_primarkalla": false,
-  "senast": "2026-11-17T10:56:42+00:00",
+  "senast": "2026-11-17T18:26:53+00:00",
   "utkast": {
    "rubrik_sv": "Iran uppger att fartyg brinner i Hormuzsundet",
    "sammanfattning_sv": "Iran uppger att fem oljetankfartyg och en bogserbåt har fattat eld i Hormuzsundet, enligt uttalanden från Revolutionsgardet och armén. Al-Monitor, som citerar Reuters, skriver att tre tankfartyg skadats.",
@@ -13699,29 +13702,32 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.68,
+  "sammanhang": 0.707,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
-    "mellanostern"
+    "asien",
+    "sverige"
    ],
    "per_region": {
-    "mellanostern": [
+    "asien": [
      {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Iran's IRGC says two tankers ablaze in Hormuz",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-tankers-ablaze-hormuz",
-      "tid": 1794913002.0,
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "10-year Treasury yield holds near 5.1% as investors await US retail sales data, Fed rate decision",
+      "url": "https://www.hindustantimes.com/world-news/us-news/10year-treasury-yield-holds-near-5-1-as-investors-await-us-retail-sales-data-fed-rate-decision-101794909498357.html",
+      "tid": 1794911888.0,
       "statskontrollerad": false
-     },
+     }
+    ],
+    "sverige": [
      {
-      "kalla": "Tehran Times",
-      "land": "IR",
-      "rubrik": "Third oil tanker explodes in Hormuz as IRGC warns of US-devised route",
-      "url": "https://www.tehrantimes.com/news/532227/Third-oil-tanker-explodes-in-Hormuz-as-IRGC-warns-of-US-devised",
-      "tid": 1794850901.0,
-      "statskontrollerad": true
+      "kalla": "Dagens industri",
+      "land": "SE",
+      "rubrik": "Storbank: USA:s tvåårsränta väntas nå 5 procent i år",
+      "url": "https://www.di.se/live/storbank-usa-s-tvaarsranta-vantas-na-5-procent-i-ar/",
+      "tid": 1794940013.0,
+      "statskontrollerad": false
      }
     ]
    },
@@ -13730,48 +13736,47 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Iran's IRGC says two tankers ablaze in Hormuz",
+  "reserv_rubrik": "10-year Treasury yield holds near 5.1% as investors await US retail sales data, Fed rate decision",
   "kallor": [
    {
-    "namn": "Middle East Eye",
-    "rubrik": "Iran's IRGC says two tankers ablaze in Hormuz",
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-tankers-ablaze-hormuz",
-    "tid": 1794913002.0,
+    "namn": "Hindustan Times",
+    "rubrik": "10-year Treasury yield holds near 5.1% as investors await US retail sales data, Fed rate decision",
+    "url": "https://www.hindustantimes.com/world-news/us-news/10year-treasury-yield-holds-near-5-1-as-investors-await-us-retail-sales-data-fed-rate-decision-101794909498357.html",
+    "tid": 1794911888.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
-    "region": "mellanostern",
+    "land": "IN",
+    "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "Tehran Times",
-    "rubrik": "Third oil tanker explodes in Hormuz as IRGC warns of US-devised route",
-    "url": "https://www.tehrantimes.com/news/532227/Third-oil-tanker-explodes-in-Hormuz-as-IRGC-warns-of-US-devised",
-    "tid": 1794850901.0,
-    "betalvagg": false,
+    "namn": "Dagens industri",
+    "rubrik": "Storbank: USA:s tvåårsränta väntas nå 5 procent i år",
+    "url": "https://www.di.se/live/storbank-usa-s-tvaarsranta-vantas-na-5-procent-i-ar/",
+    "tid": 1794940013.0,
+    "betalvagg": true,
     "typ": "media",
-    "land": "IR",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 0,
+   "sv": 2,
    "en": 1
   },
   "autopilot": [
-   "utkastet är märkt osäkert",
-   "källkontrollen har 1 anmärkningar",
-   "färre än tre oberoende källor (1)",
-   "bara en region"
+   "inget utkast",
+   "ingen källkontroll",
+   "färre än tre oberoende källor (2)"
   ],
   "data": null,
   "godkand_tid": 1793927442.8857913,
   "automatisk": true,
-  "uppdaterad_tid": 1794913786.1087282
+  "uppdaterad_tid": 1794946004.5273263
  },
  "de0e99ee50": {
   "id": "de0e99ee50",
@@ -22674,30 +22679,30 @@
   "amnen_sektion": [
    "usa"
   ],
-  "poang": 29.2,
+  "poang": 28.1,
   "vikt": {
-   "bredd": 0.981,
+   "bredd": 0.838,
    "regioner": {
     "usa": 4,
     "asien": 3,
     "europa": 4,
-    "mellanostern": 3,
+    "mellanostern": 2,
     "sverige": 1
    },
-   "timmar": 10,
+   "timmar": 11,
    "konsekvens": {
     "berorda": 4,
     "allvar": 4,
     "varaktighet": 3,
     "medel": 3.67,
-    "skal": "Rapporten om en påstådd iransk smutsig bomb mot Washington är obekräftad och omstridd, men kan eskalera säkerhetsläget och diplomatin mellan USA och Iran."
+    "skal": "En rapporterad, obekräftad iransk plan om en smutsig bomb mot Washington eskalerar spänningarna mellan USA och Iran, med risk för säkerhetskriser i flera länder."
    },
    "bekraftad": null,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 15,
+  "antal_kallor": 14,
   "har_primarkalla": false,
   "senast": "2026-11-17T17:58:06+00:00",
   "utkast": {
@@ -22861,7 +22866,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.567,
+  "sammanhang": 0.556,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -22973,14 +22978,6 @@
       "rubrik": "Araghchi meets Qatari mediators in Oman as Trump threatens Iran over dirty bomb report",
       "url": "https://www.al-monitor.com/originals/2026/11/araghchi-meets-qatari-mediators-oman-trump-threatens-iran-over-dirty-bomb-report",
       "tid": 1794934876.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss",
-      "tid": 1794928437.0,
       "statskontrollerad": false
      },
      {
@@ -23140,18 +23137,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Al Jazeera",
-    "rubrik": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss",
-    "tid": 1794928437.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Deutsche Welle",
     "rubrik": "Iran dismisses report of alleged 'dirty bomb' attack on Washington",
     "url": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-rdf",
@@ -23236,7 +23221,7 @@
   "data": null,
   "godkand_tid": 1794917292.8920832,
   "automatisk": true,
-  "uppdaterad_tid": 1794942422.3425293
+  "uppdaterad_tid": 1794946004.5273263
  },
  "304fa3d01f": {
   "id": "304fa3d01f",
