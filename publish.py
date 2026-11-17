@@ -63,7 +63,8 @@ def main():
         issues[lang] = nav.exists() and "UTKAST" not in nav.read_text(encoding="utf-8")
 
     PUBLIC.mkdir(exist_ok=True)
-    stats = sajt.build_editions(PUBLIC, events, noindex=not launched, issues=issues, over_sprak=_flode().get("over_sprak", False))
+    stats = sajt.build_editions(PUBLIC, events, noindex=not launched, issues=issues, over_sprak=_flode().get("over_sprak", False),
+                               konsol=_flode().get("handelser", []))
 
     png = ROOT / "site" / "newsgator.png"
     if png.exists():

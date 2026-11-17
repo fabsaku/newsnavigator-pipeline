@@ -124,6 +124,19 @@ footer{border-top:1px solid var(--ink);margin-top:64px;padding:28px 0 48px}
 .srcs li{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.srcs li .flags{grid-column:1/-1;text-align:left}
 .ft{grid-template-columns:minmax(0,1fr)}
 }
+.kons{list-style:none;padding:0;margin:18px 0 0}
+.kons>li{padding:16px 0;border-top:1px solid var(--rule)}
+.kons h2{font:600 19px/1.3 var(--serif);margin:2px 0 6px}
+.kons h2 a{color:var(--ink);text-decoration:none}.kons h2 a:hover{text-decoration:underline}
+.kons .meta{margin:0 0 8px}
+.kons ul.src{list-style:none;padding:0;margin:0}
+.kons ul.src li{padding:3px 0;font:16px/1.4 var(--sans)}
+.kons ul.src a{color:var(--ink)}
+.kons .nm{color:var(--mute);margin-right:6px}
+.kons details{margin-top:4px}.kons summary{cursor:pointer;color:var(--mute);font:15px var(--sans)}
+.kons .ai{margin:8px 0 0}.kons .ai button{font:600 14px var(--sans);padding:6px 10px;border:1px solid var(--rule);background:none;color:var(--ink);border-radius:4px;cursor:pointer}
+.aival{display:none;margin:14px 0 0;font:15px var(--sans);color:var(--mute)}.aival.on{display:block}
+.aival select{font:15px var(--sans);margin-left:6px}
 """
 
 
@@ -211,7 +224,7 @@ def _write(path, text):
 def _shell(u, *, title, body, active=None, description="", path="/", og=None, banner="", noindex=True, updated=None, nsources=0):
     nav = [(u.home(), "Senaste", "Latest", "hem")]
     nav += [(u.section(k), sv, en, k) for k, sv, en, _ in SECTIONS if not (u.lang == "en" and k == "sverige")]
-    nav += [(u.page("spar"), "Spår", "Focus areas", "spar"),
+    nav += [(u.page("lage"), "Läget", "Now", "lage"), (u.page("spar"), "Spår", "Focus areas", "spar"),
             (u.page("navigatorn"), "Navigatorn", "Navigatorn", "navigatorn"), (u.page("om"), "Om", "About", "om"),
             (u.page("kallor"), "Källor", "Sources", "kallor")]
     links = "".join(f'<a href="{_e(h)}"{" aria-current=page" if k == active else ""}>{_both(sv, en)}</a>' for h, sv, en, k in nav)
@@ -604,13 +617,127 @@ def feed(u, events, lang):
             f'{"".join(items)}</channel></rss>')
 
 
+
+# ---------- Konsolen: alla aktuella händelser som källornas rubriker och länkar ----------
+
+KONSOL_MAX = 40
+KONSOL_SYNLIGA = 6
+_SPARNING = re.compile(r"^(utm_|fbclid$|gclid$|mc_cid$|mc_eid$|maca$)")
+
+
+def _rensa_url(url):
+    """Tar bort spårningsparametrar (utm_*, fbclid ...) så att länken går rakt till artikeln."""
+    from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+    d = urlsplit(url)
+    q = [(k, v) for k, v in parse_qsl(d.query, keep_blank_values=True) if not _SPARNING.match(k)]
+    return urlunsplit((d.scheme, d.netloc, d.path, urlencode(q), ""))
+
+
+def _kallor(ev):
+    sedda, ut = set(), []
+    for k in ev.get("kallor", []):
+        url = _rensa_url(k["url"])
+        if url in sedda:
+            continue
+        sedda.add(url)
+        ut.append({**k, "url": url})
+    return ut
+
+
+def _ai_prompt(ev, kallor, lang):
+    rader = "\n".join(f"- {k['namn']}: {k['rubrik']} {k['url']}" for k in kallor[:8])
+    if lang == "en":
+        return ("Compare how these outlets report the same event. Open the articles through the links yourself, "
+                "then summarise what they agree on, where they differ, and what is missing. Be concise and name the source for each claim.\n"
+                f"Sources (headline and link only):\n{rader}")
+    return ("Jämför hur de här medierna rapporterar samma händelse. Öppna artiklarna via länkarna själv och sammanfatta vad de är överens om, "
+            "var de skiljer sig och vad som saknas. Var kortfattad och ange källa för varje påstående.\n"
+            f"Källor (bara rubrik och länk):\n{rader}")
+
+
+def _kons_rad(u, ev):
+    kallor = _kallor(ev)
+    if not kallor:
+        return ""
+    sv_sek, en_sek = _section_names(section_of(ev))
+    sek = f'<a href="{_e(u.section(section_of(ev)))}">{_both(sv_sek, en_sek)}</a>'
+
+    def rad(k):
+        mark = ""
+        if k.get("betalvagg"):
+            mark += f' <span class="stat">{_both("betalvägg", "paywall")}</span>'
+        if k.get("statskontrollerad"):
+            mark += ' <span class="stat">STAT</span>'
+        return f'<li><span class="nm">{_e(k["namn"])}</span><a href="{_e(k["url"])}" rel="noopener">{_e(k["rubrik"])}</a>{mark}</li>'
+
+    syn, mer = kallor[:KONSOL_SYNLIGA], kallor[KONSOL_SYNLIGA:]
+    lista = f'<ul class="src">{"".join(rad(k) for k in syn)}</ul>'
+    if mer:
+        lista += (f'<details><summary>{_both(f"{len(mer)} källor till", f"{len(mer)} more sources")}</summary>'
+                  f'<ul class="src">{"".join(rad(k) for k in mer)}</ul></details>')
+    n = ev.get("antal_kallor") or len(kallor)
+    regioner = len((ev.get("perspektiv") or {}).get("regioner", [])) or 1
+    ts = ev.get("senast")
+    tid = ""
+    if ts:
+        try:
+            tid = " " + _both(*_date(datetime.fromisoformat(ts).timestamp(), clock=True)) + "."
+        except ValueError:
+            tid = ""
+    meta = (f'<p class="meta">{sek}.{tid} {_both(f"{n} källor", f"{n} sources")}, '
+            f'{_both(f"{regioner} regioner", f"{regioner} regions")}.</p>')
+    prompt = _ai_prompt(ev, kallor, u.lang or "sv")
+    ai = f'<p class="ai" data-prompt="{_e(prompt)}"></p>'
+    return f'<li><h2><a href="{_e(kallor[0]["url"])}" rel="noopener">{_e(kallor[0]["rubrik"])}</a></h2>{meta}{lista}{ai}</li>'
+
+
+KONSOL_JS = """
+(function(){
+  var rows=document.querySelectorAll('.ai[data-prompt]'); if(!rows.length) return;
+  var sel=document.getElementById('aival'), box=document.querySelector('.aival'), key='nn_ai';
+  function get(){try{return localStorage.getItem(key)||'claude'}catch(e){return 'claude'}}
+  function set(v){try{localStorage.setItem(key,v)}catch(e){}}
+  var en=document.documentElement.lang==='en';
+  box.classList.add('on'); sel.value=get(); sel.addEventListener('change',function(){set(sel.value)});
+  rows.forEach(function(p){
+    var b=document.createElement('button'); b.type='button'; b.textContent=en?'Ask your AI':'Fråga din AI';
+    b.addEventListener('click',function(){
+      var t=p.getAttribute('data-prompt'), v=sel.value;
+      if(v==='claude') window.open('https://claude.ai/new?q='+encodeURIComponent(t),'_blank','noopener');
+      else if(v==='chatgpt') window.open('https://chatgpt.com/?q='+encodeURIComponent(t),'_blank','noopener');
+      else if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){b.textContent=en?'Copied':'Kopierat'})}
+    });
+    p.appendChild(b);
+  });
+})();
+"""
+
+
+def lage_page(u, handelser, sources, banner, noindex):
+    evs = [e for e in handelser if utgava.visa(e, u.lang or "sv")]
+    evs = utgava.ordna(evs, u.lang or "sv")[:KONSOL_MAX]
+    rader = "".join(_kons_rad(u, e) for e in evs)
+    lista = f'<ol class="kons">{rader}</ol>' if rader else f'<p class="lede">{_both("Inga aktuella händelser just nu.", "No current events right now.")}</p>'
+    aival = (f'<p class="aival"><label for="aival">{_both("Din AI:", "Your AI:")}</label>'
+             f'<select id="aival"><option value="claude">Claude</option><option value="chatgpt">ChatGPT</option>'
+             f'<option value="kopiera">{_both("Kopiera prompten", "Copy the prompt")}</option></select> '
+             f'{_both("Vi anropar ingen AI. Knappen öppnar din egen AI med en färdig fråga, eller kopierar den.", "We call no AI. The button opens your own AI with a ready question, or copies it.")}</p>')
+    body = (f'<h1 class="pagetitle">{_both("Läget just nu", "The situation now")}</h1>'
+            f'<p class="lede">{_both("Det som händer, direkt från källorna: deras egna rubriker och länkar, utan sammanfattning från oss. Klicka dig vidare till artikeln du vill läsa.", "What is happening, straight from the sources: their own headlines and links, with no summary from us. Click through to the article you want to read.")}</p>'
+            f'{aival}{lista}<script>{KONSOL_JS}</script>')
+    return _shell(u, title=f'{_t(u, "Läget just nu", "The situation now")}, Newsnavigator', body=body, active="lage", path=u.page("lage"),
+                  banner=banner, noindex=noindex,
+                  description=_t(u, "Aktuella händelser som källornas egna rubriker och länkar.", "Current events as the sources' own headlines and links."),
+                  updated=max((datetime.fromisoformat(e["senast"]).timestamp() for e in evs if e.get("senast")), default=None), nsources=len(sources))
+
+
 # ---------- Bygg allt ----------
 
 def load_sources():
     return yaml.safe_load((ROOT / "feeds.yaml").read_text(encoding="utf-8"))["sources"]
 
 
-def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_issue=False, over_sprak=False):
+def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_issue=False, over_sprak=False, konsol=None):
     """events: granskade notiser, nyast först, var och en med godkand_tid. Skriver alla sidor till out.
     Med `lang` skrivs ett språkträd under out/<lang>/ (se build_editions); utan är sajten tvåspråkig (förhandsvisningen)."""
     out = Path(out)
@@ -639,6 +766,7 @@ def build(out, events, *, flat=False, lang=None, banner="", noindex=True, has_is
         _write(u.disk(out, u.story(ev["id"])), story_page(u, ev, related, sources, banner, noindex))
     _write(u.disk(out, u.page("om")), about_page(u, sources, banner, noindex))
     _write(u.disk(out, u.page("spar")), spar_page(u, events, sources, banner, noindex))
+    _write(u.disk(out, u.page("lage")), lage_page(u, konsol or [], sources, banner, noindex))
     _write(u.disk(out, u.page("rattelser")), rattelser_page(u, rattelser.load(), sources, banner, noindex))
     if not flat and not lang:
         _write(out / "404.html", not_found_page(u, banner, len(sources)))
@@ -710,14 +838,14 @@ def redirects():
 def sitemap_xml(per_utgava):
     urls = ["/"]
     for lang, events in per_utgava.items():
-        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/spar/", f"/{lang}/rattelser/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
+        urls += [f"/{lang}/", f"/{lang}/om/", f"/{lang}/spar/", f"/{lang}/lage/", f"/{lang}/rattelser/", f"/{lang}/kallor/", f"/{lang}/navigatorn/"]
         urls += [f"/{lang}/{k}/" for k, *_ in SECTIONS]
         urls += [f"/{lang}/n/{e['id']}/" for e in events]
     return ('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>")
 
 
-def build_editions(out, events, *, banner="", noindex=True, issues=None, over_sprak=False):
+def build_editions(out, events, *, banner="", noindex=True, issues=None, over_sprak=False, konsol=None):
     """Bygger sajten som två språkträd, /sv/ och /en/, var och en med de notiser som hör hemma i utgåvan, och en valsida i roten.
     Lanseringens kort (ig/) och förhandsgranskning (lansering/) ligger kvar orörda."""
     out = Path(out)
@@ -733,7 +861,7 @@ def build_editions(out, events, *, banner="", noindex=True, issues=None, over_sp
     for lang in utgava.UTGAVOR:
         evs = utgavans_notiser(events, lang)
         st = build(out, evs, lang=lang, banner=banner, noindex=noindex, has_issue=issues.get(lang, False),
-                   over_sprak=over_sprak if lang == "sv" else False)
+                   over_sprak=over_sprak if lang == "sv" else False, konsol=konsol)
         stats["per_utgava"][lang] = evs
         stats["notiser"] += st["notiser"]
         stats["forstasida"] += st["forstasida"]

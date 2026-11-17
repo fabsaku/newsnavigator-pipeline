@@ -135,6 +135,8 @@ Tester: `pytest` för grindarna och planförslaget (ren logik, snabba), Playwrig
 
 ## Läget
 
+**18 november: konsolen "Läget just nu" byggd (spår 8 i planen).** Ny sida `/sv/lage/` och `/en/lage/` (`sajt.lage_page`, tester i `tests/test_konsol.py`) med menyvalet Läget/Now. Den listar upp till 40 aktuella händelser ur `data/flode.json`, alltså även ogranskade, som källornas egna rubriker och länkar utan någon AI-text: rubrik, sektion, tid, antal källor och regioner, upp till sex källor synliga och resten bakom "N källor till", betalvägg och STAT märkta, spårningsparametrar (utm_*, fbclid) borttagna ur länkarna. Läsarens egen AI: varje händelse har knappen "Fråga din AI" som öppnar claude.ai eller chatgpt.com med en färdig fråga (bara källornas namn, rubriker och länkar) eller kopierar den; valet sparas i läsarens webbläsare. Sajten anropar ingen AI och lagrar inga nycklar, så det finns inget att hacka eller betala för. Kostnadsmålet (gratis utöver domänen) är därmed uppnått för konsolen; kvar är AI-steget för sammanfattningar och Instagram (dygnstak och tokenloggning, se planen).
+
 **17 november: planen till full drift (sajt och båda Instagramkonton löpande).** Läge: pipelinen går varje timme sedan repot blev publikt (senast 14.10 UTC, 40 händelser, 128 av 143 källor), autopiloten har 50 publicerade, 3 i kön, 7 stoppade. Kvar, i ordning:
 1. **Sajten ut (Fabian, 10 min).** Kontrollera att newsnavigator.se visar dagens flöde; säg till om det är fruset. Kontrollera att Actions-inställningarna och Secret scanning blev påslagna. Därefter `NN_LANSERAD=1` (jag sätter det) när lanseringen är klar.
 2. **Meta (Fabian, 30 min).** Företagsportfölj, lägg till båda kontona, fyra secrets, kör Instagram med `kontroll = true` tills båda raderna är OK.
