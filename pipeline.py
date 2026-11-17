@@ -25,6 +25,7 @@ import feedparser
 import yaml
 
 import berattelser
+import kostnad
 import betydelse
 import kallkontroll
 import spar as spar_mod
@@ -671,9 +672,13 @@ def main():
     args = ap.parse_args()
 
     client, model = None, os.environ.get("NN_MODEL", "claude-haiku-5-5")
+    rakning = kostnad.Rakning(model)
     if os.environ.get("ANTHROPIC_API_KEY"):
         import anthropic
-        client = anthropic.Anthropic()
+        client = kostnad.RaknandeKlient(anthropic.Anthropic(), rakning)
+    # Kostnadsskydd: högst så många nya utkast per körning och per dygn (USD). 0 = ingen gräns. Cachade texter kostar inget.
+    budget = kostnad.Budget(int(os.environ.get("NN_AI_NYA_PER_KORNING", "12")),
+                            float(os.environ.get("NN_AI_DAGSTAK_USD", "0.50")), kostnad.dagens_usd())
 
     cache = load_cache()
     sources = load_sources(args.feeds)
@@ -734,6 +739,8 @@ def main():
                 except Exception as e:
                     print(f"  Källkontroll misslyckades: {e}", file=sys.stderr)
             return hit["utkast"], kontroll, True
+        if client and not budget.far_nytt():
+            return None, None, False        # taket nått: händelsen visas i konsolen med källornas rubriker tills nästa körning
         try:
             draft = summarize(c, client, model)
         except Exception as e:
@@ -833,6 +840,9 @@ def main():
         e["granskad"] = e["id"] in approved
         e["autopilot"] = autopilot.grindar(e)
     if client:
+        kostnad.spara(rakning)
+        print(f"AI-kostnad denna körning: {rakning.usd():.4f} USD ({rakning.anrop} anrop, {rakning.tokens_in} in, {rakning.tokens_ut} ut)"
+              f"{f'; {budget.nekade} nya utkast sköts upp av taket' if budget.nekade else ''}")
         checked = [e["kallkontroll"] for e in events if e.get("kallkontroll")]
         flagged = sum(1 for k in checked if not k["ok"])
         print(f"Utkast: {len(chosen) - reused} nya, {reused} ur cachen · källkontroll: {len(checked)} kontrollerade, {flagged} med anmärkning")
