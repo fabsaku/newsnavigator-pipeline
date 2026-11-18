@@ -677,7 +677,7 @@ def main():
         import anthropic
         client = kostnad.RaknandeKlient(anthropic.Anthropic(), rakning)
     # Kostnadsskydd: högst så många nya utkast per körning och per dygn (USD). 0 = ingen gräns. Cachade texter kostar inget.
-    budget = kostnad.Budget(int(os.environ.get("NN_AI_NYA_PER_KORNING", "12")),
+    budget = kostnad.Budget(int(os.environ.get("NN_AI_NYA_PER_KORNING", "4")),
                             float(os.environ.get("NN_AI_DAGSTAK_USD", "0.15")), kostnad.dagens_usd())
 
     cache = load_cache()
