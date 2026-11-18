@@ -23614,20 +23614,20 @@
    "ai",
    "halvledare"
   ],
-  "poang": 26.6,
+  "poang": 26.3,
   "vikt": {
-   "bredd": 0.162,
+   "bredd": 0.255,
    "regioner": {
-    "asien": 2,
-    "usa": 2
+    "usa": 1,
+    "asien": 4
    },
-   "timmar": 15,
+   "timmar": 14,
    "konsekvens": {
     "berorda": 4,
     "allvar": 4,
-    "varaktighet": 4,
-    "medel": 4.0,
-    "skal": "USA begränsar kinesiska företags fjärråtkomst till AI-chip och servrar, vilket påverkar AI-branschen i flera länder och stärker den teknologiska konkurrensen mellan USA och Kina."
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "USA stramar exportreglerna för avancerade AI-chip till Kina, vilket påverkar Nvidia, kinesisk AI-industri och USA:s relation till Kina."
    },
    "bekraftad": null,
    "maste": false,
@@ -23636,9 +23636,9 @@
    ]
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-17T13:31:09+00:00",
+  "senast": "2026-11-18T10:45:01+00:00",
   "utkast": {
    "rubrik_sv": "USA inför nya regler mot kinesiska företags fjärråtkomst till AI-chip",
    "sammanfattning_sv": "Enligt Tom's Hardware inför USA nya regler som ska hindra kinesiska företag från fjärråtkomst till AI-chip. CNA uppger att datacenter överallt behöver amerikansk licens för att leverera stora mängder datorkraft till bolag i Kina och flera andra länder, och Kina kritiserar åtgärden.",
@@ -23756,7 +23756,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.669,
+  "sammanhang": 0.69,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -23764,7 +23764,33 @@
     "usa"
    ],
    "per_region": {
+    "usa": [
+     {
+      "kalla": "CNBC",
+      "land": "US",
+      "rubrik": "China’s military seeks Nvidia’s advanced chips for AI capabilities, commission says",
+      "url": "https://www.cnbc.com/2026/11/18/nvidia-chips-china-military-ai.html",
+      "tid": 1794998701.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Nvidia ‘no longer’ shipping Hopper data centre AI chips to China as US tightens export curbs",
+      "url": "https://www.hindustantimes.com/world-news/nvidia-halts-ai-hopper-data-centre-chip-shipments-to-china-as-us-tightens-export-curbs-101794989220812.html",
+      "tid": 1794992026.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Nvidia stops selling AI chips to China despite US approval",
+      "url": "https://www.straitstimes.com/world/united-states/nvidia-stops-selling-ai-chips-to-china-despite-us-approval",
+      "tid": 1794964500.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Hindu",
       "land": "IN",
@@ -23781,24 +23807,6 @@
       "tid": null,
       "statskontrollerad": false
      }
-    ],
-    "usa": [
-     {
-      "kalla": "Tom's Hardware",
-      "land": "US",
-      "rubrik": "New US rules aim to restrict Chinese firms’ remote access to AI servers and infrastructure",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls",
-      "tid": 1794865800.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "NPR",
-      "land": "US",
-      "rubrik": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
-      "tid": 1794854966.0,
-      "statskontrollerad": false
-     }
     ]
    },
    "blind_flack": null,
@@ -23806,8 +23814,44 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+  "reserv_rubrik": "China’s military seeks Nvidia’s advanced chips for AI capabilities, commission says",
   "kallor": [
+   {
+    "namn": "CNBC",
+    "rubrik": "China’s military seeks Nvidia’s advanced chips for AI capabilities, commission says",
+    "url": "https://www.cnbc.com/2026/11/18/nvidia-chips-china-military-ai.html",
+    "tid": 1794998701.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "Nvidia ‘no longer’ shipping Hopper data centre AI chips to China as US tightens export curbs",
+    "url": "https://www.hindustantimes.com/world-news/nvidia-halts-ai-hopper-data-centre-chip-shipments-to-china-as-us-tightens-export-curbs-101794989220812.html",
+    "tid": 1794992026.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Nvidia stops selling AI chips to China despite US approval",
+    "url": "https://www.straitstimes.com/world/united-states/nvidia-stops-selling-ai-chips-to-china-despite-us-approval",
+    "tid": 1794964500.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Hindu",
     "rubrik": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
@@ -23818,30 +23862,6 @@
     "land": "IN",
     "region": "asien",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Tom's Hardware",
-    "rubrik": "New US rules aim to restrict Chinese firms’ remote access to AI servers and infrastructure",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls",
-    "tid": 1794865800.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "NPR",
-    "rubrik": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
-    "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
-    "tid": 1794854966.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "public-service",
     "statskontrollerad": false
    },
    {
@@ -23869,7 +23889,7 @@
   "data": null,
   "godkand_tid": 1794931780.6007223,
   "automatisk": true,
-  "uppdaterad_tid": 1794960498.6017892
+  "uppdaterad_tid": 1795003655.7773154
  },
  "e550361d13": {
   "id": "e550361d13",
