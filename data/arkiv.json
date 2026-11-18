@@ -23336,32 +23336,36 @@
  "b71492cb51": {
   "id": "b71492cb51",
   "amnen": [
-   "varlden"
+   "usa"
   ],
-  "amnen_sektion": [],
-  "poang": 31.2,
+  "amnen_sektion": [
+   "usa"
+  ],
+  "poang": 28.3,
   "vikt": {
-   "bredd": 0.345,
+   "bredd": 0.576,
    "regioner": {
-    "norden": 1,
-    "europa": 1
+    "sverige": 2,
+    "europa": 1,
+    "asien": 1,
+    "norden": 1
    },
-   "timmar": 96,
+   "timmar": 22,
    "konsekvens": {
-    "berorda": 3,
+    "berorda": 4,
     "allvar": 4,
-    "varaktighet": 2,
-    "medel": 3.0,
-    "skal": "Finlands president uppmanar europeiska ledare att föra direkta samtal med Putin, vilket berör krigssäkerhet men är ett uttalande snarare än ett beslut."
+    "varaktighet": 3,
+    "medel": 3.67,
+    "skal": "Stormakternas maktspel kring Ukraina och Europas oro för att stå utanför påverkar säkerhet i flera länder, men inga beslut är fattade ännu."
    },
-   "bekraftad": true,
+   "bekraftad": null,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 2,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-17T14:10:44+00:00",
+  "senast": "2026-11-18T07:21:49+00:00",
   "utkast": {
    "rubrik_sv": "Finlands president uppmanar europeiska ledare att tala direkt med Putin",
    "sammanfattning_sv": "Finlands president Alexander Stubb uppger enligt Yle, Kyiv Independent och Financial Times att europeiska ledare bör tala direkt med Putin. Han kallar enligt Yle och Kyiv Independent det oansvarigt att överlåta samtalen om Ryssland och Ukraina till USA.",
@@ -23458,14 +23462,54 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.789,
+  "sammanhang": 0.514,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "asien",
     "europa",
-    "norden"
+    "norden",
+    "sverige"
    ],
    "per_region": {
+    "sverige": [
+     {
+      "kalla": "Sveriges Radio Ekot",
+      "land": "SE",
+      "rubrik": "Stor oro för Ukraina när stormakterna möts",
+      "url": "https://www.sverigesradio.se/artikel/9344914",
+      "tid": 1794985020.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Dagens Nyheter",
+      "land": "SE",
+      "rubrik": "Michael Winiarski: Ukraina har skäl att oroa sig när Xi, Putin och Trump träffas",
+      "url": "https://www.dn.se/varlden/michael-winiarski-ukraina-har-skal-att-oroa-sig-nar-xi-putin-och-trump-traffas/",
+      "tid": 1794986509.0,
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "Politico Europe",
+      "land": "BE",
+      "rubrik": "Europe fears Putin is stringing Trump along on Ukraine",
+      "url": "https://www.politico.eu/article/europe-vladimir-putin-not-serious-about-ukraine-peace-talks/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "tid": 1794970800.0,
+      "statskontrollerad": false
+     }
+    ],
+    "asien": [
+     {
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Trump’s sudden Ukraine push leaves Europe walking a tightrope",
+      "url": "https://www.straitstimes.com/world/europe/trumps-sudden-ukraine-push-leaves-europe-walking-a-tightrope",
+      "tid": 1794970380.0,
+      "statskontrollerad": false
+     }
+    ],
     "norden": [
      {
       "kalla": "Yle News",
@@ -23475,16 +23519,6 @@
       "tid": 1794924644.0,
       "statskontrollerad": false
      }
-    ],
-    "europa": [
-     {
-      "kalla": "Financial Times",
-      "land": "GB",
-      "rubrik": "Finland urges European leaders to talk to Putin directly",
-      "url": "https://www.ft.com/content/671d7a7d-c06f-4947-a0ac-72c41e262cca?syn-25a6b1a6=1",
-      "tid": 1794891625.0,
-      "statskontrollerad": false
-     }
     ]
    },
    "blind_flack": null,
@@ -23492,8 +23526,44 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "FT: Stubb says Europe should talk to Putin directly",
+  "reserv_rubrik": "Stor oro för Ukraina när stormakterna möts",
   "kallor": [
+   {
+    "namn": "Sveriges Radio Ekot",
+    "rubrik": "Stor oro för Ukraina när stormakterna möts",
+    "url": "https://www.sverigesradio.se/artikel/9344914",
+    "tid": 1794985020.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Politico Europe",
+    "rubrik": "Europe fears Putin is stringing Trump along on Ukraine",
+    "url": "https://www.politico.eu/article/europe-vladimir-putin-not-serious-about-ukraine-peace-talks/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "tid": 1794970800.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Trump’s sudden Ukraine push leaves Europe walking a tightrope",
+    "url": "https://www.straitstimes.com/world/europe/trumps-sudden-ukraine-push-leaves-europe-walking-a-tightrope",
+    "tid": 1794970380.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Yle News",
     "rubrik": "FT: Stubb says Europe should talk to Putin directly",
@@ -23507,30 +23577,31 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Financial Times",
-    "rubrik": "Finland urges European leaders to talk to Putin directly",
-    "url": "https://www.ft.com/content/671d7a7d-c06f-4947-a0ac-72c41e262cca?syn-25a6b1a6=1",
-    "tid": 1794891625.0,
+    "namn": "Dagens Nyheter",
+    "rubrik": "Michael Winiarski: Ukraina har skäl att oroa sig när Xi, Putin och Trump träffas",
+    "url": "https://www.dn.se/varlden/michael-winiarski-ukraina-har-skal-att-oroa-sig-nar-xi-putin-och-trump-traffas/",
+    "tid": 1794986509.0,
     "betalvagg": true,
     "typ": "media",
-    "land": "GB",
-    "region": "europa",
+    "land": "SE",
+    "region": "sverige",
     "agare": "privat",
     "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
-   "en": 1
+   "sv": 3,
+   "en": 2
   },
   "autopilot": [
-   "färre än tre oberoende källor (2)"
+   "inget utkast",
+   "ingen källkontroll"
   ],
   "data": null,
   "godkand_tid": 1794931780.6007223,
   "automatisk": true,
-  "uppdaterad_tid": 1794935365.922328
+  "uppdaterad_tid": 1794989149.6290774
  },
  "fdc4ce6f23": {
   "id": "fdc4ce6f23",
