@@ -13646,40 +13646,37 @@
  "5db6a782f2": {
   "id": "5db6a782f2",
   "amnen": [
-   "halvledare",
-   "marknader",
+   "energi",
    "usa"
   ],
   "amnen_sektion": [
-   "halvledare",
-   "marknader",
+   "energi",
    "usa"
   ],
-  "poang": 30.7,
+  "poang": 31.7,
   "vikt": {
-   "bredd": 0.158,
+   "bredd": 0.339,
    "regioner": {
-    "asien": 2,
-    "usa": 2
+    "asien": 3,
+    "usa": 1,
+    "mellanostern": 1
    },
-   "timmar": 81,
+   "timmar": 85,
    "konsekvens": {
-    "berorda": 3,
-    "allvar": 3,
+    "berorda": 4,
+    "allvar": 4,
     "varaktighet": 3,
-    "medel": 3.0,
-    "skal": "USA skärper exportrestriktioner för chip under Trumps Asienbesök, vilket drabbar datacenteraktier i regionen och skapar osäkerhet i en viktig bransch, men effekten är ekonomisk och avgränsad."
+    "medel": 3.67,
+    "skal": "Möjliga samtal om kärnvapen med Kina, Ryssland och Nordkorea kan påverka säkerheten i Asien och världen, men läget är ännu osäkert."
    },
    "bekraftad": null,
    "maste": false,
-   "spar": [
-    "teknik"
-   ]
+   "spar": []
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-17T14:26:17+00:00",
+  "senast": "2026-11-18T10:24:36+00:00",
   "utkast": {
    "rubrik_sv": "Paraguays president Santiago Peña avgår efter bankkollaps",
    "sammanfattning_sv": "Paraguays president Santiago Peña har avgått efter kollapsen av banken Ueno, enligt flera källor, som uppger att miljontals kunders konton har frysts. Lagstiftare har enligt NPR och BBC röstat för att driva en riksrättsprocess mot honom.",
@@ -13888,30 +13885,39 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.413,
+  "sammanhang": 0.501,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
+    "mellanostern",
     "usa"
    ],
    "per_region": {
     "asien": [
      {
-      "kalla": "The Japan Times",
-      "land": "JP",
-      "rubrik": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
-      "url": "https://www.japantimes.co.jp/business/2026/11/17/tech/asia-data-center-chip-trump/",
-      "tid": 1794895980.0,
+      "kalla": "Yonhap",
+      "land": "KR",
+      "rubrik": "(2nd LD) Trump 'serious' about engaging with N. Korean leader Kim: Rubio",
+      "url": "https://en.yna.co.kr/view/AEN20261118005352315",
+      "tid": 1794970400.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "Nikkei Asia",
-      "land": "JP",
-      "rubrik": "US chip curbs, Nvidia uncertainty weigh on Asian data center stocks",
-      "url": "https://asia.nikkei.com/business/markets/us-chip-curbs-nvidia-uncertainty-weigh-on-asian-data-center-stocks",
-      "tid": null,
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "Five takeaways from Trump’s Asia tour: Cabinet feuds, Rubio love and a Kim Jong Un curveball",
+      "url": "https://www.straitstimes.com/world/united-states/five-takeaways-from-trumps-asia-tour-cabinet-feuds-rubio-love-and-a-kim-jong-un-curveball",
+      "tid": 1794959404.0,
       "statskontrollerad": false
+     },
+     {
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "Trump's meeting with DPRK's top leader serious idea, Rubio says",
+      "url": "https://news.cgtn.com/news/2026-11-18/news-1SafNqrxurm/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+      "tid": 1794964608.0,
+      "statskontrollerad": true
      }
     ],
     "usa": [
@@ -13920,53 +13926,48 @@
       "land": "US",
       "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
       "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
-      "tid": 1794925577.0,
+      "tid": 1794997476.0,
       "statskontrollerad": false
-     },
+     }
+    ],
+    "mellanostern": [
      {
-      "kalla": "The Wall Street Journal",
-      "land": "US",
-      "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
-      "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
-      "tid": 1794898140.0,
-      "statskontrollerad": false
+      "kalla": "The National",
+      "land": "AE",
+      "rubrik": "Trump to hold nuclear talks with Xi and Putin, with Kim Jong-un possibly joining",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/17/trump-to-hold-nuclear-talks-with-xi-and-putin-with-kim-jong-un-possibly-joining/",
+      "tid": 1794884400.0,
+      "statskontrollerad": true
      }
     ]
    },
    "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
-   "usa": {
-    "bla": [
-     {
-      "kalla": "The New York Times",
-      "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
-      "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
-      "tid": 1794925577.0,
-      "lutning": "lutar_vanster"
-     }
-    ],
-    "mitten": [
-     {
-      "kalla": "The Wall Street Journal",
-      "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
-      "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
-      "tid": 1794898140.0,
-      "lutning": "mitten"
-     }
-    ]
-   },
+   "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
+  "reserv_rubrik": "(2nd LD) Trump 'serious' about engaging with N. Korean leader Kim: Rubio",
   "kallor": [
    {
-    "namn": "The Japan Times",
-    "rubrik": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
-    "url": "https://www.japantimes.co.jp/business/2026/11/17/tech/asia-data-center-chip-trump/",
-    "tid": 1794895980.0,
+    "namn": "Yonhap",
+    "rubrik": "(2nd LD) Trump 'serious' about engaging with N. Korean leader Kim: Rubio",
+    "url": "https://en.yna.co.kr/view/AEN20261118005352315",
+    "tid": 1794970400.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "JP",
+    "land": "KR",
+    "region": "asien",
+    "agare": "statlig",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Straits Times",
+    "rubrik": "Five takeaways from Trump’s Asia tour: Cabinet feuds, Rubio love and a Kim Jong Un curveball",
+    "url": "https://www.straitstimes.com/world/united-states/five-takeaways-from-trumps-asia-tour-cabinet-feuds-rubio-love-and-a-kim-jong-un-curveball",
+    "tid": 1794959404.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SG",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
@@ -13975,7 +13976,7 @@
     "namn": "The New York Times",
     "rubrik": "A Visual Tour of President Trump’s Visits to Asia",
     "url": "https://www.nytimes.com/2026/11/17/world/asia/president-trump-visits-asia.html",
-    "tid": 1794925577.0,
+    "tid": 1794997476.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -13984,28 +13985,28 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Wall Street Journal",
-    "rubrik": "Asian Stocks Fall as U.S. Moves to Tighten Chip Curbs",
-    "url": "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812?mod=rss_worldnews",
-    "tid": 1794898140.0,
-    "betalvagg": true,
+    "namn": "CGTN",
+    "rubrik": "Trump's meeting with DPRK's top leader serious idea, Rubio says",
+    "url": "https://news.cgtn.com/news/2026-11-18/news-1SafNqrxurm/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+    "tid": 1794964608.0,
+    "betalvagg": false,
     "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Nikkei Asia",
-    "rubrik": "US chip curbs, Nvidia uncertainty weigh on Asian data center stocks",
-    "url": "https://asia.nikkei.com/business/markets/us-chip-curbs-nvidia-uncertainty-weigh-on-asian-data-center-stocks",
-    "tid": null,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "JP",
+    "land": "CN",
     "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
+    "agare": "statlig",
+    "statskontrollerad": true
+   },
+   {
+    "namn": "The National",
+    "rubrik": "Trump to hold nuclear talks with Xi and Putin, with Kim Jong-un possibly joining",
+    "url": "https://www.thenationalnews.com/news/us/2026/11/17/trump-to-hold-nuclear-talks-with-xi-and-putin-with-kim-jong-un-possibly-joining/",
+    "tid": 1794884400.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "AE",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
@@ -14021,7 +14022,7 @@
   "data": null,
   "godkand_tid": 1793948948.5031242,
   "automatisk": false,
-  "uppdaterad_tid": 1794953200.0322223
+  "uppdaterad_tid": 1795000005.5752091
  },
  "ad595b9bde": {
   "id": "ad595b9bde",
@@ -24305,24 +24306,26 @@
  "1d72bc5824": {
   "id": "1d72bc5824",
   "amnen": [
-   "varlden"
+   "europa"
   ],
-  "amnen_sektion": [],
-  "poang": 28.7,
+  "amnen_sektion": [
+   "europa"
+  ],
+  "poang": 33.5,
   "vikt": {
-   "bredd": 0.5,
+   "bredd": 0.69,
    "regioner": {
+    "afrika": 2,
     "norden": 1,
-    "afrika": 1,
-    "europa": 1
+    "europa": 2
    },
-   "timmar": 14,
+   "timmar": 22,
    "konsekvens": {
     "berorda": 4,
     "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "En planerad migrationshubb i Rwanda väcker kritik från FN och människorättsorganisationer om risker för folkrätten, vilket påverkar migranter och flera länders migrationspolitik."
+    "varaktighet": 4,
+    "medel": 4.0,
+    "skal": "Fem EU-länder planerar returhubbar i Rwanda för utvisade migranter, vilket väcker oro för mänskliga rättigheter och folkrätt och kan påverka många människor under flera år."
    },
    "bekraftad": null,
    "maste": false,
@@ -24331,9 +24334,9 @@
    ]
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-17T13:09:17+00:00",
+  "senast": "2026-11-17T14:30:00+00:00",
   "utkast": {
    "rubrik_sv": "Fem EU-länder planerar återvändandecenter i Rwanda för avvisade asylsökande",
    "sammanfattning_sv": "Enligt flera medier planerar fem EU-länder, bland dem Tyskland, Danmark, Österrike, Grekland och Nederländerna, ett återvändandecenter i Rwanda för avvisade asylsökande. FN:s människorättschef och Human Rights Watch uttrycker oro.",
@@ -24479,7 +24482,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.576,
+  "sammanhang": 0.588,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -24488,6 +24491,24 @@
     "norden"
    ],
    "per_region": {
+    "afrika": [
+     {
+      "kalla": "The East African",
+      "land": "KE",
+      "rubrik": "Five EU countries unveil plans for Rwanda deportation hub",
+      "url": "https://www.theeastafrican.co.ke/tea/news/world/five-eu-countries-unveil-plans-for-rwanda-deportation-hub-5674090",
+      "tid": 1794925800.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "HRW: Rwanda 'migration hub' plan risks violating international law",
+      "url": "http://www.africanews.com/2026/11/17/hrw-rwanda-migration-hub-plan-risks-violating-international-law/",
+      "tid": 1794913853.0,
+      "statskontrollerad": false
+     }
+    ],
     "norden": [
      {
       "kalla": "DR Nyheder",
@@ -24495,16 +24516,6 @@
       "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
       "url": "https://www.dr.dk/nyheder/seneste/fn-s-menneskerettighedschef-betaenkelig-ved-rwanda-plan",
       "tid": 1794920957.0,
-      "statskontrollerad": false
-     }
-    ],
-    "afrika": [
-     {
-      "kalla": "Africanews",
-      "land": "CG",
-      "rubrik": "HRW: Rwanda 'migration hub' plan risks violating international law",
-      "url": "http://www.africanews.com/2026/11/17/hrw-rwanda-migration-hub-plan-risks-violating-international-law/",
-      "tid": 1794913853.0,
       "statskontrollerad": false
      }
     ],
@@ -24516,16 +24527,36 @@
       "url": "https://www.dw.com/en/germany-news-plans-for-rwanda-migrant-hub-come-under-fire/live-79965639?maca=en-rss-en-all-1573-rdf",
       "tid": 1794910500.0,
       "statskontrollerad": false
+     },
+     {
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
+      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+      "tid": 1794877859.0,
+      "statskontrollerad": false
      }
     ]
    },
    "blind_flack": null,
-   "grannar_svenska": true,
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
+  "reserv_rubrik": "Five EU countries unveil plans for Rwanda deportation hub",
   "kallor": [
+   {
+    "namn": "The East African",
+    "rubrik": "Five EU countries unveil plans for Rwanda deportation hub",
+    "url": "https://www.theeastafrican.co.ke/tea/news/world/five-eu-countries-unveil-plans-for-rwanda-deportation-hub-5674090",
+    "tid": 1794925800.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "DR Nyheder",
     "rubrik": "FN's menneskerettighedschef betænkelig ved Rwanda-plan",
@@ -24561,6 +24592,18 @@
     "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
+    "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+    "tid": 1794877859.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
@@ -24575,6 +24618,6 @@
   "data": null,
   "godkand_tid": 1794964141.842277,
   "automatisk": true,
-  "uppdaterad_tid": 1794971229.7450302
+  "uppdaterad_tid": 1795000005.5752091
  }
 }
