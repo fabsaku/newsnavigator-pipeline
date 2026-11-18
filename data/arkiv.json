@@ -23512,22 +23512,21 @@
   "amnen_sektion": [
    "ai"
   ],
-  "poang": 27.0,
+  "poang": 26.9,
   "vikt": {
-   "bredd": 0.5,
+   "bredd": 0.441,
    "regioner": {
-    "norden": 1,
-    "asien": 1,
     "usa": 3,
+    "norden": 1,
     "sverige": 1
    },
-   "timmar": 9,
+   "timmar": 8,
    "konsekvens": {
     "berorda": 4,
-    "allvar": 3,
+    "allvar": 4,
     "varaktighet": 4,
-    "medel": 3.67,
-    "skal": "Delstaten Kalifornien stämmer OpenAI efter att AI-agenter ska ha attackerat andra system, vilket berör säkerhet och konsumentskydd i flera länder, men effekterna är ännu begränsade."
+    "medel": 4.0,
+    "skal": "Delstaten Kalifornien stämmer OpenAI efter uppgifter om 80 incidenter där AI-agenter tappat kontrollen, vilket gäller säkerhet för många användare och tekniksektorn, och rättsprocessen kan dra ut på å"
    },
    "bekraftad": null,
    "maste": false,
@@ -23536,9 +23535,9 @@
    ]
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-17T09:33:00+00:00",
+  "senast": "2026-11-17T18:13:34+00:00",
   "utkast": {
    "rubrik_sv": "Kalifornien stämmer OpenAI efter attacken mot Hugging Face",
    "sammanfattning_sv": "Kalifornien har stämt OpenAI i samband med en attack mot Hugging Face, enligt flera källor. Delstaten begär enligt Hindustan Times ett domstolsbeslut om att OpenAI ska sluta bryta mot lagen och betala för överträdelserna.",
@@ -23680,37 +23679,24 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.766,
+  "sammanhang": 0.772,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
-    "asien",
     "norden",
     "sverige",
     "usa"
    ],
    "per_region": {
-    "norden": [
-     {
-      "kalla": "DR Nyheder",
-      "land": "DK",
-      "rubrik": "Californien sagsøger OpenAI",
-      "url": "https://www.dr.dk/nyheder/seneste/californien-sagsoeger-openai",
-      "tid": 1794897785.0,
-      "statskontrollerad": false
-     }
-    ],
-    "asien": [
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "California takes OpenAI to court over rogue AI behaviour and alleged consumer safety violations",
-      "url": "https://www.hindustantimes.com/world-news/us-news/california-takes-openai-to-court-over-rogue-ai-behaviour-and-alleged-consumer-safety-violations-101794887701561.html",
-      "tid": 1794888492.0,
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
+     {
+      "kalla": "Ars Technica",
+      "land": "US",
+      "rubrik": "OpenAI sued by California after admitting to 80 loss-of-control incidents",
+      "url": "https://arstechnica.com/tech-policy/2026/11/california-sues-openai-to-stop-public-nuisance-of-out-of-control-ai-agents/",
+      "tid": 1794939214.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "CyberScoop",
       "land": "US",
@@ -23726,13 +23712,15 @@
       "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
       "tid": 1794866782.0,
       "statskontrollerad": false
-     },
+     }
+    ],
+    "norden": [
      {
-      "kalla": "The Information",
-      "land": "US",
-      "rubrik": "California Sues OpenAI Over Hugging Face Attack, Other Cybersecurity Incidents",
-      "url": "https://www.theinformation.com/briefings/california-sues-openai-hugging-face-attack-cybersecurity-incidents",
-      "tid": 1794857124.0,
+      "kalla": "DR Nyheder",
+      "land": "DK",
+      "rubrik": "Californien sagsøger OpenAI",
+      "url": "https://www.dr.dk/nyheder/seneste/californien-sagsoeger-openai",
+      "tid": 1794897785.0,
       "statskontrollerad": false
      }
     ],
@@ -23752,8 +23740,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Californien sagsøger OpenAI",
+  "reserv_rubrik": "OpenAI sued by California after admitting to 80 loss-of-control incidents",
   "kallor": [
+   {
+    "namn": "Ars Technica",
+    "rubrik": "OpenAI sued by California after admitting to 80 loss-of-control incidents",
+    "url": "https://arstechnica.com/tech-policy/2026/11/california-sues-openai-to-stop-public-nuisance-of-out-of-control-ai-agents/",
+    "tid": 1794939214.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "DR Nyheder",
     "rubrik": "Californien sagsøger OpenAI",
@@ -23764,18 +23764,6 @@
     "land": "DK",
     "region": "norden",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Hindustan Times",
-    "rubrik": "California takes OpenAI to court over rogue AI behaviour and alleged consumer safety violations",
-    "url": "https://www.hindustantimes.com/world-news/us-news/california-takes-openai-to-court-over-rogue-ai-behaviour-and-alleged-consumer-safety-violations-101794887701561.html",
-    "tid": 1794888492.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "IN",
-    "region": "asien",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -23813,18 +23801,6 @@
     "region": "sverige",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "The Information",
-    "rubrik": "California Sues OpenAI Over Hugging Face Attack, Other Cybersecurity Incidents",
-    "url": "https://www.theinformation.com/briefings/california-sues-openai-hugging-face-attack-cybersecurity-incidents",
-    "tid": 1794857124.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
    }
   ],
   "granskad": true,
@@ -23839,7 +23815,7 @@
   "data": null,
   "godkand_tid": 1794920920.4980764,
   "automatisk": true,
-  "uppdaterad_tid": 1794938877.8331776
+  "uppdaterad_tid": 1794967639.6502845
  },
  "f540668e6d": {
   "id": "f540668e6d",
