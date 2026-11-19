@@ -16396,24 +16396,24 @@
   "amnen_sektion": [
    "geopolitik"
   ],
-  "poang": 28.9,
+  "poang": 25.7,
   "vikt": {
-   "bredd": 0.96,
+   "bredd": 0.61,
    "regioner": {
-    "europa": 3,
+    "europa": 4,
     "mellanostern": 1,
-    "asien": 3,
     "sverige": 2,
-    "norden": 1
+    "asien": 1,
+    "usa": 1
    },
-   "timmar": 23,
+   "timmar": 25,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 10,
+  "antal_kallor": 9,
   "har_primarkalla": false,
   "senast": "2026-11-19T07:50:10+00:00",
   "utkast": {
@@ -16550,15 +16550,15 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.669,
+  "sammanhang": 0.677,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
     "mellanostern",
-    "norden",
-    "sverige"
+    "sverige",
+    "usa"
    ],
    "per_region": {
     "europa": [
@@ -16568,6 +16568,14 @@
       "rubrik": "Gaza: Israel launched new offensive on Nuseirat",
       "url": "https://www.france24.com/en/gaza-israel-launched-new-offensive-on-nuseirat",
       "tid": 1795074610.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Guardian",
+      "land": "GB",
+      "rubrik": "Israeli tanks cross ‘yellow line’ boundary into Hamas-controlled central Gaza",
+      "url": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
+      "tid": 1795044325.0,
       "statskontrollerad": false
      },
      {
@@ -16597,32 +16605,6 @@
       "statskontrollerad": false
      }
     ],
-    "asien": [
-     {
-      "kalla": "Dawn",
-      "land": "PK",
-      "rubrik": "Israel forces kill 3 Palestinians in fresh Gaza push",
-      "url": "https://www.dawn.com/news/2045504/israel-forces-kill-3-palestinians-in-fresh-gaza-push",
-      "tid": 1795053308.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "Israel launches ground operation in central Gaza, dozens flee",
-      "url": "https://www.hindustantimes.com/world-news/us-news/israel-launches-ground-operation-in-central-gaza-dozens-flee-101795034643959.html",
-      "tid": 1795034643.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "CGTN",
-      "land": "CN",
-      "rubrik": "Israel displaces Palestinians in Gaza's Deir al-Balah, UN says",
-      "url": "https://news.cgtn.com/news/2026-11-19/Israel-displaces-Palestinians-in-Gaza-s-Deir-al-Balah-UN-says-1SbOgQgmH6g/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-      "tid": 1795046707.0,
-      "statskontrollerad": true
-     }
-    ],
     "sverige": [
      {
       "kalla": "Sveriges Radio Ekot",
@@ -16641,13 +16623,23 @@
       "statskontrollerad": false
      }
     ],
-    "norden": [
+    "asien": [
      {
-      "kalla": "NRK",
-      "land": "NO",
-      "rubrik": "Israel med ny offensiv – tre drept",
-      "url": "https://www.nrk.no/nyheter/israel-med-ny-offensiv-_-tre-drept-1.18084431",
-      "tid": 1795013015.0,
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Israel launches ground operation in central Gaza, dozens flee",
+      "url": "https://www.hindustantimes.com/world-news/us-news/israel-launches-ground-operation-in-central-gaza-dozens-flee-101795034643959.html",
+      "tid": 1795034643.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The New York Times",
+      "land": "US",
+      "rubrik": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
+      "url": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
+      "tid": 1795033771.0,
       "statskontrollerad": false
      }
     ]
@@ -16684,18 +16676,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Dawn",
-    "rubrik": "Israel forces kill 3 Palestinians in fresh Gaza push",
-    "url": "https://www.dawn.com/news/2045504/israel-forces-kill-3-palestinians-in-fresh-gaza-push",
-    "tid": 1795053308.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "PK",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Sveriges Radio Ekot",
     "rubrik": "Israels militär har inlett ny offensiv i Gaza",
     "url": "https://www.sverigesradio.se/artikel/9345808",
@@ -16705,6 +16685,18 @@
     "land": "SE",
     "region": "sverige",
     "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Guardian",
+    "rubrik": "Israeli tanks cross ‘yellow line’ boundary into Hamas-controlled central Gaza",
+    "url": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
+    "tid": 1795044325.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "europa",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -16744,15 +16736,15 @@
     "statskontrollerad": false
    },
    {
-    "namn": "NRK",
-    "rubrik": "Israel med ny offensiv – tre drept",
-    "url": "https://www.nrk.no/nyheter/israel-med-ny-offensiv-_-tre-drept-1.18084431",
-    "tid": 1795013015.0,
-    "betalvagg": false,
+    "namn": "The New York Times",
+    "rubrik": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
+    "url": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
+    "tid": 1795033771.0,
+    "betalvagg": true,
     "typ": "media",
-    "land": "NO",
-    "region": "norden",
-    "agare": "public-service",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -16766,24 +16758,12 @@
     "region": "sverige",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "CGTN",
-    "rubrik": "Israel displaces Palestinians in Gaza's Deir al-Balah, UN says",
-    "url": "https://news.cgtn.com/news/2026-11-19/Israel-displaces-Palestinians-in-Gaza-s-Deir-al-Balah-UN-says-1SbOgQgmH6g/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-    "tid": 1795046707.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "CN",
-    "region": "asien",
-    "agare": "statlig",
-    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "relevans": {
    "sv": 3,
-   "en": 2
+   "en": 3
   },
   "autopilot": [
    "inget utkast",
@@ -16792,6 +16772,6 @@
   "data": null,
   "godkand_tid": 1795057647.7497826,
   "automatisk": true,
-  "uppdaterad_tid": 1795075630.3900495
+  "uppdaterad_tid": 1795082859.148178
  }
 }
