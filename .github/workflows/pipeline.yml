@@ -2,9 +2,8 @@ name: Newsnavigator pipeline
 
 on:
   schedule:
-    # Tider i UTC. Varje timme 06-23 svensk sommartid (05-22 vintertid), två körningar natten.
-    - cron: "17 4-21 * * *"
-    - cron: "17 0,2 * * *"
+    # Reserv till klockan i Cloudflare: varje timme, dygnet runt, året om (Actions är gratis i publika repon).
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,7 +17,9 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
+    env:
+      NN_LANSERAD: "1"        # sajten är öppen för sökmotorer (tar bort noindex, skapar sitemap)
     steps:
       - name: Starttid
         run: echo "NN_START=$(date +%s)" >> "$GITHUB_ENV"
@@ -38,9 +39,8 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: hf-paraphrase-multilingual-MiniLM-L12-v2
-      - name: Kontrollera källor (nattkörningarna)
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0,2 * * *'
-        run: python verify_feeds.py
+      - name: Kontrollera källor (en gång per dygn, kl 03 UTC)
+        run: if [ "$(date -u +%H)" = "03" ]; then python verify_feeds.py; fi
       - name: Läs godkännanden från granskningsärendet
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

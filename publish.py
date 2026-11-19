@@ -12,6 +12,7 @@ import json
 import os
 import shutil
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 import sajt
@@ -41,6 +42,13 @@ def preview(out):
     if png.exists():
         shutil.copy(png, out / "newsgator.png")
     print(f"Förhandsvisning: {stats['notiser']} notiser -> {out}")
+
+
+def skriv_status(public, data, notiser):
+    """status.json: när sajten byggdes, när flödet skapades och hur många händelser. Går att övervaka utifrån."""
+    (Path(public) / "status.json").write_text(json.dumps(
+        {"byggd": datetime.now(timezone.utc).isoformat(), "flode_skapat": data.get("skapad"),
+         "handelser": len(data.get("handelser", [])), "notiser": notiser}, ensure_ascii=False), encoding="utf-8")
 
 
 def main():
@@ -83,6 +91,7 @@ def main():
         sitemap.write_text(sajt.sitemap_xml(stats["per_utgava"]), encoding="utf-8")
     elif sitemap.exists():
         sitemap.unlink()
+    skriv_status(PUBLIC, flode, len(events))
     print(f"Publik sajt: {len(events)} granskade notiser, {len(stats['per_utgava']['sv'])} i /sv/ och {len(stats['per_utgava']['en'])} i /en/ -> {PUBLIC}")
 
 
