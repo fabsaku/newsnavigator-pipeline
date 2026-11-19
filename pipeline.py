@@ -587,7 +587,7 @@ def reply_text(msg):
     return text
 
 
-def translate_titles(items, client, model, cache, batch=60):
+def translate_titles(items, client, model, cache, batch=60, tillat=True):
     """Översätter icke-engelska rubriker till engelska (title_en) så att grupperingen fungerar över språk.
 
     Rubriker som redan översatts hämtas ur cachen. Returnerar True om alla omgångar lyckades.
@@ -614,8 +614,8 @@ def translate_titles(items, client, model, cache, batch=60):
         text = reply_text(msg)
         return part, json.loads(text[text.find("["): text.rfind("]") + 1])
 
-    ok = True
-    parts = [todo[k:k + batch] for k in range(0, len(todo), batch)]
+    ok = tillat or not todo        # utan tillstånd och med rubriker kvar att översätta är översättningen inte fullständig
+    parts = [todo[k:k + batch] for k in range(0, len(todo), batch)] if tillat else []     # tillat=False: bara cachen
     with ThreadPoolExecutor(WORKERS) as pool:
         for fut in [pool.submit(run, p) for p in parts]:
             try:
@@ -686,7 +686,10 @@ def main():
     items, report = fetch(sources, args.max_age_hours)
     import sidlasare
     sidlasare.spara(aktiva={s["id"] for s in sources if s.get("hamtning") == "sida"})
-    cross_language = translate_titles(items, client, model, cache) if client else False
+    ai_ok = bool(client) and not budget.over()          # dygnets tak nått: bara det som redan finns i cachen
+    if client and not ai_ok:
+        print(f"AI-taket för dygnet är nått ({kostnad.dagens_usd():.3f} USD): inga nya AI-anrop denna körning, cachen används")
+    cross_language = translate_titles(items, client, model, cache, tillat=ai_ok) if client else False
     clusters = merge_clusters(cluster(items))
     if os.environ.get("NN_SEMANTISK") != "0":           # hybridens andra varv (semantisk.py); saknas modellen används klustren som de är
         import semantisk
@@ -701,7 +704,7 @@ def main():
     for c in clusters:
         c["score"], c["vikt"] = vikt_mod.vikt(c, totals)
     clusters.sort(key=lambda c: c["score"], reverse=True)
-    if client:
+    if ai_ok:
         top = clusters[:KONSEKVENS_TOPP]
 
         def kons_for(c):
@@ -733,7 +736,7 @@ def main():
         hit = cache["utkast"].get(c["id"])
         if hit and hit.get("fingeravtryck") == c["fingeravtryck"]:
             kontroll = hit.get("kontroll")
-            if kontroll is None and client:
+            if kontroll is None and ai_ok:
                 try:
                     kontroll = kallkontroll.check(c, hit["utkast"], client, model, reply_text)
                 except Exception as e:
@@ -757,7 +760,7 @@ def main():
 
     # Berättelserna (berattelser.py): de olika sätten källorna berättar händelsen på. Sparas, visas först efter utvärderingen.
     narrativ = {}
-    if client:
+    if ai_ok:
         kandidater = [(c, d) for c, (d, _, _) in zip(chosen, results)
                       if d and not d.get("osaker") and d.get("rubrik_sv") and berattelser.kvalificerad(c)][:NARRATIV_TOPP]
         with ThreadPoolExecutor(WORKERS) as pool:
@@ -768,7 +771,7 @@ def main():
 
     # Analys-raden (betydelse.py): vad händelsen betyder för svenska och engelska läsaren. Sparas, visas först efter utvärderingen.
     bet = {}
-    if client:
+    if ai_ok:
         kand = [(c, d) for c, (d, _, _) in zip(chosen, results) if d and not d.get("osaker") and d.get("rubrik_sv")][:BETYDELSE_TOPP]
         with ThreadPoolExecutor(WORKERS) as pool:
             for (c, _), b in zip(kand, pool.map(lambda cd: betydelse.bygg(cd[0], cd[1], client, model, reply_text, cache), kand)):

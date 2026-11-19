@@ -89,3 +89,19 @@ def test_effort_laggs_pa_som_standard_och_kan_stangas_av(monkeypatch):
     monkeypatch.setenv("NN_AI_EFFORT", "")
     k.messages.create(model="x", max_tokens=1, messages=[])
     assert "extra_body" not in sett
+
+
+def test_over_dagstaket_stoppar_ocksa_de_ovriga_ai_stegen():
+    assert kostnad.Budget(4, 0.15, 0.15).over() is True
+    assert kostnad.Budget(4, 0.15, 0.10).over() is False
+    assert kostnad.Budget(4, 0, 99).over() is False, "0 betyder ingen gräns"
+
+
+def test_pipelinens_valfria_ai_steg_respekterar_dagstaket():
+    import inspect
+    import pipeline
+    main = inspect.getsource(pipeline.main)
+    assert "ai_ok" in main
+    for steg in ("translate_titles(items, client", "top = clusters[:KONSEKVENS_TOPP]", "kandidater = [(c, d)", "kand = [(c, d)"):
+        i = main.index(steg)
+        assert "ai_ok" in main[max(0, i - 160): i + 60], steg

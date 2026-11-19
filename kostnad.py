@@ -104,6 +104,10 @@ class Budget:
         self.nekade = 0
         self._las = threading.Lock()
 
+    def over(self):
+        """Dygnets tak är nått vid körningens start: inga valfria AI-steg (översättning, konsekvens, berättelser, Analys, ny källkontroll)."""
+        return bool(self.dagstak and self.redan >= self.dagstak)
+
     def far_nytt(self):
         with self._las:
             if (self.max_nya and self.nya >= self.max_nya) or (self.dagstak and self.redan >= self.dagstak):
