@@ -19940,35 +19940,38 @@
  },
  "b974a93c26": {
   "id": "b974a93c26",
-  "amnen": [],
-  "amnen_sektion": [],
-  "poang": 37.3,
+  "amnen": [
+   "geopolitik"
+  ],
+  "amnen_sektion": [
+   "geopolitik"
+  ],
+  "poang": 36.6,
   "vikt": {
-   "bredd": 1.159,
+   "bredd": 1.162,
    "regioner": {
-    "asien": 2,
-    "sverige": 2,
-    "europa": 5,
     "mellanostern": 2,
-    "norden": 1,
-    "usa": 1
+    "asien": 4,
+    "sverige": 2,
+    "europa": 3,
+    "norden": 1
    },
-   "timmar": 18,
+   "timmar": 19,
    "konsekvens": {
-    "berorda": 5,
+    "berorda": 4,
     "allvar": 5,
     "varaktighet": 4,
-    "medel": 4.67,
-    "skal": "Israel inleder en markoffensiv bortom gränslinjen i centrala Gaza, vilket hotar liv för en stor civilbefolkning och riskerar att eskalera kriget."
+    "medel": 4.33,
+    "skal": "Israels nya markoffensiv i centrala Gaza tvingar tusentals att fly, dödar civila och hotar att förvärra en redan katastrofal humanitär situation under lång tid."
    },
    "bekraftad": true,
    "maste": true,
    "spar": []
   },
   "maste": true,
-  "antal_kallor": 13,
+  "antal_kallor": 12,
   "har_primarkalla": false,
-  "senast": "2026-11-19T01:27:00+00:00",
+  "senast": "2026-11-19T03:19:04+00:00",
   "utkast": {
    "rubrik_sv": "Israel inleder markoperation i centrala Gaza",
    "sammanfattning_sv": "Israels militär har inlett en markoperation i centrala Gaza, enligt flera medier, med stridsvagnar som korsar den så kallade gula linjen. Enligt The Japan Times uppger organet som övervakar vapenvilan att både Israel och Hamas inte har uppfyllt sina åtaganden.",
@@ -20103,29 +20106,38 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.658,
+  "sammanhang": 0.677,
   "betydelse": {
    "sv": null,
-   "en": "Because Israeli tanks crossed the Yellow Line while Washington's top Middle East military commander held talks in Israel, the Gaza ceasefire becomes a question for US Middle East policy.",
+   "en": "Since several outlets report that Israel's military has launched a ground operation in central Gaza despite a ceasefire, the conflict is linked to oil prices, which affect what households pay at the pump.",
    "grund": [
-    4,
-    13
+    1,
+    2,
+    3,
+    9
    ],
    "grund_kallor": [
     {
-     "namn": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
+     "namn": "Middle East Eye",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-flee-gazas-nuseirat-israeli-army-launches-ground"
     },
     {
-     "namn": "RT",
-     "url": "https://rt-english.com/news/649040-israel-gaza-ground-operation/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
+     "namn": "Dawn",
+     "url": "https://www.dawn.com/news/2045504/israel-forces-kill-3-palestinians-in-fresh-gaza-push"
+    },
+    {
+     "namn": "The Japan Times",
+     "url": "https://www.japantimes.co.jp/news/2026/11/19/world/israel-ground-operation-gaza/"
+    },
+    {
+     "namn": "Deutsche Welle",
+     "url": "https://www.dw.com/en/israel-launches-new-ground-operation-in-gaza/a-79984958?maca=en-rss-en-all-1573-rdf"
     }
    ],
    "kontroll": {
     "ok": false,
     "problem": [
-     "slutsats: \"Because\" anger ett orsakssamband mellan tankarnas korsning och befälhavarens besök. Källan (RT) säger bara att incursionen sker \"amid\" besöket, alltså samtidigt.",
-     "slutsats: \"the Gaza ceasefire becomes a question for US Middle East policy\" är en slutsats om vad händelsen betyder för USA. Den följer inte av källmaterialet, som inte säger något om amerikansk politik."
+     "ingen koppling: Kopplingen från markoperationen i Gaza till oljepriser och bensinpriset vid pumpen är långsökt och saknar stöd i källmaterialet, som inte nämner olja eller priser."
     ]
    },
    "ok": false
@@ -20136,11 +20148,36 @@
     "europa",
     "mellanostern",
     "norden",
-    "sverige",
-    "usa"
+    "sverige"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Middle East Eye",
+      "land": "GB",
+      "rubrik": "Watch: Palestinians flee Gaza’s Nuseirat as Israeli army launches ground operation",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-flee-gazas-nuseirat-israeli-army-launches-ground",
+      "tid": 1795058344.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "What does Israel’s new ground offensive mean for Palestinians in Gaza?",
+      "url": "https://www.aljazeera.com/news/2026/11/18/what-does-israels-new-ground-offensive-mean-for-palestinians-in-gaza?traffic_source=rss",
+      "tid": 1795034286.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
+     {
+      "kalla": "Dawn",
+      "land": "PK",
+      "rubrik": "Israel forces kill 3 Palestinians in fresh Gaza push",
+      "url": "https://www.dawn.com/news/2045504/israel-forces-kill-3-palestinians-in-fresh-gaza-push",
+      "tid": 1795053308.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Japan Times",
       "land": "JP",
@@ -20156,6 +20193,14 @@
       "url": "https://www.hindustantimes.com/world-news/us-news/israel-launches-ground-operation-in-central-gaza-dozens-flee-101795034643959.html",
       "tid": 1795034643.0,
       "statskontrollerad": false
+     },
+     {
+      "kalla": "CGTN",
+      "land": "CN",
+      "rubrik": "Israel displaces Palestinians in Gaza's Deir al-Balah, UN says",
+      "url": "https://news.cgtn.com/news/2026-11-19/Israel-displaces-Palestinians-in-Gaza-s-Deir-al-Balah-UN-says-1SbOgQgmH6g/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+      "tid": 1795046707.0,
+      "statskontrollerad": true
      }
     ],
     "sverige": [
@@ -20177,14 +20222,6 @@
      }
     ],
     "europa": [
-     {
-      "kalla": "The Guardian",
-      "land": "GB",
-      "rubrik": "Israeli tanks cross ‘yellow line’ boundary into Hamas-controlled central Gaza",
-      "url": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
-      "tid": 1795044325.0,
-      "statskontrollerad": false
-     },
      {
       "kalla": "BBC World",
       "land": "GB",
@@ -20208,32 +20245,6 @@
       "url": "https://www.dw.com/en/israel-launches-new-ground-operation-in-gaza/a-79984958?maca=en-rss-en-all-1573-rdf",
       "tid": 1795026540.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "RT",
-      "land": "RU",
-      "rubrik": "Israeli tanks roll into Gaza amid top US commander’s visit",
-      "url": "https://rt-english.com/news/649040-israel-gaza-ground-operation/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-      "tid": 1795046192.0,
-      "statskontrollerad": true
-     }
-    ],
-    "mellanostern": [
-     {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Israeli forces say ground operation in Gaza to dismantle Hamas tunnels",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-say-ground-operation-gaza-dismantle-hamas-tunnels",
-      "tid": 1795034910.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "What does Israel’s new ground offensive mean for Palestinians in Gaza?",
-      "url": "https://www.aljazeera.com/news/2026/11/18/what-does-israels-new-ground-offensive-mean-for-palestinians-in-gaza?traffic_source=rss",
-      "tid": 1795034286.0,
-      "statskontrollerad": false
      }
     ],
     "norden": [
@@ -20245,16 +20256,6 @@
       "tid": 1795013015.0,
       "statskontrollerad": false
      }
-    ],
-    "usa": [
-     {
-      "kalla": "The New York Times",
-      "land": "US",
-      "rubrik": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
-      "url": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
-      "tid": 1795033771.0,
-      "statskontrollerad": false
-     }
     ]
    },
    "blind_flack": null,
@@ -20262,8 +20263,32 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Israel launches ground operation in central Gaza as dozens flee",
+  "reserv_rubrik": "Watch: Palestinians flee Gaza’s Nuseirat as Israeli army launches ground operation",
   "kallor": [
+   {
+    "namn": "Middle East Eye",
+    "rubrik": "Watch: Palestinians flee Gaza’s Nuseirat as Israeli army launches ground operation",
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-flee-gazas-nuseirat-israeli-army-launches-ground",
+    "tid": 1795058344.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "GB",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Dawn",
+    "rubrik": "Israel forces kill 3 Palestinians in fresh Gaza push",
+    "url": "https://www.dawn.com/news/2045504/israel-forces-kill-3-palestinians-in-fresh-gaza-push",
+    "tid": 1795053308.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "PK",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Japan Times",
     "rubrik": "Israel launches ground operation in central Gaza as dozens flee",
@@ -20289,18 +20314,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Guardian",
-    "rubrik": "Israeli tanks cross ‘yellow line’ boundary into Hamas-controlled central Gaza",
-    "url": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
-    "tid": 1795044325.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "BBC World",
     "rubrik": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
     "url": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
@@ -20310,18 +20323,6 @@
     "land": "GB",
     "region": "europa",
     "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Middle East Eye",
-    "rubrik": "Israeli forces say ground operation in Gaza to dismantle Hamas tunnels",
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-say-ground-operation-gaza-dismantle-hamas-tunnels",
-    "tid": 1795034910.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "mellanostern",
-    "agare": "privat",
     "statskontrollerad": false
    },
    {
@@ -20385,18 +20386,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The New York Times",
-    "rubrik": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
-    "url": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
-    "tid": 1795033771.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "US",
-    "region": "usa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Dagens Nyheter",
     "rubrik": "Israel i ny insats mot Gaza",
     "url": "https://www.dn.se/varlden/israel-i-ny-insats-mot-gaza/",
@@ -20409,14 +20398,14 @@
     "statskontrollerad": false
    },
    {
-    "namn": "RT",
-    "rubrik": "Israeli tanks roll into Gaza amid top US commander’s visit",
-    "url": "https://rt-english.com/news/649040-israel-gaza-ground-operation/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-    "tid": 1795046192.0,
+    "namn": "CGTN",
+    "rubrik": "Israel displaces Palestinians in Gaza's Deir al-Balah, UN says",
+    "url": "https://news.cgtn.com/news/2026-11-19/Israel-displaces-Palestinians-in-Gaza-s-Deir-al-Balah-UN-says-1SbOgQgmH6g/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+    "tid": 1795046707.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "RU",
-    "region": "europa",
+    "land": "CN",
+    "region": "asien",
     "agare": "statlig",
     "statskontrollerad": true
    }
@@ -20424,11 +20413,12 @@
   "granskad": true,
   "relevans": {
    "sv": 3,
-   "en": 3
+   "en": 2
   },
   "autopilot": [],
   "data": null,
   "godkand_tid": 1795057647.7497826,
-  "automatisk": true
+  "automatisk": true,
+  "uppdaterad_tid": 1795061388.442897
  }
 }
