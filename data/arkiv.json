@@ -17335,25 +17335,26 @@
   "amnen_sektion": [
    "geopolitik"
   ],
-  "poang": 25.7,
+  "poang": 28.9,
   "vikt": {
-   "bredd": 0.66,
+   "bredd": 0.96,
    "regioner": {
+    "europa": 3,
     "mellanostern": 1,
     "asien": 3,
     "sverige": 2,
-    "europa": 3
+    "norden": 1
    },
-   "timmar": 22,
+   "timmar": 23,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 9,
+  "antal_kallor": 10,
   "har_primarkalla": false,
-  "senast": "2026-11-19T03:19:04+00:00",
+  "senast": "2026-11-19T07:50:10+00:00",
   "utkast": {
    "rubrik_sv": "Israel inleder markoperation i centrala Gaza",
    "sammanfattning_sv": "Israels militär har inlett en markoperation i centrala Gaza, enligt flera medier, med stridsvagnar som korsar den så kallade gula linjen. Enligt The Japan Times uppger organet som övervakar vapenvilan att både Israel och Hamas inte har uppfyllt sina åtaganden.",
@@ -17488,16 +17489,43 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.681,
+  "sammanhang": 0.669,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
     "mellanostern",
+    "norden",
     "sverige"
    ],
    "per_region": {
+    "europa": [
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Gaza: Israel launched new offensive on Nuseirat",
+      "url": "https://www.france24.com/en/gaza-israel-launched-new-offensive-on-nuseirat",
+      "tid": 1795074610.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "BBC World",
+      "land": "GB",
+      "rubrik": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+      "url": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
+      "tid": 1795041296.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "Deutsche Welle",
+      "land": "DE",
+      "rubrik": "Israel launches new ground operation in Gaza",
+      "url": "https://www.dw.com/en/israel-launches-new-ground-operation-in-gaza/a-79984958?maca=en-rss-en-all-1573-rdf",
+      "tid": 1795026540.0,
+      "statskontrollerad": false
+     }
+    ],
     "mellanostern": [
      {
       "kalla": "Middle East Eye",
@@ -17552,29 +17580,13 @@
       "statskontrollerad": false
      }
     ],
-    "europa": [
+    "norden": [
      {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
-      "url": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
-      "tid": 1795041296.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "France 24",
-      "land": "FR",
-      "rubrik": "Israeli army launches ground operation in Hamas-controlled area of Gaza",
-      "url": "https://www.france24.com/en/israeli-army-launches-ground-operation-in-hamas-controlled-area-of-gaza",
-      "tid": 1795031715.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Deutsche Welle",
-      "land": "DE",
-      "rubrik": "Israel launches new ground operation in Gaza",
-      "url": "https://www.dw.com/en/israel-launches-new-ground-operation-in-gaza/a-79984958?maca=en-rss-en-all-1573-rdf",
-      "tid": 1795026540.0,
+      "kalla": "NRK",
+      "land": "NO",
+      "rubrik": "Israel med ny offensiv – tre drept",
+      "url": "https://www.nrk.no/nyheter/israel-med-ny-offensiv-_-tre-drept-1.18084431",
+      "tid": 1795013015.0,
       "statskontrollerad": false
      }
     ]
@@ -17584,8 +17596,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Watch: Palestinians flee Gaza’s Nuseirat as Israeli army launches ground operation",
+  "reserv_rubrik": "Gaza: Israel launched new offensive on Nuseirat",
   "kallor": [
+   {
+    "namn": "France 24",
+    "rubrik": "Gaza: Israel launched new offensive on Nuseirat",
+    "url": "https://www.france24.com/en/gaza-israel-launched-new-offensive-on-nuseirat",
+    "tid": 1795074610.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
+    "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
    {
     "namn": "Middle East Eye",
     "rubrik": "Watch: Palestinians flee Gaza’s Nuseirat as Israeli army launches ground operation",
@@ -17647,18 +17671,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "France 24",
-    "rubrik": "Israeli army launches ground operation in Hamas-controlled area of Gaza",
-    "url": "https://www.france24.com/en/israeli-army-launches-ground-operation-in-hamas-controlled-area-of-gaza",
-    "tid": 1795031715.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "FR",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Deutsche Welle",
     "rubrik": "Israel launches new ground operation in Gaza",
     "url": "https://www.dw.com/en/israel-launches-new-ground-operation-in-gaza/a-79984958?maca=en-rss-en-all-1573-rdf",
@@ -17667,6 +17679,18 @@
     "typ": "media",
     "land": "DE",
     "region": "europa",
+    "agare": "public-service",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "NRK",
+    "rubrik": "Israel med ny offensiv – tre drept",
+    "url": "https://www.nrk.no/nyheter/israel-med-ny-offensiv-_-tre-drept-1.18084431",
+    "tid": 1795013015.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "NO",
+    "region": "norden",
     "agare": "public-service",
     "statskontrollerad": false
    },
@@ -17707,6 +17731,6 @@
   "data": null,
   "godkand_tid": 1795057647.7497826,
   "automatisk": true,
-  "uppdaterad_tid": 1795073633.3777945
+  "uppdaterad_tid": 1795075630.3900495
  }
 }
