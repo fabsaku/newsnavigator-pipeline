@@ -6464,24 +6464,25 @@
    "geopolitik",
    "usa"
   ],
-  "poang": 29.3,
+  "poang": 28.0,
   "vikt": {
-   "bredd": 0.398,
+   "bredd": 0.561,
    "regioner": {
+    "afrika": 1,
     "asien": 4,
     "mellanostern": 1,
-    "usa": 1
+    "usa": 2
    },
-   "timmar": 96,
+   "timmar": 49,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 8,
   "har_primarkalla": false,
-  "senast": "2026-11-21T03:20:00+00:00",
+  "senast": "2026-11-21T08:22:34+00:00",
   "utkast": {
    "rubrik_sv": "Trump säger att Putin vill avsluta kriget i Ukraina",
    "sammanfattning_sv": "Enligt Axios och Meduza sa Trump från Air Force One till europeiska ledare att Putin vill avsluta kriget i Ukraina. Efter ett möte med Xi Jinping och Putin under APEC-toppmötet uppger Trump att man även diskuterade kriget i Iran.",
@@ -6585,15 +6586,26 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.704,
+  "sammanhang": 0.632,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "afrika",
     "asien",
     "mellanostern",
     "usa"
    ],
    "per_region": {
+    "afrika": [
+     {
+      "kalla": "Nation (Kenya)",
+      "land": "KE",
+      "rubrik": "Iran wants diplomacy to end war, Trump says terms unacceptable",
+      "url": "https://nation.africa/kenya/news/world/iran-wants-diplomacy-to-end-war-trump-says-terms-unacceptable-5679108",
+      "tid": 1795249354.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "The Japan Times",
@@ -6614,9 +6626,9 @@
      {
       "kalla": "Hindustan Times",
       "land": "IN",
-      "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
-      "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
-      "tid": 1795166718.0,
+      "rubrik": "Netanyahu says Iran war ‘unavoidable’, but Trump officials are sceptical: Report",
+      "url": "https://www.hindustantimes.com/world-news/netanyahu-says-iran-war-unavoidable-but-trump-officials-are-skeptical-report-101795174563904.html",
+      "tid": 1795180692.0,
       "statskontrollerad": false
      },
      {
@@ -6640,6 +6652,14 @@
     ],
     "usa": [
      {
+      "kalla": "The Daily Caller",
+      "land": "US",
+      "rubrik": "Israel Supplied The ‘Intel’ That Iran Is Planning Chemical Weapon Attack On Trump Officials: REPORT",
+      "url": "https://dailycaller.com/2026/11/20/scott-bessent-israel-intel-iran-planning-chemical-weapon-attack-on-trump-officials-report-benjamin-netanyahu",
+      "tid": 1795194552.0,
+      "statskontrollerad": false
+     },
+     {
       "kalla": "Axios",
       "land": "US",
       "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
@@ -6649,13 +6669,44 @@
      }
     ]
    },
-   "blind_flack": null,
-   "grannar_svenska": true,
-   "usa": null,
+   "blind_flack": "saknas_i_sverige",
+   "grannar_svenska": false,
+   "usa": {
+    "rod": [
+     {
+      "kalla": "The Daily Caller",
+      "rubrik": "Israel Supplied The ‘Intel’ That Iran Is Planning Chemical Weapon Attack On Trump Officials: REPORT",
+      "url": "https://dailycaller.com/2026/11/20/scott-bessent-israel-intel-iran-planning-chemical-weapon-attack-on-trump-officials-report-benjamin-netanyahu",
+      "tid": 1795194552.0,
+      "lutning": "hoger"
+     }
+    ],
+    "bla": [
+     {
+      "kalla": "Axios",
+      "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
+      "url": "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal",
+      "tid": 1795138259.0,
+      "lutning": "lutar_vanster"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "Iran foreign minister wants diplomacy to end war; Trump says terms unacceptable",
+  "reserv_rubrik": "Iran wants diplomacy to end war, Trump says terms unacceptable",
   "kallor": [
+   {
+    "namn": "Nation (Kenya)",
+    "rubrik": "Iran wants diplomacy to end war, Trump says terms unacceptable",
+    "url": "https://nation.africa/kenya/news/world/iran-wants-diplomacy-to-end-war-trump-says-terms-unacceptable-5679108",
+    "tid": 1795249354.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "KE",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "The Japan Times",
     "rubrik": "Iran foreign minister wants diplomacy to end war; Trump says terms unacceptable",
@@ -6693,10 +6744,22 @@
     "statskontrollerad": false
    },
    {
+    "namn": "The Daily Caller",
+    "rubrik": "Israel Supplied The ‘Intel’ That Iran Is Planning Chemical Weapon Attack On Trump Officials: REPORT",
+    "url": "https://dailycaller.com/2026/11/20/scott-bessent-israel-intel-iran-planning-chemical-weapon-attack-on-trump-officials-report-benjamin-netanyahu",
+    "tid": 1795194552.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "Hindustan Times",
-    "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
-    "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
-    "tid": 1795166718.0,
+    "rubrik": "Netanyahu says Iran war ‘unavoidable’, but Trump officials are sceptical: Report",
+    "url": "https://www.hindustantimes.com/world-news/netanyahu-says-iran-war-unavoidable-but-trump-officials-are-skeptical-report-101795174563904.html",
+    "tid": 1795180692.0,
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
@@ -6736,12 +6799,13 @@
   },
   "autopilot": [
    "inget utkast",
-   "ingen källkontroll"
+   "ingen källkontroll",
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1795144060.5539627,
   "automatisk": true,
-  "uppdaterad_tid": 1795259148.6527984
+  "uppdaterad_tid": 1795266311.9036207
  },
  "a5940a11a3": {
   "id": "a5940a11a3",
@@ -7157,17 +7221,16 @@
    "ai",
    "usa"
   ],
-  "poang": 31.9,
+  "poang": 31.1,
   "vikt": {
-   "bredd": 0.712,
+   "bredd": 0.62,
    "regioner": {
     "latinamerika": 2,
     "asien": 2,
     "europa": 3,
-    "usa": 5,
-    "sverige": 1
+    "usa": 5
    },
-   "timmar": 42,
+   "timmar": 43,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
@@ -7176,7 +7239,7 @@
    ]
   },
   "maste": false,
-  "antal_kallor": 13,
+  "antal_kallor": 12,
   "har_primarkalla": false,
   "senast": "2026-11-21T06:22:00+00:00",
   "utkast": {
@@ -7289,14 +7352,13 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.711,
+  "sammanhang": 0.732,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
     "latinamerika",
-    "sverige",
     "usa"
    ],
    "per_region": {
@@ -7403,19 +7465,9 @@
       "tid": 1795200683.0,
       "statskontrollerad": false
      }
-    ],
-    "sverige": [
-     {
-      "kalla": "Sveriges Radio Ekot",
-      "land": "SE",
-      "rubrik": "Trumps hot: Inga amerikanska datacenter utanför USA",
-      "url": "https://www.sverigesradio.se/artikel/9347550",
-      "tid": 1795201560.0,
-      "statskontrollerad": false
-     }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
    "usa": {
     "mitten": [
@@ -7540,18 +7592,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Sveriges Radio Ekot",
-    "rubrik": "Trumps hot: Inga amerikanska datacenter utanför USA",
-    "url": "https://www.sverigesradio.se/artikel/9347550",
-    "tid": 1795201560.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "public-service",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Verge",
     "rubrik": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
     "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
@@ -7614,16 +7654,17 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 2,
+   "sv": 1,
    "en": 3
   },
   "autopilot": [
    "inget utkast",
-   "ingen källkontroll"
+   "ingen källkontroll",
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1795223249.2858202,
   "automatisk": true,
-  "uppdaterad_tid": 1795262719.8444667
+  "uppdaterad_tid": 1795266311.9036207
  }
 }
