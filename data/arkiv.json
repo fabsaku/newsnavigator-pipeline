@@ -8017,18 +8017,19 @@
  "e86779e359": {
   "id": "e86779e359",
   "amnen": [
-   "asien",
-   "geopolitik",
-   "varlden"
+   "geopolitik"
   ],
   "amnen_sektion": [
    "geopolitik"
   ],
-  "poang": 26.5,
+  "poang": 29.1,
   "vikt": {
-   "bredd": 0.118,
+   "bredd": 0.376,
    "regioner": {
-    "asien": 2
+    "asien": 2,
+    "afrika": 1,
+    "europa": 2,
+    "usa": 1
    },
    "timmar": 96,
    "konsekvens": null,
@@ -8037,9 +8038,9 @@
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 2,
+  "antal_kallor": 6,
   "har_primarkalla": false,
-  "senast": "2026-11-20T20:01:36+00:00",
+  "senast": "2026-11-21T07:42:03+00:00",
   "utkast": {
    "rubrik_sv": "Merz: Europeiska ledare kan delta i nya samtal om Ukraina snart",
    "sammanfattning_sv": "Tysklands förbundskansler Friedrich Merz säger att europeiska ledare kan delta i nya samtal om Ukraina snart. Förenade Arabemiraten nämns som en möjlig plats, enligt Straits Times.",
@@ -8145,14 +8146,25 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.549,
+  "sammanhang": 0.556,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
-    "asien"
+    "afrika",
+    "asien",
+    "europa",
+    "usa"
    ],
    "per_region": {
     "asien": [
+     {
+      "kalla": "The Hindu",
+      "land": "IN",
+      "rubrik": "Russia dusts off its pre-war demands as the U.S. raises discussing European security at Ukraine talks",
+      "url": "https://www.thehindu.com/news/international/russia-dusts-off-its-pre-war-demands-as-the-us-raises-discussing-european-security-at-ukraine-talks/article71727588.ece",
+      "tid": 1795246923.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "Hindustan Times",
       "land": "IN",
@@ -8160,24 +8172,78 @@
       "url": "https://www.hindustantimes.com/world-news/us-news/troops-from-europe-s-coalition-for-ukraine-train-in-war-s-shadow-101795204897221.html",
       "tid": 1795204896.0,
       "statskontrollerad": false
+     }
+    ],
+    "afrika": [
+     {
+      "kalla": "Daily Maverick",
+      "land": "ZA",
+      "rubrik": "WAR IN EUROPE: Ukrainian children abducted, tortured and forced to fight for Russia",
+      "url": "https://www.dailymaverick.co.za/article/2026-11-21-ukrainian-children-abducted-tortured-and-forced-to-fight-for-russia/",
+      "tid": 1795239000.0,
+      "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "Meduza",
+      "land": "LV",
+      "rubrik": "Russian edition of Alexandra Prokopenko’s ‘From Sovereigns to Servants: How the War Against Ukraine Reshaped Russia’s Elite’ wins special prize for political nonfiction",
+      "url": "https://meduza.io/en/news/2026/11/19/russian-edition-of-alexandra-prokopenko-s-from-sovereigns-to-servants-how-the-war-against-ukraine-reshaped-russia-s-elite-wins-special-prize-for-political-nonfiction",
+      "tid": 1795121658.0,
+      "statskontrollerad": false
      },
      {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "European troops from 11 countries hold a drill in Poland for a potential post-war Ukraine mission",
-      "url": "https://www.straitstimes.com/world/europe/european-troops-from-11-countries-hold-a-drill-in-poland-for-a-potential-post-war-ukraine-mission",
-      "tid": 1795188419.0,
+      "kalla": "RT",
+      "land": "RU",
+      "rubrik": "Trilateral diplomacy, Russian retribution in Ukraine, AI’s source wars: The stories that shaped the week",
+      "url": "https://rt-english.com/news/649169-rt-top-stories-putin-trump-xi-china/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+      "tid": 1795205087.0,
+      "statskontrollerad": true
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "Opinion | Ukraine’s Long Russian War",
+      "url": "https://www.wsj.com/opinion/ukraines-long-russian-war-6c14160f?mod=rss_worldnews",
+      "tid": 1795194720.0,
       "statskontrollerad": false
      }
     ]
    },
    "blind_flack": null,
-   "grannar_svenska": false,
+   "grannar_svenska": true,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Troops from Europe's coalition for Ukraine train in war's shadow",
+  "reserv_rubrik": "Russia dusts off its pre-war demands as the U.S. raises discussing European security at Ukraine talks",
   "kallor": [
+   {
+    "namn": "The Hindu",
+    "rubrik": "Russia dusts off its pre-war demands as the U.S. raises discussing European security at Ukraine talks",
+    "url": "https://www.thehindu.com/news/international/russia-dusts-off-its-pre-war-demands-as-the-us-raises-discussing-european-security-at-ukraine-talks/article71727588.ece",
+    "tid": 1795246923.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Daily Maverick",
+    "rubrik": "WAR IN EUROPE: Ukrainian children abducted, tortured and forced to fight for Russia",
+    "url": "https://www.dailymaverick.co.za/article/2026-11-21-ukrainian-children-abducted-tortured-and-forced-to-fight-for-russia/",
+    "tid": 1795239000.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ZA",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Hindustan Times",
     "rubrik": "Troops from Europe's coalition for Ukraine train in war's shadow",
@@ -8191,33 +8257,56 @@
     "statskontrollerad": false
    },
    {
-    "namn": "The Straits Times",
-    "rubrik": "European troops from 11 countries hold a drill in Poland for a potential post-war Ukraine mission",
-    "url": "https://www.straitstimes.com/world/europe/european-troops-from-11-countries-hold-a-drill-in-poland-for-a-potential-post-war-ukraine-mission",
-    "tid": 1795188419.0,
+    "namn": "Meduza",
+    "rubrik": "Russian edition of Alexandra Prokopenko’s ‘From Sovereigns to Servants: How the War Against Ukraine Reshaped Russia’s Elite’ wins special prize for political nonfiction",
+    "url": "https://meduza.io/en/news/2026/11/19/russian-edition-of-alexandra-prokopenko-s-from-sovereigns-to-servants-how-the-war-against-ukraine-reshaped-russia-s-elite-wins-special-prize-for-political-nonfiction",
+    "tid": 1795121658.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "SG",
-    "region": "asien",
+    "land": "LV",
+    "region": "europa",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "Opinion | Ukraine’s Long Russian War",
+    "url": "https://www.wsj.com/opinion/ukraines-long-russian-war-6c14160f?mod=rss_worldnews",
+    "tid": 1795194720.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "RT",
+    "rubrik": "Trilateral diplomacy, Russian retribution in Ukraine, AI’s source wars: The stories that shaped the week",
+    "url": "https://rt-english.com/news/649169-rt-top-stories-putin-trump-xi-china/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+    "tid": 1795205087.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "RU",
+    "region": "europa",
+    "agare": "statlig",
+    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 1,
-   "en": 1
+   "sv": 2,
+   "en": 3
   },
   "autopilot": [
    "inget utkast",
    "ingen källkontroll",
-   "färre än tre oberoende källor (2)",
-   "bara en region"
+   "spärrord: children"
   ],
   "data": null,
   "godkand_tid": 1795165542.0697122,
   "automatisk": true,
-  "uppdaterad_tid": 1795230389.4196754
+  "uppdaterad_tid": 1795248328.2492409
  },
  "0779140bd9": {
   "id": "0779140bd9",
@@ -8229,18 +8318,18 @@
    "ai",
    "usa"
   ],
-  "poang": 34.6,
+  "poang": 33.5,
   "vikt": {
-   "bredd": 1.039,
+   "bredd": 0.914,
    "regioner": {
     "latinamerika": 2,
     "asien": 3,
-    "europa": 4,
+    "europa": 3,
     "mellanostern": 1,
     "usa": 5,
-    "sverige": 2
+    "sverige": 1
    },
-   "timmar": 37,
+   "timmar": 38,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
@@ -8249,7 +8338,7 @@
    ]
   },
   "maste": false,
-  "antal_kallor": 17,
+  "antal_kallor": 15,
   "har_primarkalla": false,
   "senast": "2026-11-21T06:22:00+00:00",
   "utkast": {
@@ -8362,7 +8451,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.651,
+  "sammanhang": 0.716,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -8442,14 +8531,6 @@
       "url": "https://www.ft.com/content/ae564e09-eb0d-42c6-b61f-50a4e61d0240?syn-25a6b1a6=1",
       "tid": 1795205849.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "RT",
-      "land": "RU",
-      "rubrik": "Trump hails ‘fantastic relationship’ with Putin and Xi",
-      "url": "https://rt-english.com/news/649181-trump-comments-putin-xi-summit/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-      "tid": 1795225150.0,
-      "statskontrollerad": true
      }
     ],
     "mellanostern": [
@@ -8511,14 +8592,6 @@
       "rubrik": "Trumps hot: Inga amerikanska datacenter utanför USA",
       "url": "https://www.sverigesradio.se/artikel/9347550",
       "tid": 1795201560.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "Dagens industri",
-      "land": "SE",
-      "rubrik": "Trump vill straffa bolag som bygger datacenter utanför USA",
-      "url": "https://www.di.se/live/trump-vill-straffa-bolag-som-bygger-datacenter-utanfor-usa/",
-      "tid": 1795199410.0,
       "statskontrollerad": false
      }
     ]
@@ -8742,35 +8815,11 @@
     "region": "usa",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "Dagens industri",
-    "rubrik": "Trump vill straffa bolag som bygger datacenter utanför USA",
-    "url": "https://www.di.se/live/trump-vill-straffa-bolag-som-bygger-datacenter-utanfor-usa/",
-    "tid": 1795199410.0,
-    "betalvagg": true,
-    "typ": "media",
-    "land": "SE",
-    "region": "sverige",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "RT",
-    "rubrik": "Trump hails ‘fantastic relationship’ with Putin and Xi",
-    "url": "https://rt-english.com/news/649181-trump-comments-putin-xi-summit/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-    "tid": 1795225150.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "RU",
-    "region": "europa",
-    "agare": "statlig",
-    "statskontrollerad": true
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 3,
+   "sv": 2,
    "en": 3
   },
   "autopilot": [
@@ -8780,6 +8829,6 @@
   "data": null,
   "godkand_tid": 1795223249.2858202,
   "automatisk": true,
-  "uppdaterad_tid": 1795244697.922108
+  "uppdaterad_tid": 1795248328.2492409
  }
 }
