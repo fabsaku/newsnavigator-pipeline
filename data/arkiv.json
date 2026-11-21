@@ -7615,15 +7615,16 @@
    "geopolitik",
    "usa"
   ],
-  "poang": 30.7,
+  "poang": 26.9,
   "vikt": {
-   "bredd": 0.541,
+   "bredd": 0.475,
    "regioner": {
     "asien": 4,
-    "mellanostern": 2,
-    "usa": 1
+    "mellanostern": 1,
+    "usa": 1,
+    "sverige": 1
    },
-   "timmar": 96,
+   "timmar": 46,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
@@ -7736,12 +7737,13 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.668,
+  "sammanhang": 0.709,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "mellanostern",
+    "sverige",
     "usa"
    ],
    "per_region": {
@@ -7787,14 +7789,6 @@
       "url": "https://www.al-monitor.com/originals/2026/11/araqchi-says-iran-wants-diplomacy-end-war-trump-says-terms-unacceptable",
       "tid": 1795218389.0,
       "statskontrollerad": false
-     },
-     {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Iran wants Trump to state explicitly he wants a deal, Araghchi says",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-wants-trump-state-explicitly-he-wants-deal-araghchi-says",
-      "tid": 1795212573.0,
-      "statskontrollerad": false
      }
     ],
     "usa": [
@@ -7806,10 +7800,20 @@
       "tid": 1795138259.0,
       "statskontrollerad": false
      }
+    ],
+    "sverige": [
+     {
+      "kalla": "Dagens industri",
+      "land": "SE",
+      "rubrik": "Trump efter möte med Putin: Vill avsluta kriget",
+      "url": "https://www.di.se/nyheter/trump-efter-mote-med-putin-vill-avsluta-kriget/",
+      "tid": 1795201342.0,
+      "statskontrollerad": false
+     }
     ]
    },
    "blind_flack": null,
-   "grannar_svenska": true,
+   "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
@@ -7852,18 +7856,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Middle East Eye",
-    "rubrik": "Iran wants Trump to state explicitly he wants a deal, Araghchi says",
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-wants-trump-state-explicitly-he-wants-deal-araghchi-says",
-    "tid": 1795212573.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "mellanostern",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "Hindustan Times",
     "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
     "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
@@ -7888,6 +7880,18 @@
     "statskontrollerad": false
    },
    {
+    "namn": "Dagens industri",
+    "rubrik": "Trump efter möte med Putin: Vill avsluta kriget",
+    "url": "https://www.di.se/nyheter/trump-efter-mote-med-putin-vill-avsluta-kriget/",
+    "tid": 1795201342.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "SE",
+    "region": "sverige",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
     "namn": "CGTN",
     "rubrik": "Iran signals openness to diplomacy as Trump rejects its terms",
     "url": "https://news.cgtn.com/news/2026-11-21/Iran-signals-openness-to-diplomacy-as-Trump-rejects-its-terms-1SfbQV8Myxq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
@@ -7902,7 +7906,7 @@
   ],
   "granskad": true,
   "relevans": {
-   "sv": 1,
+   "sv": 2,
    "en": 3
   },
   "autopilot": [
@@ -7912,18 +7916,23 @@
   "data": null,
   "godkand_tid": 1795144060.5539627,
   "automatisk": true,
-  "uppdaterad_tid": 1795233907.067215
+  "uppdaterad_tid": 1795251930.4600546
  },
  "a5940a11a3": {
   "id": "a5940a11a3",
-  "amnen": [],
-  "amnen_sektion": [],
-  "poang": 27.3,
+  "amnen": [
+   "geopolitik",
+   "varlden"
+  ],
+  "amnen_sektion": [
+   "geopolitik"
+  ],
+  "poang": 27.9,
   "vikt": {
-   "bredd": 0.202,
+   "bredd": 0.261,
    "regioner": {
-    "mellanostern": 1,
-    "asien": 1
+    "asien": 2,
+    "mellanostern": 1
    },
    "timmar": 96,
    "konsekvens": null,
@@ -7932,13 +7941,13 @@
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 2,
+  "antal_kallor": 3,
   "har_primarkalla": false,
-  "senast": "2026-11-20T17:09:22+00:00",
+  "senast": "2026-11-21T08:12:18+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.991,
+  "sammanhang": 0.804,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -7946,99 +7955,125 @@
     "mellanostern"
    ],
    "per_region": {
-    "mellanostern": [
-     {
-      "kalla": "Middle East Eye",
-      "land": "GB",
-      "rubrik": "Tanker catches fire after projectile strike near Strait of Hormuz - UKMTO",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/tanker-catches-fire-after-projectile-strike-near-hormuz-ukmto",
-      "tid": 1795194562.0,
-      "statskontrollerad": false
-     }
-    ],
     "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+      "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
+      "tid": 1795248738.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "The Straits Times",
       "land": "SG",
-      "rubrik": "Tanker catches fire after projectile strike near Strait of Hormuz, UKMTO says",
-      "url": "https://www.straitstimes.com/world/middle-east/tanker-catches-fire-after-projectile-strike-near-strait-of-hormuz-ukmto-says",
-      "tid": 1795194319.0,
+      "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+      "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
+      "tid": 1795248026.0,
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Iran war live: 2 tankers reported hit by unknown projectiles off Oman coast",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles?traffic_source=rss",
+      "tid": 1795219206.0,
       "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Tanker catches fire after projectile strike near Strait of Hormuz - UKMTO",
+  "reserv_rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
   "kallor": [
    {
-    "namn": "Middle East Eye",
-    "rubrik": "Tanker catches fire after projectile strike near Strait of Hormuz - UKMTO",
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/tanker-catches-fire-after-projectile-strike-near-hormuz-ukmto",
-    "tid": 1795194562.0,
+    "namn": "Hindustan Times",
+    "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+    "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
+    "tid": 1795248738.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
-    "region": "mellanostern",
+    "land": "IN",
+    "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
     "namn": "The Straits Times",
-    "rubrik": "Tanker catches fire after projectile strike near Strait of Hormuz, UKMTO says",
-    "url": "https://www.straitstimes.com/world/middle-east/tanker-catches-fire-after-projectile-strike-near-strait-of-hormuz-ukmto-says",
-    "tid": 1795194319.0,
+    "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+    "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
+    "tid": 1795248026.0,
     "betalvagg": false,
     "typ": "media",
     "land": "SG",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
+   },
+   {
+    "namn": "Al Jazeera",
+    "rubrik": "Iran war live: 2 tankers reported hit by unknown projectiles off Oman coast",
+    "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles?traffic_source=rss",
+    "tid": 1795219206.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "QA",
+    "region": "mellanostern",
+    "agare": "statlig",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 0,
-   "en": 1
+   "sv": 1,
+   "en": 2
   },
   "autopilot": [
    "inget utkast",
    "ingen källkontroll",
-   "färre än tre oberoende källor (2)"
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1795151145.8403869,
   "automatisk": true,
-  "uppdaterad_tid": 1795198008.45796
+  "uppdaterad_tid": 1795251930.4600546
  },
  "e86779e359": {
   "id": "e86779e359",
   "amnen": [
-   "geopolitik"
+   "ai",
+   "geopolitik",
+   "varlden"
   ],
   "amnen_sektion": [
+   "ai",
    "geopolitik"
   ],
-  "poang": 29.1,
+  "poang": 31.6,
   "vikt": {
-   "bredd": 0.376,
+   "bredd": 0.328,
    "regioner": {
     "asien": 2,
     "afrika": 1,
-    "europa": 2,
-    "usa": 1
+    "usa": 1,
+    "europa": 1
    },
    "timmar": 96,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
-   "spar": []
+   "spar": [
+    "rattigheter",
+    "teknik"
+   ]
   },
   "maste": false,
-  "antal_kallor": 6,
+  "antal_kallor": 5,
   "har_primarkalla": false,
   "senast": "2026-11-21T07:42:03+00:00",
   "utkast": {
@@ -8146,7 +8181,7 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.556,
+  "sammanhang": 0.546,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -8184,24 +8219,6 @@
       "statskontrollerad": false
      }
     ],
-    "europa": [
-     {
-      "kalla": "Meduza",
-      "land": "LV",
-      "rubrik": "Russian edition of Alexandra Prokopenko’s ‘From Sovereigns to Servants: How the War Against Ukraine Reshaped Russia’s Elite’ wins special prize for political nonfiction",
-      "url": "https://meduza.io/en/news/2026/11/19/russian-edition-of-alexandra-prokopenko-s-from-sovereigns-to-servants-how-the-war-against-ukraine-reshaped-russia-s-elite-wins-special-prize-for-political-nonfiction",
-      "tid": 1795121658.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "RT",
-      "land": "RU",
-      "rubrik": "Trilateral diplomacy, Russian retribution in Ukraine, AI’s source wars: The stories that shaped the week",
-      "url": "https://rt-english.com/news/649169-rt-top-stories-putin-trump-xi-china/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-      "tid": 1795205087.0,
-      "statskontrollerad": true
-     }
-    ],
     "usa": [
      {
       "kalla": "The Wall Street Journal",
@@ -8210,6 +8227,16 @@
       "url": "https://www.wsj.com/opinion/ukraines-long-russian-war-6c14160f?mod=rss_worldnews",
       "tid": 1795194720.0,
       "statskontrollerad": false
+     }
+    ],
+    "europa": [
+     {
+      "kalla": "RT",
+      "land": "RU",
+      "rubrik": "Trilateral diplomacy, Russian retribution in Ukraine, AI’s source wars: The stories that shaped the week",
+      "url": "https://rt-english.com/news/649169-rt-top-stories-putin-trump-xi-china/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+      "tid": 1795205087.0,
+      "statskontrollerad": true
      }
     ]
    },
@@ -8257,18 +8284,6 @@
     "statskontrollerad": false
    },
    {
-    "namn": "Meduza",
-    "rubrik": "Russian edition of Alexandra Prokopenko’s ‘From Sovereigns to Servants: How the War Against Ukraine Reshaped Russia’s Elite’ wins special prize for political nonfiction",
-    "url": "https://meduza.io/en/news/2026/11/19/russian-edition-of-alexandra-prokopenko-s-from-sovereigns-to-servants-how-the-war-against-ukraine-reshaped-russia-s-elite-wins-special-prize-for-political-nonfiction",
-    "tid": 1795121658.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "LV",
-    "region": "europa",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
     "namn": "The Wall Street Journal",
     "rubrik": "Opinion | Ukraine’s Long Russian War",
     "url": "https://www.wsj.com/opinion/ukraines-long-russian-war-6c14160f?mod=rss_worldnews",
@@ -8306,7 +8321,7 @@
   "data": null,
   "godkand_tid": 1795165542.0697122,
   "automatisk": true,
-  "uppdaterad_tid": 1795248328.2492409
+  "uppdaterad_tid": 1795251930.4600546
  },
  "0779140bd9": {
   "id": "0779140bd9",
@@ -8318,18 +8333,17 @@
    "ai",
    "usa"
   ],
-  "poang": 33.5,
+  "poang": 32.2,
   "vikt": {
-   "bredd": 0.914,
+   "bredd": 0.771,
    "regioner": {
     "latinamerika": 2,
     "asien": 3,
     "europa": 3,
-    "mellanostern": 1,
     "usa": 5,
     "sverige": 1
    },
-   "timmar": 38,
+   "timmar": 39,
    "konsekvens": null,
    "bekraftad": null,
    "maste": false,
@@ -8338,7 +8352,7 @@
    ]
   },
   "maste": false,
-  "antal_kallor": 15,
+  "antal_kallor": 14,
   "har_primarkalla": false,
   "senast": "2026-11-21T06:22:00+00:00",
   "utkast": {
@@ -8451,14 +8465,13 @@
    "sammanfattning": null
   },
   "narrativ": null,
-  "sammanhang": 0.716,
+  "sammanhang": 0.707,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
     "latinamerika",
-    "mellanostern",
     "sverige",
     "usa"
    ],
@@ -8533,16 +8546,6 @@
       "statskontrollerad": false
      }
     ],
-    "mellanostern": [
-     {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Trump threatens tax on US tech firms building AI data centres abroad",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/aje-onl-nf_trump-tax-us-tech-firms-ai-data-centres-abroad-201126?traffic_source=rss",
-      "tid": 1795209053.0,
-      "statskontrollerad": false
-     }
-    ],
     "usa": [
      {
       "kalla": "CNBC",
@@ -8581,7 +8584,7 @@
       "land": "US",
       "rubrik": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
       "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
-      "tid": 1795200682.0,
+      "tid": 1795200683.0,
       "statskontrollerad": false
      }
     ],
@@ -8627,7 +8630,7 @@
       "kalla": "The New York Times",
       "rubrik": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
       "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
-      "tid": 1795200682.0,
+      "tid": 1795200683.0,
       "lutning": "lutar_vanster"
      }
     ]
@@ -8682,18 +8685,6 @@
     "land": "ES",
     "region": "latinamerika",
     "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "Al Jazeera",
-    "rubrik": "Trump threatens tax on US tech firms building AI data centres abroad",
-    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/aje-onl-nf_trump-tax-us-tech-firms-ai-data-centres-abroad-201126?traffic_source=rss",
-    "tid": 1795209053.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "QA",
-    "region": "mellanostern",
-    "agare": "statlig",
     "statskontrollerad": false
    },
    {
@@ -8808,7 +8799,7 @@
     "namn": "The New York Times",
     "rubrik": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
     "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
-    "tid": 1795200682.0,
+    "tid": 1795200683.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -8829,6 +8820,6 @@
   "data": null,
   "godkand_tid": 1795223249.2858202,
   "automatisk": true,
-  "uppdaterad_tid": 1795248328.2492409
+  "uppdaterad_tid": 1795251930.4600546
  }
 }
