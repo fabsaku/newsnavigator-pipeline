@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-21T10:04:35.288123+00:00",
+  "skapad": "2026-11-21T11:05:48.640518+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -7,33 +7,35 @@
       "id": "80cea548ff",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 36.2,
+      "poang": 36.9,
       "vikt": {
-        "bredd": 1.211,
+        "bredd": 1.268,
         "regioner": {
           "mellanostern": 5,
           "asien": 3,
           "norden": 1,
+          "europa": 1,
           "usa": 1
         },
-        "timmar": 73,
+        "timmar": 74,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 10,
+      "antal_kallor": 11,
       "har_primarkalla": false,
       "senast": "2026-11-21T04:32:07+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.698,
+      "sammanhang": 0.651,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
+          "europa",
           "mellanostern",
           "norden",
           "usa"
@@ -57,20 +59,20 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "Arab News",
-              "land": "SA",
-              "rubrik": "Coalition air defenses intercept 3 Houthi ballistic missiles targeting Riyadh",
-              "url": "https://www.arabnews.com/saudi-arabia/coalition-air-defenses-intercept-3-houthi-ballistic-missiles-targeting-riyadh-3013264",
-              "tid": 1795221448.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "Al-Monitor",
               "land": "US",
               "rubrik": "Houthi attacks add to worries over Trump Saudi nuclear power pact",
               "url": "https://www.al-monitor.com/originals/2026/11/houthi-attacks-add-worries-over-trump-saudi-nuclear-power-pact",
               "tid": 1795200389.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "Tehran Times",
+              "land": "IR",
+              "rubrik": "Yemen targets Saudi Arabia’s financial hub",
+              "url": "https://www.tehrantimes.com/news/532345/Yemen-targets-Saudi-Arabia-s-financial-hub",
+              "tid": 1795193107.0,
+              "statskontrollerad": true
             },
             {
               "kalla": "The National",
@@ -114,6 +116,16 @@
               "rubrik": "Saudi-Arabia: Har skutt ned houthi-missiler",
               "url": "https://www.nrk.no/nyheter/saudi-arabia_-har-skutt-ned-houthi-missiler-1.18086194",
               "tid": 1795218892.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Yemen's Houthis target Riyadh after Saudi coalition's 'special operation'",
+              "url": "https://www.france24.com/en/middle-east/20261120-yemen-s-houthis-target-riyadh-after-saudi-coalition-s-special-operation",
+              "tid": 1795199775.0,
               "statskontrollerad": false
             }
           ],
@@ -184,18 +196,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Arab News",
-          "rubrik": "Coalition air defenses intercept 3 Houthi ballistic missiles targeting Riyadh",
-          "url": "https://www.arabnews.com/saudi-arabia/coalition-air-defenses-intercept-3-houthi-ballistic-missiles-targeting-riyadh-3013264",
-          "tid": 1795221448.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SA",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Straits Times",
           "rubrik": "Saudi Arabia says it intercepts three Houthi missiles targeting Riyadh",
           "url": "https://www.straitstimes.com/world/middle-east/saudi-arabia-says-it-intercepts-three-houthi-missiles-targeting-riyadh",
@@ -232,6 +232,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "France 24",
+          "rubrik": "Yemen's Houthis target Riyadh after Saudi coalition's 'special operation'",
+          "url": "https://www.france24.com/en/middle-east/20261120-yemen-s-houthis-target-riyadh-after-saudi-coalition-s-special-operation",
+          "tid": 1795199775.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Wall Street Journal",
           "rubrik": "Houthi Attack Damages Saudi Capital’s Tallest Tower",
           "url": "https://www.wsj.com/world/middle-east/houthi-attack-damages-saudi-capitals-tallest-tower-f4e15874?mod=rss_worldnews",
@@ -242,6 +254,18 @@
           "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "Tehran Times",
+          "rubrik": "Yemen targets Saudi Arabia’s financial hub",
+          "url": "https://www.tehrantimes.com/news/532345/Yemen-targets-Saudi-Arabia-s-financial-hub",
+          "tid": 1795193107.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IR",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
         },
         {
           "namn": "The National",
@@ -268,70 +292,72 @@
       "data": null
     },
     {
-      "id": "ce73ab338b",
+      "id": "cea32caa6b",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 35.1,
+      "poang": 33.6,
       "vikt": {
-        "bredd": 1.062,
+        "bredd": 0.85,
         "regioner": {
-          "europa": 3,
+          "latinamerika": 1,
+          "europa": 2,
           "asien": 5,
-          "mellanostern": 2,
           "afrika": 1,
-          "global": 1,
-          "sverige": 1
+          "usa": 2,
+          "mellanostern": 1
         },
-        "timmar": 39,
+        "timmar": 45,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": [
-          "miljo"
+          "rattigheter"
         ]
       },
       "maste": false,
-      "antal_kallor": 13,
+      "antal_kallor": 12,
       "har_primarkalla": false,
-      "senast": "2026-11-21T09:52:11+00:00",
+      "senast": "2026-11-21T10:17:25+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.562,
+      "sammanhang": 0.551,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
           "asien",
           "europa",
-          "global",
+          "latinamerika",
           "mellanostern",
-          "sverige"
+          "usa"
         ],
         "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "The Rio Times",
+              "land": "BR",
+              "rubrik": "World Court Rules Myanmar Committed Genocide",
+              "url": "https://www.riotimesonline.com/icj-myanmar-genocide-ruling-gambia-case/",
+              "tid": 1795256245.0,
+              "statskontrollerad": false
+            }
+          ],
           "europa": [
             {
-              "kalla": "BBC World",
+              "kalla": "The Guardian",
               "land": "GB",
-              "rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-              "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795254731.0,
+              "rubrik": "When you see smoke, run: Rohingya who escaped Myanmar’s genocide tell their stories",
+              "url": "https://www.theguardian.com/world/2026/nov/21/rohingya-who-escaped-myanmars-genocide-tell-their-stories",
+              "tid": 1795233647.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "COP31: UN Climate summit enters final phase with no deal in sight",
-              "url": "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795206660.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
+              "kalla": "France 24",
               "land": "FR",
-              "rubrik": "COP31: Fossil fuels and climate funding take center stage in final stretch of negotiations",
-              "url": "https://www.lemonde.fr/en/environment/article/2026/11/20/cop31-fossil-fuels-and-climate-funding-take-center-stage-in-final-stretch-of-negotiations_6785737_114.html",
-              "tid": 1795214130.0,
+              "rubrik": "'Friends' But Who Benefits? Notes from an Historic Summit, Myanmar's Genocide Ruling, Time to 'Bre-join' the EU?",
+              "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20261120-friends-but-who-benefits-notes-from-an-historic-summit-myanmar-s-genocide-ruling-time-to-bre-join-the-eu",
+              "tid": 1795203778.0,
               "statskontrollerad": false
             }
           ],
@@ -339,117 +365,138 @@
             {
               "kalla": "CNA",
               "land": "SG",
-              "rubrik": "Countries race to secure COP31 deal after fossil fuel row",
-              "url": "https://www.channelnewsasia.com/world/cop31-fossil-fuel-climate-talks-6571376",
-              "tid": 1795250505.0,
+              "rubrik": "Rohingya in Bangladesh welcome UN court’s genocide verdict but say they want to go home to Myanmar",
+              "url": "https://www.channelnewsasia.com/asia/rohingya-bangladesh-myanmar-genocide-verdict-6571141",
+              "tid": 1795232268.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Nations row over fossil fuels as COP31 goes into overtime",
-              "url": "https://www.straitstimes.com/world/nations-row-over-fossil-fuels-as-cop31-goes-into-overtime",
-              "tid": 1795229400.0,
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Myanmar genocide judgment may bolster Gaza case against Israel",
+              "url": "https://www.japantimes.co.jp/news/2026/11/21/world/crime-legal/myanmar-ruling-bolster-gaza-case/",
+              "tid": 1795223820.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Myanmar calls ICJ ruling on genocide 'unfair'",
+              "url": "https://www.thehindu.com/news/international/myanmar-calls-icj-ruling-on-genocide-unfair/article71723709.ece",
+              "tid": 1795166475.0,
               "statskontrollerad": false
             },
             {
               "kalla": "Hindustan Times",
               "land": "IN",
-              "rubrik": "Talks go into overtime as COP31 deal remains elusive",
-              "url": "https://www.hindustantimes.com/world-news/talks-go-into-overtime-as-cop31-deal-remains-elusive-101795193854624.html",
-              "tid": 1795193854.0,
+              "rubrik": "Myanmar calls International court's Rohingya genocide ruling ‘unfair’",
+              "url": "https://www.hindustantimes.com/world-news/myanmar-calls-international-court-of-justice-rohingya-genocide-ruling-unfair-101795162431149.html",
+              "tid": 1795163191.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "COP31 climate talks go into overtime as nations quarrel over fossil fuels",
-              "url": "https://www.scmp.com/news/world/article/3375291/cop31-climate-talks-go-overtime-nations-quarrel-over-fossil-fuels",
-              "tid": 1795188846.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "COP31 talks extended amid dispute over fossil fuels",
-              "url": "https://news.cgtn.com/news/2026-11-21/COP31-talks-extended-amid-dispute-over-fossil-fuels-1SfdSUt0Dra/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795225953.0,
-              "statskontrollerad": true
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Arab News",
-              "land": "SA",
-              "rubrik": "Countries race to secure COP31 deal after fossil fuel row",
-              "url": "https://www.arabnews.com/world/countries-race-to-secure-cop31-deal-after-fossil-fuel-row-3013319",
-              "tid": 1795248544.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "COP31 deal stalls as nations struggle to agree on climate plan",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/cop31-deal-stalls-as-nations-struggle-to-agree-on-climate-plan?traffic_source=rss",
-              "tid": 1795225449.0,
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Myanmar committed genocide against Rohingya, ICJ rules in landmark verdict",
+              "url": "https://asia.nikkei.com/politics/international-relations/myanmar-committed-genocide-against-rohingya-icj-rules-in-landmark-verdict",
+              "tid": null,
               "statskontrollerad": false
             }
           ],
           "afrika": [
             {
-              "kalla": "Premium Times",
-              "land": "NG",
-              "rubrik": "COP31 climate talks spill into overtime as nations quarrel over fossil fuels",
-              "url": "https://www.premiumtimesng.com/news/headlines/926870-cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels.html",
-              "tid": 1795247435.0,
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Myanmar rejects ICJ Rohingya genocide ruling as 'unfair'",
+              "url": "http://www.africanews.com/2026/11/20/myanmar-rejects-icj-rohingya-genocide-ruling-as-unfair/",
+              "tid": 1795180593.0,
               "statskontrollerad": false
             }
           ],
-          "global": [
+          "usa": [
             {
-              "kalla": "Mongabay",
+              "kalla": "The Wall Street Journal",
               "land": "US",
-              "rubrik": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
-              "url": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
-              "tid": 1795194464.0,
+              "rubrik": "How the Myanmar Genocide Ruling Raises the Stakes for Israel",
+              "url": "https://www.wsj.com/world/middle-east/how-the-myanmar-genocide-ruling-raises-the-stakes-for-israel-476feb2f?mod=rss_worldnews",
+              "tid": 1795206120.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
+              "url": "https://www.nytimes.com/2026/11/19/world/europe/myanmar-genocide-icj-decision-.html",
+              "tid": 1795138640.0,
               "statskontrollerad": false
             }
           ],
-          "sverige": [
+          "mellanostern": [
             {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Klimatmötet går in på övertid – stor ovisshet",
-              "url": "https://www.dn.se/varlden/klimatmotet-gar-in-pa-overtid-stor-ovisshet/",
-              "tid": 1795190869.0,
-              "statskontrollerad": false
+              "kalla": "Tehran Times",
+              "land": "IR",
+              "rubrik": "ICJ ruling against Myanmar brings Gaza genocide case into sharper focus",
+              "url": "https://www.tehrantimes.com/news/532347/ICJ-ruling-against-Myanmar-brings-Gaza-genocide-case-into-sharper",
+              "tid": 1795193132.0,
+              "statskontrollerad": true
             }
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
+        "grannar_svenska": true,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Wall Street Journal",
+              "rubrik": "How the Myanmar Genocide Ruling Raises the Stakes for Israel",
+              "url": "https://www.wsj.com/world/middle-east/how-the-myanmar-genocide-ruling-raises-the-stakes-for-israel-476feb2f?mod=rss_worldnews",
+              "tid": 1795206120.0,
+              "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
+              "url": "https://www.nytimes.com/2026/11/19/world/europe/myanmar-genocide-icj-decision-.html",
+              "tid": 1795138640.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
         "usa_blind": null
       },
-      "reserv_rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "reserv_rubrik": "World Court Rules Myanmar Committed Genocide",
       "kallor": [
         {
-          "namn": "BBC World",
-          "rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-          "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795254731.0,
+          "namn": "The Rio Times",
+          "rubrik": "World Court Rules Myanmar Committed Genocide",
+          "url": "https://www.riotimesonline.com/icj-myanmar-genocide-ruling-gambia-case/",
+          "tid": 1795256245.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BR",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "When you see smoke, run: Rohingya who escaped Myanmar’s genocide tell their stories",
+          "url": "https://www.theguardian.com/world/2026/nov/21/rohingya-who-escaped-myanmars-genocide-tell-their-stories",
+          "tid": 1795233647.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
           "region": "europa",
-          "agare": "public-service",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "CNA",
-          "rubrik": "Countries race to secure COP31 deal after fossil fuel row",
-          "url": "https://www.channelnewsasia.com/world/cop31-fossil-fuel-climate-talks-6571376",
-          "tid": 1795250505.0,
+          "rubrik": "Rohingya in Bangladesh welcome UN court’s genocide verdict but say they want to go home to Myanmar",
+          "url": "https://www.channelnewsasia.com/asia/rohingya-bangladesh-myanmar-genocide-verdict-6571141",
+          "tid": 1795232268.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
@@ -458,82 +505,46 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Arab News",
-          "rubrik": "Countries race to secure COP31 deal after fossil fuel row",
-          "url": "https://www.arabnews.com/world/countries-race-to-secure-cop31-deal-after-fossil-fuel-row-3013319",
-          "tid": 1795248544.0,
+          "namn": "The Japan Times",
+          "rubrik": "Myanmar genocide judgment may bolster Gaza case against Israel",
+          "url": "https://www.japantimes.co.jp/news/2026/11/21/world/crime-legal/myanmar-ruling-bolster-gaza-case/",
+          "tid": 1795223820.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SA",
-          "region": "mellanostern",
+          "land": "JP",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Premium Times",
-          "rubrik": "COP31 climate talks spill into overtime as nations quarrel over fossil fuels",
-          "url": "https://www.premiumtimesng.com/news/headlines/926870-cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels.html",
-          "tid": 1795247435.0,
+          "namn": "France 24",
+          "rubrik": "'Friends' But Who Benefits? Notes from an Historic Summit, Myanmar's Genocide Ruling, Time to 'Bre-join' the EU?",
+          "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20261120-friends-but-who-benefits-notes-from-an-historic-summit-myanmar-s-genocide-ruling-time-to-bre-join-the-eu",
+          "tid": 1795203778.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "NG",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Myanmar rejects ICJ Rohingya genocide ruling as 'unfair'",
+          "url": "http://www.africanews.com/2026/11/20/myanmar-rejects-icj-rohingya-genocide-ruling-as-unfair/",
+          "tid": 1795180593.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
           "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Nations row over fossil fuels as COP31 goes into overtime",
-          "url": "https://www.straitstimes.com/world/nations-row-over-fossil-fuels-as-cop31-goes-into-overtime",
-          "tid": 1795229400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "COP31 deal stalls as nations struggle to agree on climate plan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/cop31-deal-stalls-as-nations-struggle-to-agree-on-climate-plan?traffic_source=rss",
-          "tid": 1795225449.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "COP31: UN Climate summit enters final phase with no deal in sight",
-          "url": "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795206660.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Mongabay",
-          "rubrik": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
-          "url": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
-          "tid": 1795194464.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Talks go into overtime as COP31 deal remains elusive",
-          "url": "https://www.hindustantimes.com/world-news/talks-go-into-overtime-as-cop31-deal-remains-elusive-101795193854624.html",
-          "tid": 1795193854.0,
+          "namn": "The Hindu",
+          "rubrik": "Myanmar calls ICJ ruling on genocide 'unfair'",
+          "url": "https://www.thehindu.com/news/international/myanmar-calls-icj-ruling-on-genocide-unfair/article71723709.ece",
+          "tid": 1795166475.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -542,58 +553,70 @@
           "statskontrollerad": false
         },
         {
-          "namn": "South China Morning Post",
-          "rubrik": "COP31 climate talks go into overtime as nations quarrel over fossil fuels",
-          "url": "https://www.scmp.com/news/world/article/3375291/cop31-climate-talks-go-overtime-nations-quarrel-over-fossil-fuels",
-          "tid": 1795188846.0,
+          "namn": "Hindustan Times",
+          "rubrik": "Myanmar calls International court's Rohingya genocide ruling ‘unfair’",
+          "url": "https://www.hindustantimes.com/world-news/myanmar-calls-international-court-of-justice-rohingya-genocide-ruling-unfair-101795162431149.html",
+          "tid": 1795163191.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "HK",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Le Monde (English)",
-          "rubrik": "COP31: Fossil fuels and climate funding take center stage in final stretch of negotiations",
-          "url": "https://www.lemonde.fr/en/environment/article/2026/11/20/cop31-fossil-fuels-and-climate-funding-take-center-stage-in-final-stretch-of-negotiations_6785737_114.html",
-          "tid": 1795214130.0,
+          "namn": "The Wall Street Journal",
+          "rubrik": "How the Myanmar Genocide Ruling Raises the Stakes for Israel",
+          "url": "https://www.wsj.com/world/middle-east/how-the-myanmar-genocide-ruling-raises-the-stakes-for-israel-476feb2f?mod=rss_worldnews",
+          "tid": 1795206120.0,
           "betalvagg": true,
           "typ": "media",
-          "land": "FR",
-          "region": "europa",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Klimatmötet går in på övertid – stor ovisshet",
-          "url": "https://www.dn.se/varlden/klimatmotet-gar-in-pa-overtid-stor-ovisshet/",
-          "tid": 1795190869.0,
+          "namn": "The New York Times",
+          "rubrik": "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
+          "url": "https://www.nytimes.com/2026/11/19/world/europe/myanmar-genocide-icj-decision-.html",
+          "tid": 1795138640.0,
           "betalvagg": true,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "CGTN",
-          "rubrik": "COP31 talks extended amid dispute over fossil fuels",
-          "url": "https://news.cgtn.com/news/2026-11-21/COP31-talks-extended-amid-dispute-over-fossil-fuels-1SfdSUt0Dra/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795225953.0,
+          "namn": "Nikkei Asia",
+          "rubrik": "Myanmar committed genocide against Rohingya, ICJ rules in landmark verdict",
+          "url": "https://asia.nikkei.com/politics/international-relations/myanmar-committed-genocide-against-rohingya-icj-rules-in-landmark-verdict",
+          "tid": null,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Tehran Times",
+          "rubrik": "ICJ ruling against Myanmar brings Gaza genocide case into sharper focus",
+          "url": "https://www.tehrantimes.com/news/532347/ICJ-ruling-against-Myanmar-brings-Gaza-genocide-case-into-sharper",
+          "tid": 1795193132.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "CN",
-          "region": "asien",
+          "land": "IR",
+          "region": "mellanostern",
           "agare": "statlig",
           "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
-        "en": 2
+        "sv": 1,
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
@@ -605,14 +628,13 @@
       "id": "99421b3859",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 34.3,
+      "poang": 33.3,
       "vikt": {
-        "bredd": 0.6,
+        "bredd": 0.496,
         "regioner": {
           "europa": 3,
-          "mellanostern": 1,
-          "usa": 3,
-          "asien": 4
+          "usa": 2,
+          "asien": 5
         },
         "timmar": 96,
         "konsekvens": null,
@@ -623,19 +645,18 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 11,
+      "antal_kallor": 10,
       "har_primarkalla": false,
       "senast": "2026-11-21T07:53:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.633,
+      "sammanhang": 0.636,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
-          "mellanostern",
           "usa"
         ],
         "per_region": {
@@ -665,16 +686,6 @@
               "statskontrollerad": false
             }
           ],
-          "mellanostern": [
-            {
-              "kalla": "Arab News",
-              "land": "SA",
-              "rubrik": "Indian man jailed over US murder plot against Sikh separatist",
-              "url": "https://www.arabnews.com/world/indian-man-jailed-over-us-murder-plot-against-sikh-separatist-3013253",
-              "tid": 1795210102.0,
-              "statskontrollerad": false
-            }
-          ],
           "usa": [
             {
               "kalla": "Religion News Service",
@@ -682,14 +693,6 @@
               "rubrik": "Indian man sentenced to over 19 years for plot to assassinate Sikh separatist leader in NYC",
               "url": "https://religionnews.com/2026/11/20/indian-man-sentenced-to-19-years-for-plot-to-assasinate-sikh-separatist-leader-in-nyc/",
               "tid": 1795207779.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Times",
-              "land": "US",
-              "rubrik": "Man gets 19 1/2 years in prison for plot to kill Sikh separatist leader in New York",
-              "url": "https://www.washingtontimes.com/news/2026/nov/20/man-sentenced-19-12-years-prison-plot-kill-sikh-separatist-leader-new/",
-              "tid": 1795207625.0,
               "statskontrollerad": false
             },
             {
@@ -708,6 +711,14 @@
               "rubrik": "Indian man jailed over US murder plot against Sikh separatist",
               "url": "https://www.scmp.com/news/world/united-states-canada/article/3375297/indian-man-jailed-over-us-murder-plot-against-sikh-separatist",
               "tid": 1795202873.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Indian man jailed over US murder plot against Sikh separatist",
+              "url": "https://www.dawn.com/news/2045944/indian-man-jailed-over-us-murder-plot-against-sikh-separatist",
+              "tid": 1795199597.0,
               "statskontrollerad": false
             },
             {
@@ -738,26 +749,7 @@
         },
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "The Washington Times",
-              "rubrik": "Man gets 19 1/2 years in prison for plot to kill Sikh separatist leader in New York",
-              "url": "https://www.washingtontimes.com/news/2026/nov/20/man-sentenced-19-12-years-prison-plot-kill-sikh-separatist-leader-new/",
-              "tid": 1795207625.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Indian Man Sentenced to Almost 20 Years in Murder-for-Hire Plot on U.S. Soil",
-              "url": "https://www.wsj.com/world/india/indian-man-sentenced-to-almost-20-years-in-murder-for-hire-plot-on-u-s-soil-cdeaf72a?mod=rss_worldnews",
-              "tid": 1795216560.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
       "reserv_rubrik": "US judge jails Indian national in foiled Sikh separatist murder plot",
@@ -775,18 +767,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Arab News",
-          "rubrik": "Indian man jailed over US murder plot against Sikh separatist",
-          "url": "https://www.arabnews.com/world/indian-man-jailed-over-us-murder-plot-against-sikh-separatist-3013253",
-          "tid": 1795210102.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SA",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Religion News Service",
           "rubrik": "Indian man sentenced to over 19 years for plot to assassinate Sikh separatist leader in NYC",
           "url": "https://religionnews.com/2026/11/20/indian-man-sentenced-to-19-years-for-plot-to-assasinate-sikh-separatist-leader-in-nyc/",
@@ -796,18 +776,6 @@
           "land": "US",
           "region": "usa",
           "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Times",
-          "rubrik": "Man gets 19 1/2 years in prison for plot to kill Sikh separatist leader in New York",
-          "url": "https://www.washingtontimes.com/news/2026/nov/20/man-sentenced-19-12-years-prison-plot-kill-sikh-separatist-leader-new/",
-          "tid": 1795207625.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -832,6 +800,18 @@
           "land": "GB",
           "region": "europa",
           "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Indian man jailed over US murder plot against Sikh separatist",
+          "url": "https://www.dawn.com/news/2045944/indian-man-jailed-over-us-murder-plot-against-sikh-separatist",
+          "tid": 1795199597.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -918,7 +898,7 @@
         "ai",
         "usa"
       ],
-      "poang": 32.3,
+      "poang": 32.4,
       "vikt": {
         "bredd": 0.771,
         "regioner": {
@@ -928,7 +908,7 @@
           "usa": 5,
           "sverige": 1
         },
-        "timmar": 40,
+        "timmar": 41,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1298,6 +1278,276 @@
       "data": null
     },
     {
+      "id": "fa13f28c24",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 31.7,
+      "vikt": {
+        "bredd": 0.717,
+        "regioner": {
+          "europa": 3,
+          "afrika": 1,
+          "asien": 4,
+          "global": 1,
+          "sverige": 1
+        },
+        "timmar": 40,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "miljo"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 10,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T10:52:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.596,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "global",
+          "sverige"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "COP31: UN Climate summit runs into overtime as deal remains elusive",
+              "url": "https://www.dw.com/en/cop31-un-climate-summit-runs-into-overtime-as-deal-remains-elusive/live-79999516?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795258320.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+              "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795254731.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "COP31: Fossil fuels and climate funding take center stage in final stretch of negotiations",
+              "url": "https://www.lemonde.fr/en/environment/article/2026/11/20/cop31-fossil-fuels-and-climate-funding-take-center-stage-in-final-stretch-of-negotiations_6785737_114.html",
+              "tid": 1795214130.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Premium Times",
+              "land": "NG",
+              "rubrik": "COP31 climate talks spill into overtime as nations quarrel over fossil fuels",
+              "url": "https://www.premiumtimesng.com/news/headlines/926870-cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels.html",
+              "tid": 1795247435.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Nations row over fossil fuels as COP31 goes into overtime",
+              "url": "https://www.straitstimes.com/world/nations-row-over-fossil-fuels-as-cop31-goes-into-overtime",
+              "tid": 1795229400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Talks go into overtime as COP31 deal remains elusive",
+              "url": "https://www.hindustantimes.com/world-news/talks-go-into-overtime-as-cop31-deal-remains-elusive-101795193854624.html",
+              "tid": 1795193854.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "COP31 climate talks go into overtime as nations quarrel over fossil fuels",
+              "url": "https://www.scmp.com/news/world/article/3375291/cop31-climate-talks-go-overtime-nations-quarrel-over-fossil-fuels",
+              "tid": 1795188846.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "COP31 talks extended amid dispute over fossil fuels",
+              "url": "https://news.cgtn.com/news/2026-11-21/COP31-talks-extended-amid-dispute-over-fossil-fuels-1SfdSUt0Dra/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795225953.0,
+              "statskontrollerad": true
+            }
+          ],
+          "global": [
+            {
+              "kalla": "Mongabay",
+              "land": "US",
+              "rubrik": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
+              "url": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
+              "tid": 1795194464.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Klimatmötet går in på övertid – stor ovisshet",
+              "url": "https://www.dn.se/varlden/klimatmotet-gar-in-pa-overtid-stor-ovisshet/",
+              "tid": 1795190869.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "COP31: UN Climate summit runs into overtime as deal remains elusive",
+      "kallor": [
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "COP31: UN Climate summit runs into overtime as deal remains elusive",
+          "url": "https://www.dw.com/en/cop31-un-climate-summit-runs-into-overtime-as-deal-remains-elusive/live-79999516?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795258320.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+          "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+          "tid": 1795254731.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Premium Times",
+          "rubrik": "COP31 climate talks spill into overtime as nations quarrel over fossil fuels",
+          "url": "https://www.premiumtimesng.com/news/headlines/926870-cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels.html",
+          "tid": 1795247435.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Nations row over fossil fuels as COP31 goes into overtime",
+          "url": "https://www.straitstimes.com/world/nations-row-over-fossil-fuels-as-cop31-goes-into-overtime",
+          "tid": 1795229400.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Mongabay",
+          "rubrik": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
+          "url": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
+          "tid": 1795194464.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "global",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Talks go into overtime as COP31 deal remains elusive",
+          "url": "https://www.hindustantimes.com/world-news/talks-go-into-overtime-as-cop31-deal-remains-elusive-101795193854624.html",
+          "tid": 1795193854.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "COP31 climate talks go into overtime as nations quarrel over fossil fuels",
+          "url": "https://www.scmp.com/news/world/article/3375291/cop31-climate-talks-go-overtime-nations-quarrel-over-fossil-fuels",
+          "tid": 1795188846.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "COP31: Fossil fuels and climate funding take center stage in final stretch of negotiations",
+          "url": "https://www.lemonde.fr/en/environment/article/2026/11/20/cop31-fossil-fuels-and-climate-funding-take-center-stage-in-final-stretch-of-negotiations_6785737_114.html",
+          "tid": 1795214130.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Klimatmötet går in på övertid – stor ovisshet",
+          "url": "https://www.dn.se/varlden/klimatmotet-gar-in-pa-overtid-stor-ovisshet/",
+          "tid": 1795190869.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "COP31 talks extended amid dispute over fossil fuels",
+          "url": "https://news.cgtn.com/news/2026-11-21/COP31-talks-extended-amid-dispute-over-fossil-fuels-1SfdSUt0Dra/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795225953.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "e86779e359",
       "amnen": [
         "ai",
@@ -1473,579 +1723,25 @@
       "data": null
     },
     {
-      "id": "ee27913a60",
+      "id": "4223769685",
       "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 30.9,
-      "vikt": {
-        "bredd": 0.257,
-        "regioner": {
-          "mellanostern": 1,
-          "europa": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T02:49:16+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.706,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Gen Z protests sweep Europe over wars, rising costs and climate",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/gen-z-protests-sweep-europe-over-wars-rising-costs-and-climate?traffic_source=rss",
-              "tid": 1795229356.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Cost of living protests sweep across Europe",
-              "url": "https://www.bbc.co.uk/news/videos/c6dx12ppeqn4o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795193134.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Gen Z protests spread across Europe: Mass rallies over cost of living in Spain",
-              "url": "https://www.france24.com/en/video/20261120-gen-z-protests-spread-across-europe-mass-rallies-over-cost-of-living-in-spain",
-              "tid": 1795189294.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Gen Z protests sweep Europe over wars, rising costs and climate",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Gen Z protests sweep Europe over wars, rising costs and climate",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/gen-z-protests-sweep-europe-over-wars-rising-costs-and-climate?traffic_source=rss",
-          "tid": 1795229356.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Cost of living protests sweep across Europe",
-          "url": "https://www.bbc.co.uk/news/videos/c6dx12ppeqn4o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795193134.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Gen Z protests spread across Europe: Mass rallies over cost of living in Spain",
-          "url": "https://www.france24.com/en/video/20261120-gen-z-protests-spread-across-europe-mass-rallies-over-cost-of-living-in-spain",
-          "tid": 1795189294.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "e2c544916b",
-      "amnen": [
-        "geopolitik"
+        "ai",
+        "robotik"
       ],
       "amnen_sektion": [
-        "geopolitik"
+        "ai",
+        "robotik"
       ],
-      "poang": 30.7,
+      "poang": 30.3,
       "vikt": {
-        "bredd": 0.662,
-        "regioner": {
-          "europa": 1,
-          "asien": 3,
-          "mellanostern": 3
-        },
-        "timmar": 73,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 7,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T09:49:44+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.652,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Houthis launch strikes on Saudi Arabia",
-              "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
-              "tid": 1795254584.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
-              "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
-              "tid": 1795239601.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Saudi-led coalition says targeted Yemen's Hodeida, other attacks 'ongoing'",
-              "url": "https://www.thehindu.com/news/international/saudi-led-coalition-says-targeted-yemens-hodeida-other-attacks-ongoing/article71725697.ece",
-              "tid": 1795194777.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Saudi-led forces strike Yemen port as Houthis warn airlines off the kingdom",
-              "url": "https://www.straitstimes.com/world/middle-east/saudi-led-forces-strike-yemen-port-as-houthis-warn-airlines-off-the-kingdom",
-              "tid": 1795192838.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
-              "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
-              "tid": 1795203024.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "UN warns against Yemen escalation after Saudi coalition strikes on Hodeidah port",
-              "url": "https://www.thenationalnews.com/news/2026/11/20/un-yemen-saudi-houthis-hodeidah/",
-              "tid": 1795208027.0,
-              "statskontrollerad": true
-            },
-            {
-              "kalla": "Tehran Times",
-              "land": "IR",
-              "rubrik": "Yemen targets Saudi Arabia’s financial hub",
-              "url": "https://www.tehrantimes.com/news/532345/Yemen-targets-Saudi-Arabia-s-financial-hub",
-              "tid": 1795193107.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Houthis launch strikes on Saudi Arabia",
-      "kallor": [
-        {
-          "namn": "France 24",
-          "rubrik": "Houthis launch strikes on Saudi Arabia",
-          "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
-          "tid": 1795254584.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
-          "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
-          "tid": 1795239601.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
-          "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
-          "tid": 1795203024.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Saudi-led coalition says targeted Yemen's Hodeida, other attacks 'ongoing'",
-          "url": "https://www.thehindu.com/news/international/saudi-led-coalition-says-targeted-yemens-hodeida-other-attacks-ongoing/article71725697.ece",
-          "tid": 1795194777.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Saudi-led forces strike Yemen port as Houthis warn airlines off the kingdom",
-          "url": "https://www.straitstimes.com/world/middle-east/saudi-led-forces-strike-yemen-port-as-houthis-warn-airlines-off-the-kingdom",
-          "tid": 1795192838.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "UN warns against Yemen escalation after Saudi coalition strikes on Hodeidah port",
-          "url": "https://www.thenationalnews.com/news/2026/11/20/un-yemen-saudi-houthis-hodeidah/",
-          "tid": 1795208027.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "Tehran Times",
-          "rubrik": "Yemen targets Saudi Arabia’s financial hub",
-          "url": "https://www.tehrantimes.com/news/532345/Yemen-targets-Saudi-Arabia-s-financial-hub",
-          "tid": 1795193107.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IR",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "cea32caa6b",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 30.5,
-      "vikt": {
-        "bredd": 0.55,
-        "regioner": {
-          "europa": 1,
-          "asien": 3,
-          "mellanostern": 1,
-          "afrika": 1,
-          "usa": 2
-        },
-        "timmar": 44,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 8,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T04:00:47+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.675,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "When you see smoke, run: Rohingya who escaped Myanmar’s genocide tell their stories",
-              "url": "https://www.theguardian.com/world/2026/nov/21/rohingya-who-escaped-myanmars-genocide-tell-their-stories",
-              "tid": 1795233647.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Rohingya in Bangladesh welcome UN court’s genocide verdict but say they want to go home to Myanmar",
-              "url": "https://www.channelnewsasia.com/asia/rohingya-bangladesh-myanmar-genocide-verdict-6571141",
-              "tid": 1795232268.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Myanmar calls International court's Rohingya genocide ruling ‘unfair’",
-              "url": "https://www.hindustantimes.com/world-news/myanmar-calls-international-court-of-justice-rohingya-genocide-ruling-unfair-101795162431149.html",
-              "tid": 1795163191.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Myanmar committed genocide against Rohingya, ICJ rules in landmark verdict",
-              "url": "https://asia.nikkei.com/politics/international-relations/myanmar-committed-genocide-against-rohingya-icj-rules-in-landmark-verdict",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Arab News",
-              "land": "SA",
-              "rubrik": "Rights groups urge sanctions after top UN court finds Myanmar committed genocide against Rohingya",
-              "url": "https://www.arabnews.com/world/rights-groups-urge-sanctions-after-top-un-court-finds-myanmar-committed-genocide-against-rohingya-3013243",
-              "tid": 1795205141.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Myanmar rejects ICJ Rohingya genocide ruling as 'unfair'",
-              "url": "http://www.africanews.com/2026/11/20/myanmar-rejects-icj-rohingya-genocide-ruling-as-unfair/",
-              "tid": 1795180593.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Human Rights Watch",
-              "land": "US",
-              "rubrik": "World Court Finds Myanmar Committed Rohingya Genocide",
-              "url": "https://www.hrw.org/news/2026/11/19/world-court-finds-myanmar-committed-rohingya-genocide",
-              "tid": 1795128029.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
-              "url": "https://www.nytimes.com/2026/11/19/world/europe/myanmar-genocide-icj-decision-.html",
-              "tid": 1795138640.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "When you see smoke, run: Rohingya who escaped Myanmar’s genocide tell their stories",
-      "kallor": [
-        {
-          "namn": "The Guardian",
-          "rubrik": "When you see smoke, run: Rohingya who escaped Myanmar’s genocide tell their stories",
-          "url": "https://www.theguardian.com/world/2026/nov/21/rohingya-who-escaped-myanmars-genocide-tell-their-stories",
-          "tid": 1795233647.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNA",
-          "rubrik": "Rohingya in Bangladesh welcome UN court’s genocide verdict but say they want to go home to Myanmar",
-          "url": "https://www.channelnewsasia.com/asia/rohingya-bangladesh-myanmar-genocide-verdict-6571141",
-          "tid": 1795232268.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Arab News",
-          "rubrik": "Rights groups urge sanctions after top UN court finds Myanmar committed genocide against Rohingya",
-          "url": "https://www.arabnews.com/world/rights-groups-urge-sanctions-after-top-un-court-finds-myanmar-committed-genocide-against-rohingya-3013243",
-          "tid": 1795205141.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SA",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "Myanmar rejects ICJ Rohingya genocide ruling as 'unfair'",
-          "url": "http://www.africanews.com/2026/11/20/myanmar-rejects-icj-rohingya-genocide-ruling-as-unfair/",
-          "tid": 1795180593.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Myanmar calls International court's Rohingya genocide ruling ‘unfair’",
-          "url": "https://www.hindustantimes.com/world-news/myanmar-calls-international-court-of-justice-rohingya-genocide-ruling-unfair-101795162431149.html",
-          "tid": 1795163191.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Human Rights Watch",
-          "rubrik": "World Court Finds Myanmar Committed Rohingya Genocide",
-          "url": "https://www.hrw.org/news/2026/11/19/world-court-finds-myanmar-committed-rohingya-genocide",
-          "tid": 1795128029.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
-          "url": "https://www.nytimes.com/2026/11/19/world/europe/myanmar-genocide-icj-decision-.html",
-          "tid": 1795138640.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "Myanmar committed genocide against Rohingya, ICJ rules in landmark verdict",
-          "url": "https://asia.nikkei.com/politics/international-relations/myanmar-committed-genocide-against-rohingya-icj-rules-in-landmark-verdict",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "97bc8bf0e9",
-      "amnen": [
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "halvledare"
-      ],
-      "poang": 30.2,
-      "vikt": {
-        "bredd": 0.426,
+        "bredd": 0.518,
         "regioner": {
           "mellanostern": 1,
-          "asien": 2,
-          "usa": 2,
-          "latinamerika": 1
+          "europa": 1,
+          "usa": 1,
+          "asien": 5
         },
-        "timmar": 55,
+        "timmar": 45,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2054,18 +1750,18 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 6,
+      "antal_kallor": 8,
       "har_primarkalla": false,
-      "senast": "2026-11-21T01:49:07+00:00",
+      "senast": "2026-11-21T10:25:29+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.544,
+      "sammanhang": 0.711,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "latinamerika",
+          "europa",
           "mellanostern",
           "usa"
         ],
@@ -2074,71 +1770,87 @@
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
-              "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang?traffic_source=rss",
-              "tid": 1795225747.0,
+              "rubrik": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
+              "url": "https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit?traffic_source=rss",
+              "tid": 1795256729.0,
               "statskontrollerad": false
             }
           ],
-          "asien": [
+          "europa": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Threats, insults, settlements: How Nvidia’s ex-CEO Jensen Huang made humiliation routine",
-              "url": "https://www.straitstimes.com/world/united-states/threats-insults-settlements-how-nvidias-ex-ceo-jensen-huang-made-humiliation-routine",
-              "tid": 1795220520.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Fact check: Former Nvidia CEO Jensen Huang is not launching a new semiconductor startup",
-              "url": "https://www.hindustantimes.com/world-news/us-news/fact-check-former-nvidia-ceo-jensen-huang-is-not-launching-a-new-semiconductor-startup-101795208710468.html",
-              "tid": 1795210839.0,
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "'Killer robots' talks at UN end with no legally binding ban",
+              "url": "https://www.dw.com/en/killer-robots-talks-at-un-end-with-no-legally-binding-ban/a-80008584?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795252680.0,
               "statskontrollerad": false
             }
           ],
           "usa": [
             {
-              "kalla": "Wired AI",
+              "kalla": "NPR",
               "land": "US",
-              "rubrik": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
-              "url": "https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/",
-              "tid": 1795204341.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Behind Jensen Huang’s exit, questions about a management style reportedly built on fear",
-              "url": "https://techcrunch.com/2026/11/20/behind-jensen-huangs-exit-questions-about-a-management-style-reportedly-built-on-fear/",
-              "tid": 1795181100.0,
+              "rubrik": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+              "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+              "tid": 1795248481.0,
               "statskontrollerad": false
             }
           ],
-          "latinamerika": [
+          "asien": [
             {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "Amenazas de muerte, insultos y humillaciones: el lado oscuro del liderazgo de Jensen Huang en Nvidia",
-              "url": "https://elpais.com/us/2026-11-20/amenazas-de-muerte-insultos-y-humillaciones-el-lado-oscuro-del-liderazgo-de-jensen-huang-en-nvidia.html",
-              "tid": 1795195263.0,
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Countries open path towards ‘killer robots’ pact",
+              "url": "https://www.japantimes.co.jp/news/2026/11/21/world/science-health/killer-robots-pact/",
+              "tid": 1795246860.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "UN talks pledge to draft ‘killer robot’ rules by 2028 after Russian pushback",
+              "url": "https://www.scmp.com/news/world/europe/article/3375318/un-talks-pledge-draft-killer-robot-rules-2028-after-russian-pushback",
+              "tid": 1795242732.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Countries open path towards 'killer robots' pact",
+              "url": "https://www.dawn.com/news/2046098/countries-open-path-towards-killer-robots-pact",
+              "tid": 1795240252.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "States agree to UN talks aiming to regulate ‘killer robots’ by 2028",
+              "url": "https://www.straitstimes.com/world/europe/states-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028",
+              "tid": 1795239632.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+              "url": "https://www.channelnewsasia.com/world/united-nations-regulate-ai-killer-robots-weapons-6571256",
+              "tid": 1795237740.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
+        "blind_flack": null,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
+      "reserv_rubrik": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
       "kallor": [
         {
           "namn": "Al Jazeera",
-          "rubrik": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
-          "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang?traffic_source=rss",
-          "tid": 1795225747.0,
+          "rubrik": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
+          "url": "https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit?traffic_source=rss",
+          "tid": 1795256729.0,
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -2147,10 +1859,70 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Deutsche Welle",
+          "rubrik": "'Killer robots' talks at UN end with no legally binding ban",
+          "url": "https://www.dw.com/en/killer-robots-talks-at-un-end-with-no-legally-binding-ban/a-80008584?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795252680.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NPR",
+          "rubrik": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+          "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+          "tid": 1795248481.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Countries open path towards ‘killer robots’ pact",
+          "url": "https://www.japantimes.co.jp/news/2026/11/21/world/science-health/killer-robots-pact/",
+          "tid": 1795246860.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "UN talks pledge to draft ‘killer robot’ rules by 2028 after Russian pushback",
+          "url": "https://www.scmp.com/news/world/europe/article/3375318/un-talks-pledge-draft-killer-robot-rules-2028-after-russian-pushback",
+          "tid": 1795242732.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Countries open path towards 'killer robots' pact",
+          "url": "https://www.dawn.com/news/2046098/countries-open-path-towards-killer-robots-pact",
+          "tid": 1795240252.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Straits Times",
-          "rubrik": "Threats, insults, settlements: How Nvidia’s ex-CEO Jensen Huang made humiliation routine",
-          "url": "https://www.straitstimes.com/world/united-states/threats-insults-settlements-how-nvidias-ex-ceo-jensen-huang-made-humiliation-routine",
-          "tid": 1795220520.0,
+          "rubrik": "States agree to UN talks aiming to regulate ‘killer robots’ by 2028",
+          "url": "https://www.straitstimes.com/world/europe/states-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028",
+          "tid": 1795239632.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
@@ -2159,51 +1931,15 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Fact check: Former Nvidia CEO Jensen Huang is not launching a new semiconductor startup",
-          "url": "https://www.hindustantimes.com/world-news/us-news/fact-check-former-nvidia-ceo-jensen-huang-is-not-launching-a-new-semiconductor-startup-101795208710468.html",
-          "tid": 1795210839.0,
+          "namn": "CNA",
+          "rubrik": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+          "url": "https://www.channelnewsasia.com/world/united-nations-regulate-ai-killer-robots-weapons-6571256",
+          "tid": 1795237740.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
+          "land": "SG",
           "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Wired AI",
-          "rubrik": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
-          "url": "https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/",
-          "tid": 1795204341.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País América",
-          "rubrik": "Amenazas de muerte, insultos y humillaciones: el lado oscuro del liderazgo de Jensen Huang en Nvidia",
-          "url": "https://elpais.com/us/2026-11-20/amenazas-de-muerte-insultos-y-humillaciones-el-lado-oscuro-del-liderazgo-de-jensen-huang-en-nvidia.html",
-          "tid": 1795195263.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Behind Jensen Huang’s exit, questions about a management style reportedly built on fear",
-          "url": "https://techcrunch.com/2026/11/20/behind-jensen-huangs-exit-questions-about-a-management-style-reportedly-built-on-fear/",
-          "tid": 1795181100.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
+          "agare": "statlig",
           "statskontrollerad": false
         }
       ],
@@ -2215,7 +1951,7 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "blind fläck"
+        "spärrord: killer"
       ],
       "data": null
     },
@@ -2227,7 +1963,7 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 30.2,
+      "poang": 30.3,
       "vikt": {
         "bredd": 0.578,
         "regioner": {
@@ -2237,7 +1973,7 @@
           "usa": 1,
           "sverige": 1
         },
-        "timmar": 79,
+        "timmar": 80,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2473,144 +2209,182 @@
       "data": null
     },
     {
-      "id": "04616a1c31",
+      "id": "e2c544916b",
       "amnen": [
-        "ai",
-        "marknader",
-        "sverige"
+        "geopolitik"
       ],
       "amnen_sektion": [
-        "ai",
-        "marknader",
-        "sverige"
+        "geopolitik"
       ],
-      "poang": 29.8,
+      "poang": 30.2,
       "vikt": {
-        "bredd": 0.294,
+        "bredd": 0.603,
         "regioner": {
-          "sverige": 3,
-          "europa": 1
+          "europa": 1,
+          "asien": 2,
+          "mellanostern": 3
         },
-        "timmar": 68,
+        "timmar": 74,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 4,
+      "antal_kallor": 6,
       "har_primarkalla": false,
-      "senast": "2026-11-21T09:20:07+00:00",
+      "senast": "2026-11-21T09:49:44+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.476,
+      "sammanhang": 0.713,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
+          "asien",
           "europa",
-          "sverige"
+          "mellanostern"
         ],
         "per_region": {
-          "sverige": [
+          "europa": [
             {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "AI-frossa på börsen i USA – årets uppgång utraderad",
-              "url": "https://www.sverigesradio.se/artikel/9347569",
-              "tid": 1795208880.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Tvivel på AI sänkte Wall Street – årets uppgång raderad",
-              "url": "https://www.dn.se/varlden/tvivel-pa-ai-sankte-wall-street-arets-uppgang-raderad/",
-              "tid": 1795213599.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Raset tilltar på Wall Street – Nasdaq ned drygt 4 procent",
-              "url": "https://www.di.se/live/raset-tilltar-pa-wall-street-nasdaq-ned-drygt-4-procent/",
-              "tid": 1795204805.0,
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Houthis launch strikes on Saudi Arabia",
+              "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
+              "tid": 1795254584.0,
               "statskontrollerad": false
             }
           ],
-          "europa": [
+          "asien": [
             {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Wall Street reels as AI-linked companies spark massive sell-off in the US",
-              "url": "https://www.lemonde.fr/en/economy/article/2026/11/21/wall-street-reels-as-ai-linked-companies-spark-massive-sell-off-in-the-us_6785968_19.html",
-              "tid": 1795252807.0,
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Yemen’s Houthis launch strikes after Saudi coalition’s 'special operation'",
+              "url": "https://www.dawn.com/news/2046096/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+              "tid": 1795242707.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
+              "tid": 1795239601.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Air strikes target two districts in Yemen's Taiz, Houthi media says",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/airstrikes-target-two-districts-yemens-taiz-houthi-media-says",
+              "tid": 1795235053.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+              "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+              "tid": 1795203024.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "UN warns against Yemen escalation after Saudi coalition strikes on Hodeidah port",
+              "url": "https://www.thenationalnews.com/news/2026/11/20/un-yemen-saudi-houthis-hodeidah/",
+              "tid": 1795208027.0,
+              "statskontrollerad": true
             }
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "AI-frossa på börsen i USA – årets uppgång utraderad",
+      "reserv_rubrik": "Houthis launch strikes on Saudi Arabia",
       "kallor": [
         {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "AI-frossa på börsen i USA – årets uppgång utraderad",
-          "url": "https://www.sverigesradio.se/artikel/9347569",
-          "tid": 1795208880.0,
+          "namn": "France 24",
+          "rubrik": "Houthis launch strikes on Saudi Arabia",
+          "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
+          "tid": 1795254584.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "FR",
+          "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
-          "namn": "Le Monde (English)",
-          "rubrik": "Wall Street reels as AI-linked companies spark massive sell-off in the US",
-          "url": "https://www.lemonde.fr/en/economy/article/2026/11/21/wall-street-reels-as-ai-linked-companies-spark-massive-sell-off-in-the-us_6785968_19.html",
-          "tid": 1795252807.0,
-          "betalvagg": true,
+          "namn": "Dawn",
+          "rubrik": "Yemen’s Houthis launch strikes after Saudi coalition’s 'special operation'",
+          "url": "https://www.dawn.com/news/2046096/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+          "tid": 1795242707.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "FR",
-          "region": "europa",
+          "land": "PK",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Tvivel på AI sänkte Wall Street – årets uppgång raderad",
-          "url": "https://www.dn.se/varlden/tvivel-pa-ai-sankte-wall-street-arets-uppgang-raderad/",
-          "tid": 1795213599.0,
-          "betalvagg": true,
+          "namn": "South China Morning Post",
+          "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
+          "tid": 1795239601.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "HK",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Dagens industri",
-          "rubrik": "Raset tilltar på Wall Street – Nasdaq ned drygt 4 procent",
-          "url": "https://www.di.se/live/raset-tilltar-pa-wall-street-nasdaq-ned-drygt-4-procent/",
-          "tid": 1795204805.0,
-          "betalvagg": true,
+          "namn": "Middle East Eye",
+          "rubrik": "Air strikes target two districts in Yemen's Taiz, Houthi media says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/airstrikes-target-two-districts-yemens-taiz-houthi-media-says",
+          "tid": 1795235053.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "GB",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+          "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+          "tid": 1795203024.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "UN warns against Yemen escalation after Saudi coalition strikes on Hodeidah port",
+          "url": "https://www.thenationalnews.com/news/2026/11/20/un-yemen-saudi-houthis-hodeidah/",
+          "tid": 1795208027.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 3,
-        "en": 3
+        "sv": 1,
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
@@ -2823,16 +2597,329 @@
       "data": null
     },
     {
+      "id": "efbd09daa8",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 29.3,
+      "vikt": {
+        "bredd": 0.398,
+        "regioner": {
+          "asien": 4,
+          "mellanostern": 1,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T03:20:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.704,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Iran foreign minister wants diplomacy to end war; Trump says terms unacceptable",
+              "url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/iran-diplomacy-terms-unacceptable/",
+              "tid": 1795231200.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
+              "url": "https://www.straitstimes.com/world/middle-east/araqchi-says-iran-wants-diplomacy-to-end-war-trump-says-terms-unacceptable",
+              "tid": 1795216529.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
+              "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
+              "tid": 1795166718.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Iran signals openness to diplomacy as Trump rejects its terms",
+              "url": "https://news.cgtn.com/news/2026-11-21/Iran-signals-openness-to-diplomacy-as-Trump-rejects-its-terms-1SfbQV8Myxq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795223871.0,
+              "statskontrollerad": true
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
+              "url": "https://www.al-monitor.com/originals/2026/11/araqchi-says-iran-wants-diplomacy-end-war-trump-says-terms-unacceptable",
+              "tid": 1795218389.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Axios",
+              "land": "US",
+              "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
+              "url": "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal",
+              "tid": 1795138259.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Iran foreign minister wants diplomacy to end war; Trump says terms unacceptable",
+      "kallor": [
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Iran foreign minister wants diplomacy to end war; Trump says terms unacceptable",
+          "url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/iran-diplomacy-terms-unacceptable/",
+          "tid": 1795231200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
+          "url": "https://www.al-monitor.com/originals/2026/11/araqchi-says-iran-wants-diplomacy-end-war-trump-says-terms-unacceptable",
+          "tid": 1795218389.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
+          "url": "https://www.straitstimes.com/world/middle-east/araqchi-says-iran-wants-diplomacy-to-end-war-trump-says-terms-unacceptable",
+          "tid": 1795216529.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
+          "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
+          "tid": 1795166718.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Axios",
+          "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
+          "url": "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal",
+          "tid": 1795138259.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Iran signals openness to diplomacy as Trump rejects its terms",
+          "url": "https://news.cgtn.com/news/2026-11-21/Iran-signals-openness-to-diplomacy-as-Trump-rejects-its-terms-1SfbQV8Myxq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795223871.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": true,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "04616a1c31",
+      "amnen": [
+        "ai",
+        "marknader",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "marknader",
+        "sverige"
+      ],
+      "poang": 29.1,
+      "vikt": {
+        "bredd": 0.217,
+        "regioner": {
+          "sverige": 2,
+          "europa": 1
+        },
+        "timmar": 69,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T09:20:07+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.603,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "AI-frossa på börsen i USA – årets uppgång utraderad",
+              "url": "https://www.sverigesradio.se/artikel/9347569",
+              "tid": 1795208880.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Tvivel på AI sänkte Wall Street – årets uppgång raderad",
+              "url": "https://www.dn.se/varlden/tvivel-pa-ai-sankte-wall-street-arets-uppgang-raderad/",
+              "tid": 1795213599.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Wall Street reels as AI-linked companies spark massive sell-off in the US",
+              "url": "https://www.lemonde.fr/en/economy/article/2026/11/21/wall-street-reels-as-ai-linked-companies-spark-massive-sell-off-in-the-us_6785968_19.html",
+              "tid": 1795252807.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "AI-frossa på börsen i USA – årets uppgång utraderad",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "AI-frossa på börsen i USA – årets uppgång utraderad",
+          "url": "https://www.sverigesradio.se/artikel/9347569",
+          "tid": 1795208880.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Wall Street reels as AI-linked companies spark massive sell-off in the US",
+          "url": "https://www.lemonde.fr/en/economy/article/2026/11/21/wall-street-reels-as-ai-linked-companies-spark-massive-sell-off-in-the-us_6785968_19.html",
+          "tid": 1795252807.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Tvivel på AI sänkte Wall Street – årets uppgång raderad",
+          "url": "https://www.dn.se/varlden/tvivel-pa-ai-sankte-wall-street-arets-uppgang-raderad/",
+          "tid": 1795213599.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "7f2576b9f6",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.3,
+      "poang": 28.4,
       "vikt": {
         "bredd": 0.176,
         "regioner": {
           "asien": 3
         },
-        "timmar": 64,
+        "timmar": 65,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2935,6 +3022,313 @@
         "ingen källkontroll",
         "färre än tre oberoende källor (2)",
         "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "9aa49b0089",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 28.3,
+      "vikt": {
+        "bredd": 0.301,
+        "regioner": {
+          "asien": 2,
+          "mellanostern": 1,
+          "usa": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-20T22:09:32+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.642,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "JD Vance evades question on whether he would have authorised strikes on Iran",
+              "url": "https://www.hindustantimes.com/world-news/us-news/jd-vance-evades-question-on-whether-he-would-have-authorised-strikes-on-iran-101795207747497.html",
+              "tid": 1795208210.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US V-P Vance declines to say he would have ordered Iran strikes",
+              "url": "https://www.straitstimes.com/world/middle-east/us-vice-president-vance-declines-to-say-he-would-have-ordered-iran-strikes",
+              "tid": 1795207830.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "US Vice President Vance declines to say he would have ordered Iran strikes",
+              "url": "https://www.al-monitor.com/originals/2026/11/us-vice-president-vance-declines-say-he-would-have-ordered-iran-strikes",
+              "tid": 1795207612.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Trump responds after Vance blames Iran war for midterm losses, VP says his job is to support president",
+              "url": "https://www.foxnews.com/politics/trump-responds-vance-blames-iran-war-midterm-losses-vp-says-job-support-president",
+              "tid": 1795204991.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Vance declines to say Iran war was worth it, but says he supports Trump",
+              "url": "https://www.washingtonpost.com/politics/2026/11/20/vice-president-jd-vance-declines-say-iran-war-was-worth-it-supports-trump/",
+              "tid": 1795212572.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Trump responds after Vance blames Iran war for midterm losses, VP says his job is to support president",
+              "url": "https://www.foxnews.com/politics/trump-responds-vance-blames-iran-war-midterm-losses-vp-says-job-support-president",
+              "tid": 1795204991.0,
+              "lutning": "hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Vance declines to say Iran war was worth it, but says he supports Trump",
+              "url": "https://www.washingtonpost.com/politics/2026/11/20/vice-president-jd-vance-declines-say-iran-war-was-worth-it-supports-trump/",
+              "tid": 1795212572.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "JD Vance evades question on whether he would have authorised strikes on Iran",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "JD Vance evades question on whether he would have authorised strikes on Iran",
+          "url": "https://www.hindustantimes.com/world-news/us-news/jd-vance-evades-question-on-whether-he-would-have-authorised-strikes-on-iran-101795207747497.html",
+          "tid": 1795208210.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "US V-P Vance declines to say he would have ordered Iran strikes",
+          "url": "https://www.straitstimes.com/world/middle-east/us-vice-president-vance-declines-to-say-he-would-have-ordered-iran-strikes",
+          "tid": 1795207830.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "US Vice President Vance declines to say he would have ordered Iran strikes",
+          "url": "https://www.al-monitor.com/originals/2026/11/us-vice-president-vance-declines-say-he-would-have-ordered-iran-strikes",
+          "tid": 1795207612.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Trump responds after Vance blames Iran war for midterm losses, VP says his job is to support president",
+          "url": "https://www.foxnews.com/politics/trump-responds-vance-blames-iran-war-midterm-losses-vp-says-job-support-president",
+          "tid": 1795204991.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Vance declines to say Iran war was worth it, but says he supports Trump",
+          "url": "https://www.washingtonpost.com/politics/2026/11/20/vice-president-jd-vance-declines-say-iran-war-was-worth-it-supports-trump/",
+          "tid": 1795212572.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "a5940a11a3",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 27.9,
+      "vikt": {
+        "bredd": 0.261,
+        "regioner": {
+          "asien": 2,
+          "mellanostern": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T08:12:18+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.809,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+              "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
+              "tid": 1795248738.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+              "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
+              "tid": 1795248026.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Middle East latest: Two tankers struck near Oman, says UKMTO",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/20/live-iran-war-saudi-arabia-houthis/",
+              "tid": 1795178254.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+          "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
+          "tid": 1795248738.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+          "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
+          "tid": 1795248026.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Middle East latest: Two tankers struck near Oman, says UKMTO",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/20/live-iran-war-saudi-arabia-houthis/",
+          "tid": 1795178254.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": true,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region",
+        "blind fläck"
       ],
       "data": null
     },
@@ -3177,6 +3571,125 @@
       "data": null
     },
     {
+      "id": "1689b7acb6",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 27.8,
+      "vikt": {
+        "bredd": 0.333,
+        "regioner": {
+          "mellanostern": 2,
+          "europa": 1
+        },
+        "timmar": 79,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T01:54:19+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.542,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Several Palestinians injured in attacks by Israeli settlers, forces in West Bank",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-attacks-israeli-settlers-forces-west-bank",
+              "tid": 1795226059.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "As Israeli opposition makes gains in Knesset, Palestinians count mounting losses in West Bank",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/20/as-israeli-opposition-makes-gains-in-knesset-palestinians-count-mounting-losses-in-west-bank/",
+              "tid": 1795147200.0,
+              "statskontrollerad": true
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "IDF teargasses RT crew in West Bank (VIDEO)",
+              "url": "https://rt-english.com/news/649160-rt-journalists-targeted-west-bank/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795193994.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Several Palestinians injured in attacks by Israeli settlers, forces in West Bank",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Several Palestinians injured in attacks by Israeli settlers, forces in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-attacks-israeli-settlers-forces-west-bank",
+          "tid": 1795226059.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "IDF teargasses RT crew in West Bank (VIDEO)",
+          "url": "https://rt-english.com/news/649160-rt-journalists-targeted-west-bank/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795193994.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "The National",
+          "rubrik": "As Israeli opposition makes gains in Knesset, Palestinians count mounting losses in West Bank",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/20/as-israeli-opposition-makes-gains-in-knesset-palestinians-count-mounting-losses-in-west-bank/",
+          "tid": 1795147200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "9aff3bfe4f",
       "amnen": [
         "usa"
@@ -3303,6 +3816,201 @@
       "data": null
     },
     {
+      "id": "463bb18848",
+      "amnen": [
+        "ai"
+      ],
+      "amnen_sektion": [
+        "ai"
+      ],
+      "poang": 27.6,
+      "vikt": {
+        "bredd": 0.394,
+        "regioner": {
+          "europa": 1,
+          "latinamerika": 1,
+          "usa": 1,
+          "asien": 1,
+          "mellanostern": 1
+        },
+        "timmar": 32,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-20T21:38:17+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.475,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+              "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+              "tid": 1795210697.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "El desplome de la IA lleva al Nasdaq a su peor semana en año y medio con Anthropic hundiéndose un 8,5%",
+              "url": "https://elpais.com/economia/2026-11-20/la-segunda-jornada-en-bolsa-de-anthropic.html",
+              "tid": 1795208818.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Intensifying AI rout wipes out Nasdaq's 2026 gains. Alphabet is a tech bright spot",
+              "url": "https://www.cnbc.com/investingclub/2026/11/20/ai-rout-wipes-out-nasdaqs-2026-gains-alphabet-is-a-tech-bright-spot.html",
+              "tid": 1795205172.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hacker News",
+              "land": "US",
+              "rubrik": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+              "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+              "tid": 1795181399.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Anthropic shares close 17% higher on first day of trading",
+              "url": "https://www.thehindu.com/business/markets/ai-firm-anthropic-shares-wall-streets-nasdaq-debut/article71721723.ece",
+              "tid": 1795147262.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Anthropic shares close 17% above IPO price after volatile Nasdaq debut",
+              "url": "https://www.thenationalnews.com/business/markets/2026/11/20/anthropic-share-price-today-ant-listing/",
+              "tid": 1795149610.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "kallor": [
+        {
+          "namn": "The Guardian",
+          "rubrik": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+          "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+          "tid": 1795210697.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "El desplome de la IA lleva al Nasdaq a su peor semana en año y medio con Anthropic hundiéndose un 8,5%",
+          "url": "https://elpais.com/economia/2026-11-20/la-segunda-jornada-en-bolsa-de-anthropic.html",
+          "tid": 1795208818.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Intensifying AI rout wipes out Nasdaq's 2026 gains. Alphabet is a tech bright spot",
+          "url": "https://www.cnbc.com/investingclub/2026/11/20/ai-rout-wipes-out-nasdaqs-2026-gains-alphabet-is-a-tech-bright-spot.html",
+          "tid": 1795205172.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Anthropic shares close 17% higher on first day of trading",
+          "url": "https://www.thehindu.com/business/markets/ai-firm-anthropic-shares-wall-streets-nasdaq-debut/article71721723.ece",
+          "tid": 1795147262.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hacker News",
+          "rubrik": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+          "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+          "tid": 1795181399.0,
+          "betalvagg": false,
+          "typ": "kuraterat",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Anthropic shares close 17% above IPO price after volatile Nasdaq debut",
+          "url": "https://www.thenationalnews.com/business/markets/2026/11/20/anthropic-share-price-today-ant-listing/",
+          "tid": 1795149610.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "4ba66dfe8b",
       "amnen": [
         "varlden"
@@ -3416,7 +4124,7 @@
           "usa": 1,
           "mellanostern": 1
         },
-        "timmar": 49,
+        "timmar": 50,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3506,859 +4214,6 @@
       "data": null
     },
     {
-      "id": "efbd09daa8",
-      "amnen": [
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 26.8,
-      "vikt": {
-        "bredd": 0.458,
-        "regioner": {
-          "asien": 4,
-          "mellanostern": 1,
-          "usa": 4
-        },
-        "timmar": 47,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T03:20:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.562,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Iran foreign minister wants diplomacy to end war, Trump says terms unacceptable",
-              "url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/iran-diplomacy-terms-unacceptable/",
-              "tid": 1795231200.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
-              "url": "https://www.straitstimes.com/world/middle-east/araqchi-says-iran-wants-diplomacy-to-end-war-trump-says-terms-unacceptable",
-              "tid": 1795216529.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
-              "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
-              "tid": 1795166718.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Iran signals openness to diplomacy as Trump rejects its terms",
-              "url": "https://news.cgtn.com/news/2026-11-21/Iran-signals-openness-to-diplomacy-as-Trump-rejects-its-terms-1SfbQV8Myxq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795223871.0,
-              "statskontrollerad": true
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
-              "url": "https://www.al-monitor.com/originals/2026/11/araqchi-says-iran-wants-diplomacy-end-war-trump-says-terms-unacceptable",
-              "tid": 1795218389.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Washington Times",
-              "land": "US",
-              "rubrik": "Trump denies rift with Vance over war in Iran",
-              "url": "https://www.washingtontimes.com/news/2026/nov/20/trump-denies-rift-vance-war-iran/",
-              "tid": 1795210369.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Trump responds after Vance blames Iran war for midterm losses, VP says his job is to support president",
-              "url": "https://www.foxnews.com/politics/trump-responds-vance-blames-iran-war-midterm-losses-vp-says-job-support-president",
-              "tid": 1795204991.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Axios",
-              "land": "US",
-              "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
-              "url": "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal",
-              "tid": 1795138259.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Vance declines to say Iran war was worth it, but says he supports Trump",
-              "url": "https://www.washingtonpost.com/politics/2026/11/20/vice-president-jd-vance-declines-say-iran-war-was-worth-it-supports-trump/",
-              "tid": 1795212572.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "The Washington Times",
-              "rubrik": "Trump denies rift with Vance over war in Iran",
-              "url": "https://www.washingtontimes.com/news/2026/nov/20/trump-denies-rift-vance-war-iran/",
-              "tid": 1795210369.0,
-              "lutning": "lutar_hoger"
-            },
-            {
-              "kalla": "Fox News",
-              "rubrik": "Trump responds after Vance blames Iran war for midterm losses, VP says his job is to support president",
-              "url": "https://www.foxnews.com/politics/trump-responds-vance-blames-iran-war-midterm-losses-vp-says-job-support-president",
-              "tid": 1795204991.0,
-              "lutning": "hoger"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "Axios",
-              "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
-              "url": "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal",
-              "tid": 1795138259.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Vance declines to say Iran war was worth it, but says he supports Trump",
-              "url": "https://www.washingtonpost.com/politics/2026/11/20/vice-president-jd-vance-declines-say-iran-war-was-worth-it-supports-trump/",
-              "tid": 1795212572.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Iran foreign minister wants diplomacy to end war, Trump says terms unacceptable",
-      "kallor": [
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Iran foreign minister wants diplomacy to end war, Trump says terms unacceptable",
-          "url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/iran-diplomacy-terms-unacceptable/",
-          "tid": 1795231200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
-          "url": "https://www.al-monitor.com/originals/2026/11/araqchi-says-iran-wants-diplomacy-end-war-trump-says-terms-unacceptable",
-          "tid": 1795218389.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
-          "url": "https://www.straitstimes.com/world/middle-east/araqchi-says-iran-wants-diplomacy-to-end-war-trump-says-terms-unacceptable",
-          "tid": 1795216529.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Times",
-          "rubrik": "Trump denies rift with Vance over war in Iran",
-          "url": "https://www.washingtontimes.com/news/2026/nov/20/trump-denies-rift-vance-war-iran/",
-          "tid": 1795210369.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Trump responds after Vance blames Iran war for midterm losses, VP says his job is to support president",
-          "url": "https://www.foxnews.com/politics/trump-responds-vance-blames-iran-war-midterm-losses-vp-says-job-support-president",
-          "tid": 1795204991.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "'Wants the deal done': After China trilateral, Trump tells Europe that Putin wants to end Ukraine war, claim reports",
-          "url": "https://www.hindustantimes.com/world-news/wants-the-deal-done-after-china-trilateral-trump-tells-europe-that-putin-wants-to-end-ukraine-war-claim-reports-101795162348133.html",
-          "tid": 1795166718.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Axios",
-          "rubrik": "Trump tells skeptical Europeans: \"Putin wants to end the war\"",
-          "url": "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal",
-          "tid": 1795138259.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Vance declines to say Iran war was worth it, but says he supports Trump",
-          "url": "https://www.washingtonpost.com/politics/2026/11/20/vice-president-jd-vance-declines-say-iran-war-was-worth-it-supports-trump/",
-          "tid": 1795212572.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Iran signals openness to diplomacy as Trump rejects its terms",
-          "url": "https://news.cgtn.com/news/2026-11-21/Iran-signals-openness-to-diplomacy-as-Trump-rejects-its-terms-1SfbQV8Myxq/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795223871.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": true,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "53477798d8",
-      "amnen": [
-        "halvledare",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "halvledare"
-      ],
-      "poang": 26.7,
-      "vikt": {
-        "bredd": 0.079,
-        "regioner": {
-          "asien": 1,
-          "usa": 1
-        },
-        "timmar": 55,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-20T17:08:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.443,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Asian American women feel impact of Nvidia CEO affair scandal, 'spy' accusations",
-              "url": "https://www.thehindu.com/news/international/asian-american-women-feel-impact-of-nvidia-ceo-affair-scandal-spy-accusations/article71723422.ece",
-              "tid": 1795166437.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "American State Capitalism Helped Produce the Nvidia Scandal",
-              "url": "https://www.wsj.com/economy/american-state-capitalism-helped-produce-the-nvidia-scandal-56ce6dee?mod=rss_worldnews",
-              "tid": 1795194480.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Asian American women feel impact of Nvidia CEO affair scandal, 'spy' accusations",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Asian American women feel impact of Nvidia CEO affair scandal, 'spy' accusations",
-          "url": "https://www.thehindu.com/news/international/asian-american-women-feel-impact-of-nvidia-ceo-affair-scandal-spy-accusations/article71723422.ece",
-          "tid": 1795166437.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "American State Capitalism Helped Produce the Nvidia Scandal",
-          "url": "https://www.wsj.com/economy/american-state-capitalism-helped-produce-the-nvidia-scandal-56ce6dee?mod=rss_worldnews",
-          "tid": 1795194480.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "2a622a9d06",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.6,
-      "vikt": {
-        "bredd": 0.302,
-        "regioner": {
-          "asien": 1,
-          "global": 1,
-          "mellanostern": 1
-        },
-        "timmar": 64,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T04:33:54+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.583,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "global",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Rappler",
-              "land": "PH",
-              "rubrik": "The week in photos: November 14-20, 2026",
-              "url": "https://www.rappler.com/world/the-week-in-photos-november-14-20-2026/",
-              "tid": 1795235634.0,
-              "statskontrollerad": false
-            }
-          ],
-          "global": [
-            {
-              "kalla": "International Crisis Group",
-              "land": "BE",
-              "rubrik": "October Trends and November Alerts 2026",
-              "url": "https://www.crisisgroup.org/crisiswatch/october-trends-and-november-alerts-2026",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Cartoon for November 21, 2026",
-              "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/20/us-china-russia-eu-europe-trump-xi-putin-meeting-shenzhen/",
-              "tid": 1795197600.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "The week in photos: November 14-20, 2026",
-      "kallor": [
-        {
-          "namn": "Rappler",
-          "rubrik": "The week in photos: November 14-20, 2026",
-          "url": "https://www.rappler.com/world/the-week-in-photos-november-14-20-2026/",
-          "tid": 1795235634.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PH",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "International Crisis Group",
-          "rubrik": "October Trends and November Alerts 2026",
-          "url": "https://www.crisisgroup.org/crisiswatch/october-trends-and-november-alerts-2026",
-          "tid": null,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BE",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Cartoon for November 21, 2026",
-          "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/20/us-china-russia-eu-europe-trump-xi-putin-meeting-shenzhen/",
-          "tid": 1795197600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "c6d0547d1f",
-      "amnen": [
-        "ai",
-        "startups",
-        "teknik"
-      ],
-      "amnen_sektion": [
-        "ai"
-      ],
-      "poang": 26.6,
-      "vikt": {
-        "bredd": 0.203,
-        "regioner": {
-          "usa": 3,
-          "mellanostern": 1
-        },
-        "timmar": 40,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T06:51:04+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.512,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
-              "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
-              "tid": 1795154401.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-              "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-              "tid": 1795135430.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "Anthropic’s IPO Triumph",
-              "url": "https://www.theinformation.com/articles/anthropics-ipo-triumph",
-              "tid": 1795136457.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Anthropic's post-IPO slide shows hype not enough to ease AI investor fears",
-              "url": "https://www.thenationalnews.com/business/markets/2026/11/21/anthropics-post-ipo-slide-shows-hype-not-enough-to-ease-ai-investor-fears/",
-              "tid": 1795243864.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
-      "kallor": [
-        {
-          "namn": "CNBC",
-          "rubrik": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
-          "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
-          "tid": 1795154401.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-          "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-          "tid": 1795135430.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Information",
-          "rubrik": "Anthropic’s IPO Triumph",
-          "url": "https://www.theinformation.com/articles/anthropics-ipo-triumph",
-          "tid": 1795136457.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Anthropic's post-IPO slide shows hype not enough to ease AI investor fears",
-          "url": "https://www.thenationalnews.com/business/markets/2026/11/21/anthropics-post-ipo-slide-shows-hype-not-enough-to-ease-ai-investor-fears/",
-          "tid": 1795243864.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "bara en region",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "47d06f6c64",
-      "amnen": [
-        "europa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "europa"
-      ],
-      "poang": 26.5,
-      "vikt": {
-        "bredd": 0.125,
-        "regioner": {
-          "europa": 1,
-          "sverige": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T09:45:52+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.519,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "sverige"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Rejoining EU ‘on the table’ as UK strikes deals on trade and young people",
-              "url": "https://www.theguardian.com/politics/2026/nov/21/rejoining-eu-uk-trade-youth-deals-ed-miliband",
-              "tid": 1795254352.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Öppning för unga när Storbritannien närmar sig EU",
-              "url": "https://www.dn.se/varlden/oppning-for-unga-nar-storbritannien-narmar-sig-eu/",
-              "tid": 1795193725.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Rejoining EU ‘on the table’ as UK strikes deals on trade and young people",
-      "kallor": [
-        {
-          "namn": "The Guardian",
-          "rubrik": "Rejoining EU ‘on the table’ as UK strikes deals on trade and young people",
-          "url": "https://www.theguardian.com/politics/2026/nov/21/rejoining-eu-uk-trade-youth-deals-ed-miliband",
-          "tid": 1795254352.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Öppning för unga när Storbritannien närmar sig EU",
-          "url": "https://www.dn.se/varlden/oppning-for-unga-nar-storbritannien-narmar-sig-eu/",
-          "tid": 1795193725.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "12391589c3",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.3,
-      "vikt": {
-        "bredd": 0.163,
-        "regioner": {
-          "usa": 1,
-          "afrika": 1
-        },
-        "timmar": 41,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-20T17:56:32+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.646,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "Committee to Protect Journalists",
-              "land": "US",
-              "rubrik": "CPJ’s 2026 International Press Freedom Awards commemorates journalists who endured targeting, imprisonment, exile, and surveillance for their reporting",
-              "url": "https://cpj.org/2026/11/cpjs-2026-international-press-freedom-awards-commemorates-journalists-who-endured-targeting-imprisonment-exile-and-surveillance-for-their-reporting/",
-              "tid": 1795197392.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Lebanese journalist injured in Israeli strike receives CPJ Press Freedom Award",
-              "url": "http://www.africanews.com/2026/11/20/lebanese-journalist-injured-in-israeli-strike-receives-cpj-press-freedom-award/",
-              "tid": 1795188880.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "CPJ’s 2026 International Press Freedom Awards commemorates journalists who endured targeting, imprisonment, exile, and surveillance for their reporting",
-      "kallor": [
-        {
-          "namn": "Committee to Protect Journalists",
-          "rubrik": "CPJ’s 2026 International Press Freedom Awards commemorates journalists who endured targeting, imprisonment, exile, and surveillance for their reporting",
-          "url": "https://cpj.org/2026/11/cpjs-2026-international-press-freedom-awards-commemorates-journalists-who-endured-targeting-imprisonment-exile-and-surveillance-for-their-reporting/",
-          "tid": 1795197392.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "Lebanese journalist injured in Israeli strike receives CPJ Press Freedom Award",
-          "url": "http://www.africanews.com/2026/11/20/lebanese-journalist-injured-in-israeli-strike-receives-cpj-press-freedom-award/",
-          "tid": 1795188880.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "99a82096cb",
       "amnen": [
         "ai"
@@ -4366,15 +4221,15 @@
       "amnen_sektion": [
         "ai"
       ],
-      "poang": 26.3,
+      "poang": 27.1,
       "vikt": {
-        "bredd": 0.503,
+        "bredd": 0.56,
         "regioner": {
-          "europa": 2,
+          "europa": 3,
           "asien": 5,
           "usa": 4
         },
-        "timmar": 18,
+        "timmar": 19,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4383,13 +4238,13 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 11,
+      "antal_kallor": 12,
       "har_primarkalla": true,
-      "senast": "2026-11-21T07:46:00+00:00",
+      "senast": "2026-11-21T10:29:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.665,
+      "sammanhang": 0.664,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -4405,6 +4260,14 @@
               "rubrik": "Mathematician says he and AI solved Riemann hypothesis — the field’s biggest outstanding challenge",
               "url": "https://www.nature.com/articles/d41586-026-03812-7",
               "tid": 1795132800.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Anthropic researcher uses AI to solve math's greatest riddle",
+              "url": "https://www.dw.com/en/anthropic-researcher-uses-ai-to-solve-math-s-greatest-riddle/a-80008428?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795256940.0,
               "statskontrollerad": false
             },
             {
@@ -4510,6 +4373,18 @@
           "land": "GB",
           "region": "europa",
           "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Anthropic researcher uses AI to solve math's greatest riddle",
+          "url": "https://www.dw.com/en/anthropic-researcher-uses-ai-to-solve-math-s-greatest-riddle/a-80008428?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795256940.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
           "statskontrollerad": false
         },
         {
@@ -4645,23 +4520,248 @@
       "data": null
     },
     {
-      "id": "7bf9014695",
+      "id": "d66cc8c7f5",
       "amnen": [
-        "ai"
+        "halvledare",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "halvledare"
+      ],
+      "poang": 26.8,
+      "vikt": {
+        "bredd": 0.079,
+        "regioner": {
+          "asien": 1,
+          "usa": 1
+        },
+        "timmar": 56,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-20T17:08:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.443,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Asian American women feel impact of Nvidia CEO affair scandal, 'spy' accusations",
+              "url": "https://www.thehindu.com/news/international/asian-american-women-feel-impact-of-nvidia-ceo-affair-scandal-spy-accusations/article71723422.ece",
+              "tid": 1795166437.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "American State Capitalism Helped Produce the Nvidia Scandal",
+              "url": "https://www.wsj.com/economy/american-state-capitalism-helped-produce-the-nvidia-scandal-56ce6dee?mod=rss_worldnews",
+              "tid": 1795194480.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Asian American women feel impact of Nvidia CEO affair scandal, 'spy' accusations",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Asian American women feel impact of Nvidia CEO affair scandal, 'spy' accusations",
+          "url": "https://www.thehindu.com/news/international/asian-american-women-feel-impact-of-nvidia-ceo-affair-scandal-spy-accusations/article71723422.ece",
+          "tid": 1795166437.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "American State Capitalism Helped Produce the Nvidia Scandal",
+          "url": "https://www.wsj.com/economy/american-state-capitalism-helped-produce-the-nvidia-scandal-56ce6dee?mod=rss_worldnews",
+          "tid": 1795194480.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "2a622a9d06",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 26.7,
+      "vikt": {
+        "bredd": 0.302,
+        "regioner": {
+          "asien": 1,
+          "global": 1,
+          "mellanostern": 1
+        },
+        "timmar": 65,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T04:33:54+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.583,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "global",
+          "mellanostern"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Rappler",
+              "land": "PH",
+              "rubrik": "The week in photos: November 14-20, 2026",
+              "url": "https://www.rappler.com/world/the-week-in-photos-november-14-20-2026/",
+              "tid": 1795235634.0,
+              "statskontrollerad": false
+            }
+          ],
+          "global": [
+            {
+              "kalla": "International Crisis Group",
+              "land": "BE",
+              "rubrik": "October Trends and November Alerts 2026",
+              "url": "https://www.crisisgroup.org/crisiswatch/october-trends-and-november-alerts-2026",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Cartoon for November 21, 2026",
+              "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/20/us-china-russia-eu-europe-trump-xi-putin-meeting-shenzhen/",
+              "tid": 1795197600.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "The week in photos: November 14-20, 2026",
+      "kallor": [
+        {
+          "namn": "Rappler",
+          "rubrik": "The week in photos: November 14-20, 2026",
+          "url": "https://www.rappler.com/world/the-week-in-photos-november-14-20-2026/",
+          "tid": 1795235634.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PH",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "International Crisis Group",
+          "rubrik": "October Trends and November Alerts 2026",
+          "url": "https://www.crisisgroup.org/crisiswatch/october-trends-and-november-alerts-2026",
+          "tid": null,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "global",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Cartoon for November 21, 2026",
+          "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/20/us-china-russia-eu-europe-trump-xi-putin-meeting-shenzhen/",
+          "tid": 1795197600.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "c6d0547d1f",
+      "amnen": [
+        "ai",
+        "startups",
+        "teknik"
       ],
       "amnen_sektion": [
         "ai"
       ],
-      "poang": 26.2,
+      "poang": 26.7,
       "vikt": {
-        "bredd": 0.347,
+        "bredd": 0.203,
         "regioner": {
-          "latinamerika": 1,
-          "usa": 1,
-          "asien": 1,
+          "usa": 3,
           "mellanostern": 1
         },
-        "timmar": 26,
+        "timmar": 41,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4672,47 +4772,41 @@
       "maste": false,
       "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-11-20T14:18:33+00:00",
+      "senast": "2026-11-21T06:51:04+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.494,
+      "sammanhang": 0.512,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
-          "latinamerika",
           "mellanostern",
           "usa"
         ],
         "per_region": {
-          "latinamerika": [
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "La histórica OPV de Anthropic deja de lado a los inversores españoles: “Nunca nos llega nada de papel”",
-              "url": "https://cincodias.elpais.com/mercados-financieros/2026-11-20/la-historica-opv-de-anthropic-deja-de-lado-a-los-inversores-espanoles-nunca-nos-llega-nada-de-papel.html",
-              "tid": 1795149001.0,
-              "statskontrollerad": false
-            }
-          ],
           "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
+              "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
+              "tid": 1795154401.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+              "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+              "tid": 1795135430.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "The Information",
               "land": "US",
-              "rubrik": "How Anthropic Upstaged OpenAI on Road to Blockbuster IPO",
-              "url": "https://www.theinformation.com/articles/anthropic-upstaged-openai-road-blockbuster-ipo",
-              "tid": 1795184313.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Anthropic IPO draws rush of Japan retail investors",
-              "url": "https://asia.nikkei.com/business/markets/ipo/anthropic-ipo-draws-rush-of-japan-retail-investors",
-              "tid": null,
+              "rubrik": "Anthropic’s IPO Triumph",
+              "url": "https://www.theinformation.com/articles/anthropics-ipo-triumph",
+              "tid": 1795136457.0,
               "statskontrollerad": false
             }
           ],
@@ -4720,9 +4814,9 @@
             {
               "kalla": "The National",
               "land": "AE",
-              "rubrik": "How Anthropic co-founders and investors are expected to make billions through blockbuster IPO",
-              "url": "https://www.thenationalnews.com/business/markets/2026/11/20/how-anthropic-co-founders-and-investors-are-expected-to-make-billions-through-blockbuster-ipo/",
-              "tid": 1795179897.0,
+              "rubrik": "Anthropic's post-IPO slide shows hype not enough to ease AI investor fears",
+              "url": "https://www.thenationalnews.com/business/markets/2026/11/21/anthropics-post-ipo-slide-shows-hype-not-enough-to-ease-ai-investor-fears/",
+              "tid": 1795243864.0,
               "statskontrollerad": true
             }
           ]
@@ -4732,25 +4826,37 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "La histórica OPV de Anthropic deja de lado a los inversores españoles: “Nunca nos llega nada de papel”",
+      "reserv_rubrik": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
       "kallor": [
         {
-          "namn": "El País América",
-          "rubrik": "La histórica OPV de Anthropic deja de lado a los inversores españoles: “Nunca nos llega nada de papel”",
-          "url": "https://cincodias.elpais.com/mercados-financieros/2026-11-20/la-historica-opv-de-anthropic-deja-de-lado-a-los-inversores-espanoles-nunca-nos-llega-nada-de-papel.html",
-          "tid": 1795149001.0,
+          "namn": "CNBC",
+          "rubrik": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
+          "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
+          "tid": 1795154401.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "TechCrunch",
+          "rubrik": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+          "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+          "tid": 1795135430.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "The Information",
-          "rubrik": "How Anthropic Upstaged OpenAI on Road to Blockbuster IPO",
-          "url": "https://www.theinformation.com/articles/anthropic-upstaged-openai-road-blockbuster-ipo",
-          "tid": 1795184313.0,
+          "rubrik": "Anthropic’s IPO Triumph",
+          "url": "https://www.theinformation.com/articles/anthropics-ipo-triumph",
+          "tid": 1795136457.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -4759,22 +4865,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Nikkei Asia",
-          "rubrik": "Anthropic IPO draws rush of Japan retail investors",
-          "url": "https://asia.nikkei.com/business/markets/ipo/anthropic-ipo-draws-rush-of-japan-retail-investors",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The National",
-          "rubrik": "How Anthropic co-founders and investors are expected to make billions through blockbuster IPO",
-          "url": "https://www.thenationalnews.com/business/markets/2026/11/20/how-anthropic-co-founders-and-investors-are-expected-to-make-billions-through-blockbuster-ipo/",
-          "tid": 1795179897.0,
+          "rubrik": "Anthropic's post-IPO slide shows hype not enough to ease AI investor fears",
+          "url": "https://www.thenationalnews.com/business/markets/2026/11/21/anthropics-post-ipo-slide-shows-hype-not-enough-to-ease-ai-investor-fears/",
+          "tid": 1795243864.0,
           "betalvagg": false,
           "typ": "media",
           "land": "AE",
@@ -4786,11 +4880,12 @@
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 3
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
+        "bara en region",
         "blind fläck"
       ],
       "data": null
@@ -4803,26 +4898,26 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 25.6,
+      "poang": 24.8,
       "vikt": {
-        "bredd": 0.338,
+        "bredd": 0.246,
         "regioner": {
-          "sverige": 4
+          "sverige": 3
         },
-        "timmar": 47,
+        "timmar": 48,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 4,
+      "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-11-20T16:47:08+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.758,
+      "sammanhang": 0.779,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -4830,14 +4925,6 @@
         ],
         "per_region": {
           "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "SVT granskar Carina Bergfeldt",
-              "url": "https://www.sverigesradio.se/artikel/9347497",
-              "tid": 1795191840.0,
-              "statskontrollerad": false
-            },
             {
               "kalla": "Expressen Nöje",
               "land": "SE",
@@ -4869,20 +4956,8 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "SVT granskar Carina Bergfeldt",
+      "reserv_rubrik": "Bergfeldt hjälpte adhd-expert att anmäla SVT",
       "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "SVT granskar Carina Bergfeldt",
-          "url": "https://www.sverigesradio.se/artikel/9347497",
-          "tid": 1795191840.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
         {
           "namn": "Expressen Nöje",
           "rubrik": "Bergfeldt hjälpte adhd-expert att anmäla SVT",
@@ -4937,7 +5012,7 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 23.0,
+      "poang": 23.3,
       "vikt": {
         "bredd": 0.249,
         "regioner": {
@@ -4945,7 +5020,7 @@
           "asien": 1,
           "mellanostern": 1
         },
-        "timmar": 15,
+        "timmar": 16,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5066,13 +5141,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.3,
+      "poang": 21.5,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5165,13 +5240,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.3,
+      "poang": 21.5,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5264,13 +5339,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.8,
+      "poang": 21.0,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 23,
+        "timmar": 24,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5363,13 +5438,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 17.8,
+      "poang": 18.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 11,
+        "timmar": 12,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5462,13 +5537,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 14.2,
+      "poang": 14.9,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 4,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5531,6 +5606,103 @@
           "rubrik": "Svenska poliser ska placeras i Irak",
           "url": "https://www.di.se/nyheter/svenska-poliser-ska-placeras-i-irak/",
           "tid": 1795241214.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "ead63adce4",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 13.2,
+      "vikt": {
+        "bredd": 0.169,
+        "regioner": {
+          "sverige": 2
+        },
+        "timmar": 3,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T09:46:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.676,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "SMHI vädervarnar igen – gul varning för snö",
+              "url": "https://www.sverigesradio.se/artikel/9347619",
+              "tid": 1795254360.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "SMHI utökar snövarningen – igen",
+              "url": "https://www.dn.se/sverige/smhi-utokar-snovarningen-igen/",
+              "tid": 1795253868.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "SMHI vädervarnar igen – gul varning för snö",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "SMHI vädervarnar igen – gul varning för snö",
+          "url": "https://www.sverigesradio.se/artikel/9347619",
+          "tid": 1795254360.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "SMHI utökar snövarningen – igen",
+          "url": "https://www.dn.se/sverige/smhi-utokar-snovarningen-igen/",
+          "tid": 1795253868.0,
           "betalvagg": true,
           "typ": "media",
           "land": "SE",
@@ -6037,110 +6209,13 @@
         "bara en region"
       ],
       "data": null
-    },
-    {
-      "id": "ead63adce4",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.9,
-      "vikt": {
-        "bredd": 0.169,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 2,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T09:46:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.676,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "SMHI vädervarnar igen – gul varning för snö",
-              "url": "https://www.sverigesradio.se/artikel/9347619",
-              "tid": 1795254360.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "SMHI utökar snövarningen – igen",
-              "url": "https://www.dn.se/sverige/smhi-utokar-snovarningen-igen/",
-              "tid": 1795253868.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "SMHI vädervarnar igen – gul varning för snö",
-      "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "SMHI vädervarnar igen – gul varning för snö",
-          "url": "https://www.sverigesradio.se/artikel/9347619",
-          "tid": 1795254360.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "SMHI utökar snövarningen – igen",
-          "url": "https://www.dn.se/sverige/smhi-utokar-snovarningen-igen/",
-          "tid": 1795253868.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 37,
+      "artiklar": 38,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -6164,7 +6239,7 @@
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 7,
       "url": "https://www.breakit.se/feed/artiklar"
     },
     {
@@ -6176,7 +6251,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 26,
+      "artiklar": 28,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -6254,7 +6329,7 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 26,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
@@ -6284,19 +6359,19 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 42,
+      "artiklar": 47,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 29,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 33,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -6308,7 +6383,7 @@
     {
       "id": "npr",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 13,
       "url": "https://feeds.npr.org/1004/rss.xml"
     },
     {
@@ -6356,7 +6431,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 41,
+      "artiklar": 42,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -6372,14 +6447,13 @@
     },
     {
       "id": "arabnews",
-      "ok": true,
-      "artiklar": 50,
-      "url": "https://www.arabnews.com/rss.xml"
+      "ok": false,
+      "fel": "HTTP Error 403: Forbidden"
     },
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 9,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -6438,13 +6512,13 @@
     {
       "id": "ars",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://feeds.arstechnica.com/arstechnica/index"
     },
     {
       "id": "techcrunch",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://techcrunch.com/feed/"
     },
     {
@@ -6474,7 +6548,7 @@
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 36,
+      "artiklar": 35,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
@@ -6522,7 +6596,7 @@
     {
       "id": "microsoft-ai",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 1,
       "url": "https://news.microsoft.com/source/feed/"
     },
     {
@@ -6562,7 +6636,7 @@
     {
       "id": "the-information",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 10,
       "url": "https://www.theinformation.com/feed"
     },
     {
@@ -6579,9 +6653,8 @@
     },
     {
       "id": "import-ai",
-      "ok": true,
-      "artiklar": 0,
-      "url": "https://importai.substack.com/feed"
+      "ok": false,
+      "fel": "HTTP Error 403: Forbidden"
     },
     {
       "id": "superhuman",
@@ -6604,13 +6677,13 @@
     {
       "id": "politico",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 7,
       "url": "https://rss.politico.com/politics-news.xml"
     },
     {
       "id": "axios",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 15,
       "url": "https://www.axios.com/feeds/feed.rss"
     },
     {
@@ -6622,7 +6695,7 @@
     {
       "id": "vox",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 6,
       "url": "https://www.vox.com/rss/index.xml"
     },
     {
@@ -6633,14 +6706,13 @@
     },
     {
       "id": "wash-times",
-      "ok": true,
-      "artiklar": 20,
-      "url": "https://www.washingtontimes.com/rss/headlines/news/"
+      "ok": false,
+      "fel": "HTTP Error 403: Forbidden"
     },
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 34,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6688,7 +6760,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 23,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -6718,7 +6790,7 @@
     {
       "id": "mexnews",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 8,
       "url": "https://mexiconewsdaily.com/feed/"
     },
     {
@@ -6730,7 +6802,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 85,
+      "artiklar": 83,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -6748,7 +6820,7 @@
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 34,
+      "artiklar": 28,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -6760,7 +6832,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 38,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -6808,18 +6880,20 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 82,
+      "artiklar": 77,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
       "id": "dawn",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 26,
+      "url": "https://www.dawn.com/feeds/home"
     },
     {
       "id": "bangkokpost",
-      "ok": false,
-      "fel": "HTTP Error 451: "
+      "ok": true,
+      "artiklar": 10,
+      "url": "https://www.bangkokpost.com/rss/data/topstories.xml"
     },
     {
       "id": "rappler",
@@ -6902,7 +6976,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 10,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -6920,13 +6994,13 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 34,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
       "id": "hrw",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 1,
       "url": "https://www.hrw.org/rss/news"
     },
     {
@@ -6962,7 +7036,7 @@
     {
       "id": "climatehome",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 4,
       "url": "https://www.climatechangenews.com/feed/"
     },
     {
