@@ -1,227 +1,121 @@
 {
-  "skapad": "2026-11-21T17:05:16.409138+00:00",
+  "skapad": "2026-11-21T17:34:24.863569+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
-      "id": "ce73ab338b",
+      "id": "e2c544916b",
       "amnen": [
-        "europa"
+        "geopolitik"
       ],
       "amnen_sektion": [
-        "europa"
+        "geopolitik"
       ],
-      "poang": 33.5,
+      "poang": 31.1,
       "vikt": {
-        "bredd": 0.853,
+        "bredd": 0.662,
         "regioner": {
-          "europa": 2,
-          "mellanostern": 2,
           "asien": 3,
-          "global": 2,
-          "sverige": 1
+          "mellanostern": 3,
+          "europa": 1
         },
-        "timmar": 44,
+        "timmar": 80,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "miljo"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 10,
+      "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-11-21T14:54:24+00:00",
+      "senast": "2026-11-21T17:14:14+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.554,
+      "sammanhang": 0.782,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
-          "global",
-          "mellanostern",
-          "sverige"
+          "mellanostern"
         ],
         "per_region": {
-          "europa": [
+          "asien": [
             {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-              "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795272864.0,
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+              "url": "https://www.thehindu.com/news/international/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation/article71729354.ece",
+              "tid": 1795281254.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "COP31: UN Climate summit runs into overtime as deal remains elusive",
-              "url": "https://www.dw.com/en/cop31-un-climate-summit-runs-into-overtime-as-deal-remains-elusive/live-79999516?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795258320.0,
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Yemen’s Houthis launch strikes after Saudi coalition’s 'special operation'",
+              "url": "https://www.dawn.com/news/2046096/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+              "tid": 1795242707.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
+              "tid": 1795239601.0,
               "statskontrollerad": false
             }
           ],
           "mellanostern": [
             {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Saudi-led coalition carried out 71 strikes in 24 hours, Houthis say",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-carried-out-71-strikes-24-hours-houthis-say",
+              "tid": 1795280449.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "COP31 climate summit risks failure as talks go deep into overtime",
-              "url": "https://www.al-monitor.com/originals/2026/11/cop31-climate-summit-risks-failure-talks-go-deep-overtime",
-              "tid": 1795272391.0,
+              "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+              "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+              "tid": 1795203024.0,
               "statskontrollerad": false
             },
             {
               "kalla": "The National",
               "land": "AE",
-              "rubrik": "Cop31 climate talks overrun in dispute over final deal",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/21/cop31-climate-talks-overrun-in-dispute-over-final-deal/",
-              "tid": 1795261737.0,
+              "rubrik": "UN warns against Yemen escalation after Saudi coalition strikes on Hodeidah port",
+              "url": "https://www.thenationalnews.com/news/2026/11/20/un-yemen-saudi-houthis-hodeidah/",
+              "tid": 1795208027.0,
               "statskontrollerad": true
             }
           ],
-          "asien": [
+          "europa": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "COP31 climate summit risks failure as talks go deep into overtime",
-              "url": "https://www.straitstimes.com/world/europe/cop31-climate-summit-risks-failure-as-talks-go-deep-into-overtime",
-              "tid": 1795272041.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Talks go into overtime as COP31 deal remains elusive",
-              "url": "https://www.hindustantimes.com/world-news/talks-go-into-overtime-as-cop31-deal-remains-elusive-101795193854624.html",
-              "tid": 1795193854.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "COP31 talks extended amid dispute over fossil fuels",
-              "url": "https://news.cgtn.com/news/2026-11-21/COP31-talks-extended-amid-dispute-over-fossil-fuels-1SfdSUt0Dra/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795225953.0,
-              "statskontrollerad": true
-            }
-          ],
-          "global": [
-            {
-              "kalla": "Climate Home News",
-              "land": "GB",
-              "rubrik": "COP31 is shaping up to be a disaster – not only because it’s weak on fossil fuels",
-              "url": "https://www.climatechangenews.com/2026/11/21/cop31-is-shaping-up-to-be-a-disaster-not-only-because-its-weak-on-fossil-fuels/",
-              "tid": 1795256297.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Mongabay",
-              "land": "US",
-              "rubrik": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
-              "url": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
-              "tid": 1795194464.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Klimatmötet går in på övertid – stor ovisshet",
-              "url": "https://www.dn.se/varlden/klimatmotet-gar-in-pa-overtid-stor-ovisshet/",
-              "tid": 1795190869.0,
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Houthis launch strikes on Saudi Arabia",
+              "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
+              "tid": 1795254584.0,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "reserv_rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
       "kallor": [
         {
-          "namn": "BBC World",
-          "rubrik": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-          "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795272864.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "COP31 climate summit risks failure as talks go deep into overtime",
-          "url": "https://www.al-monitor.com/originals/2026/11/cop31-climate-summit-risks-failure-talks-go-deep-overtime",
-          "tid": 1795272391.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "COP31 climate summit risks failure as talks go deep into overtime",
-          "url": "https://www.straitstimes.com/world/europe/cop31-climate-summit-risks-failure-as-talks-go-deep-into-overtime",
-          "tid": 1795272041.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "COP31: UN Climate summit runs into overtime as deal remains elusive",
-          "url": "https://www.dw.com/en/cop31-un-climate-summit-runs-into-overtime-as-deal-remains-elusive/live-79999516?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795258320.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Climate Home News",
-          "rubrik": "COP31 is shaping up to be a disaster – not only because it’s weak on fossil fuels",
-          "url": "https://www.climatechangenews.com/2026/11/21/cop31-is-shaping-up-to-be-a-disaster-not-only-because-its-weak-on-fossil-fuels/",
-          "tid": 1795256297.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "global",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Mongabay",
-          "rubrik": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
-          "url": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
-          "tid": 1795194464.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Talks go into overtime as COP31 deal remains elusive",
-          "url": "https://www.hindustantimes.com/world-news/talks-go-into-overtime-as-cop31-deal-remains-elusive-101795193854624.html",
-          "tid": 1795193854.0,
+          "namn": "The Hindu",
+          "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+          "url": "https://www.thehindu.com/news/international/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation/article71729354.ece",
+          "tid": 1795281254.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -230,45 +124,81 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Klimatmötet går in på övertid – stor ovisshet",
-          "url": "https://www.dn.se/varlden/klimatmotet-gar-in-pa-overtid-stor-ovisshet/",
-          "tid": 1795190869.0,
-          "betalvagg": true,
+          "namn": "Middle East Eye",
+          "rubrik": "Saudi-led coalition carried out 71 strikes in 24 hours, Houthis say",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-carried-out-71-strikes-24-hours-houthis-say",
+          "tid": 1795280449.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Houthis launch strikes on Saudi Arabia",
+          "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
+          "tid": 1795254584.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Yemen’s Houthis launch strikes after Saudi coalition’s 'special operation'",
+          "url": "https://www.dawn.com/news/2046096/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+          "tid": 1795242707.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
+          "tid": 1795239601.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+          "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
+          "tid": 1795203024.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "The National",
-          "rubrik": "Cop31 climate talks overrun in dispute over final deal",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/21/cop31-climate-talks-overrun-in-dispute-over-final-deal/",
-          "tid": 1795261737.0,
+          "rubrik": "UN warns against Yemen escalation after Saudi coalition strikes on Hodeidah port",
+          "url": "https://www.thenationalnews.com/news/2026/11/20/un-yemen-saudi-houthis-hodeidah/",
+          "tid": 1795208027.0,
           "betalvagg": false,
           "typ": "media",
           "land": "AE",
           "region": "mellanostern",
           "agare": "statlig",
           "statskontrollerad": true
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "COP31 talks extended amid dispute over fossil fuels",
-          "url": "https://news.cgtn.com/news/2026-11-21/COP31-talks-extended-amid-dispute-over-fossil-fuels-1SfdSUt0Dra/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795225953.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
+        "sv": 1,
         "en": 2
       },
       "autopilot": [
@@ -576,254 +506,6 @@
         "färre än tre oberoende källor (2)",
         "bara en region",
         "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "80cea548ff",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 30.6,
-      "vikt": {
-        "bredd": 1.021,
-        "regioner": {
-          "mellanostern": 3,
-          "europa": 1,
-          "asien": 4,
-          "norden": 1
-        },
-        "timmar": 30,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T17:00:49+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.712,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "norden"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Saudi-led coalition carried out 71 strikes in 24 hours, Houthis say",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-carried-out-71-strikes-24-hours-houthis-say",
-              "tid": 1795280449.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
-              "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
-              "tid": 1795203024.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "'One-a-night' Houthi missile tactic stretches Saudi defences",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/20/one-a-night-houthi-missile-tactic-stretches-saudi-defences/",
-              "tid": 1795191002.0,
-              "statskontrollerad": true
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Houthis launch strikes on Saudi Arabia",
-              "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
-              "tid": 1795254584.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Yemen’s Houthis launch strikes after Saudi coalition’s 'special operation'",
-              "url": "https://www.dawn.com/news/2046096/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
-              "tid": 1795242707.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
-              "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
-              "tid": 1795239601.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Saudi-led coalition says downed 3 Houthi missiles headed for Riyadh",
-              "url": "https://www.thehindu.com/news/international/saudi-led-coalition-says-downed-3-houthi-missiles-headed-for-riyadh/article71727179.ece",
-              "tid": 1795231287.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Saudi Arabia says it intercepts three Houthi missiles targeting Riyadh",
-              "url": "https://www.straitstimes.com/world/middle-east/saudi-arabia-says-it-intercepts-three-houthi-missiles-targeting-riyadh",
-              "tid": 1795220423.0,
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "NRK",
-              "land": "NO",
-              "rubrik": "Saudi-Arabia: Har skutt ned houthi-missiler",
-              "url": "https://www.nrk.no/nyheter/saudi-arabia_-har-skutt-ned-houthi-missiler-1.18086194",
-              "tid": 1795218892.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Saudi-led coalition carried out 71 strikes in 24 hours, Houthis say",
-      "kallor": [
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Saudi-led coalition carried out 71 strikes in 24 hours, Houthis say",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-carried-out-71-strikes-24-hours-houthis-say",
-          "tid": 1795280449.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Houthis launch strikes on Saudi Arabia",
-          "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
-          "tid": 1795254584.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "Yemen’s Houthis launch strikes after Saudi coalition’s 'special operation'",
-          "url": "https://www.dawn.com/news/2046096/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
-          "tid": 1795242707.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Yemen’s Houthis launch strikes on Riyadh after Saudi coalition ‘special operation’",
-          "url": "https://www.scmp.com/news/world/middle-east/article/3375314/yemens-houthis-launch-strikes-riyadh-after-saudi-coalition-special-operation",
-          "tid": 1795239601.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Saudi-led coalition says downed 3 Houthi missiles headed for Riyadh",
-          "url": "https://www.thehindu.com/news/international/saudi-led-coalition-says-downed-3-houthi-missiles-headed-for-riyadh/article71727179.ece",
-          "tid": 1795231287.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Saudi Arabia says it intercepts three Houthi missiles targeting Riyadh",
-          "url": "https://www.straitstimes.com/world/middle-east/saudi-arabia-says-it-intercepts-three-houthi-missiles-targeting-riyadh",
-          "tid": 1795220423.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NRK",
-          "rubrik": "Saudi-Arabia: Har skutt ned houthi-missiler",
-          "url": "https://www.nrk.no/nyheter/saudi-arabia_-har-skutt-ned-houthi-missiler-1.18086194",
-          "tid": 1795218892.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NO",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
-          "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation",
-          "tid": 1795203024.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "'One-a-night' Houthi missile tactic stretches Saudi defences",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/20/one-a-night-houthi-missile-tactic-stretches-saudi-defences/",
-          "tid": 1795191002.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
       ],
       "data": null
     },
@@ -1604,6 +1286,186 @@
       "data": null
     },
     {
+      "id": "5d8b9abb4a",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 29.5,
+      "vikt": {
+        "bredd": 0.422,
+        "regioner": {
+          "mellanostern": 1,
+          "asien": 2,
+          "europa": 3
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T17:20:03+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.591,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Russian strike kills two, wounds 60, in Zelenskyy’s hometown",
+              "url": "https://www.aljazeera.com/news/2026/11/21/russian-strike-kills-two-wounds-60-in-zelenskyys-hometown?traffic_source=rss",
+              "tid": 1795281603.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Ballistic missile attack on Zelenskyy's hometown kills 2",
+              "url": "https://www.thehindu.com/news/international/ballistic-missile-attack-on-zelenskyys-hometown-kills-2/article71729235.ece",
+              "tid": 1795279101.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Ballistic missile attack on Zelensky's hometown in central Ukraine kills 2",
+              "url": "https://www.hindustantimes.com/world-news/ballistic-russian-missile-attack-on-zelenskys-hometown-in-central-ukraine-kills-2-101795265428031.html",
+              "tid": 1795265915.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
+              "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795272240.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+              "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795267058.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Zelensky says Putin must understand Crimean Bridge 'will not stay,' warns Russia increasing double-tap strikes",
+              "url": "https://kyivindependent.com/zelensky-says-putin-must-understand-crimean-bridge-will-not-stay-warns-russia-increasing-double-tap-strikes/",
+              "tid": 1795222785.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Russian strike kills two, wounds 60, in Zelenskyy’s hometown",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Russian strike kills two, wounds 60, in Zelenskyy’s hometown",
+          "url": "https://www.aljazeera.com/news/2026/11/21/russian-strike-kills-two-wounds-60-in-zelenskyys-hometown?traffic_source=rss",
+          "tid": 1795281603.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Ballistic missile attack on Zelenskyy's hometown kills 2",
+          "url": "https://www.thehindu.com/news/international/ballistic-missile-attack-on-zelenskyys-hometown-kills-2/article71729235.ece",
+          "tid": 1795279101.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
+          "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795272240.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+          "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795267058.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Ballistic missile attack on Zelensky's hometown in central Ukraine kills 2",
+          "url": "https://www.hindustantimes.com/world-news/ballistic-russian-missile-attack-on-zelenskys-hometown-in-central-ukraine-kills-2-101795265428031.html",
+          "tid": 1795265915.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Zelensky says Putin must understand Crimean Bridge 'will not stay,' warns Russia increasing double-tap strikes",
+          "url": "https://kyivindependent.com/zelensky-says-putin-must-understand-crimean-bridge-will-not-stay-warns-russia-increasing-double-tap-strikes/",
+          "tid": 1795222785.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "3111a80f37",
       "amnen": [
         "geopolitik"
@@ -1752,7 +1614,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.624,
+      "sammanhang": 0.625,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1783,7 +1645,7 @@
             {
               "kalla": "El País América",
               "land": "ES",
-              "rubrik": "El ejército israelí mata a tres personas al bombardear un vehículo que distribuía ayuda humanitaria en Gaza",
+              "rubrik": "El ejército israelí mata a tres personas al bombardear un vehículo con ayuda humanitaria en Gaza",
               "url": "https://elpais.com/internacional/2026-11-21/el-ejercito-israeli-mata-a-tres-personas-al-bombardear-un-vehiculo-que-distribuia-ayuda-humanitaria-en-gaza.html",
               "tid": 1795277034.0,
               "statskontrollerad": false
@@ -1845,7 +1707,7 @@
         },
         {
           "namn": "El País América",
-          "rubrik": "El ejército israelí mata a tres personas al bombardear un vehículo que distribuía ayuda humanitaria en Gaza",
+          "rubrik": "El ejército israelí mata a tres personas al bombardear un vehículo con ayuda humanitaria en Gaza",
           "url": "https://elpais.com/internacional/2026-11-21/el-ejercito-israeli-mata-a-tres-personas-al-bombardear-un-vehiculo-que-distribuia-ayuda-humanitaria-en-gaza.html",
           "tid": 1795277034.0,
           "betalvagg": false,
@@ -2127,127 +1989,6 @@
         "ingen källkontroll",
         "färre än tre oberoende källor (2)",
         "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "a5940a11a3",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 27.9,
-      "vikt": {
-        "bredd": 0.261,
-        "regioner": {
-          "asien": 2,
-          "mellanostern": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T08:12:18+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.733,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
-              "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
-              "tid": 1795248738.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "UK maritime agency reports two tanker incidents near Oman; Iran says vessel hit mine east of Hormuz",
-              "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
-              "tid": 1795248026.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Middle East latest: Two tankers struck near Oman, says UKMTO",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/20/live-iran-war-saudi-arabia-houthis/",
-              "tid": 1795178254.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
-          "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
-          "tid": 1795248738.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "UK maritime agency reports two tanker incidents near Oman; Iran says vessel hit mine east of Hormuz",
-          "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
-          "tid": 1795248026.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Middle East latest: Two tankers struck near Oman, says UKMTO",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/20/live-iran-war-saudi-arabia-houthis/",
-          "tid": 1795178254.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": true,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region",
-        "blind fläck"
       ],
       "data": null
     },
@@ -2545,6 +2286,172 @@
       "data": null
     },
     {
+      "id": "c7ff6676c3",
+      "amnen": [
+        "energi",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "energi",
+        "usa"
+      ],
+      "poang": 27.4,
+      "vikt": {
+        "bredd": 0.703,
+        "regioner": {
+          "asien": 2,
+          "norden": 1,
+          "mellanostern": 2
+        },
+        "timmar": 30,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T03:21:27+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.7,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "norden"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Saudi-led coalition says downed 3 Houthi missiles headed for Riyadh",
+              "url": "https://www.thehindu.com/news/international/saudi-led-coalition-says-downed-3-houthi-missiles-headed-for-riyadh/article71727179.ece",
+              "tid": 1795231287.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Saudi Arabia says it intercepts three Houthi missiles targeting Riyadh",
+              "url": "https://www.straitstimes.com/world/middle-east/saudi-arabia-says-it-intercepts-three-houthi-missiles-targeting-riyadh",
+              "tid": 1795220423.0,
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": "NO",
+              "rubrik": "Saudi-Arabia: Har skutt ned houthi-missiler",
+              "url": "https://www.nrk.no/nyheter/saudi-arabia_-har-skutt-ned-houthi-missiler-1.18086194",
+              "tid": 1795218892.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Houthi attacks add to worries over Trump Saudi nuclear power pact",
+              "url": "https://www.al-monitor.com/originals/2026/11/houthi-attacks-add-worries-over-trump-saudi-nuclear-power-pact",
+              "tid": 1795200389.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "'One-a-night' Houthi missile tactic stretches Saudi defences",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/20/one-a-night-houthi-missile-tactic-stretches-saudi-defences/",
+              "tid": 1795191002.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Saudi-led coalition says downed 3 Houthi missiles headed for Riyadh",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Saudi-led coalition says downed 3 Houthi missiles headed for Riyadh",
+          "url": "https://www.thehindu.com/news/international/saudi-led-coalition-says-downed-3-houthi-missiles-headed-for-riyadh/article71727179.ece",
+          "tid": 1795231287.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Saudi Arabia says it intercepts three Houthi missiles targeting Riyadh",
+          "url": "https://www.straitstimes.com/world/middle-east/saudi-arabia-says-it-intercepts-three-houthi-missiles-targeting-riyadh",
+          "tid": 1795220423.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NRK",
+          "rubrik": "Saudi-Arabia: Har skutt ned houthi-missiler",
+          "url": "https://www.nrk.no/nyheter/saudi-arabia_-har-skutt-ned-houthi-missiler-1.18086194",
+          "tid": 1795218892.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NO",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Houthi attacks add to worries over Trump Saudi nuclear power pact",
+          "url": "https://www.al-monitor.com/originals/2026/11/houthi-attacks-add-worries-over-trump-saudi-nuclear-power-pact",
+          "tid": 1795200389.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "'One-a-night' Houthi missile tactic stretches Saudi defences",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/20/one-a-night-houthi-missile-tactic-stretches-saudi-defences/",
+          "tid": 1795191002.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "4ba66dfe8b",
       "amnen": [
         "varlden"
@@ -2644,7 +2551,7 @@
       "data": null
     },
     {
-      "id": "c7ff6676c3",
+      "id": "8315f017bd",
       "amnen": [],
       "amnen_sektion": [],
       "poang": 27.3,
@@ -3700,119 +3607,6 @@
       "data": null
     },
     {
-      "id": "5d8b9abb4a",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.9,
-      "vikt": {
-        "bredd": 0.162,
-        "regioner": {
-          "europa": 3
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T14:44:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.554,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
-              "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795272240.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-              "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795267058.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Zelensky says Putin must understand Crimean Bridge 'will not stay,' warns Russia increasing double-tap strikes",
-              "url": "https://kyivindependent.com/zelensky-says-putin-must-understand-crimean-bridge-will-not-stay-warns-russia-increasing-double-tap-strikes/",
-              "tid": 1795222785.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
-      "kallor": [
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
-          "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795272240.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-          "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795267058.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Zelensky says Putin must understand Crimean Bridge 'will not stay,' warns Russia increasing double-tap strikes",
-          "url": "https://kyivindependent.com/zelensky-says-putin-must-understand-crimean-bridge-will-not-stay-warns-russia-increasing-double-tap-strikes/",
-          "tid": 1795222785.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
       "id": "d18692a806",
       "amnen": [
         "ai",
@@ -3947,6 +3741,127 @@
           "typ": "media",
           "land": "JP",
           "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "acc06b99cb",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 26.7,
+      "vikt": {
+        "bredd": 0.138,
+        "regioner": {
+          "asien": 2,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T13:11:04+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.767,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Democrats won big in the US midterms. Now what?",
+              "url": "https://www.dawn.com/news/2046121/democrats-won-big-in-the-us-midterms-now-what",
+              "tid": 1795266664.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Democrats won big in the midterms. So now what?",
+              "url": "https://www.straitstimes.com/world/democrats-won-big-in-the-midterms-so-now-what",
+              "tid": 1795259436.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Daily Caller",
+              "land": "US",
+              "rubrik": "GOP Misreads The Midterms, While Democrats Are Adjusting Their Playbook",
+              "url": "https://dailycaller.com/2026/11/20/gop-is-misreading-the-2026-midterms-while-democrats-are-adjusting-their-playbook",
+              "tid": 1795208377.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Democrats won big in the US midterms. Now what?",
+      "kallor": [
+        {
+          "namn": "Dawn",
+          "rubrik": "Democrats won big in the US midterms. Now what?",
+          "url": "https://www.dawn.com/news/2046121/democrats-won-big-in-the-us-midterms-now-what",
+          "tid": 1795266664.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Democrats won big in the midterms. So now what?",
+          "url": "https://www.straitstimes.com/world/democrats-won-big-in-the-midterms-so-now-what",
+          "tid": 1795259436.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Daily Caller",
+          "rubrik": "GOP Misreads The Midterms, While Democrats Are Adjusting Their Playbook",
+          "url": "https://dailycaller.com/2026/11/20/gop-is-misreading-the-2026-midterms-while-democrats-are-adjusting-their-playbook",
+          "tid": 1795208377.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         }
@@ -4468,16 +4383,17 @@
     {
       "id": "c703d50a93",
       "amnen": [
-        "sverige"
+        "sverige",
+        "varlden"
       ],
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 18.7,
+      "poang": 17.9,
       "vikt": {
-        "bredd": 0.246,
+        "bredd": 0.169,
         "regioner": {
-          "sverige": 3
+          "sverige": 2
         },
         "timmar": 5,
         "konsekvens": null,
@@ -4488,13 +4404,13 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-11-21T15:43:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.672,
+      "sammanhang": 0.666,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -4508,14 +4424,6 @@
               "rubrik": "Svenskt stridsflyg i insats i Finska viken",
               "url": "https://www.sverigesradio.se/artikel/9347702",
               "tid": 1795275780.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Fartyg attackerat – drivit till finländskt vatten",
-              "url": "https://www.di.se/nyheter/fartyg-attackerat-drivit-till-finlandskt-vatten/",
-              "tid": 1795273624.0,
               "statskontrollerad": false
             },
             {
@@ -4545,18 +4453,6 @@
           "land": "SE",
           "region": "sverige",
           "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Fartyg attackerat – drivit till finländskt vatten",
-          "url": "https://www.di.se/nyheter/fartyg-attackerat-drivit-till-finlandskt-vatten/",
-          "tid": 1795273624.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -5361,7 +5257,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 102,
+      "artiklar": 104,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -5385,7 +5281,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 29,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -5493,7 +5389,7 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 48,
+      "artiklar": 47,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
@@ -5541,7 +5437,7 @@
     {
       "id": "nasa",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 5,
       "url": "https://www.nasa.gov/news-release/feed/"
     },
     {
@@ -5565,7 +5461,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 45,
+      "artiklar": 46,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -5593,7 +5489,7 @@
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 29,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
@@ -5682,7 +5578,7 @@
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 38,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
@@ -5782,7 +5678,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 13,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -5936,7 +5832,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 85,
+      "artiklar": 84,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -5948,13 +5844,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 31,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 20,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -5966,7 +5862,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 41,
+      "artiklar": 43,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -6014,13 +5910,13 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 47,
+      "artiklar": 43,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
       "id": "dawn",
       "ok": true,
-      "artiklar": 27,
+      "artiklar": 28,
       "url": "https://www.dawn.com/feeds/home"
     },
     {
