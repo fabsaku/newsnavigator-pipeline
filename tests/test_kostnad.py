@@ -105,3 +105,14 @@ def test_pipelinens_valfria_ai_steg_respekterar_dagstaket():
     for steg in ("translate_titles(items, client", "top = clusters[:KONSEKVENS_TOPP]", "kandidater = [(c, d)", "kand = [(c, d)"):
         i = main.index(steg)
         assert "ai_ok" in main[max(0, i - 160): i + 60], steg
+
+
+def test_utkast_ateranvands_nar_kallorna_nastan_ar_desamma():
+    import pipeline
+    nu = 1_000_000.0
+    hit = {"kallor": ["a", "b", "c", "d", "e"], "skapad": nu - 3600}
+    assert pipeline.kan_ateranvanda(hit, ["a", "b", "c", "d", "e", "f"], nu), "en ny källa av sex: samma händelse"
+    assert not pipeline.kan_ateranvanda(hit, ["a", "x", "y", "z"], nu), "mest nya källor: nytt utkast"
+    assert not pipeline.kan_ateranvanda({**hit, "skapad": nu - 90000}, ["a", "b", "c", "d", "e"], nu), "äldre än ett dygn: nytt utkast"
+    assert not pipeline.kan_ateranvanda({"skapad": nu}, ["a"], nu), "äldre cacheposter utan källista: nytt utkast"
+    assert not pipeline.kan_ateranvanda(hit, [], nu)

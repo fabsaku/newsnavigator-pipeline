@@ -661,6 +661,18 @@ def summarize(c, client, model):
 
 
 NOW = time.time()
+ATERANVAND_LIKHET = 0.7        # andel gemensamma källor (Jaccard) för att ett utkast ska räcka
+ATERANVAND_TIMMAR = 24
+
+
+def kan_ateranvanda(hit, kallor_nu, nu):
+    """Samma händelse med nästan samma källor behöver inget nytt utkast: varje ny artikel i ett stort kluster
+    ändrade annars fingeravtrycket och gjorde om utkastet varje timme, vilket åt upp AI-budgeten."""
+    fore = set(hit.get("kallor") or [])
+    nu_set = set(kallor_nu)
+    if not fore or not nu_set or nu - hit.get("skapad", 0) > ATERANVAND_TIMMAR * 3600:
+        return False
+    return len(fore & nu_set) / len(fore | nu_set) >= ATERANVAND_LIKHET
 
 
 def main():
@@ -730,11 +742,12 @@ def main():
         c["items"].sort(key=lambda i: (i["state_controlled"], order.get(i["source_type"], 3), i["paywall"]))
         assign_id(c, used_ids)
         c["fingeravtryck"] = hashlib.sha1((model + SYSTEM_PROMPT + user_prompt(c)).encode()).hexdigest()[:12]
+        c["kallor_ids"] = sorted({i["source_id"] for i in c["items"]})
 
     def draft_for(c):
         """Returnerar (utkast, källkontroll, ur_cachen). Källkontrollen körs på varje nytt utkast."""
         hit = cache["utkast"].get(c["id"])
-        if hit and hit.get("fingeravtryck") == c["fingeravtryck"]:
+        if hit and (hit.get("fingeravtryck") == c["fingeravtryck"] or kan_ateranvanda(hit, c["kallor_ids"], NOW)):
             kontroll = hit.get("kontroll")
             if kontroll is None and ai_ok:
                 try:
@@ -783,8 +796,12 @@ def main():
     for c, (draft, kontroll, from_cache) in zip(chosen, results):
         reused += from_cache
         c["score"], c["vikt"] = vikt_mod.vikt(c, totals, c.get("konsekvens"), kontroll["ok"] if kontroll else None)
-        if draft is not None and not draft.get("_fel"):
-            cache["utkast"][c["id"]] = {"utkast": draft, "kontroll": kontroll, "fingeravtryck": c["fingeravtryck"], "sedd": NOW}
+        gammal = cache["utkast"].get(c["id"])
+        if from_cache and gammal and gammal.get("fingeravtryck") != c["fingeravtryck"]:
+            gammal["sedd"] = NOW                # återanvänt utkast: behåll det och dess ålder, bara markera att det setts
+        elif draft is not None and not draft.get("_fel"):
+            cache["utkast"][c["id"]] = {"utkast": draft, "kontroll": kontroll, "fingeravtryck": c["fingeravtryck"], "sedd": NOW,
+                                        "kallor": c["kallor_ids"], "skapad": NOW}
         elif draft is not None:
             draft.pop("_fel", None)
         lead = c["items"][0]
