@@ -3891,24 +3891,18 @@
  "a5940a11a3": {
   "id": "a5940a11a3",
   "amnen": [
-   "asien",
    "varlden"
   ],
   "amnen_sektion": [],
-  "poang": 30.0,
+  "poang": 27.3,
   "vikt": {
-   "bredd": 0.118,
+   "bredd": 0.202,
    "regioner": {
-    "asien": 2
+    "mellanostern": 1,
+    "asien": 1
    },
    "timmar": 96,
-   "konsekvens": {
-    "berorda": 4,
-    "allvar": 4,
-    "varaktighet": 3,
-    "medel": 3.67,
-    "skal": "Två tankfartyg skadades nära Hormuzsundet, vilket hotar sjöfart, oljeleveranser och säkerhet i en strategisk region, men konsekvenserna är ännu oklara."
-   },
+   "konsekvens": null,
    "bekraftad": null,
    "maste": false,
    "spar": []
@@ -3916,17 +3910,28 @@
   "maste": false,
   "antal_kallor": 2,
   "har_primarkalla": false,
-  "senast": "2026-11-21T08:12:18+00:00",
+  "senast": "2026-11-22T16:13:34+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.725,
+  "sammanhang": 0.651,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
-    "asien"
+    "asien",
+    "mellanostern"
    ],
    "per_region": {
+    "mellanostern": [
+     {
+      "kalla": "Arab News",
+      "land": "SA",
+      "rubrik": "UKMTO reports incident involving tanker and military forces in Gulf of Oman",
+      "url": "https://www.arabnews.com/middle-east/ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman-3013574",
+      "tid": 1795364014.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "Hindustan Times",
@@ -3934,14 +3939,6 @@
       "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
       "url": "https://www.hindustantimes.com/world-news/tanker-hit-by-unknown-projectile-near-oman-khasab-united-kingdom-maritime-operations-body-says-strait-of-hormuz-101795248165980.html",
       "tid": 1795248738.0,
-      "statskontrollerad": false
-     },
-     {
-      "kalla": "The Straits Times",
-      "land": "SG",
-      "rubrik": "UK maritime agency reports two tanker incidents near Oman; Iran says vessel hit mine east of Hormuz",
-      "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
-      "tid": 1795248026.0,
       "statskontrollerad": false
      }
     ]
@@ -3951,8 +3948,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
+  "reserv_rubrik": "UKMTO reports incident involving tanker and military forces in Gulf of Oman",
   "kallor": [
+   {
+    "namn": "Arab News",
+    "rubrik": "UKMTO reports incident involving tanker and military forces in Gulf of Oman",
+    "url": "https://www.arabnews.com/middle-east/ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman-3013574",
+    "tid": 1795364014.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "SA",
+    "region": "mellanostern",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Hindustan Times",
     "rubrik": "Tanker hit by unknown projectile near Oman's Khasab, UKMTO says",
@@ -3961,18 +3970,6 @@
     "betalvagg": false,
     "typ": "media",
     "land": "IN",
-    "region": "asien",
-    "agare": "privat",
-    "statskontrollerad": false
-   },
-   {
-    "namn": "The Straits Times",
-    "rubrik": "UK maritime agency reports two tanker incidents near Oman; Iran says vessel hit mine east of Hormuz",
-    "url": "https://www.straitstimes.com/world/europe/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says",
-    "tid": 1795248026.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "SG",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
@@ -3986,13 +3983,12 @@
   "autopilot": [
    "inget utkast",
    "ingen källkontroll",
-   "färre än tre oberoende källor (2)",
-   "bara en region"
+   "färre än tre oberoende källor (2)"
   ],
   "data": null,
   "godkand_tid": 1795151145.8403869,
   "automatisk": true,
-  "uppdaterad_tid": 1795309574.3964736
+  "uppdaterad_tid": 1795367071.7689798
  },
  "e86779e359": {
   "id": "e86779e359",
