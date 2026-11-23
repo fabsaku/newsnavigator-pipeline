@@ -1,8 +1,217 @@
 {
-  "skapad": "2026-11-23T05:04:59.352870+00:00",
+  "skapad": "2026-11-23T06:05:49.861767+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
+    {
+      "id": "e84e397536",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 33.9,
+      "vikt": {
+        "bredd": 0.894,
+        "regioner": {
+          "mellanostern": 3,
+          "asien": 2,
+          "norden": 1,
+          "europa": 1
+        },
+        "timmar": 44,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T19:35:06+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKMeeC8DYtkFf6brRK25'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.539,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "norden"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Bahrain says Iran strikes industrial facility as air defences intercept attacks",
+              "url": "https://www.al-monitor.com/originals/2026/11/bahrain-says-iran-strikes-industrial-facility-air-defences-intercept-attacks",
+              "tid": 1795347988.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Tehran Times",
+              "land": "IR",
+              "rubrik": "IRGC strikes US patriot radar systems in Bahrain, downs 20th American MQ-1 drone",
+              "url": "https://www.tehrantimes.com/news/532436/IRGC-strikes-US-patriot-radar-systems-in-Bahrain-downs-20th",
+              "tid": 1795376106.0,
+              "statskontrollerad": true
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Two injured, one critically, in Iranian attack on industrial plant in Bahrain",
+              "url": "https://www.thenationalnews.com/news/gulf/2026/11/22/two-injured-one-critically-in-iranian-attack-on-industrial-plant-in-bahrain/",
+              "tid": 1795346083.0,
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Iran says targeted 2 US Patriot radar systems in Bahrain, Manana clarifies ‘civilian facility’ hit as West Asia tensions intensify",
+              "url": "https://www.hindustantimes.com/world-news/iran-says-targeted-2-us-patriot-radar-systems-in-bahrain-manama-slams-heinous-iranian-aggression-101795313624815.html",
+              "tid": 1795318692.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Bahrain says Iranian attack hits industrial facility as air defences intercept attacks",
+              "url": "https://www.straitstimes.com/world/middle-east/bahrain-says-iranian-attack-hits-industrial-facility-causes-fire",
+              "tid": 1795290124.0,
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "I Bahrain er et civilt industrianlæg brudt i brand efter et iransk angreb",
+              "url": "https://www.dr.dk/nyheder/seneste/i-bahrain-er-et-civilt-industrianlaeg-brudt-i-brand-efter-et-iransk-angreb",
+              "tid": 1795297231.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Iran claims attack on US Patriot systems in Bahrain",
+              "url": "https://rt-english.com/news/649196-iran-bahrain-us-bases/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795297466.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Bahrain says Iran strikes industrial facility as air defences intercept attacks",
+      "kallor": [
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Bahrain says Iran strikes industrial facility as air defences intercept attacks",
+          "url": "https://www.al-monitor.com/originals/2026/11/bahrain-says-iran-strikes-industrial-facility-air-defences-intercept-attacks",
+          "tid": 1795347988.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Iran says targeted 2 US Patriot radar systems in Bahrain, Manana clarifies ‘civilian facility’ hit as West Asia tensions intensify",
+          "url": "https://www.hindustantimes.com/world-news/iran-says-targeted-2-us-patriot-radar-systems-in-bahrain-manama-slams-heinous-iranian-aggression-101795313624815.html",
+          "tid": 1795318692.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "I Bahrain er et civilt industrianlæg brudt i brand efter et iransk angreb",
+          "url": "https://www.dr.dk/nyheder/seneste/i-bahrain-er-et-civilt-industrianlaeg-brudt-i-brand-efter-et-iransk-angreb",
+          "tid": 1795297231.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Bahrain says Iranian attack hits industrial facility as air defences intercept attacks",
+          "url": "https://www.straitstimes.com/world/middle-east/bahrain-says-iranian-attack-hits-industrial-facility-causes-fire",
+          "tid": 1795290124.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Tehran Times",
+          "rubrik": "IRGC strikes US patriot radar systems in Bahrain, downs 20th American MQ-1 drone",
+          "url": "https://www.tehrantimes.com/news/532436/IRGC-strikes-US-patriot-radar-systems-in-Bahrain-downs-20th",
+          "tid": 1795376106.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IR",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Two injured, one critically, in Iranian attack on industrial plant in Bahrain",
+          "url": "https://www.thenationalnews.com/news/gulf/2026/11/22/two-injured-one-critically-in-iranian-attack-on-industrial-plant-in-bahrain/",
+          "tid": 1795346083.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Iran claims attack on US Patriot systems in Bahrain",
+          "url": "https://rt-english.com/news/649196-iran-bahrain-us-bases/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795297466.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
     {
       "id": "8e6e3d907d",
       "amnen": [
@@ -11,19 +220,19 @@
       "amnen_sektion": [
         "europa"
       ],
-      "poang": 45.9,
+      "poang": 33.4,
       "vikt": {
-        "bredd": 2.209,
+        "bredd": 2.19,
         "regioner": {
-          "afrika": 3,
+          "asien": 7,
+          "afrika": 4,
+          "europa": 6,
+          "mellanostern": 4,
           "latinamerika": 1,
-          "asien": 8,
-          "europa": 5,
-          "mellanostern": 5,
-          "usa": 5,
+          "usa": 4,
           "global": 1
         },
-        "timmar": 33,
+        "timmar": 1,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -32,16 +241,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 28,
+      "antal_kallor": 27,
       "har_primarkalla": false,
-      "senast": "2026-11-23T04:58:37+00:00",
+      "senast": "2026-11-23T06:01:36+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKH1ZHxGTsDbkfKLUszx'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKMeeC8AQXvKHTQiXZym'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.644,
+      "sammanhang": 0.605,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -54,57 +263,21 @@
           "usa"
         ],
         "per_region": {
-          "afrika": [
-            {
-              "kalla": "AllAfrica",
-              "land": "INT",
-              "rubrik": "Africa: COP31 Cover Deal Collapses As EU and Others Reject Draft Over Fossil Fuel Omission",
-              "url": "https://allafrica.com/stories/202611230028.html",
-              "tid": 1795409917.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "COP31 climate talks collapse as EU and others reject deal",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-22-cop31-climate-talks-collapse-as-eu-and-others-reject-deal/",
-              "tid": 1795382067.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "United Nations COP31 climate talks collapse in bitter row over fossil fuels",
-              "url": "http://www.africanews.com/2026/11/22/united-nations-cop31-climate-talks-collapse-in-bitter-row-over-fossil-fuels/",
-              "tid": 1795364451.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "COP31 ends without a major climate deal amid divisions over fossil fuels",
-              "url": "https://en.mercopress.com/2026/11/23/cop31-ends-without-a-major-climate-deal-amid-divisions-over-fossil-fuels?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795407120.0,
-              "statskontrollerad": false
-            }
-          ],
           "asien": [
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
+              "url": "https://www.dawn.com/news/2046511/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
+              "tid": 1795413696.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "The Hindu",
               "land": "IN",
               "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
               "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
               "tid": 1795406712.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Rappler",
-              "land": "PH",
-              "rubrik": "Can climate diplomacy build on the collapse of COP31?",
-              "url": "https://www.rappler.com/world/global-affairs/can-climate-diplomacy-build-collapse-cop31/",
-              "tid": 1795398841.0,
               "statskontrollerad": false
             },
             {
@@ -132,14 +305,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "COP31 climate talks collapse as EU and others reject deal",
-              "url": "https://www.dawn.com/news/2046327/cop31-climate-talks-collapse-as-eu-and-others-reject-deal",
-              "tid": 1795361600.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "South China Morning Post",
               "land": "HK",
               "rubrik": "Cop31 climate talks collapse with no deal over fossil fuels",
@@ -148,21 +313,55 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "COP31 fails to reach consensus on Antalya Pact",
-              "url": "https://news.cgtn.com/news/2026-11-22/COP31-fails-to-reach-consensus-on-Antalya-Pact-1ShNqP9QQg0/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795358978.0,
-              "statskontrollerad": true
+              "kalla": "RNZ",
+              "land": "NZ",
+              "rubrik": "COP flop: Scientist warns countries are losing faith in UN climate summits as deal talks stall",
+              "url": "https://www.rnz.co.nz/news/environment_climate/2734804/cop-flop-scientist-warns-countries-are-losing-faith-in-un-climate-summits-as-deal-talks-stall",
+              "tid": 1795326491.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Nigeria: UN Chief Blames Fossil Fuel Interests for Climate Inaction As COP31 Ends Without Consensus",
+              "url": "https://allafrica.com/stories/202611230130.html",
+              "tid": 1795412988.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "COP31 climate talks collapse as EU and others reject deal",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-22-cop31-climate-talks-collapse-as-eu-and-others-reject-deal/",
+              "tid": 1795382067.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Premium Times",
+              "land": "NG",
+              "rubrik": "UN chief blames fossil fuel interests for climate inaction as COP31 ends without consensus",
+              "url": "https://www.premiumtimesng.com/news/top-news/927246-un-chief-blames-fossil-fuel-interests-for-climate-inaction-as-cop31-ends-without-consensus.html",
+              "tid": 1795374059.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "United Nations COP31 climate talks collapse in bitter row over fossil fuels",
+              "url": "http://www.africanews.com/2026/11/22/united-nations-cop31-climate-talks-collapse-in-bitter-row-over-fossil-fuels/",
+              "tid": 1795364451.0,
+              "statskontrollerad": false
             }
           ],
           "europa": [
             {
               "kalla": "BBC World",
               "land": "GB",
-              "rubrik": "COP31 fails to reach major climate deal as talks expose deep divisions",
-              "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795395035.0,
+              "rubrik": "What's next after no deal at COP31 climate talks?",
+              "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795412079.0,
               "statskontrollerad": false
             },
             {
@@ -190,6 +389,14 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Fossil fuels fight at COP31 climate talks ends in ‘unbridgeable’ red lines",
+              "url": "https://www.ft.com/content/32f7f678-1037-4922-860b-4b7f3c9f6de7?syn-25a6b1a6=1",
+              "tid": 1795410022.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "Le Monde (English)",
               "land": "FR",
               "rubrik": "COP31: International community splits over phasing out fossil fuels and climate adaptation funding",
@@ -202,17 +409,9 @@
             {
               "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "Analysis-Can climate diplomacy build on the collapse of COP31?",
-              "url": "https://www.al-monitor.com/originals/2026/11/analysis-can-climate-diplomacy-build-collapse-cop31",
-              "tid": 1795383988.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Why has the COP31 climate summit failed to reach agreement?",
-              "url": "https://www.aljazeera.com/video/inside-story/2026/11/22/why-has-the-cop31-climate-summit-failed-to-reach-agreement?traffic_source=rss",
-              "tid": 1795377600.0,
+              "rubrik": "Bad COP, worse COP: What's next after climate talks fail?",
+              "url": "https://www.al-monitor.com/originals/2026/11/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
+              "tid": 1795411824.0,
               "statskontrollerad": false
             },
             {
@@ -224,31 +423,33 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Iran missile sites under scrutiny, Cop31 climate talks collapse and GTA 6 prompts warnings in UAE",
+              "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/11/23/iran-missile-sites-under-scrutiny-cop31-climate-talks-collapse-and-gta-6-prompts-warnings-in-uae/",
+              "tid": 1795411405.0,
+              "statskontrollerad": true
+            },
+            {
               "kalla": "Tehran Times",
               "land": "IR",
               "rubrik": "UN climate talks break down over bitter disagreements on fossil fuels",
               "url": "https://www.tehrantimes.com/news/532429/UN-climate-talks-break-down-over-bitter-disagreements-on-fossil",
               "tid": 1795378992.0,
               "statskontrollerad": true
-            },
+            }
+          ],
+          "latinamerika": [
             {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Climate talks collapse without deal at Cop31 in Turkey",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/22/climate-talks-collapse-without-deal-at-cop31-in-turkey/",
-              "tid": 1795356295.0,
-              "statskontrollerad": true
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "COP31 ends without a major climate deal amid divisions over fossil fuels",
+              "url": "https://en.mercopress.com/2026/11/23/cop31-ends-without-a-major-climate-deal-amid-divisions-over-fossil-fuels?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "tid": 1795407120.0,
+              "statskontrollerad": false
             }
           ],
           "usa": [
-            {
-              "kalla": "HuffPost",
-              "land": "US",
-              "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
-              "url": "https://www.huffpost.com/entry/ap-climate-cop31-turkey-united-nations_n_6b032066e4b0213d862812b0",
-              "tid": 1795367288.0,
-              "statskontrollerad": false
-            },
             {
               "kalla": "NPR",
               "land": "US",
@@ -298,13 +499,6 @@
         "usa": {
           "bla": [
             {
-              "kalla": "HuffPost",
-              "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
-              "url": "https://www.huffpost.com/entry/ap-climate-cop31-turkey-united-nations_n_6b032066e4b0213d862812b0",
-              "tid": 1795367288.0,
-              "lutning": "vanster"
-            },
-            {
               "kalla": "NPR",
               "rubrik": "Climate change talks fall apart in final hours over fossil fuels",
               "url": "https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment",
@@ -338,17 +532,53 @@
         },
         "usa_blind": "mest_bla"
       },
-      "reserv_rubrik": "Africa: COP31 Cover Deal Collapses As EU and Others Reject Draft Over Fossil Fuel Omission",
+      "reserv_rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
       "kallor": [
         {
+          "namn": "Dawn",
+          "rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
+          "url": "https://www.dawn.com/news/2046511/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
+          "tid": 1795413696.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "AllAfrica",
-          "rubrik": "Africa: COP31 Cover Deal Collapses As EU and Others Reject Draft Over Fossil Fuel Omission",
-          "url": "https://allafrica.com/stories/202611230028.html",
-          "tid": 1795409917.0,
+          "rubrik": "Nigeria: UN Chief Blames Fossil Fuel Interests for Climate Inaction As COP31 Ends Without Consensus",
+          "url": "https://allafrica.com/stories/202611230130.html",
+          "tid": 1795412988.0,
           "betalvagg": false,
           "typ": "media",
           "land": "INT",
           "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "What's next after no deal at COP31 climate talks?",
+          "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795412079.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Bad COP, worse COP: What's next after climate talks fail?",
+          "url": "https://www.al-monitor.com/originals/2026/11/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
+          "tid": 1795411824.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -377,30 +607,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Rappler",
-          "rubrik": "Can climate diplomacy build on the collapse of COP31?",
-          "url": "https://www.rappler.com/world/global-affairs/can-climate-diplomacy-build-collapse-cop31/",
-          "tid": 1795398841.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PH",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "COP31 fails to reach major climate deal as talks expose deep divisions",
-          "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795395035.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
           "namn": "France 24",
           "rubrik": "COP31 climate talks in Turkey collapse",
           "url": "https://www.france24.com/en/video/20261123-cop31-climate-talks-collapse",
@@ -421,18 +627,6 @@
           "typ": "media",
           "land": "JP",
           "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Analysis-Can climate diplomacy build on the collapse of COP31?",
-          "url": "https://www.al-monitor.com/originals/2026/11/analysis-can-climate-diplomacy-build-collapse-cop31",
-          "tid": 1795383988.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -473,26 +667,14 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Al Jazeera",
-          "rubrik": "Why has the COP31 climate summit failed to reach agreement?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/11/22/why-has-the-cop31-climate-summit-failed-to-reach-agreement?traffic_source=rss",
-          "tid": 1795377600.0,
+          "namn": "Premium Times",
+          "rubrik": "UN chief blames fossil fuel interests for climate inaction as COP31 ends without consensus",
+          "url": "https://www.premiumtimesng.com/news/top-news/927246-un-chief-blames-fossil-fuel-interests-for-climate-inaction-as-cop31-ends-without-consensus.html",
+          "tid": 1795374059.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "HuffPost",
-          "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
-          "url": "https://www.huffpost.com/entry/ap-climate-cop31-turkey-united-nations_n_6b032066e4b0213d862812b0",
-          "tid": 1795367288.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "NG",
+          "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -529,18 +711,6 @@
           "typ": "media",
           "land": "GB",
           "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "COP31 climate talks collapse as EU and others reject deal",
-          "url": "https://www.dawn.com/news/2046327/cop31-climate-talks-collapse-as-eu-and-others-reject-deal",
-          "tid": 1795361600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -593,6 +763,30 @@
           "statskontrollerad": false
         },
         {
+          "namn": "RNZ",
+          "rubrik": "COP flop: Scientist warns countries are losing faith in UN climate summits as deal talks stall",
+          "url": "https://www.rnz.co.nz/news/environment_climate/2734804/cop-flop-scientist-warns-countries-are-losing-faith-in-un-climate-summits-as-deal-talks-stall",
+          "tid": 1795326491.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NZ",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Fossil fuels fight at COP31 climate talks ends in ‘unbridgeable’ red lines",
+          "url": "https://www.ft.com/content/32f7f678-1037-4922-860b-4b7f3c9f6de7?syn-25a6b1a6=1",
+          "tid": 1795410022.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The New York Times",
           "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
           "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
@@ -641,6 +835,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The National",
+          "rubrik": "Iran missile sites under scrutiny, Cop31 climate talks collapse and GTA 6 prompts warnings in UAE",
+          "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/11/23/iran-missile-sites-under-scrutiny-cop31-climate-talks-collapse-and-gta-6-prompts-warnings-in-uae/",
+          "tid": 1795411405.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
           "namn": "Tehran Times",
           "rubrik": "UN climate talks break down over bitter disagreements on fossil fuels",
           "url": "https://www.tehrantimes.com/news/532429/UN-climate-talks-break-down-over-bitter-disagreements-on-fossil",
@@ -651,203 +857,17 @@
           "region": "mellanostern",
           "agare": "statlig",
           "statskontrollerad": true
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "COP31 fails to reach consensus on Antalya Pact",
-          "url": "https://news.cgtn.com/news/2026-11-22/COP31-fails-to-reach-consensus-on-Antalya-Pact-1ShNqP9QQg0/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795358978.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Climate talks collapse without deal at Cop31 in Turkey",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/22/climate-talks-collapse-without-deal-at-cop31-in-turkey/",
-          "tid": 1795356295.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
+        "sv": 1,
         "en": 3
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
         "troligen hopslagna händelser",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "f07db6a4be",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 32.9,
-      "vikt": {
-        "bredd": 0.462,
-        "regioner": {
-          "mellanostern": 2,
-          "asien": 3
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T18:40:54+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKH1ZJCMrx1LBqjJ3Bu2'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.702,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Bahrain says Iranian strike wounds two, one critically",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-iranian-strike-wounds-two-one-critically",
-              "tid": 1795372854.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Iran strike wounds two in Bahrain, Saudi condemns 'criminal' attacks",
-              "url": "https://www.al-monitor.com/originals/2026/11/iran-strike-wounds-two-bahrain-saudi-condemns-criminal-attacks",
-              "tid": 1795372224.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Iran strike wounds two in Bahrain, Riyadh denounces ‘criminal’ attacks",
-              "url": "https://www.thehindu.com/news/international/bahrain-says-iran-struck-industrial-site-as-tankers-hit-in-hormuz/article71730497.ece",
-              "tid": 1795366134.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Pakistani among two injured in Iranian attacks, Bahrain says",
-              "url": "https://www.dawn.com/news/2046321/pakistani-among-two-injured-in-iranian-attacks-bahrain-says",
-              "tid": 1795349524.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Bahrain says Iranian attack hits industrial facility as air defences intercept attacks",
-              "url": "https://www.straitstimes.com/world/middle-east/bahrain-says-iranian-attack-hits-industrial-facility-causes-fire",
-              "tid": 1795290124.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Bahrain says Iranian strike wounds two, one critically",
-      "kallor": [
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Bahrain says Iranian strike wounds two, one critically",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-iranian-strike-wounds-two-one-critically",
-          "tid": 1795372854.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Iran strike wounds two in Bahrain, Saudi condemns 'criminal' attacks",
-          "url": "https://www.al-monitor.com/originals/2026/11/iran-strike-wounds-two-bahrain-saudi-condemns-criminal-attacks",
-          "tid": 1795372224.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Iran strike wounds two in Bahrain, Riyadh denounces ‘criminal’ attacks",
-          "url": "https://www.thehindu.com/news/international/bahrain-says-iran-struck-industrial-site-as-tankers-hit-in-hormuz/article71730497.ece",
-          "tid": 1795366134.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "Pakistani among two injured in Iranian attacks, Bahrain says",
-          "url": "https://www.dawn.com/news/2046321/pakistani-among-two-injured-in-iranian-attacks-bahrain-says",
-          "tid": 1795349524.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Bahrain says Iranian attack hits industrial facility as air defences intercept attacks",
-          "url": "https://www.straitstimes.com/world/middle-east/bahrain-says-iranian-attack-hits-industrial-facility-causes-fire",
-          "tid": 1795290124.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
         "blind fläck"
       ],
       "data": null
@@ -884,7 +904,7 @@
       "senast": "2026-11-22T05:51:27+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKH1ZHx5tHLHp2qiE6sN'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKMeeDcvaccbsaV6smha'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -960,6 +980,381 @@
       "data": null
     },
     {
+      "id": "4e9e543f8d",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 31.8,
+      "vikt": {
+        "bredd": 1.16,
+        "regioner": {
+          "mellanostern": 4,
+          "usa": 3,
+          "asien": 3,
+          "europa": 4,
+          "afrika": 1
+        },
+        "timmar": 14,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "religion"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 15,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T05:38:01+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKMeeDN8ubD1s8FN76o9'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.496,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Israeli attacks on medics in occupied West Bank surge by 350%: Rights group",
+              "url": "https://www.aljazeera.com/news/2026/11/23/israeli-attacks-on-medics-in-occupied-west-bank-surge-by-350-rights-group?traffic_source=rss",
+              "tid": 1795412281.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Watch: Palestinians describe fear after Israeli settlers attack West Bank villages",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-describe-fear-after-israeli-settlers-attack-west-bank",
+              "tid": 1795395127.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Israel's Eisenkot condemns arson attacks by Jewish settlers in West Bank",
+              "url": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
+              "tid": 1795355189.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Israel accused of systematic abuse and obstruction of West Bank medics",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/22/israel-accused-of-systematic-abuse-and-obstruction-of-west-bank-medics/",
+              "tid": 1795384800.0,
+              "statskontrollerad": true
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Human Rights Watch",
+              "land": "US",
+              "rubrik": "Australia’s Sanctions on West Bank Settlers Increase Pressure",
+              "url": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
+              "tid": 1795388400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Israeli Political Leaders Denounce ‘Jewish Terrorism’ After West Bank Attacks",
+              "url": "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html",
+              "tid": 1795397522.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Arson attacks by Israeli settlers in West Bank add to tense political debate",
+              "url": "https://www.washingtonpost.com/world/2026/11/22/arson-attacks-by-israeli-settlers-west-bank-add-tense-political-debate/",
+              "tid": 1795351456.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Israel’s Eisenkot condemns arson attacks by Jewish settlers in West Bank",
+              "url": "https://www.thehindu.com/news/international/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank/article71732544.ece",
+              "tid": 1795384948.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Israel investigates West Bank fires blamed on settlers",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3375395/israel-investigates-west-bank-fires-blamed-israeli-settlers",
+              "tid": 1795364723.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "‘Jewish terrorism’: Israel’s Gadi Eisenkot condemns arson attacks by settlers in West Bank",
+              "url": "https://www.straitstimes.com/world/middle-east/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank",
+              "tid": 1795353443.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank",
+              "url": "https://www.france24.com/en/middle-east/20261122-israel-s-eisenkot-slams-jewish-terrorism-after-attacks-by-settlers-in-west-bank",
+              "tid": 1795382956.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages",
+              "url": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
+              "tid": 1795360958.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
+              "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795360140.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Eisenkot brands settler attacks ‘Jewish terrorism’",
+              "url": "https://rt-english.com/news/649227-eisenkot-jewish-terrorism-west-bank/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795384947.0,
+              "statskontrollerad": true
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "West Bank: Four Palestinian villages targeted in suspected settler attacks",
+              "url": "http://www.africanews.com/2026/11/22/west-bank-four-palestinian-villages-targeted-in-suspected-settler-attacks/",
+              "tid": 1795362761.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Israeli attacks on medics in occupied West Bank surge by 350%: Rights group",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Israeli attacks on medics in occupied West Bank surge by 350%: Rights group",
+          "url": "https://www.aljazeera.com/news/2026/11/23/israeli-attacks-on-medics-in-occupied-west-bank-surge-by-350-rights-group?traffic_source=rss",
+          "tid": 1795412281.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Watch: Palestinians describe fear after Israeli settlers attack West Bank villages",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-describe-fear-after-israeli-settlers-attack-west-bank",
+          "tid": 1795395127.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Human Rights Watch",
+          "rubrik": "Australia’s Sanctions on West Bank Settlers Increase Pressure",
+          "url": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
+          "tid": 1795388400.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Israel’s Eisenkot condemns arson attacks by Jewish settlers in West Bank",
+          "url": "https://www.thehindu.com/news/international/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank/article71732544.ece",
+          "tid": 1795384948.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank",
+          "url": "https://www.france24.com/en/middle-east/20261122-israel-s-eisenkot-slams-jewish-terrorism-after-attacks-by-settlers-in-west-bank",
+          "tid": 1795382956.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Israel investigates West Bank fires blamed on settlers",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3375395/israel-investigates-west-bank-fires-blamed-israeli-settlers",
+          "tid": 1795364723.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "West Bank: Four Palestinian villages targeted in suspected settler attacks",
+          "url": "http://www.africanews.com/2026/11/22/west-bank-four-palestinian-villages-targeted-in-suspected-settler-attacks/",
+          "tid": 1795362761.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages",
+          "url": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
+          "tid": 1795360958.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
+          "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795360140.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Israel's Eisenkot condemns arson attacks by Jewish settlers in West Bank",
+          "url": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
+          "tid": 1795355189.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "‘Jewish terrorism’: Israel’s Gadi Eisenkot condemns arson attacks by settlers in West Bank",
+          "url": "https://www.straitstimes.com/world/middle-east/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank",
+          "tid": 1795353443.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Israeli Political Leaders Denounce ‘Jewish Terrorism’ After West Bank Attacks",
+          "url": "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html",
+          "tid": 1795397522.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Arson attacks by Israeli settlers in West Bank add to tense political debate",
+          "url": "https://www.washingtonpost.com/world/2026/11/22/arson-attacks-by-israeli-settlers-west-bank-add-tense-political-debate/",
+          "tid": 1795351456.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Eisenkot brands settler attacks ‘Jewish terrorism’",
+          "url": "https://rt-english.com/news/649227-eisenkot-jewish-terrorism-west-bank/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795384947.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Israel accused of systematic abuse and obstruction of West Bank medics",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/22/israel-accused-of-systematic-abuse-and-obstruction-of-west-bank-medics/",
+          "tid": 1795384800.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "spärrord: suspected",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "6656aa783b",
       "amnen": [
         "ai"
@@ -975,7 +1370,7 @@
           "asien": 3,
           "usa": 1
         },
-        "timmar": 80,
+        "timmar": 81,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -987,10 +1382,7 @@
       "antal_kallor": 8,
       "har_primarkalla": false,
       "senast": "2026-11-23T04:07:31+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKH1ZJC9CR3zMheuoAW7'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.742,
@@ -1219,7 +1611,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.528,
+      "sammanhang": 0.527,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1249,7 +1641,7 @@
             {
               "kalla": "South China Morning Post",
               "land": "HK",
-              "rubrik": "Russian strikes kill at least 12 in Kyiv region, Ukraine says",
+              "rubrik": "Russian strikes kill at least 14 in Kyiv region, Ukraine says",
               "url": "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says",
               "tid": 1795372379.0,
               "statskontrollerad": false
@@ -1382,7 +1774,7 @@
         },
         {
           "namn": "South China Morning Post",
-          "rubrik": "Russian strikes kill at least 12 in Kyiv region, Ukraine says",
+          "rubrik": "Russian strikes kill at least 14 in Kyiv region, Ukraine says",
           "url": "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says",
           "tid": 1795372379.0,
           "betalvagg": false,
@@ -1478,395 +1870,25 @@
       "data": null
     },
     {
-      "id": "4e9e543f8d",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 30.3,
-      "vikt": {
-        "bredd": 1.037,
-        "regioner": {
-          "mellanostern": 3,
-          "usa": 4,
-          "asien": 3,
-          "europa": 4,
-          "afrika": 1
-        },
-        "timmar": 13,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "religion"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 15,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T01:32:02+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.519,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Watch: Palestinians describe fear after Israeli settlers attack West Bank villages",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-describe-fear-after-israeli-settlers-attack-west-bank",
-              "tid": 1795395127.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Israel's Eisenkot condemns arson attacks by Jewish settlers in West Bank",
-              "url": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
-              "tid": 1795355189.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Israel accused of systematic abuse and obstruction of West Bank medics",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/22/israel-accused-of-systematic-abuse-and-obstruction-of-west-bank-medics/",
-              "tid": 1795384800.0,
-              "statskontrollerad": true
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Human Rights Watch",
-              "land": "US",
-              "rubrik": "Australia’s Sanctions on West Bank Settlers Increase Pressure",
-              "url": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
-              "tid": 1795388400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "HuffPost",
-              "land": "US",
-              "rubrik": "Israel's Eisenkot Condemns Settler Attacks In West Bank As 'Jewish Terrorism'",
-              "url": "https://www.huffpost.com/entry/israel-eisenkot-condemns-settler-attacks-west-bank-terrorism_n_6b0321dee4b0edd18edf52c4",
-              "tid": 1795368248.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Israeli Political Leaders Denounce ‘Jewish Terrorism’ After West Bank Attacks",
-              "url": "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html",
-              "tid": 1795397522.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Arson attacks by Israeli settlers in West Bank add to tense political debate",
-              "url": "https://www.washingtonpost.com/world/2026/11/22/arson-attacks-by-israeli-settlers-west-bank-add-tense-political-debate/",
-              "tid": 1795351456.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Israel’s Eisenkot condemns arson attacks by Jewish settlers in West Bank",
-              "url": "https://www.thehindu.com/news/international/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank/article71732544.ece",
-              "tid": 1795384948.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Israel investigates West Bank fires blamed on settlers",
-              "url": "https://www.scmp.com/news/world/middle-east/article/3375395/israel-investigates-west-bank-fires-blamed-israeli-settlers",
-              "tid": 1795364723.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "‘Jewish terrorism’: Israel’s Gadi Eisenkot condemns arson attacks by settlers in West Bank",
-              "url": "https://www.straitstimes.com/world/middle-east/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank",
-              "tid": 1795353443.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank",
-              "url": "https://www.france24.com/en/middle-east/20261122-israel-s-eisenkot-slams-jewish-terrorism-after-attacks-by-settlers-in-west-bank",
-              "tid": 1795382956.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages",
-              "url": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
-              "tid": 1795360958.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
-              "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795360140.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Eisenkot brands settler attacks ‘Jewish terrorism’",
-              "url": "https://rt-english.com/news/649227-eisenkot-jewish-terrorism-west-bank/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795384947.0,
-              "statskontrollerad": true
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "West Bank: Four Palestinian villages targeted in suspected settler attacks",
-              "url": "http://www.africanews.com/2026/11/22/west-bank-four-palestinian-villages-targeted-in-suspected-settler-attacks/",
-              "tid": 1795362761.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": "mest_bla"
-      },
-      "reserv_rubrik": "Watch: Palestinians describe fear after Israeli settlers attack West Bank villages",
-      "kallor": [
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Watch: Palestinians describe fear after Israeli settlers attack West Bank villages",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-describe-fear-after-israeli-settlers-attack-west-bank",
-          "tid": 1795395127.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Human Rights Watch",
-          "rubrik": "Australia’s Sanctions on West Bank Settlers Increase Pressure",
-          "url": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
-          "tid": 1795388400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Israel’s Eisenkot condemns arson attacks by Jewish settlers in West Bank",
-          "url": "https://www.thehindu.com/news/international/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank/article71732544.ece",
-          "tid": 1795384948.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank",
-          "url": "https://www.france24.com/en/middle-east/20261122-israel-s-eisenkot-slams-jewish-terrorism-after-attacks-by-settlers-in-west-bank",
-          "tid": 1795382956.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "HuffPost",
-          "rubrik": "Israel's Eisenkot Condemns Settler Attacks In West Bank As 'Jewish Terrorism'",
-          "url": "https://www.huffpost.com/entry/israel-eisenkot-condemns-settler-attacks-west-bank-terrorism_n_6b0321dee4b0edd18edf52c4",
-          "tid": 1795368248.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Israel investigates West Bank fires blamed on settlers",
-          "url": "https://www.scmp.com/news/world/middle-east/article/3375395/israel-investigates-west-bank-fires-blamed-israeli-settlers",
-          "tid": 1795364723.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "West Bank: Four Palestinian villages targeted in suspected settler attacks",
-          "url": "http://www.africanews.com/2026/11/22/west-bank-four-palestinian-villages-targeted-in-suspected-settler-attacks/",
-          "tid": 1795362761.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages",
-          "url": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
-          "tid": 1795360958.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
-          "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795360140.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Israel's Eisenkot condemns arson attacks by Jewish settlers in West Bank",
-          "url": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
-          "tid": 1795355189.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "‘Jewish terrorism’: Israel’s Gadi Eisenkot condemns arson attacks by settlers in West Bank",
-          "url": "https://www.straitstimes.com/world/middle-east/israels-eisenkot-condemns-arson-attacks-by-jewish-settlers-in-west-bank",
-          "tid": 1795353443.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Israeli Political Leaders Denounce ‘Jewish Terrorism’ After West Bank Attacks",
-          "url": "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html",
-          "tid": 1795397522.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Arson attacks by Israeli settlers in West Bank add to tense political debate",
-          "url": "https://www.washingtonpost.com/world/2026/11/22/arson-attacks-by-israeli-settlers-west-bank-add-tense-political-debate/",
-          "tid": 1795351456.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "Eisenkot brands settler attacks ‘Jewish terrorism’",
-          "url": "https://rt-english.com/news/649227-eisenkot-jewish-terrorism-west-bank/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795384947.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Israel accused of systematic abuse and obstruction of West Bank medics",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/22/israel-accused-of-systematic-abuse-and-obstruction-of-west-bank-medics/",
-          "tid": 1795384800.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "spärrord: suspected",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "53d2e2a07c",
+      "id": "c98b3aa1aa",
       "amnen": [
-        "ai",
-        "marknader"
+        "halvledare",
+        "usa",
+        "varlden"
       ],
       "amnen_sektion": [
-        "ai",
-        "marknader"
+        "halvledare",
+        "usa"
       ],
-      "poang": 29.9,
+      "poang": 30.0,
       "vikt": {
-        "bredd": 0.165,
+        "bredd": 0.222,
         "regioner": {
-          "asien": 2,
-          "europa": 1
+          "usa": 1,
+          "asien": 1,
+          "mellanostern": 1
         },
-        "timmar": 96,
+        "timmar": 85,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1877,100 +1899,103 @@
       "maste": false,
       "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-23T04:20:57+00:00",
+      "senast": "2026-11-23T05:44:29+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.477,
+      "sammanhang": 0.786,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "europa"
+          "mellanostern",
+          "usa"
         ],
         "per_region": {
-          "asien": [
+          "usa": [
             {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "New 19-month low: Hong Kong stocks plunge as AI sell-off spreads to Asia",
-              "url": "https://www.scmp.com/business/markets/article/3375424/new-19-month-low-hong-kong-stocks-plunge-ai-sell-spreads-asia",
-              "tid": 1795407657.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Yonhap",
-              "land": "KR",
-              "rubrik": "Seoul shares extend losses late Mon. morning on AI-driven tech sell-off",
-              "url": "https://en.yna.co.kr/view/AEN20261123004400320",
-              "tid": 1795400865.0,
+              "kalla": "New York Post",
+              "land": "US",
+              "rubrik": "Trump says he hopes Nvidia rehires Jensen Huang: ‘Best thing for the USA’",
+              "url": "https://nypost.com/2026/11/23/us-news/trump-says-he-hopes-nvidia-rehires-jensen-huang-best-thing-for-the-usa/",
+              "tid": 1795412669.0,
               "statskontrollerad": false
             }
           ],
-          "europa": [
+          "asien": [
             {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Tech stock sell-off deepens in Asia",
-              "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
-              "tid": 1795404438.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Trump hopes Nvidia ‘rehires’ Jensen Huang, calls it the ‘best thing’ for chipmaker and US",
+              "url": "https://www.hindustantimes.com/world-news/us-news/trump-hopes-nvidia-rehires-jensen-huang-calls-it-the-best-thing-for-chipmaker-and-us-101795404437432.html",
+              "tid": 1795404898.0,
               "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Trump calls on Nvidia board to rehire Jensen Huang after scandal",
+              "url": "https://www.thenationalnews.com/news/us/2026/11/23/trump-calls-on-nvidia-board-to-rehire-jensen-huang-after-scandal/",
+              "tid": 1795406263.0,
+              "statskontrollerad": true
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
+        "blind_flack": null,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "New 19-month low: Hong Kong stocks plunge as AI sell-off spreads to Asia",
+      "reserv_rubrik": "Trump says he hopes Nvidia rehires Jensen Huang: ‘Best thing for the USA’",
       "kallor": [
         {
-          "namn": "South China Morning Post",
-          "rubrik": "New 19-month low: Hong Kong stocks plunge as AI sell-off spreads to Asia",
-          "url": "https://www.scmp.com/business/markets/article/3375424/new-19-month-low-hong-kong-stocks-plunge-ai-sell-spreads-asia",
-          "tid": 1795407657.0,
+          "namn": "New York Post",
+          "rubrik": "Trump says he hopes Nvidia rehires Jensen Huang: ‘Best thing for the USA’",
+          "url": "https://nypost.com/2026/11/23/us-news/trump-says-he-hopes-nvidia-rehires-jensen-huang-best-thing-for-the-usa/",
+          "tid": 1795412669.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "HK",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Trump hopes Nvidia ‘rehires’ Jensen Huang, calls it the ‘best thing’ for chipmaker and US",
+          "url": "https://www.hindustantimes.com/world-news/us-news/trump-hopes-nvidia-rehires-jensen-huang-calls-it-the-best-thing-for-chipmaker-and-us-101795404437432.html",
+          "tid": 1795404898.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Yonhap",
-          "rubrik": "Seoul shares extend losses late Mon. morning on AI-driven tech sell-off",
-          "url": "https://en.yna.co.kr/view/AEN20261123004400320",
-          "tid": 1795400865.0,
+          "namn": "The National",
+          "rubrik": "Trump calls on Nvidia board to rehire Jensen Huang after scandal",
+          "url": "https://www.thenationalnews.com/news/us/2026/11/23/trump-calls-on-nvidia-board-to-rehire-jensen-huang-after-scandal/",
+          "tid": 1795406263.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "KR",
-          "region": "asien",
+          "land": "AE",
+          "region": "mellanostern",
           "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Tech stock sell-off deepens in Asia",
-          "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
-          "tid": 1795404438.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
-        "en": 2
+        "sv": 0,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "blind fläck"
+        "färre än tre oberoende källor (2)"
       ],
       "data": null
     },
@@ -2076,6 +2101,112 @@
       "data": null
     },
     {
+      "id": "53d2e2a07c",
+      "amnen": [
+        "ai",
+        "marknader",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "marknader"
+      ],
+      "poang": 29.4,
+      "vikt": {
+        "bredd": 0.106,
+        "regioner": {
+          "asien": 1,
+          "europa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T04:58:47+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.184,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Gold, silver and Bitcoin plunge as Fed rate hike fears and tech stock sell-off push investors towards cash",
+              "url": "https://www.hindustantimes.com/world-news/us-news/gold-silver-and-bitcoin-plunge-as-fed-rate-hike-fears-and-tech-stock-sell-off-push-investors-towards-cash-101795356677534.html",
+              "tid": 1795357890.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Wall Street set to rebound after AI stock sell-off",
+              "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+              "tid": 1795409927.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Gold, silver and Bitcoin plunge as Fed rate hike fears and tech stock sell-off push investors towards cash",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Gold, silver and Bitcoin plunge as Fed rate hike fears and tech stock sell-off push investors towards cash",
+          "url": "https://www.hindustantimes.com/world-news/us-news/gold-silver-and-bitcoin-plunge-as-fed-rate-hike-fears-and-tech-stock-sell-off-push-investors-towards-cash-101795356677534.html",
+          "tid": 1795357890.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Wall Street set to rebound after AI stock sell-off",
+          "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+          "tid": 1795409927.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "8be9a5f69f",
       "amnen": [
         "halvledare",
@@ -2091,7 +2222,7 @@
           "asien": 2,
           "europa": 1
         },
-        "timmar": 80,
+        "timmar": 81,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2202,478 +2333,19 @@
       "data": null
     },
     {
-      "id": "e84e397536",
+      "id": "b313128f58",
       "amnen": [],
       "amnen_sektion": [],
       "poang": 28.8,
       "vikt": {
-        "bredd": 0.692,
-        "regioner": {
-          "asien": 1,
-          "norden": 1,
-          "mellanostern": 2,
-          "europa": 1
-        },
-        "timmar": 43,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T19:35:06+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.464,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "norden"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Iran says targeted 2 US Patriot radar systems in Bahrain, Manana clarifies ‘civilian facility’ hit as West Asia tensions intensify",
-              "url": "https://www.hindustantimes.com/world-news/iran-says-targeted-2-us-patriot-radar-systems-in-bahrain-manama-slams-heinous-iranian-aggression-101795313624815.html",
-              "tid": 1795318692.0,
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "I Bahrain er et civilt industrianlæg brudt i brand efter et iransk angreb",
-              "url": "https://www.dr.dk/nyheder/seneste/i-bahrain-er-et-civilt-industrianlaeg-brudt-i-brand-efter-et-iransk-angreb",
-              "tid": 1795297231.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Tehran Times",
-              "land": "IR",
-              "rubrik": "IRGC strikes US patriot radar systems in Bahrain, downs 20th American MQ-1 drone",
-              "url": "https://www.tehrantimes.com/news/532436/IRGC-strikes-US-patriot-radar-systems-in-Bahrain-downs-20th",
-              "tid": 1795376106.0,
-              "statskontrollerad": true
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Two injured, one critically, in Iranian attack on industrial plant in Bahrain",
-              "url": "https://www.thenationalnews.com/news/gulf/2026/11/22/two-injured-one-critically-in-iranian-attack-on-industrial-plant-in-bahrain/",
-              "tid": 1795346083.0,
-              "statskontrollerad": true
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Iran claims attack on US Patriot systems in Bahrain",
-              "url": "https://rt-english.com/news/649196-iran-bahrain-us-bases/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795297466.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Iran says targeted 2 US Patriot radar systems in Bahrain, Manana clarifies ‘civilian facility’ hit as West Asia tensions intensify",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Iran says targeted 2 US Patriot radar systems in Bahrain, Manana clarifies ‘civilian facility’ hit as West Asia tensions intensify",
-          "url": "https://www.hindustantimes.com/world-news/iran-says-targeted-2-us-patriot-radar-systems-in-bahrain-manama-slams-heinous-iranian-aggression-101795313624815.html",
-          "tid": 1795318692.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "I Bahrain er et civilt industrianlæg brudt i brand efter et iransk angreb",
-          "url": "https://www.dr.dk/nyheder/seneste/i-bahrain-er-et-civilt-industrianlaeg-brudt-i-brand-efter-et-iransk-angreb",
-          "tid": 1795297231.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Tehran Times",
-          "rubrik": "IRGC strikes US patriot radar systems in Bahrain, downs 20th American MQ-1 drone",
-          "url": "https://www.tehrantimes.com/news/532436/IRGC-strikes-US-patriot-radar-systems-in-Bahrain-downs-20th",
-          "tid": 1795376106.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IR",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Two injured, one critically, in Iranian attack on industrial plant in Bahrain",
-          "url": "https://www.thenationalnews.com/news/gulf/2026/11/22/two-injured-one-critically-in-iranian-attack-on-industrial-plant-in-bahrain/",
-          "tid": 1795346083.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "RT",
-          "rubrik": "Iran claims attack on US Patriot systems in Bahrain",
-          "url": "https://rt-english.com/news/649196-iran-bahrain-us-bases/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795297466.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "c98b3aa1aa",
-      "amnen": [
-        "halvledare",
-        "usa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "usa"
-      ],
-      "poang": 28.3,
-      "vikt": {
-        "bredd": 0.308,
+        "bredd": 0.492,
         "regioner": {
           "asien": 2,
-          "europa": 1,
-          "mellanostern": 1
-        },
-        "timmar": 47,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T04:28:39+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.473,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "US Treasury Secretary leaves door open for Jensen Huang’s return to Nvidia",
-              "url": "https://www.scmp.com/tech/tech-war/article/3375427/us-treasury-secretary-leaves-door-open-jensen-huangs-return-nvidia",
-              "tid": 1795408119.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Trump hopes Nvidia ‘rehires’ Jensen Huang, calls it the ‘best thing’ for chipmaker and US",
-              "url": "https://www.hindustantimes.com/world-news/us-news/trump-hopes-nvidia-rehires-jensen-huang-calls-it-the-best-thing-for-chipmaker-and-us-101795404437432.html",
-              "tid": 1795404898.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Bessent refuses to rule out Huang’s return to Nvidia",
-              "url": "https://www.ft.com/content/91b7a3a6-8ac5-4327-ad03-6d951f287346?syn-25a6b1a6=1",
-              "tid": 1795374511.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Trump calls on Nvidia board to rehire Jensen Huang after scandal",
-              "url": "https://www.thenationalnews.com/news/us/2026/11/23/trump-calls-on-nvidia-board-to-rehire-jensen-huang-after-scandal/",
-              "tid": 1795406263.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US Treasury Secretary leaves door open for Jensen Huang’s return to Nvidia",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "US Treasury Secretary leaves door open for Jensen Huang’s return to Nvidia",
-          "url": "https://www.scmp.com/tech/tech-war/article/3375427/us-treasury-secretary-leaves-door-open-jensen-huangs-return-nvidia",
-          "tid": 1795408119.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Trump hopes Nvidia ‘rehires’ Jensen Huang, calls it the ‘best thing’ for chipmaker and US",
-          "url": "https://www.hindustantimes.com/world-news/us-news/trump-hopes-nvidia-rehires-jensen-huang-calls-it-the-best-thing-for-chipmaker-and-us-101795404437432.html",
-          "tid": 1795404898.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Bessent refuses to rule out Huang’s return to Nvidia",
-          "url": "https://www.ft.com/content/91b7a3a6-8ac5-4327-ad03-6d951f287346?syn-25a6b1a6=1",
-          "tid": 1795374511.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Trump calls on Nvidia board to rehire Jensen Huang after scandal",
-          "url": "https://www.thenationalnews.com/news/us/2026/11/23/trump-calls-on-nvidia-board-to-rehire-jensen-huang-after-scandal/",
-          "tid": 1795406263.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "7f01ea8827",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 28.1,
-      "vikt": {
-        "bredd": 0.281,
-        "regioner": {
-          "usa": 1,
-          "mellanostern": 1,
-          "asien": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T03:52:17+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.676,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-              "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
-              "tid": 1795405937.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Saudi attack on Yemen's Hodeida kills four, wounds 18 others",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attack-yemens-hodeida-kills-four-wounds-18-others",
-              "tid": 1795405369.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Yemen's Houthis say they attacked Saudi Rabigh oil refinery",
-              "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery",
-              "tid": 1795369933.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
-              "url": "https://www.thehindu.com/news/international/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation/article71729354.ece",
-              "tid": 1795281254.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-      "kallor": [
-        {
-          "namn": "CNBC",
-          "rubrik": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-          "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
-          "tid": 1795405937.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Saudi attack on Yemen's Hodeida kills four, wounds 18 others",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attack-yemens-hodeida-kills-four-wounds-18-others",
-          "tid": 1795405369.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Yemen's Houthis say they attacked Saudi Rabigh oil refinery",
-          "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery",
-          "tid": 1795369933.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
-          "url": "https://www.thehindu.com/news/international/yemens-houthis-launch-strikes-after-saudi-coalitions-special-operation/article71729354.ece",
-          "tid": 1795281254.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "b313128f58",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.1,
-      "vikt": {
-        "bredd": 0.437,
-        "regioner": {
-          "asien": 3,
           "usa": 1,
           "sverige": 1,
-          "latinamerika": 1
+          "latinamerika": 2
         },
-        "timmar": 33,
+        "timmar": 34,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2688,7 +2360,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.672,
+      "sammanhang": 0.652,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -2714,14 +2386,6 @@
               "url": "https://www.abc.net.au/news/2026-11-23/un-climate-talk-breakdown-a-disaster-for-australia/107416230",
               "tid": 1795404991.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "RNZ",
-              "land": "NZ",
-              "rubrik": "COP flop: Scientist warns countries are losing faith in UN climate summits as deal talks stall",
-              "url": "https://www.rnz.co.nz/news/environment_climate/2734804/cop-flop-scientist-warns-countries-are-losing-faith-in-un-climate-summits-as-deal-talks-stall",
-              "tid": 1795326491.0,
-              "statskontrollerad": false
             }
           ],
           "usa": [
@@ -2745,6 +2409,14 @@
             }
           ],
           "latinamerika": [
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "La cumbre del clima fracasa incapaz de cerrar un acuerdo que señale a los combustibles fósiles",
+              "url": "https://elpais.com/clima-y-medio-ambiente/2026-11-22/la-presidencia-de-la-cop31-lanza-un-nuevo-borrador-de-acuerdo-para-desatascar-el-caotico-final-de-la-cumbre-del-clima.html",
+              "tid": 1795358818.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "El Tiempo",
               "land": "CO",
@@ -2811,6 +2483,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "El País América",
+          "rubrik": "La cumbre del clima fracasa incapaz de cerrar un acuerdo que señale a los combustibles fósiles",
+          "url": "https://elpais.com/clima-y-medio-ambiente/2026-11-22/la-presidencia-de-la-cop31-lanza-un-nuevo-borrador-de-acuerdo-para-desatascar-el-caotico-final-de-la-cumbre-del-clima.html",
+          "tid": 1795358818.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "El Tiempo",
           "rubrik": "La COP31 fracasa por falta de cosenso sobre combustibles fósiles, en un duro golpe para la lucha contra el cambio climático: 'Muy decepcionante'",
           "url": "https://www.eltiempo.com/mundo/mas-regiones/la-cop31-fracasa-por-falta-de-cosenso-sobre-combustibles-fosiles-en-un-duro-golpe-para-la-lucha-contra-el-cambio-climatico-muy-decepcionante-3603138",
@@ -2820,18 +2504,6 @@
           "land": "CO",
           "region": "latinamerika",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RNZ",
-          "rubrik": "COP flop: Scientist warns countries are losing faith in UN climate summits as deal talks stall",
-          "url": "https://www.rnz.co.nz/news/environment_climate/2734804/cop-flop-scientist-warns-countries-are-losing-faith-in-un-climate-summits-as-deal-talks-stall",
-          "tid": 1795326491.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NZ",
-          "region": "asien",
-          "agare": "public-service",
           "statskontrollerad": false
         }
       ],
@@ -2847,88 +2519,105 @@
       "data": null
     },
     {
-      "id": "978abbaeb1",
-      "amnen": [
-        "asien",
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "halvledare"
-      ],
-      "poang": 27.6,
+      "id": "f07db6a4be",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 28.7,
       "vikt": {
-        "bredd": 0.118,
+        "bredd": 0.345,
         "regioner": {
-          "asien": 2
+          "mellanostern": 2,
+          "asien": 1
         },
-        "timmar": 62,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-21T23:46:29+00:00",
+      "senast": "2026-11-22T18:40:54+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.666,
+      "sammanhang": 0.917,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien"
+          "asien",
+          "mellanostern"
         ],
         "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Bahrain says Iranian strike wounds two, one critically",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-iranian-strike-wounds-two-one-critically",
+              "tid": 1795372854.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Iran strike wounds two in Bahrain, Saudi condemns 'criminal' attacks",
+              "url": "https://www.al-monitor.com/originals/2026/11/iran-strike-wounds-two-bahrain-saudi-condemns-criminal-attacks",
+              "tid": 1795372224.0,
+              "statskontrollerad": false
+            }
+          ],
           "asien": [
             {
               "kalla": "The Hindu",
               "land": "IN",
-              "rubrik": "How U.S. controls flow of advanced tech, chip, and compute to China | Explained",
-              "url": "https://www.thehindu.com/sci-tech/technology/how-us-controls-flow-of-advanced-tech-chip-and-compute-to-china-explained/article71721133.ece",
-              "tid": 1795304789.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "APEC China: 5 takeaways on big powers, hot tech and veiled tensions",
-              "url": "https://asia.nikkei.com/politics/international-relations/apec/apec-china-5-takeaways-on-big-powers-hot-tech-and-veiled-tensions",
-              "tid": null,
+              "rubrik": "Iran strike wounds two in Bahrain, Riyadh denounces ‘criminal’ attacks",
+              "url": "https://www.thehindu.com/news/international/bahrain-says-iran-struck-industrial-site-as-tankers-hit-in-hormuz/article71730497.ece",
+              "tid": 1795366134.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
+        "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "How U.S. controls flow of advanced tech, chip, and compute to China | Explained",
+      "reserv_rubrik": "Bahrain says Iranian strike wounds two, one critically",
       "kallor": [
         {
-          "namn": "The Hindu",
-          "rubrik": "How U.S. controls flow of advanced tech, chip, and compute to China | Explained",
-          "url": "https://www.thehindu.com/sci-tech/technology/how-us-controls-flow-of-advanced-tech-chip-and-compute-to-china-explained/article71721133.ece",
-          "tid": 1795304789.0,
+          "namn": "Middle East Eye",
+          "rubrik": "Bahrain says Iranian strike wounds two, one critically",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-iranian-strike-wounds-two-one-critically",
+          "tid": 1795372854.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
-          "region": "asien",
+          "land": "GB",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Nikkei Asia",
-          "rubrik": "APEC China: 5 takeaways on big powers, hot tech and veiled tensions",
-          "url": "https://asia.nikkei.com/politics/international-relations/apec/apec-china-5-takeaways-on-big-powers-hot-tech-and-veiled-tensions",
-          "tid": null,
-          "betalvagg": true,
+          "namn": "Al-Monitor",
+          "rubrik": "Iran strike wounds two in Bahrain, Saudi condemns 'criminal' attacks",
+          "url": "https://www.al-monitor.com/originals/2026/11/iran-strike-wounds-two-bahrain-saudi-condemns-criminal-attacks",
+          "tid": 1795372224.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "JP",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Iran strike wounds two in Bahrain, Riyadh denounces ‘criminal’ attacks",
+          "url": "https://www.thehindu.com/news/international/bahrain-says-iran-struck-industrial-site-as-tankers-hit-in-hormuz/article71730497.ece",
+          "tid": 1795366134.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -2936,14 +2625,13 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 0,
-        "en": 1
+        "sv": 1,
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
+        "blind fläck"
       ],
       "data": null
     },
@@ -2951,27 +2639,27 @@
       "id": "661624637a",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.6,
+      "poang": 28.4,
       "vikt": {
-        "bredd": 0.664,
+        "bredd": 0.723,
         "regioner": {
-          "asien": 4,
+          "asien": 5,
           "mellanostern": 3
         },
-        "timmar": 35,
+        "timmar": 36,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 7,
+      "antal_kallor": 8,
       "har_primarkalla": false,
-      "senast": "2026-11-23T01:26:00+00:00",
+      "senast": "2026-11-23T05:16:53+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.889,
+      "sammanhang": 0.864,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -2981,19 +2669,27 @@
         "per_region": {
           "asien": [
             {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
+              "url": "https://www.thehindu.com/news/international/netanyahu-eisenkot-parties-end-talks-without-deal-on-forming-israel-government/article71732431.ece",
+              "tid": 1795411013.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Netanyahu and Eisenkot’s parties resume talks to form coalition govt in Israel",
+              "url": "https://www.dawn.com/news/2046448/netanyahu-and-eisenkots-parties-resume-talks-to-form-coalition-govt-in-israel",
+              "tid": 1795410982.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "The Japan Times",
               "land": "JP",
               "rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
               "url": "https://www.japantimes.co.jp/news/2026/11/23/world/politics/netanyahu-eisenkot-talks-israel-government/",
               "tid": 1795397160.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
-              "url": "https://www.thehindu.com/news/international/netanyahu-eisenkot-parties-end-talks-without-deal-on-forming-israel-government/article71732431.ece",
-              "tid": 1795379534.0,
               "statskontrollerad": false
             },
             {
@@ -3048,6 +2744,30 @@
       "reserv_rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
       "kallor": [
         {
+          "namn": "The Hindu",
+          "rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
+          "url": "https://www.thehindu.com/news/international/netanyahu-eisenkot-parties-end-talks-without-deal-on-forming-israel-government/article71732431.ece",
+          "tid": 1795411013.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Netanyahu and Eisenkot’s parties resume talks to form coalition govt in Israel",
+          "url": "https://www.dawn.com/news/2046448/netanyahu-and-eisenkots-parties-resume-talks-to-form-coalition-govt-in-israel",
+          "tid": 1795410982.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Japan Times",
           "rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
           "url": "https://www.japantimes.co.jp/news/2026/11/23/world/politics/netanyahu-eisenkot-talks-israel-government/",
@@ -3069,18 +2789,6 @@
           "land": "QA",
           "region": "mellanostern",
           "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Netanyahu, Eisenkot parties end talks without deal on forming Israel government",
-          "url": "https://www.thehindu.com/news/international/netanyahu-eisenkot-parties-end-talks-without-deal-on-forming-israel-government/article71732431.ece",
-          "tid": 1795379534.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -3145,10 +2853,215 @@
       "data": null
     },
     {
+      "id": "268b951cd2",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 28.1,
+      "vikt": {
+        "bredd": 0.672,
+        "regioner": {
+          "afrika": 1,
+          "asien": 2,
+          "europa": 2,
+          "mellanostern": 2
+        },
+        "timmar": 38,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T05:11:50+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.662,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Sudan: Saudi Arabia Strongly Condemns Drone Attacks On Sudanese Capital, Including UN Facility",
+              "url": "https://allafrica.com/stories/202611230050.html",
+              "tid": 1795410710.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "Drone strikes kill four in Khartoum and damage UN building",
+              "url": "https://www.abc.net.au/news/2026-11-23/deadly-drone-strikes-in-khartoum-sudan-war/107415908",
+              "tid": 1795394795.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
+              "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
+              "tid": 1795357708.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Drone strikes hit homes, United Nations building in Sudan's capital",
+              "url": "https://www.france24.com/en/video/20261123-drone-strikes-hit-homes-united-nations-building-in-sudan-s-capital",
+              "tid": 1795394616.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
+              "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795375500.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Drone strikes hit homes, UN building in Sudan's capital",
+              "url": "https://www.al-monitor.com/originals/2026/11/drone-strikes-hit-homes-un-building-sudans-capital",
+              "tid": 1795368624.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Saudi Arabia, Qatar join condemnation of Iran attack on Bahrain",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-qatar-join-condemnation-iran-attack-bahrain",
+              "tid": 1795354062.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Sudan: Saudi Arabia Strongly Condemns Drone Attacks On Sudanese Capital, Including UN Facility",
+      "kallor": [
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Sudan: Saudi Arabia Strongly Condemns Drone Attacks On Sudanese Capital, Including UN Facility",
+          "url": "https://allafrica.com/stories/202611230050.html",
+          "tid": 1795410710.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "Drone strikes kill four in Khartoum and damage UN building",
+          "url": "https://www.abc.net.au/news/2026-11-23/deadly-drone-strikes-in-khartoum-sudan-war/107415908",
+          "tid": 1795394795.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Drone strikes hit homes, United Nations building in Sudan's capital",
+          "url": "https://www.france24.com/en/video/20261123-drone-strikes-hit-homes-united-nations-building-in-sudan-s-capital",
+          "tid": 1795394616.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
+          "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795375500.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Drone strikes hit homes, UN building in Sudan's capital",
+          "url": "https://www.al-monitor.com/originals/2026/11/drone-strikes-hit-homes-un-building-sudans-capital",
+          "tid": 1795368624.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
+          "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
+          "tid": 1795357708.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Saudi Arabia, Qatar join condemnation of Iran attack on Bahrain",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-qatar-join-condemnation-iran-attack-bahrain",
+          "tid": 1795354062.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "2a06e431a4",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.6,
+      "poang": 28.0,
       "vikt": {
         "bredd": 1.211,
         "regioner": {
@@ -3158,7 +3071,7 @@
           "usa": 1,
           "afrika": 1
         },
-        "timmar": 9,
+        "timmar": 10,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3534,98 +3447,57 @@
       "data": null
     },
     {
-      "id": "c703d50a93",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.6,
+      "id": "978abbaeb1",
+      "amnen": [
+        "asien",
+        "halvledare"
+      ],
+      "amnen_sektion": [
+        "halvledare"
+      ],
+      "poang": 27.7,
       "vikt": {
-        "bredd": 0.41,
+        "bredd": 0.118,
         "regioner": {
-          "asien": 2,
-          "europa": 4,
-          "sverige": 1
+          "asien": 2
         },
         "timmar": 63,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": []
+        "spar": [
+          "teknik"
+        ]
       },
       "maste": false,
-      "antal_kallor": 7,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-22T21:32:37+00:00",
+      "senast": "2026-11-21T23:46:29+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.585,
+      "sammanhang": 0.666,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
-          "europa",
-          "sverige"
+          "asien"
         ],
         "per_region": {
           "asien": [
             {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
-              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3375406/russia-starts-towing-its-ship-hit-drones-baltic-finland-says",
-              "tid": 1795383157.0,
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "How U.S. controls flow of advanced tech, chip, and compute to China | Explained",
+              "url": "https://www.thehindu.com/sci-tech/technology/how-us-controls-flow-of-advanced-tech-chip-and-compute-to-china-explained/article71721133.ece",
+              "tid": 1795304789.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
-              "url": "https://www.straitstimes.com/world/europe/russian-cargo-ship-still-on-fire-off-finland-after-attack",
-              "tid": 1795336349.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
-              "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-              "tid": 1795367906.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
-              "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
-              "tid": 1795317503.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Sanctioned Russian ship attacked by drones near Finland",
-              "url": "https://www.ft.com/content/2c959c95-97a5-4957-9eb2-8436c34ba374?syn-25a6b1a6=1",
-              "tid": 1795356940.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "UK to help Kiev make drones for strikes on Russian civilians",
-              "url": "https://rt-english.com/news/649223-uk-produce-ukraine-drones/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795359962.0,
-              "statskontrollerad": true
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Ryska fartyget har lämnat Finland – bogserades bort",
-              "url": "https://www.svt.se/nyheter/utrikes/fartyget-i-finska-viken-annu-inte-slackt",
-              "tid": 1795337367.0,
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "APEC China: 5 takeaways on big powers, hot tech and veiled tensions",
+              "url": "https://asia.nikkei.com/politics/international-relations/apec/apec-china-5-takeaways-on-big-powers-hot-tech-and-veiled-tensions",
+              "tid": null,
               "statskontrollerad": false
             }
           ]
@@ -3635,101 +3507,43 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
+      "reserv_rubrik": "How U.S. controls flow of advanced tech, chip, and compute to China | Explained",
       "kallor": [
         {
-          "namn": "South China Morning Post",
-          "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
-          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3375406/russia-starts-towing-its-ship-hit-drones-baltic-finland-says",
-          "tid": 1795383157.0,
+          "namn": "The Hindu",
+          "rubrik": "How U.S. controls flow of advanced tech, chip, and compute to China | Explained",
+          "url": "https://www.thehindu.com/sci-tech/technology/how-us-controls-flow-of-advanced-tech-chip-and-compute-to-china-explained/article71721133.ece",
+          "tid": 1795304789.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "HK",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "BBC World",
-          "rubrik": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
-          "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-          "tid": 1795367906.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Ryska fartyget har lämnat Finland – bogserades bort",
-          "url": "https://www.svt.se/nyheter/utrikes/fartyget-i-finska-viken-annu-inte-slackt",
-          "tid": 1795337367.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
-          "url": "https://www.straitstimes.com/world/europe/russian-cargo-ship-still-on-fire-off-finland-after-attack",
-          "tid": 1795336349.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
-          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
-          "tid": 1795317503.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Sanctioned Russian ship attacked by drones near Finland",
-          "url": "https://www.ft.com/content/2c959c95-97a5-4957-9eb2-8436c34ba374?syn-25a6b1a6=1",
-          "tid": 1795356940.0,
+          "namn": "Nikkei Asia",
+          "rubrik": "APEC China: 5 takeaways on big powers, hot tech and veiled tensions",
+          "url": "https://asia.nikkei.com/politics/international-relations/apec/apec-china-5-takeaways-on-big-powers-hot-tech-and-veiled-tensions",
+          "tid": null,
           "betalvagg": true,
           "typ": "media",
-          "land": "GB",
-          "region": "europa",
+          "land": "JP",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "UK to help Kiev make drones for strikes on Russian civilians",
-          "url": "https://rt-english.com/news/649223-uk-produce-ukraine-drones/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795359962.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
-        "en": 2
+        "sv": 0,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
       ],
       "data": null
     },
@@ -3842,7 +3656,7 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 27.4,
+      "poang": 27.5,
       "vikt": {
         "bredd": 0.321,
         "regioner": {
@@ -3850,7 +3664,7 @@
           "usa": 3,
           "asien": 2
         },
-        "timmar": 74,
+        "timmar": 75,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4046,6 +3860,311 @@
       "data": null
     },
     {
+      "id": "7f01ea8827",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 27.5,
+      "vikt": {
+        "bredd": 0.222,
+        "regioner": {
+          "usa": 1,
+          "mellanostern": 1,
+          "asien": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T03:52:17+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.689,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+              "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+              "tid": 1795405937.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Saudi attack on Yemen's Hodeida kills four, wounds 18 others",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attack-yemens-hodeida-kills-four-wounds-18-others",
+              "tid": 1795405369.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Yemen's Houthis say they attacked Saudi Rabigh oil refinery",
+              "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery",
+              "tid": 1795369933.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+      "kallor": [
+        {
+          "namn": "CNBC",
+          "rubrik": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+          "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+          "tid": 1795405937.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Saudi attack on Yemen's Hodeida kills four, wounds 18 others",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attack-yemens-hodeida-kills-four-wounds-18-others",
+          "tid": 1795405369.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Yemen's Houthis say they attacked Saudi Rabigh oil refinery",
+          "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery",
+          "tid": 1795369933.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "c703d50a93",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 27.2,
+      "vikt": {
+        "bredd": 0.362,
+        "regioner": {
+          "asien": 2,
+          "europa": 3,
+          "sverige": 1
+        },
+        "timmar": 64,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T21:32:37+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.543,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "sverige"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
+              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3375406/russia-starts-towing-its-ship-hit-drones-baltic-finland-says",
+              "tid": 1795383157.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
+              "url": "https://www.straitstimes.com/world/europe/russian-cargo-ship-still-on-fire-off-finland-after-attack",
+              "tid": 1795336349.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+              "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+              "tid": 1795367906.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
+              "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
+              "tid": 1795317503.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "UK to help Kiev make drones for strikes on Russian civilians",
+              "url": "https://rt-english.com/news/649223-uk-produce-ukraine-drones/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795359962.0,
+              "statskontrollerad": true
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Ryska fartyget har lämnat Finland – bogserades bort",
+              "url": "https://www.svt.se/nyheter/utrikes/fartyget-i-finska-viken-annu-inte-slackt",
+              "tid": 1795337367.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3375406/russia-starts-towing-its-ship-hit-drones-baltic-finland-says",
+          "tid": 1795383157.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+          "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+          "tid": 1795367906.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Ryska fartyget har lämnat Finland – bogserades bort",
+          "url": "https://www.svt.se/nyheter/utrikes/fartyget-i-finska-viken-annu-inte-slackt",
+          "tid": 1795337367.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
+          "url": "https://www.straitstimes.com/world/europe/russian-cargo-ship-still-on-fire-off-finland-after-attack",
+          "tid": 1795336349.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
+          "tid": 1795317503.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "UK to help Kiev make drones for strikes on Russian civilians",
+          "url": "https://rt-english.com/news/649223-uk-produce-ukraine-drones/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795359962.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "4245cb2719",
       "amnen": [
         "geopolitik",
@@ -4152,105 +4271,6 @@
       "data": null
     },
     {
-      "id": "0df53a65c5",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.8,
-      "vikt": {
-        "bredd": 0.151,
-        "regioner": {
-          "asien": 1,
-          "sverige": 1
-        },
-        "timmar": 95,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T13:17:12+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.381,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "sverige"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
-              "url": "https://www.scmp.com/news/world/europe/article/3375389/man-carrying-alarm-gun-train-germany-sparks-major-police-operation",
-              "tid": 1795353432.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Tågstopp i Falun på grund av polisinsats",
-              "url": "https://www.svt.se/nyheter/lokalt/dalarna/tagstopp-i-falun-pa-grund-av-polisinsats",
-              "tid": 1795280589.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
-          "url": "https://www.scmp.com/news/world/europe/article/3375389/man-carrying-alarm-gun-train-germany-sparks-major-police-operation",
-          "tid": 1795353432.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Tågstopp i Falun på grund av polisinsats",
-          "url": "https://www.svt.se/nyheter/lokalt/dalarna/tagstopp-i-falun-pa-grund-av-polisinsats",
-          "tid": 1795280589.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "7d6e47c1fc",
       "amnen": [
         "usa",
@@ -4259,7 +4279,7 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 26.8,
+      "poang": 26.9,
       "vikt": {
         "bredd": 0.542,
         "regioner": {
@@ -4267,7 +4287,7 @@
           "europa": 3,
           "asien": 4
         },
-        "timmar": 38,
+        "timmar": 39,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4478,6 +4498,103 @@
       "data": null
     },
     {
+      "id": "96241d9e22",
+      "amnen": [
+        "afrika",
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.6,
+      "vikt": {
+        "bredd": 0.286,
+        "regioner": {
+          "afrika": 2
+        },
+        "timmar": 66,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T05:52:05+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.51,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika"
+        ],
+        "per_region": {
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Kenya: Ruto Mourns Former South African Deputy President Phumzile Mlambo-Ngcuka",
+              "url": "https://allafrica.com/stories/202611230133.html",
+              "tid": 1795413125.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Final Salute: Flags at half-mast as SA mourns former deputy president Phumzile Mlambo-Ngcuka",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-22-flags-at-half-mast-as-sa-mourns-former-deputy-president-phumzile-mlambo-ngcuka/",
+              "tid": 1795356156.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Kenya: Ruto Mourns Former South African Deputy President Phumzile Mlambo-Ngcuka",
+      "kallor": [
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Kenya: Ruto Mourns Former South African Deputy President Phumzile Mlambo-Ngcuka",
+          "url": "https://allafrica.com/stories/202611230133.html",
+          "tid": 1795413125.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "Final Salute: Flags at half-mast as SA mourns former deputy president Phumzile Mlambo-Ngcuka",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-22-flags-at-half-mast-as-sa-mourns-former-deputy-president-phumzile-mlambo-ngcuka/",
+          "tid": 1795356156.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "71ced7557e",
       "amnen": [
         "varlden"
@@ -4574,236 +4691,19 @@
       "data": null
     },
     {
-      "id": "9c1836eefe",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 25.8,
-      "vikt": {
-        "bredd": 0.261,
-        "regioner": {
-          "afrika": 1,
-          "asien": 2
-        },
-        "timmar": 29,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T19:00:59+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.567,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien"
-        ],
-        "per_region": {
-          "afrika": [
-            {
-              "kalla": "Premium Times",
-              "land": "NG",
-              "rubrik": "UN chief blames fossil fuel interests for climate inaction as COP31 ends without consensus",
-              "url": "https://www.premiumtimesng.com/news/top-news/927246-un-chief-blames-fossil-fuel-interests-for-climate-inaction-as-cop31-ends-without-consensus.html",
-              "tid": 1795374059.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "COP31 teeters on the brink as fossil fuel rift deepens",
-              "url": "https://www.straitstimes.com/world/europe/fossil-fuels-still-missing-from-latest-cop31-draft-deal",
-              "tid": 1795323600.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "COP31 goes into overtime: Fossil fuel, adaptation finance impasse persists",
-              "url": "https://www.hindustantimes.com/world-news/no-headway-even-in-overtime-cop-chief-seeks-compromise-101795312540164.html",
-              "tid": 1795313424.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "UN chief blames fossil fuel interests for climate inaction as COP31 ends without consensus",
-      "kallor": [
-        {
-          "namn": "Premium Times",
-          "rubrik": "UN chief blames fossil fuel interests for climate inaction as COP31 ends without consensus",
-          "url": "https://www.premiumtimesng.com/news/top-news/927246-un-chief-blames-fossil-fuel-interests-for-climate-inaction-as-cop31-ends-without-consensus.html",
-          "tid": 1795374059.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "COP31 teeters on the brink as fossil fuel rift deepens",
-          "url": "https://www.straitstimes.com/world/europe/fossil-fuels-still-missing-from-latest-cop31-draft-deal",
-          "tid": 1795323600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "COP31 goes into overtime: Fossil fuel, adaptation finance impasse persists",
-          "url": "https://www.hindustantimes.com/world-news/no-headway-even-in-overtime-cop-chief-seeks-compromise-101795312540164.html",
-          "tid": 1795313424.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "1813d37309",
-      "amnen": [
-        "noje"
-      ],
-      "amnen_sektion": [
-        "noje"
-      ],
-      "poang": 21.9,
-      "vikt": {
-        "bredd": 0.154,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 30,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-21T23:16:11+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.508,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Expressen Nöje",
-              "land": "SE",
-              "rubrik": "Neville Ristenfeldt fick lämna ”Idol”",
-              "url": "https://www.expressen.se/noje/neville-ristenfeldt-fick-lamna-idol/",
-              "tid": 1795302971.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Aftonbladet Nöjesbladet",
-              "land": "SE",
-              "rubrik": "Han tvingas lämna TV4:s ”Idol” under kvartsfinalen",
-              "url": "https://www.aftonbladet.se/nojesbladet/a/0vn7oJ/neville-ristenfeldt-tvingas-lamna-tv4-s-idol-under-kvartsfinalen?utm_medium=rss",
-              "tid": 1795298334.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Neville Ristenfeldt fick lämna ”Idol”",
-      "kallor": [
-        {
-          "namn": "Expressen Nöje",
-          "rubrik": "Neville Ristenfeldt fick lämna ”Idol”",
-          "url": "https://www.expressen.se/noje/neville-ristenfeldt-fick-lamna-idol/",
-          "tid": 1795302971.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Aftonbladet Nöjesbladet",
-          "rubrik": "Han tvingas lämna TV4:s ”Idol” under kvartsfinalen",
-          "url": "https://www.aftonbladet.se/nojesbladet/a/0vn7oJ/neville-ristenfeldt-tvingas-lamna-tv4-s-idol-under-kvartsfinalen?utm_medium=rss",
-          "tid": 1795298334.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "c2a30f7c61",
       "amnen": [
         "asien",
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 21.9,
+      "poang": 22.2,
       "vikt": {
         "bredd": 0.118,
         "regioner": {
           "asien": 2
         },
-        "timmar": 16,
+        "timmar": 17,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4890,6 +4790,105 @@
       "data": null
     },
     {
+      "id": "1813d37309",
+      "amnen": [
+        "noje"
+      ],
+      "amnen_sektion": [
+        "noje"
+      ],
+      "poang": 22.0,
+      "vikt": {
+        "bredd": 0.154,
+        "regioner": {
+          "sverige": 2
+        },
+        "timmar": 31,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T23:16:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.508,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Expressen Nöje",
+              "land": "SE",
+              "rubrik": "Neville Ristenfeldt fick lämna ”Idol”",
+              "url": "https://www.expressen.se/noje/neville-ristenfeldt-fick-lamna-idol/",
+              "tid": 1795302971.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Aftonbladet Nöjesbladet",
+              "land": "SE",
+              "rubrik": "Han tvingas lämna TV4:s ”Idol” under kvartsfinalen",
+              "url": "https://www.aftonbladet.se/nojesbladet/a/0vn7oJ/neville-ristenfeldt-tvingas-lamna-tv4-s-idol-under-kvartsfinalen?utm_medium=rss",
+              "tid": 1795298334.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Neville Ristenfeldt fick lämna ”Idol”",
+      "kallor": [
+        {
+          "namn": "Expressen Nöje",
+          "rubrik": "Neville Ristenfeldt fick lämna ”Idol”",
+          "url": "https://www.expressen.se/noje/neville-ristenfeldt-fick-lamna-idol/",
+          "tid": 1795302971.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Aftonbladet Nöjesbladet",
+          "rubrik": "Han tvingas lämna TV4:s ”Idol” under kvartsfinalen",
+          "url": "https://www.aftonbladet.se/nojesbladet/a/0vn7oJ/neville-ristenfeldt-tvingas-lamna-tv4-s-idol-under-kvartsfinalen?utm_medium=rss",
+          "tid": 1795298334.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "14d2c2eeb6",
       "amnen": [
         "noje"
@@ -4897,13 +4896,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 18.5,
+      "poang": 18.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 13,
+        "timmar": 14,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4998,13 +4997,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 18.3,
+      "poang": 18.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 12,
+        "timmar": 13,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5095,13 +5094,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 18.3,
+      "poang": 18.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 12,
+        "timmar": 13,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5191,13 +5190,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 17.8,
+      "poang": 18.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 11,
+        "timmar": 12,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6086,7 +6085,7 @@
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 36,
+      "artiklar": 35,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -6098,7 +6097,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 63,
+      "artiklar": 59,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6157,7 +6156,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 10,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -6175,13 +6174,13 @@
     {
       "id": "guardian",
       "ok": true,
-      "artiklar": 29,
+      "artiklar": 28,
       "url": "https://www.theguardian.com/world/rss"
     },
     {
       "id": "lemonde",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 12,
       "url": "https://www.lemonde.fr/en/rss/une.xml"
     },
     {
@@ -6199,7 +6198,7 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
@@ -6229,13 +6228,13 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 29,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 20,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
@@ -6265,7 +6264,7 @@
     {
       "id": "cnbc",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 15,
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
@@ -6277,7 +6276,7 @@
     {
       "id": "nasa",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 4,
       "url": "https://www.nasa.gov/news-release/feed/"
     },
     {
@@ -6301,13 +6300,13 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 44,
+      "artiklar": 45,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
       "id": "aljazeera",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 24,
       "url": "https://www.aljazeera.com/xml/rss/all.xml"
     },
     {
@@ -6419,7 +6418,7 @@
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 13,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
@@ -6507,7 +6506,7 @@
     {
       "id": "the-information",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 5,
       "url": "https://www.theinformation.com/feed"
     },
     {
@@ -6560,7 +6559,7 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 1,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -6595,7 +6594,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 10,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -6607,7 +6606,7 @@
     {
       "id": "sifted",
       "ok": true,
-      "artiklar": 0,
+      "artiklar": 2,
       "url": "https://sifted.eu/feed"
     },
     {
@@ -6661,7 +6660,7 @@
     {
       "id": "mexnews",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 6,
       "url": "https://mexiconewsdaily.com/feed/"
     },
     {
@@ -6673,7 +6672,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 68,
+      "artiklar": 69,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -6685,7 +6684,7 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 31,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
@@ -6715,7 +6714,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 50,
+      "artiklar": 52,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6727,7 +6726,7 @@
     {
       "id": "almonitor",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 16,
       "url": "https://www.al-monitor.com/rss"
     },
     {
@@ -6751,13 +6750,13 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 61,
+      "artiklar": 69,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
       "id": "dawn",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 26,
       "url": "https://www.dawn.com/feeds/home"
     },
     {
@@ -6787,7 +6786,7 @@
     {
       "id": "dr",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 17,
       "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
     },
     {
@@ -6847,7 +6846,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 13,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -6865,7 +6864,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 21,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
@@ -6901,7 +6900,7 @@
     {
       "id": "mongabay",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 2,
       "url": "https://news.mongabay.com/feed/"
     },
     {
