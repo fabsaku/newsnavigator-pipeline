@@ -1,25 +1,765 @@
 {
-  "skapad": "2026-11-23T12:05:22.603957+00:00",
+  "skapad": "2026-11-23T13:05:16.364115+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
+      "id": "2a06e431a4",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 44.9,
+      "vikt": {
+        "bredd": 1.958,
+        "regioner": {
+          "europa": 8,
+          "afrika": 3,
+          "usa": 9,
+          "mellanostern": 4,
+          "asien": 6
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 30,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T12:50:57+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKudnBHitJf4qk6R87FC'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.634,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Kremlin warns of ‘escalation’ as Albania denies Ukrainian drones that sank Russian ships launched from its territory – Europe live",
+              "url": "https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates",
+              "tid": 1795438257.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+              "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795434001.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+              "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+              "tid": 1795433043.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Ukrainian drones sink Russian warship at naval base in Libya",
+              "url": "https://www.france24.com/en/video/20261123-ukrainian-drones-sink-russian-warship-at-naval-base-in-libya",
+              "tid": 1795431180.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
+              "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
+              "tid": 1795424368.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "Ukraine sank Russian warship off Libya, Zelenskyy says",
+              "url": "https://www.politico.eu/article/volodymyr-zelenskyy-claims-ukraine-sank-russia-warship-benghazi-libya/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "tid": 1795423524.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
+              "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795419720.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
+              "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
+              "tid": 1795426244.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Premium Times",
+              "land": "NG",
+              "rubrik": "Russia-Ukraine war spreads to Africa as ships attacked",
+              "url": "https://www.premiumtimesng.com/foreign/world-foreign/927377-russia-ukraine-war-spreads-to-africa-as-ships-attacked.html",
+              "tid": 1795438055.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Libya: Suspected Drone Attack Hits Russian Warship in Benghazi",
+              "url": "https://allafrica.com/stories/202611230149.html",
+              "tid": 1795415772.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Libya’s eastern government suspects drone attack caused explosion on Russian ship in Benghazi",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-22-libyas-eastern-government-suspects-drone-attack-caused-explosion-on-russian-ship-in-benghazi/",
+              "tid": 1795381609.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
+              "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
+              "tid": 1795437340.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+              "url": "https://www.washingtontimes.com/news/2026/nov/23/ukrainian-drones-strike-russian-warship-naval-base-libya-zelenskyy/",
+              "tid": 1795434623.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+              "tid": 1795433437.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Defense News",
+              "land": "US",
+              "rubrik": "Ukraine confirms it sank Russian corvette in Libyan port",
+              "url": "https://www.defensenews.com/global/mideast-africa/2026/11/23/ukraine-confirms-it-sank-russian-corvette-in-libyan-port/",
+              "tid": 1795429029.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+              "tid": 1795428993.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
+              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
+              "tid": 1795385032.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
+              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+              "tid": 1795437189.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
+              "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
+              "tid": 1795437182.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+              "tid": 1795432740.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
+              "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
+              "tid": 1795435083.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
+              "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
+              "tid": 1795432212.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Ukraine claims it sank Russian warship off Libya",
+              "url": "https://www.al-monitor.com/originals/2026/11/ukraine-claims-it-sank-russian-warship-libya",
+              "tid": 1795426224.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
+              "tid": 1795422946.0,
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
+              "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
+              "tid": 1795429272.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
+              "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
+              "tid": 1795423925.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
+              "tid": 1795422960.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
+              "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
+              "tid": 1795421841.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+              "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship",
+              "tid": 1795420640.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+              "url": "https://www.thehindu.com/news/international/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article71733178.ece",
+              "tid": 1795412233.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
+              "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
+              "tid": 1795437340.0,
+              "lutning": "hoger"
+            },
+            {
+              "kalla": "The Washington Times",
+              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+              "url": "https://www.washingtontimes.com/news/2026/nov/23/ukrainian-drones-strike-russian-warship-naval-base-libya-zelenskyy/",
+              "tid": 1795434623.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "mitten": [
+            {
+              "kalla": "CNBC",
+              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+              "tid": 1795433437.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "The Hill",
+              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
+              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
+              "tid": 1795385032.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+              "tid": 1795432740.0,
+              "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "NPR",
+              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+              "tid": 1795428993.0,
+              "lutning": "lutar_vanster"
+            },
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
+              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+              "tid": 1795437189.0,
+              "lutning": "lutar_vanster"
+            },
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
+              "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
+              "tid": 1795437182.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Kremlin warns of ‘escalation’ as Albania denies Ukrainian drones that sank Russian ships launched from its territory – Europe live",
+      "kallor": [
+        {
+          "namn": "The Guardian",
+          "rubrik": "Kremlin warns of ‘escalation’ as Albania denies Ukrainian drones that sank Russian ships launched from its territory – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates",
+          "tid": 1795438257.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Premium Times",
+          "rubrik": "Russia-Ukraine war spreads to Africa as ships attacked",
+          "url": "https://www.premiumtimesng.com/foreign/world-foreign/927377-russia-ukraine-war-spreads-to-africa-as-ships-attacked.html",
+          "tid": 1795438055.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
+          "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
+          "tid": 1795437340.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
+          "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
+          "tid": 1795435083.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+          "url": "https://www.washingtontimes.com/news/2026/nov/23/ukrainian-drones-strike-russian-warship-naval-base-libya-zelenskyy/",
+          "tid": 1795434623.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795434001.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+          "tid": 1795433437.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+          "tid": 1795433043.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
+          "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
+          "tid": 1795432212.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Ukrainian drones sink Russian warship at naval base in Libya",
+          "url": "https://www.france24.com/en/video/20261123-ukrainian-drones-sink-russian-warship-at-naval-base-in-libya",
+          "tid": 1795431180.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
+          "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
+          "tid": 1795429272.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Defense News",
+          "rubrik": "Ukraine confirms it sank Russian corvette in Libyan port",
+          "url": "https://www.defensenews.com/global/mideast-africa/2026/11/23/ukraine-confirms-it-sank-russian-corvette-in-libyan-port/",
+          "tid": 1795429029.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NPR",
+          "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+          "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+          "tid": 1795428993.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Ukraine claims it sank Russian warship off Libya",
+          "url": "https://www.al-monitor.com/originals/2026/11/ukraine-claims-it-sank-russian-warship-libya",
+          "tid": 1795426224.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
+          "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
+          "tid": 1795424368.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
+          "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
+          "tid": 1795423925.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Politico Europe",
+          "rubrik": "Ukraine sank Russian warship off Libya, Zelenskyy says",
+          "url": "https://www.politico.eu/article/volodymyr-zelenskyy-claims-ukraine-sank-russia-warship-benghazi-libya/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "tid": 1795423524.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
+          "tid": 1795422960.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
+          "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
+          "tid": 1795421841.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+          "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship",
+          "tid": 1795420640.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
+          "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795419720.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Libya: Suspected Drone Attack Hits Russian Warship in Benghazi",
+          "url": "https://allafrica.com/stories/202611230149.html",
+          "tid": 1795415772.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+          "url": "https://www.thehindu.com/news/international/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article71733178.ece",
+          "tid": 1795412233.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
+          "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
+          "tid": 1795385032.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "Libya’s eastern government suspects drone attack caused explosion on Russian ship in Benghazi",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-22-libyas-eastern-government-suspects-drone-attack-caused-explosion-on-russian-ship-in-benghazi/",
+          "tid": 1795381609.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
+          "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+          "tid": 1795437189.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
+          "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
+          "tid": 1795437182.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+          "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+          "tid": 1795432740.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
+          "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
+          "tid": 1795426244.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
+          "tid": 1795422946.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "troligen hopslagna händelser",
+        "spärrord: suspected"
+      ],
+      "data": null
+    },
+    {
       "id": "8e6e3d907d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 42.2,
+      "poang": 42.5,
       "vikt": {
         "bredd": 2.2,
         "regioner": {
-          "afrika": 5,
+          "asien": 5,
           "europa": 4,
+          "afrika": 5,
           "mellanostern": 4,
           "usa": 8,
-          "asien": 5,
           "latinamerika": 1,
           "global": 1
         },
-        "timmar": 14,
+        "timmar": 15,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -30,14 +770,14 @@
       "maste": false,
       "antal_kallor": 28,
       "har_primarkalla": false,
-      "senast": "2026-11-23T12:02:26+00:00",
+      "senast": "2026-11-23T12:40:52+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKq4rxPWt6kukY8ZE9EZ'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKudnBYX4ufgxX52DxNV'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.604,
+      "sammanhang": 0.588,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -50,6 +790,82 @@
           "usa"
         ],
         "per_region": {
+          "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Singapore 'regrets' lack of agreement at COP31, will work to sustain momentum of global climate action: Grace Fu",
+              "url": "https://www.channelnewsasia.com/singapore/cop31-singapore-regret-lack-agreement-grace-fu-6574671",
+              "tid": 1795437652.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
+              "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
+              "tid": 1795420018.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘COP-llapse’ in Turkey: What's next after longest-ever UN climate conference ends without a deal",
+              "url": "https://www.hindustantimes.com/world-news/cop-llapse-in-turkey-what-next-after-longest-ever-un-climate-conference-cop31-talks-ends-without-a-deal-101795416470729.html",
+              "tid": 1795418446.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
+              "url": "https://www.straitstimes.com/world/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
+              "tid": 1795415460.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RNZ",
+              "land": "NZ",
+              "rubrik": "COP flop: Scientist warns countries are losing faith in UN climate summits as deal talks stall",
+              "url": "https://www.rnz.co.nz/news/environment_climate/2734804/cop-flop-scientist-warns-countries-are-losing-faith-in-un-climate-summits-as-deal-talks-stall",
+              "tid": 1795326491.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Failure of Cop31 prompts calls for urgent reform of UN climate summits",
+              "url": "https://www.theguardian.com/environment/2026/nov/23/failure-cop31-calls-urgent-reform-un-climate-summits",
+              "tid": 1795436483.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "The worst COP ever? Climate talks collapse in chaos",
+              "url": "https://www.france24.com/en/video/20261123-the-worst-cop-ever-climate-talks-collapse-in-chaos",
+              "tid": 1795429474.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Five takeaways from the failed climate talks COP31",
+              "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795415630.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal, oil and gas use",
+              "url": "https://www.dw.com/en/cop31-climate-talks-end-without-consensus-on-how-to-fund-vulnerable-countries-or-move-the-world-away-from-coal-oil-and-gas-use/a-80003610?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795353480.0,
+              "statskontrollerad": false
+            }
+          ],
           "afrika": [
             {
               "kalla": "Premium Times",
@@ -89,40 +905,6 @@
               "rubrik": "Africa: COP31 Cover Deal Collapses As EU and Others Reject Draft Over Fossil Fuel Omission",
               "url": "https://allafrica.com/stories/202611230028.html",
               "tid": 1795409917.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "First Thing: Cop31 talks collapse without deal in blow to planet’s future climate",
-              "url": "https://www.theguardian.com/us-news/2026/nov/23/first-thing-cop31-talks-collapse-no-deal-future-global-climate",
-              "tid": 1795433205.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "The worst COP ever? Climate talks collapse in chaos",
-              "url": "https://www.france24.com/en/video/20261123-the-worst-cop-ever-climate-talks-collapse-in-chaos",
-              "tid": 1795429474.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Five takeaways from the failed climate talks COP31",
-              "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795415630.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal, oil and gas use",
-              "url": "https://www.dw.com/en/cop31-climate-talks-end-without-consensus-on-how-to-fund-vulnerable-countries-or-move-the-world-away-from-coal-oil-and-gas-use/a-80003610?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795353480.0,
               "statskontrollerad": false
             }
           ],
@@ -226,48 +1008,6 @@
               "statskontrollerad": false
             }
           ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
-              "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
-              "tid": 1795420018.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘COP-llapse’ in Turkey: What's next after longest-ever UN climate conference ends without a deal",
-              "url": "https://www.hindustantimes.com/world-news/cop-llapse-in-turkey-what-next-after-longest-ever-un-climate-conference-cop31-talks-ends-without-a-deal-101795416470729.html",
-              "tid": 1795418446.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
-              "url": "https://www.straitstimes.com/world/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
-              "tid": 1795415460.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
-              "url": "https://www.dawn.com/news/2046511/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
-              "tid": 1795413696.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RNZ",
-              "land": "NZ",
-              "rubrik": "COP flop: Scientist warns countries are losing faith in UN climate summits as deal talks stall",
-              "url": "https://www.rnz.co.nz/news/environment_climate/2734804/cop-flop-scientist-warns-countries-are-losing-faith-in-un-climate-summits-as-deal-talks-stall",
-              "tid": 1795326491.0,
-              "statskontrollerad": false
-            }
-          ],
           "latinamerika": [
             {
               "kalla": "MercoPress",
@@ -289,8 +1029,8 @@
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
+        "blind_flack": null,
+        "grannar_svenska": true,
         "usa": {
           "bla": [
             {
@@ -348,8 +1088,32 @@
         },
         "usa_blind": "mest_bla"
       },
-      "reserv_rubrik": "Nigerian environmentalist condemns COP31 collapse, accuses oil producers of frustrating climate action",
+      "reserv_rubrik": "Singapore 'regrets' lack of agreement at COP31, will work to sustain momentum of global climate action: Grace Fu",
       "kallor": [
+        {
+          "namn": "CNA",
+          "rubrik": "Singapore 'regrets' lack of agreement at COP31, will work to sustain momentum of global climate action: Grace Fu",
+          "url": "https://www.channelnewsasia.com/singapore/cop31-singapore-regret-lack-agreement-grace-fu-6574671",
+          "tid": 1795437652.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Failure of Cop31 prompts calls for urgent reform of UN climate summits",
+          "url": "https://www.theguardian.com/environment/2026/nov/23/failure-cop31-calls-urgent-reform-un-climate-summits",
+          "tid": 1795436483.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "Premium Times",
           "rubrik": "Nigerian environmentalist condemns COP31 collapse, accuses oil producers of frustrating climate action",
@@ -371,18 +1135,6 @@
           "typ": "media",
           "land": "ZA",
           "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "First Thing: Cop31 talks collapse without deal in blow to planet’s future climate",
-          "url": "https://www.theguardian.com/us-news/2026/nov/23/first-thing-cop31-talks-collapse-no-deal-future-global-climate",
-          "tid": 1795433205.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -502,18 +1254,6 @@
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "Bad COP, worse COP: What’s next after climate talks fail?",
-          "url": "https://www.dawn.com/news/2046511/bad-cop-worse-cop-whats-next-after-climate-talks-fail",
-          "tid": 1795413696.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -701,716 +1441,10 @@
       "data": null
     },
     {
-      "id": "2a06e431a4",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 33.7,
-      "vikt": {
-        "bredd": 1.977,
-        "regioner": {
-          "mellanostern": 4,
-          "europa": 8,
-          "usa": 7,
-          "asien": 7,
-          "afrika": 3
-        },
-        "timmar": 6,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 29,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T11:58:03+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKq4rx9eHpP23KYt2JC6'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.65,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
-              "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
-              "tid": 1795435083.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
-              "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
-              "tid": 1795432212.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Ukraine claims it sank Russian warship off Libya",
-              "url": "https://www.al-monitor.com/originals/2026/11/ukraine-claims-it-sank-russian-warship-libya",
-              "tid": 1795426224.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
-              "tid": 1795422946.0,
-              "statskontrollerad": true
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-              "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795434001.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Albania denies Ukrainian drones that sank Russian ships were launched from its territory – Europe live",
-              "url": "https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates",
-              "tid": 1795433382.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Ukrainian sea drones sink Russian warship in Libya, killing Russians and Libyans",
-              "url": "https://meduza.io/en/feature/2026/11/23/ukrainian-sea-drones-sink-russian-warship-in-libya-killing-russians-and-libyans",
-              "tid": 1795431536.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Ukrainian drones sink Russian warship at naval base in Libya",
-              "url": "https://www.france24.com/en/video/20261123-ukrainian-drones-sink-russian-warship-at-naval-base-in-libya",
-              "tid": 1795431180.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
-              "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
-              "tid": 1795424368.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Politico Europe",
-              "land": "BE",
-              "rubrik": "Ukraine sank Russian warship off Libya, Zelenskyy says",
-              "url": "https://www.politico.eu/article/volodymyr-zelenskyy-claims-ukraine-sank-russia-warship-benghazi-libya/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-              "tid": 1795423524.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
-              "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795419720.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
-              "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
-              "tid": 1795426244.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-              "tid": 1795433437.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Defense News",
-              "land": "US",
-              "rubrik": "Ukraine confirms it sank Russian corvette in Libyan port",
-              "url": "https://www.defensenews.com/global/mideast-africa/2026/11/23/ukraine-confirms-it-sank-russian-corvette-in-libyan-port/",
-              "tid": 1795429029.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
-              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-              "tid": 1795428993.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
-              "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-              "tid": 1795397456.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
-              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
-              "tid": 1795385032.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
-              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-              "tid": 1795432740.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Ukraine Claims Strikes on Russian Ships Near Libya",
-              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-              "tid": 1795427948.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
-              "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
-              "tid": 1795429272.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
-              "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
-              "tid": 1795423925.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Ukraine claims strikes on two Russian ships off Libya",
-              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
-              "tid": 1795422960.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
-              "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
-              "tid": 1795421841.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
-              "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship",
-              "tid": 1795420640.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-              "url": "https://www.thehindu.com/news/international/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article71733178.ece",
-              "tid": 1795412233.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Zelensky says Ukraine sank Russian warship in sea drone attack at Libya base",
-              "url": "https://www.scmp.com/news/world/africa/article/3375407/suspected-ukrainian-sea-drones-hit-russian-warship-libyan-naval-base-officials-say",
-              "tid": 1795387578.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "UN calls for probe after drone attacks hit ships off Libya",
-              "url": "http://www.africanews.com/2026/11/23/un-calls-for-probe-after-drone-attacks-hit-ships-off-libya/",
-              "tid": 1795422279.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "AllAfrica",
-              "land": "INT",
-              "rubrik": "Libya: Suspected Drone Attack Hits Russian Warship in Benghazi",
-              "url": "https://allafrica.com/stories/202611230149.html",
-              "tid": 1795415772.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "Libya’s eastern government suspects drone attack caused explosion on Russian ship in Benghazi",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-22-libyas-eastern-government-suspects-drone-attack-caused-explosion-on-russian-ship-in-benghazi/",
-              "tid": 1795381609.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "CNBC",
-              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-              "tid": 1795433437.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Hill",
-              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
-              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
-              "tid": 1795385032.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
-              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-              "tid": 1795432740.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "NPR",
-              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
-              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-              "tid": 1795428993.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Ukraine Claims Strikes on Russian Ships Near Libya",
-              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-              "tid": 1795427948.0,
-              "lutning": "lutar_vanster"
-            }
-          ],
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
-              "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-              "tid": 1795397456.0,
-              "lutning": "hoger"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
-      "kallor": [
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
-          "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
-          "tid": 1795435083.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795434001.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-          "tid": 1795433437.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Albania denies Ukrainian drones that sank Russian ships were launched from its territory – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates",
-          "tid": 1795433382.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
-          "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
-          "tid": 1795432212.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "Ukrainian sea drones sink Russian warship in Libya, killing Russians and Libyans",
-          "url": "https://meduza.io/en/feature/2026/11/23/ukrainian-sea-drones-sink-russian-warship-in-libya-killing-russians-and-libyans",
-          "tid": 1795431536.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Ukrainian drones sink Russian warship at naval base in Libya",
-          "url": "https://www.france24.com/en/video/20261123-ukrainian-drones-sink-russian-warship-at-naval-base-in-libya",
-          "tid": 1795431180.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "ABC News (Australien)",
-          "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
-          "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
-          "tid": 1795429272.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AU",
-          "region": "asien",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Defense News",
-          "rubrik": "Ukraine confirms it sank Russian corvette in Libyan port",
-          "url": "https://www.defensenews.com/global/mideast-africa/2026/11/23/ukraine-confirms-it-sank-russian-corvette-in-libyan-port/",
-          "tid": 1795429029.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
-          "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-          "tid": 1795428993.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Ukraine claims it sank Russian warship off Libya",
-          "url": "https://www.al-monitor.com/originals/2026/11/ukraine-claims-it-sank-russian-warship-libya",
-          "tid": 1795426224.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
-          "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
-          "tid": 1795424368.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
-          "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
-          "tid": 1795423925.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Politico Europe",
-          "rubrik": "Ukraine sank Russian warship off Libya, Zelenskyy says",
-          "url": "https://www.politico.eu/article/volodymyr-zelenskyy-claims-ukraine-sank-russia-warship-benghazi-libya/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "tid": 1795423524.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BE",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Ukraine claims strikes on two Russian ships off Libya",
-          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
-          "tid": 1795422960.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "UN calls for probe after drone attacks hit ships off Libya",
-          "url": "http://www.africanews.com/2026/11/23/un-calls-for-probe-after-drone-attacks-hit-ships-off-libya/",
-          "tid": 1795422279.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
-          "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
-          "tid": 1795421841.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
-          "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship",
-          "tid": 1795420640.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
-          "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795419720.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "AllAfrica",
-          "rubrik": "Libya: Suspected Drone Attack Hits Russian Warship in Benghazi",
-          "url": "https://allafrica.com/stories/202611230149.html",
-          "tid": 1795415772.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "INT",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-          "url": "https://www.thehindu.com/news/international/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article71733178.ece",
-          "tid": 1795412233.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
-          "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-          "tid": 1795397456.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Zelensky says Ukraine sank Russian warship in sea drone attack at Libya base",
-          "url": "https://www.scmp.com/news/world/africa/article/3375407/suspected-ukrainian-sea-drones-hit-russian-warship-libyan-naval-base-officials-say",
-          "tid": 1795387578.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
-          "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
-          "tid": 1795385032.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Daily Maverick",
-          "rubrik": "Libya’s eastern government suspects drone attack caused explosion on Russian ship in Benghazi",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-22-libyas-eastern-government-suspects-drone-attack-caused-explosion-on-russian-ship-in-benghazi/",
-          "tid": 1795381609.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
-          "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-          "tid": 1795432740.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Ukraine Claims Strikes on Russian Ships Near Libya",
-          "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-          "tid": 1795427948.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
-          "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
-          "tid": 1795426244.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
-          "tid": 1795422946.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "troligen hopslagna händelser",
-        "spärrord: suspected"
-      ],
-      "data": null
-    },
-    {
       "id": "4e9e543f8d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 32.9,
+      "poang": 33.1,
       "vikt": {
         "bredd": 1.121,
         "regioner": {
@@ -1420,7 +1454,7 @@
           "europa": 4,
           "afrika": 1
         },
-        "timmar": 20,
+        "timmar": 21,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1434,7 +1468,7 @@
       "senast": "2026-11-23T10:20:58+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKq4ry99WjsEXfyv18Fm'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKudnCHTiWCSn7jwujjU'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -1782,113 +1816,6 @@
       "data": null
     },
     {
-      "id": "7f2576b9f6",
-      "amnen": [
-        "asien"
-      ],
-      "amnen_sektion": [],
-      "poang": 32.0,
-      "vikt": {
-        "bredd": 0.118,
-        "regioner": {
-          "asien": 2
-        },
-        "timmar": 96,
-        "konsekvens": {
-          "berorda": 4,
-          "allvar": 3,
-          "varaktighet": 3,
-          "medel": 3.33,
-          "skal": "Toppmöten i Manila om säkerhet och handel påverkar flera länders politik, men främst genom diplomatiska överenskommelser med begränsad direkt effekt."
-        },
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "samarbete"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T05:51:27+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKq4rwQWWt6k2CopaD7M'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.737,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Key takeaways from the Quad, ASEAN-India, and East Asia Summits in Manila | Explained",
-              "url": "https://www.thehindu.com/news/international/key-takeaways-from-the-quad-asean-india-and-east-asia-summitsin-manila-explained/article71727587.ece",
-              "tid": 1795326687.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Through the Lens: From ASEAN in Manila to APEC in Shenzhen",
-              "url": "https://asia.nikkei.com/photos/through-the-lens-from-asean-in-manila-to-apec-in-shenzhen",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Key takeaways from the Quad, ASEAN-India, and East Asia Summits in Manila | Explained",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Key takeaways from the Quad, ASEAN-India, and East Asia Summits in Manila | Explained",
-          "url": "https://www.thehindu.com/news/international/key-takeaways-from-the-quad-asean-india-and-east-asia-summitsin-manila-explained/article71727587.ece",
-          "tid": 1795326687.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "Through the Lens: From ASEAN in Manila to APEC in Shenzhen",
-          "url": "https://asia.nikkei.com/photos/through-the-lens-from-asean-in-manila-to-apec-in-shenzhen",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
       "id": "c98b3aa1aa",
       "amnen": [
         "halvledare",
@@ -1898,7 +1825,7 @@
         "halvledare",
         "usa"
       ],
-      "poang": 31.6,
+      "poang": 31.7,
       "vikt": {
         "bredd": 0.359,
         "regioner": {
@@ -1906,7 +1833,7 @@
           "asien": 3,
           "mellanostern": 1
         },
-        "timmar": 90,
+        "timmar": 91,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1918,7 +1845,10 @@
       "antal_kallor": 6,
       "har_primarkalla": false,
       "senast": "2026-11-23T11:59:00+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChKudnCXpYKgGqczjnSpz'}"
+      },
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.474,
@@ -2093,7 +2023,7 @@
           "europa": 3,
           "usa": 1
         },
-        "timmar": 87,
+        "timmar": 88,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2276,6 +2206,235 @@
       "relevans": {
         "sv": 1,
         "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "268b951cd2",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 29.9,
+      "vikt": {
+        "bredd": 0.786,
+        "regioner": {
+          "latinamerika": 1,
+          "afrika": 2,
+          "asien": 2,
+          "europa": 2,
+          "mellanostern": 1
+        },
+        "timmar": 45,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 8,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T11:32:01+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.845,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "latinamerika",
+          "mellanostern"
+        ],
+        "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "The Rio Times",
+              "land": "BR",
+              "rubrik": "Drones Reportedly Hit Cúcuta Police Command",
+              "url": "https://www.riotimesonline.com/cucuta-police-command-drone-attack-colombia-2026-11-23/",
+              "tid": 1795433521.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
+              "url": "http://www.africanews.com/2026/11/23/drone-strikes-hit-homes-and-un-premises-in-sudans-capital/",
+              "tid": 1795416188.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Sudan: Drones Strikes Hit UN Building in Residential Area of Khartoum",
+              "url": "https://allafrica.com/stories/202611230147.html",
+              "tid": 1795415527.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Drone strikes hit homes, U.N. building in Sudan’s capital",
+              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/drone-strikes-un-building-sudan/",
+              "tid": 1795414020.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
+              "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
+              "tid": 1795357708.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Drone strikes hit homes, United Nations building in Sudan's capital",
+              "url": "https://www.france24.com/en/video/20261123-drone-strikes-hit-homes-united-nations-building-in-sudan-s-capital",
+              "tid": 1795394616.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
+              "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795375500.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Drone strikes hit homes, UN building in Sudan's capital",
+              "url": "https://www.al-monitor.com/originals/2026/11/drone-strikes-hit-homes-un-building-sudans-capital",
+              "tid": 1795368624.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Drones Reportedly Hit Cúcuta Police Command",
+      "kallor": [
+        {
+          "namn": "The Rio Times",
+          "rubrik": "Drones Reportedly Hit Cúcuta Police Command",
+          "url": "https://www.riotimesonline.com/cucuta-police-command-drone-attack-colombia-2026-11-23/",
+          "tid": 1795433521.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BR",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
+          "url": "http://www.africanews.com/2026/11/23/drone-strikes-hit-homes-and-un-premises-in-sudans-capital/",
+          "tid": 1795416188.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Sudan: Drones Strikes Hit UN Building in Residential Area of Khartoum",
+          "url": "https://allafrica.com/stories/202611230147.html",
+          "tid": 1795415527.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Drone strikes hit homes, U.N. building in Sudan’s capital",
+          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/drone-strikes-un-building-sudan/",
+          "tid": 1795414020.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Drone strikes hit homes, United Nations building in Sudan's capital",
+          "url": "https://www.france24.com/en/video/20261123-drone-strikes-hit-homes-united-nations-building-in-sudan-s-capital",
+          "tid": 1795394616.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
+          "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795375500.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Drone strikes hit homes, UN building in Sudan's capital",
+          "url": "https://www.al-monitor.com/originals/2026/11/drone-strikes-hit-homes-un-building-sudans-capital",
+          "tid": 1795368624.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
+          "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
+          "tid": 1795357708.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
@@ -2507,7 +2666,7 @@
           "europa": 2,
           "sverige": 1
         },
-        "timmar": 79,
+        "timmar": 80,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2616,162 +2775,185 @@
       "data": null
     },
     {
-      "id": "efa8a960b8",
+      "id": "a08a51b75e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 29.2,
+      "poang": 29.0,
       "vikt": {
-        "bredd": 0.793,
+        "bredd": 0.882,
         "regioner": {
-          "europa": 2,
-          "afrika": 2,
+          "asien": 5,
           "mellanostern": 1,
-          "asien": 3,
-          "sverige": 1
+          "norden": 1,
+          "europa": 2,
+          "usa": 2
         },
-        "timmar": 37,
+        "timmar": 29,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 9,
+      "antal_kallor": 11,
       "har_primarkalla": false,
-      "senast": "2026-11-23T11:11:50+00:00",
+      "senast": "2026-11-23T12:52:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.598,
+      "sammanhang": 0.576,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
           "asien",
           "europa",
           "mellanostern",
-          "sverige"
+          "norden",
+          "usa"
         ],
         "per_region": {
-          "europa": [
+          "asien": [
             {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
-              "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
-              "tid": 1795432310.0,
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Indonesia says 24 killed in factory fire, rescuers search for dozens missing",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375508/indonesia-says-24-killed-factory-fire-rescuers-search-dozens-missing",
+              "tid": 1795438320.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
-              "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
-              "tid": 1795421352.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
-              "tid": 1795430200.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "More remains recovered in search for 34 workers missing after Indonesian candy factory fire",
+              "url": "https://www.hindustantimes.com/world-news/more-remains-recovered-in-search-for-34-workers-missing-after-indonesian-candy-factory-fire-101795398510938.html",
+              "tid": 1795417907.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-              "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
-              "tid": 1795343949.0,
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Indonesia says 24 killed in factory blaze as rescuers search for dozens missing",
+              "url": "https://www.thehindu.com/news/international/indonesia-banten-factory-fire-death-toll-people-missing/article71733448.ece",
+              "tid": 1795415511.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Indonesia searches for 34 missing workers after candy factory fire",
+              "url": "https://asia.nikkei.com/economy/fires/indonesia-searches-for-34-missing-workers-after-candy-factory-fire",
+              "tid": null,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Indonesia candy factory fire not fully extinguished, about 50 missing",
+              "url": "https://news.cgtn.com/news/2026-11-22/news-1ShqqiAfYhG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795337925.0,
+              "statskontrollerad": true
             }
           ],
           "mellanostern": [
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
-              "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
-              "tid": 1795426465.0,
+              "rubrik": "Search continues for dozens missing after Indonesia candy factory fire",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/search-continues-for-dozens-missing-after-indonesia-candy-factory-fire?traffic_source=rss",
+              "tid": 1795436599.0,
               "statskontrollerad": false
             }
           ],
-          "asien": [
+          "norden": [
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
-              "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
-              "tid": 1795417632.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
-              "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
-              "tid": 1795415537.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
-              "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
-              "tid": 1795338144.0,
+              "kalla": "RÚV English",
+              "land": "IS",
+              "rubrik": "Fire breaks out in motorhome on Sævarhöfði",
+              "url": "https://www.ruv.is/english/2026-11-23-fire-breaks-out-in-motorhome-on-saevarhofdi-493533/",
+              "tid": 1795415925.0,
               "statskontrollerad": false
             }
           ],
-          "sverige": [
+          "europa": [
             {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Dödssiffran efter ryska attacken stiger till tolv",
-              "url": "https://www.sverigesradio.se/artikel/9347975",
-              "tid": 1795398720.0,
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "At least 24 killed and dozens missing in confectionery factory fire in Indonesia",
+              "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
+              "tid": 1795412712.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Three killed and dozens missing after fire at Indonesian factory",
+              "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795356320.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
+              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
+              "tid": 1795353524.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
+              "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
+              "tid": 1795436697.0,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
         "grannar_svenska": false,
-        "usa": null,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
+              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
+              "tid": 1795353524.0,
+              "lutning": "hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
+              "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
+              "tid": 1795436697.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
         "usa_blind": null
       },
-      "reserv_rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
+      "reserv_rubrik": "Indonesia says 24 killed in factory fire, rescuers search for dozens missing",
       "kallor": [
         {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
-          "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
-          "tid": 1795432310.0,
+          "namn": "South China Morning Post",
+          "rubrik": "Indonesia says 24 killed in factory fire, rescuers search for dozens missing",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375508/indonesia-says-24-killed-factory-fire-rescuers-search-dozens-missing",
+          "tid": 1795438320.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Daily Maverick",
-          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
-          "tid": 1795430200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
+          "land": "HK",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "Al Jazeera",
-          "rubrik": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
-          "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
-          "tid": 1795426465.0,
+          "rubrik": "Search continues for dozens missing after Indonesia candy factory fire",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/search-continues-for-dozens-missing-after-indonesia-candy-factory-fire?traffic_source=rss",
+          "tid": 1795436599.0,
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -2780,87 +2962,122 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Meduza",
-          "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
-          "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
-          "tid": 1795421352.0,
+          "namn": "Hindustan Times",
+          "rubrik": "More remains recovered in search for 34 workers missing after Indonesian candy factory fire",
+          "url": "https://www.hindustantimes.com/world-news/more-remains-recovered-in-search-for-34-workers-missing-after-indonesian-candy-factory-fire-101795398510938.html",
+          "tid": 1795417907.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "LV",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RÚV English",
+          "rubrik": "Fire breaks out in motorhome on Sævarhöfði",
+          "url": "https://www.ruv.is/english/2026-11-23-fire-breaks-out-in-motorhome-on-saevarhofdi-493533/",
+          "tid": 1795415925.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IS",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Indonesia says 24 killed in factory blaze as rescuers search for dozens missing",
+          "url": "https://www.thehindu.com/news/international/indonesia-banten-factory-fire-death-toll-people-missing/article71733448.ece",
+          "tid": 1795415511.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "At least 24 killed and dozens missing in confectionery factory fire in Indonesia",
+          "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
+          "tid": 1795412712.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
           "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
-          "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
-          "tid": 1795417632.0,
+          "namn": "BBC World",
+          "rubrik": "Three killed and dozens missing after fire at Indonesian factory",
+          "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795356320.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
-          "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
-          "tid": 1795415537.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Dödssiffran efter ryska attacken stiger till tolv",
-          "url": "https://www.sverigesradio.se/artikel/9347975",
-          "tid": 1795398720.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "GB",
+          "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
-          "namn": "Africanews",
-          "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-          "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
-          "tid": 1795343949.0,
+          "namn": "Fox News",
+          "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
+          "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
+          "tid": 1795353524.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "CG",
-          "region": "afrika",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
-          "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
-          "tid": 1795338144.0,
-          "betalvagg": false,
+          "namn": "The New York Times",
+          "rubrik": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
+          "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
+          "tid": 1795436697.0,
+          "betalvagg": true,
           "typ": "media",
-          "land": "SG",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "Indonesia searches for 34 missing workers after candy factory fire",
+          "url": "https://asia.nikkei.com/economy/fires/indonesia-searches-for-34-missing-workers-after-candy-factory-fire",
+          "tid": null,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Indonesia candy factory fire not fully extinguished, about 50 missing",
+          "url": "https://news.cgtn.com/news/2026-11-22/news-1ShqqiAfYhG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795337925.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
         "sv": 2,
-        "en": 2
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "spärrord: boy"
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2983,102 +3200,122 @@
       "data": null
     },
     {
-      "id": "268b951cd2",
+      "id": "efa8a960b8",
       "amnen": [],
       "amnen_sektion": [],
       "poang": 28.6,
       "vikt": {
-        "bredd": 0.661,
+        "bredd": 0.72,
         "regioner": {
-          "afrika": 2,
-          "asien": 2,
           "europa": 2,
-          "mellanostern": 1
+          "afrika": 2,
+          "mellanostern": 1,
+          "asien": 3,
+          "usa": 1
         },
-        "timmar": 44,
+        "timmar": 38,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 7,
+      "antal_kallor": 9,
       "har_primarkalla": false,
-      "senast": "2026-11-23T06:43:08+00:00",
+      "senast": "2026-11-23T11:11:50+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.929,
+      "sammanhang": 0.549,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
           "asien",
           "europa",
-          "mellanostern"
+          "mellanostern",
+          "usa"
         ],
         "per_region": {
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
+              "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
+              "tid": 1795432310.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
+              "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
+              "tid": 1795421352.0,
+              "statskontrollerad": false
+            }
+          ],
           "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
+              "tid": 1795430200.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "Africanews",
               "land": "CG",
-              "rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
-              "url": "http://www.africanews.com/2026/11/23/drone-strikes-hit-homes-and-un-premises-in-sudans-capital/",
-              "tid": 1795416188.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "AllAfrica",
-              "land": "INT",
-              "rubrik": "Sudan: Drones Strikes Hit UN Building in Residential Area of Khartoum",
-              "url": "https://allafrica.com/stories/202611230147.html",
-              "tid": 1795415527.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Drone strikes hit homes, U.N. building in Sudan’s capital",
-              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/drone-strikes-un-building-sudan/",
-              "tid": 1795414020.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
-              "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
-              "tid": 1795357708.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Drone strikes hit homes, United Nations building in Sudan's capital",
-              "url": "https://www.france24.com/en/video/20261123-drone-strikes-hit-homes-united-nations-building-in-sudan-s-capital",
-              "tid": 1795394616.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
-              "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795375500.0,
+              "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+              "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
+              "tid": 1795343949.0,
               "statskontrollerad": false
             }
           ],
           "mellanostern": [
             {
-              "kalla": "Al-Monitor",
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
+              "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
+              "tid": 1795426465.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
+              "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
+              "tid": 1795417632.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
+              "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
+              "tid": 1795415537.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
+              "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
+              "tid": 1795338144.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Washington Times",
               "land": "US",
-              "rubrik": "Drone strikes hit homes, UN building in Sudan's capital",
-              "url": "https://www.al-monitor.com/originals/2026/11/drone-strikes-hit-homes-un-building-sudans-capital",
-              "tid": 1795368624.0,
+              "rubrik": "Denmark expels Russian official, limits visas after alleging plot to kill U.S.-Ukrainian rapper",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/denmark-removes-russian-official-limits-russia-visas/",
+              "tid": 1795368478.0,
               "statskontrollerad": false
             }
           ]
@@ -3088,13 +3325,97 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
+      "reserv_rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
       "kallor": [
         {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
+          "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
+          "tid": 1795432310.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
+          "tid": 1795430200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
+          "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
+          "tid": 1795426465.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
+          "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
+          "tid": 1795421352.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
+          "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
+          "tid": 1795417632.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
+          "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
+          "tid": 1795415537.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "Denmark expels Russian official, limits visas after alleging plot to kill U.S.-Ukrainian rapper",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/denmark-removes-russian-official-limits-russia-visas/",
+          "tid": 1795368478.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Africanews",
-          "rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
-          "url": "http://www.africanews.com/2026/11/23/drone-strikes-hit-homes-and-un-premises-in-sudans-capital/",
-          "tid": 1795416188.0,
+          "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+          "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
+          "tid": 1795343949.0,
           "betalvagg": false,
           "typ": "media",
           "land": "CG",
@@ -3103,73 +3424,13 @@
           "statskontrollerad": false
         },
         {
-          "namn": "AllAfrica",
-          "rubrik": "Sudan: Drones Strikes Hit UN Building in Residential Area of Khartoum",
-          "url": "https://allafrica.com/stories/202611230147.html",
-          "tid": 1795415527.0,
+          "namn": "The Straits Times",
+          "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
+          "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
+          "tid": 1795338144.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "INT",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Drone strikes hit homes, U.N. building in Sudan’s capital",
-          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/drone-strikes-un-building-sudan/",
-          "tid": 1795414020.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Drone strikes hit homes, United Nations building in Sudan's capital",
-          "url": "https://www.france24.com/en/video/20261123-drone-strikes-hit-homes-united-nations-building-in-sudan-s-capital",
-          "tid": 1795394616.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
-          "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795375500.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Drone strikes hit homes, UN building in Sudan's capital",
-          "url": "https://www.al-monitor.com/originals/2026/11/drone-strikes-hit-homes-un-building-sudans-capital",
-          "tid": 1795368624.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
-          "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
-          "tid": 1795357708.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
+          "land": "SG",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -3178,17 +3439,18 @@
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 2
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
+        "spärrord: boy",
         "blind fläck"
       ],
       "data": null
     },
     {
-      "id": "bafd1aa594",
+      "id": "6e80a3214e",
       "amnen": [
         "geopolitik"
       ],
@@ -3357,14 +3619,14 @@
       "amnen_sektion": [
         "ai"
       ],
-      "poang": 27.7,
+      "poang": 27.8,
       "vikt": {
         "bredd": 0.202,
         "regioner": {
           "mellanostern": 1,
           "asien": 1
         },
-        "timmar": 52,
+        "timmar": 53,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3449,6 +3711,147 @@
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "1b8b62c2e2",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 27.6,
+      "vikt": {
+        "bredd": 0.392,
+        "regioner": {
+          "mellanostern": 2,
+          "asien": 1,
+          "europa": 1
+        },
+        "timmar": 66,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T12:46:30+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.638,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
+              "url": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
+              "tid": 1795437990.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Israel kills Palestinians in Gaza as aid blockade and winter floods deepen suffering",
+              "url": "https://www.middleeasteye.net/news/israel-kills-palestinians-gaza-aid-blockade-winter-floods-deepen-suffering",
+              "tid": 1795437808.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
+              "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
+              "tid": 1795435348.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "Israel strangles hope in Gaza after more than a year of blocking reconstruction",
+              "url": "https://english.elpais.com/international/2026-11-23/israel-strangles-hope-in-gaza-after-more-than-a-year-of-blocking-reconstruction.html",
+              "tid": 1795424928.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
+      "kallor": [
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
+          "url": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
+          "tid": 1795437990.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Israel kills Palestinians in Gaza as aid blockade and winter floods deepen suffering",
+          "url": "https://www.middleeasteye.net/news/israel-kills-palestinians-gaza-aid-blockade-winter-floods-deepen-suffering",
+          "tid": 1795437808.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
+          "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
+          "tid": 1795435348.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País (English)",
+          "rubrik": "Israel strangles hope in Gaza after more than a year of blocking reconstruction",
+          "url": "https://english.elpais.com/international/2026-11-23/israel-strangles-hope-in-gaza-after-more-than-a-year-of-blocking-reconstruction.html",
+          "tid": 1795424928.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -3578,389 +3981,10 @@
       "data": null
     },
     {
-      "id": "a08a51b75e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.9,
-      "vikt": {
-        "bredd": 0.68,
-        "regioner": {
-          "asien": 4,
-          "norden": 1,
-          "europa": 2,
-          "usa": 2
-        },
-        "timmar": 28,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T10:45:26+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.557,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "norden",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "More remains recovered in search for 34 workers missing after Indonesian candy factory fire",
-              "url": "https://www.hindustantimes.com/world-news/more-remains-recovered-in-search-for-34-workers-missing-after-indonesian-candy-factory-fire-101795398510938.html",
-              "tid": 1795417907.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Indonesia says 24 killed in factory blaze as rescuers search for dozens missing",
-              "url": "https://www.thehindu.com/news/international/indonesia-banten-factory-fire-death-toll-people-missing/article71733448.ece",
-              "tid": 1795415511.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Indonesia searches for 34 missing workers after candy factory fire",
-              "url": "https://asia.nikkei.com/economy/fires/indonesia-searches-for-34-missing-workers-after-candy-factory-fire",
-              "tid": null,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Indonesia candy factory fire not fully extinguished, about 50 missing",
-              "url": "https://news.cgtn.com/news/2026-11-22/news-1ShqqiAfYhG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795337925.0,
-              "statskontrollerad": true
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "RÚV English",
-              "land": "IS",
-              "rubrik": "Fire breaks out in motorhome on Sævarhöfði",
-              "url": "https://www.ruv.is/english/2026-11-23-fire-breaks-out-in-motorhome-on-saevarhofdi-493533/",
-              "tid": 1795415925.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "At least 24 killed and dozens missing in confectionery factory fire in Indonesia",
-              "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
-              "tid": 1795412712.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Three killed and dozens missing after fire at Indonesian factory",
-              "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795356320.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-              "tid": 1795353524.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
-              "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
-              "tid": 1795430726.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-              "tid": 1795353524.0,
-              "lutning": "hoger"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
-              "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
-              "tid": 1795430726.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "More remains recovered in search for 34 workers missing after Indonesian candy factory fire",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "More remains recovered in search for 34 workers missing after Indonesian candy factory fire",
-          "url": "https://www.hindustantimes.com/world-news/more-remains-recovered-in-search-for-34-workers-missing-after-indonesian-candy-factory-fire-101795398510938.html",
-          "tid": 1795417907.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RÚV English",
-          "rubrik": "Fire breaks out in motorhome on Sævarhöfði",
-          "url": "https://www.ruv.is/english/2026-11-23-fire-breaks-out-in-motorhome-on-saevarhofdi-493533/",
-          "tid": 1795415925.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IS",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Indonesia says 24 killed in factory blaze as rescuers search for dozens missing",
-          "url": "https://www.thehindu.com/news/international/indonesia-banten-factory-fire-death-toll-people-missing/article71733448.ece",
-          "tid": 1795415511.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "At least 24 killed and dozens missing in confectionery factory fire in Indonesia",
-          "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
-          "tid": 1795412712.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Three killed and dozens missing after fire at Indonesian factory",
-          "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795356320.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-          "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-          "tid": 1795353524.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
-          "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
-          "tid": 1795430726.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "Indonesia searches for 34 missing workers after candy factory fire",
-          "url": "https://asia.nikkei.com/economy/fires/indonesia-searches-for-34-missing-workers-after-candy-factory-fire",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Indonesia candy factory fire not fully extinguished, about 50 missing",
-          "url": "https://news.cgtn.com/news/2026-11-22/news-1ShqqiAfYhG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795337925.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "a21bc19c48",
-      "amnen": [
-        "europa",
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.9,
-      "vikt": {
-        "bredd": 0.162,
-        "regioner": {
-          "europa": 3
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T11:48:48+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.843,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Thousands protest Turkey media crackdown in Istanbul",
-              "url": "https://www.france24.com/en/video/20261123-thousands-protest-turkey-media-crackdown-in-istanbul",
-              "tid": 1795434528.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Turkey: Thousands protest closure of critical media outlets",
-              "url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795383060.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Istanbul sees thousands protest closure of pro-opposition Turkish media outlets",
-              "url": "https://www.lemonde.fr/en/international/article/2026/11/22/in-istanbul-thousands-protest-closure-of-pro-opposition-turkish-media-outlets_6786892_4.html",
-              "tid": 1795388331.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Thousands protest Turkey media crackdown in Istanbul",
-      "kallor": [
-        {
-          "namn": "France 24",
-          "rubrik": "Thousands protest Turkey media crackdown in Istanbul",
-          "url": "https://www.france24.com/en/video/20261123-thousands-protest-turkey-media-crackdown-in-istanbul",
-          "tid": 1795434528.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Turkey: Thousands protest closure of critical media outlets",
-          "url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795383060.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Istanbul sees thousands protest closure of pro-opposition Turkish media outlets",
-          "url": "https://www.lemonde.fr/en/international/article/2026/11/22/in-istanbul-thousands-protest-closure-of-pro-opposition-turkish-media-outlets_6786892_4.html",
-          "tid": 1795388331.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
       "id": "661624637a",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 26.8,
+      "poang": 26.9,
       "vikt": {
         "bredd": 0.503,
         "regioner": {
@@ -3968,7 +3992,7 @@
           "latinamerika": 1,
           "mellanostern": 1
         },
-        "timmar": 42,
+        "timmar": 43,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4138,12 +4162,128 @@
       "data": null
     },
     {
+      "id": "a21bc19c48",
+      "amnen": [
+        "europa",
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.9,
+      "vikt": {
+        "bredd": 0.162,
+        "regioner": {
+          "europa": 3
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T11:48:48+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.843,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Thousands protest Turkey media crackdown in Istanbul",
+              "url": "https://www.france24.com/en/video/20261123-thousands-protest-turkey-media-crackdown-in-istanbul",
+              "tid": 1795434528.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Turkey: Thousands protest closure of critical media outlets",
+              "url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795383060.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Istanbul sees thousands protest closure of pro-opposition Turkish media outlets",
+              "url": "https://www.lemonde.fr/en/international/article/2026/11/22/in-istanbul-thousands-protest-closure-of-pro-opposition-turkish-media-outlets_6786892_4.html",
+              "tid": 1795388331.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Thousands protest Turkey media crackdown in Istanbul",
+      "kallor": [
+        {
+          "namn": "France 24",
+          "rubrik": "Thousands protest Turkey media crackdown in Istanbul",
+          "url": "https://www.france24.com/en/video/20261123-thousands-protest-turkey-media-crackdown-in-istanbul",
+          "tid": 1795434528.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Turkey: Thousands protest closure of critical media outlets",
+          "url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795383060.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Istanbul sees thousands protest closure of pro-opposition Turkish media outlets",
+          "url": "https://www.lemonde.fr/en/international/article/2026/11/22/in-istanbul-thousands-protest-closure-of-pro-opposition-turkish-media-outlets_6786892_4.html",
+          "tid": 1795388331.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "8a1e0bd5f5",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 26.7,
+      "poang": 26.8,
       "vikt": {
         "bredd": 0.559,
         "regioner": {
@@ -4152,7 +4292,7 @@
           "asien": 1,
           "mellanostern": 1
         },
-        "timmar": 36,
+        "timmar": 37,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4395,7 +4535,7 @@
           "asien": 1,
           "usa": 1
         },
-        "timmar": 93,
+        "timmar": 94,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4482,104 +4622,7 @@
       "data": null
     },
     {
-      "id": "1b8b62c2e2",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 25.7,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "asien": 1,
-          "mellanostern": 1
-        },
-        "timmar": 65,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T12:02:28+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
-              "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
-              "tid": 1795435348.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
-              "tid": 1795435343.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
-          "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
-          "tid": 1795435348.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Israeli strike kills worker with UN Palestinian agency in Gaza, agency says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
-          "tid": 1795435343.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "6d5da7dd9a",
+      "id": "77d552b34b",
       "amnen": [
         "usa",
         "varlden"
@@ -4697,175 +4740,12 @@
       "data": null
     },
     {
-      "id": "88335395e8",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 25.5,
-      "vikt": {
-        "bredd": 0.242,
-        "regioner": {
-          "usa": 1,
-          "asien": 2,
-          "europa": 2
-        },
-        "timmar": 57,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T07:39:54+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.683,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "New York Post",
-              "land": "US",
-              "rubrik": "US Army invokes emergency powers to detonate lead in Iowa",
-              "url": "https://nypost.com/2026/11/23/us-news/us-army-invokes-emergency-powers-to-detonate-lead-in-iowa/",
-              "tid": 1795419594.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US Army to detonate nearly 10,000 pounds of lead azide in Iowa on Wednesday despite court stay",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-army-to-detonate-nearly-10-000-pounds-of-lead-azide-in-iowa-on-wednesday-despite-court-stay-101795407585397.html",
-              "tid": 1795408011.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
-              "url": "https://www.straitstimes.com/world/united-states/us-army-plans-to-invoke-emergency-provisions-to-detonate-bomb-making-chemicals-in-iowa",
-              "tid": 1795392300.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "US army to blow up bomb-making chemicals despite safety concerns",
-              "url": "https://www.theguardian.com/us-news/2026/nov/22/army-blow-up-bomb-making-chemicals-iowa",
-              "tid": 1795395039.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
-              "url": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795372186.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US Army invokes emergency powers to detonate lead in Iowa",
-      "kallor": [
-        {
-          "namn": "New York Post",
-          "rubrik": "US Army invokes emergency powers to detonate lead in Iowa",
-          "url": "https://nypost.com/2026/11/23/us-news/us-army-invokes-emergency-powers-to-detonate-lead-in-iowa/",
-          "tid": 1795419594.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US Army to detonate nearly 10,000 pounds of lead azide in Iowa on Wednesday despite court stay",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-army-to-detonate-nearly-10-000-pounds-of-lead-azide-in-iowa-on-wednesday-despite-court-stay-101795407585397.html",
-          "tid": 1795408011.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "US army to blow up bomb-making chemicals despite safety concerns",
-          "url": "https://www.theguardian.com/us-news/2026/nov/22/army-blow-up-bomb-making-chemicals-iowa",
-          "tid": 1795395039.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "US Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
-          "url": "https://www.straitstimes.com/world/united-states/us-army-plans-to-invoke-emergency-provisions-to-detonate-bomb-making-chemicals-in-iowa",
-          "tid": 1795392300.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
-          "url": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795372186.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "649ede7e30",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 25.4,
+      "poang": 25.5,
       "vikt": {
         "bredd": 0.502,
         "regioner": {
@@ -4873,7 +4753,7 @@
           "norden": 1,
           "mellanostern": 1
         },
-        "timmar": 30,
+        "timmar": 31,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4983,6 +4863,268 @@
       "data": null
     },
     {
+      "id": "88335395e8",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 25.3,
+      "vikt": {
+        "bredd": 0.215,
+        "regioner": {
+          "usa": 2,
+          "asien": 2,
+          "europa": 1
+        },
+        "timmar": 58,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T07:39:54+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.731,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "New York Post",
+              "land": "US",
+              "rubrik": "US Army invokes emergency powers to detonate lead in Iowa",
+              "url": "https://nypost.com/2026/11/23/us-news/us-army-invokes-emergency-powers-to-detonate-lead-in-iowa/",
+              "tid": 1795419594.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "U.S. Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/us-army-plans-invoke-emergency-provisions-detonate-bomb-making/",
+              "tid": 1795377284.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "US Army to detonate nearly 10,000 pounds of lead azide in Iowa on Wednesday despite court stay",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-army-to-detonate-nearly-10-000-pounds-of-lead-azide-in-iowa-on-wednesday-despite-court-stay-101795407585397.html",
+              "tid": 1795408011.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
+              "url": "https://www.straitstimes.com/world/united-states/us-army-plans-to-invoke-emergency-provisions-to-detonate-bomb-making-chemicals-in-iowa",
+              "tid": 1795392300.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
+              "url": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795372186.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "US Army invokes emergency powers to detonate lead in Iowa",
+      "kallor": [
+        {
+          "namn": "New York Post",
+          "rubrik": "US Army invokes emergency powers to detonate lead in Iowa",
+          "url": "https://nypost.com/2026/11/23/us-news/us-army-invokes-emergency-powers-to-detonate-lead-in-iowa/",
+          "tid": 1795419594.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "US Army to detonate nearly 10,000 pounds of lead azide in Iowa on Wednesday despite court stay",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-army-to-detonate-nearly-10-000-pounds-of-lead-azide-in-iowa-on-wednesday-despite-court-stay-101795407585397.html",
+          "tid": 1795408011.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "US Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
+          "url": "https://www.straitstimes.com/world/united-states/us-army-plans-to-invoke-emergency-provisions-to-detonate-bomb-making-chemicals-in-iowa",
+          "tid": 1795392300.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "U.S. Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/us-army-plans-invoke-emergency-provisions-detonate-bomb-making/",
+          "tid": 1795377284.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
+          "url": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795372186.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "c2a30f7c61",
+      "amnen": [
+        "asien",
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 23.6,
+      "vikt": {
+        "bredd": 0.118,
+        "regioner": {
+          "asien": 2
+        },
+        "timmar": 24,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "samarbete"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T13:25:30+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.998,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Myanmar calls ASEAN review of peace plan 'unfair and imbalanced'; questions bloc's treatment",
+              "url": "https://www.thehindu.com/news/international/myanmar-calls-asean-review-of-peace-plan-unfair-and-imbalanced-questions-blocs-treatment/article71731357.ece",
+              "tid": 1795353930.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Myanmar calls ASEAN review of peace plan 'unfair and imbalanced', questions bloc's treatment",
+              "url": "https://www.hindustantimes.com/world-news/us-news/myanmar-calls-asean-review-of-peace-plan-unfair-and-imbalanced-questions-bloc-s-treatment-101795346311525.html",
+              "tid": 1795346311.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Myanmar calls ASEAN review of peace plan 'unfair and imbalanced'; questions bloc's treatment",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Myanmar calls ASEAN review of peace plan 'unfair and imbalanced'; questions bloc's treatment",
+          "url": "https://www.thehindu.com/news/international/myanmar-calls-asean-review-of-peace-plan-unfair-and-imbalanced-questions-blocs-treatment/article71731357.ece",
+          "tid": 1795353930.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Myanmar calls ASEAN review of peace plan 'unfair and imbalanced', questions bloc's treatment",
+          "url": "https://www.hindustantimes.com/world-news/us-news/myanmar-calls-asean-review-of-peace-plan-unfair-and-imbalanced-questions-bloc-s-treatment-101795346311525.html",
+          "tid": 1795346311.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "14d2c2eeb6",
       "amnen": [
         "noje"
@@ -4990,13 +5132,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.2,
+      "poang": 20.4,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 20,
+        "timmar": 21,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5091,13 +5233,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 20.2,
+      "poang": 20.4,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 19,
+        "timmar": 20,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5188,13 +5330,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 19.7,
+      "poang": 19.9,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5285,7 +5427,7 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 17.4,
+      "poang": 18.3,
       "vikt": {
         "bredd": 0.585,
         "regioner": {
@@ -5294,7 +5436,7 @@
           "sverige": 2,
           "asien": 1
         },
-        "timmar": 3,
+        "timmar": 4,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5453,14 +5595,14 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 15.3,
+      "poang": 16.0,
       "vikt": {
         "bredd": 0.279,
         "regioner": {
           "sverige": 2,
           "latinamerika": 1
         },
-        "timmar": 4,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5566,6 +5708,123 @@
       "data": null
     },
     {
+      "id": "1189109651",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 15.1,
+      "vikt": {
+        "bredd": 0.262,
+        "regioner": {
+          "sverige": 3
+        },
+        "timmar": 4,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T12:39:03+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.843,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "Bombhot mot hundratals skolor i Europa",
+              "url": "https://www.sverigesradio.se/artikel/9348127",
+              "tid": 1795427340.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Bombhot mot flera skolor i Danmark och Tyskland",
+              "url": "https://www.svt.se/nyheter/utrikes/larm-om-bombhot-mot-flera-skolor-i-danmark",
+              "tid": 1795426880.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Bombhot mot hundratals skolor i två länder",
+              "url": "https://www.dn.se/varlden/bombhot-mot-hundratals-skolor-i-tva-lander/",
+              "tid": 1795437543.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Bombhot mot hundratals skolor i Europa",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "Bombhot mot hundratals skolor i Europa",
+          "url": "https://www.sverigesradio.se/artikel/9348127",
+          "tid": 1795427340.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Bombhot mot flera skolor i Danmark och Tyskland",
+          "url": "https://www.svt.se/nyheter/utrikes/larm-om-bombhot-mot-flera-skolor-i-danmark",
+          "tid": 1795426880.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Bombhot mot hundratals skolor i två länder",
+          "url": "https://www.dn.se/varlden/bombhot-mot-hundratals-skolor-i-tva-lander/",
+          "tid": 1795437543.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "b41556fecf",
       "amnen": [
         "noje"
@@ -5573,13 +5832,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 14.0,
+      "poang": 14.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 4,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5661,103 +5920,6 @@
         "färre än tre oberoende källor (2)",
         "bara en region",
         "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "1189109651",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 13.3,
-      "vikt": {
-        "bredd": 0.185,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 3,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T09:49:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.867,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Bombhot mot hundratals skolor i Europa",
-              "url": "https://www.sverigesradio.se/artikel/9348127",
-              "tid": 1795427340.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Bombhot mot flera skolor i Danmark och Tyskland",
-              "url": "https://www.svt.se/nyheter/utrikes/larm-om-bombhot-mot-flera-skolor-i-danmark",
-              "tid": 1795426880.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Bombhot mot hundratals skolor i Europa",
-      "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Bombhot mot hundratals skolor i Europa",
-          "url": "https://www.sverigesradio.se/artikel/9348127",
-          "tid": 1795427340.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Bombhot mot flera skolor i Danmark och Tyskland",
-          "url": "https://www.svt.se/nyheter/utrikes/larm-om-bombhot-mot-flera-skolor-i-danmark",
-          "tid": 1795426880.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
       ],
       "data": null
     },
@@ -5917,6 +6079,88 @@
         "ingen källkontroll",
         "färre än tre oberoende källor (1)",
         "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "9892c77ae4",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 12.4,
+      "vikt": {
+        "bredd": 0.092,
+        "regioner": {
+          "sverige": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "miljo"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T12:19:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "FN-chefen om klimattoppmötet utan avtal: ”Djupt besviken”",
+              "url": "https://www.sverigesradio.se/artikel/9348265",
+              "tid": 1795436340.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "FN-chefen om klimattoppmötet utan avtal: ”Djupt besviken”",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "FN-chefen om klimattoppmötet utan avtal: ”Djupt besviken”",
+          "url": "https://www.sverigesradio.se/artikel/9348265",
+          "tid": 1795436340.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
       ],
       "data": null
     },
@@ -6167,88 +6411,6 @@
       "data": null
     },
     {
-      "id": "842f7d36b6",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 12.3,
-      "vikt": {
-        "bredd": 0.077,
-        "regioner": {
-          "sverige": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T18:30:52+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Besvikelse efter haveriet på klimatmötet: ”Ytterligare ett förlorat år”",
-              "url": "https://www.dn.se/varlden/besvikelse-efter-haveriet-pa-klimatmotet-ytterligare-ett-forlorat-ar/",
-              "tid": 1795372252.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Besvikelse efter haveriet på klimatmötet: ”Ytterligare ett förlorat år”",
-      "kallor": [
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Besvikelse efter haveriet på klimatmötet: ”Ytterligare ett förlorat år”",
-          "url": "https://www.dn.se/varlden/besvikelse-efter-haveriet-pa-klimatmotet-ytterligare-ett-forlorat-ar/",
-          "tid": 1795372252.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
       "id": "38cabe61a7",
       "amnen": [
         "sverige",
@@ -6331,18 +6493,18 @@
       "data": null
     },
     {
-      "id": "d9a3534a27",
+      "id": "ecd6586f2e",
       "amnen": [
-        "spel"
+        "noje"
       ],
       "amnen_sektion": [
-        "spel"
+        "noje"
       ],
-      "poang": 9.3,
+      "poang": 10.0,
       "vikt": {
-        "bredd": 0.077,
+        "bredd": 0.154,
         "regioner": {
-          "sverige": 1
+          "sverige": 2
         },
         "timmar": 1,
         "konsekvens": null,
@@ -6351,13 +6513,13 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 1,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-23T11:04:00+00:00",
+      "senast": "2026-11-23T13:03:54+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 1.0,
+      "sammanhang": 0.987,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -6366,27 +6528,47 @@
         "per_region": {
           "sverige": [
             {
-              "kalla": "FZ",
+              "kalla": "Aftonbladet Nöjesbladet",
               "land": "SE",
-              "rubrik": "Psycho Dead släpps i april och ger lite Control-vibbar",
-              "url": "https://www.fz.se/nyhet/303709-psycho-dead-slapps-i-april-och-ger-lite-control-vibbar",
-              "tid": 1795431840.0,
+              "rubrik": "Ulf Lundell ska opereras – tvingas ställa in vernissage",
+              "url": "https://www.aftonbladet.se/nojesbladet/a/r8A2La/ulf-lundell-ska-opereras-tvingas-stalla-in-vernissage?utm_medium=rss",
+              "tid": 1795439034.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Expressen Nöje",
+              "land": "SE",
+              "rubrik": "Ulf Lundell ska opereras – tvingas ställa in",
+              "url": "https://www.expressen.se/noje/ulf-lundell-ska-opereras-tvingas-stalla-in/",
+              "tid": 1795438511.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
+        "blind_flack": "bara_i_sverige",
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Psycho Dead släpps i april och ger lite Control-vibbar",
+      "reserv_rubrik": "Ulf Lundell ska opereras – tvingas ställa in vernissage",
       "kallor": [
         {
-          "namn": "FZ",
-          "rubrik": "Psycho Dead släpps i april och ger lite Control-vibbar",
-          "url": "https://www.fz.se/nyhet/303709-psycho-dead-slapps-i-april-och-ger-lite-control-vibbar",
-          "tid": 1795431840.0,
+          "namn": "Aftonbladet Nöjesbladet",
+          "rubrik": "Ulf Lundell ska opereras – tvingas ställa in vernissage",
+          "url": "https://www.aftonbladet.se/nojesbladet/a/r8A2La/ulf-lundell-ska-opereras-tvingas-stalla-in-vernissage?utm_medium=rss",
+          "tid": 1795439034.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Expressen Nöje",
+          "rubrik": "Ulf Lundell ska opereras – tvingas ställa in",
+          "url": "https://www.expressen.se/noje/ulf-lundell-ska-opereras-tvingas-stalla-in/",
+          "tid": 1795438511.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SE",
@@ -6397,14 +6579,15 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
+        "sv": 3,
         "en": 0
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region"
+        "färre än tre oberoende källor (2)",
+        "bara en region",
+        "blind fläck"
       ],
       "data": null
     }
@@ -6413,7 +6596,7 @@
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 46,
+      "artiklar": 50,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -6425,7 +6608,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 75,
+      "artiklar": 81,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6437,7 +6620,7 @@
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 6,
       "url": "https://www.breakit.se/feed/artiklar"
     },
     {
@@ -6449,7 +6632,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 26,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -6485,7 +6668,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 11,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -6533,7 +6716,7 @@
     {
       "id": "elpais",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 14,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
     },
     {
@@ -6563,25 +6746,25 @@
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 22,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 24,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 25,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
       "id": "npr",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 10,
       "url": "https://feeds.npr.org/1004/rss.xml"
     },
     {
@@ -6593,7 +6776,7 @@
     {
       "id": "cnbc",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 22,
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
@@ -6651,7 +6834,7 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 15,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -6663,7 +6846,7 @@
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 17,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -6711,7 +6894,7 @@
     {
       "id": "ars",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://feeds.arstechnica.com/arstechnica/index"
     },
     {
@@ -6735,7 +6918,7 @@
     {
       "id": "gameranx",
       "ok": true,
-      "artiklar": 0,
+      "artiklar": 1,
       "url": "https://gameranx.com/feed/"
     },
     {
@@ -6747,19 +6930,19 @@
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 22,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
       "id": "expressen-noje",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 17,
       "url": "https://www.expressen.se/rss/noje"
     },
     {
       "id": "nature",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 3,
       "url": "https://www.nature.com/nature.rss"
     },
     {
@@ -6847,13 +7030,14 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 11,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
       "id": "import-ai",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 0,
+      "url": "https://importai.substack.com/feed"
     },
     {
       "id": "superhuman",
@@ -6888,13 +7072,13 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 4,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
       "id": "vox",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 4,
       "url": "https://www.vox.com/rss/index.xml"
     },
     {
@@ -6905,13 +7089,14 @@
     },
     {
       "id": "wash-times",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 20,
+      "url": "https://www.washingtontimes.com/rss/headlines/news/"
     },
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 13,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6923,7 +7108,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 5,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -6959,7 +7144,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 32,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -6983,7 +7168,7 @@
     {
       "id": "batimes",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://www.batimes.com.ar/feed"
     },
     {
@@ -7001,7 +7186,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 88,
+      "artiklar": 90,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -7031,7 +7216,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 24,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -7043,7 +7228,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 70,
+      "artiklar": 73,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -7055,7 +7240,7 @@
     {
       "id": "almonitor",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 19,
       "url": "https://www.al-monitor.com/rss"
     },
     {
@@ -7079,7 +7264,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 99,
+      "artiklar": 100,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
@@ -7145,7 +7330,7 @@
     {
       "id": "meduza",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 13,
       "url": "https://meduza.io/rss/en/all"
     },
     {
@@ -7175,7 +7360,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 14,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -7199,7 +7384,7 @@
     {
       "id": "hrw",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 5,
       "url": "https://www.hrw.org/rss/news"
     },
     {
@@ -7229,7 +7414,7 @@
     {
       "id": "mongabay",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 7,
       "url": "https://news.mongabay.com/feed/"
     },
     {
