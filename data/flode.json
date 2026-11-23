@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-23T02:05:19.499404+00:00",
+  "skapad": "2026-11-23T03:05:58.421834+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -11,18 +11,20 @@
       "amnen_sektion": [
         "europa"
       ],
-      "poang": 39.8,
+      "poang": 46.7,
       "vikt": {
-        "bredd": 2.096,
+        "bredd": 2.381,
         "regioner": {
           "asien": 8,
-          "europa": 5,
+          "europa": 6,
           "mellanostern": 5,
           "afrika": 3,
-          "usa": 5,
+          "usa": 6,
+          "sverige": 1,
+          "latinamerika": 1,
           "global": 1
         },
-        "timmar": 10,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -31,16 +33,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 27,
+      "antal_kallor": 31,
       "har_primarkalla": false,
-      "senast": "2026-11-23T01:54:01+00:00",
+      "senast": "2026-11-23T02:01:42+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK3JvJqhfnJBGmyDpwEV'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK7wAd2hMXs8xorS28jZ'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.645,
+      "sammanhang": 0.637,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -48,7 +50,9 @@
           "asien",
           "europa",
           "global",
+          "latinamerika",
           "mellanostern",
+          "sverige",
           "usa"
         ],
         "per_region": {
@@ -104,7 +108,7 @@
             {
               "kalla": "South China Morning Post",
               "land": "HK",
-              "rubrik": "Cop31 climate talks collapse as EU and others reject deal",
+              "rubrik": "Cop31 climate talks collapse with no deal over fossil fuels",
               "url": "https://www.scmp.com/news/world/article/3375393/cop31-climate-talks-collapse-eu-and-others-reject-deal",
               "tid": 1795359465.0,
               "statskontrollerad": false
@@ -157,6 +161,14 @@
               "rubrik": "Climate deal crumbles amid fossil fuel rows",
               "url": "https://www.politico.eu/article/climate-deal-collapses-amid-fossil-fuel-rows/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
               "tid": 1795352403.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "COP31: International community splits over phasing out fossil fuels and climate adaptation funding",
+              "url": "https://www.lemonde.fr/en/environment/article/2026/11/22/cop31-international-community-splits-over-phasing-out-fossil-fuels-and-climate-adaptation-funding_6786859_114.html",
+              "tid": 1795385759.0,
               "statskontrollerad": false
             }
           ],
@@ -230,11 +242,11 @@
           ],
           "usa": [
             {
-              "kalla": "HuffPost",
+              "kalla": "Inside Climate News",
               "land": "US",
-              "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
-              "url": "https://www.huffpost.com/entry/ap-climate-cop31-turkey-united-nations_n_6b032066e4b0213d862812b0",
-              "tid": 1795367288.0,
+              "rubrik": "UN’s COP31 Climate Conference Fizzles Out as Global Policy Divides Deepen",
+              "url": "https://insideclimatenews.org/news/22112026/uns-cop31-climate-conference-fizzles-out-as-global-policy-divides-deepen/",
+              "tid": 1795373690.0,
               "statskontrollerad": false
             },
             {
@@ -246,6 +258,22 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "U.N. climate talks break down over bitter disagreements on fossil fuels",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/un-climate-talks-break-bitter-disagreements-fossil-fuels/",
+              "tid": 1795362592.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
+              "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
+              "tid": 1795399302.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "The Washington Post",
               "land": "US",
               "rubrik": "COP31 negotiations break down as countries fail to agree on climate deal",
@@ -254,19 +282,31 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
-              "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
-              "tid": 1795371639.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The Wall Street Journal",
               "land": "US",
               "rubrik": "U.N. Climate Talks Collapse Over Fossil Fuel Rift",
               "url": "https://www.wsj.com/world/u-n-climate-talks-collapse-over-fossil-fuel-rift-c70ee620?mod=rss_worldnews",
               "tid": 1795366740.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "FN:s klimatmöte COP31 – detta har hänt",
+              "url": "https://www.sverigesradio.se/artikel/9347909",
+              "tid": 1795363500.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El Tiempo",
+              "land": "CO",
+              "rubrik": "La COP31 fracasa por falta de cosenso sobre combustibles fósiles, en un duro golpe para la lucha contra el cambio climático: 'Muy decepcionante'",
+              "url": "https://www.eltiempo.com/mundo/mas-regiones/la-cop31-fracasa-por-falta-de-cosenso-sobre-combustibles-fosiles-en-un-duro-golpe-para-la-lucha-contra-el-cambio-climatico-muy-decepcionante-3603138",
+              "tid": 1795357827.0,
               "statskontrollerad": false
             }
           ],
@@ -282,16 +322,9 @@
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": true,
+        "grannar_svenska": false,
         "usa": {
           "bla": [
-            {
-              "kalla": "HuffPost",
-              "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
-              "url": "https://www.huffpost.com/entry/ap-climate-cop31-turkey-united-nations_n_6b032066e4b0213d862812b0",
-              "tid": 1795367288.0,
-              "lutning": "vanster"
-            },
             {
               "kalla": "NPR",
               "rubrik": "Climate change talks fall apart in final hours over fossil fuels",
@@ -300,18 +333,27 @@
               "lutning": "lutar_vanster"
             },
             {
+              "kalla": "The New York Times",
+              "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
+              "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
+              "tid": 1795399302.0,
+              "lutning": "lutar_vanster"
+            },
+            {
               "kalla": "The Washington Post",
               "rubrik": "COP31 negotiations break down as countries fail to agree on climate deal",
               "url": "https://www.washingtonpost.com/climate-environment/2026/11/22/cop31-negotiations-break-down-countries-fail-agree-climate-deal/",
               "tid": 1795374453.0,
               "lutning": "lutar_vanster"
-            },
+            }
+          ],
+          "rod": [
             {
-              "kalla": "The New York Times",
-              "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
-              "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
-              "tid": 1795371639.0,
-              "lutning": "lutar_vanster"
+              "kalla": "The Washington Times",
+              "rubrik": "U.N. climate talks break down over bitter disagreements on fossil fuels",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/un-climate-talks-break-bitter-disagreements-fossil-fuels/",
+              "tid": 1795362592.0,
+              "lutning": "lutar_hoger"
             }
           ],
           "mitten": [
@@ -324,7 +366,7 @@
             }
           ]
         },
-        "usa_blind": "mest_bla"
+        "usa_blind": null
       },
       "reserv_rubrik": "Can climate diplomacy build on the collapse of COP31?",
       "kallor": [
@@ -461,15 +503,15 @@
           "statskontrollerad": false
         },
         {
-          "namn": "HuffPost",
-          "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
-          "url": "https://www.huffpost.com/entry/ap-climate-cop31-turkey-united-nations_n_6b032066e4b0213d862812b0",
-          "tid": 1795367288.0,
+          "namn": "Inside Climate News",
+          "rubrik": "UN’s COP31 Climate Conference Fizzles Out as Global Policy Divides Deepen",
+          "url": "https://insideclimatenews.org/news/22112026/uns-cop31-climate-conference-fizzles-out-as-global-policy-divides-deepen/",
+          "tid": 1795373690.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
           "region": "usa",
-          "agare": "privat",
+          "agare": "organisation",
           "statskontrollerad": false
         },
         {
@@ -509,6 +551,30 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "FN:s klimatmöte COP31 – detta har hänt",
+          "url": "https://www.sverigesradio.se/artikel/9347909",
+          "tid": 1795363500.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "U.N. climate talks break down over bitter disagreements on fossil fuels",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/un-climate-talks-break-bitter-disagreements-fossil-fuels/",
+          "tid": 1795362592.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Dawn",
           "rubrik": "COP31 climate talks collapse as EU and others reject deal",
           "url": "https://www.dawn.com/news/2046327/cop31-climate-talks-collapse-as-eu-and-others-reject-deal",
@@ -522,13 +588,25 @@
         },
         {
           "namn": "South China Morning Post",
-          "rubrik": "Cop31 climate talks collapse as EU and others reject deal",
+          "rubrik": "Cop31 climate talks collapse with no deal over fossil fuels",
           "url": "https://www.scmp.com/news/world/article/3375393/cop31-climate-talks-collapse-eu-and-others-reject-deal",
           "tid": 1795359465.0,
           "betalvagg": false,
           "typ": "media",
           "land": "HK",
           "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El Tiempo",
+          "rubrik": "La COP31 fracasa por falta de cosenso sobre combustibles fósiles, en un duro golpe para la lucha contra el cambio climático: 'Muy decepcionante'",
+          "url": "https://www.eltiempo.com/mundo/mas-regiones/la-cop31-fracasa-por-falta-de-cosenso-sobre-combustibles-fosiles-en-un-duro-golpe-para-la-lucha-contra-el-cambio-climatico-muy-decepcionante-3603138",
+          "tid": 1795357827.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CO",
+          "region": "latinamerika",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -593,10 +671,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Washington Post",
-          "rubrik": "COP31 negotiations break down as countries fail to agree on climate deal",
-          "url": "https://www.washingtonpost.com/climate-environment/2026/11/22/cop31-negotiations-break-down-countries-fail-agree-climate-deal/",
-          "tid": 1795374453.0,
+          "namn": "The New York Times",
+          "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
+          "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
+          "tid": 1795399302.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -605,10 +683,22 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The New York Times",
-          "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
-          "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
-          "tid": 1795371639.0,
+          "namn": "Le Monde (English)",
+          "rubrik": "COP31: International community splits over phasing out fossil fuels and climate adaptation funding",
+          "url": "https://www.lemonde.fr/en/environment/article/2026/11/22/cop31-international-community-splits-over-phasing-out-fossil-fuels-and-climate-adaptation-funding_6786859_114.html",
+          "tid": 1795385759.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "COP31 negotiations break down as countries fail to agree on climate deal",
+          "url": "https://www.washingtonpost.com/climate-environment/2026/11/22/cop31-negotiations-break-down-countries-fail-agree-climate-deal/",
+          "tid": 1795374453.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -655,14 +745,13 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
+        "sv": 2,
         "en": 3
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "troligen hopslagna händelser",
-        "blind fläck"
+        "troligen hopslagna händelser"
       ],
       "data": null
     },
@@ -670,13 +759,13 @@
       "id": "2a06e431a4",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 38.3,
+      "poang": 38.1,
       "vikt": {
-        "bredd": 1.299,
+        "bredd": 1.279,
         "regioner": {
-          "usa": 3,
-          "asien": 6,
           "europa": 6,
+          "asien": 6,
+          "usa": 2,
           "mellanostern": 3,
           "afrika": 1
         },
@@ -687,16 +776,16 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 19,
+      "antal_kallor": 18,
       "har_primarkalla": false,
-      "senast": "2026-11-23T01:30:56+00:00",
+      "senast": "2026-11-23T02:59:35+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK3JvJb3ZPFqzsXJ4KnF'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK7wAaoTyXJhY5sicnfR'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.689,
+      "sammanhang": 0.683,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -707,33 +796,65 @@
           "usa"
         ],
         "per_region": {
-          "usa": [
+          "europa": [
             {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
-              "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-              "tid": 1795397456.0,
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+              "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795402775.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
-              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
-              "tid": 1795385032.0,
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Russian ship attacked near Benghazi in suspected drone attack",
+              "url": "https://www.france24.com/en/video/20261122-russian-ship-attacked-near-benghazi-in-suspected-drone-attack-ukraine",
+              "tid": 1795387065.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Two Russian Ships Attacked Far From Ukraine",
-              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-              "tid": 1795388940.0,
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
+              "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
+              "tid": 1795383224.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
+              "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
+              "tid": 1795370569.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Libya: Suspected drone attack hits Russian ship in Benghazi",
+              "url": "https://www.dw.com/en/libya-suspected-drone-attack-hits-russian-ship-in-benghazi/a-80014545?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795366200.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Sanctioned Russian vessel attacked by drones near Finland",
+              "url": "https://www.ft.com/content/2c959c95-97a5-4957-9eb2-8436c34ba374?syn-25a6b1a6=1",
+              "tid": 1795356940.0,
               "statskontrollerad": false
             }
           ],
           "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "UN urges probe after Russian ship attacked off Libya",
+              "url": "https://www.channelnewsasia.com/world/un-urges-probe-after-russian-ship-attacked-libya-6573101",
+              "tid": 1795402207.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "The Hindu",
               "land": "IN",
@@ -759,14 +880,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
-              "url": "https://www.channelnewsasia.com/world/russia-starts-towing-ship-hit-drones-in-baltic-finland-says-6573286",
-              "tid": 1795376160.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "Hindustan Times",
               "land": "IN",
               "rubrik": "Russian navy vessel Merkury catches fire at Benghazi port after suspected Ukrainian drone attack",
@@ -783,53 +896,21 @@
               "statskontrollerad": false
             }
           ],
-          "europa": [
+          "usa": [
             {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Russian ship attacked near Benghazi in suspected drone attack",
-              "url": "https://www.france24.com/en/video/20261122-russian-ship-attacked-near-benghazi-in-suspected-drone-attack-ukraine",
-              "tid": 1795387065.0,
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
+              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
+              "tid": 1795385032.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
-              "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
-              "tid": 1795383224.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-              "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795379289.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
-              "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
-              "tid": 1795370569.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Libya: Suspected drone attack hits Russian ship in Benghazi",
-              "url": "https://www.dw.com/en/libya-suspected-drone-attack-hits-russian-ship-in-benghazi/a-80014545?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795366200.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Sanctioned Russian vessel attacked by drones near Finland",
-              "url": "https://www.ft.com/content/2c959c95-97a5-4957-9eb2-8436c34ba374?syn-25a6b1a6=1",
-              "tid": 1795356940.0,
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Two Russian Ships Attacked Far From Ukraine",
+              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+              "tid": 1795388940.0,
               "statskontrollerad": false
             }
           ],
@@ -872,47 +953,33 @@
         },
         "blind_flack": null,
         "grannar_svenska": true,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
-              "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-              "tid": 1795397456.0,
-              "lutning": "hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Russian ship docked in Libya hit in suspected drone attack",
-              "url": "https://thehill.com/policy/international/6236346-russian-ship-docked-in-libya-hit-in-suspected-drone-attack/",
-              "tid": 1795385032.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Two Russian Ships Attacked Far From Ukraine",
-              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-              "tid": 1795388940.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
+      "reserv_rubrik": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
       "kallor": [
         {
-          "namn": "Fox News",
-          "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
-          "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-          "tid": 1795397456.0,
+          "namn": "BBC World",
+          "rubrik": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795402775.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNA",
+          "rubrik": "UN urges probe after Russian ship attacked off Libya",
+          "url": "https://www.channelnewsasia.com/world/un-urges-probe-after-russian-ship-attacked-libya-6573101",
+          "tid": 1795402207.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -1009,30 +1076,6 @@
           "land": "ZA",
           "region": "afrika",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795379289.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNA",
-          "rubrik": "Russia starts towing ship hit by drones in Baltic, Finland says",
-          "url": "https://www.channelnewsasia.com/world/russia-starts-towing-ship-hit-drones-in-baltic-finland-says-6573286",
-          "tid": 1795376160.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -1148,7 +1191,7 @@
       "id": "e84e397536",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 35.5,
+      "poang": 35.6,
       "vikt": {
         "bredd": 1.096,
         "regioner": {
@@ -1157,7 +1200,7 @@
           "norden": 1,
           "europa": 1
         },
-        "timmar": 40,
+        "timmar": 41,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1171,7 +1214,7 @@
       "senast": "2026-11-22T19:35:06+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK3JvJqY89EkDKP9ZW6P'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK7wAbHd4r3ijmG9D494'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -1401,7 +1444,7 @@
       "amnen_sektion": [
         "ai"
       ],
-      "poang": 32.1,
+      "poang": 32.2,
       "vikt": {
         "bredd": 0.476,
         "regioner": {
@@ -1409,7 +1452,7 @@
           "asien": 5,
           "usa": 1
         },
-        "timmar": 77,
+        "timmar": 78,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1423,7 +1466,7 @@
       "senast": "2026-11-22T12:12:07+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK3JvJqsS2ufAKBsYRNV'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChK7wAbJ7jR8CnFW8JQ2u'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -1748,20 +1791,309 @@
       "data": null
     },
     {
+      "id": "efa8a960b8",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 31.8,
+      "vikt": {
+        "bredd": 0.725,
+        "regioner": {
+          "asien": 5,
+          "mellanostern": 1,
+          "usa": 2,
+          "europa": 2,
+          "afrika": 1
+        },
+        "timmar": 80,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 11,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T02:25:45+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.491,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Ukraine says Russian strikes kill 12 in Kyiv region",
+              "url": "https://www.channelnewsasia.com/world/ukraine-says-russian-strikes-kill-12-in-kyiv-region-6573721",
+              "tid": 1795400745.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Poland says Russia allegedly tried to kill Ukrainian American rapper before foiled Denmark plot",
+              "url": "https://www.hindustantimes.com/world-news/poland-says-russia-allegedly-tried-to-kill-ukrainian-american-rapper-before-denmark-plot-101795377771052.html",
+              "tid": 1795380736.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Russian strikes kill at least 12 in Kyiv region, Ukraine says",
+              "url": "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says",
+              "tid": 1795372379.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Russian attack near Ukraine’s capital strikes apartment building, killing two and wounding four others",
+              "url": "https://www.thehindu.com/news/international/a-russian-attack-destroyed-an-apartment-building-in-dymer-near-kyiv-killing-two-as-kaliningrad-sounded-a-rare-air-alert/article71731042.ece",
+              "tid": 1795368627.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
+              "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
+              "tid": 1795338144.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Poland says Russia tried to assassinate Ukrainian rapper twice",
+              "url": "https://www.aljazeera.com/news/2026/11/23/poland-says-russia-tried-to-assassinate-ukrainian-rapper-twice?traffic_source=rss",
+              "tid": 1795398803.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
+              "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
+              "tid": 1795397456.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "Denmark expels Russian official, limits visas after alleging plot to kill U.S.-Ukrainian rapper",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/denmark-removes-russian-official-limits-russia-visas/",
+              "tid": 1795368478.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Russian strike kills 2 in Kyiv",
+              "url": "https://www.france24.com/en/russian-strike-kills-2-in-kyiv",
+              "tid": 1795364603.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Russian attacks across Ukraine injure 30 over past day as rescue operation continues near Kyiv after drone strike",
+              "url": "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/",
+              "tid": 1795341258.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+              "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
+              "tid": 1795343949.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Ukraine says Russian strikes kill 12 in Kyiv region",
+      "kallor": [
+        {
+          "namn": "CNA",
+          "rubrik": "Ukraine says Russian strikes kill 12 in Kyiv region",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-russian-strikes-kill-12-in-kyiv-region-6573721",
+          "tid": 1795400745.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Poland says Russia tried to assassinate Ukrainian rapper twice",
+          "url": "https://www.aljazeera.com/news/2026/11/23/poland-says-russia-tried-to-assassinate-ukrainian-rapper-twice?traffic_source=rss",
+          "tid": 1795398803.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Russian warship sinks off Libya as suspected Ukrainian strikes take war beyond Black Sea",
+          "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
+          "tid": 1795397456.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Poland says Russia allegedly tried to kill Ukrainian American rapper before foiled Denmark plot",
+          "url": "https://www.hindustantimes.com/world-news/poland-says-russia-allegedly-tried-to-kill-ukrainian-american-rapper-before-denmark-plot-101795377771052.html",
+          "tid": 1795380736.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Russian strikes kill at least 12 in Kyiv region, Ukraine says",
+          "url": "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says",
+          "tid": 1795372379.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Russian attack near Ukraine’s capital strikes apartment building, killing two and wounding four others",
+          "url": "https://www.thehindu.com/news/international/a-russian-attack-destroyed-an-apartment-building-in-dymer-near-kyiv-killing-two-as-kaliningrad-sounded-a-rare-air-alert/article71731042.ece",
+          "tid": 1795368627.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "Denmark expels Russian official, limits visas after alleging plot to kill U.S.-Ukrainian rapper",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/denmark-removes-russian-official-limits-russia-visas/",
+          "tid": 1795368478.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Russian strike kills 2 in Kyiv",
+          "url": "https://www.france24.com/en/russian-strike-kills-2-in-kyiv",
+          "tid": 1795364603.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+          "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
+          "tid": 1795343949.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Russian attacks across Ukraine injure 30 over past day as rescue operation continues near Kyiv after drone strike",
+          "url": "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/",
+          "tid": 1795341258.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
+          "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
+          "tid": 1795338144.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "spärrord: suspected"
+      ],
+      "data": null
+    },
+    {
       "id": "4e9e543f8d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 30.0,
+      "poang": 30.1,
       "vikt": {
-        "bredd": 1.108,
+        "bredd": 1.088,
         "regioner": {
           "mellanostern": 3,
-          "usa": 4,
+          "usa": 3,
           "asien": 4,
           "europa": 4,
           "afrika": 1
         },
-        "timmar": 10,
+        "timmar": 11,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1770,13 +2102,13 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 16,
+      "antal_kallor": 15,
       "har_primarkalla": false,
       "senast": "2026-11-23T01:32:02+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.522,
+      "sammanhang": 0.505,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1820,14 +2152,6 @@
               "rubrik": "Australia’s Sanctions on West Bank Settlers Increase Pressure",
               "url": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
               "tid": 1795388400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "HuffPost",
-              "land": "US",
-              "rubrik": "Israel's Eisenkot Condemns Settler Attacks In West Bank As 'Jewish Terrorism'",
-              "url": "https://www.huffpost.com/entry/israel-eisenkot-condemns-settler-attacks-west-bank-terrorism_n_6b0321dee4b0edd18edf52c4",
-              "tid": 1795368248.0,
               "statskontrollerad": false
             },
             {
@@ -1929,7 +2253,7 @@
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
         "usa": null,
-        "usa_blind": "mest_bla"
+        "usa_blind": null
       },
       "reserv_rubrik": "Watch: Palestinians describe fear after Israeli settlers attack West Bank villages",
       "kallor": [
@@ -1991,18 +2315,6 @@
           "land": "AU",
           "region": "asien",
           "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "HuffPost",
-          "rubrik": "Israel's Eisenkot Condemns Settler Attacks In West Bank As 'Jewish Terrorism'",
-          "url": "https://www.huffpost.com/entry/israel-eisenkot-condemns-settler-attacks-west-bank-terrorism_n_6b0321dee4b0edd18edf52c4",
-          "tid": 1795368248.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -2140,6 +2452,274 @@
       "data": null
     },
     {
+      "id": "53d2e2a07c",
+      "amnen": [
+        "ai",
+        "marknader"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "marknader"
+      ],
+      "poang": 29.9,
+      "vikt": {
+        "bredd": 0.165,
+        "regioner": {
+          "asien": 2,
+          "europa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T02:27:45+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.32,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "Seoul shares extend losses late Mon. morning on AI-driven tech sell-off",
+              "url": "https://en.yna.co.kr/view/AEN20261123004400320",
+              "tid": 1795400865.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Gold, silver and Bitcoin plunge as Fed rate hike fears and tech stock sell-off push investors towards cash",
+              "url": "https://www.hindustantimes.com/world-news/us-news/gold-silver-and-bitcoin-plunge-as-fed-rate-hike-fears-and-tech-stock-sell-off-push-investors-towards-cash-101795356677534.html",
+              "tid": 1795357890.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Tech stock sell-off deepens in Asia",
+              "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+              "tid": 1795398907.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Seoul shares extend losses late Mon. morning on AI-driven tech sell-off",
+      "kallor": [
+        {
+          "namn": "Yonhap",
+          "rubrik": "Seoul shares extend losses late Mon. morning on AI-driven tech sell-off",
+          "url": "https://en.yna.co.kr/view/AEN20261123004400320",
+          "tid": 1795400865.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "KR",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Gold, silver and Bitcoin plunge as Fed rate hike fears and tech stock sell-off push investors towards cash",
+          "url": "https://www.hindustantimes.com/world-news/us-news/gold-silver-and-bitcoin-plunge-as-fed-rate-hike-fears-and-tech-stock-sell-off-push-investors-towards-cash-101795356677534.html",
+          "tid": 1795357890.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Tech stock sell-off deepens in Asia",
+          "url": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+          "tid": 1795398907.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "ea9dcb5808",
+      "amnen": [
+        "ai"
+      ],
+      "amnen_sektion": [
+        "ai"
+      ],
+      "poang": 29.7,
+      "vikt": {
+        "bredd": 0.138,
+        "regioner": {
+          "asien": 2,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T22:47:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.598,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US intelligence chief predicts more tech outages as systems undergo upgrades",
+              "url": "https://www.straitstimes.com/world/united-states/us-intelligence-chief-predicts-more-tech-outages-as-systems-undergo-upgrades",
+              "tid": 1795387620.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "US tech outages: Intelligence chief Jay Clayton warns more issues likely as ageing systems are upgraded",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-tech-outages-intelligence-chief-jay-clayton-warns-more-issues-likely-as-ageing-systems-are-upgraded-101795375314574.html",
+              "tid": 1795375899.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
+              "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+              "tid": 1795367643.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Techmeme",
+              "land": "US",
+              "rubrik": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for \"bumps in the road\" as systems are upgraded to adapt to the AI age (Garrett Downs/CNBC)",
+              "url": "https://www.techmeme.com/261122/p11#a261122p11",
+              "tid": 1795379700.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "US intelligence chief predicts more tech outages as systems undergo upgrades",
+      "kallor": [
+        {
+          "namn": "The Straits Times",
+          "rubrik": "US intelligence chief predicts more tech outages as systems undergo upgrades",
+          "url": "https://www.straitstimes.com/world/united-states/us-intelligence-chief-predicts-more-tech-outages-as-systems-undergo-upgrades",
+          "tid": 1795387620.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "US tech outages: Intelligence chief Jay Clayton warns more issues likely as ageing systems are upgraded",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-tech-outages-intelligence-chief-jay-clayton-warns-more-issues-likely-as-ageing-systems-are-upgraded-101795375314574.html",
+          "tid": 1795375899.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
+          "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+          "tid": 1795367643.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Techmeme",
+          "rubrik": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for \"bumps in the road\" as systems are upgraded to adapt to the AI age (Garrett Downs/CNBC)",
+          "url": "https://www.techmeme.com/261122/p11#a261122p11",
+          "tid": 1795379700.0,
+          "betalvagg": false,
+          "typ": "kuraterat",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "a00f0ee6e7",
       "amnen": [
         "ai",
@@ -2241,7 +2821,7 @@
       "data": null
     },
     {
-      "id": "8be9a5f69f",
+      "id": "2ea16ebb90",
       "amnen": [
         "halvledare",
         "varlden"
@@ -2249,14 +2829,14 @@
       "amnen_sektion": [
         "halvledare"
       ],
-      "poang": 29.0,
+      "poang": 29.1,
       "vikt": {
         "bredd": 0.165,
         "regioner": {
           "asien": 2,
           "europa": 1
         },
-        "timmar": 77,
+        "timmar": 78,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2267,11 +2847,11 @@
       "maste": false,
       "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-22T17:07:04+00:00",
+      "senast": "2026-11-22T18:00:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.863,
+      "sammanhang": 0.595,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -2281,19 +2861,19 @@
         "per_region": {
           "asien": [
             {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US probing alleged Chinese spy tied to former Nvidia CEO, says intelligence chief",
+              "url": "https://www.straitstimes.com/world/united-states/spy-chief-says-us-probing-alleged-spy-tied-to-former-nvidia-ceo",
+              "tid": 1795370400.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "The Hindu",
               "land": "IN",
               "rubrik": "Nvidia faces U.S. accounting probe amid deepening turmoil: media",
               "url": "https://www.thehindu.com/news/international/nvidia-faces-us-accounting-probe-amid-deepening-turmoil-media/article71732128.ece",
               "tid": 1795367224.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Nvidia faces US accounting probe amid deepening turmoil: Media",
-              "url": "https://www.straitstimes.com/world/united-states/nvidia-faces-us-accounting-probe-amid-deepening-turmoil-media",
-              "tid": 1795305360.0,
               "statskontrollerad": false
             }
           ],
@@ -2313,8 +2893,20 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Nvidia faces U.S. accounting probe amid deepening turmoil: media",
+      "reserv_rubrik": "US probing alleged Chinese spy tied to former Nvidia CEO, says intelligence chief",
       "kallor": [
+        {
+          "namn": "The Straits Times",
+          "rubrik": "US probing alleged Chinese spy tied to former Nvidia CEO, says intelligence chief",
+          "url": "https://www.straitstimes.com/world/united-states/spy-chief-says-us-probing-alleged-spy-tied-to-former-nvidia-ceo",
+          "tid": 1795370400.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "The Hindu",
           "rubrik": "Nvidia faces U.S. accounting probe amid deepening turmoil: media",
@@ -2323,18 +2915,6 @@
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Nvidia faces US accounting probe amid deepening turmoil: Media",
-          "url": "https://www.straitstimes.com/world/united-states/nvidia-faces-us-accounting-probe-amid-deepening-turmoil-media",
-          "tid": 1795305360.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -2367,479 +2947,6 @@
       "data": null
     },
     {
-      "id": "2ea16ebb90",
-      "amnen": [
-        "asien",
-        "halvledare",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "halvledare"
-      ],
-      "poang": 28.5,
-      "vikt": {
-        "bredd": 0.118,
-        "regioner": {
-          "asien": 2
-        },
-        "timmar": 77,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T22:46:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.822,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "U.S. probing alleged spy tied to ex-Nvidia CEO",
-              "url": "https://www.japantimes.co.jp/business/2026/11/23/tech/us-spy-ex-nvidia-ceo/",
-              "tid": 1795387560.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US probing alleged Chinese spy tied to former Nvidia CEO, says intelligence chief",
-              "url": "https://www.straitstimes.com/world/united-states/spy-chief-says-us-probing-alleged-spy-tied-to-former-nvidia-ceo",
-              "tid": 1795370400.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "U.S. probing alleged spy tied to ex-Nvidia CEO",
-      "kallor": [
-        {
-          "namn": "The Japan Times",
-          "rubrik": "U.S. probing alleged spy tied to ex-Nvidia CEO",
-          "url": "https://www.japantimes.co.jp/business/2026/11/23/tech/us-spy-ex-nvidia-ceo/",
-          "tid": 1795387560.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "US probing alleged Chinese spy tied to former Nvidia CEO, says intelligence chief",
-          "url": "https://www.straitstimes.com/world/united-states/spy-chief-says-us-probing-alleged-spy-tied-to-former-nvidia-ceo",
-          "tid": 1795370400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "8fc530666b",
-      "amnen": [
-        "usa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 27.8,
-      "vikt": {
-        "bredd": 0.248,
-        "regioner": {
-          "latinamerika": 1,
-          "usa": 3,
-          "asien": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T01:29:53+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.671,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "latinamerika",
-          "usa"
-        ],
-        "per_region": {
-          "latinamerika": [
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "Trump obstaculiza la supervisión de contratos por un Congreso controlado por los demócratas",
-              "url": "https://elpais.com/us/2026-11-21/trump-obstaculiza-la-supervision-de-contratos-por-un-congreso-controlado-por-los-democratas.html",
-              "tid": 1795304919.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Trump orders federal contractors to check with White House before responding to Congress",
-              "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
-              "tid": 1795300836.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Trump Moves to Restrict Congressional Oversight of Contractors",
-              "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
-              "tid": 1795310993.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "White House seeks to limit information contractors should share with Congress",
-              "url": "https://www.washingtonpost.com/politics/2026/11/21/trump-white-house-orders-contractors-limit-information-shared-with-congress/",
-              "tid": 1795272906.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Trump orders federal contractors to check with White House before responding to Congress",
-              "url": "https://www.hindustantimes.com/world-news/us-news/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress-101795283369681.html",
-              "tid": 1795283938.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": "mest_bla"
-      },
-      "reserv_rubrik": "Trump obstaculiza la supervisión de contratos por un Congreso controlado por los demócratas",
-      "kallor": [
-        {
-          "namn": "El País América",
-          "rubrik": "Trump obstaculiza la supervisión de contratos por un Congreso controlado por los demócratas",
-          "url": "https://elpais.com/us/2026-11-21/trump-obstaculiza-la-supervision-de-contratos-por-un-congreso-controlado-por-los-democratas.html",
-          "tid": 1795304919.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Trump orders federal contractors to check with White House before responding to Congress",
-          "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
-          "tid": 1795300836.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Trump orders federal contractors to check with White House before responding to Congress",
-          "url": "https://www.hindustantimes.com/world-news/us-news/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress-101795283369681.html",
-          "tid": 1795283938.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Trump Moves to Restrict Congressional Oversight of Contractors",
-          "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
-          "tid": 1795310993.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "White House seeks to limit information contractors should share with Congress",
-          "url": "https://www.washingtonpost.com/politics/2026/11/21/trump-white-house-orders-contractors-limit-information-shared-with-congress/",
-          "tid": 1795272906.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "efa8a960b8",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.7,
-      "vikt": {
-        "bredd": 0.444,
-        "regioner": {
-          "asien": 3,
-          "europa": 2,
-          "afrika": 1,
-          "usa": 1
-        },
-        "timmar": 59,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 7,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T20:52:16+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.506,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Poland says Russia allegedly tried to kill Ukrainian American rapper before foiled Denmark plot",
-              "url": "https://www.hindustantimes.com/world-news/poland-says-russia-allegedly-tried-to-kill-ukrainian-american-rapper-before-denmark-plot-101795377771052.html",
-              "tid": 1795380736.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Russian strikes kill 6 in Kyiv region, Ukraine says",
-              "url": "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says",
-              "tid": 1795372379.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
-              "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
-              "tid": 1795338144.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Russian strike kills 2 in Kyiv",
-              "url": "https://www.france24.com/en/russian-strike-kills-2-in-kyiv",
-              "tid": 1795364603.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Russian attacks across Ukraine injure 30 over past day as rescue operation continues near Kyiv after drone strike",
-              "url": "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/",
-              "tid": 1795341258.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-              "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
-              "tid": 1795343949.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Denmark accuses Russia of plotting to kill Ukrainian American rapper on Danish soil",
-              "url": "https://www.foxnews.com/world/denmark-accuses-russia-plotting-kill-ukrainian-american-rapper-danish-soil",
-              "tid": 1795271315.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Poland says Russia allegedly tried to kill Ukrainian American rapper before foiled Denmark plot",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Poland says Russia allegedly tried to kill Ukrainian American rapper before foiled Denmark plot",
-          "url": "https://www.hindustantimes.com/world-news/poland-says-russia-allegedly-tried-to-kill-ukrainian-american-rapper-before-denmark-plot-101795377771052.html",
-          "tid": 1795380736.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Russian strikes kill 6 in Kyiv region, Ukraine says",
-          "url": "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says",
-          "tid": 1795372379.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Russian strike kills 2 in Kyiv",
-          "url": "https://www.france24.com/en/russian-strike-kills-2-in-kyiv",
-          "tid": 1795364603.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-          "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
-          "tid": 1795343949.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Russian attacks across Ukraine injure 30 over past day as rescue operation continues near Kyiv after drone strike",
-          "url": "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/",
-          "tid": 1795341258.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "At least 4 killed in Russian drone attacks on Kyiv region, officials say",
-          "url": "https://www.straitstimes.com/world/europe/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
-          "tid": 1795338144.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Denmark accuses Russia of plotting to kill Ukrainian American rapper on Danish soil",
-          "url": "https://www.foxnews.com/world/denmark-accuses-russia-plotting-kill-ukrainian-american-rapper-danish-soil",
-          "tid": 1795271315.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "978abbaeb1",
       "amnen": [
         "asien",
@@ -2848,13 +2955,13 @@
       "amnen_sektion": [
         "halvledare"
       ],
-      "poang": 27.4,
+      "poang": 27.5,
       "vikt": {
         "bredd": 0.118,
         "regioner": {
           "asien": 2
         },
-        "timmar": 59,
+        "timmar": 60,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2944,14 +3051,14 @@
       "id": "661624637a",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.3,
+      "poang": 27.4,
       "vikt": {
         "bredd": 0.664,
         "regioner": {
           "asien": 4,
           "mellanostern": 3
         },
-        "timmar": 32,
+        "timmar": 33,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3138,20 +3245,16 @@
       "data": null
     },
     {
-      "id": "b36a9d2bf9",
+      "id": "71ced7557e",
       "amnen": [
-        "usa",
         "varlden"
       ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 27.3,
+      "amnen_sektion": [],
+      "poang": 27.1,
       "vikt": {
-        "bredd": 0.202,
+        "bredd": 0.176,
         "regioner": {
-          "mellanostern": 1,
-          "asien": 1
+          "asien": 3
         },
         "timmar": 96,
         "konsekvens": null,
@@ -3160,37 +3263,42 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-22T19:30:00+00:00",
+      "senast": "2026-11-22T13:43:11+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.554,
+      "sammanhang": 0.658,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
-          "mellanostern"
+          "asien"
         ],
         "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "On China, is Trump bucking the US national security establishment?",
-              "url": "https://www.aljazeera.com/video/the-bottom-line/2026/11/22/on-china-is-trump-bucking-the-us-national-security-establishment?traffic_source=rss",
-              "tid": 1795375800.0,
-              "statskontrollerad": false
-            }
-          ],
           "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Beijing vows to defend interests as US bars Chinese telecoms from accessing phone numbers",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3375364/beijing-vows-defend-interests-us-bars-chinese-telecoms-accessing-phone-numbers",
+              "tid": 1795330922.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "China slams ‘malicious’ U.S. ban on telecom firms’ phone number access",
+              "url": "https://www.thehindu.com/news/international/china-slams-malicious-us-ban-on-telecom-firms-phone-number-access/article71730683.ece",
+              "tid": 1795330182.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "CGTN",
               "land": "CN",
-              "rubrik": "Trump says US cities are 'embarrassing' compared to China",
-              "url": "https://newsus.cgtn.com/news/2026-11-22/Trump-says-US-cities-are-embarrassing-compared-to-China-1Sgv96N1Oa4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795290220.0,
+              "rubrik": "China urges US to revoke FCC measures targeting telecom firms",
+              "url": "https://news.cgtn.com/news/2026-11-22/China-urges-US-to-revoke-FCC-measures-targeting-telecom-firms-1ShgAIIg60E/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795354991.0,
               "statskontrollerad": true
             }
           ]
@@ -3200,25 +3308,37 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "On China, is Trump bucking the US national security establishment?",
+      "reserv_rubrik": "Beijing vows to defend interests as US bars Chinese telecoms from accessing phone numbers",
       "kallor": [
         {
-          "namn": "Al Jazeera",
-          "rubrik": "On China, is Trump bucking the US national security establishment?",
-          "url": "https://www.aljazeera.com/video/the-bottom-line/2026/11/22/on-china-is-trump-bucking-the-us-national-security-establishment?traffic_source=rss",
-          "tid": 1795375800.0,
+          "namn": "South China Morning Post",
+          "rubrik": "Beijing vows to defend interests as US bars Chinese telecoms from accessing phone numbers",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3375364/beijing-vows-defend-interests-us-bars-chinese-telecoms-accessing-phone-numbers",
+          "tid": 1795330922.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "China slams ‘malicious’ U.S. ban on telecom firms’ phone number access",
+          "url": "https://www.thehindu.com/news/international/china-slams-malicious-us-ban-on-telecom-firms-phone-number-access/article71730683.ece",
+          "tid": 1795330182.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "CGTN",
-          "rubrik": "Trump says US cities are 'embarrassing' compared to China",
-          "url": "https://newsus.cgtn.com/news/2026-11-22/Trump-says-US-cities-are-embarrassing-compared-to-China-1Sgv96N1Oa4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795290220.0,
+          "rubrik": "China urges US to revoke FCC measures targeting telecom firms",
+          "url": "https://news.cgtn.com/news/2026-11-22/China-urges-US-to-revoke-FCC-measures-targeting-telecom-firms-1ShgAIIg60E/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795354991.0,
           "betalvagg": false,
           "typ": "media",
           "land": "CN",
@@ -3235,375 +3355,8 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
+        "färre än tre oberoende källor (2)",
         "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "a69b118087",
-      "amnen": [
-        "ai",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "ai"
-      ],
-      "poang": 27.2,
-      "vikt": {
-        "bredd": 0.106,
-        "regioner": {
-          "asien": 1,
-          "europa": 1
-        },
-        "timmar": 58,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T16:01:05+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.659,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Has AI solved the Riemann hypothesis? Claim makes waves at 200th birthday event in China",
-              "url": "https://www.scmp.com/news/china/science/article/3375386/has-ai-solved-riemann-hypothesis-claim-makes-waves-200th-birthday-event-china",
-              "tid": 1795363265.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Likely solution to Riemann hypothesis by AI marks turning point for mathematics",
-              "url": "https://www.lemonde.fr/en/science/article/2026/11/21/the-likely-solution-to-the-riemann-hypothesis-by-ai-marks-a-turning-point-for-mathematics_6786232_10.html",
-              "tid": 1795272871.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Has AI solved the Riemann hypothesis? Claim makes waves at 200th birthday event in China",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Has AI solved the Riemann hypothesis? Claim makes waves at 200th birthday event in China",
-          "url": "https://www.scmp.com/news/china/science/article/3375386/has-ai-solved-riemann-hypothesis-claim-makes-waves-200th-birthday-event-china",
-          "tid": 1795363265.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Likely solution to Riemann hypothesis by AI marks turning point for mathematics",
-          "url": "https://www.lemonde.fr/en/science/article/2026/11/21/the-likely-solution-to-the-riemann-hypothesis-by-ai-marks-a-turning-point-for-mathematics_6786232_10.html",
-          "tid": 1795272871.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "24309149a1",
-      "amnen": [
-        "usa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 27.2,
-      "vikt": {
-        "bredd": 0.195,
-        "regioner": {
-          "asien": 2,
-          "usa": 1,
-          "europa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T17:30:27+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.509,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Russian attack near Ukraine’s capital strikes apartment building, killing two and wounding four others",
-              "url": "https://www.thehindu.com/news/international/a-russian-attack-destroyed-an-apartment-building-in-dymer-near-kyiv-killing-two-as-kaliningrad-sounded-a-rare-air-alert/article71731042.ece",
-              "tid": 1795368627.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "No grand bargain at Xi-Trump-Putin meeting? That was never the point",
-              "url": "https://www.scmp.com/opinion/china-opinion/article/3375166/no-grand-bargain-xi-trump-putin-meeting-was-never-point",
-              "tid": 1795350607.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Zelenskyy says Russia strikes hometown, criticizes Putin-Trump meeting",
-              "url": "https://www.foxnews.com/world/zelenskyy-says-russia-strikes-hometown-criticizes-putin-trump-meeting",
-              "tid": 1795289155.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
-              "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795272240.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Russian attack near Ukraine’s capital strikes apartment building, killing two and wounding four others",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Russian attack near Ukraine’s capital strikes apartment building, killing two and wounding four others",
-          "url": "https://www.thehindu.com/news/international/a-russian-attack-destroyed-an-apartment-building-in-dymer-near-kyiv-killing-two-as-kaliningrad-sounded-a-rare-air-alert/article71731042.ece",
-          "tid": 1795368627.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "No grand bargain at Xi-Trump-Putin meeting? That was never the point",
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3375166/no-grand-bargain-xi-trump-putin-meeting-was-never-point",
-          "tid": 1795350607.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Zelenskyy says Russia strikes hometown, criticizes Putin-Trump meeting",
-          "url": "https://www.foxnews.com/world/zelenskyy-says-russia-strikes-hometown-criticizes-putin-trump-meeting",
-          "tid": 1795289155.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Russia strikes Zelenskyy's hometown, killing 2",
-          "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795272240.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "c7ff6676c3",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.0,
-      "vikt": {
-        "bredd": 0.345,
-        "regioner": {
-          "mellanostern": 2,
-          "asien": 1
-        },
-        "timmar": 64,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T19:13:53+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.634,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Two Palestinians killed by Israeli fire in northern and central Gaza",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-fire-northern-and-central-gaza",
-              "tid": 1795374833.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Israeli strike on vehicle in Gaza kills three, Gaza Health Ministry says",
-              "url": "https://www.al-monitor.com/originals/2026/11/israeli-strike-vehicle-gaza-kills-three-gaza-health-ministry-says",
-              "tid": 1795272391.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Israeli strike kills three in vehicle distributing aid in Gaza, witnesses say",
-              "url": "https://www.thehindu.com/news/international/israeli-strike-kills-three-in-vehicle-distributing-aid-in-gaza-witnesses-say/article71729327.ece",
-              "tid": 1795280382.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Two Palestinians killed by Israeli fire in northern and central Gaza",
-      "kallor": [
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Two Palestinians killed by Israeli fire in northern and central Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-fire-northern-and-central-gaza",
-          "tid": 1795374833.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Israeli strike kills three in vehicle distributing aid in Gaza, witnesses say",
-          "url": "https://www.thehindu.com/news/international/israeli-strike-kills-three-in-vehicle-distributing-aid-in-gaza-witnesses-say/article71729327.ece",
-          "tid": 1795280382.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Israeli strike on vehicle in Gaza kills three, Gaza Health Ministry says",
-          "url": "https://www.al-monitor.com/originals/2026/11/israeli-strike-vehicle-gaza-kills-three-gaza-health-ministry-says",
-          "tid": 1795272391.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
       ],
       "data": null
     },
@@ -3714,148 +3467,6 @@
       "data": null
     },
     {
-      "id": "e4fbe97b4b",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.0,
-      "vikt": {
-        "bredd": 0.362,
-        "regioner": {
-          "usa": 1,
-          "sverige": 1,
-          "latinamerika": 2
-        },
-        "timmar": 30,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T18:54:50+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.642,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "latinamerika",
-          "sverige",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "Inside Climate News",
-              "land": "US",
-              "rubrik": "UN’s COP31 Climate Conference Fizzles Out as Global Policy Divides Deepen",
-              "url": "https://insideclimatenews.org/news/22112026/uns-cop31-climate-conference-fizzles-out-as-global-policy-divides-deepen/",
-              "tid": 1795373690.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "FN:s klimatmöte COP31 – detta har hänt",
-              "url": "https://www.sverigesradio.se/artikel/9347909",
-              "tid": 1795363500.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "La cumbre del clima fracasa incapaz de cerrar un acuerdo que señale a los combustibles fósiles",
-              "url": "https://elpais.com/clima-y-medio-ambiente/2026-11-22/la-presidencia-de-la-cop31-lanza-un-nuevo-borrador-de-acuerdo-para-desatascar-el-caotico-final-de-la-cumbre-del-clima.html",
-              "tid": 1795358818.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El Tiempo",
-              "land": "CO",
-              "rubrik": "La COP31 fracasa por falta de cosenso sobre combustibles fósiles, en un duro golpe para la lucha contra el cambio climático: 'Muy decepcionante'",
-              "url": "https://www.eltiempo.com/mundo/mas-regiones/la-cop31-fracasa-por-falta-de-cosenso-sobre-combustibles-fosiles-en-un-duro-golpe-para-la-lucha-contra-el-cambio-climatico-muy-decepcionante-3603138",
-              "tid": 1795357827.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "UN’s COP31 Climate Conference Fizzles Out as Global Policy Divides Deepen",
-      "kallor": [
-        {
-          "namn": "Inside Climate News",
-          "rubrik": "UN’s COP31 Climate Conference Fizzles Out as Global Policy Divides Deepen",
-          "url": "https://insideclimatenews.org/news/22112026/uns-cop31-climate-conference-fizzles-out-as-global-policy-divides-deepen/",
-          "tid": 1795373690.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "FN:s klimatmöte COP31 – detta har hänt",
-          "url": "https://www.sverigesradio.se/artikel/9347909",
-          "tid": 1795363500.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País América",
-          "rubrik": "La cumbre del clima fracasa incapaz de cerrar un acuerdo que señale a los combustibles fósiles",
-          "url": "https://elpais.com/clima-y-medio-ambiente/2026-11-22/la-presidencia-de-la-cop31-lanza-un-nuevo-borrador-de-acuerdo-para-desatascar-el-caotico-final-de-la-cumbre-del-clima.html",
-          "tid": 1795358818.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El Tiempo",
-          "rubrik": "La COP31 fracasa por falta de cosenso sobre combustibles fósiles, en un duro golpe para la lucha contra el cambio climático: 'Muy decepcionante'",
-          "url": "https://www.eltiempo.com/mundo/mas-regiones/la-cop31-fracasa-por-falta-de-cosenso-sobre-combustibles-fosiles-en-un-duro-golpe-para-la-lucha-contra-el-cambio-climatico-muy-decepcionante-3603138",
-          "tid": 1795357827.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CO",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "bafd1aa594",
       "amnen": [
         "geopolitik",
@@ -3958,492 +3569,12 @@
       "data": null
     },
     {
-      "id": "4223769685",
-      "amnen": [
-        "ai",
-        "robotik",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "robotik"
-      ],
-      "poang": 26.8,
-      "vikt": {
-        "bredd": 0.226,
-        "regioner": {
-          "afrika": 1,
-          "asien": 1,
-          "usa": 1
-        },
-        "timmar": 40,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T08:59:11+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.687,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Nations agree to further talks on regulating AI 'killer robots and drones'",
-              "url": "http://www.africanews.com/2026/11/22/nations-agree-to-further-talks-on-regulating-ai-killer-robots-and-drones/",
-              "tid": 1795337951.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "States agree to UN talks aiming to regulate 'killer robots' by 2028",
-              "url": "https://www.thehindu.com/news/international/states-agree-toun-talks-aiming-to-regulate-killer-robots-by-2028/article71729173.ece",
-              "tid": 1795277948.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
-              "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
-              "tid": 1795270697.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Nations agree to further talks on regulating AI 'killer robots and drones'",
-      "kallor": [
-        {
-          "namn": "Africanews",
-          "rubrik": "Nations agree to further talks on regulating AI 'killer robots and drones'",
-          "url": "http://www.africanews.com/2026/11/22/nations-agree-to-further-talks-on-regulating-ai-killer-robots-and-drones/",
-          "tid": 1795337951.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "States agree to UN talks aiming to regulate 'killer robots' by 2028",
-          "url": "https://www.thehindu.com/news/international/states-agree-toun-talks-aiming-to-regulate-killer-robots-by-2028/article71729173.ece",
-          "tid": 1795277948.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
-          "tid": 1795270697.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "spärrord: killer",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "53477798d8",
-      "amnen": [
-        "ai",
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "halvledare"
-      ],
-      "poang": 26.8,
-      "vikt": {
-        "bredd": 0.295,
-        "regioner": {
-          "asien": 4,
-          "usa": 3
-        },
-        "timmar": 34,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 7,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T02:00:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.59,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US tracked Alice Huang’s contacts with China spy agency during Nvidia affair",
-              "url": "https://www.straitstimes.com/world/united-states/us-tracked-alice-huangs-contacts-with-china-spy-agency-during-nvidia-affair",
-              "tid": 1795399200.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US intelligence chief seemingly confirms China accessed restricted America-made AI chips",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-intelligence-chief-seemingly-confirms-china-accessed-restricted-america-made-ai-chips-101795383498566.html",
-              "tid": 1795384241.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "US seeks answers on Nvidia’s sale of chips to China, Bessent says",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3375404/us-seeks-answers-nvidias-sale-chips-china-bessent-says",
-              "tid": 1795377797.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-              "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
-              "tid": 1795330236.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
-              "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
-              "tid": 1795392350.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Sen. Kennedy urges scrutiny of Lutnick over China’s access to Nvidia chips",
-              "url": "https://www.washingtonpost.com/politics/2026/11/22/sen-kennedy-urges-scrutiny-lutnick-over-chinas-access-nvidia-chips/",
-              "tid": 1795383582.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "The Alice Huang Associate Accused of Funneling Nvidia Chips to China",
-              "url": "https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836?mod=rss_worldnews",
-              "tid": 1795312800.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Techmeme",
-              "land": "US",
-              "rubrik": "Sources: Alice Huang was in touch with an officer of China's spy agency MSS from spring 2025 until this fall; her business partner Kang Wei also worked with MSS (New York Times)",
-              "url": "https://www.techmeme.com/261122/p13#a261122p13",
-              "tid": 1795393802.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
-              "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
-              "tid": 1795392350.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Sen. Kennedy urges scrutiny of Lutnick over China’s access to Nvidia chips",
-              "url": "https://www.washingtonpost.com/politics/2026/11/22/sen-kennedy-urges-scrutiny-lutnick-over-chinas-access-nvidia-chips/",
-              "tid": 1795383582.0,
-              "lutning": "lutar_vanster"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "The Alice Huang Associate Accused of Funneling Nvidia Chips to China",
-              "url": "https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836?mod=rss_worldnews",
-              "tid": 1795312800.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US tracked Alice Huang’s contacts with China spy agency during Nvidia affair",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "US tracked Alice Huang’s contacts with China spy agency during Nvidia affair",
-          "url": "https://www.straitstimes.com/world/united-states/us-tracked-alice-huangs-contacts-with-china-spy-agency-during-nvidia-affair",
-          "tid": 1795399200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US intelligence chief seemingly confirms China accessed restricted America-made AI chips",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-intelligence-chief-seemingly-confirms-china-accessed-restricted-america-made-ai-chips-101795383498566.html",
-          "tid": 1795384241.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "US seeks answers on Nvidia’s sale of chips to China, Bessent says",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3375404/us-seeks-answers-nvidias-sale-chips-china-bessent-says",
-          "tid": 1795377797.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-          "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
-          "tid": 1795330236.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
-          "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
-          "tid": 1795392350.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Sen. Kennedy urges scrutiny of Lutnick over China’s access to Nvidia chips",
-          "url": "https://www.washingtonpost.com/politics/2026/11/22/sen-kennedy-urges-scrutiny-lutnick-over-chinas-access-nvidia-chips/",
-          "tid": 1795383582.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "The Alice Huang Associate Accused of Funneling Nvidia Chips to China",
-          "url": "https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836?mod=rss_worldnews",
-          "tid": 1795312800.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Techmeme",
-          "rubrik": "Sources: Alice Huang was in touch with an officer of China's spy agency MSS from spring 2025 until this fall; her business partner Kang Wei also worked with MSS (New York Times)",
-          "url": "https://www.techmeme.com/261122/p13#a261122p13",
-          "tid": 1795393802.0,
-          "betalvagg": false,
-          "typ": "kuraterat",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "0df53a65c5",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.6,
-      "vikt": {
-        "bredd": 0.151,
-        "regioner": {
-          "asien": 1,
-          "sverige": 1
-        },
-        "timmar": 92,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T13:17:12+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.381,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "sverige"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
-              "url": "https://www.scmp.com/news/world/europe/article/3375389/man-carrying-alarm-gun-train-germany-sparks-major-police-operation",
-              "tid": 1795353432.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Tågstopp i Falun på grund av polisinsats",
-              "url": "https://www.svt.se/nyheter/lokalt/dalarna/tagstopp-i-falun-pa-grund-av-polisinsats",
-              "tid": 1795280589.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
-          "url": "https://www.scmp.com/news/world/europe/article/3375389/man-carrying-alarm-gun-train-germany-sparks-major-police-operation",
-          "tid": 1795353432.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Tågstopp i Falun på grund av polisinsats",
-          "url": "https://www.svt.se/nyheter/lokalt/dalarna/tagstopp-i-falun-pa-grund-av-polisinsats",
-          "tid": 1795280589.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "8a1e0bd5f5",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 26.6,
+      "poang": 26.8,
       "vikt": {
         "bredd": 0.684,
         "regioner": {
@@ -4453,7 +3584,7 @@
           "latinamerika": 1,
           "mellanostern": 1
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4608,6 +3739,1232 @@
       "data": null
     },
     {
+      "id": "0df53a65c5",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.7,
+      "vikt": {
+        "bredd": 0.151,
+        "regioner": {
+          "asien": 1,
+          "sverige": 1
+        },
+        "timmar": 93,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T13:17:12+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.381,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "sverige"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
+              "url": "https://www.scmp.com/news/world/europe/article/3375389/man-carrying-alarm-gun-train-germany-sparks-major-police-operation",
+              "tid": 1795353432.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Tågstopp i Falun på grund av polisinsats",
+              "url": "https://www.svt.se/nyheter/lokalt/dalarna/tagstopp-i-falun-pa-grund-av-polisinsats",
+              "tid": 1795280589.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Man carrying alarm gun on train in Germany sparks major police operation",
+          "url": "https://www.scmp.com/news/world/europe/article/3375389/man-carrying-alarm-gun-train-germany-sparks-major-police-operation",
+          "tid": 1795353432.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Tågstopp i Falun på grund av polisinsats",
+          "url": "https://www.svt.se/nyheter/lokalt/dalarna/tagstopp-i-falun-pa-grund-av-polisinsats",
+          "tid": 1795280589.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "4223769685",
+      "amnen": [
+        "ai",
+        "robotik",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "robotik"
+      ],
+      "poang": 26.7,
+      "vikt": {
+        "bredd": 0.202,
+        "regioner": {
+          "afrika": 1,
+          "asien": 1
+        },
+        "timmar": 41,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T08:59:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.776,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien"
+        ],
+        "per_region": {
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Nations agree to further talks on regulating AI 'killer robots and drones'",
+              "url": "http://www.africanews.com/2026/11/22/nations-agree-to-further-talks-on-regulating-ai-killer-robots-and-drones/",
+              "tid": 1795337951.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "States agree to UN talks aiming to regulate 'killer robots' by 2028",
+              "url": "https://www.thehindu.com/news/international/states-agree-toun-talks-aiming-to-regulate-killer-robots-by-2028/article71729173.ece",
+              "tid": 1795277948.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Nations agree to further talks on regulating AI 'killer robots and drones'",
+      "kallor": [
+        {
+          "namn": "Africanews",
+          "rubrik": "Nations agree to further talks on regulating AI 'killer robots and drones'",
+          "url": "http://www.africanews.com/2026/11/22/nations-agree-to-further-talks-on-regulating-ai-killer-robots-and-drones/",
+          "tid": 1795337951.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "States agree to UN talks aiming to regulate 'killer robots' by 2028",
+          "url": "https://www.thehindu.com/news/international/states-agree-toun-talks-aiming-to-regulate-killer-robots-by-2028/article71729173.ece",
+          "tid": 1795277948.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "spärrord: killer"
+      ],
+      "data": null
+    },
+    {
+      "id": "7d6e47c1fc",
+      "amnen": [
+        "usa",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 26.7,
+      "vikt": {
+        "bredd": 0.562,
+        "regioner": {
+          "mellanostern": 1,
+          "europa": 3,
+          "asien": 4,
+          "usa": 1
+        },
+        "timmar": 36,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 9,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T02:23:13+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.651,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "US intelligence chief defends Trump’s comments calling Putin his ‘friend’",
+              "url": "https://www.aljazeera.com/news/2026/11/23/us-intelligence-chief-defends-trumps-comments-calling-putin-his?traffic_source=rss",
+              "tid": 1795400593.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’",
+              "url": "https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend",
+              "tid": 1795380933.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "The week in pictures: Xi hosts Trump and Putin, COP31 and new French protests",
+              "url": "https://www.france24.com/en/asia-pacific/20261122-the-week-in-pictures-xi-hosts-trump-and-putin-cop31-and-more-french-protests",
+              "tid": 1795357376.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Trump hails Putin and Xi as ‘friends’ again (PHOTOS)",
+              "url": "https://rt-english.com/news/649199-my-friend-trump-posts-photos/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795316100.0,
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "US intelligence chief says Putin is ‘not America’s friend,’ but defends Trump’s remark",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-intelligence-chief-jay-clayton-says-putin-is-not-americas-friend-amid-trumps-friend-remark-101795375469720.html",
+              "tid": 1795377769.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RNZ",
+              "land": "NZ",
+              "rubrik": "'He's a killer': Christopher Luxon criticises Donald Trump's Vladimir Putin embrace",
+              "url": "https://www.rnz.co.nz/news/political/2741789/he-s-a-killer-christopher-luxon-criticises-donald-trump-s-vladimir-putin-embrace",
+              "tid": 1795376884.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "US intelligence chief says Trump’s ‘friend’ label for Putin is ‘entirely appropriate’",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3375403/us-intelligence-chief-says-trumps-friend-label-putin-entirely-appropriate",
+              "tid": 1795376524.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US intelligence chief says Putin is ‘not America’s friend in Ukraine’",
+              "url": "https://www.straitstimes.com/world/united-states/us-intelligence-chief-says-putin-is-not-americas-friend-in-ukraine",
+              "tid": 1795366042.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "DNI Jay Clayton supports Trump calling Russian President Vladimir Putin 'my friend'",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/dni-jay-clayton-supports-trump-calling-russian-president-vladimir/",
+              "tid": 1795365893.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "US intelligence chief defends Trump’s comments calling Putin his ‘friend’",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "US intelligence chief defends Trump’s comments calling Putin his ‘friend’",
+          "url": "https://www.aljazeera.com/news/2026/11/23/us-intelligence-chief-defends-trumps-comments-calling-putin-his?traffic_source=rss",
+          "tid": 1795400593.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’",
+          "url": "https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend",
+          "tid": 1795380933.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "US intelligence chief says Putin is ‘not America’s friend,’ but defends Trump’s remark",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-intelligence-chief-jay-clayton-says-putin-is-not-americas-friend-amid-trumps-friend-remark-101795375469720.html",
+          "tid": 1795377769.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RNZ",
+          "rubrik": "'He's a killer': Christopher Luxon criticises Donald Trump's Vladimir Putin embrace",
+          "url": "https://www.rnz.co.nz/news/political/2741789/he-s-a-killer-christopher-luxon-criticises-donald-trump-s-vladimir-putin-embrace",
+          "tid": 1795376884.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NZ",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "US intelligence chief says Trump’s ‘friend’ label for Putin is ‘entirely appropriate’",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3375403/us-intelligence-chief-says-trumps-friend-label-putin-entirely-appropriate",
+          "tid": 1795376524.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "US intelligence chief says Putin is ‘not America’s friend in Ukraine’",
+          "url": "https://www.straitstimes.com/world/united-states/us-intelligence-chief-says-putin-is-not-americas-friend-in-ukraine",
+          "tid": 1795366042.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "DNI Jay Clayton supports Trump calling Russian President Vladimir Putin 'my friend'",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/dni-jay-clayton-supports-trump-calling-russian-president-vladimir/",
+          "tid": 1795365893.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "The week in pictures: Xi hosts Trump and Putin, COP31 and new French protests",
+          "url": "https://www.france24.com/en/asia-pacific/20261122-the-week-in-pictures-xi-hosts-trump-and-putin-cop31-and-more-french-protests",
+          "tid": 1795357376.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Trump hails Putin and Xi as ‘friends’ again (PHOTOS)",
+          "url": "https://rt-english.com/news/649199-my-friend-trump-posts-photos/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795316100.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "spärrord: killer",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "0fc00174af",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 26.4,
+      "vikt": {
+        "bredd": 0.159,
+        "regioner": {
+          "asien": 1,
+          "global": 1
+        },
+        "timmar": 60,
+        "konsekvens": {
+          "berorda": 3,
+          "allvar": 4,
+          "varaktighet": 2,
+          "medel": 3.0,
+          "skal": "Varningar om att Putins felkalkyl kan utlösa ett tredje världskrig är allvarliga men utgör en bedömning av risk, inte en faktisk eskalering, och följderna i tid är osäkra."
+        },
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-21T19:55:45+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.39,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "global"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘He is under pressure’: Putin's ‘miscalculation’ could trigger World War III, top UK intelligence official warns",
+              "url": "https://www.hindustantimes.com/world-news/he-is-under-pressure-putins-miscalculation-could-trigger-world-war-3-top-uk-intelligence-official-warns-101795287411987.html",
+              "tid": 1795290945.0,
+              "statskontrollerad": false
+            }
+          ],
+          "global": [
+            {
+              "kalla": "International Crisis Group",
+              "land": "BE",
+              "rubrik": "Gideon Rachman on the Risk of World War III",
+              "url": "https://www.crisisgroup.org/pod/global/gideon-rachman-risk-world-war-iii",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "‘He is under pressure’: Putin's ‘miscalculation’ could trigger World War III, top UK intelligence official warns",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘He is under pressure’: Putin's ‘miscalculation’ could trigger World War III, top UK intelligence official warns",
+          "url": "https://www.hindustantimes.com/world-news/he-is-under-pressure-putins-miscalculation-could-trigger-world-war-3-top-uk-intelligence-official-warns-101795287411987.html",
+          "tid": 1795290945.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "International Crisis Group",
+          "rubrik": "Gideon Rachman on the Risk of World War III",
+          "url": "https://www.crisisgroup.org/pod/global/gideon-rachman-risk-world-war-iii",
+          "tid": null,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "global",
+          "agare": "organisation",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "acc06b99cb",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 26.3,
+      "vikt": {
+        "bredd": 0.341,
+        "regioner": {
+          "mellanostern": 1,
+          "usa": 4,
+          "asien": 2
+        },
+        "timmar": 55,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T23:22:59+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.639,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
+              "url": "https://www.aljazeera.com/news/2026/11/22/trump-criticises-schumer-amid-push-for-new-democrat-leadership-in-us-senate?traffic_source=rss",
+              "tid": 1795389779.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Trump: Will be ‘very hard’ to work with Schumer if elected majority leader",
+              "url": "https://www.washingtonexaminer.com/news/white-house/4811713/trump-very-hard-work-with-schumer-majority-leader/",
+              "tid": 1795387223.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Trump says it would be 'hard' to work with Chuck Schumer: 'He will fail again'",
+              "url": "https://www.foxnews.com/politics/trump-says-hard-work-chuck-schumer-fail-again",
+              "tid": 1795367937.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "Trump knocks Chuck Schumer as a failure in contested race for Senate majority leader",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/trump-knocks-chuck-schumer-failure-contested-race-senate-majority/",
+              "tid": 1795361760.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Trump weighs in on Senate Democrats’ leadership fight",
+              "url": "https://www.washingtonpost.com/politics/2026/11/22/trump-weighs-senate-democrats-leadership-fight/",
+              "tid": 1795378909.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Trump says it will be ‘very hard’ to work with Schumer in US Senate",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3375396/trump-sees-difficulties-ahead-if-chuck-schumer-leads-senate",
+              "tid": 1795365683.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump sees difficulties ahead if Schumer leads Senate",
+              "url": "https://www.straitstimes.com/world/united-states/trump-sees-difficulties-ahead-if-schumer-leads-senate",
+              "tid": 1795362139.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Trump: Will be ‘very hard’ to work with Schumer if elected majority leader",
+              "url": "https://www.washingtonexaminer.com/news/white-house/4811713/trump-very-hard-work-with-schumer-majority-leader/",
+              "tid": 1795387223.0,
+              "lutning": "lutar_hoger"
+            },
+            {
+              "kalla": "Fox News",
+              "rubrik": "Trump says it would be 'hard' to work with Chuck Schumer: 'He will fail again'",
+              "url": "https://www.foxnews.com/politics/trump-says-hard-work-chuck-schumer-fail-again",
+              "tid": 1795367937.0,
+              "lutning": "hoger"
+            },
+            {
+              "kalla": "The Washington Times",
+              "rubrik": "Trump knocks Chuck Schumer as a failure in contested race for Senate majority leader",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/trump-knocks-chuck-schumer-failure-contested-race-senate-majority/",
+              "tid": 1795361760.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Trump weighs in on Senate Democrats’ leadership fight",
+              "url": "https://www.washingtonpost.com/politics/2026/11/22/trump-weighs-senate-democrats-leadership-fight/",
+              "tid": 1795378909.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
+          "url": "https://www.aljazeera.com/news/2026/11/22/trump-criticises-schumer-amid-push-for-new-democrat-leadership-in-us-senate?traffic_source=rss",
+          "tid": 1795389779.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Trump: Will be ‘very hard’ to work with Schumer if elected majority leader",
+          "url": "https://www.washingtonexaminer.com/news/white-house/4811713/trump-very-hard-work-with-schumer-majority-leader/",
+          "tid": 1795387223.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Trump says it would be 'hard' to work with Chuck Schumer: 'He will fail again'",
+          "url": "https://www.foxnews.com/politics/trump-says-hard-work-chuck-schumer-fail-again",
+          "tid": 1795367937.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Trump says it will be ‘very hard’ to work with Schumer in US Senate",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3375396/trump-sees-difficulties-ahead-if-chuck-schumer-leads-senate",
+          "tid": 1795365683.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump sees difficulties ahead if Schumer leads Senate",
+          "url": "https://www.straitstimes.com/world/united-states/trump-sees-difficulties-ahead-if-schumer-leads-senate",
+          "tid": 1795362139.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "Trump knocks Chuck Schumer as a failure in contested race for Senate majority leader",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/trump-knocks-chuck-schumer-failure-contested-race-senate-majority/",
+          "tid": 1795361760.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Trump weighs in on Senate Democrats’ leadership fight",
+          "url": "https://www.washingtonpost.com/politics/2026/11/22/trump-weighs-senate-democrats-leadership-fight/",
+          "tid": 1795378909.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "a08a51b75e",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 26.2,
+      "vikt": {
+        "bredd": 0.755,
+        "regioner": {
+          "mellanostern": 1,
+          "asien": 6,
+          "usa": 2,
+          "europa": 4
+        },
+        "timmar": 20,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 13,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T02:35:42+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.654,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Indonesian police remove 24 body bags from factory fire site",
+              "url": "https://www.aljazeera.com/news/2026/11/23/indonesian-police-remove-24-body-bags-from-factory-fire-site?traffic_source=rss",
+              "tid": 1795401342.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Search for Indonesia factory fire missing to resume on Nov 23, as police remove 24 body bags",
+              "url": "https://www.channelnewsasia.com/asia/indonesia-factory-fire-search-resume-body-bags-victims-6573141",
+              "tid": 1795397472.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Search for Indonesia factory fire missing to resume on Monday, police remove 24 body bags",
+              "url": "https://www.dawn.com/news/2046306/search-for-indonesia-factory-fire-missing-to-resume-on-monday-police-remove-24-body-bags",
+              "tid": 1795369281.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Search for Indonesia factory fire missing to resume on Monday",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375375/indonesia-searches-50-recovers-7-body-bags-after-factory-fire",
+              "tid": 1795340740.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "3 dead, 36 workers unaccounted for after fire breaks out at Indonesian candy factory",
+              "url": "https://www.hindustantimes.com/world-news/workers-dead-unaccounted-for-after-fire-breaks-out-at-indonesian-candy-factory-101795331027668.html",
+              "tid": 1795332493.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Fire at Indonesian candy factory leaves 3 dead, dozens unaccounted for",
+              "url": "https://www.thehindu.com/news/international/rescuers-say-many-missing-after-indonesia-factory-fire/article71730558.ece",
+              "tid": 1795322719.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Indonesia candy factory fire not fully extinguished, about 50 missing",
+              "url": "https://news.cgtn.com/news/2026-11-22/news-1ShqqiAfYhG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795337925.0,
+              "statskontrollerad": true
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Washington Times",
+              "land": "US",
+              "rubrik": "Indonesia candy factory fire leaves 3 workers dead and 37 others unaccounted for",
+              "url": "https://www.washingtontimes.com/news/2026/nov/22/indonesia-candy-factory-fire-leaves-3-workers-dead-37-others/",
+              "tid": 1795358566.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
+              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
+              "tid": 1795353524.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Three killed and dozens missing after fire at Indonesian factory",
+              "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795356320.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Indonesia factory hit by deadly blaze: Three killed and 36 missing",
+              "url": "https://www.france24.com/en/indonesia-factory-hit-by-deadly-blaze-three-killed-and-36-missing",
+              "tid": 1795349460.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing",
+              "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
+              "tid": 1795331477.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Dozens missing as deadly fire hits Indonesian candy factory",
+              "url": "https://www.dw.com/en/dozens-missing-as-deadly-fire-hits-indonesian-candy-factory/a-80012342?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795328040.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Indonesian police remove 24 body bags from factory fire site",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Indonesian police remove 24 body bags from factory fire site",
+          "url": "https://www.aljazeera.com/news/2026/11/23/indonesian-police-remove-24-body-bags-from-factory-fire-site?traffic_source=rss",
+          "tid": 1795401342.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNA",
+          "rubrik": "Search for Indonesia factory fire missing to resume on Nov 23, as police remove 24 body bags",
+          "url": "https://www.channelnewsasia.com/asia/indonesia-factory-fire-search-resume-body-bags-victims-6573141",
+          "tid": 1795397472.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Search for Indonesia factory fire missing to resume on Monday, police remove 24 body bags",
+          "url": "https://www.dawn.com/news/2046306/search-for-indonesia-factory-fire-missing-to-resume-on-monday-police-remove-24-body-bags",
+          "tid": 1795369281.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Times",
+          "rubrik": "Indonesia candy factory fire leaves 3 workers dead and 37 others unaccounted for",
+          "url": "https://www.washingtontimes.com/news/2026/nov/22/indonesia-candy-factory-fire-leaves-3-workers-dead-37-others/",
+          "tid": 1795358566.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Three killed and dozens missing after fire at Indonesian factory",
+          "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795356320.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
+          "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
+          "tid": 1795353524.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Indonesia factory hit by deadly blaze: Three killed and 36 missing",
+          "url": "https://www.france24.com/en/indonesia-factory-hit-by-deadly-blaze-three-killed-and-36-missing",
+          "tid": 1795349460.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Search for Indonesia factory fire missing to resume on Monday",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375375/indonesia-searches-50-recovers-7-body-bags-after-factory-fire",
+          "tid": 1795340740.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "3 dead, 36 workers unaccounted for after fire breaks out at Indonesian candy factory",
+          "url": "https://www.hindustantimes.com/world-news/workers-dead-unaccounted-for-after-fire-breaks-out-at-indonesian-candy-factory-101795331027668.html",
+          "tid": 1795332493.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing",
+          "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
+          "tid": 1795331477.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Dozens missing as deadly fire hits Indonesian candy factory",
+          "url": "https://www.dw.com/en/dozens-missing-as-deadly-fire-hits-indonesian-candy-factory/a-80012342?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795328040.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Fire at Indonesian candy factory leaves 3 dead, dozens unaccounted for",
+          "url": "https://www.thehindu.com/news/international/rescuers-say-many-missing-after-indonesia-factory-fire/article71730558.ece",
+          "tid": 1795322719.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Indonesia candy factory fire not fully extinguished, about 50 missing",
+          "url": "https://news.cgtn.com/news/2026-11-22/news-1ShqqiAfYhG/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795337925.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "7264349e84",
+      "amnen": [
+        "europa",
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 26.2,
+      "vikt": {
+        "bredd": 0.095,
+        "regioner": {
+          "europa": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T16:53:12+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.559,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Ukraine war latest: US delays on Patriot missiles 'difficult to understand' as Russia fires 165 missiles in single week, Zelensky says",
+              "url": "https://kyivindependent.com/ukraine-war-latest-us-delays-on-patriot-missiles-difficult-to-understand-as-russia-fires-165-missiles-in-single-week-zelensky-says/",
+              "tid": 1795366392.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "14 missing after Russian strike as Zelenskyy presses US over Patriot missiles",
+              "url": "https://www.politico.eu/article/14-missing-after-russian-strike-zelenskyy-presses-us-patriot-missiles/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "tid": 1795340960.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Ukraine war latest: US delays on Patriot missiles 'difficult to understand' as Russia fires 165 missiles in single week, Zelensky says",
+      "kallor": [
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Ukraine war latest: US delays on Patriot missiles 'difficult to understand' as Russia fires 165 missiles in single week, Zelensky says",
+          "url": "https://kyivindependent.com/ukraine-war-latest-us-delays-on-patriot-missiles-difficult-to-understand-as-russia-fires-165-missiles-in-single-week-zelensky-says/",
+          "tid": 1795366392.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Politico Europe",
+          "rubrik": "14 missing after Russian strike as Zelenskyy presses US over Patriot missiles",
+          "url": "https://www.politico.eu/article/14-missing-after-russian-strike-zelenskyy-presses-us-patriot-missiles/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "tid": 1795340960.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "1c6fd10243",
       "amnen": [
         "sverige"
@@ -4621,7 +4978,7 @@
         "regioner": {
           "sverige": 2
         },
-        "timmar": 74,
+        "timmar": 75,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4709,14 +5066,14 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 23.6,
+      "poang": 24.4,
       "vikt": {
-        "bredd": 0.175,
+        "bredd": 0.234,
         "regioner": {
-          "asien": 2,
+          "asien": 3,
           "europa": 1
         },
-        "timmar": 21,
+        "timmar": 22,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4725,13 +5082,13 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-11-22T22:00:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.624,
+      "sammanhang": 0.556,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -4755,6 +5112,14 @@
               "url": "https://www.scmp.com/news/china/military/article/3375372/pla-anti-submarine-ships-conduct-south-china-sea-patrol-vietnamese-navy",
               "tid": 1795337785.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Why the China-ASEAN relation matters",
+              "url": "https://news.cgtn.com/news/2026-11-22/Why-the-China-ASEAN-relation-matters-1Shbu0B5R16/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795352584.0,
+              "statskontrollerad": true
             }
           ],
           "europa": [
@@ -4810,6 +5175,18 @@
           "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Why the China-ASEAN relation matters",
+          "url": "https://news.cgtn.com/news/2026-11-22/Why-the-China-ASEAN-relation-matters-1Shbu0B5R16/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795352584.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
@@ -4832,13 +5209,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.5,
+      "poang": 21.6,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 27,
+        "timmar": 28,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4931,13 +5308,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 17.4,
+      "poang": 17.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 10,
+        "timmar": 11,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5032,13 +5409,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 17.2,
+      "poang": 17.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 9,
+        "timmar": 10,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5129,13 +5506,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 17.2,
+      "poang": 17.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 9,
+        "timmar": 10,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5225,13 +5602,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 16.5,
+      "poang": 17.0,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 8,
+        "timmar": 9,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6050,7 +6427,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 67,
+      "artiklar": 64,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6073,7 +6450,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 23,
+      "artiklar": 22,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -6109,7 +6486,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 8,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -6133,7 +6510,7 @@
     {
       "id": "lemonde",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 13,
       "url": "https://www.lemonde.fr/en/rss/une.xml"
     },
     {
@@ -6151,7 +6528,7 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 18,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
@@ -6181,7 +6558,7 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 30,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
@@ -6193,19 +6570,19 @@
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 26,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
       "id": "npr",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 12,
       "url": "https://feeds.npr.org/1004/rss.xml"
     },
     {
@@ -6217,7 +6594,7 @@
     {
       "id": "cnbc",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 14,
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
@@ -6281,13 +6658,13 @@
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 24,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 17,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -6376,7 +6753,7 @@
     {
       "id": "expressen-noje",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://www.expressen.se/rss/noje"
     },
     {
@@ -6470,13 +6847,14 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 6,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
       "id": "import-ai",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 0,
+      "url": "https://importai.substack.com/feed"
     },
     {
       "id": "superhuman",
@@ -6511,7 +6889,7 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 1,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -6528,13 +6906,14 @@
     },
     {
       "id": "wash-times",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 20,
+      "url": "https://www.washingtontimes.com/rss/headlines/news/"
     },
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 9,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6546,7 +6925,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 11,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -6582,7 +6961,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 31,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -6636,13 +7015,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 1,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 30,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -6666,7 +7045,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 41,
+      "artiklar": 40,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6678,7 +7057,7 @@
     {
       "id": "almonitor",
       "ok": true,
-      "artiklar": 19,
+      "artiklar": 16,
       "url": "https://www.al-monitor.com/rss"
     },
     {
@@ -6702,7 +7081,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 45,
+      "artiklar": 56,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
@@ -6762,7 +7141,7 @@
     {
       "id": "usgs",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 7,
       "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.atom"
     },
     {
@@ -6798,7 +7177,7 @@
     {
       "id": "theeastafrican",
       "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "fel": "HTTP Error 404: Not Found"
     },
     {
       "id": "kyivindependent",
@@ -6815,7 +7194,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 18,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
@@ -6827,7 +7206,7 @@
     {
       "id": "amnesty",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 2,
       "url": "https://www.amnesty.org/en/feed/"
     },
     {
