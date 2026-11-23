@@ -1,34 +1,32 @@
 {
-  "skapad": "2026-11-23T18:05:45.231176+00:00",
+  "skapad": "2026-11-23T19:05:10.807645+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
       "id": "02ad4b6798",
       "amnen": [
-        "ai",
         "halvledare",
         "usa"
       ],
       "amnen_sektion": [
-        "ai",
         "halvledare",
         "usa"
       ],
-      "poang": 50.0,
+      "poang": 48.8,
       "vikt": {
-        "bredd": 3.375,
+        "bredd": 3.185,
         "regioner": {
+          "afrika": 4,
           "asien": 11,
-          "europa": 7,
           "usa": 15,
+          "europa": 6,
           "latinamerika": 3,
-          "afrika": 5,
           "mellanostern": 3,
           "sverige": 3,
           "norden": 1
         },
-        "timmar": 5,
+        "timmar": 6,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -37,16 +35,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 48,
+      "antal_kallor": 46,
       "har_primarkalla": false,
-      "senast": "2026-11-23T18:02:34+00:00",
+      "senast": "2026-11-23T20:55:24+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLJYmZNNo9HSGdEnkHoN'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLP5bdQsSkbSL3t6iVWH'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.61,
+      "sammanhang": 0.625,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -60,21 +58,55 @@
           "usa"
         ],
         "per_region": {
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Trump says he assured Nvidia that Jensen Huang posed no national security threat",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-23-trump-says-he-assured-nvidia-that-jensen-huang-posed-no-national-security-threat/",
+              "tid": 1795467324.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "AI giant Nvidia reinstates Jensen Huang as CEO after spy scandal",
+              "url": "http://www.africanews.com/2026/11/23/ai-giant-nvidia-reinstates-jensen-huang-as-ceo-after-spy-scandal/",
+              "tid": 1795450254.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The East African",
+              "land": "KE",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
+              "url": "https://www.theeastafrican.co.ke/tea/business-tech/nvidia-reinstates-jensen-huang-as-ceo-5681668",
+              "tid": 1795446900.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nation (Kenya)",
+              "land": "KE",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
+              "url": "https://nation.africa/kenya/news/world/nvidia-reinstates-jensen-huang-as-ceo-5681542",
+              "tid": 1795444275.0,
+              "statskontrollerad": false
+            }
+          ],
           "asien": [
             {
               "kalla": "The Straits Times",
               "land": "SG",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from Trump, investors",
-              "url": "https://www.straitstimes.com/world/nvidia-reinstates-jensen-huang-as-ceo-amid-pressure-from-trump-investors",
-              "tid": 1795456954.0,
+              "rubrik": "Trump says he assured Nvidia that Jensen Huang posed no national security threat",
+              "url": "https://www.straitstimes.com/world/united-states/trump-says-he-assured-nvidia-that-jensen-huang-posed-no-national-security-threat",
+              "tid": 1795460515.0,
               "statskontrollerad": false
             },
             {
               "kalla": "Hindustan Times",
               "land": "IN",
-              "rubrik": "Nvidia CEO Jensen Huang to testify publicly before senators next week",
-              "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-ceo-jensen-huang-to-testify-publicly-before-senators-next-week-101795456258719.html",
-              "tid": 1795456454.0,
+              "rubrik": "‘Good news’: Netanyahu hails Jensen Huang’s reinstatement as Nvidia CEO, underscores Israel’s ties with chip giant",
+              "url": "https://www.hindustantimes.com/world-news/good-news-netanyahu-hails-jensen-huang-s-reinstatement-as-nvidia-ceo-underscores-israel-s-ties-with-chip-giant-101795457422896.html",
+              "tid": 1795458738.0,
               "statskontrollerad": false
             },
             {
@@ -88,9 +120,9 @@
             {
               "kalla": "CNA",
               "land": "SG",
-              "rubrik": "Trump tells CNBC he was represented at Nvidia board, spoke to Huang",
-              "url": "https://www.channelnewsasia.com/business/trump-tells-cnbc-he-was-represented-nvidia-board-spoke-huang-6575616",
-              "tid": 1795449924.0,
+              "rubrik": "Nvidia bears face $12.2 billion hit on Huang's surprise return",
+              "url": "https://www.channelnewsasia.com/business/nvidia-bears-face-122-billion-hit-huangs-surprise-return-6575646",
+              "tid": 1795451876.0,
               "statskontrollerad": false
             },
             {
@@ -150,77 +182,51 @@
               "statskontrollerad": false
             }
           ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Trump says he spoke to Nvidia board directly about Jensen Huang and insists CEO’s return doesn’t pose a national security risk – live",
-              "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-              "tid": 1795456644.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "🔴Democrats vow probe after Trump admits role in Huang's return as Nvidia CEO",
-              "url": "https://www.france24.com/en/americas/20261123-nvidia-board-reinstates-disgraced-jensen-huang-as-ceo-president-says",
-              "tid": 1795451824.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
-              "url": "https://english.elpais.com/economy-and-business/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo.html",
-              "tid": 1795448132.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Nvidia reinstates former CEO Jensen Huang despite China espionage scandal",
-              "url": "https://www.dw.com/en/nvidia-reinstates-former-ceo-jensen-huang-despite-china-espionage-scandal/a-80021926?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795443480.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Nvidia and Nasdaq soar after board reinstates Huang",
-              "url": "https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1",
-              "tid": 1795451708.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Nvidia board reinstates Jensen Huang as CEO after Trump intervention",
-              "url": "https://www.lemonde.fr/en/economy/article/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo_6787329_19.html",
-              "tid": 1795443093.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Nvidia shares surge as board brings back Huang",
-              "url": "https://rt-english.com/news/649258-jensen-huang-returns-nvidia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795446035.0,
-              "statskontrollerad": true
-            }
-          ],
           "usa": [
+            {
+              "kalla": "Axios",
+              "land": "US",
+              "rubrik": "Jensen Huang's return to Nvidia sparks bipartisan backlash on Capitol Hill",
+              "url": "https://www.axios.com/2026/11/23/jensen-huang-nvidia-congress-dc-reaction",
+              "tid": 1795460279.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "Vox",
               "land": "US",
               "rubrik": "Jensen Huang’s return proves Trump and the tech right still call the shots",
               "url": "https://www.vox.com/politics/511687/jensen-huang-returns-nvidia-ceo-trump",
-              "tid": 1795456500.0,
+              "tid": 1795459200.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Democrats blast ‘reckless’ decision to reinstate Jensen Huang as Nvidia CEO",
+              "url": "https://www.washingtonexaminer.com/policy/technology/4812279/democrats-blast-reckless-decision-reinstate-jensen-huang-nvidia-ceo/",
+              "tid": 1795458843.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Live updates: Nvidia makes U-turn on Jensen Huang, Trump says he 'convinced' board",
+              "url": "https://thehill.com/homenews/administration/6236287-live-updates-donald-trump-goverment-spending-senate-leadership-fight-iran-war/",
+              "tid": 1795457760.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+              "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+              "tid": 1795457542.0,
               "statskontrollerad": false
             },
             {
               "kalla": "Wired AI",
               "land": "US",
-              "rubrik": "Jensen Huang Is Back and So Is Nvidia’s Stock",
+              "rubrik": "Jensen Huang Is Back, and So Is Nvidia’s Stock",
               "url": "https://www.wired.com/story/jensens-back-stocks-up-what-the-hell-sure/",
               "tid": 1795456376.0,
               "statskontrollerad": false
@@ -231,22 +237,6 @@
               "rubrik": "Nvidia, Tech Stocks Skyrocket Immediately Following Jensen Huang’s Reinstatement Announcement",
               "url": "https://dailycaller.com/2026/11/23/nvidia-stock-surges-with-jensen-huangs-triumphant-return",
               "tid": 1795455609.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Nvidia hits undo on Huang exit",
-              "url": "https://thehill.com/newsletters/1230-report/6237702-jensen-huang-donald-trump-nvidia-return-senate-republicans-democrats-defense-fight-iran-war/",
-              "tid": 1795455455.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Axios",
-              "land": "US",
-              "rubrik": "Schumer puts Nvidia, Trump on notice after Huang reinstatement",
-              "url": "https://www.axios.com/2026/11/23/schumer-trump-nvidia-huang-reinstated",
-              "tid": 1795454906.0,
               "statskontrollerad": false
             },
             {
@@ -263,22 +253,6 @@
               "rubrik": "Here's where we stand on AMD shares after Jensen Huang's return to Nvidia",
               "url": "https://www.cnbc.com/investingclub/2026/11/23/heres-where-we-stand-on-amd-shares-after-jensen-huangs-return-to-nvidia-.html",
               "tid": 1795454681.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Huang is back. But Congress is only just getting started on Nvidia and Trump",
-              "url": "https://www.washingtonexaminer.com/news/washington-secrets/4811999/jensen-huang-back-congress-started-nvidia-trump/",
-              "tid": 1795453601.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
-              "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
-              "tid": 1795451950.0,
               "statskontrollerad": false
             },
             {
@@ -316,9 +290,9 @@
             {
               "kalla": "The New York Times",
               "land": "US",
-              "rubrik": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
-              "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
-              "tid": 1795455004.0,
+              "rubrik": "Trump Draws Bipartisan Criticism for Pushing to Reinstate Jensen Huang as Nvidia CEO",
+              "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
+              "tid": 1795457297.0,
               "statskontrollerad": false
             },
             {
@@ -343,6 +317,56 @@
               "rubrik": "Nvidia Reinstates Jensen Huang as CEO",
               "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
               "tid": 1795442418.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Jensen Huang reinstated as Nvidia CEO",
+              "url": "https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive",
+              "tid": 1795459916.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "🔴Democrats vow probe after Trump admits role in Huang's return as Nvidia CEO",
+              "url": "https://www.france24.com/en/americas/20261123-nvidia-board-reinstates-disgraced-jensen-huang-as-ceo-president-says",
+              "tid": 1795451824.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
+              "url": "https://english.elpais.com/economy-and-business/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo.html",
+              "tid": 1795448132.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Nvidia reinstates former CEO Jensen Huang despite China espionage scandal",
+              "url": "https://www.dw.com/en/nvidia-reinstates-former-ceo-jensen-huang-despite-china-espionage-scandal/a-80021926?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795443480.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Jensen Huang reinstated as Nvidia CEO after Donald Trump intervention",
+              "url": "https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1",
+              "tid": 1795459713.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Nvidia board reinstates Jensen Huang as CEO after Trump intervention",
+              "url": "https://www.lemonde.fr/en/economy/article/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo_6787329_19.html",
+              "tid": 1795443093.0,
               "statskontrollerad": false
             }
           ],
@@ -372,54 +396,12 @@
               "statskontrollerad": false
             }
           ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "AI giant Nvidia reinstates Jensen Huang as CEO after spy scandal",
-              "url": "http://www.africanews.com/2026/11/23/ai-giant-nvidia-reinstates-jensen-huang-as-ceo-after-spy-scandal/",
-              "tid": 1795450254.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Premium Times",
-              "land": "NG",
-              "rubrik": "NVIDIA reinstates Jensen Huang as President, CEO",
-              "url": "https://www.premiumtimesng.com/business/business-news/927408-nvidia-reinstates-jensen-huang-as-president-ceo.html",
-              "tid": 1795447276.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The East African",
-              "land": "KE",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
-              "url": "https://www.theeastafrican.co.ke/tea/business-tech/nvidia-reinstates-jensen-huang-as-ceo-5681668",
-              "tid": 1795446900.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nation (Kenya)",
-              "land": "KE",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
-              "url": "https://nation.africa/kenya/news/world/nvidia-reinstates-jensen-huang-as-ceo-5681542",
-              "tid": 1795444275.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "Alice Huang in touch with Chinese spy agency during affair with Nvidia CEO, NYT",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-23-alice-huang-in-touch-with-chinese-spy-agency-during-affair-with-nvidia-ceo-nyt/",
-              "tid": 1795408633.0,
-              "statskontrollerad": false
-            }
-          ],
           "mellanostern": [
             {
               "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "What Jensen Huang's return to Nvidia helm means for Middle East",
-              "url": "https://www.al-monitor.com/originals/2026/11/what-jensen-huangs-return-nvidia-helm-means-middle-east",
+              "rubrik": "What Jensen Huang's return to Nvidia means for Middle East",
+              "url": "https://www.al-monitor.com/originals/2026/11/what-jensen-huangs-return-nvidia-means-middle-east",
               "tid": 1795449953.0,
               "statskontrollerad": false
             },
@@ -482,28 +464,35 @@
         "usa": {
           "bla": [
             {
-              "kalla": "Vox",
-              "rubrik": "Jensen Huang’s return proves Trump and the tech right still call the shots",
-              "url": "https://www.vox.com/politics/511687/jensen-huang-returns-nvidia-ceo-trump",
-              "tid": 1795456500.0,
-              "lutning": "vanster"
-            },
-            {
               "kalla": "Axios",
-              "rubrik": "Schumer puts Nvidia, Trump on notice after Huang reinstatement",
-              "url": "https://www.axios.com/2026/11/23/schumer-trump-nvidia-huang-reinstated",
-              "tid": 1795454906.0,
+              "rubrik": "Jensen Huang's return to Nvidia sparks bipartisan backlash on Capitol Hill",
+              "url": "https://www.axios.com/2026/11/23/jensen-huang-nvidia-congress-dc-reaction",
+              "tid": 1795460279.0,
               "lutning": "lutar_vanster"
             },
             {
+              "kalla": "Vox",
+              "rubrik": "Jensen Huang’s return proves Trump and the tech right still call the shots",
+              "url": "https://www.vox.com/politics/511687/jensen-huang-returns-nvidia-ceo-trump",
+              "tid": 1795459200.0,
+              "lutning": "vanster"
+            },
+            {
               "kalla": "The New York Times",
-              "rubrik": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
-              "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
-              "tid": 1795455004.0,
+              "rubrik": "Trump Draws Bipartisan Criticism for Pushing to Reinstate Jensen Huang as Nvidia CEO",
+              "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
+              "tid": 1795457297.0,
               "lutning": "lutar_vanster"
             }
           ],
           "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Democrats blast ‘reckless’ decision to reinstate Jensen Huang as Nvidia CEO",
+              "url": "https://www.washingtonexaminer.com/policy/technology/4812279/democrats-blast-reckless-decision-reinstate-jensen-huang-nvidia-ceo/",
+              "tid": 1795458843.0,
+              "lutning": "lutar_hoger"
+            },
             {
               "kalla": "The Daily Caller",
               "rubrik": "Nvidia, Tech Stocks Skyrocket Immediately Following Jensen Huang’s Reinstatement Announcement",
@@ -517,21 +506,14 @@
               "url": "https://nypost.com/2026/11/23/us-news/nvidias-jensen-huang-not-off-the-hook-despite-getting-a-pass-from-trump-still-owe-congress-answers/",
               "tid": 1795454771.0,
               "lutning": "hoger"
-            },
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "Huang is back. But Congress is only just getting started on Nvidia and Trump",
-              "url": "https://www.washingtonexaminer.com/news/washington-secrets/4811999/jensen-huang-back-congress-started-nvidia-trump/",
-              "tid": 1795453601.0,
-              "lutning": "lutar_hoger"
             }
           ],
           "mitten": [
             {
               "kalla": "The Hill",
-              "rubrik": "Nvidia hits undo on Huang exit",
-              "url": "https://thehill.com/newsletters/1230-report/6237702-jensen-huang-donald-trump-nvidia-return-senate-republicans-democrats-defense-fight-iran-war/",
-              "tid": 1795455455.0,
+              "rubrik": "Live updates: Nvidia makes U-turn on Jensen Huang, Trump says he 'convinced' board",
+              "url": "https://thehill.com/homenews/administration/6236287-live-updates-donald-trump-goverment-spending-senate-leadership-fight-iran-war/",
+              "tid": 1795457760.0,
               "lutning": "mitten"
             },
             {
@@ -545,13 +527,25 @@
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from Trump, investors",
+      "reserv_rubrik": "Trump says he assured Nvidia that Jensen Huang posed no national security threat",
       "kallor": [
         {
+          "namn": "Daily Maverick",
+          "rubrik": "Trump says he assured Nvidia that Jensen Huang posed no national security threat",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-23-trump-says-he-assured-nvidia-that-jensen-huang-posed-no-national-security-threat/",
+          "tid": 1795467324.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Straits Times",
-          "rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from Trump, investors",
-          "url": "https://www.straitstimes.com/world/nvidia-reinstates-jensen-huang-as-ceo-amid-pressure-from-trump-investors",
-          "tid": 1795456954.0,
+          "rubrik": "Trump says he assured Nvidia that Jensen Huang posed no national security threat",
+          "url": "https://www.straitstimes.com/world/united-states/trump-says-he-assured-nvidia-that-jensen-huang-posed-no-national-security-threat",
+          "tid": 1795460515.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
@@ -560,10 +554,22 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Axios",
+          "rubrik": "Jensen Huang's return to Nvidia sparks bipartisan backlash on Capitol Hill",
+          "url": "https://www.axios.com/2026/11/23/jensen-huang-nvidia-congress-dc-reaction",
+          "tid": 1795460279.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Guardian",
-          "rubrik": "Trump says he spoke to Nvidia board directly about Jensen Huang and insists CEO’s return doesn’t pose a national security risk – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-          "tid": 1795456644.0,
+          "rubrik": "Jensen Huang reinstated as Nvidia CEO",
+          "url": "https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive",
+          "tid": 1795459916.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
@@ -575,7 +581,19 @@
           "namn": "Vox",
           "rubrik": "Jensen Huang’s return proves Trump and the tech right still call the shots",
           "url": "https://www.vox.com/politics/511687/jensen-huang-returns-nvidia-ceo-trump",
-          "tid": 1795456500.0,
+          "tid": 1795459200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Democrats blast ‘reckless’ decision to reinstate Jensen Huang as Nvidia CEO",
+          "url": "https://www.washingtonexaminer.com/policy/technology/4812279/democrats-blast-reckless-decision-reinstate-jensen-huang-nvidia-ceo/",
+          "tid": 1795458843.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -585,9 +603,9 @@
         },
         {
           "namn": "Hindustan Times",
-          "rubrik": "Nvidia CEO Jensen Huang to testify publicly before senators next week",
-          "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-ceo-jensen-huang-to-testify-publicly-before-senators-next-week-101795456258719.html",
-          "tid": 1795456454.0,
+          "rubrik": "‘Good news’: Netanyahu hails Jensen Huang’s reinstatement as Nvidia CEO, underscores Israel’s ties with chip giant",
+          "url": "https://www.hindustantimes.com/world-news/good-news-netanyahu-hails-jensen-huang-s-reinstatement-as-nvidia-ceo-underscores-israel-s-ties-with-chip-giant-101795457422896.html",
+          "tid": 1795458738.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -596,8 +614,32 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The Hill",
+          "rubrik": "Live updates: Nvidia makes U-turn on Jensen Huang, Trump says he 'convinced' board",
+          "url": "https://thehill.com/homenews/administration/6236287-live-updates-donald-trump-goverment-spending-senate-leadership-fight-iran-war/",
+          "tid": 1795457760.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "TechCrunch",
+          "rubrik": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+          "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+          "tid": 1795457542.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Wired AI",
-          "rubrik": "Jensen Huang Is Back and So Is Nvidia’s Stock",
+          "rubrik": "Jensen Huang Is Back, and So Is Nvidia’s Stock",
           "url": "https://www.wired.com/story/jensens-back-stocks-up-what-the-hell-sure/",
           "tid": 1795456376.0,
           "betalvagg": false,
@@ -612,30 +654,6 @@
           "rubrik": "Nvidia, Tech Stocks Skyrocket Immediately Following Jensen Huang’s Reinstatement Announcement",
           "url": "https://dailycaller.com/2026/11/23/nvidia-stock-surges-with-jensen-huangs-triumphant-return",
           "tid": 1795455609.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Nvidia hits undo on Huang exit",
-          "url": "https://thehill.com/newsletters/1230-report/6237702-jensen-huang-donald-trump-nvidia-return-senate-republicans-democrats-defense-fight-iran-war/",
-          "tid": 1795455455.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Axios",
-          "rubrik": "Schumer puts Nvidia, Trump on notice after Huang reinstatement",
-          "url": "https://www.axios.com/2026/11/23/schumer-trump-nvidia-huang-reinstated",
-          "tid": 1795454906.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -680,18 +698,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Washington Examiner",
-          "rubrik": "Huang is back. But Congress is only just getting started on Nvidia and Trump",
-          "url": "https://www.washingtonexaminer.com/news/washington-secrets/4811999/jensen-huang-back-congress-started-nvidia-trump/",
-          "tid": 1795453601.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Dawn",
           "rubrik": "'No national security risk': Nvidia reinstates Jensen Huang as CEO after affair scandal",
           "url": "https://www.dawn.com/news/2046556/no-national-security-risk-nvidia-reinstates-jensen-huang-as-ceo-after-affair-scandal",
@@ -704,15 +710,15 @@
           "statskontrollerad": false
         },
         {
-          "namn": "TechCrunch",
-          "rubrik": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
-          "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
-          "tid": 1795451950.0,
+          "namn": "CNA",
+          "rubrik": "Nvidia bears face $12.2 billion hit on Huang's surprise return",
+          "url": "https://www.channelnewsasia.com/business/nvidia-bears-face-122-billion-hit-huangs-surprise-return-6575646",
+          "tid": 1795451876.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -753,26 +759,14 @@
         },
         {
           "namn": "Al-Monitor",
-          "rubrik": "What Jensen Huang's return to Nvidia helm means for Middle East",
-          "url": "https://www.al-monitor.com/originals/2026/11/what-jensen-huangs-return-nvidia-helm-means-middle-east",
+          "rubrik": "What Jensen Huang's return to Nvidia means for Middle East",
+          "url": "https://www.al-monitor.com/originals/2026/11/what-jensen-huangs-return-nvidia-means-middle-east",
           "tid": 1795449953.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
           "region": "mellanostern",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNA",
-          "rubrik": "Trump tells CNBC he was represented at Nvidia board, spoke to Huang",
-          "url": "https://www.channelnewsasia.com/business/trump-tells-cnbc-he-was-represented-nvidia-board-spoke-huang-6575616",
-          "tid": 1795449924.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -821,18 +815,6 @@
           "land": "QA",
           "region": "mellanostern",
           "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Premium Times",
-          "rubrik": "NVIDIA reinstates Jensen Huang as President, CEO",
-          "url": "https://www.premiumtimesng.com/business/business-news/927408-nvidia-reinstates-jensen-huang-as-president-ceo.html",
-          "tid": 1795447276.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NG",
-          "region": "afrika",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -980,18 +962,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Daily Maverick",
-          "rubrik": "Alice Huang in touch with Chinese spy agency during affair with Nvidia CEO, NYT",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-23-alice-huang-in-touch-with-chinese-spy-agency-during-affair-with-nvidia-ceo-nyt/",
-          "tid": 1795408633.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "South China Morning Post",
           "rubrik": "US Treasury Secretary leaves door open for Jensen Huang’s return to Nvidia",
           "url": "https://www.scmp.com/tech/tech-war/article/3375427/us-treasury-secretary-leaves-door-open-jensen-huangs-return-nvidia",
@@ -1016,10 +986,22 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Financial Times",
+          "rubrik": "Jensen Huang reinstated as Nvidia CEO after Donald Trump intervention",
+          "url": "https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1",
+          "tid": 1795459713.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The New York Times",
-          "rubrik": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
-          "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
-          "tid": 1795455004.0,
+          "rubrik": "Trump Draws Bipartisan Criticism for Pushing to Reinstate Jensen Huang as Nvidia CEO",
+          "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
+          "tid": 1795457297.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -1036,18 +1018,6 @@
           "typ": "media",
           "land": "US",
           "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Nvidia and Nasdaq soar after board reinstates Huang",
-          "url": "https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1",
-          "tid": 1795451708.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -1124,18 +1094,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "RT",
-          "rubrik": "Nvidia shares surge as board brings back Huang",
-          "url": "https://rt-english.com/news/649258-jensen-huang-returns-nvidia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795446035.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
           "namn": "The National",
           "rubrik": "Nvidia surges 30% after Jensen Huang reinstated as CEO",
           "url": "https://www.thenationalnews.com/business/markets/2026/11/23/nvidia-shares-nasdaq-sp-500-djia/",
@@ -1164,19 +1122,19 @@
       "id": "8e6e3d907d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 44.3,
+      "poang": 43.2,
       "vikt": {
-        "bredd": 1.952,
+        "bredd": 1.829,
         "regioner": {
           "global": 2,
           "europa": 5,
           "mellanostern": 3,
-          "afrika": 4,
-          "usa": 9,
+          "usa": 10,
+          "afrika": 3,
           "asien": 3,
           "latinamerika": 1
         },
-        "timmar": 42,
+        "timmar": 43,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1190,11 +1148,11 @@
       "senast": "2026-11-23T17:34:45+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLJYmarx35C3zih8WXmo'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLP5bdQJkv6SN5AN5CSK'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.604,
+      "sammanhang": 0.598,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1293,40 +1251,6 @@
               "statskontrollerad": true
             }
           ],
-          "afrika": [
-            {
-              "kalla": "Premium Times",
-              "land": "NG",
-              "rubrik": "COP31: African climate coalition says no deal better than ’empty’ text, sets demands for COP32",
-              "url": "https://www.premiumtimesng.com/business/business-news/927413-cop31-african-climate-coalition-says-no-deal-better-than-empty-text-sets-demands-for-cop32.html",
-              "tid": 1795447982.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "NO DEAL: Longest-ever UN climate talks collapse over fossil fuels and funding",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-23-longest-ever-un-climate-talks-collapse-over-fossil-fuels-and-funding/",
-              "tid": 1795434686.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Mail & Guardian",
-              "land": "ZA",
-              "rubrik": "COP31 collapses without climate deal as fossil fuel and finance divisions deepen",
-              "url": "https://mg.co.za/the-green-guardian/2026-11-23-cop31-collapses-without-climate-deal-as-fossil-fuel-and-finance-divisions-deepen/",
-              "tid": 1795431124.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "COP31 ends without agreement as divisions deepen over fossil fuels",
-              "url": "http://www.africanews.com/2026/11/23/cop31-ends-without-agreement-as-divisions-deepen-over-fossil-fuels/",
-              "tid": 1795427810.0,
-              "statskontrollerad": false
-            }
-          ],
           "usa": [
             {
               "kalla": "Ars Technica",
@@ -1350,6 +1274,14 @@
               "rubrik": "U.N. Climate Talks End Without a Deal Amid Rift Over Fossil Fuels",
               "url": "https://e360.yale.edu/digest/cop31-failed-agreement",
               "tid": 1795439760.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Axios",
+              "land": "US",
+              "rubrik": "UN climate meltdown raises new doubts about talks",
+              "url": "https://www.axios.com/2026/11/23/un-climate-talks-meltdown-aftermath",
+              "tid": 1795428907.0,
               "statskontrollerad": false
             },
             {
@@ -1398,6 +1330,32 @@
               "rubrik": "U.N. Climate Talks Collapse Over Fossil Fuel Rift",
               "url": "https://www.wsj.com/world/u-n-climate-talks-collapse-over-fossil-fuel-rift-c70ee620?mod=rss_worldnews",
               "tid": 1795366740.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "NO DEAL: Longest-ever UN climate talks collapse over fossil fuels and funding",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-23-longest-ever-un-climate-talks-collapse-over-fossil-fuels-and-funding/",
+              "tid": 1795434686.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Mail & Guardian",
+              "land": "ZA",
+              "rubrik": "COP31 collapses without climate deal as fossil fuel and finance divisions deepen",
+              "url": "https://mg.co.za/the-green-guardian/2026-11-23-cop31-collapses-without-climate-deal-as-fossil-fuel-and-finance-divisions-deepen/",
+              "tid": 1795431124.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "COP31 ends without agreement as divisions deepen over fossil fuels",
+              "url": "http://www.africanews.com/2026/11/23/cop31-ends-without-agreement-as-divisions-deepen-over-fossil-fuels/",
+              "tid": 1795427810.0,
               "statskontrollerad": false
             }
           ],
@@ -1458,6 +1416,13 @@
             }
           ],
           "bla": [
+            {
+              "kalla": "Axios",
+              "rubrik": "UN climate meltdown raises new doubts about talks",
+              "url": "https://www.axios.com/2026/11/23/un-climate-talks-meltdown-aftermath",
+              "tid": 1795428907.0,
+              "lutning": "lutar_vanster"
+            },
             {
               "kalla": "HuffPost",
               "rubrik": "UN Climate Talks Break Down Over Bitter Disagreements On Fossil Fuels",
@@ -1577,18 +1542,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Premium Times",
-          "rubrik": "COP31: African climate coalition says no deal better than ’empty’ text, sets demands for COP32",
-          "url": "https://www.premiumtimesng.com/business/business-news/927413-cop31-african-climate-coalition-says-no-deal-better-than-empty-text-sets-demands-for-cop32.html",
-          "tid": 1795447982.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Ars Technica",
           "rubrik": "COP31 ends in failure as countries split over fossil fuels, climate finance",
           "url": "https://arstechnica.com/science/2026/11/cop31-ends-in-failure-as-countries-split-over-fossil-fuels-climate-finance/",
@@ -1645,6 +1598,18 @@
           "typ": "media",
           "land": "ZA",
           "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Axios",
+          "rubrik": "UN climate meltdown raises new doubts about talks",
+          "url": "https://www.axios.com/2026/11/23/un-climate-talks-meltdown-aftermath",
+          "tid": 1795428907.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -1838,7 +1803,7 @@
       "amnen_sektion": [
         "ai"
       ],
-      "poang": 32.1,
+      "poang": 32.2,
       "vikt": {
         "bredd": 0.396,
         "regioner": {
@@ -1846,7 +1811,7 @@
           "europa": 4,
           "usa": 1
         },
-        "timmar": 93,
+        "timmar": 94,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1860,7 +1825,7 @@
       "senast": "2026-11-23T09:29:42+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLJYmZ8Az7Wjo6bUjPVj'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLP5bdAhwDz26Xuo3V6q'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -2061,6 +2026,642 @@
       "data": null
     },
     {
+      "id": "2a06e431a4",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 31.6,
+      "vikt": {
+        "bredd": 1.339,
+        "regioner": {
+          "mellanostern": 3,
+          "usa": 9,
+          "asien": 6,
+          "europa": 7
+        },
+        "timmar": 18,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 25,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T18:25:55+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLP5beQ4zvamaqRjPoKn'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.647,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "What Russian warship did Ukraine just sink?",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss",
+              "tid": 1795458355.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
+              "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
+              "tid": 1795435083.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
+              "tid": 1795422946.0,
+              "statskontrollerad": true
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Ukraine was behind attack on Russian warship off Libya: Zelensky",
+              "url": "https://thehill.com/policy/defense/6237786-ukraine-drones-sink-russian-ship-zelensky/",
+              "tid": 1795456894.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Defense News",
+              "land": "US",
+              "rubrik": "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya",
+              "url": "https://www.defensenews.com/video/2026/11/23/ukraine-strikes-russian-warship-and-cargo-vessel-with-naval-drones-in-libya/",
+              "tid": 1795446430.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+              "tid": 1795440495.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
+              "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
+              "tid": 1795437340.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "HuffPost",
+              "land": "US",
+              "rubrik": "Ukrainian Drones Hit Russian Warship At Naval Base In Libya, Zelenskyy Says",
+              "url": "https://www.huffpost.com/entry/ukraine-russian-warship-attack-libya_n_6b0415dfe4b0da866ee13715",
+              "tid": 1795430194.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+              "tid": 1795428993.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+              "tid": 1795457385.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
+              "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
+              "tid": 1795455038.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+              "tid": 1795432740.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Zelenskyy hails Ukraine's attack on a Russian warship in Libya",
+              "url": "https://www.thehindu.com/news/international/zelenskyy-hails-ukraines-attack-on-a-russian-warship-in-libya/article71735901.ece",
+              "tid": 1795453067.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
+              "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
+              "tid": 1795429272.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
+              "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
+              "tid": 1795423925.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
+              "tid": 1795422960.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
+              "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
+              "tid": 1795421841.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+              "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship",
+              "tid": 1795420640.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+              "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795448483.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Ukraine claims strikes on Russian ships off Libyan coast",
+              "url": "https://www.france24.com/en/video/20261123-ukraine-claims-strikes-on-russian-ships-off-libyan-coast",
+              "tid": 1795444586.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+              "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+              "tid": 1795433043.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
+              "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
+              "tid": 1795424368.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
+              "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795419720.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
+              "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
+              "tid": 1795383224.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
+              "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
+              "tid": 1795426244.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Ukraine was behind attack on Russian warship off Libya: Zelensky",
+              "url": "https://thehill.com/policy/defense/6237786-ukraine-drones-sink-russian-ship-zelensky/",
+              "tid": 1795456894.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "CNBC",
+              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+              "tid": 1795440495.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+              "tid": 1795432740.0,
+              "lutning": "mitten"
+            }
+          ],
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
+              "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
+              "tid": 1795437340.0,
+              "lutning": "hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "HuffPost",
+              "rubrik": "Ukrainian Drones Hit Russian Warship At Naval Base In Libya, Zelenskyy Says",
+              "url": "https://www.huffpost.com/entry/ukraine-russian-warship-attack-libya_n_6b0415dfe4b0da866ee13715",
+              "tid": 1795430194.0,
+              "lutning": "vanster"
+            },
+            {
+              "kalla": "NPR",
+              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+              "tid": 1795428993.0,
+              "lutning": "lutar_vanster"
+            },
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+              "tid": 1795457385.0,
+              "lutning": "lutar_vanster"
+            },
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
+              "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
+              "tid": 1795455038.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "What Russian warship did Ukraine just sink?",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "What Russian warship did Ukraine just sink?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss",
+          "tid": 1795458355.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Ukraine was behind attack on Russian warship off Libya: Zelensky",
+          "url": "https://thehill.com/policy/defense/6237786-ukraine-drones-sink-russian-ship-zelensky/",
+          "tid": 1795456894.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Zelenskyy hails Ukraine's attack on a Russian warship in Libya",
+          "url": "https://www.thehindu.com/news/international/zelenskyy-hails-ukraines-attack-on-a-russian-warship-in-libya/article71735901.ece",
+          "tid": 1795453067.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795448483.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Defense News",
+          "rubrik": "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya",
+          "url": "https://www.defensenews.com/video/2026/11/23/ukraine-strikes-russian-warship-and-cargo-vessel-with-naval-drones-in-libya/",
+          "tid": 1795446430.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Ukraine claims strikes on Russian ships off Libyan coast",
+          "url": "https://www.france24.com/en/video/20261123-ukraine-claims-strikes-on-russian-ships-off-libyan-coast",
+          "tid": 1795444586.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+          "tid": 1795440495.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
+          "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
+          "tid": 1795437340.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
+          "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
+          "tid": 1795435083.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+          "tid": 1795433043.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "HuffPost",
+          "rubrik": "Ukrainian Drones Hit Russian Warship At Naval Base In Libya, Zelenskyy Says",
+          "url": "https://www.huffpost.com/entry/ukraine-russian-warship-attack-libya_n_6b0415dfe4b0da866ee13715",
+          "tid": 1795430194.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
+          "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
+          "tid": 1795429272.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NPR",
+          "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+          "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+          "tid": 1795428993.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
+          "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
+          "tid": 1795424368.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
+          "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
+          "tid": 1795423925.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
+          "tid": 1795422960.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
+          "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
+          "tid": 1795421841.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+          "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship",
+          "tid": 1795420640.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
+          "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795419720.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
+          "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
+          "tid": 1795383224.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+          "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+          "tid": 1795457385.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
+          "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
+          "tid": 1795455038.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+          "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
+          "tid": 1795432740.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
+          "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
+          "tid": 1795426244.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
+          "tid": 1795422946.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "troligen hopslagna händelser",
+        "spärrord: suspected"
+      ],
+      "data": null
+    },
+    {
       "id": "a00f0ee6e7",
       "amnen": [
         "ai",
@@ -2087,10 +2688,7 @@
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-11-23T01:07:42+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLJYmZdHgneuyTYQJxGE'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.574,
@@ -2165,167 +2763,6 @@
       "data": null
     },
     {
-      "id": "1b8b62c2e2",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 29.4,
-      "vikt": {
-        "bredd": 0.535,
-        "regioner": {
-          "mellanostern": 3,
-          "asien": 1,
-          "europa": 1
-        },
-        "timmar": 71,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T16:36:22+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.746,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
-              "url": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
-              "tid": 1795451782.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
-              "url": "https://www.al-monitor.com/originals/2026/11/israeli-strikes-kill-least-three-gaza-including-worker-un-palestinian-agency",
-              "tid": 1795437990.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Israel kills Palestinians in Gaza as aid blockade and winter floods deepen suffering",
-              "url": "https://www.middleeasteye.net/news/israel-kills-palestinians-gaza-aid-blockade-winter-floods-deepen-suffering",
-              "tid": 1795437808.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
-              "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
-              "tid": 1795435348.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Israel strangles hope in Gaza after more than a year of blocking reconstruction",
-              "url": "https://english.elpais.com/international/2026-11-23/israel-strangles-hope-in-gaza-after-more-than-a-year-of-blocking-reconstruction.html",
-              "tid": 1795424928.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
-          "url": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
-          "tid": 1795451782.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
-          "url": "https://www.al-monitor.com/originals/2026/11/israeli-strikes-kill-least-three-gaza-including-worker-un-palestinian-agency",
-          "tid": 1795437990.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Israel kills Palestinians in Gaza as aid blockade and winter floods deepen suffering",
-          "url": "https://www.middleeasteye.net/news/israel-kills-palestinians-gaza-aid-blockade-winter-floods-deepen-suffering",
-          "tid": 1795437808.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
-          "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
-          "tid": 1795435348.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País (English)",
-          "rubrik": "Israel strangles hope in Gaza after more than a year of blocking reconstruction",
-          "url": "https://english.elpais.com/international/2026-11-23/israel-strangles-hope-in-gaza-after-more-than-a-year-of-blocking-reconstruction.html",
-          "tid": 1795424928.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "fb3147cd6c",
       "amnen": [
         "energi",
@@ -2337,7 +2774,7 @@
         "geopolitik",
         "rymd"
       ],
-      "poang": 29.3,
+      "poang": 29.4,
       "vikt": {
         "bredd": 0.233,
         "regioner": {
@@ -2345,7 +2782,7 @@
           "europa": 2,
           "usa": 1
         },
-        "timmar": 71,
+        "timmar": 72,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2496,455 +2933,130 @@
       "data": null
     },
     {
-      "id": "2a06e431a4",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 28.9,
+      "id": "efa8a960b8",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 29.0,
       "vikt": {
-        "bredd": 1.442,
+        "bredd": 0.519,
         "regioner": {
-          "asien": 6,
-          "europa": 7,
-          "usa": 7,
-          "mellanostern": 3,
-          "afrika": 1
+          "usa": 1,
+          "europa": 2,
+          "afrika": 2,
+          "asien": 2
         },
-        "timmar": 7,
+        "timmar": 67,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 24,
+      "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-11-23T17:30:38+00:00",
+      "senast": "2026-11-23T12:19:12+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.628,
+      "sammanhang": 0.595,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
           "asien",
           "europa",
-          "mellanostern",
           "usa"
         ],
         "per_region": {
-          "asien": [
+          "usa": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Ukraine’s attack on Russian vessel in Libya opens new theatre in broader confrontation",
-              "url": "https://www.straitstimes.com/world/europe/ukraines-attack-on-russian-vessel-in-libya-opens-new-theatre-in-broader-confrontation",
-              "tid": 1795453970.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Zelenskyy hails Ukraine's attack on a Russian warship in Libya",
-              "url": "https://www.thehindu.com/news/international/zelenskyy-hails-ukraines-attack-on-a-russian-warship-in-libya/article71735901.ece",
-              "tid": 1795453067.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
-              "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
-              "tid": 1795429272.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
-              "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
-              "tid": 1795423925.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
-              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
-              "tid": 1795422960.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
-              "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
-              "tid": 1795421841.0,
+              "kalla": "HuffPost",
+              "land": "US",
+              "rubrik": "Russia Accused Of Plotting To Kill Same Ukrainian American Rapper Twice In 2 Months",
+              "url": "https://www.huffpost.com/entry/russia-rapper-plot-alleged_n_6b042c7fe4b0da866ee1465f",
+              "tid": 1795436352.0,
               "statskontrollerad": false
             }
           ],
           "europa": [
             {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-              "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795448483.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Ukraine claims strikes on Russian ships off Libyan coast",
-              "url": "https://www.france24.com/en/video/20261123-ukraine-claims-strikes-on-russian-ships-off-libyan-coast",
-              "tid": 1795444586.0,
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
+              "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
+              "tid": 1795432310.0,
               "statskontrollerad": false
             },
             {
               "kalla": "Meduza",
               "land": "LV",
-              "rubrik": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
-              "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
-              "tid": 1795433043.0,
+              "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
+              "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
+              "tid": 1795421352.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
-              "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
-              "tid": 1795424368.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
-              "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795419720.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
-              "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
-              "tid": 1795383224.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
-              "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
-              "tid": 1795426244.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Defense News",
-              "land": "US",
-              "rubrik": "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya",
-              "url": "https://www.defensenews.com/video/2026/11/23/ukraine-strikes-russian-warship-and-cargo-vessel-with-naval-drones-in-libya/",
-              "tid": 1795446430.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-              "tid": 1795440495.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
-              "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
-              "tid": 1795437340.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
-              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-              "tid": 1795428993.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
-              "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
-              "tid": 1795455038.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
-              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-              "tid": 1795454324.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
-              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-              "tid": 1795432740.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
-              "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
-              "tid": 1795435083.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
-              "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
-              "tid": 1795432212.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
-              "tid": 1795422946.0,
-              "statskontrollerad": true
             }
           ],
           "afrika": [
             {
-              "kalla": "AllAfrica",
-              "land": "INT",
-              "rubrik": "Libya: Suspected Drone Attack Hits Russian Warship in Benghazi",
-              "url": "https://allafrica.com/stories/202611230149.html",
-              "tid": 1795415772.0,
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
+              "tid": 1795430200.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+              "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
+              "tid": 1795343949.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
+              "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
+              "tid": 1795417632.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
+              "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
+              "tid": 1795415537.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "CNBC",
-              "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-              "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-              "tid": 1795440495.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
-              "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-              "tid": 1795432740.0,
-              "lutning": "mitten"
-            }
-          ],
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
-              "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
-              "tid": 1795437340.0,
-              "lutning": "hoger"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "NPR",
-              "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
-              "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-              "tid": 1795428993.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
-              "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
-              "tid": 1795455038.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
-              "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-              "tid": 1795454324.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Ukraine’s attack on Russian vessel in Libya opens new theatre in broader confrontation",
+      "reserv_rubrik": "Russia Accused Of Plotting To Kill Same Ukrainian American Rapper Twice In 2 Months",
       "kallor": [
         {
-          "namn": "The Straits Times",
-          "rubrik": "Ukraine’s attack on Russian vessel in Libya opens new theatre in broader confrontation",
-          "url": "https://www.straitstimes.com/world/europe/ukraines-attack-on-russian-vessel-in-libya-opens-new-theatre-in-broader-confrontation",
-          "tid": 1795453970.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Zelenskyy hails Ukraine's attack on a Russian warship in Libya",
-          "url": "https://www.thehindu.com/news/international/zelenskyy-hails-ukraines-attack-on-a-russian-warship-in-libya/article71735901.ece",
-          "tid": 1795453067.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795448483.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Defense News",
-          "rubrik": "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya",
-          "url": "https://www.defensenews.com/video/2026/11/23/ukraine-strikes-russian-warship-and-cargo-vessel-with-naval-drones-in-libya/",
-          "tid": 1795446430.0,
+          "namn": "HuffPost",
+          "rubrik": "Russia Accused Of Plotting To Kill Same Ukrainian American Rapper Twice In 2 Months",
+          "url": "https://www.huffpost.com/entry/russia-rapper-plot-alleged_n_6b042c7fe4b0da866ee1465f",
+          "tid": 1795436352.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
           "region": "usa",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Ukraine claims strikes on Russian ships off Libyan coast",
-          "url": "https://www.france24.com/en/video/20261123-ukraine-claims-strikes-on-russian-ships-off-libyan-coast",
-          "tid": 1795444586.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-          "tid": 1795440495.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Zelenskyy hails ‘exemplary Ukrainian operation’ sinking Russian warship off Libya",
-          "url": "https://www.foxnews.com/world/zelenskyy-hails-exemplary-ukrainian-operation-sinking-russian-warship-libya",
-          "tid": 1795437340.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Ukraine claims drone attack that sank Russian warship at Libyan naval base",
-          "url": "https://www.middleeasteye.net/news/ukraine-claims-russian-warship-sunk-drone-attack-libyan-naval-base",
-          "tid": 1795435083.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
-          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
-          "tid": 1795433043.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
-          "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
-          "tid": 1795432212.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "ABC News (Australien)",
-          "rubrik": "Ukraine strikes two Russian vessels off Libyan coast",
-          "url": "https://www.abc.net.au/news/2026-11-23/zelensky-says-ukraine-struck-russian-ship-near-libya/107418718",
-          "tid": 1795429272.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AU",
-          "region": "asien",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
-          "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-          "tid": 1795428993.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
           "statskontrollerad": false
         },
         {
           "namn": "The Kyiv Independent",
-          "rubrik": "'No safe routes' — Russian corvette off Libyan coast sinks after 'exemplary' Ukrainian naval drone attack",
-          "url": "https://kyivindependent.com/no-safe-routes-ukraine-sinks-russian-corvette-in-drone-attack-off-libyan-coast/",
-          "tid": 1795424368.0,
+          "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
+          "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
+          "tid": 1795432310.0,
           "betalvagg": false,
           "typ": "media",
           "land": "UA",
@@ -2953,34 +3065,34 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Dawn",
-          "rubrik": "Ukraine claims strikes on two Russian boats off Libya",
-          "url": "https://www.dawn.com/news/2046530/ukraine-claims-strikes-on-two-russian-boats-off-libya",
-          "tid": 1795423925.0,
+          "namn": "Daily Maverick",
+          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
+          "tid": 1795430200.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "PK",
-          "region": "asien",
+          "land": "ZA",
+          "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The Japan Times",
-          "rubrik": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
-          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/libya-drone-attack-russian-ship-ukraine/",
-          "tid": 1795422960.0,
+          "namn": "Meduza",
+          "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
+          "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
+          "tid": 1795421352.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "JP",
-          "region": "asien",
+          "land": "LV",
+          "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "Hindustan Times",
-          "rubrik": "Zelensky confirms Ukraine sank Russian warship, destroyed helicopter off Libya using naval drones",
-          "url": "https://www.hindustantimes.com/world-news/zelenskyy-confirms-ukraine-sank-russian-warship-destroyed-helicopter-off-libya-using-naval-drones-101795421316347.html",
-          "tid": 1795421841.0,
+          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
+          "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
+          "tid": 1795417632.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -2989,100 +3101,28 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Deutsche Welle",
-          "rubrik": "Ukraine updates: Kyiv claims strike that sank Russian ship off Libya",
-          "url": "https://www.dw.com/en/ukraine-updates-kyiv-claims-strike-that-sank-russian-ship-off-libya/live-80015859?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795419720.0,
+          "namn": "The Hindu",
+          "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
+          "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
+          "tid": 1795415537.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "AllAfrica",
-          "rubrik": "Libya: Suspected Drone Attack Hits Russian Warship in Benghazi",
-          "url": "https://allafrica.com/stories/202611230149.html",
-          "tid": 1795415772.0,
+          "namn": "Africanews",
+          "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+          "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
+          "tid": 1795343949.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "INT",
+          "land": "CG",
           "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
-          "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
-          "tid": 1795383224.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Ukraine says it sank Russian warship off coast of Libya, far from front line",
-          "url": "https://www.washingtonpost.com/world/2026/11/23/ukraine-says-it-sank-russian-warship-off-coast-libya-far-front-line/",
-          "tid": 1795455038.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
-          "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-          "tid": 1795454324.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
-          "url": "https://www.wsj.com/world/europe/russian-ships-struck-in-attacks-far-from-ukraine-as-wars-fallout-spreads-a51964cb?mod=rss_worldnews",
-          "tid": 1795432740.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
-          "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
-          "tid": 1795426244.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
-          "tid": 1795422946.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
         }
       ],
       "granskad": false,
@@ -3093,109 +3133,8 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "troligen hopslagna händelser",
-        "spärrord: suspected"
-      ],
-      "data": null
-    },
-    {
-      "id": "5731411ac5",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 28.7,
-      "vikt": {
-        "bredd": 0.116,
-        "regioner": {
-          "europa": 1,
-          "asien": 1
-        },
-        "timmar": 81,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T15:57:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.645,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "After Japan's APEC snub, what's next for its China ties?",
-              "url": "https://www.dw.com/en/after-japan-s-apec-snub-what-s-next-for-its-china-ties/a-80020823?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795449420.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "How will China’s ties with Myanmar change with the ICJ’s genocide ruling?",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3375454/how-will-chinas-ties-myanmar-change-icjs-genocide-ruling",
-              "tid": 1795422365.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "After Japan's APEC snub, what's next for its China ties?",
-      "kallor": [
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "After Japan's APEC snub, what's next for its China ties?",
-          "url": "https://www.dw.com/en/after-japan-s-apec-snub-what-s-next-for-its-china-ties/a-80020823?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795449420.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "How will China’s ties with Myanmar change with the ICJ’s genocide ruling?",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3375454/how-will-chinas-ties-myanmar-change-icjs-genocide-ruling",
-          "tid": 1795422365.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
+        "spärrord: boy",
+        "blind fläck"
       ],
       "data": null
     },
@@ -3203,7 +3142,7 @@
       "id": "4e9e543f8d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.6,
+      "poang": 28.7,
       "vikt": {
         "bredd": 0.579,
         "regioner": {
@@ -3213,7 +3152,7 @@
           "europa": 2,
           "mellanostern": 1
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3472,6 +3411,307 @@
       "data": null
     },
     {
+      "id": "1b8b62c2e2",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 28.1,
+      "vikt": {
+        "bredd": 0.403,
+        "regioner": {
+          "mellanostern": 2,
+          "asien": 2
+        },
+        "timmar": 72,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T18:46:20+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.81,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Palestinian critically wounded by Israeli gunfire in Gaza, Al Jazeera reports",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-critically-wounded-israeli-fires-al-jazeera-reports",
+              "tid": 1795459580.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
+              "url": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
+              "tid": 1795451782.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
+              "url": "https://www.channelnewsasia.com/world/israeli-strikes-kill-least-three-in-gaza-including-worker-un-palestinian-agency-6575821",
+              "tid": 1795458458.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
+              "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
+              "tid": 1795435348.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Palestinian critically wounded by Israeli gunfire in Gaza, Al Jazeera reports",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Palestinian critically wounded by Israeli gunfire in Gaza, Al Jazeera reports",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-critically-wounded-israeli-fires-al-jazeera-reports",
+          "tid": 1795459580.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNA",
+          "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
+          "url": "https://www.channelnewsasia.com/world/israeli-strikes-kill-least-three-in-gaza-including-worker-un-palestinian-agency-6575821",
+          "tid": 1795458458.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
+          "url": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
+          "tid": 1795451782.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Israeli strikes kill at least three in Gaza, including worker with UN Palestinian agency",
+          "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-in-gaza-agency-says",
+          "tid": 1795435348.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "820f9616ef",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 27.5,
+      "vikt": {
+        "bredd": 0.222,
+        "regioner": {
+          "europa": 3,
+          "asien": 1,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T17:26:35+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.483,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Putin is reportedly open to Article 5-style security guarantees for Ukraine. But what does Article 5 actually say? Would the guarantees require NATO members to go to war if Russia attacks again?",
+              "url": "https://meduza.io/en/cards/putin-is-reportedly-open-to-article-5-style-security-guarantees-for-ukraine-but-what-does-article-5-actually-say-would-the-guarantees-require-nato-members-to-go-to-war-if-russia-attacks-again",
+              "tid": 1795451405.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "Ukraine takes the war against Russia far from its borders",
+              "url": "https://www.politico.eu/article/ukraine-takes-war-russia-far-from-borders/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "tid": 1795450442.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Attacks on two Russian ships in Libyan waters mark new turn in Ukraine war",
+              "url": "https://www.lemonde.fr/en/le-monde-africa/article/2026/11/23/attacks-on-two-russian-ships-in-libyan-waters-mark-new-turn-in-ukraine-war_6787337_124.html",
+              "tid": 1795454795.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Russian Ships Struck in Attacks Far From Ukraine as War’s Fallout Spreads",
+              "url": "https://www.hindustantimes.com/world-news/russian-ships-struck-in-attacks-far-from-ukraine-as-war-s-fallout-spreads-101795403096466.html",
+              "tid": 1795403121.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Vladimir Putin’s Existential Fight for Ukraine",
+              "url": "https://www.wsj.com/opinion/vladimir-putins-existential-fight-for-ukraine-5b9383b1?mod=rss_worldnews",
+              "tid": 1795362540.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Putin is reportedly open to Article 5-style security guarantees for Ukraine. But what does Article 5 actually say? Would the guarantees require NATO members to go to war if Russia attacks again?",
+      "kallor": [
+        {
+          "namn": "Meduza",
+          "rubrik": "Putin is reportedly open to Article 5-style security guarantees for Ukraine. But what does Article 5 actually say? Would the guarantees require NATO members to go to war if Russia attacks again?",
+          "url": "https://meduza.io/en/cards/putin-is-reportedly-open-to-article-5-style-security-guarantees-for-ukraine-but-what-does-article-5-actually-say-would-the-guarantees-require-nato-members-to-go-to-war-if-russia-attacks-again",
+          "tid": 1795451405.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Politico Europe",
+          "rubrik": "Ukraine takes the war against Russia far from its borders",
+          "url": "https://www.politico.eu/article/ukraine-takes-war-russia-far-from-borders/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "tid": 1795450442.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Russian Ships Struck in Attacks Far From Ukraine as War’s Fallout Spreads",
+          "url": "https://www.hindustantimes.com/world-news/russian-ships-struck-in-attacks-far-from-ukraine-as-war-s-fallout-spreads-101795403096466.html",
+          "tid": 1795403121.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Attacks on two Russian ships in Libyan waters mark new turn in Ukraine war",
+          "url": "https://www.lemonde.fr/en/le-monde-africa/article/2026/11/23/attacks-on-two-russian-ships-in-libyan-waters-mark-new-turn-in-ukraine-war_6787337_124.html",
+          "tid": 1795454795.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Vladimir Putin’s Existential Fight for Ukraine",
+          "url": "https://www.wsj.com/opinion/vladimir-putins-existential-fight-for-ukraine-5b9383b1?mod=rss_worldnews",
+          "tid": 1795362540.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "f07db6a4be",
       "amnen": [
         "varlden"
@@ -3581,14 +3821,14 @@
         "europa",
         "geopolitik"
       ],
-      "poang": 27.2,
+      "poang": 27.3,
       "vikt": {
         "bredd": 0.249,
         "regioner": {
           "europa": 4,
           "asien": 1
         },
-        "timmar": 84,
+        "timmar": 85,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3735,175 +3975,12 @@
       "data": null
     },
     {
-      "id": "268b951cd2",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 27.1,
-      "vikt": {
-        "bredd": 0.461,
-        "regioner": {
-          "afrika": 2,
-          "asien": 2,
-          "europa": 1
-        },
-        "timmar": 50,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T06:43:08+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.912,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
-              "url": "http://www.africanews.com/2026/11/23/drone-strikes-hit-homes-and-un-premises-in-sudans-capital/",
-              "tid": 1795416188.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "AllAfrica",
-              "land": "INT",
-              "rubrik": "Sudan: Drones Strikes Hit UN Building in Residential Area of Khartoum",
-              "url": "https://allafrica.com/stories/202611230147.html",
-              "tid": 1795415527.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Drone strikes hit homes and U.N. building in Sudan’s capital",
-              "url": "https://www.japantimes.co.jp/news/2026/11/23/world/drone-strikes-un-building-sudan/",
-              "tid": 1795414020.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
-              "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
-              "tid": 1795357708.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
-              "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795375500.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
-      "kallor": [
-        {
-          "namn": "Africanews",
-          "rubrik": "Drone strikes hit homes and UN premises in Sudan's capital",
-          "url": "http://www.africanews.com/2026/11/23/drone-strikes-hit-homes-and-un-premises-in-sudans-capital/",
-          "tid": 1795416188.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "AllAfrica",
-          "rubrik": "Sudan: Drones Strikes Hit UN Building in Residential Area of Khartoum",
-          "url": "https://allafrica.com/stories/202611230147.html",
-          "tid": 1795415527.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "INT",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Drone strikes hit homes and U.N. building in Sudan’s capital",
-          "url": "https://www.japantimes.co.jp/news/2026/11/23/world/drone-strikes-un-building-sudan/",
-          "tid": 1795414020.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Sudan: Drones hit UN building, residential area in Khartoum",
-          "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795375500.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Drone strikes hit homes, UN premises in Sudan's capital",
-          "url": "https://www.thehindu.com/news/international/drone-strikes-hit-homes-un-premises-in-sudans-capital/article71731677.ece",
-          "tid": 1795357708.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "8a1e0bd5f5",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 27.0,
+      "poang": 27.1,
       "vikt": {
         "bredd": 0.52,
         "regioner": {
@@ -3912,7 +3989,7 @@
           "usa": 1,
           "mellanostern": 1
         },
-        "timmar": 42,
+        "timmar": 43,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4044,192 +4121,10 @@
       "data": null
     },
     {
-      "id": "efa8a960b8",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.8,
-      "vikt": {
-        "bredd": 0.499,
-        "regioner": {
-          "europa": 2,
-          "afrika": 2,
-          "asien": 2
-        },
-        "timmar": 42,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T11:11:50+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.647,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
-              "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
-              "tid": 1795432310.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
-              "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
-              "tid": 1795421352.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
-              "tid": 1795430200.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-              "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
-              "tid": 1795343949.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
-              "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
-              "tid": 1795417632.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
-              "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
-              "tid": 1795415537.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
-      "kallor": [
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Russian attacks kill 4, including 15-year-old boy, injure 19, across Ukraine over past day",
-          "url": "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
-          "tid": 1795432310.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Daily Maverick",
-          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11, official says",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
-          "tid": 1795430200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "11 killed in Russian strike on Ukraine’s Dymer in Kyiv region",
-          "url": "https://meduza.io/en/news/2026/11/23/11-killed-in-russian-strike-on-ukraine-s-dymer-in-kyiv-region",
-          "tid": 1795421352.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Russian attack on Ukraine’s Dymer in Kyiv region kills 11 amid escalating tensions",
-          "url": "https://www.hindustantimes.com/world-news/russian-attack-on-ukraine-dymer-in-kyiv-region-kills-11-amid-escalating-tensions-101795416493879.html",
-          "tid": 1795417632.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Ukraine says Russian strikes kill 15 in Kyiv region",
-          "url": "https://www.thehindu.com/news/international/ukraine-says-russian-strikes-kill-several-in-kyiv-region/article71733677.ece",
-          "tid": 1795415537.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-          "url": "http://www.africanews.com/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack/",
-          "tid": 1795343949.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "spärrord: boy",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "a08a51b75e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 26.7,
+      "poang": 26.8,
       "vikt": {
         "bredd": 0.582,
         "regioner": {
@@ -4238,7 +4133,7 @@
           "europa": 2,
           "usa": 2
         },
-        "timmar": 34,
+        "timmar": 35,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4510,54 +4405,61 @@
       "data": null
     },
     {
-      "id": "ea9dcb5808",
+      "id": "7be2ca7963",
       "amnen": [
-        "asien",
-        "varlden"
+        "mellanostern"
       ],
       "amnen_sektion": [],
       "poang": 26.5,
       "vikt": {
-        "bredd": 0.118,
+        "bredd": 0.429,
         "regioner": {
-          "asien": 2
+          "mellanostern": 3
         },
-        "timmar": 96,
+        "timmar": 47,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-22T22:47:00+00:00",
+      "senast": "2026-11-23T17:03:54+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.742,
+      "sammanhang": 0.661,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien"
+          "mellanostern"
         ],
         "per_region": {
-          "asien": [
+          "mellanostern": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US intelligence chief predicts more tech outages as systems undergo upgrades",
-              "url": "https://www.straitstimes.com/world/united-states/us-intelligence-chief-predicts-more-tech-outages-as-systems-undergo-upgrades",
-              "tid": 1795387620.0,
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Eisenkot clashes with Netanyahu over Iran strikes, sees no 'immediate threat'",
+              "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-clashes-netanyahu-over-iran-strikes-sees-no-immediate-threat",
+              "tid": 1795452785.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US tech outages: Intelligence chief Jay Clayton warns more issues likely as ageing systems are upgraded",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-tech-outages-intelligence-chief-jay-clayton-warns-more-issues-likely-as-ageing-systems-are-upgraded-101795375314574.html",
-              "tid": 1795375899.0,
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Gadi Eisenkot: No immediate need for a military operation against Iran",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gadi-eisenkot-no-immediate-need-military-operation-against-iran",
+              "tid": 1795441739.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Eisenkot says no immediate threat justifies attack on Iran",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/23/eisenkot-says-no-immediate-threat-justifies-attack-on-iran/",
+              "tid": 1795453434.0,
+              "statskontrollerad": true
             }
           ]
         },
@@ -4566,31 +4468,43 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "US intelligence chief predicts more tech outages as systems undergo upgrades",
+      "reserv_rubrik": "Eisenkot clashes with Netanyahu over Iran strikes, sees no 'immediate threat'",
       "kallor": [
         {
-          "namn": "The Straits Times",
-          "rubrik": "US intelligence chief predicts more tech outages as systems undergo upgrades",
-          "url": "https://www.straitstimes.com/world/united-states/us-intelligence-chief-predicts-more-tech-outages-as-systems-undergo-upgrades",
-          "tid": 1795387620.0,
+          "namn": "Al-Monitor",
+          "rubrik": "Eisenkot clashes with Netanyahu over Iran strikes, sees no 'immediate threat'",
+          "url": "https://www.al-monitor.com/originals/2026/11/eisenkot-clashes-netanyahu-over-iran-strikes-sees-no-immediate-threat",
+          "tid": 1795452785.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
-          "region": "asien",
+          "land": "US",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "US tech outages: Intelligence chief Jay Clayton warns more issues likely as ageing systems are upgraded",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-tech-outages-intelligence-chief-jay-clayton-warns-more-issues-likely-as-ageing-systems-are-upgraded-101795375314574.html",
-          "tid": 1795375899.0,
+          "namn": "Middle East Eye",
+          "rubrik": "Gadi Eisenkot: No immediate need for a military operation against Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gadi-eisenkot-no-immediate-need-military-operation-against-iran",
+          "tid": 1795441739.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
-          "region": "asien",
+          "land": "GB",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Eisenkot says no immediate threat justifies attack on Iran",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/23/eisenkot-says-no-immediate-threat-justifies-attack-on-iran/",
+          "tid": 1795453434.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
@@ -4607,113 +4521,17 @@
       "data": null
     },
     {
-      "id": "71ced7557e",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.5,
-      "vikt": {
-        "bredd": 0.118,
-        "regioner": {
-          "asien": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-22T13:43:11+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.674,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "China slams ‘malicious’ U.S. ban on telecom firms’ phone number access",
-              "url": "https://www.thehindu.com/news/international/china-slams-malicious-us-ban-on-telecom-firms-phone-number-access/article71730683.ece",
-              "tid": 1795330182.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "China urges US to revoke FCC measures targeting telecom firms",
-              "url": "https://news.cgtn.com/news/2026-11-22/China-urges-US-to-revoke-FCC-measures-targeting-telecom-firms-1ShgAIIg60E/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795354991.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "China slams ‘malicious’ U.S. ban on telecom firms’ phone number access",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "China slams ‘malicious’ U.S. ban on telecom firms’ phone number access",
-          "url": "https://www.thehindu.com/news/international/china-slams-malicious-us-ban-on-telecom-firms-phone-number-access/article71730683.ece",
-          "tid": 1795330182.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "China urges US to revoke FCC measures targeting telecom firms",
-          "url": "https://news.cgtn.com/news/2026-11-22/China-urges-US-to-revoke-FCC-measures-targeting-telecom-firms-1ShgAIIg60E/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795354991.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
       "id": "185c620827",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 26.4,
+      "poang": 26.5,
       "vikt": {
         "bredd": 0.202,
         "regioner": {
           "mellanostern": 1,
           "asien": 1
         },
-        "timmar": 38,
+        "timmar": 39,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4899,7 +4717,7 @@
       "data": null
     },
     {
-      "id": "2eb3861985",
+      "id": "428d920bd1",
       "amnen": [
         "varlden"
       ],
@@ -5004,7 +4822,7 @@
         "regioner": {
           "sverige": 2
         },
-        "timmar": 84,
+        "timmar": 85,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5017,7 +4835,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.792,
+      "sammanhang": 0.802,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -5028,7 +4846,7 @@
             {
               "kalla": "Aftonbladet Nöjesbladet",
               "land": "SE",
-              "rubrik": "SVT-medarbetarna om Carina Bergfeldts agerande: ”Övertramp”",
+              "rubrik": "SVT-medarbetaren om Carina Bergfeldts agerande: ”Övertramp”",
               "url": "https://www.aftonbladet.se/nojesbladet/a/EbWe82/svt-medarbetarna-om-carina-bergfeldts-agerande-overtramp?utm_medium=rss",
               "tid": 1795456460.0,
               "statskontrollerad": false
@@ -5048,11 +4866,11 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "SVT-medarbetarna om Carina Bergfeldts agerande: ”Övertramp”",
+      "reserv_rubrik": "SVT-medarbetaren om Carina Bergfeldts agerande: ”Övertramp”",
       "kallor": [
         {
           "namn": "Aftonbladet Nöjesbladet",
-          "rubrik": "SVT-medarbetarna om Carina Bergfeldts agerande: ”Övertramp”",
+          "rubrik": "SVT-medarbetaren om Carina Bergfeldts agerande: ”Övertramp”",
           "url": "https://www.aftonbladet.se/nojesbladet/a/EbWe82/svt-medarbetarna-om-carina-bergfeldts-agerande-overtramp?utm_medium=rss",
           "tid": 1795456460.0,
           "betalvagg": false,
@@ -5285,69 +5103,60 @@
       "data": null
     },
     {
-      "id": "649ede7e30",
+      "id": "ca3a494c65",
       "amnen": [
+        "geopolitik",
         "varlden"
       ],
-      "amnen_sektion": [],
-      "poang": 26.1,
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 25.9,
       "vikt": {
-        "bredd": 0.502,
+        "bredd": 0.202,
         "regioner": {
-          "asien": 1,
-          "norden": 1,
-          "mellanostern": 1
+          "afrika": 1,
+          "asien": 1
         },
-        "timmar": 36,
+        "timmar": 69,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-23T02:33:00+00:00",
+      "senast": "2026-11-23T21:02:43+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.567,
+      "sammanhang": 1.0,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
-          "mellanostern",
-          "norden"
+          "afrika",
+          "asien"
         ],
         "per_region": {
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "NATO to send early-warning system aircraft to Poland after missiles incident",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-23-nato-to-send-early-warning-system-aircraft-to-poland-after-missiles-incident/",
+              "tid": 1795467763.0,
+              "statskontrollerad": false
+            }
+          ],
           "asien": [
             {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Max Verstappen mocks George Russell as ‘so far below my level’ after Las Vegas GP",
-              "url": "https://www.japantimes.co.jp/sports/2026/11/23/more-sports/verstappen-russell-las-vegas/",
-              "tid": 1795401180.0,
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "NATO to send early-warning system aircraft to Poland after missiles incident",
+              "url": "https://www.straitstimes.com/world/europe/nato-to-send-early-warning-system-aircraft-to-poland-after-missiles-incident",
+              "tid": 1795456356.0,
               "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Max Verstappen vinder vildt ræs i Las Vegas",
-              "url": "https://www.dr.dk/sporten/seneste-sport/max-verstappen-vinder-vildt-raes-i-las-vegas",
-              "tid": 1795331535.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Max Verstappen takes brutal swipe at George Russell after Las Vegas GP: 'So far below my level'",
-              "url": "https://www.thenationalnews.com/sport/f1/2026/11/22/max-verstappen-takes-brutal-swipe-at-george-russell-after-las-vegas-gp-so-far-below-my-level/",
-              "tid": 1795329061.0,
-              "statskontrollerad": true
             }
           ]
         },
@@ -5356,243 +5165,42 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Max Verstappen mocks George Russell as ‘so far below my level’ after Las Vegas GP",
+      "reserv_rubrik": "NATO to send early-warning system aircraft to Poland after missiles incident",
       "kallor": [
         {
-          "namn": "The Japan Times",
-          "rubrik": "Max Verstappen mocks George Russell as ‘so far below my level’ after Las Vegas GP",
-          "url": "https://www.japantimes.co.jp/sports/2026/11/23/more-sports/verstappen-russell-las-vegas/",
-          "tid": 1795401180.0,
+          "namn": "Daily Maverick",
+          "rubrik": "NATO to send early-warning system aircraft to Poland after missiles incident",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-23-nato-to-send-early-warning-system-aircraft-to-poland-after-missiles-incident/",
+          "tid": 1795467763.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "JP",
-          "region": "asien",
+          "land": "ZA",
+          "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "DR Nyheder",
-          "rubrik": "Max Verstappen vinder vildt ræs i Las Vegas",
-          "url": "https://www.dr.dk/sporten/seneste-sport/max-verstappen-vinder-vildt-raes-i-las-vegas",
-          "tid": 1795331535.0,
+          "namn": "The Straits Times",
+          "rubrik": "NATO to send early-warning system aircraft to Poland after missiles incident",
+          "url": "https://www.straitstimes.com/world/europe/nato-to-send-early-warning-system-aircraft-to-poland-after-missiles-incident",
+          "tid": 1795456356.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
           "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Max Verstappen takes brutal swipe at George Russell after Las Vegas GP: 'So far below my level'",
-          "url": "https://www.thenationalnews.com/sport/f1/2026/11/22/max-verstappen-takes-brutal-swipe-at-george-russell-after-las-vegas-gp-so-far-below-my-level/",
-          "tid": 1795329061.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
+        "sv": 1,
         "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "6552429106",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 26.1,
-      "vikt": {
-        "bredd": 0.471,
-        "regioner": {
-          "asien": 2,
-          "mellanostern": 2,
-          "usa": 1,
-          "europa": 1
-        },
-        "timmar": 38,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T17:18:26+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.727,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Will use 'all available means' to counter U.S. blockade: Iran",
-              "url": "https://www.thehindu.com/news/international/will-use-all-available-means-to-counter-us-blockade-iran/article71735993.ece",
-              "tid": 1795454306.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "'Won't tolerate such actions': Iran vows to use all available means to counter US naval blockade",
-              "url": "https://www.hindustantimes.com/world-news/wont-tolerate-such-actions-iran-vows-to-use-all-available-means-to-counter-us-naval-blockade-101795434563353.html",
-              "tid": 1795434896.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Iran says it will use ‘all available means’ to counter US blockade",
-              "url": "https://www.aljazeera.com/news/2026/11/23/iran-says-it-will-use-all-available-means-to-counter-us-blockade?traffic_source=rss",
-              "tid": 1795439051.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Iran says will use 'all available means' to counter US blockade",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-will-use-all-available-means-counter-us-blockade",
-              "tid": 1795428522.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Trump dares Iran to breach US port blockade as Tehran reportedly readies 14 oil tankers",
-              "url": "https://www.foxnews.com/world/trump-dares-iran-breach-us-port-blockade-tehran-reportedly-readies-14-oil-tankers",
-              "tid": 1795387404.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Trump dares Iran to breach US naval blockade",
-              "url": "https://rt-english.com/news/649229-trump-iran-naval-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795388568.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Will use 'all available means' to counter U.S. blockade: Iran",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Will use 'all available means' to counter U.S. blockade: Iran",
-          "url": "https://www.thehindu.com/news/international/will-use-all-available-means-to-counter-us-blockade-iran/article71735993.ece",
-          "tid": 1795454306.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Iran says it will use ‘all available means’ to counter US blockade",
-          "url": "https://www.aljazeera.com/news/2026/11/23/iran-says-it-will-use-all-available-means-to-counter-us-blockade?traffic_source=rss",
-          "tid": 1795439051.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "'Won't tolerate such actions': Iran vows to use all available means to counter US naval blockade",
-          "url": "https://www.hindustantimes.com/world-news/wont-tolerate-such-actions-iran-vows-to-use-all-available-means-to-counter-us-naval-blockade-101795434563353.html",
-          "tid": 1795434896.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Iran says will use 'all available means' to counter US blockade",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-will-use-all-available-means-counter-us-blockade",
-          "tid": 1795428522.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Trump dares Iran to breach US port blockade as Tehran reportedly readies 14 oil tankers",
-          "url": "https://www.foxnews.com/world/trump-dares-iran-breach-us-port-blockade-tehran-reportedly-readies-14-oil-tankers",
-          "tid": 1795387404.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "Trump dares Iran to breach US naval blockade",
-          "url": "https://rt-english.com/news/649229-trump-iran-naval-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795388568.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
       ],
       "data": null
     },
@@ -5607,14 +5215,14 @@
         "ai",
         "robotik"
       ],
-      "poang": 25.7,
+      "poang": 25.8,
       "vikt": {
         "bredd": 0.19,
         "regioner": {
           "afrika": 1,
           "europa": 1
         },
-        "timmar": 33,
+        "timmar": 34,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5706,6 +5314,352 @@
       "data": null
     },
     {
+      "id": "6d5da7dd9a",
+      "amnen": [
+        "usa",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 25.7,
+      "vikt": {
+        "bredd": 0.04,
+        "regioner": {
+          "usa": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T20:21:49+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.423,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Apex predator at center of farmers vs environmentalists fight as Trump weighs major move: 'Out of control'",
+              "url": "https://www.foxnews.com/politics/apex-predator-center-farmers-vs-environmentalists-fight-trump-weighs-major-move-out-control",
+              "tid": 1795341608.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Trump weighs in on Senate Democrats’ leadership fight",
+              "url": "https://www.washingtonpost.com/politics/2026/11/22/trump-weighs-senate-democrats-leadership-fight/",
+              "tid": 1795378909.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Apex predator at center of farmers vs environmentalists fight as Trump weighs major move: 'Out of control'",
+              "url": "https://www.foxnews.com/politics/apex-predator-center-farmers-vs-environmentalists-fight-trump-weighs-major-move-out-control",
+              "tid": 1795341608.0,
+              "lutning": "hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Trump weighs in on Senate Democrats’ leadership fight",
+              "url": "https://www.washingtonpost.com/politics/2026/11/22/trump-weighs-senate-democrats-leadership-fight/",
+              "tid": 1795378909.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Apex predator at center of farmers vs environmentalists fight as Trump weighs major move: 'Out of control'",
+      "kallor": [
+        {
+          "namn": "Fox News",
+          "rubrik": "Apex predator at center of farmers vs environmentalists fight as Trump weighs major move: 'Out of control'",
+          "url": "https://www.foxnews.com/politics/apex-predator-center-farmers-vs-environmentalists-fight-trump-weighs-major-move-out-control",
+          "tid": 1795341608.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Trump weighs in on Senate Democrats’ leadership fight",
+          "url": "https://www.washingtonpost.com/politics/2026/11/22/trump-weighs-senate-democrats-leadership-fight/",
+          "tid": 1795378909.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "03ac1cd99c",
+      "amnen": [
+        "teknik"
+      ],
+      "amnen_sektion": [
+        "teknik"
+      ],
+      "poang": 25.2,
+      "vikt": {
+        "bredd": 0.04,
+        "regioner": {
+          "usa": 2
+        },
+        "timmar": 42,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T16:00:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.557,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The Verge",
+              "land": "US",
+              "rubrik": "My trusty 27-inch Alienware QD-OLED gaming monitor is just $280",
+              "url": "https://www.theverge.com/gadgets/1039999/alienware-aw2726dm-qdoled-gaming-monitor-black-friday-2026-deal-sale",
+              "tid": 1795449600.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Tom's Hardware",
+              "land": "US",
+              "rubrik": "Samsung Odyssey G8 G80SH 32-inch 4K OLED gaming monitor review: Color, performance and style",
+              "url": "https://www.tomshardware.com/monitors/gaming-monitors/samsung-odyssey-g8-g80sh-32-inch-4k-oled-gaming-monitor-review",
+              "tid": 1795447800.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "My trusty 27-inch Alienware QD-OLED gaming monitor is just $280",
+      "kallor": [
+        {
+          "namn": "The Verge",
+          "rubrik": "My trusty 27-inch Alienware QD-OLED gaming monitor is just $280",
+          "url": "https://www.theverge.com/gadgets/1039999/alienware-aw2726dm-qdoled-gaming-monitor-black-friday-2026-deal-sale",
+          "tid": 1795449600.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Tom's Hardware",
+          "rubrik": "Samsung Odyssey G8 G80SH 32-inch 4K OLED gaming monitor review: Color, performance and style",
+          "url": "https://www.tomshardware.com/monitors/gaming-monitors/samsung-odyssey-g8-g80sh-32-inch-4k-oled-gaming-monitor-review",
+          "tid": 1795447800.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "5731411ac5",
+      "amnen": [
+        "geopolitik",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 24.3,
+      "vikt": {
+        "bredd": 0.136,
+        "regioner": {
+          "usa": 1,
+          "europa": 1,
+          "asien": 1
+        },
+        "timmar": 27,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "rattigheter"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T18:19:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.5,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Religion News Service",
+              "land": "US",
+              "rubrik": "For the first time, UN’s highest court finds a country responsible for genocide: Myanmar",
+              "url": "https://religionnews.com/2026/11/23/for-the-first-time-uns-highest-court-finds-a-country-responsible-for-genocide-myanmar/",
+              "tid": 1795457951.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "After Japan's APEC snub, what's next for its China ties?",
+              "url": "https://www.dw.com/en/after-japan-s-apec-snub-what-s-next-for-its-china-ties/a-80020823?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795449420.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "How will China’s ties with Myanmar change with the ICJ’s genocide ruling?",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3375454/how-will-chinas-ties-myanmar-change-icjs-genocide-ruling",
+              "tid": 1795422365.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "For the first time, UN’s highest court finds a country responsible for genocide: Myanmar",
+      "kallor": [
+        {
+          "namn": "Religion News Service",
+          "rubrik": "For the first time, UN’s highest court finds a country responsible for genocide: Myanmar",
+          "url": "https://religionnews.com/2026/11/23/for-the-first-time-uns-highest-court-finds-a-country-responsible-for-genocide-myanmar/",
+          "tid": 1795457951.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "After Japan's APEC snub, what's next for its China ties?",
+          "url": "https://www.dw.com/en/after-japan-s-apec-snub-what-s-next-for-its-china-ties/a-80020823?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795449420.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "How will China’s ties with Myanmar change with the ICJ’s genocide ruling?",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3375454/how-will-chinas-ties-myanmar-change-icjs-genocide-ruling",
+          "tid": 1795422365.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "14d2c2eeb6",
       "amnen": [
         "noje"
@@ -5713,13 +5667,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.3,
+      "poang": 21.5,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5814,13 +5768,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 21.3,
+      "poang": 21.5,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 25,
+        "timmar": 26,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5903,103 +5857,6 @@
       "data": null
     },
     {
-      "id": "c703d50a93",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 20.9,
-      "vikt": {
-        "bredd": 0.169,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 23,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T11:44:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.778,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Liwång: Kan vänta oss fler ukrainska attacker i Finska viken",
-              "url": "https://www.sverigesradio.se/artikel/9348122",
-              "tid": 1795434240.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Experten om fartygsattacken: Fler ryska mål i Finska viken",
-              "url": "https://www.dn.se/varlden/experten-om-fartygsattacken-fler-ryska-mal-i-finska-viken/",
-              "tid": 1795356265.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Liwång: Kan vänta oss fler ukrainska attacker i Finska viken",
-      "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Liwång: Kan vänta oss fler ukrainska attacker i Finska viken",
-          "url": "https://www.sverigesradio.se/artikel/9348122",
-          "tid": 1795434240.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Experten om fartygsattacken: Fler ryska mål i Finska viken",
-          "url": "https://www.dn.se/varlden/experten-om-fartygsattacken-fler-ryska-mal-i-finska-viken/",
-          "tid": 1795356265.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "a295b71fc5",
       "amnen": [
         "sverige",
@@ -6008,7 +5865,7 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 20.7,
+      "poang": 21.1,
       "vikt": {
         "bredd": 0.526,
         "regioner": {
@@ -6016,7 +5873,7 @@
           "europa": 1,
           "sverige": 2
         },
-        "timmar": 9,
+        "timmar": 10,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6152,14 +6009,14 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 18.7,
+      "poang": 19.0,
       "vikt": {
         "bredd": 0.279,
         "regioner": {
           "sverige": 2,
           "latinamerika": 1
         },
-        "timmar": 10,
+        "timmar": 11,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6272,13 +6129,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 17.4,
+      "poang": 17.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 10,
+        "timmar": 11,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6372,13 +6229,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 17.2,
+      "poang": 17.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 9,
+        "timmar": 10,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6468,13 +6325,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 15.5,
+      "poang": 16.0,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 6,
+        "timmar": 7,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6969,6 +6826,88 @@
       "data": null
     },
     {
+      "id": "842f7d36b6",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 12.3,
+      "vikt": {
+        "bredd": 0.077,
+        "regioner": {
+          "sverige": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "miljo"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-22T18:30:52+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Besvikelse efter haveriet på klimatmötet: ”Ytterligare ett förlorat år”",
+              "url": "https://www.dn.se/varlden/besvikelse-efter-haveriet-pa-klimatmotet-ytterligare-ett-forlorat-ar/",
+              "tid": 1795372252.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Besvikelse efter haveriet på klimatmötet: ”Ytterligare ett förlorat år”",
+      "kallor": [
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Besvikelse efter haveriet på klimatmötet: ”Ytterligare ett förlorat år”",
+          "url": "https://www.dn.se/varlden/besvikelse-efter-haveriet-pa-klimatmotet-ytterligare-ett-forlorat-ar/",
+          "tid": 1795372252.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
       "id": "66b05b0d9a",
       "amnen": [
         "europa",
@@ -7052,7 +6991,7 @@
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 51,
+      "artiklar": 52,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -7076,7 +7015,7 @@
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 8,
       "url": "https://www.breakit.se/feed/artiklar"
     },
     {
@@ -7124,7 +7063,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 10,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -7136,7 +7075,7 @@
     {
       "id": "bbc",
       "ok": true,
-      "artiklar": 26,
+      "artiklar": 27,
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
     },
     {
@@ -7196,7 +7135,7 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 36,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
@@ -7208,13 +7147,13 @@
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 23,
+      "artiklar": 25,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 29,
+      "artiklar": 33,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
@@ -7232,7 +7171,7 @@
     {
       "id": "cnbc",
       "ok": true,
-      "artiklar": 27,
+      "artiklar": 29,
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
@@ -7268,7 +7207,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 51,
+      "artiklar": 47,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -7296,13 +7235,13 @@
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 19,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 23,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -7344,7 +7283,7 @@
     {
       "id": "verge",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 9,
       "url": "https://www.theverge.com/rss/index.xml"
     },
     {
@@ -7356,7 +7295,7 @@
     {
       "id": "techcrunch",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 18,
       "url": "https://techcrunch.com/feed/"
     },
     {
@@ -7398,7 +7337,7 @@
     {
       "id": "nature",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 10,
       "url": "https://www.nature.com/nature.rss"
     },
     {
@@ -7416,7 +7355,7 @@
     {
       "id": "breaking-defense",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 5,
       "url": "https://breakingdefense.com/feed/"
     },
     {
@@ -7468,7 +7407,7 @@
     {
       "id": "cyberscoop",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 5,
       "url": "https://cyberscoop.com/feed/"
     },
     {
@@ -7486,7 +7425,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 8,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -7521,13 +7460,13 @@
     {
       "id": "axios",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 11,
       "url": "https://www.axios.com/feeds/feed.rss"
     },
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 5,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -7550,7 +7489,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 24,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -7586,7 +7525,7 @@
     {
       "id": "404media",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://www.404media.co/rss/"
     },
     {
@@ -7598,7 +7537,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 42,
+      "artiklar": 44,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -7628,7 +7567,7 @@
     {
       "id": "mexnews",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 6,
       "url": "https://mexiconewsdaily.com/feed/"
     },
     {
@@ -7670,7 +7609,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 31,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -7682,7 +7621,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 83,
+      "artiklar": 80,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -7694,7 +7633,7 @@
     {
       "id": "almonitor",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 7,
       "url": "https://www.al-monitor.com/rss"
     },
     {
@@ -7718,7 +7657,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 97,
+      "artiklar": 93,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
@@ -7754,7 +7693,7 @@
     {
       "id": "dr",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 18,
       "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
     },
     {
@@ -7802,7 +7741,7 @@
     {
       "id": "gleaner",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 4,
       "url": "https://jamaica-gleaner.com/feed/rss.xml"
     },
     {
@@ -7814,7 +7753,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 9,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -7832,7 +7771,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 31,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
@@ -7868,7 +7807,7 @@
     {
       "id": "mongabay",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 11,
       "url": "https://news.mongabay.com/feed/"
     },
     {
@@ -7886,7 +7825,7 @@
     {
       "id": "rns",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 7,
       "url": "https://religionnews.com/feed/"
     },
     {
