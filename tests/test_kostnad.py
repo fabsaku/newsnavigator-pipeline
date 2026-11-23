@@ -116,3 +116,40 @@ def test_utkast_ateranvands_nar_kallorna_nastan_ar_desamma():
     assert not pipeline.kan_ateranvanda({**hit, "skapad": nu - 90000}, ["a", "b", "c", "d", "e"], nu), "äldre än ett dygn: nytt utkast"
     assert not pipeline.kan_ateranvanda({"skapad": nu}, ["a"], nu), "äldre cacheposter utan källista: nytt utkast"
     assert not pipeline.kan_ateranvanda(hit, [], nu)
+
+
+def test_ai_fel_registreras_och_larmas(tmp_path):
+    import behover
+    class Fel(Exception):
+        status_code = 401
+    class Dod:
+        def __init__(self):
+            self.messages = SimpleNamespace(create=self.create)
+        def create(self, **kw):
+            raise Fel("invalid x-api-key")
+    r = kostnad.Rakning("claude-haiku-5-5")
+    k = kostnad.RaknandeKlient(Dod(), r)
+    try:
+        k.messages.create(model="x", max_tokens=1, messages=[])
+    except Fel:
+        pass
+    assert r.fel and "401" in r.fel
+    sokvag = tmp_path / "kostnad.json"
+    kostnad.spara(r, sokvag, idag="2026-11-23", nu="2026-11-23T01:00:00+00:00")
+    d = json.loads(sokvag.read_text(encoding="utf-8"))
+    assert d["senaste_fel"]["fel"].startswith("401")
+    nu = 1_795_000_000.0
+    d["senaste_fel"]["tid"] = behover_iso(nu - 1800)
+    rad = behover._ai({"kostnad": d}, nu)
+    assert rad and rad[0]["allvarlig"] and "401" in rad[0]["rad"] and "ANTHROPIC_API_KEY" in rad[0]["handling"]
+    # ett lyckat varv utan fel tar bort larmet
+    ok = kostnad.Rakning("claude-haiku-5-5")
+    ok.lagg_till(SimpleNamespace(input_tokens=1, output_tokens=1))
+    kostnad.spara(ok, sokvag, idag="2026-11-23")
+    assert json.loads(sokvag.read_text(encoding="utf-8")).get("senaste_fel") is None
+    assert behover._ai({"kostnad": {}}, nu) == []
+
+
+def behover_iso(ts):
+    from datetime import datetime, timezone
+    return datetime.fromtimestamp(ts, timezone.utc).isoformat()

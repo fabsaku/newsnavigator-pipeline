@@ -21,6 +21,7 @@ class Rakning:
         self.modell = modell
         self.okand_modell = modell not in PRISER
         self.anrop = self.tokens_in = self.tokens_ut = 0
+        self.fel = None
         self._las = threading.Lock()
 
     def lagg_till(self, usage):
@@ -46,7 +47,13 @@ class _Meddelanden:
         effort = os.environ.get("NN_AI_EFFORT", "low")
         if effort and "extra_body" not in kw:
             kw["extra_body"] = {"output_config": {"effort": effort}}
-        msg = self._k.messages.create(**kw)
+        try:
+            msg = self._k.messages.create(**kw)
+        except Exception as e:
+            status = getattr(e, "status_code", None)
+            if status in (401, 402, 403, 429) or status is None and "authentication" in str(e).lower():
+                self._r.fel = f"{status or 'fel'}: {str(e)[:120]}"       # larmas i Behöver dig; texten innehåller aldrig nyckeln
+            raise
         self._r.lagg_till(getattr(msg, "usage", None))
         return msg
 
@@ -77,7 +84,7 @@ def dagens_usd(sokvag=SOKVAG, idag=None):
     return float(_las(sokvag).get("dagar", {}).get(idag or idag_str(), {}).get("usd", 0))
 
 
-def spara(rakning, sokvag=SOKVAG, idag=None, behall=60):
+def spara(rakning, sokvag=SOKVAG, idag=None, behall=60, nu=None):
     d = _las(sokvag)
     dagar = d.setdefault("dagar", {})
     dag = dagar.setdefault(idag or idag_str(), {"usd": 0, "in": 0, "ut": 0, "anrop": 0, "korningar": 0})
@@ -91,6 +98,10 @@ def spara(rakning, sokvag=SOKVAG, idag=None, behall=60):
     for gammal in sorted(dagar)[:-behall]:
         dagar.pop(gammal)
     d["modell"] = rakning.modell
+    if rakning.fel:
+        d["senaste_fel"] = {"tid": nu or datetime.now(timezone.utc).isoformat(), "fel": rakning.fel}
+    elif rakning.anrop:
+        d["senaste_fel"] = None          # ett lyckat varv med anrop tar bort larmet
     Path(sokvag).parent.mkdir(parents=True, exist_ok=True)
     Path(sokvag).write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 

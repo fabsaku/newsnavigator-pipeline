@@ -130,6 +130,22 @@ def _korningar(lage, now):
     return ut
 
 
+def _ai(lage, now):
+    """AI-tjänsten svarar med fel (till exempel ogiltig nyckel eller slut på kredit): sajten lever på cachen men får inga nya utkast."""
+    f = (lage.get("kostnad") or {}).get("senaste_fel")
+    if not f or not f.get("tid"):
+        return []
+    try:
+        ar_nytt = now - _iso(f["tid"]) < 3 * 3600
+    except (ValueError, TypeError):
+        return []
+    if not ar_nytt:
+        return []
+    return [rad("ai", f"AI-tjänsten svarar med fel {f['fel']}",
+                "Kontrollera nyckeln ANTHROPIC_API_KEY (GitHub, Settings, Secrets) och krediten i Anthropic Console",
+                allvarlig=True, id="ai")]
+
+
 def _hopslagna(lage, now):
     skuggade = lage["godkanda"] | set(lage["status"].get("stoppade", {}))
     traffar = [e for e in lage["flode"] if e["id"] not in skuggade
@@ -209,7 +225,7 @@ def _rattelser(lage, now):
 def regler(lage, now):
     """Listan över det som behöver redaktören. Allvarliga rader först, annars i reglernas ordning."""
     rader = []
-    for regel in (_vantar, _korningar, _hopslagna, _tysta, _instagram, _brev, _tyst_lage, _rattelser):
+    for regel in (_vantar, _korningar, _ai, _hopslagna, _tysta, _instagram, _brev, _tyst_lage, _rattelser):
         rader += regel(lage, now)
     return sorted(rader, key=lambda r: not r["allvarlig"])
 
@@ -334,6 +350,7 @@ def laddar_lage(root, repo, rattelser):
             "status": autopilot.load_status(d / "autopilot_status.json"),
             "installningar": autopilot.load_settings(d / "autopilot.json"),
             "drift": _las(d / "drift.json", {}),
+            "kostnad": _las(d / "kostnad.json", {}),
             "kallstatus": _las(d / "kallstatus.json", {"kallor": []}),
             "kallor_typ": {s["id"]: s.get("typ", "media") for s in (feeds or {}).get("sources", [])},
             "arkiv": _las(d / "arkiv.json", {}),
