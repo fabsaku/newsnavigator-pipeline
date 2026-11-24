@@ -1,34 +1,32 @@
 {
-  "skapad": "2026-11-24T01:48:24.409036+00:00",
+  "skapad": "2026-11-24T02:06:28.172586+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
       "id": "c98b3aa1aa",
       "amnen": [
-        "ai",
         "halvledare",
         "usa"
       ],
       "amnen_sektion": [
-        "ai",
         "halvledare",
         "usa"
       ],
-      "poang": 42.9,
+      "poang": 56.0,
       "vikt": {
-        "bredd": 2.969,
+        "bredd": 3.179,
         "regioner": {
           "asien": 11,
-          "usa": 17,
-          "europa": 7,
-          "mellanostern": 2,
           "latinamerika": 3,
-          "afrika": 3,
+          "europa": 8,
+          "usa": 18,
+          "mellanostern": 2,
+          "afrika": 4,
           "norden": 1,
           "sverige": 3
         },
-        "timmar": 2,
+        "timmar": 37,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -37,16 +35,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 47,
+      "antal_kallor": 50,
       "har_primarkalla": false,
-      "senast": "2026-11-24T01:45:37+00:00",
+      "senast": "2026-11-24T02:01:14+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq18xkr5DDv5S9goJW'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLwCtz7bJJrbd3FRWF22'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.53,
+      "sammanhang": 0.535,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -61,6 +59,14 @@
         ],
         "per_region": {
           "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Trump saw Jensen Huang as key to safeguarding American open-weight AI models: Report",
+              "url": "https://www.hindustantimes.com/world-news/trump-saw-jensen-huang-as-key-to-safeguarding-american-open-weight-ai-models-report-101795484319572.html",
+              "tid": 1795485674.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "South China Morning Post",
               "land": "HK",
@@ -81,24 +87,16 @@
               "kalla": "CNA",
               "land": "SG",
               "rubrik": "Asian stocks rally as Huang's Nvidia return revives AI trade",
-              "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-huangs-nvidia-return-revives-ai-trade-6576636",
-              "tid": 1795483842.0,
+              "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-jensen-huang-nvidia-return-revives-ai-trade-6576636",
+              "tid": 1795483800.0,
               "statskontrollerad": false
             },
             {
               "kalla": "Rappler",
               "land": "PH",
-              "rubrik": "US lawmakers criticize Nvidia decision to reinstate Huang as CEO",
-              "url": "https://www.rappler.com/technology/us-lawmakers-criticize-nvidia-decision-reinstate-jensen-huang-ceo/",
+              "rubrik": "At AI speed, Nvidia’s Jensen Huang finds exoneration",
+              "url": "https://www.rappler.com/technology/criticisms-nvidia-decision-reinstate-jensen-huang-ceo/",
               "tid": 1795480053.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I’m going to be a better CEO’: Jensen Huang tells Nvidia employees on ‘first day at work’ after ouster",
-              "url": "https://www.hindustantimes.com/world-news/us-news/im-going-to-be-a-better-ceo-jensen-huang-tells-nvidia-employees-on-first-day-at-work-after-ouster-101795476847458.html",
-              "tid": 1795480050.0,
               "statskontrollerad": false
             },
             {
@@ -144,10 +142,102 @@
             {
               "kalla": "Nikkei Asia",
               "land": "JP",
-              "rubrik": "Asian stocks leap on return of Nvidia's Jensen Huang",
-              "url": "https://asia.nikkei.com/business/markets/asian-stocks-leap-on-return-of-nvidia-s-jensen-huang",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
+              "url": "https://asia.nikkei.com/business/tech/semiconductors/nvidia-reinstates-jensen-huang-as-ceo",
               "tid": null,
               "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El Tiempo",
+              "land": "CO",
+              "rubrik": "Inteligencia de EE. UU. rastreó contactos entre Alice Huang y el espionaje chino mientras mantenía una relación con el CEO de Nvidia, Jensen Huang",
+              "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/inteligencia-de-ee-uu-rastreo-contactos-entre-alice-huang-y-el-espionaje-chino-mientras-mantenia-una-relacion-con-el-ceo-de-nvidia-jensen-huang-3603455",
+              "tid": 1795485334.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Jensen Huang vuelve a las oficinas de Nvidia entre ovaciones de los empleados",
+              "url": "https://elpais.com/us/2026-11-23/jensen-huang-vuelve-a-las-oficinas-de-nvidia-entre-ovaciones-de-los-empleados.html",
+              "tid": 1795461976.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO after assurances from the US government",
+              "url": "https://en.mercopress.com/2026/11/23/nvidia-reinstates-jensen-huang-as-ceo-after-assurances-from-the-us-government?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "tid": 1795446480.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
+              "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
+              "tid": 1795485027.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Jensen Huang reinstated as Nvidia CEO",
+              "url": "https://www.france24.com/en/tv-shows/business/20261123-jensen-huang-reinstated-as-nvidia-ceo",
+              "tid": 1795471810.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+              "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795459380.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
+              "url": "https://english.elpais.com/economy-and-business/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo.html",
+              "tid": 1795448132.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Nvidia reinstates former CEO Jensen Huang despite China espionage scandal",
+              "url": "https://www.dw.com/en/nvidia-reinstates-former-ceo-jensen-huang-despite-china-espionage-scandal/a-80021926?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795443480.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Asian tech stocks surge in wake of Jensen Huang’s return",
+              "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
+              "tid": 1795482790.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Nvidia board reinstates Jensen Huang as CEO after Trump intervention",
+              "url": "https://www.lemonde.fr/en/economy/article/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo_6787329_19.html",
+              "tid": 1795443093.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Nvidia shares surge as board brings back Huang",
+              "url": "https://rt-english.com/news/649258-jensen-huang-returns-nvidia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795446035.0,
+              "statskontrollerad": true
             }
           ],
           "usa": [
@@ -240,6 +330,14 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Rubio ducks questions on Nvidia CEO's reinstatement after reportedly sounding alarm over suspected Chinese spy",
+              "url": "https://www.foxnews.com/politics/trump-directly-indirectly-intervened-get-nvidias-ceo-reinstated-potus-says",
+              "tid": 1795450500.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "Ars Technica",
               "land": "US",
               "rubrik": "Jensen Huang reinstated as Nvidia CEO, board chair",
@@ -256,6 +354,14 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Alice Huang Had Ties to China’s Intelligence Network. But Was She Really a Spy?",
+              "url": "https://www.wsj.com/world/china/alice-huang-us-intel-nvidia-china-34e2404a?mod=rss_worldnews",
+              "tid": 1795485600.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "The New York Times",
               "land": "US",
               "rubrik": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
@@ -266,17 +372,9 @@
             {
               "kalla": "The Washington Post",
               "land": "US",
-              "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
-              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
-              "tid": 1795471836.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Congressional Republicans and Democrats see national-security risks with Jensen Huang’s reinstatement as Nvidia CEO, and they are vowing to press forward with investigations",
-              "url": "https://www.wsj.com/politics/policy/jensen-huangs-return-to-nvidia-draws-heavy-fire-from-lawmakers-ae698d88?mod=rss_socialpoliticsfeed",
-              "tid": 1795468200.0,
+              "rubrik": "Trump ties his administration’s future to Jensen Huang",
+              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-personally-orchestrated-jensen-huang-return-nvidia-ceo/",
+              "tid": 1795465305.0,
               "statskontrollerad": false
             },
             {
@@ -293,72 +391,6 @@
               "rubrik": "Tech stocks rally as Jensen Huang returns as Nvidia CEO; the Nasdaq 100 jumped 7%, a Magnificent Seven basket rose 8%, CoreWeave 22%, Tesla 11%, and AMD 7% (Jess Menton/Bloomberg)",
               "url": "https://www.techmeme.com/261123/p42#a261123p42",
               "tid": 1795470000.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hacker News",
-              "land": "US",
-              "rubrik": "Nvidia Reinstates Jensen Huang as CEO",
-              "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-              "tid": 1795442418.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
-              "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-              "tid": 1795483573.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Jensen Huang reinstated as Nvidia CEO",
-              "url": "https://www.france24.com/en/tv-shows/business/20261123-jensen-huang-reinstated-as-nvidia-ceo",
-              "tid": 1795471810.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-              "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795459380.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
-              "url": "https://english.elpais.com/economy-and-business/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo.html",
-              "tid": 1795448132.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Nvidia reinstates former CEO Jensen Huang despite China espionage scandal",
-              "url": "https://www.dw.com/en/nvidia-reinstates-former-ceo-jensen-huang-despite-china-espionage-scandal/a-80021926?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795443480.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Asian tech stocks surge in wake of Jensen Huang’s return",
-              "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
-              "tid": 1795482790.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Nvidia board reinstates Jensen Huang as CEO after Trump intervention",
-              "url": "https://www.lemonde.fr/en/economy/article/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo_6787329_19.html",
-              "tid": 1795443093.0,
               "statskontrollerad": false
             }
           ],
@@ -380,32 +412,6 @@
               "statskontrollerad": true
             }
           ],
-          "latinamerika": [
-            {
-              "kalla": "El Tiempo",
-              "land": "CO",
-              "rubrik": "Trump enfrenta una tormenta política por su respaldo a Jensen Huang: el CEO de Nvidia deberá declarar ante el Congreso pese a su regreso al cargo",
-              "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/trump-enfrenta-una-tormenta-politica-por-su-respaldo-a-jensen-huang-el-ceo-de-nvidia-debera-declarar-ante-el-congreso-pese-a-su-regreso-al-cargo-3603527",
-              "tid": 1795470460.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "Jensen Huang vuelve a las oficinas de Nvidia entre ovaciones de los empleados",
-              "url": "https://elpais.com/us/2026-11-23/jensen-huang-vuelve-a-las-oficinas-de-nvidia-entre-ovaciones-de-los-empleados.html",
-              "tid": 1795461976.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO after assurances from the US government",
-              "url": "https://en.mercopress.com/2026/11/23/nvidia-reinstates-jensen-huang-as-ceo-after-assurances-from-the-us-government?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795446480.0,
-              "statskontrollerad": false
-            }
-          ],
           "afrika": [
             {
               "kalla": "Daily Maverick",
@@ -421,6 +427,14 @@
               "rubrik": "AI giant Nvidia reinstates Jensen Huang as CEO after spy scandal",
               "url": "http://www.africanews.com/2026/11/23/ai-giant-nvidia-reinstates-jensen-huang-as-ceo-after-spy-scandal/",
               "tid": 1795450254.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The East African",
+              "land": "KE",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
+              "url": "https://www.theeastafrican.co.ke/tea/business-tech/nvidia-reinstates-jensen-huang-as-ceo-5681668",
+              "tid": 1795446900.0,
               "statskontrollerad": false
             },
             {
@@ -462,9 +476,9 @@
             {
               "kalla": "Dagens Nyheter",
               "land": "SE",
-              "rubrik": "Linus Larsson: Jensen Huang kan tacka Trump för jobbet",
-              "url": "https://www.dn.se/ekonomi/linus-larsson-jensen-huang-kan-tacka-trump-for-jobbet/",
-              "tid": 1795446570.0,
+              "rubrik": "Jensen Huang tillbaka som vd för Nvidia",
+              "url": "https://www.dn.se/ekonomi/jensen-huang-tillbaka-som-vd-for-nvidia/",
+              "tid": 1795443597.0,
               "statskontrollerad": false
             }
           ]
@@ -489,9 +503,9 @@
             },
             {
               "kalla": "The Wall Street Journal",
-              "rubrik": "Congressional Republicans and Democrats see national-security risks with Jensen Huang’s reinstatement as Nvidia CEO, and they are vowing to press forward with investigations",
-              "url": "https://www.wsj.com/politics/policy/jensen-huangs-return-to-nvidia-draws-heavy-fire-from-lawmakers-ae698d88?mod=rss_socialpoliticsfeed",
-              "tid": 1795468200.0,
+              "rubrik": "Alice Huang Had Ties to China’s Intelligence Network. But Was She Really a Spy?",
+              "url": "https://www.wsj.com/world/china/alice-huang-us-intel-nvidia-china-34e2404a?mod=rss_worldnews",
+              "tid": 1795485600.0,
               "lutning": "mitten"
             }
           ],
@@ -515,6 +529,13 @@
               "rubrik": "Investment Firm Controlled By Trump Commerce Sec’s Sons Celebrates Jensen Huang’s Reinstatement As Nvidia CEO",
               "url": "https://dailycaller.com/2026/11/23/howard-lutnick-cantor-fitzgerald-jensen-huang-nvidia",
               "tid": 1795464106.0,
+              "lutning": "hoger"
+            },
+            {
+              "kalla": "Fox News",
+              "rubrik": "Rubio ducks questions on Nvidia CEO's reinstatement after reportedly sounding alarm over suspected Chinese spy",
+              "url": "https://www.foxnews.com/politics/trump-directly-indirectly-intervened-get-nvidias-ceo-reinstated-potus-says",
+              "tid": 1795450500.0,
               "lutning": "hoger"
             }
           ],
@@ -542,17 +563,53 @@
             },
             {
               "kalla": "The Washington Post",
-              "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
-              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
-              "tid": 1795471836.0,
+              "rubrik": "Trump ties his administration’s future to Jensen Huang",
+              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-personally-orchestrated-jensen-huang-return-nvidia-ceo/",
+              "tid": 1795465305.0,
               "lutning": "lutar_vanster"
             }
           ]
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Jensen Huang returns to Nvidia to applause from staff, no trademark leather jacket in sight",
+      "reserv_rubrik": "Trump saw Jensen Huang as key to safeguarding American open-weight AI models: Report",
       "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Trump saw Jensen Huang as key to safeguarding American open-weight AI models: Report",
+          "url": "https://www.hindustantimes.com/world-news/trump-saw-jensen-huang-as-key-to-safeguarding-american-open-weight-ai-models-report-101795484319572.html",
+          "tid": 1795485674.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El Tiempo",
+          "rubrik": "Inteligencia de EE. UU. rastreó contactos entre Alice Huang y el espionaje chino mientras mantenía una relación con el CEO de Nvidia, Jensen Huang",
+          "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/inteligencia-de-ee-uu-rastreo-contactos-entre-alice-huang-y-el-espionaje-chino-mientras-mantenia-una-relacion-con-el-ceo-de-nvidia-jensen-huang-3603455",
+          "tid": 1795485334.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CO",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
+          "tid": 1795485027.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "South China Morning Post",
           "rubrik": "Jensen Huang returns to Nvidia to applause from staff, no trademark leather jacket in sight",
@@ -592,25 +649,13 @@
         {
           "namn": "CNA",
           "rubrik": "Asian stocks rally as Huang's Nvidia return revives AI trade",
-          "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-huangs-nvidia-return-revives-ai-trade-6576636",
-          "tid": 1795483842.0,
+          "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-jensen-huang-nvidia-return-revives-ai-trade-6576636",
+          "tid": 1795483800.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
           "region": "asien",
           "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-          "tid": 1795483573.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -639,24 +684,12 @@
         },
         {
           "namn": "Rappler",
-          "rubrik": "US lawmakers criticize Nvidia decision to reinstate Huang as CEO",
-          "url": "https://www.rappler.com/technology/us-lawmakers-criticize-nvidia-decision-reinstate-jensen-huang-ceo/",
+          "rubrik": "At AI speed, Nvidia’s Jensen Huang finds exoneration",
+          "url": "https://www.rappler.com/technology/criticisms-nvidia-decision-reinstate-jensen-huang-ceo/",
           "tid": 1795480053.0,
           "betalvagg": false,
           "typ": "media",
           "land": "PH",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "‘I’m going to be a better CEO’: Jensen Huang tells Nvidia employees on ‘first day at work’ after ouster",
-          "url": "https://www.hindustantimes.com/world-news/us-news/im-going-to-be-a-better-ceo-jensen-huang-tells-nvidia-employees-on-first-day-at-work-after-ouster-101795476847458.html",
-          "tid": 1795480050.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -742,18 +775,6 @@
           "typ": "media",
           "land": "US",
           "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El Tiempo",
-          "rubrik": "Trump enfrenta una tormenta política por su respaldo a Jensen Huang: el CEO de Nvidia deberá declarar ante el Congreso pese a su regreso al cargo",
-          "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/trump-enfrenta-una-tormenta-politica-por-su-respaldo-a-jensen-huang-el-ceo-de-nvidia-debera-declarar-ante-el-congreso-pese-a-su-regreso-al-cargo-3603527",
-          "tid": 1795470460.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CO",
-          "region": "latinamerika",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -878,6 +899,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Fox News",
+          "rubrik": "Rubio ducks questions on Nvidia CEO's reinstatement after reportedly sounding alarm over suspected Chinese spy",
+          "url": "https://www.foxnews.com/politics/trump-directly-indirectly-intervened-get-nvidias-ceo-reinstated-potus-says",
+          "tid": 1795450500.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Africanews",
           "rubrik": "AI giant Nvidia reinstates Jensen Huang as CEO after spy scandal",
           "url": "http://www.africanews.com/2026/11/23/ai-giant-nvidia-reinstates-jensen-huang-as-ceo-after-spy-scandal/",
@@ -910,6 +943,18 @@
           "typ": "media",
           "land": "ES",
           "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The East African",
+          "rubrik": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
+          "url": "https://www.theeastafrican.co.ke/tea/business-tech/nvidia-reinstates-jensen-huang-as-ceo-5681668",
+          "tid": 1795446900.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "KE",
+          "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -986,6 +1031,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Alice Huang Had Ties to China’s Intelligence Network. But Was She Really a Spy?",
+          "url": "https://www.wsj.com/world/china/alice-huang-us-intel-nvidia-china-34e2404a?mod=rss_worldnews",
+          "tid": 1795485600.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Financial Times",
           "rubrik": "Asian tech stocks surge in wake of Jensen Huang’s return",
           "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
@@ -1010,30 +1067,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Washington Post",
-          "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
-          "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
-          "tid": 1795471836.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Congressional Republicans and Democrats see national-security risks with Jensen Huang’s reinstatement as Nvidia CEO, and they are vowing to press forward with investigations",
-          "url": "https://www.wsj.com/politics/policy/jensen-huangs-return-to-nvidia-draws-heavy-fire-from-lawmakers-ae698d88?mod=rss_socialpoliticsfeed",
-          "tid": 1795468200.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Dagens industri",
           "rubrik": "Jensen Huang tillbaka på kontoret: ”Ska vara en bättre vd”",
           "url": "https://www.di.se/live/jensen-huang-tillbaka-pa-kontoret-ska-vara-en-battre-vd/",
@@ -1042,6 +1075,18 @@
           "typ": "media",
           "land": "SE",
           "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Trump ties his administration’s future to Jensen Huang",
+          "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-personally-orchestrated-jensen-huang-return-nvidia-ceo/",
+          "tid": 1795465305.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -1071,9 +1116,9 @@
         },
         {
           "namn": "Dagens Nyheter",
-          "rubrik": "Linus Larsson: Jensen Huang kan tacka Trump för jobbet",
-          "url": "https://www.dn.se/ekonomi/linus-larsson-jensen-huang-kan-tacka-trump-for-jobbet/",
-          "tid": 1795446570.0,
+          "rubrik": "Jensen Huang tillbaka som vd för Nvidia",
+          "url": "https://www.dn.se/ekonomi/jensen-huang-tillbaka-som-vd-for-nvidia/",
+          "tid": 1795443597.0,
           "betalvagg": true,
           "typ": "media",
           "land": "SE",
@@ -1095,8 +1140,8 @@
         },
         {
           "namn": "Nikkei Asia",
-          "rubrik": "Asian stocks leap on return of Nvidia's Jensen Huang",
-          "url": "https://asia.nikkei.com/business/markets/asian-stocks-leap-on-return-of-nvidia-s-jensen-huang",
+          "rubrik": "Nvidia reinstates Jensen Huang as CEO",
+          "url": "https://asia.nikkei.com/business/tech/semiconductors/nvidia-reinstates-jensen-huang-as-ceo",
           "tid": null,
           "betalvagg": true,
           "typ": "media",
@@ -1118,18 +1163,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hacker News",
-          "rubrik": "Nvidia Reinstates Jensen Huang as CEO",
-          "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-          "tid": 1795442418.0,
-          "betalvagg": false,
-          "typ": "kuraterat",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The National",
           "rubrik": "Jensen Huang cheered on by staff as he returns to Nvidia",
           "url": "https://www.thenationalnews.com/future/technology/2026/11/23/jensen-returns-to-nvidia-employees/",
@@ -1138,6 +1171,18 @@
           "typ": "media",
           "land": "AE",
           "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Nvidia shares surge as board brings back Huang",
+          "url": "https://rt-english.com/news/649258-jensen-huang-returns-nvidia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795446035.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
           "agare": "statlig",
           "statskontrollerad": true
         }
@@ -1150,7 +1195,8 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "troligen hopslagna händelser"
+        "troligen hopslagna händelser",
+        "spärrord: suspected"
       ],
       "data": null
     },
@@ -1164,13 +1210,13 @@
         "geopolitik",
         "rymd"
       ],
-      "poang": 37.4,
+      "poang": 37.1,
       "vikt": {
-        "bredd": 1.209,
+        "bredd": 1.181,
         "regioner": {
           "asien": 5,
-          "usa": 6,
-          "europa": 7,
+          "usa": 7,
+          "europa": 6,
           "mellanostern": 2,
           "afrika": 1
         },
@@ -1186,11 +1232,11 @@
       "senast": "2026-11-24T00:52:00+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq17USM6mHyDNrBzJe'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLwCu16Rbk9KpkVjmf9w'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.6,
+      "sammanhang": 0.598,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1258,6 +1304,14 @@
               "rubrik": "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya",
               "url": "https://www.defensenews.com/video/2026/11/23/ukraine-strikes-russian-warship-and-cargo-vessel-with-naval-drones-in-libya/",
               "tid": 1795446430.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "HuffPost",
+              "land": "US",
+              "rubrik": "Ukrainian Drones Hit Russian Warship At Naval Base In Libya, Zelenskyy Says",
+              "url": "https://www.huffpost.com/entry/ukraine-russian-warship-attack-libya_n_6b0415dfe4b0da866ee13715",
+              "tid": 1795430194.0,
               "statskontrollerad": false
             },
             {
@@ -1341,14 +1395,6 @@
               "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
               "tid": 1795383224.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
-              "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
-              "tid": 1795426244.0,
-              "statskontrollerad": false
             }
           ],
           "mellanostern": [
@@ -1393,6 +1439,13 @@
             }
           ],
           "bla": [
+            {
+              "kalla": "HuffPost",
+              "rubrik": "Ukrainian Drones Hit Russian Warship At Naval Base In Libya, Zelenskyy Says",
+              "url": "https://www.huffpost.com/entry/ukraine-russian-warship-attack-libya_n_6b0415dfe4b0da866ee13715",
+              "tid": 1795430194.0,
+              "lutning": "vanster"
+            },
             {
               "kalla": "NPR",
               "rubrik": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
@@ -1562,6 +1615,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "HuffPost",
+          "rubrik": "Ukrainian Drones Hit Russian Warship At Naval Base In Libya, Zelenskyy Says",
+          "url": "https://www.huffpost.com/entry/ukraine-russian-warship-attack-libya_n_6b0415dfe4b0da866ee13715",
+          "tid": 1795430194.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "NPR",
           "rubrik": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
           "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
@@ -1658,18 +1723,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Financial Times",
-          "rubrik": "Ukraine blows up Russian warship in Libya’s Benghazi naval base",
-          "url": "https://www.ft.com/content/b3f020fc-2617-4432-bced-af2a0b120133?syn-25a6b1a6=1",
-          "tid": 1795426244.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The National",
           "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
           "url": "https://www.thenationalnews.com/news/mena/2026/11/23/ukraine-sank-russian-ship-off-libyan-coast-zelenskyy-says/",
@@ -1699,7 +1752,7 @@
       "id": "8e6e3d907d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 36.1,
+      "poang": 36.5,
       "vikt": {
         "bredd": 1.721,
         "regioner": {
@@ -1711,7 +1764,7 @@
           "afrika": 3,
           "latinamerika": 1
         },
-        "timmar": 10,
+        "timmar": 11,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1725,7 +1778,7 @@
       "senast": "2026-11-23T22:21:28+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq18xWLZ4DosAaLcD5'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLwCu17Anhi3rsC8Fk5i'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -2401,7 +2454,7 @@
       "senast": "2026-11-23T22:43:38+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq18yKMg9BgjNrnosL'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLwCu2bHQ5PzWmwr2jc4'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -2544,7 +2597,7 @@
       "id": "4e9e543f8d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 30.6,
+      "poang": 30.8,
       "vikt": {
         "bredd": 0.701,
         "regioner": {
@@ -2554,7 +2607,7 @@
           "afrika": 1,
           "europa": 2
         },
-        "timmar": 32,
+        "timmar": 33,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2913,212 +2966,6 @@
       "data": null
     },
     {
-      "id": "a00f0ee6e7",
-      "amnen": [
-        "ai",
-        "asien"
-      ],
-      "amnen_sektion": [
-        "ai"
-      ],
-      "poang": 29.5,
-      "vikt": {
-        "bredd": 0.118,
-        "regioner": {
-          "asien": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T01:07:42+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.574,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Focus Taiwan",
-              "land": "TW",
-              "rubrik": "Taiwan shares open lower",
-              "url": "https://focustaiwan.tw/business/202611230001",
-              "tid": 1795396062.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Yonhap",
-              "land": "KR",
-              "rubrik": "(LEAD) Seoul shares open over 2 pct lower amid AI fears",
-              "url": "https://en.yna.co.kr/view/AEN20261123001651320",
-              "tid": 1795393466.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Taiwan shares open lower",
-      "kallor": [
-        {
-          "namn": "Focus Taiwan",
-          "rubrik": "Taiwan shares open lower",
-          "url": "https://focustaiwan.tw/business/202611230001",
-          "tid": 1795396062.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TW",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Yonhap",
-          "rubrik": "(LEAD) Seoul shares open over 2 pct lower amid AI fears",
-          "url": "https://en.yna.co.kr/view/AEN20261123001651320",
-          "tid": 1795393466.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "KR",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "6656aa783b",
-      "amnen": [
-        "ai",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "ai"
-      ],
-      "poang": 29.4,
-      "vikt": {
-        "bredd": 0.106,
-        "regioner": {
-          "asien": 1,
-          "europa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T09:29:42+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.713,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "South Korea’s education chief has gone. Its AI exam headache has not",
-              "url": "https://www.scmp.com/week-asia/politics/article/3375480/south-koreas-education-chief-has-gone-its-ai-exam-headache-has-not",
-              "tid": 1795426182.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "South Korea’s education minister resigns after AI cheating scandal",
-              "url": "https://rt-english.com/news/649231-south-koreas-education-minister-resigns/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795406851.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "South Korea’s education chief has gone. Its AI exam headache has not",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "South Korea’s education chief has gone. Its AI exam headache has not",
-          "url": "https://www.scmp.com/week-asia/politics/article/3375480/south-koreas-education-chief-has-gone-its-ai-exam-headache-has-not",
-          "tid": 1795426182.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "South Korea’s education minister resigns after AI cheating scandal",
-          "url": "https://rt-english.com/news/649231-south-koreas-education-minister-resigns/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795406851.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
       "id": "acb673c88a",
       "amnen": [
         "geopolitik",
@@ -3128,7 +2975,7 @@
         "geopolitik",
         "usa"
       ],
-      "poang": 29.1,
+      "poang": 29.2,
       "vikt": {
         "bredd": 0.634,
         "regioner": {
@@ -3137,7 +2984,7 @@
           "usa": 2,
           "europa": 1
         },
-        "timmar": 53,
+        "timmar": 54,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3350,6 +3197,123 @@
       "data": null
     },
     {
+      "id": "3eee8fe5e7",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 28.9,
+      "vikt": {
+        "bredd": 0.429,
+        "regioner": {
+          "mellanostern": 3
+        },
+        "timmar": 82,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T01:32:12+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.668,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Qatar PM looks to revive US-Iran talks after meeting Rubio",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/qatar-pm-looks-to-revive-us-iran-talks-after-meeting-rubio?traffic_source=rss",
+              "tid": 1795483932.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Qatar needs US and Iran to resume talks to end war, PM says",
+              "url": "https://www.middleeasteye.net/news/qatar-needs-us-iran-resume-talks-end-war-pm-says",
+              "tid": 1795468923.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Rubio meets Qatari PM as Iran standoff deepens",
+              "url": "https://www.al-monitor.com/originals/2026/11/rubio-meets-qatari-pm-iran-standoff-deepens",
+              "tid": 1795456822.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Qatar PM looks to revive US-Iran talks after meeting Rubio",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Qatar PM looks to revive US-Iran talks after meeting Rubio",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/qatar-pm-looks-to-revive-us-iran-talks-after-meeting-rubio?traffic_source=rss",
+          "tid": 1795483932.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Qatar needs US and Iran to resume talks to end war, PM says",
+          "url": "https://www.middleeasteye.net/news/qatar-needs-us-iran-resume-talks-end-war-pm-says",
+          "tid": 1795468923.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Rubio meets Qatari PM as Iran standoff deepens",
+          "url": "https://www.al-monitor.com/originals/2026/11/rubio-meets-qatari-pm-iran-standoff-deepens",
+          "tid": 1795456822.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "6552429106",
       "amnen": [
         "usa"
@@ -3357,7 +3321,7 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 28.5,
+      "poang": 28.6,
       "vikt": {
         "bredd": 0.387,
         "regioner": {
@@ -3366,7 +3330,7 @@
           "usa": 1,
           "europa": 1
         },
-        "timmar": 83,
+        "timmar": 84,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3553,7 +3517,7 @@
           "mellanostern": 2,
           "europa": 1
         },
-        "timmar": 91,
+        "timmar": 92,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3658,6 +3622,213 @@
         "färre än tre oberoende källor (2)",
         "bara en region",
         "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "a3e283932c",
+      "amnen": [
+        "halvledare",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "halvledare",
+        "usa"
+      ],
+      "poang": 28.4,
+      "vikt": {
+        "bredd": 0.309,
+        "regioner": {
+          "asien": 3,
+          "usa": 2,
+          "sverige": 1
+        },
+        "timmar": 48,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T01:50:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.645,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "sverige",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+              "url": "https://www.japantimes.co.jp/news/2026/11/24/world/trump-lame-duck-nvidia-ceo/",
+              "tid": 1795485000.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+              "url": "https://www.straitstimes.com/world/united-states/trump-rewrites-the-lame-duck-rules-with-flex-on-nvidia-ceo",
+              "tid": 1795483500.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘You got brain, nobody can beat you’: Trump spoke to Jensen Huang before reinstatement as Nvidia CEO",
+              "url": "https://www.hindustantimes.com/world-news/us-news/you-got-brain-nobody-can-beat-you-trump-spoke-to-jensen-huang-before-reinstatement-as-nvidia-ceo-101795449409667.html",
+              "tid": 1795450315.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Reason",
+              "land": "US",
+              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+              "tid": 1795466976.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Axios",
+              "land": "US",
+              "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+              "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
+              "tid": 1795464005.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "”Trump fick som han ville – men nya akter väntar i Nvidia-dramat”",
+              "url": "https://www.svt.se/nyheter/utrikes/trump-fick-som-han-ville-men-nya-akter-vantar-i-nvidia-dramat",
+              "tid": 1795452127.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Reason",
+              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+              "tid": 1795466976.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "Axios",
+              "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+              "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
+              "tid": 1795464005.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+      "kallor": [
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+          "url": "https://www.japantimes.co.jp/news/2026/11/24/world/trump-lame-duck-nvidia-ceo/",
+          "tid": 1795485000.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+          "url": "https://www.straitstimes.com/world/united-states/trump-rewrites-the-lame-duck-rules-with-flex-on-nvidia-ceo",
+          "tid": 1795483500.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Reason",
+          "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+          "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+          "tid": 1795466976.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Axios",
+          "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+          "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
+          "tid": 1795464005.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "”Trump fick som han ville – men nya akter väntar i Nvidia-dramat”",
+          "url": "https://www.svt.se/nyheter/utrikes/trump-fick-som-han-ville-men-nya-akter-vantar-i-nvidia-dramat",
+          "tid": 1795452127.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘You got brain, nobody can beat you’: Trump spoke to Jensen Huang before reinstatement as Nvidia CEO",
+          "url": "https://www.hindustantimes.com/world-news/us-news/you-got-brain-nobody-can-beat-you-trump-spoke-to-jensen-huang-before-reinstatement-as-nvidia-ceo-101795449409667.html",
+          "tid": 1795450315.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -3806,14 +3977,14 @@
       "id": "ca3a494c65",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.7,
+      "poang": 27.8,
       "vikt": {
         "bredd": 0.345,
         "regioner": {
           "mellanostern": 2,
           "asien": 1
         },
-        "timmar": 75,
+        "timmar": 76,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3934,7 +4105,7 @@
         "regioner": {
           "sverige": 3
         },
-        "timmar": 91,
+        "timmar": 92,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4039,174 +4210,7 @@
       "data": null
     },
     {
-      "id": "a3e283932c",
-      "amnen": [
-        "halvledare",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "usa"
-      ],
-      "poang": 27.2,
-      "vikt": {
-        "bredd": 0.191,
-        "regioner": {
-          "asien": 1,
-          "usa": 2,
-          "sverige": 1
-        },
-        "timmar": 47,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-24T01:25:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.637,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "sverige",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
-              "url": "https://www.straitstimes.com/world/united-states/trump-rewrites-the-lame-duck-rules-with-flex-on-nvidia-ceo",
-              "tid": 1795483500.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Reason",
-              "land": "US",
-              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
-              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
-              "tid": 1795466976.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Axios",
-              "land": "US",
-              "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
-              "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
-              "tid": 1795464005.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "”Trump fick som han ville – men nya akter väntar i Nvidia-dramat”",
-              "url": "https://www.svt.se/nyheter/utrikes/trump-fick-som-han-ville-men-nya-akter-vantar-i-nvidia-dramat",
-              "tid": 1795452127.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Reason",
-              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
-              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
-              "tid": 1795466976.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "Axios",
-              "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
-              "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
-              "tid": 1795464005.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
-          "url": "https://www.straitstimes.com/world/united-states/trump-rewrites-the-lame-duck-rules-with-flex-on-nvidia-ceo",
-          "tid": 1795483500.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Reason",
-          "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
-          "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
-          "tid": 1795466976.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Axios",
-          "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
-          "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
-          "tid": 1795464005.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "”Trump fick som han ville – men nya akter väntar i Nvidia-dramat”",
-          "url": "https://www.svt.se/nyheter/utrikes/trump-fick-som-han-ville-men-nya-akter-vantar-i-nvidia-dramat",
-          "tid": 1795452127.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "375407217e",
+      "id": "d1c8a0e695",
       "amnen": [
         "geopolitik",
         "varlden"
@@ -4221,7 +4225,7 @@
           "afrika": 1,
           "asien": 2
         },
-        "timmar": 75,
+        "timmar": 76,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4331,7 +4335,7 @@
       "id": "a08a51b75e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 26.7,
+      "poang": 26.8,
       "vikt": {
         "bredd": 0.503,
         "regioner": {
@@ -4340,7 +4344,7 @@
           "europa": 2,
           "usa": 1
         },
-        "timmar": 41,
+        "timmar": 42,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4562,13 +4566,13 @@
         "geopolitik",
         "sverige"
       ],
-      "poang": 26.6,
+      "poang": 26.7,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 91,
+        "timmar": 92,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4650,6 +4654,199 @@
         "färre än tre oberoende källor (2)",
         "bara en region",
         "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "32e2254959",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.202,
+        "regioner": {
+          "mellanostern": 1,
+          "asien": 1
+        },
+        "timmar": 79,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-23T18:04:42+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.652,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Houthi-run government says Saudi air strikes killed civilians in Lahj",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-run-government-says-saudi-airstrikes-killed-injured-civilians",
+              "tid": 1795457082.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "17 killed in Saudi attack on Yemeni city: Houthis",
+              "url": "https://www.thehindu.com/news/international/17-killed-in-saudi-attack-on-yemeni-city-houthis/article71735986.ece",
+              "tid": 1795454651.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Houthi-run government says Saudi air strikes killed civilians in Lahj",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Houthi-run government says Saudi air strikes killed civilians in Lahj",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-run-government-says-saudi-airstrikes-killed-injured-civilians",
+          "tid": 1795457082.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "17 killed in Saudi attack on Yemeni city: Houthis",
+          "url": "https://www.thehindu.com/news/international/17-killed-in-saudi-attack-on-yemeni-city-houthis/article71735986.ece",
+          "tid": 1795454651.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "a00f0ee6e7",
+      "amnen": [
+        "asien"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.118,
+        "regioner": {
+          "asien": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T01:04:51+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.661,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Focus Taiwan",
+              "land": "TW",
+              "rubrik": "Taiwan shares open higher",
+              "url": "https://focustaiwan.tw/business/202611240001",
+              "tid": 1795482291.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "(LEAD) Seoul shares open sharply higher after Jensen Huang returns",
+              "url": "https://en.yna.co.kr/view/AEN20261124001651320",
+              "tid": 1795480107.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Taiwan shares open higher",
+      "kallor": [
+        {
+          "namn": "Focus Taiwan",
+          "rubrik": "Taiwan shares open higher",
+          "url": "https://focustaiwan.tw/business/202611240001",
+          "tid": 1795482291.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "TW",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Yonhap",
+          "rubrik": "(LEAD) Seoul shares open sharply higher after Jensen Huang returns",
+          "url": "https://en.yna.co.kr/view/AEN20261124001651320",
+          "tid": 1795480107.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "KR",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
       ],
       "data": null
     },
@@ -4750,103 +4947,6 @@
       "data": null
     },
     {
-      "id": "32e2254959",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.4,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "mellanostern": 1,
-          "asien": 1
-        },
-        "timmar": 78,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T18:04:42+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.652,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Houthi-run government says Saudi air strikes killed civilians in Lahj",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-run-government-says-saudi-airstrikes-killed-injured-civilians",
-              "tid": 1795457082.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "17 killed in Saudi attack on Yemeni city: Houthis",
-              "url": "https://www.thehindu.com/news/international/17-killed-in-saudi-attack-on-yemeni-city-houthis/article71735986.ece",
-              "tid": 1795454651.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Houthi-run government says Saudi air strikes killed civilians in Lahj",
-      "kallor": [
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Houthi-run government says Saudi air strikes killed civilians in Lahj",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-run-government-says-saudi-airstrikes-killed-injured-civilians",
-          "tid": 1795457082.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "17 killed in Saudi attack on Yemeni city: Houthis",
-          "url": "https://www.thehindu.com/news/international/17-killed-in-saudi-attack-on-yemeni-city-houthis/article71735986.ece",
-          "tid": 1795454651.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "185c620827",
       "amnen": [
         "geopolitik",
@@ -4855,14 +4955,14 @@
       "amnen_sektion": [
         "geopolitik"
       ],
-      "poang": 26.2,
+      "poang": 26.3,
       "vikt": {
         "bredd": 0.116,
         "regioner": {
           "europa": 1,
           "asien": 1
         },
-        "timmar": 45,
+        "timmar": 46,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5052,14 +5152,14 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 25.7,
+      "poang": 25.8,
       "vikt": {
         "bredd": 0.261,
         "regioner": {
           "afrika": 1,
           "asien": 2
         },
-        "timmar": 57,
+        "timmar": 58,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5166,12 +5266,12 @@
       "data": null
     },
     {
-      "id": "552757a4e0",
+      "id": "ba943fdc84",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 25.7,
+      "poang": 25.8,
       "vikt": {
         "bredd": 0.366,
         "regioner": {
@@ -5179,7 +5279,7 @@
           "europa": 3,
           "mellanostern": 1
         },
-        "timmar": 45,
+        "timmar": 46,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5337,13 +5437,13 @@
         "halvledare",
         "marknader"
       ],
-      "poang": 25.6,
+      "poang": 25.7,
       "vikt": {
         "bredd": 0.04,
         "regioner": {
           "usa": 2
         },
-        "timmar": 46,
+        "timmar": 47,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5385,7 +5485,7 @@
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
@@ -5433,14 +5533,14 @@
       "id": "7be2ca7963",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 25.6,
+      "poang": 25.7,
       "vikt": {
         "bredd": 0.306,
         "regioner": {
           "mellanostern": 2,
           "usa": 1
         },
-        "timmar": 50,
+        "timmar": 51,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5548,225 +5648,68 @@
       "data": null
     },
     {
-      "id": "53477798d8",
+      "id": "385d0f8c06",
       "amnen": [
-        "halvledare",
-        "usa"
+        "asien"
       ],
-      "amnen_sektion": [
-        "halvledare",
-        "usa"
-      ],
-      "poang": 25.1,
+      "amnen_sektion": [],
+      "poang": 25.4,
       "vikt": {
-        "bredd": 0.514,
+        "bredd": 0.118,
         "regioner": {
-          "mellanostern": 1,
-          "europa": 2,
-          "usa": 4,
-          "asien": 3
+          "asien": 2
         },
-        "timmar": 13,
+        "timmar": 74,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 10,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-24T00:52:47+00:00",
+      "senast": "2026-11-23T10:35:25+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.663,
+      "sammanhang": 0.973,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
+          "asien"
         ],
         "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
-              "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list?traffic_source=rss",
-              "tid": 1795481567.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-              "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795475768.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
-              "url": "https://www.dw.com/en/us-adds-megaspeed-at-center-of-nvidia-scandal-to-a-trade-blacklist/a-80026849?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795473300.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Commerce Department adds Megaspeed to trade blacklist amid Nvidia scandal",
-              "url": "https://thehill.com/policy/technology/6238594-commerce-blacklists-megaspeed-nvidia/",
-              "tid": 1795473924.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-              "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
-              "tid": 1795469142.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
-              "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
-              "tid": 1795475938.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "Trump Administration Adds Nvidia-linked Megaspeed to Trade Blacklist",
-              "url": "https://www.theinformation.com/briefings/trump-administration-will-add-nvidia-linked-megaspeed-trade-blacklist",
-              "tid": 1795467846.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Techmeme",
-              "land": "US",
-              "rubrik": "Sources: the Commerce Department added Megaspeed to its entity list on Monday, barring US companies from selling chips to the company without a license (Ashley Gold/Semafor)",
-              "url": "https://www.techmeme.com/261123/p40#a261123p40",
-              "tid": 1795464611.0,
-              "statskontrollerad": false
-            }
-          ],
           "asien": [
             {
-              "kalla": "Hindustan Times",
+              "kalla": "The Hindu",
               "land": "IN",
-              "rubrik": "US blacklists Megaspeed, firm linked to alleged Chinese spy in Nvidia CEO affair controversy",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-plans-to-blacklist-megaspeed-firm-linked-to-alleged-chinese-spy-in-nvidia-ceo-jensen-huang-affair-controversy-101795469273822.html",
-              "tid": 1795472646.0,
+              "rubrik": "Bangladesh vows to arrest ex-PM Hasina if she returns from India",
+              "url": "https://www.thehindu.com/news/international/bangladesh-vows-to-arrest-ex-pm-hasina-if-she-returns-from-india/article71734092.ece",
+              "tid": 1795430125.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US blacklists S’pore-based chip firm Megaspeed linked to Nvidia scandal",
-              "url": "https://www.straitstimes.com/world/united-states/us-blacklists-megaspeed-chip-firm-linked-to-nvidia-scandal",
-              "tid": 1795471860.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "US to place Megaspeed on trade blacklist amid Nvidia scandal",
-              "url": "https://asia.nikkei.com/business/tech/semiconductors/us-to-place-megaspeed-on-trade-blacklist-amid-nvidia-scandal",
-              "tid": null,
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Bangladesh vows to arrest Hasina if she returns from India",
+              "url": "https://www.dawn.com/news/2046532/bangladesh-vows-to-arrest-hasina-if-she-returns-from-india",
+              "tid": 1795425764.0,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Commerce Department adds Megaspeed to trade blacklist amid Nvidia scandal",
-              "url": "https://thehill.com/policy/technology/6238594-commerce-blacklists-megaspeed-nvidia/",
-              "tid": 1795473924.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
-              "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
-              "tid": 1795475938.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
+        "grannar_svenska": false,
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
+      "reserv_rubrik": "Bangladesh vows to arrest ex-PM Hasina if she returns from India",
       "kallor": [
         {
-          "namn": "Al Jazeera",
-          "rubrik": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
-          "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list?traffic_source=rss",
-          "tid": 1795481567.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-          "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795475768.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Commerce Department adds Megaspeed to trade blacklist amid Nvidia scandal",
-          "url": "https://thehill.com/policy/technology/6238594-commerce-blacklists-megaspeed-nvidia/",
-          "tid": 1795473924.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
-          "url": "https://www.dw.com/en/us-adds-megaspeed-at-center-of-nvidia-scandal-to-a-trade-blacklist/a-80026849?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795473300.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US blacklists Megaspeed, firm linked to alleged Chinese spy in Nvidia CEO affair controversy",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-plans-to-blacklist-megaspeed-firm-linked-to-alleged-chinese-spy-in-nvidia-ceo-jensen-huang-affair-controversy-101795469273822.html",
-          "tid": 1795472646.0,
+          "namn": "The Hindu",
+          "rubrik": "Bangladesh vows to arrest ex-PM Hasina if she returns from India",
+          "url": "https://www.thehindu.com/news/international/bangladesh-vows-to-arrest-ex-pm-hasina-if-she-returns-from-india/article71734092.ece",
+          "tid": 1795430125.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -5775,86 +5718,29 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "US blacklists S’pore-based chip firm Megaspeed linked to Nvidia scandal",
-          "url": "https://www.straitstimes.com/world/united-states/us-blacklists-megaspeed-chip-firm-linked-to-nvidia-scandal",
-          "tid": 1795471860.0,
+          "namn": "Dawn",
+          "rubrik": "Bangladesh vows to arrest Hasina if she returns from India",
+          "url": "https://www.dawn.com/news/2046532/bangladesh-vows-to-arrest-hasina-if-she-returns-from-india",
+          "tid": 1795425764.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
+          "land": "PK",
           "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-          "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
-          "tid": 1795469142.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
-          "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
-          "tid": 1795475938.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Information",
-          "rubrik": "Trump Administration Adds Nvidia-linked Megaspeed to Trade Blacklist",
-          "url": "https://www.theinformation.com/briefings/trump-administration-will-add-nvidia-linked-megaspeed-trade-blacklist",
-          "tid": 1795467846.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "US to place Megaspeed on trade blacklist amid Nvidia scandal",
-          "url": "https://asia.nikkei.com/business/tech/semiconductors/us-to-place-megaspeed-on-trade-blacklist-amid-nvidia-scandal",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Techmeme",
-          "rubrik": "Sources: the Commerce Department added Megaspeed to its entity list on Monday, barring US companies from selling chips to the company without a license (Ashley Gold/Semafor)",
-          "url": "https://www.techmeme.com/261123/p40#a261123p40",
-          "tid": 1795464611.0,
-          "betalvagg": false,
-          "typ": "kuraterat",
-          "land": "US",
-          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
-        "en": 3
+        "sv": 0,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region",
+        "spärrord: arrest"
       ],
       "data": null
     },
@@ -5862,14 +5748,14 @@
       "id": "dcb0769672",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 24.8,
+      "poang": 24.9,
       "vikt": {
         "bredd": 0.106,
         "regioner": {
           "europa": 1,
           "asien": 1
         },
-        "timmar": 33,
+        "timmar": 34,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5966,13 +5852,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 22.3,
+      "poang": 22.5,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 32,
+        "timmar": 33,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6062,14 +5948,14 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.8,
+      "poang": 21.0,
       "vikt": {
         "bredd": 0.279,
         "regioner": {
           "sverige": 2,
           "latinamerika": 1
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6182,13 +6068,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 19.5,
+      "poang": 19.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6282,13 +6168,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 19.5,
+      "poang": 19.7,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 16,
+        "timmar": 17,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6376,14 +6262,14 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 18.9,
+      "poang": 19.5,
       "vikt": {
         "bredd": 0.202,
         "regioner": {
           "asien": 1,
           "afrika": 1
         },
-        "timmar": 6,
+        "timmar": 7,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6479,13 +6365,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 18.5,
+      "poang": 18.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 13,
+        "timmar": 14,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -7076,7 +6962,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 91,
+      "artiklar": 87,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -7136,7 +7022,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 10,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -7220,7 +7106,7 @@
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 31,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -7308,7 +7194,7 @@
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 8,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
@@ -7404,7 +7290,7 @@
     {
       "id": "expressen-noje",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://www.expressen.se/rss/noje"
     },
     {
@@ -7497,9 +7383,8 @@
     },
     {
       "id": "hacker-news",
-      "ok": true,
-      "artiklar": 9,
-      "url": "https://hnrss.org/frontpage?points=250"
+      "ok": false,
+      "fel": "HTTP Error 502: Bad Gateway"
     },
     {
       "id": "import-ai",
@@ -7539,7 +7424,7 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 5,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -7610,7 +7495,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 36,
+      "artiklar": 35,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -7664,7 +7549,7 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 33,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
@@ -7694,7 +7579,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 69,
+      "artiklar": 71,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -7825,8 +7710,9 @@
     },
     {
       "id": "theeastafrican",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 10,
+      "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
       "id": "kyivindependent",
@@ -7843,7 +7729,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 24,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
