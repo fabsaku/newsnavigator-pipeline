@@ -3463,13 +3463,13 @@
    "energi",
    "geopolitik"
   ],
-  "poang": 28.1,
+  "poang": 28.3,
   "vikt": {
-   "bredd": 0.281,
+   "bredd": 0.301,
    "regioner": {
+    "usa": 2,
     "asien": 2,
-    "mellanostern": 1,
-    "usa": 1
+    "mellanostern": 1
    },
    "timmar": 96,
    "konsekvens": null,
@@ -3478,13 +3478,13 @@
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 4,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-24T01:19:33+00:00",
+  "senast": "2026-11-24T13:24:58+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.954,
+  "sammanhang": 0.837,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
@@ -3493,6 +3493,24 @@
     "usa"
    ],
    "per_region": {
+    "usa": [
+     {
+      "kalla": "Washington Examiner",
+      "land": "US",
+      "rubrik": "US investigates alleged Iranian cyberattacks on up to 50 energy tankers: Report",
+      "url": "https://www.washingtonexaminer.com/policy/defense/4813463/us-investigates-iran-cyberattack-energy-tankers/",
+      "tid": 1795526698.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
+      "url": "https://www.wsj.com/politics/national-security/iran-us-cyberattack-suspect-fed78942?mod=rss_worldnews",
+      "tid": 1795478400.0,
+      "statskontrollerad": false
+     }
+    ],
     "asien": [
      {
       "kalla": "Hindustan Times",
@@ -3520,25 +3538,46 @@
       "tid": 1795481191.0,
       "statskontrollerad": false
      }
-    ],
-    "usa": [
-     {
-      "kalla": "The Wall Street Journal",
-      "land": "US",
-      "rubrik": "U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
-      "url": "https://www.wsj.com/politics/national-security/iran-us-cyberattack-suspect-fed78942?mod=rss_worldnews",
-      "tid": 1795478400.0,
-      "statskontrollerad": false
-     }
     ]
    },
    "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
-   "usa": null,
+   "usa": {
+    "rod": [
+     {
+      "kalla": "Washington Examiner",
+      "rubrik": "US investigates alleged Iranian cyberattacks on up to 50 energy tankers: Report",
+      "url": "https://www.washingtonexaminer.com/policy/defense/4813463/us-investigates-iran-cyberattack-energy-tankers/",
+      "tid": 1795526698.0,
+      "lutning": "lutar_hoger"
+     }
+    ],
+    "mitten": [
+     {
+      "kalla": "The Wall Street Journal",
+      "rubrik": "U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
+      "url": "https://www.wsj.com/politics/national-security/iran-us-cyberattack-suspect-fed78942?mod=rss_worldnews",
+      "tid": 1795478400.0,
+      "lutning": "mitten"
+     }
+    ]
+   },
    "usa_blind": null
   },
-  "reserv_rubrik": "US eyes Iran as possible culprit behind wave of cyberattacks on ships: Report",
+  "reserv_rubrik": "US investigates alleged Iranian cyberattacks on up to 50 energy tankers: Report",
   "kallor": [
+   {
+    "namn": "Washington Examiner",
+    "rubrik": "US investigates alleged Iranian cyberattacks on up to 50 energy tankers: Report",
+    "url": "https://www.washingtonexaminer.com/policy/defense/4813463/us-investigates-iran-cyberattack-energy-tankers/",
+    "tid": 1795526698.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Hindustan Times",
     "rubrik": "US eyes Iran as possible culprit behind wave of cyberattacks on ships: Report",
@@ -3601,7 +3640,7 @@
   "data": null,
   "godkand_tid": 1795151145.8403869,
   "automatisk": true,
-  "uppdaterad_tid": 1795518394.132415
+  "uppdaterad_tid": 1795529202.6891916
  },
  "e86779e359": {
   "id": "e86779e359",
