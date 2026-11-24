@@ -3456,15 +3456,20 @@
  "a5940a11a3": {
   "id": "a5940a11a3",
   "amnen": [
-   "mellanostern",
-   "varlden"
+   "energi",
+   "geopolitik"
   ],
-  "amnen_sektion": [],
-  "poang": 28.2,
+  "amnen_sektion": [
+   "energi",
+   "geopolitik"
+  ],
+  "poang": 28.1,
   "vikt": {
-   "bredd": 0.286,
+   "bredd": 0.281,
    "regioner": {
-    "mellanostern": 2
+    "asien": 2,
+    "mellanostern": 1,
+    "usa": 1
    },
    "timmar": 96,
    "konsekvens": null,
@@ -3473,85 +3478,130 @@
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 2,
+  "antal_kallor": 4,
   "har_primarkalla": false,
-  "senast": "2026-11-22T16:13:34+00:00",
+  "senast": "2026-11-24T01:19:33+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.684,
+  "sammanhang": 0.954,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
-    "mellanostern"
+    "asien",
+    "mellanostern",
+    "usa"
    ],
    "per_region": {
-    "mellanostern": [
+    "asien": [
      {
-      "kalla": "Arab News",
-      "land": "SA",
-      "rubrik": "UKMTO reports incident involving tanker and military forces in Gulf of Oman",
-      "url": "https://www.arabnews.com/middle-east/ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman-3013574",
-      "tid": 1795364014.0,
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "US eyes Iran as possible culprit behind wave of cyberattacks on ships: Report",
+      "url": "https://www.hindustantimes.com/world-news/us-news/us-eyes-iran-as-possible-culprit-behind-wave-of-cyberattacks-on-ships-report-101795482595669.html",
+      "tid": 1795483173.0,
       "statskontrollerad": false
      },
      {
-      "kalla": "The National",
-      "land": "AE",
-      "rubrik": "Middle East latest: Tanker incident reported in Gulf as Iran claims two ships catch fire",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/22/live-bahrain-attack-iran-war/",
-      "tid": 1795317829.0,
-      "statskontrollerad": true
+      "kalla": "The Straits Times",
+      "land": "SG",
+      "rubrik": "US eyes Iran as possible culprit in dozens of new cyberattacks against ships, WSJ reports",
+      "url": "https://www.straitstimes.com/world/europe/us-eyes-iran-as-possible-culprit-in-dozens-of-new-cyberattacks-against-ships-wsj-reports",
+      "tid": 1795479767.0,
+      "statskontrollerad": false
+     }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al-Monitor",
+      "land": "US",
+      "rubrik": "US eyes Iran as possible culprit in dozens of new cyberattacks against ships, WSJ reports",
+      "url": "https://www.al-monitor.com/originals/2026/11/us-eyes-iran-possible-culprit-dozens-new-cyberattacks-against-ships-wsj-reports",
+      "tid": 1795481191.0,
+      "statskontrollerad": false
+     }
+    ],
+    "usa": [
+     {
+      "kalla": "The Wall Street Journal",
+      "land": "US",
+      "rubrik": "U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
+      "url": "https://www.wsj.com/politics/national-security/iran-us-cyberattack-suspect-fed78942?mod=rss_worldnews",
+      "tid": 1795478400.0,
+      "statskontrollerad": false
      }
     ]
    },
-   "blind_flack": null,
+   "blind_flack": "saknas_i_sverige",
    "grannar_svenska": false,
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "UKMTO reports incident involving tanker and military forces in Gulf of Oman",
+  "reserv_rubrik": "US eyes Iran as possible culprit behind wave of cyberattacks on ships: Report",
   "kallor": [
    {
-    "namn": "Arab News",
-    "rubrik": "UKMTO reports incident involving tanker and military forces in Gulf of Oman",
-    "url": "https://www.arabnews.com/middle-east/ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman-3013574",
-    "tid": 1795364014.0,
+    "namn": "Hindustan Times",
+    "rubrik": "US eyes Iran as possible culprit behind wave of cyberattacks on ships: Report",
+    "url": "https://www.hindustantimes.com/world-news/us-news/us-eyes-iran-as-possible-culprit-behind-wave-of-cyberattacks-on-ships-report-101795482595669.html",
+    "tid": 1795483173.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "SA",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Al-Monitor",
+    "rubrik": "US eyes Iran as possible culprit in dozens of new cyberattacks against ships, WSJ reports",
+    "url": "https://www.al-monitor.com/originals/2026/11/us-eyes-iran-possible-culprit-dozens-new-cyberattacks-against-ships-wsj-reports",
+    "tid": 1795481191.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "US",
     "region": "mellanostern",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "The National",
-    "rubrik": "Middle East latest: Tanker incident reported in Gulf as Iran claims two ships catch fire",
-    "url": "https://www.thenationalnews.com/news/mena/2026/11/22/live-bahrain-attack-iran-war/",
-    "tid": 1795317829.0,
+    "namn": "The Straits Times",
+    "rubrik": "US eyes Iran as possible culprit in dozens of new cyberattacks against ships, WSJ reports",
+    "url": "https://www.straitstimes.com/world/europe/us-eyes-iran-as-possible-culprit-in-dozens-of-new-cyberattacks-against-ships-wsj-reports",
+    "tid": 1795479767.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "AE",
-    "region": "mellanostern",
-    "agare": "statlig",
-    "statskontrollerad": true
+    "land": "SG",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "The Wall Street Journal",
+    "rubrik": "U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
+    "url": "https://www.wsj.com/politics/national-security/iran-us-cyberattack-suspect-fed78942?mod=rss_worldnews",
+    "tid": 1795478400.0,
+    "betalvagg": true,
+    "typ": "media",
+    "land": "US",
+    "region": "usa",
+    "agare": "privat",
+    "statskontrollerad": false
    }
   ],
   "granskad": true,
   "relevans": {
-   "sv": 0,
-   "en": 1
+   "sv": 1,
+   "en": 3
   },
   "autopilot": [
    "inget utkast",
    "ingen källkontroll",
-   "färre än tre oberoende källor (1)",
-   "bara en region"
+   "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1795151145.8403869,
   "automatisk": true,
-  "uppdaterad_tid": 1795381467.5587537
+  "uppdaterad_tid": 1795518394.132415
  },
  "e86779e359": {
   "id": "e86779e359",
