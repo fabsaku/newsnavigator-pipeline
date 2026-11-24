@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-24T01:05:13.622146+00:00",
+  "skapad": "2026-11-24T01:48:24.409036+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -15,20 +15,20 @@
         "halvledare",
         "usa"
       ],
-      "poang": 44.1,
+      "poang": 42.9,
       "vikt": {
-        "bredd": 2.863,
+        "bredd": 2.969,
         "regioner": {
+          "asien": 11,
           "usa": 17,
           "europa": 7,
-          "asien": 9,
           "mellanostern": 2,
           "latinamerika": 3,
           "afrika": 3,
           "norden": 1,
           "sverige": 3
         },
-        "timmar": 4,
+        "timmar": 2,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -37,16 +37,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 45,
+      "antal_kallor": 47,
       "har_primarkalla": false,
-      "senast": "2026-11-24T00:55:56+00:00",
+      "senast": "2026-11-24T01:45:37+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLrY3DQzfYhK4xTX1r3z'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq18xkr5DDv5S9goJW'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.549,
+      "sammanhang": 0.53,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -60,13 +60,111 @@
           "usa"
         ],
         "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Jensen Huang returns to Nvidia to applause from staff, no trademark leather jacket in sight",
+              "url": "https://www.scmp.com/tech/tech-war/article/3375539/jensen-huang-returns-nvidia-applause-staff-no-trademark-leather-jacket-sight",
+              "tid": 1795484737.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Nvidia’s board was no match for Trump or Jensen Huang’s backers",
+              "url": "https://www.straitstimes.com/world/united-states/nvidias-board-was-no-match-for-trump-or-jensen-huangs-backers",
+              "tid": 1795484408.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Asian stocks rally as Huang's Nvidia return revives AI trade",
+              "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-huangs-nvidia-return-revives-ai-trade-6576636",
+              "tid": 1795483842.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Rappler",
+              "land": "PH",
+              "rubrik": "US lawmakers criticize Nvidia decision to reinstate Huang as CEO",
+              "url": "https://www.rappler.com/technology/us-lawmakers-criticize-nvidia-decision-reinstate-jensen-huang-ceo/",
+              "tid": 1795480053.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘I’m going to be a better CEO’: Jensen Huang tells Nvidia employees on ‘first day at work’ after ouster",
+              "url": "https://www.hindustantimes.com/world-news/us-news/im-going-to-be-a-better-ceo-jensen-huang-tells-nvidia-employees-on-first-day-at-work-after-ouster-101795476847458.html",
+              "tid": 1795480050.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Nvidia rehires Huang in stunning reversal after Trump push",
+              "url": "https://www.japantimes.co.jp/business/2026/11/24/tech/nvidia-huang-trump-push/",
+              "tid": 1795471080.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "(2nd LD) SK hynix's U.S.-traded shares surge 20 pct after Huang's reinstatement as Nvidia CEO",
+              "url": "https://en.yna.co.kr/view/AEN20261124000252315",
+              "tid": 1795468770.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Nvidia reinstates Jensen Huang as CEO after U.S. government input",
+              "url": "https://www.thehindu.com/sci-tech/technology/nvidia-reinstates-jensen-huang-as-ceo-after-us-government-input/article71735341.ece",
+              "tid": 1795457703.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "'No national security risk': Nvidia reinstates Jensen Huang as CEO after affair scandal",
+              "url": "https://www.dawn.com/news/2046556/no-national-security-risk-nvidia-reinstates-jensen-huang-as-ceo-after-affair-scandal",
+              "tid": 1795452916.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Focus Taiwan",
+              "land": "TW",
+              "rubrik": "Taiwan shares rebound on hopes of Jensen Huang's return",
+              "url": "https://focustaiwan.tw/business/202611230014",
+              "tid": 1795427299.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Asian stocks leap on return of Nvidia's Jensen Huang",
+              "url": "https://asia.nikkei.com/business/markets/asian-stocks-leap-on-return-of-nvidia-s-jensen-huang",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ],
           "usa": [
             {
               "kalla": "CNBC",
               "land": "US",
-              "rubrik": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
+              "rubrik": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
               "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-              "tid": 1795481609.0,
+              "tid": 1795484430.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Stock market roars back after Jensen Huang’s abrupt return to Nvidia",
+              "url": "https://www.washingtonexaminer.com/policy/finance-and-economy/4813208/stock-market-jensen-huang-reinstated-nvidia/",
+              "tid": 1795482214.0,
               "statskontrollerad": false
             },
             {
@@ -83,14 +181,6 @@
               "rubrik": "Jensen Huang’s dramatic return to Nvidia: 5 takeaways",
               "url": "https://thehill.com/homenews/analysis/6238763-trump-drives-nvidia-ceo-return/",
               "tid": 1795475779.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "DOJ presses ahead with Megaspeed and Super Micro investigations after Jensen Huang comeback at Nvidia",
-              "url": "https://www.washingtonexaminer.com/policy/technology/4812998/doj-presses-ahead-with-megaspeed-and-super-micro-investigations-after-jensen-huang-comeback-nvidia/",
-              "tid": 1795475278.0,
               "statskontrollerad": false
             },
             {
@@ -176,9 +266,9 @@
             {
               "kalla": "The Washington Post",
               "land": "US",
-              "rubrik": "A shocked Washington preps expanded investigations as Huang returns to Nvidia",
-              "url": "https://www.washingtonpost.com/politics/2026/11/23/shocked-washington-preps-expanded-investigations-huang-returns-nvidia/",
-              "tid": 1795473769.0,
+              "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
+              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
+              "tid": 1795471836.0,
               "statskontrollerad": false
             },
             {
@@ -218,9 +308,9 @@
             {
               "kalla": "The Guardian",
               "land": "GB",
-              "rubrik": "Republicans lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
+              "rubrik": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
               "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-              "tid": 1795480981.0,
+              "tid": 1795483573.0,
               "statskontrollerad": false
             },
             {
@@ -260,7 +350,7 @@
               "land": "GB",
               "rubrik": "Asian tech stocks surge in wake of Jensen Huang’s return",
               "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
-              "tid": 1795480251.0,
+              "tid": 1795482790.0,
               "statskontrollerad": false
             },
             {
@@ -272,87 +362,13 @@
               "statskontrollerad": false
             }
           ],
-          "asien": [
-            {
-              "kalla": "Rappler",
-              "land": "PH",
-              "rubrik": "US lawmakers criticize Nvidia decision to reinstate Huang as CEO",
-              "url": "https://www.rappler.com/technology/us-lawmakers-criticize-nvidia-decision-reinstate-jensen-huang-ceo/",
-              "tid": 1795480053.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I’m going to be a better CEO’: Jensen Huang tells Nvidia employees on ‘first day at work’ after ouster",
-              "url": "https://www.hindustantimes.com/world-news/us-news/im-going-to-be-a-better-ceo-jensen-huang-tells-nvidia-employees-on-first-day-at-work-after-ouster-101795476847458.html",
-              "tid": 1795480050.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Nvidia’s Jensen Huang - the indispensable godfather of AI",
-              "url": "https://www.straitstimes.com/world/united-states/nvidias-jensen-huang-the-indispensable-godfather-of-ai",
-              "tid": 1795474800.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Jensen Huang’s stunning return in 11 days – 5 key takeaways",
-              "url": "https://www.scmp.com/news/us/economy-trade-business/article/3375531/jensen-huangs-stunning-return-11-days-5-key-takeaways",
-              "tid": 1795471612.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Yonhap",
-              "land": "KR",
-              "rubrik": "(2nd LD) SK hynix's U.S.-traded shares surge 20 pct after Huang's reinstatement as Nvidia CEO",
-              "url": "https://en.yna.co.kr/view/AEN20261124000252315",
-              "tid": 1795468770.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "Live: Wall Street roars back as Nvidia's Jensen Huang reinstated",
-              "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524",
-              "tid": 1795466180.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO after U.S. government input",
-              "url": "https://www.thehindu.com/sci-tech/technology/nvidia-reinstates-jensen-huang-as-ceo-after-us-government-input/article71735341.ece",
-              "tid": 1795457703.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "'No national security risk': Nvidia reinstates Jensen Huang as CEO after affair scandal",
-              "url": "https://www.dawn.com/news/2046556/no-national-security-risk-nvidia-reinstates-jensen-huang-as-ceo-after-affair-scandal",
-              "tid": 1795452916.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Nvidia reinstates Jensen Huang as CEO",
-              "url": "https://asia.nikkei.com/business/tech/semiconductors/nvidia-reinstates-jensen-huang-as-ceo",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ],
           "mellanostern": [
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "What Nvidia’s Jensen Huang’s return means for Washington and Wall Street?",
-              "url": "https://www.aljazeera.com/economy/2026/11/23/what-nvidias-jensen-huangs-return-means-for-washington-and-wall-street?traffic_source=rss",
-              "tid": 1795475163.0,
+              "rubrik": "Mamdani blasts AI-reliant stock market after Jensen Huang’s return",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/mamdani-blasts-ai-reliant-stock-market-after-jensen-huangs-return?traffic_source=rss",
+              "tid": 1795478067.0,
               "statskontrollerad": false
             },
             {
@@ -459,9 +475,9 @@
           "mitten": [
             {
               "kalla": "CNBC",
-              "rubrik": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
+              "rubrik": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
               "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-              "tid": 1795481609.0,
+              "tid": 1795484430.0,
               "lutning": "mitten"
             },
             {
@@ -481,18 +497,18 @@
           ],
           "rod": [
             {
+              "kalla": "Washington Examiner",
+              "rubrik": "Stock market roars back after Jensen Huang’s abrupt return to Nvidia",
+              "url": "https://www.washingtonexaminer.com/policy/finance-and-economy/4813208/stock-market-jensen-huang-reinstated-nvidia/",
+              "tid": 1795482214.0,
+              "lutning": "lutar_hoger"
+            },
+            {
               "kalla": "New York Post",
               "rubrik": "Commerce Department blacklists Megaspeed after Nvidia reinstates Jensen Huang as CEO",
               "url": "https://nypost.com/2026/11/23/us-news/commerce-department-blacklists-megaspeed-after-nvidia-reinstates-jensen-huang-as-ceo/",
               "tid": 1795480791.0,
               "lutning": "hoger"
-            },
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "DOJ presses ahead with Megaspeed and Super Micro investigations after Jensen Huang comeback at Nvidia",
-              "url": "https://www.washingtonexaminer.com/policy/technology/4812998/doj-presses-ahead-with-megaspeed-and-super-micro-investigations-after-jensen-huang-comeback-nvidia/",
-              "tid": 1795475278.0,
-              "lutning": "lutar_hoger"
             },
             {
               "kalla": "The Daily Caller",
@@ -526,22 +542,34 @@
             },
             {
               "kalla": "The Washington Post",
-              "rubrik": "A shocked Washington preps expanded investigations as Huang returns to Nvidia",
-              "url": "https://www.washingtonpost.com/politics/2026/11/23/shocked-washington-preps-expanded-investigations-huang-returns-nvidia/",
-              "tid": 1795473769.0,
+              "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
+              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
+              "tid": 1795471836.0,
               "lutning": "lutar_vanster"
             }
           ]
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
+      "reserv_rubrik": "Jensen Huang returns to Nvidia to applause from staff, no trademark leather jacket in sight",
       "kallor": [
         {
+          "namn": "South China Morning Post",
+          "rubrik": "Jensen Huang returns to Nvidia to applause from staff, no trademark leather jacket in sight",
+          "url": "https://www.scmp.com/tech/tech-war/article/3375539/jensen-huang-returns-nvidia-applause-staff-no-trademark-leather-jacket-sight",
+          "tid": 1795484737.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "CNBC",
-          "rubrik": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
+          "rubrik": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
           "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-          "tid": 1795481609.0,
+          "tid": 1795484430.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -550,14 +578,50 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The Straits Times",
+          "rubrik": "Nvidia’s board was no match for Trump or Jensen Huang’s backers",
+          "url": "https://www.straitstimes.com/world/united-states/nvidias-board-was-no-match-for-trump-or-jensen-huangs-backers",
+          "tid": 1795484408.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNA",
+          "rubrik": "Asian stocks rally as Huang's Nvidia return revives AI trade",
+          "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-huangs-nvidia-return-revives-ai-trade-6576636",
+          "tid": 1795483842.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Guardian",
-          "rubrik": "Republicans lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
+          "rubrik": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
           "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-          "tid": 1795480981.0,
+          "tid": 1795483573.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
           "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Stock market roars back after Jensen Huang’s abrupt return to Nvidia",
+          "url": "https://www.washingtonexaminer.com/policy/finance-and-economy/4813208/stock-market-jensen-huang-reinstated-nvidia/",
+          "tid": 1795482214.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -598,34 +662,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Hill",
-          "rubrik": "Jensen Huang’s dramatic return to Nvidia: 5 takeaways",
-          "url": "https://thehill.com/homenews/analysis/6238763-trump-drives-nvidia-ceo-return/",
-          "tid": 1795475779.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "DOJ presses ahead with Megaspeed and Super Micro investigations after Jensen Huang comeback at Nvidia",
-          "url": "https://www.washingtonexaminer.com/policy/technology/4812998/doj-presses-ahead-with-megaspeed-and-super-micro-investigations-after-jensen-huang-comeback-nvidia/",
-          "tid": 1795475278.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Al Jazeera",
-          "rubrik": "What Nvidia’s Jensen Huang’s return means for Washington and Wall Street?",
-          "url": "https://www.aljazeera.com/economy/2026/11/23/what-nvidias-jensen-huangs-return-means-for-washington-and-wall-street?traffic_source=rss",
-          "tid": 1795475163.0,
+          "rubrik": "Mamdani blasts AI-reliant stock market after Jensen Huang’s return",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/mamdani-blasts-ai-reliant-stock-market-after-jensen-huangs-return?traffic_source=rss",
+          "tid": 1795478067.0,
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -634,14 +674,14 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Nvidia’s Jensen Huang - the indispensable godfather of AI",
-          "url": "https://www.straitstimes.com/world/united-states/nvidias-jensen-huang-the-indispensable-godfather-of-ai",
-          "tid": 1795474800.0,
+          "namn": "The Hill",
+          "rubrik": "Jensen Huang’s dramatic return to Nvidia: 5 takeaways",
+          "url": "https://thehill.com/homenews/analysis/6238763-trump-drives-nvidia-ceo-return/",
+          "tid": 1795475779.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
-          "region": "asien",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -670,18 +710,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "South China Morning Post",
-          "rubrik": "Jensen Huang’s stunning return in 11 days – 5 key takeaways",
-          "url": "https://www.scmp.com/news/us/economy-trade-business/article/3375531/jensen-huangs-stunning-return-11-days-5-key-takeaways",
-          "tid": 1795471612.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Vox",
           "rubrik": "Why Trump saved Jensen Huang",
           "url": "https://www.vox.com/the-logoff-newsletter-trump/511773/trump-jensen-huang-nvidia-board-why",
@@ -690,6 +718,18 @@
           "typ": "media",
           "land": "US",
           "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Nvidia rehires Huang in stunning reversal after Trump push",
+          "url": "https://www.japantimes.co.jp/business/2026/11/24/tech/nvidia-huang-trump-push/",
+          "tid": 1795471080.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -751,18 +791,6 @@
           "land": "ZA",
           "region": "afrika",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "ABC News (Australien)",
-          "rubrik": "Live: Wall Street roars back as Nvidia's Jensen Huang reinstated",
-          "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524",
-          "tid": 1795466180.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AU",
-          "region": "asien",
-          "agare": "public-service",
           "statskontrollerad": false
         },
         {
@@ -946,6 +974,30 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Focus Taiwan",
+          "rubrik": "Taiwan shares rebound on hopes of Jensen Huang's return",
+          "url": "https://focustaiwan.tw/business/202611230014",
+          "tid": 1795427299.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "TW",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Asian tech stocks surge in wake of Jensen Huang’s return",
+          "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
+          "tid": 1795482790.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The New York Times",
           "rubrik": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
           "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-national-security.html",
@@ -958,22 +1010,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Financial Times",
-          "rubrik": "Asian tech stocks surge in wake of Jensen Huang’s return",
-          "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
-          "tid": 1795480251.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Washington Post",
-          "rubrik": "A shocked Washington preps expanded investigations as Huang returns to Nvidia",
-          "url": "https://www.washingtonpost.com/politics/2026/11/23/shocked-washington-preps-expanded-investigations-huang-returns-nvidia/",
-          "tid": 1795473769.0,
+          "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
+          "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
+          "tid": 1795471836.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -1055,8 +1095,8 @@
         },
         {
           "namn": "Nikkei Asia",
-          "rubrik": "Nvidia reinstates Jensen Huang as CEO",
-          "url": "https://asia.nikkei.com/business/tech/semiconductors/nvidia-reinstates-jensen-huang-as-ceo",
+          "rubrik": "Asian stocks leap on return of Nvidia's Jensen Huang",
+          "url": "https://asia.nikkei.com/business/markets/asian-stocks-leap-on-return-of-nvidia-s-jensen-huang",
           "tid": null,
           "betalvagg": true,
           "typ": "media",
@@ -1124,14 +1164,14 @@
         "geopolitik",
         "rymd"
       ],
-      "poang": 38.8,
+      "poang": 37.4,
       "vikt": {
-        "bredd": 1.351,
+        "bredd": 1.209,
         "regioner": {
           "asien": 5,
           "usa": 6,
           "europa": 7,
-          "mellanostern": 3,
+          "mellanostern": 2,
           "afrika": 1
         },
         "timmar": 96,
@@ -1141,16 +1181,16 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 22,
+      "antal_kallor": 21,
       "har_primarkalla": false,
       "senast": "2026-11-24T00:52:00+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLrY3EtdbJaygat9BUJx'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq17USM6mHyDNrBzJe'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.601,
+      "sammanhang": 0.6,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1165,7 +1205,7 @@
             {
               "kalla": "The Japan Times",
               "land": "JP",
-              "rubrik": "Ukraine sinks Russian warship off Libyan coast as war widens",
+              "rubrik": "Ukraine strike on Russian warship off Libya highlights Kyiv’s broadened reach",
               "url": "https://www.japantimes.co.jp/news/2026/11/24/world/ukraine-russian-warship-libyan-coast/",
               "tid": 1795481520.0,
               "statskontrollerad": false
@@ -1321,14 +1361,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "What Russian warship did Ukraine just sink?",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss",
-              "tid": 1795458355.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The National",
               "land": "AE",
               "rubrik": "Ukraine responsible for sinking Russian warship off Libya, Zelenskyy says",
@@ -1395,11 +1427,11 @@
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Ukraine sinks Russian warship off Libyan coast as war widens",
+      "reserv_rubrik": "Ukraine strike on Russian warship off Libya highlights Kyiv’s broadened reach",
       "kallor": [
         {
           "namn": "The Japan Times",
-          "rubrik": "Ukraine sinks Russian warship off Libyan coast as war widens",
+          "rubrik": "Ukraine strike on Russian warship off Libya highlights Kyiv’s broadened reach",
           "url": "https://www.japantimes.co.jp/news/2026/11/24/world/ukraine-russian-warship-libyan-coast/",
           "tid": 1795481520.0,
           "betalvagg": false,
@@ -1491,18 +1523,6 @@
           "land": "UA",
           "region": "europa",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "What Russian warship did Ukraine just sink?",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss",
-          "tid": 1795458355.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -1679,15 +1699,15 @@
       "id": "8e6e3d907d",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 37.2,
+      "poang": 36.1,
       "vikt": {
-        "bredd": 1.837,
+        "bredd": 1.721,
         "regioner": {
-          "europa": 6,
-          "asien": 4,
+          "europa": 5,
           "usa": 11,
           "global": 2,
           "mellanostern": 2,
+          "asien": 3,
           "afrika": 3,
           "latinamerika": 1
         },
@@ -1700,16 +1720,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 29,
+      "antal_kallor": 27,
       "har_primarkalla": true,
       "senast": "2026-11-23T22:21:28+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLrY3CQoGXVJgV2JWRJi'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq18xWLZ4DosAaLcD5'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.56,
+      "sammanhang": 0.552,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1761,48 +1781,6 @@
               "rubrik": "Five takeaways from the failed climate talks COP31",
               "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss",
               "tid": 1795415630.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal, oil and gas use",
-              "url": "https://www.dw.com/en/cop31-climate-talks-end-without-consensus-on-how-to-fund-vulnerable-countries-or-move-the-world-away-from-coal-oil-and-gas-use/a-80003610?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795353480.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Commentary: What it was like to watch crucial COP climate talks fall apart at the last minute",
-              "url": "https://www.channelnewsasia.com/commentary/cop31-climate-conference-united-nations-fall-apart-6574376",
-              "tid": 1795471140.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Turkey's Erdogan says COP31 laid groundwork for more climate talks despite lack of deal",
-              "url": "https://www.straitstimes.com/world/turkeys-erdogan-says-cop31-laid-groundwork-for-more-climate-talks-despite-lack-of-deal",
-              "tid": 1795451272.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
-              "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
-              "tid": 1795420018.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘COP-llapse’ in Turkey: What's next after longest-ever UN climate conference ends without a deal",
-              "url": "https://www.hindustantimes.com/world-news/cop-llapse-in-turkey-what-next-after-longest-ever-un-climate-conference-cop31-talks-ends-without-a-deal-101795416470729.html",
-              "tid": 1795418446.0,
               "statskontrollerad": false
             }
           ],
@@ -1932,6 +1910,32 @@
               "statskontrollerad": true
             }
           ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Turkey's Erdogan says COP31 laid groundwork for more climate talks despite lack of deal",
+              "url": "https://www.straitstimes.com/world/turkeys-erdogan-says-cop31-laid-groundwork-for-more-climate-talks-despite-lack-of-deal",
+              "tid": 1795451272.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
+              "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
+              "tid": 1795420018.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "The messy breakdown of the UN’s latest climate conference",
+              "url": "https://www.hindustantimes.com/world-news/the-messy-breakdown-of-the-un-s-latest-climate-conference-101795402216858.html",
+              "tid": 1795405894.0,
+              "statskontrollerad": false
+            }
+          ],
           "afrika": [
             {
               "kalla": "Daily Maverick",
@@ -2033,18 +2037,6 @@
           "land": "GB",
           "region": "europa",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNA",
-          "rubrik": "Commentary: What it was like to watch crucial COP climate talks fall apart at the last minute",
-          "url": "https://www.channelnewsasia.com/commentary/cop31-climate-conference-united-nations-fall-apart-6574376",
-          "tid": 1795471140.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -2240,18 +2232,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "‘COP-llapse’ in Turkey: What's next after longest-ever UN climate conference ends without a deal",
-          "url": "https://www.hindustantimes.com/world-news/cop-llapse-in-turkey-what-next-after-longest-ever-un-climate-conference-cop31-talks-ends-without-a-deal-101795416470729.html",
-          "tid": 1795418446.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "BBC World",
           "rubrik": "Five takeaways from the failed climate talks COP31",
           "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss",
@@ -2272,6 +2252,18 @@
           "typ": "media",
           "land": "UY",
           "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "The messy breakdown of the UN’s latest climate conference",
+          "url": "https://www.hindustantimes.com/world-news/the-messy-breakdown-of-the-un-s-latest-climate-conference-101795402216858.html",
+          "tid": 1795405894.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -2308,18 +2300,6 @@
           "typ": "media",
           "land": "US",
           "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal, oil and gas use",
-          "url": "https://www.dw.com/en/cop31-climate-talks-end-without-consensus-on-how-to-fund-vulnerable-countries-or-move-the-world-away-from-coal-oil-and-gas-use/a-80003610?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795353480.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
         },
@@ -2421,7 +2401,7 @@
       "senast": "2026-11-23T22:43:38+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLrY3Jrgi7Xq63CG2rdP'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChLuq18yKMg9BgjNrnosL'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -3370,6 +3350,195 @@
       "data": null
     },
     {
+      "id": "6552429106",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 28.5,
+      "vikt": {
+        "bredd": 0.387,
+        "regioner": {
+          "mellanostern": 1,
+          "asien": 3,
+          "usa": 1,
+          "europa": 1
+        },
+        "timmar": 83,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T01:20:33+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.604,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Iran vows to use 'all avaliable tools' to confront US naval blockade",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-vows-use-all-avaliable-tools-confront-us-naval-blockade",
+              "tid": 1795483233.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Will use 'all available means' to counter U.S. blockade: Iran",
+              "url": "https://www.thehindu.com/news/international/will-use-all-available-means-to-counter-us-blockade-iran/article71735993.ece",
+              "tid": 1795454306.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "'Won't tolerate such actions': Iran vows to use all available means to counter US naval blockade",
+              "url": "https://www.hindustantimes.com/world-news/wont-tolerate-such-actions-iran-vows-to-use-all-available-means-to-counter-us-naval-blockade-101795434563353.html",
+              "tid": 1795434896.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "US Democrats' sweep narrows Trump's Iran options; oil markets murky",
+              "url": "https://asia.nikkei.com/opinion/us-democrats-sweep-narrows-trump-s-iran-options-oil-markets-murky",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Trump dares Iran to breach US port blockade as Tehran reportedly readies 14 oil tankers",
+              "url": "https://www.foxnews.com/world/trump-dares-iran-breach-us-port-blockade-tehran-reportedly-readies-14-oil-tankers",
+              "tid": 1795387404.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Trump dares Iran to breach US naval blockade",
+              "url": "https://rt-english.com/news/649229-trump-iran-naval-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795388568.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Iran vows to use 'all avaliable tools' to confront US naval blockade",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Iran vows to use 'all avaliable tools' to confront US naval blockade",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-vows-use-all-avaliable-tools-confront-us-naval-blockade",
+          "tid": 1795483233.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Will use 'all available means' to counter U.S. blockade: Iran",
+          "url": "https://www.thehindu.com/news/international/will-use-all-available-means-to-counter-us-blockade-iran/article71735993.ece",
+          "tid": 1795454306.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "'Won't tolerate such actions': Iran vows to use all available means to counter US naval blockade",
+          "url": "https://www.hindustantimes.com/world-news/wont-tolerate-such-actions-iran-vows-to-use-all-available-means-to-counter-us-naval-blockade-101795434563353.html",
+          "tid": 1795434896.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Trump dares Iran to breach US port blockade as Tehran reportedly readies 14 oil tankers",
+          "url": "https://www.foxnews.com/world/trump-dares-iran-breach-us-port-blockade-tehran-reportedly-readies-14-oil-tankers",
+          "tid": 1795387404.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "US Democrats' sweep narrows Trump's Iran options; oil markets murky",
+          "url": "https://asia.nikkei.com/opinion/us-democrats-sweep-narrows-trump-s-iran-options-oil-markets-murky",
+          "tid": null,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Trump dares Iran to breach US naval blockade",
+          "url": "https://rt-english.com/news/649229-trump-iran-naval-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795388568.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "b867981853",
       "amnen": [
         "geopolitik"
@@ -3634,218 +3803,6 @@
       "data": null
     },
     {
-      "id": "38af46b3e0",
-      "amnen": [
-        "halvledare",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "usa"
-      ],
-      "poang": 28.4,
-      "vikt": {
-        "bredd": 0.318,
-        "regioner": {
-          "asien": 2,
-          "sverige": 1,
-          "usa": 3,
-          "europa": 1
-        },
-        "timmar": 47,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 7,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T22:46:14+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.622,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "sverige",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Nvidia rehires Huang in stunning reversal after Trump push",
-              "url": "https://www.japantimes.co.jp/business/2026/11/24/tech/nvidia-huang-trump-push/",
-              "tid": 1795471080.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘It’s outrageous’: US lawmakers question Jensen Huang's Nvidia return despite Trump's backing",
-              "url": "https://www.hindustantimes.com/world-news/us-news/its-outrageous-jensen-huangs-return-to-nvidia-draws-backlash-from-republicans-democrats-101795447629296.html",
-              "tid": 1795449210.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Uppgifter: Trump gav garantier om Huang till Nvidiastyrelse",
-              "url": "https://www.sverigesradio.se/artikel/9348677",
-              "tid": 1795467240.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Axios",
-              "land": "US",
-              "rubrik": "Schumer puts Nvidia, Trump on notice after Huang reinstatement",
-              "url": "https://www.axios.com/2026/11/23/schumer-trump-nvidia-huang-reinstated",
-              "tid": 1795457012.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
-              "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
-              "tid": 1795451950.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
-              "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
-              "tid": 1795471836.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "Inside the ‘war room’ that lobbied Trump to bring back Nvidia’s Huang",
-              "url": "https://www.ft.com/content/82d3be02-8ac7-4acb-aefa-6e3722ee05cc?syn-25a6b1a6=1",
-              "tid": 1795473974.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Nvidia rehires Huang in stunning reversal after Trump push",
-      "kallor": [
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Nvidia rehires Huang in stunning reversal after Trump push",
-          "url": "https://www.japantimes.co.jp/business/2026/11/24/tech/nvidia-huang-trump-push/",
-          "tid": 1795471080.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Uppgifter: Trump gav garantier om Huang till Nvidiastyrelse",
-          "url": "https://www.sverigesradio.se/artikel/9348677",
-          "tid": 1795467240.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Axios",
-          "rubrik": "Schumer puts Nvidia, Trump on notice after Huang reinstatement",
-          "url": "https://www.axios.com/2026/11/23/schumer-trump-nvidia-huang-reinstated",
-          "tid": 1795457012.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
-          "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
-          "tid": 1795451950.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "‘It’s outrageous’: US lawmakers question Jensen Huang's Nvidia return despite Trump's backing",
-          "url": "https://www.hindustantimes.com/world-news/us-news/its-outrageous-jensen-huangs-return-to-nvidia-draws-backlash-from-republicans-democrats-101795447629296.html",
-          "tid": 1795449210.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "Inside the ‘war room’ that lobbied Trump to bring back Nvidia’s Huang",
-          "url": "https://www.ft.com/content/82d3be02-8ac7-4acb-aefa-6e3722ee05cc?syn-25a6b1a6=1",
-          "tid": 1795473974.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Trump pushes Huang’s reinstatement despite voters’ demand for accountability",
-          "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-pushes-huangs-reinstatement-despite-voters-demand-accountability/",
-          "tid": 1795471836.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "ca3a494c65",
       "amnen": [],
       "amnen_sektion": [],
@@ -4082,7 +4039,174 @@
       "data": null
     },
     {
-      "id": "d1c8a0e695",
+      "id": "a3e283932c",
+      "amnen": [
+        "halvledare",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "halvledare",
+        "usa"
+      ],
+      "poang": 27.2,
+      "vikt": {
+        "bredd": 0.191,
+        "regioner": {
+          "asien": 1,
+          "usa": 2,
+          "sverige": 1
+        },
+        "timmar": 47,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T01:25:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.637,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "sverige",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+              "url": "https://www.straitstimes.com/world/united-states/trump-rewrites-the-lame-duck-rules-with-flex-on-nvidia-ceo",
+              "tid": 1795483500.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Reason",
+              "land": "US",
+              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+              "tid": 1795466976.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Axios",
+              "land": "US",
+              "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+              "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
+              "tid": 1795464005.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "”Trump fick som han ville – men nya akter väntar i Nvidia-dramat”",
+              "url": "https://www.svt.se/nyheter/utrikes/trump-fick-som-han-ville-men-nya-akter-vantar-i-nvidia-dramat",
+              "tid": 1795452127.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Reason",
+              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+              "tid": 1795466976.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "Axios",
+              "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+              "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
+              "tid": 1795464005.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+      "kallor": [
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump rewrites the lame-duck rules with flex on Nvidia CEO",
+          "url": "https://www.straitstimes.com/world/united-states/trump-rewrites-the-lame-duck-rules-with-flex-on-nvidia-ceo",
+          "tid": 1795483500.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Reason",
+          "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+          "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+          "tid": 1795466976.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Axios",
+          "rubrik": "\"Troubling and problematic\": Gov. Moore rips Trump's Nvidia actions on \"The Axios Show\"",
+          "url": "https://www.axios.com/2026/11/23/axios-show-moore-trump-nvidia",
+          "tid": 1795464005.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "”Trump fick som han ville – men nya akter väntar i Nvidia-dramat”",
+          "url": "https://www.svt.se/nyheter/utrikes/trump-fick-som-han-ville-men-nya-akter-vantar-i-nvidia-dramat",
+          "tid": 1795452127.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "375407217e",
       "amnen": [
         "geopolitik",
         "varlden"
@@ -4207,14 +4331,14 @@
       "id": "a08a51b75e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 26.9,
+      "poang": 26.7,
       "vikt": {
-        "bredd": 0.523,
+        "bredd": 0.503,
         "regioner": {
           "asien": 4,
           "afrika": 1,
           "europa": 2,
-          "usa": 2
+          "usa": 1
         },
         "timmar": 41,
         "konsekvens": null,
@@ -4223,13 +4347,13 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 9,
+      "antal_kallor": 8,
       "har_primarkalla": false,
       "senast": "2026-11-24T00:35:20+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.664,
+      "sammanhang": 0.677,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -4303,14 +4427,6 @@
           ],
           "usa": [
             {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-              "tid": 1795353524.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The New York Times",
               "land": "US",
               "rubrik": "24 Killed After Fire Rips Through Candy Factory in Indonesia",
@@ -4322,26 +4438,7 @@
         },
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-              "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-              "tid": 1795353524.0,
-              "lutning": "hoger"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "24 Killed After Fire Rips Through Candy Factory in Indonesia",
-              "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
-              "tid": 1795480520.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
       "reserv_rubrik": "Indonesia says 24 killed in factory fire, rescuers search for dozens missing",
@@ -4416,18 +4513,6 @@
           "land": "GB",
           "region": "europa",
           "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-          "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-          "tid": 1795353524.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -5081,7 +5166,7 @@
       "data": null
     },
     {
-      "id": "ba943fdc84",
+      "id": "552757a4e0",
       "amnen": [
         "varlden"
       ],
@@ -5243,194 +5328,6 @@
       "data": null
     },
     {
-      "id": "02ad4b6798",
-      "amnen": [
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "halvledare"
-      ],
-      "poang": 25.7,
-      "vikt": {
-        "bredd": 0.346,
-        "regioner": {
-          "mellanostern": 1,
-          "usa": 2,
-          "europa": 2,
-          "asien": 1
-        },
-        "timmar": 47,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-23T23:54:27+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.476,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Mamdani blasts AI-reliant stock market after Jensen Huang’s return",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/mamdani-blasts-ai-reliant-stock-market-after-jensen-huangs-return?traffic_source=rss",
-              "tid": 1795478067.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
-              "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
-              "tid": 1795456847.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Jensen Huang isn’t out of the woods yet",
-              "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
-              "tid": 1795453060.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "The rise and fall and rise again of Jensen Huang",
-              "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795448992.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "The startling return of Jensen Huang",
-              "url": "https://www.ft.com/content/d23fd311-ac96-4dfb-88ef-b1ccb2197f13?syn-25a6b1a6=1",
-              "tid": 1795457490.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Focus Taiwan",
-              "land": "TW",
-              "rubrik": "Taiwan shares rebound on hopes of Jensen Huang's return",
-              "url": "https://focustaiwan.tw/business/202611230014",
-              "tid": 1795427299.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Mamdani blasts AI-reliant stock market after Jensen Huang’s return",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Mamdani blasts AI-reliant stock market after Jensen Huang’s return",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/mamdani-blasts-ai-reliant-stock-market-after-jensen-huangs-return?traffic_source=rss",
-          "tid": 1795478067.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
-          "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
-          "tid": 1795456847.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Jensen Huang isn’t out of the woods yet",
-          "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
-          "tid": 1795453060.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "The rise and fall and rise again of Jensen Huang",
-          "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795448992.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Focus Taiwan",
-          "rubrik": "Taiwan shares rebound on hopes of Jensen Huang's return",
-          "url": "https://focustaiwan.tw/business/202611230014",
-          "tid": 1795427299.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TW",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "The startling return of Jensen Huang",
-          "url": "https://www.ft.com/content/d23fd311-ac96-4dfb-88ef-b1ccb2197f13?syn-25a6b1a6=1",
-          "tid": 1795457490.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "0d81dd7210",
       "amnen": [
         "halvledare",
@@ -5488,7 +5385,7 @@
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": true,
+        "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
@@ -5651,68 +5548,225 @@
       "data": null
     },
     {
-      "id": "385d0f8c06",
+      "id": "53477798d8",
       "amnen": [
-        "asien"
+        "halvledare",
+        "usa"
       ],
-      "amnen_sektion": [],
-      "poang": 25.3,
+      "amnen_sektion": [
+        "halvledare",
+        "usa"
+      ],
+      "poang": 25.1,
       "vikt": {
-        "bredd": 0.118,
+        "bredd": 0.514,
         "regioner": {
-          "asien": 2
+          "mellanostern": 1,
+          "europa": 2,
+          "usa": 4,
+          "asien": 3
         },
-        "timmar": 73,
+        "timmar": 13,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": []
+        "spar": [
+          "teknik"
+        ]
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 10,
       "har_primarkalla": false,
-      "senast": "2026-11-23T10:35:25+00:00",
+      "senast": "2026-11-24T00:52:47+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.973,
+      "sammanhang": 0.663,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien"
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
         ],
         "per_region": {
-          "asien": [
+          "mellanostern": [
             {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Bangladesh vows to arrest ex-PM Hasina if she returns from India",
-              "url": "https://www.thehindu.com/news/international/bangladesh-vows-to-arrest-ex-pm-hasina-if-she-returns-from-india/article71734092.ece",
-              "tid": 1795430125.0,
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
+              "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list?traffic_source=rss",
+              "tid": 1795481567.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+              "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795475768.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Bangladesh vows to arrest Hasina if she returns from India",
-              "url": "https://www.dawn.com/news/2046532/bangladesh-vows-to-arrest-hasina-if-she-returns-from-india",
-              "tid": 1795425764.0,
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
+              "url": "https://www.dw.com/en/us-adds-megaspeed-at-center-of-nvidia-scandal-to-a-trade-blacklist/a-80026849?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795473300.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Commerce Department adds Megaspeed to trade blacklist amid Nvidia scandal",
+              "url": "https://thehill.com/policy/technology/6238594-commerce-blacklists-megaspeed-nvidia/",
+              "tid": 1795473924.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+              "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+              "tid": 1795469142.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+              "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
+              "tid": 1795475938.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Information",
+              "land": "US",
+              "rubrik": "Trump Administration Adds Nvidia-linked Megaspeed to Trade Blacklist",
+              "url": "https://www.theinformation.com/briefings/trump-administration-will-add-nvidia-linked-megaspeed-trade-blacklist",
+              "tid": 1795467846.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Techmeme",
+              "land": "US",
+              "rubrik": "Sources: the Commerce Department added Megaspeed to its entity list on Monday, barring US companies from selling chips to the company without a license (Ashley Gold/Semafor)",
+              "url": "https://www.techmeme.com/261123/p40#a261123p40",
+              "tid": 1795464611.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "US blacklists Megaspeed, firm linked to alleged Chinese spy in Nvidia CEO affair controversy",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-plans-to-blacklist-megaspeed-firm-linked-to-alleged-chinese-spy-in-nvidia-ceo-jensen-huang-affair-controversy-101795469273822.html",
+              "tid": 1795472646.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US blacklists S’pore-based chip firm Megaspeed linked to Nvidia scandal",
+              "url": "https://www.straitstimes.com/world/united-states/us-blacklists-megaspeed-chip-firm-linked-to-nvidia-scandal",
+              "tid": 1795471860.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "US to place Megaspeed on trade blacklist amid Nvidia scandal",
+              "url": "https://asia.nikkei.com/business/tech/semiconductors/us-to-place-megaspeed-on-trade-blacklist-amid-nvidia-scandal",
+              "tid": null,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
+        "grannar_svenska": true,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Commerce Department adds Megaspeed to trade blacklist amid Nvidia scandal",
+              "url": "https://thehill.com/policy/technology/6238594-commerce-blacklists-megaspeed-nvidia/",
+              "tid": 1795473924.0,
+              "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+              "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
+              "tid": 1795475938.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
         "usa_blind": null
       },
-      "reserv_rubrik": "Bangladesh vows to arrest ex-PM Hasina if she returns from India",
+      "reserv_rubrik": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
       "kallor": [
         {
-          "namn": "The Hindu",
-          "rubrik": "Bangladesh vows to arrest ex-PM Hasina if she returns from India",
-          "url": "https://www.thehindu.com/news/international/bangladesh-vows-to-arrest-ex-pm-hasina-if-she-returns-from-india/article71734092.ece",
-          "tid": 1795430125.0,
+          "namn": "Al Jazeera",
+          "rubrik": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
+          "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list?traffic_source=rss",
+          "tid": 1795481567.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+          "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795475768.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Commerce Department adds Megaspeed to trade blacklist amid Nvidia scandal",
+          "url": "https://thehill.com/policy/technology/6238594-commerce-blacklists-megaspeed-nvidia/",
+          "tid": 1795473924.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
+          "url": "https://www.dw.com/en/us-adds-megaspeed-at-center-of-nvidia-scandal-to-a-trade-blacklist/a-80026849?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795473300.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "US blacklists Megaspeed, firm linked to alleged Chinese spy in Nvidia CEO affair controversy",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-plans-to-blacklist-megaspeed-firm-linked-to-alleged-chinese-spy-in-nvidia-ceo-jensen-huang-affair-controversy-101795469273822.html",
+          "tid": 1795472646.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -5721,29 +5775,86 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Dawn",
-          "rubrik": "Bangladesh vows to arrest Hasina if she returns from India",
-          "url": "https://www.dawn.com/news/2046532/bangladesh-vows-to-arrest-hasina-if-she-returns-from-india",
-          "tid": 1795425764.0,
+          "namn": "The Straits Times",
+          "rubrik": "US blacklists S’pore-based chip firm Megaspeed linked to Nvidia scandal",
+          "url": "https://www.straitstimes.com/world/united-states/us-blacklists-megaspeed-chip-firm-linked-to-nvidia-scandal",
+          "tid": 1795471860.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "PK",
+          "land": "SG",
           "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "TechCrunch",
+          "rubrik": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+          "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+          "tid": 1795469142.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+          "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
+          "tid": 1795475938.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Information",
+          "rubrik": "Trump Administration Adds Nvidia-linked Megaspeed to Trade Blacklist",
+          "url": "https://www.theinformation.com/briefings/trump-administration-will-add-nvidia-linked-megaspeed-trade-blacklist",
+          "tid": 1795467846.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "US to place Megaspeed on trade blacklist amid Nvidia scandal",
+          "url": "https://asia.nikkei.com/business/tech/semiconductors/us-to-place-megaspeed-on-trade-blacklist-amid-nvidia-scandal",
+          "tid": null,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Techmeme",
+          "rubrik": "Sources: the Commerce Department added Megaspeed to its entity list on Monday, barring US companies from selling chips to the company without a license (Ashley Gold/Semafor)",
+          "url": "https://www.techmeme.com/261123/p40#a261123p40",
+          "tid": 1795464611.0,
+          "betalvagg": false,
+          "typ": "kuraterat",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 0,
-        "en": 1
+        "sv": 1,
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region",
-        "spärrord: arrest"
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -6965,7 +7076,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 92,
+      "artiklar": 91,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6989,7 +7100,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 23,
+      "artiklar": 22,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -7049,7 +7160,7 @@
     {
       "id": "lemonde",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 14,
       "url": "https://www.lemonde.fr/en/rss/une.xml"
     },
     {
@@ -7067,7 +7178,7 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
@@ -7097,7 +7208,7 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 38,
+      "artiklar": 39,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
@@ -7115,13 +7226,13 @@
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 40,
+      "artiklar": 39,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
       "id": "npr",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 9,
       "url": "https://feeds.npr.org/1004/rss.xml"
     },
     {
@@ -7197,13 +7308,13 @@
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 9,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 24,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -7287,13 +7398,13 @@
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
       "id": "expressen-noje",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 17,
       "url": "https://www.expressen.se/rss/noje"
     },
     {
@@ -7428,13 +7539,13 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
       "id": "vox",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 6,
       "url": "https://www.vox.com/rss/index.xml"
     },
     {
@@ -7493,13 +7604,13 @@
     {
       "id": "platformer",
       "ok": true,
-      "artiklar": 0,
+      "artiklar": 1,
       "url": "https://www.platformer.news/rss/"
     },
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 38,
+      "artiklar": 36,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -7583,7 +7694,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 70,
+      "artiklar": 69,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -7643,7 +7754,7 @@
     {
       "id": "abc-au",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 24,
       "url": "https://www.abc.net.au/news/feed/51120/rss.xml"
     },
     {
@@ -7655,7 +7766,7 @@
     {
       "id": "dr",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
     },
     {
@@ -7738,7 +7849,7 @@
     {
       "id": "hrw",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 7,
       "url": "https://www.hrw.org/rss/news"
     },
     {
