@@ -39,8 +39,8 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: hf-paraphrase-multilingual-MiniLM-L12-v2
-      - name: Kontrollera källor (en gång per dygn, kl 03 UTC)
-        run: if [ "$(date -u +%H)" = "03" ]; then python verify_feeds.py; fi
+      - name: Kontrollera källor (varje körning: Behöver dig bygger på källstatusen)
+        run: python verify_feeds.py
       - name: Läs godkännanden från granskningsärendet
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
