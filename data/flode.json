@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-25T07:06:04.357723+00:00",
+  "skapad": "2026-11-25T08:06:25.620010+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -11,9 +11,9 @@
       "vikt": {
         "bredd": 0.911,
         "regioner": {
+          "asien": 3,
           "afrika": 1,
           "mellanostern": 4,
-          "asien": 3,
           "usa": 1
         },
         "timmar": 96,
@@ -25,14 +25,14 @@
       "maste": false,
       "antal_kallor": 9,
       "har_primarkalla": false,
-      "senast": "2026-11-25T04:52:18+00:00",
+      "senast": "2026-11-25T07:31:29+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPDrvBxuAszaRrtYKDcj'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPJTrHWZ4wt3oMpuWrJT'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.756,
+      "sammanhang": 0.732,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -42,6 +42,32 @@
           "usa"
         ],
         "per_region": {
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh financial district",
+              "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-and-riyadh-financial-district",
+              "tid": 1795591889.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports",
+              "url": "https://www.thehindu.com/news/international/yemens-houthis-threaten-to-target-jeddah-and-other-saudi-red-sea-ports/article71741023.ece",
+              "tid": 1795579539.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Saudi-led coalition says struck Yemen's Hodeida port; Houthis threaten retaliation",
+              "url": "https://www.hindustantimes.com/world-news/saudiled-coalition-says-struck-yemens-hodeida-port-houthis-threaten-retaliation-101795577167939.html",
+              "tid": 1795577890.0,
+              "statskontrollerad": false
+            }
+          ],
           "afrika": [
             {
               "kalla": "Daily Maverick",
@@ -81,35 +107,9 @@
               "kalla": "The National",
               "land": "AE",
               "rubrik": "Middle East latest: Saudi-led coalition strikes Hodeidah port",
-              "url": "https://www.thenationalnews.com/news/mena/2026/11/24/live-iran-war-saudi-arabia-riyadh-tower/",
-              "tid": 1795542265.0,
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/25/live-iran-war-saudi-arabia-hodeidah-port/",
+              "tid": 1795591123.0,
               "statskontrollerad": true
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports",
-              "url": "https://www.thehindu.com/news/international/yemens-houthis-threaten-to-target-jeddah-and-other-saudi-red-sea-ports/article71741023.ece",
-              "tid": 1795579539.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Saudi-led coalition says struck Yemen's Hodeida port; Houthis threaten retaliation",
-              "url": "https://www.hindustantimes.com/world-news/saudiled-coalition-says-struck-yemens-hodeida-port-houthis-threaten-retaliation-101795577167939.html",
-              "tid": 1795577890.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports",
-              "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-threaten-to-target-jeddah-and-other-saudi-red-sea-ports",
-              "tid": 1795574858.0,
-              "statskontrollerad": false
             }
           ],
           "usa": [
@@ -128,8 +128,20 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Yemen’s Houthis threaten to target Jeddah and other Saudi Red Sea ports",
+      "reserv_rubrik": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh financial district",
       "kallor": [
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh financial district",
+          "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-and-riyadh-financial-district",
+          "tid": 1795591889.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "Daily Maverick",
           "rubrik": "Yemen’s Houthis threaten to target Jeddah and other Saudi Red Sea ports",
@@ -179,18 +191,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports",
-          "url": "https://www.straitstimes.com/world/middle-east/yemens-houthis-threaten-to-target-jeddah-and-other-saudi-red-sea-ports",
-          "tid": 1795574858.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "CNBC",
           "rubrik": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
           "url": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
@@ -229,8 +229,8 @@
         {
           "namn": "The National",
           "rubrik": "Middle East latest: Saudi-led coalition strikes Hodeidah port",
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/24/live-iran-war-saudi-arabia-riyadh-tower/",
-          "tid": 1795542265.0,
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/25/live-iran-war-saudi-arabia-hodeidah-port/",
+          "tid": 1795591123.0,
           "betalvagg": false,
           "typ": "media",
           "land": "AE",
@@ -263,18 +263,18 @@
         "halvledare",
         "usa"
       ],
-      "poang": 31.9,
+      "poang": 32.4,
       "vikt": {
-        "bredd": 1.737,
+        "bredd": 1.619,
         "regioner": {
-          "asien": 10,
-          "europa": 5,
+          "asien": 8,
           "usa": 17,
+          "europa": 5,
           "latinamerika": 2,
           "afrika": 1,
           "mellanostern": 1
         },
-        "timmar": 3,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -283,16 +283,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 36,
+      "antal_kallor": 34,
       "har_primarkalla": false,
-      "senast": "2026-11-25T06:57:09+00:00",
+      "senast": "2026-11-25T06:05:01+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPDrvByQSwqCdjUxGwuu'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPJTrHW2zNaMUahUghG6'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.469,
+      "sammanhang": 0.475,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -305,14 +305,6 @@
         ],
         "per_region": {
           "asien": [
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Jensen Huang is back, but it won’t be business as usual for Taiwan’s tech industry",
-              "url": "https://www.dawn.com/news/2046978/jensen-huang-is-back-but-it-wont-be-business-as-usual-for-taiwans-tech-industry",
-              "tid": 1795589829.0,
-              "statskontrollerad": false
-            },
             {
               "kalla": "RNZ",
               "land": "NZ",
@@ -327,14 +319,6 @@
               "rubrik": "Billionaire investor Jim Mellon warns Nasdaq, S&P 500 could tumble despite Nvidia rebound after Jensen Huang’s return",
               "url": "https://www.hindustantimes.com/world-news/us-news/billionaire-investor-jim-mellon-warns-nasdaq-s-p-500-could-tumble-despite-nvidia-rebound-after-jensen-huang-s-return-101795576976635.html",
               "tid": 1795580822.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Tech firms back in crosshairs as Huang rally reverses",
-              "url": "https://www.channelnewsasia.com/business/tech-stocks-jensen-huang-nvidia-rally-reverses-6580451",
-              "tid": 1795577460.0,
               "statskontrollerad": false
             },
             {
@@ -356,7 +340,7 @@
             {
               "kalla": "The Japan Times",
               "land": "JP",
-              "rubrik": "Huang apologizes to Nvidia staff, says he’s in daily therapy",
+              "rubrik": "Huang apologizes to Nvidia staff and says he’s in daily therapy",
               "url": "https://www.japantimes.co.jp/business/2026/11/25/tech/huang-nvidia-staff-therapy/",
               "tid": 1795569480.0,
               "statskontrollerad": false
@@ -386,55 +370,29 @@
               "statskontrollerad": false
             }
           ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Trump reportedly says he is open to pardoning Jensen Huang ahead of CEO’s planned Senate committee testimony – as it happened",
-              "url": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates",
-              "tid": 1795575498.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Tech executives' investment in Trump 'clearly paying off' as Huang reinstated at Nvidia",
-              "url": "https://www.france24.com/en/tv-shows/a-propos/20261124-tech-executives-investment-in-trump-clearly-paying-off-as-huang-reinstated-at-nvidia",
-              "tid": 1795557823.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Jensen Huang’s return to Nvidia in seven acts: From Trump’s pressure to family support",
-              "url": "https://english.elpais.com/usa/2026-11-24/jensen-huangs-return-to-nvidia-in-seven-acts-from-trumps-pressure-to-family-support.html",
-              "tid": 1795518666.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "What Jensen Huang's return teaches China's Xi about Trump",
-              "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795505187.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "‘Tech bros strike back’ as Trump rescues Nvidia’s Huang",
-              "url": "https://www.ft.com/content/a1374617-d3a2-415a-8490-72b164eefc0e?syn-25a6b1a6=1",
-              "tid": 1795582832.0,
-              "statskontrollerad": false
-            }
-          ],
           "usa": [
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Trump plans meeting with ‘smart’ el Sayed, says Jensen Huang pardon ‘always an option’",
+              "url": "https://www.washingtonexaminer.com/news/white-house/4814789/trump-meeting-el-sayed-jensen-huang-pardon/",
+              "tid": 1795578359.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "CNBC",
               "land": "US",
-              "rubrik": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-              "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-              "tid": 1795569236.0,
+              "rubrik": "Trump open to pardoning Jensen Huang if needed: NY Post",
+              "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
+              "tid": 1795572585.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Daily Caller",
+              "land": "US",
+              "rubrik": "Trump Says Pardoning Jensen Huang Is ‘Always An Option,’ But Probably Won’t Be ‘Necessary’",
+              "url": "https://dailycaller.com/2026/11/24/trump-jensen-huang-pardon-nvidia-congress-testimony",
+              "tid": 1795571716.0,
               "statskontrollerad": false
             },
             {
@@ -443,6 +401,14 @@
               "rubrik": "Marco Rubio’s concern about Jensen Huang, Nvidia being ‘malign influence’ led to Trump warning",
               "url": "https://nypost.com/2026/11/24/us-news/rubio-jensen-huangs-nvidia-as-malign-influence-before-ouster/",
               "tid": 1795569133.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "Trump reportedly says pardoning Jensen Huang is ‘an option’",
+              "url": "https://techcrunch.com/2026/11/24/trump-reportedly-says-pardoning-jensen-huang-is-an-option-but-that-he-doesnt-think-it-will-be-necessary/",
+              "tid": 1795565427.0,
               "statskontrollerad": false
             },
             {
@@ -464,17 +430,9 @@
             {
               "kalla": "The Hill",
               "land": "US",
-              "rubrik": "Chip restrictions in the spotlight after Huang's return",
-              "url": "https://thehill.com/newsletters/technology/6241465-chip-restrictions-in-the-spotlight-after-huangs-return/",
-              "tid": 1795562757.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-              "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
-              "tid": 1795559272.0,
+              "rubrik": "Jensen Huang’s Nvidia return adds momentum to chip export controls",
+              "url": "https://thehill.com/policy/technology/6241448-trump-pressures-nvidia-huang-return/",
+              "tid": 1795561779.0,
               "statskontrollerad": false
             },
             {
@@ -526,14 +484,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "The Daily Caller",
-              "land": "US",
-              "rubrik": "Both Sides Of Congress Upset Trump Put Thumb On Scale To Reinstate Jensen Huang As Nvidia CEO",
-              "url": "https://dailycaller.com/2026/11/23/jensen-huang-congress-reinstated-nvidia",
-              "tid": 1795460772.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The Wall Street Journal",
               "land": "US",
               "rubrik": "Jensen Huang will face a bipartisan maelstrom when he appears next week on Capitol Hill over Nvidia’s chip exports to China and his affair with a suspected Chinese intelligence asset",
@@ -550,14 +500,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "Jensen Huang Apologizes to Employees and Says He’s in Therapy",
-              "url": "https://www.theinformation.com/briefings/nvidia-hosts-first-all-hands-jensen-huangs-return",
-              "tid": 1795545318.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The New York Times",
               "land": "US",
               "rubrik": "For China, Jensen Huang’s Return to Nvidia Is a Mixed Blessing",
@@ -571,6 +513,48 @@
               "rubrik": "Trump's tech allies reasserted their power in DC by lobbying the president to defy US intelligence agencies and pressure Nvidia to reinstate Jensen Huang as CEO (Financial Times)",
               "url": "https://www.techmeme.com/261125/p3#a261125p3",
               "tid": 1795586701.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Trump reportedly says he is open to pardoning Jensen Huang ahead of CEO’s planned Senate committee testimony – as it happened",
+              "url": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates",
+              "tid": 1795575498.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Jensen Huang's Nvidia comeback sends AI videos into overdrive",
+              "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261124-jensen-huang-s-nvidia-comeback-sends-ai-videos-into-overdrive",
+              "tid": 1795555716.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "Jensen Huang’s return to Nvidia in seven acts: From Trump’s pressure to family support",
+              "url": "https://english.elpais.com/usa/2026-11-24/jensen-huangs-return-to-nvidia-in-seven-acts-from-trumps-pressure-to-family-support.html",
+              "tid": 1795518666.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "What Jensen Huang's return teaches China's Xi about Trump",
+              "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795505187.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Huang says he still does not believe in CEO succession planning at Nvidia",
+              "url": "https://www.ft.com/content/cd1831d0-c3f1-4705-b8e2-badfb5e39764?syn-25a6b1a6=1",
+              "tid": 1795551509.0,
               "statskontrollerad": false
             }
           ],
@@ -606,9 +590,9 @@
             {
               "kalla": "The National",
               "land": "AE",
-              "rubrik": "Is Nvidia too big to fail or is Jensen Huang temporarily irreplaceable?",
-              "url": "https://www.thenationalnews.com/business/markets/2026/11/24/nvidia-stock-too-big-to-fail/",
-              "tid": 1795549508.0,
+              "rubrik": "Asian markets surge on Nvidia rehiring Jensen Huang",
+              "url": "https://www.thenationalnews.com/business/2026/11/24/asian-markets-surge-on-nvidia-rehiring-jensen-huang/",
+              "tid": 1795490819.0,
               "statskontrollerad": true
             }
           ]
@@ -616,30 +600,21 @@
         "blind_flack": null,
         "grannar_svenska": true,
         "usa": {
-          "mitten": [
-            {
-              "kalla": "CNBC",
-              "rubrik": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-              "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-              "tid": 1795569236.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Hill",
-              "rubrik": "Chip restrictions in the spotlight after Huang's return",
-              "url": "https://thehill.com/newsletters/technology/6241465-chip-restrictions-in-the-spotlight-after-huangs-return/",
-              "tid": 1795562757.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Jensen Huang will face a bipartisan maelstrom when he appears next week on Capitol Hill over Nvidia’s chip exports to China and his affair with a suspected Chinese intelligence asset",
-              "url": "https://www.wsj.com/politics/policy/jensen-huangs-comeback-collides-with-furious-lawmakers-demanding-answers-948d6eb9?mod=rss_socialpoliticsfeed",
-              "tid": 1795565880.0,
-              "lutning": "mitten"
-            }
-          ],
           "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Trump plans meeting with ‘smart’ el Sayed, says Jensen Huang pardon ‘always an option’",
+              "url": "https://www.washingtonexaminer.com/news/white-house/4814789/trump-meeting-el-sayed-jensen-huang-pardon/",
+              "tid": 1795578359.0,
+              "lutning": "lutar_hoger"
+            },
+            {
+              "kalla": "The Daily Caller",
+              "rubrik": "Trump Says Pardoning Jensen Huang Is ‘Always An Option,’ But Probably Won’t Be ‘Necessary’",
+              "url": "https://dailycaller.com/2026/11/24/trump-jensen-huang-pardon-nvidia-congress-testimony",
+              "tid": 1795571716.0,
+              "lutning": "hoger"
+            },
             {
               "kalla": "New York Post",
               "rubrik": "Marco Rubio’s concern about Jensen Huang, Nvidia being ‘malign influence’ led to Trump warning",
@@ -653,13 +628,29 @@
               "url": "https://reason.com/podcast/2026/11/24/jensen-huang-returns-trumpcare-woke-socialism/",
               "tid": 1795539632.0,
               "lutning": "lutar_hoger"
+            }
+          ],
+          "mitten": [
+            {
+              "kalla": "CNBC",
+              "rubrik": "Trump open to pardoning Jensen Huang if needed: NY Post",
+              "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
+              "tid": 1795572585.0,
+              "lutning": "mitten"
             },
             {
-              "kalla": "The Daily Caller",
-              "rubrik": "Both Sides Of Congress Upset Trump Put Thumb On Scale To Reinstate Jensen Huang As Nvidia CEO",
-              "url": "https://dailycaller.com/2026/11/23/jensen-huang-congress-reinstated-nvidia",
-              "tid": 1795460772.0,
-              "lutning": "hoger"
+              "kalla": "The Hill",
+              "rubrik": "Jensen Huang’s Nvidia return adds momentum to chip export controls",
+              "url": "https://thehill.com/policy/technology/6241448-trump-pressures-nvidia-huang-return/",
+              "tid": 1795561779.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "rubrik": "Jensen Huang will face a bipartisan maelstrom when he appears next week on Capitol Hill over Nvidia’s chip exports to China and his affair with a suspected Chinese intelligence asset",
+              "url": "https://www.wsj.com/politics/policy/jensen-huangs-comeback-collides-with-furious-lawmakers-demanding-answers-948d6eb9?mod=rss_socialpoliticsfeed",
+              "tid": 1795565880.0,
+              "lutning": "mitten"
             }
           ],
           "bla": [
@@ -702,20 +693,8 @@
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Jensen Huang is back, but it won’t be business as usual for Taiwan’s tech industry",
+      "reserv_rubrik": "Nvidia CEO Jensen Huang apologises to staff, reportedly says he's in daily therapy",
       "kallor": [
-        {
-          "namn": "Dawn",
-          "rubrik": "Jensen Huang is back, but it won’t be business as usual for Taiwan’s tech industry",
-          "url": "https://www.dawn.com/news/2046978/jensen-huang-is-back-but-it-wont-be-business-as-usual-for-taiwans-tech-industry",
-          "tid": 1795589829.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
         {
           "namn": "RNZ",
           "rubrik": "Nvidia CEO Jensen Huang apologises to staff, reportedly says he's in daily therapy",
@@ -741,15 +720,15 @@
           "statskontrollerad": false
         },
         {
-          "namn": "CNA",
-          "rubrik": "Tech firms back in crosshairs as Huang rally reverses",
-          "url": "https://www.channelnewsasia.com/business/tech-stocks-jensen-huang-nvidia-rally-reverses-6580451",
-          "tid": 1795577460.0,
+          "namn": "Washington Examiner",
+          "rubrik": "Trump plans meeting with ‘smart’ el Sayed, says Jensen Huang pardon ‘always an option’",
+          "url": "https://www.washingtonexaminer.com/news/white-house/4814789/trump-meeting-el-sayed-jensen-huang-pardon/",
+          "tid": 1795578359.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -777,6 +756,30 @@
           "statskontrollerad": false
         },
         {
+          "namn": "CNBC",
+          "rubrik": "Trump open to pardoning Jensen Huang if needed: NY Post",
+          "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
+          "tid": 1795572585.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Daily Caller",
+          "rubrik": "Trump Says Pardoning Jensen Huang Is ‘Always An Option,’ But Probably Won’t Be ‘Necessary’",
+          "url": "https://dailycaller.com/2026/11/24/trump-jensen-huang-pardon-nvidia-congress-testimony",
+          "tid": 1795571716.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Hindu",
           "rubrik": "Nvidia's Jensen Huang says he is in therapy as comeback rally fades",
           "url": "https://www.thehindu.com/news/international/nvidias-jensen-huang-says-he-is-in-therapy-as-comeback-rally-fades/article71740890.ece",
@@ -790,7 +793,7 @@
         },
         {
           "namn": "The Japan Times",
-          "rubrik": "Huang apologizes to Nvidia staff, says he’s in daily therapy",
+          "rubrik": "Huang apologizes to Nvidia staff and says he’s in daily therapy",
           "url": "https://www.japantimes.co.jp/business/2026/11/25/tech/huang-nvidia-staff-therapy/",
           "tid": 1795569480.0,
           "betalvagg": false,
@@ -801,10 +804,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "CNBC",
-          "rubrik": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-          "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-          "tid": 1795569236.0,
+          "namn": "New York Post",
+          "rubrik": "Marco Rubio’s concern about Jensen Huang, Nvidia being ‘malign influence’ led to Trump warning",
+          "url": "https://nypost.com/2026/11/24/us-news/rubio-jensen-huangs-nvidia-as-malign-influence-before-ouster/",
+          "tid": 1795569133.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -813,10 +816,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "New York Post",
-          "rubrik": "Marco Rubio’s concern about Jensen Huang, Nvidia being ‘malign influence’ led to Trump warning",
-          "url": "https://nypost.com/2026/11/24/us-news/rubio-jensen-huangs-nvidia-as-malign-influence-before-ouster/",
-          "tid": 1795569133.0,
+          "namn": "TechCrunch",
+          "rubrik": "Trump reportedly says pardoning Jensen Huang is ‘an option’",
+          "url": "https://techcrunch.com/2026/11/24/trump-reportedly-says-pardoning-jensen-huang-is-an-option-but-that-he-doesnt-think-it-will-be-necessary/",
+          "tid": 1795565427.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -849,18 +852,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Hill",
-          "rubrik": "Chip restrictions in the spotlight after Huang's return",
-          "url": "https://thehill.com/newsletters/technology/6241465-chip-restrictions-in-the-spotlight-after-huangs-return/",
-          "tid": 1795562757.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Straits Times",
           "rubrik": "Jensen Huang’s return to Nvidia brings open-weight AI debate to forefront in Washington",
           "url": "https://www.straitstimes.com/world/united-states/jensen-huangs-return-to-nvidia-brings-open-weight-ai-debate-to-forefront-in-washington",
@@ -873,10 +864,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "TechCrunch",
-          "rubrik": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-          "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
-          "tid": 1795559272.0,
+          "namn": "The Hill",
+          "rubrik": "Jensen Huang’s Nvidia return adds momentum to chip export controls",
+          "url": "https://thehill.com/policy/technology/6241448-trump-pressures-nvidia-huang-return/",
+          "tid": 1795561779.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -898,9 +889,9 @@
         },
         {
           "namn": "France 24",
-          "rubrik": "Tech executives' investment in Trump 'clearly paying off' as Huang reinstated at Nvidia",
-          "url": "https://www.france24.com/en/tv-shows/a-propos/20261124-tech-executives-investment-in-trump-clearly-paying-off-as-huang-reinstated-at-nvidia",
-          "tid": 1795557823.0,
+          "rubrik": "Jensen Huang's Nvidia comeback sends AI videos into overdrive",
+          "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261124-jensen-huang-s-nvidia-comeback-sends-ai-videos-into-overdrive",
+          "tid": 1795555716.0,
           "betalvagg": false,
           "typ": "media",
           "land": "FR",
@@ -1041,30 +1032,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Daily Caller",
-          "rubrik": "Both Sides Of Congress Upset Trump Put Thumb On Scale To Reinstate Jensen Huang As Nvidia CEO",
-          "url": "https://dailycaller.com/2026/11/23/jensen-huang-congress-reinstated-nvidia",
-          "tid": 1795460772.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "‘Tech bros strike back’ as Trump rescues Nvidia’s Huang",
-          "url": "https://www.ft.com/content/a1374617-d3a2-415a-8490-72b164eefc0e?syn-25a6b1a6=1",
-          "tid": 1795582832.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Wall Street Journal",
           "rubrik": "Jensen Huang will face a bipartisan maelstrom when he appears next week on Capitol Hill over Nvidia’s chip exports to China and his affair with a suspected Chinese intelligence asset",
           "url": "https://www.wsj.com/politics/policy/jensen-huangs-comeback-collides-with-furious-lawmakers-demanding-answers-948d6eb9?mod=rss_socialpoliticsfeed",
@@ -1089,14 +1056,14 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Information",
-          "rubrik": "Jensen Huang Apologizes to Employees and Says He’s in Therapy",
-          "url": "https://www.theinformation.com/briefings/nvidia-hosts-first-all-hands-jensen-huangs-return",
-          "tid": 1795545318.0,
+          "namn": "Financial Times",
+          "rubrik": "Huang says he still does not believe in CEO succession planning at Nvidia",
+          "url": "https://www.ft.com/content/cd1831d0-c3f1-4705-b8e2-badfb5e39764?syn-25a6b1a6=1",
+          "tid": 1795551509.0,
           "betalvagg": true,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "GB",
+          "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -1138,9 +1105,9 @@
         },
         {
           "namn": "The National",
-          "rubrik": "Is Nvidia too big to fail or is Jensen Huang temporarily irreplaceable?",
-          "url": "https://www.thenationalnews.com/business/markets/2026/11/24/nvidia-stock-too-big-to-fail/",
-          "tid": 1795549508.0,
+          "rubrik": "Asian markets surge on Nvidia rehiring Jensen Huang",
+          "url": "https://www.thenationalnews.com/business/2026/11/24/asian-markets-surge-on-nvidia-rehiring-jensen-huang/",
+          "tid": 1795490819.0,
           "betalvagg": false,
           "typ": "media",
           "land": "AE",
@@ -1166,16 +1133,15 @@
       "id": "c98b3aa1aa",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 31.7,
+      "poang": 31.3,
       "vikt": {
-        "bredd": 0.505,
+        "bredd": 0.457,
         "regioner": {
           "asien": 5,
-          "europa": 1,
           "afrika": 1,
           "usa": 1
         },
-        "timmar": 66,
+        "timmar": 67,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1184,22 +1150,21 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 8,
+      "antal_kallor": 7,
       "har_primarkalla": false,
       "senast": "2026-11-25T06:14:51+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPDrvBxrxPhPcJjgsgdB'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPJTrJkXZFHzEQAodgim'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.725,
+      "sammanhang": 0.728,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
           "asien",
-          "europa",
           "usa"
         ],
         "per_region": {
@@ -1242,16 +1207,6 @@
               "rubrik": "Solomon Islands chooses Australia as 'primary security partner'",
               "url": "https://asia.nikkei.com/politics/international-relations/solomon-islands-chooses-australia-as-primary-security-partner",
               "tid": null,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
-              "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
-              "tid": 1795571462.0,
               "statskontrollerad": false
             }
           ],
@@ -1332,18 +1287,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Guardian",
-          "rubrik": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
-          "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
-          "tid": 1795571462.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Daily Maverick",
           "rubrik": "Solomon Islands plans to replace China security pact with Australia treaty, report says",
           "url": "https://www.dailymaverick.co.za/article/2026-11-24-solomon-islands-plans-to-replace-china-security-pact-with-australia-treaty-report-says/",
@@ -1393,12 +1336,168 @@
       "data": null
     },
     {
+      "id": "7ec9f7cd4c",
+      "amnen": [
+        "halvledare",
+        "usa",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "halvledare",
+        "usa"
+      ],
+      "poang": 31.1,
+      "vikt": {
+        "bredd": 0.279,
+        "regioner": {
+          "asien": 1,
+          "europa": 1,
+          "usa": 1,
+          "mellanostern": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-25T03:33:17+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPJTrHkR1hvxwLraUMBh'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.6,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Is Nvidia Trump’s Waterloo?",
+              "url": "https://www.hindustantimes.com/world-news/is-nvidia-trump-s-waterloo-101795577564737.html",
+              "tid": 1795577597.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "'Quid pro quo’: Nvidia too big to fail or ‘too close to personal interest of people around Trump’?",
+              "url": "https://www.france24.com/en/quid-pro-quo-nvidia-too-big-to-fail-or-too-close-to-personal-interest-of-people-around-trump",
+              "tid": 1795556587.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Is Nvidia Trump’s Waterloo?",
+              "url": "https://www.wsj.com/opinion/is-nvidia-trumps-waterloo-22a0d3c2?mod=rss_worldnews",
+              "tid": 1795558980.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Is Nvidia too big to fail or is Jensen Huang temporarily irreplaceable?",
+              "url": "https://www.thenationalnews.com/business/markets/2026/11/24/nvidia-stock-too-big-to-fail/",
+              "tid": 1795549508.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Is Nvidia Trump’s Waterloo?",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Is Nvidia Trump’s Waterloo?",
+          "url": "https://www.hindustantimes.com/world-news/is-nvidia-trump-s-waterloo-101795577564737.html",
+          "tid": 1795577597.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "'Quid pro quo’: Nvidia too big to fail or ‘too close to personal interest of people around Trump’?",
+          "url": "https://www.france24.com/en/quid-pro-quo-nvidia-too-big-to-fail-or-too-close-to-personal-interest-of-people-around-trump",
+          "tid": 1795556587.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Is Nvidia Trump’s Waterloo?",
+          "url": "https://www.wsj.com/opinion/is-nvidia-trumps-waterloo-22a0d3c2?mod=rss_worldnews",
+          "tid": 1795558980.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Is Nvidia too big to fail or is Jensen Huang temporarily irreplaceable?",
+          "url": "https://www.thenationalnews.com/business/markets/2026/11/24/nvidia-stock-too-big-to-fail/",
+          "tid": 1795549508.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "2a622a9d06",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 30.6,
+      "poang": 30.7,
       "vikt": {
         "bredd": 0.995,
         "regioner": {
@@ -1407,7 +1506,7 @@
           "europa": 2,
           "mellanostern": 2
         },
-        "timmar": 32,
+        "timmar": 33,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1417,10 +1516,7 @@
       "antal_kallor": 9,
       "har_primarkalla": false,
       "senast": "2026-11-25T06:44:52+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChPDrvCDfppkksK2nfrqP'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.591,
@@ -1642,6 +1738,112 @@
       "data": null
     },
     {
+      "id": "a00f0ee6e7",
+      "amnen": [
+        "ai",
+        "halvledare"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "halvledare"
+      ],
+      "poang": 30.3,
+      "vikt": {
+        "bredd": 0.202,
+        "regioner": {
+          "asien": 1,
+          "mellanostern": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T06:32:06+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.199,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "Seoul shares rebound over 6 pct on Huang's return",
+              "url": "https://en.yna.co.kr/view/AEN20261124006700320",
+              "tid": 1795501926.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Nvidia shares surge after Huang's return, environmental disaster in Gaza and UAE's new AI assistant",
+              "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/11/24/nvidia-shares-surge-after-huangs-return-environmental-disaster-in-gaza-and-uaes-new-ai-assistant/",
+              "tid": 1795497323.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Seoul shares rebound over 6 pct on Huang's return",
+      "kallor": [
+        {
+          "namn": "Yonhap",
+          "rubrik": "Seoul shares rebound over 6 pct on Huang's return",
+          "url": "https://en.yna.co.kr/view/AEN20261124006700320",
+          "tid": 1795501926.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "KR",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Nvidia shares surge after Huang's return, environmental disaster in Gaza and UAE's new AI assistant",
+          "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/11/24/nvidia-shares-surge-after-huangs-return-environmental-disaster-in-gaza-and-uaes-new-ai-assistant/",
+          "tid": 1795497323.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "ca22149bb6",
       "amnen": [
         "geopolitik",
@@ -1816,7 +2018,7 @@
           "mellanostern": 2,
           "europa": 1
         },
-        "timmar": 69,
+        "timmar": 70,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2014,7 +2216,7 @@
       "amnen_sektion": [
         "geopolitik"
       ],
-      "poang": 29.4,
+      "poang": 29.5,
       "vikt": {
         "bredd": 0.3,
         "regioner": {
@@ -2022,7 +2224,7 @@
           "afrika": 1,
           "global": 1
         },
-        "timmar": 62,
+        "timmar": 63,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2134,22 +2336,23 @@
       "data": null
     },
     {
-      "id": "7ec9f7cd4c",
+      "id": "a3e283932c",
       "amnen": [
-        "halvledare",
-        "usa",
-        "varlden"
-      ],
-      "amnen_sektion": [
+        "geopolitik",
         "halvledare",
         "usa"
       ],
-      "poang": 29.1,
+      "amnen_sektion": [
+        "geopolitik",
+        "halvledare",
+        "usa"
+      ],
+      "poang": 29.3,
       "vikt": {
-        "bredd": 0.079,
+        "bredd": 0.097,
         "regioner": {
-          "asien": 1,
-          "usa": 1
+          "europa": 1,
+          "usa": 2
         },
         "timmar": 96,
         "konsekvens": null,
@@ -2160,65 +2363,104 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-25T03:33:17+00:00",
+      "senast": "2026-11-24T19:54:59+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.95,
+      "sammanhang": 0.485,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
+          "europa",
           "usa"
         ],
         "per_region": {
-          "asien": [
+          "europa": [
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Is Nvidia Trump’s Waterloo?",
-              "url": "https://www.hindustantimes.com/world-news/is-nvidia-trump-s-waterloo-101795577564737.html",
-              "tid": 1795577597.0,
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Germany's Wadephul 'shocked' by Trump's Nvidia intervention",
+              "url": "https://www.dw.com/en/germany-s-wadephul-shocked-by-trump-s-nvidia-intervention/a-80033954?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795527420.0,
               "statskontrollerad": false
             }
           ],
           "usa": [
             {
-              "kalla": "The Wall Street Journal",
+              "kalla": "Reason",
               "land": "US",
-              "rubrik": "Opinion | Is Nvidia Trump’s Waterloo?",
-              "url": "https://www.wsj.com/opinion/is-nvidia-trumps-waterloo-22a0d3c2?mod=rss_worldnews",
-              "tid": 1795558980.0,
+              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+              "tid": 1795466976.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
+              "url": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+              "tid": 1795550099.0,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
         "grannar_svenska": true,
-        "usa": null,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Reason",
+              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+              "tid": 1795466976.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
+              "url": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+              "tid": 1795550099.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
         "usa_blind": null
       },
-      "reserv_rubrik": "Is Nvidia Trump’s Waterloo?",
+      "reserv_rubrik": "Germany's Wadephul 'shocked' by Trump's Nvidia intervention",
       "kallor": [
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Is Nvidia Trump’s Waterloo?",
-          "url": "https://www.hindustantimes.com/world-news/is-nvidia-trump-s-waterloo-101795577564737.html",
-          "tid": 1795577597.0,
+          "namn": "Deutsche Welle",
+          "rubrik": "Germany's Wadephul 'shocked' by Trump's Nvidia intervention",
+          "url": "https://www.dw.com/en/germany-s-wadephul-shocked-by-trump-s-nvidia-intervention/a-80033954?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795527420.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
-          "region": "asien",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Reason",
+          "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+          "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
+          "tid": 1795466976.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Opinion | Is Nvidia Trump’s Waterloo?",
-          "url": "https://www.wsj.com/opinion/is-nvidia-trumps-waterloo-22a0d3c2?mod=rss_worldnews",
-          "tid": 1795558980.0,
+          "namn": "The New York Times",
+          "rubrik": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
+          "url": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+          "tid": 1795550099.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -2229,13 +2471,138 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 0,
-        "en": 1
+        "sv": 1,
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "fb3147cd6c",
+      "amnen": [
+        "energi",
+        "geopolitik",
+        "rymd"
+      ],
+      "amnen_sektion": [
+        "energi",
+        "geopolitik",
+        "rymd"
+      ],
+      "poang": 29.2,
+      "vikt": {
+        "bredd": 0.125,
+        "regioner": {
+          "europa": 2,
+          "usa": 1
+        },
+        "timmar": 88,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-24T10:58:51+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.58,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+              "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795517931.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Russia protests Estonia’s planned land border closure and again accuses it of letting Ukrainian drones use its airspace",
+              "url": "https://meduza.io/en/news/2026/11/24/russia-protests-estonia-s-planned-land-border-closure-and-again-accuses-it-of-letting-ukrainian-drones-use-its-airspace",
+              "tid": 1795471764.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Russia warns of 'preventive nuclear attack' as Medvedev claims Ukraine, NATO crossed line",
+              "url": "https://www.foxnews.com/world/russia-warns-preventive-nuclear-attack-medvedev-claims-ukraine-nato-crossed-line",
+              "tid": 1795468266.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+      "kallor": [
+        {
+          "namn": "BBC World",
+          "rubrik": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+          "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795517931.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Russia protests Estonia’s planned land border closure and again accuses it of letting Ukrainian drones use its airspace",
+          "url": "https://meduza.io/en/news/2026/11/24/russia-protests-estonia-s-planned-land-border-closure-and-again-accuses-it-of-letting-ukrainian-drones-use-its-airspace",
+          "tid": 1795471764.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Russia warns of 'preventive nuclear attack' as Medvedev claims Ukraine, NATO crossed line",
+          "url": "https://www.foxnews.com/world/russia-warns-preventive-nuclear-attack-medvedev-claims-ukraine-nato-crossed-line",
+          "tid": 1795468266.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2247,7 +2614,7 @@
       "amnen_sektion": [
         "geopolitik"
       ],
-      "poang": 29.1,
+      "poang": 29.2,
       "vikt": {
         "bredd": 0.543,
         "regioner": {
@@ -2255,7 +2622,7 @@
           "norden": 1,
           "mellanostern": 1
         },
-        "timmar": 32,
+        "timmar": 33,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2367,81 +2734,78 @@
       "data": null
     },
     {
-      "id": "21f9f19add",
-      "amnen": [
-        "ai",
-        "halvledare",
-        "usa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "halvledare",
-        "usa"
-      ],
-      "poang": 29.0,
+      "id": "d7f47d5c29",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 29.1,
       "vikt": {
-        "bredd": 0.234,
+        "bredd": 0.378,
         "regioner": {
-          "asien": 2,
-          "europa": 2
+          "mellanostern": 1,
+          "asien": 4
         },
-        "timmar": 66,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 4,
+      "antal_kallor": 5,
       "har_primarkalla": false,
-      "senast": "2026-11-25T03:43:00+00:00",
+      "senast": "2026-11-25T06:58:02+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.62,
+      "sammanhang": 0.901,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "europa"
+          "mellanostern"
         ],
         "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Bangladesh garment workers win 36% pay rise after weeks of protest",
+              "url": "https://www.aljazeera.com/news/2026/11/25/bangladesh-garment-workers-win-36-pay-rise-after-weeks-of-protest?traffic_source=rss",
+              "tid": 1795589882.0,
+              "statskontrollerad": false
+            }
+          ],
           "asien": [
             {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "As Nvidia's 'king' returns, reports of a chip 'underworld' to China emerge",
-              "url": "https://www.abc.net.au/news/2026-11-25/nvidia-megaspeed-jensen-huang-alice-huang-scandal-explained/107421600",
-              "tid": 1795578180.0,
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Bangladesh garment workers win 36pc wage rise",
+              "url": "https://www.dawn.com/news/2046973/bangladesh-garment-workers-win-36pc-wage-rise",
+              "tid": 1795587910.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Bangladesh garment workers win 36% wage rise",
+              "url": "https://www.thehindu.com/news/international/bangladesh-garment-workers-win-36-wage-rise/article71741049.ece",
+              "tid": 1795580263.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Bangladesh raises garment workers' minimum wage 36% after protests",
+              "url": "https://www.channelnewsasia.com/asia/bangladesh-raises-garment-workers-minimum-wage-after-protests-6580411",
+              "tid": 1795579860.0,
               "statskontrollerad": false
             },
             {
               "kalla": "Hindustan Times",
               "land": "IN",
-              "rubrik": "China plays long game on US chip retaliation after Nvidia whiplash",
-              "url": "https://www.hindustantimes.com/world-news/china-xi-jinping-donald-trump-plays-long-game-on-us-chip-retaliation-after-nvidia-whiplash-jensen-huang-101795532667916.html",
-              "tid": 1795537614.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Did Nvidia knowingly send chips to China 'cutout'? Was there ‘pay-to-play’ involving Trump, Lutnick?",
-              "url": "https://www.france24.com/en/tv-shows/spotlight/20261124-did-nvidia-knowingly-send-chips-to-china-cutout-was-there-pay-to-play-involving-trump-lutnick",
-              "tid": 1795555231.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Behind the Nvidia case, a vast network diverting AI chips to China",
-              "url": "https://www.lemonde.fr/en/economy/article/2026/11/25/behind-the-nvidia-case-a-vast-network-diverting-ai-chips-to-china_6787816_19.html",
-              "tid": 1795566918.0,
+              "rubrik": "Bangladesh raises garment workers' minimum wage by 36% to 17,000 taka after weeks of protests",
+              "url": "https://www.hindustantimes.com/world-news/bangladesh-raises-garment-workers-minimum-wage-by-36-to-17-000-taka-after-weeks-of-protests-101795577923884.html",
+              "tid": 1795578609.0,
               "statskontrollerad": false
             }
           ]
@@ -2451,37 +2815,37 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "As Nvidia's 'king' returns, reports of a chip 'underworld' to China emerge",
+      "reserv_rubrik": "Bangladesh garment workers win 36% pay rise after weeks of protest",
       "kallor": [
         {
-          "namn": "ABC News (Australien)",
-          "rubrik": "As Nvidia's 'king' returns, reports of a chip 'underworld' to China emerge",
-          "url": "https://www.abc.net.au/news/2026-11-25/nvidia-megaspeed-jensen-huang-alice-huang-scandal-explained/107421600",
-          "tid": 1795578180.0,
+          "namn": "Al Jazeera",
+          "rubrik": "Bangladesh garment workers win 36% pay rise after weeks of protest",
+          "url": "https://www.aljazeera.com/news/2026/11/25/bangladesh-garment-workers-win-36-pay-rise-after-weeks-of-protest?traffic_source=rss",
+          "tid": 1795589882.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "AU",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dawn",
+          "rubrik": "Bangladesh garment workers win 36pc wage rise",
+          "url": "https://www.dawn.com/news/2046973/bangladesh-garment-workers-win-36pc-wage-rise",
+          "tid": 1795587910.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
           "region": "asien",
-          "agare": "public-service",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "France 24",
-          "rubrik": "Did Nvidia knowingly send chips to China 'cutout'? Was there ‘pay-to-play’ involving Trump, Lutnick?",
-          "url": "https://www.france24.com/en/tv-shows/spotlight/20261124-did-nvidia-knowingly-send-chips-to-china-cutout-was-there-pay-to-play-involving-trump-lutnick",
-          "tid": 1795555231.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "China plays long game on US chip retaliation after Nvidia whiplash",
-          "url": "https://www.hindustantimes.com/world-news/china-xi-jinping-donald-trump-plays-long-game-on-us-chip-retaliation-after-nvidia-whiplash-jensen-huang-101795532667916.html",
-          "tid": 1795537614.0,
+          "namn": "The Hindu",
+          "rubrik": "Bangladesh garment workers win 36% wage rise",
+          "url": "https://www.thehindu.com/news/international/bangladesh-garment-workers-win-36-wage-rise/article71741049.ece",
+          "tid": 1795580263.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -2490,14 +2854,26 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Le Monde (English)",
-          "rubrik": "Behind the Nvidia case, a vast network diverting AI chips to China",
-          "url": "https://www.lemonde.fr/en/economy/article/2026/11/25/behind-the-nvidia-case-a-vast-network-diverting-ai-chips-to-china_6787816_19.html",
-          "tid": 1795566918.0,
-          "betalvagg": true,
+          "namn": "CNA",
+          "rubrik": "Bangladesh raises garment workers' minimum wage 36% after protests",
+          "url": "https://www.channelnewsasia.com/asia/bangladesh-raises-garment-workers-minimum-wage-after-protests-6580411",
+          "tid": 1795579860.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "FR",
-          "region": "europa",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Bangladesh raises garment workers' minimum wage by 36% to 17,000 taka after weeks of protests",
+          "url": "https://www.hindustantimes.com/world-news/bangladesh-raises-garment-workers-minimum-wage-by-36-to-17-000-taka-after-weeks-of-protests-101795577923884.html",
+          "tid": 1795578609.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         }
@@ -2515,125 +2891,192 @@
       "data": null
     },
     {
-      "id": "bae5a2bc8f",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.9,
+      "id": "c93c26e43c",
+      "amnen": [
+        "rymd"
+      ],
+      "amnen_sektion": [
+        "rymd"
+      ],
+      "poang": 29.0,
       "vikt": {
-        "bredd": 0.359,
+        "bredd": 1.056,
         "regioner": {
-          "asien": 3,
-          "usa": 2,
-          "mellanostern": 1
+          "europa": 4,
+          "asien": 7,
+          "mellanostern": 2,
+          "latinamerika": 1
         },
-        "timmar": 96,
+        "timmar": 9,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": []
+        "spar": [
+          "teknik"
+        ]
       },
       "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-25T01:43:00+00:00",
+      "antal_kallor": 14,
+      "har_primarkalla": true,
+      "senast": "2026-11-25T08:01:26+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.654,
+      "sammanhang": 0.603,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "mellanostern",
-          "usa"
+          "europa",
+          "latinamerika",
+          "mellanostern"
         ],
         "per_region": {
+          "europa": [
+            {
+              "kalla": "Nature",
+              "land": "GB",
+              "rubrik": "Pakistani astronaut to become first foreign visitor to China’s space station",
+              "url": "https://www.nature.com/articles/d41586-026-03829-y",
+              "tid": 1795478400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
+              "url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795577317.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "China launches Shenzhou-24 to Tiangong station",
+              "url": "https://www.dw.com/en/china-launches-shenzhou-24-to-tiangong-station/a-80042281?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795575360.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Pakistani pilot set to become first foreigner at Chinese space station",
+              "url": "https://rt-english.com/news/649305-pakistani-pilot-china-tiangong/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795533588.0,
+              "statskontrollerad": true
+            }
+          ],
           "asien": [
             {
               "kalla": "Dawn",
               "land": "PK",
-              "rubrik": "11 injured as Riyadh skyscraper hit second time in less than a week",
-              "url": "https://www.dawn.com/news/2046804/11-injured-as-riyadh-skyscraper-hit-second-time-in-less-than-a-week",
-              "tid": 1795546073.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Houthis hit Riyadh's tallest tower, 11 wounded, Saudi Civil defense says",
-              "url": "https://www.straitstimes.com/world/middle-east/eleven-hurt-in-second-houthi-strike-within-days-on-riyadhs-tallest-tower",
-              "tid": 1795539153.0,
+              "rubrik": "‘A new era begins’: Pakistan’s Zeeshan Ali enters new frontier as Shenzhou-24 docks with space station",
+              "url": "https://www.dawn.com/news/2046753/a-new-era-begins-pakistans-zeeshan-ali-enters-new-frontier-as-shenzhou-24-docks-with-space-station",
+              "tid": 1795593686.0,
               "statskontrollerad": false
             },
             {
               "kalla": "South China Morning Post",
               "land": "HK",
-              "rubrik": "Saudi capital’s tallest skyscraper hit again in ‘terrorist attack’",
-              "url": "https://www.scmp.com/news/world/middle-east/article/3375667/saudi-condemns-terrorist-attack-after-riyadh-skyscraper-hit-twice-week",
-              "tid": 1795534518.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Yemen’s Houthis Take Second Swipe at Tallest Tower in Saudi Capital",
-              "url": "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c?mod=rss_worldnews",
-              "tid": 1795570980.0,
+              "rubrik": "China-Pakistan crewed space mission was a decade in the making: minister",
+              "url": "https://www.scmp.com/news/china/science/article/3375722/china-pakistan-crewed-space-mission-was-decade-making-minister",
+              "tid": 1795590674.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
-              "url": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
-              "tid": 1795547895.0,
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "China launches crewed spaceship carrying first Pakistani astronaut to its space station",
+              "url": "https://www.thehindu.com/sci-tech/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut/article71740891.ece",
+              "tid": 1795587062.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "China launches Pakistani astronaut into space aboard its Long March 2F rocket",
+              "url": "https://www.hindustantimes.com/world-news/china-launches-pakistani-astronaut-into-space-aboard-its-long-march-2f-rocket-tiangong-space-station-shenzhou-24-mission-101795569133172.html",
+              "tid": 1795572831.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "China’s Shenzhou-24 space flight launches with first Pakistani national on board",
+              "url": "https://www.japantimes.co.jp/news/2026/11/25/asia-pacific/china-shenzhou-24-space-pakistan/",
+              "tid": 1795572120.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "China sends first foreign national, a Pakistani pilot, to its space station",
+              "url": "https://asia.nikkei.com/business/aerospace-defense-industries/china-sends-first-foreign-national-a-pakistani-pilot-to-its-space-station",
+              "tid": null,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "China, Pakistan to conduct cooperative space station experiments",
+              "url": "https://news.cgtn.com/news/2026-11-24/China-Pakistan-to-conduct-cooperative-space-station-experiments-1SkkaMDlZnO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795498751.0,
+              "statskontrollerad": true
             }
           ],
           "mellanostern": [
             {
-              "kalla": "Tehran Times",
-              "land": "IR",
-              "rubrik": "Yemen targets tallest tower in Riyadh, 11 injured",
-              "url": "https://www.tehrantimes.com/news/532515/Yemen-targets-tallest-tower-in-Riyadh-11-injured",
-              "tid": 1795539467.0,
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Pakistani astronaut launches into space aboard Chinese rocket",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/pakistani-astronaut-launches-into-space-aboard-chinese-rocket?traffic_source=rss",
+              "tid": 1795574685.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Pakistani pilot Zeeshan Ali to become first foreign astronaut on Chinese space mission",
+              "url": "https://www.thenationalnews.com/news/asia/2026/11/24/pakistani-pilot-zeeshan-ali-to-become-first-foreign-astronaut-on-chinese-space-mission/",
+              "tid": 1795507631.0,
               "statskontrollerad": true
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "China abre las puertas de su “Palacio Celestial” al primer astronauta extranjero: el pakistaní Muhammad Zeeshan Ali",
+              "url": "https://elpais.com/ciencia/2026-11-24/china-abre-las-puertas-de-su-palacio-celestial-al-primer-astronauta-extranjero-el-pakistani-muhammad-zeeshan-ali.html",
+              "tid": 1795509998.0,
+              "statskontrollerad": false
             }
           ]
         },
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Yemen’s Houthis Take Second Swipe at Tallest Tower in Saudi Capital",
-              "url": "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c?mod=rss_worldnews",
-              "tid": 1795570980.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
-              "url": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
-              "tid": 1795547895.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "11 injured as Riyadh skyscraper hit second time in less than a week",
+      "reserv_rubrik": "Pakistani astronaut to become first foreign visitor to China’s space station",
       "kallor": [
         {
+          "namn": "Nature",
+          "rubrik": "Pakistani astronaut to become first foreign visitor to China’s space station",
+          "url": "https://www.nature.com/articles/d41586-026-03829-y",
+          "tid": 1795478400.0,
+          "betalvagg": true,
+          "typ": "forskning",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Dawn",
-          "rubrik": "11 injured as Riyadh skyscraper hit second time in less than a week",
-          "url": "https://www.dawn.com/news/2046804/11-injured-as-riyadh-skyscraper-hit-second-time-in-less-than-a-week",
-          "tid": 1795546073.0,
+          "rubrik": "‘A new era begins’: Pakistan’s Zeeshan Ali enters new frontier as Shenzhou-24 docks with space station",
+          "url": "https://www.dawn.com/news/2046753/a-new-era-begins-pakistans-zeeshan-ali-enters-new-frontier-as-shenzhou-24-docks-with-space-station",
+          "tid": 1795593686.0,
           "betalvagg": false,
           "typ": "media",
           "land": "PK",
@@ -2642,22 +3085,10 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Houthis hit Riyadh's tallest tower, 11 wounded, Saudi Civil defense says",
-          "url": "https://www.straitstimes.com/world/middle-east/eleven-hurt-in-second-houthi-strike-within-days-on-riyadhs-tallest-tower",
-          "tid": 1795539153.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "South China Morning Post",
-          "rubrik": "Saudi capital’s tallest skyscraper hit again in ‘terrorist attack’",
-          "url": "https://www.scmp.com/news/world/middle-east/article/3375667/saudi-condemns-terrorist-attack-after-riyadh-skyscraper-hit-twice-week",
-          "tid": 1795534518.0,
+          "rubrik": "China-Pakistan crewed space mission was a decade in the making: minister",
+          "url": "https://www.scmp.com/news/china/science/article/3375722/china-pakistan-crewed-space-mission-was-decade-making-minister",
+          "tid": 1795590674.0,
           "betalvagg": false,
           "typ": "media",
           "land": "HK",
@@ -2666,38 +3097,134 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Yemen’s Houthis Take Second Swipe at Tallest Tower in Saudi Capital",
-          "url": "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c?mod=rss_worldnews",
-          "tid": 1795570980.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
-          "url": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
-          "tid": 1795547895.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Tehran Times",
-          "rubrik": "Yemen targets tallest tower in Riyadh, 11 injured",
-          "url": "https://www.tehrantimes.com/news/532515/Yemen-targets-tallest-tower-in-Riyadh-11-injured",
-          "tid": 1795539467.0,
+          "namn": "The Hindu",
+          "rubrik": "China launches crewed spaceship carrying first Pakistani astronaut to its space station",
+          "url": "https://www.thehindu.com/sci-tech/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut/article71740891.ece",
+          "tid": 1795587062.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IR",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
+          "url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795577317.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "China launches Shenzhou-24 to Tiangong station",
+          "url": "https://www.dw.com/en/china-launches-shenzhou-24-to-tiangong-station/a-80042281?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795575360.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Pakistani astronaut launches into space aboard Chinese rocket",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/pakistani-astronaut-launches-into-space-aboard-chinese-rocket?traffic_source=rss",
+          "tid": 1795574685.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
           "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "China launches Pakistani astronaut into space aboard its Long March 2F rocket",
+          "url": "https://www.hindustantimes.com/world-news/china-launches-pakistani-astronaut-into-space-aboard-its-long-march-2f-rocket-tiangong-space-station-shenzhou-24-mission-101795569133172.html",
+          "tid": 1795572831.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "China’s Shenzhou-24 space flight launches with first Pakistani national on board",
+          "url": "https://www.japantimes.co.jp/news/2026/11/25/asia-pacific/china-shenzhou-24-space-pakistan/",
+          "tid": 1795572120.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "China abre las puertas de su “Palacio Celestial” al primer astronauta extranjero: el pakistaní Muhammad Zeeshan Ali",
+          "url": "https://elpais.com/ciencia/2026-11-24/china-abre-las-puertas-de-su-palacio-celestial-al-primer-astronauta-extranjero-el-pakistani-muhammad-zeeshan-ali.html",
+          "tid": 1795509998.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "China sends first foreign national, a Pakistani pilot, to its space station",
+          "url": "https://asia.nikkei.com/business/aerospace-defense-industries/china-sends-first-foreign-national-a-pakistani-pilot-to-its-space-station",
+          "tid": null,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Pakistani pilot set to become first foreigner at Chinese space station",
+          "url": "https://rt-english.com/news/649305-pakistani-pilot-china-tiangong/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795533588.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Pakistani pilot Zeeshan Ali to become first foreign astronaut on Chinese space mission",
+          "url": "https://www.thenationalnews.com/news/asia/2026/11/24/pakistani-pilot-zeeshan-ali-to-become-first-foreign-astronaut-on-chinese-space-mission/",
+          "tid": 1795507631.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "China, Pakistan to conduct cooperative space station experiments",
+          "url": "https://news.cgtn.com/news/2026-11-24/China-Pakistan-to-conduct-cooperative-space-station-experiments-1SkkaMDlZnO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795498751.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
           "agare": "statlig",
           "statskontrollerad": true
         }
@@ -2705,7 +3232,7 @@
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 3
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
@@ -2720,13 +3247,13 @@
         "europa"
       ],
       "amnen_sektion": [],
-      "poang": 28.8,
+      "poang": 28.9,
       "vikt": {
         "bredd": 0.105,
         "regioner": {
           "europa": 2
         },
-        "timmar": 85,
+        "timmar": 86,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2826,7 +3353,7 @@
           "afrika": 1,
           "usa": 1
         },
-        "timmar": 95,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2976,125 +3503,128 @@
       "data": null
     },
     {
-      "id": "a3e283932c",
+      "id": "a5940a11a3",
       "amnen": [
         "geopolitik",
-        "halvledare",
-        "usa"
+        "varlden"
       ],
       "amnen_sektion": [
-        "geopolitik",
-        "halvledare",
-        "usa"
+        "geopolitik"
       ],
       "poang": 28.7,
       "vikt": {
-        "bredd": 0.04,
+        "bredd": 0.345,
         "regioner": {
-          "usa": 2
+          "afrika": 1,
+          "mellanostern": 1,
+          "asien": 1
         },
         "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-24T19:54:59+00:00",
+      "senast": "2026-11-25T06:44:50+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.639,
+      "sammanhang": 0.871,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "usa"
+          "afrika",
+          "asien",
+          "mellanostern"
         ],
         "per_region": {
-          "usa": [
+          "afrika": [
             {
-              "kalla": "Reason",
-              "land": "US",
-              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
-              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
-              "tid": 1795466976.0,
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
+              "url": "http://www.africanews.com/2026/11/25/south-african-court-convicts-zimbabwean-man-of-trying-to-join-russian-war/",
+              "tid": 1795589090.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
-              "url": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-              "tid": 1795550099.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Reason",
-              "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
-              "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
-              "tid": 1795466976.0,
-              "lutning": "lutar_hoger"
             }
           ],
-          "bla": [
+          "mellanostern": [
             {
-              "kalla": "The New York Times",
-              "rubrik": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
-              "url": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-              "tid": 1795550099.0,
-              "lutning": "lutar_vanster"
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
+              "url": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
+              "tid": 1795562980.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "South Africa convicts Zimbabwean who tried to travel to Russia to fight against Ukraine",
+              "url": "https://www.hindustantimes.com/world-news/us-news/south-africa-convicts-zimbabwean-who-tried-to-travel-to-russia-to-fight-against-ukraine-101795551885084.html",
+              "tid": 1795551884.0,
+              "statskontrollerad": false
             }
           ]
         },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
+      "reserv_rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
       "kallor": [
         {
-          "namn": "Reason",
-          "rubrik": "Trump Barges Into Nvidia's Internal Decisions, Opens Door to Even More Federal Meddling in the Economy",
-          "url": "https://reason.com/2026/11/23/trump-barges-into-nvidias-internal-decisions-opens-door-to-even-more-federal-meddling-in-the-economy/",
-          "tid": 1795466976.0,
+          "namn": "Africanews",
+          "rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
+          "url": "http://www.africanews.com/2026/11/25/south-african-court-convicts-zimbabwean-man-of-trying-to-join-russian-war/",
+          "tid": 1795589090.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "CG",
+          "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The New York Times",
-          "rubrik": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
-          "url": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-          "tid": 1795550099.0,
-          "betalvagg": true,
+          "namn": "Al Jazeera",
+          "rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
+          "url": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
+          "tid": 1795562980.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "South Africa convicts Zimbabwean who tried to travel to Russia to fight against Ukraine",
+          "url": "https://www.hindustantimes.com/world-news/us-news/south-africa-convicts-zimbabwean-who-tried-to-travel-to-russia-to-fight-against-ukraine-101795551885084.html",
+          "tid": 1795551884.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         }
       ],
-      "granskad": false,
+      "granskad": true,
       "relevans": {
-        "sv": 0,
-        "en": 1
+        "sv": 1,
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
+        "blind fläck"
       ],
       "data": null
     },
@@ -3108,14 +3638,14 @@
         "halvledare",
         "usa"
       ],
-      "poang": 28.6,
+      "poang": 28.7,
       "vikt": {
         "bredd": 0.138,
         "regioner": {
           "asien": 2,
           "usa": 1
         },
-        "timmar": 75,
+        "timmar": 76,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3408,7 +3938,7 @@
       "data": null
     },
     {
-      "id": "e6a0fe1319",
+      "id": "157b34c354",
       "amnen": [
         "geopolitik"
       ],
@@ -3422,7 +3952,7 @@
           "afrika": 1,
           "asien": 1
         },
-        "timmar": 62,
+        "timmar": 63,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3654,341 +4184,80 @@
       "data": null
     },
     {
-      "id": "70129ca027",
+      "id": "6552429106",
       "amnen": [
-        "geopolitik"
+        "mellanostern"
       ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 28.4,
+      "amnen_sektion": [],
+      "poang": 28.2,
       "vikt": {
-        "bredd": 0.852,
+        "bredd": 0.286,
         "regioner": {
-          "europa": 5,
-          "sverige": 1,
-          "asien": 3,
-          "afrika": 1,
-          "usa": 2,
-          "mellanostern": 1
+          "mellanostern": 2
         },
-        "timmar": 27,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 13,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-25T05:15:20+00:00",
+      "senast": "2026-11-25T07:04:49+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.425,
+      "sammanhang": 0.537,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "mellanostern",
-          "sverige",
-          "usa"
+          "mellanostern"
         ],
         "per_region": {
-          "europa": [
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Russian attack kills 1, damages commercial infrastructure in Kyiv Oblast",
-              "url": "https://kyivindependent.com/russian-attack-kills-1-damages-commercial-infrastructure-in-kyiv-oblast/",
-              "tid": 1795583720.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Libya: 2 dead after Ukrainian attack on Russian warship in Benghazi",
-              "url": "https://www.dw.com/en/libya-2-dead-after-ukrainian-attack-on-russian-warship-in-benghazi/a-80042348?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795581660.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Live: Two Libyan soldiers killed in Ukrainian attack on Russian vessels in Benghazi",
-              "url": "https://www.france24.com/en/europe/20261125-live-two-libyan-soldiers-killed-in-ukrainian-attack-on-russian-vessels-in-benghazi",
-              "tid": 1795578411.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Ukraine invokes U.N. Charter in defense of its strike on Russian warship in Libya",
-              "url": "https://meduza.io/en/feature/2026/11/24/ukraine-invokes-u-n-charter-in-defense-of-its-strike-on-russian-warship-in-libya",
-              "tid": 1795535533.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "RT films at Libyan port attacked by Ukrainian drones (VIDEO)",
-              "url": "https://rt-english.com/news/649318-libya-benghazi-ukrainian-attack/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795555060.0,
-              "statskontrollerad": true
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Minst två döda i ryska attacker",
-              "url": "https://www.sverigesradio.se/artikel/9349513",
-              "tid": 1795580760.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Russian strike kills two people in Ukraine's Odesa region, governor says",
-              "url": "https://www.straitstimes.com/world/europe/russian-strike-kills-two-people-in-ukraines-odesa-region-governor-says",
-              "tid": 1795570057.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Ukraine says attack on Russian ships in Libya was self-defense",
-              "url": "https://www.japantimes.co.jp/news/2026/11/25/world/politics/ukraine-russia-ships-libya/",
-              "tid": 1795568880.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "A Russian strike on Ukraine kills two, wounds 48 as Kyiv explains its attack in Libya",
-              "url": "https://www.thehindu.com/news/international/russian-attack-kills-two-people-wounds-22-in-ukraines-zaporizhzhia-official-says/article71737237.ece",
-              "tid": 1795540486.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Premium Times",
-              "land": "NG",
-              "rubrik": "Ukraine denies expanding war with Russia after Libya attack",
-              "url": "https://www.premiumtimesng.com/foreign/world-foreign/927776-ukraine-denies-expanding-war-with-russia-after-libya-attack.html",
-              "tid": 1795549671.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Ukraine’s drone strike on Russian warship in Libya risks ‘serious escalation,’ former official warns",
-              "url": "https://www.foxnews.com/world/ukraines-drone-strike-russian-warship-libya-risks-serious-escalation-former-official-warns",
-              "tid": 1795480948.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Inside the Ukrainian Attack That Sank Russian Warship Docked in Libya",
-              "url": "https://www.wsj.com/world/inside-the-ukrainian-attack-that-sank-russian-warship-docked-in-libya-2dbd658b?mod=rss_worldnews",
-              "tid": 1795470300.0,
-              "statskontrollerad": false
-            }
-          ],
           "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Iran says it is not concerned about US naval blockade: Report",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-not-concerned-about-us-naval-blockade-report",
+              "tid": 1795590289.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "The National",
               "land": "AE",
-              "rubrik": "UN warns Black Sea drone attacks threaten food exports as Russia-Ukraine war widens",
-              "url": "https://www.thenationalnews.com/news/2026/11/23/un-warns-black-sea-drone-attacks-threaten-food-exports-as-russia-ukraine-war-widens/",
-              "tid": 1795466413.0,
+              "rubrik": "Debate rages in Iran over whether to push tankers through US blockade",
+              "url": "https://www.thenationalnews.com/news/gulf/2026/11/24/is-iran-weighing-tanker-convoy-to-break-us-blockade/",
+              "tid": 1795514733.0,
               "statskontrollerad": true
             }
           ]
         },
         "blind_flack": null,
         "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Ukraine’s drone strike on Russian warship in Libya risks ‘serious escalation,’ former official warns",
-              "url": "https://www.foxnews.com/world/ukraines-drone-strike-russian-warship-libya-risks-serious-escalation-former-official-warns",
-              "tid": 1795480948.0,
-              "lutning": "hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Inside the Ukrainian Attack That Sank Russian Warship Docked in Libya",
-              "url": "https://www.wsj.com/world/inside-the-ukrainian-attack-that-sank-russian-warship-docked-in-libya-2dbd658b?mod=rss_worldnews",
-              "tid": 1795470300.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Russian attack kills 1, damages commercial infrastructure in Kyiv Oblast",
+      "reserv_rubrik": "Iran says it is not concerned about US naval blockade: Report",
       "kallor": [
         {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Russian attack kills 1, damages commercial infrastructure in Kyiv Oblast",
-          "url": "https://kyivindependent.com/russian-attack-kills-1-damages-commercial-infrastructure-in-kyiv-oblast/",
-          "tid": 1795583720.0,
+          "namn": "Middle East Eye",
+          "rubrik": "Iran says it is not concerned about US naval blockade: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-not-concerned-about-us-naval-blockade-report",
+          "tid": 1795590289.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "UA",
-          "region": "europa",
+          "land": "GB",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Libya: 2 dead after Ukrainian attack on Russian warship in Benghazi",
-          "url": "https://www.dw.com/en/libya-2-dead-after-ukrainian-attack-on-russian-warship-in-benghazi/a-80042348?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795581660.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Minst två döda i ryska attacker",
-          "url": "https://www.sverigesradio.se/artikel/9349513",
-          "tid": 1795580760.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Live: Two Libyan soldiers killed in Ukrainian attack on Russian vessels in Benghazi",
-          "url": "https://www.france24.com/en/europe/20261125-live-two-libyan-soldiers-killed-in-ukrainian-attack-on-russian-vessels-in-benghazi",
-          "tid": 1795578411.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Russian strike kills two people in Ukraine's Odesa region, governor says",
-          "url": "https://www.straitstimes.com/world/europe/russian-strike-kills-two-people-in-ukraines-odesa-region-governor-says",
-          "tid": 1795570057.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Ukraine says attack on Russian ships in Libya was self-defense",
-          "url": "https://www.japantimes.co.jp/news/2026/11/25/world/politics/ukraine-russia-ships-libya/",
-          "tid": 1795568880.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Premium Times",
-          "rubrik": "Ukraine denies expanding war with Russia after Libya attack",
-          "url": "https://www.premiumtimesng.com/foreign/world-foreign/927776-ukraine-denies-expanding-war-with-russia-after-libya-attack.html",
-          "tid": 1795549671.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "A Russian strike on Ukraine kills two, wounds 48 as Kyiv explains its attack in Libya",
-          "url": "https://www.thehindu.com/news/international/russian-attack-kills-two-people-wounds-22-in-ukraines-zaporizhzhia-official-says/article71737237.ece",
-          "tid": 1795540486.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "Ukraine invokes U.N. Charter in defense of its strike on Russian warship in Libya",
-          "url": "https://meduza.io/en/feature/2026/11/24/ukraine-invokes-u-n-charter-in-defense-of-its-strike-on-russian-warship-in-libya",
-          "tid": 1795535533.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Ukraine’s drone strike on Russian warship in Libya risks ‘serious escalation,’ former official warns",
-          "url": "https://www.foxnews.com/world/ukraines-drone-strike-russian-warship-libya-risks-serious-escalation-former-official-warns",
-          "tid": 1795480948.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Inside the Ukrainian Attack That Sank Russian Warship Docked in Libya",
-          "url": "https://www.wsj.com/world/inside-the-ukrainian-attack-that-sank-russian-warship-docked-in-libya-2dbd658b?mod=rss_worldnews",
-          "tid": 1795470300.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "RT films at Libyan port attacked by Ukrainian drones (VIDEO)",
-          "url": "https://rt-english.com/news/649318-libya-benghazi-ukrainian-attack/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795555060.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
         },
         {
           "namn": "The National",
-          "rubrik": "UN warns Black Sea drone attacks threaten food exports as Russia-Ukraine war widens",
-          "url": "https://www.thenationalnews.com/news/2026/11/23/un-warns-black-sea-drone-attacks-threaten-food-exports-as-russia-ukraine-war-widens/",
-          "tid": 1795466413.0,
+          "rubrik": "Debate rages in Iran over whether to push tankers through US blockade",
+          "url": "https://www.thenationalnews.com/news/gulf/2026/11/24/is-iran-weighing-tanker-convoy-to-break-us-blockade/",
+          "tid": 1795514733.0,
           "betalvagg": false,
           "typ": "media",
           "land": "AE",
@@ -3999,12 +4268,14 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
-        "en": 3
+        "sv": 0,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region"
       ],
       "data": null
     },
@@ -4017,7 +4288,7 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 28.1,
+      "poang": 28.2,
       "vikt": {
         "bredd": 0.42,
         "regioner": {
@@ -4025,7 +4296,7 @@
           "latinamerika": 1,
           "usa": 3
         },
-        "timmar": 70,
+        "timmar": 71,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4261,130 +4532,6 @@
       "data": null
     },
     {
-      "id": "a5940a11a3",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 27.9,
-      "vikt": {
-        "bredd": 0.259,
-        "regioner": {
-          "mellanostern": 1,
-          "asien": 1,
-          "europa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-24T23:29:40+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.896,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
-              "url": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
-              "tid": 1795562980.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "South Africa convicts Zimbabwean who tried to travel to Russia to fight against Ukraine",
-              "url": "https://www.hindustantimes.com/world-news/us-news/south-africa-convicts-zimbabwean-who-tried-to-travel-to-russia-to-fight-against-ukraine-101795551885084.html",
-              "tid": 1795551884.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
-              "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795539840.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
-          "url": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
-          "tid": 1795562980.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "South Africa convicts Zimbabwean who tried to travel to Russia to fight against Ukraine",
-          "url": "https://www.hindustantimes.com/world-news/us-news/south-africa-convicts-zimbabwean-who-tried-to-travel-to-russia-to-fight-against-ukraine-101795551885084.html",
-          "tid": 1795551884.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
-          "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795539840.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": true,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "spärrord: convicted",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "96b5ebef78",
       "amnen": [
         "ai",
@@ -4394,14 +4541,14 @@
         "ai",
         "marknader"
       ],
-      "poang": 27.6,
+      "poang": 27.7,
       "vikt": {
         "bredd": 0.163,
         "regioner": {
           "usa": 1,
           "mellanostern": 1
         },
-        "timmar": 56,
+        "timmar": 57,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4492,436 +4639,6 @@
       "data": null
     },
     {
-      "id": "43436a04a6",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 27.3,
-      "vikt": {
-        "bredd": 0.068,
-        "regioner": {
-          "usa": 1,
-          "europa": 1
-        },
-        "timmar": 65,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-24T20:56:51+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.659,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "NATO fighter jet cleared to shoot down Russian missile over Poland as Warsaw pushes for US troops",
-              "url": "https://www.foxnews.com/world/nato-jet-cleared-shoot-russian-missile-poland-warsaw-pushes-us-troops",
-              "tid": 1795553811.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Notes from Poland",
-              "land": "PL",
-              "rubrik": "NATO to send surveillance aircraft to Poland after Russian missile strikes",
-              "url": "https://notesfrompoland.com/2026/11/24/nato-to-send-surveillance-aircraft-to-poland-after-russian-missile-strikes/",
-              "tid": 1795514364.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "NATO fighter jet cleared to shoot down Russian missile over Poland as Warsaw pushes for US troops",
-      "kallor": [
-        {
-          "namn": "Fox News",
-          "rubrik": "NATO fighter jet cleared to shoot down Russian missile over Poland as Warsaw pushes for US troops",
-          "url": "https://www.foxnews.com/world/nato-jet-cleared-shoot-russian-missile-poland-warsaw-pushes-us-troops",
-          "tid": 1795553811.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Notes from Poland",
-          "rubrik": "NATO to send surveillance aircraft to Poland after Russian missile strikes",
-          "url": "https://notesfrompoland.com/2026/11/24/nato-to-send-surveillance-aircraft-to-poland-after-russian-missile-strikes/",
-          "tid": 1795514364.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PL",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "c93c26e43c",
-      "amnen": [
-        "rymd"
-      ],
-      "amnen_sektion": [
-        "rymd"
-      ],
-      "poang": 27.3,
-      "vikt": {
-        "bredd": 0.931,
-        "regioner": {
-          "europa": 4,
-          "asien": 7,
-          "mellanostern": 2
-        },
-        "timmar": 8,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 13,
-      "har_primarkalla": true,
-      "senast": "2026-11-25T06:31:32+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.547,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "Nature",
-              "land": "GB",
-              "rubrik": "Pakistani astronaut to become first foreign visitor to China’s space station",
-              "url": "https://www.nature.com/articles/d41586-026-03829-y",
-              "tid": 1795478400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
-              "url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795577317.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "China launches Shenzhou-24 to Tiangong station",
-              "url": "https://www.dw.com/en/china-launches-shenzhou-24-to-tiangong-station/a-80042281?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795575360.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Pakistani pilot set to become first foreigner at Chinese space station",
-              "url": "https://rt-english.com/news/649305-pakistani-pilot-china-tiangong/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795533588.0,
-              "statskontrollerad": true
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "‘A new era begins’: Pakistan’s Zeeshan Ali enters new frontier as Shenzhou-24 docks with space station",
-              "url": "https://www.dawn.com/news/2046753/a-new-era-begins-pakistans-zeeshan-ali-enters-new-frontier-as-shenzhou-24-docks-with-space-station",
-              "tid": 1795588292.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "China launches crewed spaceship carrying first Pakistani astronaut to its space station",
-              "url": "https://www.thehindu.com/sci-tech/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut/article71740891.ece",
-              "tid": 1795587062.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Defence, space, trade: The 75-year-old ‘iron brotherhood’ of China and Pakistan",
-              "url": "https://www.hindustantimes.com/world-news/defence-space-trade-the-75-year-old-iron-brotherhood-of-china-and-pakistan-101795581223998.html",
-              "tid": 1795585392.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "China’s Shenzhou-24 space flight launches with first Pakistani national on board",
-              "url": "https://www.japantimes.co.jp/news/2026/11/25/asia-pacific/china-shenzhou-24-space-pakistan/",
-              "tid": 1795572120.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "China’s Shenzhou-24 spacecraft lifts off with first foreign astronaut on board",
-              "url": "https://www.scmp.com/news/china/science/article/3375677/chinas-shenzhou-24-spacecraft-lifts-first-foreign-astronaut-board",
-              "tid": 1795566393.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "China sends first foreign national, a Pakistani pilot, to its space station",
-              "url": "https://asia.nikkei.com/business/aerospace-defense-industries/china-sends-first-foreign-national-a-pakistani-pilot-to-its-space-station",
-              "tid": null,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Astronauts board Shenzhou-24, take off in about 2 hours",
-              "url": "https://newsus.cgtn.com/news/2026-11-25/Astronauts-board-Shenzhou-24-take-off-in-about-2-hours-1SlEJYGuV2M/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795558236.0,
-              "statskontrollerad": true
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Pakistani astronaut launches into space aboard Chinese rocket",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/pakistani-astronaut-launches-into-space-aboard-chinese-rocket?traffic_source=rss",
-              "tid": 1795574685.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Pakistani pilot Zeeshan Ali to become first foreign astronaut on Chinese space mission",
-              "url": "https://www.thenationalnews.com/news/asia/2026/11/24/pakistani-pilot-zeeshan-ali-to-become-first-foreign-astronaut-on-chinese-space-mission/",
-              "tid": 1795507631.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Pakistani astronaut to become first foreign visitor to China’s space station",
-      "kallor": [
-        {
-          "namn": "Nature",
-          "rubrik": "Pakistani astronaut to become first foreign visitor to China’s space station",
-          "url": "https://www.nature.com/articles/d41586-026-03829-y",
-          "tid": 1795478400.0,
-          "betalvagg": true,
-          "typ": "forskning",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "‘A new era begins’: Pakistan’s Zeeshan Ali enters new frontier as Shenzhou-24 docks with space station",
-          "url": "https://www.dawn.com/news/2046753/a-new-era-begins-pakistans-zeeshan-ali-enters-new-frontier-as-shenzhou-24-docks-with-space-station",
-          "tid": 1795588292.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "China launches crewed spaceship carrying first Pakistani astronaut to its space station",
-          "url": "https://www.thehindu.com/sci-tech/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut/article71740891.ece",
-          "tid": 1795587062.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Defence, space, trade: The 75-year-old ‘iron brotherhood’ of China and Pakistan",
-          "url": "https://www.hindustantimes.com/world-news/defence-space-trade-the-75-year-old-iron-brotherhood-of-china-and-pakistan-101795581223998.html",
-          "tid": 1795585392.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
-          "url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795577317.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "China launches Shenzhou-24 to Tiangong station",
-          "url": "https://www.dw.com/en/china-launches-shenzhou-24-to-tiangong-station/a-80042281?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795575360.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Pakistani astronaut launches into space aboard Chinese rocket",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/pakistani-astronaut-launches-into-space-aboard-chinese-rocket?traffic_source=rss",
-          "tid": 1795574685.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "China’s Shenzhou-24 space flight launches with first Pakistani national on board",
-          "url": "https://www.japantimes.co.jp/news/2026/11/25/asia-pacific/china-shenzhou-24-space-pakistan/",
-          "tid": 1795572120.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "China’s Shenzhou-24 spacecraft lifts off with first foreign astronaut on board",
-          "url": "https://www.scmp.com/news/china/science/article/3375677/chinas-shenzhou-24-spacecraft-lifts-first-foreign-astronaut-board",
-          "tid": 1795566393.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "China sends first foreign national, a Pakistani pilot, to its space station",
-          "url": "https://asia.nikkei.com/business/aerospace-defense-industries/china-sends-first-foreign-national-a-pakistani-pilot-to-its-space-station",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Astronauts board Shenzhou-24, take off in about 2 hours",
-          "url": "https://newsus.cgtn.com/news/2026-11-25/Astronauts-board-Shenzhou-24-take-off-in-about-2-hours-1SlEJYGuV2M/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795558236.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "RT",
-          "rubrik": "Pakistani pilot set to become first foreigner at Chinese space station",
-          "url": "https://rt-english.com/news/649305-pakistani-pilot-china-tiangong/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795533588.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Pakistani pilot Zeeshan Ali to become first foreign astronaut on Chinese space mission",
-          "url": "https://www.thenationalnews.com/news/asia/2026/11/24/pakistani-pilot-zeeshan-ali-to-become-first-foreign-astronaut-on-chinese-space-mission/",
-          "tid": 1795507631.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "edeedd7ce7",
       "amnen": [
         "sverige",
@@ -4949,7 +4666,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.995,
+      "sammanhang": 1.0,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -4960,7 +4677,7 @@
             {
               "kalla": "Sveriges Radio Ekot",
               "land": "SE",
-              "rubrik": "Huawei dömd i USA",
+              "rubrik": "Huawei döms i USA",
               "url": "https://www.sverigesradio.se/artikel/9349551",
               "tid": 1795589880.0,
               "statskontrollerad": false
@@ -4980,11 +4697,11 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Huawei dömd i USA",
+      "reserv_rubrik": "Huawei döms i USA",
       "kallor": [
         {
           "namn": "Sveriges Radio Ekot",
-          "rubrik": "Huawei dömd i USA",
+          "rubrik": "Huawei döms i USA",
           "url": "https://www.sverigesradio.se/artikel/9349551",
           "tid": 1795589880.0,
           "betalvagg": false,
@@ -5015,111 +4732,7 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "spärrord: dömd, döms"
-      ],
-      "data": null
-    },
-    {
-      "id": "8e6e3d907d",
-      "amnen": [
-        "europa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "europa"
-      ],
-      "poang": 26.0,
-      "vikt": {
-        "bredd": 0.079,
-        "regioner": {
-          "asien": 1,
-          "usa": 1
-        },
-        "timmar": 46,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-24T08:53:47+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.597,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
-              "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
-              "tid": 1795510427.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
-              "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
-              "tid": 1795462033.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "COP31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
-          "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece",
-          "tid": 1795510427.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
-          "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
-          "tid": 1795462033.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
+        "spärrord: döms"
       ],
       "data": null
     },
@@ -5132,7 +4745,7 @@
       "amnen_sektion": [
         "latinamerika"
       ],
-      "poang": 25.5,
+      "poang": 25.7,
       "vikt": {
         "bredd": 0.404,
         "regioner": {
@@ -5140,7 +4753,7 @@
           "europa": 2,
           "latinamerika": 2
         },
-        "timmar": 19,
+        "timmar": 20,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5292,6 +4905,104 @@
       "data": null
     },
     {
+      "id": "b24e190401",
+      "amnen": [
+        "afrika"
+      ],
+      "amnen_sektion": [],
+      "poang": 25.3,
+      "vikt": {
+        "bredd": 0.286,
+        "regioner": {
+          "afrika": 2
+        },
+        "timmar": 24,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "miljo"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-25T06:32:20+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.952,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika"
+        ],
+        "per_region": {
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Africa: Nigerian Institute Charges Africa to Turn Climate Education Commitments Into Action Ahead of COP32",
+              "url": "https://allafrica.com/stories/202611250185.html",
+              "tid": 1795588340.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Premium Times",
+              "land": "NG",
+              "rubrik": "Nigerian institute charges Africa to turn climate education commitments into action ahead of COP32",
+              "url": "https://www.premiumtimesng.com/news/more-news/927813-nigerian-institute-charges-africa-to-turn-climate-education-commitments-into-action-ahead-of-cop32.html",
+              "tid": 1795586164.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Africa: Nigerian Institute Charges Africa to Turn Climate Education Commitments Into Action Ahead of COP32",
+      "kallor": [
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Africa: Nigerian Institute Charges Africa to Turn Climate Education Commitments Into Action Ahead of COP32",
+          "url": "https://allafrica.com/stories/202611250185.html",
+          "tid": 1795588340.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Premium Times",
+          "rubrik": "Nigerian institute charges Africa to turn climate education commitments into action ahead of COP32",
+          "url": "https://www.premiumtimesng.com/news/more-news/927813-nigerian-institute-charges-africa-to-turn-climate-education-commitments-into-action-ahead-of-cop32.html",
+          "tid": 1795586164.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "103260c83a",
       "amnen": [
         "sverige",
@@ -5300,14 +5011,14 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 23.9,
+      "poang": 24.1,
       "vikt": {
         "bredd": 0.562,
         "regioner": {
           "sverige": 3,
           "norden": 1
         },
-        "timmar": 18,
+        "timmar": 19,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5441,14 +5152,14 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 22.7,
+      "poang": 22.9,
       "vikt": {
         "bredd": 0.469,
         "regioner": {
           "norden": 1,
           "sverige": 2
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5561,13 +5272,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.8,
+      "poang": 21.0,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 23,
+        "timmar": 24,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5662,13 +5373,13 @@
         "noje",
         "sverige"
       ],
-      "poang": 20.4,
+      "poang": 20.6,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 21,
+        "timmar": 22,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5761,13 +5472,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.0,
+      "poang": 20.2,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 19,
+        "timmar": 20,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5860,13 +5571,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 19.3,
+      "poang": 19.5,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 16,
+        "timmar": 17,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5960,13 +5671,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 19.2,
+      "poang": 19.5,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 15,
+        "timmar": 16,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6029,6 +5740,220 @@
           "rubrik": "Löparstjärnan Evy Palm är död",
           "url": "https://www.dn.se/sport/loparstjarnan-evy-palm-ar-dod/",
           "tid": 1795540848.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "a280773909",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 13.2,
+      "vikt": {
+        "bredd": 0.169,
+        "regioner": {
+          "sverige": 2
+        },
+        "timmar": 3,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-25T05:13:18+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.612,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Här avslöjas nätläkarna: ”Inga risker” med adhd-medicin",
+              "url": "https://www.svt.se/nyheter/granskning/ug/har-avslojas-natlakarna-inga-risker-med-adhd-medicin",
+              "tid": 1795581003.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Här blir skapande medicin mot psykisk ohälsa: ”En fristad”",
+              "url": "https://www.dn.se/insidan/har-blir-skapande-medicin-mot-psykisk-ohalsa-en-fristad/",
+              "tid": 1795583598.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Här avslöjas nätläkarna: ”Inga risker” med adhd-medicin",
+      "kallor": [
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Här avslöjas nätläkarna: ”Inga risker” med adhd-medicin",
+          "url": "https://www.svt.se/nyheter/granskning/ug/har-avslojas-natlakarna-inga-risker-med-adhd-medicin",
+          "tid": 1795581003.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Här blir skapande medicin mot psykisk ohälsa: ”En fristad”",
+          "url": "https://www.dn.se/insidan/har-blir-skapande-medicin-mot-psykisk-ohalsa-en-fristad/",
+          "tid": 1795583598.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "b64c91f392",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 12.9,
+      "vikt": {
+        "bredd": 0.262,
+        "regioner": {
+          "sverige": 3
+        },
+        "timmar": 2,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-25T06:09:12+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.958,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
+              "url": "https://www.svt.se/nyheter/inrikes/migrationsverket-pausar-utvisningar-av-unga-vuxna",
+              "tid": 1795586523.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "Migrationsverket pausar tonårsutvisningar",
+              "url": "https://www.sverigesradio.se/artikel/9349490",
+              "tid": 1795586400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
+              "url": "https://www.dn.se/sverige/migrationsverket-pausar-utvisningar-av-unga-vuxna/",
+              "tid": 1795586952.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
+      "kallor": [
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
+          "url": "https://www.svt.se/nyheter/inrikes/migrationsverket-pausar-utvisningar-av-unga-vuxna",
+          "tid": 1795586523.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "Migrationsverket pausar tonårsutvisningar",
+          "url": "https://www.sverigesradio.se/artikel/9349490",
+          "tid": 1795586400.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
+          "url": "https://www.dn.se/sverige/migrationsverket-pausar-utvisningar-av-unga-vuxna/",
+          "tid": 1795586952.0,
           "betalvagg": true,
           "typ": "media",
           "land": "SE",
@@ -6288,244 +6213,10 @@
       "data": null
     },
     {
-      "id": "a280773909",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.9,
-      "vikt": {
-        "bredd": 0.169,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 2,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-25T05:13:18+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.612,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Här avslöjas nätläkarna: ”Inga risker” med adhd-medicin",
-              "url": "https://www.svt.se/nyheter/granskning/ug/har-avslojas-natlakarna-inga-risker-med-adhd-medicin",
-              "tid": 1795581003.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Här blir skapande medicin mot psykisk ohälsa: ”En fristad”",
-              "url": "https://www.dn.se/insidan/har-blir-skapande-medicin-mot-psykisk-ohalsa-en-fristad/",
-              "tid": 1795583598.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Här avslöjas nätläkarna: ”Inga risker” med adhd-medicin",
-      "kallor": [
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Här avslöjas nätläkarna: ”Inga risker” med adhd-medicin",
-          "url": "https://www.svt.se/nyheter/granskning/ug/har-avslojas-natlakarna-inga-risker-med-adhd-medicin",
-          "tid": 1795581003.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Här blir skapande medicin mot psykisk ohälsa: ”En fristad”",
-          "url": "https://www.dn.se/insidan/har-blir-skapande-medicin-mot-psykisk-ohalsa-en-fristad/",
-          "tid": 1795583598.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "b64c91f392",
-      "amnen": [
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.9,
-      "vikt": {
-        "bredd": 0.338,
-        "regioner": {
-          "sverige": 4
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-25T06:10:24+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.968,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-              "url": "https://www.svt.se/nyheter/inrikes/migrationsverket-pausar-utvisningar-av-unga-vuxna",
-              "tid": 1795586523.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Migrationsverket pausar tonårsutvisningar",
-              "url": "https://www.sverigesradio.se/artikel/9349490",
-              "tid": 1795586400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-              "url": "https://www.di.se/nyheter/migrationsverket-pausar-utvisningar-av-unga-vuxna/",
-              "tid": 1795587024.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-              "url": "https://www.dn.se/sverige/migrationsverket-pausar-utvisningar-av-unga-vuxna/",
-              "tid": 1795586952.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-      "kallor": [
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-          "url": "https://www.svt.se/nyheter/inrikes/migrationsverket-pausar-utvisningar-av-unga-vuxna",
-          "tid": 1795586523.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Migrationsverket pausar tonårsutvisningar",
-          "url": "https://www.sverigesradio.se/artikel/9349490",
-          "tid": 1795586400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-          "url": "https://www.di.se/nyheter/migrationsverket-pausar-utvisningar-av-unga-vuxna/",
-          "tid": 1795587024.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Migrationsverket pausar utvisningar av unga vuxna",
-          "url": "https://www.dn.se/sverige/migrationsverket-pausar-utvisningar-av-unga-vuxna/",
-          "tid": 1795586952.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "1375e589eb",
+      "id": "17452d8cfc",
       "amnen": [
         "norden",
-        "sverige",
-        "varlden"
+        "sverige"
       ],
       "amnen_sektion": [
         "sverige"
@@ -6545,7 +6236,7 @@
       "maste": false,
       "antal_kallor": 1,
       "har_primarkalla": false,
-      "senast": "2026-11-25T06:47:49+00:00",
+      "senast": "2026-11-25T07:12:45+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
@@ -6558,11 +6249,11 @@
         "per_region": {
           "norden": [
             {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Emil Nielsen, VM-guldvinder og ishockeystjerner blandt de sidste nominerede til Årets Sportsnavn",
-              "url": "https://www.dr.dk/sporten/seneste-sport/emil-nielsen-vm-guldvinder-og-ishockeystjerner-blandt-de-sidste-nominerede-til-aarets-sportsnavn",
-              "tid": 1795589269.0,
+              "kalla": "RÚV English",
+              "land": "IS",
+              "rubrik": "Strong winds on the way with yellow Highlands warning",
+              "url": "https://www.ruv.is/english/2026-11-25-strong-winds-on-the-way-with-yellow-highlands-warning-493728/",
+              "tid": 1795590765.0,
               "statskontrollerad": false
             }
           ]
@@ -6572,16 +6263,16 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Emil Nielsen, VM-guldvinder og ishockeystjerner blandt de sidste nominerede til Årets Sportsnavn",
+      "reserv_rubrik": "Strong winds on the way with yellow Highlands warning",
       "kallor": [
         {
-          "namn": "DR Nyheder",
-          "rubrik": "Emil Nielsen, VM-guldvinder og ishockeystjerner blandt de sidste nominerede til Årets Sportsnavn",
-          "url": "https://www.dr.dk/sporten/seneste-sport/emil-nielsen-vm-guldvinder-og-ishockeystjerner-blandt-de-sidste-nominerede-til-aarets-sportsnavn",
-          "tid": 1795589269.0,
+          "namn": "RÚV English",
+          "rubrik": "Strong winds on the way with yellow Highlands warning",
+          "url": "https://www.ruv.is/english/2026-11-25-strong-winds-on-the-way-with-yellow-highlands-warning-493728/",
+          "tid": 1795590765.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "DK",
+          "land": "IS",
           "region": "norden",
           "agare": "public-service",
           "statskontrollerad": false
@@ -6618,7 +6309,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 74,
+      "artiklar": 69,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6630,7 +6321,7 @@
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 7,
       "url": "https://www.breakit.se/feed/artiklar"
     },
     {
@@ -6678,7 +6369,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 10,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -6690,7 +6381,7 @@
     {
       "id": "bbc",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 31,
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
     },
     {
@@ -6708,7 +6399,7 @@
     {
       "id": "france24",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 23,
       "url": "https://www.france24.com/en/rss"
     },
     {
@@ -6750,13 +6441,13 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 52,
+      "artiklar": 50,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 30,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
@@ -6768,7 +6459,7 @@
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 38,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
@@ -6844,7 +6535,7 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 23,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -6856,7 +6547,7 @@
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -6970,7 +6661,7 @@
     {
       "id": "breaking-defense",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 9,
       "url": "https://breakingdefense.com/feed/"
     },
     {
@@ -6988,7 +6679,7 @@
     {
       "id": "microsoft-ai",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 0,
       "url": "https://news.microsoft.com/source/feed/"
     },
     {
@@ -7028,7 +6719,7 @@
     {
       "id": "the-information",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 14,
       "url": "https://www.theinformation.com/feed"
     },
     {
@@ -7040,7 +6731,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 6,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -7075,7 +6766,7 @@
     {
       "id": "axios",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 11,
       "url": "https://www.axios.com/feeds/feed.rss"
     },
     {
@@ -7116,7 +6807,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 24,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -7140,7 +6831,7 @@
     {
       "id": "404media",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 2,
       "url": "https://www.404media.co/rss/"
     },
     {
@@ -7152,7 +6843,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 42,
+      "artiklar": 41,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -7194,7 +6885,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 82,
+      "artiklar": 84,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -7206,7 +6897,7 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 33,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
@@ -7224,7 +6915,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 29,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -7236,7 +6927,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 86,
+      "artiklar": 85,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -7272,7 +6963,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 93,
+      "artiklar": 92,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
@@ -7314,7 +7005,7 @@
     {
       "id": "ruv",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 21,
       "url": "https://www.ruv.is/rss/english"
     },
     {
@@ -7367,9 +7058,8 @@
     },
     {
       "id": "theeastafrican",
-      "ok": true,
-      "artiklar": 9,
-      "url": "https://www.theeastafrican.co.ke/rss.xml"
+      "ok": false,
+      "fel": "HTTP Error 403: Forbidden"
     },
     {
       "id": "kyivindependent",
@@ -7422,7 +7112,7 @@
     {
       "id": "mongabay",
       "ok": true,
-      "artiklar": 19,
+      "artiklar": 18,
       "url": "https://news.mongabay.com/feed/"
     },
     {

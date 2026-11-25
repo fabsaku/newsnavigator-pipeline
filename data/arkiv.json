@@ -3456,16 +3456,19 @@
  "a5940a11a3": {
   "id": "a5940a11a3",
   "amnen": [
+   "geopolitik",
    "varlden"
   ],
-  "amnen_sektion": [],
-  "poang": 27.9,
+  "amnen_sektion": [
+   "geopolitik"
+  ],
+  "poang": 28.7,
   "vikt": {
-   "bredd": 0.259,
+   "bredd": 0.345,
    "regioner": {
+    "afrika": 1,
     "mellanostern": 1,
-    "asien": 1,
-    "europa": 1
+    "asien": 1
    },
    "timmar": 96,
    "konsekvens": null,
@@ -3476,19 +3479,29 @@
   "maste": false,
   "antal_kallor": 3,
   "har_primarkalla": false,
-  "senast": "2026-11-24T23:29:40+00:00",
+  "senast": "2026-11-25T06:44:50+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.896,
+  "sammanhang": 0.871,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "afrika",
     "asien",
-    "europa",
     "mellanostern"
    ],
    "per_region": {
+    "afrika": [
+     {
+      "kalla": "Africanews",
+      "land": "CG",
+      "rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
+      "url": "http://www.africanews.com/2026/11/25/south-african-court-convicts-zimbabwean-man-of-trying-to-join-russian-war/",
+      "tid": 1795589090.0,
+      "statskontrollerad": false
+     }
+    ],
     "mellanostern": [
      {
       "kalla": "Al Jazeera",
@@ -3508,16 +3521,6 @@
       "tid": 1795551884.0,
       "statskontrollerad": false
      }
-    ],
-    "europa": [
-     {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-      "tid": 1795539840.0,
-      "statskontrollerad": false
-     }
     ]
    },
    "blind_flack": "saknas_i_sverige",
@@ -3525,8 +3528,20 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
+  "reserv_rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
   "kallor": [
+   {
+    "namn": "Africanews",
+    "rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
+    "url": "http://www.africanews.com/2026/11/25/south-african-court-convicts-zimbabwean-man-of-trying-to-join-russian-war/",
+    "tid": 1795589090.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "CG",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Al Jazeera",
     "rubrik": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
@@ -3550,18 +3565,6 @@
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
-   },
-   {
-    "namn": "BBC World",
-    "rubrik": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
-    "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-    "tid": 1795539840.0,
-    "betalvagg": false,
-    "typ": "media",
-    "land": "GB",
-    "region": "europa",
-    "agare": "public-service",
-    "statskontrollerad": false
    }
   ],
   "granskad": true,
@@ -3572,13 +3575,12 @@
   "autopilot": [
    "inget utkast",
    "ingen källkontroll",
-   "spärrord: convicted",
    "blind fläck"
   ],
   "data": null,
   "godkand_tid": 1795151145.8403869,
   "automatisk": true,
-  "uppdaterad_tid": 1795565206.2304232
+  "uppdaterad_tid": 1795593985.6336863
  },
  "e86779e359": {
   "id": "e86779e359",
