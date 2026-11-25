@@ -4740,12 +4740,13 @@
    "varlden"
   ],
   "amnen_sektion": [],
-  "poang": 28.0,
+  "poang": 30.0,
   "vikt": {
-   "bredd": 0.272,
+   "bredd": 0.474,
    "regioner": {
-    "mellanostern": 1,
-    "asien": 2
+    "afrika": 1,
+    "asien": 3,
+    "mellanostern": 1
    },
    "timmar": 96,
    "konsekvens": null,
@@ -4754,31 +4755,40 @@
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-25T08:08:57+00:00",
+  "senast": "2026-11-25T11:30:02+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.717,
+  "sammanhang": 0.658,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
+    "afrika",
     "asien",
     "mellanostern"
    ],
    "per_region": {
-    "mellanostern": [
+    "afrika": [
      {
-      "kalla": "Al Jazeera",
-      "land": "QA",
-      "rubrik": "Rescuers search for dozens trapped in flooded Indonesia gold mine",
-      "url": "https://www.aljazeera.com/news/2026/11/25/rescuers-search-for-dozens-trapped-in-flooded-indonesia-gold-mine?traffic_source=rss",
-      "tid": 1795594137.0,
+      "kalla": "Daily Maverick",
+      "land": "ZA",
+      "rubrik": "Indonesian rescuers recover 3 bodies in search for 26 trapped miners, agency says",
+      "url": "https://www.dailymaverick.co.za/article/2026-11-25-indonesian-rescuers-recover-3-bodies-in-search-for-26-trapped-miners-agency-says/",
+      "tid": 1795606202.0,
       "statskontrollerad": false
      }
     ],
     "asien": [
+     {
+      "kalla": "Hindustan Times",
+      "land": "IN",
+      "rubrik": "29 miners feared trapped after flooding hits unauthorised gold mine in Indonesia",
+      "url": "https://www.hindustantimes.com/world-news/29-miners-feared-trapped-after-heavy-rain-floods-unauthorised-gold-mine-in-indonesia-101795598587466.html",
+      "tid": 1795599851.0,
+      "statskontrollerad": false
+     },
      {
       "kalla": "ABC News (Australien)",
       "land": "AU",
@@ -4795,6 +4805,16 @@
       "tid": 1795577887.0,
       "statskontrollerad": false
      }
+    ],
+    "mellanostern": [
+     {
+      "kalla": "Al Jazeera",
+      "land": "QA",
+      "rubrik": "Rescuers search for dozens trapped in flooded Indonesia gold mine",
+      "url": "https://www.aljazeera.com/news/2026/11/25/rescuers-search-for-dozens-trapped-in-flooded-indonesia-gold-mine?traffic_source=rss",
+      "tid": 1795594137.0,
+      "statskontrollerad": false
+     }
     ]
    },
    "blind_flack": "saknas_i_sverige",
@@ -4802,8 +4822,32 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "Rescuers search for dozens trapped in flooded Indonesia gold mine",
+  "reserv_rubrik": "Indonesian rescuers recover 3 bodies in search for 26 trapped miners, agency says",
   "kallor": [
+   {
+    "namn": "Daily Maverick",
+    "rubrik": "Indonesian rescuers recover 3 bodies in search for 26 trapped miners, agency says",
+    "url": "https://www.dailymaverick.co.za/article/2026-11-25-indonesian-rescuers-recover-3-bodies-in-search-for-26-trapped-miners-agency-says/",
+    "tid": 1795606202.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "ZA",
+    "region": "afrika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "Hindustan Times",
+    "rubrik": "29 miners feared trapped after flooding hits unauthorised gold mine in Indonesia",
+    "url": "https://www.hindustantimes.com/world-news/29-miners-feared-trapped-after-heavy-rain-floods-unauthorised-gold-mine-in-indonesia-101795598587466.html",
+    "tid": 1795599851.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "IN",
+    "region": "asien",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
    {
     "namn": "Al Jazeera",
     "rubrik": "Rescuers search for dozens trapped in flooded Indonesia gold mine",
@@ -4854,6 +4898,6 @@
   "data": null,
   "godkand_tid": 1795376463.8466647,
   "automatisk": false,
-  "uppdaterad_tid": 1795597591.1246934
+  "uppdaterad_tid": 1795601118.7513943
  }
 }
