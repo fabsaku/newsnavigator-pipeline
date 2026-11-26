@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-26T21:06:59.441348+00:00",
+  "skapad": "2026-11-26T22:06:47.198839+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -13,7 +13,7 @@
         "rymd",
         "usa"
       ],
-      "poang": 34.3,
+      "poang": 34.5,
       "vikt": {
         "bredd": 1.138,
         "regioner": {
@@ -26,7 +26,7 @@
           "norden": 1,
           "sverige": 1
         },
-        "timmar": 27,
+        "timmar": 28,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -40,7 +40,7 @@
       "senast": "2026-11-26T20:19:22+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSDo5yyeUeH8MDXZUf37'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSJMZckBKrcvCLZL8CZv'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -392,7 +392,7 @@
       "senast": "2026-11-26T20:40:59+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSDo5zUCp1ExgKNNdddA'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSJMZdF5pi1K4zJbJHpn'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -741,8 +741,8 @@
       "vikt": {
         "bredd": 0.745,
         "regioner": {
-          "mellanostern": 1,
           "asien": 6,
+          "mellanostern": 1,
           "usa": 6,
           "latinamerika": 1
         },
@@ -755,14 +755,14 @@
       "maste": false,
       "antal_kallor": 14,
       "har_primarkalla": false,
-      "senast": "2026-11-26T18:53:15+00:00",
+      "senast": "2026-11-26T21:28:00+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSDo5ziSdDGKJoHbKFmG'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSJMZcVx2HZnkbcjy7wC'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.588,
+      "sammanhang": 0.59,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -772,17 +772,15 @@
           "usa"
         ],
         "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "What will Trump’s latest tariffs mean for the world?",
-              "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
-              "tid": 1795719195.0,
-              "statskontrollerad": false
-            }
-          ],
           "asien": [
+            {
+              "kalla": "Bangkok Post",
+              "land": "TH",
+              "rubrik": "Govt defends 18% US tariff proposal",
+              "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
+              "tid": 1795728480.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "The Straits Times",
               "land": "SG",
@@ -797,14 +795,6 @@
               "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
               "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
               "tid": 1795678927.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Focus Taiwan",
-              "land": "TW",
-              "rubrik": "Taiwan confident of keeping 15% tariffs under Trump's new proposal",
-              "url": "https://focustaiwan.tw/politics/202611260008",
-              "tid": 1795672728.0,
               "statskontrollerad": false
             },
             {
@@ -829,6 +819,16 @@
               "rubrik": "Trump rebuilds tariff wall with new duties on China, Japan and others",
               "url": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-rebuilds-tariff-wall-with-new-duties-on-china-japan-and-others",
               "tid": null,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "What will Trump’s latest tariffs mean for the world?",
+              "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
+              "tid": 1795719195.0,
               "statskontrollerad": false
             }
           ],
@@ -947,8 +947,20 @@
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "What will Trump’s latest tariffs mean for the world?",
+      "reserv_rubrik": "Govt defends 18% US tariff proposal",
       "kallor": [
+        {
+          "namn": "Bangkok Post",
+          "rubrik": "Govt defends 18% US tariff proposal",
+          "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
+          "tid": 1795728480.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "TH",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "Al Jazeera",
           "rubrik": "What will Trump’s latest tariffs mean for the world?",
@@ -1007,18 +1019,6 @@
           "land": "IN",
           "region": "asien",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Focus Taiwan",
-          "rubrik": "Taiwan confident of keeping 15% tariffs under Trump's new proposal",
-          "url": "https://focustaiwan.tw/politics/202611260008",
-          "tid": 1795672728.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TW",
-          "region": "asien",
-          "agare": "statlig",
           "statskontrollerad": false
         },
         {
@@ -1130,260 +1130,22 @@
       "data": null
     },
     {
-      "id": "30c554df30",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 32.5,
-      "vikt": {
-        "bredd": 0.866,
-        "regioner": {
-          "mellanostern": 4,
-          "asien": 5
-        },
-        "timmar": 68,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T20:34:34+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSDo5zUgd91KoPuiPMSo'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.438,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
-              "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
-              "tid": 1795725274.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Saudi Arabia says operations at refinery in Jazan halted after attack",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-operations-refinery-jazan-halted-after-attack",
-              "tid": 1795720907.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Oil rebounds to $95 per barrel after Saudi refinery attack",
-              "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/",
-              "tid": 1795678739.0,
-              "statskontrollerad": true
-            },
-            {
-              "kalla": "Tehran Times",
-              "land": "IR",
-              "rubrik": "Yemen hits Saudi largest refinery",
-              "url": "https://www.tehrantimes.com/news/532550/Yemen-hits-Saudi-largest-refinery",
-              "tid": 1795622866.0,
-              "statskontrollerad": true
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Attack on Saudi Aramco’s Jazan refinery kills Nepalese worker, halts some operations",
-              "url": "https://www.straitstimes.com/world/middle-east/attack-on-saudi-aramcos-jazan-refinery-kills-nepalese-worker-halts-some-operations",
-              "tid": 1795723270.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Saudi-led coalition says Houthis attacked Aramco's Jazan refinery",
-              "url": "https://www.channelnewsasia.com/world/saudi-led-coalition-says-houthis-attacked-aramcos-jazan-refinery-6585881",
-              "tid": 1795718887.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Makkah pact nations to discuss conflict between Saudi Arabia and Yemen's Houthis in Islamabad meeting, Asif says",
-              "url": "https://www.dawn.com/news/2047228/makkah-pact-nations-to-discuss-conflict-between-saudi-arabia-and-yemens-houthis-in-islamabad-meeting-asif-says",
-              "tid": 1795702431.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Oil prices fall as Brent slips below $94 after Saudi refinery attack, Hormuz shipping fears",
-              "url": "https://www.hindustantimes.com/world-news/us-news/oil-prices-fall-as-brent-slips-below-94-after-saudi-refinery-attack-hormuz-shipping-fears-101795698223341.html",
-              "tid": 1795699527.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh",
-              "url": "https://news.cgtn.com/news/2026-11-25/Yemen-s-Houthis-say-they-attacked-Saudi-oil-refinery-and-Riyadh-1Smmoze7gE8/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795597805.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
-          "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
-          "tid": 1795725274.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Attack on Saudi Aramco’s Jazan refinery kills Nepalese worker, halts some operations",
-          "url": "https://www.straitstimes.com/world/middle-east/attack-on-saudi-aramcos-jazan-refinery-kills-nepalese-worker-halts-some-operations",
-          "tid": 1795723270.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Saudi Arabia says operations at refinery in Jazan halted after attack",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-operations-refinery-jazan-halted-after-attack",
-          "tid": 1795720907.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNA",
-          "rubrik": "Saudi-led coalition says Houthis attacked Aramco's Jazan refinery",
-          "url": "https://www.channelnewsasia.com/world/saudi-led-coalition-says-houthis-attacked-aramcos-jazan-refinery-6585881",
-          "tid": 1795718887.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "Makkah pact nations to discuss conflict between Saudi Arabia and Yemen's Houthis in Islamabad meeting, Asif says",
-          "url": "https://www.dawn.com/news/2047228/makkah-pact-nations-to-discuss-conflict-between-saudi-arabia-and-yemens-houthis-in-islamabad-meeting-asif-says",
-          "tid": 1795702431.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Oil prices fall as Brent slips below $94 after Saudi refinery attack, Hormuz shipping fears",
-          "url": "https://www.hindustantimes.com/world-news/us-news/oil-prices-fall-as-brent-slips-below-94-after-saudi-refinery-attack-hormuz-shipping-fears-101795698223341.html",
-          "tid": 1795699527.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Oil rebounds to $95 per barrel after Saudi refinery attack",
-          "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/",
-          "tid": 1795678739.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "Tehran Times",
-          "rubrik": "Yemen hits Saudi largest refinery",
-          "url": "https://www.tehrantimes.com/news/532550/Yemen-hits-Saudi-largest-refinery",
-          "tid": 1795622866.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IR",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh",
-          "url": "https://news.cgtn.com/news/2026-11-25/Yemen-s-Houthis-say-they-attacked-Saudi-oil-refinery-and-Riyadh-1Smmoze7gE8/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795597805.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "fd00209ef9",
+      "id": "3eee8fe5e7",
       "amnen": [
-        "varlden"
+        "marknader"
       ],
-      "amnen_sektion": [],
-      "poang": 31.0,
+      "amnen_sektion": [
+        "marknader"
+      ],
+      "poang": 31.6,
       "vikt": {
-        "bredd": 0.566,
+        "bredd": 0.626,
         "regioner": {
           "europa": 4,
+          "asien": 2,
           "mellanostern": 1,
-          "asien": 1,
-          "latinamerika": 1,
-          "usa": 1
+          "usa": 2,
+          "latinamerika": 1
         },
         "timmar": 96,
         "konsekvens": null,
@@ -1392,13 +1154,16 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 8,
+      "antal_kallor": 10,
       "har_primarkalla": false,
-      "senast": "2026-11-26T20:41:00+00:00",
-      "utkast": null,
+      "senast": "2026-11-26T21:40:29+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSJMZbm3dRJHWe3JHgiN'}"
+      },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.781,
+      "sammanhang": 0.638,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1411,45 +1176,35 @@
         "per_region": {
           "europa": [
             {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Gerard Depardieu to stand trial in France for rape and sexual assault",
-              "url": "https://www.dw.com/en/gerard-depardieu-to-stand-trial-in-france-for-rape-and-sexual-assault/a-80069424?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795725660.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
-              "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795704266.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "France 24",
               "land": "FR",
-              "rubrik": "🔴 French actor Gérard Depardieu to face trial for alleged rape of actress Charlotte Arnould",
-              "url": "https://www.france24.com/en/france/20261126-french-actor-g%C3%A9rard-depardieu-to-face-trial-for-rape-his-lawyer-says",
-              "tid": 1795700801.0,
+              "rubrik": "Spain's De Cos chosen as next ECB president",
+              "url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
+              "tid": 1795729229.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Paris appeals court upholds trial order for Depardieu over rape claims",
-              "url": "https://www.lemonde.fr/en/culture/article/2026/11/26/paris-appeals-court-upholds-trial-order-for-depardieu-over-rape-claims_6789301_30.html",
-              "tid": 1795708824.0,
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
+              "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
+              "tid": 1795715454.0,
               "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
+            },
             {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "French actor Gerard Depardieu to stand trial for alleged 2018 rape",
-              "url": "https://www.aljazeera.com/news/2026/11/26/paris-court-orders-gerard-depardieu-to-stand-trial-for-rape-sexual-assault?traffic_source=rss",
-              "tid": 1795713504.0,
+              "kalla": "Politico Europe",
+              "land": "BE",
+              "rubrik": "EU leaders clear path for Spain’s Pablo Hernández de Cos to lead ECB",
+              "url": "https://www.politico.eu/article/eu-leaders-clear-path-for-spains-pablo-hernandez-de-cos-to-lead-ecb/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "tid": 1795705054.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Financial Times",
+              "land": "GB",
+              "rubrik": "Pablo Hernández de Cos wins race for ECB presidency",
+              "url": "https://www.ft.com/content/88a0691a-6ce8-4c97-abf4-7aee0351fd51?syn-25a6b1a6=1",
+              "tid": 1795714611.0,
               "statskontrollerad": false
             }
           ],
@@ -1457,9 +1212,45 @@
             {
               "kalla": "South China Morning Post",
               "land": "HK",
-              "rubrik": "French actor Gerard Depardieu to stand trial for rape after Paris court rejects appeal",
-              "url": "https://www.scmp.com/news/world/europe/article/3375961/french-actor-gerard-depardieu-stand-trial-rape-after-paris-court-rejects-appeal",
-              "tid": 1795704359.0,
+              "rubrik": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
+              "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
+              "tid": 1795713977.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Spain’s Pablo Hernandez de Cos poised to succeed Christine Lagarde as European Central Bank president",
+              "url": "https://www.straitstimes.com/world/europe/spains-de-cos-poised-to-succeed-lagarde-as-european-central-bank-president",
+              "tid": 1795706700.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Spanish economist to become new European Central Bank chief",
+              "url": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief?traffic_source=rss",
+              "tid": 1795710054.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+              "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+              "tid": 1795706906.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
+              "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
+              "tid": 1795716000.0,
               "statskontrollerad": false
             }
           ],
@@ -1467,59 +1258,49 @@
             {
               "kalla": "El País América",
               "land": "ES",
-              "rubrik": "La Justicia francesa confirma que Gérard Depardieu se sentará de nuevo en el banquillo por violación",
-              "url": "https://elpais.com/sociedad/2026-11-26/la-justicia-francesa-confirma-que-gerard-depardieu-se-sentara-de-nuevo-en-el-banquillo-por-violacion.html",
-              "tid": 1795701420.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Gérard Depardieu Is Ordered to Stand Trial Over Rape Accusation",
-              "url": "https://www.nytimes.com/2026/11/26/world/europe/france-depardieu-rape-trial.html",
-              "tid": 1795702660.0,
+              "rubrik": "Hernández de Cos se convertirá en febrero en el primer español en presidir el BCE",
+              "url": "https://elpais.com/economia/2026-11-26/hernandez-de-cos-se-convertira-en-febrero-en-el-primer-espanol-en-presidir-el-bce.html",
+              "tid": 1795699167.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
-        "grannar_svenska": true,
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Gerard Depardieu to stand trial in France for rape and sexual assault",
+      "reserv_rubrik": "Spain's De Cos chosen as next ECB president",
       "kallor": [
         {
-          "namn": "Deutsche Welle",
-          "rubrik": "Gerard Depardieu to stand trial in France for rape and sexual assault",
-          "url": "https://www.dw.com/en/gerard-depardieu-to-stand-trial-in-france-for-rape-and-sexual-assault/a-80069424?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795725660.0,
+          "namn": "France 24",
+          "rubrik": "Spain's De Cos chosen as next ECB president",
+          "url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
+          "tid": 1795729229.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "DE",
+          "land": "FR",
           "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
-          "namn": "Al Jazeera",
-          "rubrik": "French actor Gerard Depardieu to stand trial for alleged 2018 rape",
-          "url": "https://www.aljazeera.com/news/2026/11/26/paris-court-orders-gerard-depardieu-to-stand-trial-for-rape-sexual-assault?traffic_source=rss",
-          "tid": 1795713504.0,
+          "namn": "The Guardian",
+          "rubrik": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
+          "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
+          "tid": 1795715454.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "South China Morning Post",
-          "rubrik": "French actor Gerard Depardieu to stand trial for rape after Paris court rejects appeal",
-          "url": "https://www.scmp.com/news/world/europe/article/3375961/french-actor-gerard-depardieu-stand-trial-rape-after-paris-court-rejects-appeal",
-          "tid": 1795704359.0,
+          "rubrik": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
+          "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
+          "tid": 1795713977.0,
           "betalvagg": false,
           "typ": "media",
           "land": "HK",
@@ -1528,22 +1309,58 @@
           "statskontrollerad": false
         },
         {
-          "namn": "BBC World",
-          "rubrik": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
-          "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795704266.0,
+          "namn": "Al Jazeera",
+          "rubrik": "Spanish economist to become new European Central Bank chief",
+          "url": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief?traffic_source=rss",
+          "tid": 1795710054.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "GB",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+          "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+          "tid": 1795706906.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Spain’s Pablo Hernandez de Cos poised to succeed Christine Lagarde as European Central Bank president",
+          "url": "https://www.straitstimes.com/world/europe/spains-de-cos-poised-to-succeed-lagarde-as-european-central-bank-president",
+          "tid": 1795706700.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Politico Europe",
+          "rubrik": "EU leaders clear path for Spain’s Pablo Hernández de Cos to lead ECB",
+          "url": "https://www.politico.eu/article/eu-leaders-clear-path-for-spains-pablo-hernandez-de-cos-to-lead-ecb/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "tid": 1795705054.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
           "region": "europa",
-          "agare": "public-service",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "El País América",
-          "rubrik": "La Justicia francesa confirma que Gérard Depardieu se sentará de nuevo en el banquillo por violación",
-          "url": "https://elpais.com/sociedad/2026-11-26/la-justicia-francesa-confirma-que-gerard-depardieu-se-sentara-de-nuevo-en-el-banquillo-por-violacion.html",
-          "tid": 1795701420.0,
+          "rubrik": "Hernández de Cos se convertirá en febrero en el primer español en presidir el BCE",
+          "url": "https://elpais.com/economia/2026-11-26/hernandez-de-cos-se-convertira-en-febrero-en-el-primer-espanol-en-presidir-el-bce.html",
+          "tid": 1795699167.0,
           "betalvagg": false,
           "typ": "media",
           "land": "ES",
@@ -1552,53 +1369,64 @@
           "statskontrollerad": false
         },
         {
-          "namn": "France 24",
-          "rubrik": "🔴 French actor Gérard Depardieu to face trial for alleged rape of actress Charlotte Arnould",
-          "url": "https://www.france24.com/en/france/20261126-french-actor-g%C3%A9rard-depardieu-to-face-trial-for-rape-his-lawyer-says",
-          "tid": 1795700801.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Paris appeals court upholds trial order for Depardieu over rape claims",
-          "url": "https://www.lemonde.fr/en/culture/article/2026/11/26/paris-appeals-court-upholds-trial-order-for-depardieu-over-rape-claims_6789301_30.html",
-          "tid": 1795708824.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Gérard Depardieu Is Ordered to Stand Trial Over Rape Accusation",
-          "url": "https://www.nytimes.com/2026/11/26/world/europe/france-depardieu-rape-trial.html",
-          "tid": 1795702660.0,
+          "namn": "The Wall Street Journal",
+          "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
+          "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
+          "tid": 1795716000.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
           "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "Financial Times",
+          "rubrik": "Pablo Hernández de Cos wins race for ECB presidency",
+          "url": "https://www.ft.com/content/88a0691a-6ce8-4c97-abf4-7aee0351fd51?syn-25a6b1a6=1",
+          "tid": 1795714611.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
+        "sv": 2,
         "en": 3
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "spärrord: rape, sexual"
+        "blind fläck"
       ],
-      "data": null
+      "data": [
+        {
+          "id": "ecb_ranta",
+          "namn_sv": "ECB:s inlåningsränta",
+          "namn_en": "ECB deposit facility rate",
+          "enhet": "%",
+          "decimaler": 2,
+          "senaste": 2.5,
+          "datum": "2026-09-16",
+          "ar_sedan": 2.0,
+          "ar_sedan_datum": "2025-06-11",
+          "kalla": "Europeiska centralbanken",
+          "url": "https://data.ecb.europa.eu/",
+          "spark": [
+            3.0,
+            2.75,
+            2.5,
+            2.25,
+            2.0,
+            2.25,
+            2.5
+          ]
+        }
+      ]
     },
     {
       "id": "96241d9e22",
@@ -1613,7 +1441,7 @@
         "regioner": {
           "afrika": 2
         },
-        "timmar": 80,
+        "timmar": 81,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1700,7 +1528,7 @@
       "data": null
     },
     {
-      "id": "084c665fe7",
+      "id": "f1615c6d1d",
       "amnen": [
         "latinamerika",
         "varlden"
@@ -1801,6 +1629,128 @@
         "ingen källkontroll",
         "färre än tre oberoende källor (2)",
         "spärrord: suspected"
+      ],
+      "data": null
+    },
+    {
+      "id": "be4f138522",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 30.3,
+      "vikt": {
+        "bredd": 0.263,
+        "regioner": {
+          "mellanostern": 1,
+          "global": 1,
+          "usa": 1
+        },
+        "timmar": 82,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "rattigheter"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T19:44:32+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.654,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "global",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Opinion: Why solidarity with Gaza failed to stop the genocide",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-why-solidarity-gaza-failed-stop-genocide",
+              "tid": 1795722272.0,
+              "statskontrollerad": false
+            }
+          ],
+          "global": [
+            {
+              "kalla": "Amnesty International",
+              "land": "GB",
+              "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+              "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
+              "tid": 1795709724.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
+              "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
+              "tid": 1795712100.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Opinion: Why solidarity with Gaza failed to stop the genocide",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Opinion: Why solidarity with Gaza failed to stop the genocide",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-why-solidarity-gaza-failed-stop-genocide",
+          "tid": 1795722272.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Amnesty International",
+          "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+          "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
+          "tid": 1795709724.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "global",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
+          "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
+          "tid": 1795712100.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2018,84 +1968,126 @@
       "data": null
     },
     {
-      "id": "be4f138522",
+      "id": "30c554df30",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 30.2,
+      "poang": 29.9,
       "vikt": {
-        "bredd": 0.263,
+        "bredd": 0.605,
         "regioner": {
-          "mellanostern": 1,
-          "global": 1,
-          "usa": 1
+          "mellanostern": 3,
+          "asien": 3
         },
-        "timmar": 81,
+        "timmar": 69,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 6,
       "har_primarkalla": false,
-      "senast": "2026-11-26T19:44:32+00:00",
+      "senast": "2026-11-26T20:34:34+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.654,
+      "sammanhang": 0.413,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "global",
-          "mellanostern",
-          "usa"
+          "asien",
+          "mellanostern"
         ],
         "per_region": {
           "mellanostern": [
             {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
+              "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
+              "tid": 1795725274.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "Middle East Eye",
               "land": "GB",
-              "rubrik": "Opinion: Why solidarity with Gaza failed to stop the genocide",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-why-solidarity-gaza-failed-stop-genocide",
-              "tid": 1795722272.0,
+              "rubrik": "Saudi Arabia says operations at refinery in Jazan halted after attack",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-operations-refinery-jazan-halted-after-attack",
+              "tid": 1795720907.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Oil rebounds to $95 per barrel after Saudi refinery attack",
+              "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/",
+              "tid": 1795678739.0,
+              "statskontrollerad": true
             }
           ],
-          "global": [
+          "asien": [
             {
-              "kalla": "Amnesty International",
-              "land": "GB",
-              "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
-              "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
-              "tid": 1795709724.0,
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Attack on Saudi Aramco’s Jazan refinery kills Nepalese worker, halts some operations",
+              "url": "https://www.straitstimes.com/world/middle-east/attack-on-saudi-aramcos-jazan-refinery-kills-nepalese-worker-halts-some-operations",
+              "tid": 1795723270.0,
               "statskontrollerad": false
-            }
-          ],
-          "usa": [
+            },
             {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
-              "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
-              "tid": 1795712100.0,
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Saudi-led coalition says Houthis attacked Aramco's Jazan refinery",
+              "url": "https://www.channelnewsasia.com/world/saudi-led-coalition-says-houthis-attacked-aramcos-jazan-refinery-6585881",
+              "tid": 1795718887.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Oil prices fall as Brent slips below $94 after Saudi refinery attack, Hormuz shipping fears",
+              "url": "https://www.hindustantimes.com/world-news/us-news/oil-prices-fall-as-brent-slips-below-94-after-saudi-refinery-attack-hormuz-shipping-fears-101795698223341.html",
+              "tid": 1795699527.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
-        "grannar_svenska": true,
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Opinion: Why solidarity with Gaza failed to stop the genocide",
+      "reserv_rubrik": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
       "kallor": [
         {
+          "namn": "Al Jazeera",
+          "rubrik": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
+          "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
+          "tid": 1795725274.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Attack on Saudi Aramco’s Jazan refinery kills Nepalese worker, halts some operations",
+          "url": "https://www.straitstimes.com/world/middle-east/attack-on-saudi-aramcos-jazan-refinery-kills-nepalese-worker-halts-some-operations",
+          "tid": 1795723270.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Middle East Eye",
-          "rubrik": "Opinion: Why solidarity with Gaza failed to stop the genocide",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-why-solidarity-gaza-failed-stop-genocide",
-          "tid": 1795722272.0,
+          "rubrik": "Saudi Arabia says operations at refinery in Jazan halted after attack",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-operations-refinery-jazan-halted-after-attack",
+          "tid": 1795720907.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
@@ -2104,38 +2096,51 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Amnesty International",
-          "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
-          "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
-          "tid": 1795709724.0,
+          "namn": "CNA",
+          "rubrik": "Saudi-led coalition says Houthis attacked Aramco's Jazan refinery",
+          "url": "https://www.channelnewsasia.com/world/saudi-led-coalition-says-houthis-attacked-aramcos-jazan-refinery-6585881",
+          "tid": 1795718887.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "GB",
-          "region": "global",
-          "agare": "organisation",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
           "statskontrollerad": false
         },
         {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
-          "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
-          "tid": 1795712100.0,
-          "betalvagg": true,
+          "namn": "Hindustan Times",
+          "rubrik": "Oil prices fall as Brent slips below $94 after Saudi refinery attack, Hormuz shipping fears",
+          "url": "https://www.hindustantimes.com/world-news/us-news/oil-prices-fall-as-brent-slips-below-94-after-saudi-refinery-attack-hormuz-shipping-fears-101795698223341.html",
+          "tid": 1795699527.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "IN",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Oil rebounds to $95 per barrel after Saudi refinery attack",
+          "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/",
+          "tid": 1795678739.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 3
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -2149,7 +2154,7 @@
         "ai",
         "rymd"
       ],
-      "poang": 29.7,
+      "poang": 29.8,
       "vikt": {
         "bredd": 0.658,
         "regioner": {
@@ -2159,7 +2164,7 @@
           "norden": 1,
           "mellanostern": 1
         },
-        "timmar": 28,
+        "timmar": 29,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2356,6 +2361,109 @@
       "data": null
     },
     {
+      "id": "7db5984e56",
+      "amnen": [
+        "ai"
+      ],
+      "amnen_sektion": [
+        "ai"
+      ],
+      "poang": 29.7,
+      "vikt": {
+        "bredd": 0.136,
+        "regioner": {
+          "asien": 1,
+          "sverige": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T21:39:37+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.682,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "sverige"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Wall Street Can’t Seem to Find Its Footing in the Chaos of the New AI Trade",
+              "url": "https://www.hindustantimes.com/world-news/wall-street-can-t-seem-to-find-its-footing-in-the-chaos-of-the-new-ai-trade-101795662951620.html",
+              "tid": 1795662987.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Dagens industri",
+              "land": "SE",
+              "rubrik": "Nu måste Wall Street rädda världen från AI",
+              "url": "https://www.di.se/nyheter/nu-maste-wall-street-radda-varlden-fran-ai/",
+              "tid": 1795729177.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Wall Street Can’t Seem to Find Its Footing in the Chaos of the New AI Trade",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Wall Street Can’t Seem to Find Its Footing in the Chaos of the New AI Trade",
+          "url": "https://www.hindustantimes.com/world-news/wall-street-can-t-seem-to-find-its-footing-in-the-chaos-of-the-new-ai-trade-101795662951620.html",
+          "tid": 1795662987.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens industri",
+          "rubrik": "Nu måste Wall Street rädda världen från AI",
+          "url": "https://www.di.se/nyheter/nu-maste-wall-street-radda-varlden-fran-ai/",
+          "tid": 1795729177.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "47f8cd2f00",
       "amnen": [
         "energi",
@@ -2373,7 +2481,7 @@
           "asien": 1,
           "europa": 3
         },
-        "timmar": 83,
+        "timmar": 84,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2603,22 +2711,23 @@
       "data": null
     },
     {
-      "id": "9e47b6bad6",
+      "id": "d05d56d9d0",
       "amnen": [
-        "geopolitik"
+        "usa"
       ],
       "amnen_sektion": [
-        "geopolitik"
+        "usa"
       ],
-      "poang": 29.2,
+      "poang": 29.3,
       "vikt": {
-        "bredd": 0.613,
+        "bredd": 0.55,
         "regioner": {
-          "europa": 4,
-          "mellanostern": 2,
-          "asien": 2
+          "europa": 3,
+          "latinamerika": 2,
+          "asien": 2,
+          "usa": 1
         },
-        "timmar": 57,
+        "timmar": 68,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2627,162 +2736,105 @@
       "maste": false,
       "antal_kallor": 8,
       "har_primarkalla": false,
-      "senast": "2026-11-26T20:33:07+00:00",
+      "senast": "2026-11-26T20:10:34+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.611,
+      "sammanhang": 0.743,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
-          "mellanostern"
+          "latinamerika",
+          "usa"
         ],
         "per_region": {
           "europa": [
             {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says",
-              "url": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes",
-              "tid": 1795725187.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "France 24",
               "land": "FR",
-              "rubrik": "Israel threatens to displace one million Palestinians in Gaza unless Hamas disarms",
-              "url": "https://www.france24.com/en/middle-east/20261126-israel-threatens-to-displace-one-million-palestinians-in-gaza-unless-hamas-disarms",
-              "tid": 1795696111.0,
+              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+              "url": "https://www.france24.com/en/trump-urges-putin-to-end-military-aggression-in-europe",
+              "tid": 1795723834.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Hamas political official and wife among eight Palestinians killed in Israeli strikes on Gaza",
-              "url": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795688048.0,
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
+              "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795712040.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Israel violates ‘ceasefire’ to kill Hamas security chief",
-              "url": "https://rt-english.com/news/649343-israel-gaza-hamas-security-chief-ceasefire/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795603554.0,
-              "statskontrollerad": true
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
+              "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
+              "tid": 1795706485.0,
+              "statskontrollerad": false
             }
           ],
-          "mellanostern": [
+          "latinamerika": [
             {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Gaza’s health ministry says 19 Palestinians killed by Israeli attacks in 48 hours",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-health-ministry-says-19-palestinians-killed-israeli-attacks-48",
-              "tid": 1795724420.0,
+              "kalla": "El Tiempo",
+              "land": "CO",
+              "rubrik": "Trump cambia de postura frente a Putin y le pide que 'detenga toda agresión militar' contra Europa para facilitar el fin de la guerra en Ucrania",
+              "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/trump-cambia-de-postura-frente-a-putin-y-le-pide-que-detenga-toda-agresion-militar-contra-europa-para-facilitar-el-fin-de-la-guerra-en-ucrania-3604609",
+              "tid": 1795721114.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Hamas weighs response after Israel kills 10 people in Gaza",
-              "url": "https://www.al-monitor.com/originals/2026/11/hamas-weighs-response-after-israel-kills-10-people-gaza",
-              "tid": 1795697188.0,
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Trump y Rutte reclaman a Rusia y Ucrania que eviten acciones que amplíen la guerra",
+              "url": "https://elpais.com/internacional/2026-11-26/trump-y-rutte-reclaman-a-rusia-y-ucrania-que-eviten-acciones-que-amplien-la-guerra.html",
+              "tid": 1795707027.0,
               "statskontrollerad": false
             }
           ],
           "asien": [
             {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Israel kills nine in Gaza, including Hamas-appointed deputy Education Minister, officials say",
-              "url": "https://www.thehindu.com/news/international/israel-kills-nine-in-gaza-including-hamas-appointed-deputy-education-minister-officials-say/article71747983.ece",
-              "tid": 1795714525.0,
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Trump says he'd like to see Putin 'pull back' military aggression in Europe",
+              "url": "https://www.channelnewsasia.com/world/trump-putin-russia-ukraine-military-aggression-europe-6585761",
+              "tid": 1795711218.0,
               "statskontrollerad": false
             },
             {
               "kalla": "The Straits Times",
               "land": "SG",
-              "rubrik": "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm",
-              "url": "https://www.straitstimes.com/world/middle-east/israel-defence-minister-threatens-to-displace-1-million-gazans-if-hamas-wont-disarm",
-              "tid": 1795699380.0,
+              "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
+              "tid": 1795708311.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+              "tid": 1795716480.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
-        "grannar_svenska": true,
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says",
+      "reserv_rubrik": "Trump urges Putin to end 'military aggression' in Europe",
       "kallor": [
         {
-          "namn": "The Guardian",
-          "rubrik": "Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says",
-          "url": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes",
-          "tid": 1795725187.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Gaza’s health ministry says 19 Palestinians killed by Israeli attacks in 48 hours",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-health-ministry-says-19-palestinians-killed-israeli-attacks-48",
-          "tid": 1795724420.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Israel kills nine in Gaza, including Hamas-appointed deputy Education Minister, officials say",
-          "url": "https://www.thehindu.com/news/international/israel-kills-nine-in-gaza-including-hamas-appointed-deputy-education-minister-officials-say/article71747983.ece",
-          "tid": 1795714525.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm",
-          "url": "https://www.straitstimes.com/world/middle-east/israel-defence-minister-threatens-to-displace-1-million-gazans-if-hamas-wont-disarm",
-          "tid": 1795699380.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Hamas weighs response after Israel kills 10 people in Gaza",
-          "url": "https://www.al-monitor.com/originals/2026/11/hamas-weighs-response-after-israel-kills-10-people-gaza",
-          "tid": 1795697188.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "France 24",
-          "rubrik": "Israel threatens to displace one million Palestinians in Gaza unless Hamas disarms",
-          "url": "https://www.france24.com/en/middle-east/20261126-israel-threatens-to-displace-one-million-palestinians-in-gaza-unless-hamas-disarms",
-          "tid": 1795696111.0,
+          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+          "url": "https://www.france24.com/en/trump-urges-putin-to-end-military-aggression-in-europe",
+          "tid": 1795723834.0,
           "betalvagg": false,
           "typ": "media",
           "land": "FR",
@@ -2791,38 +2843,99 @@
           "statskontrollerad": false
         },
         {
-          "namn": "BBC World",
-          "rubrik": "Hamas political official and wife among eight Palestinians killed in Israeli strikes on Gaza",
-          "url": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795688048.0,
+          "namn": "El Tiempo",
+          "rubrik": "Trump cambia de postura frente a Putin y le pide que 'detenga toda agresión militar' contra Europa para facilitar el fin de la guerra en Ucrania",
+          "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/trump-cambia-de-postura-frente-a-putin-y-le-pide-que-detenga-toda-agresion-militar-contra-europa-para-facilitar-el-fin-de-la-guerra-en-ucrania-3604609",
+          "tid": 1795721114.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "GB",
+          "land": "CO",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
+          "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795712040.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
           "region": "europa",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
-          "namn": "RT",
-          "rubrik": "Israel violates ‘ceasefire’ to kill Hamas security chief",
-          "url": "https://rt-english.com/news/649343-israel-gaza-hamas-security-chief-ceasefire/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795603554.0,
+          "namn": "CNA",
+          "rubrik": "Trump says he'd like to see Putin 'pull back' military aggression in Europe",
+          "url": "https://www.channelnewsasia.com/world/trump-putin-russia-ukraine-military-aggression-europe-6585761",
+          "tid": 1795711218.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "RU",
-          "region": "europa",
+          "land": "SG",
+          "region": "asien",
           "agare": "statlig",
-          "statskontrollerad": true
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
+          "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
+          "tid": 1795708311.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "Trump y Rutte reclaman a Rusia y Ucrania que eviten acciones que amplíen la guerra",
+          "url": "https://elpais.com/internacional/2026-11-26/trump-y-rutte-reclaman-a-rusia-y-ucrania-que-eviten-acciones-que-amplien-la-guerra.html",
+          "tid": 1795707027.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
+          "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
+          "tid": 1795706485.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+          "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+          "tid": 1795716480.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
-        "en": 2
+        "sv": 2,
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -3045,7 +3158,7 @@
           "global": 1,
           "usa": 1
         },
-        "timmar": 81,
+        "timmar": 82,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3134,302 +3247,119 @@
       "data": null
     },
     {
-      "id": "c086f02f78",
-      "amnen": [
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "halvledare"
-      ],
-      "poang": 28.3,
+      "id": "1689b7acb6",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 28.7,
       "vikt": {
-        "bredd": 0.59,
+        "bredd": 0.345,
         "regioner": {
-          "usa": 4,
-          "asien": 3,
-          "afrika": 1,
-          "europa": 1,
-          "mellanostern": 1
+          "mellanostern": 2,
+          "asien": 1
         },
-        "timmar": 24,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 10,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-26T21:00:00+00:00",
+      "senast": "2026-11-26T21:49:02+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.475,
+      "sammanhang": 1.0,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
           "asien",
-          "europa",
-          "mellanostern",
-          "usa"
+          "mellanostern"
         ],
         "per_region": {
-          "usa": [
+          "mellanostern": [
             {
-              "kalla": "Tom's Hardware",
-              "land": "US",
-              "rubrik": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
-              "url": "https://www.tomshardware.com/tech-industry/big-tech/dennys-touts-renewed-support-for-nvidia-ceo-jensen-huang-following-reinstatement-says-some-things-you-just-dont-take-off-the-menu",
-              "tid": 1795726800.0,
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-smash-foundations-palestinian-familys-homes-west-bank",
+              "tid": 1795729742.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "CNBC",
+              "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-              "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-              "tid": 1795640408.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
-              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
-              "tid": 1795630477.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
-              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
-              "tid": 1795621560.0,
+              "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
+              "url": "https://www.al-monitor.com/originals/2026/11/settlers-smash-foundations-palestinian-familys-homes-west-bank",
+              "tid": 1795711590.0,
               "statskontrollerad": false
             }
           ],
           "asien": [
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
-              "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
-              "tid": 1795684501.0,
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
+              "url": "https://www.straitstimes.com/world/middle-east/settlers-smash-foundations-of-palestinian-familys-homes-in-west-bank",
+              "tid": 1795710718.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Jensen Huang needs a new playbook for his second innings at Nvidia",
-              "url": "https://www.thehindu.com/sci-tech/technology/jensen-huang-needs-a-new-playbook-for-his-second-innings-at-nvidia/article71745086.ece",
-              "tid": 1795661233.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Jensen Huang's return to Nvidia tests America's AI strategy",
-              "url": "https://asia.nikkei.com/opinion/jensen-huang-s-return-to-nvidia-tests-america-s-ai-strategy",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "Watch – Jensen Huang’s Return Puts NVIDIA Back in Focus",
-              "url": "https://www.dailymaverick.co.za/video/2026-11-25-watch-jensen-huangs-return-puts-nvidia-back-in-focus/",
-              "tid": 1795626242.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Multiple investigations, internal unrest, and circular financing: The risks behind Jensen Huang’s return to Nvidia",
-              "url": "https://english.elpais.com/usa/2026-11-25/multiple-investigations-internal-unrest-and-circular-financing-the-risks-behind-jensen-huangs-return-to-nvidia.html",
-              "tid": 1795599760.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Will Nvidia's Jensen Huang be sworn in during Congress testimony?",
-              "url": "https://www.thenationalnews.com/future/technology/2026/11/25/when-will-jensen-huang-testify-in-congress/",
-              "tid": 1795629618.0,
-              "statskontrollerad": true
             }
           ]
         },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "CNBC",
-              "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-              "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-              "tid": 1795640408.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
-              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
-              "tid": 1795621560.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
-              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
-              "tid": 1795630477.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
+      "reserv_rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
       "kallor": [
         {
-          "namn": "Tom's Hardware",
-          "rubrik": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
-          "url": "https://www.tomshardware.com/tech-industry/big-tech/dennys-touts-renewed-support-for-nvidia-ceo-jensen-huang-following-reinstatement-says-some-things-you-just-dont-take-off-the-menu",
-          "tid": 1795726800.0,
+          "namn": "Middle East Eye",
+          "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-smash-foundations-palestinian-familys-homes-west-bank",
+          "tid": 1795729742.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
-          "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
-          "tid": 1795684501.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Jensen Huang needs a new playbook for his second innings at Nvidia",
-          "url": "https://www.thehindu.com/sci-tech/technology/jensen-huang-needs-a-new-playbook-for-his-second-innings-at-nvidia/article71745086.ece",
-          "tid": 1795661233.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-          "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-          "tid": 1795640408.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Daily Maverick",
-          "rubrik": "Watch – Jensen Huang’s Return Puts NVIDIA Back in Focus",
-          "url": "https://www.dailymaverick.co.za/video/2026-11-25-watch-jensen-huangs-return-puts-nvidia-back-in-focus/",
-          "tid": 1795626242.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País (English)",
-          "rubrik": "Multiple investigations, internal unrest, and circular financing: The risks behind Jensen Huang’s return to Nvidia",
-          "url": "https://english.elpais.com/usa/2026-11-25/multiple-investigations-internal-unrest-and-circular-financing-the-risks-behind-jensen-huangs-return-to-nvidia.html",
-          "tid": 1795599760.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
-          "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
-          "tid": 1795630477.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
-          "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
-          "tid": 1795621560.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "Jensen Huang's return to Nvidia tests America's AI strategy",
-          "url": "https://asia.nikkei.com/opinion/jensen-huang-s-return-to-nvidia-tests-america-s-ai-strategy",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Will Nvidia's Jensen Huang be sworn in during Congress testimony?",
-          "url": "https://www.thenationalnews.com/future/technology/2026/11/25/when-will-jensen-huang-testify-in-congress/",
-          "tid": 1795629618.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
+          "land": "GB",
           "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
+          "url": "https://www.al-monitor.com/originals/2026/11/settlers-smash-foundations-palestinian-familys-homes-west-bank",
+          "tid": 1795711590.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
+          "url": "https://www.straitstimes.com/world/middle-east/settlers-smash-foundations-of-palestinian-familys-homes-in-west-bank",
+          "tid": 1795710718.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 3
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -3437,7 +3367,7 @@
       "id": "8ee2a985ff",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.0,
+      "poang": 28.1,
       "vikt": {
         "bredd": 0.334,
         "regioner": {
@@ -3445,7 +3375,7 @@
           "europa": 1,
           "global": 1
         },
-        "timmar": 41,
+        "timmar": 42,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3597,19 +3527,459 @@
       "data": null
     },
     {
+      "id": "c086f02f78",
+      "amnen": [
+        "halvledare"
+      ],
+      "amnen_sektion": [
+        "halvledare"
+      ],
+      "poang": 28.0,
+      "vikt": {
+        "bredd": 0.542,
+        "regioner": {
+          "usa": 4,
+          "asien": 3,
+          "afrika": 1,
+          "mellanostern": 1
+        },
+        "timmar": 25,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 9,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T21:00:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.463,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Tom's Hardware",
+              "land": "US",
+              "rubrik": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
+              "url": "https://www.tomshardware.com/tech-industry/big-tech/dennys-touts-renewed-support-for-nvidia-ceo-jensen-huang-following-reinstatement-says-some-things-you-just-dont-take-off-the-menu",
+              "tid": 1795726800.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+              "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+              "tid": 1795640408.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
+              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
+              "tid": 1795630477.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
+              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
+              "tid": 1795621560.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
+              "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
+              "tid": 1795684501.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Jensen Huang needs a new playbook for his second innings at Nvidia",
+              "url": "https://www.thehindu.com/sci-tech/technology/jensen-huang-needs-a-new-playbook-for-his-second-innings-at-nvidia/article71745086.ece",
+              "tid": 1795661233.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Jensen Huang's return to Nvidia tests America's AI strategy",
+              "url": "https://asia.nikkei.com/opinion/jensen-huang-s-return-to-nvidia-tests-america-s-ai-strategy",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Watch – Jensen Huang’s Return Puts NVIDIA Back in Focus",
+              "url": "https://www.dailymaverick.co.za/video/2026-11-25-watch-jensen-huangs-return-puts-nvidia-back-in-focus/",
+              "tid": 1795626242.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Will Nvidia's Jensen Huang be sworn in during Congress testimony?",
+              "url": "https://www.thenationalnews.com/future/technology/2026/11/25/when-will-jensen-huang-testify-in-congress/",
+              "tid": 1795629618.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "CNBC",
+              "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+              "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+              "tid": 1795640408.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
+              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
+              "tid": 1795621560.0,
+              "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
+              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
+              "tid": 1795630477.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
+      "kallor": [
+        {
+          "namn": "Tom's Hardware",
+          "rubrik": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/dennys-touts-renewed-support-for-nvidia-ceo-jensen-huang-following-reinstatement-says-some-things-you-just-dont-take-off-the-menu",
+          "tid": 1795726800.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
+          "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
+          "tid": 1795684501.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Jensen Huang needs a new playbook for his second innings at Nvidia",
+          "url": "https://www.thehindu.com/sci-tech/technology/jensen-huang-needs-a-new-playbook-for-his-second-innings-at-nvidia/article71745086.ece",
+          "tid": 1795661233.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+          "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+          "tid": 1795640408.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "Watch – Jensen Huang’s Return Puts NVIDIA Back in Focus",
+          "url": "https://www.dailymaverick.co.za/video/2026-11-25-watch-jensen-huangs-return-puts-nvidia-back-in-focus/",
+          "tid": 1795626242.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
+          "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
+          "tid": 1795630477.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
+          "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
+          "tid": 1795621560.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Nikkei Asia",
+          "rubrik": "Jensen Huang's return to Nvidia tests America's AI strategy",
+          "url": "https://asia.nikkei.com/opinion/jensen-huang-s-return-to-nvidia-tests-america-s-ai-strategy",
+          "tid": null,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Will Nvidia's Jensen Huang be sworn in during Congress testimony?",
+          "url": "https://www.thenationalnews.com/future/technology/2026/11/25/when-will-jensen-huang-testify-in-congress/",
+          "tid": 1795629618.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "1144b74f38",
+      "amnen": [
+        "energi"
+      ],
+      "amnen_sektion": [
+        "energi"
+      ],
+      "poang": 27.9,
+      "vikt": {
+        "bredd": 0.29,
+        "regioner": {
+          "asien": 2,
+          "europa": 2,
+          "sverige": 1
+        },
+        "timmar": 90,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T21:39:46+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.699,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "sverige"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
+              "url": "https://www.hindustantimes.com/world-news/zelensky-says-russia-preparing-strikes-on-ukraine-s-power-grid-101795727639672.html",
+              "tid": 1795729186.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Ukraine’s Zelensky says Russia preparing new mass strike in coming days",
+              "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-russia-preparing-new-mass-strike-in-coming-days",
+              "tid": 1795725410.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Russia prepares new mass attack on Ukraine's energy infrastructure, Zelensky says",
+              "url": "https://kyivindependent.com/russia-prepares-new-mass-attack-on-ukraines-energy-infrastructure-zelensky-says/",
+              "tid": 1795693764.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Russian strikes on Ukraine kill two in Kharkiv and injure seven in Kyiv",
+              "url": "https://meduza.io/en/news/2026/11/26/russian-strikes-on-ukraine-kill-two-in-kharkiv-and-injure-seven-in-kyiv",
+              "tid": 1795685414.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Dagens industri",
+              "land": "SE",
+              "rubrik": "Zelenskyj: Ryssland förbereder nya massiva anfall",
+              "url": "https://www.di.se/nyheter/zelenskyj-ryssland-forbereder-nya-massiva-anfall/",
+              "tid": 1795726462.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
+          "url": "https://www.hindustantimes.com/world-news/zelensky-says-russia-preparing-strikes-on-ukraine-s-power-grid-101795727639672.html",
+          "tid": 1795729186.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Ukraine’s Zelensky says Russia preparing new mass strike in coming days",
+          "url": "https://www.straitstimes.com/world/europe/zelenskiy-says-russia-preparing-new-mass-strike-in-coming-days",
+          "tid": 1795725410.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Russia prepares new mass attack on Ukraine's energy infrastructure, Zelensky says",
+          "url": "https://kyivindependent.com/russia-prepares-new-mass-attack-on-ukraines-energy-infrastructure-zelensky-says/",
+          "tid": 1795693764.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Russian strikes on Ukraine kill two in Kharkiv and injure seven in Kyiv",
+          "url": "https://meduza.io/en/news/2026/11/26/russian-strikes-on-ukraine-kill-two-in-kharkiv-and-injure-seven-in-kyiv",
+          "tid": 1795685414.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens industri",
+          "rubrik": "Zelenskyj: Ryssland förbereder nya massiva anfall",
+          "url": "https://www.di.se/nyheter/zelenskyj-ryssland-forbereder-nya-massiva-anfall/",
+          "tid": 1795726462.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "ea7defd56e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.4,
+      "poang": 27.8,
       "vikt": {
         "bredd": 0.818,
         "regioner": {
+          "europa": 2,
           "asien": 2,
           "mellanostern": 2,
-          "europa": 2,
           "norden": 1
         },
-        "timmar": 11,
+        "timmar": 12,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3620,7 +3990,7 @@
       "maste": false,
       "antal_kallor": 7,
       "har_primarkalla": false,
-      "senast": "2026-11-26T20:27:46+00:00",
+      "senast": "2026-11-26T22:01:22+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
@@ -3634,6 +4004,24 @@
           "norden"
         ],
         "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+              "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+              "tid": 1795730482.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Crew member dies after diesel tanker sinks off Ibiza coast",
+              "url": "https://www.dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795694280.0,
+              "statskontrollerad": false
+            }
+          ],
           "asien": [
             {
               "kalla": "CNA",
@@ -3670,24 +4058,6 @@
               "statskontrollerad": false
             }
           ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-              "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-              "tid": 1795706238.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Crew member dies after diesel tanker sinks off Ibiza coast",
-              "url": "https://www.dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795694280.0,
-              "statskontrollerad": false
-            }
-          ],
           "norden": [
             {
               "kalla": "DR Nyheder",
@@ -3704,8 +4074,20 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Crew member dies after diesel tanker capsizes off Ibiza, no pollution so far",
+      "reserv_rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
       "kallor": [
+        {
+          "namn": "BBC World",
+          "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+          "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+          "tid": 1795730482.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
         {
           "namn": "CNA",
           "rubrik": "Crew member dies after diesel tanker capsizes off Ibiza, no pollution so far",
@@ -3728,18 +4110,6 @@
           "land": "QA",
           "region": "mellanostern",
           "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-          "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-          "tid": 1795706238.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
           "statskontrollerad": false
         },
         {
@@ -3803,107 +4173,10 @@
       "data": null
     },
     {
-      "id": "1689b7acb6",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.3,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "mellanostern": 1,
-          "asien": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T16:46:30+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
-              "url": "https://www.al-monitor.com/originals/2026/11/settlers-smash-foundations-palestinian-familys-homes-west-bank",
-              "tid": 1795711590.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
-              "url": "https://www.straitstimes.com/world/middle-east/settlers-smash-foundations-of-palestinian-familys-homes-in-west-bank",
-              "tid": 1795710718.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
-      "kallor": [
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
-          "url": "https://www.al-monitor.com/originals/2026/11/settlers-smash-foundations-palestinian-familys-homes-west-bank",
-          "tid": 1795711590.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Settlers smash foundations of Palestinian family's homes in West Bank",
-          "url": "https://www.straitstimes.com/world/middle-east/settlers-smash-foundations-of-palestinian-familys-homes-in-west-bank",
-          "tid": 1795710718.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "685d69ee1b",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.3,
+      "poang": 27.4,
       "vikt": {
         "bredd": 0.402,
         "regioner": {
@@ -3911,7 +4184,7 @@
           "mellanostern": 2,
           "asien": 1
         },
-        "timmar": 60,
+        "timmar": 61,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4041,19 +4314,177 @@
       "data": null
     },
     {
+      "id": "9ebffc5481",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 27.4,
+      "vikt": {
+        "bredd": 0.228,
+        "regioner": {
+          "asien": 3,
+          "usa": 2
+        },
+        "timmar": 93,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T21:25:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.624,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "Major Thanksgiving storms inundate US with heavy rain, wind and flooding",
+              "url": "https://www.abc.net.au/news/2026-11-27/thanksgiving-floods-storms-across-us/107433308",
+              "tid": 1795728311.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
+              "url": "https://www.channelnewsasia.com/world/thanksgiving-weather-storms-us-power-flights-6585971",
+              "tid": 1795726792.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Thanksgiving storm disrupts flights in New York, DC as 820 flights cancelled across US",
+              "url": "https://www.hindustantimes.com/world-news/us-news/thanksgiving-storm-disrupts-flights-in-new-york-dc-as-820-flights-cancelled-across-us-101795701667456.html",
+              "tid": 1795703740.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "New York Post",
+              "land": "US",
+              "rubrik": "Thanksgiving storm strands thousands of holiday travelers — but good news is coming",
+              "url": "https://nypost.com/2026/11/26/us-news/thanksgiving-storm-strands-thousands-of-holiday-travelers-but-good-news-is-coming/",
+              "tid": 1795724577.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Thanksgiving travel chaos grows as storm brings widespread flight disruptions and power outages",
+              "url": "https://www.washingtonexaminer.com/policy/infrastructure/4816191/thanksgiving-travel-chaos-flight-disruptions-power-outages/",
+              "tid": 1795705677.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Major Thanksgiving storms inundate US with heavy rain, wind and flooding",
+      "kallor": [
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "Major Thanksgiving storms inundate US with heavy rain, wind and flooding",
+          "url": "https://www.abc.net.au/news/2026-11-27/thanksgiving-floods-storms-across-us/107433308",
+          "tid": 1795728311.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNA",
+          "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
+          "url": "https://www.channelnewsasia.com/world/thanksgiving-weather-storms-us-power-flights-6585971",
+          "tid": 1795726792.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "New York Post",
+          "rubrik": "Thanksgiving storm strands thousands of holiday travelers — but good news is coming",
+          "url": "https://nypost.com/2026/11/26/us-news/thanksgiving-storm-strands-thousands-of-holiday-travelers-but-good-news-is-coming/",
+          "tid": 1795724577.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Thanksgiving travel chaos grows as storm brings widespread flight disruptions and power outages",
+          "url": "https://www.washingtonexaminer.com/policy/infrastructure/4816191/thanksgiving-travel-chaos-flight-disruptions-power-outages/",
+          "tid": 1795705677.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Thanksgiving storm disrupts flights in New York, DC as 820 flights cancelled across US",
+          "url": "https://www.hindustantimes.com/world-news/us-news/thanksgiving-storm-disrupts-flights-in-new-york-dc-as-820-flights-cancelled-across-us-101795701667456.html",
+          "tid": 1795703740.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "d7f47d5c29",
       "amnen": [
-        "asien",
-        "geopolitik"
+        "geopolitik",
+        "usa"
       ],
       "amnen_sektion": [
-        "geopolitik"
+        "geopolitik",
+        "usa"
       ],
-      "poang": 27.1,
+      "poang": 27.3,
       "vikt": {
-        "bredd": 0.176,
+        "bredd": 0.196,
         "regioner": {
-          "asien": 3
+          "asien": 3,
+          "usa": 1
         },
         "timmar": 96,
         "konsekvens": null,
@@ -4062,17 +4493,18 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 4,
       "har_primarkalla": false,
       "senast": "2026-11-26T15:43:21+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.605,
+      "sammanhang": 0.615,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien"
+          "asien",
+          "usa"
         ],
         "per_region": {
           "asien": [
@@ -4093,16 +4525,26 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "Bangkok Post",
-              "land": "TH",
-              "rubrik": "New US tariffs worry Thai exporters",
-              "url": "https://www.bangkokpost.com/business/general/3361264/new-us-tariffs-worry-thai-exporters",
-              "tid": 1795661100.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "'Trump never learns': Democrats vow to fight proposed tariffs on India, other nations",
+              "url": "https://www.hindustantimes.com/world-news/us-donald-trump-tariffs-india-democrats-midterm-elections-news-101795662596081.html",
+              "tid": 1795663192.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+              "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+              "tid": 1795666338.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
+        "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
@@ -4134,13 +4576,25 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Bangkok Post",
-          "rubrik": "New US tariffs worry Thai exporters",
-          "url": "https://www.bangkokpost.com/business/general/3361264/new-us-tariffs-worry-thai-exporters",
-          "tid": 1795661100.0,
+          "namn": "CNBC",
+          "rubrik": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+          "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+          "tid": 1795666338.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "TH",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "'Trump never learns': Democrats vow to fight proposed tariffs on India, other nations",
+          "url": "https://www.hindustantimes.com/world-news/us-donald-trump-tariffs-india-democrats-midterm-elections-news-101795662596081.html",
+          "tid": 1795663192.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -4148,13 +4602,13 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 0,
-        "en": 1
+        "sv": 1,
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "bara en region"
+        "blind fläck"
       ],
       "data": null
     },
@@ -4264,14 +4718,14 @@
       "id": "8055b26aef",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 26.7,
+      "poang": 26.8,
       "vikt": {
         "bredd": 0.345,
         "regioner": {
           "mellanostern": 2,
           "asien": 1
         },
-        "timmar": 60,
+        "timmar": 61,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4379,432 +4833,6 @@
       "data": null
     },
     {
-      "id": "5db6a782f2",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.7,
-      "vikt": {
-        "bredd": 0.136,
-        "regioner": {
-          "asien": 1,
-          "europa": 1,
-          "usa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T14:52:43+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.624,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-              "url": "https://www.hindustantimes.com/world-news/16-dead-10-missing-after-floods-hit-illegal-gold-mine-in-indonesia-search-and-rescue-underway-101795677902881.html",
-              "tid": 1795678746.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Thirteen dead as mine disaster highlights illegal hunt for gold",
-              "url": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
-              "tid": 1795678284.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "13 Dead and 13 Thought Trapped in Indonesian Mine After Heavy Rain",
-              "url": "https://www.nytimes.com/2026/11/25/world/asia/indonesia-miners-trapped.html",
-              "tid": 1795704763.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-          "url": "https://www.hindustantimes.com/world-news/16-dead-10-missing-after-floods-hit-illegal-gold-mine-in-indonesia-search-and-rescue-underway-101795677902881.html",
-          "tid": 1795678746.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Thirteen dead as mine disaster highlights illegal hunt for gold",
-          "url": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
-          "tid": 1795678284.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "13 Dead and 13 Thought Trapped in Indonesian Mine After Heavy Rain",
-          "url": "https://www.nytimes.com/2026/11/25/world/asia/indonesia-miners-trapped.html",
-          "tid": 1795704763.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": true,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "9ebffc5481",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.7,
-      "vikt": {
-        "bredd": 0.158,
-        "regioner": {
-          "asien": 2,
-          "usa": 2
-        },
-        "timmar": 92,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T20:59:52+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.632,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
-              "url": "https://www.channelnewsasia.com/world/thanksgiving-weather-storms-us-power-flights-6585971",
-              "tid": 1795726792.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Thanksgiving storm disrupts flights in New York, DC as 820 flights cancelled across US",
-              "url": "https://www.hindustantimes.com/world-news/us-news/thanksgiving-storm-disrupts-flights-in-new-york-dc-as-820-flights-cancelled-across-us-101795701667456.html",
-              "tid": 1795703740.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "New York Post",
-              "land": "US",
-              "rubrik": "Hundreds of Thanksgiving flights cancelled and train schedules slashed as nor’easter touches down",
-              "url": "https://nypost.com/2026/11/26/lifestyle/nyc-thanksgiving-travel-chaos-as-storm-cancels-flights-trains/",
-              "tid": 1795725561.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Thanksgiving travel chaos grows as storm brings widespread flight disruptions and power outages",
-              "url": "https://www.washingtonexaminer.com/policy/infrastructure/4816191/thanksgiving-travel-chaos-flight-disruptions-power-outages/",
-              "tid": 1795705677.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
-      "kallor": [
-        {
-          "namn": "CNA",
-          "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
-          "url": "https://www.channelnewsasia.com/world/thanksgiving-weather-storms-us-power-flights-6585971",
-          "tid": 1795726792.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "New York Post",
-          "rubrik": "Hundreds of Thanksgiving flights cancelled and train schedules slashed as nor’easter touches down",
-          "url": "https://nypost.com/2026/11/26/lifestyle/nyc-thanksgiving-travel-chaos-as-storm-cancels-flights-trains/",
-          "tid": 1795725561.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "Thanksgiving travel chaos grows as storm brings widespread flight disruptions and power outages",
-          "url": "https://www.washingtonexaminer.com/policy/infrastructure/4816191/thanksgiving-travel-chaos-flight-disruptions-power-outages/",
-          "tid": 1795705677.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Thanksgiving storm disrupts flights in New York, DC as 820 flights cancelled across US",
-          "url": "https://www.hindustantimes.com/world-news/us-news/thanksgiving-storm-disrupts-flights-in-new-york-dc-as-820-flights-cancelled-across-us-101795701667456.html",
-          "tid": 1795703740.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "78f126d517",
-      "amnen": [
-        "halvledare",
-        "marknader",
-        "teknik"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "marknader"
-      ],
-      "poang": 26.4,
-      "vikt": {
-        "bredd": 0.139,
-        "regioner": {
-          "usa": 4,
-          "asien": 1
-        },
-        "timmar": 44,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:00:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.721,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "Tom's Hardware",
-              "land": "US",
-              "rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
-              "url": "https://www.tomshardware.com/tech-industry/credit-rating-agency-puts-nvidia-on-notice-for-possible-downgrade-s-and-p-global-ratings-says-board-members-may-have-compromised-their-independence",
-              "tid": 1795712400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-              "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-              "tid": 1795663184.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-              "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-              "tid": 1795646672.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "S&P Global Puts Nvidia on ‘CreditWatch Negative’ Due to Governance Risks",
-              "url": "https://www.theinformation.com/briefings/s-p-global-puts-nvidia-creditwatch-negative-due-governance-risks",
-              "tid": 1795634860.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Nvidia faces potential credit downgrade as S&P questions board independence",
-              "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-faces-potential-credit-downgrade-as-s-p-questions-board-independence-101795662606629.html",
-              "tid": 1795663527.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
-      "kallor": [
-        {
-          "namn": "Tom's Hardware",
-          "rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
-          "url": "https://www.tomshardware.com/tech-industry/credit-rating-agency-puts-nvidia-on-notice-for-possible-downgrade-s-and-p-global-ratings-says-board-members-may-have-compromised-their-independence",
-          "tid": 1795712400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Nvidia faces potential credit downgrade as S&P questions board independence",
-          "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-faces-potential-credit-downgrade-as-s-p-questions-board-independence-101795662606629.html",
-          "tid": 1795663527.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-          "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-          "tid": 1795663184.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-          "tid": 1795646672.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Information",
-          "rubrik": "S&P Global Puts Nvidia on ‘CreditWatch Negative’ Due to Governance Risks",
-          "url": "https://www.theinformation.com/briefings/s-p-global-puts-nvidia-creditwatch-negative-due-governance-risks",
-          "tid": 1795634860.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "55c72d04c5",
       "amnen": [
         "noje"
@@ -4812,13 +4840,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 24.0,
+      "poang": 24.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 49,
+        "timmar": 50,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4911,14 +4939,14 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.7,
+      "poang": 21.8,
       "vikt": {
         "bredd": 0.174,
         "regioner": {
           "sverige": 2,
           "usa": 1
         },
-        "timmar": 27,
+        "timmar": 28,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5032,13 +5060,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 21.5,
+      "poang": 21.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5128,14 +5156,14 @@
       "amnen_sektion": [
         "spel"
       ],
-      "poang": 21.2,
+      "poang": 21.3,
       "vikt": {
         "bredd": 0.097,
         "regioner": {
           "sverige": 1,
           "usa": 1
         },
-        "timmar": 29,
+        "timmar": 30,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5227,7 +5255,7 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 20.7,
+      "poang": 21.2,
       "vikt": {
         "bredd": 0.318,
         "regioner": {
@@ -5235,7 +5263,7 @@
           "europa": 1,
           "mellanostern": 1
         },
-        "timmar": 7,
+        "timmar": 8,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5368,70 +5396,76 @@
       "data": null
     },
     {
-      "id": "1402483de9",
+      "id": "e012cb942a",
       "amnen": [
-        "noje"
+        "spel"
       ],
       "amnen_sektion": [
-        "noje"
+        "spel"
       ],
-      "poang": 18.5,
+      "poang": 19.0,
       "vikt": {
-        "bredd": 0.154,
+        "bredd": 0.097,
         "regioner": {
-          "sverige": 2
+          "sverige": 1,
+          "usa": 1
         },
-        "timmar": 13,
+        "timmar": 8,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": []
+        "spar": [
+          "teknik"
+        ]
       },
       "maste": false,
       "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-26T08:23:21+00:00",
+      "senast": "2026-11-26T15:06:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 1.0,
+      "sammanhang": 0.715,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "sverige"
+          "sverige",
+          "usa"
         ],
         "per_region": {
           "sverige": [
             {
-              "kalla": "Expressen Nöje",
+              "kalla": "FZ",
               "land": "SE",
-              "rubrik": "Killinggänget lägger till en tolfte föreställning",
-              "url": "https://www.expressen.se/noje/killingganget-lagger-till-en-tolfte-forestallning/",
-              "tid": 1795681401.0,
+              "rubrik": "CDPR försäkrar: The Witcher 4 släpps samtidigt på alla aktuella plattformar",
+              "url": "https://www.fz.se/nyhet/303731-cdpr-forsakrar-the-witcher-4-slapps-samtidigt-pa-alla-aktuella-plattformar",
+              "tid": 1795705560.0,
               "statskontrollerad": false
-            },
+            }
+          ],
+          "usa": [
             {
-              "kalla": "Aftonbladet Nöjesbladet",
-              "land": "SE",
-              "rubrik": "Killinggänget lägger till en tolfte föreställning",
-              "url": "https://www.aftonbladet.se/nojesbladet/a/r8Aojm/killingganget-lagger-till-en-tolfte-forestallning?utm_medium=rss",
-              "tid": 1795680009.0,
+              "kalla": "Gameranx",
+              "land": "US",
+              "rubrik": "CDPR Reassures The Witcher 4 Fans The Game Is Coming To PS5, Xbox, and PC At The Same Time",
+              "url": "https://gameranx.com/updates/id/564534/article/cdpr-reassures-the-witcher-4-fans-the-game-is-coming-to-ps5-xbox-and-pc-at-the-same-time/",
+              "tid": 1795693600.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": "bara_i_sverige",
+        "blind_flack": null,
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Killinggänget lägger till en tolfte föreställning",
+      "reserv_rubrik": "CDPR försäkrar: The Witcher 4 släpps samtidigt på alla aktuella plattformar",
       "kallor": [
         {
-          "namn": "Expressen Nöje",
-          "rubrik": "Killinggänget lägger till en tolfte föreställning",
-          "url": "https://www.expressen.se/noje/killingganget-lagger-till-en-tolfte-forestallning/",
-          "tid": 1795681401.0,
+          "namn": "FZ",
+          "rubrik": "CDPR försäkrar: The Witcher 4 släpps samtidigt på alla aktuella plattformar",
+          "url": "https://www.fz.se/nyhet/303731-cdpr-forsakrar-the-witcher-4-slapps-samtidigt-pa-alla-aktuella-plattformar",
+          "tid": 1795705560.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SE",
@@ -5440,29 +5474,27 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Aftonbladet Nöjesbladet",
-          "rubrik": "Killinggänget lägger till en tolfte föreställning",
-          "url": "https://www.aftonbladet.se/nojesbladet/a/r8Aojm/killingganget-lagger-till-en-tolfte-forestallning?utm_medium=rss",
-          "tid": 1795680009.0,
+          "namn": "Gameranx",
+          "rubrik": "CDPR Reassures The Witcher 4 Fans The Game Is Coming To PS5, Xbox, and PC At The Same Time",
+          "url": "https://gameranx.com/updates/id/564534/article/cdpr-reassures-the-witcher-4-fans-the-game-is-coming-to-ps5-xbox-and-pc-at-the-same-time/",
+          "tid": 1795693600.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 3,
-        "en": 0
+        "sv": 2,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region",
-        "blind fläck"
+        "färre än tre oberoende källor (2)"
       ],
       "data": null
     },
@@ -5474,13 +5506,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 15.7,
+      "poang": 16.4,
       "vikt": {
         "bredd": 0.246,
         "regioner": {
           "sverige": 3
         },
-        "timmar": 5,
+        "timmar": 6,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5583,102 +5615,6 @@
       "data": null
     },
     {
-      "id": "c251344296",
-      "amnen": [
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 14.9,
-      "vikt": {
-        "bredd": 0.169,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 5,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T16:19:45+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.874,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "Miljonunderskott för Moderna museet: ”För stora risker”",
-              "url": "https://www.svt.se/kultur/miljonunderskott-for-moderna-for-stora-risker",
-              "tid": 1795695534.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Strannegård om miljonmissen på Moderna museet: ”Bekymmersamt”",
-              "url": "https://www.di.se/nyheter/strannegard-om-miljonmissen-pa-moderna-museet-bekymmersamt/",
-              "tid": 1795709985.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Miljonunderskott för Moderna museet: ”För stora risker”",
-      "kallor": [
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "Miljonunderskott för Moderna museet: ”För stora risker”",
-          "url": "https://www.svt.se/kultur/miljonunderskott-for-moderna-for-stora-risker",
-          "tid": 1795695534.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Strannegård om miljonmissen på Moderna museet: ”Bekymmersamt”",
-          "url": "https://www.di.se/nyheter/strannegard-om-miljonmissen-pa-moderna-museet-bekymmersamt/",
-          "tid": 1795709985.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "140247cbfa",
       "amnen": [
         "sverige"
@@ -5686,14 +5622,14 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 13.5,
+      "poang": 14.3,
       "vikt": {
         "bredd": 0.106,
         "regioner": {
           "asien": 1,
           "europa": 1
         },
-        "timmar": 4,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -6181,13 +6117,93 @@
         "färre än två svenska källor"
       ],
       "data": null
+    },
+    {
+      "id": "f18b6ac1b0",
+      "amnen": [
+        "norden",
+        "sverige"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T17:47:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "RÚV English",
+              "land": "IS",
+              "rubrik": "Civil Defence response plan remains in effect following major cyberattacks",
+              "url": "https://www.ruv.is/english/2026-11-26-civil-defence-response-plan-remains-in-effect-following-major-cyberattacks-494125/",
+              "tid": 1795715220.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Civil Defence response plan remains in effect following major cyberattacks",
+      "kallor": [
+        {
+          "namn": "RÚV English",
+          "rubrik": "Civil Defence response plan remains in effect following major cyberattacks",
+          "url": "https://www.ruv.is/english/2026-11-26-civil-defence-response-plan-remains-in-effect-following-major-cyberattacks-494125/",
+          "tid": 1795715220.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IS",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 74,
+      "artiklar": 70,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -6199,7 +6215,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 107,
+      "artiklar": 100,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6289,7 +6305,7 @@
     {
       "id": "france24",
       "ok": true,
-      "artiklar": 23,
+      "artiklar": 24,
       "url": "https://www.france24.com/en/rss"
     },
     {
@@ -6301,13 +6317,13 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 27,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
       "id": "elpais",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
     },
     {
@@ -6319,7 +6335,7 @@
     {
       "id": "ecb",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 2,
       "url": "https://www.ecb.europa.eu/rss/press.html"
     },
     {
@@ -6331,19 +6347,19 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 52,
+      "artiklar": 53,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 20,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 27,
+      "artiklar": 26,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -6355,7 +6371,7 @@
     {
       "id": "npr",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 12,
       "url": "https://feeds.npr.org/1004/rss.xml"
     },
     {
@@ -6425,13 +6441,13 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 22,
       "url": "https://mg.co.za/rss/"
     },
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 12,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
@@ -6473,7 +6489,7 @@
     {
       "id": "mit-tr",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 4,
       "url": "https://www.technologyreview.com/feed/"
     },
     {
@@ -6515,13 +6531,13 @@
     {
       "id": "fz",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 14,
       "url": "https://www.fz.se/feeds/nyheter"
     },
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 38,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
@@ -6621,7 +6637,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 7,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -6650,19 +6666,19 @@
     {
       "id": "politico",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 2,
       "url": "https://rss.politico.com/politics-news.xml"
     },
     {
       "id": "axios",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 15,
       "url": "https://www.axios.com/feeds/feed.rss"
     },
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 5,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -6685,7 +6701,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 29,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6757,7 +6773,7 @@
     {
       "id": "batimes",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 11,
       "url": "https://www.batimes.com.ar/feed"
     },
     {
@@ -6775,7 +6791,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 87,
+      "artiklar": 84,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -6787,13 +6803,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 32,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 34,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -6817,7 +6833,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 95,
+      "artiklar": 92,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6949,7 +6965,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 14,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -6967,7 +6983,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 27,
+      "artiklar": 26,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
@@ -6997,7 +7013,7 @@
     {
       "id": "insideclimate",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 3,
       "url": "https://insideclimatenews.org/feed/"
     },
     {
@@ -7026,7 +7042,7 @@
     {
       "id": "defensenews",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 6,
       "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml"
     }
   ]
