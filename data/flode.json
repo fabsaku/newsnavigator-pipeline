@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-26T15:07:57.132974+00:00",
+  "skapad": "2026-11-26T15:18:09.151116+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -7,13 +7,14 @@
       "id": "81e898d856",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 34.3,
+      "poang": 36.4,
       "vikt": {
-        "bredd": 1.209,
+        "bredd": 1.419,
         "regioner": {
-          "afrika": 2,
+          "latinamerika": 1,
+          "afrika": 3,
           "mellanostern": 3,
-          "europa": 4,
+          "europa": 3,
           "asien": 4,
           "usa": 2
         },
@@ -24,26 +25,37 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 15,
+      "antal_kallor": 16,
       "har_primarkalla": false,
-      "senast": "2026-11-26T14:36:51+00:00",
+      "senast": "2026-11-26T14:52:50+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRkR7hf1SRhos8bdqLXV'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRmCEQjhnderqbMyjvms'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.626,
+      "sammanhang": 0.587,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
           "asien",
           "europa",
+          "latinamerika",
           "mellanostern",
           "usa"
         ],
         "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "The Rio Times",
+              "land": "BR",
+              "rubrik": "Lagos-Badagry Road Fire Kills Six, Burns 12",
+              "url": "https://www.riotimesonline.com/lagos-badagry-expressway-magbon-fire-six-killed/",
+              "tid": 1795704770.0,
+              "statskontrollerad": false
+            }
+          ],
           "afrika": [
             {
               "kalla": "Africanews",
@@ -51,6 +63,14 @@
               "rubrik": "Death toll rises to 31 after deadly fuel truck inferno on Cairo highway",
               "url": "http://www.africanews.com/2026/11/26/death-toll-rises-to-31-after-deadly-fuel-truck-inferno-on-cairo-highway/",
               "tid": 1795703811.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Egypt: Over 30 Dead After Fuel Truck Overturns Near Cairo",
+              "url": "https://allafrica.com/stories/202611260153.html",
+              "tid": 1795674446.0,
               "statskontrollerad": false
             },
             {
@@ -112,14 +132,6 @@
               "url": "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway",
               "tid": 1795653550.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Egypt: At least 31 dead after fuel truck overturns on highway",
-              "url": "https://www.dw.com/en/egypt-at-least-31-dead-after-fuel-truck-overturns-on-highway/a-80055175?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795642620.0,
-              "statskontrollerad": false
             }
           ],
           "asien": [
@@ -180,8 +192,20 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Death toll rises to 31 after deadly fuel truck inferno on Cairo highway",
+      "reserv_rubrik": "Lagos-Badagry Road Fire Kills Six, Burns 12",
       "kallor": [
+        {
+          "namn": "The Rio Times",
+          "rubrik": "Lagos-Badagry Road Fire Kills Six, Burns 12",
+          "url": "https://www.riotimesonline.com/lagos-badagry-expressway-magbon-fire-six-killed/",
+          "tid": 1795704770.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BR",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "Africanews",
           "rubrik": "Death toll rises to 31 after deadly fuel truck inferno on Cairo highway",
@@ -255,6 +279,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "AllAfrica",
+          "rubrik": "Egypt: Over 30 Dead After Fuel Truck Overturns Near Cairo",
+          "url": "https://allafrica.com/stories/202611260153.html",
+          "tid": 1795674446.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Hindu",
           "rubrik": "Fuel tanker crash ignites massive fire on highway surrounding Cairo, killing at least 31 people",
           "url": "https://www.thehindu.com/news/international/fuel-tanker-crash-ignites-massive-fire-on-highway-surrounding-cairo/article71744262.ece",
@@ -315,18 +351,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Deutsche Welle",
-          "rubrik": "Egypt: At least 31 dead after fuel truck overturns on highway",
-          "url": "https://www.dw.com/en/egypt-at-least-31-dead-after-fuel-truck-overturns-on-highway/a-80055175?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795642620.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Al-Monitor",
           "rubrik": "Thirty-one killed in fire after vehicle overturns in Egypt",
           "url": "https://www.al-monitor.com/originals/2026/11/thirty-one-killed-fire-after-vehicle-overturns-egypt",
@@ -382,12 +406,12 @@
       "amnen_sektion": [
         "halvledare"
       ],
-      "poang": 31.8,
+      "poang": 32.2,
       "vikt": {
-        "bredd": 0.767,
+        "bredd": 0.806,
         "regioner": {
-          "usa": 7,
-          "asien": 5,
+          "usa": 6,
+          "asien": 6,
           "afrika": 1,
           "europa": 1,
           "mellanostern": 1
@@ -406,11 +430,11 @@
       "senast": "2026-11-26T14:31:31+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRkR7i9tCpEs86J4doYG'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRmCEMmDVTFL425SBoca'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.45,
+      "sammanhang": 0.463,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -447,22 +471,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "New York Post",
-              "land": "US",
-              "rubrik": "Denny’s faces heat over gushy tribute to Nvidia CEO Jensen Huang: ‘Just put the pancakes on bro’",
-              "url": "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/",
-              "tid": 1795674544.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-              "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-              "tid": 1795640408.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "TechCrunch",
               "land": "US",
               "rubrik": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
@@ -471,11 +479,19 @@
               "statskontrollerad": false
             },
             {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
+              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
+              "tid": 1795630477.0,
+              "statskontrollerad": false
+            },
+            {
               "kalla": "The Wall Street Journal",
               "land": "US",
-              "rubrik": "Nvidia’s Jensen Huang is set for at least two appearances before lawmakers next week, which could test how far President Trump’s protection of “brilliant” CEOs extends. Read more in today’s WSJ …",
-              "url": "https://www.wsj.com/politics/policy/trump-says-he-protects-brilliant-ceos-like-elon-musk-and-jensen-huang-b977cfda?mod=rss_socialpoliticsfeed",
-              "tid": 1795607880.0,
+              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
+              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
+              "tid": 1795621560.0,
               "statskontrollerad": false
             }
           ],
@@ -486,6 +502,14 @@
               "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
               "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
               "tid": 1795684501.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "How US-China tech rivalry has been reset by Jensen Huang saga",
+              "url": "https://www.scmp.com/plus/tech/tech-war/article/3375892/how-us-china-tech-rivalry-has-been-reset-jensen-huang-saga",
+              "tid": 1795679865.0,
               "statskontrollerad": false
             },
             {
@@ -564,17 +588,10 @@
               "lutning": "mitten"
             },
             {
-              "kalla": "CNBC",
-              "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-              "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-              "tid": 1795640408.0,
-              "lutning": "mitten"
-            },
-            {
               "kalla": "The Wall Street Journal",
-              "rubrik": "Nvidia’s Jensen Huang is set for at least two appearances before lawmakers next week, which could test how far President Trump’s protection of “brilliant” CEOs extends. Read more in today’s WSJ …",
-              "url": "https://www.wsj.com/politics/policy/trump-says-he-protects-brilliant-ceos-like-elon-musk-and-jensen-huang-b977cfda?mod=rss_socialpoliticsfeed",
-              "tid": 1795607880.0,
+              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
+              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
+              "tid": 1795621560.0,
               "lutning": "mitten"
             }
           ],
@@ -585,13 +602,15 @@
               "url": "https://www.washingtonexaminer.com/news/entertainment/4816194/dennys-brings-back-jensen-huang-tribute-booth/",
               "tid": 1795703171.0,
               "lutning": "lutar_hoger"
-            },
+            }
+          ],
+          "bla": [
             {
-              "kalla": "New York Post",
-              "rubrik": "Denny’s faces heat over gushy tribute to Nvidia CEO Jensen Huang: ‘Just put the pancakes on bro’",
-              "url": "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/",
-              "tid": 1795674544.0,
-              "lutning": "hoger"
+              "kalla": "The New York Times",
+              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
+              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
+              "tid": 1795630477.0,
+              "lutning": "lutar_vanster"
             }
           ]
         },
@@ -648,14 +667,14 @@
           "statskontrollerad": false
         },
         {
-          "namn": "New York Post",
-          "rubrik": "Denny’s faces heat over gushy tribute to Nvidia CEO Jensen Huang: ‘Just put the pancakes on bro’",
-          "url": "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/",
-          "tid": 1795674544.0,
+          "namn": "South China Morning Post",
+          "rubrik": "How US-China tech rivalry has been reset by Jensen Huang saga",
+          "url": "https://www.scmp.com/plus/tech/tech-war/article/3375892/how-us-china-tech-rivalry-has-been-reset-jensen-huang-saga",
+          "tid": 1795679865.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "HK",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -680,18 +699,6 @@
           "typ": "media",
           "land": "IN",
           "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-          "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-          "tid": 1795640408.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -744,10 +751,22 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The New York Times",
+          "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
+          "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
+          "tid": 1795630477.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Wall Street Journal",
-          "rubrik": "Nvidia’s Jensen Huang is set for at least two appearances before lawmakers next week, which could test how far President Trump’s protection of “brilliant” CEOs extends. Read more in today’s WSJ …",
-          "url": "https://www.wsj.com/politics/policy/trump-says-he-protects-brilliant-ceos-like-elon-musk-and-jensen-huang-b977cfda?mod=rss_socialpoliticsfeed",
-          "tid": 1795607880.0,
+          "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
+          "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
+          "tid": 1795621560.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -824,7 +843,7 @@
       "senast": "2026-11-26T13:16:51+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRkR7ieboeEsB1Wx4VZU'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRmCENzyDUZwWqmH44x6'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -958,7 +977,7 @@
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
+        "grannar_svenska": true,
         "usa": {
           "rod": [
             {
@@ -1187,7 +1206,7 @@
       "senast": "2026-11-26T14:09:52+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRkR7j9d2DruPoroTEiZ'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChRmCEMksg77uB9d3LMXy'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -1610,6 +1629,125 @@
       "relevans": {
         "sv": 1,
         "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "9fdad26e83",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 29.2,
+      "vikt": {
+        "bredd": 0.23,
+        "regioner": {
+          "europa": 2,
+          "latinamerika": 1
+        },
+        "timmar": 69,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T14:19:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.699,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "latinamerika"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Moscow drone incursions: Poland to create no-fly zone at Ukraine border",
+              "url": "https://www.france24.com/en/video/20261126-moscow-drone-incursions-poland-to-create-no-fly-zone-at-ukraine-border",
+              "tid": 1795702751.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Notes from Poland",
+              "land": "PL",
+              "rubrik": "Poland plans no-fly zone on eastern border to aid downing of Russian missiles",
+              "url": "https://notesfrompoland.com/2026/11/25/poland-plans-no-fly-zone-on-eastern-border-to-aid-downing-of-russian-missiles/",
+              "tid": 1795630796.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "The Rio Times",
+              "land": "BR",
+              "rubrik": "Poland’s Eastern Air Defence Zone Explained",
+              "url": "https://www.riotimesonline.com/poland-eastern-air-defence-zone-explained-2026/",
+              "tid": 1795702401.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Moscow drone incursions: Poland to create no-fly zone at Ukraine border",
+      "kallor": [
+        {
+          "namn": "France 24",
+          "rubrik": "Moscow drone incursions: Poland to create no-fly zone at Ukraine border",
+          "url": "https://www.france24.com/en/video/20261126-moscow-drone-incursions-poland-to-create-no-fly-zone-at-ukraine-border",
+          "tid": 1795702751.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Rio Times",
+          "rubrik": "Poland’s Eastern Air Defence Zone Explained",
+          "url": "https://www.riotimesonline.com/poland-eastern-air-defence-zone-explained-2026/",
+          "tid": 1795702401.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BR",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Notes from Poland",
+          "rubrik": "Poland plans no-fly zone on eastern border to aid downing of Russian missiles",
+          "url": "https://notesfrompoland.com/2026/11/25/poland-plans-no-fly-zone-on-eastern-border-to-aid-downing-of-russian-missiles/",
+          "tid": 1795630796.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PL",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
@@ -2099,257 +2237,6 @@
       "data": null
     },
     {
-      "id": "a445b33d59",
-      "amnen": [
-        "halvledare",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "usa"
-      ],
-      "poang": 28.7,
-      "vikt": {
-        "bredd": 0.456,
-        "regioner": {
-          "asien": 3,
-          "afrika": 1,
-          "usa": 3,
-          "sverige": 1
-        },
-        "timmar": 36,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 8,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T07:57:45+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.573,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "sverige",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "How US-China tech rivalry has been reset by Jensen Huang saga",
-              "url": "https://www.scmp.com/plus/tech/tech-war/article/3375892/how-us-china-tech-rivalry-has-been-reset-jensen-huang-saga",
-              "tid": 1795679865.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "U.S. officials divided over China spying allegations after Jensen Huang’s return",
-              "url": "https://www.japantimes.co.jp/news/2026/11/26/world/politics/us-officials-chinese-spying-huang/",
-              "tid": 1795668240.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "No Evidence China Orchestrated Jensen Huang’s Affair, Officials Brief Congress",
-              "url": "https://www.hindustantimes.com/world-news/no-evidence-china-orchestrated-jensen-huang-s-affair-officials-brief-congress-101795663081321.html",
-              "tid": 1795663121.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Nation (Kenya)",
-              "land": "KE",
-              "rubrik": "Was Jensen Huang's lover a Chinese spy? FBI, CIA and Rubio disagree",
-              "url": "https://nation.africa/kenya/news/world/was-jensen-huang-s-lover-a-chinese-spy-fbi-cia-and-rubio-disagree-5684622",
-              "tid": 1795667400.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Tom's Hardware",
-              "land": "US",
-              "rubrik": "Husband of Jensen Huang’s mistress has much more significant Chinese intelligence connections than her, report claims",
-              "url": "https://www.tomshardware.com/tech-industry/big-tech/husband-of-jensen-huangs-mistress-has-much-more-significant-chinese-intelligence-connections-than-her-report-claims-us-officials-warn-he-was-asset-with-ministry-of-state-security-connections",
-              "tid": 1795612262.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
-              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
-              "tid": 1795630477.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
-              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
-              "tid": 1795621560.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Kinesiska medier: ”Jensen Huang en bricka i ett mycket större spel”",
-              "url": "https://www.dn.se/varlden/kinesiska-medier-jensen-huang-en-bricka-i-ett-mycket-storre-spel/",
-              "tid": 1795601715.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": {
-          "bla": [
-            {
-              "kalla": "The New York Times",
-              "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
-              "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
-              "tid": 1795630477.0,
-              "lutning": "lutar_vanster"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
-              "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
-              "tid": 1795621560.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "How US-China tech rivalry has been reset by Jensen Huang saga",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "How US-China tech rivalry has been reset by Jensen Huang saga",
-          "url": "https://www.scmp.com/plus/tech/tech-war/article/3375892/how-us-china-tech-rivalry-has-been-reset-jensen-huang-saga",
-          "tid": 1795679865.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "U.S. officials divided over China spying allegations after Jensen Huang’s return",
-          "url": "https://www.japantimes.co.jp/news/2026/11/26/world/politics/us-officials-chinese-spying-huang/",
-          "tid": 1795668240.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nation (Kenya)",
-          "rubrik": "Was Jensen Huang's lover a Chinese spy? FBI, CIA and Rubio disagree",
-          "url": "https://nation.africa/kenya/news/world/was-jensen-huang-s-lover-a-chinese-spy-fbi-cia-and-rubio-disagree-5684622",
-          "tid": 1795667400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "KE",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "No Evidence China Orchestrated Jensen Huang’s Affair, Officials Brief Congress",
-          "url": "https://www.hindustantimes.com/world-news/no-evidence-china-orchestrated-jensen-huang-s-affair-officials-brief-congress-101795663081321.html",
-          "tid": 1795663121.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Tom's Hardware",
-          "rubrik": "Husband of Jensen Huang’s mistress has much more significant Chinese intelligence connections than her, report claims",
-          "url": "https://www.tomshardware.com/tech-industry/big-tech/husband-of-jensen-huangs-mistress-has-much-more-significant-chinese-intelligence-connections-than-her-report-claims-us-officials-warn-he-was-asset-with-ministry-of-state-security-connections",
-          "tid": 1795612262.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "Officials Brief Congressional Staff on Intelligence Surrounding Nvidia Affair",
-          "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
-          "tid": 1795630477.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "There was no evidence a Chinese tech executive who had an affair with Jensen Huang was directed by Chinese intelligence to spy on the Nvidia CEO, U.S. officials told congressional staffers",
-          "url": "https://www.wsj.com/politics/national-security/no-evidence-china-orchestrated-jensen-huangs-affair-officials-brief-congress-00228bb7?mod=rss_socialpoliticsfeed",
-          "tid": 1795621560.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Kinesiska medier: ”Jensen Huang en bricka i ett mycket större spel”",
-          "url": "https://www.dn.se/varlden/kinesiska-medier-jensen-huang-en-bricka-i-ett-mycket-storre-spel/",
-          "tid": 1795601715.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "e6a0fe1319",
       "amnen": [
         "varlden"
@@ -2447,6 +2334,107 @@
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "a5940a11a3",
+      "amnen": [
+        "afrika",
+        "geopolitik",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 28.2,
+      "vikt": {
+        "bredd": 0.286,
+        "regioner": {
+          "afrika": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T05:17:44+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.719,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika"
+        ],
+        "per_region": {
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Zimbabwe: Zimbabwean Man Convicted in South Africa Over Ukraine War Recruitment",
+              "url": "https://allafrica.com/stories/202611260100.html",
+              "tid": 1795670264.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
+              "url": "http://www.africanews.com/2026/11/25/south-african-court-convicts-zimbabwean-man-of-trying-to-join-russian-war/",
+              "tid": 1795589090.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zimbabwe: Zimbabwean Man Convicted in South Africa Over Ukraine War Recruitment",
+      "kallor": [
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Zimbabwe: Zimbabwean Man Convicted in South Africa Over Ukraine War Recruitment",
+          "url": "https://allafrica.com/stories/202611260100.html",
+          "tid": 1795670264.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "South African court convicts Zimbabwean man of trying to join Russian war",
+          "url": "http://www.africanews.com/2026/11/25/south-african-court-convicts-zimbabwean-man-of-trying-to-join-russian-war/",
+          "tid": 1795589090.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": true,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region",
+        "spärrord: convicted"
       ],
       "data": null
     },
@@ -3162,6 +3150,165 @@
         "inget utkast",
         "ingen källkontroll",
         "spärrord: child"
+      ],
+      "data": null
+    },
+    {
+      "id": "6a4e75d3a6",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 27.6,
+      "vikt": {
+        "bredd": 0.546,
+        "regioner": {
+          "asien": 2,
+          "afrika": 3
+        },
+        "timmar": 46,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T07:44:55+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.703,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Cyril Ramaphosa wins court bid to overturn impeachment report",
+              "url": "https://www.thehindu.com/news/international/cyril-ramaphosa-wins-court-bid-to-overturn-impeachment-report/article71745568.ece",
+              "tid": 1795679095.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "South Africa's Ramaphosa wins court bid to overturn impeachment report",
+              "url": "https://newsaf.cgtn.com/news/2026-11-26/South-Africa-s-Ramaphosa-wins-court-bid-to-overturn-impeachment-report-1SmLZUMGAqQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795624703.0,
+              "statskontrollerad": true
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "South Africa: Ramaphosa Wins in Court, but the Phala Phala Saga Is By No Means Over",
+              "url": "https://allafrica.com/stories/202611260095.html",
+              "tid": 1795670261.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "IMPEACHMENT REPORT: Ramaphosa wins in court, but the Phala Phala saga is by no means over",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-25-ramaphosa-wins-in-court-but-the-phala-phala-saga-is-by-no-means-over/",
+              "tid": 1795644000.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "South Africa's Ramaphosa wins court bid over impeachment report",
+              "url": "http://www.africanews.com/2026/11/25/south-africas-ramaphosa-wins-court-bid-over-impeachment-report/",
+              "tid": 1795637279.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Cyril Ramaphosa wins court bid to overturn impeachment report",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Cyril Ramaphosa wins court bid to overturn impeachment report",
+          "url": "https://www.thehindu.com/news/international/cyril-ramaphosa-wins-court-bid-to-overturn-impeachment-report/article71745568.ece",
+          "tid": 1795679095.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "AllAfrica",
+          "rubrik": "South Africa: Ramaphosa Wins in Court, but the Phala Phala Saga Is By No Means Over",
+          "url": "https://allafrica.com/stories/202611260095.html",
+          "tid": 1795670261.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "IMPEACHMENT REPORT: Ramaphosa wins in court, but the Phala Phala saga is by no means over",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-25-ramaphosa-wins-in-court-but-the-phala-phala-saga-is-by-no-means-over/",
+          "tid": 1795644000.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "South Africa's Ramaphosa wins court bid over impeachment report",
+          "url": "http://www.africanews.com/2026/11/25/south-africas-ramaphosa-wins-court-bid-over-impeachment-report/",
+          "tid": 1795637279.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "South Africa's Ramaphosa wins court bid to overturn impeachment report",
+          "url": "https://newsaf.cgtn.com/news/2026-11-26/South-Africa-s-Ramaphosa-wins-court-bid-to-overturn-impeachment-report-1SmLZUMGAqQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795624703.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -4010,230 +4157,6 @@
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "df75f4167c",
-      "amnen": [
-        "asien",
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 26.5,
-      "vikt": {
-        "bredd": 0.118,
-        "regioner": {
-          "asien": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T07:42:07+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.334,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-              "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-              "tid": 1795678927.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Focus Taiwan",
-              "land": "TW",
-              "rubrik": "Taiwan confident of keeping 15% tariffs under Trump's new proposal",
-              "url": "https://focustaiwan.tw/politics/202611260008",
-              "tid": 1795672728.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-          "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-          "tid": 1795678927.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Focus Taiwan",
-          "rubrik": "Taiwan confident of keeping 15% tariffs under Trump's new proposal",
-          "url": "https://focustaiwan.tw/politics/202611260008",
-          "tid": 1795672728.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TW",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "c93c26e43c",
-      "amnen": [
-        "rymd"
-      ],
-      "amnen_sektion": [
-        "rymd"
-      ],
-      "poang": 26.1,
-      "vikt": {
-        "bredd": 0.165,
-        "regioner": {
-          "europa": 1,
-          "asien": 2
-        },
-        "timmar": 39,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-25T14:18:29+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.763,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "China sends first foreign astronaut to ISS rival as it globalises space operations",
-              "url": "https://www.theguardian.com/science/2026/nov/25/china-sends-first-pakistani-astronaut-into-space",
-              "tid": 1795616309.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "China launches crewed spaceship carrying first Pakistani astronaut to its space station",
-              "url": "https://www.thehindu.com/sci-tech/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut/article71740891.ece",
-              "tid": 1795587062.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "China sends first foreign national, a Pakistani pilot, to its space station",
-              "url": "https://asia.nikkei.com/business/aerospace-defense-industries/china-sends-first-foreign-national-a-pakistani-pilot-to-its-space-station",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "China sends first foreign astronaut to ISS rival as it globalises space operations",
-      "kallor": [
-        {
-          "namn": "The Guardian",
-          "rubrik": "China sends first foreign astronaut to ISS rival as it globalises space operations",
-          "url": "https://www.theguardian.com/science/2026/nov/25/china-sends-first-pakistani-astronaut-into-space",
-          "tid": 1795616309.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "China launches crewed spaceship carrying first Pakistani astronaut to its space station",
-          "url": "https://www.thehindu.com/sci-tech/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut/article71740891.ece",
-          "tid": 1795587062.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "China sends first foreign national, a Pakistani pilot, to its space station",
-          "url": "https://asia.nikkei.com/business/aerospace-defense-industries/china-sends-first-foreign-national-a-pakistani-pilot-to-its-space-station",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
       ],
       "data": null
     },
@@ -5628,6 +5551,87 @@
       "data": null
     },
     {
+      "id": "4c62673b0c",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T15:05:31+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Spareplan koster 23 stillinger på Nationalmuseet",
+              "url": "https://www.dr.dk/nyheder/seneste/spareplan-koster-23-stillinger-paa-nationalmuseet",
+              "tid": 1795705531.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Spareplan koster 23 stillinger på Nationalmuseet",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Spareplan koster 23 stillinger på Nationalmuseet",
+          "url": "https://www.dr.dk/nyheder/seneste/spareplan-koster-23-stillinger-paa-nationalmuseet",
+          "tid": 1795705531.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
       "id": "938793056c",
       "amnen": [
         "norden",
@@ -5869,87 +5873,6 @@
         "färre än två svenska källor"
       ],
       "data": null
-    },
-    {
-      "id": "acc1a49b20",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T13:45:34+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "NRK",
-              "land": "NO",
-              "rubrik": "Må betale brannvesenet millioner etter storbrann",
-              "url": "https://www.nrk.no/vestfoldogtelemark/ma-betale-brannvesenet-millioner-etter-storbrann-1.18089200",
-              "tid": 1795700734.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Må betale brannvesenet millioner etter storbrann",
-      "kallor": [
-        {
-          "namn": "NRK",
-          "rubrik": "Må betale brannvesenet millioner etter storbrann",
-          "url": "https://www.nrk.no/vestfoldogtelemark/ma-betale-brannvesenet-millioner-etter-storbrann-1.18089200",
-          "tid": 1795700734.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NO",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
@@ -5961,13 +5884,14 @@
     },
     {
       "id": "sr-ekot",
-      "ok": false,
-      "fel": "HTTP Error 400: Bad Request"
+      "ok": true,
+      "artiklar": 19,
+      "url": "https://api.sr.se/api/rss/program/83"
     },
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 98,
+      "artiklar": 99,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6111,7 +6035,7 @@
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 20,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -6171,7 +6095,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 56,
+      "artiklar": 55,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -6283,7 +6207,7 @@
     {
       "id": "fz",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 17,
       "url": "https://www.fz.se/feeds/nyheter"
     },
     {
@@ -6453,7 +6377,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 31,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6554,8 +6478,9 @@
     },
     {
       "id": "allafrica",
-      "ok": false,
-      "fel": "<urlopen error timed out>"
+      "ok": true,
+      "artiklar": 32,
+      "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
@@ -6716,7 +6641,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 12,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -6734,7 +6659,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 40,
+      "artiklar": 39,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
