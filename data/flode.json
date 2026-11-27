@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-27T19:01:41.702418+00:00",
+  "skapad": "2026-11-27T19:07:21.618926+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -34,7 +34,7 @@
       "senast": "2026-11-27T18:10:27+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qepyndU4NSc4tmb1'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTxUth5bGSEhSWgotwKR'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -208,7 +208,7 @@
       "senast": "2026-11-27T10:00:09+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qiJZ45eC6i894Wk9'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTxUtjp89HPmdAuqwBDK'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -365,15 +365,290 @@
       "data": null
     },
     {
+      "id": "f76edae436",
+      "amnen": [
+        "ai",
+        "halvledare"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "halvledare"
+      ],
+      "poang": 29.7,
+      "vikt": {
+        "bredd": 0.138,
+        "regioner": {
+          "asien": 2,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T10:23:12+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTxUti5meDHToFe3c5EE'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.614,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Singapore reaches out to local firms amid reports of Nvidia chip shipment halt",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375994/singapore-reaches-out-local-firms-amid-reports-nvidia-chip-shipment-halt",
+              "tid": 1795756381.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Singapore engaging local firms over US chip restrictions, says deputy PM",
+              "url": "https://www.hindustantimes.com/world-news/singapore-engaging-local-firms-over-us-chip-restrictions-says-deputy-pm-101795749203166.html",
+              "tid": 1795749646.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Information",
+              "land": "US",
+              "rubrik": "Singapore in Talks With U.S. to Keep AI Chip Access",
+              "url": "https://www.theinformation.com/briefings/singapore-talks-u-s-keep-ai-chip-access",
+              "tid": 1795774992.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Singapore reaches out to local firms amid reports of Nvidia chip shipment halt",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Singapore reaches out to local firms amid reports of Nvidia chip shipment halt",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375994/singapore-reaches-out-local-firms-amid-reports-nvidia-chip-shipment-halt",
+          "tid": 1795756381.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Singapore engaging local firms over US chip restrictions, says deputy PM",
+          "url": "https://www.hindustantimes.com/world-news/singapore-engaging-local-firms-over-us-chip-restrictions-says-deputy-pm-101795749203166.html",
+          "tid": 1795749646.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Information",
+          "rubrik": "Singapore in Talks With U.S. to Keep AI Chip Access",
+          "url": "https://www.theinformation.com/briefings/singapore-talks-u-s-keep-ai-chip-access",
+          "tid": 1795774992.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "77d552b34b",
+      "amnen": [
+        "halvledare",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "halvledare",
+        "usa"
+      ],
+      "poang": 29.3,
+      "vikt": {
+        "bredd": 0.099,
+        "regioner": {
+          "usa": 2,
+          "asien": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:49:53+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTxUtipzRxLwVZm7zZAa'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.771,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Trump to visit groundbreaking for semiconductor manufacturer that supplies Nvidia: Reports",
+              "url": "https://thehill.com/homenews/administration/6245480-trump-phoenix-tsmc-nvidia/",
+              "tid": 1795805393.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Trump to visit site for new semiconductor factory in Arizona",
+              "url": "https://www.washingtonpost.com/politics/2026/11/27/trump-visit-site-new-semiconductor-factory-arizona/",
+              "tid": 1795782600.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
+              "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-attend-groundbreaking-of-arizona-chip-facility-supplying-nvidia-and-other-companies-jensen-huang-row-101795743869809.html",
+              "tid": 1795746365.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Trump to visit groundbreaking for semiconductor manufacturer that supplies Nvidia: Reports",
+              "url": "https://thehill.com/homenews/administration/6245480-trump-phoenix-tsmc-nvidia/",
+              "tid": 1795805393.0,
+              "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Trump to visit site for new semiconductor factory in Arizona",
+              "url": "https://www.washingtonpost.com/politics/2026/11/27/trump-visit-site-new-semiconductor-factory-arizona/",
+              "tid": 1795782600.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump to visit groundbreaking for semiconductor manufacturer that supplies Nvidia: Reports",
+      "kallor": [
+        {
+          "namn": "The Hill",
+          "rubrik": "Trump to visit groundbreaking for semiconductor manufacturer that supplies Nvidia: Reports",
+          "url": "https://thehill.com/homenews/administration/6245480-trump-phoenix-tsmc-nvidia/",
+          "tid": 1795805393.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
+          "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-attend-groundbreaking-of-arizona-chip-facility-supplying-nvidia-and-other-companies-jensen-huang-row-101795743869809.html",
+          "tid": 1795746365.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Trump to visit site for new semiconductor factory in Arizona",
+          "url": "https://www.washingtonpost.com/politics/2026/11/27/trump-visit-site-new-semiconductor-factory-arizona/",
+          "tid": 1795782600.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "28342cc91e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 29.7,
+      "poang": 29.2,
       "vikt": {
-        "bredd": 0.659,
+        "bredd": 0.602,
         "regioner": {
           "usa": 2,
-          "europa": 2,
+          "europa": 1,
           "latinamerika": 2,
           "asien": 2,
           "mellanostern": 1
@@ -385,16 +660,13 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 9,
+      "antal_kallor": 8,
       "har_primarkalla": false,
       "senast": "2026-11-27T16:58:29+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qg5LUbcek1beCPoa'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.604,
+      "sammanhang": 0.594,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -430,14 +702,6 @@
               "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
               "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
               "tid": 1795796336.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-              "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
-              "tid": 1795780968.0,
               "statskontrollerad": false
             }
           ],
@@ -539,18 +803,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "France 24",
-          "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-          "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
-          "tid": 1795780968.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
           "namn": "El País América",
           "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
           "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
@@ -631,237 +883,6 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "f76edae436",
-      "amnen": [
-        "ai",
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "halvledare"
-      ],
-      "poang": 29.7,
-      "vikt": {
-        "bredd": 0.138,
-        "regioner": {
-          "asien": 2,
-          "usa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T10:23:12+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qh4Hth9acZbSD5v3'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.614,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Singapore reaches out to local firms amid reports of Nvidia chip shipment halt",
-              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375994/singapore-reaches-out-local-firms-amid-reports-nvidia-chip-shipment-halt",
-              "tid": 1795756381.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Singapore engaging local firms over US chip restrictions, says deputy PM",
-              "url": "https://www.hindustantimes.com/world-news/singapore-engaging-local-firms-over-us-chip-restrictions-says-deputy-pm-101795749203166.html",
-              "tid": 1795749646.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "Singapore in Talks With U.S. to Keep AI Chip Access",
-              "url": "https://www.theinformation.com/briefings/singapore-talks-u-s-keep-ai-chip-access",
-              "tid": 1795774992.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Singapore reaches out to local firms amid reports of Nvidia chip shipment halt",
-      "kallor": [
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Singapore reaches out to local firms amid reports of Nvidia chip shipment halt",
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375994/singapore-reaches-out-local-firms-amid-reports-nvidia-chip-shipment-halt",
-          "tid": 1795756381.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Singapore engaging local firms over US chip restrictions, says deputy PM",
-          "url": "https://www.hindustantimes.com/world-news/singapore-engaging-local-firms-over-us-chip-restrictions-says-deputy-pm-101795749203166.html",
-          "tid": 1795749646.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Information",
-          "rubrik": "Singapore in Talks With U.S. to Keep AI Chip Access",
-          "url": "https://www.theinformation.com/briefings/singapore-talks-u-s-keep-ai-chip-access",
-          "tid": 1795774992.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "b21ae77d72",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 29.1,
-      "vikt": {
-        "bredd": 0.22,
-        "regioner": {
-          "mellanostern": 1,
-          "sverige": 1
-        },
-        "timmar": 69,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "samarbete"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T17:44:33+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.578,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "mellanostern",
-          "sverige"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-              "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
-              "tid": 1795801473.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Ukrainskt förslag om vapenvila i Svarta havet",
-              "url": "https://www.di.se/nyheter/ukrainskt-forslag-om-vapenvila-i-svarta-havet/",
-              "tid": 1795798800.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-          "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
-          "tid": 1795801473.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Ukrainskt förslag om vapenvila i Svarta havet",
-          "url": "https://www.di.se/nyheter/ukrainskt-forslag-om-vapenvila-i-svarta-havet/",
-          "tid": 1795798800.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
       ],
       "data": null
     },
@@ -950,112 +971,6 @@
           "url": "https://www.foxnews.com/politics/us-pilot-tells-trump-which-fighter-jet-worlds-greatest-thanksgiving-phone-call",
           "tid": 1795789540.0,
           "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "61722907ff",
-      "amnen": [
-        "halvledare",
-        "usa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "usa"
-      ],
-      "poang": 29.1,
-      "vikt": {
-        "bredd": 0.079,
-        "regioner": {
-          "asien": 1,
-          "usa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T12:30:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.743,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
-              "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-attend-groundbreaking-of-arizona-chip-facility-supplying-nvidia-and-other-companies-jensen-huang-row-101795743869809.html",
-              "tid": 1795746365.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Trump to visit site for new semiconductor factory in Arizona",
-              "url": "https://www.washingtonpost.com/politics/2026/11/27/trump-visit-site-new-semiconductor-factory-arizona/",
-              "tid": 1795782600.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
-          "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-attend-groundbreaking-of-arizona-chip-facility-supplying-nvidia-and-other-companies-jensen-huang-row-101795743869809.html",
-          "tid": 1795746365.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Trump to visit site for new semiconductor factory in Arizona",
-          "url": "https://www.washingtonpost.com/politics/2026/11/27/trump-visit-site-new-semiconductor-factory-arizona/",
-          "tid": 1795782600.0,
-          "betalvagg": true,
           "typ": "media",
           "land": "US",
           "region": "usa",
@@ -3550,6 +3465,167 @@
       "data": null
     },
     {
+      "id": "f8786ad76b",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 26.1,
+      "vikt": {
+        "bredd": 0.63,
+        "regioner": {
+          "mellanostern": 3,
+          "afrika": 1,
+          "asien": 1
+        },
+        "timmar": 26,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:31:23+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.67,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Famine expect to rise due to global conflict, El Nino, warns UN",
+              "url": "https://www.aljazeera.com/news/2026/11/27/famine-expect-to-rise-due-to-global-conflict-el-nino-warns-un?traffic_source=rss",
+              "tid": 1795785388.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "UN warns famine risks rising as hunger hotspots increase",
+              "url": "https://www.al-monitor.com/originals/2026/11/un-warns-famine-risks-rising-hunger-hotspots-increase",
+              "tid": 1795772788.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "UN warns of worsening hunger in Middle East due to conflict and aid cuts",
+              "url": "https://www.thenationalnews.com/news/2026/11/27/un-warns-of-worsening-hunger-in-middle-east-due-to-conflict-and-aid-cuts/",
+              "tid": 1795804283.0,
+              "statskontrollerad": true
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Africa: El Niño Adds New Hunger Hotspots As Conflict Continues to Drive Risk of Famine, Warn FAO and WFP",
+              "url": "https://allafrica.com/stories/202611270343.html",
+              "tid": 1795782062.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Conflicts, El Nino worsening hunger: UN food agencies",
+              "url": "https://www.straitstimes.com/world/europe/un-warns-famine-risks-rising-as-hunger-hotspots-increase",
+              "tid": 1795770415.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Famine expect to rise due to global conflict, El Nino, warns UN",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Famine expect to rise due to global conflict, El Nino, warns UN",
+          "url": "https://www.aljazeera.com/news/2026/11/27/famine-expect-to-rise-due-to-global-conflict-el-nino-warns-un?traffic_source=rss",
+          "tid": 1795785388.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Africa: El Niño Adds New Hunger Hotspots As Conflict Continues to Drive Risk of Famine, Warn FAO and WFP",
+          "url": "https://allafrica.com/stories/202611270343.html",
+          "tid": 1795782062.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "UN warns famine risks rising as hunger hotspots increase",
+          "url": "https://www.al-monitor.com/originals/2026/11/un-warns-famine-risks-rising-hunger-hotspots-increase",
+          "tid": 1795772788.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Conflicts, El Nino worsening hunger: UN food agencies",
+          "url": "https://www.straitstimes.com/world/europe/un-warns-famine-risks-rising-as-hunger-hotspots-increase",
+          "tid": 1795770415.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "UN warns of worsening hunger in Middle East due to conflict and aid cuts",
+          "url": "https://www.thenationalnews.com/news/2026/11/27/un-warns-of-worsening-hunger-in-middle-east-due-to-conflict-and-aid-cuts/",
+          "tid": 1795804283.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "0c815be4c9",
       "amnen": [
         "varlden"
@@ -4737,6 +4813,87 @@
       "data": null
     },
     {
+      "id": "26e80dc547",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:47:32+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": "NO",
+              "rubrik": "Tok grep før enorm opptur: – Skal prøve å gjøre like geniale ting fremover",
+              "url": "https://www.nrk.no/sport/skiskyting_-marthe-krakstad-johansen-tok-grep-for-enorm-opptur-i-verdenscupapningen-i-kontiolahti.-1.18089951",
+              "tid": 1795805252.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Tok grep før enorm opptur: – Skal prøve å gjøre like geniale ting fremover",
+      "kallor": [
+        {
+          "namn": "NRK",
+          "rubrik": "Tok grep før enorm opptur: – Skal prøve å gjøre like geniale ting fremover",
+          "url": "https://www.nrk.no/sport/skiskyting_-marthe-krakstad-johansen-tok-grep-for-enorm-opptur-i-verdenscupapningen-i-kontiolahti.-1.18089951",
+          "tid": 1795805252.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NO",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
       "id": "c4e1b063ca",
       "amnen": [
         "norden",
@@ -4977,87 +5134,6 @@
         "färre än två svenska källor"
       ],
       "data": null
-    },
-    {
-      "id": "dd9f32fe29",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T16:21:09+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Otte migranter døde i forsøget på at nå Europa",
-              "url": "https://www.dr.dk/nyheder/seneste/otte-migranter-doede-i-forsoeget-paa-naa-europa",
-              "tid": 1795796469.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Otte migranter døde i forsøget på at nå Europa",
-      "kallor": [
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "Otte migranter døde i forsøget på at nå Europa",
-          "url": "https://www.dr.dk/nyheder/seneste/otte-migranter-doede-i-forsoeget-paa-naa-europa",
-          "tid": 1795796469.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
@@ -5076,7 +5152,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 104,
+      "artiklar": 105,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -5112,7 +5188,7 @@
     {
       "id": "scb",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 7,
       "url": "https://www.scb.se/Feed/statistiknyheter/"
     },
     {
@@ -5202,7 +5278,7 @@
     {
       "id": "nato",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 0,
       "url": "https://www.nato.int/cps/en/natohq/news.htm"
     },
     {
@@ -5422,7 +5498,7 @@
     {
       "id": "carbonbrief",
       "ok": true,
-      "artiklar": 0,
+      "artiklar": 1,
       "url": "https://www.carbonbrief.org/feed/"
     },
     {
@@ -5664,13 +5740,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 31,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 36,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -5730,7 +5806,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 80,
+      "artiklar": 79,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
@@ -5897,7 +5973,7 @@
     {
       "id": "rns",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://religionnews.com/feed/"
     },
     {
