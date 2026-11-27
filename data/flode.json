@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-27T04:06:30.106290+00:00",
+  "skapad": "2026-11-27T05:06:48.063106+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -29,7 +29,7 @@
       "senast": "2026-11-27T03:30:23+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXcna8SNozu85AJoy'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSrPDhxuq7aTVksHG9aB'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -419,7 +419,7 @@
         "rymd",
         "usa"
       ],
-      "poang": 34.2,
+      "poang": 34.3,
       "vikt": {
         "bredd": 1.033,
         "regioner": {
@@ -432,7 +432,7 @@
           "norden": 1,
           "sverige": 1
         },
-        "timmar": 34,
+        "timmar": 35,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -446,11 +446,11 @@
       "senast": "2026-11-27T04:39:07+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXcYGqBqCyDFQfFiH'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSrPDiiCsXnLesSBRoYL'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.809,
+      "sammanhang": 0.803,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -468,13 +468,21 @@
             {
               "kalla": "Daily Maverick",
               "land": "ZA",
-              "rubrik": "Musk pledges two SpaceX shares for every US child in $18 billion AI charm",
+              "rubrik": "Musk pledges two SpaceX shares for every US child in $18bn AI charm",
               "url": "https://www.dailymaverick.co.za/article/2026-11-27-musk-pledges-two-spacex-shares-for-every-us-child-in-18-billion-ai-charm/",
               "tid": 1795754347.0,
               "statskontrollerad": false
             }
           ],
           "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "SpaceX shares jump on alternative trading platform after Musk says he will expand share donations",
+              "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+              "tid": 1795753255.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "Washington Examiner",
               "land": "US",
@@ -497,14 +505,6 @@
               "rubrik": "Musk makes $18 billion SpaceX stock pledge for every kid in America",
               "url": "https://www.axios.com/2026/11/26/musk-spacex-shares-trump-accounts",
               "tid": 1795708455.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-              "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-              "tid": 1795675174.0,
               "statskontrollerad": false
             }
           ],
@@ -580,6 +580,22 @@
         "blind_flack": null,
         "grannar_svenska": false,
         "usa": {
+          "mitten": [
+            {
+              "kalla": "CNBC",
+              "rubrik": "SpaceX shares jump on alternative trading platform after Musk says he will expand share donations",
+              "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+              "tid": 1795753255.0,
+              "lutning": "mitten"
+            },
+            {
+              "kalla": "The Hill",
+              "rubrik": "Musk pledges 2 SpaceX shares per American child",
+              "url": "https://thehill.com/policy/technology/6244857-elon-musk-pledges-spacex-shares-to-american-children/",
+              "tid": 1795723289.0,
+              "lutning": "mitten"
+            }
+          ],
           "rod": [
             {
               "kalla": "Washington Examiner",
@@ -587,22 +603,6 @@
               "url": "https://www.washingtonexaminer.com/news/business/4816338/elon-musk-two-spacex-shares-every-american-child/",
               "tid": 1795735672.0,
               "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Musk pledges 2 SpaceX shares per American child",
-              "url": "https://thehill.com/policy/technology/6244857-elon-musk-pledges-spacex-shares-to-american-children/",
-              "tid": 1795723289.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "CNBC",
-              "rubrik": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-              "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-              "tid": 1795675174.0,
-              "lutning": "mitten"
             }
           ],
           "bla": [
@@ -617,17 +617,29 @@
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Musk pledges two SpaceX shares for every US child in $18 billion AI charm",
+      "reserv_rubrik": "Musk pledges two SpaceX shares for every US child in $18bn AI charm",
       "kallor": [
         {
           "namn": "Daily Maverick",
-          "rubrik": "Musk pledges two SpaceX shares for every US child in $18 billion AI charm",
+          "rubrik": "Musk pledges two SpaceX shares for every US child in $18bn AI charm",
           "url": "https://www.dailymaverick.co.za/article/2026-11-27-musk-pledges-two-spacex-shares-for-every-us-child-in-18-billion-ai-charm/",
           "tid": 1795754347.0,
           "betalvagg": false,
           "typ": "media",
           "land": "ZA",
           "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "SpaceX shares jump on alternative trading platform after Musk says he will expand share donations",
+          "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+          "tid": 1795753255.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -728,18 +740,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "CNBC",
-          "rubrik": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-          "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-          "tid": 1795675174.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "DR Nyheder",
           "rubrik": "Elon Musk lover to Space X-aktier til alle børn i USA",
           "url": "https://www.dr.dk/nyheder/seneste/elon-musk-lover-space-x-aktier-til-alle-boern-i-usa",
@@ -777,6 +777,296 @@
       "data": null
     },
     {
+      "id": "28342cc91e",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 31.9,
+      "vikt": {
+        "bredd": 0.659,
+        "regioner": {
+          "mellanostern": 1,
+          "usa": 2,
+          "asien": 5,
+          "europa": 1,
+          "latinamerika": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 10,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:34:43+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSrPDjCTA6bzTSiLLf4U'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.576,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Thanksgiving storms leave nearly a million without power across the US",
+              "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us?traffic_source=rss",
+              "tid": 1795754083.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
+              "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
+              "tid": 1795753145.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Thanksgiving storms ground DC flights, knock out power for more than 850K",
+              "url": "https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/",
+              "tid": 1795730480.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+              "tid": 1795746122.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Major storm batters U.S. on Thanksgiving holiday; 400 flights cancelled",
+              "url": "https://www.thehindu.com/news/international/major-storm-batters-us-on-thanksgiving-holiday-400-flights-cancelled/article71749233.ece",
+              "tid": 1795745513.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Major storm batters US on Thanksgiving holiday, disrupting flights and power",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3375968/major-storm-batters-us-thanksgiving-holiday-disrupting-flights-and-power",
+              "tid": 1795743853.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
+              "url": "https://www.straitstimes.com/world/united-states/thanksgiving-storm-knocks-out-power-disrupts-flights-on-us-east-coast",
+              "tid": 1795731600.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Storm hits US East Coast, causing flight delays, power outages",
+              "url": "https://news.cgtn.com/news/2026-11-27/Storm-hits-US-East-Coast-causing-flight-delays-power-outages-1SpdUppphfO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795745088.0,
+              "statskontrollerad": true
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Major Thanksgiving storm brings flooding, flight delays across US",
+              "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795740731.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "tid": 1795732200.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
+              "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
+              "tid": 1795753145.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Thanksgiving storms ground DC flights, knock out power for more than 850K",
+              "url": "https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/",
+              "tid": 1795730480.0,
+              "lutning": "mitten"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Thanksgiving storms leave nearly a million without power across the US",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Thanksgiving storms leave nearly a million without power across the US",
+          "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us?traffic_source=rss",
+          "tid": 1795754083.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
+          "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
+          "tid": 1795753145.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+          "tid": 1795746122.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Major storm batters U.S. on Thanksgiving holiday; 400 flights cancelled",
+          "url": "https://www.thehindu.com/news/international/major-storm-batters-us-on-thanksgiving-holiday-400-flights-cancelled/article71749233.ece",
+          "tid": 1795745513.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Major storm batters US on Thanksgiving holiday, disrupting flights and power",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3375968/major-storm-batters-us-thanksgiving-holiday-disrupting-flights-and-power",
+          "tid": 1795743853.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Major Thanksgiving storm brings flooding, flight delays across US",
+          "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+          "tid": 1795740731.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "MercoPress",
+          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+          "tid": 1795732200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UY",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
+          "url": "https://www.straitstimes.com/world/united-states/thanksgiving-storm-knocks-out-power-disrupts-flights-on-us-east-coast",
+          "tid": 1795731600.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Thanksgiving storms ground DC flights, knock out power for more than 850K",
+          "url": "https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/",
+          "tid": 1795730480.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Storm hits US East Coast, causing flight delays, power outages",
+          "url": "https://news.cgtn.com/news/2026-11-27/Storm-hits-US-East-Coast-causing-flight-delays-power-outages-1SpdUppphfO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795745088.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "d05d56d9d0",
       "amnen": [
         "usa"
@@ -784,41 +1074,39 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 33.6,
+      "poang": 31.7,
       "vikt": {
-        "bredd": 1.048,
+        "bredd": 0.857,
         "regioner": {
           "afrika": 1,
-          "asien": 4,
+          "asien": 5,
           "mellanostern": 1,
-          "latinamerika": 2,
           "europa": 5,
           "usa": 1
         },
-        "timmar": 57,
+        "timmar": 58,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 14,
+      "antal_kallor": 13,
       "har_primarkalla": false,
       "senast": "2026-11-27T04:37:30+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXdmbfjLNB4Bgi3mS'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSrPDiTg9MSsq4GFU8Am'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.71,
+      "sammanhang": 0.728,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
           "asien",
           "europa",
-          "latinamerika",
           "mellanostern",
           "usa"
         ],
@@ -834,6 +1122,14 @@
             }
           ],
           "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
+              "tid": 1795752689.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "South China Morning Post",
               "land": "HK",
@@ -874,24 +1170,6 @@
               "rubrik": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’",
               "url": "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back?traffic_source=rss",
               "tid": 1795745665.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "El Tiempo",
-              "land": "CO",
-              "rubrik": "Trump cambia de postura frente a Putin y le pide que 'detenga toda agresión militar' contra Europa para facilitar el fin de la guerra en Ucrania",
-              "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/trump-cambia-de-postura-frente-a-putin-y-le-pide-que-detenga-toda-agresion-militar-contra-europa-para-facilitar-el-fin-de-la-guerra-en-ucrania-3604609",
-              "tid": 1795743238.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "Trump y Rutte reclaman a Rusia y Ucrania que eviten acciones que amplíen la guerra",
-              "url": "https://elpais.com/internacional/2026-11-26/trump-y-rutte-reclaman-a-rusia-y-ucrania-que-eviten-acciones-que-amplien-la-guerra.html",
-              "tid": 1795707027.0,
               "statskontrollerad": false
             }
           ],
@@ -968,6 +1246,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The Hindu",
+          "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+          "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
+          "tid": 1795752689.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "South China Morning Post",
           "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
           "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
@@ -1001,18 +1291,6 @@
           "land": "QA",
           "region": "mellanostern",
           "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El Tiempo",
-          "rubrik": "Trump cambia de postura frente a Putin y le pide que 'detenga toda agresión militar' contra Europa para facilitar el fin de la guerra en Ucrania",
-          "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/trump-cambia-de-postura-frente-a-putin-y-le-pide-que-detenga-toda-agresion-militar-contra-europa-para-facilitar-el-fin-de-la-guerra-en-ucrania-3604609",
-          "tid": 1795743238.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CO",
-          "region": "latinamerika",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -1076,18 +1354,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "El País América",
-          "rubrik": "Trump y Rutte reclaman a Rusia y Ucrania que eviten acciones que amplíen la guerra",
-          "url": "https://elpais.com/internacional/2026-11-26/trump-y-rutte-reclaman-a-rusia-y-ucrania-que-eviten-acciones-que-amplien-la-guerra.html",
-          "tid": 1795707027.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Kyiv Independent",
           "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
           "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
@@ -1147,7 +1413,7 @@
           "global": 1,
           "usa": 1
         },
-        "timmar": 88,
+        "timmar": 89,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1159,10 +1425,7 @@
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-11-26T19:44:32+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXe2aTB1uN5MUnXXB'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.654,
@@ -1258,269 +1521,6 @@
         "inget utkast",
         "ingen källkontroll",
         "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "28342cc91e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 30.5,
-      "vikt": {
-        "bredd": 0.52,
-        "regioner": {
-          "asien": 5,
-          "europa": 1,
-          "latinamerika": 1,
-          "usa": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T02:22:02+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.579,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "latinamerika",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US storm brings severe flooding, power outages on Thanksgiving; Midwest and Northeast hit - Watch",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-              "tid": 1795746122.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Major storm batters U.S. on Thanksgiving holiday; 400 flights cancelled",
-              "url": "https://www.thehindu.com/news/international/major-storm-batters-us-on-thanksgiving-holiday-400-flights-cancelled/article71749233.ece",
-              "tid": 1795745513.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Major storm batters US on Thanksgiving holiday, disrupting flights and power",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3375968/major-storm-batters-us-thanksgiving-holiday-disrupting-flights-and-power",
-              "tid": 1795743853.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
-              "url": "https://www.straitstimes.com/world/united-states/thanksgiving-storm-knocks-out-power-disrupts-flights-on-us-east-coast",
-              "tid": 1795731600.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Storm hits US East Coast, causing flight delays, power outages",
-              "url": "https://news.cgtn.com/news/2026-11-27/Storm-hits-US-East-Coast-causing-flight-delays-power-outages-1SpdUppphfO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795745088.0,
-              "statskontrollerad": true
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Major Thanksgiving storm brings flooding, flight delays across US",
-              "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795740731.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795732200.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Thanksgiving storms ground DC flights, knock out power for more than 850K",
-              "url": "https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/",
-              "tid": 1795730480.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-              "tid": 1795695869.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Thanksgiving storms ground DC flights, knock out power for more than 850K",
-              "url": "https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/",
-              "tid": 1795730480.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "NPR",
-              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-              "tid": 1795695869.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US storm brings severe flooding, power outages on Thanksgiving; Midwest and Northeast hit - Watch",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US storm brings severe flooding, power outages on Thanksgiving; Midwest and Northeast hit - Watch",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-          "tid": 1795746122.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Major storm batters U.S. on Thanksgiving holiday; 400 flights cancelled",
-          "url": "https://www.thehindu.com/news/international/major-storm-batters-us-on-thanksgiving-holiday-400-flights-cancelled/article71749233.ece",
-          "tid": 1795745513.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Major storm batters US on Thanksgiving holiday, disrupting flights and power",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3375968/major-storm-batters-us-thanksgiving-holiday-disrupting-flights-and-power",
-          "tid": 1795743853.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Major Thanksgiving storm brings flooding, flight delays across US",
-          "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795740731.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "MercoPress",
-          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-          "tid": 1795732200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UY",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
-          "url": "https://www.straitstimes.com/world/united-states/thanksgiving-storm-knocks-out-power-disrupts-flights-on-us-east-coast",
-          "tid": 1795731600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Thanksgiving storms ground DC flights, knock out power for more than 850K",
-          "url": "https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/",
-          "tid": 1795730480.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-          "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-          "tid": 1795695869.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Storm hits US East Coast, causing flight delays, power outages",
-          "url": "https://news.cgtn.com/news/2026-11-27/Storm-hits-US-East-Coast-causing-flight-delays-power-outages-1SpdUppphfO/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795745088.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
       ],
       "data": null
     },
@@ -1637,7 +1637,7 @@
       "amnen_sektion": [
         "rymd"
       ],
-      "poang": 30.0,
+      "poang": 30.1,
       "vikt": {
         "bredd": 0.599,
         "regioner": {
@@ -1647,7 +1647,7 @@
           "asien": 1,
           "mellanostern": 1
         },
-        "timmar": 35,
+        "timmar": 36,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1824,299 +1824,17 @@
       "data": null
     },
     {
-      "id": "6b6cd7d5af",
-      "amnen": [
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 29.9,
-      "vikt": {
-        "bredd": 0.462,
-        "regioner": {
-          "asien": 4,
-          "mellanostern": 1,
-          "usa": 4
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T21:28:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.579,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Bangkok Post",
-              "land": "TH",
-              "rubrik": "Govt defends 18% US tariff proposal",
-              "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
-              "tid": 1795728480.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-              "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-              "tid": 1795678927.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Yonhap",
-              "land": "KR",
-              "rubrik": "Trade commission proposes antidumping tariffs on PVC suspension from China",
-              "url": "https://en.yna.co.kr/view/AEN20261126003900320",
-              "tid": 1795667402.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
-              "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
-              "tid": 1795628418.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "What will Trump’s latest tariffs mean for the world?",
-              "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
-              "tid": 1795719195.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-              "tid": 1795693427.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Reason",
-              "land": "US",
-              "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
-              "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
-              "tid": 1795623346.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
-              "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
-              "tid": 1795682520.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
-              "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
-              "tid": 1795627465.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": {
-          "bla": [
-            {
-              "kalla": "NPR",
-              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-              "tid": 1795693427.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
-              "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
-              "tid": 1795627465.0,
-              "lutning": "lutar_vanster"
-            }
-          ],
-          "rod": [
-            {
-              "kalla": "Reason",
-              "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
-              "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
-              "tid": 1795623346.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
-              "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
-              "tid": 1795682520.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Govt defends 18% US tariff proposal",
-      "kallor": [
-        {
-          "namn": "Bangkok Post",
-          "rubrik": "Govt defends 18% US tariff proposal",
-          "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
-          "tid": 1795728480.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TH",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "What will Trump’s latest tariffs mean for the world?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
-          "tid": 1795719195.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-          "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-          "tid": 1795693427.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-          "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-          "tid": 1795678927.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Yonhap",
-          "rubrik": "Trade commission proposes antidumping tariffs on PVC suspension from China",
-          "url": "https://en.yna.co.kr/view/AEN20261126003900320",
-          "tid": 1795667402.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "KR",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
-          "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
-          "tid": 1795628418.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Reason",
-          "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
-          "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
-          "tid": 1795623346.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
-          "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
-          "tid": 1795682520.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
-          "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
-          "tid": 1795627465.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "30c554df30",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 29.7,
+      "poang": 29.8,
       "vikt": {
         "bredd": 0.546,
         "regioner": {
           "mellanostern": 3,
           "asien": 2
         },
-        "timmar": 75,
+        "timmar": 76,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2259,6 +1977,193 @@
         "inget utkast",
         "ingen källkontroll",
         "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "ce1f86080f",
+      "amnen": [
+        "energi",
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "energi",
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 29.6,
+      "vikt": {
+        "bredd": 0.435,
+        "regioner": {
+          "europa": 2,
+          "usa": 2,
+          "norden": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T02:40:44+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.697,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "norden",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+              "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
+              "tid": 1795747244.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Russia opposes granting Ukraine security guarantees modeled on NATO’s Article 5, RBC-Ukraine reports",
+              "url": "https://meduza.io/en/news/2026/11/26/russia-opposes-granting-ukraine-security-guarantees-modeled-on-nato-s-article-5-rbc-ukraine-reports",
+              "tid": 1795712452.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+              "tid": 1795709567.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
+              "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
+              "tid": 1795699011.0,
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
+              "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
+              "tid": 1795667507.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "CNBC",
+              "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+              "tid": 1795709567.0,
+              "lutning": "mitten"
+            }
+          ],
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
+              "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
+              "tid": 1795699011.0,
+              "lutning": "hoger"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+      "kallor": [
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+          "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
+          "tid": 1795747244.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Russia opposes granting Ukraine security guarantees modeled on NATO’s Article 5, RBC-Ukraine reports",
+          "url": "https://meduza.io/en/news/2026/11/26/russia-opposes-granting-ukraine-security-guarantees-modeled-on-nato-s-article-5-rbc-ukraine-reports",
+          "tid": 1795712452.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+          "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+          "tid": 1795709567.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
+          "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
+          "tid": 1795699011.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
+          "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
+          "tid": 1795667507.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2682,109 +2587,6 @@
       "data": null
     },
     {
-      "id": "ce1f86080f",
-      "amnen": [
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 28.8,
-      "vikt": {
-        "bredd": 0.348,
-        "regioner": {
-          "europa": 1,
-          "norden": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T02:40:44+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.68,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "norden"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
-              "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
-              "tid": 1795747244.0,
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
-              "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
-              "tid": 1795667507.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
-      "kallor": [
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
-          "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
-          "tid": 1795747244.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
-          "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
-          "tid": 1795667507.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "c2adcbcf9a",
       "amnen": [
         "ai",
@@ -2801,7 +2603,7 @@
           "usa": 2,
           "asien": 1
         },
-        "timmar": 85,
+        "timmar": 86,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2910,7 +2712,216 @@
       "data": null
     },
     {
-      "id": "6aa5d4d22d",
+      "id": "47f8cd2f00",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 28.5,
+      "vikt": {
+        "bredd": 0.292,
+        "regioner": {
+          "usa": 2,
+          "asien": 2,
+          "europa": 1,
+          "sverige": 1
+        },
+        "timmar": 51,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "samarbete"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:31:48+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.666,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "sverige",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+              "tid": 1795751471.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Trump open to Putin attending G20 in Florida next month",
+              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
+              "tid": 1795746845.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+              "tid": 1795742663.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump says Putin can come to G20 if he wants",
+              "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
+              "tid": 1795739815.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
+              "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795730780.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Dagens industri",
+              "land": "SE",
+              "rubrik": "Putin välkomnas till G20 av Trump",
+              "url": "https://www.di.se/live/putin-valkomnas-till-g20-av-trump/",
+              "tid": 1795753908.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+              "tid": 1795751471.0,
+              "lutning": "mitten"
+            }
+          ],
+          "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Trump open to Putin attending G20 in Florida next month",
+              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
+              "tid": 1795746845.0,
+              "lutning": "lutar_hoger"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+      "kallor": [
+        {
+          "namn": "The Hill",
+          "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+          "tid": 1795751471.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Trump open to Putin attending G20 in Florida next month",
+          "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
+          "tid": 1795746845.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+          "tid": 1795742663.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump says Putin can come to G20 if he wants",
+          "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
+          "tid": 1795739815.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
+          "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
+          "tid": 1795730780.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens industri",
+          "rubrik": "Putin välkomnas till G20 av Trump",
+          "url": "https://www.di.se/live/putin-valkomnas-till-g20-av-trump/",
+          "tid": 1795753908.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "f89d953fad",
       "amnen": [
         "varlden"
       ],
@@ -3012,14 +3023,14 @@
       "id": "1689b7acb6",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.1,
+      "poang": 28.2,
       "vikt": {
         "bredd": 0.487,
         "regioner": {
           "mellanostern": 3,
           "asien": 1
         },
-        "timmar": 59,
+        "timmar": 60,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3150,7 +3161,7 @@
       "id": "8ee2a985ff",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.1,
+      "poang": 28.2,
       "vikt": {
         "bredd": 0.275,
         "regioner": {
@@ -3158,7 +3169,7 @@
           "europa": 1,
           "global": 1
         },
-        "timmar": 48,
+        "timmar": 49,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3290,19 +3301,247 @@
       "data": null
     },
     {
+      "id": "4d74407a0e",
+      "amnen": [
+        "halvledare",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "halvledare",
+        "usa"
+      ],
+      "poang": 28.1,
+      "vikt": {
+        "bredd": 0.477,
+        "regioner": {
+          "asien": 5,
+          "usa": 2,
+          "mellanostern": 1
+        },
+        "timmar": 30,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 8,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:15:06+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.45,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Huawei guilty on 10 counts in US trial; Nvidia’s Jensen Huang returns: SCMP’s 7 highlights",
+              "url": "https://www.scmp.com/news/world/article/3375979/huawei-guilty-10-counts-us-trial-nvidias-jensen-huang-returns-scmps-7-highlights",
+              "tid": 1795752906.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
+              "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-attend-groundbreaking-of-arizona-chip-facility-supplying-nvidia-and-other-companies-jensen-huang-row-101795743869809.html",
+              "tid": 1795746365.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Trump insists Nvidia CEO not a security threat",
+              "url": "https://www.channelnewsasia.com/world/donald-trump-jensen-huang-nvidia-security-threat-6586401",
+              "tid": 1795744678.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump insists Nvidia CEO Jensen Huang not a security threat",
+              "url": "https://www.straitstimes.com/world/united-states/trump-insists-nvidia-ceo-jensen-huang-not-a-security-threat",
+              "tid": 1795743300.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "President Donald Trump insists Nvidia CEO not a security threat",
+              "url": "https://www.thehindu.com/news/international/president-donald-trump-insists-nvidia-ceo-not-a-security-threat/article71749200.ece",
+              "tid": 1795743095.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Tom's Hardware",
+              "land": "US",
+              "rubrik": "Trump says a pardon for Nvidia CEO Jensen Huang is 'always an option'",
+              "url": "https://www.tomshardware.com/tech-industry/big-tech/trump-says-a-pardon-for-nvidia-ceo-jensen-huang-is-always-an-option-urges-him-not-to-plead-the-fifth-ahead-of-house-committee-grilling",
+              "tid": 1795690800.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Daily Caller",
+              "land": "US",
+              "rubrik": "GOP Senator Says Trump’s Nvidia Intervention Sets ‘Dangerous Precedent’",
+              "url": "https://dailycaller.com/2026/11/25/dave-mccormick-trump-nvidia-huang-dangerous-precedent",
+              "tid": 1795656098.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Will Nvidia's Jensen Huang be sworn in during Congress testimony?",
+              "url": "https://www.thenationalnews.com/future/technology/2026/11/25/when-will-jensen-huang-testify-in-congress/",
+              "tid": 1795629618.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Huawei guilty on 10 counts in US trial; Nvidia’s Jensen Huang returns: SCMP’s 7 highlights",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Huawei guilty on 10 counts in US trial; Nvidia’s Jensen Huang returns: SCMP’s 7 highlights",
+          "url": "https://www.scmp.com/news/world/article/3375979/huawei-guilty-10-counts-us-trial-nvidias-jensen-huang-returns-scmps-7-highlights",
+          "tid": 1795752906.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Trump to attend groundbreaking of Arizona chip facility supplying Nvidia, others amid Jensen Huang row",
+          "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-attend-groundbreaking-of-arizona-chip-facility-supplying-nvidia-and-other-companies-jensen-huang-row-101795743869809.html",
+          "tid": 1795746365.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNA",
+          "rubrik": "Trump insists Nvidia CEO not a security threat",
+          "url": "https://www.channelnewsasia.com/world/donald-trump-jensen-huang-nvidia-security-threat-6586401",
+          "tid": 1795744678.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump insists Nvidia CEO Jensen Huang not a security threat",
+          "url": "https://www.straitstimes.com/world/united-states/trump-insists-nvidia-ceo-jensen-huang-not-a-security-threat",
+          "tid": 1795743300.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "President Donald Trump insists Nvidia CEO not a security threat",
+          "url": "https://www.thehindu.com/news/international/president-donald-trump-insists-nvidia-ceo-not-a-security-threat/article71749200.ece",
+          "tid": 1795743095.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Tom's Hardware",
+          "rubrik": "Trump says a pardon for Nvidia CEO Jensen Huang is 'always an option'",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/trump-says-a-pardon-for-nvidia-ceo-jensen-huang-is-always-an-option-urges-him-not-to-plead-the-fifth-ahead-of-house-committee-grilling",
+          "tid": 1795690800.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Daily Caller",
+          "rubrik": "GOP Senator Says Trump’s Nvidia Intervention Sets ‘Dangerous Precedent’",
+          "url": "https://dailycaller.com/2026/11/25/dave-mccormick-trump-nvidia-huang-dangerous-precedent",
+          "tid": 1795656098.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Will Nvidia's Jensen Huang be sworn in during Congress testimony?",
+          "url": "https://www.thenationalnews.com/future/technology/2026/11/25/when-will-jensen-huang-testify-in-congress/",
+          "tid": 1795629618.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "96241d9e22",
       "amnen": [
         "afrika",
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 27.7,
+      "poang": 27.8,
       "vikt": {
         "bredd": 0.286,
         "regioner": {
           "afrika": 2
         },
-        "timmar": 87,
+        "timmar": 88,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3387,340 +3626,10 @@
       "data": null
     },
     {
-      "id": "47f8cd2f00",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 27.7,
-      "vikt": {
-        "bredd": 0.215,
-        "regioner": {
-          "usa": 2,
-          "asien": 2,
-          "europa": 1
-        },
-        "timmar": 50,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "samarbete"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T03:51:11+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.643,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-              "tid": 1795751471.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Trump open to Putin attending G20 in Florida next month",
-              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
-              "tid": 1795746845.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-              "tid": 1795742663.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Trump says Putin can come to G20 if he wants",
-              "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
-              "tid": 1795739815.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
-              "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795730780.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-              "tid": 1795751471.0,
-              "lutning": "mitten"
-            }
-          ],
-          "rod": [
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "Trump open to Putin attending G20 in Florida next month",
-              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
-              "tid": 1795746845.0,
-              "lutning": "lutar_hoger"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-      "kallor": [
-        {
-          "namn": "The Hill",
-          "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-          "tid": 1795751471.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "Trump open to Putin attending G20 in Florida next month",
-          "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
-          "tid": 1795746845.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-          "tid": 1795742663.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Trump says Putin can come to G20 if he wants",
-          "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
-          "tid": 1795739815.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
-          "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795730780.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "b317c781c3",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 27.6,
-      "vikt": {
-        "bredd": 0.23,
-        "regioner": {
-          "mellanostern": 1,
-          "usa": 2,
-          "europa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T19:09:39+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.803,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
-              "url": "https://www.aljazeera.com/news/2026/11/26/judge-strikes-down-trumps-latest-restrictions-on-us-birthright-citizenship?traffic_source=rss",
-              "tid": 1795720179.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Reason",
-              "land": "US",
-              "rubrik": "Second District Court Rules Against Trump's New Birthright Citizenship Executive Order",
-              "url": "https://reason.com/volokh/2026/11/26/second-district-court-rules-against-trumps-new-birthright-citizenship-executive-order/",
-              "tid": 1795706431.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Trump's birthright citizenship restrictions struck down again by DC federal judge he called 'hater'",
-              "url": "https://www.foxnews.com/politics/trumps-birthright-citizenship-restrictions-struck-down-dc-federal-judge-called-hater",
-              "tid": 1795643291.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Judge rejects Trump’s latest attempt to restrict birthright citizenship",
-              "url": "https://english.elpais.com/usa/2026-11-26/judge-rejects-trumps-latest-attempt-to-restrict-birthright-citizenship.html",
-              "tid": 1795685662.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
-          "url": "https://www.aljazeera.com/news/2026/11/26/judge-strikes-down-trumps-latest-restrictions-on-us-birthright-citizenship?traffic_source=rss",
-          "tid": 1795720179.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Reason",
-          "rubrik": "Second District Court Rules Against Trump's New Birthright Citizenship Executive Order",
-          "url": "https://reason.com/volokh/2026/11/26/second-district-court-rules-against-trumps-new-birthright-citizenship-executive-order/",
-          "tid": 1795706431.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País (English)",
-          "rubrik": "Judge rejects Trump’s latest attempt to restrict birthright citizenship",
-          "url": "https://english.elpais.com/usa/2026-11-26/judge-rejects-trumps-latest-attempt-to-restrict-birthright-citizenship.html",
-          "tid": 1795685662.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Trump's birthright citizenship restrictions struck down again by DC federal judge he called 'hater'",
-          "url": "https://www.foxnews.com/politics/trumps-birthright-citizenship-restrictions-struck-down-dc-federal-judge-called-hater",
-          "tid": 1795643291.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "ea7defd56e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.4,
+      "poang": 27.6,
       "vikt": {
         "bredd": 0.616,
         "regioner": {
@@ -3729,7 +3638,7 @@
           "norden": 1,
           "asien": 1
         },
-        "timmar": 18,
+        "timmar": 19,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3883,6 +3792,133 @@
       "data": null
     },
     {
+      "id": "77d552b34b",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 27.5,
+      "vikt": {
+        "bredd": 0.222,
+        "regioner": {
+          "mellanostern": 1,
+          "asien": 1,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T03:49:08+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.554,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Trump downplays Russia, China support for Iran during talks with US troops",
+              "url": "https://www.aljazeera.com/news/2026/11/27/trump-downplays-russia-china-support-for-iran-during-talks-with-us-troops?traffic_source=rss",
+              "tid": 1795751348.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Trump says Russia, China give Iran little intelligence help, both want conflict to end",
+              "url": "https://www.hindustantimes.com/world-news/trump-says-russia-china-give-iran-little-intelligence-help-both-want-conflict-to-end-101795746727890.html",
+              "tid": 1795751138.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Trump: Iran war will be over 'sort of whenever I want it to be'",
+              "url": "https://thehill.com/homenews/administration/6245034-trump-says-iran-war-ends-whenever/",
+              "tid": 1795743700.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump downplays Russia, China support for Iran during talks with US troops",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Trump downplays Russia, China support for Iran during talks with US troops",
+          "url": "https://www.aljazeera.com/news/2026/11/27/trump-downplays-russia-china-support-for-iran-during-talks-with-us-troops?traffic_source=rss",
+          "tid": 1795751348.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Trump says Russia, China give Iran little intelligence help, both want conflict to end",
+          "url": "https://www.hindustantimes.com/world-news/trump-says-russia-china-give-iran-little-intelligence-help-both-want-conflict-to-end-101795746727890.html",
+          "tid": 1795751138.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Trump: Iran war will be over 'sort of whenever I want it to be'",
+          "url": "https://thehill.com/homenews/administration/6245034-trump-says-iran-war-ends-whenever/",
+          "tid": 1795743700.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "9c2e4a7f4d",
       "amnen": [
         "energi",
@@ -4026,62 +4062,76 @@
       "data": null
     },
     {
-      "id": "8055b26aef",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.2,
+      "id": "6b6cd7d5af",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 27.3,
       "vikt": {
-        "bredd": 0.345,
+        "bredd": 0.196,
         "regioner": {
-          "mellanostern": 2,
-          "asien": 1
+          "asien": 3,
+          "usa": 1
         },
-        "timmar": 67,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-11-26T17:36:31+00:00",
+      "senast": "2026-11-26T21:28:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.575,
+      "sammanhang": 0.524,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "mellanostern"
+          "usa"
         ],
         "per_region": {
-          "mellanostern": [
+          "asien": [
             {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Iraq closes two border crossings in Kurdistan region with Syria and Iran",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iraq-closes-two-border-crossings-kurdistan-region-syria-and-iran",
-              "tid": 1795714591.0,
+              "kalla": "Bangkok Post",
+              "land": "TH",
+              "rubrik": "Govt defends 18% US tariff proposal",
+              "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
+              "tid": 1795728480.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "How Baghdad's takeover of Kurdistan oil can be detrimental for Iraq and the region",
-              "url": "https://www.thenationalnews.com/opinion/comment/2026/11/26/iraq-kurdistan-oil-us-erbil/",
-              "tid": 1795701600.0,
-              "statskontrollerad": true
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
+              "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
+              "tid": 1795678927.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
+              "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
+              "tid": 1795628418.0,
+              "statskontrollerad": false
             }
           ],
-          "asien": [
+          "usa": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Iraq closes two border crossings in Kurdistan region with Syria and Iran",
-              "url": "https://www.straitstimes.com/world/middle-east/iraq-closes-two-border-crossings-in-kurdistan-region-with-syria-and-iran",
-              "tid": 1795714002.0,
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+              "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+              "tid": 1795666338.0,
               "statskontrollerad": false
             }
           ]
@@ -4091,159 +4141,37 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Iraq closes two border crossings in Kurdistan region with Syria and Iran",
+      "reserv_rubrik": "Govt defends 18% US tariff proposal",
       "kallor": [
         {
-          "namn": "Middle East Eye",
-          "rubrik": "Iraq closes two border crossings in Kurdistan region with Syria and Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iraq-closes-two-border-crossings-kurdistan-region-syria-and-iran",
-          "tid": 1795714591.0,
+          "namn": "Bangkok Post",
+          "rubrik": "Govt defends 18% US tariff proposal",
+          "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
+          "tid": 1795728480.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Iraq closes two border crossings in Kurdistan region with Syria and Iran",
-          "url": "https://www.straitstimes.com/world/middle-east/iraq-closes-two-border-crossings-in-kurdistan-region-with-syria-and-iran",
-          "tid": 1795714002.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
+          "land": "TH",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The National",
-          "rubrik": "How Baghdad's takeover of Kurdistan oil can be detrimental for Iraq and the region",
-          "url": "https://www.thenationalnews.com/opinion/comment/2026/11/26/iraq-kurdistan-oil-us-erbil/",
-          "tid": 1795701600.0,
+          "namn": "Hindustan Times",
+          "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
+          "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
+          "tid": 1795678927.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "1144b74f38",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.2,
-      "vikt": {
-        "bredd": 0.213,
-        "regioner": {
-          "asien": 1,
-          "usa": 1,
-          "europa": 1,
-          "sverige": 1
-        },
-        "timmar": 91,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T03:06:45+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.552,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "sverige",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Zelenskyy says Russia preparing new mass strike in coming days",
-              "url": "https://www.channelnewsasia.com/world/russia-ukraine-zelenskyy-mass-strike-warning-6585961",
-              "tid": 1795748805.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-              "tid": 1795746349.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
-              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795733367.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Zelenskyj: Ryssland förbereder nya massiva anfall",
-              "url": "https://www.di.se/nyheter/zelenskyj-ryssland-forbereder-nya-massiva-anfall/",
-              "tid": 1795726462.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Zelenskyy says Russia preparing new mass strike in coming days",
-      "kallor": [
-        {
-          "namn": "CNA",
-          "rubrik": "Zelenskyy says Russia preparing new mass strike in coming days",
-          "url": "https://www.channelnewsasia.com/world/russia-ukraine-zelenskyy-mass-strike-warning-6585961",
-          "tid": 1795748805.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
+          "land": "IN",
           "region": "asien",
-          "agare": "statlig",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Fox News",
-          "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-          "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-          "tid": 1795746349.0,
+          "namn": "CNBC",
+          "rubrik": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+          "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+          "tid": 1795666338.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -4252,38 +4180,27 @@
           "statskontrollerad": false
         },
         {
-          "namn": "BBC World",
-          "rubrik": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
-          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795733367.0,
+          "namn": "The Hindu",
+          "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
+          "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
+          "tid": 1795628418.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Zelenskyj: Ryssland förbereder nya massiva anfall",
-          "url": "https://www.di.se/nyheter/zelenskyj-ryssland-forbereder-nya-massiva-anfall/",
-          "tid": 1795726462.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
+          "land": "IN",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
+        "sv": 1,
         "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -4295,14 +4212,14 @@
       "amnen_sektion": [
         "geopolitik"
       ],
-      "poang": 27.1,
+      "poang": 27.2,
       "vikt": {
         "bredd": 0.283,
         "regioner": {
           "asien": 4,
           "europa": 1
         },
-        "timmar": 76,
+        "timmar": 77,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4449,18 +4366,286 @@
       "data": null
     },
     {
+      "id": "9141cdfe75",
+      "amnen": [
+        "geopolitik",
+        "halvledare"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "halvledare"
+      ],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.138,
+        "regioner": {
+          "asien": 2,
+          "usa": 1
+        },
+        "timmar": 45,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T22:00:16+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.597,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Laila Khawaja on how the Jensen Huang saga resets the US-China tech rivalry",
+              "url": "https://www.scmp.com/tech/tech-war/article/3375909/laila-khawaja-how-jensen-huang-saga-resets-us-china-tech-rivalry",
+              "tid": 1795730416.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
+              "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
+              "tid": 1795684501.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Tom's Hardware",
+              "land": "US",
+              "rubrik": "US defense officials considered using Cold War law to force Nvidia to reinstate Jensen Huang as CEO following his resignation, report claims",
+              "url": "https://www.tomshardware.com/tech-industry/big-tech/us-defense-officials-considered-using-cold-war-law-to-force-nvidia-to-reinstate-jensen-huang-as-ceo-following-his-resignation-report-claims-1950-defense-production-act-was-floated-as-solution-to-president-trump",
+              "tid": 1795699051.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Laila Khawaja on how the Jensen Huang saga resets the US-China tech rivalry",
+      "kallor": [
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Laila Khawaja on how the Jensen Huang saga resets the US-China tech rivalry",
+          "url": "https://www.scmp.com/tech/tech-war/article/3375909/laila-khawaja-how-jensen-huang-saga-resets-us-china-tech-rivalry",
+          "tid": 1795730416.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Tom's Hardware",
+          "rubrik": "US defense officials considered using Cold War law to force Nvidia to reinstate Jensen Huang as CEO following his resignation, report claims",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/us-defense-officials-considered-using-cold-war-law-to-force-nvidia-to-reinstate-jensen-huang-as-ceo-following-his-resignation-report-claims-1950-defense-production-act-was-floated-as-solution-to-president-trump",
+          "tid": 1795699051.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "After Jensen Huang, another Nvidia executive's relationship with top official at firm linked to China in focus",
+          "url": "https://www.hindustantimes.com/world-news/nvidia-executive-relationship-jay-puri-cenly-chen-super-micro-linked-to-china-ai-chips-jensen-huang-row-101795684107490.html",
+          "tid": 1795684501.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "78f126d517",
+      "amnen": [
+        "halvledare",
+        "marknader",
+        "startups",
+        "teknik"
+      ],
+      "amnen_sektion": [
+        "halvledare",
+        "marknader"
+      ],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.08,
+        "regioner": {
+          "usa": 4
+        },
+        "timmar": 52,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T17:00:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.621,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Tom's Hardware",
+              "land": "US",
+              "rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
+              "url": "https://www.tomshardware.com/tech-industry/credit-rating-agency-puts-nvidia-on-notice-for-possible-downgrade-s-and-p-global-ratings-says-board-members-may-have-compromised-their-independence",
+              "tid": 1795712400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+              "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+              "tid": 1795663184.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+              "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+              "tid": 1795646672.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Information",
+              "land": "US",
+              "rubrik": "S&P Discovers Nvidia’s Governance Lapses",
+              "url": "https://www.theinformation.com/articles/s-p-discovers-nvidias-governance-lapses",
+              "tid": 1795645876.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
+      "kallor": [
+        {
+          "namn": "Tom's Hardware",
+          "rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
+          "url": "https://www.tomshardware.com/tech-industry/credit-rating-agency-puts-nvidia-on-notice-for-possible-downgrade-s-and-p-global-ratings-says-board-members-may-have-compromised-their-independence",
+          "tid": 1795712400.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+          "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+          "tid": 1795663184.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "TechCrunch",
+          "rubrik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+          "tid": 1795646672.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Information",
+          "rubrik": "S&P Discovers Nvidia’s Governance Lapses",
+          "url": "https://www.theinformation.com/articles/s-p-discovers-nvidias-governance-lapses",
+          "tid": 1795645876.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "c98b3aa1aa",
       "amnen": [
         "asien"
       ],
       "amnen_sektion": [],
-      "poang": 26.0,
+      "poang": 26.1,
       "vikt": {
         "bredd": 0.118,
         "regioner": {
           "asien": 2
         },
-        "timmar": 42,
+        "timmar": 43,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4554,13 +4739,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 24.5,
+      "poang": 24.6,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 56,
+        "timmar": 57,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4651,7 +4836,7 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 22.8,
+      "poang": 23.1,
       "vikt": {
         "bredd": 0.259,
         "regioner": {
@@ -4659,7 +4844,7 @@
           "europa": 1,
           "mellanostern": 1
         },
-        "timmar": 14,
+        "timmar": 15,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4781,13 +4966,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 22.5,
+      "poang": 22.6,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 33,
+        "timmar": 34,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4877,14 +5062,14 @@
       "amnen_sektion": [
         "spel"
       ],
-      "poang": 21.2,
+      "poang": 21.5,
       "vikt": {
         "bredd": 0.097,
         "regioner": {
           "sverige": 1,
           "usa": 1
         },
-        "timmar": 14,
+        "timmar": 15,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4980,13 +5165,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.2,
+      "poang": 20.4,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 20,
+        "timmar": 21,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5079,13 +5264,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.2,
+      "poang": 20.4,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 20,
+        "timmar": 21,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5178,13 +5363,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 19.1,
+      "poang": 19.4,
       "vikt": {
         "bredd": 0.246,
         "regioner": {
           "sverige": 3
         },
-        "timmar": 12,
+        "timmar": 13,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5287,137 +5472,19 @@
       "data": null
     },
     {
-      "id": "f73d9b950e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 18.8,
-      "vikt": {
-        "bredd": 0.125,
-        "regioner": {
-          "europa": 2,
-          "usa": 1
-        },
-        "timmar": 7,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T03:00:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.665,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "Politico Europe",
-              "land": "BE",
-              "rubrik": "Spain’s looming right-wing pivot on climate is already playing out in Valencia",
-              "url": "https://www.politico.eu/article/spain-looming-right-wing-pivot-on-climate-is-already-playing-out-in-valencia/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-              "tid": 1795748400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Sanchez's big gamble: Will Spain swing from Socialists to hard right?",
-              "url": "https://www.france24.com/en/tv-shows/the-debate/20261126-sanchez-s-big-gamble-will-spain-swing-from-socialists-to-hard-right",
-              "tid": 1795726436.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Opinion | Sánchez and Socialists Poised to Lose Power in Spain",
-              "url": "https://www.wsj.com/opinion/sanchez-and-socialists-poised-to-lose-power-in-spain-4ccd535d?mod=rss_worldnews",
-              "tid": 1795716180.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Spain’s looming right-wing pivot on climate is already playing out in Valencia",
-      "kallor": [
-        {
-          "namn": "Politico Europe",
-          "rubrik": "Spain’s looming right-wing pivot on climate is already playing out in Valencia",
-          "url": "https://www.politico.eu/article/spain-looming-right-wing-pivot-on-climate-is-already-playing-out-in-valencia/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "tid": 1795748400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BE",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Sanchez's big gamble: Will Spain swing from Socialists to hard right?",
-          "url": "https://www.france24.com/en/tv-shows/the-debate/20261126-sanchez-s-big-gamble-will-spain-swing-from-socialists-to-hard-right",
-          "tid": 1795726436.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Opinion | Sánchez and Socialists Poised to Lose Power in Spain",
-          "url": "https://www.wsj.com/opinion/sanchez-and-socialists-poised-to-lose-power-in-spain-4ccd535d?mod=rss_worldnews",
-          "tid": 1795716180.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "69a3d214dd",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 15.1,
+      "poang": 16.8,
       "vikt": {
         "bredd": 0.355,
         "regioner": {
           "latinamerika": 2,
           "europa": 2
         },
-        "timmar": 1,
+        "timmar": 2,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5542,6 +5609,250 @@
         "inget utkast",
         "ingen källkontroll",
         "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "fbed80bbe6",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 12.4,
+      "vikt": {
+        "bredd": 0.092,
+        "regioner": {
+          "sverige": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "miljo"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:30:04+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "Linköpingsforskaren hoppfull trots kraschad klimatförhandling",
+              "url": "https://www.svt.se/nyheter/lokalt/ost/linkopingsforskaren-hoppfull-trots-kraschad-forhandling",
+              "tid": 1795753804.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Linköpingsforskaren hoppfull trots kraschad klimatförhandling",
+      "kallor": [
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "Linköpingsforskaren hoppfull trots kraschad klimatförhandling",
+          "url": "https://www.svt.se/nyheter/lokalt/ost/linkopingsforskaren-hoppfull-trots-kraschad-forhandling",
+          "tid": 1795753804.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "8af21b2d9c",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:32:18+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": "NO",
+              "rubrik": "Ny togstasjon: 780 nye sykkelplasser og ingen parkeringsplass",
+              "url": "https://www.nrk.no/ostfold/bygger-ny-togstasjon-i-moss-uten-parkeringsplasser-1.18088204",
+              "tid": 1795753938.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Ny togstasjon: 780 nye sykkelplasser og ingen parkeringsplass",
+      "kallor": [
+        {
+          "namn": "NRK",
+          "rubrik": "Ny togstasjon: 780 nye sykkelplasser og ingen parkeringsplass",
+          "url": "https://www.nrk.no/ostfold/bygger-ny-togstasjon-i-moss-uten-parkeringsplasser-1.18088204",
+          "tid": 1795753938.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NO",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "ece2d79992",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:08:45+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": "NO",
+              "rubrik": "Reagerer på at utøvarar tviheld på eigne trenarar: – Det byrjar å bli vaksne folk",
+              "url": "https://www.nrk.no/sport/langrenn_-tidlegare-landslagstrenar-arild-monsen-reagerer-pa-at-utovarar-tviheld-pa-eigne-trenarar-1.18089159",
+              "tid": 1795752525.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Reagerer på at utøvarar tviheld på eigne trenarar: – Det byrjar å bli vaksne folk",
+      "kallor": [
+        {
+          "namn": "NRK",
+          "rubrik": "Reagerer på at utøvarar tviheld på eigne trenarar: – Det byrjar å bli vaksne folk",
+          "url": "https://www.nrk.no/sport/langrenn_-tidlegare-landslagstrenar-arild-monsen-reagerer-pa-at-utovarar-tviheld-pa-eigne-trenarar-1.18089159",
+          "tid": 1795752525.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NO",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
       ],
       "data": null
     },
@@ -5787,255 +6098,13 @@
         "färre än två svenska källor"
       ],
       "data": null
-    },
-    {
-      "id": "f18b6ac1b0",
-      "amnen": [
-        "norden",
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:47:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "RÚV English",
-              "land": "IS",
-              "rubrik": "Civil Defence response plan remains in effect following major cyberattacks",
-              "url": "https://www.ruv.is/english/2026-11-26-civil-defence-response-plan-remains-in-effect-following-major-cyberattacks-494125/",
-              "tid": 1795715220.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Civil Defence response plan remains in effect following major cyberattacks",
-      "kallor": [
-        {
-          "namn": "RÚV English",
-          "rubrik": "Civil Defence response plan remains in effect following major cyberattacks",
-          "url": "https://www.ruv.is/english/2026-11-26-civil-defence-response-plan-remains-in-effect-following-major-cyberattacks-494125/",
-          "tid": 1795715220.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IS",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "9f1fe8b951",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:21:24+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "NRK",
-              "land": "NO",
-              "rubrik": "Influensa­utbrotet er i gang: – Ikkje for seint å bli vaksinert før jul",
-              "url": "https://www.nrk.no/mr/influensautbrotet-er-i-gang_-fhi-og-legar-anbefaler-folk-a-ta-vaksinen-snarast-mogleg-1.18089314",
-              "tid": 1795713684.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Influensa­utbrotet er i gang: – Ikkje for seint å bli vaksinert før jul",
-      "kallor": [
-        {
-          "namn": "NRK",
-          "rubrik": "Influensa­utbrotet er i gang: – Ikkje for seint å bli vaksinert før jul",
-          "url": "https://www.nrk.no/mr/influensautbrotet-er-i-gang_-fhi-og-legar-anbefaler-folk-a-ta-vaksinen-snarast-mogleg-1.18089314",
-          "tid": 1795713684.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NO",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "7455c2ce98",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:18:18+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "TV 2 er sigtet i forbindelse med 'Den Sorte Svane'",
-              "url": "https://www.dr.dk/nyheder/seneste/tv-2-er-sigtet-i-forbindelse-med-den-sorte-svane",
-              "tid": 1795713498.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "TV 2 er sigtet i forbindelse med 'Den Sorte Svane'",
-      "kallor": [
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "TV 2 er sigtet i forbindelse med 'Den Sorte Svane'",
-          "url": "https://www.dr.dk/nyheder/seneste/tv-2-er-sigtet-i-forbindelse-med-den-sorte-svane",
-          "tid": 1795713498.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 59,
+      "artiklar": 64,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -6047,7 +6116,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 81,
+      "artiklar": 78,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6071,7 +6140,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 29,
+      "artiklar": 28,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -6149,13 +6218,13 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 26,
+      "artiklar": 25,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
       "id": "elpais",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 13,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
     },
     {
@@ -6179,13 +6248,13 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 49,
+      "artiklar": 45,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 19,
+      "artiklar": 18,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
@@ -6197,7 +6266,7 @@
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 36,
+      "artiklar": 33,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
@@ -6215,7 +6284,7 @@
     {
       "id": "cnbc",
       "ok": true,
-      "artiklar": 27,
+      "artiklar": 25,
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
@@ -6227,7 +6296,7 @@
     {
       "id": "nasa",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 4,
       "url": "https://www.nasa.gov/news-release/feed/"
     },
     {
@@ -6251,7 +6320,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 44,
+      "artiklar": 46,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -6273,7 +6342,7 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 41,
+      "artiklar": 40,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -6321,7 +6390,7 @@
     {
       "id": "mit-tr",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 2,
       "url": "https://www.technologyreview.com/feed/"
     },
     {
@@ -6333,13 +6402,13 @@
     {
       "id": "ars",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 9,
       "url": "https://feeds.arstechnica.com/arstechnica/index"
     },
     {
       "id": "techcrunch",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://techcrunch.com/feed/"
     },
     {
@@ -6351,7 +6420,7 @@
     {
       "id": "robot-report",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 1,
       "url": "https://www.therobotreport.com/feed/"
     },
     {
@@ -6393,13 +6462,13 @@
     {
       "id": "carbonbrief",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 0,
       "url": "https://www.carbonbrief.org/feed/"
     },
     {
       "id": "breaking-defense",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 3,
       "url": "https://breakingdefense.com/feed/"
     },
     {
@@ -6504,13 +6573,13 @@
     {
       "id": "axios",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 8,
       "url": "https://www.axios.com/feeds/feed.rss"
     },
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 1,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -6533,7 +6602,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6545,7 +6614,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 19,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -6557,7 +6626,7 @@
     {
       "id": "sifted",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 9,
       "url": "https://sifted.eu/feed"
     },
     {
@@ -6581,7 +6650,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 49,
+      "artiklar": 45,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -6599,7 +6668,7 @@
     {
       "id": "mercopress",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 9,
       "url": "https://en.mercopress.com/rss"
     },
     {
@@ -6623,7 +6692,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 79,
+      "artiklar": 78,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -6635,13 +6704,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 32,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 35,
+      "artiklar": 34,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -6653,7 +6722,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 38,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -6665,7 +6734,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 81,
+      "artiklar": 79,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6683,7 +6752,7 @@
     {
       "id": "tehrantimes",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 18,
       "url": "https://www.tehrantimes.com/rss"
     },
     {
@@ -6707,7 +6776,7 @@
     {
       "id": "dawn",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 29,
       "url": "https://www.dawn.com/feeds/home"
     },
     {
@@ -6737,13 +6806,13 @@
     {
       "id": "dr",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 19,
       "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
     },
     {
       "id": "ruv",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://www.ruv.is/rss/english"
     },
     {
@@ -6767,7 +6836,7 @@
     {
       "id": "meduza",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 19,
       "url": "https://meduza.io/rss/en/all"
     },
     {
@@ -6821,7 +6890,7 @@
     {
       "id": "hrw",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 5,
       "url": "https://www.hrw.org/rss/news"
     },
     {
@@ -6851,7 +6920,7 @@
     {
       "id": "mongabay",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 17,
       "url": "https://news.mongabay.com/feed/"
     },
     {
