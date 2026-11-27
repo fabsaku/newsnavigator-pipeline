@@ -1,259 +1,128 @@
 {
-  "skapad": "2026-11-27T16:08:32.331641+00:00",
+  "skapad": "2026-11-27T17:06:59.101071+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
-      "id": "ca3941b094",
+      "id": "969b07bb89",
       "amnen": [
-        "geopolitik",
         "usa"
       ],
       "amnen_sektion": [
-        "geopolitik",
         "usa"
       ],
-      "poang": 32.6,
+      "poang": 30.7,
       "vikt": {
-        "bredd": 0.432,
+        "bredd": 0.63,
         "regioner": {
-          "usa": 4,
-          "asien": 4,
-          "europa": 2
+          "mellanostern": 4,
+          "asien": 1
         },
-        "timmar": 96,
+        "timmar": 78,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "samarbete"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 10,
+      "antal_kallor": 5,
       "har_primarkalla": false,
-      "senast": "2026-11-27T15:54:09+00:00",
+      "senast": "2026-11-27T16:13:07+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTiiW2qRxSveT46izDzb'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChToJVGMgsAujeztDsSHg'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.737,
+      "sammanhang": 0.723,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "europa",
-          "usa"
+          "mellanostern"
         ],
         "per_region": {
-          "usa": [
+          "mellanostern": [
             {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
-              "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
-              "tid": 1795794849.0,
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Trump backs Iraqi PM’s oil smuggling crackdown",
+              "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown?traffic_source=rss",
+              "tid": 1795795987.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Hill",
+              "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
-              "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
-              "tid": 1795791600.0,
+              "rubrik": "Trump backs Iraqi leader's efforts to assert more state authority",
+              "url": "https://www.al-monitor.com/originals/2026/11/trump-backs-iraqi-leaders-efforts-assert-more-state-authority",
+              "tid": 1795780000.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "New York Post",
-              "land": "US",
-              "rubrik": "Trump says Putin can come to G20 if he wants: ‘I’d like to have him’",
-              "url": "https://nypost.com/2026/11/27/us-news/trump-says-putin-can-come-to-g20-if-he-wants-id-like-to-have-him/",
-              "tid": 1795759116.0,
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Trump backs Iraqi prime minister's attempts to bring all arms under state control",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-backs-iraqi-prime-ministers-attempts-bring-all-arms-under-state",
+              "tid": 1795776703.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
-              "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
-              "tid": 1795784125.0,
-              "statskontrollerad": false
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Trump backs Iraq's Al Zaidi in fight against oil smuggling",
+              "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
+              "tid": 1795792503.0,
+              "statskontrollerad": true
             }
           ],
           "asien": [
             {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "Zelenskyy says Trump's relationship with Putin like being friends with Hitler",
-              "url": "https://www.abc.net.au/news/2026-11-27/zelenskyy-says-trump-putin-relationship-like-being-friend-hitler/107437062",
-              "tid": 1795779675.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Zelensky says Trump calling Putin ‘my friend’ is like being buddies with Hitler in WWII",
-              "url": "https://www.scmp.com/news/world/europe/article/3376046/zelensky-says-trump-calling-putin-my-friend-being-buddies-hitler-wwii",
-              "tid": 1795771359.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The Straits Times",
               "land": "SG",
-              "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
-              "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
-              "tid": 1795768017.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-              "tid": 1795742663.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "‘He’s an aggressor and a killer. He can’t be a friend’: Zelensky likens Trump calling Putin his friend to calling Hitler a friend during World War II",
-              "url": "https://meduza.io/en/news/2026/11/27/he-s-an-aggressor-and-a-killer-he-can-t-be-a-friend-zelensky-likens-trump-calling-putin-his-friend-to-calling-hitler-a-friend-during-world-war-ii",
-              "tid": 1795778680.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795770468.0,
+              "rubrik": "Trump says supports Iraqi leader’s efforts to curb oil-smuggling",
+              "url": "https://www.straitstimes.com/world/united-states/trump-says-supports-iraqi-leaders-efforts-to-curb-oil-smuggling",
+              "tid": 1795779540.0,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
-              "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
-              "tid": 1795794849.0,
-              "lutning": "lutar_hoger"
-            },
-            {
-              "kalla": "New York Post",
-              "rubrik": "Trump says Putin can come to G20 if he wants: ‘I’d like to have him’",
-              "url": "https://nypost.com/2026/11/27/us-news/trump-says-putin-can-come-to-g20-if-he-wants-id-like-to-have-him/",
-              "tid": 1795759116.0,
-              "lutning": "hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
-              "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
-              "tid": 1795791600.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
-              "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
-              "tid": 1795784125.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
+      "reserv_rubrik": "Trump backs Iraqi PM’s oil smuggling crackdown",
       "kallor": [
         {
-          "namn": "Washington Examiner",
-          "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
-          "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
-          "tid": 1795794849.0,
+          "namn": "Al Jazeera",
+          "rubrik": "Trump backs Iraqi PM’s oil smuggling crackdown",
+          "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown?traffic_source=rss",
+          "tid": 1795795987.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Trump backs Iraqi leader's efforts to assert more state authority",
+          "url": "https://www.al-monitor.com/originals/2026/11/trump-backs-iraqi-leaders-efforts-assert-more-state-authority",
+          "tid": 1795780000.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
-          "region": "usa",
+          "region": "mellanostern",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
-          "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
-          "tid": 1795791600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "ABC News (Australien)",
-          "rubrik": "Zelenskyy says Trump's relationship with Putin like being friends with Hitler",
-          "url": "https://www.abc.net.au/news/2026-11-27/zelenskyy-says-trump-putin-relationship-like-being-friend-hitler/107437062",
-          "tid": 1795779675.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AU",
-          "region": "asien",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "‘He’s an aggressor and a killer. He can’t be a friend’: Zelensky likens Trump calling Putin his friend to calling Hitler a friend during World War II",
-          "url": "https://meduza.io/en/news/2026/11/27/he-s-an-aggressor-and-a-killer-he-can-t-be-a-friend-zelensky-likens-trump-calling-putin-his-friend-to-calling-hitler-a-friend-during-world-war-ii",
-          "tid": 1795778680.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Zelensky says Trump calling Putin ‘my friend’ is like being buddies with Hitler in WWII",
-          "url": "https://www.scmp.com/news/world/europe/article/3376046/zelensky-says-trump-calling-putin-my-friend-being-buddies-hitler-wwii",
-          "tid": 1795771359.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795770468.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
           "statskontrollerad": false
         },
         {
           "namn": "The Straits Times",
-          "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
-          "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
-          "tid": 1795768017.0,
+          "rubrik": "Trump says supports Iraqi leader’s efforts to curb oil-smuggling",
+          "url": "https://www.straitstimes.com/world/united-states/trump-says-supports-iraqi-leaders-efforts-to-curb-oil-smuggling",
+          "tid": 1795779540.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
@@ -262,269 +131,26 @@
           "statskontrollerad": false
         },
         {
-          "namn": "New York Post",
-          "rubrik": "Trump says Putin can come to G20 if he wants: ‘I’d like to have him’",
-          "url": "https://nypost.com/2026/11/27/us-news/trump-says-putin-can-come-to-g20-if-he-wants-id-like-to-have-him/",
-          "tid": 1795759116.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-          "tid": 1795742663.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
-          "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
-          "tid": 1795784125.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "spärrord: killer",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "28342cc91e",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 30.0,
-      "vikt": {
-        "bredd": 0.467,
-        "regioner": {
-          "europa": 4,
-          "asien": 2,
-          "latinamerika": 1,
-          "usa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 8,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T12:02:48+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTiiW16WokeQLF4BSvWH'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.611,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "latinamerika",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-              "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
-              "tid": 1795780968.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "King tides batter US coasts as storms threaten Thanksgiving celebrations",
-              "url": "https://www.theguardian.com/us-news/2026/nov/27/king-tides-us-coasts-storms-threaten-thanksgiving-celebrations",
-              "tid": 1795776648.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
-              "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
-              "tid": 1795769517.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
-              "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
-              "tid": 1795763922.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-              "tid": 1795746122.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Storms disrupt US Thanksgiving holiday travel",
-              "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795731751.0,
-              "statskontrollerad": true
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795732200.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-              "tid": 1795695869.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-      "kallor": [
-        {
-          "namn": "France 24",
-          "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-          "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
-          "tid": 1795780968.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "King tides batter US coasts as storms threaten Thanksgiving celebrations",
-          "url": "https://www.theguardian.com/us-news/2026/nov/27/king-tides-us-coasts-storms-threaten-thanksgiving-celebrations",
-          "tid": 1795776648.0,
+          "namn": "Middle East Eye",
+          "rubrik": "Trump backs Iraqi prime minister's attempts to bring all arms under state control",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-backs-iraqi-prime-ministers-attempts-bring-all-arms-under-state",
+          "tid": 1795776703.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
-          "region": "europa",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "El País (English)",
-          "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
-          "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
-          "tid": 1795769517.0,
+          "namn": "The National",
+          "rubrik": "Trump backs Iraq's Al Zaidi in fight against oil smuggling",
+          "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
+          "tid": 1795792503.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "ES",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-          "tid": 1795746122.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "MercoPress",
-          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-          "tid": 1795732200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UY",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-          "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-          "tid": 1795695869.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
-          "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
-          "tid": 1795763922.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Storms disrupt US Thanksgiving holiday travel",
-          "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795731751.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
+          "land": "AE",
+          "region": "mellanostern",
           "agare": "statlig",
           "statskontrollerad": true
         }
@@ -536,7 +162,8 @@
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "blind fläck"
       ],
       "data": null
     },
@@ -552,7 +179,7 @@
           "afrika": 1,
           "asien": 1
         },
-        "timmar": 90,
+        "timmar": 91,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -564,7 +191,7 @@
       "senast": "2026-11-27T13:16:28+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTiiW45Jf1Ri71z9px7S'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChToJVJ6gTWns6kWbZwea'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -715,7 +342,7 @@
       "senast": "2026-11-27T10:23:12+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTiiW26CEpCBqDkNVMh9'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChToJVHMFQ4yTGAP8Aud7'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -809,6 +436,720 @@
         "inget utkast",
         "ingen källkontroll",
         "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "ca3941b094",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 29.4,
+      "vikt": {
+        "bredd": 0.412,
+        "regioner": {
+          "usa": 3,
+          "asien": 4,
+          "europa": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 9,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T15:54:09+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChToJVJqFXnwbHTcETqKr'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.777,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
+              "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
+              "tid": 1795794849.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
+              "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
+              "tid": 1795791600.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
+              "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
+              "tid": 1795784125.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "Zelenskyy says Trump's relationship with Putin like being friends with Hitler",
+              "url": "https://www.abc.net.au/news/2026-11-27/zelenskyy-says-trump-putin-relationship-like-being-friend-hitler/107437062",
+              "tid": 1795779675.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Zelensky says Trump calling Putin ‘my friend’ is like being buddies with Hitler in WWII",
+              "url": "https://www.scmp.com/news/world/europe/article/3376046/zelensky-says-trump-calling-putin-my-friend-being-buddies-hitler-wwii",
+              "tid": 1795771359.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
+              "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
+              "tid": 1795768017.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+              "tid": 1795742663.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "‘He’s an aggressor and a killer. He can’t be a friend’: Zelensky likens Trump calling Putin his friend to calling Hitler a friend during World War II",
+              "url": "https://meduza.io/en/news/2026/11/27/he-s-an-aggressor-and-a-killer-he-can-t-be-a-friend-zelensky-likens-trump-calling-putin-his-friend-to-calling-hitler-a-friend-during-world-war-ii",
+              "tid": 1795778680.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795770468.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
+              "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
+              "tid": 1795794849.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
+              "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
+              "tid": 1795791600.0,
+              "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
+              "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
+              "tid": 1795784125.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
+      "kallor": [
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
+          "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
+          "tid": 1795794849.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
+          "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
+          "tid": 1795791600.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "Zelenskyy says Trump's relationship with Putin like being friends with Hitler",
+          "url": "https://www.abc.net.au/news/2026-11-27/zelenskyy-says-trump-putin-relationship-like-being-friend-hitler/107437062",
+          "tid": 1795779675.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "‘He’s an aggressor and a killer. He can’t be a friend’: Zelensky likens Trump calling Putin his friend to calling Hitler a friend during World War II",
+          "url": "https://meduza.io/en/news/2026/11/27/he-s-an-aggressor-and-a-killer-he-can-t-be-a-friend-zelensky-likens-trump-calling-putin-his-friend-to-calling-hitler-a-friend-during-world-war-ii",
+          "tid": 1795778680.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Zelensky says Trump calling Putin ‘my friend’ is like being buddies with Hitler in WWII",
+          "url": "https://www.scmp.com/news/world/europe/article/3376046/zelensky-says-trump-calling-putin-my-friend-being-buddies-hitler-wwii",
+          "tid": 1795771359.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795770468.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
+          "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
+          "tid": 1795768017.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+          "tid": 1795742663.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
+          "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
+          "tid": 1795784125.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "spärrord: killer",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "50972be9bf",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 29.3,
+      "vikt": {
+        "bredd": 0.396,
+        "regioner": {
+          "mellanostern": 1,
+          "asien": 3,
+          "europa": 1,
+          "usa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T16:33:21+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.66,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Israel’s Eisenkot accuses Netanyahu’s party of stalling coalition talks",
+              "url": "https://www.aljazeera.com/news/2026/11/27/israels-eisenkot-accuses-netanyahus-party-of-stalling-coalition-talks?traffic_source=rss",
+              "tid": 1795797201.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Eisenkot accuses Netanyahu’s party of stalling Israeli coalition talks",
+              "url": "https://www.straitstimes.com/world/middle-east/eisenkot-accuses-netanyahus-party-of-stalling-israeli-coalition-talks",
+              "tid": 1795793991.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Israel’s democrat leader backs Eisenkot coalition bid, vows to ‘replace Netanyahu and defend democracy’",
+              "url": "https://www.hindustantimes.com/world-news/gadi-eisenkot-reaches-coalition-deal-with-israel-s-left-wing-democrats-in-bid-to-replace-netanyahu-101795716259444.html",
+              "tid": 1795719211.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Israel's Gadi Eisenkot reaches deal with left-wing parties",
+              "url": "https://www.thehindu.com/news/international/israels-gadi-eisenkot-reaches-deal-with-left-wing-parties/article71747775.ece",
+              "tid": 1795709804.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Israel's Eisenkot reaches deal with left-wing faction as coalition talks gain steam",
+              "url": "https://www.france24.com/en/video/20261127-israel-s-eisenkot-reaches-deal-with-left-wing-faction-as-coalition-talks-gain-steam",
+              "tid": 1795779393.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+              "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
+              "tid": 1795714841.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Israel’s Eisenkot accuses Netanyahu’s party of stalling coalition talks",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Israel’s Eisenkot accuses Netanyahu’s party of stalling coalition talks",
+          "url": "https://www.aljazeera.com/news/2026/11/27/israels-eisenkot-accuses-netanyahus-party-of-stalling-coalition-talks?traffic_source=rss",
+          "tid": 1795797201.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Eisenkot accuses Netanyahu’s party of stalling Israeli coalition talks",
+          "url": "https://www.straitstimes.com/world/middle-east/eisenkot-accuses-netanyahus-party-of-stalling-israeli-coalition-talks",
+          "tid": 1795793991.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Israel's Eisenkot reaches deal with left-wing faction as coalition talks gain steam",
+          "url": "https://www.france24.com/en/video/20261127-israel-s-eisenkot-reaches-deal-with-left-wing-faction-as-coalition-talks-gain-steam",
+          "tid": 1795779393.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Israel’s democrat leader backs Eisenkot coalition bid, vows to ‘replace Netanyahu and defend democracy’",
+          "url": "https://www.hindustantimes.com/world-news/gadi-eisenkot-reaches-coalition-deal-with-israel-s-left-wing-democrats-in-bid-to-replace-netanyahu-101795716259444.html",
+          "tid": 1795719211.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Israel's Gadi Eisenkot reaches deal with left-wing parties",
+          "url": "https://www.thehindu.com/news/international/israels-gadi-eisenkot-reaches-deal-with-left-wing-parties/article71747775.ece",
+          "tid": 1795709804.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+          "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
+          "tid": 1795714841.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "28342cc91e",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 29.1,
+      "vikt": {
+        "bredd": 0.606,
+        "regioner": {
+          "usa": 1,
+          "europa": 4,
+          "asien": 2,
+          "latinamerika": 1,
+          "mellanostern": 1
+        },
+        "timmar": 56,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 9,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T16:58:29+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.657,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
+              "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
+              "tid": 1795797250.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
+              "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
+              "tid": 1795796336.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
+              "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
+              "tid": 1795780968.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+              "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
+              "tid": 1795769517.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
+              "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
+              "tid": 1795763922.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+              "tid": 1795746122.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Storms disrupt US Thanksgiving holiday travel",
+              "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795731751.0,
+              "statskontrollerad": true
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "tid": 1795732200.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Thanksgiving storms batter US, leaving hundreds of thousands without power",
+              "url": "https://www.thenationalnews.com/news/us/2026/11/27/thanksgiving-storms-flight-delays-cancellations/",
+              "tid": 1795798709.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Storms continue across the country amid Thanksgiving week flooding",
+      "kallor": [
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
+          "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
+          "tid": 1795797250.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
+          "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
+          "tid": 1795796336.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
+          "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
+          "tid": 1795780968.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País (English)",
+          "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+          "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
+          "tid": 1795769517.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+          "tid": 1795746122.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "MercoPress",
+          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+          "tid": 1795732200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UY",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
+          "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
+          "tid": 1795763922.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Thanksgiving storms batter US, leaving hundreds of thousands without power",
+          "url": "https://www.thenationalnews.com/news/us/2026/11/27/thanksgiving-storms-flight-delays-cancellations/",
+          "tid": 1795798709.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Storms disrupt US Thanksgiving holiday travel",
+          "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795731751.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -1255,6 +1596,107 @@
       "data": null
     },
     {
+      "id": "be4f138522",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 28.7,
+      "vikt": {
+        "bredd": 0.12,
+        "regioner": {
+          "global": 1,
+          "usa": 1
+        },
+        "timmar": 79,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "rattigheter"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T16:55:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.635,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "global",
+          "usa"
+        ],
+        "per_region": {
+          "global": [
+            {
+              "kalla": "Amnesty International",
+              "land": "GB",
+              "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+              "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
+              "tid": 1795709724.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
+              "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
+              "tid": 1795712100.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+      "kallor": [
+        {
+          "namn": "Amnesty International",
+          "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+          "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
+          "tid": 1795709724.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "global",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
+          "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
+          "tid": 1795712100.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "b7446b8a47",
       "amnen": [],
       "amnen_sektion": [],
@@ -1266,7 +1708,7 @@
           "afrika": 1,
           "europa": 1
         },
-        "timmar": 88,
+        "timmar": 89,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1416,6 +1858,217 @@
       "data": null
     },
     {
+      "id": "d05d56d9d0",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 28.6,
+      "vikt": {
+        "bredd": 0.435,
+        "regioner": {
+          "asien": 3,
+          "afrika": 1,
+          "europa": 2,
+          "usa": 1
+        },
+        "timmar": 75,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T07:51:27+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.693,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
+              "tid": 1795765887.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
+              "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
+              "tid": 1795749166.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
+              "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
+              "tid": 1795748958.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-27-trump-says-he-asked-putin-to-pull-back-military-aggression-throughout-europe/",
+              "tid": 1795754250.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Jared Kushner says Putin has shown ‘restraint’ in Ukraine and promised not to use nuclear weapons",
+              "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
+              "tid": 1795707472.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+              "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
+              "tid": 1795747317.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+              "tid": 1795716480.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+          "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
+          "tid": 1795765887.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-27-trump-says-he-asked-putin-to-pull-back-military-aggression-throughout-europe/",
+          "tid": 1795754250.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
+          "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
+          "tid": 1795749166.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
+          "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
+          "tid": 1795748958.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Jared Kushner says Putin has shown ‘restraint’ in Ukraine and promised not to use nuclear weapons",
+          "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
+          "tid": 1795707472.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+          "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
+          "tid": 1795747317.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+          "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+          "tid": 1795716480.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "740b9e408e",
       "amnen": [
         "ai",
@@ -1435,7 +2088,7 @@
           "usa": 1,
           "europa": 1
         },
-        "timmar": 45,
+        "timmar": 46,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1609,7 +2262,7 @@
           "usa": 2,
           "asien": 3
         },
-        "timmar": 56,
+        "timmar": 57,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1858,14 +2511,14 @@
       "id": "552757a4e0",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.9,
+      "poang": 28.0,
       "vikt": {
         "bredd": 0.159,
         "regioner": {
           "asien": 1,
           "global": 1
         },
-        "timmar": 60,
+        "timmar": 61,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1954,18 +2607,18 @@
       "data": null
     },
     {
-      "id": "50972be9bf",
+      "id": "016d700c0b",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 27.8,
+      "poang": 27.9,
       "vikt": {
-        "bredd": 0.254,
+        "bredd": 0.259,
         "regioner": {
-          "asien": 3,
           "europa": 1,
-          "usa": 1
+          "asien": 1,
+          "mellanostern": 1
         },
         "timmar": 96,
         "konsekvens": null,
@@ -1974,65 +2627,49 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 5,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-27T15:39:51+00:00",
+      "senast": "2026-11-27T16:35:11+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.636,
+      "sammanhang": 0.62,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
           "europa",
-          "usa"
+          "mellanostern"
         ],
         "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Eisenkot accuses Netanyahu’s party of stalling Israeli coalition talks",
-              "url": "https://www.straitstimes.com/world/middle-east/eisenkot-accuses-netanyahus-party-of-stalling-israeli-coalition-talks",
-              "tid": 1795793991.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Israel’s democrat leader backs Eisenkot coalition bid, vows to ‘replace Netanyahu and defend democracy’",
-              "url": "https://www.hindustantimes.com/world-news/gadi-eisenkot-reaches-coalition-deal-with-israel-s-left-wing-democrats-in-bid-to-replace-netanyahu-101795716259444.html",
-              "tid": 1795719211.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Israel's Gadi Eisenkot reaches deal with left-wing parties",
-              "url": "https://www.thehindu.com/news/international/israels-gadi-eisenkot-reaches-deal-with-left-wing-parties/article71747775.ece",
-              "tid": 1795709804.0,
-              "statskontrollerad": false
-            }
-          ],
           "europa": [
             {
               "kalla": "France 24",
               "land": "FR",
-              "rubrik": "Israel's Eisenkot reaches deal with left-wing faction as coalition talks gain steam",
-              "url": "https://www.france24.com/en/video/20261127-israel-s-eisenkot-reaches-deal-with-left-wing-faction-as-coalition-talks-gain-steam",
-              "tid": 1795779393.0,
+              "rubrik": "France: Macron lashes out at Le Pen’s ‘arrogance’",
+              "url": "https://www.france24.com/en/video/20261127-france-macron-lashes-out-at-le-pen-s-arrogance",
+              "tid": 1795797311.0,
               "statskontrollerad": false
             }
           ],
-          "usa": [
+          "asien": [
             {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
-              "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
-              "tid": 1795714841.0,
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "France’s far-right Le Pen backs protege over anti-Semitism allegations",
+              "url": "https://www.straitstimes.com/world/europe/frances-far-right-le-pen-backs-protege-over-anti-semitism-allegations",
+              "tid": 1795786980.0,
               "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "What would French foreign policy look like under Marine Le Pen presidency?",
+              "url": "https://www.thenationalnews.com/news/europe/2026/11/27/what-would-french-foreign-policy-look-like-under-a-marine-le-pen-presidency/",
+              "tid": 1795759201.0,
+              "statskontrollerad": true
             }
           ]
         },
@@ -2041,25 +2678,13 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Eisenkot accuses Netanyahu’s party of stalling Israeli coalition talks",
+      "reserv_rubrik": "France: Macron lashes out at Le Pen’s ‘arrogance’",
       "kallor": [
         {
-          "namn": "The Straits Times",
-          "rubrik": "Eisenkot accuses Netanyahu’s party of stalling Israeli coalition talks",
-          "url": "https://www.straitstimes.com/world/middle-east/eisenkot-accuses-netanyahus-party-of-stalling-israeli-coalition-talks",
-          "tid": 1795793991.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "France 24",
-          "rubrik": "Israel's Eisenkot reaches deal with left-wing faction as coalition talks gain steam",
-          "url": "https://www.france24.com/en/video/20261127-israel-s-eisenkot-reaches-deal-with-left-wing-faction-as-coalition-talks-gain-steam",
-          "tid": 1795779393.0,
+          "rubrik": "France: Macron lashes out at Le Pen’s ‘arrogance’",
+          "url": "https://www.france24.com/en/video/20261127-france-macron-lashes-out-at-le-pen-s-arrogance",
+          "tid": 1795797311.0,
           "betalvagg": false,
           "typ": "media",
           "land": "FR",
@@ -2068,22 +2693,162 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Israel’s democrat leader backs Eisenkot coalition bid, vows to ‘replace Netanyahu and defend democracy’",
-          "url": "https://www.hindustantimes.com/world-news/gadi-eisenkot-reaches-coalition-deal-with-israel-s-left-wing-democrats-in-bid-to-replace-netanyahu-101795716259444.html",
-          "tid": 1795719211.0,
+          "namn": "The Straits Times",
+          "rubrik": "France’s far-right Le Pen backs protege over anti-Semitism allegations",
+          "url": "https://www.straitstimes.com/world/europe/frances-far-right-le-pen-backs-protege-over-anti-semitism-allegations",
+          "tid": 1795786980.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "What would French foreign policy look like under Marine Le Pen presidency?",
+          "url": "https://www.thenationalnews.com/news/europe/2026/11/27/what-would-french-foreign-policy-look-like-under-a-marine-le-pen-presidency/",
+          "tid": 1795759201.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "753ea5581e",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 27.8,
+      "vikt": {
+        "bredd": 0.462,
+        "regioner": {
+          "mellanostern": 2,
+          "asien": 3
+        },
+        "timmar": 29,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "samarbete"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T16:47:22+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.677,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Hamas says son of leader Khalil al-Hayya survived Israeli attack",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-son-leader-khalil-al-hayya-survived-israeli-attack",
+              "tid": 1795795250.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Israel says it killed alleged Hamas members despite Gaza ‘ceasefire’",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/27/israel-says-it-killed-alleged-hamas-members-despite-gaza-ceasefire/",
+              "tid": 1795798042.0,
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Son of Hamas chief survives Israeli strike, Hamas says",
+              "url": "https://www.straitstimes.com/world/middle-east/son-of-hamas-chief-survives-israeli-strike-hamas-says",
+              "tid": 1795789611.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Israel kills nine in Gaza, including Hamas-appointed deputy Education Minister, officials say",
+              "url": "https://www.thehindu.com/news/international/israel-kills-nine-in-gaza-including-hamas-appointed-deputy-education-minister-officials-say/article71747983.ece",
+              "tid": 1795714525.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Israel kills Hamas official overseeing economy, education",
+              "url": "https://news.cgtn.com/news/2026-11-26/news-1SnTCsxOXcI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795674777.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Hamas says son of leader Khalil al-Hayya survived Israeli attack",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Hamas says son of leader Khalil al-Hayya survived Israeli attack",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-son-leader-khalil-al-hayya-survived-israeli-attack",
+          "tid": 1795795250.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Son of Hamas chief survives Israeli strike, Hamas says",
+          "url": "https://www.straitstimes.com/world/middle-east/son-of-hamas-chief-survives-israeli-strike-hamas-says",
+          "tid": 1795789611.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "The Hindu",
-          "rubrik": "Israel's Gadi Eisenkot reaches deal with left-wing parties",
-          "url": "https://www.thehindu.com/news/international/israels-gadi-eisenkot-reaches-deal-with-left-wing-parties/article71747775.ece",
-          "tid": 1795709804.0,
+          "rubrik": "Israel kills nine in Gaza, including Hamas-appointed deputy Education Minister, officials say",
+          "url": "https://www.thehindu.com/news/international/israel-kills-nine-in-gaza-including-hamas-appointed-deputy-education-minister-officials-say/article71747983.ece",
+          "tid": 1795714525.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -2092,22 +2857,34 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Washington Post",
-          "rubrik": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
-          "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
-          "tid": 1795714841.0,
-          "betalvagg": true,
+          "namn": "The National",
+          "rubrik": "Israel says it killed alleged Hamas members despite Gaza ‘ceasefire’",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/27/israel-says-it-killed-alleged-hamas-members-despite-gaza-ceasefire/",
+          "tid": 1795798042.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Israel kills Hamas official overseeing economy, education",
+          "url": "https://news.cgtn.com/news/2026-11-26/news-1SnTCsxOXcI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795674777.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 3
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
@@ -2413,105 +3190,6 @@
       "data": null
     },
     {
-      "id": "fd79350820",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 27.3,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "mellanostern": 1,
-          "asien": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T12:00:22+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.634,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Saudi strike kills ’11 civilians’ in Yemen’s Taiz: Houthi media",
-              "url": "https://www.aljazeera.com/news/2026/11/27/saudi-strike-kills-11-civilians-in-yemens-taiz-houthi-media?traffic_source=rss",
-              "tid": 1795780822.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Yemen's Houthi-held capital hit after group targets Riyadh",
-              "url": "https://www.thehindu.com/news/international/yemens-houthi-held-capital-hit-after-group-targets-riyadh/article71748008.ece",
-              "tid": 1795714774.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Saudi strike kills ’11 civilians’ in Yemen’s Taiz: Houthi media",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Saudi strike kills ’11 civilians’ in Yemen’s Taiz: Houthi media",
-          "url": "https://www.aljazeera.com/news/2026/11/27/saudi-strike-kills-11-civilians-in-yemens-taiz-houthi-media?traffic_source=rss",
-          "tid": 1795780822.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Yemen's Houthi-held capital hit after group targets Riyadh",
-          "url": "https://www.thehindu.com/news/international/yemens-houthi-held-capital-hit-after-group-targets-riyadh/article71748008.ece",
-          "tid": 1795714774.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "68b751956e",
       "amnen": [],
       "amnen_sektion": [],
@@ -2522,7 +3200,7 @@
           "afrika": 1,
           "europa": 2
         },
-        "timmar": 87,
+        "timmar": 88,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2729,291 +3407,6 @@
       "data": null
     },
     {
-      "id": "016d700c0b",
-      "amnen": [
-        "europa",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "europa"
-      ],
-      "poang": 26.6,
-      "vikt": {
-        "bredd": 0.413,
-        "regioner": {
-          "europa": 3,
-          "afrika": 1,
-          "asien": 2
-        },
-        "timmar": 50,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T09:29:42+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.535,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "France and Germany push for EU budget deal by year-end as far-right rise threatens Ukraine aid",
-              "url": "https://www.france24.com/en/europe/20261127-france-and-germany-push-for-eu-budget-deal-by-year-end-as-far-right-rise-threatens-ukraine-aid",
-              "tid": 1795767422.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "EU budget talks threatened by upcoming French elections",
-              "url": "https://www.lemonde.fr/en/international/article/2026/11/27/eu-budget-talks-threatened-by-upcoming-french-elections_6789830_4.html",
-              "tid": 1795771782.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "EU budget talks collapse",
-              "url": "https://rt-english.com/news/649394-eu-budget-cuts-kiev-funding/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795734719.0,
-              "statskontrollerad": true
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "France and Germany want deal by year-end to ‘Le Pen-proof’ next EU budget, Ukraine",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-27-france-and-germany-want-deal-by-year-end-to-le-pen-proof-next-eu-budget-and/",
-              "tid": 1795754479.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "France's Macron says Le Pen should be less arrogant after she criticises EU budget talks",
-              "url": "https://www.straitstimes.com/world/europe/frances-macron-says-le-pen-should-be-less-arrogant-after-she-criticises-eu-budget-talks",
-              "tid": 1795736516.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Meloni talks tough on EU budget, warns of Ukraine conflict spillover",
-              "url": "https://news.cgtn.com/news/2026-11-26/Meloni-talks-tough-on-EU-budget-warns-of-Ukraine-conflict-spillover-1SoqyfmquGI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795704022.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "France and Germany push for EU budget deal by year-end as far-right rise threatens Ukraine aid",
-      "kallor": [
-        {
-          "namn": "France 24",
-          "rubrik": "France and Germany push for EU budget deal by year-end as far-right rise threatens Ukraine aid",
-          "url": "https://www.france24.com/en/europe/20261127-france-and-germany-push-for-eu-budget-deal-by-year-end-as-far-right-rise-threatens-ukraine-aid",
-          "tid": 1795767422.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Daily Maverick",
-          "rubrik": "France and Germany want deal by year-end to ‘Le Pen-proof’ next EU budget, Ukraine",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-27-france-and-germany-want-deal-by-year-end-to-le-pen-proof-next-eu-budget-and/",
-          "tid": 1795754479.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "France's Macron says Le Pen should be less arrogant after she criticises EU budget talks",
-          "url": "https://www.straitstimes.com/world/europe/frances-macron-says-le-pen-should-be-less-arrogant-after-she-criticises-eu-budget-talks",
-          "tid": 1795736516.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "EU budget talks threatened by upcoming French elections",
-          "url": "https://www.lemonde.fr/en/international/article/2026/11/27/eu-budget-talks-threatened-by-upcoming-french-elections_6789830_4.html",
-          "tid": 1795771782.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "EU budget talks collapse",
-          "url": "https://rt-english.com/news/649394-eu-budget-cuts-kiev-funding/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795734719.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Meloni talks tough on EU budget, warns of Ukraine conflict spillover",
-          "url": "https://news.cgtn.com/news/2026-11-26/Meloni-talks-tough-on-EU-budget-warns-of-Ukraine-conflict-spillover-1SoqyfmquGI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795704022.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "7f880cb1d0",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.4,
-      "vikt": {
-        "bredd": 0.163,
-        "regioner": {
-          "usa": 1,
-          "mellanostern": 1
-        },
-        "timmar": 84,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T12:50:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.565,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
-              "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550?mod=rss_worldnews",
-              "tid": 1795783800.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Oil set to post weekly gain as Middle East attacks stoke supply concerns",
-              "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/",
-              "tid": 1795765660.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
-      "kallor": [
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
-          "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550?mod=rss_worldnews",
-          "tid": 1795783800.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Oil set to post weekly gain as Middle East attacks stoke supply concerns",
-          "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/",
-          "tid": 1795765660.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
       "id": "109be638ad",
       "amnen": [
         "rymd",
@@ -3028,7 +3421,7 @@
         "regioner": {
           "asien": 2
         },
-        "timmar": 45,
+        "timmar": 46,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3115,174 +3508,6 @@
       "data": null
     },
     {
-      "id": "ed34090204",
-      "amnen": [
-        "ai",
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "halvledare"
-      ],
-      "poang": 26.1,
-      "vikt": {
-        "bredd": 0.262,
-        "regioner": {
-          "usa": 3,
-          "asien": 1,
-          "mellanostern": 1
-        },
-        "timmar": 31,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T20:03:54+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.711,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "Nvidia hits pause on chip shipments to Southeast Asia",
-              "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
-              "tid": 1795723434.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Tom's Hardware",
-              "land": "US",
-              "rubrik": "Nvidia stops AI GPU shipments to Southeast Asia amid purported China cloud access ban, report claims",
-              "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-stops-ai-gpu-shipments-to-southeast-asia-report-claims-data-centers-in-singapore-other-countries-in-trouble-as-commerce-department-requires-cloud-providers-to-obtain-export-license",
-              "tid": 1795708800.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Nvidia Tells Partners to Pause Shipments to Southeast Asia",
-              "url": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0?mod=rss_worldnews",
-              "tid": 1795712760.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Nvidia stops shipping AI servers to four Southeast Asian nations",
-              "url": "https://www.thehindu.com/news/international/nvidia-stops-shipping-ai-servers-to-four-southeast-asian-nations/article71747898.ece",
-              "tid": 1795713972.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Nvidia halts chip shipments to South-East Asia amid US crackdown",
-              "url": "https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/",
-              "tid": 1795672895.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Nvidia hits pause on chip shipments to Southeast Asia",
-      "kallor": [
-        {
-          "namn": "TechCrunch",
-          "rubrik": "Nvidia hits pause on chip shipments to Southeast Asia",
-          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
-          "tid": 1795723434.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Nvidia stops shipping AI servers to four Southeast Asian nations",
-          "url": "https://www.thehindu.com/news/international/nvidia-stops-shipping-ai-servers-to-four-southeast-asian-nations/article71747898.ece",
-          "tid": 1795713972.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Tom's Hardware",
-          "rubrik": "Nvidia stops AI GPU shipments to Southeast Asia amid purported China cloud access ban, report claims",
-          "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-stops-ai-gpu-shipments-to-southeast-asia-report-claims-data-centers-in-singapore-other-countries-in-trouble-as-commerce-department-requires-cloud-providers-to-obtain-export-license",
-          "tid": 1795708800.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Nvidia Tells Partners to Pause Shipments to Southeast Asia",
-          "url": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0?mod=rss_worldnews",
-          "tid": 1795712760.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Nvidia halts chip shipments to South-East Asia amid US crackdown",
-          "url": "https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/",
-          "tid": 1795672895.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "e012cb942a",
       "amnen": [
         "spel"
@@ -3290,14 +3515,14 @@
       "amnen_sektion": [
         "spel"
       ],
-      "poang": 23.7,
+      "poang": 23.9,
       "vikt": {
         "bredd": 0.097,
         "regioner": {
           "sverige": 1,
           "usa": 1
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3386,352 +3611,12 @@
       "data": null
     },
     {
-      "id": "e6a0fe1319",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 22.9,
-      "vikt": {
-        "bredd": 0.334,
-        "regioner": {
-          "asien": 3,
-          "europa": 1,
-          "global": 1
-        },
-        "timmar": 12,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T14:00:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.63,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "global"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Rappler",
-              "land": "PH",
-              "rubrik": "LIVE UPDATES: Rodrigo Duterte on trial at the ICC",
-              "url": "https://www.rappler.com/philippines/rodrigo-duterte-trial-international-criminal-court-hague-updates-videos/",
-              "tid": 1795788000.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Philippines’ Sara Duterte says she does not expect fair ICC trial for her father",
-              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3376071/philippines-sara-duterte-says-she-does-not-expect-fair-icc-trial-her-father",
-              "tid": 1795776592.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Families of slain Filipinos seek justice as Duterte’s ICC trial set to start",
-              "url": "https://www.japantimes.co.jp/news/2026/11/27/asia-pacific/duterte-icc-trial-families/",
-              "tid": 1795746120.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Duterte's ICC trial: What is at stake for the Philippines?",
-              "url": "https://www.dw.com/en/duterte-s-icc-trial-what-is-at-stake-for-the-philippines/a-80075657?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795785780.0,
-              "statskontrollerad": false
-            }
-          ],
-          "global": [
-            {
-              "kalla": "Amnesty International",
-              "land": "GB",
-              "rubrik": "Philippines: Duterte trial a defining test for justice, accountability and future of the ICC",
-              "url": "https://www.amnesty.org/en/latest/news/2026/11/philippines-duterte-trial-a-defining-test-for-justice-accountability-and-future-of-the-icc/",
-              "tid": 1795697201.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "LIVE UPDATES: Rodrigo Duterte on trial at the ICC",
-      "kallor": [
-        {
-          "namn": "Rappler",
-          "rubrik": "LIVE UPDATES: Rodrigo Duterte on trial at the ICC",
-          "url": "https://www.rappler.com/philippines/rodrigo-duterte-trial-international-criminal-court-hague-updates-videos/",
-          "tid": 1795788000.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PH",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Duterte's ICC trial: What is at stake for the Philippines?",
-          "url": "https://www.dw.com/en/duterte-s-icc-trial-what-is-at-stake-for-the-philippines/a-80075657?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795785780.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Philippines’ Sara Duterte says she does not expect fair ICC trial for her father",
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3376071/philippines-sara-duterte-says-she-does-not-expect-fair-icc-trial-her-father",
-          "tid": 1795776592.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Families of slain Filipinos seek justice as Duterte’s ICC trial set to start",
-          "url": "https://www.japantimes.co.jp/news/2026/11/27/asia-pacific/duterte-icc-trial-families/",
-          "tid": 1795746120.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Amnesty International",
-          "rubrik": "Philippines: Duterte trial a defining test for justice, accountability and future of the ICC",
-          "url": "https://www.amnesty.org/en/latest/news/2026/11/philippines-duterte-trial-a-defining-test-for-justice-accountability-and-future-of-the-icc/",
-          "tid": 1795697201.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "9cf461eddf",
-      "amnen": [
-        "energi",
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "energi",
-        "geopolitik"
-      ],
-      "poang": 22.5,
-      "vikt": {
-        "bredd": 0.328,
-        "regioner": {
-          "europa": 1,
-          "usa": 1,
-          "mellanostern": 1,
-          "asien": 2
-        },
-        "timmar": 11,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "samarbete"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T14:03:16+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.544,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Ukraine stops electricity exports as Russian attacks strain power grid",
-              "url": "https://kyivindependent.com/ukraine-stops-electricity-exports-as-russian-attacks-strain-power-grid/",
-              "tid": 1795788196.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-              "tid": 1795746349.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-              "url": "https://www.al-monitor.com/originals/2026/11/iaea-working-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-nuclear",
-              "tid": 1795740387.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-              "url": "https://www.straitstimes.com/world/europe/iaea-working-with-russia-ukraine-on-ceasefire-to-repair-power-link-at-zaporizhzhia-nuclear-plant",
-              "tid": 1795739511.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
-              "url": "https://www.hindustantimes.com/world-news/zelensky-says-russia-preparing-strikes-on-ukraine-s-power-grid-101795727639672.html",
-              "tid": 1795729186.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Ukraine stops electricity exports as Russian attacks strain power grid",
-      "kallor": [
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Ukraine stops electricity exports as Russian attacks strain power grid",
-          "url": "https://kyivindependent.com/ukraine-stops-electricity-exports-as-russian-attacks-strain-power-grid/",
-          "tid": 1795788196.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-          "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-          "tid": 1795746349.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-          "url": "https://www.al-monitor.com/originals/2026/11/iaea-working-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-nuclear",
-          "tid": 1795740387.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-          "url": "https://www.straitstimes.com/world/europe/iaea-working-with-russia-ukraine-on-ceasefire-to-repair-power-link-at-zaporizhzhia-nuclear-plant",
-          "tid": 1795739511.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
-          "url": "https://www.hindustantimes.com/world-news/zelensky-says-russia-preparing-strikes-on-ukraine-s-power-grid-101795727639672.html",
-          "tid": 1795729186.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "b948b9e17f",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 22.2,
+      "poang": 22.5,
       "vikt": {
         "bredd": 0.259,
         "regioner": {
@@ -3739,7 +3624,7 @@
           "europa": 1,
           "mellanostern": 1
         },
-        "timmar": 12,
+        "timmar": 13,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3860,13 +3745,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.8,
+      "poang": 21.9,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 29,
+        "timmar": 30,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3959,13 +3844,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.5,
+      "poang": 21.6,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 27,
+        "timmar": 28,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4058,13 +3943,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.3,
+      "poang": 21.5,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 26,
+        "timmar": 27,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4154,13 +4039,13 @@
       "id": "7241b9616e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 20.0,
+      "poang": 20.4,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 9,
+        "timmar": 10,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4245,233 +4130,19 @@
       "data": null
     },
     {
-      "id": "de1a9e918f",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 17.6,
-      "vikt": {
-        "bredd": 0.262,
-        "regioner": {
-          "sverige": 3
-        },
-        "timmar": 8,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T11:01:11+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.661,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Förre C-ledaren utesluter inte att rösta nej: Äger min egen röst",
-              "url": "https://www.sverigesradio.se/artikel/9351365",
-              "tid": 1795770000.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "SVT Nyheter",
-              "land": "SE",
-              "rubrik": "C-ledamot ska rösta nej till Kristersson: ”Oerhört upprörd”",
-              "url": "https://www.svt.se/nyheter/inrikes/c-toppen-ska-rosta-nej-till-kristersson-oerhort-upprord",
-              "tid": 1795717021.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Förre C-ledaren: ”Beroendet av SD gör mig rädd”",
-              "url": "https://www.dn.se/sverige/forre-c-ledaren-beroendet-av-sd-gor-mig-radd/",
-              "tid": 1795777271.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Förre C-ledaren utesluter inte att rösta nej: Äger min egen röst",
-      "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Förre C-ledaren utesluter inte att rösta nej: Äger min egen röst",
-          "url": "https://www.sverigesradio.se/artikel/9351365",
-          "tid": 1795770000.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "SVT Nyheter",
-          "rubrik": "C-ledamot ska rösta nej till Kristersson: ”Oerhört upprörd”",
-          "url": "https://www.svt.se/nyheter/inrikes/c-toppen-ska-rosta-nej-till-kristersson-oerhort-upprord",
-          "tid": 1795717021.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Förre C-ledaren: ”Beroendet av SD gör mig rädd”",
-          "url": "https://www.dn.se/sverige/forre-c-ledaren-beroendet-av-sd-gor-mig-radd/",
-          "tid": 1795777271.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
-      "id": "ccedcd6e3f",
-      "amnen": [
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 16.2,
-      "vikt": {
-        "bredd": 0.169,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 7,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T09:10:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.959,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Sveriges Radio Ekot",
-              "land": "SE",
-              "rubrik": "Uppgifter: Officer misstänks för brott mot Sveriges säkerhet",
-              "url": "https://www.sverigesradio.se/artikel/9351373",
-              "tid": 1795770600.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Officer vid Försvarsmakten misstänks för brott mot Sveriges säkerhet",
-              "url": "https://www.dn.se/sverige/officer-vid-forsvarsmakten-misstanks-for-brott-mot-sveriges-sakerhet/",
-              "tid": 1795770028.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Uppgifter: Officer misstänks för brott mot Sveriges säkerhet",
-      "kallor": [
-        {
-          "namn": "Sveriges Radio Ekot",
-          "rubrik": "Uppgifter: Officer misstänks för brott mot Sveriges säkerhet",
-          "url": "https://www.sverigesradio.se/artikel/9351373",
-          "tid": 1795770600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Officer vid Försvarsmakten misstänks för brott mot Sveriges säkerhet",
-          "url": "https://www.dn.se/sverige/officer-vid-forsvarsmakten-misstanks-for-brott-mot-sveriges-sakerhet/",
-          "tid": 1795770028.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "53ae3f180f",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 14.4,
+      "poang": 15.7,
       "vikt": {
         "bredd": 0.116,
         "regioner": {
           "europa": 1,
           "asien": 1
         },
-        "timmar": 2,
+        "timmar": 3,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4556,6 +4227,85 @@
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "4859af9e61",
+      "amnen": [
+        "mellanostern",
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 12.9,
+      "vikt": {
+        "bredd": 0.143,
+        "regioner": {
+          "mellanostern": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "samarbete"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T14:00:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Sovereign Wealth Fund Institute wants to bring $60tn purse to G20 investment summit",
+              "url": "https://www.thenationalnews.com/business/2026/11/26/swfi-chairman-wants-to-bring-60tn-purse-to-miami-investment-summit/",
+              "tid": 1795701600.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Sovereign Wealth Fund Institute wants to bring $60tn purse to G20 investment summit",
+      "kallor": [
+        {
+          "namn": "The National",
+          "rubrik": "Sovereign Wealth Fund Institute wants to bring $60tn purse to G20 investment summit",
+          "url": "https://www.thenationalnews.com/business/2026/11/26/swfi-chairman-wants-to-bring-60tn-purse-to-miami-investment-summit/",
+          "tid": 1795701600.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (0)",
+        "bara en region"
       ],
       "data": null
     },
@@ -4666,7 +4416,7 @@
       "maste": false,
       "antal_kallor": 1,
       "har_primarkalla": false,
-      "senast": "2026-11-27T15:54:34+00:00",
+      "senast": "2026-11-27T15:56:24+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
@@ -4683,7 +4433,7 @@
               "land": "SE",
               "rubrik": "Misstänkt huvudman i stor momshärva gripen i Dubai",
               "url": "https://www.di.se/nyheter/misstankt-huvudman-i-stor-momsharva-gripen-i-dubai/",
-              "tid": 1795794874.0,
+              "tid": 1795794984.0,
               "statskontrollerad": false
             }
           ]
@@ -4699,7 +4449,7 @@
           "namn": "Dagens industri",
           "rubrik": "Misstänkt huvudman i stor momshärva gripen i Dubai",
           "url": "https://www.di.se/nyheter/misstankt-huvudman-i-stor-momsharva-gripen-i-dubai/",
-          "tid": 1795794874.0,
+          "tid": 1795794984.0,
           "betalvagg": true,
           "typ": "media",
           "land": "SE",
@@ -4720,6 +4470,248 @@
         "bara en region",
         "färre än två svenska källor",
         "spärrord: gripen, misstänkt"
+      ],
+      "data": null
+    },
+    {
+      "id": "629fea1d39",
+      "amnen": [
+        "norden",
+        "sverige"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T16:31:24+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "RÚV English",
+              "land": "IS",
+              "rubrik": "RÚV English Radio - THE SETTLEMENT EXHIBITION AT CHRISTMAS",
+              "url": "https://www.ruv.is/english/2026-11-27-ruv-english-radio-the-settlement-exhibition-at-christmas-494266/",
+              "tid": 1795797084.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "RÚV English Radio - THE SETTLEMENT EXHIBITION AT CHRISTMAS",
+      "kallor": [
+        {
+          "namn": "RÚV English",
+          "rubrik": "RÚV English Radio - THE SETTLEMENT EXHIBITION AT CHRISTMAS",
+          "url": "https://www.ruv.is/english/2026-11-27-ruv-english-radio-the-settlement-exhibition-at-christmas-494266/",
+          "tid": 1795797084.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IS",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "dd9f32fe29",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T16:21:09+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Otte migranter døde i forsøget på at nå Europa",
+              "url": "https://www.dr.dk/nyheder/seneste/otte-migranter-doede-i-forsoeget-paa-naa-europa",
+              "tid": 1795796469.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Otte migranter døde i forsøget på at nå Europa",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Otte migranter døde i forsøget på at nå Europa",
+          "url": "https://www.dr.dk/nyheder/seneste/otte-migranter-doede-i-forsoeget-paa-naa-europa",
+          "tid": 1795796469.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "e109638c84",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T16:13:30+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Styrelse følger sikkerhedsbrud hos teleudbyder - flere organisationer ventes ramt",
+              "url": "https://www.dr.dk/nyheder/seneste/styrelse-foelger-sikkerhedsbrud-hos-teleudbyder-flere-organisationer-ventes-ramt",
+              "tid": 1795796010.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Styrelse følger sikkerhedsbrud hos teleudbyder - flere organisationer ventes ramt",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Styrelse følger sikkerhedsbrud hos teleudbyder - flere organisationer ventes ramt",
+          "url": "https://www.dr.dk/nyheder/seneste/styrelse-foelger-sikkerhedsbrud-hos-teleudbyder-flere-organisationer-ventes-ramt",
+          "tid": 1795796010.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
       ],
       "data": null
     },
@@ -4962,94 +4954,13 @@
         "färre än två svenska källor"
       ],
       "data": null
-    },
-    {
-      "id": "01c22ef24e",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T15:09:43+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "NRK",
-              "land": "NO",
-              "rubrik": "Ap-profil går mot egen regjering om millionfritak – ville stemt med Frp",
-              "url": "https://www.nrk.no/sapmi/ap-profil-gar-mot-egen-regjering-om-millionfritak-_-ville-stemt-med-frp-1.18073087",
-              "tid": 1795792183.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Ap-profil går mot egen regjering om millionfritak – ville stemt med Frp",
-      "kallor": [
-        {
-          "namn": "NRK",
-          "rubrik": "Ap-profil går mot egen regjering om millionfritak – ville stemt med Frp",
-          "url": "https://www.nrk.no/sapmi/ap-profil-gar-mot-egen-regjering-om-millionfritak-_-ville-stemt-med-frp-1.18073087",
-          "tid": 1795792183.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "NO",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 71,
+      "artiklar": 70,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -5061,7 +4972,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 106,
+      "artiklar": 105,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -5121,7 +5032,7 @@
     {
       "id": "ft",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 9,
       "url": "https://www.ft.com/rss/home"
     },
     {
@@ -5139,7 +5050,7 @@
     {
       "id": "guardian",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 32,
       "url": "https://www.theguardian.com/world/rss"
     },
     {
@@ -5163,7 +5074,7 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 32,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
@@ -5193,13 +5104,13 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 38,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 13,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
@@ -5241,7 +5152,7 @@
     {
       "id": "nasa",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 4,
       "url": "https://www.nasa.gov/news-release/feed/"
     },
     {
@@ -5287,7 +5198,7 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 48,
+      "artiklar": 50,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -5299,7 +5210,7 @@
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 20,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -5377,7 +5288,7 @@
     {
       "id": "fz",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 15,
       "url": "https://www.fz.se/feeds/nyheter"
     },
     {
@@ -5547,7 +5458,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 14,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -5559,7 +5470,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 14,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -5571,7 +5482,7 @@
     {
       "id": "sifted",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 6,
       "url": "https://sifted.eu/feed"
     },
     {
@@ -5613,13 +5524,13 @@
     {
       "id": "mercopress",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 6,
       "url": "https://en.mercopress.com/rss"
     },
     {
       "id": "batimes",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 9,
       "url": "https://www.batimes.com.ar/feed"
     },
     {
@@ -5637,7 +5548,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 91,
+      "artiklar": 84,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -5649,13 +5560,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 30,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 34,
+      "artiklar": 35,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -5667,7 +5578,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 47,
+      "artiklar": 49,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -5691,13 +5602,13 @@
     {
       "id": "almonitor",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 14,
       "url": "https://www.al-monitor.com/rss"
     },
     {
       "id": "tehrantimes",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 29,
       "url": "https://www.tehrantimes.com/rss"
     },
     {
@@ -5721,7 +5632,7 @@
     {
       "id": "dawn",
       "ok": true,
-      "artiklar": 27,
+      "artiklar": 28,
       "url": "https://www.dawn.com/feeds/home"
     },
     {
@@ -5757,7 +5668,7 @@
     {
       "id": "ruv",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 29,
       "url": "https://www.ruv.is/rss/english"
     },
     {
@@ -5810,8 +5721,9 @@
     },
     {
       "id": "theeastafrican",
-      "ok": false,
-      "fel": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "artiklar": 11,
+      "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
       "id": "kyivindependent",
@@ -5880,7 +5792,7 @@
     {
       "id": "rns",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 2,
       "url": "https://religionnews.com/feed/"
     },
     {
