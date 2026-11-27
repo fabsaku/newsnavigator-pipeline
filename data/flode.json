@@ -1,8 +1,182 @@
 {
-  "skapad": "2026-11-27T18:06:20.709656+00:00",
+  "skapad": "2026-11-27T19:01:41.702418+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
+    {
+      "id": "aa49ef71bd",
+      "amnen": [
+        "latinamerika",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "latinamerika",
+        "usa"
+      ],
+      "poang": 31.4,
+      "vikt": {
+        "bredd": 0.612,
+        "regioner": {
+          "latinamerika": 1,
+          "mellanostern": 2,
+          "afrika": 1,
+          "asien": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:10:27+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qepyndU4NSc4tmb1'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.863,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "latinamerika",
+          "mellanostern"
+        ],
+        "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "The Rio Times",
+              "land": "BR",
+              "rubrik": "US Said to Urge Venezuela, Iraq to Quit OPEC",
+              "url": "https://www.riotimesonline.com/us-pushed-venezuela-iraq-consider-leaving-opec-2026/",
+              "tid": 1795803027.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "US lobbied Iraq and Venezuela to exit Opec, sparking Saudi intervention",
+              "url": "https://www.middleeasteye.net/news/us-lobbied-iraq-and-venezuela-exit-opec-sparking-saudi-intervention",
+              "tid": 1795799753.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "Exclusive-US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
+              "url": "https://www.al-monitor.com/originals/2026/11/exclusive-us-pushed-venezuela-iraq-consider-leaving-opec-sources-say",
+              "tid": 1795761987.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-27-us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say/",
+              "tid": 1795778398.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
+              "url": "https://www.straitstimes.com/world/united-states/us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say",
+              "tid": 1795759626.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "US Said to Urge Venezuela, Iraq to Quit OPEC",
+      "kallor": [
+        {
+          "namn": "The Rio Times",
+          "rubrik": "US Said to Urge Venezuela, Iraq to Quit OPEC",
+          "url": "https://www.riotimesonline.com/us-pushed-venezuela-iraq-consider-leaving-opec-2026/",
+          "tid": 1795803027.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BR",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "US lobbied Iraq and Venezuela to exit Opec, sparking Saudi intervention",
+          "url": "https://www.middleeasteye.net/news/us-lobbied-iraq-and-venezuela-exit-opec-sparking-saudi-intervention",
+          "tid": 1795799753.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-27-us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say/",
+          "tid": 1795778398.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "Exclusive-US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
+          "url": "https://www.al-monitor.com/originals/2026/11/exclusive-us-pushed-venezuela-iraq-consider-leaving-opec-sources-say",
+          "tid": 1795761987.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
+          "url": "https://www.straitstimes.com/world/united-states/us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say",
+          "tid": 1795759626.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
     {
       "id": "2e16bed170",
       "amnen": [
@@ -34,7 +208,7 @@
       "senast": "2026-11-27T10:00:09+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTsq3f4oZJCXXHaxBMjd'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qiJZ45eC6i894Wk9'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -191,146 +365,272 @@
       "data": null
     },
     {
-      "id": "f8786ad76b",
+      "id": "28342cc91e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 30.0,
+      "poang": 29.7,
       "vikt": {
-        "bredd": 0.487,
+        "bredd": 0.659,
         "regioner": {
-          "mellanostern": 2,
-          "afrika": 1,
-          "asien": 1
+          "usa": 2,
+          "europa": 2,
+          "latinamerika": 2,
+          "asien": 2,
+          "mellanostern": 1
         },
-        "timmar": 92,
+        "timmar": 58,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 4,
+      "antal_kallor": 9,
       "har_primarkalla": false,
-      "senast": "2026-11-27T13:16:28+00:00",
+      "senast": "2026-11-27T16:58:29+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTsq3g4KtNVDJTFdHGz8'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qg5LUbcek1beCPoa'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.68,
+      "sammanhang": 0.604,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
           "asien",
-          "mellanostern"
+          "europa",
+          "latinamerika",
+          "mellanostern",
+          "usa"
         ],
         "per_region": {
-          "mellanostern": [
+          "usa": [
             {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Famine expect to rise due to global conflict, El Nino, warns UN",
-              "url": "https://www.aljazeera.com/news/2026/11/27/famine-expect-to-rise-due-to-global-conflict-el-nino-warns-un?traffic_source=rss",
-              "tid": 1795785388.0,
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
+              "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
+              "tid": 1795797250.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Al-Monitor",
+              "kalla": "NPR",
               "land": "US",
-              "rubrik": "UN warns famine risks rising as hunger hotspots increase",
-              "url": "https://www.al-monitor.com/originals/2026/11/un-warns-famine-risks-rising-hunger-hotspots-increase",
-              "tid": 1795772788.0,
+              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+              "tid": 1795695869.0,
               "statskontrollerad": false
             }
           ],
-          "afrika": [
+          "europa": [
             {
-              "kalla": "AllAfrica",
-              "land": "INT",
-              "rubrik": "Africa: El Niño Adds New Hunger Hotspots As Conflict Continues to Drive Risk of Famine, Warn FAO and WFP",
-              "url": "https://allafrica.com/stories/202611270343.html",
-              "tid": 1795782062.0,
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
+              "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
+              "tid": 1795796336.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
+              "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
+              "tid": 1795780968.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+              "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
+              "tid": 1795769517.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "tid": 1795732200.0,
               "statskontrollerad": false
             }
           ],
           "asien": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Conflicts, El Nino worsening hunger: UN food agencies",
-              "url": "https://www.straitstimes.com/world/europe/un-warns-famine-risks-rising-as-hunger-hotspots-increase",
-              "tid": 1795770415.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+              "tid": 1795746122.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Storms disrupt US Thanksgiving holiday travel",
+              "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795731751.0,
+              "statskontrollerad": true
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Thanksgiving storms batter US, leaving hundreds of thousands without power",
+              "url": "https://www.thenationalnews.com/news/us/2026/11/27/thanksgiving-storms-flight-delays-cancellations/",
+              "tid": 1795798709.0,
+              "statskontrollerad": true
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
+              "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
+              "tid": 1795797250.0,
+              "lutning": "lutar_hoger"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "NPR",
+              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+              "tid": 1795695869.0,
+              "lutning": "lutar_vanster"
+            }
+          ]
+        },
         "usa_blind": null
       },
-      "reserv_rubrik": "Famine expect to rise due to global conflict, El Nino, warns UN",
+      "reserv_rubrik": "Storms continue across the country amid Thanksgiving week flooding",
       "kallor": [
         {
-          "namn": "Al Jazeera",
-          "rubrik": "Famine expect to rise due to global conflict, El Nino, warns UN",
-          "url": "https://www.aljazeera.com/news/2026/11/27/famine-expect-to-rise-due-to-global-conflict-el-nino-warns-un?traffic_source=rss",
-          "tid": 1795785388.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "AllAfrica",
-          "rubrik": "Africa: El Niño Adds New Hunger Hotspots As Conflict Continues to Drive Risk of Famine, Warn FAO and WFP",
-          "url": "https://allafrica.com/stories/202611270343.html",
-          "tid": 1795782062.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "INT",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "UN warns famine risks rising as hunger hotspots increase",
-          "url": "https://www.al-monitor.com/originals/2026/11/un-warns-famine-risks-rising-hunger-hotspots-increase",
-          "tid": 1795772788.0,
+          "namn": "Washington Examiner",
+          "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
+          "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
+          "tid": 1795797250.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
-          "region": "mellanostern",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Conflicts, El Nino worsening hunger: UN food agencies",
-          "url": "https://www.straitstimes.com/world/europe/un-warns-famine-risks-rising-as-hunger-hotspots-increase",
-          "tid": 1795770415.0,
+          "namn": "The Guardian",
+          "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
+          "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
+          "tid": 1795796336.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
+          "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
+          "tid": 1795780968.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+          "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
+          "tid": 1795769517.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+          "tid": 1795746122.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "MercoPress",
+          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+          "tid": 1795732200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UY",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NPR",
+          "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+          "tid": 1795695869.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Thanksgiving storms batter US, leaving hundreds of thousands without power",
+          "url": "https://www.thenationalnews.com/news/us/2026/11/27/thanksgiving-storms-flight-delays-cancellations/",
+          "tid": 1795798709.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Storms disrupt US Thanksgiving holiday travel",
+          "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795731751.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 2
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -365,7 +665,7 @@
       "senast": "2026-11-27T10:23:12+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTsq3h3urbqtHaXue7eY'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTx3qh4Hth9acZbSD5v3'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -463,157 +763,110 @@
       "data": null
     },
     {
-      "id": "aa49ef71bd",
+      "id": "b21ae77d72",
       "amnen": [
-        "latinamerika",
-        "usa"
+        "geopolitik"
       ],
       "amnen_sektion": [
-        "latinamerika",
-        "usa"
+        "geopolitik"
       ],
       "poang": 29.1,
       "vikt": {
-        "bredd": 0.487,
+        "bredd": 0.22,
         "regioner": {
-          "mellanostern": 2,
-          "afrika": 1,
-          "asien": 1
+          "mellanostern": 1,
+          "sverige": 1
         },
-        "timmar": 75,
+        "timmar": 69,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": []
+        "spar": [
+          "samarbete"
+        ]
       },
       "maste": false,
-      "antal_kallor": 4,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-27T17:15:53+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTsq3gJdzChcfQYnjuyR'}"
-      },
+      "senast": "2026-11-27T17:44:33+00:00",
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.883,
+      "sammanhang": 0.578,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
-          "asien",
-          "mellanostern"
+          "mellanostern",
+          "sverige"
         ],
         "per_region": {
           "mellanostern": [
             {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "US lobbied Iraq and Venezuela to exit Opec, sparking Saudi intervention",
-              "url": "https://www.middleeasteye.net/news/us-lobbied-iraq-and-venezuela-exit-opec-sparking-saudi-intervention",
-              "tid": 1795799753.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Exclusive-US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
-              "url": "https://www.al-monitor.com/originals/2026/11/exclusive-us-pushed-venezuela-iraq-consider-leaving-opec-sources-say",
-              "tid": 1795761987.0,
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
+              "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
+              "tid": 1795801473.0,
               "statskontrollerad": false
             }
           ],
-          "afrika": [
+          "sverige": [
             {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-27-us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say/",
-              "tid": 1795778398.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
-              "url": "https://www.straitstimes.com/world/united-states/us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say",
-              "tid": 1795759626.0,
+              "kalla": "Dagens industri",
+              "land": "SE",
+              "rubrik": "Ukrainskt förslag om vapenvila i Svarta havet",
+              "url": "https://www.di.se/nyheter/ukrainskt-forslag-om-vapenvila-i-svarta-havet/",
+              "tid": 1795798800.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
+        "blind_flack": null,
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "US lobbied Iraq and Venezuela to exit Opec, sparking Saudi intervention",
+      "reserv_rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
       "kallor": [
         {
-          "namn": "Middle East Eye",
-          "rubrik": "US lobbied Iraq and Venezuela to exit Opec, sparking Saudi intervention",
-          "url": "https://www.middleeasteye.net/news/us-lobbied-iraq-and-venezuela-exit-opec-sparking-saudi-intervention",
-          "tid": 1795799753.0,
+          "namn": "Al Jazeera",
+          "rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
+          "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
+          "tid": 1795801473.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "GB",
+          "land": "QA",
           "region": "mellanostern",
-          "agare": "privat",
+          "agare": "statlig",
           "statskontrollerad": false
         },
         {
-          "namn": "Daily Maverick",
-          "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-27-us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say/",
-          "tid": 1795778398.0,
-          "betalvagg": false,
+          "namn": "Dagens industri",
+          "rubrik": "Ukrainskt förslag om vapenvila i Svarta havet",
+          "url": "https://www.di.se/nyheter/ukrainskt-forslag-om-vapenvila-i-svarta-havet/",
+          "tid": 1795798800.0,
+          "betalvagg": true,
           "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Exclusive-US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
-          "url": "https://www.al-monitor.com/originals/2026/11/exclusive-us-pushed-venezuela-iraq-consider-leaving-opec-sources-say",
-          "tid": 1795761987.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "US pushed Venezuela, Iraq to consider leaving OPEC, sources say",
-          "url": "https://www.straitstimes.com/world/united-states/us-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say",
-          "tid": 1795759626.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
+          "land": "SE",
+          "region": "sverige",
           "agare": "privat",
           "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
-        "en": 3
+        "sv": 2,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "blind fläck"
+        "färre än tre oberoende källor (2)"
       ],
       "data": null
     },
     {
-      "id": "619d1784de",
+      "id": "6343c8cd51",
       "amnen": [
         "usa",
         "varlden"
@@ -717,112 +970,7 @@
       "data": null
     },
     {
-      "id": "c2adcbcf9a",
-      "amnen": [
-        "ai",
-        "halvledare"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "halvledare"
-      ],
-      "poang": 29.1,
-      "vikt": {
-        "bredd": 0.079,
-        "regioner": {
-          "usa": 1,
-          "asien": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:04:54+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.688,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
-              "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
-              "tid": 1795712694.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Nvidia chip sellers warn neoclouds against renting AI computing capacity to Chinese companies",
-              "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-chip-sellers-warn-neoclouds-against-renting-ai-computing-capacity-to-chinese-companies-101795709714486.html",
-              "tid": 1795711990.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
-      "kallor": [
-        {
-          "namn": "CNBC",
-          "rubrik": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
-          "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
-          "tid": 1795712694.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Nvidia chip sellers warn neoclouds against renting AI computing capacity to Chinese companies",
-          "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-chip-sellers-warn-neoclouds-against-renting-ai-computing-capacity-to-chinese-companies-101795709714486.html",
-          "tid": 1795711990.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "77d552b34b",
+      "id": "61722907ff",
       "amnen": [
         "halvledare",
         "usa",
@@ -928,376 +1076,6 @@
       "data": null
     },
     {
-      "id": "b21ae77d72",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [
-        "geopolitik"
-      ],
-      "poang": 29.0,
-      "vikt": {
-        "bredd": 0.22,
-        "regioner": {
-          "mellanostern": 1,
-          "sverige": 1
-        },
-        "timmar": 68,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "samarbete"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T17:44:33+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.578,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "mellanostern",
-          "sverige"
-        ],
-        "per_region": {
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-              "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
-              "tid": 1795801473.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Ukrainskt förslag om vapenvila i Svarta havet",
-              "url": "https://www.di.se/nyheter/ukrainskt-forslag-om-vapenvila-i-svarta-havet/",
-              "tid": 1795798800.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-      "kallor": [
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-          "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
-          "tid": 1795801473.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens industri",
-          "rubrik": "Ukrainskt förslag om vapenvila i Svarta havet",
-          "url": "https://www.di.se/nyheter/ukrainskt-forslag-om-vapenvila-i-svarta-havet/",
-          "tid": 1795798800.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "28342cc91e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.9,
-      "vikt": {
-        "bredd": 0.582,
-        "regioner": {
-          "usa": 2,
-          "europa": 3,
-          "asien": 2,
-          "latinamerika": 1,
-          "mellanostern": 1
-        },
-        "timmar": 57,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 9,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T16:58:29+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.604,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "latinamerika",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
-              "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
-              "tid": 1795797250.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-              "tid": 1795695869.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
-              "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
-              "tid": 1795796336.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-              "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
-              "tid": 1795780968.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País (English)",
-              "land": "ES",
-              "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
-              "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
-              "tid": 1795769517.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-              "tid": 1795746122.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Storms disrupt US Thanksgiving holiday travel",
-              "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795731751.0,
-              "statskontrollerad": true
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795732200.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Thanksgiving storms batter US, leaving hundreds of thousands without power",
-              "url": "https://www.thenationalnews.com/news/us/2026/11/27/thanksgiving-storms-flight-delays-cancellations/",
-              "tid": 1795798709.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
-              "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
-              "tid": 1795797250.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "NPR",
-              "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-              "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-              "tid": 1795695869.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Storms continue across the country amid Thanksgiving week flooding",
-      "kallor": [
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "Storms continue across the country amid Thanksgiving week flooding",
-          "url": "https://www.washingtonexaminer.com/news/4816469/storms-continue-thanksgiving-week-flooding/",
-          "tid": 1795797250.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Guardian",
-          "rubrik": "Eastern US recovers from storms that snarled Thanksgiving travel as flooding continues",
-          "url": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving",
-          "tid": 1795796336.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "US: Thanksgiving storms cause flooding and travel chaos",
-          "url": "https://www.france24.com/en/video/20261127-us-thanksgiving-storms-cause-flooding-and-travel-chaos",
-          "tid": 1795780968.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País (English)",
-          "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
-          "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
-          "tid": 1795769517.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-          "tid": 1795746122.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "MercoPress",
-          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-          "tid": 1795732200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UY",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-          "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-          "tid": 1795695869.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Thanksgiving storms batter US, leaving hundreds of thousands without power",
-          "url": "https://www.thenationalnews.com/news/us/2026/11/27/thanksgiving-storms-flight-delays-cancellations/",
-          "tid": 1795798709.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Storms disrupt US Thanksgiving holiday travel",
-          "url": "https://newsus.cgtn.com/news/2026-11-27/Storms-disrupt-US-Thanksgiving-holiday-travel-1SoZrtAJXIQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795731751.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "969b07bb89",
       "amnen": [
         "usa"
@@ -1305,7 +1083,7 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 28.8,
+      "poang": 28.9,
       "vikt": {
         "bredd": 0.507,
         "regioner": {
@@ -1313,7 +1091,7 @@
           "mellanostern": 3,
           "asien": 1
         },
-        "timmar": 67,
+        "timmar": 68,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1326,7 +1104,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.751,
+      "sammanhang": 0.717,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -1365,7 +1143,7 @@
             {
               "kalla": "The National",
               "land": "AE",
-              "rubrik": "Trump backs Iraq's Al Zaidi in fight against oil smuggling",
+              "rubrik": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds",
               "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
               "tid": 1795792503.0,
               "statskontrollerad": true
@@ -1439,7 +1217,7 @@
         },
         {
           "namn": "The National",
-          "rubrik": "Trump backs Iraq's Al Zaidi in fight against oil smuggling",
+          "rubrik": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds",
           "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
           "tid": 1795792503.0,
           "betalvagg": false,
@@ -1481,7 +1259,7 @@
           "europa": 2,
           "usa": 1
         },
-        "timmar": 76,
+        "timmar": 77,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1837,143 +1615,6 @@
       "data": null
     },
     {
-      "id": "24766e3113",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.5,
-      "vikt": {
-        "bredd": 0.319,
-        "regioner": {
-          "asien": 3,
-          "mellanostern": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T18:01:52+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.745,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US disables ship trying to leave Iran, as Tehran vows to confront blockade",
-              "url": "https://www.straitstimes.com/world/middle-east/us-disables-ship-trying-to-leave-iran-as-tehran-vows-to-confront-blockade",
-              "tid": 1795802512.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
-              "url": "https://www.hindustantimes.com/world-news/us-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports-101795800931721.html",
-              "tid": 1795801110.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "U.S. military says it disabled commercial ship trying to run Iran blockade",
-              "url": "https://www.thehindu.com/news/international/us-military-says-it-disabled-commercial-ship-trying-to-run-iran-blockade/article71752214.ece",
-              "tid": 1795800921.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Middle East Eye",
-              "land": "GB",
-              "rubrik": "Centcom says it disabled commercial ship trying to run Iran blockade",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-it-disabled-commercial-ship-trying-run-iran-blockade",
-              "tid": 1795801106.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US disables ship trying to leave Iran, as Tehran vows to confront blockade",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "US disables ship trying to leave Iran, as Tehran vows to confront blockade",
-          "url": "https://www.straitstimes.com/world/middle-east/us-disables-ship-trying-to-leave-iran-as-tehran-vows-to-confront-blockade",
-          "tid": 1795802512.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
-          "url": "https://www.hindustantimes.com/world-news/us-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports-101795800931721.html",
-          "tid": 1795801110.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Middle East Eye",
-          "rubrik": "Centcom says it disabled commercial ship trying to run Iran blockade",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-it-disabled-commercial-ship-trying-run-iran-blockade",
-          "tid": 1795801106.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "U.S. military says it disabled commercial ship trying to run Iran blockade",
-          "url": "https://www.thehindu.com/news/international/us-military-says-it-disabled-commercial-ship-trying-to-run-iran-blockade/article71752214.ece",
-          "tid": 1795800921.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "740b9e408e",
       "amnen": [
         "ai",
@@ -1984,7 +1625,7 @@
         "ai",
         "rymd"
       ],
-      "poang": 28.5,
+      "poang": 28.6,
       "vikt": {
         "bredd": 0.328,
         "regioner": {
@@ -1993,7 +1634,7 @@
           "usa": 1,
           "europa": 1
         },
-        "timmar": 47,
+        "timmar": 48,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2246,313 +1887,17 @@
       "data": null
     },
     {
-      "id": "ca3941b094",
-      "amnen": [
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 28.1,
-      "vikt": {
-        "bredd": 0.471,
-        "regioner": {
-          "europa": 2,
-          "asien": 5,
-          "usa": 3
-        },
-        "timmar": 61,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 10,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T18:00:40+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.767,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795802440.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "‘He’s an aggressor and a killer. He can’t be a friend’: Zelensky likens Trump calling Putin his friend to calling Hitler a friend during World War II",
-              "url": "https://meduza.io/en/news/2026/11/27/he-s-an-aggressor-and-a-killer-he-can-t-be-a-friend-zelensky-likens-trump-calling-putin-his-friend-to-calling-hitler-a-friend-during-world-war-ii",
-              "tid": 1795778680.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "CNA",
-              "land": "SG",
-              "rubrik": "Zelenskyy urges the US to pressure Putin, calling Trump’s 'my friend' remark strange",
-              "url": "https://www.channelnewsasia.com/world/zelenskyy-trump-russia-ukraine-putin-us-friend-6588296",
-              "tid": 1795800530.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "Zelenskyy says Trump's relationship with Putin like being friends with Hitler",
-              "url": "https://www.abc.net.au/news/2026-11-27/zelenskyy-says-trump-putin-relationship-like-being-friend-hitler/107437062",
-              "tid": 1795779675.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Zelensky says Trump calling Putin ‘my friend’ is like being buddies with Hitler in WWII",
-              "url": "https://www.scmp.com/news/world/europe/article/3376046/zelensky-says-trump-calling-putin-my-friend-being-buddies-hitler-wwii",
-              "tid": 1795771359.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
-              "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
-              "tid": 1795768017.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-              "tid": 1795742663.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
-              "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
-              "tid": 1795794849.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
-              "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
-              "tid": 1795791600.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
-              "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
-              "tid": 1795784125.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
-              "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
-              "tid": 1795794849.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
-              "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
-              "tid": 1795791600.0,
-              "lutning": "mitten"
-            }
-          ],
-          "bla": [
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
-              "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
-              "tid": 1795784125.0,
-              "lutning": "lutar_vanster"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-      "kallor": [
-        {
-          "namn": "BBC World",
-          "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795802440.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNA",
-          "rubrik": "Zelenskyy urges the US to pressure Putin, calling Trump’s 'my friend' remark strange",
-          "url": "https://www.channelnewsasia.com/world/zelenskyy-trump-russia-ukraine-putin-us-friend-6588296",
-          "tid": 1795800530.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "Zelensky chides the Trump-Putin friendship as ‘strange’",
-          "url": "https://www.washingtonexaminer.com/news/world/4816476/zelensky-trump-putin-friendship-russia-ukraine-war/",
-          "tid": 1795794849.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Chamberlain appeased Hitler — Zelensky will not and should not appease Putin",
-          "url": "https://thehill.com/opinion/national-security/6241558-witkoff-courtship-russia-ukraine-war/",
-          "tid": 1795791600.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "ABC News (Australien)",
-          "rubrik": "Zelenskyy says Trump's relationship with Putin like being friends with Hitler",
-          "url": "https://www.abc.net.au/news/2026-11-27/zelenskyy-says-trump-putin-relationship-like-being-friend-hitler/107437062",
-          "tid": 1795779675.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AU",
-          "region": "asien",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "‘He’s an aggressor and a killer. He can’t be a friend’: Zelensky likens Trump calling Putin his friend to calling Hitler a friend during World War II",
-          "url": "https://meduza.io/en/news/2026/11/27/he-s-an-aggressor-and-a-killer-he-can-t-be-a-friend-zelensky-likens-trump-calling-putin-his-friend-to-calling-hitler-a-friend-during-world-war-ii",
-          "tid": 1795778680.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Zelensky says Trump calling Putin ‘my friend’ is like being buddies with Hitler in WWII",
-          "url": "https://www.scmp.com/news/world/europe/article/3376046/zelensky-says-trump-calling-putin-my-friend-being-buddies-hitler-wwii",
-          "tid": 1795771359.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
-          "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
-          "tid": 1795768017.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-          "tid": 1795742663.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Trump defends Putin friendship that Zelensky calls ‘strange’",
-          "url": "https://www.washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/",
-          "tid": 1795784125.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "spärrord: killer",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "552757a4e0",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.0,
+      "poang": 28.1,
       "vikt": {
         "bredd": 0.159,
         "regioner": {
           "asien": 1,
           "global": 1
         },
-        "timmar": 62,
+        "timmar": 63,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2650,12 +1995,13 @@
       ],
       "poang": 28.0,
       "vikt": {
-        "bredd": 0.462,
+        "bredd": 0.451,
         "regioner": {
           "mellanostern": 2,
-          "asien": 3
+          "europa": 1,
+          "asien": 2
         },
-        "timmar": 30,
+        "timmar": 31,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2666,15 +2012,16 @@
       "maste": false,
       "antal_kallor": 5,
       "har_primarkalla": false,
-      "senast": "2026-11-27T16:47:22+00:00",
+      "senast": "2026-11-27T16:51:10+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.677,
+      "sammanhang": 0.645,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
+          "europa",
           "mellanostern"
         ],
         "per_region": {
@@ -2682,9 +2029,9 @@
             {
               "kalla": "Middle East Eye",
               "land": "GB",
-              "rubrik": "Hamas says son of leader Khalil al-Hayya survived Israeli attack",
-              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-son-leader-khalil-al-hayya-survived-israeli-attack",
-              "tid": 1795795250.0,
+              "rubrik": "Israeli drone strike on vehicle kills Palestinian man in northern Gaza",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-vehicle-kills-palestinian-man-northern-gaza",
+              "tid": 1795798270.0,
               "statskontrollerad": false
             },
             {
@@ -2696,13 +2043,23 @@
               "statskontrollerad": true
             }
           ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says",
+              "url": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes",
+              "tid": 1795725187.0,
+              "statskontrollerad": false
+            }
+          ],
           "asien": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Son of Hamas chief survives Israeli strike, Hamas says",
-              "url": "https://www.straitstimes.com/world/middle-east/son-of-hamas-chief-survives-israeli-strike-hamas-says",
-              "tid": 1795789611.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Israeli strikes kill 10 in Gaza as Iranian drones kill 2 Italians in Kuwait, and other Mideast news",
+              "url": "https://www.hindustantimes.com/world-news/us-news/israeli-strikes-kill-10-in-gaza-as-iranian-drones-kill-2-italians-in-kuwait-and-other-mideast-news-101795719829538.html",
+              "tid": 1795719829.0,
               "statskontrollerad": false
             },
             {
@@ -2712,14 +2069,6 @@
               "url": "https://www.thehindu.com/news/international/israel-kills-nine-in-gaza-including-hamas-appointed-deputy-education-minister-officials-say/article71747983.ece",
               "tid": 1795714525.0,
               "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Israel kills Hamas official overseeing economy, education",
-              "url": "https://news.cgtn.com/news/2026-11-26/news-1SnTCsxOXcI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795674777.0,
-              "statskontrollerad": true
             }
           ]
         },
@@ -2728,13 +2077,13 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Hamas says son of leader Khalil al-Hayya survived Israeli attack",
+      "reserv_rubrik": "Israeli drone strike on vehicle kills Palestinian man in northern Gaza",
       "kallor": [
         {
           "namn": "Middle East Eye",
-          "rubrik": "Hamas says son of leader Khalil al-Hayya survived Israeli attack",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-son-leader-khalil-al-hayya-survived-israeli-attack",
-          "tid": 1795795250.0,
+          "rubrik": "Israeli drone strike on vehicle kills Palestinian man in northern Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-vehicle-kills-palestinian-man-northern-gaza",
+          "tid": 1795798270.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
@@ -2743,13 +2092,25 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Son of Hamas chief survives Israeli strike, Hamas says",
-          "url": "https://www.straitstimes.com/world/middle-east/son-of-hamas-chief-survives-israeli-strike-hamas-says",
-          "tid": 1795789611.0,
+          "namn": "The Guardian",
+          "rubrik": "Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says",
+          "url": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes",
+          "tid": 1795725187.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Israeli strikes kill 10 in Gaza as Iranian drones kill 2 Italians in Kuwait, and other Mideast news",
+          "url": "https://www.hindustantimes.com/world-news/us-news/israeli-strikes-kill-10-in-gaza-as-iranian-drones-kill-2-italians-in-kuwait-and-other-mideast-news-101795719829538.html",
+          "tid": 1795719829.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -2775,18 +2136,6 @@
           "typ": "media",
           "land": "AE",
           "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Israel kills Hamas official overseeing economy, education",
-          "url": "https://news.cgtn.com/news/2026-11-26/news-1SnTCsxOXcI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795674777.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
           "agare": "statlig",
           "statskontrollerad": true
         }
@@ -2939,14 +2288,14 @@
         "halvledare",
         "usa"
       ],
-      "poang": 27.7,
+      "poang": 27.8,
       "vikt": {
         "bredd": 0.158,
         "regioner": {
           "usa": 2,
           "asien": 2
         },
-        "timmar": 58,
+        "timmar": 59,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3075,39 +2424,40 @@
       "data": null
     },
     {
-      "id": "0d04286142",
+      "id": "8cb4d234d1",
       "amnen": [
-        "latinamerika",
-        "varlden"
+        "geopolitik"
       ],
       "amnen_sektion": [
-        "latinamerika"
+        "geopolitik"
       ],
-      "poang": 27.6,
+      "poang": 27.7,
       "vikt": {
-        "bredd": 0.261,
+        "bredd": 0.381,
         "regioner": {
           "mellanostern": 1,
-          "asien": 2
+          "europa": 2,
+          "afrika": 1
         },
-        "timmar": 90,
+        "timmar": 69,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-11-27T17:58:36+00:00",
+      "senast": "2026-11-27T17:13:46+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.786,
+      "sammanhang": 0.527,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
+          "afrika",
+          "europa",
           "mellanostern"
         ],
         "per_region": {
@@ -3115,43 +2465,53 @@
             {
               "kalla": "Al Jazeera",
               "land": "QA",
-              "rubrik": "Mexico files complaint with US over tip line on alleged drug traffickers",
-              "url": "https://www.aljazeera.com/news/2026/11/27/mexico-files-complaint-with-us-over-tip-line-on-alleged-drug-traffickers?traffic_source=rss",
-              "tid": 1795802316.0,
+              "rubrik": "‘Bear trap’: Ukraine hails new operation as Russian casualties mount",
+              "url": "https://www.aljazeera.com/news/2026/11/27/ukraine-rejects-unfavourable-compromises-as-it-frees-more-territory?traffic_source=rss",
+              "tid": 1795799626.0,
               "statskontrollerad": false
             }
           ],
-          "asien": [
+          "europa": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Mexico files complaint with US over DEA tip line on alleged drug traffickers, corrupt officials",
-              "url": "https://www.straitstimes.com/world/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials",
-              "tid": 1795792919.0,
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "‘No reports, no strikes’: Russia’s pro-war bloggers slam proposed prison sentences for sharing photos and videos of Ukrainian attacks",
+              "url": "https://meduza.io/en/feature/2026/11/27/no-reports-no-strikes-russia-s-pro-war-bloggers-slam-proposed-prison-sentences-for-sharing-photos-and-videos-of-ukrainian-attacks",
+              "tid": 1795793714.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Mexican president blasts DEA over tip lines, accusing it of not fighting fentanyl enough inside US",
-              "url": "https://www.hindustantimes.com/world-news/us-news/mexican-president-blasts-dea-over-tip-lines-accusing-it-of-not-fighting-fentanyl-enough-inside-us-101795719514884.html",
-              "tid": 1795719514.0,
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "Content control: How USAID and Soros-funded liberals suppressed ‘pro-Russian narratives’",
+              "url": "https://rt-english.com/news/649391-usaid-gdi-suppress-russia-narratives/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795705560.0,
+              "statskontrollerad": true
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "War in Ukraine: Russia ignores claims on troop casualty figures",
+              "url": "http://www.africanews.com/2026/11/26/war-in-ukraine-russia-ignores-claims-on-troop-casualty-figures/",
+              "tid": 1795693545.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
+        "blind_flack": null,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Mexico files complaint with US over tip line on alleged drug traffickers",
+      "reserv_rubrik": "‘Bear trap’: Ukraine hails new operation as Russian casualties mount",
       "kallor": [
         {
           "namn": "Al Jazeera",
-          "rubrik": "Mexico files complaint with US over tip line on alleged drug traffickers",
-          "url": "https://www.aljazeera.com/news/2026/11/27/mexico-files-complaint-with-us-over-tip-line-on-alleged-drug-traffickers?traffic_source=rss",
-          "tid": 1795802316.0,
+          "rubrik": "‘Bear trap’: Ukraine hails new operation as Russian casualties mount",
+          "url": "https://www.aljazeera.com/news/2026/11/27/ukraine-rejects-unfavourable-compromises-as-it-frees-more-territory?traffic_source=rss",
+          "tid": 1795799626.0,
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -3160,39 +2520,50 @@
           "statskontrollerad": false
         },
         {
-          "namn": "The Straits Times",
-          "rubrik": "Mexico files complaint with US over DEA tip line on alleged drug traffickers, corrupt officials",
-          "url": "https://www.straitstimes.com/world/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials",
-          "tid": 1795792919.0,
+          "namn": "Meduza",
+          "rubrik": "‘No reports, no strikes’: Russia’s pro-war bloggers slam proposed prison sentences for sharing photos and videos of Ukrainian attacks",
+          "url": "https://meduza.io/en/feature/2026/11/27/no-reports-no-strikes-russia-s-pro-war-bloggers-slam-proposed-prison-sentences-for-sharing-photos-and-videos-of-ukrainian-attacks",
+          "tid": 1795793714.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "SG",
-          "region": "asien",
+          "land": "LV",
+          "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Mexican president blasts DEA over tip lines, accusing it of not fighting fentanyl enough inside US",
-          "url": "https://www.hindustantimes.com/world-news/us-news/mexican-president-blasts-dea-over-tip-lines-accusing-it-of-not-fighting-fentanyl-enough-inside-us-101795719514884.html",
-          "tid": 1795719514.0,
+          "namn": "Africanews",
+          "rubrik": "War in Ukraine: Russia ignores claims on troop casualty figures",
+          "url": "http://www.africanews.com/2026/11/26/war-in-ukraine-russia-ignores-claims-on-troop-casualty-figures/",
+          "tid": 1795693545.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
-          "region": "asien",
+          "land": "CG",
+          "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "Content control: How USAID and Soros-funded liberals suppressed ‘pro-Russian narratives’",
+          "url": "https://rt-english.com/news/649391-usaid-gdi-suppress-russia-narratives/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795705560.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 3
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -3332,108 +2703,90 @@
       "data": null
     },
     {
-      "id": "68b751956e",
-      "amnen": [],
+      "id": "0df53a65c5",
+      "amnen": [
+        "varlden"
+      ],
       "amnen_sektion": [],
-      "poang": 27.4,
+      "poang": 27.3,
       "vikt": {
-        "bredd": 0.238,
+        "bredd": 0.202,
         "regioner": {
-          "afrika": 1,
-          "europa": 2
+          "asien": 1,
+          "afrika": 1
         },
-        "timmar": 89,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 3,
+      "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-27T08:37:49+00:00",
+      "senast": "2026-11-27T12:16:50+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.553,
+      "sammanhang": 0.718,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "afrika",
-          "europa"
+          "asien"
         ],
         "per_region": {
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Armed men kill 17 villagers in Nigeria's Plateau state, police say",
+              "url": "https://www.straitstimes.com/world/armed-men-kill-17-villagers-in-nigerias-plateau-state-police-say",
+              "tid": 1795781810.0,
+              "statskontrollerad": false
+            }
+          ],
           "afrika": [
             {
               "kalla": "Africanews",
               "land": "CG",
-              "rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
-              "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
-              "tid": 1795768669.0,
+              "rubrik": "Armed men kill 13 guards in 'terrorist attack' in western Niger",
+              "url": "http://www.africanews.com/2026/11/27/armed-men-kill-13-guards-in-terrorist-attack-in-western-niger/",
+              "tid": 1795779325.0,
               "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
-              "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
-              "tid": 1795767152.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Five killed in Ukrainian drone strike – Russian governor",
-              "url": "https://rt-english.com/news/649372-zaporozhye-drone-strike-ukraine/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795674870.0,
-              "statskontrollerad": true
             }
           ]
         },
-        "blind_flack": "saknas_i_sverige",
+        "blind_flack": null,
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
+      "reserv_rubrik": "Armed men kill 17 villagers in Nigeria's Plateau state, police say",
       "kallor": [
         {
+          "namn": "The Straits Times",
+          "rubrik": "Armed men kill 17 villagers in Nigeria's Plateau state, police say",
+          "url": "https://www.straitstimes.com/world/armed-men-kill-17-villagers-in-nigerias-plateau-state-police-say",
+          "tid": 1795781810.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Africanews",
-          "rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
-          "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
-          "tid": 1795768669.0,
+          "rubrik": "Armed men kill 13 guards in 'terrorist attack' in western Niger",
+          "url": "http://www.africanews.com/2026/11/27/armed-men-kill-13-guards-in-terrorist-attack-in-western-niger/",
+          "tid": 1795779325.0,
           "betalvagg": false,
           "typ": "media",
           "land": "CG",
           "region": "afrika",
           "agare": "privat",
           "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
-          "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
-          "tid": 1795767152.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "Five killed in Ukrainian drone strike – Russian governor",
-          "url": "https://rt-english.com/news/649372-zaporozhye-drone-strike-ukraine/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795674870.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
         }
       ],
       "granskad": false,
@@ -3444,8 +2797,7 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "blind fläck"
+        "färre än tre oberoende källor (2)"
       ],
       "data": null
     },
@@ -3458,13 +2810,13 @@
       "amnen_sektion": [
         "rymd"
       ],
-      "poang": 26.4,
+      "poang": 26.5,
       "vikt": {
         "bredd": 0.118,
         "regioner": {
           "asien": 2
         },
-        "timmar": 47,
+        "timmar": 48,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3551,19 +2903,666 @@
       "data": null
     },
     {
+      "id": "7f880cb1d0",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.163,
+        "regioner": {
+          "usa": 1,
+          "mellanostern": 1
+        },
+        "timmar": 87,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T12:50:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.565,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
+              "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550?mod=rss_worldnews",
+              "tid": 1795783800.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Oil set to post weekly gain as Middle East attacks stoke supply concerns",
+              "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/",
+              "tid": 1795765660.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
+      "kallor": [
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
+          "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550?mod=rss_worldnews",
+          "tid": 1795783800.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Oil set to post weekly gain as Middle East attacks stoke supply concerns",
+          "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/",
+          "tid": 1795765660.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "ce1f86080f",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 26.3,
+      "vikt": {
+        "bredd": 0.383,
+        "regioner": {
+          "europa": 4,
+          "usa": 2,
+          "mellanostern": 1
+        },
+        "timmar": 50,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:36:27+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.521,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Ukraine war latest: Ukraine hits missile fuel production facility in Russia's Tula Oblast, military says",
+              "url": "https://kyivindependent.com/ukraine-war-latest-ukraine-hits-missile-fuel-production-facility-in-russias-tula-oblast-military-says/",
+              "tid": 1795804587.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Trump unilaterally changes joint statement with NATO chief, adding warning for Ukraine not to escalate war, Politico reports",
+              "url": "https://meduza.io/en/news/2026/11/27/trump-unilaterally-changes-joint-statement-with-nato-chief-adding-warning-for-ukraine-not-to-escalate-war-politico-reports",
+              "tid": 1795774729.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
+              "url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795685220.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "RT",
+              "land": "RU",
+              "rubrik": "NATO chief ‘surprised’ by Trump adding Ukraine to joint statement",
+              "url": "https://rt-english.com/news/649422-trump-ukraine-responsiblity-escalation/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+              "tid": 1795783713.0,
+              "statskontrollerad": true
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+              "tid": 1795709567.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
+              "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
+              "tid": 1795699011.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Russia-Ukraine war increasingly expanding out to sea",
+              "url": "https://www.thenationalnews.com/news/2026/11/27/russia-ukraine-war-increasingly-expanding-out-to-sea/",
+              "tid": 1795773998.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "CNBC",
+              "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+              "tid": 1795709567.0,
+              "lutning": "mitten"
+            }
+          ],
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
+              "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
+              "tid": 1795699011.0,
+              "lutning": "hoger"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Ukraine war latest: Ukraine hits missile fuel production facility in Russia's Tula Oblast, military says",
+      "kallor": [
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Ukraine war latest: Ukraine hits missile fuel production facility in Russia's Tula Oblast, military says",
+          "url": "https://kyivindependent.com/ukraine-war-latest-ukraine-hits-missile-fuel-production-facility-in-russias-tula-oblast-military-says/",
+          "tid": 1795804587.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Trump unilaterally changes joint statement with NATO chief, adding warning for Ukraine not to escalate war, Politico reports",
+          "url": "https://meduza.io/en/news/2026/11/27/trump-unilaterally-changes-joint-statement-with-nato-chief-adding-warning-for-ukraine-not-to-escalate-war-politico-reports",
+          "tid": 1795774729.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+          "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+          "tid": 1795709567.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
+          "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
+          "tid": 1795699011.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
+          "url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795685220.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "RT",
+          "rubrik": "NATO chief ‘surprised’ by Trump adding Ukraine to joint statement",
+          "url": "https://rt-english.com/news/649422-trump-ukraine-responsiblity-escalation/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+          "tid": 1795783713.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "RU",
+          "region": "europa",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Russia-Ukraine war increasingly expanding out to sea",
+          "url": "https://www.thenationalnews.com/news/2026/11/27/russia-ukraine-war-increasingly-expanding-out-to-sea/",
+          "tid": 1795773998.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "e54c83fe46",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 26.2,
+      "vikt": {
+        "bredd": 0.528,
+        "regioner": {
+          "mellanostern": 2,
+          "europa": 2,
+          "asien": 2,
+          "usa": 1
+        },
+        "timmar": 34,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:04:59+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.763,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Canada's Supreme Court upholds law banning hijabs in Quebec public sector",
+              "url": "https://www.middleeasteye.net/news/canadas-supreme-court-upholds-law-banning-hijabs-quebec-public-sector",
+              "tid": 1795802699.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Canada’s top court largely upholds Quebec’s religious symbols ban",
+              "url": "https://www.aljazeera.com/news/2026/11/27/canadas-top-court-largely-upholds-quebecs-religious-symbols-ban?traffic_source=rss",
+              "tid": 1795792536.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
+              "url": "https://www.bbc.co.uk/news/articles/cq3dgpy9lem3o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795798426.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
+              "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
+              "tid": 1795795987.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Canada's top court upholds Quebec religious symbols law in test of unity",
+              "url": "https://www.straitstimes.com/world/canadas-supreme-court-to-rule-on-quebecs-law-on-religious-symbols-in-test-of-canadian-unity",
+              "tid": 1795777664.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Canada’s top court rules on Quebec secularism law in landmark case",
+              "url": "https://www.thehindu.com/news/international/canadas-top-court-rules-on-quebec-secularism-law-in-landmark-case/article71749545.ece",
+              "tid": 1795769532.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Canada’s Top Court Lets Quebec Use Controversial Measure for Secularism Law",
+              "url": "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
+              "tid": 1795801035.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Canada's Supreme Court upholds law banning hijabs in Quebec public sector",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Canada's Supreme Court upholds law banning hijabs in Quebec public sector",
+          "url": "https://www.middleeasteye.net/news/canadas-supreme-court-upholds-law-banning-hijabs-quebec-public-sector",
+          "tid": 1795802699.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
+          "url": "https://www.bbc.co.uk/news/articles/cq3dgpy9lem3o?at_medium=RSS&at_campaign=rss",
+          "tid": 1795798426.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
+          "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
+          "tid": 1795795987.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Canada’s top court largely upholds Quebec’s religious symbols ban",
+          "url": "https://www.aljazeera.com/news/2026/11/27/canadas-top-court-largely-upholds-quebecs-religious-symbols-ban?traffic_source=rss",
+          "tid": 1795792536.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Canada's top court upholds Quebec religious symbols law in test of unity",
+          "url": "https://www.straitstimes.com/world/canadas-supreme-court-to-rule-on-quebecs-law-on-religious-symbols-in-test-of-canadian-unity",
+          "tid": 1795777664.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Canada’s top court rules on Quebec secularism law in landmark case",
+          "url": "https://www.thehindu.com/news/international/canadas-top-court-rules-on-quebec-secularism-law-in-landmark-case/article71749545.ece",
+          "tid": 1795769532.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The New York Times",
+          "rubrik": "Canada’s Top Court Lets Quebec Use Controversial Measure for Secularism Law",
+          "url": "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
+          "tid": 1795801035.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "2a622a9d06",
+      "amnen": [
+        "afrika",
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.1,
+      "vikt": {
+        "bredd": 0.429,
+        "regioner": {
+          "afrika": 3
+        },
+        "timmar": 42,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T06:55:55+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.654,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika"
+        ],
+        "per_region": {
+          "afrika": [
+            {
+              "kalla": "AllAfrica",
+              "land": "INT",
+              "rubrik": "Africa: All of Africa Today - November 27, 2026",
+              "url": "https://allafrica.com/stories/202611270160.html",
+              "tid": 1795762555.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Mail & Guardian",
+              "land": "ZA",
+              "rubrik": "Relive the best of the Singularity Summit South Africa 2026",
+              "url": "https://mg.co.za/partner-content/2026-11-27-relive-the-best-of-the-singularity-summit-south-africa-2026/",
+              "tid": 1795762225.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Pix of the Day, 26th November 2026: South Africa's Biovac bets on African vaccine production",
+              "url": "http://www.africanews.com/2026/11/26/pix-of-the-day-26th-november-2026-south-africas-biovac-bets-on-african-vaccine-production/",
+              "tid": 1795695112.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Africa: All of Africa Today - November 27, 2026",
+      "kallor": [
+        {
+          "namn": "AllAfrica",
+          "rubrik": "Africa: All of Africa Today - November 27, 2026",
+          "url": "https://allafrica.com/stories/202611270160.html",
+          "tid": 1795762555.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "INT",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Mail & Guardian",
+          "rubrik": "Relive the best of the Singularity Summit South Africa 2026",
+          "url": "https://mg.co.za/partner-content/2026-11-27-relive-the-best-of-the-singularity-summit-south-africa-2026/",
+          "tid": 1795762225.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Pix of the Day, 26th November 2026: South Africa's Biovac bets on African vaccine production",
+          "url": "http://www.africanews.com/2026/11/26/pix-of-the-day-26th-november-2026-south-africas-biovac-bets-on-african-vaccine-production/",
+          "tid": 1795695112.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "0c815be4c9",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 24.4,
+      "poang": 24.7,
       "vikt": {
         "bredd": 0.343,
         "regioner": {
           "europa": 1,
           "afrika": 2
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3679,14 +3678,14 @@
       "amnen_sektion": [
         "spel"
       ],
-      "poang": 24.0,
+      "poang": 24.2,
       "vikt": {
         "bredd": 0.097,
         "regioner": {
           "sverige": 1,
           "usa": 1
         },
-        "timmar": 28,
+        "timmar": 29,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3780,7 +3779,7 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 22.8,
+      "poang": 23.1,
       "vikt": {
         "bredd": 0.259,
         "regioner": {
@@ -3788,7 +3787,7 @@
           "europa": 1,
           "mellanostern": 1
         },
-        "timmar": 14,
+        "timmar": 15,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3909,13 +3908,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 22.0,
+      "poang": 22.2,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 31,
+        "timmar": 32,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4008,13 +4007,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.8,
+      "poang": 21.9,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 29,
+        "timmar": 30,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4107,13 +4106,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.6,
+      "poang": 21.8,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 28,
+        "timmar": 29,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4203,13 +4202,13 @@
       "id": "7241b9616e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 20.8,
+      "poang": 21.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 11,
+        "timmar": 12,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4299,14 +4298,14 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 16.6,
+      "poang": 17.4,
       "vikt": {
         "bredd": 0.116,
         "regioner": {
           "europa": 1,
           "asien": 1
         },
-        "timmar": 4,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4559,6 +4558,266 @@
       "data": null
     },
     {
+      "id": "246b911dec",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 12.1,
+      "vikt": {
+        "bredd": 0.185,
+        "regioner": {
+          "sverige": 2
+        },
+        "timmar": 2,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T17:49:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.604,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Sveriges Radio Ekot",
+              "land": "SE",
+              "rubrik": "MP lägger fram egen budget – hoppas på gemensam framöver",
+              "url": "https://www.sverigesradio.se/artikel/9352031",
+              "tid": 1795801740.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "SVT Nyheter",
+              "land": "SE",
+              "rubrik": "M, L och KD presenterar gemensam budget",
+              "url": "https://www.svt.se/nyheter/inrikes/m-l-och-kd-presenterar-gemensam-budget",
+              "tid": 1795792634.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "bara_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "MP lägger fram egen budget – hoppas på gemensam framöver",
+      "kallor": [
+        {
+          "namn": "Sveriges Radio Ekot",
+          "rubrik": "MP lägger fram egen budget – hoppas på gemensam framöver",
+          "url": "https://www.sverigesradio.se/artikel/9352031",
+          "tid": 1795801740.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "SVT Nyheter",
+          "rubrik": "M, L och KD presenterar gemensam budget",
+          "url": "https://www.svt.se/nyheter/inrikes/m-l-och-kd-presenterar-gemensam-budget",
+          "tid": 1795792634.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 3,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "146540e096",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:48:31+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": "NO",
+              "rubrik": "Frikjent for 96 nakenbilder av barn: «Ikke seksualiserende»",
+              "url": "https://www.nrk.no/tromsogfinnmark/frikjent-for-96-nakenbilder-av-barn_-_ikke-seksualiserende_-1.18063751",
+              "tid": 1795805311.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Frikjent for 96 nakenbilder av barn: «Ikke seksualiserende»",
+      "kallor": [
+        {
+          "namn": "NRK",
+          "rubrik": "Frikjent for 96 nakenbilder av barn: «Ikke seksualiserende»",
+          "url": "https://www.nrk.no/tromsogfinnmark/frikjent-for-96-nakenbilder-av-barn_-_ikke-seksualiserende_-1.18063751",
+          "tid": 1795805311.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NO",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor",
+        "spärrord: barn"
+      ],
+      "data": null
+    },
+    {
+      "id": "c4e1b063ca",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:31:08+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "USA angriber fartøj i Omanbugten",
+              "url": "https://www.dr.dk/nyheder/seneste/usa-angriber-fartoej-i-omanbugten",
+              "tid": 1795804268.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "USA angriber fartøj i Omanbugten",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "USA angriber fartøj i Omanbugten",
+          "url": "https://www.dr.dk/nyheder/seneste/usa-angriber-fartoej-i-omanbugten",
+          "tid": 1795804268.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
       "id": "cf9ff4f79c",
       "amnen": [
         "norden",
@@ -4799,254 +5058,13 @@
         "färre än två svenska källor"
       ],
       "data": null
-    },
-    {
-      "id": "e109638c84",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T16:13:30+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Styrelse følger sikkerhedsbrud hos teleudbyder - flere organisationer ventes ramt",
-              "url": "https://www.dr.dk/nyheder/seneste/styrelse-foelger-sikkerhedsbrud-hos-teleudbyder-flere-organisationer-ventes-ramt",
-              "tid": 1795796010.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Styrelse følger sikkerhedsbrud hos teleudbyder - flere organisationer ventes ramt",
-      "kallor": [
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "Styrelse følger sikkerhedsbrud hos teleudbyder - flere organisationer ventes ramt",
-          "url": "https://www.dr.dk/nyheder/seneste/styrelse-foelger-sikkerhedsbrud-hos-teleudbyder-flere-organisationer-ventes-ramt",
-          "tid": 1795796010.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "640fff2876",
-      "amnen": [
-        "norden",
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T15:44:46+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "RÚV English",
-              "land": "IS",
-              "rubrik": "RÚV English Radio - AUÐSKILIÐ: LEARNING ICELANDIC WITH RÚV ENGLISH RADIO - FUEL PRICES, in simple Icelandic",
-              "url": "https://www.ruv.is/english/2026-11-27-ruv-english-radio-audskilid-learning-icelandic-with-ruv-english-radio-fuel-prices-in-simple-icelandic-494264/",
-              "tid": 1795794286.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "RÚV English Radio - AUÐSKILIÐ: LEARNING ICELANDIC WITH RÚV ENGLISH RADIO - FUEL PRICES, in simple Icelandic",
-      "kallor": [
-        {
-          "namn": "RÚV English",
-          "rubrik": "RÚV English Radio - AUÐSKILIÐ: LEARNING ICELANDIC WITH RÚV ENGLISH RADIO - FUEL PRICES, in simple Icelandic",
-          "url": "https://www.ruv.is/english/2026-11-27-ruv-english-radio-audskilid-learning-icelandic-with-ruv-english-radio-fuel-prices-in-simple-icelandic-494264/",
-          "tid": 1795794286.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IS",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "2a85ba6200",
-      "amnen": [
-        "norden",
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T15:39:35+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "RÚV English",
-              "land": "IS",
-              "rubrik": "Foreign nation state involvement in cyberattack cannot be ruled out",
-              "url": "https://www.ruv.is/english/2026-11-27-foreign-nation-state-involvement-in-cyberattack-cannot-be-ruled-out-494263/",
-              "tid": 1795793975.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Foreign nation state involvement in cyberattack cannot be ruled out",
-      "kallor": [
-        {
-          "namn": "RÚV English",
-          "rubrik": "Foreign nation state involvement in cyberattack cannot be ruled out",
-          "url": "https://www.ruv.is/english/2026-11-27-foreign-nation-state-involvement-in-cyberattack-cannot-be-ruled-out-494263/",
-          "tid": 1795793975.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IS",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 72,
+      "artiklar": 71,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -5094,7 +5112,7 @@
     {
       "id": "scb",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 8,
       "url": "https://www.scb.se/Feed/statistiknyheter/"
     },
     {
@@ -5190,19 +5208,19 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 40,
+      "artiklar": 39,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 13,
+      "artiklar": 18,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 29,
+      "artiklar": 30,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
@@ -5262,7 +5280,7 @@
     {
       "id": "thehindu",
       "ok": true,
-      "artiklar": 48,
+      "artiklar": 45,
       "url": "https://www.thehindu.com/news/international/feeder/default.rss"
     },
     {
@@ -5284,19 +5302,19 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 50,
+      "artiklar": 49,
       "url": "https://mg.co.za/rss/"
     },
     {
       "id": "cgtn",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 19,
       "url": "https://www.cgtn.com/subscribe/rss/section/world.xml"
     },
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 22,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -5374,7 +5392,7 @@
     {
       "id": "fz",
       "ok": true,
-      "artiklar": 15,
+      "artiklar": 14,
       "url": "https://www.fz.se/feeds/nyheter"
     },
     {
@@ -5468,7 +5486,7 @@
     {
       "id": "the-information",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 4,
       "url": "https://www.theinformation.com/feed"
     },
     {
@@ -5480,7 +5498,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 13,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -5521,7 +5539,7 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 3,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -5556,7 +5574,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 14,
+      "artiklar": 16,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -5574,7 +5592,7 @@
     {
       "id": "technode",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 7,
       "url": "https://technode.com/feed/"
     },
     {
@@ -5604,7 +5622,7 @@
     {
       "id": "simon-willison",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 1,
       "url": "https://simonwillison.net/atom/everything/"
     },
     {
@@ -5616,7 +5634,7 @@
     {
       "id": "batimes",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 10,
       "url": "https://www.batimes.com.ar/feed"
     },
     {
@@ -5646,7 +5664,7 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 30,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
@@ -5712,7 +5730,7 @@
     {
       "id": "yonhap",
       "ok": true,
-      "artiklar": 90,
+      "artiklar": 80,
       "url": "https://en.yna.co.kr/RSS/news.xml"
     },
     {
@@ -5754,7 +5772,7 @@
     {
       "id": "ruv",
       "ok": true,
-      "artiklar": 28,
+      "artiklar": 26,
       "url": "https://www.ruv.is/rss/english"
     },
     {
@@ -5796,7 +5814,7 @@
     {
       "id": "gleaner",
       "ok": true,
-      "artiklar": 10,
+      "artiklar": 6,
       "url": "https://jamaica-gleaner.com/feed/rss.xml"
     },
     {
@@ -5826,7 +5844,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 30,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
