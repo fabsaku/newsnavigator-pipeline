@@ -1,31 +1,32 @@
 {
-  "skapad": "2026-11-27T08:34:15.690193+00:00",
+  "skapad": "2026-11-27T09:06:32.208592+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
-      "id": "740b9e408e",
+      "id": "109be638ad",
       "amnen": [
+        "ai",
         "rymd",
         "usa"
       ],
       "amnen_sektion": [
+        "ai",
         "rymd",
         "usa"
       ],
-      "poang": 33.3,
+      "poang": 33.8,
       "vikt": {
-        "bredd": 0.89,
+        "bredd": 0.929,
         "regioner": {
           "usa": 4,
           "afrika": 1,
-          "asien": 2,
-          "europa": 1,
+          "asien": 3,
+          "europa": 2,
           "latinamerika": 1,
-          "norden": 1,
-          "sverige": 1
+          "norden": 1
         },
-        "timmar": 38,
+        "timmar": 39,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -34,16 +35,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 11,
+      "antal_kallor": 12,
       "har_primarkalla": false,
       "senast": "2026-11-27T07:15:13+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChT8CoMq9ELHNHJ95mfed'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTAfY6nKWBeif541DpDR'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.753,
+      "sammanhang": 0.732,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -52,7 +53,6 @@
           "europa",
           "latinamerika",
           "norden",
-          "sverige",
           "usa"
         ],
         "per_region": {
@@ -116,6 +116,14 @@
               "url": "https://www.thehindu.com/news/international/elon-musk-says-every-child-in-us-will-get-two-spacex-shares/article71745692.ece",
               "tid": 1795681623.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "US approves SpaceX plan for 1 million space data center satellites",
+              "url": "https://news.cgtn.com/news/2026-11-27/US-approves-SpaceX-plan-for-1-million-space-data-center-satellites-1SpaGyCBlHa/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795743019.0,
+              "statskontrollerad": true
             }
           ],
           "europa": [
@@ -125,6 +133,14 @@
               "rubrik": "Elon Musk to give two shares of SpaceX to every child in the US in a deal worth $18 billion",
               "url": "https://english.elpais.com/usa/2026-11-26/elon-musk-to-give-two-shares-of-spacex-to-every-child-in-the-us-in-a-deal-worth-18-billion.html",
               "tid": 1795702460.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
+              "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795685264.0,
               "statskontrollerad": false
             }
           ],
@@ -145,16 +161,6 @@
               "rubrik": "Elon Musk lover to Space X-aktier til alle børn i USA",
               "url": "https://www.dr.dk/nyheder/seneste/elon-musk-lover-space-x-aktier-til-alle-boern-i-usa",
               "tid": 1795673441.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Breakit",
-              "land": "SE",
-              "rubrik": "Elon Musk vill fylla rymden med upp till en miljon AI-datacenter – nu säger myndighet ja",
-              "url": "https://www.breakit.se/artikel/48140/elon-musk-vill-fylla-rymden-med-upp-till-en-miljon-ai-datacenter-nu-sager-myndighet-ja",
-              "tid": 1795682280.0,
               "statskontrollerad": false
             }
           ]
@@ -298,6 +304,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "BBC World",
+          "rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
+          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795685264.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Hindu",
           "rubrik": "Elon Musk says every child in U.S. will get two SpaceX shares",
           "url": "https://www.thehindu.com/news/international/elon-musk-says-every-child-in-us-will-get-two-spacex-shares/article71745692.ece",
@@ -322,16 +340,16 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Breakit",
-          "rubrik": "Elon Musk vill fylla rymden med upp till en miljon AI-datacenter – nu säger myndighet ja",
-          "url": "https://www.breakit.se/artikel/48140/elon-musk-vill-fylla-rymden-med-upp-till-en-miljon-ai-datacenter-nu-sager-myndighet-ja",
-          "tid": 1795682280.0,
-          "betalvagg": true,
+          "namn": "CGTN",
+          "rubrik": "US approves SpaceX plan for 1 million space data center satellites",
+          "url": "https://news.cgtn.com/news/2026-11-27/US-approves-SpaceX-plan-for-1-million-space-data-center-satellites-1SpaGyCBlHa/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795743019.0,
+          "betalvagg": false,
           "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
@@ -343,361 +361,6 @@
         "inget utkast",
         "ingen källkontroll",
         "spärrord: child"
-      ],
-      "data": null
-    },
-    {
-      "id": "d05d56d9d0",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 32.2,
-      "vikt": {
-        "bredd": 0.818,
-        "regioner": {
-          "asien": 4,
-          "afrika": 1,
-          "usa": 2,
-          "mellanostern": 1,
-          "europa": 5
-        },
-        "timmar": 72,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 13,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T07:51:27+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChT8CoN5VL3RmcrWcKSEe'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.676,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
-              "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
-              "tid": 1795765887.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
-              "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
-              "tid": 1795749166.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
-              "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
-              "tid": 1795748958.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
-              "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
-              "tid": 1795708311.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Daily Maverick",
-              "land": "ZA",
-              "rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
-              "url": "https://www.dailymaverick.co.za/article/2026-11-27-trump-says-he-asked-putin-to-pull-back-military-aggression-throughout-europe/",
-              "tid": 1795754250.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-              "tid": 1795746349.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
-              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
-              "tid": 1795716480.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’",
-              "url": "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back?traffic_source=rss",
-              "tid": 1795745665.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
-              "url": "https://www.france24.com/en/trump-urges-putin-to-end-military-aggression-in-europe",
-              "tid": 1795723834.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
-              "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795712040.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Jared Kushner says Putin has shown ‘restraint’ in Ukraine and promised not to use nuclear weapons",
-              "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
-              "tid": 1795707472.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
-              "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
-              "tid": 1795706485.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
-              "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
-              "tid": 1795747317.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-              "tid": 1795746349.0,
-              "lutning": "hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
-              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
-              "tid": 1795716480.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
-          "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
-          "tid": 1795765887.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Daily Maverick",
-          "rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
-          "url": "https://www.dailymaverick.co.za/article/2026-11-27-trump-says-he-asked-putin-to-pull-back-military-aggression-throughout-europe/",
-          "tid": 1795754250.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ZA",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
-          "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
-          "tid": 1795749166.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
-          "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
-          "tid": 1795748958.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-          "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-          "tid": 1795746349.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’",
-          "url": "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back?traffic_source=rss",
-          "tid": 1795745665.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
-          "url": "https://www.france24.com/en/trump-urges-putin-to-end-military-aggression-in-europe",
-          "tid": 1795723834.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
-          "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795712040.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
-          "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
-          "tid": 1795708311.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "Jared Kushner says Putin has shown ‘restraint’ in Ukraine and promised not to use nuclear weapons",
-          "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
-          "tid": 1795707472.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
-          "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
-          "tid": 1795706485.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
-          "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
-          "tid": 1795747317.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
-          "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
-          "tid": 1795716480.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
       ],
       "data": null
     },
@@ -732,7 +395,7 @@
       "senast": "2026-11-27T04:42:55+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChT8CoMpzGW9pjyHrkxx9'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTAfY5oaBZE4FRuPs38H'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -870,6 +533,509 @@
       "data": null
     },
     {
+      "id": "d05d56d9d0",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 30.7,
+      "vikt": {
+        "bredd": 0.655,
+        "regioner": {
+          "asien": 4,
+          "afrika": 1,
+          "europa": 5,
+          "usa": 1
+        },
+        "timmar": 73,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 11,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T07:51:27+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTAfY6o7RrCa4MLG1wvc'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.746,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
+              "tid": 1795765887.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
+              "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
+              "tid": 1795749166.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
+              "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
+              "tid": 1795748958.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
+              "tid": 1795708311.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Daily Maverick",
+              "land": "ZA",
+              "rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
+              "url": "https://www.dailymaverick.co.za/article/2026-11-27-trump-says-he-asked-putin-to-pull-back-military-aggression-throughout-europe/",
+              "tid": 1795754250.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+              "url": "https://www.france24.com/en/trump-urges-putin-to-end-military-aggression-in-europe",
+              "tid": 1795723834.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
+              "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795712040.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Jared Kushner says Putin has shown ‘restraint’ in Ukraine and promised not to use nuclear weapons",
+              "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
+              "tid": 1795707472.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
+              "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
+              "tid": 1795706485.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+              "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
+              "tid": 1795747317.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+              "tid": 1795716480.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Donald Trump urges Vladimir Putin to end ‘military aggression’ in Europe",
+          "url": "https://www.thehindu.com/news/international/donald-trump-urges-vladimir-putin-to-end-military-aggression-in-europe/article71749343.ece",
+          "tid": 1795765887.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Daily Maverick",
+          "rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
+          "url": "https://www.dailymaverick.co.za/article/2026-11-27-trump-says-he-asked-putin-to-pull-back-military-aggression-throughout-europe/",
+          "tid": 1795754250.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ZA",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
+          "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
+          "tid": 1795749166.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
+          "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
+          "tid": 1795748958.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+          "url": "https://www.france24.com/en/trump-urges-putin-to-end-military-aggression-in-europe",
+          "tid": 1795723834.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
+          "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795712040.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
+          "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
+          "tid": 1795708311.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Jared Kushner says Putin has shown ‘restraint’ in Ukraine and promised not to use nuclear weapons",
+          "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
+          "tid": 1795707472.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Trump tells Putin to 'pull back all military aggression' across Europe",
+          "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
+          "tid": 1795706485.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+          "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
+          "tid": 1795747317.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+          "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+          "tid": 1795716480.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "4e6e9c4984",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 30.3,
+      "vikt": {
+        "bredd": 0.499,
+        "regioner": {
+          "europa": 3,
+          "mellanostern": 1,
+          "usa": 1,
+          "asien": 1,
+          "latinamerika": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T08:51:57+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChTAfY6nZxpLdHuRhmUys'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.77,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "El País (English)",
+              "land": "ES",
+              "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+              "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
+              "tid": 1795769517.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Almost a million Americans left without power on Thanksgiving as storm sweeps East Coast",
+              "url": "https://www.france24.com/en/americas/20261127-almost-a-million-americans-left-without-power-on-thanksgiving-as-storm-sweeps-east-coast",
+              "tid": 1795763675.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
+              "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
+              "tid": 1795763922.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Thanksgiving storms leave nearly a million without power across the US",
+              "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us?traffic_source=rss",
+              "tid": 1795754083.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
+              "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
+              "tid": 1795753145.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+              "tid": 1795746122.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "MercoPress",
+              "land": "UY",
+              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+              "tid": 1795732200.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+      "kallor": [
+        {
+          "namn": "El País (English)",
+          "rubrik": "Thanksgiving storm leaves over 900,000 homes without power",
+          "url": "https://english.elpais.com/climate/2026-11-27/thanksgiving-storm-leaves-over-900000-homes-without-power.html",
+          "tid": 1795769517.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Almost a million Americans left without power on Thanksgiving as storm sweeps East Coast",
+          "url": "https://www.france24.com/en/americas/20261127-almost-a-million-americans-left-without-power-on-thanksgiving-as-storm-sweeps-east-coast",
+          "tid": 1795763675.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Thanksgiving storms leave nearly a million without power across the US",
+          "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us?traffic_source=rss",
+          "tid": 1795754083.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
+          "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
+          "tid": 1795753145.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
+          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
+          "tid": 1795746122.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "MercoPress",
+          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
+          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+          "tid": 1795732200.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UY",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
+          "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
+          "tid": 1795763922.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
       "id": "1689b7acb6",
       "amnen": [
         "geopolitik",
@@ -897,10 +1063,7 @@
       "antal_kallor": 2,
       "har_primarkalla": false,
       "senast": "2026-11-27T07:09:53+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChT8CoNKHX5oUy8XqXH6F'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.615,
@@ -973,194 +1136,6 @@
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "4e6e9c4984",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 29.8,
-      "vikt": {
-        "bredd": 0.451,
-        "regioner": {
-          "europa": 2,
-          "mellanostern": 1,
-          "usa": 1,
-          "asien": 1,
-          "latinamerika": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T07:18:43+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.754,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "latinamerika",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Almost a million Americans left without power on Thanksgiving as storm sweeps East Coast",
-              "url": "https://www.france24.com/en/americas/20261127-almost-a-million-americans-left-without-power-on-thanksgiving-as-storm-sweeps-east-coast",
-              "tid": 1795763675.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Le Monde (English)",
-              "land": "FR",
-              "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
-              "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
-              "tid": 1795763923.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Thanksgiving storms leave nearly a million without power across the US",
-              "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us?traffic_source=rss",
-              "tid": 1795754083.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
-              "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
-              "tid": 1795753145.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-              "tid": 1795746122.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-              "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795732200.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Almost a million Americans left without power on Thanksgiving as storm sweeps East Coast",
-      "kallor": [
-        {
-          "namn": "France 24",
-          "rubrik": "Almost a million Americans left without power on Thanksgiving as storm sweeps East Coast",
-          "url": "https://www.france24.com/en/americas/20261127-almost-a-million-americans-left-without-power-on-thanksgiving-as-storm-sweeps-east-coast",
-          "tid": 1795763675.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Thanksgiving storms leave nearly a million without power across the US",
-          "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us?traffic_source=rss",
-          "tid": 1795754083.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "Nearly 900,000 customers without power as of Thanksgiving evening",
-          "url": "https://www.washingtonexaminer.com/policy/energy-and-environment/4816392/nearly-900k-customers-without-power-thanksgiving-evening/",
-          "tid": 1795753145.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Thanksgiving Day storms leave at least 900,000 homes without power, many parts of US see severe flooding",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-storm-brings-severe-flooding-power-outages-on-thanksgiving-new-jersey-new-york-pennsylvania-virginia-and-missouri-watch-videos-and-photos-101795744663822.html",
-          "tid": 1795746122.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "MercoPress",
-          "rubrik": "Storms on both US coasts leave 840,000 without power and disrupt Thanksgiving travel",
-          "url": "https://en.mercopress.com/2026/11/26/storms-on-both-us-coasts-leave-840-000-without-power-and-disrupt-thanksgiving-travel?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-          "tid": 1795732200.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UY",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Le Monde (English)",
-          "rubrik": "Major US storm leaves more than 900,000 homes without power for Thanksgiving",
-          "url": "https://www.lemonde.fr/en/environment/article/2026/11/27/major-us-storm-leaves-more-than-900-000-homes-without-power-for-thanksgiving_6789796_114.html",
-          "tid": 1795763923.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
       ],
       "data": null
     },
@@ -1495,7 +1470,7 @@
           "usa": 2,
           "asien": 1
         },
-        "timmar": 89,
+        "timmar": 90,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1604,7 +1579,215 @@
       "data": null
     },
     {
-      "id": "fd79350820",
+      "id": "6343c8cd51",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 28.9,
+      "vikt": {
+        "bredd": 0.358,
+        "regioner": {
+          "asien": 2,
+          "usa": 2,
+          "mellanostern": 1,
+          "europa": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T08:26:57+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.615,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
+              "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
+              "tid": 1795768017.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+              "tid": 1795742663.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+              "tid": 1795751471.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
+              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
+              "tid": 1795746349.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’",
+              "url": "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back?traffic_source=rss",
+              "tid": 1795745665.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795733367.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+              "tid": 1795751471.0,
+              "lutning": "mitten"
+            }
+          ],
+          "rod": [
+            {
+              "kalla": "Fox News",
+              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
+              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
+              "tid": 1795746349.0,
+              "lutning": "hoger"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
+      "kallor": [
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Ukraine’s Zelensky compares Trump’s friendship with Putin to friendship with Hitler",
+          "url": "https://www.straitstimes.com/world/europe/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
+          "tid": 1795768017.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hill",
+          "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+          "tid": 1795751471.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
+          "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
+          "tid": 1795746349.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’",
+          "url": "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back?traffic_source=rss",
+          "tid": 1795745665.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+          "tid": 1795742663.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795733367.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "2d86f67061",
       "amnen": [],
       "amnen_sektion": [],
       "poang": 28.7,
@@ -1705,6 +1888,250 @@
           "land": "SG",
           "region": "asien",
           "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "2a622a9d06",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 28.5,
+      "vikt": {
+        "bredd": 0.12,
+        "regioner": {
+          "global": 1,
+          "usa": 1
+        },
+        "timmar": 76,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "rattigheter"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T16:55:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.635,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "global",
+          "usa"
+        ],
+        "per_region": {
+          "global": [
+            {
+              "kalla": "Amnesty International",
+              "land": "GB",
+              "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+              "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
+              "tid": 1795709724.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
+              "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
+              "tid": 1795712100.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+      "kallor": [
+        {
+          "namn": "Amnesty International",
+          "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+          "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
+          "tid": 1795709724.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "global",
+          "agare": "organisation",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
+          "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
+          "tid": 1795712100.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "8ee2a985ff",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 28.5,
+      "vikt": {
+        "bredd": 0.275,
+        "regioner": {
+          "asien": 2,
+          "europa": 1,
+          "global": 1
+        },
+        "timmar": 53,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "rattigheter"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T17:12:15+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.777,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "global"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Myanmar says it will not fully comply with ICJ genocide orders",
+              "url": "https://www.thehindu.com/news/international/myanmar-says-it-will-not-fully-comply-with-icj-genocide-orders/article71747952.ece",
+              "tid": 1795713135.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Myanmar says it will not fully comply with ICJ orders on Rohingya genocide verdict",
+              "url": "https://www.hindustantimes.com/world-news/myanmar-says-it-will-not-fully-comply-with-icj-orders-on-rohingya-genocide-verdict-101795679521134.html",
+              "tid": 1795681176.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Myanmar refuses to comply with parts of ICJ genocide ruling",
+              "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795688751.0,
+              "statskontrollerad": false
+            }
+          ],
+          "global": [
+            {
+              "kalla": "International Crisis Group",
+              "land": "BE",
+              "rubrik": "World Court Finds Myanmar Committed Genocide against the Rohingya",
+              "url": "https://www.crisisgroup.org/qna/asia-pacific/myanmar/world-court-finds-myanmar-committed-genocide-against-rohingya",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Myanmar says it will not fully comply with ICJ genocide orders",
+      "kallor": [
+        {
+          "namn": "The Hindu",
+          "rubrik": "Myanmar says it will not fully comply with ICJ genocide orders",
+          "url": "https://www.thehindu.com/news/international/myanmar-says-it-will-not-fully-comply-with-icj-genocide-orders/article71747952.ece",
+          "tid": 1795713135.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Myanmar refuses to comply with parts of ICJ genocide ruling",
+          "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795688751.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Myanmar says it will not fully comply with ICJ orders on Rohingya genocide verdict",
+          "url": "https://www.hindustantimes.com/world-news/myanmar-says-it-will-not-fully-comply-with-icj-orders-on-rohingya-genocide-verdict-101795679521134.html",
+          "tid": 1795681176.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "International Crisis Group",
+          "rubrik": "World Court Finds Myanmar Committed Genocide against the Rohingya",
+          "url": "https://www.crisisgroup.org/qna/asia-pacific/myanmar/world-court-finds-myanmar-committed-genocide-against-rohingya",
+          "tid": null,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BE",
+          "region": "global",
+          "agare": "organisation",
           "statskontrollerad": false
         }
       ],
@@ -1888,58 +2315,88 @@
       "data": null
     },
     {
-      "id": "2a622a9d06",
-      "amnen": [
-        "varlden"
-      ],
+      "id": "ea7defd56e",
+      "amnen": [],
       "amnen_sektion": [],
       "poang": 28.4,
       "vikt": {
-        "bredd": 0.12,
+        "bredd": 0.616,
         "regioner": {
-          "global": 1,
-          "usa": 1
+          "europa": 2,
+          "mellanostern": 1,
+          "norden": 1,
+          "asien": 1
         },
-        "timmar": 75,
+        "timmar": 23,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": [
-          "rattigheter"
+          "miljo"
         ]
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 5,
       "har_primarkalla": false,
-      "senast": "2026-11-26T16:55:00+00:00",
+      "senast": "2026-11-26T22:01:22+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.635,
+      "sammanhang": 0.616,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "global",
-          "usa"
+          "asien",
+          "europa",
+          "mellanostern",
+          "norden"
         ],
         "per_region": {
-          "global": [
+          "europa": [
             {
-              "kalla": "Amnesty International",
+              "kalla": "BBC World",
               "land": "GB",
-              "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
-              "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
-              "tid": 1795709724.0,
+              "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+              "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+              "tid": 1795730482.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Crew member dies after diesel tanker sinks off Ibiza coast",
+              "url": "https://www.dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795694280.0,
               "statskontrollerad": false
             }
           ],
-          "usa": [
+          "mellanostern": [
             {
-              "kalla": "The Wall Street Journal",
+              "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
-              "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
-              "tid": 1795712100.0,
+              "rubrik": "Crew member dies after diesel tanker capsizes off Ibiza, no pollution so far",
+              "url": "https://www.al-monitor.com/originals/2026/11/crew-member-dies-after-diesel-tanker-capsizes-ibiza-no-pollution-so-far",
+              "tid": 1795704389.0,
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Tankskib med op mod 7.000 ton diesel er sunket ud for Spaniens kyst",
+              "url": "https://www.dr.dk/nyheder/seneste/tankskib-med-op-mod-7-000-ton-diesel-er-sunket-ud-spaniens-kyst",
+              "tid": 1795682532.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "1 dead after diesel tanker sinks off Ibiza coast; Spain launches pollution plan to control spill",
+              "url": "https://www.hindustantimes.com/world-news/1-dead-after-diesel-tanker-sinks-off-ibiza-coast-spain-launches-pollution-plan-to-control-spill-101795679448475.html",
+              "tid": 1795679885.0,
               "statskontrollerad": false
             }
           ]
@@ -1949,144 +2406,13 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
+      "reserv_rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
       "kallor": [
-        {
-          "namn": "Amnesty International",
-          "rubrik": "No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza – Report Launch, 25 November 2026 – Introductory Speech",
-          "url": "https://www.amnesty.org/en/latest/campaigns/2026/11/women-girls-israels-genocide-against-palestinians-gaza-report-launch-introductory-speech/",
-          "tid": 1795709724.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Opinion | What the Myanmar Genocide Means for Israel",
-          "url": "https://www.wsj.com/opinion/what-the-myanmar-genocide-means-for-israel-9acefca0?mod=rss_worldnews",
-          "tid": 1795712100.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "8ee2a985ff",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.4,
-      "vikt": {
-        "bredd": 0.275,
-        "regioner": {
-          "asien": 2,
-          "europa": 1,
-          "global": 1
-        },
-        "timmar": 52,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:12:15+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.777,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "global"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Myanmar says it will not fully comply with ICJ genocide orders",
-              "url": "https://www.thehindu.com/news/international/myanmar-says-it-will-not-fully-comply-with-icj-genocide-orders/article71747952.ece",
-              "tid": 1795713135.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Myanmar says it will not fully comply with ICJ orders on Rohingya genocide verdict",
-              "url": "https://www.hindustantimes.com/world-news/myanmar-says-it-will-not-fully-comply-with-icj-orders-on-rohingya-genocide-verdict-101795679521134.html",
-              "tid": 1795681176.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Myanmar refuses to comply with parts of ICJ genocide ruling",
-              "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795688751.0,
-              "statskontrollerad": false
-            }
-          ],
-          "global": [
-            {
-              "kalla": "International Crisis Group",
-              "land": "BE",
-              "rubrik": "World Court Finds Myanmar Committed Genocide against the Rohingya",
-              "url": "https://www.crisisgroup.org/qna/asia-pacific/myanmar/world-court-finds-myanmar-committed-genocide-against-rohingya",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Myanmar says it will not fully comply with ICJ genocide orders",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Myanmar says it will not fully comply with ICJ genocide orders",
-          "url": "https://www.thehindu.com/news/international/myanmar-says-it-will-not-fully-comply-with-icj-genocide-orders/article71747952.ece",
-          "tid": 1795713135.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
         {
           "namn": "BBC World",
-          "rubrik": "Myanmar refuses to comply with parts of ICJ genocide ruling",
-          "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795688751.0,
+          "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+          "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+          "tid": 1795730482.0,
           "betalvagg": false,
           "typ": "media",
           "land": "GB",
@@ -2095,39 +2421,62 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Al-Monitor",
+          "rubrik": "Crew member dies after diesel tanker capsizes off Ibiza, no pollution so far",
+          "url": "https://www.al-monitor.com/originals/2026/11/crew-member-dies-after-diesel-tanker-capsizes-ibiza-no-pollution-so-far",
+          "tid": 1795704389.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Deutsche Welle",
+          "rubrik": "Crew member dies after diesel tanker sinks off Ibiza coast",
+          "url": "https://www.dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795694280.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DE",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Tankskib med op mod 7.000 ton diesel er sunket ud for Spaniens kyst",
+          "url": "https://www.dr.dk/nyheder/seneste/tankskib-med-op-mod-7-000-ton-diesel-er-sunket-ud-spaniens-kyst",
+          "tid": 1795682532.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
           "namn": "Hindustan Times",
-          "rubrik": "Myanmar says it will not fully comply with ICJ orders on Rohingya genocide verdict",
-          "url": "https://www.hindustantimes.com/world-news/myanmar-says-it-will-not-fully-comply-with-icj-orders-on-rohingya-genocide-verdict-101795679521134.html",
-          "tid": 1795681176.0,
+          "rubrik": "1 dead after diesel tanker sinks off Ibiza coast; Spain launches pollution plan to control spill",
+          "url": "https://www.hindustantimes.com/world-news/1-dead-after-diesel-tanker-sinks-off-ibiza-coast-spain-launches-pollution-plan-to-control-spill-101795679448475.html",
+          "tid": 1795679885.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
-        },
-        {
-          "namn": "International Crisis Group",
-          "rubrik": "World Court Finds Myanmar Committed Genocide against the Rohingya",
-          "url": "https://www.crisisgroup.org/qna/asia-pacific/myanmar/world-court-finds-myanmar-committed-genocide-against-rohingya",
-          "tid": null,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BE",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
+        "sv": 2,
         "en": 2
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2283,172 +2632,6 @@
         "inget utkast",
         "ingen källkontroll",
         "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "ea7defd56e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.2,
-      "vikt": {
-        "bredd": 0.616,
-        "regioner": {
-          "europa": 2,
-          "mellanostern": 1,
-          "norden": 1,
-          "asien": 1
-        },
-        "timmar": 22,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "miljo"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T22:01:22+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.616,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "norden"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-              "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-              "tid": 1795730482.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Crew member dies after diesel tanker sinks off Ibiza coast",
-              "url": "https://www.dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795694280.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Crew member dies after diesel tanker capsizes off Ibiza, no pollution so far",
-              "url": "https://www.al-monitor.com/originals/2026/11/crew-member-dies-after-diesel-tanker-capsizes-ibiza-no-pollution-so-far",
-              "tid": 1795704389.0,
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Tankskib med op mod 7.000 ton diesel er sunket ud for Spaniens kyst",
-              "url": "https://www.dr.dk/nyheder/seneste/tankskib-med-op-mod-7-000-ton-diesel-er-sunket-ud-spaniens-kyst",
-              "tid": 1795682532.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "1 dead after diesel tanker sinks off Ibiza coast; Spain launches pollution plan to control spill",
-              "url": "https://www.hindustantimes.com/world-news/1-dead-after-diesel-tanker-sinks-off-ibiza-coast-spain-launches-pollution-plan-to-control-spill-101795679448475.html",
-              "tid": 1795679885.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-      "kallor": [
-        {
-          "namn": "BBC World",
-          "rubrik": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-          "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-          "tid": 1795730482.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Crew member dies after diesel tanker capsizes off Ibiza, no pollution so far",
-          "url": "https://www.al-monitor.com/originals/2026/11/crew-member-dies-after-diesel-tanker-capsizes-ibiza-no-pollution-so-far",
-          "tid": 1795704389.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Deutsche Welle",
-          "rubrik": "Crew member dies after diesel tanker sinks off Ibiza coast",
-          "url": "https://www.dw.com/en/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-coast/a-80059054?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795694280.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DE",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "Tankskib med op mod 7.000 ton diesel er sunket ud for Spaniens kyst",
-          "url": "https://www.dr.dk/nyheder/seneste/tankskib-med-op-mod-7-000-ton-diesel-er-sunket-ud-spaniens-kyst",
-          "tid": 1795682532.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "1 dead after diesel tanker sinks off Ibiza coast; Spain launches pollution plan to control spill",
-          "url": "https://www.hindustantimes.com/world-news/1-dead-after-diesel-tanker-sinks-off-ibiza-coast-spain-launches-pollution-plan-to-control-spill-101795679448475.html",
-          "tid": 1795679885.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2628,7 +2811,7 @@
       "id": "8055b26aef",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.0,
+      "poang": 28.1,
       "vikt": {
         "bredd": 0.402,
         "regioner": {
@@ -2636,7 +2819,7 @@
           "europa": 1,
           "mellanostern": 2
         },
-        "timmar": 71,
+        "timmar": 72,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2766,19 +2949,118 @@
       "data": null
     },
     {
+      "id": "37baeb50b8",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 28.0,
+      "vikt": {
+        "bredd": 0.268,
+        "regioner": {
+          "latinamerika": 1,
+          "afrika": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T05:32:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.663,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "latinamerika"
+        ],
+        "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "The Rio Times",
+              "land": "BR",
+              "rubrik": "Senegal Speaker Urges Parliament Dissolution",
+              "url": "https://www.riotimesonline.com/sonko-says-senegal-elections-2027-dissolve-assembly/",
+              "tid": 1795757531.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Senegal parliament denounces president over budget decree",
+              "url": "http://www.africanews.com/2026/11/26/senegal-parliament-denounces-president-over-budget-decree/",
+              "tid": 1795700966.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Senegal Speaker Urges Parliament Dissolution",
+      "kallor": [
+        {
+          "namn": "The Rio Times",
+          "rubrik": "Senegal Speaker Urges Parliament Dissolution",
+          "url": "https://www.riotimesonline.com/sonko-says-senegal-elections-2027-dissolve-assembly/",
+          "tid": 1795757531.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "BR",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Senegal parliament denounces president over budget decree",
+          "url": "http://www.africanews.com/2026/11/26/senegal-parliament-denounces-president-over-budget-decree/",
+          "tid": 1795700966.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "96241d9e22",
       "amnen": [
         "afrika",
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 27.9,
+      "poang": 28.0,
       "vikt": {
         "bredd": 0.286,
         "regioner": {
           "afrika": 2
         },
-        "timmar": 91,
+        "timmar": 92,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2863,76 +3145,66 @@
       "data": null
     },
     {
-      "id": "6b6cd7d5af",
+      "id": "7f880cb1d0",
       "amnen": [
-        "geopolitik",
         "usa"
       ],
       "amnen_sektion": [
-        "geopolitik",
         "usa"
       ],
-      "poang": 27.3,
+      "poang": 27.4,
       "vikt": {
-        "bredd": 0.2,
+        "bredd": 0.306,
         "regioner": {
-          "asien": 3,
+          "mellanostern": 2,
           "usa": 1
         },
-        "timmar": 96,
+        "timmar": 77,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 4,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-26T21:28:00+00:00",
+      "senast": "2026-11-27T08:27:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.529,
+      "sammanhang": 0.479,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
+          "mellanostern",
           "usa"
         ],
         "per_region": {
-          "asien": [
+          "mellanostern": [
             {
-              "kalla": "Bangkok Post",
-              "land": "TH",
-              "rubrik": "Govt defends 18% US tariff proposal",
-              "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
-              "tid": 1795728480.0,
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Trump argues US does not 'need the oil' from Middle East, says Washington 'protects' Israel and region",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-argues-us-does-not-need-oil-middle-east-says-washington-protects",
+              "tid": 1795760735.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-              "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-              "tid": 1795678927.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Trump rebuilds tariff wall with new duties on China, Japan and others",
-              "url": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-rebuilds-tariff-wall-with-new-duties-on-china-japan-and-others",
-              "tid": null,
-              "statskontrollerad": false
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Oil set to post weekly gain as Middle East attacks stoke supply concerns",
+              "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/",
+              "tid": 1795765660.0,
+              "statskontrollerad": true
             }
           ],
           "usa": [
             {
-              "kalla": "NPR",
+              "kalla": "The Wall Street Journal",
               "land": "US",
-              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-              "tid": 1795693427.0,
+              "rubrik": "Oil Prices Rise Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
+              "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550?mod=rss_worldnews",
+              "tid": 1795768020.0,
               "statskontrollerad": false
             }
           ]
@@ -2942,65 +3214,54 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Govt defends 18% US tariff proposal",
+      "reserv_rubrik": "Trump argues US does not 'need the oil' from Middle East, says Washington 'protects' Israel and region",
       "kallor": [
         {
-          "namn": "Bangkok Post",
-          "rubrik": "Govt defends 18% US tariff proposal",
-          "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
-          "tid": 1795728480.0,
+          "namn": "Middle East Eye",
+          "rubrik": "Trump argues US does not 'need the oil' from Middle East, says Washington 'protects' Israel and region",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-argues-us-does-not-need-oil-middle-east-says-washington-protects",
+          "tid": 1795760735.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "TH",
-          "region": "asien",
+          "land": "GB",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "NPR",
-          "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-          "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-          "tid": 1795693427.0,
-          "betalvagg": false,
+          "namn": "The Wall Street Journal",
+          "rubrik": "Oil Prices Rise Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
+          "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550?mod=rss_worldnews",
+          "tid": 1795768020.0,
+          "betalvagg": true,
           "typ": "media",
           "land": "US",
           "region": "usa",
-          "agare": "public-service",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-          "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-          "tid": 1795678927.0,
+          "namn": "The National",
+          "rubrik": "Oil set to post weekly gain as Middle East attacks stoke supply concerns",
+          "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/",
+          "tid": 1795765660.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "Trump rebuilds tariff wall with new duties on China, Japan and others",
-          "url": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-rebuilds-tariff-wall-with-new-duties-on-china-japan-and-others",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
-        "en": 3
+        "sv": 0,
+        "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
         "blind fläck"
       ],
       "data": null
@@ -3013,14 +3274,14 @@
       "amnen_sektion": [
         "geopolitik"
       ],
-      "poang": 27.3,
+      "poang": 27.4,
       "vikt": {
         "bredd": 0.283,
         "regioner": {
           "asien": 4,
           "europa": 1
         },
-        "timmar": 80,
+        "timmar": 81,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3033,7 +3294,7 @@
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.576,
+      "sammanhang": 0.639,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -3069,8 +3330,8 @@
             {
               "kalla": "Nikkei Asia",
               "land": "JP",
-              "rubrik": "Taiwan weathers wave of cyberattacks ahead of Saturday's elections",
-              "url": "https://asia.nikkei.com/spotlight/cybersecurity/taiwan-weathers-wave-of-cyberattacks-ahead-of-saturday-s-elections",
+              "rubrik": "Taiwan elections: 5 things to know about city races eyed by China and US",
+              "url": "https://asia.nikkei.com/politics/taiwan-elections-5-things-to-know-about-city-races-eyed-by-china-and-us",
               "tid": null,
               "statskontrollerad": false
             }
@@ -3143,8 +3404,8 @@
         },
         {
           "namn": "Nikkei Asia",
-          "rubrik": "Taiwan weathers wave of cyberattacks ahead of Saturday's elections",
-          "url": "https://asia.nikkei.com/spotlight/cybersecurity/taiwan-weathers-wave-of-cyberattacks-ahead-of-saturday-s-elections",
+          "rubrik": "Taiwan elections: 5 things to know about city races eyed by China and US",
+          "url": "https://asia.nikkei.com/politics/taiwan-elections-5-things-to-know-about-city-races-eyed-by-china-and-us",
           "tid": null,
           "betalvagg": true,
           "typ": "media",
@@ -3170,7 +3431,7 @@
       "id": "28342cc91e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.0,
+      "poang": 27.1,
       "vikt": {
         "bredd": 0.478,
         "regioner": {
@@ -3178,7 +3439,7 @@
           "europa": 2,
           "usa": 1
         },
-        "timmar": 47,
+        "timmar": 48,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3187,7 +3448,7 @@
       "maste": false,
       "antal_kallor": 9,
       "har_primarkalla": false,
-      "senast": "2026-11-27T08:21:29+00:00",
+      "senast": "2026-11-27T08:49:26+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
@@ -3206,7 +3467,7 @@
               "land": "PK",
               "rubrik": "Major storm batters US on Thanksgiving holiday",
               "url": "https://www.dawn.com/news/2047460/major-storm-batters-us-on-thanksgiving-holiday",
-              "tid": 1795767689.0,
+              "tid": 1795769366.0,
               "statskontrollerad": false
             },
             {
@@ -3290,7 +3551,7 @@
           "namn": "Dawn",
           "rubrik": "Major storm batters US on Thanksgiving holiday",
           "url": "https://www.dawn.com/news/2047460/major-storm-batters-us-on-thanksgiving-holiday",
-          "tid": 1795767689.0,
+          "tid": 1795769366.0,
           "betalvagg": false,
           "typ": "media",
           "land": "PK",
@@ -3530,129 +3791,6 @@
       "data": null
     },
     {
-      "id": "5db6a782f2",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.7,
-      "vikt": {
-        "bredd": 0.136,
-        "regioner": {
-          "asien": 1,
-          "europa": 1,
-          "usa": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T14:52:43+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.624,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-              "url": "https://www.hindustantimes.com/world-news/16-dead-10-missing-after-floods-hit-illegal-gold-mine-in-indonesia-search-and-rescue-underway-101795677902881.html",
-              "tid": 1795678746.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Thirteen dead as mine disaster highlights illegal hunt for gold",
-              "url": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
-              "tid": 1795678284.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The New York Times",
-              "land": "US",
-              "rubrik": "13 Dead and 13 Thought Trapped in Indonesian Mine After Heavy Rain",
-              "url": "https://www.nytimes.com/2026/11/25/world/asia/indonesia-miners-trapped.html",
-              "tid": 1795704763.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-          "url": "https://www.hindustantimes.com/world-news/16-dead-10-missing-after-floods-hit-illegal-gold-mine-in-indonesia-search-and-rescue-underway-101795677902881.html",
-          "tid": 1795678746.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Thirteen dead as mine disaster highlights illegal hunt for gold",
-          "url": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
-          "tid": 1795678284.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The New York Times",
-          "rubrik": "13 Dead and 13 Thought Trapped in Indonesian Mine After Heavy Rain",
-          "url": "https://www.nytimes.com/2026/11/25/world/asia/indonesia-miners-trapped.html",
-          "tid": 1795704763.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": true,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "9141cdfe75",
       "amnen": [
         "geopolitik",
@@ -3662,14 +3800,14 @@
         "geopolitik",
         "halvledare"
       ],
-      "poang": 26.7,
+      "poang": 26.8,
       "vikt": {
         "bredd": 0.138,
         "regioner": {
           "asien": 2,
           "usa": 1
         },
-        "timmar": 48,
+        "timmar": 49,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3790,13 +3928,13 @@
         "marknader",
         "teknik"
       ],
-      "poang": 26.5,
+      "poang": 26.6,
       "vikt": {
         "bredd": 0.06,
         "regioner": {
           "usa": 3
         },
-        "timmar": 55,
+        "timmar": 56,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3902,191 +4040,6 @@
       "data": null
     },
     {
-      "id": "68b751956e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 26.4,
-      "vikt": {
-        "bredd": 0.376,
-        "regioner": {
-          "europa": 2,
-          "afrika": 1,
-          "asien": 2,
-          "usa": 1
-        },
-        "timmar": 52,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 6,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T08:12:32+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.532,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
-              "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
-              "tid": 1795767152.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Five killed in Ukrainian drone strike – Russian governor",
-              "url": "https://rt-english.com/news/649372-zaporozhye-drone-strike-ukraine/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795674870.0,
-              "statskontrollerad": true
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Italy not informed about Ukraine drone strike on Russian ships in Libya",
-              "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
-              "tid": 1795764338.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Ukraine claims strike that damaged Russian oil refinery",
-              "url": "https://www.straitstimes.com/world/europe/ukraine-claims-strike-that-damaged-russian-oil-refinery",
-              "tid": 1795716960.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Ukraine reports first laser strike against Russian jet drone",
-              "url": "https://www.hindustantimes.com/world-news/ukraine-reports-first-laser-strike-against-russian-jet-drone-101795679548017.html",
-              "tid": 1795680326.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Tom's Hardware",
-              "land": "US",
-              "rubrik": "Ukraine downs Russian jet-drone with cheap high-powered laser for the first time",
-              "url": "https://www.tomshardware.com/tech-industry/drones/ukraine-downs-russian-jet-drone-with-cheap-high-powered-laser-for-the-first-time-super-fast-shahed-knocked-out-by-a-4-kilowatt-test-system",
-              "tid": 1795703400.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
-      "kallor": [
-        {
-          "namn": "Meduza",
-          "rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
-          "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
-          "tid": 1795767152.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "Italy not informed about Ukraine drone strike on Russian ships in Libya",
-          "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
-          "tid": 1795764338.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Ukraine claims strike that damaged Russian oil refinery",
-          "url": "https://www.straitstimes.com/world/europe/ukraine-claims-strike-that-damaged-russian-oil-refinery",
-          "tid": 1795716960.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Tom's Hardware",
-          "rubrik": "Ukraine downs Russian jet-drone with cheap high-powered laser for the first time",
-          "url": "https://www.tomshardware.com/tech-industry/drones/ukraine-downs-russian-jet-drone-with-cheap-high-powered-laser-for-the-first-time-super-fast-shahed-knocked-out-by-a-4-kilowatt-test-system",
-          "tid": 1795703400.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Ukraine reports first laser strike against Russian jet drone",
-          "url": "https://www.hindustantimes.com/world-news/ukraine-reports-first-laser-strike-against-russian-jet-drone-101795679548017.html",
-          "tid": 1795680326.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "RT",
-          "rubrik": "Five killed in Ukrainian drone strike – Russian governor",
-          "url": "https://rt-english.com/news/649372-zaporozhye-drone-strike-ukraine/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795674870.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "RU",
-          "region": "europa",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "55c72d04c5",
       "amnen": [
         "noje"
@@ -4094,13 +4047,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 24.8,
+      "poang": 24.9,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 60,
+        "timmar": 61,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4193,15 +4146,14 @@
       "amnen_sektion": [
         "usa"
       ],
-      "poang": 24.0,
+      "poang": 22.9,
       "vikt": {
-        "bredd": 0.235,
+        "bredd": 0.099,
         "regioner": {
-          "usa": 3,
-          "asien": 2,
-          "europa": 1
+          "usa": 2,
+          "asien": 1
         },
-        "timmar": 20,
+        "timmar": 21,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4210,18 +4162,17 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 6,
+      "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-11-27T05:58:36+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.663,
+      "sammanhang": 0.83,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "europa",
           "usa"
         ],
         "per_region": {
@@ -4235,14 +4186,6 @@
               "statskontrollerad": false
             },
             {
-              "kalla": "The Hill",
-              "land": "US",
-              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-              "tid": 1795751471.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "Washington Examiner",
               "land": "US",
               "rubrik": "Trump open to Putin attending G20 in Florida next month",
@@ -4253,14 +4196,6 @@
           ],
           "asien": [
             {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-              "tid": 1795742663.0,
-              "statskontrollerad": false
-            },
-            {
               "kalla": "The Straits Times",
               "land": "SG",
               "rubrik": "Trump says Putin can come to G20 if he wants",
@@ -4268,47 +4203,11 @@
               "tid": 1795739815.0,
               "statskontrollerad": false
             }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795733367.0,
-              "statskontrollerad": false
-            }
           ]
         },
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "New York Post",
-              "rubrik": "Trump says Putin can come to G20 if he wants: ‘I’d like to have him’",
-              "url": "https://nypost.com/2026/11/27/us-news/trump-says-putin-can-come-to-g20-if-he-wants-id-like-to-have-him/",
-              "tid": 1795759116.0,
-              "lutning": "hoger"
-            },
-            {
-              "kalla": "Washington Examiner",
-              "rubrik": "Trump open to Putin attending G20 in Florida next month",
-              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
-              "tid": 1795746845.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Hill",
-              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-              "tid": 1795751471.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
       "reserv_rubrik": "Trump says Putin can come to G20 if he wants: ‘I’d like to have him’",
@@ -4318,18 +4217,6 @@
           "rubrik": "Trump says Putin can come to G20 if he wants: ‘I’d like to have him’",
           "url": "https://nypost.com/2026/11/27/us-news/trump-says-putin-can-come-to-g20-if-he-wants-id-like-to-have-him/",
           "tid": 1795759116.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hill",
-          "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
-          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-          "tid": 1795751471.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
@@ -4350,18 +4237,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-          "tid": 1795742663.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "The Straits Times",
           "rubrik": "Trump says Putin can come to G20 if he wants",
           "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
@@ -4371,18 +4246,6 @@
           "land": "SG",
           "region": "asien",
           "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795733367.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
           "statskontrollerad": false
         }
       ],
@@ -4406,14 +4269,14 @@
       "amnen_sektion": [
         "spel"
       ],
-      "poang": 22.2,
+      "poang": 22.4,
       "vikt": {
         "bredd": 0.097,
         "regioner": {
           "sverige": 1,
           "usa": 1
         },
-        "timmar": 18,
+        "timmar": 19,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4509,13 +4372,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.0,
+      "poang": 21.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 24,
+        "timmar": 25,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4608,13 +4471,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.0,
+      "poang": 21.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 24,
+        "timmar": 25,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4705,14 +4568,14 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 18.4,
+      "poang": 19.4,
       "vikt": {
         "bredd": 0.393,
         "regioner": {
           "latinamerika": 2,
           "mellanostern": 1
         },
-        "timmar": 3,
+        "timmar": 4,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4828,7 +4691,7 @@
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 18.1,
+      "poang": 18.8,
       "vikt": {
         "bredd": 0.259,
         "regioner": {
@@ -4836,7 +4699,7 @@
           "europa": 1,
           "mellanostern": 1
         },
-        "timmar": 4,
+        "timmar": 5,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5013,6 +4876,249 @@
           "typ": "media",
           "land": "SE",
           "region": "sverige",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "685ff5b325",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T08:51:28+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "NRK",
+              "land": "NO",
+              "rubrik": "Mann tok seg inn i boligen til Høiby – nå er saken henlagt",
+              "url": "https://www.nrk.no/nyheter/mann-tok-seg-inn-i-boligen-til-hoiby-_-na-er-saken-henlagt-1.18089585",
+              "tid": 1795769488.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Mann tok seg inn i boligen til Høiby – nå er saken henlagt",
+      "kallor": [
+        {
+          "namn": "NRK",
+          "rubrik": "Mann tok seg inn i boligen til Høiby – nå er saken henlagt",
+          "url": "https://www.nrk.no/nyheter/mann-tok-seg-inn-i-boligen-til-hoiby-_-na-er-saken-henlagt-1.18089585",
+          "tid": 1795769488.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "NO",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "0e091b315e",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T08:49:37+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Resten af året kan du køre gratis i S-tog om søndagen",
+              "url": "https://www.dr.dk/nyheder/seneste/resten-af-aaret-kan-du-koere-gratis-i-s-tog-om-soendagen",
+              "tid": 1795769377.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Resten af året kan du køre gratis i S-tog om søndagen",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Resten af året kan du køre gratis i S-tog om søndagen",
+          "url": "https://www.dr.dk/nyheder/seneste/resten-af-aaret-kan-du-koere-gratis-i-s-tog-om-soendagen",
+          "tid": 1795769377.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
+      "id": "ead11bea60",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T08:38:10+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Fransk stjerneskuespiller skal igen for retten",
+              "url": "https://www.dr.dk/nyheder/seneste/fransk-stjerneskuespiller-skal-igen-retten",
+              "tid": 1795768690.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Fransk stjerneskuespiller skal igen for retten",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Fransk stjerneskuespiller skal igen for retten",
+          "url": "https://www.dr.dk/nyheder/seneste/fransk-stjerneskuespiller-skal-igen-retten",
+          "tid": 1795768690.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
           "agare": "public-service",
           "statskontrollerad": false
         }
@@ -5352,254 +5458,13 @@
         "färre än två svenska källor"
       ],
       "data": null
-    },
-    {
-      "id": "6fa9d255a5",
-      "amnen": [
-        "norden",
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T06:20:09+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "RÚV English",
-              "land": "IS",
-              "rubrik": "Metal fragments found in Corny snack bars",
-              "url": "https://www.ruv.is/english/2026-11-27-metal-fragments-found-in-corny-snack-bars-494201/",
-              "tid": 1795760409.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Metal fragments found in Corny snack bars",
-      "kallor": [
-        {
-          "namn": "RÚV English",
-          "rubrik": "Metal fragments found in Corny snack bars",
-          "url": "https://www.ruv.is/english/2026-11-27-metal-fragments-found-in-corny-snack-bars-494201/",
-          "tid": 1795760409.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IS",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "660618b40c",
-      "amnen": [
-        "norden",
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T06:17:24+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "RÚV English",
-              "land": "IS",
-              "rubrik": "Iceland-Palestine Association: 1984 hack 'attack on Icelandic sovereignty'",
-              "url": "https://www.ruv.is/english/2026-11-27-iceland-palestine-association-1984-hack-attack-on-icelandic-sovereignty-494200/",
-              "tid": 1795760244.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Iceland-Palestine Association: 1984 hack 'attack on Icelandic sovereignty'",
-      "kallor": [
-        {
-          "namn": "RÚV English",
-          "rubrik": "Iceland-Palestine Association: 1984 hack 'attack on Icelandic sovereignty'",
-          "url": "https://www.ruv.is/english/2026-11-27-iceland-palestine-association-1984-hack-attack-on-icelandic-sovereignty-494200/",
-          "tid": 1795760244.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IS",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "1e4ac606c3",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T06:15:37+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Kvinde omkommet i brand i Ringe på Fyn",
-              "url": "https://www.dr.dk/nyheder/seneste/kvinde-omkommet-i-brand-i-ringe-paa-fyn",
-              "tid": 1795760137.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Kvinde omkommet i brand i Ringe på Fyn",
-      "kallor": [
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "Kvinde omkommet i brand i Ringe på Fyn",
-          "url": "https://www.dr.dk/nyheder/seneste/kvinde-omkommet-i-brand-i-ringe-paa-fyn",
-          "tid": 1795760137.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 58,
+      "artiklar": 59,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -5611,7 +5476,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 81,
+      "artiklar": 85,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -5683,7 +5548,7 @@
     {
       "id": "bbc",
       "ok": true,
-      "artiklar": 31,
+      "artiklar": 32,
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
     },
     {
@@ -5713,7 +5578,7 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 25,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
@@ -5731,7 +5596,7 @@
     {
       "id": "ecb",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 2,
       "url": "https://www.ecb.europa.eu/rss/press.html"
     },
     {
@@ -5743,13 +5608,13 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 38,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 11,
+      "artiklar": 10,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
@@ -5761,7 +5626,7 @@
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 26,
+      "artiklar": 24,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
@@ -5779,7 +5644,7 @@
     {
       "id": "cnbc",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 26,
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
@@ -5837,7 +5702,7 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 46,
+      "artiklar": 47,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -5897,13 +5762,13 @@
     {
       "id": "ars",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 5,
       "url": "https://feeds.arstechnica.com/arstechnica/index"
     },
     {
       "id": "techcrunch",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 6,
       "url": "https://techcrunch.com/feed/"
     },
     {
@@ -6033,7 +5898,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 13,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -6074,7 +5939,7 @@
     {
       "id": "huffpost",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 4,
       "url": "https://www.huffpost.com/section/world-news/feed"
     },
     {
@@ -6097,7 +5962,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 17,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6109,7 +5974,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 10,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -6145,7 +6010,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 39,
+      "artiklar": 40,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -6205,7 +6070,7 @@
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 32,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -6223,13 +6088,13 @@
     {
       "id": "nation-ke",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 25,
       "url": "https://nation.africa/kenya/rss.xml"
     },
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 86,
+      "artiklar": 91,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6289,7 +6154,7 @@
     {
       "id": "abc-au",
       "ok": true,
-      "artiklar": 24,
+      "artiklar": 25,
       "url": "https://www.abc.net.au/news/feed/51120/rss.xml"
     },
     {
@@ -6301,7 +6166,7 @@
     {
       "id": "dr",
       "ok": true,
-      "artiklar": 19,
+      "artiklar": 20,
       "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
     },
     {
@@ -6331,7 +6196,7 @@
     {
       "id": "meduza",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 21,
       "url": "https://meduza.io/rss/en/all"
     },
     {
@@ -6361,7 +6226,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 10,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
