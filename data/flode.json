@@ -1,30 +1,21 @@
 {
-  "skapad": "2026-11-27T03:05:57.290686+00:00",
+  "skapad": "2026-11-27T04:06:30.106290+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
     {
-      "id": "ce1f86080f",
-      "amnen": [
-        "energi",
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "energi",
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 37.6,
+      "id": "7f583b96a4",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 36.6,
       "vikt": {
-        "bredd": 1.233,
+        "bredd": 1.126,
         "regioner": {
-          "europa": 5,
-          "mellanostern": 2,
-          "asien": 3,
           "usa": 4,
-          "afrika": 1,
-          "norden": 1
+          "asien": 4,
+          "mellanostern": 4,
+          "europa": 2,
+          "latinamerika": 1
         },
         "timmar": 96,
         "konsekvens": null,
@@ -33,237 +24,238 @@
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 16,
+      "antal_kallor": 15,
       "har_primarkalla": false,
-      "senast": "2026-11-27T02:40:44+00:00",
+      "senast": "2026-11-27T03:30:23+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChShAk5AbbwXFFrpgTF2W'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXcna8SNozu85AJoy'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.527,
+      "sammanhang": 0.721,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
           "asien",
           "europa",
+          "latinamerika",
           "mellanostern",
-          "norden",
           "usa"
         ],
         "per_region": {
-          "europa": [
+          "usa": [
             {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
-              "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
-              "tid": 1795747244.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Politico Europe",
-              "land": "BE",
-              "rubrik": "Trump diverges from NATO statement, emphasizing Ukraine mustn’t expand war",
-              "url": "https://www.politico.eu/article/donald-trump-diverges-from-nato-statement-emphasizing-ukraine-mustnt-expand-war/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-              "tid": 1795725659.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Russia opposes granting Ukraine security guarantees modeled on NATO’s Article 5, RBC-Ukraine reports",
-              "url": "https://meduza.io/en/news/2026/11/26/russia-opposes-granting-ukraine-security-guarantees-modeled-on-nato-s-article-5-rbc-ukraine-reports",
-              "tid": 1795712452.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Deutsche Welle",
-              "land": "DE",
-              "rubrik": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
-              "url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604?maca=en-rss-en-all-1573-rdf",
-              "tid": 1795685220.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "RT",
-              "land": "RU",
-              "rubrik": "Ukraine conflict now Europe’s proxy war against Russia – Kushner (VIDEO)",
-              "url": "https://rt-english.com/news/649364-kushner-ukraine-proxy-war-russia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-              "tid": 1795644458.0,
-              "statskontrollerad": true
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
+              "kalla": "CNBC",
               "land": "US",
-              "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-              "url": "https://www.al-monitor.com/originals/2026/11/iaea-working-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-nuclear",
-              "tid": 1795740387.0,
+              "rubrik": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+              "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+              "tid": 1795750223.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Inside Ukraine’s power crisis amid its war with Russia",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/inside-ukraines-power-crisis-amid-its-war-with-russia?traffic_source=rss",
-              "tid": 1795740379.0,
+              "kalla": "The New York Times",
+              "land": "US",
+              "rubrik": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+              "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+              "tid": 1795721586.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Iranian Drone Attack Kills Two Italians in Kuwait",
+              "url": "https://www.wsj.com/world/middle-east/iranian-drone-attack-kills-two-italians-in-kuwait-5e360a35?mod=rss_worldnews",
+              "tid": 1795717440.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Two Italians killed in Kuwait as a strained Iran ramps up attacks",
+              "url": "https://www.washingtonpost.com/world/2026/11/26/two-italians-killed-kuwait-strained-iran-ramps-up-attacks/",
+              "tid": 1795713173.0,
               "statskontrollerad": false
             }
           ],
           "asien": [
             {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-              "url": "https://www.straitstimes.com/world/europe/iaea-working-with-russia-ukraine-on-ceasefire-to-repair-power-link-at-zaporizhzhia-nuclear-plant",
-              "tid": 1795739511.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
-              "url": "https://www.hindustantimes.com/world-news/zelensky-says-russia-preparing-strikes-on-ukraine-s-power-grid-101795727639672.html",
-              "tid": 1795729186.0,
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Iran denies role in drone attack that killed Italians in Kuwait",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3375970/iran-denies-launching-drone-attack-killed-italians-kuwait",
+              "tid": 1795746527.0,
               "statskontrollerad": false
             },
             {
               "kalla": "The Hindu",
               "land": "IN",
-              "rubrik": "Kremlin accuses Ukraine of trying to widen conflict zone to Mediterranean and Baltic seas",
-              "url": "https://www.thehindu.com/news/international/kremlin-accuses-ukraine-of-trying-to-widen-conflict-zone-to-mediterranean-and-baltic-seas/article71747857.ece",
-              "tid": 1795713885.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Washington Times",
-              "land": "US",
-              "rubrik": "Threat Status: Is Russia preparing for a conflict beyond Ukraine?",
-              "url": "https://www.washingtontimes.com/news/2026/nov/26/threat-status-russia-preparing-conflict-beyond-ukraine/",
-              "tid": 1795722122.0,
+              "rubrik": "Two Italians killed in drone attack in Kuwait",
+              "url": "https://www.thehindu.com/news/international/drone-attack-kuwait-us-iran-war-death-november-27-2026/article71748337.ece",
+              "tid": 1795736353.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-              "tid": 1795709567.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Two Italians killed in Kuwait drone strike blamed on Iran; Tehran denies involvement",
+              "url": "https://www.hindustantimes.com/world-news/two-italians-killed-in-kuwait-drone-strike-blamed-on-iran-tehran-denies-involvement-101795718123935.html",
+              "tid": 1795721016.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
-              "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
-              "tid": 1795699011.0,
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Iranian drone strike kills two Italians in Kuwait",
+              "url": "https://www.straitstimes.com/world/middle-east/two-italians-killed-in-iranian-drone-attack-in-kuwait-italy-says",
+              "tid": 1795706801.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Several countries slam suspected Iranian attack on Kuwait",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-countries-slam-suspected-iranian-attack-kuwait",
+              "tid": 1795746369.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Wall Street Journal",
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Iran war live: Iran’s Araghchi calls deadly Kuwait attack ‘suspicious’",
+              "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious?traffic_source=rss",
+              "tid": 1795737600.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
               "land": "US",
-              "rubrik": "Inside the Scramble to Avert Conflict With Russia in the Baltic",
-              "url": "https://www.wsj.com/world/europe/inside-the-scramble-to-avert-conflict-with-russia-in-the-baltic-4ec51b82?mod=rss_worldnews",
-              "tid": 1795632720.0,
+              "rubrik": "Iranian drone attack on Kuwait leaves two Italians dead",
+              "url": "https://www.al-monitor.com/originals/2026/11/iranian-drone-attack-kuwait-leaves-two-italians-dead",
+              "tid": 1795706553.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Two Italian workers killed in Iranian drone attack on Kuwait",
+              "url": "https://www.thenationalnews.com/news/gulf/2026/11/26/two-italian-workers-killed-in-iranian-drone-attack-on-kuwait/",
+              "tid": 1795708074.0,
+              "statskontrollerad": true
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+              "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795727873.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Deutsche Welle",
+              "land": "DE",
+              "rubrik": "Iranian drone kills 2 Italian workers in Kuwait, Meloni says",
+              "url": "https://www.dw.com/en/iranian-drone-kills-2-italian-workers-in-kuwait-meloni-says/a-80064974?maca=en-rss-en-all-1573-rdf",
+              "tid": 1795705860.0,
               "statskontrollerad": false
             }
           ],
-          "afrika": [
+          "latinamerika": [
             {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "War in Ukraine: Russia ignores claims on troop casualty figures",
-              "url": "http://www.africanews.com/2026/11/26/war-in-ukraine-russia-ignores-claims-on-troop-casualty-figures/",
-              "tid": 1795693545.0,
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
-              "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
-              "tid": 1795667507.0,
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Mueren dos técnicos italianos en Kuwait por los restos de drones iraníes derribados",
+              "url": "https://elpais.com/internacional/2026-11-26/mueren-dos-tecnicos-italianos-en-kuwait-por-los-restos-de-drones-iranies-derribados.html",
+              "tid": 1795705020.0,
               "statskontrollerad": false
             }
           ]
         },
-        "blind_flack": null,
-        "grannar_svenska": true,
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
         "usa": {
-          "rod": [
-            {
-              "kalla": "The Washington Times",
-              "rubrik": "Threat Status: Is Russia preparing for a conflict beyond Ukraine?",
-              "url": "https://www.washingtontimes.com/news/2026/nov/26/threat-status-russia-preparing-conflict-beyond-ukraine/",
-              "tid": 1795722122.0,
-              "lutning": "lutar_hoger"
-            },
-            {
-              "kalla": "Fox News",
-              "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
-              "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
-              "tid": 1795699011.0,
-              "lutning": "hoger"
-            }
-          ],
           "mitten": [
             {
               "kalla": "CNBC",
-              "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-              "tid": 1795709567.0,
+              "rubrik": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+              "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+              "tid": 1795750223.0,
               "lutning": "mitten"
             },
             {
               "kalla": "The Wall Street Journal",
-              "rubrik": "Inside the Scramble to Avert Conflict With Russia in the Baltic",
-              "url": "https://www.wsj.com/world/europe/inside-the-scramble-to-avert-conflict-with-russia-in-the-baltic-4ec51b82?mod=rss_worldnews",
-              "tid": 1795632720.0,
+              "rubrik": "Iranian Drone Attack Kills Two Italians in Kuwait",
+              "url": "https://www.wsj.com/world/middle-east/iranian-drone-attack-kills-two-italians-in-kuwait-5e360a35?mod=rss_worldnews",
+              "tid": 1795717440.0,
               "lutning": "mitten"
+            }
+          ],
+          "bla": [
+            {
+              "kalla": "The New York Times",
+              "rubrik": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+              "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+              "tid": 1795721586.0,
+              "lutning": "lutar_vanster"
+            },
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Two Italians killed in Kuwait as a strained Iran ramps up attacks",
+              "url": "https://www.washingtonpost.com/world/2026/11/26/two-italians-killed-kuwait-strained-iran-ramps-up-attacks/",
+              "tid": 1795713173.0,
+              "lutning": "lutar_vanster"
             }
           ]
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+      "reserv_rubrik": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
       "kallor": [
         {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
-          "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
-          "tid": 1795747244.0,
+          "namn": "CNBC",
+          "rubrik": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+          "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+          "tid": 1795750223.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "UA",
-          "region": "europa",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Al-Monitor",
-          "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-          "url": "https://www.al-monitor.com/originals/2026/11/iaea-working-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-nuclear",
-          "tid": 1795740387.0,
+          "namn": "South China Morning Post",
+          "rubrik": "Iran denies role in drone attack that killed Italians in Kuwait",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3375970/iran-denies-launching-drone-attack-killed-italians-kuwait",
+          "tid": 1795746527.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Several countries slam suspected Iranian attack on Kuwait",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-countries-slam-suspected-iranian-attack-kuwait",
+          "tid": 1795746369.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
           "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "Al Jazeera",
-          "rubrik": "Inside Ukraine’s power crisis amid its war with Russia",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/inside-ukraines-power-crisis-amid-its-war-with-russia?traffic_source=rss",
-          "tid": 1795740379.0,
+          "rubrik": "Iran war live: Iran’s Araghchi calls deadly Kuwait attack ‘suspicious’",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious?traffic_source=rss",
+          "tid": 1795737600.0,
           "betalvagg": false,
           "typ": "media",
           "land": "QA",
@@ -272,10 +264,46 @@
           "statskontrollerad": false
         },
         {
+          "namn": "The Hindu",
+          "rubrik": "Two Italians killed in drone attack in Kuwait",
+          "url": "https://www.thehindu.com/news/international/drone-attack-kuwait-us-iran-war-death-november-27-2026/article71748337.ece",
+          "tid": 1795736353.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+          "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+          "tid": 1795727873.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Two Italians killed in Kuwait drone strike blamed on Iran; Tehran denies involvement",
+          "url": "https://www.hindustantimes.com/world-news/two-italians-killed-in-kuwait-drone-strike-blamed-on-iran-tehran-denies-involvement-101795718123935.html",
+          "tid": 1795721016.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Straits Times",
-          "rubrik": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-          "url": "https://www.straitstimes.com/world/europe/iaea-working-with-russia-ukraine-on-ceasefire-to-repair-power-link-at-zaporizhzhia-nuclear-plant",
-          "tid": 1795739511.0,
+          "rubrik": "Iranian drone strike kills two Italians in Kuwait",
+          "url": "https://www.straitstimes.com/world/middle-east/two-italians-killed-in-iranian-drone-attack-in-kuwait-italy-says",
+          "tid": 1795706801.0,
           "betalvagg": false,
           "typ": "media",
           "land": "SG",
@@ -284,106 +312,22 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Zelensky says Russia preparing strikes on Ukraine’s power grid",
-          "url": "https://www.hindustantimes.com/world-news/zelensky-says-russia-preparing-strikes-on-ukraine-s-power-grid-101795727639672.html",
-          "tid": 1795729186.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Politico Europe",
-          "rubrik": "Trump diverges from NATO statement, emphasizing Ukraine mustn’t expand war",
-          "url": "https://www.politico.eu/article/donald-trump-diverges-from-nato-statement-emphasizing-ukraine-mustnt-expand-war/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "tid": 1795725659.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BE",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Times",
-          "rubrik": "Threat Status: Is Russia preparing for a conflict beyond Ukraine?",
-          "url": "https://www.washingtontimes.com/news/2026/nov/26/threat-status-russia-preparing-conflict-beyond-ukraine/",
-          "tid": 1795722122.0,
+          "namn": "Al-Monitor",
+          "rubrik": "Iranian drone attack on Kuwait leaves two Italians dead",
+          "url": "https://www.al-monitor.com/originals/2026/11/iranian-drone-attack-kuwait-leaves-two-italians-dead",
+          "tid": 1795706553.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Kremlin accuses Ukraine of trying to widen conflict zone to Mediterranean and Baltic seas",
-          "url": "https://www.thehindu.com/news/international/kremlin-accuses-ukraine-of-trying-to-widen-conflict-zone-to-mediterranean-and-baltic-seas/article71747857.ece",
-          "tid": 1795713885.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Meduza",
-          "rubrik": "Russia opposes granting Ukraine security guarantees modeled on NATO’s Article 5, RBC-Ukraine reports",
-          "url": "https://meduza.io/en/news/2026/11/26/russia-opposes-granting-ukraine-security-guarantees-modeled-on-nato-s-article-5-rbc-ukraine-reports",
-          "tid": 1795712452.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-          "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-          "tid": 1795709567.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Fox News",
-          "rubrik": "Trump, NATO chief push Russia to avoid any actions that would 'expand the war' with Ukraine",
-          "url": "https://www.foxnews.com/politics/trump-nato-chief-push-russia-avoid-actions-expand-war-ukraine",
-          "tid": 1795699011.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "War in Ukraine: Russia ignores claims on troop casualty figures",
-          "url": "http://www.africanews.com/2026/11/26/war-in-ukraine-russia-ignores-claims-on-troop-casualty-figures/",
-          "tid": 1795693545.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
+          "region": "mellanostern",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "Deutsche Welle",
-          "rubrik": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
-          "url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604?maca=en-rss-en-all-1573-rdf",
-          "tid": 1795685220.0,
+          "rubrik": "Iranian drone kills 2 Italian workers in Kuwait, Meloni says",
+          "url": "https://www.dw.com/en/iranian-drone-kills-2-italian-workers-in-kuwait-meloni-says/a-80064974?maca=en-rss-en-all-1573-rdf",
+          "tid": 1795705860.0,
           "betalvagg": false,
           "typ": "media",
           "land": "DE",
@@ -392,22 +336,22 @@
           "statskontrollerad": false
         },
         {
-          "namn": "DR Nyheder",
-          "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
-          "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
-          "tid": 1795667507.0,
+          "namn": "El País América",
+          "rubrik": "Mueren dos técnicos italianos en Kuwait por los restos de drones iraníes derribados",
+          "url": "https://elpais.com/internacional/2026-11-26/mueren-dos-tecnicos-italianos-en-kuwait-por-los-restos-de-drones-iranies-derribados.html",
+          "tid": 1795705020.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Inside the Scramble to Avert Conflict With Russia in the Baltic",
-          "url": "https://www.wsj.com/world/europe/inside-the-scramble-to-avert-conflict-with-russia-in-the-baltic-4ec51b82?mod=rss_worldnews",
-          "tid": 1795632720.0,
+          "namn": "The New York Times",
+          "rubrik": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+          "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+          "tid": 1795721586.0,
           "betalvagg": true,
           "typ": "media",
           "land": "US",
@@ -416,26 +360,52 @@
           "statskontrollerad": false
         },
         {
-          "namn": "RT",
-          "rubrik": "Ukraine conflict now Europe’s proxy war against Russia – Kushner (VIDEO)",
-          "url": "https://rt-english.com/news/649364-kushner-ukraine-proxy-war-russia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-          "tid": 1795644458.0,
+          "namn": "The Wall Street Journal",
+          "rubrik": "Iranian Drone Attack Kills Two Italians in Kuwait",
+          "url": "https://www.wsj.com/world/middle-east/iranian-drone-attack-kills-two-italians-in-kuwait-5e360a35?mod=rss_worldnews",
+          "tid": 1795717440.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Two Italians killed in Kuwait as a strained Iran ramps up attacks",
+          "url": "https://www.washingtonpost.com/world/2026/11/26/two-italians-killed-kuwait-strained-iran-ramps-up-attacks/",
+          "tid": 1795713173.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "Two Italian workers killed in Iranian drone attack on Kuwait",
+          "url": "https://www.thenationalnews.com/news/gulf/2026/11/26/two-italian-workers-killed-in-iranian-drone-attack-on-kuwait/",
+          "tid": 1795708074.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "RU",
-          "region": "europa",
+          "land": "AE",
+          "region": "mellanostern",
           "agare": "statlig",
           "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 2,
+        "sv": 1,
         "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll"
+        "ingen källkontroll",
+        "spärrord: suspected",
+        "blind fläck"
       ],
       "data": null
     },
@@ -449,20 +419,20 @@
         "rymd",
         "usa"
       ],
-      "poang": 35.3,
+      "poang": 34.2,
       "vikt": {
-        "bredd": 1.158,
+        "bredd": 1.033,
         "regioner": {
           "afrika": 1,
           "usa": 4,
           "asien": 2,
           "mellanostern": 1,
-          "latinamerika": 2,
           "europa": 1,
+          "latinamerika": 1,
           "norden": 1,
           "sverige": 1
         },
-        "timmar": 33,
+        "timmar": 34,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -471,16 +441,16 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 13,
+      "antal_kallor": 12,
       "har_primarkalla": false,
       "senast": "2026-11-27T04:39:07+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChShAk6QBqr1QABwmjFWp'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXcYGqBqCyDFQfFiH'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.816,
+      "sammanhang": 0.809,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -566,17 +536,9 @@
               "statskontrollerad": false
             }
           ],
-          "latinamerika": [
+          "europa": [
             {
-              "kalla": "El Tiempo",
-              "land": "CO",
-              "rubrik": "Elon Musk anuncia que regalará dos acciones de SpaceX a cada niño de Estados Unidos: 'Recomiendo conservarlas'",
-              "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/elon-musk-anuncia-que-regalara-dos-acciones-de-spacex-a-cada-nino-de-estados-unidos-recomiendo-conservarlas-3604580",
-              "tid": 1795713992.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "El País América",
+              "kalla": "El País (English)",
               "land": "ES",
               "rubrik": "Elon Musk to give two shares of SpaceX to every child in the US in a deal worth $18 billion",
               "url": "https://english.elpais.com/usa/2026-11-26/elon-musk-to-give-two-shares-of-spacex-to-every-child-in-the-us-in-a-deal-worth-18-billion.html",
@@ -584,9 +546,9 @@
               "statskontrollerad": false
             }
           ],
-          "europa": [
+          "latinamerika": [
             {
-              "kalla": "El País (English)",
+              "kalla": "El País América",
               "land": "ES",
               "rubrik": "Elon Musk to give two shares of SpaceX to every child in the US in a deal worth $18 billion",
               "url": "https://english.elpais.com/usa/2026-11-26/elon-musk-to-give-two-shares-of-spacex-to-every-child-in-the-us-in-a-deal-worth-18-billion.html",
@@ -718,18 +680,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "El Tiempo",
-          "rubrik": "Elon Musk anuncia que regalará dos acciones de SpaceX a cada niño de Estados Unidos: 'Recomiendo conservarlas'",
-          "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/elon-musk-anuncia-que-regalara-dos-acciones-de-spacex-a-cada-nino-de-estados-unidos-recomiendo-conservarlas-3604580",
-          "tid": 1795713992.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CO",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Axios",
           "rubrik": "Musk makes $18 billion SpaceX stock pledge for every kid in America",
           "url": "https://www.axios.com/2026/11/26/musk-spacex-shares-trump-accounts",
@@ -829,25 +779,23 @@
     {
       "id": "d05d56d9d0",
       "amnen": [
-        "energi",
         "usa"
       ],
       "amnen_sektion": [
-        "energi",
         "usa"
       ],
-      "poang": 32.8,
+      "poang": 33.6,
       "vikt": {
-        "bredd": 0.982,
+        "bredd": 1.048,
         "regioner": {
           "afrika": 1,
-          "usa": 3,
+          "asien": 4,
           "mellanostern": 1,
           "latinamerika": 2,
-          "asien": 3,
-          "europa": 4
+          "europa": 5,
+          "usa": 1
         },
-        "timmar": 56,
+        "timmar": 57,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -859,11 +807,11 @@
       "senast": "2026-11-27T04:37:30+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChShAk4BJ12AUMqHvQcek'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXdmbfjLNB4Bgi3mS'}"
       },
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.657,
+      "sammanhang": 0.71,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -885,29 +833,37 @@
               "statskontrollerad": false
             }
           ],
-          "usa": [
+          "asien": [
             {
-              "kalla": "Fox News",
-              "land": "US",
-              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-              "tid": 1795746349.0,
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
+              "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
+              "tid": 1795749166.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Washington Times",
-              "land": "US",
-              "rubrik": "Trump says he pressed Putin on Ukraine peace deal, military aggression in Europe",
-              "url": "https://www.washingtontimes.com/news/2026/nov/26/trump-tells-putin-pull-back-military-aggression-europe-negotiate-deal/",
-              "tid": 1795708460.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
+              "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
+              "tid": 1795748958.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
-              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
-              "tid": 1795716480.0,
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Trump urges Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.japantimes.co.jp/news/2026/11/27/world/trump-putin-military-aggression/",
+              "tid": 1795742520.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
+              "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
+              "tid": 1795708311.0,
               "statskontrollerad": false
             }
           ],
@@ -936,32 +892,6 @@
               "rubrik": "Trump y Rutte reclaman a Rusia y Ucrania que eviten acciones que amplíen la guerra",
               "url": "https://elpais.com/internacional/2026-11-26/trump-y-rutte-reclaman-a-rusia-y-ucrania-que-eviten-acciones-que-amplien-la-guerra.html",
               "tid": 1795707027.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Trump urges Putin to end ‘military aggression’ in Europe",
-              "url": "https://www.japantimes.co.jp/news/2026/11/27/world/trump-putin-military-aggression/",
-              "tid": 1795742520.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Trump pushes for Ukraine peace deal as Kushner says Putin has shown ‘restraint’ on nuclear weapons",
-              "url": "https://www.hindustantimes.com/world-news/trump-pushes-for-ukraine-peace-deal-as-kushner-says-putin-has-shown-restraint-on-nuclear-weapons-101795714661731.html",
-              "tid": 1795715522.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Trump urges Russia’s Putin to end ‘military aggression’ in Europe",
-              "url": "https://www.straitstimes.com/world/europe/trump-says-hed-like-to-see-putin-pull-back-military-aggression-in-europe",
-              "tid": 1795708311.0,
               "statskontrollerad": false
             }
           ],
@@ -997,38 +927,30 @@
               "url": "https://kyivindependent.com/trump-tells-putin-to-pull-back-all-military-aggression-across-europe/",
               "tid": 1795706485.0,
               "statskontrollerad": false
+            },
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+              "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
+              "tid": 1795747317.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
+              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
+              "tid": 1795716480.0,
+              "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
         "grannar_svenska": true,
-        "usa": {
-          "rod": [
-            {
-              "kalla": "Fox News",
-              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-              "tid": 1795746349.0,
-              "lutning": "hoger"
-            },
-            {
-              "kalla": "The Washington Times",
-              "rubrik": "Trump says he pressed Putin on Ukraine peace deal, military aggression in Europe",
-              "url": "https://www.washingtontimes.com/news/2026/nov/26/trump-tells-putin-pull-back-military-aggression-europe-negotiate-deal/",
-              "tid": 1795708460.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
-              "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
-              "tid": 1795716480.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
+        "usa": null,
         "usa_blind": null
       },
       "reserv_rubrik": "Trump says he asked Putin to ‘pull back’ military aggression throughout Europe",
@@ -1046,14 +968,26 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Fox News",
-          "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
-          "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
-          "tid": 1795746349.0,
+          "namn": "South China Morning Post",
+          "rubrik": "Trump says he urged Putin to pull back ‘all military aggression’ in Europe",
+          "url": "https://www.scmp.com/news/world/europe/article/3375978/trump-says-he-urged-putin-pull-back-all-military-aggression-europe",
+          "tid": 1795749166.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Putin Extends His War to Europe—He’s Not Our “Friend”",
+          "url": "https://www.hindustantimes.com/world-news/putin-extends-his-war-to-europe-he-s-not-our-friend-101795748819456.html",
+          "tid": 1795748958.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
@@ -1106,18 +1040,6 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Hindustan Times",
-          "rubrik": "Trump pushes for Ukraine peace deal as Kushner says Putin has shown ‘restraint’ on nuclear weapons",
-          "url": "https://www.hindustantimes.com/world-news/trump-pushes-for-ukraine-peace-deal-as-kushner-says-putin-has-shown-restraint-on-nuclear-weapons-101795714661731.html",
-          "tid": 1795715522.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Deutsche Welle",
           "rubrik": "Trump says he urged Putin to 'pull back' military aggression in Europe",
           "url": "https://www.dw.com/en/trump-says-he-urged-putin-to-pull-back-military-aggression-in-europe/a-80067722?maca=en-rss-en-all-1573-rdf",
@@ -1127,18 +1049,6 @@
           "land": "DE",
           "region": "europa",
           "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Times",
-          "rubrik": "Trump says he pressed Putin on Ukraine peace deal, military aggression in Europe",
-          "url": "https://www.washingtontimes.com/news/2026/nov/26/trump-tells-putin-pull-back-military-aggression-europe-negotiate-deal/",
-          "tid": 1795708460.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -1190,6 +1100,18 @@
           "statskontrollerad": false
         },
         {
+          "namn": "Le Monde (English)",
+          "rubrik": "Trump urges Putin to end 'military aggression' in Europe",
+          "url": "https://www.lemonde.fr/en/international/article/2026/11/27/trump-urges-putin-to-end-military-aggression-in-europe_6789697_4.html",
+          "tid": 1795747317.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
           "namn": "The Wall Street Journal",
           "rubrik": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
           "url": "https://www.wsj.com/opinion/putin-extends-his-war-to-europehes-not-our-friend-175eddc2?mod=rss_worldnews",
@@ -1214,366 +1136,10 @@
       "data": null
     },
     {
-      "id": "6b6cd7d5af",
-      "amnen": [
-        "geopolitik",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "geopolitik",
-        "usa"
-      ],
-      "poang": 32.0,
-      "vikt": {
-        "bredd": 0.666,
-        "regioner": {
-          "asien": 5,
-          "mellanostern": 1,
-          "usa": 5,
-          "latinamerika": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 12,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T21:28:00+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChShAk4Ra4BxqhyLzZKSr'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.578,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "latinamerika",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Bangkok Post",
-              "land": "TH",
-              "rubrik": "Govt defends 18% US tariff proposal",
-              "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
-              "tid": 1795728480.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-              "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-              "tid": 1795678927.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Yonhap",
-              "land": "KR",
-              "rubrik": "Trade commission proposes antidumping tariffs on PVC suspension from China",
-              "url": "https://en.yna.co.kr/view/AEN20261126003900320",
-              "tid": 1795667402.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
-              "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
-              "tid": 1795628418.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Nikkei Asia",
-              "land": "JP",
-              "rubrik": "Trump rebuilds tariff wall with new duties on China, Japan and others",
-              "url": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-rebuilds-tariff-wall-with-new-duties-on-china-japan-and-others",
-              "tid": null,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "What will Trump’s latest tariffs mean for the world?",
-              "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
-              "tid": 1795719195.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-              "tid": 1795693427.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Reason",
-              "land": "US",
-              "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
-              "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
-              "tid": 1795623346.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-              "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-              "tid": 1795622572.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "land": "US",
-              "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
-              "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
-              "tid": 1795682520.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
-              "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
-              "tid": 1795627465.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "China insta a Trump a retirar los nuevos aranceles y se reserva el derecho a responder",
-              "url": "https://elpais.com/internacional/2026-11-26/china-se-reserva-el-derecho-a-responder-a-los-nuevos-aranceles-anunciados-por-trump.html",
-              "tid": 1795686462.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": {
-          "bla": [
-            {
-              "kalla": "NPR",
-              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-              "tid": 1795693427.0,
-              "lutning": "lutar_vanster"
-            },
-            {
-              "kalla": "The Washington Post",
-              "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
-              "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
-              "tid": 1795627465.0,
-              "lutning": "lutar_vanster"
-            }
-          ],
-          "rod": [
-            {
-              "kalla": "Reason",
-              "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
-              "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
-              "tid": 1795623346.0,
-              "lutning": "lutar_hoger"
-            }
-          ],
-          "mitten": [
-            {
-              "kalla": "CNBC",
-              "rubrik": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-              "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-              "tid": 1795622572.0,
-              "lutning": "mitten"
-            },
-            {
-              "kalla": "The Wall Street Journal",
-              "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
-              "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
-              "tid": 1795682520.0,
-              "lutning": "mitten"
-            }
-          ]
-        },
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Govt defends 18% US tariff proposal",
-      "kallor": [
-        {
-          "namn": "Bangkok Post",
-          "rubrik": "Govt defends 18% US tariff proposal",
-          "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
-          "tid": 1795728480.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TH",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "What will Trump’s latest tariffs mean for the world?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
-          "tid": 1795719195.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "NPR",
-          "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
-          "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
-          "tid": 1795693427.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País América",
-          "rubrik": "China insta a Trump a retirar los nuevos aranceles y se reserva el derecho a responder",
-          "url": "https://elpais.com/internacional/2026-11-26/china-se-reserva-el-derecho-a-responder-a-los-nuevos-aranceles-anunciados-por-trump.html",
-          "tid": 1795686462.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
-          "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
-          "tid": 1795678927.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Yonhap",
-          "rubrik": "Trade commission proposes antidumping tariffs on PVC suspension from China",
-          "url": "https://en.yna.co.kr/view/AEN20261126003900320",
-          "tid": 1795667402.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "KR",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
-          "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
-          "tid": 1795628418.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Reason",
-          "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
-          "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
-          "tid": 1795623346.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-          "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-          "tid": 1795622572.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
-          "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
-          "tid": 1795682520.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
-          "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
-          "tid": 1795627465.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Nikkei Asia",
-          "rubrik": "Trump rebuilds tariff wall with new duties on China, Japan and others",
-          "url": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-rebuilds-tariff-wall-with-new-duties-on-china-japan-and-others",
-          "tid": null,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "be4f138522",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 30.5,
+      "poang": 30.6,
       "vikt": {
         "bredd": 0.263,
         "regioner": {
@@ -1581,7 +1147,7 @@
           "global": 1,
           "usa": 1
         },
-        "timmar": 87,
+        "timmar": 88,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1593,7 +1159,10 @@
       "antal_kallor": 3,
       "har_primarkalla": false,
       "senast": "2026-11-26T19:44:32+00:00",
-      "utkast": null,
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChSmnXe2aTB1uN5MUnXXB'}"
+      },
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.654,
@@ -1689,220 +1258,6 @@
         "inget utkast",
         "ingen källkontroll",
         "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "109be638ad",
-      "amnen": [
-        "rymd"
-      ],
-      "amnen_sektion": [
-        "rymd"
-      ],
-      "poang": 30.5,
-      "vikt": {
-        "bredd": 0.658,
-        "regioner": {
-          "asien": 2,
-          "europa": 1,
-          "usa": 2,
-          "norden": 1,
-          "mellanostern": 1
-        },
-        "timmar": 34,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 7,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T01:30:19+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.768,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "mellanostern",
-          "norden",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "US clears SpaceX to launch up to 1 million orbital data-center satellites",
-              "url": "https://www.dawn.com/news/2047211/us-clears-spacex-to-launch-up-to-1-million-orbital-data-center-satellites",
-              "tid": 1795689544.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "US approves SpaceX plan for 1 million space data center satellites",
-              "url": "https://news.cgtn.com/news/2026-11-27/US-approves-SpaceX-plan-for-1-million-space-data-center-satellites-1SpaGyCBlHa/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795743019.0,
-              "statskontrollerad": true
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
-              "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
-              "tid": 1795685264.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "FCC approves SpaceX plan to put AI data centers in space",
-              "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
-              "tid": 1795640204.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Ars Technica",
-              "land": "US",
-              "rubrik": "The FCC has authorized SpaceX to deploy 1 million satellites",
-              "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
-              "tid": 1795630958.0,
-              "statskontrollerad": false
-            }
-          ],
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "SpaceX får godkendelse til at sende en million satellitter i rummet til datacentre",
-              "url": "https://www.dr.dk/nyheder/seneste/spacex-faar-godkendelse-til-sende-en-million-satellitter-i-rummet-til-datacentre",
-              "tid": 1795634428.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "US gives SpaceX approval for data centres in space",
-              "url": "https://www.thenationalnews.com/future/2026/11/26/space-data-center-spacex-fcc/",
-              "tid": 1795634756.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US clears SpaceX to launch up to 1 million orbital data-center satellites",
-      "kallor": [
-        {
-          "namn": "Dawn",
-          "rubrik": "US clears SpaceX to launch up to 1 million orbital data-center satellites",
-          "url": "https://www.dawn.com/news/2047211/us-clears-spacex-to-launch-up-to-1-million-orbital-data-center-satellites",
-          "tid": 1795689544.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
-          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
-          "tid": 1795685264.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "TechCrunch",
-          "rubrik": "FCC approves SpaceX plan to put AI data centers in space",
-          "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
-          "tid": 1795640204.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "SpaceX får godkendelse til at sende en million satellitter i rummet til datacentre",
-          "url": "https://www.dr.dk/nyheder/seneste/spacex-faar-godkendelse-til-sende-en-million-satellitter-i-rummet-til-datacentre",
-          "tid": 1795634428.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Ars Technica",
-          "rubrik": "The FCC has authorized SpaceX to deploy 1 million satellites",
-          "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
-          "tid": 1795630958.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "US approves SpaceX plan for 1 million space data center satellites",
-          "url": "https://news.cgtn.com/news/2026-11-27/US-approves-SpaceX-plan-for-1-million-space-data-center-satellites-1SpaGyCBlHa/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795743019.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        },
-        {
-          "namn": "The National",
-          "rubrik": "US gives SpaceX approval for data centres in space",
-          "url": "https://www.thenationalnews.com/future/2026/11/26/space-data-center-spacex-fcc/",
-          "tid": 1795634756.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
       ],
       "data": null
     },
@@ -2275,23 +1630,216 @@
       "data": null
     },
     {
-      "id": "3eee8fe5e7",
+      "id": "109be638ad",
+      "amnen": [
+        "rymd"
+      ],
+      "amnen_sektion": [
+        "rymd"
+      ],
+      "poang": 30.0,
+      "vikt": {
+        "bredd": 0.599,
+        "regioner": {
+          "europa": 1,
+          "usa": 2,
+          "norden": 1,
+          "asien": 1,
+          "mellanostern": 1
+        },
+        "timmar": 35,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 6,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T01:30:19+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.775,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "mellanostern",
+          "norden",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
+              "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795685264.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "TechCrunch",
+              "land": "US",
+              "rubrik": "FCC approves SpaceX plan to put AI data centers in space",
+              "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+              "tid": 1795640204.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Ars Technica",
+              "land": "US",
+              "rubrik": "The FCC has authorized SpaceX to deploy 1 million satellites",
+              "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
+              "tid": 1795630958.0,
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "SpaceX får godkendelse til at sende en million satellitter i rummet til datacentre",
+              "url": "https://www.dr.dk/nyheder/seneste/spacex-faar-godkendelse-til-sende-en-million-satellitter-i-rummet-til-datacentre",
+              "tid": 1795634428.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "US approves SpaceX plan for 1 million space data center satellites",
+              "url": "https://news.cgtn.com/news/2026-11-27/US-approves-SpaceX-plan-for-1-million-space-data-center-satellites-1SpaGyCBlHa/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795743019.0,
+              "statskontrollerad": true
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "US gives SpaceX approval for data centres in space",
+              "url": "https://www.thenationalnews.com/future/2026/11/26/space-data-center-spacex-fcc/",
+              "tid": 1795634756.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
+      "kallor": [
+        {
+          "namn": "BBC World",
+          "rubrik": "Musk's plan to send a million SpaceX data satellites into space approved",
+          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795685264.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "TechCrunch",
+          "rubrik": "FCC approves SpaceX plan to put AI data centers in space",
+          "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+          "tid": 1795640204.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "SpaceX får godkendelse til at sende en million satellitter i rummet til datacentre",
+          "url": "https://www.dr.dk/nyheder/seneste/spacex-faar-godkendelse-til-sende-en-million-satellitter-i-rummet-til-datacentre",
+          "tid": 1795634428.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Ars Technica",
+          "rubrik": "The FCC has authorized SpaceX to deploy 1 million satellites",
+          "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
+          "tid": 1795630958.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "US approves SpaceX plan for 1 million space data center satellites",
+          "url": "https://news.cgtn.com/news/2026-11-27/US-approves-SpaceX-plan-for-1-million-space-data-center-satellites-1SpaGyCBlHa/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795743019.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        },
+        {
+          "namn": "The National",
+          "rubrik": "US gives SpaceX approval for data centres in space",
+          "url": "https://www.thenationalnews.com/future/2026/11/26/space-data-center-spacex-fcc/",
+          "tid": 1795634756.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "6b6cd7d5af",
       "amnen": [
         "geopolitik",
-        "marknader"
+        "usa"
       ],
       "amnen_sektion": [
         "geopolitik",
-        "marknader"
+        "usa"
       ],
-      "poang": 29.8,
+      "poang": 29.9,
       "vikt": {
-        "bredd": 0.455,
+        "bredd": 0.462,
         "regioner": {
-          "europa": 3,
-          "asien": 2,
-          "usa": 3,
-          "latinamerika": 1
+          "asien": 4,
+          "mellanostern": 1,
+          "usa": 4
         },
         "timmar": 96,
         "konsekvens": null,
@@ -2302,97 +1850,94 @@
       "maste": false,
       "antal_kallor": 9,
       "har_primarkalla": false,
-      "senast": "2026-11-26T21:40:29+00:00",
+      "senast": "2026-11-26T21:28:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.663,
+      "sammanhang": 0.579,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
-          "europa",
-          "latinamerika",
+          "mellanostern",
           "usa"
         ],
         "per_region": {
-          "europa": [
+          "asien": [
             {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "Spain's De Cos chosen as next ECB president",
-              "url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
-              "tid": 1795729229.0,
+              "kalla": "Bangkok Post",
+              "land": "TH",
+              "rubrik": "Govt defends 18% US tariff proposal",
+              "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
+              "tid": 1795728480.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
-              "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
-              "tid": 1795715454.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
+              "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
+              "tid": 1795678927.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "Politico Europe",
-              "land": "BE",
-              "rubrik": "EU leaders clear path for Spain’s Pablo Hernández de Cos to lead ECB",
-              "url": "https://www.politico.eu/article/eu-leaders-clear-path-for-spains-pablo-hernandez-de-cos-to-lead-ecb/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-              "tid": 1795705054.0,
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "Trade commission proposes antidumping tariffs on PVC suspension from China",
+              "url": "https://en.yna.co.kr/view/AEN20261126003900320",
+              "tid": 1795667402.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
+              "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
+              "tid": 1795628418.0,
               "statskontrollerad": false
             }
           ],
-          "asien": [
+          "mellanostern": [
             {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
-              "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
-              "tid": 1795713977.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Spain’s Pablo Hernandez de Cos poised to succeed Christine Lagarde as European Central Bank president",
-              "url": "https://www.straitstimes.com/world/europe/spains-de-cos-poised-to-succeed-lagarde-as-european-central-bank-president",
-              "tid": 1795706700.0,
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "What will Trump’s latest tariffs mean for the world?",
+              "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
+              "tid": 1795719195.0,
               "statskontrollerad": false
             }
           ],
           "usa": [
             {
-              "kalla": "The Washington Times",
+              "kalla": "NPR",
               "land": "US",
-              "rubrik": "Leaders choose Spain's former central bank head as next European Central Bank president",
-              "url": "https://www.washingtontimes.com/news/2026/nov/26/leaders-choose-spains-former-central-bank-head-next-european-central/",
-              "tid": 1795708615.0,
+              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
+              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
+              "tid": 1795693427.0,
               "statskontrollerad": false
             },
             {
-              "kalla": "CNBC",
+              "kalla": "Reason",
               "land": "US",
-              "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
-              "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
-              "tid": 1795706906.0,
+              "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
+              "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
+              "tid": 1795623346.0,
               "statskontrollerad": false
             },
             {
               "kalla": "The Wall Street Journal",
               "land": "US",
-              "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
-              "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
-              "tid": 1795716000.0,
+              "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
+              "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
+              "tid": 1795682520.0,
               "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
+            },
             {
-              "kalla": "El País América",
-              "land": "ES",
-              "rubrik": "Hernández de Cos se convertirá en febrero en el primer español en presidir el BCE",
-              "url": "https://elpais.com/economia/2026-11-26/hernandez-de-cos-se-convertira-en-febrero-en-el-primer-espanol-en-presidir-el-bce.html",
-              "tid": 1795699167.0,
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
+              "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
+              "tid": 1795627465.0,
               "statskontrollerad": false
             }
           ]
@@ -2400,251 +1945,86 @@
         "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
         "usa": {
+          "bla": [
+            {
+              "kalla": "NPR",
+              "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
+              "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
+              "tid": 1795693427.0,
+              "lutning": "lutar_vanster"
+            },
+            {
+              "kalla": "The Washington Post",
+              "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
+              "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
+              "tid": 1795627465.0,
+              "lutning": "lutar_vanster"
+            }
+          ],
           "rod": [
             {
-              "kalla": "The Washington Times",
-              "rubrik": "Leaders choose Spain's former central bank head as next European Central Bank president",
-              "url": "https://www.washingtontimes.com/news/2026/nov/26/leaders-choose-spains-former-central-bank-head-next-european-central/",
-              "tid": 1795708615.0,
+              "kalla": "Reason",
+              "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
+              "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
+              "tid": 1795623346.0,
               "lutning": "lutar_hoger"
             }
           ],
           "mitten": [
             {
-              "kalla": "CNBC",
-              "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
-              "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
-              "tid": 1795706906.0,
-              "lutning": "mitten"
-            },
-            {
               "kalla": "The Wall Street Journal",
-              "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
-              "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
-              "tid": 1795716000.0,
+              "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
+              "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
+              "tid": 1795682520.0,
               "lutning": "mitten"
             }
           ]
         },
         "usa_blind": null
       },
-      "reserv_rubrik": "Spain's De Cos chosen as next ECB president",
+      "reserv_rubrik": "Govt defends 18% US tariff proposal",
       "kallor": [
         {
-          "namn": "France 24",
-          "rubrik": "Spain's De Cos chosen as next ECB president",
-          "url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
-          "tid": 1795729229.0,
+          "namn": "Bangkok Post",
+          "rubrik": "Govt defends 18% US tariff proposal",
+          "url": "https://www.bangkokpost.com/thailand/general/3361874/govt-defends-18-us-tariff-proposal",
+          "tid": 1795728480.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "FR",
-          "region": "europa",
+          "land": "TH",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "What will Trump’s latest tariffs mean for the world?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
+          "tid": 1795719195.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "NPR",
+          "rubrik": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
+          "url": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
+          "tid": 1795693427.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "public-service",
           "statskontrollerad": false
         },
         {
-          "namn": "The Guardian",
-          "rubrik": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
-          "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
-          "tid": 1795715454.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
-          "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
-          "tid": 1795713977.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Times",
-          "rubrik": "Leaders choose Spain's former central bank head as next European Central Bank president",
-          "url": "https://www.washingtontimes.com/news/2026/nov/26/leaders-choose-spains-former-central-bank-head-next-european-central/",
-          "tid": 1795708615.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CNBC",
-          "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
-          "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
-          "tid": 1795706906.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Spain’s Pablo Hernandez de Cos poised to succeed Christine Lagarde as European Central Bank president",
-          "url": "https://www.straitstimes.com/world/europe/spains-de-cos-poised-to-succeed-lagarde-as-european-central-bank-president",
-          "tid": 1795706700.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Politico Europe",
-          "rubrik": "EU leaders clear path for Spain’s Pablo Hernández de Cos to lead ECB",
-          "url": "https://www.politico.eu/article/eu-leaders-clear-path-for-spains-pablo-hernandez-de-cos-to-lead-ecb/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "tid": 1795705054.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BE",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "El País América",
-          "rubrik": "Hernández de Cos se convertirá en febrero en el primer español en presidir el BCE",
-          "url": "https://elpais.com/economia/2026-11-26/hernandez-de-cos-se-convertira-en-febrero-en-el-primer-espanol-en-presidir-el-bce.html",
-          "tid": 1795699167.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "ES",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Wall Street Journal",
-          "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
-          "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
-          "tid": 1795716000.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": [
-        {
-          "id": "ecb_ranta",
-          "namn_sv": "ECB:s inlåningsränta",
-          "namn_en": "ECB deposit facility rate",
-          "enhet": "%",
-          "decimaler": 2,
-          "senaste": 2.5,
-          "datum": "2026-09-16",
-          "ar_sedan": 2.0,
-          "ar_sedan_datum": "2025-06-11",
-          "kalla": "Europeiska centralbanken",
-          "url": "https://data.ecb.europa.eu/",
-          "spark": [
-            3.0,
-            2.75,
-            2.5,
-            2.25,
-            2.0,
-            2.25,
-            2.5
-          ]
-        }
-      ]
-    },
-    {
-      "id": "7db5984e56",
-      "amnen": [
-        "ai"
-      ],
-      "amnen_sektion": [
-        "ai"
-      ],
-      "poang": 29.7,
-      "vikt": {
-        "bredd": 0.136,
-        "regioner": {
-          "asien": 1,
-          "sverige": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T21:39:37+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.682,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "sverige"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Wall Street Can’t Seem to Find Its Footing in the Chaos of the New AI Trade",
-              "url": "https://www.hindustantimes.com/world-news/wall-street-can-t-seem-to-find-its-footing-in-the-chaos-of-the-new-ai-trade-101795662951620.html",
-              "tid": 1795662987.0,
-              "statskontrollerad": false
-            }
-          ],
-          "sverige": [
-            {
-              "kalla": "Dagens industri",
-              "land": "SE",
-              "rubrik": "Nu måste Wall Street rädda världen från AI",
-              "url": "https://www.di.se/nyheter/nu-maste-wall-street-radda-varlden-fran-ai/",
-              "tid": 1795729177.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Wall Street Can’t Seem to Find Its Footing in the Chaos of the New AI Trade",
-      "kallor": [
-        {
           "namn": "Hindustan Times",
-          "rubrik": "Wall Street Can’t Seem to Find Its Footing in the Chaos of the New AI Trade",
-          "url": "https://www.hindustantimes.com/world-news/wall-street-can-t-seem-to-find-its-footing-in-the-chaos-of-the-new-ai-trade-101795662951620.html",
-          "tid": 1795662987.0,
+          "rubrik": "US partners respond to Trump’s fresh tariff proposal with anger, protest and diplomacy",
+          "url": "https://www.hindustantimes.com/world-news/us-partners-respond-to-trump-s-fresh-tariff-proposal-singapore-japan-china-european-union-india-brazil-south-korea-101795678466517.html",
+          "tid": 1795678927.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -2653,140 +2033,63 @@
           "statskontrollerad": false
         },
         {
-          "namn": "Dagens industri",
-          "rubrik": "Nu måste Wall Street rädda världen från AI",
-          "url": "https://www.di.se/nyheter/nu-maste-wall-street-radda-varlden-fran-ai/",
-          "tid": 1795729177.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "e6a0fe1319",
-      "amnen": [
-        "varlden"
-      ],
-      "amnen_sektion": [],
-      "poang": 29.7,
-      "vikt": {
-        "bredd": 0.179,
-        "regioner": {
-          "asien": 1,
-          "global": 1,
-          "usa": 1
-        },
-        "timmar": 87,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "rattigheter"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T02:22:00+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.544,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "global",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Families of slain Filipinos seek justice as Duterte’s ICC trial set to start",
-              "url": "https://www.japantimes.co.jp/news/2026/11/27/asia-pacific/duterte-icc-trial-families/",
-              "tid": 1795746120.0,
-              "statskontrollerad": false
-            }
-          ],
-          "global": [
-            {
-              "kalla": "Amnesty International",
-              "land": "GB",
-              "rubrik": "Philippines: Duterte trial a defining test for justice, accountability and future of the ICC",
-              "url": "https://www.amnesty.org/en/latest/news/2026/11/philippines-duterte-trial-a-defining-test-for-justice-accountability-and-future-of-the-icc/",
-              "tid": 1795697201.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "Human Rights Watch",
-              "land": "US",
-              "rubrik": "ICC: Promote, Protect International Justice",
-              "url": "https://www.hrw.org/news/2026/11/26/icc-promote-protect-international-justice",
-              "tid": 1795680000.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Families of slain Filipinos seek justice as Duterte’s ICC trial set to start",
-      "kallor": [
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Families of slain Filipinos seek justice as Duterte’s ICC trial set to start",
-          "url": "https://www.japantimes.co.jp/news/2026/11/27/asia-pacific/duterte-icc-trial-families/",
-          "tid": 1795746120.0,
+          "namn": "Yonhap",
+          "rubrik": "Trade commission proposes antidumping tariffs on PVC suspension from China",
+          "url": "https://en.yna.co.kr/view/AEN20261126003900320",
+          "tid": 1795667402.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "JP",
+          "land": "KR",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Trump’s tariff plan explained: Which countries could be hit and why?",
+          "url": "https://www.thehindu.com/videos/trumps-tariff-plan-explained-which-countries-could-be-hit-and-why/article71743829.ece",
+          "tid": 1795628418.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Amnesty International",
-          "rubrik": "Philippines: Duterte trial a defining test for justice, accountability and future of the ICC",
-          "url": "https://www.amnesty.org/en/latest/news/2026/11/philippines-duterte-trial-a-defining-test-for-justice-accountability-and-future-of-the-icc/",
-          "tid": 1795697201.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "global",
-          "agare": "organisation",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Human Rights Watch",
-          "rubrik": "ICC: Promote, Protect International Justice",
-          "url": "https://www.hrw.org/news/2026/11/26/icc-promote-protect-international-justice",
-          "tid": 1795680000.0,
+          "namn": "Reason",
+          "rubrik": "Trump's Latest Tariffs Underscore the Urgency of Congressional Reforms",
+          "url": "https://reason.com/2026/11/25/trumps-latest-tariffs-underscore-the-urgency-of-congressional-reforms/",
+          "tid": 1795623346.0,
           "betalvagg": false,
           "typ": "media",
           "land": "US",
           "region": "usa",
-          "agare": "organisation",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
+          "url": "https://www.wsj.com/world/new-tariffs-on-china-could-undermine-trade-truce-with-u-s-bf43adcf?mod=rss_worldnews",
+          "tid": 1795682520.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Trump proposes new tariffs on China, Europe and other trade partners",
+          "url": "https://www.washingtonpost.com/politics/2026/11/25/trump-proposes-new-tariffs-china-europe-other-trade-partners/",
+          "tid": 1795627465.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
           "statskontrollerad": false
         }
       ],
@@ -2806,14 +2109,14 @@
       "id": "30c554df30",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 29.6,
+      "poang": 29.7,
       "vikt": {
         "bredd": 0.546,
         "regioner": {
           "mellanostern": 3,
           "asien": 2
         },
-        "timmar": 74,
+        "timmar": 75,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2958,6 +2261,238 @@
         "blind fläck"
       ],
       "data": null
+    },
+    {
+      "id": "3eee8fe5e7",
+      "amnen": [
+        "marknader"
+      ],
+      "amnen_sektion": [
+        "marknader"
+      ],
+      "poang": 29.2,
+      "vikt": {
+        "bredd": 0.387,
+        "regioner": {
+          "europa": 2,
+          "asien": 2,
+          "usa": 2,
+          "latinamerika": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 7,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T21:40:29+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.656,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika",
+          "usa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Spain's De Cos chosen as next ECB president",
+              "url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
+              "tid": 1795729229.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
+              "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
+              "tid": 1795715454.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
+              "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
+              "tid": 1795713977.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Spain’s Pablo Hernandez de Cos poised to succeed Christine Lagarde as European Central Bank president",
+              "url": "https://www.straitstimes.com/world/europe/spains-de-cos-poised-to-succeed-lagarde-as-european-central-bank-president",
+              "tid": 1795706700.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "CNBC",
+              "land": "US",
+              "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+              "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+              "tid": 1795706906.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
+              "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
+              "tid": 1795716000.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Hernández de Cos se convertirá en febrero en el primer español en presidir el BCE",
+              "url": "https://elpais.com/economia/2026-11-26/hernandez-de-cos-se-convertira-en-febrero-en-el-primer-espanol-en-presidir-el-bce.html",
+              "tid": 1795699167.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Spain's De Cos chosen as next ECB president",
+      "kallor": [
+        {
+          "namn": "France 24",
+          "rubrik": "Spain's De Cos chosen as next ECB president",
+          "url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
+          "tid": 1795729229.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Guardian",
+          "rubrik": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
+          "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
+          "tid": 1795715454.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
+          "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
+          "tid": 1795713977.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CNBC",
+          "rubrik": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+          "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+          "tid": 1795706906.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Spain’s Pablo Hernandez de Cos poised to succeed Christine Lagarde as European Central Bank president",
+          "url": "https://www.straitstimes.com/world/europe/spains-de-cos-poised-to-succeed-lagarde-as-european-central-bank-president",
+          "tid": 1795706700.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "Hernández de Cos se convertirá en febrero en el primer español en presidir el BCE",
+          "url": "https://elpais.com/economia/2026-11-26/hernandez-de-cos-se-convertira-en-febrero-en-el-primer-espanol-en-presidir-el-bce.html",
+          "tid": 1795699167.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Europe Has Picked a New Central Bank Chief. He’s in for a Bumpy Ride.",
+          "url": "https://www.wsj.com/world/europe/europe-has-picked-a-new-central-bank-chief-hes-in-for-a-bumpy-ride-7d6f7fea?mod=rss_worldnews",
+          "tid": 1795716000.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": [
+        {
+          "id": "ecb_ranta",
+          "namn_sv": "ECB:s inlåningsränta",
+          "namn_en": "ECB deposit facility rate",
+          "enhet": "%",
+          "decimaler": 2,
+          "senaste": 2.5,
+          "datum": "2026-09-16",
+          "ar_sedan": 2.0,
+          "ar_sedan_datum": "2025-06-11",
+          "kalla": "Europeiska centralbanken",
+          "url": "https://data.ecb.europa.eu/",
+          "spark": [
+            3.0,
+            2.75,
+            2.5,
+            2.25,
+            2.0,
+            2.25,
+            2.5
+          ]
+        }
+      ]
     },
     {
       "id": "fd00209ef9",
@@ -3147,6 +2682,109 @@
       "data": null
     },
     {
+      "id": "ce1f86080f",
+      "amnen": [
+        "geopolitik",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 28.8,
+      "vikt": {
+        "bredd": 0.348,
+        "regioner": {
+          "europa": 1,
+          "norden": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T02:40:44+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.68,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "europa",
+          "norden"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+              "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
+              "tid": 1795747244.0,
+              "statskontrollerad": false
+            }
+          ],
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
+              "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
+              "tid": 1795667507.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+      "kallor": [
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+          "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
+          "tid": 1795747244.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "Trump og Nato-chef beder Rusland om at undgå udvidelse af krig",
+          "url": "https://www.dr.dk/nyheder/seneste/trump-og-nato-chef-beder-rusland-om-undgaa-udvidelse-af-krig",
+          "tid": 1795667507.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "c2adcbcf9a",
       "amnen": [
         "ai",
@@ -3156,14 +2794,14 @@
         "ai",
         "halvledare"
       ],
-      "poang": 28.7,
+      "poang": 28.8,
       "vikt": {
         "bredd": 0.099,
         "regioner": {
           "usa": 2,
           "asien": 1
         },
-        "timmar": 84,
+        "timmar": 85,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3272,17 +2910,116 @@
       "data": null
     },
     {
+      "id": "6aa5d4d22d",
+      "amnen": [
+        "varlden"
+      ],
+      "amnen_sektion": [],
+      "poang": 28.2,
+      "vikt": {
+        "bredd": 0.286,
+        "regioner": {
+          "mellanostern": 1,
+          "afrika": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T02:58:48+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.641,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Spain and Morocco under-17 stars target World Cup 2030",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/spain-and-morocco-under-17-stars-target-world-cup-2030?traffic_source=rss",
+              "tid": 1795748328.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Morocco and Senegal advance to U-17 World Cup knockout stage",
+              "url": "http://www.africanews.com/2026/11/26/morocco-and-senegal-advance-to-u-17-world-cup-knockout-stage/",
+              "tid": 1795728545.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Spain and Morocco under-17 stars target World Cup 2030",
+      "kallor": [
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Spain and Morocco under-17 stars target World Cup 2030",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/spain-and-morocco-under-17-stars-target-world-cup-2030?traffic_source=rss",
+          "tid": 1795748328.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Morocco and Senegal advance to U-17 World Cup knockout stage",
+          "url": "http://www.africanews.com/2026/11/26/morocco-and-senegal-advance-to-u-17-world-cup-knockout-stage/",
+          "tid": 1795728545.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "1689b7acb6",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.0,
+      "poang": 28.1,
       "vikt": {
         "bredd": 0.487,
         "regioner": {
           "mellanostern": 3,
           "asien": 1
         },
-        "timmar": 58,
+        "timmar": 59,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3413,7 +3150,7 @@
       "id": "8ee2a985ff",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 28.0,
+      "poang": 28.1,
       "vikt": {
         "bredd": 0.275,
         "regioner": {
@@ -3421,7 +3158,7 @@
           "europa": 1,
           "global": 1
         },
-        "timmar": 47,
+        "timmar": 48,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3565,7 +3302,7 @@
         "regioner": {
           "afrika": 2
         },
-        "timmar": 86,
+        "timmar": 87,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3646,6 +3383,191 @@
         "ingen källkontroll",
         "färre än tre oberoende källor (2)",
         "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "47f8cd2f00",
+      "amnen": [
+        "usa"
+      ],
+      "amnen_sektion": [
+        "usa"
+      ],
+      "poang": 27.7,
+      "vikt": {
+        "bredd": 0.215,
+        "regioner": {
+          "usa": 2,
+          "asien": 2,
+          "europa": 1
+        },
+        "timmar": 50,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "samarbete"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T03:51:11+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.643,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "The Hill",
+              "land": "US",
+              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+              "tid": 1795751471.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Washington Examiner",
+              "land": "US",
+              "rubrik": "Trump open to Putin attending G20 in Florida next month",
+              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
+              "tid": 1795746845.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+              "tid": 1795742663.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump says Putin can come to G20 if he wants",
+              "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
+              "tid": 1795739815.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
+              "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
+              "tid": 1795730780.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": {
+          "mitten": [
+            {
+              "kalla": "The Hill",
+              "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+              "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+              "tid": 1795751471.0,
+              "lutning": "mitten"
+            }
+          ],
+          "rod": [
+            {
+              "kalla": "Washington Examiner",
+              "rubrik": "Trump open to Putin attending G20 in Florida next month",
+              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
+              "tid": 1795746845.0,
+              "lutning": "lutar_hoger"
+            }
+          ]
+        },
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+      "kallor": [
+        {
+          "namn": "The Hill",
+          "rubrik": "Zelensky on Trump calling Putin 'friend': 'Same as somebody saying about Hitler' in WWII",
+          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+          "tid": 1795751471.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Washington Examiner",
+          "rubrik": "Trump open to Putin attending G20 in Florida next month",
+          "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
+          "tid": 1795746845.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
+          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
+          "tid": 1795742663.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump says Putin can come to G20 if he wants",
+          "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
+          "tid": 1795739815.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
+          "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
+          "tid": 1795730780.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
       ],
       "data": null
     },
@@ -3795,153 +3717,10 @@
       "data": null
     },
     {
-      "id": "9c2e4a7f4d",
-      "amnen": [
-        "energi",
-        "usa"
-      ],
-      "amnen_sektion": [
-        "energi",
-        "usa"
-      ],
-      "poang": 27.3,
-      "vikt": {
-        "bredd": 0.2,
-        "regioner": {
-          "usa": 1,
-          "asien": 3
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T13:31:28+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.624,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "NPR",
-              "land": "US",
-              "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-              "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
-              "tid": 1795699888.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-              "url": "https://www.thehindu.com/news/international/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/article71745171.ece",
-              "tid": 1795667738.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Yonhap",
-              "land": "KR",
-              "rubrik": "(3rd LD) N. Korea's Kim inspects nuclear material sites, calls for broader use of tactical nukes",
-              "url": "https://en.yna.co.kr/view/AEN20261126000553315",
-              "tid": 1795661305.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CGTN",
-              "land": "CN",
-              "rubrik": "Top DPRK leader inspects nuclear materials production sites: KCNA",
-              "url": "https://news.cgtn.com/news/2026-11-26/Top-DPRK-leader-inspects-nuclear-materials-production-sites-KCNA-1SnVIAmkEaQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-              "tid": 1795679445.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-      "kallor": [
-        {
-          "namn": "NPR",
-          "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-          "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
-          "tid": 1795699888.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-          "url": "https://www.thehindu.com/news/international/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/article71745171.ece",
-          "tid": 1795667738.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Yonhap",
-          "rubrik": "(3rd LD) N. Korea's Kim inspects nuclear material sites, calls for broader use of tactical nukes",
-          "url": "https://en.yna.co.kr/view/AEN20261126000553315",
-          "tid": 1795661305.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "KR",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "CGTN",
-          "rubrik": "Top DPRK leader inspects nuclear materials production sites: KCNA",
-          "url": "https://news.cgtn.com/news/2026-11-26/Top-DPRK-leader-inspects-nuclear-materials-production-sites-KCNA-1SnVIAmkEaQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "tid": 1795679445.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CN",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "ea7defd56e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.2,
+      "poang": 27.4,
       "vikt": {
         "bredd": 0.616,
         "regioner": {
@@ -3950,7 +3729,7 @@
           "norden": 1,
           "asien": 1
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4104,17 +3883,160 @@
       "data": null
     },
     {
+      "id": "9c2e4a7f4d",
+      "amnen": [
+        "energi",
+        "usa"
+      ],
+      "amnen_sektion": [
+        "energi",
+        "usa"
+      ],
+      "poang": 27.3,
+      "vikt": {
+        "bredd": 0.2,
+        "regioner": {
+          "usa": 1,
+          "asien": 3
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 4,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T13:31:28+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.624,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "usa"
+        ],
+        "per_region": {
+          "usa": [
+            {
+              "kalla": "NPR",
+              "land": "US",
+              "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+              "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+              "tid": 1795699888.0,
+              "statskontrollerad": false
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+              "url": "https://www.thehindu.com/news/international/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/article71745171.ece",
+              "tid": 1795667738.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "(3rd LD) N. Korea's Kim inspects nuclear material sites, calls for broader use of tactical nukes",
+              "url": "https://en.yna.co.kr/view/AEN20261126000553315",
+              "tid": 1795661305.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "CGTN",
+              "land": "CN",
+              "rubrik": "Top DPRK leader inspects nuclear materials production sites: KCNA",
+              "url": "https://news.cgtn.com/news/2026-11-26/Top-DPRK-leader-inspects-nuclear-materials-production-sites-KCNA-1SnVIAmkEaQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+              "tid": 1795679445.0,
+              "statskontrollerad": true
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "kallor": [
+        {
+          "namn": "NPR",
+          "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+          "tid": 1795699888.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "url": "https://www.thehindu.com/news/international/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/article71745171.ece",
+          "tid": 1795667738.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Yonhap",
+          "rubrik": "(3rd LD) N. Korea's Kim inspects nuclear material sites, calls for broader use of tactical nukes",
+          "url": "https://en.yna.co.kr/view/AEN20261126000553315",
+          "tid": 1795661305.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "KR",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "CGTN",
+          "rubrik": "Top DPRK leader inspects nuclear materials production sites: KCNA",
+          "url": "https://news.cgtn.com/news/2026-11-26/Top-DPRK-leader-inspects-nuclear-materials-production-sites-KCNA-1SnVIAmkEaQ/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "tid": 1795679445.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CN",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "8055b26aef",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.1,
+      "poang": 27.2,
       "vikt": {
         "bredd": 0.345,
         "regioner": {
           "mellanostern": 2,
           "asien": 1
         },
-        "timmar": 66,
+        "timmar": 67,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4222,87 +4144,226 @@
       "data": null
     },
     {
-      "id": "78f126d517",
-      "amnen": [
-        "halvledare",
-        "marknader",
-        "teknik"
-      ],
-      "amnen_sektion": [
-        "halvledare",
-        "marknader"
-      ],
-      "poang": 26.9,
+      "id": "1144b74f38",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 27.2,
       "vikt": {
-        "bredd": 0.139,
+        "bredd": 0.213,
         "regioner": {
-          "usa": 4,
-          "asien": 1
+          "asien": 1,
+          "usa": 1,
+          "europa": 1,
+          "sverige": 1
         },
-        "timmar": 50,
+        "timmar": 91,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
-        "spar": [
-          "teknik"
-        ]
+        "spar": []
       },
       "maste": false,
-      "antal_kallor": 5,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-11-26T17:00:00+00:00",
+      "senast": "2026-11-27T03:06:45+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.721,
+      "sammanhang": 0.552,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
           "asien",
+          "europa",
+          "sverige",
           "usa"
         ],
         "per_region": {
-          "usa": [
+          "asien": [
             {
-              "kalla": "Tom's Hardware",
-              "land": "US",
-              "rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
-              "url": "https://www.tomshardware.com/tech-industry/credit-rating-agency-puts-nvidia-on-notice-for-possible-downgrade-s-and-p-global-ratings-says-board-members-may-have-compromised-their-independence",
-              "tid": 1795712400.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "CNBC",
-              "land": "US",
-              "rubrik": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-              "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-              "tid": 1795663184.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "TechCrunch",
-              "land": "US",
-              "rubrik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-              "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-              "tid": 1795646672.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "S&P Global Puts Nvidia on ‘CreditWatch Negative’ Due to Governance Risks",
-              "url": "https://www.theinformation.com/briefings/s-p-global-puts-nvidia-creditwatch-negative-due-governance-risks",
-              "tid": 1795634860.0,
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Zelenskyy says Russia preparing new mass strike in coming days",
+              "url": "https://www.channelnewsasia.com/world/russia-ukraine-zelenskyy-mass-strike-warning-6585961",
+              "tid": 1795748805.0,
               "statskontrollerad": false
             }
           ],
+          "usa": [
+            {
+              "kalla": "Fox News",
+              "land": "US",
+              "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
+              "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
+              "tid": 1795746349.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "BBC World",
+              "land": "GB",
+              "rubrik": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+              "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+              "tid": 1795733367.0,
+              "statskontrollerad": false
+            }
+          ],
+          "sverige": [
+            {
+              "kalla": "Dagens industri",
+              "land": "SE",
+              "rubrik": "Zelenskyj: Ryssland förbereder nya massiva anfall",
+              "url": "https://www.di.se/nyheter/zelenskyj-ryssland-forbereder-nya-massiva-anfall/",
+              "tid": 1795726462.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zelenskyy says Russia preparing new mass strike in coming days",
+      "kallor": [
+        {
+          "namn": "CNA",
+          "rubrik": "Zelenskyy says Russia preparing new mass strike in coming days",
+          "url": "https://www.channelnewsasia.com/world/russia-ukraine-zelenskyy-mass-strike-warning-6585961",
+          "tid": 1795748805.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Fox News",
+          "rubrik": "Putin's grip on Crimea tested amid major blackout as Zelenskyy warns of looming Russian strike",
+          "url": "https://www.foxnews.com/world/putins-grip-crimea-tested-amid-major-blackout-zelenskyy-warns-imminent-russia-strike",
+          "tid": 1795746349.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "BBC World",
+          "rubrik": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+          "tid": 1795733367.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Dagens industri",
+          "rubrik": "Zelenskyj: Ryssland förbereder nya massiva anfall",
+          "url": "https://www.di.se/nyheter/zelenskyj-ryssland-forbereder-nya-massiva-anfall/",
+          "tid": 1795726462.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll"
+      ],
+      "data": null
+    },
+    {
+      "id": "b7446b8a47",
+      "amnen": [
+        "geopolitik"
+      ],
+      "amnen_sektion": [
+        "geopolitik"
+      ],
+      "poang": 27.1,
+      "vikt": {
+        "bredd": 0.283,
+        "regioner": {
+          "asien": 4,
+          "europa": 1
+        },
+        "timmar": 76,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T04:00:12+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.576,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
           "asien": [
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "What will Taiwan local elections reveal about 2028 race and cross-strait shifts?",
+              "url": "https://www.scmp.com/news/china/politics/article/3375904/what-will-taiwan-local-elections-reveal-about-2028-race-and-cross-strait-shifts",
+              "tid": 1795752012.0,
+              "statskontrollerad": false
+            },
             {
               "kalla": "Hindustan Times",
               "land": "IN",
-              "rubrik": "Nvidia faces potential credit downgrade as S&P questions board independence",
-              "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-faces-potential-credit-downgrade-as-s-p-questions-board-independence-101795662606629.html",
-              "tid": 1795663527.0,
+              "rubrik": "Puma Shen: Taiwan's rising Taipei mayoral candidate who is also sanctioned by China",
+              "url": "https://www.hindustantimes.com/world-news/puma-shen-taiwans-rising-taepei-mayoral-candidate-who-is-also-sanctioned-by-china-101795742729439.html",
+              "tid": 1795744557.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Focus Taiwan",
+              "land": "TW",
+              "rubrik": "Mostly stable weather forecast for Taiwan on election day",
+              "url": "https://focustaiwan.tw/society/202611260005",
+              "tid": 1795663539.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Nikkei Asia",
+              "land": "JP",
+              "rubrik": "Taiwan weathers wave of cyberattacks ahead of Saturday's elections",
+              "url": "https://asia.nikkei.com/spotlight/cybersecurity/taiwan-weathers-wave-of-cyberattacks-ahead-of-saturday-s-elections",
+              "tid": null,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "The Guardian",
+              "land": "GB",
+              "rubrik": "Threat from China looms large over Taiwan’s local elections",
+              "url": "https://www.theguardian.com/world/2026/nov/27/threat-from-china-looms-large-over-taiwan-local-elections",
+              "tid": 1795741249.0,
               "statskontrollerad": false
             }
           ]
@@ -4312,25 +4373,25 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
+      "reserv_rubrik": "What will Taiwan local elections reveal about 2028 race and cross-strait shifts?",
       "kallor": [
         {
-          "namn": "Tom's Hardware",
-          "rubrik": "Credit rating agency puts Nvidia on notice for possible downgrade",
-          "url": "https://www.tomshardware.com/tech-industry/credit-rating-agency-puts-nvidia-on-notice-for-possible-downgrade-s-and-p-global-ratings-says-board-members-may-have-compromised-their-independence",
-          "tid": 1795712400.0,
+          "namn": "South China Morning Post",
+          "rubrik": "What will Taiwan local elections reveal about 2028 race and cross-strait shifts?",
+          "url": "https://www.scmp.com/news/china/politics/article/3375904/what-will-taiwan-local-elections-reveal-about-2028-race-and-cross-strait-shifts",
+          "tid": 1795752012.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "HK",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "Hindustan Times",
-          "rubrik": "Nvidia faces potential credit downgrade as S&P questions board independence",
-          "url": "https://www.hindustantimes.com/world-news/us-news/nvidia-faces-potential-credit-downgrade-as-s-p-questions-board-independence-101795662606629.html",
-          "tid": 1795663527.0,
+          "rubrik": "Puma Shen: Taiwan's rising Taipei mayoral candidate who is also sanctioned by China",
+          "url": "https://www.hindustantimes.com/world-news/puma-shen-taiwans-rising-taepei-mayoral-candidate-who-is-also-sanctioned-by-china-101795742729439.html",
+          "tid": 1795744557.0,
           "betalvagg": false,
           "typ": "media",
           "land": "IN",
@@ -4339,156 +4400,37 @@
           "statskontrollerad": false
         },
         {
-          "namn": "CNBC",
-          "rubrik": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-          "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-          "tid": 1795663184.0,
+          "namn": "The Guardian",
+          "rubrik": "Threat from China looms large over Taiwan’s local elections",
+          "url": "https://www.theguardian.com/world/2026/nov/27/threat-from-china-looms-large-over-taiwan-local-elections",
+          "tid": 1795741249.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
+          "land": "GB",
+          "region": "europa",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "TechCrunch",
-          "rubrik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-          "tid": 1795646672.0,
+          "namn": "Focus Taiwan",
+          "rubrik": "Mostly stable weather forecast for Taiwan on election day",
+          "url": "https://focustaiwan.tw/society/202611260005",
+          "tid": 1795663539.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
+          "land": "TW",
+          "region": "asien",
+          "agare": "statlig",
           "statskontrollerad": false
         },
         {
-          "namn": "The Information",
-          "rubrik": "S&P Global Puts Nvidia on ‘CreditWatch Negative’ Due to Governance Risks",
-          "url": "https://www.theinformation.com/briefings/s-p-global-puts-nvidia-creditwatch-negative-due-governance-risks",
-          "tid": 1795634860.0,
+          "namn": "Nikkei Asia",
+          "rubrik": "Taiwan weathers wave of cyberattacks ahead of Saturday's elections",
+          "url": "https://asia.nikkei.com/spotlight/cybersecurity/taiwan-weathers-wave-of-cyberattacks-ahead-of-saturday-s-elections",
+          "tid": null,
           "betalvagg": true,
           "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "9cf461eddf",
-      "amnen": [
-        "geopolitik"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.8,
-      "vikt": {
-        "bredd": 0.154,
-        "regioner": {
-          "europa": 2,
-          "asien": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T09:30:14+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.688,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "europa": [
-            {
-              "kalla": "Meduza",
-              "land": "LV",
-              "rubrik": "Russian strikes on Ukraine kill two in Kharkiv and injure seven in Kyiv",
-              "url": "https://meduza.io/en/news/2026/11/26/russian-strikes-on-ukraine-kill-two-in-kharkiv-and-injure-seven-in-kyiv",
-              "tid": 1795685414.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Ukraine strikes 2 Russian oil facilities, air field in Volgograd Oblast, General Staff confirms",
-              "url": "https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast/",
-              "tid": 1795685141.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Ukraine says it struck two oil refineries in Russia's Samara region",
-              "url": "https://www.thehindu.com/news/international/ukraine-says-it-struck-two-oil-refineries-in-russias-samara-region/article71743934.ece",
-              "tid": 1795630187.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Russian strikes on Ukraine kill two in Kharkiv and injure seven in Kyiv",
-      "kallor": [
-        {
-          "namn": "Meduza",
-          "rubrik": "Russian strikes on Ukraine kill two in Kharkiv and injure seven in Kyiv",
-          "url": "https://meduza.io/en/news/2026/11/26/russian-strikes-on-ukraine-kill-two-in-kharkiv-and-injure-seven-in-kyiv",
-          "tid": 1795685414.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "LV",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Ukraine strikes 2 Russian oil facilities, air field in Volgograd Oblast, General Staff confirms",
-          "url": "https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast/",
-          "tid": 1795685141.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UA",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Ukraine says it struck two oil refineries in Russia's Samara region",
-          "url": "https://www.thehindu.com/news/international/ukraine-says-it-struck-two-oil-refineries-in-russias-samara-region/article71743934.ece",
-          "tid": 1795630187.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
+          "land": "JP",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
@@ -4512,13 +4454,13 @@
         "asien"
       ],
       "amnen_sektion": [],
-      "poang": 25.9,
+      "poang": 26.0,
       "vikt": {
         "bredd": 0.118,
         "regioner": {
           "asien": 2
         },
-        "timmar": 41,
+        "timmar": 42,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4618,7 +4560,7 @@
         "regioner": {
           "sverige": 2
         },
-        "timmar": 55,
+        "timmar": 56,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4704,159 +4646,12 @@
       "data": null
     },
     {
-      "id": "47f8cd2f00",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 22.7,
-      "vikt": {
-        "bredd": 0.195,
-        "regioner": {
-          "usa": 1,
-          "asien": 2,
-          "europa": 1
-        },
-        "timmar": 16,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "samarbete"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T02:34:05+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.634,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "usa"
-        ],
-        "per_region": {
-          "usa": [
-            {
-              "kalla": "Washington Examiner",
-              "land": "US",
-              "rubrik": "Trump open to Putin attending G20 in Florida next month",
-              "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
-              "tid": 1795746845.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-              "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-              "tid": 1795742663.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Trump says Putin can come to G20 if he wants",
-              "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
-              "tid": 1795739815.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "BBC World",
-              "land": "GB",
-              "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
-              "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
-              "tid": 1795730780.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Trump open to Putin attending G20 in Florida next month",
-      "kallor": [
-        {
-          "namn": "Washington Examiner",
-          "rubrik": "Trump open to Putin attending G20 in Florida next month",
-          "url": "https://www.washingtonexaminer.com/news/world/4816353/trump-putin-g20-florida/",
-          "tid": 1795746845.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "‘I'd like to have him’: Trump on Putin's participation in December G20 summit",
-          "url": "https://www.hindustantimes.com/world-news/us-news/id-like-to-have-him-donald-trump-on-vladimir-putins-participation-in-december-g20-summit-101795739711266.html",
-          "tid": 1795742663.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Trump says Putin can come to G20 if he wants",
-          "url": "https://www.straitstimes.com/world/europe/trump-says-putin-can-come-to-g20-if-he-wants",
-          "tid": 1795739815.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "BBC World",
-          "rubrik": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
-          "url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
-          "tid": 1795730780.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
       "id": "b948b9e17f",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 22.5,
+      "poang": 22.8,
       "vikt": {
         "bredd": 0.259,
         "regioner": {
@@ -4864,7 +4659,7 @@
           "europa": 1,
           "mellanostern": 1
         },
-        "timmar": 13,
+        "timmar": 14,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4986,13 +4781,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 22.3,
+      "poang": 22.5,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 32,
+        "timmar": 33,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5082,14 +4877,14 @@
       "amnen_sektion": [
         "spel"
       ],
-      "poang": 20.9,
+      "poang": 21.2,
       "vikt": {
         "bredd": 0.097,
         "regioner": {
           "sverige": 1,
           "usa": 1
         },
-        "timmar": 13,
+        "timmar": 14,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5185,13 +4980,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.0,
+      "poang": 20.2,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 19,
+        "timmar": 20,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5284,13 +5079,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.0,
+      "poang": 20.2,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 19,
+        "timmar": 20,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5383,13 +5178,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 18.7,
+      "poang": 19.1,
       "vikt": {
         "bredd": 0.246,
         "regioner": {
           "sverige": 3
         },
-        "timmar": 11,
+        "timmar": 12,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5492,19 +5287,17 @@
       "data": null
     },
     {
-      "id": "e575ccb934",
-      "amnen": [
-        "varlden"
-      ],
+      "id": "f73d9b950e",
+      "amnen": [],
       "amnen_sektion": [],
-      "poang": 18.1,
+      "poang": 18.8,
       "vikt": {
-        "bredd": 0.118,
+        "bredd": 0.125,
         "regioner": {
-          "europa": 1,
-          "asien": 1
+          "europa": 2,
+          "usa": 1
         },
-        "timmar": 6,
+        "timmar": 7,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5513,170 +5306,89 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-26T21:33:36+00:00",
+      "senast": "2026-11-27T03:00:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.671,
+      "sammanhang": 0.665,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "asien",
-          "europa"
+          "europa",
+          "usa"
         ],
         "per_region": {
-          "europa": [
-            {
-              "kalla": "The Guardian",
-              "land": "GB",
-              "rubrik": "Southern and central Australia face summer of heightened bushfire risk and heatwaves",
-              "url": "https://www.theguardian.com/environment/2026/nov/27/southern-and-central-australia-face-summer-of-heightened-bushfire-risk-and-heatwaves",
-              "tid": 1795728816.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "ABC News (Australien)",
-              "land": "AU",
-              "rubrik": "'Significant concern' as summer bushfire risk grows",
-              "url": "https://www.abc.net.au/news/2026-11-27/australia-summer-bushfire-risk/107425264",
-              "tid": 1795728786.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Southern and central Australia face summer of heightened bushfire risk and heatwaves",
-      "kallor": [
-        {
-          "namn": "The Guardian",
-          "rubrik": "Southern and central Australia face summer of heightened bushfire risk and heatwaves",
-          "url": "https://www.theguardian.com/environment/2026/nov/27/southern-and-central-australia-face-summer-of-heightened-bushfire-risk-and-heatwaves",
-          "tid": 1795728816.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "ABC News (Australien)",
-          "rubrik": "'Significant concern' as summer bushfire risk grows",
-          "url": "https://www.abc.net.au/news/2026-11-27/australia-summer-bushfire-risk/107425264",
-          "tid": 1795728786.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AU",
-          "region": "asien",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "140247cbfa",
-      "amnen": [
-        "sverige"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 16.9,
-      "vikt": {
-        "bredd": 0.106,
-        "regioner": {
-          "asien": 1,
-          "europa": 1
-        },
-        "timmar": 10,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-26T17:11:49+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.56,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Sweden's Centre leader backs right-wing prime minister, in major shift",
-              "url": "https://www.straitstimes.com/world/europe/swedens-centre-leader-backs-right-wing-prime-minister-in-major-shift",
-              "tid": 1795713109.0,
-              "statskontrollerad": false
-            }
-          ],
           "europa": [
             {
               "kalla": "Politico Europe",
               "land": "BE",
-              "rubrik": "Sweden’s Kristersson edges closer to new term as prime minister",
-              "url": "https://www.politico.eu/article/sweden-kristersson-edges-closer-new-term-prime-minister/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-              "tid": 1795709478.0,
+              "rubrik": "Spain’s looming right-wing pivot on climate is already playing out in Valencia",
+              "url": "https://www.politico.eu/article/spain-looming-right-wing-pivot-on-climate-is-already-playing-out-in-valencia/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "tid": 1795748400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Sanchez's big gamble: Will Spain swing from Socialists to hard right?",
+              "url": "https://www.france24.com/en/tv-shows/the-debate/20261126-sanchez-s-big-gamble-will-spain-swing-from-socialists-to-hard-right",
+              "tid": 1795726436.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Wall Street Journal",
+              "land": "US",
+              "rubrik": "Opinion | Sánchez and Socialists Poised to Lose Power in Spain",
+              "url": "https://www.wsj.com/opinion/sanchez-and-socialists-poised-to-lose-power-in-spain-4ccd535d?mod=rss_worldnews",
+              "tid": 1795716180.0,
               "statskontrollerad": false
             }
           ]
         },
         "blind_flack": null,
-        "grannar_svenska": false,
+        "grannar_svenska": true,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Sweden's Centre leader backs right-wing prime minister, in major shift",
+      "reserv_rubrik": "Spain’s looming right-wing pivot on climate is already playing out in Valencia",
       "kallor": [
         {
-          "namn": "The Straits Times",
-          "rubrik": "Sweden's Centre leader backs right-wing prime minister, in major shift",
-          "url": "https://www.straitstimes.com/world/europe/swedens-centre-leader-backs-right-wing-prime-minister-in-major-shift",
-          "tid": 1795713109.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
           "namn": "Politico Europe",
-          "rubrik": "Sweden’s Kristersson edges closer to new term as prime minister",
-          "url": "https://www.politico.eu/article/sweden-kristersson-edges-closer-new-term-prime-minister/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "tid": 1795709478.0,
+          "rubrik": "Spain’s looming right-wing pivot on climate is already playing out in Valencia",
+          "url": "https://www.politico.eu/article/spain-looming-right-wing-pivot-on-climate-is-already-playing-out-in-valencia/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "tid": 1795748400.0,
           "betalvagg": false,
           "typ": "media",
           "land": "BE",
           "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Sanchez's big gamble: Will Spain swing from Socialists to hard right?",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20261126-sanchez-s-big-gamble-will-spain-swing-from-socialists-to-hard-right",
+          "tid": 1795726436.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Wall Street Journal",
+          "rubrik": "Opinion | Sánchez and Socialists Poised to Lose Power in Spain",
+          "url": "https://www.wsj.com/opinion/sanchez-and-socialists-poised-to-lose-power-in-spain-4ccd535d?mod=rss_worldnews",
+          "tid": 1795716180.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
           "agare": "privat",
           "statskontrollerad": false
         }
@@ -5684,30 +5396,28 @@
       "granskad": false,
       "relevans": {
         "sv": 1,
-        "en": 1
+        "en": 3
       },
       "autopilot": [
         "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "färre än två svenska källor"
+        "ingen källkontroll"
       ],
       "data": null
     },
     {
       "id": "69a3d214dd",
       "amnen": [
-        "europa",
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 15.6,
+      "poang": 15.1,
       "vikt": {
-        "bredd": 0.105,
+        "bredd": 0.355,
         "regioner": {
+          "latinamerika": 2,
           "europa": 2
         },
-        "timmar": 3,
+        "timmar": 1,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -5716,19 +5426,38 @@
         ]
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 4,
       "har_primarkalla": false,
-      "senast": "2026-11-26T22:25:03+00:00",
+      "senast": "2026-11-27T03:33:05+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.706,
+      "sammanhang": 0.615,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "europa"
+          "europa",
+          "latinamerika"
         ],
         "per_region": {
+          "latinamerika": [
+            {
+              "kalla": "El Tiempo",
+              "land": "CO",
+              "rubrik": "Los mensajes 'antisemitas' de Bardella y las filtraciones del minInterior: los dos escándalos que sacuden al partido de Marine Le Pen en Francia",
+              "url": "https://www.eltiempo.com/mundo/europa/los-mensajes-antisemitas-de-bardella-y-las-filtraciones-del-mininterior-los-dos-escandalos-que-sacuden-al-partido-de-marine-le-pen-en-francia-3604644",
+              "tid": 1795750385.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Una nueva investigación en Francia apuntala la veracidad de los mensajes antisemitas del delfín de Marine Le Pen",
+              "url": "https://elpais.com/internacional/2026-11-26/una-nueva-investigacion-en-francia-apuntala-la-veracidad-de-los-mensajes-antisemitas-del-delfin-de-marine-le-pen.html",
+              "tid": 1795690917.0,
+              "statskontrollerad": false
+            }
+          ],
           "europa": [
             {
               "kalla": "France 24",
@@ -5748,13 +5477,25 @@
             }
           ]
         },
-        "blind_flack": null,
+        "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "RN’s antisemitic past ‘coming back to haunt them’: Will Le Pen ‘distance herself’ from Bardella?",
+      "reserv_rubrik": "Los mensajes 'antisemitas' de Bardella y las filtraciones del minInterior: los dos escándalos que sacuden al partido de Marine Le Pen en Francia",
       "kallor": [
+        {
+          "namn": "El Tiempo",
+          "rubrik": "Los mensajes 'antisemitas' de Bardella y las filtraciones del minInterior: los dos escándalos que sacuden al partido de Marine Le Pen en Francia",
+          "url": "https://www.eltiempo.com/mundo/europa/los-mensajes-antisemitas-de-bardella-y-las-filtraciones-del-mininterior-los-dos-escandalos-que-sacuden-al-partido-de-marine-le-pen-en-francia-3604644",
+          "tid": 1795750385.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CO",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
         {
           "namn": "France 24",
           "rubrik": "RN’s antisemitic past ‘coming back to haunt them’: Will Le Pen ‘distance herself’ from Bardella?",
@@ -5765,6 +5506,18 @@
           "land": "FR",
           "region": "europa",
           "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "Una nueva investigación en Francia apuntala la veracidad de los mensajes antisemitas del delfín de Marine Le Pen",
+          "url": "https://elpais.com/internacional/2026-11-26/una-nueva-investigacion-en-francia-apuntala-la-veracidad-de-los-mensajes-antisemitas-del-delfin-de-marine-le-pen.html",
+          "tid": 1795690917.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
           "statskontrollerad": false
         },
         {
@@ -5782,14 +5535,13 @@
       ],
       "granskad": false,
       "relevans": {
-        "sv": 0,
-        "en": 1
+        "sv": 1,
+        "en": 2
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
+        "blind fläck"
       ],
       "data": null
     },
@@ -6196,13 +5948,94 @@
         "färre än två svenska källor"
       ],
       "data": null
+    },
+    {
+      "id": "7455c2ce98",
+      "amnen": [
+        "norden",
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 11.5,
+      "vikt": {
+        "bredd": 0.3,
+        "regioner": {
+          "norden": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-26T17:18:18+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "norden"
+        ],
+        "per_region": {
+          "norden": [
+            {
+              "kalla": "DR Nyheder",
+              "land": "DK",
+              "rubrik": "TV 2 er sigtet i forbindelse med 'Den Sorte Svane'",
+              "url": "https://www.dr.dk/nyheder/seneste/tv-2-er-sigtet-i-forbindelse-med-den-sorte-svane",
+              "tid": 1795713498.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "TV 2 er sigtet i forbindelse med 'Den Sorte Svane'",
+      "kallor": [
+        {
+          "namn": "DR Nyheder",
+          "rubrik": "TV 2 er sigtet i forbindelse med 'Den Sorte Svane'",
+          "url": "https://www.dr.dk/nyheder/seneste/tv-2-er-sigtet-i-forbindelse-med-den-sorte-svane",
+          "tid": 1795713498.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "DK",
+          "region": "norden",
+          "agare": "public-service",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
     }
   ],
   "kallrapport": [
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 61,
+      "artiklar": 59,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -6214,7 +6047,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 85,
+      "artiklar": 81,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -6238,7 +6071,7 @@
     {
       "id": "nrk",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 29,
       "url": "https://www.nrk.no/toppsaker.rss"
     },
     {
@@ -6316,13 +6149,13 @@
     {
       "id": "dw",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 26,
       "url": "https://rss.dw.com/rdf/rss-en-all"
     },
     {
       "id": "elpais",
       "ok": true,
-      "artiklar": 17,
+      "artiklar": 16,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
     },
     {
@@ -6352,19 +6185,19 @@
     {
       "id": "wapo",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 19,
       "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
       "id": "wsj",
       "ok": true,
-      "artiklar": 30,
+      "artiklar": 28,
       "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
     },
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 37,
+      "artiklar": 36,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
@@ -6440,7 +6273,7 @@
     {
       "id": "mg",
       "ok": true,
-      "artiklar": 42,
+      "artiklar": 41,
       "url": "https://mg.co.za/rss/"
     },
     {
@@ -6500,13 +6333,13 @@
     {
       "id": "ars",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 11,
       "url": "https://feeds.arstechnica.com/arstechnica/index"
     },
     {
       "id": "techcrunch",
       "ok": true,
-      "artiklar": 18,
+      "artiklar": 17,
       "url": "https://techcrunch.com/feed/"
     },
     {
@@ -6530,13 +6363,13 @@
     {
       "id": "fz",
       "ok": true,
-      "artiklar": 9,
+      "artiklar": 8,
       "url": "https://www.fz.se/feeds/nyheter"
     },
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 33,
+      "artiklar": 31,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
@@ -6566,7 +6399,7 @@
     {
       "id": "breaking-defense",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 4,
       "url": "https://breakingdefense.com/feed/"
     },
     {
@@ -6636,14 +6469,13 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 10,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
       "id": "import-ai",
-      "ok": true,
-      "artiklar": 0,
-      "url": "https://importai.substack.com/feed"
+      "ok": false,
+      "fel": "HTTP Error 403: Forbidden"
     },
     {
       "id": "superhuman",
@@ -6684,7 +6516,7 @@
     {
       "id": "vox",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 5,
       "url": "https://www.vox.com/rss/index.xml"
     },
     {
@@ -6695,14 +6527,13 @@
     },
     {
       "id": "wash-times",
-      "ok": true,
-      "artiklar": 20,
-      "url": "https://www.washingtontimes.com/rss/headlines/news/"
+      "ok": false,
+      "fel": "HTTP Error 403: Forbidden"
     },
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 22,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -6714,7 +6545,7 @@
     {
       "id": "daily-caller",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 20,
       "url": "https://dailycaller.com/feed/"
     },
     {
@@ -6732,13 +6563,13 @@
     {
       "id": "technode",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 6,
       "url": "https://technode.com/feed/"
     },
     {
       "id": "404media",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 4,
       "url": "https://www.404media.co/rss/"
     },
     {
@@ -6750,7 +6581,7 @@
     {
       "id": "toms-hardware",
       "ok": true,
-      "artiklar": 50,
+      "artiklar": 49,
       "url": "https://www.tomshardware.com/feeds/all"
     },
     {
@@ -6792,7 +6623,7 @@
     {
       "id": "elpais-america",
       "ok": true,
-      "artiklar": 80,
+      "artiklar": 79,
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"
     },
     {
@@ -6804,13 +6635,13 @@
     {
       "id": "allafrica",
       "ok": true,
-      "artiklar": 32,
+      "artiklar": 33,
       "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf"
     },
     {
       "id": "dailymaverick",
       "ok": true,
-      "artiklar": 34,
+      "artiklar": 35,
       "url": "https://www.dailymaverick.co.za/dmrss/"
     },
     {
@@ -6822,7 +6653,7 @@
     {
       "id": "africanews",
       "ok": true,
-      "artiklar": 40,
+      "artiklar": 39,
       "url": "https://www.africanews.com/feed/rss"
     },
     {
@@ -6834,7 +6665,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 83,
+      "artiklar": 81,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6894,7 +6725,7 @@
     {
       "id": "abc-au",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 24,
       "url": "https://www.abc.net.au/news/feed/51120/rss.xml"
     },
     {
@@ -6936,7 +6767,7 @@
     {
       "id": "meduza",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 20,
       "url": "https://meduza.io/rss/en/all"
     },
     {
@@ -6966,7 +6797,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 8,
+      "artiklar": 9,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
@@ -6984,7 +6815,7 @@
     {
       "id": "focustaiwan",
       "ok": true,
-      "artiklar": 21,
+      "artiklar": 24,
       "url": "https://feeds.feedburner.com/rsscna/engnews"
     },
     {
@@ -7014,13 +6845,13 @@
     {
       "id": "insideclimate",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://insideclimatenews.org/feed/"
     },
     {
       "id": "mongabay",
       "ok": true,
-      "artiklar": 16,
+      "artiklar": 15,
       "url": "https://news.mongabay.com/feed/"
     },
     {
@@ -7031,19 +6862,19 @@
     {
       "id": "yale-e360",
       "ok": true,
-      "artiklar": 1,
+      "artiklar": 0,
       "url": "https://e360.yale.edu/feed.xml"
     },
     {
       "id": "rns",
       "ok": true,
-      "artiklar": 4,
+      "artiklar": 3,
       "url": "https://religionnews.com/feed/"
     },
     {
       "id": "defensenews",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 2,
       "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml"
     }
   ]
