@@ -1,5 +1,5 @@
 {
-  "skapad": "2026-11-28T07:05:59.907218+00:00",
+  "skapad": "2026-11-28T08:06:15.327193+00:00",
   "modell": "claude-haiku-5-5",
   "over_sprak": false,
   "handelser": [
@@ -28,7 +28,7 @@
       "senast": "2026-11-28T05:40:00+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUuHLskHQV5yP7z2U3Gm'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUysqfmqaoAKDyGTYKe1'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -182,7 +182,7 @@
           "sverige": 1,
           "mellanostern": 1
         },
-        "timmar": 95,
+        "timmar": 96,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -196,7 +196,7 @@
       "senast": "2026-11-27T21:41:12+00:00",
       "utkast": {
         "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUuHLsW7mYHLkav6Rg9j'}"
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUysqgXRLTimhTTbb4zL'}"
       },
       "kallkontroll": null,
       "narrativ": null,
@@ -339,10 +339,464 @@
       "data": null
     },
     {
+      "id": "9fdad26e83",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 30.3,
+      "vikt": {
+        "bredd": 0.281,
+        "regioner": {
+          "asien": 3,
+          "europa": 2
+        },
+        "timmar": 79,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-28T07:41:00+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUysqgmZtdFQntfbd4q4'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.694,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Russia says shot down more than 1,200 Ukraine drones overnight",
+              "url": "https://www.channelnewsasia.com/world/russia-ukraine-shot-down-drones-overnight-6589261",
+              "tid": 1795851660.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Russia says it downed 1,246 Ukrainian drones overnight",
+              "url": "https://www.straitstimes.com/world/europe/russia-says-it-downed-1246-ukrainian-drones-overnight",
+              "tid": 1795850818.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Ukraine says it used laser weapon to shoot down Russian drone for first time",
+              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3376104/ukraine-says-it-used-laser-weapon-shoot-down-russian-drone-first-time",
+              "tid": 1795813713.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "France 24",
+              "land": "FR",
+              "rubrik": "Live: Ukraine downs Russian drone with laser technology as Moscow intercepts overnight assault",
+              "url": "https://www.france24.com/en/europe/20261128-live-ukraine-downs-russian-drone-with-laser-technology-as-moscow-intercepts-overnight-assault",
+              "tid": 1795849920.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Meduza",
+              "land": "LV",
+              "rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
+              "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
+              "tid": 1795767152.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Russia says shot down more than 1,200 Ukraine drones overnight",
+      "kallor": [
+        {
+          "namn": "CNA",
+          "rubrik": "Russia says shot down more than 1,200 Ukraine drones overnight",
+          "url": "https://www.channelnewsasia.com/world/russia-ukraine-shot-down-drones-overnight-6589261",
+          "tid": 1795851660.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Russia says it downed 1,246 Ukrainian drones overnight",
+          "url": "https://www.straitstimes.com/world/europe/russia-says-it-downed-1246-ukrainian-drones-overnight",
+          "tid": 1795850818.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "France 24",
+          "rubrik": "Live: Ukraine downs Russian drone with laser technology as Moscow intercepts overnight assault",
+          "url": "https://www.france24.com/en/europe/20261128-live-ukraine-downs-russian-drone-with-laser-technology-as-moscow-intercepts-overnight-assault",
+          "tid": 1795849920.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Ukraine says it used laser weapon to shoot down Russian drone for first time",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3376104/ukraine-says-it-used-laser-weapon-shoot-down-russian-drone-first-time",
+          "tid": 1795813713.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Meduza",
+          "rubrik": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
+          "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
+          "tid": 1795767152.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "LV",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
+      "id": "a921765792",
+      "amnen": [
+        "latinamerika"
+      ],
+      "amnen_sektion": [
+        "latinamerika"
+      ],
+      "poang": 30.1,
+      "vikt": {
+        "bredd": 1.05,
+        "regioner": {
+          "mellanostern": 4,
+          "asien": 5,
+          "latinamerika": 1,
+          "europa": 1
+        },
+        "timmar": 25,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 11,
+      "har_primarkalla": false,
+      "senast": "2026-11-28T07:31:13+00:00",
+      "utkast": {
+        "osaker": true,
+        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUysqgXAapaUuUfvjSJT'}"
+      },
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.592,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "europa",
+          "latinamerika",
+          "mellanostern"
+        ],
+        "per_region": {
+          "mellanostern": [
+            {
+              "kalla": "Middle East Eye",
+              "land": "GB",
+              "rubrik": "Albanese says Costa Rican police refuse to release her despite court order",
+              "url": "https://www.middleeasteye.net/live-blog/live-blog-update/albanese-says-costa-rican-police-refuse-release-her-despite-court-order",
+              "tid": 1795841307.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Francesca Albanese seeks apology from Costa Rica after entry ban",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/11/28/francesca-albanese-seeks-apology-from-costa-rica-after-entry-ban?traffic_source=rss",
+              "tid": 1795824740.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Al-Monitor",
+              "land": "US",
+              "rubrik": "UN rapporteur to leave for Mexico after halted at Costa Rica airport",
+              "url": "https://www.al-monitor.com/originals/2026/11/un-rapporteur-leave-mexico-after-halted-costa-rica-airport",
+              "tid": 1795815026.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "UN special rapporteur Francesca Albanese denied entry to Costa Rica",
+              "url": "https://www.thenationalnews.com/news/mena/2026/11/28/un-special-rapporteur-francesca-albanese-denied-entry-to-costa-rica/",
+              "tid": 1795851073.0,
+              "statskontrollerad": true
+            }
+          ],
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Francesca Albanese, UN rapporteur on Palestinian rights, to leave for Mexico after Costa Rica government denies entry",
+              "url": "https://www.hindustantimes.com/world-news/francesca-albanese-un-rapporteur-on-palestinian-rights-to-leave-for-mexico-after-costa-rica-government-denies-entry-101795839733586.html",
+              "tid": 1795840210.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "South China Morning Post",
+              "land": "HK",
+              "rubrik": "Costa Rica bars UN-picked human rights expert on Palestinian territories",
+              "url": "https://www.scmp.com/news/world/americas/article/3376110/costa-rica-bars-un-picked-human-rights-expert-palestinian-territories",
+              "tid": 1795836442.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "UN rapporteur halted at Costa Rica airport to leave for Mexico on Nov 28",
+              "url": "https://www.straitstimes.com/world/un-rapporteur-halted-at-costa-rica-airport-to-leave-on-saturday",
+              "tid": 1795832400.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "ABC News (Australien)",
+              "land": "AU",
+              "rubrik": "UN rapporteur Francesca Albanese denied entry at Costa Rica Airport",
+              "url": "https://www.abc.net.au/news/2026-11-28/francesca-albanese-detained-at-costa-rica-airport/107437818",
+              "tid": 1795829962.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Hindu",
+              "land": "IN",
+              "rubrik": "Costa Rica bars entry to UN rapporteur over ‘links to terrorist acts’",
+              "url": "https://www.thehindu.com/news/international/costa-rica-bars-entry-to-un-rapporteur-over-links-to-terrorist-acts/article71749582.ece",
+              "tid": 1795769775.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "El País América",
+              "land": "ES",
+              "rubrik": "Costa Rica niega el ingreso a Francesca Albanese, relatora de la ONU: “Nunca me había sentido tan humillada”",
+              "url": "https://elpais.com/america/2026-11-27/costa-rica-niega-el-ingreso-a-francesca-albanese-relatora-de-la-onu-para-territorios-palestinos.html",
+              "tid": 1795796374.0,
+              "statskontrollerad": false
+            }
+          ],
+          "europa": [
+            {
+              "kalla": "Le Monde (English)",
+              "land": "FR",
+              "rubrik": "UN special rapporteur on the Palestinian territories barred entry to Costa Rica over 'links to terrorist acts'",
+              "url": "https://www.lemonde.fr/en/international/article/2026/11/27/costa-rica-bars-entry-to-un-rapporteur-over-links-to-terrorist-acts_6789763_4.html",
+              "tid": 1795755362.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Albanese says Costa Rican police refuse to release her despite court order",
+      "kallor": [
+        {
+          "namn": "Middle East Eye",
+          "rubrik": "Albanese says Costa Rican police refuse to release her despite court order",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/albanese-says-costa-rican-police-refuse-release-her-despite-court-order",
+          "tid": 1795841307.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "GB",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Francesca Albanese, UN rapporteur on Palestinian rights, to leave for Mexico after Costa Rica government denies entry",
+          "url": "https://www.hindustantimes.com/world-news/francesca-albanese-un-rapporteur-on-palestinian-rights-to-leave-for-mexico-after-costa-rica-government-denies-entry-101795839733586.html",
+          "tid": 1795840210.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "South China Morning Post",
+          "rubrik": "Costa Rica bars UN-picked human rights expert on Palestinian territories",
+          "url": "https://www.scmp.com/news/world/americas/article/3376110/costa-rica-bars-un-picked-human-rights-expert-palestinian-territories",
+          "tid": 1795836442.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "HK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "UN rapporteur halted at Costa Rica airport to leave for Mexico on Nov 28",
+          "url": "https://www.straitstimes.com/world/un-rapporteur-halted-at-costa-rica-airport-to-leave-on-saturday",
+          "tid": 1795832400.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "ABC News (Australien)",
+          "rubrik": "UN rapporteur Francesca Albanese denied entry at Costa Rica Airport",
+          "url": "https://www.abc.net.au/news/2026-11-28/francesca-albanese-detained-at-costa-rica-airport/107437818",
+          "tid": 1795829962.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AU",
+          "region": "asien",
+          "agare": "public-service",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Francesca Albanese seeks apology from Costa Rica after entry ban",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/28/francesca-albanese-seeks-apology-from-costa-rica-after-entry-ban?traffic_source=rss",
+          "tid": 1795824740.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al-Monitor",
+          "rubrik": "UN rapporteur to leave for Mexico after halted at Costa Rica airport",
+          "url": "https://www.al-monitor.com/originals/2026/11/un-rapporteur-leave-mexico-after-halted-costa-rica-airport",
+          "tid": 1795815026.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "US",
+          "region": "mellanostern",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "El País América",
+          "rubrik": "Costa Rica niega el ingreso a Francesca Albanese, relatora de la ONU: “Nunca me había sentido tan humillada”",
+          "url": "https://elpais.com/america/2026-11-27/costa-rica-niega-el-ingreso-a-francesca-albanese-relatora-de-la-onu-para-territorios-palestinos.html",
+          "tid": 1795796374.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "ES",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Hindu",
+          "rubrik": "Costa Rica bars entry to UN rapporteur over ‘links to terrorist acts’",
+          "url": "https://www.thehindu.com/news/international/costa-rica-bars-entry-to-un-rapporteur-over-links-to-terrorist-acts/article71749582.ece",
+          "tid": 1795769775.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Le Monde (English)",
+          "rubrik": "UN special rapporteur on the Palestinian territories barred entry to Costa Rica over 'links to terrorist acts'",
+          "url": "https://www.lemonde.fr/en/international/article/2026/11/27/costa-rica-bars-entry-to-un-rapporteur-over-links-to-terrorist-acts_6789763_4.html",
+          "tid": 1795755362.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "FR",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The National",
+          "rubrik": "UN special rapporteur Francesca Albanese denied entry to Costa Rica",
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/28/un-special-rapporteur-francesca-albanese-denied-entry-to-costa-rica/",
+          "tid": 1795851073.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 2
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "b7446b8a47",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 29.8,
+      "poang": 29.9,
       "vikt": {
         "bredd": 0.834,
         "regioner": {
@@ -352,7 +806,7 @@
           "sverige": 1,
           "afrika": 1
         },
-        "timmar": 39,
+        "timmar": 40,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -362,10 +816,7 @@
       "antal_kallor": 11,
       "har_primarkalla": false,
       "senast": "2026-11-28T06:25:33+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUuHLtjpAjVbvQxhK1PH'}"
-      },
+      "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
       "sammanhang": 0.748,
@@ -630,136 +1081,10 @@
       "data": null
     },
     {
-      "id": "74ddcf0f3d",
-      "amnen": [
-        "energi",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "energi"
-      ],
-      "poang": 29.7,
-      "vikt": {
-        "bredd": 0.261,
-        "regioner": {
-          "asien": 2,
-          "mellanostern": 1
-        },
-        "timmar": 72,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 3,
-      "har_primarkalla": false,
-      "senast": "2026-11-28T04:14:12+00:00",
-      "utkast": {
-        "osaker": true,
-        "kommentar": "AI-utkast misslyckades: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011ChUuHLtVpPw3mnF2gSq2S'}"
-      },
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.748,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Putin unveils new nuclear submarine",
-              "url": "https://www.thehindu.com/news/international/putin-unveils-new-nuclear-submarine/article71753555.ece",
-              "tid": 1795839252.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Putin flags off Russia's new nuclear-powered submarine; says five more to join fleet by 2030",
-              "url": "https://www.hindustantimes.com/world-news/putin-flags-off-russias-new-nuclear-powered-submarine-says-five-more-to-join-fleet-by-2030-101795819444639.html",
-              "tid": 1795819828.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons",
-              "url": "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons?traffic_source=rss",
-              "tid": 1795811997.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Putin unveils new nuclear submarine",
-      "kallor": [
-        {
-          "namn": "The Hindu",
-          "rubrik": "Putin unveils new nuclear submarine",
-          "url": "https://www.thehindu.com/news/international/putin-unveils-new-nuclear-submarine/article71753555.ece",
-          "tid": 1795839252.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Putin flags off Russia's new nuclear-powered submarine; says five more to join fleet by 2030",
-          "url": "https://www.hindustantimes.com/world-news/putin-flags-off-russias-new-nuclear-powered-submarine-says-five-more-to-join-fleet-by-2030-101795819444639.html",
-          "tid": 1795819828.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons",
-          "url": "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons?traffic_source=rss",
-          "tid": 1795811997.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 2
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "28342cc91e",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 29.3,
+      "poang": 29.4,
       "vikt": {
         "bredd": 0.537,
         "regioner": {
@@ -769,7 +1094,7 @@
           "usa": 1,
           "latinamerika": 1
         },
-        "timmar": 70,
+        "timmar": 71,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -1045,642 +1370,6 @@
         "inget utkast",
         "ingen källkontroll",
         "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "0d04286142",
-      "amnen": [
-        "latinamerika",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "latinamerika"
-      ],
-      "poang": 29.0,
-      "vikt": {
-        "bredd": 0.388,
-        "regioner": {
-          "latinamerika": 2,
-          "asien": 2,
-          "usa": 1
-        },
-        "timmar": 91,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 5,
-      "har_primarkalla": false,
-      "senast": "2026-11-28T05:43:41+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.746,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "latinamerika",
-          "usa"
-        ],
-        "per_region": {
-          "latinamerika": [
-            {
-              "kalla": "The Rio Times",
-              "land": "BR",
-              "rubrik": "US Drug Agency Tip Lines Draw Mexico Protest",
-              "url": "https://www.riotimesonline.com/dea-tip-lines-mexico-complaint-sovereignty/",
-              "tid": 1795844621.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Mexico News Daily",
-              "land": "MX",
-              "rubrik": "Mexico files formal complaint over DEA’s Sinaloa tip lines: Friday’s mañanera recapped",
-              "url": "https://mexiconewsdaily.com/politics/mexico-files-formal-complaint-over-deas-sinaloa-tip-lines-fridays-mananera-recapped/",
-              "tid": 1795803644.0,
-              "statskontrollerad": false
-            }
-          ],
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Mexico files formal complaint with US over DEA tip line targeting cartel members and corrupt officials",
-              "url": "https://www.hindustantimes.com/world-news/us-news/mexico-files-formal-complaint-with-us-over-dea-tip-line-targeting-cartel-members-and-corrupt-officials-101795805544103.html",
-              "tid": 1795806130.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Mexico files complaint with US over DEA tip line on alleged drug traffickers, corrupt officials",
-              "url": "https://www.straitstimes.com/world/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials",
-              "tid": 1795792919.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Washington Post",
-              "land": "US",
-              "rubrik": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa",
-              "url": "https://www.washingtonpost.com/world/2026/11/27/mexico-condemns-dea-tip-line-asking-people-report-corrupt-officials-sinaloa/",
-              "tid": 1795812421.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US Drug Agency Tip Lines Draw Mexico Protest",
-      "kallor": [
-        {
-          "namn": "The Rio Times",
-          "rubrik": "US Drug Agency Tip Lines Draw Mexico Protest",
-          "url": "https://www.riotimesonline.com/dea-tip-lines-mexico-complaint-sovereignty/",
-          "tid": 1795844621.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "BR",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Mexico files formal complaint with US over DEA tip line targeting cartel members and corrupt officials",
-          "url": "https://www.hindustantimes.com/world-news/us-news/mexico-files-formal-complaint-with-us-over-dea-tip-line-targeting-cartel-members-and-corrupt-officials-101795805544103.html",
-          "tid": 1795806130.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Mexico News Daily",
-          "rubrik": "Mexico files formal complaint over DEA’s Sinaloa tip lines: Friday’s mañanera recapped",
-          "url": "https://mexiconewsdaily.com/politics/mexico-files-formal-complaint-over-deas-sinaloa-tip-lines-fridays-mananera-recapped/",
-          "tid": 1795803644.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "MX",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Mexico files complaint with US over DEA tip line on alleged drug traffickers, corrupt officials",
-          "url": "https://www.straitstimes.com/world/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials",
-          "tid": 1795792919.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Washington Post",
-          "rubrik": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa",
-          "url": "https://www.washingtonpost.com/world/2026/11/27/mexico-condemns-dea-tip-line-asking-people-report-corrupt-officials-sinaloa/",
-          "tid": 1795812421.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "969b07bb89",
-      "amnen": [
-        "usa"
-      ],
-      "amnen_sektion": [
-        "usa"
-      ],
-      "poang": 29.0,
-      "vikt": {
-        "bredd": 0.403,
-        "regioner": {
-          "asien": 2,
-          "mellanostern": 2
-        },
-        "timmar": 88,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 4,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T23:16:46+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.665,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Trump backs Iraqi PM al-Zaidi’s plan to end oil smuggling and bring weapons under state control: Report",
-              "url": "https://www.hindustantimes.com/world-news/us-news/trump-backs-iraqi-pm-al-zaidi-s-plan-to-end-oil-smuggling-and-bring-weapons-under-state-control-report-101795820770163.html",
-              "tid": 1795821406.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Trump says supports Iraqi leader’s efforts to curb oil-smuggling",
-              "url": "https://www.straitstimes.com/world/united-states/trump-says-supports-iraqi-leaders-efforts-to-curb-oil-smuggling",
-              "tid": 1795779540.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "Trump backs Iraqi leader's efforts to assert more state authority",
-              "url": "https://www.al-monitor.com/originals/2026/11/trump-backs-iraqi-leaders-efforts-assert-more-state-authority",
-              "tid": 1795780000.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The National",
-              "land": "AE",
-              "rubrik": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds",
-              "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
-              "tid": 1795792503.0,
-              "statskontrollerad": true
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Trump backs Iraqi PM al-Zaidi’s plan to end oil smuggling and bring weapons under state control: Report",
-      "kallor": [
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Trump backs Iraqi PM al-Zaidi’s plan to end oil smuggling and bring weapons under state control: Report",
-          "url": "https://www.hindustantimes.com/world-news/us-news/trump-backs-iraqi-pm-al-zaidi-s-plan-to-end-oil-smuggling-and-bring-weapons-under-state-control-report-101795820770163.html",
-          "tid": 1795821406.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "Trump backs Iraqi leader's efforts to assert more state authority",
-          "url": "https://www.al-monitor.com/originals/2026/11/trump-backs-iraqi-leaders-efforts-assert-more-state-authority",
-          "tid": 1795780000.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Trump says supports Iraqi leader’s efforts to curb oil-smuggling",
-          "url": "https://www.straitstimes.com/world/united-states/trump-says-supports-iraqi-leaders-efforts-to-curb-oil-smuggling",
-          "tid": 1795779540.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The National",
-          "rubrik": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds",
-          "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
-          "tid": 1795792503.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "AE",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": true
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
-      ],
-      "data": null
-    },
-    {
-      "id": "8b308c9d0b",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 28.6,
-      "vikt": {
-        "bredd": 0.786,
-        "regioner": {
-          "asien": 6,
-          "mellanostern": 1,
-          "europa": 2,
-          "latinamerika": 1,
-          "usa": 3
-        },
-        "timmar": 33,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 13,
-      "har_primarkalla": false,
-      "senast": "2026-11-28T06:48:50+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.654,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "europa",
-          "latinamerika",
-          "mellanostern",
-          "usa"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "US military says cyber systems secure after reports of Air Force hack",
-              "url": "https://www.straitstimes.com/world/united-states/us-military-says-cyber-systems-secure-after-reports-of-air-force-hack",
-              "tid": 1795848530.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "US military says cyber systems secure after reports of Air Force hack",
-              "url": "https://www.dawn.com/news/2047651/us-military-says-cyber-systems-secure-after-reports-of-air-force-hack",
-              "tid": 1795845850.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "South China Morning Post",
-              "land": "HK",
-              "rubrik": "US military says cyber systems secure after reports of Air Force hack",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3376113/us-military-says-cyber-systems-secure-after-reports-air-force-hack",
-              "tid": 1795841611.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Japan Times",
-              "land": "JP",
-              "rubrik": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
-              "url": "https://www.japantimes.co.jp/news/2026/11/28/world/hackers-us-air-force-computing-platform/",
-              "tid": 1795828260.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "US Air Force hacked: Trump’s former National Security Advisor Mike Flynn demands answers from White House",
-              "url": "https://www.hindustantimes.com/world-news/us-news/us-air-force-hacked-trump-s-former-national-security-advisor-mike-flynn-demands-answers-from-white-house-101795809468630.html",
-              "tid": 1795809929.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Hindu",
-              "land": "IN",
-              "rubrik": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
-              "url": "https://www.thehindu.com/news/international/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/article71750783.ece",
-              "tid": 1795794359.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al-Monitor",
-              "land": "US",
-              "rubrik": "US military repelled drones at UK airbase this month, FT reports",
-              "url": "https://www.al-monitor.com/originals/2026/11/us-military-repelled-drones-uk-airbase-month-ft-reports",
-              "tid": 1795848385.0,
-              "statskontrollerad": false
-            }
-          ],
-          "europa": [
-            {
-              "kalla": "France 24",
-              "land": "FR",
-              "rubrik": "US military cloud platform reportedly hacked as Pentagon insists systems are secure",
-              "url": "https://www.france24.com/en/americas/20261128-us-military-cloud-platform-reportedly-hacked-as-pentagon-insists-systems-are-secure",
-              "tid": 1795845896.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Financial Times",
-              "land": "GB",
-              "rubrik": "US military repelled drones at RAF base",
-              "url": "https://www.ft.com/content/57795d58-2b9e-45cb-81e3-6c63aee434a4?syn-25a6b1a6=1",
-              "tid": 1795842041.0,
-              "statskontrollerad": false
-            }
-          ],
-          "latinamerika": [
-            {
-              "kalla": "MercoPress",
-              "land": "UY",
-              "rubrik": "US Air Force cloud platform hacked, Reuters reports",
-              "url": "https://en.mercopress.com/2026/11/27/us-air-force-cloud-platform-hacked-reuters-reports?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-              "tid": 1795799160.0,
-              "statskontrollerad": false
-            }
-          ],
-          "usa": [
-            {
-              "kalla": "The Daily Caller",
-              "land": "US",
-              "rubrik": "One Of The US Military’s Largest Cloud Computing Systems Was Hacked, Potentially Exposing Sensitive Intel",
-              "url": "https://dailycaller.com/2026/11/27/us-air-force-cloud-one-system-report-reuters-hack-sensitive-intel-exposed-munitions-aircraft",
-              "tid": 1795795029.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Defense News",
-              "land": "US",
-              "rubrik": "Hackers breach US Air Force flagship Cloud One computing platform",
-              "url": "https://www.defensenews.com/pentagon/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/",
-              "tid": 1795789416.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "The Information",
-              "land": "US",
-              "rubrik": "Hackers Breach U.S. Air Force Cloud in Latest High-Profile Cyberattack",
-              "url": "https://www.theinformation.com/briefings/hackers-breach-u-s-air-force-cloud-latest-high-profile-cyberattack",
-              "tid": 1795802785.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "saknas_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "US military says cyber systems secure after reports of Air Force hack",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "US military says cyber systems secure after reports of Air Force hack",
-          "url": "https://www.straitstimes.com/world/united-states/us-military-says-cyber-systems-secure-after-reports-of-air-force-hack",
-          "tid": 1795848530.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al-Monitor",
-          "rubrik": "US military repelled drones at UK airbase this month, FT reports",
-          "url": "https://www.al-monitor.com/originals/2026/11/us-military-repelled-drones-uk-airbase-month-ft-reports",
-          "tid": 1795848385.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "mellanostern",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "France 24",
-          "rubrik": "US military cloud platform reportedly hacked as Pentagon insists systems are secure",
-          "url": "https://www.france24.com/en/americas/20261128-us-military-cloud-platform-reportedly-hacked-as-pentagon-insists-systems-are-secure",
-          "tid": 1795845896.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "FR",
-          "region": "europa",
-          "agare": "public-service",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dawn",
-          "rubrik": "US military says cyber systems secure after reports of Air Force hack",
-          "url": "https://www.dawn.com/news/2047651/us-military-says-cyber-systems-secure-after-reports-of-air-force-hack",
-          "tid": 1795845850.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "South China Morning Post",
-          "rubrik": "US military says cyber systems secure after reports of Air Force hack",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3376113/us-military-says-cyber-systems-secure-after-reports-air-force-hack",
-          "tid": 1795841611.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "HK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Japan Times",
-          "rubrik": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
-          "url": "https://www.japantimes.co.jp/news/2026/11/28/world/hackers-us-air-force-computing-platform/",
-          "tid": 1795828260.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "JP",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "US Air Force hacked: Trump’s former National Security Advisor Mike Flynn demands answers from White House",
-          "url": "https://www.hindustantimes.com/world-news/us-news/us-air-force-hacked-trump-s-former-national-security-advisor-mike-flynn-demands-answers-from-white-house-101795809468630.html",
-          "tid": 1795809929.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "MercoPress",
-          "rubrik": "US Air Force cloud platform hacked, Reuters reports",
-          "url": "https://en.mercopress.com/2026/11/27/us-air-force-cloud-platform-hacked-reuters-reports?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
-          "tid": 1795799160.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "UY",
-          "region": "latinamerika",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Daily Caller",
-          "rubrik": "One Of The US Military’s Largest Cloud Computing Systems Was Hacked, Potentially Exposing Sensitive Intel",
-          "url": "https://dailycaller.com/2026/11/27/us-air-force-cloud-one-system-report-reuters-hack-sensitive-intel-exposed-munitions-aircraft",
-          "tid": 1795795029.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Hindu",
-          "rubrik": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
-          "url": "https://www.thehindu.com/news/international/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/article71750783.ece",
-          "tid": 1795794359.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Defense News",
-          "rubrik": "Hackers breach US Air Force flagship Cloud One computing platform",
-          "url": "https://www.defensenews.com/pentagon/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/",
-          "tid": 1795789416.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Financial Times",
-          "rubrik": "US military repelled drones at RAF base",
-          "url": "https://www.ft.com/content/57795d58-2b9e-45cb-81e3-6c63aee434a4?syn-25a6b1a6=1",
-          "tid": 1795842041.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "GB",
-          "region": "europa",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "The Information",
-          "rubrik": "Hackers Breach U.S. Air Force Cloud in Latest High-Profile Cyberattack",
-          "url": "https://www.theinformation.com/briefings/hackers-breach-u-s-air-force-cloud-latest-high-profile-cyberattack",
-          "tid": 1795802785.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "US",
-          "region": "usa",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 1,
-        "en": 3
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "blind fläck"
       ],
       "data": null
     },
@@ -1970,19 +1659,187 @@
       "data": null
     },
     {
+      "id": "0d04286142",
+      "amnen": [
+        "latinamerika",
+        "usa",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "latinamerika",
+        "usa"
+      ],
+      "poang": 28.2,
+      "vikt": {
+        "bredd": 0.321,
+        "regioner": {
+          "asien": 3,
+          "latinamerika": 1,
+          "usa": 1
+        },
+        "timmar": 90,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 5,
+      "har_primarkalla": false,
+      "senast": "2026-11-28T01:09:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.722,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "latinamerika",
+          "usa"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Mexico and U.S. combat drug cartels together as Trump pressure looms large",
+              "url": "https://www.japantimes.co.jp/news/2026/11/28/world/crime-legal/mexico-us-combat-drug-cartels/",
+              "tid": 1795828140.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Mexico files formal complaint with US over DEA tip line targeting cartel members and corrupt officials",
+              "url": "https://www.hindustantimes.com/world-news/us-news/mexico-files-formal-complaint-with-us-over-dea-tip-line-targeting-cartel-members-and-corrupt-officials-101795805544103.html",
+              "tid": 1795806130.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Mexico files complaint with US over DEA tip line on alleged drug traffickers, corrupt officials",
+              "url": "https://www.straitstimes.com/world/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials",
+              "tid": 1795792919.0,
+              "statskontrollerad": false
+            }
+          ],
+          "latinamerika": [
+            {
+              "kalla": "Mexico News Daily",
+              "land": "MX",
+              "rubrik": "Mexico files formal complaint over DEA’s Sinaloa tip lines: Friday’s mañanera recapped",
+              "url": "https://mexiconewsdaily.com/politics/mexico-files-formal-complaint-over-deas-sinaloa-tip-lines-fridays-mananera-recapped/",
+              "tid": 1795803644.0,
+              "statskontrollerad": false
+            }
+          ],
+          "usa": [
+            {
+              "kalla": "The Washington Post",
+              "land": "US",
+              "rubrik": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa",
+              "url": "https://www.washingtonpost.com/world/2026/11/27/mexico-condemns-dea-tip-line-asking-people-report-corrupt-officials-sinaloa/",
+              "tid": 1795812421.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": "saknas_i_sverige",
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Mexico and U.S. combat drug cartels together as Trump pressure looms large",
+      "kallor": [
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Mexico and U.S. combat drug cartels together as Trump pressure looms large",
+          "url": "https://www.japantimes.co.jp/news/2026/11/28/world/crime-legal/mexico-us-combat-drug-cartels/",
+          "tid": 1795828140.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Mexico files formal complaint with US over DEA tip line targeting cartel members and corrupt officials",
+          "url": "https://www.hindustantimes.com/world-news/us-news/mexico-files-formal-complaint-with-us-over-dea-tip-line-targeting-cartel-members-and-corrupt-officials-101795805544103.html",
+          "tid": 1795806130.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Mexico News Daily",
+          "rubrik": "Mexico files formal complaint over DEA’s Sinaloa tip lines: Friday’s mañanera recapped",
+          "url": "https://mexiconewsdaily.com/politics/mexico-files-formal-complaint-over-deas-sinaloa-tip-lines-fridays-mananera-recapped/",
+          "tid": 1795803644.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "MX",
+          "region": "latinamerika",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Mexico files complaint with US over DEA tip line on alleged drug traffickers, corrupt officials",
+          "url": "https://www.straitstimes.com/world/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials",
+          "tid": 1795792919.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Washington Post",
+          "rubrik": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa",
+          "url": "https://www.washingtonpost.com/world/2026/11/27/mexico-condemns-dea-tip-line-asking-people-report-corrupt-officials-sinaloa/",
+          "tid": 1795812421.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "US",
+          "region": "usa",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 3
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "blind fläck"
+      ],
+      "data": null
+    },
+    {
       "id": "a782ab0e85",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 28.0,
+      "poang": 28.1,
       "vikt": {
         "bredd": 0.319,
         "regioner": {
           "asien": 3,
           "mellanostern": 1
         },
-        "timmar": 86,
+        "timmar": 87,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2234,129 +2091,35 @@
       "data": null
     },
     {
-      "id": "0df53a65c5",
+      "id": "969b07bb89",
       "amnen": [
+        "usa",
         "varlden"
       ],
-      "amnen_sektion": [],
-      "poang": 27.3,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "asien": 1,
-          "afrika": 1
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T12:16:50+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.718,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "afrika",
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "The Straits Times",
-              "land": "SG",
-              "rubrik": "Armed men kill 17 villagers in Nigeria's Plateau state, police say",
-              "url": "https://www.straitstimes.com/world/armed-men-kill-17-villagers-in-nigerias-plateau-state-police-say",
-              "tid": 1795781810.0,
-              "statskontrollerad": false
-            }
-          ],
-          "afrika": [
-            {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Armed men kill 13 guards in 'terrorist attack' in western Niger",
-              "url": "http://www.africanews.com/2026/11/27/armed-men-kill-13-guards-in-terrorist-attack-in-western-niger/",
-              "tid": 1795779325.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Armed men kill 17 villagers in Nigeria's Plateau state, police say",
-      "kallor": [
-        {
-          "namn": "The Straits Times",
-          "rubrik": "Armed men kill 17 villagers in Nigeria's Plateau state, police say",
-          "url": "https://www.straitstimes.com/world/armed-men-kill-17-villagers-in-nigerias-plateau-state-police-say",
-          "tid": 1795781810.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SG",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Africanews",
-          "rubrik": "Armed men kill 13 guards in 'terrorist attack' in western Niger",
-          "url": "http://www.africanews.com/2026/11/27/armed-men-kill-13-guards-in-terrorist-attack-in-western-niger/",
-          "tid": 1795779325.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
+      "amnen_sektion": [
+        "usa"
       ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
-      "id": "2a622a9d06",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 27.3,
+      "poang": 27.6,
       "vikt": {
-        "bredd": 0.202,
+        "bredd": 0.261,
         "regioner": {
-          "asien": 1,
+          "asien": 2,
           "mellanostern": 1
         },
-        "timmar": 96,
+        "timmar": 89,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
         "spar": []
       },
       "maste": false,
-      "antal_kallor": 2,
+      "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-28T04:45:00+00:00",
+      "senast": "2026-11-27T23:16:46+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.661,
+      "sammanhang": 0.663,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
@@ -2366,11 +2129,19 @@
         "per_region": {
           "asien": [
             {
-              "kalla": "Rappler",
-              "land": "PH",
-              "rubrik": "The week in photos: November 21-27, 2026",
-              "url": "https://www.rappler.com/world/the-week-in-photos-november-21-27-2026/",
-              "tid": 1795841100.0,
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Trump backs Iraqi PM al-Zaidi’s plan to end oil smuggling and bring weapons under state control: Report",
+              "url": "https://www.hindustantimes.com/world-news/us-news/trump-backs-iraqi-pm-al-zaidi-s-plan-to-end-oil-smuggling-and-bring-weapons-under-state-control-report-101795820770163.html",
+              "tid": 1795821406.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Trump says supports Iraqi leader’s efforts to curb oil-smuggling",
+              "url": "https://www.straitstimes.com/world/united-states/trump-says-supports-iraqi-leaders-efforts-to-curb-oil-smuggling",
+              "tid": 1795779540.0,
               "statskontrollerad": false
             }
           ],
@@ -2378,37 +2149,49 @@
             {
               "kalla": "The National",
               "land": "AE",
-              "rubrik": "Cartoon for November 28, 2026",
-              "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/27/un-unifil-lebanon-israel-hezbollah/",
-              "tid": 1795802001.0,
+              "rubrik": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds",
+              "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
+              "tid": 1795792503.0,
               "statskontrollerad": true
             }
           ]
         },
-        "blind_flack": null,
+        "blind_flack": "saknas_i_sverige",
         "grannar_svenska": false,
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "The week in photos: November 21-27, 2026",
+      "reserv_rubrik": "Trump backs Iraqi PM al-Zaidi’s plan to end oil smuggling and bring weapons under state control: Report",
       "kallor": [
         {
-          "namn": "Rappler",
-          "rubrik": "The week in photos: November 21-27, 2026",
-          "url": "https://www.rappler.com/world/the-week-in-photos-november-21-27-2026/",
-          "tid": 1795841100.0,
+          "namn": "Hindustan Times",
+          "rubrik": "Trump backs Iraqi PM al-Zaidi’s plan to end oil smuggling and bring weapons under state control: Report",
+          "url": "https://www.hindustantimes.com/world-news/us-news/trump-backs-iraqi-pm-al-zaidi-s-plan-to-end-oil-smuggling-and-bring-weapons-under-state-control-report-101795820770163.html",
+          "tid": 1795821406.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "PH",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Trump says supports Iraqi leader’s efforts to curb oil-smuggling",
+          "url": "https://www.straitstimes.com/world/united-states/trump-says-supports-iraqi-leaders-efforts-to-curb-oil-smuggling",
+          "tid": 1795779540.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
           "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
           "namn": "The National",
-          "rubrik": "Cartoon for November 28, 2026",
-          "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/27/un-unifil-lebanon-israel-hezbollah/",
-          "tid": 1795802001.0,
+          "rubrik": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds",
+          "url": "https://www.thenationalnews.com/news/us/2026/11/27/trump-backs-iraqs-al-zaidi-in-fight-against-oil-smuggling/",
+          "tid": 1795792503.0,
           "betalvagg": false,
           "typ": "media",
           "land": "AE",
@@ -2425,8 +2208,9 @@
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region"
+        "färre än tre oberoende källor (2)",
+        "bara en region",
+        "blind fläck"
       ],
       "data": null
     },
@@ -2434,7 +2218,7 @@
       "id": "e54c83fe46",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.2,
+      "poang": 27.3,
       "vikt": {
         "bredd": 0.505,
         "regioner": {
@@ -2442,7 +2226,7 @@
           "usa": 3,
           "europa": 4
         },
-        "timmar": 46,
+        "timmar": 47,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -2740,15 +2524,15 @@
       "data": null
     },
     {
-      "id": "68b751956e",
+      "id": "2a622a9d06",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.2,
+      "poang": 27.3,
       "vikt": {
-        "bredd": 0.19,
+        "bredd": 0.202,
         "regioner": {
-          "europa": 1,
-          "afrika": 1
+          "asien": 1,
+          "mellanostern": 1
         },
         "timmar": 96,
         "konsekvens": null,
@@ -2759,36 +2543,36 @@
       "maste": false,
       "antal_kallor": 2,
       "har_primarkalla": false,
-      "senast": "2026-11-27T18:26:38+00:00",
+      "senast": "2026-11-28T04:45:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
-      "sammanhang": 0.625,
+      "sammanhang": 0.661,
       "betydelse": null,
       "perspektiv": {
         "regioner": [
-          "afrika",
-          "europa"
+          "asien",
+          "mellanostern"
         ],
         "per_region": {
-          "europa": [
+          "asien": [
             {
-              "kalla": "The Kyiv Independent",
-              "land": "UA",
-              "rubrik": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
-              "url": "https://kyivindependent.com/zelensky-says-ukraine-aligns-naval-strikes-with-partners-italy-denies-coordination-over-libya-attack/",
-              "tid": 1795803998.0,
+              "kalla": "Rappler",
+              "land": "PH",
+              "rubrik": "The week in photos: November 21-27, 2026",
+              "url": "https://www.rappler.com/world/the-week-in-photos-november-21-27-2026/",
+              "tid": 1795841100.0,
               "statskontrollerad": false
             }
           ],
-          "afrika": [
+          "mellanostern": [
             {
-              "kalla": "Africanews",
-              "land": "CG",
-              "rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
-              "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
-              "tid": 1795768669.0,
-              "statskontrollerad": false
+              "kalla": "The National",
+              "land": "AE",
+              "rubrik": "Cartoon for November 28, 2026",
+              "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/27/un-unifil-lebanon-israel-hezbollah/",
+              "tid": 1795802001.0,
+              "statskontrollerad": true
             }
           ]
         },
@@ -2797,42 +2581,43 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
+      "reserv_rubrik": "The week in photos: November 21-27, 2026",
       "kallor": [
         {
-          "namn": "The Kyiv Independent",
-          "rubrik": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
-          "url": "https://kyivindependent.com/zelensky-says-ukraine-aligns-naval-strikes-with-partners-italy-denies-coordination-over-libya-attack/",
-          "tid": 1795803998.0,
+          "namn": "Rappler",
+          "rubrik": "The week in photos: November 21-27, 2026",
+          "url": "https://www.rappler.com/world/the-week-in-photos-november-21-27-2026/",
+          "tid": 1795841100.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "UA",
-          "region": "europa",
+          "land": "PH",
+          "region": "asien",
           "agare": "privat",
           "statskontrollerad": false
         },
         {
-          "namn": "Africanews",
-          "rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
-          "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
-          "tid": 1795768669.0,
+          "namn": "The National",
+          "rubrik": "Cartoon for November 28, 2026",
+          "url": "https://www.thenationalnews.com/opinion/cartoon/2026/11/27/un-unifil-lebanon-israel-hezbollah/",
+          "tid": 1795802001.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "CG",
-          "region": "afrika",
-          "agare": "privat",
-          "statskontrollerad": false
+          "land": "AE",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": true
         }
       ],
       "granskad": false,
       "relevans": {
-        "sv": 1,
+        "sv": 0,
         "en": 1
       },
       "autopilot": [
         "inget utkast",
         "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
+        "färre än tre oberoende källor (1)",
+        "bara en region"
       ],
       "data": null
     },
@@ -2840,7 +2625,7 @@
       "id": "24766e3113",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 27.1,
+      "poang": 27.2,
       "vikt": {
         "bredd": 0.686,
         "regioner": {
@@ -2849,7 +2634,7 @@
           "mellanostern": 2,
           "europa": 2
         },
-        "timmar": 29,
+        "timmar": 30,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3148,6 +2933,218 @@
       "data": null
     },
     {
+      "id": "68b751956e",
+      "amnen": [],
+      "amnen_sektion": [],
+      "poang": 27.2,
+      "vikt": {
+        "bredd": 0.19,
+        "regioner": {
+          "europa": 1,
+          "afrika": 1
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T18:26:38+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.625,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "afrika",
+          "europa"
+        ],
+        "per_region": {
+          "europa": [
+            {
+              "kalla": "The Kyiv Independent",
+              "land": "UA",
+              "rubrik": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
+              "url": "https://kyivindependent.com/zelensky-says-ukraine-aligns-naval-strikes-with-partners-italy-denies-coordination-over-libya-attack/",
+              "tid": 1795803998.0,
+              "statskontrollerad": false
+            }
+          ],
+          "afrika": [
+            {
+              "kalla": "Africanews",
+              "land": "CG",
+              "rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
+              "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
+              "tid": 1795768669.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
+      "kallor": [
+        {
+          "namn": "The Kyiv Independent",
+          "rubrik": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
+          "url": "https://kyivindependent.com/zelensky-says-ukraine-aligns-naval-strikes-with-partners-italy-denies-coordination-over-libya-attack/",
+          "tid": 1795803998.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "UA",
+          "region": "europa",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Africanews",
+          "rubrik": "Italy says not informed about Ukraine drone strike on Russian ships in Libya",
+          "url": "http://www.africanews.com/2026/11/27/italy-not-informed-about-ukraine-drone-strike-on-russian-ships-in-libya/",
+          "tid": 1795768669.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "CG",
+          "region": "afrika",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 1,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
+      "id": "35ed938c7b",
+      "amnen": [
+        "asien"
+      ],
+      "amnen_sektion": [],
+      "poang": 27.0,
+      "vikt": {
+        "bredd": 0.176,
+        "regioner": {
+          "asien": 3
+        },
+        "timmar": 94,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 3,
+      "har_primarkalla": false,
+      "senast": "2026-11-28T07:12:00+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.765,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "CNA",
+              "land": "SG",
+              "rubrik": "Seoul monitoring signs of possible Kim Jong Un visit to China",
+              "url": "https://www.channelnewsasia.com/east-asia/seoul-north-korea-kim-jong-un-visit-china-6589236",
+              "tid": 1795849920.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Yonhap",
+              "land": "KR",
+              "rubrik": "(LEAD) Spy agency says monitoring developments amid speculation over N.K. leader's possible China visit",
+              "url": "https://en.yna.co.kr/view/AEN20261128000751315",
+              "tid": 1795843213.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Japan Times",
+              "land": "JP",
+              "rubrik": "Seoul monitoring signs of possible visit to China by North Korea’s Kim",
+              "url": "https://www.japantimes.co.jp/news/2026/11/28/asia-pacific/politics/seoul-north-korea-kim-visit-china/",
+              "tid": 1795836120.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Seoul monitoring signs of possible Kim Jong Un visit to China",
+      "kallor": [
+        {
+          "namn": "CNA",
+          "rubrik": "Seoul monitoring signs of possible Kim Jong Un visit to China",
+          "url": "https://www.channelnewsasia.com/east-asia/seoul-north-korea-kim-jong-un-visit-china-6589236",
+          "tid": 1795849920.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Yonhap",
+          "rubrik": "(LEAD) Spy agency says monitoring developments amid speculation over N.K. leader's possible China visit",
+          "url": "https://en.yna.co.kr/view/AEN20261128000751315",
+          "tid": 1795843213.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "KR",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Japan Times",
+          "rubrik": "Seoul monitoring signs of possible visit to China by North Korea’s Kim",
+          "url": "https://www.japantimes.co.jp/news/2026/11/28/asia-pacific/politics/seoul-north-korea-kim-visit-china/",
+          "tid": 1795836120.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "JP",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "9127e7b5e5",
       "amnen": [],
       "amnen_sektion": [],
@@ -3158,7 +3155,7 @@
           "afrika": 2,
           "asien": 1
         },
-        "timmar": 59,
+        "timmar": 60,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3267,6 +3264,111 @@
       "data": null
     },
     {
+      "id": "0173919586",
+      "amnen": [
+        "ai",
+        "energi"
+      ],
+      "amnen_sektion": [
+        "ai",
+        "energi"
+      ],
+      "poang": 26.6,
+      "vikt": {
+        "bredd": 0.202,
+        "regioner": {
+          "asien": 1,
+          "mellanostern": 1
+        },
+        "timmar": 40,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "teknik"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-28T04:41:04+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.399,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien",
+          "mellanostern"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Focus Taiwan",
+              "land": "TW",
+              "rubrik": "President Lai casts his vote in local elections, nuclear power referendum",
+              "url": "https://focustaiwan.tw/politics/202611280005",
+              "tid": 1795840864.0,
+              "statskontrollerad": false
+            }
+          ],
+          "mellanostern": [
+            {
+              "kalla": "Al Jazeera",
+              "land": "QA",
+              "rubrik": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
+              "url": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai?traffic_source=rss",
+              "tid": 1795820944.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": true,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "President Lai casts his vote in local elections, nuclear power referendum",
+      "kallor": [
+        {
+          "namn": "Focus Taiwan",
+          "rubrik": "President Lai casts his vote in local elections, nuclear power referendum",
+          "url": "https://focustaiwan.tw/politics/202611280005",
+          "tid": 1795840864.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "TW",
+          "region": "asien",
+          "agare": "statlig",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Al Jazeera",
+          "rubrik": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
+          "url": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai?traffic_source=rss",
+          "tid": 1795820944.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "QA",
+          "region": "mellanostern",
+          "agare": "statlig",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)"
+      ],
+      "data": null
+    },
+    {
       "id": "6459ad38dc",
       "amnen": [
         "asien",
@@ -3279,7 +3381,7 @@
         "regioner": {
           "asien": 3
         },
-        "timmar": 86,
+        "timmar": 87,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3383,220 +3485,19 @@
       "data": null
     },
     {
-      "id": "a08a51b75e",
-      "amnen": [
-        "asien"
-      ],
-      "amnen_sektion": [],
-      "poang": 26.5,
-      "vikt": {
-        "bredd": 0.118,
-        "regioner": {
-          "asien": 2
-        },
-        "timmar": 96,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-28T05:28:33+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.686,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Dawn",
-              "land": "PK",
-              "rubrik": "Death toll in Baloch Colony building collapse rises to 11 as rescuers recover three more bodies",
-              "url": "https://www.dawn.com/news/2047647/death-toll-in-baloch-colony-building-collapse-rises-to-11-as-rescuers-recover-three-more-bodies",
-              "tid": 1795843713.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Hindustan Times",
-              "land": "IN",
-              "rubrik": "Death toll due to building collapse in Pak’s Karachi rises to 7",
-              "url": "https://www.hindustantimes.com/world-news/death-toll-due-to-building-collapse-in-pak-s-karachi-rises-to-7-101795773156092.html",
-              "tid": 1795773155.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Death toll in Baloch Colony building collapse rises to 11 as rescuers recover three more bodies",
-      "kallor": [
-        {
-          "namn": "Dawn",
-          "rubrik": "Death toll in Baloch Colony building collapse rises to 11 as rescuers recover three more bodies",
-          "url": "https://www.dawn.com/news/2047647/death-toll-in-baloch-colony-building-collapse-rises-to-11-as-rescuers-recover-three-more-bodies",
-          "tid": 1795843713.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "PK",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Hindustan Times",
-          "rubrik": "Death toll due to building collapse in Pak’s Karachi rises to 7",
-          "url": "https://www.hindustantimes.com/world-news/death-toll-due-to-building-collapse-in-pak-s-karachi-rises-to-7-101795773156092.html",
-          "tid": 1795773155.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "IN",
-          "region": "asien",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)",
-        "bara en region"
-      ],
-      "data": null
-    },
-    {
-      "id": "6cffc7a2da",
-      "amnen": [
-        "ai",
-        "energi"
-      ],
-      "amnen_sektion": [
-        "ai",
-        "energi"
-      ],
-      "poang": 26.5,
-      "vikt": {
-        "bredd": 0.202,
-        "regioner": {
-          "asien": 1,
-          "mellanostern": 1
-        },
-        "timmar": 39,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "teknik"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-28T04:41:04+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 0.399,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "asien",
-          "mellanostern"
-        ],
-        "per_region": {
-          "asien": [
-            {
-              "kalla": "Focus Taiwan",
-              "land": "TW",
-              "rubrik": "President Lai casts his vote in local elections, nuclear power referendum",
-              "url": "https://focustaiwan.tw/politics/202611280005",
-              "tid": 1795840864.0,
-              "statskontrollerad": false
-            }
-          ],
-          "mellanostern": [
-            {
-              "kalla": "Al Jazeera",
-              "land": "QA",
-              "rubrik": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
-              "url": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai?traffic_source=rss",
-              "tid": 1795820944.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": true,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "President Lai casts his vote in local elections, nuclear power referendum",
-      "kallor": [
-        {
-          "namn": "Focus Taiwan",
-          "rubrik": "President Lai casts his vote in local elections, nuclear power referendum",
-          "url": "https://focustaiwan.tw/politics/202611280005",
-          "tid": 1795840864.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "TW",
-          "region": "asien",
-          "agare": "statlig",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Al Jazeera",
-          "rubrik": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
-          "url": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai?traffic_source=rss",
-          "tid": 1795820944.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "QA",
-          "region": "mellanostern",
-          "agare": "statlig",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 0,
-        "en": 1
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (2)"
-      ],
-      "data": null
-    },
-    {
       "id": "7be2ca7963",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 26.5,
+      "poang": 26.6,
       "vikt": {
         "bredd": 0.138,
         "regioner": {
           "asien": 2,
           "usa": 1
         },
-        "timmar": 93,
+        "timmar": 94,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3703,17 +3604,215 @@
       "data": null
     },
     {
+      "id": "a08a51b75e",
+      "amnen": [
+        "asien"
+      ],
+      "amnen_sektion": [],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.118,
+        "regioner": {
+          "asien": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-28T07:54:12+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.686,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Dawn",
+              "land": "PK",
+              "rubrik": "Death toll in Baloch Colony building collapse rises to 11 as rescuers recover three more bodies",
+              "url": "https://www.dawn.com/news/2047647/death-toll-in-baloch-colony-building-collapse-rises-to-11-as-rescuers-recover-three-more-bodies",
+              "tid": 1795852452.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "Death toll due to building collapse in Pak’s Karachi rises to 7",
+              "url": "https://www.hindustantimes.com/world-news/death-toll-due-to-building-collapse-in-pak-s-karachi-rises-to-7-101795773156092.html",
+              "tid": 1795773155.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Death toll in Baloch Colony building collapse rises to 11 as rescuers recover three more bodies",
+      "kallor": [
+        {
+          "namn": "Dawn",
+          "rubrik": "Death toll in Baloch Colony building collapse rises to 11 as rescuers recover three more bodies",
+          "url": "https://www.dawn.com/news/2047647/death-toll-in-baloch-colony-building-collapse-rises-to-11-as-rescuers-recover-three-more-bodies",
+          "tid": 1795852452.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "PK",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "Death toll due to building collapse in Pak’s Karachi rises to 7",
+          "url": "https://www.hindustantimes.com/world-news/death-toll-due-to-building-collapse-in-pak-s-karachi-rises-to-7-101795773156092.html",
+          "tid": 1795773155.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
+      "id": "b8da4c6ebf",
+      "amnen": [
+        "asien",
+        "geopolitik",
+        "usa",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "geopolitik",
+        "usa"
+      ],
+      "poang": 26.5,
+      "vikt": {
+        "bredd": 0.118,
+        "regioner": {
+          "asien": 2
+        },
+        "timmar": 96,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": []
+      },
+      "maste": false,
+      "antal_kallor": 2,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T22:35:07+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 0.735,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "asien"
+        ],
+        "per_region": {
+          "asien": [
+            {
+              "kalla": "Hindustan Times",
+              "land": "IN",
+              "rubrik": "‘A rethink is in order’: Republican lawmakers open to reviewing Trump’s tariffs after midterm rout",
+              "url": "https://www.hindustantimes.com/world-news/us-news/a-rethink-is-in-order-republican-lawmakers-open-to-reviewing-trump-s-tariffs-after-midterm-rout-101795817891259.html",
+              "tid": 1795818907.0,
+              "statskontrollerad": false
+            },
+            {
+              "kalla": "The Straits Times",
+              "land": "SG",
+              "rubrik": "Republicans rethink tariffs, giving Democrats an opening to challenge Trump",
+              "url": "https://www.straitstimes.com/world/united-states/republicans-rethink-tariffs-giving-democrats-an-opening-to-challenge-trump",
+              "tid": 1795792956.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "‘A rethink is in order’: Republican lawmakers open to reviewing Trump’s tariffs after midterm rout",
+      "kallor": [
+        {
+          "namn": "Hindustan Times",
+          "rubrik": "‘A rethink is in order’: Republican lawmakers open to reviewing Trump’s tariffs after midterm rout",
+          "url": "https://www.hindustantimes.com/world-news/us-news/a-rethink-is-in-order-republican-lawmakers-open-to-reviewing-trump-s-tariffs-after-midterm-rout-101795817891259.html",
+          "tid": 1795818907.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "IN",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        },
+        {
+          "namn": "The Straits Times",
+          "rubrik": "Republicans rethink tariffs, giving Democrats an opening to challenge Trump",
+          "url": "https://www.straitstimes.com/world/united-states/republicans-rethink-tariffs-giving-democrats-an-opening-to-challenge-trump",
+          "tid": 1795792956.0,
+          "betalvagg": false,
+          "typ": "media",
+          "land": "SG",
+          "region": "asien",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 0,
+        "en": 1
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (2)",
+        "bara en region"
+      ],
+      "data": null
+    },
+    {
       "id": "e6a0fe1319",
       "amnen": [],
       "amnen_sektion": [],
-      "poang": 24.7,
+      "poang": 24.8,
       "vikt": {
         "bredd": 0.175,
         "regioner": {
           "asien": 2,
           "europa": 1
         },
-        "timmar": 27,
+        "timmar": 28,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3724,7 +3823,7 @@
       "maste": false,
       "antal_kallor": 3,
       "har_primarkalla": false,
-      "senast": "2026-11-28T06:30:00+00:00",
+      "senast": "2026-11-28T08:00:00+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
@@ -3742,7 +3841,7 @@
               "land": "PH",
               "rubrik": "LIVE UPDATES: Rodrigo Duterte on trial at the ICC",
               "url": "https://www.rappler.com/philippines/rodrigo-duterte-trial-international-criminal-court-hague-updates-videos/",
-              "tid": 1795847400.0,
+              "tid": 1795852800.0,
               "statskontrollerad": false
             },
             {
@@ -3776,7 +3875,7 @@
           "namn": "Rappler",
           "rubrik": "LIVE UPDATES: Rodrigo Duterte on trial at the ICC",
           "url": "https://www.rappler.com/philippines/rodrigo-duterte-trial-international-criminal-court-hague-updates-videos/",
-          "tid": 1795847400.0,
+          "tid": 1795852800.0,
           "betalvagg": false,
           "typ": "media",
           "land": "PH",
@@ -3830,13 +3929,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 24.1,
+      "poang": 24.2,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 49,
+        "timmar": 50,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -3919,113 +4018,19 @@
       "data": null
     },
     {
-      "id": "7241b9616e",
-      "amnen": [],
-      "amnen_sektion": [],
-      "poang": 24.0,
-      "vikt": {
-        "bredd": 0.154,
-        "regioner": {
-          "sverige": 2
-        },
-        "timmar": 24,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": [
-          "religion"
-        ]
-      },
-      "maste": false,
-      "antal_kallor": 2,
-      "har_primarkalla": false,
-      "senast": "2026-11-27T08:15:33+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "sverige"
-        ],
-        "per_region": {
-          "sverige": [
-            {
-              "kalla": "Aftonbladet Nöjesbladet",
-              "land": "SE",
-              "rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
-              "url": "https://www.aftonbladet.se/nojesbladet/a/GPGo9V/efter-anklagelserna-bbc-utreds-for-antisemitism?utm_medium=rss",
-              "tid": 1795722172.0,
-              "statskontrollerad": false
-            },
-            {
-              "kalla": "Dagens Nyheter",
-              "land": "SE",
-              "rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
-              "url": "https://www.dn.se/kultur/efter-anklagelserna-bbc-utreds-for-antisemitism/",
-              "tid": 1795767333.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": "bara_i_sverige",
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
-      "kallor": [
-        {
-          "namn": "Aftonbladet Nöjesbladet",
-          "rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
-          "url": "https://www.aftonbladet.se/nojesbladet/a/GPGo9V/efter-anklagelserna-bbc-utreds-for-antisemitism?utm_medium=rss",
-          "tid": 1795722172.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        },
-        {
-          "namn": "Dagens Nyheter",
-          "rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
-          "url": "https://www.dn.se/kultur/efter-anklagelserna-bbc-utreds-for-antisemitism/",
-          "tid": 1795767333.0,
-          "betalvagg": true,
-          "typ": "media",
-          "land": "SE",
-          "region": "sverige",
-          "agare": "privat",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 3,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll"
-      ],
-      "data": null
-    },
-    {
       "id": "53ae3f180f",
       "amnen": [
         "varlden"
       ],
       "amnen_sektion": [],
-      "poang": 22.2,
+      "poang": 22.4,
       "vikt": {
         "bredd": 0.116,
         "regioner": {
           "europa": 1,
           "asien": 1
         },
-        "timmar": 17,
+        "timmar": 18,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4121,13 +4126,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.0,
+      "poang": 21.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 24,
+        "timmar": 25,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4220,13 +4225,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 21.0,
+      "poang": 21.1,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 24,
+        "timmar": 25,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4319,13 +4324,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.4,
+      "poang": 20.6,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 21,
+        "timmar": 22,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4418,13 +4423,13 @@
       "amnen_sektion": [
         "noje"
       ],
-      "poang": 20.2,
+      "poang": 20.4,
       "vikt": {
         "bredd": 0.154,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 20,
+        "timmar": 21,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4518,13 +4523,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 19.1,
+      "poang": 19.4,
       "vikt": {
         "bredd": 0.185,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 14,
+        "timmar": 15,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4615,13 +4620,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 18.6,
+      "poang": 18.9,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 13,
+        "timmar": 14,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4712,13 +4717,13 @@
       "amnen_sektion": [
         "sverige"
       ],
-      "poang": 13.2,
+      "poang": 14.2,
       "vikt": {
         "bredd": 0.169,
         "regioner": {
           "sverige": 2
         },
-        "timmar": 3,
+        "timmar": 4,
         "konsekvens": null,
         "bekraftad": null,
         "maste": false,
@@ -4965,6 +4970,88 @@
       "data": null
     },
     {
+      "id": "7241b9616e",
+      "amnen": [
+        "sverige",
+        "varlden"
+      ],
+      "amnen_sektion": [
+        "sverige"
+      ],
+      "poang": 12.3,
+      "vikt": {
+        "bredd": 0.077,
+        "regioner": {
+          "sverige": 1
+        },
+        "timmar": 1,
+        "konsekvens": null,
+        "bekraftad": null,
+        "maste": false,
+        "spar": [
+          "religion"
+        ]
+      },
+      "maste": false,
+      "antal_kallor": 1,
+      "har_primarkalla": false,
+      "senast": "2026-11-27T08:15:33+00:00",
+      "utkast": null,
+      "kallkontroll": null,
+      "narrativ": null,
+      "sammanhang": 1.0,
+      "betydelse": null,
+      "perspektiv": {
+        "regioner": [
+          "sverige"
+        ],
+        "per_region": {
+          "sverige": [
+            {
+              "kalla": "Dagens Nyheter",
+              "land": "SE",
+              "rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
+              "url": "https://www.dn.se/kultur/efter-anklagelserna-bbc-utreds-for-antisemitism/",
+              "tid": 1795767333.0,
+              "statskontrollerad": false
+            }
+          ]
+        },
+        "blind_flack": null,
+        "grannar_svenska": false,
+        "usa": null,
+        "usa_blind": null
+      },
+      "reserv_rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
+      "kallor": [
+        {
+          "namn": "Dagens Nyheter",
+          "rubrik": "Efter anklagelserna: BBC utreds för antisemitism",
+          "url": "https://www.dn.se/kultur/efter-anklagelserna-bbc-utreds-for-antisemitism/",
+          "tid": 1795767333.0,
+          "betalvagg": true,
+          "typ": "media",
+          "land": "SE",
+          "region": "sverige",
+          "agare": "privat",
+          "statskontrollerad": false
+        }
+      ],
+      "granskad": false,
+      "relevans": {
+        "sv": 2,
+        "en": 0
+      },
+      "autopilot": [
+        "inget utkast",
+        "ingen källkontroll",
+        "färre än tre oberoende källor (1)",
+        "bara en region",
+        "färre än två svenska källor"
+      ],
+      "data": null
+    },
+    {
       "id": "29fcaed857",
       "amnen": [
         "asien",
@@ -5125,7 +5212,7 @@
       "data": null
     },
     {
-      "id": "e558a7b8df",
+      "id": "7db1c703b8",
       "amnen": [
         "norden",
         "sverige",
@@ -5149,7 +5236,7 @@
       "maste": false,
       "antal_kallor": 1,
       "har_primarkalla": false,
-      "senast": "2026-11-28T06:54:02+00:00",
+      "senast": "2026-11-28T07:49:07+00:00",
       "utkast": null,
       "kallkontroll": null,
       "narrativ": null,
@@ -5162,11 +5249,11 @@
         "per_region": {
           "norden": [
             {
-              "kalla": "NRK",
-              "land": "NO",
-              "rubrik": "Frykter tomme pumper i Sverige: – Kan det få alvorlige konsekvenser",
-              "url": "https://www.nrk.no/ostfold/snart-hopper-drivstoffprisen-i-sverige-_-frykter-tomme-pumper-1.18089594",
-              "tid": 1795848842.0,
+              "kalla": "Yle News",
+              "land": "FI",
+              "rubrik": "English rehearsals, Italian cues, Latin tunes — inside Finland's international orchestra",
+              "url": "https://yle.fi/a/74-20259206?origin=rss",
+              "tid": 1795852147.0,
               "statskontrollerad": false
             }
           ]
@@ -5176,97 +5263,16 @@
         "usa": null,
         "usa_blind": null
       },
-      "reserv_rubrik": "Frykter tomme pumper i Sverige: – Kan det få alvorlige konsekvenser",
+      "reserv_rubrik": "English rehearsals, Italian cues, Latin tunes — inside Finland's international orchestra",
       "kallor": [
         {
-          "namn": "NRK",
-          "rubrik": "Frykter tomme pumper i Sverige: – Kan det få alvorlige konsekvenser",
-          "url": "https://www.nrk.no/ostfold/snart-hopper-drivstoffprisen-i-sverige-_-frykter-tomme-pumper-1.18089594",
-          "tid": 1795848842.0,
+          "namn": "Yle News",
+          "rubrik": "English rehearsals, Italian cues, Latin tunes — inside Finland's international orchestra",
+          "url": "https://yle.fi/a/74-20259206?origin=rss",
+          "tid": 1795852147.0,
           "betalvagg": false,
           "typ": "media",
-          "land": "NO",
-          "region": "norden",
-          "agare": "public-service",
-          "statskontrollerad": false
-        }
-      ],
-      "granskad": false,
-      "relevans": {
-        "sv": 2,
-        "en": 0
-      },
-      "autopilot": [
-        "inget utkast",
-        "ingen källkontroll",
-        "färre än tre oberoende källor (1)",
-        "bara en region",
-        "färre än två svenska källor"
-      ],
-      "data": null
-    },
-    {
-      "id": "aaf899b7ad",
-      "amnen": [
-        "norden",
-        "sverige",
-        "varlden"
-      ],
-      "amnen_sektion": [
-        "sverige"
-      ],
-      "poang": 11.5,
-      "vikt": {
-        "bredd": 0.3,
-        "regioner": {
-          "norden": 1
-        },
-        "timmar": 1,
-        "konsekvens": null,
-        "bekraftad": null,
-        "maste": false,
-        "spar": []
-      },
-      "maste": false,
-      "antal_kallor": 1,
-      "har_primarkalla": false,
-      "senast": "2026-11-28T02:35:39+00:00",
-      "utkast": null,
-      "kallkontroll": null,
-      "narrativ": null,
-      "sammanhang": 1.0,
-      "betydelse": null,
-      "perspektiv": {
-        "regioner": [
-          "norden"
-        ],
-        "per_region": {
-          "norden": [
-            {
-              "kalla": "DR Nyheder",
-              "land": "DK",
-              "rubrik": "Politiet anholder person efter uroligheder mellem ishockeyfans",
-              "url": "https://www.dr.dk/nyheder/seneste/politiet-anholder-person-efter-uroligheder-mellem-ishockeyfans",
-              "tid": 1795833339.0,
-              "statskontrollerad": false
-            }
-          ]
-        },
-        "blind_flack": null,
-        "grannar_svenska": false,
-        "usa": null,
-        "usa_blind": null
-      },
-      "reserv_rubrik": "Politiet anholder person efter uroligheder mellem ishockeyfans",
-      "kallor": [
-        {
-          "namn": "DR Nyheder",
-          "rubrik": "Politiet anholder person efter uroligheder mellem ishockeyfans",
-          "url": "https://www.dr.dk/nyheder/seneste/politiet-anholder-person-efter-uroligheder-mellem-ishockeyfans",
-          "tid": 1795833339.0,
-          "betalvagg": false,
-          "typ": "media",
-          "land": "DK",
+          "land": "FI",
           "region": "norden",
           "agare": "public-service",
           "statskontrollerad": false
@@ -5291,7 +5297,7 @@
     {
       "id": "svt",
       "ok": true,
-      "artiklar": 38,
+      "artiklar": 37,
       "url": "https://www.svt.se/nyheter/rss.xml"
     },
     {
@@ -5303,7 +5309,7 @@
     {
       "id": "dn",
       "ok": true,
-      "artiklar": 86,
+      "artiklar": 87,
       "url": "https://www.dn.se/rss/"
     },
     {
@@ -5315,13 +5321,13 @@
     {
       "id": "breakit",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 6,
       "url": "https://www.breakit.se/feed/artiklar"
     },
     {
       "id": "yle",
       "ok": true,
-      "artiklar": 5,
+      "artiklar": 6,
       "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS"
     },
     {
@@ -5375,7 +5381,7 @@
     {
       "id": "bbc",
       "ok": true,
-      "artiklar": 20,
+      "artiklar": 19,
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
     },
     {
@@ -5423,7 +5429,7 @@
     {
       "id": "ecb",
       "ok": true,
-      "artiklar": 2,
+      "artiklar": 3,
       "url": "https://www.ecb.europa.eu/rss/press.html"
     },
     {
@@ -5435,7 +5441,7 @@
     {
       "id": "nyt",
       "ok": true,
-      "artiklar": 34,
+      "artiklar": 32,
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
     },
     {
@@ -5453,7 +5459,7 @@
     {
       "id": "fox",
       "ok": true,
-      "artiklar": 22,
+      "artiklar": 21,
       "url": "https://moxie.foxnews.com/google-publisher/world.xml"
     },
     {
@@ -5541,7 +5547,7 @@
     {
       "id": "rt",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 24,
       "url": "https://www.rt.com/rss/news/"
     },
     {
@@ -5594,7 +5600,7 @@
     {
       "id": "techcrunch",
       "ok": true,
-      "artiklar": 3,
+      "artiklar": 0,
       "url": "https://techcrunch.com/feed/"
     },
     {
@@ -5624,7 +5630,7 @@
     {
       "id": "aftonbladet-noje",
       "ok": true,
-      "artiklar": 25,
+      "artiklar": 26,
       "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/nojesbladet/"
     },
     {
@@ -5724,7 +5730,7 @@
     {
       "id": "hacker-news",
       "ok": true,
-      "artiklar": 6,
+      "artiklar": 7,
       "url": "https://hnrss.org/frontpage?points=250"
     },
     {
@@ -5788,7 +5794,7 @@
     {
       "id": "reason",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 13,
       "url": "https://reason.com/latest/feed/"
     },
     {
@@ -5860,7 +5866,7 @@
     {
       "id": "batimes",
       "ok": true,
-      "artiklar": 12,
+      "artiklar": 11,
       "url": "https://www.batimes.com.ar/feed"
     },
     {
@@ -5920,7 +5926,7 @@
     {
       "id": "thenational",
       "ok": true,
-      "artiklar": 73,
+      "artiklar": 74,
       "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
@@ -6052,7 +6058,7 @@
     {
       "id": "theeastafrican",
       "ok": true,
-      "artiklar": 7,
+      "artiklar": 13,
       "url": "https://www.theeastafrican.co.ke/rss.xml"
     },
     {
