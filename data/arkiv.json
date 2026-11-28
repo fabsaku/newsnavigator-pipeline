@@ -4712,15 +4712,18 @@
  "5db6a782f2": {
   "id": "5db6a782f2",
   "amnen": [
-   "varlden"
+   "latinamerika"
   ],
-  "amnen_sektion": [],
-  "poang": 26.7,
+  "amnen_sektion": [
+   "latinamerika"
+  ],
+  "poang": 28.4,
   "vikt": {
-   "bredd": 0.136,
+   "bredd": 0.309,
    "regioner": {
+    "europa": 2,
     "asien": 1,
-    "europa": 1,
+    "latinamerika": 1,
     "usa": 1
    },
    "timmar": 96,
@@ -4730,38 +4733,57 @@
    "spar": []
   },
   "maste": false,
-  "antal_kallor": 3,
+  "antal_kallor": 5,
   "har_primarkalla": false,
-  "senast": "2026-11-26T14:52:43+00:00",
+  "senast": "2026-11-28T10:45:17+00:00",
   "utkast": null,
   "kallkontroll": null,
   "narrativ": null,
-  "sammanhang": 0.624,
+  "sammanhang": 0.528,
   "betydelse": null,
   "perspektiv": {
    "regioner": [
     "asien",
     "europa",
+    "latinamerika",
     "usa"
    ],
    "per_region": {
-    "asien": [
+    "europa": [
      {
-      "kalla": "Hindustan Times",
-      "land": "IN",
-      "rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-      "url": "https://www.hindustantimes.com/world-news/16-dead-10-missing-after-floods-hit-illegal-gold-mine-in-indonesia-search-and-rescue-underway-101795677902881.html",
-      "tid": 1795678746.0,
+      "kalla": "Politico Europe",
+      "land": "BE",
+      "rubrik": "Santiago Abascal: Spain’s far-right kingmaker",
+      "url": "https://www.politico.eu/article/santiago-abascal-spain-election-2026-far-right-kingmaker/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "tid": 1795862717.0,
+      "statskontrollerad": false
+     },
+     {
+      "kalla": "France 24",
+      "land": "FR",
+      "rubrik": "Is Spain 'nostalgic' for Franco? Would traditional right PP consider an alliance with far-right Vox?",
+      "url": "https://www.france24.com/en/is-spain-nostalgic-for-franco-would-traditional-right-pp-consider-an-alliance-with-far-right-vox",
+      "tid": 1795804302.0,
       "statskontrollerad": false
      }
     ],
-    "europa": [
+    "asien": [
      {
-      "kalla": "BBC World",
-      "land": "GB",
-      "rubrik": "Thirteen dead as mine disaster highlights illegal hunt for gold",
-      "url": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
-      "tid": 1795678284.0,
+      "kalla": "South China Morning Post",
+      "land": "HK",
+      "rubrik": "Spain’s PM Sanchez makes final bid to head off conservatives and far-right",
+      "url": "https://www.scmp.com/news/world/europe/article/3376131/spains-pm-sanchez-makes-final-bid-head-conservatives-and-far-right",
+      "tid": 1795861792.0,
+      "statskontrollerad": false
+     }
+    ],
+    "latinamerika": [
+     {
+      "kalla": "MercoPress",
+      "land": "UY",
+      "rubrik": "Colombia's president backs Abascal: \"Spain deserves a president like you\"",
+      "url": "https://en.mercopress.com/2026/11/28/colombia-s-president-backs-abascal-spain-deserves-a-president-like-you?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+      "tid": 1795844160.0,
       "statskontrollerad": false
      }
     ],
@@ -4769,9 +4791,9 @@
      {
       "kalla": "The New York Times",
       "land": "US",
-      "rubrik": "13 Dead and 13 Thought Trapped in Indonesian Mine After Heavy Rain",
-      "url": "https://www.nytimes.com/2026/11/25/world/asia/indonesia-miners-trapped.html",
-      "tid": 1795704763.0,
+      "rubrik": "Spain’s Far-Right Era Ended in 1975. Will This Man Change That?",
+      "url": "https://www.nytimes.com/2026/11/27/world/europe/santiago-abascal-vox-spain-far-right.html",
+      "tid": 1795790721.0,
       "statskontrollerad": false
      }
     ]
@@ -4781,37 +4803,61 @@
    "usa": null,
    "usa_blind": null
   },
-  "reserv_rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
+  "reserv_rubrik": "Santiago Abascal: Spain’s far-right kingmaker",
   "kallor": [
    {
-    "namn": "Hindustan Times",
-    "rubrik": "16 dead, 10 missing after floods hit illegal gold mine in Indonesia, search and rescue underway",
-    "url": "https://www.hindustantimes.com/world-news/16-dead-10-missing-after-floods-hit-illegal-gold-mine-in-indonesia-search-and-rescue-underway-101795677902881.html",
-    "tid": 1795678746.0,
+    "namn": "Politico Europe",
+    "rubrik": "Santiago Abascal: Spain’s far-right kingmaker",
+    "url": "https://www.politico.eu/article/santiago-abascal-spain-election-2026-far-right-kingmaker/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "tid": 1795862717.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "IN",
+    "land": "BE",
+    "region": "europa",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "South China Morning Post",
+    "rubrik": "Spain’s PM Sanchez makes final bid to head off conservatives and far-right",
+    "url": "https://www.scmp.com/news/world/europe/article/3376131/spains-pm-sanchez-makes-final-bid-head-conservatives-and-far-right",
+    "tid": 1795861792.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "HK",
     "region": "asien",
     "agare": "privat",
     "statskontrollerad": false
    },
    {
-    "namn": "BBC World",
-    "rubrik": "Thirteen dead as mine disaster highlights illegal hunt for gold",
-    "url": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
-    "tid": 1795678284.0,
+    "namn": "MercoPress",
+    "rubrik": "Colombia's president backs Abascal: \"Spain deserves a president like you\"",
+    "url": "https://en.mercopress.com/2026/11/28/colombia-s-president-backs-abascal-spain-deserves-a-president-like-you?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss",
+    "tid": 1795844160.0,
     "betalvagg": false,
     "typ": "media",
-    "land": "GB",
+    "land": "UY",
+    "region": "latinamerika",
+    "agare": "privat",
+    "statskontrollerad": false
+   },
+   {
+    "namn": "France 24",
+    "rubrik": "Is Spain 'nostalgic' for Franco? Would traditional right PP consider an alliance with far-right Vox?",
+    "url": "https://www.france24.com/en/is-spain-nostalgic-for-franco-would-traditional-right-pp-consider-an-alliance-with-far-right-vox",
+    "tid": 1795804302.0,
+    "betalvagg": false,
+    "typ": "media",
+    "land": "FR",
     "region": "europa",
     "agare": "public-service",
     "statskontrollerad": false
    },
    {
     "namn": "The New York Times",
-    "rubrik": "13 Dead and 13 Thought Trapped in Indonesian Mine After Heavy Rain",
-    "url": "https://www.nytimes.com/2026/11/25/world/asia/indonesia-miners-trapped.html",
-    "tid": 1795704763.0,
+    "rubrik": "Spain’s Far-Right Era Ended in 1975. Will This Man Change That?",
+    "url": "https://www.nytimes.com/2026/11/27/world/europe/santiago-abascal-vox-spain-far-right.html",
+    "tid": 1795790721.0,
     "betalvagg": true,
     "typ": "media",
     "land": "US",
@@ -4833,6 +4879,6 @@
   "data": null,
   "godkand_tid": 1795376463.8466647,
   "automatisk": false,
-  "uppdaterad_tid": 1795720065.0333447
+  "uppdaterad_tid": 1795863988.5237372
  }
 }
